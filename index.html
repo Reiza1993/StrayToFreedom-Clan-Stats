@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StrayToFreedom✦ Clan Stats</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
+            background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+            min-height: 100vh;
+            color: #e2e8f0;
+        }
+        
+        .container {
+            background: rgba(26, 32, 44, 0.95);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            max-width: 1200px;
+            margin: 0 auto;
+            border: 1px solid #4a5568;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #f7fafc;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+            font-weight: 700;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .clan-name {
+            text-align: center;
+            color: #a0aec0;
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            font-weight: 500;
+        }
+        
+        .controls {
+            margin-bottom: 20px;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        
+        select, input {
+            padding: 10px 15px;
+            border: 2px solid #4a5568;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            background: #2d3748;
+            color: #e2e8f0;
+        }
+        
+        select:focus, input:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.3);
+        }
+        
+        .search-box {
+            flex-grow: 1;
+            min-width: 200px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: #2d3748;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+        }
+        
+        th {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 15px 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #4a5568;
+            transition: background-color 0.2s ease;
+            color: #e2e8f0;
+        }
+        
+        tr:hover {
+            background-color: #374151;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #374151;
+        }
+        
+        .rank-cell {
+            font-weight: 600;
+            color: #f7fafc;
+            background: linear-gradient(135deg, #4a5568, #2d3748);
+            border-radius: 6px;
+            text-align: center;
+            width: 60px;
+        }
+        
+        .name-cell {
+            font-weight: 500;
+            color: #f7fafc;
+            max-width: 200px;
+            word-break: break-word;
+        }
+        
+        .cores-cell {
+            font-weight: 600;
+            color: #b794f6;
+            text-align: center;
+        }
+        
+        .role-cell {
+            font-weight: 600;
+            text-align: center;
+            padding: 8px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .role-leader {
+            background: linear-gradient(135deg, #e53e3e, #c53030);
+            color: white;
+            border: 2px solid #fc8181;
+        }
+        
+        .role-viceleader {
+            background: linear-gradient(135deg, #dd6b20, #c05621);
+            color: white;
+            border: 2px solid #ed8936;
+        }
+        
+        .role-member {
+            background: linear-gradient(135deg, #edf2f7, #f7fafc);
+            color: #2d3748;
+            border: 2px solid #cbd5e0;
+        }
+        
+        .role-glorymember {
+            background: linear-gradient(135deg, #ffd700, #f6e05e);
+            color: #744210;
+            border: 2px solid #ecc94b;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+        
+        @keyframes glow {
+            from { box-shadow: 0 0 5px #ffd700; }
+            to { box-shadow: 0 0 15px #ffd700, 0 0 20px #ffd700; }
+        }
+        
+        .stats-summary {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .stat-card {
+            background: linear-gradient(135deg, #ffffff, #f7fafc);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            border: 1px solid #e2e8f0;
+        }
+        
+        .stat-value {
+            font-size: 2em;
+            font-weight: 700;
+            color: #4a5568;
+            margin-bottom: 5px;
+        }
+        
+        .stat-label {
+            color: #718096;
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .export-btn {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin-left: 10px;
+        }
+        
+        .export-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+                margin: 10px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            .controls {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            
+            table {
+                font-size: 14px;
+            }
+            
+            th, td {
+                padding: 8px 6px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Clan Statistics</h1>
+        <div class="clan-name">StrayToFreedom✦</div>
+        
+        <div class="stats-summary">
+            <div class="stat-card">
+                <div class="stat-value" id="totalMembers">39</div>
+                <div class="stat-label">Total Members</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="totalCores">785+</div>
+                <div class="stat-label">Total Relic Cores</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="avgAttack">373.7K</div>
+                <div class="stat-label">Average Attack</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="topAttack">1.003M</div>
+                <div class="stat-label">Highest Attack</div>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <input type="text" id="searchInput" placeholder="Search player names..." class="search-box">
+            <select id="sortSelect">
+                <option value="rank">Sort by Rank</option>
+                <option value="name">Sort by Name</option>
+                <option value="cores">Sort by Relic Cores</option>
+                <option value="attack">Sort by Attack</option>
+            </select>
+            <button class="export-btn" onclick="exportToCSV()">Export CSV</button>
+            <button class="export-btn" onclick="showGloryHistory()">Glory History</button>
+        </div>
+        
+        <table id="playerTable">
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Player Name</th>
+                    <th>Role</th>
+                    <th>Relic Cores</th>
+                    <th>Attack Power</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+            </tbody>
+        </table>
+
+        <!-- Glory History Modal -->
+        <div id="gloryModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 1000;">
+            <div style="position: relative; margin: 5% auto; padding: 30px; background: white; border-radius: 15px; max-width: 800px; max-height: 80%; overflow-y: auto;">
+                <span onclick="closeGloryHistory()" style="position: absolute; top: 15px; right: 25px; font-size: 30px; cursor: pointer; color: #999;">&times;</span>
+                <h2 style="color: #4a5568; margin-bottom: 20px; text-align: center;">🏆 Glory Members History</h2>
+                
+                <div style="margin-bottom: 30px;">
+                    <h3 style="color: #667eea; margin-bottom: 15px;">📅 Current Week (Week 1)</h3>
+                    <div style="display: flex; flex-wrap: wrap; gap: 15px;">
+                        <div style="background: linear-gradient(135deg, #fbb6ce, #f687b3); padding: 15px; border-radius: 10px; flex: 1; min-width: 200px; text-align: center; color: #97266d; font-weight: 600;">
+                            mc2084<br><small>10+ Cores | 329K Attack</small>
+                        </div>
+                        <div style="background: linear-gradient(135deg, #fbb6ce, #f687b3); padding: 15px; border-radius: 10px; flex: 1; min-width: 200px; text-align: center; color: #97266d; font-weight: 600;">
+                            Lemminkäinen<br><small>5+ Cores | 218K Attack</small>
+                        </div>
+                        <div style="background: linear-gradient(135deg, #fbb6ce, #f687b3); padding: 15px; border-radius: 10px; flex: 1; min-width: 200px; text-align: center; color: #97266d; font-weight: 600;">
+                            Player 78792329<br><small>0+ Cores | 244K Attack</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-bottom: 30px;">
+                    <h3 style="color: #667eea; margin-bottom: 15px;">📊 Past Glory Members</h3>
+                    <div style="background: #f8f9ff; padding: 20px; border-radius: 10px; border-left: 4px solid #667eea;">
+                        <table style="width: 100%; border-collapse: collapse;">
+                            <thead>
+                                <tr style="background: #667eea; color: white;">
+                                    <th style="padding: 10px; text-align: left;">Week</th>
+                                    <th style="padding: 10px; text-align: left;">Glory Members</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr style="border-bottom: 1px solid #e2e8f0;">
+                                    <td style="padding: 10px; font-weight: 600;">1</td>
+                                    <td style="padding: 10px;">mc2084, Lemminkäinen, Player 78792329</td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid #e2e8f0;">
+                                    <td style="padding: 10px; font-weight: 600;">2</td>
+                                    <td style="padding: 10px;">TBD</td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid #e2e8f0;">
+                                    <td style="padding: 10px; font-weight: 600;">3</td>
+                                    <td style="padding: 10px;">TBD</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 10px; font-weight: 600;">4</td>
+                                    <td style="padding: 10px;">TBD</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div style="background: linear-gradient(135deg, #e6fffa, #b2f5ea); padding: 20px; border-radius: 10px; text-align: center; margin-bottom: 20px;">
+                    <h4 style="color: #285e61; margin-bottom: 10px;">🗺️ About Glory Members</h4>
+                    <p style="color: #285e61; margin: 5px 0; font-weight: 600;">Glory Members are selected based on Clan Exploration rankings</p>
+                    <p style="color: #285e61; margin: 5px 0;">Top performers in weekly exploration activities earn this special recognition</p>
+                </div>
+
+                <div style="background: linear-gradient(135deg, #e6fffa, #b2f5ea); padding: 20px; border-radius: 10px; text-align: center;">
+                    <h4 style="color: #285e61; margin-bottom: 10px;">🌟 Glory Member Rewards</h4>
+                    <p style="color: #285e61; margin: 5px 0;">• 800 Gems</p>
+                    <p style="color: #285e61; margin: 5px 0;">• 100 Energy</p>
+                    <p style="color: #285e61; margin: 5px 0;">• 20 Special Ops Tickets</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const playerData = [
+            { name: "E•Duke", cores: "110+", attack: 1003300, coresNum: 110, role: "Member" },
+            { name: "GentleMonster", cores: "75+", attack: 687100, coresNum: 75, role: "Vice-Leader" },
+            { name: "BobBobberson", cores: "70+", attack: 752000, coresNum: 70, role: "Member" },
+            { name: "bimbabo", cores: "65+", attack: 695500, coresNum: 65, role: "Member" },
+            { name: "Cunner", cores: "65+", attack: 762800, coresNum: 65, role: "Member" },
+            { name: "4nd333", cores: "60+", attack: 722600, coresNum: 60, role: "Member" },
+            { name: "SterbenㅣStray", cores: "55+", attack: 621800, coresNum: 55, role: "Leader" },
+            { name: "MrPlusUltra", cores: "40+", attack: 604900, coresNum: 40, role: "Member" },
+            { name: "N0M3rcy", cores: "40+", attack: 631400, coresNum: 40, role: "Member" },
+            { name: "Belthazar", cores: "35+", attack: 590300, coresNum: 35, role: "Member" },
+            { name: "Asdgner", cores: "30+", attack: 296600, coresNum: 30, role: "Member" },
+            { name: "Beef4Brains", cores: "25+", attack: 561500, coresNum: 25, role: "Member" },
+            { name: "SmallBoto", cores: "20+", attack: 314600, coresNum: 20, role: "Member" },
+            { name: "DemoncracyㅣStray", cores: "20+", attack: 404200, coresNum: 20, role: "Vice-Leader" },
+            { name: "StrayKucsika97", cores: "20+", attack: 413000, coresNum: 20, role: "Member" },
+            { name: "6J4", cores: "20+", attack: 458700, coresNum: 20, role: "Member" },
+            { name: "HideOnBushs", cores: "20+", attack: 495300, coresNum: 20, role: "Member" },
+            { name: "swifft", cores: "15+", attack: 303300, coresNum: 15, role: "Member" },
+            { name: "NarutoUzuma", cores: "10+", attack: 275300, coresNum: 10, role: "Member" },
+            { name: "mc2084", cores: "10+", attack: 329000, coresNum: 10, role: "Glory Member" },
+            { name: "2xc3ˢᵗʳᵃʸ", cores: "10+", attack: 249000, coresNum: 10, role: "Member" },
+            { name: "HannaM", cores: "5+", attack: 227800, coresNum: 5, role: "Member" },
+            { name: "Lemminkäinen", cores: "5+", attack: 218100, coresNum: 5, role: "Glory Member" },
+            { name: "Szoj", cores: "5+", attack: 238000, coresNum: 5, role: "Member" },
+            { name: "Coopet┃Stray", cores: "5+", attack: 269000, coresNum: 5, role: "Member" },
+            { name: "Pookaz", cores: "5+", attack: 241400, coresNum: 5, role: "Member" },
+            { name: "bol4nd3ng", cores: "5+", attack: 145100, coresNum: 5, role: "Member" },
+            { name: "ByRess", cores: "5+", attack: 207800, coresNum: 5, role: "Member" },
+            { name: "Chumuzuke", cores: "5+", attack: 242100, coresNum: 5, role: "Member" },
+            { name: "slaterhoㅣStray", cores: "5+", attack: 170000, coresNum: 5, role: "Member" },
+            { name: "D1L3R_PL", cores: "5+", attack: 175100, coresNum: 5, role: "Member" },
+            { name: "mo265489", cores: "5+", attack: 209100, coresNum: 5, role: "Member" },
+            { name: "Ruzagi", cores: "0+", attack: 169400, coresNum: 0, role: "Member" },
+            { name: "lct404", cores: "0+", attack: 175400, coresNum: 0, role: "Member" },
+            { name: "khoprademon", cores: "0+", attack: 188000, coresNum: 0, role: "Member" },
+            { name: "Player 78792329", cores: "0+", attack: 244100, coresNum: 0, role: "Glory Member" },
+            { name: "j__d1", cores: "0+", attack: 129800, coresNum: 0, role: "Member" },
+            { name: "offBait", cores: "0+", attack: 124600, coresNum: 0, role: "Member" },
+            { name: "13mpty", cores: "0+", attack: 200200, coresNum: 0, role: "Member" }
+        ];
+
+        let filteredData = [...playerData];
+        let currentSort = 'rank';
+
+        function formatNumber(num) {
+            if (num >= 1000000) {
+                return (num / 1000000).toFixed(3) + 'M';
+            } else if (num >= 1000) {
+                return (num / 1000).toFixed(1) + 'K';
+            }
+            return num.toLocaleString();
+        }
+
+        function renderTable() {
+            const tbody = document.getElementById('tableBody');
+            tbody.innerHTML = '';
+            
+            filteredData.forEach((player, index) => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td class="rank-cell">${index + 1}</td>
+                    <td class="name-cell">${player.name}</td>
+                    <td class="role-cell role-${player.role.toLowerCase().replace('-', '')}">${player.role}</td>
+                    <td class="cores-cell">${player.cores}</td>
+                    <td class="attack-cell">${formatNumber(player.attack)}</td>
+                `;
+                tbody.appendChild(row);
+            });
+        }
+
+        function sortData(criteria) {
+            currentSort = criteria;
+            
+            switch(criteria) {
+                case 'name':
+                    filteredData.sort((a, b) => a.name.localeCompare(b.name));
+                    break;
+                case 'cores':
+                    filteredData.sort((a, b) => b.coresNum - a.coresNum);
+                    break;
+                case 'attack':
+                    filteredData.sort((a, b) => b.attack - a.attack);
+                    break;
+                default: // rank - by relic cores descending
+                    filteredData.sort((a, b) => {
+                        if (b.coresNum !== a.coresNum) {
+                            return b.coresNum - a.coresNum;
+                        }
+                        return b.attack - a.attack;
+                    });
+            }
+            
+            renderTable();
+        }
+
+        function filterData(searchTerm) {
+            filteredData = playerData.filter(player => 
+                player.name.toLowerCase().includes(searchTerm.toLowerCase())
+            );
+            sortData(currentSort);
+        }
+
+        function exportToCSV() {
+            const headers = ['Rank', 'Player Name', 'Role', 'Relic Cores', 'Attack Power'];
+            const csvContent = [
+                headers.join(','),
+                ...filteredData.map((player, index) => [
+                    index + 1,
+                    `"${player.name}"`,
+                    player.role,
+                    player.cores,
+                    player.attack
+                ].join(','))
+            ].join('\n');
+            
+            const blob = new Blob([csvContent], { type: 'text/csv' });
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'StrayToFreedom_clan_stats.csv';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            window.URL.revokeObjectURL(url);
+        }
+
+        function showGloryHistory() {
+            document.getElementById('gloryModal').style.display = 'block';
+        }
+
+        function closeGloryHistory() {
+            document.getElementById('gloryModal').style.display = 'none';
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            const modal = document.getElementById('gloryModal');
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        }
+
+        // Event listeners
+        document.getElementById('sortSelect').addEventListener('change', (e) => {
+            sortData(e.target.value);
+        });
+
+        document.getElementById('searchInput').addEventListener('input', (e) => {
+            filterData(e.target.value);
+        });
+
+        // Initialize table
+        sortData('rank');
+    </script>
+</body>
+</html>
