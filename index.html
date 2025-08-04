@@ -8,24 +8,25 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 20px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
             min-height: 100vh;
-            color: #333;
+            color: #e2e8f0;
         }
         
         .container {
-            background: rgba(255, 255, 255, 0.95);
+            background: rgba(26, 32, 44, 0.95);
             border-radius: 15px;
             padding: 30px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
             backdrop-filter: blur(10px);
             max-width: 1200px;
             margin: 0 auto;
+            border: 1px solid #4a5568;
         }
         
         h1 {
             text-align: center;
-            color: #4a5568;
+            color: #f7fafc;
             margin-bottom: 10px;
             font-size: 2.5em;
             font-weight: 700;
@@ -37,7 +38,7 @@
         
         .clan-name {
             text-align: center;
-            color: #718096;
+            color: #a0aec0;
             font-size: 1.2em;
             margin-bottom: 30px;
             font-weight: 500;
@@ -53,17 +54,18 @@
         
         select, input {
             padding: 10px 15px;
-            border: 2px solid #e2e8f0;
+            border: 2px solid #4a5568;
             border-radius: 8px;
             font-size: 14px;
             transition: all 0.3s ease;
-            background: white;
+            background: #2d3748;
+            color: #e2e8f0;
         }
         
         select:focus, input:focus {
             outline: none;
             border-color: #667eea;
-            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.3);
         }
         
         .search-box {
@@ -75,10 +77,10 @@
             width: 100%;
             border-collapse: collapse;
             margin-top: 20px;
-            background: white;
+            background: #2d3748;
             border-radius: 12px;
             overflow: hidden;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
         }
         
         th {
@@ -94,22 +96,23 @@
         
         td {
             padding: 12px;
-            border-bottom: 1px solid #f7fafc;
+            border-bottom: 1px solid #4a5568;
             transition: background-color 0.2s ease;
+            color: #e2e8f0;
         }
         
         tr:hover {
-            background-color: #f8f9ff;
+            background-color: #374151;
         }
         
         tr:nth-child(even) {
-            background-color: #fafbff;
+            background-color: #374151;
         }
         
         .rank-cell {
             font-weight: 600;
-            color: #4a5568;
-            background: linear-gradient(135deg, #f7fafc, #edf2f7);
+            color: #f7fafc;
+            background: linear-gradient(135deg, #4a5568, #2d3748);
             border-radius: 6px;
             text-align: center;
             width: 60px;
@@ -117,14 +120,14 @@
         
         .name-cell {
             font-weight: 500;
-            color: #2d3748;
+            color: #f7fafc;
             max-width: 200px;
             word-break: break-word;
         }
         
         .cores-cell {
             font-weight: 600;
-            color: #805ad5;
+            color: #b794f6;
             text-align: center;
         }
         
@@ -132,40 +135,31 @@
             font-weight: 600;
             text-align: center;
             padding: 8px 12px;
-            border-radius: 20px;
             font-size: 12px;
             text-transform: uppercase;
             letter-spacing: 0.5px;
         }
         
         .role-leader {
-            background: linear-gradient(135deg, #ffd700, #ffed4e);
-            color: #744210;
-            border: 2px solid #d69e2e;
+            color: #fc8181;
         }
         
-        .role-vice-leader {
-            background: linear-gradient(135deg, #c0c0c0, #e2e8f0);
-            color: #4a5568;
-            border: 2px solid #a0aec0;
+        .role-viceleader {
+            color: #ed8936;
         }
         
         .role-member {
-            background: linear-gradient(135deg, #e6fffa, #b2f5ea);
-            color: #285e61;
-            border: 2px solid #4fd1c7;
+            color: #f7fafc;
         }
         
         .role-glorymember {
-            background: linear-gradient(135deg, #fbb6ce, #f687b3);
-            color: #97266d;
-            border: 2px solid #ed64a6;
+            color: #ffd700;
             animation: glow 2s ease-in-out infinite alternate;
         }
         
         @keyframes glow {
-            from { box-shadow: 0 0 5px #ed64a6; }
-            to { box-shadow: 0 0 15px #ed64a6, 0 0 20px #ed64a6; }
+            from { text-shadow: 0 0 5px #ffd700; }
+            to { text-shadow: 0 0 15px #ffd700, 0 0 20px #ffd700; }
         }
         
         .stats-summary {
@@ -271,9 +265,11 @@
                 <option value="name">Sort by Name</option>
                 <option value="cores">Sort by Relic Cores</option>
                 <option value="attack">Sort by Attack</option>
+                <option value="role">Sort by Role</option>
             </select>
             <button class="export-btn" onclick="exportToCSV()">Export CSV</button>
             <button class="export-btn" onclick="showGloryHistory()">Glory History</button>
+            <button class="export-btn" onclick="showLMEHistory()">LME History</button>
         </div>
         
         <table id="playerTable">
@@ -290,6 +286,58 @@
             </tbody>
         </table>
 
+        <!-- LME History Modal -->
+        <div id="lmeModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 1000;">
+            <div style="position: relative; margin: 2% auto; padding: 20px; background: #2d3748; border-radius: 15px; max-width: 95%; width: 800px; max-height: 90%; overflow-y: auto; border: 1px solid #4a5568;">
+                <span onclick="closeLMEHistory()" style="position: absolute; top: 10px; right: 15px; font-size: 24px; cursor: pointer; color: #a0aec0;">&times;</span>
+                <h2 style="color: #f7fafc; margin-bottom: 20px; text-align: center; font-size: 1.5em; margin-top: 10px;">🌙 LME History</h2>
+                
+                <div style="background: #374151; padding: 15px; border-radius: 10px; border-left: 4px solid #667eea; overflow-x: auto;">
+                    <table style="width: 100%; border-collapse: collapse; min-width: 500px;">
+                        <thead>
+                            <tr style="background: #667eea; color: white;">
+                                <th style="padding: 10px 8px; text-align: left; font-size: 12px;">Season</th>
+                                <th style="padding: 10px 8px; text-align: center; font-size: 12px;">Position</th>
+                                <th style="padding: 10px 8px; text-align: center; font-size: 12px;">Def/Atk</th>
+                                <th style="padding: 10px 8px; text-align: center; font-size: 12px;">Medal</th>
+                                <th style="padding: 10px 8px; text-align: center; font-size: 12px;">League</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border-bottom: 1px solid #4a5568;">
+                                <td style="padding: 10px 8px; font-weight: 600; color: #f7fafc; font-size: 14px;">LME #1</td>
+                                <td style="padding: 10px 8px; text-align: center; color: #ffd700; font-weight: 600; font-size: 14px;">#1</td>
+                                <td style="padding: 10px 8px; text-align: center; color: #a0aec0; font-size: 14px;">3</td>
+                                <td style="padding: 10px 8px; text-align: center; color: #68d391; font-size: 14px;">99,415</td>
+                                <td style="padding: 10px 8px; text-align: center; color: #ffd700; font-size: 14px;">Elite 1</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #4a5568;">
+                                <td style="padding: 10px 8px; font-weight: 600; color: #f7fafc; font-size: 14px;">LME #2</td>
+                                <td style="padding: 10px 8px; text-align: center; color: #a0aec0; font-size: 14px;">TBD</td>
+                                <td style="padding: 10px 8px; text-align: center; color: #a0aec0; font-size: 14px;">TBD</td>
+                                <td style="padding: 10px 8px; text-align: center; color: #a0aec0; font-size: 14px;">TBD</td>
+                                <td style="padding: 10px 8px; text-align: center; color: #a0aec0; font-size: 14px;">TBD</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #4a5568;">
+                                <td style="padding: 10px 8px; font-weight: 600; color: #f7fafc; font-size: 14px;">LME #3</td>
+                                <td style="padding: 10px 8px; text-align: center; color: #a0aec0; font-size: 14px;">TBD</td>
+                                <td style="padding: 10px 8px; text-align: center; color: #a0aec0; font-size: 14px;">TBD</td>
+                                <td style="padding: 10px 8px; text-align: center; color: #a0aec0; font-size: 14px;">TBD</td>
+                                <td style="padding: 10px 8px; text-align: center; color: #a0aec0; font-size: 14px;">TBD</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 10px 8px; font-weight: 600; color: #f7fafc; font-size: 14px;">LME #4</td>
+                                <td style="padding: 10px 8px; text-align: center; color: #a0aec0; font-size: 14px;">TBD</td>
+                                <td style="padding: 10px 8px; text-align: center; color: #a0aec0; font-size: 14px;">TBD</td>
+                                <td style="padding: 10px 8px; text-align: center; color: #a0aec0; font-size: 14px;">TBD</td>
+                                <td style="padding: 10px 8px; text-align: center; color: #a0aec0; font-size: 14px;">TBD</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
         <!-- Glory History Modal -->
         <div id="gloryModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 1000;">
             <div style="position: relative; margin: 5% auto; padding: 30px; background: white; border-radius: 15px; max-width: 800px; max-height: 80%; overflow-y: auto;">
@@ -297,16 +345,16 @@
                 <h2 style="color: #4a5568; margin-bottom: 20px; text-align: center;">🏆 Glory Members History</h2>
                 
                 <div style="margin-bottom: 30px;">
-                    <h3 style="color: #667eea; margin-bottom: 15px;">📅 Current Week (Week 1)</h3>
+                    <h3 style="color: #667eea; margin-bottom: 15px;">📅 Current Week (Week 2)</h3>
                     <div style="display: flex; flex-wrap: wrap; gap: 15px;">
-                        <div style="background: linear-gradient(135deg, #fbb6ce, #f687b3); padding: 15px; border-radius: 10px; flex: 1; min-width: 200px; text-align: center; color: #97266d; font-weight: 600;">
-                            mc2084<br><small>10+ Cores | 329K Attack</small>
+                        <div style="background: linear-gradient(135deg, #ffd700, #f6e05e); padding: 15px; border-radius: 10px; flex: 1; min-width: 200px; text-align: center; color: #744210; font-weight: 600;">
+                            SmallBoto<br><small>20+ Cores | 315K Attack</small>
                         </div>
-                        <div style="background: linear-gradient(135deg, #fbb6ce, #f687b3); padding: 15px; border-radius: 10px; flex: 1; min-width: 200px; text-align: center; color: #97266d; font-weight: 600;">
-                            Lemminkäinen<br><small>5+ Cores | 218K Attack</small>
+                        <div style="background: linear-gradient(135deg, #ffd700, #f6e05e); padding: 15px; border-radius: 10px; flex: 1; min-width: 200px; text-align: center; color: #744210; font-weight: 600;">
+                            HannaM<br><small>5+ Cores | 228K Attack</small>
                         </div>
-                        <div style="background: linear-gradient(135deg, #fbb6ce, #f687b3); padding: 15px; border-radius: 10px; flex: 1; min-width: 200px; text-align: center; color: #97266d; font-weight: 600;">
-                            Player 78792329<br><small>0+ Cores | 244K Attack</small>
+                        <div style="background: linear-gradient(135deg, #ffd700, #f6e05e); padding: 15px; border-radius: 10px; flex: 1; min-width: 200px; text-align: center; color: #744210; font-weight: 600;">
+                            slaterhoㅣStray<br><small>5+ Cores | 170K Attack</small>
                         </div>
                     </div>
                 </div>
@@ -328,7 +376,7 @@
                                 </tr>
                                 <tr style="border-bottom: 1px solid #e2e8f0;">
                                     <td style="padding: 10px; font-weight: 600;">2</td>
-                                    <td style="padding: 10px;">TBD</td>
+                                    <td style="padding: 10px;">SmallBoto, HannaM, slaterhoㅣStray</td>
                                 </tr>
                                 <tr style="border-bottom: 1px solid #e2e8f0;">
                                     <td style="padding: 10px; font-weight: 600;">3</td>
@@ -373,147 +421,10 @@
             { name: "Belthazar", cores: "35+", attack: 590300, coresNum: 35, role: "Member" },
             { name: "Asdgner", cores: "30+", attack: 296600, coresNum: 30, role: "Member" },
             { name: "Beef4Brains", cores: "25+", attack: 561500, coresNum: 25, role: "Member" },
-            { name: "SmallBoto", cores: "20+", attack: 314600, coresNum: 20, role: "Member" },
+            { name: "SmallBoto", cores: "20+", attack: 314600, coresNum: 20, role: "Glory Member" },
             { name: "DemoncracyㅣStray", cores: "20+", attack: 404200, coresNum: 20, role: "Vice-Leader" },
             { name: "StrayKucsika97", cores: "20+", attack: 413000, coresNum: 20, role: "Member" },
             { name: "6J4", cores: "20+", attack: 458700, coresNum: 20, role: "Member" },
             { name: "HideOnBushs", cores: "20+", attack: 495300, coresNum: 20, role: "Member" },
             { name: "swifft", cores: "15+", attack: 303300, coresNum: 15, role: "Member" },
-            { name: "NarutoUzuma", cores: "10+", attack: 275300, coresNum: 10, role: "Member" },
-            { name: "mc2084", cores: "10+", attack: 329000, coresNum: 10, role: "Glory Member" },
-            { name: "2xc3ˢᵗʳᵃʸ", cores: "10+", attack: 249000, coresNum: 10, role: "Member" },
-            { name: "HannaM", cores: "5+", attack: 227800, coresNum: 5, role: "Member" },
-            { name: "Lemminkäinen", cores: "5+", attack: 218100, coresNum: 5, role: "Glory Member" },
-            { name: "Szoj", cores: "5+", attack: 238000, coresNum: 5, role: "Member" },
-            { name: "Coopet┃Stray", cores: "5+", attack: 269000, coresNum: 5, role: "Member" },
-            { name: "Pookaz", cores: "5+", attack: 241400, coresNum: 5, role: "Member" },
-            { name: "bol4nd3ng", cores: "5+", attack: 145100, coresNum: 5, role: "Member" },
-            { name: "ByRess", cores: "5+", attack: 207800, coresNum: 5, role: "Member" },
-            { name: "Chumuzuke", cores: "5+", attack: 242100, coresNum: 5, role: "Member" },
-            { name: "slaterhoㅣStray", cores: "5+", attack: 170000, coresNum: 5, role: "Member" },
-            { name: "D1L3R_PL", cores: "5+", attack: 175100, coresNum: 5, role: "Member" },
-            { name: "mo265489", cores: "5+", attack: 209100, coresNum: 5, role: "Member" },
-            { name: "Ruzagi", cores: "0+", attack: 169400, coresNum: 0, role: "Member" },
-            { name: "lct404", cores: "0+", attack: 175400, coresNum: 0, role: "Member" },
-            { name: "khoprademon", cores: "0+", attack: 188000, coresNum: 0, role: "Member" },
-            { name: "Player 78792329", cores: "0+", attack: 244100, coresNum: 0, role: "Glory Member" },
-            { name: "j__d1", cores: "0+", attack: 129800, coresNum: 0, role: "Member" },
-            { name: "offBait", cores: "0+", attack: 124600, coresNum: 0, role: "Member" },
-            { name: "13mpty", cores: "0+", attack: 200200, coresNum: 0, role: "Member" }
-        ];
-
-        let filteredData = [...playerData];
-        let currentSort = 'rank';
-
-        function formatNumber(num) {
-            if (num >= 1000000) {
-                return (num / 1000000).toFixed(3) + 'M';
-            } else if (num >= 1000) {
-                return (num / 1000).toFixed(1) + 'K';
-            }
-            return num.toLocaleString();
-        }
-
-        function renderTable() {
-            const tbody = document.getElementById('tableBody');
-            tbody.innerHTML = '';
-            
-            filteredData.forEach((player, index) => {
-                const row = document.createElement('tr');
-                row.innerHTML = `
-                    <td class="rank-cell">${index + 1}</td>
-                    <td class="name-cell">${player.name}</td>
-                    <td class="role-cell role-${player.role.toLowerCase().replace('-', '')}">${player.role}</td>
-                    <td class="cores-cell">${player.cores}</td>
-                    <td class="attack-cell">${formatNumber(player.attack)}</td>
-                `;
-                tbody.appendChild(row);
-            });
-        }
-
-        function sortData(criteria) {
-            currentSort = criteria;
-            
-            switch(criteria) {
-                case 'name':
-                    filteredData.sort((a, b) => a.name.localeCompare(b.name));
-                    break;
-                case 'cores':
-                    filteredData.sort((a, b) => b.coresNum - a.coresNum);
-                    break;
-                case 'attack':
-                    filteredData.sort((a, b) => b.attack - a.attack);
-                    break;
-                default: // rank - by relic cores descending
-                    filteredData.sort((a, b) => {
-                        if (b.coresNum !== a.coresNum) {
-                            return b.coresNum - a.coresNum;
-                        }
-                        return b.attack - a.attack;
-                    });
-            }
-            
-            renderTable();
-        }
-
-        function filterData(searchTerm) {
-            filteredData = playerData.filter(player => 
-                player.name.toLowerCase().includes(searchTerm.toLowerCase())
-            );
-            sortData(currentSort);
-        }
-
-        function exportToCSV() {
-            const headers = ['Rank', 'Player Name', 'Role', 'Relic Cores', 'Attack Power'];
-            const csvContent = [
-                headers.join(','),
-                ...filteredData.map((player, index) => [
-                    index + 1,
-                    `"${player.name}"`,
-                    player.role,
-                    player.cores,
-                    player.attack
-                ].join(','))
-            ].join('\n');
-            
-            const blob = new Blob([csvContent], { type: 'text/csv' });
-            const url = window.URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = 'StrayToFreedom_clan_stats.csv';
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-            window.URL.revokeObjectURL(url);
-        }
-
-        function showGloryHistory() {
-            document.getElementById('gloryModal').style.display = 'block';
-        }
-
-        function closeGloryHistory() {
-            document.getElementById('gloryModal').style.display = 'none';
-        }
-
-        // Close modal when clicking outside
-        window.onclick = function(event) {
-            const modal = document.getElementById('gloryModal');
-            if (event.target === modal) {
-                modal.style.display = 'none';
-            }
-        }
-
-        // Event listeners
-        document.getElementById('sortSelect').addEventListener('change', (e) => {
-            sortData(e.target.value);
-        });
-
-        document.getElementById('searchInput').addEventListener('input', (e) => {
-            filterData(e.target.value);
-        });
-
-        // Initialize table
-        sortData('rank');
-    </script>
-</body>
-</html>
+            { name: "NarutoUzuma", cores: "10+", attack: 275300, coresNum: 10, 
