@@ -285,7 +285,8 @@
             <tbody id="tableBody">
             </tbody>
         </table>
-<!-- LME History Modal -->
+
+        <!-- LME History Modal -->
         <div id="lmeModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 1000;">
             <div style="position: relative; margin: 2% auto; padding: 20px; background: #2d3748; border-radius: 15px; max-width: 95%; width: 800px; max-height: 90%; overflow-y: auto; border: 1px solid #4a5568;">
                 <span onclick="closeLMEHistory()" style="position: absolute; top: 10px; right: 15px; font-size: 24px; cursor: pointer; color: #a0aec0;">&times;</span>
@@ -520,3 +521,72 @@
             filteredData = playerData.filter(player => 
                 player.name.toLowerCase().includes(searchTerm.toLowerCase())
             );
+            sortData(currentSort);
+        }
+
+        function exportToCSV() {
+            const headers = ['Rank', 'Player Name', 'Role', 'Relic Cores', 'Attack Power'];
+            const csvContent = [
+                headers.join(','),
+                ...filteredData.map((player, index) => [
+                    index + 1,
+                    `"${player.name}"`,
+                    player.role,
+                    player.cores,
+                    player.attack
+                ].join(','))
+            ].join('\n');
+            
+            const blob = new Blob([csvContent], { type: 'text/csv' });
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'StrayToFreedom_clan_stats.csv';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            window.URL.revokeObjectURL(url);
+        }
+
+        function showLMEHistory() {
+            document.getElementById('lmeModal').style.display = 'block';
+        }
+
+        function closeLMEHistory() {
+            document.getElementById('lmeModal').style.display = 'none';
+        }
+
+        function showGloryHistory() {
+            document.getElementById('gloryModal').style.display = 'block';
+        }
+
+        function closeGloryHistory() {
+            document.getElementById('gloryModal').style.display = 'none';
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            const gloryModal = document.getElementById('gloryModal');
+            const lmeModal = document.getElementById('lmeModal');
+            if (event.target === gloryModal) {
+                gloryModal.style.display = 'none';
+            }
+            if (event.target === lmeModal) {
+                lmeModal.style.display = 'none';
+            }
+        }
+
+        // Event listeners
+        document.getElementById('sortSelect').addEventListener('change', (e) => {
+            sortData(e.target.value);
+        });
+
+        document.getElementById('searchInput').addEventListener('input', (e) => {
+            filterData(e.target.value);
+        });
+
+        // Initialize table
+        sortData('rank');
+    </script>
+</body>
+</html>
