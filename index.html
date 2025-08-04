@@ -288,8 +288,8 @@
         </table>
 
         <!-- LME History Modal -->
-        <div id="lmeModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 1000;">
-            <div style="position: relative; margin: 2% auto; padding: 20px; background: #2d3748; border-radius: 15px; max-width: 95%; width: 800px; max-height: 90%; overflow-y: auto; border: 1px solid #4a5568;">
+        <div id="lmeModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 1000; overflow-y: auto;">
+            <div id="lmeModalContent" style="position: relative; margin: 20px auto; padding: 20px; background: #2d3748; border-radius: 15px; max-width: 95%; width: 800px; max-height: 90vh; overflow-y: auto; border: 1px solid #4a5568;">
                 <span onclick="closeLMEHistory()" style="position: absolute; top: 10px; right: 15px; font-size: 24px; cursor: pointer; color: #a0aec0;">&times;</span>
                 <h2 style="color: #f7fafc; margin-bottom: 20px; text-align: center; font-size: 1.5em; margin-top: 10px;">🌙 LME History</h2>
                 
@@ -340,8 +340,8 @@
         </div>
 
         <!-- Glory History Modal -->
-        <div id="gloryModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 1000;">
-            <div style="position: relative; margin: 5% auto; padding: 30px; background: white; border-radius: 15px; max-width: 800px; max-height: 80%; overflow-y: auto;">
+        <div id="gloryModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 1000; overflow-y: auto;">
+            <div id="gloryModalContent" style="position: relative; margin: 20px auto; padding: 30px; background: white; border-radius: 15px; max-width: 800px; max-height: 90vh; overflow-y: auto;">
                 <span onclick="closeGloryHistory()" style="position: absolute; top: 15px; right: 25px; font-size: 30px; cursor: pointer; color: #999;">&times;</span>
                 <h2 style="color: #4a5568; margin-bottom: 20px; text-align: center;">🏆 Glory Members History</h2>
                 
@@ -551,7 +551,39 @@
         }
 
         function showLMEHistory() {
-            document.getElementById('lmeModal').style.display = 'block';
+            const modal = document.getElementById('lmeModal');
+            const modalContent = document.getElementById('lmeModalContent');
+            
+            // Show modal first
+            modal.style.display = 'block';
+            
+            // Get button position and viewport info
+            const button = event.target;
+            const buttonRect = button.getBoundingClientRect();
+            const scrollY = window.scrollY || window.pageYOffset;
+            const viewportHeight = window.innerHeight;
+            
+            // Calculate desired position (button's position + scroll offset)
+            const targetTop = buttonRect.top + scrollY;
+            
+            // Adjust for mobile - ensure modal content is visible
+            const modalHeight = Math.min(viewportHeight * 0.8, 600); // Max 80% of viewport or 600px
+            let adjustedTop = targetTop;
+            
+            // If modal would go below viewport, adjust upward
+            if (targetTop + modalHeight > scrollY + viewportHeight) {
+                adjustedTop = Math.max(20, scrollY + viewportHeight - modalHeight - 20);
+            }
+            
+            // If modal would go above viewport, adjust downward  
+            if (adjustedTop < scrollY + 20) {
+                adjustedTop = scrollY + 20;
+            }
+            
+            // Apply the calculated position
+            modalContent.style.marginTop = adjustedTop + 'px';
+            modalContent.style.marginBottom = '20px';
+            modalContent.style.maxHeight = modalHeight + 'px';
         }
 
         function closeLMEHistory() {
@@ -559,7 +591,39 @@
         }
 
         function showGloryHistory() {
-            document.getElementById('gloryModal').style.display = 'block';
+            const modal = document.getElementById('gloryModal');
+            const modalContent = document.getElementById('gloryModalContent');
+            
+            // Show modal first
+            modal.style.display = 'block';
+            
+            // Get button position and viewport info
+            const button = event.target;
+            const buttonRect = button.getBoundingClientRect();
+            const scrollY = window.scrollY || window.pageYOffset;
+            const viewportHeight = window.innerHeight;
+            
+            // Calculate desired position (button's position + scroll offset)
+            const targetTop = buttonRect.top + scrollY;
+            
+            // Adjust for mobile - ensure modal content is visible
+            const modalHeight = Math.min(viewportHeight * 0.8, 700); // Max 80% of viewport or 700px
+            let adjustedTop = targetTop;
+            
+            // If modal would go below viewport, adjust upward
+            if (targetTop + modalHeight > scrollY + viewportHeight) {
+                adjustedTop = Math.max(20, scrollY + viewportHeight - modalHeight - 20);
+            }
+            
+            // If modal would go above viewport, adjust downward  
+            if (adjustedTop < scrollY + 20) {
+                adjustedTop = scrollY + 20;
+            }
+            
+            // Apply the calculated position
+            modalContent.style.marginTop = adjustedTop + 'px';
+            modalContent.style.marginBottom = '20px';
+            modalContent.style.maxHeight = modalHeight + 'px';
         }
 
         function closeGloryHistory() {
