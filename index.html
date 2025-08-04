@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -285,8 +285,7 @@
             <tbody id="tableBody">
             </tbody>
         </table>
-
-        <!-- LME History Modal -->
+<!-- LME History Modal -->
         <div id="lmeModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 1000;">
             <div style="position: relative; margin: 2% auto; padding: 20px; background: #2d3748; border-radius: 15px; max-width: 95%; width: 800px; max-height: 90%; overflow-y: auto; border: 1px solid #4a5568;">
                 <span onclick="closeLMEHistory()" style="position: absolute; top: 10px; right: 15px; font-size: 24px; cursor: pointer; color: #a0aec0;">&times;</span>
@@ -427,4 +426,97 @@
             { name: "6J4", cores: "20+", attack: 458700, coresNum: 20, role: "Member" },
             { name: "HideOnBushs", cores: "20+", attack: 495300, coresNum: 20, role: "Member" },
             { name: "swifft", cores: "15+", attack: 303300, coresNum: 15, role: "Member" },
-            { name: "NarutoUzuma", cores: "10+", attack: 275300, coresNum: 10, 
+            { name: "NarutoUzuma", cores: "10+", attack: 275300, coresNum: 10, role: "Member" },
+            { name: "mc2084", cores: "10+", attack: 329000, coresNum: 10, role: "Member" },
+            { name: "2xc3ˢᵗʳᵃʸ", cores: "10+", attack: 249000, coresNum: 10, role: "Member" },
+            { name: "HannaM", cores: "5+", attack: 227800, coresNum: 5, role: "Glory Member" },
+            { name: "Lemminkäinen", cores: "5+", attack: 218100, coresNum: 5, role: "Member" },
+            { name: "Szoj", cores: "5+", attack: 238000, coresNum: 5, role: "Member" },
+            { name: "Coopet┃Stray", cores: "5+", attack: 269000, coresNum: 5, role: "Member" },
+            { name: "Pookaz", cores: "5+", attack: 241400, coresNum: 5, role: "Member" },
+            { name: "bol4nd3ng", cores: "5+", attack: 145100, coresNum: 5, role: "Member" },
+            { name: "ByRess", cores: "5+", attack: 207800, coresNum: 5, role: "Member" },
+            { name: "Chumuzuke", cores: "5+", attack: 242100, coresNum: 5, role: "Member" },
+            { name: "slaterhoㅣStray", cores: "5+", attack: 170000, coresNum: 5, role: "Glory Member" },
+            { name: "D1L3R_PL", cores: "5+", attack: 175100, coresNum: 5, role: "Member" },
+            { name: "mo265489", cores: "5+", attack: 209100, coresNum: 5, role: "Member" },
+            { name: "Ruzagi", cores: "0+", attack: 169400, coresNum: 0, role: "Member" },
+            { name: "lct404", cores: "0+", attack: 175400, coresNum: 0, role: "Member" },
+            { name: "khoprademon", cores: "0+", attack: 188000, coresNum: 0, role: "Member" },
+            { name: "Player 78792329", cores: "0+", attack: 244100, coresNum: 0, role: "Member" },
+            { name: "j__d1", cores: "0+", attack: 129800, coresNum: 0, role: "Member" },
+            { name: "offBait", cores: "0+", attack: 124600, coresNum: 0, role: "Member" },
+            { name: "13mpty", cores: "0+", attack: 200200, coresNum: 0, role: "Member" }
+        ];
+
+        let filteredData = [...playerData];
+        let currentSort = 'rank';
+
+        function formatNumber(num) {
+            if (num >= 1000000) {
+                return (num / 1000000).toFixed(3) + 'M';
+            } else if (num >= 1000) {
+                return (num / 1000).toFixed(1) + 'K';
+            }
+            return num.toLocaleString();
+        }
+
+        function renderTable() {
+            const tbody = document.getElementById('tableBody');
+            tbody.innerHTML = '';
+            
+            filteredData.forEach((player, index) => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td class="rank-cell">${index + 1}</td>
+                    <td class="name-cell">${player.name}</td>
+                    <td class="role-cell role-${player.role.toLowerCase().replace(/[\s-]/g, '')}">${player.role}</td>
+                    <td class="cores-cell">${player.cores}</td>
+                    <td class="attack-cell">${formatNumber(player.attack)}</td>
+                `;
+                tbody.appendChild(row);
+            });
+        }
+
+        function sortData(criteria) {
+            currentSort = criteria;
+            
+            switch(criteria) {
+                case 'name':
+                    filteredData.sort((a, b) => a.name.localeCompare(b.name));
+                    break;
+                case 'cores':
+                    filteredData.sort((a, b) => b.coresNum - a.coresNum);
+                    break;
+                case 'attack':
+                    filteredData.sort((a, b) => b.attack - a.attack);
+                    break;
+                case 'role':
+                    // Define role hierarchy: Leader > Vice-Leader > Glory Member > Member
+                    const roleOrder = { 'Leader': 1, 'Vice-Leader': 2, 'Glory Member': 3, 'Member': 4 };
+                    filteredData.sort((a, b) => {
+                        const roleA = roleOrder[a.role] || 5;
+                        const roleB = roleOrder[b.role] || 5;
+                        if (roleA !== roleB) {
+                            return roleA - roleB;
+                        }
+                        // If same role, sort by cores descending
+                        return b.coresNum - a.coresNum;
+                    });
+                    break;
+                default: // rank - by relic cores descending
+                    filteredData.sort((a, b) => {
+                        if (b.coresNum !== a.coresNum) {
+                            return b.coresNum - a.coresNum;
+                        }
+                        return b.attack - a.attack;
+                    });
+            }
+            
+            renderTable();
+        }
+
+        function filterData(searchTerm) {
+            filteredData = playerData.filter(player => 
+                player.name.toLowerCase().includes(searchTerm.toLowerCase())
+            );
