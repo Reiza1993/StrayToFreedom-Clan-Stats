@@ -365,64 +365,48 @@
 
         <!-- Glory History Modal -->
         <div id="gloryModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 1000; overflow-y: auto;">
-            <div id="gloryModalContent" style="position: relative; margin: 20px auto; padding: 30px; background: white; border-radius: 15px; max-width: 800px; max-height: 90vh; overflow-y: auto;">
-                <span onclick="closeGloryHistory()" style="position: absolute; top: 15px; right: 25px; font-size: 30px; cursor: pointer; color: #999;">&times;</span>
-                <h2 style="color: #4a5568; margin-bottom: 20px; text-align: center;">🏆 Glory Members History</h2>
+            <div id="gloryModalContent" style="position: relative; margin: 20px auto; padding: 20px; background: #2d3748; border-radius: 15px; max-width: 95%; width: 800px; max-height: 90vh; overflow-y: auto; border: 1px solid #4a5568;">
+                <span onclick="closeGloryHistory()" style="position: absolute; top: 10px; right: 15px; font-size: 24px; cursor: pointer; color: #a0aec0;">&times;</span>
+                <h2 style="color: #f7fafc; margin-bottom: 20px; text-align: center; font-size: 1.5em; margin-top: 10px;">🏆 Glory Members History</h2>
                 
-                <div style="margin-bottom: 30px;">
-                    <h3 style="color: #667eea; margin-bottom: 15px;">📅 Current Week (Week 4)</h3>
-                    <div style="display: flex; flex-wrap: wrap; gap: 15px;">
-                        <div style="background: linear-gradient(135deg, #ffd700, #f6e05e); padding: 15px; border-radius: 10px; flex: 1; min-width: 200px; text-align: center; color: #744210; font-weight: 600;">
-                            MrPlusUltra<br><small>50+ Cores | 646K Attack</small>
-                        </div>
-                        <div style="background: linear-gradient(135deg, #ffd700, #f6e05e); padding: 15px; border-radius: 10px; flex: 1; min-width: 200px; text-align: center; color: #744210; font-weight: 600;">
-                            N0M3rcy<br><small>35+ Cores | 635K Attack</small>
-                        </div>
-                        <div style="background: linear-gradient(135deg, #ffd700, #f6e05e); padding: 15px; border-radius: 10px; flex: 1; min-width: 200px; text-align: center; color: #744210; font-weight: 600;">
-                            Belthazar<br><small>35+ Cores | 674K Attack</small>
-                        </div>
-                    </div>
-                </div>
+                <table style="width: 100%; border-collapse: collapse; background: #2d3748; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4); font-size: 14px;">
+                    <thead>
+                        <tr>
+                            <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 12px 8px; text-align: center; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px;">Week</th>
+                            <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 12px 8px; text-align: center; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px;">Glory Members</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="background: linear-gradient(135deg, #ffd700, #f6e05e); border-bottom: 1px solid #4a5568;">
+                            <td style="padding: 12px 8px; color: #744210; text-align: center; font-weight: 600; font-size: 13px;">5</td>
+                            <td style="padding: 12px 8px; color: #744210; text-align: center; font-weight: 600; font-size: 13px;">BobBobberson, Lemminkäinen, Player 78792329</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #4a5568;">
+                            <td style="padding: 10px 6px; color: #e2e8f0; text-align: center; font-weight: 600; font-size: 13px;">4</td>
+                            <td style="padding: 10px 6px; color: #e2e8f0; text-align: center; font-size: 13px;">MrPlusUltra, N0M3rcy, Belthazar</td>
+                        </tr>
+                        <tr style="background-color: #374151; border-bottom: 1px solid #4a5568;">
+                            <td style="padding: 10px 6px; color: #e2e8f0; text-align: center; font-weight: 600; font-size: 13px;">3</td>
+                            <td style="padding: 10px 6px; color: #e2e8f0; text-align: center; font-size: 13px;">Beef4Brains, Pookaz, 2xc3ˢᵗʳᵃʸ</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #4a5568;">
+                            <td style="padding: 10px 6px; color: #e2e8f0; text-align: center; font-weight: 600; font-size: 13px;">2</td>
+                            <td style="padding: 10px 6px; color: #e2e8f0; text-align: center; font-size: 13px;">SmallBoto, HannaM, slaterhoㅣStray</td>
+                        </tr>
+                        <tr style="background-color: #374151;">
+                            <td style="padding: 10px 6px; color: #e2e8f0; text-align: center; font-weight: 600; font-size: 13px;">1</td>
+                            <td style="padding: 10px 6px; color: #e2e8f0; text-align: center; font-size: 13px;">mc2084, Lemminkäinen, Player 78792329</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-                <div style="margin-bottom: 30px;">
-                    <h3 style="color: #667eea; margin-bottom: 15px;">📊 Past Glory Members</h3>
-                    <div style="background: #f8f9ff; padding: 20px; border-radius: 10px; border-left: 4px solid #667eea;">
-                        <table style="width: 100%; border-collapse: collapse;">
-                            <thead>
-                                <tr style="background: #667eea; color: white;">
-                                    <th style="padding: 10px; text-align: left;">Week</th>
-                                    <th style="padding: 10px; text-align: left;">Glory Members</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr style="border-bottom: 1px solid #e2e8f0;">
-                                    <td style="padding: 10px; font-weight: 600;">1</td>
-                                    <td style="padding: 10px;">mc2084, Lemminkäinen, Player 78792329</td>
-                                </tr>
-                                <tr style="border-bottom: 1px solid #e2e8f0;">
-                                    <td style="padding: 10px; font-weight: 600;">2</td>
-                                    <td style="padding: 10px;">SmallBoto, HannaM, slaterhoㅣStray</td>
-                                </tr>
-                                <tr style="border-bottom: 1px solid #e2e8f0;">
-                                    <td style="padding: 10px; font-weight: 600;">3</td>
-                                    <td style="padding: 10px;">Beef4Brains, Pookaz, 2xc3ˢᵗʳᵃʸ</td>
-                                </tr>
-                                <tr>
-                                    <td style="padding: 10px; font-weight: 600;">4</td>
-                                    <td style="padding: 10px;">MrPlusUltra, N0M3rcy, Belthazar</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
-                <div style="background: linear-gradient(135deg, #e6fffa, #b2f5ea); padding: 20px; border-radius: 10px; text-align: center; margin-bottom: 20px;">
+                <div style="background: linear-gradient(135deg, #e6fffa, #b2f5ea); padding: 20px; border-radius: 10px; text-align: center; margin-top: 20px;">
                     <h4 style="color: #285e61; margin-bottom: 10px;">🗺️ About Glory Members</h4>
                     <p style="color: #285e61; margin: 5px 0; font-weight: 600;">Glory Members are selected based on Clan Exploration rankings</p>
                     <p style="color: #285e61; margin: 5px 0;">Top performers in weekly exploration activities earn this special recognition</p>
                 </div>
 
-                <div style="background: linear-gradient(135deg, #e6fffa, #b2f5ea); padding: 20px; border-radius: 10px; text-align: center;">
+                <div style="background: linear-gradient(135deg, #e6fffa, #b2f5ea); padding: 20px; border-radius: 10px; text-align: center; margin-top: 15px;">
                     <h4 style="color: #285e61; margin-bottom: 10px;">🌟 Glory Member Rewards</h4>
                     <p style="color: #285e61; margin: 5px 0;">• 800 Gems</p>
                     <p style="color: #285e61; margin: 5px 0;">• 100 Energy</p>
@@ -438,13 +422,13 @@
             { name: "Shadowage", cores: "125+", attack: 1113900, coresNum: 125, role: "Member", lmeScore: 503, lmeGain: "(+60)", attackGain: "(+53.7K)", coresGain: "(+5)" },
             { name: "E•Duke", cores: "120+", attack: 1107700, coresNum: 120, role: "Member", lmeScore: 582, lmeGain: "(+33)", attackGain: "(+43.2K)", coresGain: "(+10)" },
             { name: "Cunner", cores: "65+", attack: 820300, coresNum: 65, role: "Member", lmeScore: 405, lmeGain: "(+13)", attackGain: "(+56.8K)", coresGain: "(+0)" },
-            { name: "BobBobberson", cores: "80+", attack: 817600, coresNum: 80, role: "Member", lmeScore: 412, lmeGain: "(+20)", attackGain: "(+65.6K)", coresGain: "(+10)" },
+            { name: "BobBobberson", cores: "80+", attack: 817600, coresNum: 80, role: "Glory Member", lmeScore: 412, lmeGain: "(+20)", attackGain: "(+65.6K)", coresGain: "(+10)" },
             { name: "GentleMonster", cores: "85+", attack: 806800, coresNum: 85, role: "Vice-Leader", lmeScore: 433, lmeGain: "(+14)", attackGain: "(+32.1K)", coresGain: "(+10)" },
             { name: "bimbabo", cores: "75+", attack: 804700, coresNum: 75, role: "Member", lmeScore: 408, lmeGain: "(+41)", attackGain: "(+61.5K)", coresGain: "(+0)" },
             { name: "4nd333", cores: "65+", attack: 783800, coresNum: 65, role: "Member", lmeScore: 367, lmeGain: "(+17)", attackGain: "(+44.9K)", coresGain: "(+5)" },
-            { name: "Belthazar", cores: "35+", attack: 715900, coresNum: 35, role: "Glory Member", lmeScore: 386, lmeGain: "(+10)", attackGain: "(+42.0K)", coresGain: "(+0)" },
-            { name: "N0M3rcy", cores: "50+", attack: 674400, coresNum: 50, role: "Glory Member", lmeScore: 362, lmeGain: "(+9)", attackGain: "(+39.7K)", coresGain: "(+15)" },
-            { name: "MrPlusUltra", cores: "55+", attack: 670300, coresNum: 55, role: "Glory Member", lmeScore: 373, lmeGain: "(+20)", attackGain: "(+23.9K)", coresGain: "(+5)" },
+            { name: "Belthazar", cores: "35+", attack: 715900, coresNum: 35, role: "Member", lmeScore: 386, lmeGain: "(+10)", attackGain: "(+42.0K)", coresGain: "(+0)" },
+            { name: "N0M3rcy", cores: "50+", attack: 674400, coresNum: 50, role: "Member", lmeScore: 362, lmeGain: "(+9)", attackGain: "(+39.7K)", coresGain: "(+15)" },
+            { name: "MrPlusUltra", cores: "55+", attack: 670300, coresNum: 55, role: "Member", lmeScore: 373, lmeGain: "(+20)", attackGain: "(+23.9K)", coresGain: "(+5)" },
             { name: "SterbenㅣStray", cores: "60+", attack: 657900, coresNum: 60, role: "Leader", lmeScore: 413, lmeGain: "(+12)", attackGain: "(+26.2K)", coresGain: "(+5)" },
             { name: "Beef4Brains", cores: "40+", attack: 589400, coresNum: 40, role: "Member", lmeScore: 354, lmeGain: "(+32)", attackGain: "(+9.7K)", coresGain: "(+5)" },
             { name: "CrackJackㅣStray", cores: "55+", attack: 567700, coresNum: 55, role: "Member", lmeScore: 365, lmeGain: "(+9)", attackGain: "(+0)", coresGain: "(+0)" },
@@ -456,9 +440,9 @@
             { name: "DemoncracyㅣStray", cores: "30+", attack: 434300, coresNum: 30, role: "Vice-Leader", lmeScore: 334, lmeGain: "(+3)", attackGain: "(+0.2K)", coresGain: "(+0)" },
             { name: "hiimnhat", cores: "20+", attack: 431100, coresNum: 20, role: "Member", lmeScore: 308, lmeGain: "", attackGain: "", coresGain: "" },
             { name: "mc2084", cores: "10+", attack: 385100, coresNum: 10, role: "Member", lmeScore: 267, lmeGain: "(+15)", attackGain: "(+27.4K)", coresGain: "(+0)" },
-            { name: "Player 78792329", cores: "25+", attack: 380000, coresNum: 25, role: "Member", lmeScore: 271, lmeGain: "(+73)", attackGain: "(+81.9K)", coresGain: "(+15)" },
+            { name: "Player 78792329", cores: "25+", attack: 380000, coresNum: 25, role: "Glory Member", lmeScore: 271, lmeGain: "(+73)", attackGain: "(+81.9K)", coresGain: "(+15)" },
             { name: "Asdgner", cores: "55+", attack: 371900, coresNum: 55, role: "Member", lmeScore: 337, lmeGain: "(+14)", attackGain: "(+29.0K)", coresGain: "(+10)" },
-            { name: "Lemminkäinen", cores: "20+", attack: 362600, coresNum: 20, role: "Member", lmeScore: 296, lmeGain: "(+25)", attackGain: "(+71.1K)", coresGain: "(+5)" },
+            { name: "Lemminkäinen", cores: "20+", attack: 362600, coresNum: 20, role: "Glory Member", lmeScore: 296, lmeGain: "(+25)", attackGain: "(+71.1K)", coresGain: "(+5)" },
             { name: "Coopet┃Stray", cores: "15+", attack: 356300, coresNum: 15, role: "Member", lmeScore: 301, lmeGain: "(+18)", attackGain: "(+13.4K)", coresGain: "(+0)" },
             { name: "2xc3ˢᵗʳᵃʸ", cores: "20+", attack: 354500, coresNum: 20, role: "Member", lmeScore: 295, lmeGain: "(+22)", attackGain: "(+70.0K)", coresGain: "(+5)" },
             { name: "HannaM", cores: "15+", attack: 353700, coresNum: 15, role: "Member", lmeScore: 290, lmeGain: "(+20)", attackGain: "(+0)", coresGain: "(+0)" },
