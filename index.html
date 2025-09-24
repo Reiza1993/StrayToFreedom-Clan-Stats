@@ -258,26 +258,26 @@
         
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin-bottom: 20px; text-align: center;">
             <div style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 10px; border-radius: 8px; font-size: 14px; font-weight: 600; min-height: 40px; display: flex; align-items: center; justify-content: center;">
-                LME Phase: 15.500+
+                LME Phase: 16.000+
             </div>
             <div style="background: linear-gradient(135deg, #ed8936, #dd6b20); color: white; padding: 10px; border-radius: 8px; font-size: 14px; font-weight: 600; min-height: 40px; display: flex; align-items: center; justify-content: center;">
                 LME Difficulty 10
             </div>
             <div style="background: linear-gradient(135deg, #38b2ac, #319795); color: white; padding: 10px; border-radius: 8px; font-size: 14px; font-weight: 600; min-height: 40px; display: flex; flex-direction: column; align-items: center; justify-content: center; grid-column: 1 / -1; line-height: 1.2;">
-                <div>LME League: Elite 3</div>
-                <div>Lunar Points: 890</div>
+                <div>LME League: Legend 1</div>
+                <div>Lunar Points: 910</div>
             </div>
         </div>
         
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin-bottom: 20px; text-align: center;">
             <div style="background: linear-gradient(135deg, #38b2ac, #319795); color: white; padding: 10px; border-radius: 8px; font-size: 14px; font-weight: 600; min-height: 40px; display: flex; align-items: center; justify-content: center;">
-                Total Members: 37/40
+                Total Members: 35/40
             </div>
             <div style="background: linear-gradient(135deg, #38b2ac, #319795); color: white; padding: 10px; border-radius: 8px; font-size: 14px; font-weight: 600; min-height: 40px; display: flex; align-items: center; justify-content: center;">
-                Total Cores: 1960+
+                Total Cores: 1915+
             </div>
             <div style="background: linear-gradient(135deg, #ed8936, #dd6b20); color: white; padding: 10px; border-radius: 8px; font-size: 14px; font-weight: 600; min-height: 40px; display: flex; align-items: center; justify-content: center;">
-                Total ATK: 22.5M
+                Total ATK: 21.8M
             </div>
         </div>
         
@@ -289,7 +289,6 @@
                 <option value="role">Sort by Role</option>
             </select>
             <button class="export-btn" onclick="exportToCSV()">Export CSV</button>
-            <button class="export-btn" onclick="showGloryHistory()">Glory History</button>
             <button class="export-btn" onclick="showLMEHistory()">LME History</button>
         </div>
         
@@ -444,43 +443,40 @@
 
     <script>
         const playerData = [
-            { name: "ꕤSettꕤ", cores: "5+", attack: 150000, coresNum: 5, role: "Member", lmeScore: 1049, lmeGain: "(+38)", attackGain: "", coresGain: "" },
-            { name: "Cunner88", cores: "100+", attack: 1263500, coresNum: 100, role: "Member", lmeScore: 788, lmeGain: "(+26)", attackGain: "", coresGain: "" },
-            { name: "×SterbenㅣStray", cores: "120+", attack: 1263700, coresNum: 120, role: "Leader", lmeScore: 889, lmeGain: "(+43)", attackGain: "(+59.4K)", coresGain: "(+0)" },
-            { name: "Shadowage", cores: "145+", attack: 1176900, coresNum: 145, role: "Vice-Leader", lmeScore: 721, lmeGain: "(+8)", attackGain: "(+63.0K)", coresGain: "(+20)" },
-            { name: "꧁༺Waiora༻꧂", cores: "130+", attack: 1216600, coresNum: 130, role: "Member", lmeScore: 784, lmeGain: "(+76)", attackGain: "", coresGain: "" },
-            { name: "Cunner", cores: "65+", attack: 858000, coresNum: 65, role: "Member", lmeScore: 546, lmeGain: "(+90)", attackGain: "(+37.7K)", coresGain: "(+0)" },
-            { name: "ᴷᴵᵀᴴ", cores: "85+", attack: 807800, coresNum: 85, role: "Vice-Leader", lmeScore: 565, lmeGain: "(+75)", attackGain: "(+1.0K)", coresGain: "(+0)" },
-            { name: "bimbabo", cores: "80+", attack: 818700, coresNum: 80, role: "Member", lmeScore: 538, lmeGain: "(+94)", attackGain: "(+14.0K)", coresGain: "(+5)" },
-            { name: "BobBobberson", cores: "80+", attack: 828600, coresNum: 80, role: "Member", lmeScore: 546, lmeGain: "(+112)", attackGain: "(+11.0K)", coresGain: "(+0)" },
-            { name: "Belthazar", cores: "35+", attack: 718800, coresNum: 35, role: "Member", lmeScore: 528, lmeGain: "(+98)", attackGain: "(+2.9K)", coresGain: "(+0)" },
-            { name: "N0M3rcy", cores: "50+", attack: 674400, coresNum: 50, role: "Member", lmeScore: 485, lmeGain: "(+485)", attackGain: "(+0)", coresGain: "(+0)" },
-            { name: "MrPlusUltra", cores: "55+", attack: 694300, coresNum: 55, role: "Member", lmeScore: 517, lmeGain: "(+97)", attackGain: "(+24.0K)", coresGain: "(+0)" },
-            { name: "SterbenㅣStray", cores: "60+", attack: 683700, coresNum: 60, role: "Member", lmeScore: 542, lmeGain: "(+99)", attackGain: "(+25.8K)", coresGain: "(+0)" },
-            { name: "lguinily", cores: "5+", attack: 120000, coresNum: 5, role: "Member", lmeScore: 479, lmeGain: "(+84)", attackGain: "", coresGain: "" },
-            { name: "CrackJackㅣStray", cores: "55+", attack: 629500, coresNum: 55, role: "Member", lmeScore: 499, lmeGain: "(+89)", attackGain: "(+61.8K)", coresGain: "(+0)" },
-            { name: "StrayCleow:)", cores: "20+", attack: 542000, coresNum: 20, role: "Member", lmeScore: 439, lmeGain: "(+439)", attackGain: "(+2.7K)", coresGain: "(+0)" },
-            { name: "6J4", cores: "35+", attack: 544300, coresNum: 35, role: "Member", lmeScore: 472, lmeGain: "(+99)", attackGain: "(+29.1K)", coresGain: "(+0)" },
-            { name: "HideOnBushs", cores: "20+", attack: 530900, coresNum: 20, role: "Member", lmeScore: 390, lmeGain: "(+71)", attackGain: "(+6.4K)", coresGain: "(+0)" },
-            { name: "SmallBoto", cores: "45+", attack: 480200, coresNum: 45, role: "Glory Member", lmeScore: 484, lmeGain: "(+73)", attackGain: "(+32.5K)", coresGain: "(+5)" },
-            { name: "Coopet2ㅣStray", cores: "30+", attack: 483000, coresNum: 30, role: "Member", lmeScore: 423, lmeGain: "(+45)", attackGain: "", coresGain: "" },
-            { name: "CheesyBreadSticks", cores: "30+", attack: 492000, coresNum: 30, role: "Member", lmeScore: 445, lmeGain: "(+66)", attackGain: "(+23.6K)", coresGain: "(+5)" },
-            { name: "Asdgner", cores: "55+", attack: 388900, coresNum: 55, role: "Member", lmeScore: 487, lmeGain: "(+88)", attackGain: "(+17.0K)", coresGain: "(+0)" },
-            { name: "Lemminkäinen", cores: "25+", attack: 389500, coresNum: 25, role: "Member", lmeScore: 430, lmeGain: "(+76)", attackGain: "(+26.9K)", coresGain: "(+5)" },
-            { name: "BOBBYJANG", cores: "15+", attack: 300000, coresNum: 15, role: "Member", lmeScore: 357, lmeGain: "(+55)", attackGain: "", coresGain: "" },
-            { name: "mc2084", cores: "15+", attack: 407600, coresNum: 15, role: "Member", lmeScore: 364, lmeGain: "(+56)", attackGain: "(+22.5K)", coresGain: "(+5)" },
-            { name: "bluebirds123456", cores: "5+", attack: 100000, coresNum: 5, role: "Member", lmeScore: 333, lmeGain: "(+15)", attackGain: "", coresGain: "" },
-            { name: "Player 78792329", cores: "25+", attack: 388900, coresNum: 25, role: "Member", lmeScore: 396, lmeGain: "(+80)", attackGain: "(+8.9K)", coresGain: "(+0)" },
-            { name: "HannaM", cores: "25+", attack: 400700, coresNum: 25, role: "Glory Member", lmeScore: 416, lmeGain: "(+68)", attackGain: "(+47.0K)", coresGain: "(+10)" },
-            { name: "Coopet┃Stray", cores: "15+", attack: 368100, coresNum: 15, role: "Member", lmeScore: 394, lmeGain: "(+47)", attackGain: "(+11.8K)", coresGain: "(+0)" },
-            { name: "swifft", cores: "30+", attack: 356200, coresNum: 30, role: "Member", lmeScore: 458, lmeGain: "(+80)", attackGain: "(+4.7K)", coresGain: "(+0)" },
-            { name: "Chumuzuke", cores: "25+", attack: 353200, coresNum: 25, role: "Member", lmeScore: 399, lmeGain: "(+70)", attackGain: "(+34.8K)", coresGain: "(+5)" },
-            { name: "Pookaz", cores: "15+", attack: 335700, coresNum: 15, role: "Glory Member", lmeScore: 365, lmeGain: "(+53)", attackGain: "(+8.1K)", coresGain: "(+0)" },
-            { name: "2xc3ˢᵗʳᵃʸ", cores: "20+", attack: 359600, coresNum: 20, role: "Member", lmeScore: 0, lmeGain: "", attackGain: "(+5.1K)", coresGain: "(+0)" },
-            { name: "stray|alfred", cores: "20+", attack: 329800, coresNum: 20, role: "Member", lmeScore: 440, lmeGain: "(+80)", attackGain: "(+5.4K)", coresGain: "(+0)" },
-            { name: "Szoj", cores: "20+", attack: 310100, coresNum: 20, role: "Member", lmeScore: 420, lmeGain: "(+80)", attackGain: "(+22.7K)", coresGain: "(+10)" },
-            { name: "slaterhoㅣStray", cores: "10+", attack: 263100, coresNum: 10, role: "Member", lmeScore: 340, lmeGain: "(+58)", attackGain: "(+15.4K)", coresGain: "(+5)" },
-            { name: "lct404", cores: "5+", attack: 253000, coresNum: 5, role: "Member", lmeScore: 319, lmeGain: "(+40)", attackGain: "(+16.6K)", coresGain: "(+0)" },
+            { name: "ꕤSettꕤ", cores: "5+", attack: 150000, coresNum: 5, role: "Vice-Leader", lmeScore: 1041, lmeGain: "(-8)", attackGain: "", coresGain: "" },
+            { name: "×SterbenㅣStray", cores: "120+", attack: 1263700, coresNum: 120, role: "Leader", lmeScore: 924, lmeGain: "(+35)", attackGain: "(+59.4K)", coresGain: "(+0)" },
+            { name: "Cunner88", cores: "100+", attack: 1263500, coresNum: 100, role: "Member", lmeScore: 820, lmeGain: "(+32)", attackGain: "", coresGain: "" },
+            { name: "꧁༺Waiora༻꧂", cores: "130+", attack: 1216600, coresNum: 130, role: "Member", lmeScore: 787, lmeGain: "(+3)", attackGain: "", coresGain: "" },
+            { name: "Shadowage", cores: "145+", attack: 1176900, coresNum: 145, role: "Member", lmeScore: 734, lmeGain: "(+13)", attackGain: "(+63.0K)", coresGain: "(+20)" },
+            { name: "ᴷᴵᵀᴴ", cores: "85+", attack: 807800, coresNum: 85, role: "Vice-Leader", lmeScore: 578, lmeGain: "(+13)", attackGain: "(+1.0K)", coresGain: "(+0)" },
+            { name: "bimbabo", cores: "80+", attack: 818700, coresNum: 80, role: "Member", lmeScore: 547, lmeGain: "(+9)", attackGain: "(+14.0K)", coresGain: "(+5)" },
+            { name: "Cunner", cores: "65+", attack: 858000, coresNum: 65, role: "Member", lmeScore: 546, lmeGain: "(+0)", attackGain: "(+37.7K)", coresGain: "(+0)" },
+            { name: "SterbenㅣStray", cores: "60+", attack: 683700, coresNum: 60, role: "Member", lmeScore: 542, lmeGain: "(+0)", attackGain: "(+25.8K)", coresGain: "(+0)" },
+            { name: "BobBobberson", cores: "80+", attack: 828600, coresNum: 80, role: "Glory Member", lmeScore: 541, lmeGain: "(-5)", attackGain: "(+11.0K)", coresGain: "(+0)" },
+            { name: "Belthazar", cores: "35+", attack: 718800, coresNum: 35, role: "Glory Member", lmeScore: 532, lmeGain: "(+4)", attackGain: "(+2.9K)", coresGain: "(+0)" },
+            { name: "MrPlusUltra", cores: "55+", attack: 694300, coresNum: 55, role: "Member", lmeScore: 524, lmeGain: "(+7)", attackGain: "(+24.0K)", coresGain: "(+0)" },
+            { name: "SmallBoto", cores: "45+", attack: 480200, coresNum: 45, role: "Member", lmeScore: 511, lmeGain: "(+27)", attackGain: "(+32.5K)", coresGain: "(+5)" },
+            { name: "N0M3rcy", cores: "50+", attack: 674400, coresNum: 50, role: "Member", lmeScore: 495, lmeGain: "(+10)", attackGain: "(+0)", coresGain: "(+0)" },
+            { name: "CrackJackㅣStray", cores: "55+", attack: 629500, coresNum: 55, role: "Member", lmeScore: 493, lmeGain: "(-6)", attackGain: "(+61.8K)", coresGain: "(+0)" },
+            { name: "Asdgner", cores: "55+", attack: 388900, coresNum: 55, role: "Member", lmeScore: 491, lmeGain: "(+4)", attackGain: "(+17.0K)", coresGain: "(+0)" },
+            { name: "Coopet2ㅣStray", cores: "30+", attack: 483000, coresNum: 30, role: "Member", lmeScore: 480, lmeGain: "(+57)", attackGain: "", coresGain: "" },
+            { name: "lguinily", cores: "5+", attack: 120000, coresNum: 5, role: "Member", lmeScore: 479, lmeGain: "(+0)", attackGain: "", coresGain: "" },
+            { name: "6J4", cores: "35+", attack: 544300, coresNum: 35, role: "Member", lmeScore: 464, lmeGain: "(-8)", attackGain: "(+29.1K)", coresGain: "(+0)" },
+            { name: "Lemminkäinen", cores: "25+", attack: 389500, coresNum: 25, role: "Glory Member", lmeScore: 459, lmeGain: "(+29)", attackGain: "(+26.9K)", coresGain: "(+5)" },
+            { name: "CheesyBreadSticks", cores: "30+", attack: 492000, coresNum: 30, role: "Member", lmeScore: 448, lmeGain: "(+3)", attackGain: "(+23.6K)", coresGain: "(+5)" },
+            { name: "StrayCleow:)", cores: "20+", attack: 542000, coresNum: 20, role: "Member", lmeScore: 445, lmeGain: "(+6)", attackGain: "(+2.7K)", coresGain: "(+0)" },
+            { name: "HannaM", cores: "25+", attack: 400700, coresNum: 25, role: "Member", lmeScore: 432, lmeGain: "(+16)", attackGain: "(+47.0K)", coresGain: "(+10)" },
+            { name: "Szoj", cores: "20+", attack: 310100, coresNum: 20, role: "Member", lmeScore: 428, lmeGain: "(+8)", attackGain: "(+22.7K)", coresGain: "(+10)" },
+            { name: "BOBBYJANG", cores: "15+", attack: 300000, coresNum: 15, role: "Member", lmeScore: 408, lmeGain: "(+51)", attackGain: "", coresGain: "" },
+            { name: "HideOnBushs", cores: "20+", attack: 530900, coresNum: 20, role: "Member", lmeScore: 402, lmeGain: "(+12)", attackGain: "(+6.4K)", coresGain: "(+0)" },
+            { name: "Player 78792329", cores: "25+", attack: 388900, coresNum: 25, role: "Member", lmeScore: 400, lmeGain: "(+4)", attackGain: "(+8.9K)", coresGain: "(+0)" },
+            { name: "Coopet┃Stray", cores: "15+", attack: 368100, coresNum: 15, role: "Member", lmeScore: 396, lmeGain: "(+2)", attackGain: "(+11.8K)", coresGain: "(+0)" },
+            { name: "stray|alfred", cores: "20+", attack: 329800, coresNum: 20, role: "Member", lmeScore: 395, lmeGain: "(-45)", attackGain: "(+5.4K)", coresGain: "(+0)" },
+            { name: "mc2084", cores: "15+", attack: 407600, coresNum: 15, role: "Member", lmeScore: 391, lmeGain: "(+27)", attackGain: "(+22.5K)", coresGain: "(+5)" },
+            { name: "Pookaz", cores: "15+", attack: 335700, coresNum: 15, role: "Member", lmeScore: 371, lmeGain: "(+6)", attackGain: "(+8.1K)", coresGain: "(+0)" },
+            { name: "slaterhoㅣStray", cores: "10+", attack: 263100, coresNum: 10, role: "Member", lmeScore: 370, lmeGain: "(+30)", attackGain: "(+15.4K)", coresGain: "(+5)" },
+            { name: "lct404", cores: "5+", attack: 253000, coresNum: 5, role: "Member", lmeScore: 313, lmeGain: "(-6)", attackGain: "(+16.6K)", coresGain: "(+0)" },
+            { name: "swifft", cores: "30+", attack: 356200, coresNum: 30, role: "Member", lmeScore: 0, lmeGain: "(-458)", attackGain: "(+4.7K)", coresGain: "(+0)" },
         ];
 
         let filteredData = [...playerData];
@@ -627,53 +623,9 @@
             document.getElementById('lmeModal').style.display = 'none';
         }
 
-        function showGloryHistory() {
-            const modal = document.getElementById('gloryModal');
-            const modalContent = document.getElementById('gloryModalContent');
-            
-            // Show modal first
-            modal.style.display = 'block';
-            
-            // Get button position and viewport info
-            const button = event.target;
-            const buttonRect = button.getBoundingClientRect();
-            const scrollY = window.scrollY || window.pageYOffset;
-            const viewportHeight = window.innerHeight;
-            
-            // Calculate desired position (button's position + scroll offset)
-            const targetTop = buttonRect.top + scrollY;
-            
-            // Adjust for mobile - ensure modal content is visible
-            const modalHeight = Math.min(viewportHeight * 0.8, 700); // Max 80% of viewport or 700px
-            let adjustedTop = targetTop;
-            
-            // If modal would go below viewport, adjust upward
-            if (targetTop + modalHeight > scrollY + viewportHeight) {
-                adjustedTop = Math.max(20, scrollY + viewportHeight - modalHeight - 20);
-            }
-            
-            // If modal would go above viewport, adjust downward  
-            if (adjustedTop < scrollY + 20) {
-                adjustedTop = scrollY + 20;
-            }
-            
-            // Apply the calculated position
-            modalContent.style.marginTop = adjustedTop + 'px';
-            modalContent.style.marginBottom = '20px';
-            modalContent.style.maxHeight = modalHeight + 'px';
-        }
-
-        function closeGloryHistory() {
-            document.getElementById('gloryModal').style.display = 'none';
-        }
-
         // Close modal when clicking outside
         window.onclick = function(event) {
-            const gloryModal = document.getElementById('gloryModal');
             const lmeModal = document.getElementById('lmeModal');
-            if (event.target === gloryModal) {
-                gloryModal.style.display = 'none';
-            }
             if (event.target === lmeModal) {
                 lmeModal.style.display = 'none';
             }
