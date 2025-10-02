@@ -328,10 +328,13 @@
                 Total Members: 35/40
             </div>
             <div style="background: linear-gradient(135deg, #38b2ac, #319795); color: white; padding: 10px; border-radius: 8px; font-size: 14px; font-weight: 600; min-height: 40px; display: flex; align-items: center; justify-content: center;">
-                Total Cores: 1895+
+                Total Cores: 1955+
             </div>
             <div style="background: linear-gradient(135deg, #ed8936, #dd6b20); color: white; padding: 10px; border-radius: 8px; font-size: 14px; font-weight: 600; min-height: 40px; display: flex; align-items: center; justify-content: center;">
-                Total ATK: 22.19M
+                Total ATK: 23.00M
+            </div>
+            <div style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 10px; border-radius: 8px; font-size: 14px; font-weight: 600; min-height: 40px; display: flex; align-items: center; justify-content: center;">
+                Avg ATK: 690.2K
             </div>
         </div>
         
@@ -339,6 +342,8 @@
             <input type="text" id="searchInput" placeholder="Search player names..." class="search-box">
             <select id="sortSelect">
                 <option value="lme">Sort by LME Score</option>
+                <option value="cores">Sort by Relic Cores</option>
+                <option value="attack">Sort by ATK</option>
                 <option value="name">Sort by Name</option>
                 <option value="role">Sort by Role</option>
             </select>
@@ -346,12 +351,20 @@
             <button class="export-btn" onclick="showLMEHistory()">LME History</button>
         </div>
         
+        <!-- Compact Role Legend -->
+        <div style="display: flex; justify-content: center; gap: 20px; margin-bottom: 15px; flex-wrap: wrap; font-size: 12px;">
+            <span style="color: #fc8181; font-weight: 600;">● Leader</span>
+            <span style="color: #ed8936; font-weight: 600;">● Vice-Leader</span>
+            <span style="color: #ffd700; font-weight: 600; text-shadow: 0 0 10px #ffd700;">★ Glory Member</span>
+        </div>
+        
         <table id="playerTable">
             <thead>
                 <tr>
                     <th>Rank</th>
                     <th>Player Name</th>
-                    <th>Role</th>
+                    <th>Relic Cores</th>
+                    <th>ATK</th>
                     <th>LME Score</th>
                 </tr>
             </thead>
@@ -370,6 +383,10 @@
                         <tr>
                             <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 12px 8px; text-align: center; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px;">LME #</th>
                             <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 12px 8px; text-align: center; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px;">Position</th>
+                            <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 12px 8px; text-align: center; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px;">Points</th>
+                            <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 12px 8px; text-align: center; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px;">Medal</th>
+                            <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 12px 8px; text-align: center; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px;">League</th>
+                        </tr>-transform: uppercase; letter-spacing: 0.5px;">Position</th>
                             <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 12px 8px; text-align: center; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px;">Points</th>
                             <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 12px 8px; text-align: center; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px;">Medal</th>
                             <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 12px 8px; text-align: center; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px;">League</th>
@@ -459,8 +476,12 @@
                     </thead>
                     <tbody>
                         <tr style="background: linear-gradient(135deg, #ffd700, #f6e05e); border-bottom: 1px solid #4a5568;">
-                            <td style="padding: 12px 8px; color: #744210; text-align: center; font-weight: 600; font-size: 13px;">8</td>
-                            <td style="padding: 12px 8px; color: #744210; text-align: center; font-weight: 600; font-size: 13px;">Pookaz, SmallBoto, HannaM</td>
+                            <td style="padding: 12px 8px; color: #744210; text-align: center; font-weight: 600; font-size: 13px;">9</td>
+                            <td style="padding: 12px 8px; color: #744210; text-align: center; font-weight: 600; font-size: 13px;">HannaM, 6J4, Pookaz</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #4a5568;">
+                            <td style="padding: 10px 6px; color: #e2e8f0; text-align: center; font-weight: 600; font-size: 13px;">8</td>
+                            <td style="padding: 10px 6px; color: #e2e8f0; text-align: center; font-size: 13px;">Pookaz, SmallBoto, HannaM</td>
                         </tr>
                         <tr style="border-bottom: 1px solid #4a5568;">
                             <td style="padding: 10px 6px; color: #e2e8f0; text-align: center; font-weight: 600; font-size: 13px;">7</td>
@@ -511,41 +532,41 @@
 
     <script>
         const playerData = [
-            { name: "ꕤSettꕤ", cores: "5+", attack: 150000, coresNum: 5, role: "Vice-Leader", lmeScore: 1069, lmeGain: "(+28)", attackGain: "", coresGain: "" },
-            { name: "×SterbenㅣStray", cores: "120+", attack: 1263700, coresNum: 120, role: "Leader", lmeScore: 962, lmeGain: "(+38)", attackGain: "(+59.4K)", coresGain: "(+0)" },
-            { name: "Cunner88", cores: "100+", attack: 1263500, coresNum: 100, role: "Member", lmeScore: 815, lmeGain: "(-5)", attackGain: "", coresGain: "" },
-            { name: "꧁༺Waiora༻꧂", cores: "130+", attack: 1216600, coresNum: 130, role: "Member", lmeScore: 751, lmeGain: "(-36)", attackGain: "", coresGain: "" },
-            { name: "Shadowage", cores: "145+", attack: 1176900, coresNum: 145, role: "Member", lmeScore: 731, lmeGain: "(-3)", attackGain: "(+63.0K)", coresGain: "(+20)" },
-            { name: "ᴷᴵᵀᴴ", cores: "85+", attack: 807800, coresNum: 85, role: "Vice-Leader", lmeScore: 578, lmeGain: "(+0)", attackGain: "(+1.0K)", coresGain: "(+0)" },
-            { name: "bimbabo", cores: "80+", attack: 818700, coresNum: 80, role: "Member", lmeScore: 547, lmeGain: "(+0)", attackGain: "(+14.0K)", coresGain: "(+5)" },
-            { name: "Cunner", cores: "65+", attack: 858000, coresNum: 65, role: "Member", lmeScore: 544, lmeGain: "(-2)", attackGain: "(+37.7K)", coresGain: "(+0)" },
-            { name: "SterbenㅣStray", cores: "60+", attack: 683700, coresNum: 60, role: "Member", lmeScore: 545, lmeGain: "(+3)", attackGain: "(+25.8K)", coresGain: "(+0)" },
-            { name: "BobBobberson", cores: "80+", attack: 828600, coresNum: 80, role: "Glory Member", lmeScore: 549, lmeGain: "(+8)", attackGain: "(+11.0K)", coresGain: "(+0)" },
-            { name: "Belthazar", cores: "35+", attack: 718800, coresNum: 35, role: "Glory Member", lmeScore: 530, lmeGain: "(-2)", attackGain: "(+2.9K)", coresGain: "(+0)" },
-            { name: "MrPlusUltra", cores: "55+", attack: 694300, coresNum: 55, role: "Member", lmeScore: 521, lmeGain: "(-3)", attackGain: "(+24.0K)", coresGain: "(+0)" },
-            { name: "SmallBoto", cores: "45+", attack: 480200, coresNum: 45, role: "Member", lmeScore: 520, lmeGain: "(+9)", attackGain: "(+32.5K)", coresGain: "(+5)" },
-            { name: "N0M3rcy", cores: "50+", attack: 674400, coresNum: 50, role: "Member", lmeScore: 509, lmeGain: "(+14)", attackGain: "(+0)", coresGain: "(+0)" },
-            { name: "CrackJackㅣStray", cores: "55+", attack: 629500, coresNum: 55, role: "Member", lmeScore: 501, lmeGain: "(+8)", attackGain: "(+61.8K)", coresGain: "(+0)" },
-            { name: "Asdgner", cores: "55+", attack: 388900, coresNum: 55, role: "Member", lmeScore: 487, lmeGain: "(-4)", attackGain: "(+17.0K)", coresGain: "(+0)" },
-            { name: "Coopet2ㅣStray", cores: "30+", attack: 483000, coresNum: 30, role: "Member", lmeScore: 480, lmeGain: "(+0)", attackGain: "", coresGain: "" },
-            { name: "lguinily", cores: "5+", attack: 120000, coresNum: 5, role: "Member", lmeScore: 484, lmeGain: "(+5)", attackGain: "", coresGain: "" },
-            { name: "6J4", cores: "35+", attack: 544300, coresNum: 35, role: "Member", lmeScore: 477, lmeGain: "(+13)", attackGain: "(+29.1K)", coresGain: "(+0)" },
-            { name: "Lemminkäinen", cores: "25+", attack: 389500, coresNum: 25, role: "Glory Member", lmeScore: 457, lmeGain: "(-2)", attackGain: "(+26.9K)", coresGain: "(+5)" },
-            { name: "CheesyBreadSticks", cores: "30+", attack: 492000, coresNum: 30, role: "Member", lmeScore: 443, lmeGain: "(-5)", attackGain: "(+23.6K)", coresGain: "(+5)" },
-            { name: "StrayCleow:)", cores: "20+", attack: 542000, coresNum: 20, role: "Member", lmeScore: 430, lmeGain: "(-15)", attackGain: "(+2.7K)", coresGain: "(+0)" },
-            { name: "HannaM", cores: "25+", attack: 400700, coresNum: 25, role: "Member", lmeScore: 460, lmeGain: "(+28)", attackGain: "(+47.0K)", coresGain: "(+10)" },
-            { name: "Szoj", cores: "20+", attack: 310100, coresNum: 20, role: "Member", lmeScore: 431, lmeGain: "(+3)", attackGain: "(+22.7K)", coresGain: "(+10)" },
-            { name: "BOBBYJANG", cores: "15+", attack: 300000, coresNum: 15, role: "Member", lmeScore: 0, lmeGain: "(-408)", attackGain: "", coresGain: "" },
-            { name: "HideOnBushs", cores: "20+", attack: 530900, coresNum: 20, role: "Member", lmeScore: 396, lmeGain: "(-6)", attackGain: "(+6.4K)", coresGain: "(+0)" },
-            { name: "Player 78792329", cores: "25+", attack: 388900, coresNum: 25, role: "Member", lmeScore: 405, lmeGain: "(+5)", attackGain: "(+8.9K)", coresGain: "(+0)" },
-            { name: "Coopet┃Stray", cores: "15+", attack: 368100, coresNum: 15, role: "Member", lmeScore: 404, lmeGain: "(+8)", attackGain: "(+11.8K)", coresGain: "(+0)" },
-            { name: "stray|alfred", cores: "20+", attack: 329800, coresNum: 20, role: "Member", lmeScore: 402, lmeGain: "(+7)", attackGain: "(+5.4K)", coresGain: "(+0)" },
-            { name: "mc2084", cores: "15+", attack: 407600, coresNum: 15, role: "Member", lmeScore: 388, lmeGain: "(-3)", attackGain: "(+22.5K)", coresGain: "(+5)" },
-            { name: "Pookaz", cores: "15+", attack: 335700, coresNum: 15, role: "Member", lmeScore: 369, lmeGain: "(-2)", attackGain: "(+8.1K)", coresGain: "(+0)" },
-            { name: "slaterhoㅣStray", cores: "10+", attack: 263100, coresNum: 10, role: "Member", lmeScore: 375, lmeGain: "(+5)", attackGain: "(+15.4K)", coresGain: "(+5)" },
-            { name: "lct404", cores: "5+", attack: 253000, coresNum: 5, role: "Member", lmeScore: 313, lmeGain: "(+0)", attackGain: "(+16.6K)", coresGain: "(+0)" },
-            { name: "swifft", cores: "30+", attack: 356200, coresNum: 30, role: "Member", lmeScore: 450, lmeGain: "(-5)", attackGain: "(+4.7K)", coresGain: "(+0)" },
-            { name: "starbin", cores: "15+", attack: 350000, coresNum: 15, role: "Member", lmeScore: 483, lmeGain: "(+0)", attackGain: "", coresGain: "" },
+            { name: "ꕤSettꕤ", cores: "160+", attack: 1459300, coresNum: 160, role: "Vice-Leader", lmeScore: 1069, lmeGain: "(+28)", attackGain: "", coresGain: "" },
+            { name: "×SterbenㅣStray", cores: "120+", attack: 1418800, coresNum: 120, role: "Leader", lmeScore: 962, lmeGain: "(+38)", attackGain: "(+59.4K)", coresGain: "(+0)" },
+            { name: "Cunner88", cores: "105+", attack: 1363500, coresNum: 105, role: "Member", lmeScore: 815, lmeGain: "(-5)", attackGain: "", coresGain: "" },
+            { name: "꧁༺Waiora༻꧂", cores: "130+", attack: 1228200, coresNum: 130, role: "Member", lmeScore: 751, lmeGain: "(-36)", attackGain: "", coresGain: "" },
+            { name: "Shadowage", cores: "150+", attack: 1297800, coresNum: 150, role: "Member", lmeScore: 731, lmeGain: "(-3)", attackGain: "(+63.0K)", coresGain: "(+20)" },
+            { name: "ᴷᴵᵀᴴ", cores: "85+", attack: 874000, coresNum: 85, role: "Vice-Leader", lmeScore: 578, lmeGain: "(+0)", attackGain: "(+1.0K)", coresGain: "(+0)" },
+            { name: "bimbabo", cores: "85+", attack: 879200, coresNum: 85, role: "Member", lmeScore: 547, lmeGain: "(+0)", attackGain: "(+14.0K)", coresGain: "(+5)" },
+            { name: "Cunner", cores: "65+", attack: 879600, coresNum: 65, role: "Member", lmeScore: 544, lmeGain: "(-2)", attackGain: "(+37.7K)", coresGain: "(+0)" },
+            { name: "SterbenㅣStray", cores: "65+", attack: 718400, coresNum: 65, role: "Member", lmeScore: 545, lmeGain: "(+3)", attackGain: "(+25.8K)", coresGain: "(+0)" },
+            { name: "BobBobberson", cores: "80+", attack: 868400, coresNum: 80, role: "Glory Member", lmeScore: 549, lmeGain: "(+8)", attackGain: "(+11.0K)", coresGain: "(+0)" },
+            { name: "Belthazar", cores: "55+", attack: 852300, coresNum: 55, role: "Glory Member", lmeScore: 530, lmeGain: "(-2)", attackGain: "(+2.9K)", coresGain: "(+0)" },
+            { name: "MrPlusUltra", cores: "65+", attack: 782700, coresNum: 65, role: "Member", lmeScore: 521, lmeGain: "(-3)", attackGain: "(+24.0K)", coresGain: "(+0)" },
+            { name: "SmallBoto", cores: "50+", attack: 609000, coresNum: 50, role: "Member", lmeScore: 520, lmeGain: "(+9)", attackGain: "(+32.5K)", coresGain: "(+5)" },
+            { name: "N0M3rcy", cores: "50+", attack: 758200, coresNum: 50, role: "Member", lmeScore: 509, lmeGain: "(+14)", attackGain: "(+0)", coresGain: "(+0)" },
+            { name: "CrackJackㅣStray", cores: "55+", attack: 655900, coresNum: 55, role: "Member", lmeScore: 501, lmeGain: "(+8)", attackGain: "(+61.8K)", coresGain: "(+0)" },
+            { name: "Asdgner", cores: "70+", attack: 518700, coresNum: 70, role: "Member", lmeScore: 487, lmeGain: "(-4)", attackGain: "(+17.0K)", coresGain: "(+0)" },
+            { name: "Coopet2ㅣStray", cores: "35+", attack: 509600, coresNum: 35, role: "Member", lmeScore: 480, lmeGain: "(+0)", attackGain: "", coresGain: "" },
+            { name: "lguinily", cores: "65+", attack: 706400, coresNum: 65, role: "Member", lmeScore: 484, lmeGain: "(+5)", attackGain: "", coresGain: "" },
+            { name: "6J4", cores: "35+", attack: 643300, coresNum: 35, role: "Member", lmeScore: 477, lmeGain: "(+13)", attackGain: "(+29.1K)", coresGain: "(+0)" },
+            { name: "Lemminkäinen", cores: "35+", attack: 489800, coresNum: 35, role: "Glory Member", lmeScore: 457, lmeGain: "(-2)", attackGain: "(+26.9K)", coresGain: "(+5)" },
+            { name: "CheesyBreadSticks", cores: "30+", attack: 537900, coresNum: 30, role: "Member", lmeScore: 443, lmeGain: "(-5)", attackGain: "(+23.6K)", coresGain: "(+5)" },
+            { name: "StrayCleow:)", cores: "25+", attack: 695800, coresNum: 25, role: "Member", lmeScore: 430, lmeGain: "(-15)", attackGain: "(+2.7K)", coresGain: "(+0)" },
+            { name: "HannaM", cores: "25+", attack: 459200, coresNum: 25, role: "Member", lmeScore: 460, lmeGain: "(+28)", attackGain: "(+47.0K)", coresGain: "(+10)" },
+            { name: "Szoj", cores: "25+", attack: 378000, coresNum: 25, role: "Member", lmeScore: 431, lmeGain: "(+3)", attackGain: "(+22.7K)", coresGain: "(+10)" },
+            { name: "BOBBYJANG", cores: "35+", attack: 553100, coresNum: 35, role: "Member", lmeScore: 0, lmeGain: "(-408)", attackGain: "", coresGain: "" },
+            { name: "HideOnBushs", cores: "20+", attack: 566900, coresNum: 20, role: "Member", lmeScore: 396, lmeGain: "(-6)", attackGain: "(+6.4K)", coresGain: "(+0)" },
+            { name: "Player 78792329", cores: "30+", attack: 468500, coresNum: 30, role: "Member", lmeScore: 405, lmeGain: "(+5)", attackGain: "(+8.9K)", coresGain: "(+0)" },
+            { name: "Coopet┃Stray", cores: "20+", attack: 427700, coresNum: 20, role: "Member", lmeScore: 404, lmeGain: "(+8)", attackGain: "(+11.8K)", coresGain: "(+0)" },
+            { name: "stray|alfred", cores: "25+", attack: 384700, coresNum: 25, role: "Member", lmeScore: 402, lmeGain: "(+7)", attackGain: "(+5.4K)", coresGain: "(+0)" },
+            { name: "mc2084", cores: "15+", attack: 512800, coresNum: 15, role: "Member", lmeScore: 388, lmeGain: "(-3)", attackGain: "(+22.5K)", coresGain: "(+5)" },
+            { name: "Pookaz", cores: "25+", attack: 398900, coresNum: 25, role: "Member", lmeScore: 369, lmeGain: "(-2)", attackGain: "(+8.1K)", coresGain: "(+0)" },
+            { name: "slaterhoㅣStray", cores: "15+", attack: 360200, coresNum: 15, role: "Member", lmeScore: 375, lmeGain: "(+5)", attackGain: "(+15.4K)", coresGain: "(+5)" },
+            { name: "lct404", cores: "25+", attack: 319700, coresNum: 25, role: "Member", lmeScore: 313, lmeGain: "(+0)", attackGain: "(+16.6K)", coresGain: "(+0)" },
+            { name: "swifft", cores: "30+", attack: 403700, coresNum: 30, role: "Member", lmeScore: 450, lmeGain: "(-5)", attackGain: "(+4.7K)", coresGain: "(+0)" },
+            { name: "starbin", cores: "80+", attack: 857400, coresNum: 80, role: "Member", lmeScore: 483, lmeGain: "(+0)", attackGain: "", coresGain: "" },
         ];
 
         let filteredData = [...playerData];
@@ -566,10 +587,26 @@
             
             filteredData.forEach((player, index) => {
                 const row = document.createElement('tr');
+                
+                // Determine name color based on role
+                let nameColor = '#f7fafc'; // Default member color
+                let nameClass = '';
+                if (player.role === 'Leader') {
+                    nameColor = '#fc8181';
+                } else if (player.role === 'Vice-Leader') {
+                    nameColor = '#ed8936';
+                } else if (player.role === 'Glory Member') {
+                    nameColor = '#ffd700';
+                    nameClass = 'role-glorymember';
+                }
+                
                 row.innerHTML = `
                     <td class="rank-cell">${index + 1}</td>
-                    <td class="name-cell">${player.name}</td>
-                    <td class="role-cell role-${player.role.toLowerCase().replace(/[\s-]/g, '')}">${player.role}</td>
+                    <td class="name-cell ${nameClass}" style="color: ${nameColor};">${player.name}</td>
+                    <td class="cores-cell">${player.cores}</td>
+                    <td style="text-align: center; font-weight: 600; color: #e2e8f0;">
+                        ${formatNumber(player.attack)}
+                    </td>
                     <td style="text-align: center; font-weight: 600; color: #f59e0b;">
                         ${player.lmeScore || 0}
                         ${player.lmeGain ? `<span style="color: ${player.lmeGain.includes('+') ? '#48bb78' : '#f56565'}; font-size: 11px; margin-left: 4px;">
