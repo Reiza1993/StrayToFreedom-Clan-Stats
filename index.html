@@ -93,6 +93,20 @@
     Note: Update topScore variable in getCXColor() function when max CX changes
     
     ========================================
+    GAIN COLOR CODING
+    ========================================
+    For Cores, ATK, LME (can increase/decrease):
+    - Bright Green (#10b981): Positive gains (+1, +50, etc.)
+    - Gray (#a0aec0): No change (+0)
+    - Red (#f56565): Negative changes (-5, -10, etc.)
+    
+    For CX (only increases, never decreases):
+    - White (#f7fafc): Any positive gain (+100, +500, etc.)
+    - Gray (#a0aec0): No change (+0)
+    
+    Note: CX uses white for better contrast against all CX score colors
+    
+    ========================================
     CURRENT CLAN LEADERSHIP
     ========================================
     - Leader: ×SterbenㅣStray
@@ -551,25 +565,25 @@
                     <td class="rank-cell">${index + 1}</td>
                     <td class="name-cell ${nameClass}" style="color: ${nameColor};">${player.name}</td>
                     <td class="cores-cell">${player.cores}
-                        ${player.coresGain ? `<span style="color: ${player.coresGain.includes('+') && !player.coresGain.includes('(+0)') ? '#48bb78' : player.coresGain.includes('(+0)') ? '#a0aec0' : '#f56565'}; font-size: 10px; margin-left: 2px; display: block;">
+                        ${player.coresGain ? `<span style="color: ${player.coresGain.includes('+') && !player.coresGain.includes('(+0)') ? '#10b981' : player.coresGain.includes('(+0)') ? '#a0aec0' : '#f56565'}; font-size: 10px; margin-left: 2px; display: block;">
                             ${player.coresGain}
                         </span>` : ''}
                     </td>
                     <td style="text-align: center; font-weight: 600; color: #e2e8f0;">
                         ${formatNumber(player.attack)}
-                        ${player.attackGain ? `<span style="color: ${player.attackGain.includes('+') && !player.attackGain.includes('(+0)') ? '#48bb78' : player.attackGain.includes('(+0)') ? '#a0aec0' : '#f56565'}; font-size: 10px; margin-left: 2px; display: block;">
+                        ${player.attackGain ? `<span style="color: ${player.attackGain.includes('+') && !player.attackGain.includes('(+0)') ? '#10b981' : player.attackGain.includes('(+0)') ? '#a0aec0' : '#f56565'}; font-size: 10px; margin-left: 2px; display: block;">
                             ${player.attackGain}
                         </span>` : ''}
                     </td>
                     <td style="text-align: center; font-weight: 600; color: #f59e0b;">
                         ${player.lmeScore || 0}
-                        ${player.lmeGain ? `<span style="color: ${player.lmeGain.includes('+') && !player.lmeGain.includes('(+0)') ? '#48bb78' : player.lmeGain.includes('(+0)') ? '#a0aec0' : '#f56565'}; font-size: 11px; margin-left: 4px;">
+                        ${player.lmeGain ? `<span style="color: ${player.lmeGain.includes('+') && !player.lmeGain.includes('(+0)') ? '#10b981' : player.lmeGain.includes('(+0)') ? '#a0aec0' : '#f56565'}; font-size: 11px; margin-left: 4px;">
                             ${player.lmeGain}
                         </span>` : ''}
                     </td>
                     <td style="text-align: center; font-weight: 600; color: ${getCXColor(player.cxScore)};">
                         ${player.cxScore}
-                        ${player.cxGain ? `<span style="color: ${player.cxGain.includes('+') && !player.cxGain.includes('(+0)') ? '#48bb78' : player.cxGain.includes('(+0)') ? '#a0aec0' : '#f56565'}; font-size: 10px; margin-left: 2px; display: block;">
+                        ${player.cxGain ? `<span style="color: ${player.cxGain.includes('(+0)') ? '#a0aec0' : '#f7fafc'}; font-size: 10px; margin-left: 2px; display: block;">
                             ${player.cxGain}
                         </span>` : ''}
                     </td>
