@@ -21,7 +21,7 @@
        Find: const playerData = [
        
        Each player entry format:
-       { name: "PlayerName", cores: "XX+", attack: XXXXXX, coresNum: XX, role: "Role", lmeScore: XXX, lmeGain: "(+X)" }
+       { name: "PlayerName", cores: "XX+", attack: XXXXXX, coresNum: XX, role: "Role", lmeScore: XXX, lmeGain: "(+X)", cxScore: XXX, cxGain: "(+X)" }
        
        Fields to update:
        - cores: Display value (e.g., "160+")
@@ -30,6 +30,8 @@
        - role: "Leader", "Vice-Leader", "Glory Member", or "Member"
        - lmeScore: Current LME score
        - lmeGain: Change from last week (e.g., "(+28)", "(-5)", "(+0)")
+       - cxScore: Current CX score
+       - cxGain: Change from last week (e.g., "(+100)", "(-50)", "(+0)")
     
     2. CHANGING GLORY MEMBERS
        - Change OLD Glory Members' role from "Glory Member" to "Member"
@@ -65,7 +67,7 @@
     
     5. ADDING NEW MEMBERS
        Add new player object to playerData array:
-       { name: "NewPlayer", cores: "0+", attack: 0, coresNum: 0, role: "Member", lmeScore: 0, lmeGain: "(+0)" }
+       { name: "NewPlayer", cores: "0+", attack: 0, coresNum: 0, role: "Member", lmeScore: 0, lmeGain: "(+0)", cxScore: 0, cxGain: "(+0)" }
        
        Update Total Members count
     
@@ -82,6 +84,15 @@
     - Member: White (#f7fafc)
     
     ========================================
+    CX SCORE COLOR CODING
+    ========================================
+    - Green (#48bb78): 70%+ of top scorer (1050+ when max is 1500)
+    - Yellow (#f59e0b): 40-70% of top scorer (600-1049 when max is 1500)
+    - Red (#f56565): Below 40% of top scorer (Below 600 when max is 1500)
+    
+    Note: Update topScore variable in getCXColor() function when max CX changes
+    
+    ========================================
     CURRENT CLAN LEADERSHIP
     ========================================
     - Leader: ×SterbenㅣStray
@@ -91,7 +102,7 @@
     ========================================
     TIPS
     ========================================
-    - Always update lmeGain to show weekly changes
+    - Always update lmeGain and cxGain to show weekly changes
     - Recalculate Avg ATK when member count changes
     - Use Ctrl+F to quickly find sections to update
     - Test locally before pushing to GitHub Pages
@@ -457,43 +468,43 @@
 
     <script>
         const playerData = [
-            { name: "ꕤSettꕤ", cores: "160+", attack: 1462000, coresNum: 160, role: "Vice-Leader", lmeScore: 1180, lmeGain: "(+111)", cxScore: 900, coresGain: "(+0)", attackGain: "(+2.7K)" },
-            { name: "×SterbenㅣStray", cores: "125+", attack: 1572700, coresNum: 125, role: "Leader", lmeScore: 1072, lmeGain: "(+110)", cxScore: 1200, coresGain: "(+5)", attackGain: "(+153.9K)" },
-            { name: "Cunner88", cores: "110+", attack: 1363500, coresNum: 110, role: "Member", lmeScore: 859, lmeGain: "(+44)", cxScore: 700, coresGain: "(+5)", attackGain: "(+0)" },
-            { name: "꧁༺Waiora༻꧂", cores: "130+", attack: 1238400, coresNum: 130, role: "Member", lmeScore: 815, lmeGain: "(+64)", cxScore: 900, coresGain: "(+0)", attackGain: "(+10.2K)" },
-            { name: "Shadowage", cores: "155+", attack: 1299700, coresNum: 155, role: "Member", lmeScore: 783, lmeGain: "(+52)", cxScore: 600, coresGain: "(+5)", attackGain: "(+1.9K)" },
-            { name: "ᴷᴵᵀᴴ", cores: "90+", attack: 966100, coresNum: 90, role: "Vice-Leader", lmeScore: 587, lmeGain: "(+9)", cxScore: 1000, coresGain: "(+5)", attackGain: "(+92.1K)" },
-            { name: "BobBobberson", cores: "85+", attack: 891400, coresNum: 85, role: "Member", lmeScore: 557, lmeGain: "(+8)", cxScore: 1100, coresGain: "(+5)", attackGain: "(+23.0K)" },
-            { name: "Cunner", cores: "65+", attack: 879600, coresNum: 65, role: "Member", lmeScore: 554, lmeGain: "(+10)", cxScore: 300, coresGain: "(+0)", attackGain: "(+0)" },
-            { name: "SterbenㅣStray", cores: "65+", attack: 718700, coresNum: 65, role: "Member", lmeScore: 548, lmeGain: "(+3)", cxScore: 1000, coresGain: "(+0)", attackGain: "(+0.3K)" },
-            { name: "bimbabo", cores: "90+", attack: 883800, coresNum: 90, role: "Member", lmeScore: 548, lmeGain: "(+1)", cxScore: 700, coresGain: "(+5)", attackGain: "(+4.6K)" },
-            { name: "Belthazar", cores: "60+", attack: 855100, coresNum: 60, role: "Member", lmeScore: 536, lmeGain: "(+6)", cxScore: 1200, coresGain: "(+5)", attackGain: "(+2.8K)" },
-            { name: "MrPlusUltra", cores: "65+", attack: 855200, coresNum: 65, role: "Glory Member", lmeScore: 530, lmeGain: "(+9)", cxScore: 1100, coresGain: "(+0)", attackGain: "(+72.5K)" },
-            { name: "SmallBotoㅣStray", cores: "55+", attack: 632500, coresNum: 55, role: "Member", lmeScore: 530, lmeGain: "(+10)", cxScore: 1200, coresGain: "(+5)", attackGain: "(+23.5K)" },
-            { name: "N0M3rcy", cores: "50+", attack: 758200, coresNum: 50, role: "Member", lmeScore: 505, lmeGain: "(-4)", cxScore: 900, coresGain: "(+0)", attackGain: "(+0)" },
-            { name: "CrackJackㅣStray", cores: "55+", attack: 657600, coresNum: 55, role: "Member", lmeScore: 502, lmeGain: "(+1)", cxScore: 0, coresGain: "(+0)", attackGain: "(+1.7K)" },
-            { name: "Asdgner", cores: "80+", attack: 568200, coresNum: 80, role: "Member", lmeScore: 497, lmeGain: "(+10)", cxScore: 800, coresGain: "(+10)", attackGain: "(+49.5K)" },
-            { name: "lguinily", cores: "70+", attack: 719000, coresNum: 70, role: "Member", lmeScore: 484, lmeGain: "(+0)", cxScore: 1100, coresGain: "(+5)", attackGain: "(+12.6K)" },
-            { name: "6J4", cores: "35+", attack: 652300, coresNum: 35, role: "Member", lmeScore: 482, lmeGain: "(+5)", cxScore: 1000, coresGain: "(+0)", attackGain: "(+9.0K)" },
-            { name: "cocacandy", cores: "35+", attack: 620200, coresNum: 35, role: "Member", lmeScore: 482, lmeGain: "", cxScore: 300, coresGain: "", attackGain: "(+4.7K)" },
-            { name: "FlatClicker", cores: "35+", attack: 512300, coresNum: 35, role: "Member", lmeScore: 480, lmeGain: "(+0)", cxScore: 1000, coresGain: "(+0)", attackGain: "(+2.7K)" },
-            { name: "swifft", cores: "40+", attack: 436500, coresNum: 40, role: "Member", lmeScore: 476, lmeGain: "(+26)", cxScore: 400, coresGain: "(+10)", attackGain: "(+32.8K)" },
-            { name: "starbin", cores: "80+", attack: 857400, coresNum: 80, role: "Member", lmeScore: 470, lmeGain: "(-13)", cxScore: 400, coresGain: "(+0)", attackGain: "(+0)" },
-            { name: "Lemminkäinen", cores: "45+", attack: 520000, coresNum: 45, role: "Member", lmeScore: 464, lmeGain: "(+7)", cxScore: 1100, coresGain: "(+10)", attackGain: "(+30.2K)" },
-            { name: "HannaM", cores: "25+", attack: 459200, coresNum: 25, role: "Member", lmeScore: 462, lmeGain: "(+2)", cxScore: 1200, coresGain: "(+0)", attackGain: "(+0)" },
-            { name: "Szoj", cores: "35+", attack: 417500, coresNum: 35, role: "Glory Member", lmeScore: 454, lmeGain: "(+23)", cxScore: 1100, coresGain: "(+10)", attackGain: "(+39.5K)" },
-            { name: "CheesyBreadSticks", cores: "35+", attack: 551800, coresNum: 35, role: "Member", lmeScore: 450, lmeGain: "(+7)", cxScore: 600, coresGain: "(+5)", attackGain: "(+13.9K)" },
-            { name: "OmegaZz", cores: "50+", attack: 523300, coresNum: 50, role: "Member", lmeScore: 444, lmeGain: "", cxScore: 0, coresGain: "", attackGain: "(+6.6K)" },
-            { name: "mc2084", cores: "25+", attack: 515500, coresNum: 25, role: "Glory Member", lmeScore: 435, lmeGain: "(+47)", cxScore: 1100, coresGain: "(+10)", attackGain: "(+2.7K)" },
-            { name: "BOBBYJANG", cores: "35+", attack: 568200, coresNum: 35, role: "Member", lmeScore: 412, lmeGain: "", cxScore: 0, coresGain: "(+0)", attackGain: "(+15.1K)" },
-            { name: "HideOnBushs", cores: "20+", attack: 567000, coresNum: 20, role: "Member", lmeScore: 403, lmeGain: "(+7)", cxScore: 800, coresGain: "(+0)", attackGain: "(+0.1K)" },
-            { name: "Pookaz", cores: "25+", attack: 424700, coresNum: 25, role: "Member", lmeScore: 386, lmeGain: "(+17)", cxScore: 1200, coresGain: "(+0)", attackGain: "(+25.8K)" },
-            { name: "stray|alfred", cores: "25+", attack: 390000, coresNum: 25, role: "Member", lmeScore: 384, lmeGain: "(-18)", cxScore: 100, coresGain: "(+0)", attackGain: "(+5.3K)" },
-            { name: "Player 78792329", cores: "30+", attack: 471400, coresNum: 30, role: "Member", lmeScore: 375, lmeGain: "(-30)", cxScore: 900, coresGain: "(+0)", attackGain: "(+2.9K)" },
-            { name: "slaterhoㅣStray", cores: "15+", attack: 368500, coresNum: 15, role: "Member", lmeScore: 371, lmeGain: "(-4)", cxScore: 500, coresGain: "(+0)", attackGain: "(+8.3K)" },
-            { name: "lct404", cores: "25+", attack: 334200, coresNum: 25, role: "Member", lmeScore: 343, lmeGain: "(+30)", cxScore: 800, coresGain: "(+0)", attackGain: "(+14.5K)" },
-            { name: "Player 32236991", cores: "TBD", attack: 800400, coresNum: 0, role: "Member", lmeScore: 0, lmeGain: "", cxScore: 0, coresGain: "", attackGain: "" },
-            { name: "IM7MD99", cores: "40+", attack: 579600, coresNum: 40, role: "Member", lmeScore: 0, lmeGain: "", cxScore: 0, coresGain: "", attackGain: "" }
+            { name: "ꕤSettꕤ", cores: "160+", attack: 1462000, coresNum: 160, role: "Vice-Leader", lmeScore: 1180, lmeGain: "(+111)", cxScore: 1500, cxGain: "(+600)", coresGain: "(+0)", attackGain: "(+2.7K)" },
+            { name: "×SterbenㅣStray", cores: "125+", attack: 1572700, coresNum: 125, role: "Leader", lmeScore: 1072, lmeGain: "(+110)", cxScore: 1500, cxGain: "(+300)", coresGain: "(+5)", attackGain: "(+153.9K)" },
+            { name: "Cunner88", cores: "110+", attack: 1363500, coresNum: 110, role: "Member", lmeScore: 859, lmeGain: "(+44)", cxScore: 1100, cxGain: "(+400)", coresGain: "(+5)", attackGain: "(+0)" },
+            { name: "꧁༺Waiora༻꧂", cores: "130+", attack: 1238400, coresNum: 130, role: "Member", lmeScore: 815, lmeGain: "(+64)", cxScore: 1300, cxGain: "(+400)", coresGain: "(+0)", attackGain: "(+10.2K)" },
+            { name: "Shadowage", cores: "155+", attack: 1299700, coresNum: 155, role: "Member", lmeScore: 783, lmeGain: "(+52)", cxScore: 1300, cxGain: "(+700)", coresGain: "(+5)", attackGain: "(+1.9K)" },
+            { name: "ᴷᴵᵀᴴ", cores: "90+", attack: 966100, coresNum: 90, role: "Vice-Leader", lmeScore: 587, lmeGain: "(+9)", cxScore: 1300, cxGain: "(+300)", coresGain: "(+5)", attackGain: "(+92.1K)" },
+            { name: "BobBobberson", cores: "85+", attack: 891400, coresNum: 85, role: "Member", lmeScore: 557, lmeGain: "(+8)", cxScore: 1400, cxGain: "(+300)", coresGain: "(+5)", attackGain: "(+23.0K)" },
+            { name: "Cunner", cores: "65+", attack: 879600, coresNum: 65, role: "Member", lmeScore: 554, lmeGain: "(+10)", cxScore: 1000, cxGain: "(+700)", coresGain: "(+0)", attackGain: "(+0)" },
+            { name: "SterbenㅣStray", cores: "65+", attack: 718700, coresNum: 65, role: "Member", lmeScore: 548, lmeGain: "(+3)", cxScore: 1500, cxGain: "(+500)", coresGain: "(+0)", attackGain: "(+0.3K)" },
+            { name: "bimbabo", cores: "90+", attack: 883800, coresNum: 90, role: "Member", lmeScore: 548, lmeGain: "(+1)", cxScore: 1000, cxGain: "(+300)", coresGain: "(+5)", attackGain: "(+4.6K)" },
+            { name: "Belthazar", cores: "60+", attack: 855100, coresNum: 60, role: "Member", lmeScore: 536, lmeGain: "(+6)", cxScore: 1400, cxGain: "(+200)", coresGain: "(+5)", attackGain: "(+2.8K)" },
+            { name: "MrPlusUltra", cores: "65+", attack: 855200, coresNum: 65, role: "Glory Member", lmeScore: 530, lmeGain: "(+9)", cxScore: 1500, cxGain: "(+400)", coresGain: "(+0)", attackGain: "(+72.5K)" },
+            { name: "SmallBotoㅣStray", cores: "55+", attack: 632500, coresNum: 55, role: "Member", lmeScore: 530, lmeGain: "(+10)", cxScore: 1500, cxGain: "(+300)", coresGain: "(+5)", attackGain: "(+23.5K)" },
+            { name: "N0M3rcy", cores: "50+", attack: 758200, coresNum: 50, role: "Member", lmeScore: 505, lmeGain: "(-4)", cxScore: 1400, cxGain: "(+500)", coresGain: "(+0)", attackGain: "(+0)" },
+            { name: "CrackJackㅣStray", cores: "55+", attack: 657600, coresNum: 55, role: "Member", lmeScore: 502, lmeGain: "(+1)", cxScore: 0, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+1.7K)" },
+            { name: "Asdgner", cores: "80+", attack: 568200, coresNum: 80, role: "Member", lmeScore: 497, lmeGain: "(+10)", cxScore: 1000, cxGain: "(+200)", coresGain: "(+10)", attackGain: "(+49.5K)" },
+            { name: "lguinily", cores: "70+", attack: 719000, coresNum: 70, role: "Member", lmeScore: 484, lmeGain: "(+0)", cxScore: 1300, cxGain: "(+200)", coresGain: "(+5)", attackGain: "(+12.6K)" },
+            { name: "6J4", cores: "35+", attack: 652300, coresNum: 35, role: "Member", lmeScore: 482, lmeGain: "(+5)", cxScore: 1400, cxGain: "(+400)", coresGain: "(+0)", attackGain: "(+9.0K)" },
+            { name: "cocacandy", cores: "35+", attack: 620200, coresNum: 35, role: "Member", lmeScore: 482, lmeGain: "", cxScore: 600, cxGain: "(+300)", coresGain: "", attackGain: "(+4.7K)" },
+            { name: "FlatClicker", cores: "35+", attack: 512300, coresNum: 35, role: "Member", lmeScore: 480, lmeGain: "(+0)", cxScore: 1500, cxGain: "(+500)", coresGain: "(+0)", attackGain: "(+2.7K)" },
+            { name: "swifft", cores: "40+", attack: 436500, coresNum: 40, role: "Member", lmeScore: 476, lmeGain: "(+26)", cxScore: 900, cxGain: "(+500)", coresGain: "(+10)", attackGain: "(+32.8K)" },
+            { name: "starbin", cores: "80+", attack: 857400, coresNum: 80, role: "Member", lmeScore: 470, lmeGain: "(-13)", cxScore: 400, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+0)" },
+            { name: "Lemminkäinen", cores: "45+", attack: 520000, coresNum: 45, role: "Member", lmeScore: 464, lmeGain: "(+7)", cxScore: 1500, cxGain: "(+400)", coresGain: "(+10)", attackGain: "(+30.2K)" },
+            { name: "HannaM", cores: "25+", attack: 459200, coresNum: 25, role: "Member", lmeScore: 462, lmeGain: "(+2)", cxScore: 1500, cxGain: "(+300)", coresGain: "(+0)", attackGain: "(+0)" },
+            { name: "Szoj", cores: "35+", attack: 417500, coresNum: 35, role: "Glory Member", lmeScore: 454, lmeGain: "(+23)", cxScore: 1500, cxGain: "(+400)", coresGain: "(+10)", attackGain: "(+39.5K)" },
+            { name: "CheesyBreadSticks", cores: "35+", attack: 551800, coresNum: 35, role: "Member", lmeScore: 450, lmeGain: "(+7)", cxScore: 600, cxGain: "(+0)", coresGain: "(+5)", attackGain: "(+13.9K)" },
+            { name: "OmegaZz", cores: "50+", attack: 523300, coresNum: 50, role: "Member", lmeScore: 444, lmeGain: "", cxScore: 300, cxGain: "(+300)", coresGain: "", attackGain: "(+6.6K)" },
+            { name: "mc2084", cores: "25+", attack: 515500, coresNum: 25, role: "Glory Member", lmeScore: 435, lmeGain: "(+47)", cxScore: 1200, cxGain: "(+100)", coresGain: "(+10)", attackGain: "(+2.7K)" },
+            { name: "BOBBYJANG", cores: "35+", attack: 568200, coresNum: 35, role: "Member", lmeScore: 412, lmeGain: "", cxScore: 0, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+15.1K)" },
+            { name: "HideOnBushs", cores: "20+", attack: 567000, coresNum: 20, role: "Member", lmeScore: 403, lmeGain: "(+7)", cxScore: 1200, cxGain: "(+400)", coresGain: "(+0)", attackGain: "(+0.1K)" },
+            { name: "Pookaz", cores: "25+", attack: 424700, coresNum: 25, role: "Member", lmeScore: 386, lmeGain: "(+17)", cxScore: 1400, cxGain: "(+200)", coresGain: "(+0)", attackGain: "(+25.8K)" },
+            { name: "stray|alfred", cores: "25+", attack: 390000, coresNum: 25, role: "Member", lmeScore: 384, lmeGain: "(-18)", cxScore: 100, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+5.3K)" },
+            { name: "Player 78792329", cores: "30+", attack: 471400, coresNum: 30, role: "Member", lmeScore: 375, lmeGain: "(-30)", cxScore: 1200, cxGain: "(+300)", coresGain: "(+0)", attackGain: "(+2.9K)" },
+            { name: "slaterhoㅣStray", cores: "15+", attack: 368500, coresNum: 15, role: "Member", lmeScore: 371, lmeGain: "(-4)", cxScore: 800, cxGain: "(+300)", coresGain: "(+0)", attackGain: "(+8.3K)" },
+            { name: "lct404", cores: "25+", attack: 334200, coresNum: 25, role: "Member", lmeScore: 343, lmeGain: "(+30)", cxScore: 1100, cxGain: "(+300)", coresGain: "(+0)", attackGain: "(+14.5K)" },
+            { name: "Player 32236991", cores: "TBD", attack: 800400, coresNum: 0, role: "Member", lmeScore: 0, lmeGain: "", cxScore: 0, cxGain: "(+0)", coresGain: "", attackGain: "" },
+            { name: "IM7MD99", cores: "40+", attack: 579600, coresNum: 40, role: "Member", lmeScore: 0, lmeGain: "", cxScore: 0, cxGain: "(+0)", coresGain: "", attackGain: "" }
         ];
 
         let filteredData = [...playerData];
@@ -509,9 +520,9 @@
         }
 
         function getCXColor(score) {
-            const topScore = 1200; // Current top CX score
-            const greenThreshold = topScore * 0.7; // 840
-            const yellowThreshold = topScore * 0.4; // 480
+            const topScore = 1500; // Updated top CX score
+            const greenThreshold = topScore * 0.7; // 1050
+            const yellowThreshold = topScore * 0.4; // 600
             
             if (score >= greenThreshold) return '#48bb78'; // Green
             if (score >= yellowThreshold) return '#f59e0b'; // Yellow
@@ -558,6 +569,9 @@
                     </td>
                     <td style="text-align: center; font-weight: 600; color: ${getCXColor(player.cxScore)};">
                         ${player.cxScore}
+                        ${player.cxGain ? `<span style="color: ${player.cxGain.includes('+') && !player.cxGain.includes('(+0)') ? '#48bb78' : player.cxGain.includes('(+0)') ? '#a0aec0' : '#f56565'}; font-size: 10px; margin-left: 2px; display: block;">
+                            ${player.cxGain}
+                        </span>` : ''}
                     </td>
                 `;
                 tbody.appendChild(row);
@@ -607,7 +621,7 @@
         }
 
         function exportToCSV() {
-            const headers = ['Rank', 'Player Name', 'Relic Cores', 'Cores Gain', 'ATK', 'ATK Gain', 'LME Score', 'LME Gain', 'CX'];
+            const headers = ['Rank', 'Player Name', 'Relic Cores', 'Cores Gain', 'ATK', 'ATK Gain', 'LME Score', 'LME Gain', 'CX', 'CX Gain'];
             const csvContent = [
                 headers.join(','),
                 ...filteredData.map((player, index) => [
@@ -619,7 +633,8 @@
                     `"${player.attackGain || ''}"`,
                     player.lmeScore,
                     `"${player.lmeGain || ''}"`,
-                    player.cxScore
+                    player.cxScore,
+                    `"${player.cxGain || ''}"`
                 ].join(','))
             ].join('\n');
             
