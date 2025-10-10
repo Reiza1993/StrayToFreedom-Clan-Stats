@@ -325,7 +325,7 @@
         
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin-bottom: 20px; text-align: center;">
             <div style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 10px; border-radius: 8px; font-size: 14px; font-weight: 600; min-height: 40px; display: flex; align-items: center; justify-content: center;">
-                LME Phase: 17.000+
+                LME Phase: 17.000+ <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Medals.png" alt="" style="width: 16px; height: 16px; margin-left: 8px; vertical-align: middle;" onerror="this.style.display='none';">
             </div>
             <div style="background: linear-gradient(135deg, #ed8936, #dd6b20); color: white; padding: 10px; border-radius: 8px; font-size: 14px; font-weight: 600; min-height: 40px; display: flex; align-items: center; justify-content: center;">
                 LME Difficulty 10
@@ -377,10 +377,22 @@
                 <tr>
                     <th>Rank</th>
                     <th>Player Name</th>
-                    <th><img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Relic%20Cores.png" alt="Relic Cores" style="width: 20px; height: 20px; vertical-align: middle;"></th>
-                    <th><img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/ATK.png" alt="ATK" style="width: 20px; height: 20px; vertical-align: middle;"></th>
-                    <th>LME Score</th>
-                    <th><img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/CX.png" alt="CX" style="width: 20px; height: 20px; vertical-align: middle;"></th>
+                    <th>
+                        <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Relic%20Cores.png" alt="Relic Cores" style="width: 20px; height: 20px; vertical-align: middle;" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
+                        <span style="display: none;">Relic Cores</span>
+                    </th>
+                    <th>
+                        <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/ATK.png" alt="ATK" style="width: 20px; height: 20px; vertical-align: middle;" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
+                        <span style="display: none;">ATK</span>
+                    </th>
+                    <th>
+                        <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Medals.png" alt="LME Score" style="width: 20px; height: 20px; vertical-align: middle;" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
+                        <span style="display: none;">LME Score</span>
+                    </th>
+                    <th>
+                        <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/CX.png" alt="CX" style="width: 20px; height: 20px; vertical-align: middle;" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
+                        <span style="display: none;">CX</span>
+                    </th>
                 </tr>
             </thead>
             <tbody id="tableBody">
@@ -398,8 +410,14 @@
                         <tr>
                             <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 12px 8px; text-align: center; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px;">LME #</th>
                             <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 12px 8px; text-align: center; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px;">Position</th>
-                            <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 12px 8px; text-align: center; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px;">Points</th>
-                            <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 12px 8px; text-align: center; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px;">Medal</th>
+                            <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 12px 8px; text-align: center; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px;">
+                                <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Defense_Attack%20Points.png" alt="Points" style="width: 20px; height: 20px; vertical-align: middle;" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
+                                <span style="display: none;">Points</span>
+                            </th>
+                            <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 12px 8px; text-align: center; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px;">
+                                <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Medals.png" alt="Medal" style="width: 20px; height: 20px; vertical-align: middle;" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
+                                <span style="display: none;">Medal</span>
+                            </th>
                             <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 12px 8px; text-align: center; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px;">League</th>
                         </tr>
                     </thead>
