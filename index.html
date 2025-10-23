@@ -14,121 +14,39 @@
     This is the Freedomˢᵗʳᵃʸ clan statistics page for Geometry Dash Aftermath.
     
     ========================================
-    QUICK UPDATE GUIDE
+    NEW STRUCTURE - EXTERNAL DATA FILES
     ========================================
     
-    1. UPDATING PLAYER DATA (Line ~230 in <script> section)
-       Find: const playerData = [
-       
-       Each player entry format:
-       { name: "PlayerName", cores: "XX+", attack: XXXXXX, coresNum: XX, role: "Role", lmeScore: XXX, lmeGain: "(+X)", cxScore: XXX, cxGain: "(+X)", coresGain: "(+X)", attackGain: "(+X.XK)" }
-       
-       Fields to update:
-       - cores: Display value (e.g., "160+")
-       - attack: Numeric attack value (e.g., 1459300)
-       - coresNum: Numeric core value for sorting (e.g., 160)
-       - role: "Leader", "Vice-Leader", "Glory Member", or "Member"
-       - lmeScore: Current LME score
-       - lmeGain: Change from last week (e.g., "(+28)", "(-5)", "(+0)")
-       - cxScore: Current CX score (Explorer Badge points)
-       - cxGain: Change from last week (e.g., "(+100)", "(-50)", "(+0)")
-       - coresGain: Change in cores (e.g., "(+5)", "(+0)", "(-2)")
-       - attackGain: Change in attack (e.g., "(+15.3K)", "(+0)", "(-2.1K)")
-
-    2. CHANGING GLORY MEMBERS
-       - Change OLD Glory Members' role from "Glory Member" to "Member"
-       - Change NEW Glory Members' role from "Member" to "Glory Member"
-       - Glory Members display with gold color and glow animation
-
-    3. UPDATING CLAN TOTALS (Lines ~90-110)
-       Find the stat boxes and update:
-       - LME Phase: Current phase number
-       - LME Difficulty: Current difficulty level
-       - LME League: Current league and Lunar Points
-       - Total Members: X/40
-       - Total Cores: XXXX+ (Top 30 performance)
-       - Total ATK: XX.XXM (Top 30 performance)
-       - Avg ATK: XXX.XK (Top 30 average: sum of top 30 ATK / 30)
-
-    4. UPDATING CX COLOR FUNCTION (when max CX changes)
-       Find: function getCXColor(score)
-       Update: const topScore = XXXX; (set to current maximum CX score)
-
-    5. ADDING NEW LME RESULTS (Lines ~180-220 in LME History Modal)
-       Add new row at the TOP of the table inside <tbody>:
-       
-       <tr style="border-bottom: 1px solid #4a5568;">
-           <td style="padding: 10px 12px; color: #e2e8f0; text-align: center; font-weight: 600; font-size: 13px;">LME#</td>
-           <td style="padding: 10px 12px; text-align: center; font-weight: 600; font-size: 13px;">
-               <img src="...Rank#.png" alt="#" style="width: 20px; vertical-align: middle;">
-           </td>
-           <td style="padding: 10px 12px; color: #e2e8f0; text-align: center; font-size: 13px;">ATK/DEF_POINTS</td>
-           <td style="padding: 10px 12px; color: #68d391; text-align: center; font-weight: 600; font-size: 13px;">MEDALS</td>
-           <td style="padding: 10px 12px; color: #ffd700; text-align: center; font-weight: 600; font-size: 13px;">LEAGUE</td>
-       </tr>
-
-    6. ADDING NEW MEMBERS
-       Add new player object to playerData array:
-       { name: "NewPlayer", cores: "TBD", attack: XXXXXX, coresNum: 0, role: "Member", lmeScore: 0, lmeGain: "", cxScore: 0, cxGain: "(+0)", coresGain: "", attackGain: "" }
-       
-       Update Total Members count in stat boxes
-
-    7. REMOVING MEMBERS
-       Delete entire player object from playerData array
-       Add removed member to Alumni section
-       Update Total Members count and recalculate totals
-
-    8. UPDATING ALUMNI
-       Add new alumni names to the Alumni modal grid
-       Update alumni count in the description
-
+    Data is now separated into external files for easier maintenance:
+    
+    1. playerData.js - Contains all player statistics
+    2. clanStats.js - Contains clan info, LME history, and alumni
+    
+    To update data:
+    - Edit playerData.js for player stats
+    - Edit clanStats.js for clan totals, LME history, alumni
+    - No need to touch this index.html file unless changing layout/styling
+    
     ========================================
-    ROLE COLOR REFERENCE
+    UPDATING PLAYER DATA (playerData.js)
     ========================================
-    - Leader: Red (#fc8181)
-    - Vice-Leader: Orange (#ed8936)
-    - Glory Member: Gold (#ffd700) with glow animation
-    - Member: White (#f7fafc)
-
+    
+    Edit the playerData array in playerData.js:
+    { name: "PlayerName", cores: "XX+", attack: XXXXXX, coresNum: XX, role: "Role", lmeScore: XXX, lmeGain: "(+X)", cxScore: XXX, cxGain: "(+X)", coresGain: "(+X)", attackGain: "(+X.XK)" }
+    
     ========================================
-    CX SCORE COLOR CODING (Dynamic based on topScore)
+    UPDATING CLAN STATS (clanStats.js)
     ========================================
-    - Green (#48bb78): 70%+ of top scorer
-    - Yellow (#f59e0b): 40-70% of top scorer
-    - Red (#f56565): Below 40% of top scorer
-
-    Note: Update topScore variable in getCXColor() function when max CX changes
-
-    ========================================
-    GAIN COLOR CODING
-    ========================================
-    For Cores, ATK, LME (can increase/decrease):
-    - Bright Green (#10b981): Positive gains (+1, +50, etc.)
-    - Gray (#a0aec0): No change (+0)
-    - Red (#f56565): Negative changes (-5, -10, etc.)
-
-    For CX (only increases, never decreases):
-    - White (#f7fafc): Any positive gain (+100, +500, etc.)
-    - Gray (#a0aec0): No change (+0)
-
-    Note: CX uses white for better contrast against all CX score colors
-
-    ========================================
-    CURRENT CLAN LEADERSHIP (Update as needed)
-    ========================================
-    - Leader: 神SterbenㅣStray
-    - Vice-Leaders: ꕤSettꕤ, ᴷᴵᵀᴴ
-
-    ========================================
-    TIPS
-    ========================================
-    - Always update lmeGain, cxGain, coresGain, and attackGain to show weekly changes
-    - Top 30 stats: Recalculate Total Cores, Total ATK, and Avg ATK using only top 30 players
-    - Use Ctrl+F to quickly find sections to update
-    - Test locally before pushing to GitHub Pages
-    - When updating CX scores, remember to update the topScore in getCXColor() function
-    - For new members, use "TBD" for cores and 0 for scores until data is available
-
+    
+    Edit the clanStats object in clanStats.js:
+    - Basic info (clanName, clanId)
+    - LME info (lmePhase, lmeDifficulty, lmeLeague, lunarPoints)
+    - Totals (totalMembers, totalCores, totalAttack, averageAttack)
+    - Leadership (leader, viceLeaders)
+    
+    Edit lmeHistory array to add new LME results
+    Edit alumniMembers array to add/remove alumni
+    
     ========================================
     -->
     <style>
@@ -328,34 +246,38 @@
 <body>
     <div class="container">
         <h1>Clan Statistics</h1>
-        <div class="clan-name">Freedomˢᵗʳᵃʸ</div>
-        <div style="text-align: center; color: #a0aec0; font-size: 1em; margin-bottom: 10px; font-weight: 400;">ClanID: 44262</div>
+        <div class="clan-name" id="clanName">Freedomˢᵗʳᵃʸ</div>
+        <div style="text-align: center; color: #a0aec0; font-size: 1em; margin-bottom: 10px; font-weight: 400;">
+            ClanID: <span id="clanId">44262</span>
+        </div>
         
+        <!-- LME Info Boxes -->
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin-bottom: 20px; text-align: center;">
             <div style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 10px; border-radius: 8px; font-size: 14px; font-weight: 600; min-height: 40px; display: flex; align-items: center; justify-content: center;">
-                LME Phase: 18K+ <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Medals.png" alt="" style="width: 16px; height: 16px; margin-left: 8px; vertical-align: middle;" onerror="this.style.display='none';">
+                LME Phase: <span id="lmePhase">18K+</span> <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Medals.png" alt="" style="width: 16px; height: 16px; margin-left: 8px; vertical-align: middle;" onerror="this.style.display='none';">
             </div>
             <div style="background: linear-gradient(135deg, #ed8936, #dd6b20); color: white; padding: 10px; border-radius: 8px; font-size: 14px; font-weight: 600; min-height: 40px; display: flex; align-items: center; justify-content: center;">
-                LME Difficulty 11
+                LME Difficulty <span id="lmeDifficulty">11</span>
             </div>
             <div style="background: linear-gradient(135deg, #38b2ac, #319795); color: white; padding: 10px; border-radius: 8px; font-size: 14px; font-weight: 600; min-height: 40px; display: flex; flex-direction: column; align-items: center; justify-content: center; grid-column: 1 / -1; line-height: 1.2;">
-                <div>LME League: Legend 1</div>
-                <div>Lunar Points: 950</div>
+                <div>LME League: <span id="lmeLeague">Legend 1</span></div>
+                <div>Lunar Points: <span id="lunarPoints">950</span></div>
             </div>
         </div>
         
+        <!-- Clan Stats Boxes -->
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin-bottom: 20px; text-align: center;">
             <div style="background: linear-gradient(135deg, #38b2ac, #319795); color: white; padding: 10px; border-radius: 8px; font-size: 14px; font-weight: 600; min-height: 40px; display: flex; align-items: center; justify-content: center;">
-                Total Members: 40/40
+                Total Members: <span id="totalMembers">40/40</span>
             </div>
             <div style="background: linear-gradient(135deg, #38b2ac, #319795); color: white; padding: 10px; border-radius: 8px; font-size: 14px; font-weight: 600; min-height: 40px; display: flex; align-items: center; justify-content: center;">
-                Total Cores: 2560+
+                Total Cores: <span id="totalCores">2560+</span>
             </div>
             <div style="background: linear-gradient(135deg, #ed8936, #dd6b20); color: white; padding: 10px; border-radius: 8px; font-size: 14px; font-weight: 600; min-height: 40px; display: flex; align-items: center; justify-content: center;">
-                Total ATK: 26.83M
+                Total ATK: <span id="totalAttack">26.83M</span>
             </div>
             <div style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 10px; border-radius: 8px; font-size: 14px; font-weight: 600; min-height: 40px; display: flex; align-items: center; justify-content: center;">
-                Avg ATK: 894K
+                Avg ATK: <span id="averageAttack">894K</span>
             </div>
         </div>
         
@@ -433,111 +355,8 @@
                             <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 12px 12px; text-align: center; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; white-space: nowrap;">LEAGUE</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr style="border-bottom: 1px solid #4a5568;">
-                            <td style="padding: 10px 12px; color: #e2e8f0; text-align: center; font-weight: 600; font-size: 13px;">11</td>
-                            <td style="padding: 10px 12px; text-align: center; font-weight: 600; font-size: 13px;">
-                                <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Rank3.png" alt="#3" style="width: 20px; vertical-align: middle;" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
-                                <span style="display: none; color: #cd7930; font-weight: 600;">#3</span>
-                            </td>
-                            <td style="padding: 10px 12px; color: #e2e8f0; text-align: center; font-size: 13px;">4</td>
-                            <td style="padding: 10px 12px; color: #68d391; text-align: center; font-weight: 600; font-size: 13px;">105,780</td>
-                            <td style="padding: 10px 12px; color: #ffd700; text-align: center; font-weight: 600; font-size: 13px; white-space: nowrap;">Legend 1</td>
-                        </tr>
-                        <tr style="background-color: #374151; border-bottom: 1px solid #4a5568;">
-                            <td style="padding: 10px 12px; color: #e2e8f0; text-align: center; font-weight: 600; font-size: 13px;">10</td>
-                            <td style="padding: 10px 12px; text-align: center; font-weight: 600; font-size: 13px;">
-                                <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Rank2.png" alt="#2" style="width: 20px; vertical-align: middle;" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
-                                <span style="display: none; color: #cd7930; font-weight: 600;">#2</span>
-                            </td>
-                            <td style="padding: 10px 12px; color: #e2e8f0; text-align: center; font-size: 13px;">5</td>
-                            <td style="padding: 10px 12px; color: #68d391; text-align: center; font-weight: 600; font-size: 13px;">206,524</td>
-                            <td style="padding: 10px 12px; color: #ffd700; text-align: center; font-weight: 600; font-size: 13px; white-space: nowrap;">Legend 1</td>
-                        </tr>
-                        <tr style="border-bottom: 1px solid #4a5568;">
-                            <td style="padding: 10px 12px; color: #e2e8f0; text-align: center; font-weight: 600; font-size: 13px;">9</td>
-                            <td style="padding: 10px 12px; color: #f56565; text-align: center; font-weight: 600; font-size: 13px;">#4</td>
-                            <td style="padding: 10px 12px; color: #e2e8f0; text-align: center; font-size: 13px;">2</td>
-                            <td style="padding: 10px 12px; color: #68d391; text-align: center; font-weight: 600; font-size: 13px;">32,043</td>
-                            <td style="padding: 10px 12px; color: #ffd700; text-align: center; font-weight: 600; font-size: 13px; white-space: nowrap;">Legend 1</td>
-                        </tr>
-                        <tr style="background-color: #374151; border-bottom: 1px solid #4a5568;">
-                            <td style="padding: 10px 12px; color: #e2e8f0; text-align: center; font-weight: 600; font-size: 13px;">8</td>
-                            <td style="padding: 10px 12px; text-align: center; font-weight: 600; font-size: 13px;">
-                                <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Rank2.png" alt="#2" style="width: 20px; vertical-align: middle;" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
-                                <span style="display: none; color: #cd7930; font-weight: 600;">#2</span>
-                            </td>
-                            <td style="padding: 10px 12px; color: #e2e8f0; text-align: center; font-size: 13px;">5</td>
-                            <td style="padding: 10px 12px; color: #68d391; text-align: center; font-weight: 600; font-size: 13px;">86,771</td>
-                            <td style="padding: 10px 12px; color: #ffd700; text-align: center; font-weight: 600; font-size: 13px; white-space: nowrap;">Elite 3</td>
-                        </tr>
-                        <tr style="border-bottom: 1px solid #4a5568;">
-                            <td style="padding: 10px 12px; color: #e2e8f0; text-align: center; font-weight: 600; font-size: 13px;">7</td>
-                            <td style="padding: 10px 12px; text-align: center; font-weight: 600; font-size: 13px;">
-                                <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Rank1.png" alt="#1" style="width: 20px; vertical-align: middle;" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
-                                <span style="display: none; color: #ffd700; font-weight: 600;">#1</span>
-                            </td>
-                            <td style="padding: 10px 12px; color: #e2e8f0; text-align: center; font-size: 13px;">6</td>
-                            <td style="padding: 10px 12px; color: #68d391; text-align: center; font-weight: 600; font-size: 13px;">122,736</td>
-                            <td style="padding: 10px 12px; color: #ffd700; text-align: center; font-weight: 600; font-size: 13px;">Elite 3</td>
-                        </tr>
-                        <tr style="background-color: #374151; border-bottom: 1px solid #4a5568;">
-                            <td style="padding: 10px 12px; color: #e2e8f0; text-align: center; font-weight: 600; font-size: 13px;">6</td>
-                            <td style="padding: 10px 12px; text-align: center; font-weight: 600; font-size: 13px;">
-                                <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Rank1.png" alt="#1" style="width: 20px; vertical-align: middle;" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
-                                <span style="display: none; color: #ffd700; font-weight: 600;">#1</span>
-                            </td>
-                            <td style="padding: 10px 12px; color: #e2e8f0; text-align: center; font-size: 13px;">5</td>
-                            <td style="padding: 10px 12px; color: #68d391; text-align: center; font-weight: 600; font-size: 13px;">115,671</td>
-                            <td style="padding: 10px 12px; color: #ffd700; text-align: center; font-weight: 600; font-size: 13px;">Elite 2</td>
-                        </tr>
-                        <tr style="border-bottom: 1px solid #4a5568;">
-                            <td style="padding: 10px 12px; color: #e2e8f0; text-align: center; font-weight: 600; font-size: 13px;">5</td>
-                            <td style="padding: 10px 12px; text-align: center; font-weight: 600; font-size: 13px;">
-                                <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Rank2.png" alt="#2" style="width: 20px; vertical-align: middle;" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
-                                <span style="display: none; color: #cd7930; font-weight: 600;">#2</span>
-                            </td>
-                            <td style="padding: 10px 12px; color: #e2e8f0; text-align: center; font-size: 13px;">3</td>
-                            <td style="padding: 10px 12px; color: #68d391; text-align: center; font-weight: 600; font-size: 13px;">65,415</td>
-                            <td style="padding: 10px 12px; color: #ffd700; text-align: center; font-weight: 600; font-size: 13px;">Elite 3</td>
-                        </tr>
-                        <tr style="background-color: #374151; border-bottom: 1px solid #4a5568;">
-                            <td style="padding: 10px 12px; color: #e2e8f0; text-align: center; font-weight: 600; font-size: 13px;">4</td>
-                            <td style="padding: 10px 12px; text-align: center; font-weight: 600; font-size: 13px;">
-                                <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Rank3.png" alt="#3" style="width: 20px; vertical-align: middle;" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
-                                <span style="display: none; color: #cd7930; font-weight: 600;">#3</span>
-                            </td>
-                            <td style="padding: 10px 12px; color: #e2e8f0; text-align: center; font-size: 13px;">3</td>
-                            <td style="padding: 10px 12px; color: #68d391; text-align: center; font-weight: 600; font-size: 13px;">82,682</td>
-                            <td style="padding: 10px 12px; color: #ffd700; text-align: center; font-weight: 600; font-size: 13px;">Elite 2</td>
-                        </tr>
-                        <tr style="border-bottom: 1px solid #4a5568;">
-                            <td style="padding: 10px 12px; color: #e2e8f0; text-align: center; font-weight: 600; font-size: 13px;">3</td>
-                            <td style="padding: 10px 12px; text-align: center; font-weight: 600; font-size: 13px;">
-                                <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Rank1.png" alt="#1" style="width: 20px; height: 20px; vertical-align: middle;" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
-                                <span style="display: none; color: #ffd700; font-weight: 600;">#1</span>
-                            </td>
-                            <td style="padding: 10px 12px; color: #e2e8f0; text-align: center; font-size: 13px;">4</td>
-                            <td style="padding: 10px 12px; color: #68d391; text-align: center; font-weight: 600; font-size: 13px;">88,238</td>
-                            <td style="padding: 10px 12px; color: #ffd700; text-align: center; font-weight: 600; font-size: 13px;">Elite 2</td>
-                        </tr>
-                        <tr style="background-color: #374151; border-bottom: 1px solid #4a5568;">
-                            <td style="padding: 10px 12px; color: #e2e8f0; text-align: center; font-weight: 600; font-size: 13px;">2</td>
-                            <td style="padding: 10px 12px; color: #f56565; text-align: center; font-weight: 600; font-size: 13px;">#4</td>
-                            <td style="padding: 10px 12px; color: #e2e8f0; text-align: center; font-size: 13px;">2</td>
-                            <td style="padding: 10px 12px; color: #68d391; text-align: center; font-weight: 600; font-size: 13px;">53,456</td>
-                            <td style="padding: 10px 12px; color: #ffd700; text-align: center; font-weight: 600; font-size: 13px;">Elite 2</td>
-                        </tr>
-                        <tr style="border-bottom: 1px solid #4a5568;">
-                            <td style="padding: 10px 12px; color: #e2e8f0; text-align: center; font-weight: 600; font-size: 13px;">1</td>
-                            <td style="padding: 10px 12px; text-align: center; font-weight: 600; font-size: 13px;">
-                                <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Rank1.png" alt="#1" style="width: 20px; height: 20px; vertical-align: middle;" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
-                                <span style="display: none; color: #ffd700; font-weight: 600;">#1</span>
-                            </td>
-                            <td style="padding: 10px 12px; color: #e2e8f0; text-align: center; font-size: 13px;">3</td>
-                            <td style="padding: 10px 12px; color: #68d391; text-align: center; font-weight: 600; font-size: 13px;">99,415</td>
-                            <td style="padding: 10px 12px; color: #ffd700; text-align: center; font-weight: 600; font-size: 13px;">Elite 1</td>
-                        </tr>
+                    <tbody id="lmeHistoryTableBody">
+                        <!-- LME History will be populated by JavaScript -->
                     </tbody>
                 </table>
             </div>
@@ -551,171 +370,53 @@
                 
                 <div style="background: #374151; border-radius: 8px; padding: 15px; margin-bottom: 15px; text-align: center;">
                     <p style="color: #e2e8f0; margin: 0; font-size: 14px; line-height: 1.4;">
-                        <strong style="color: #ffd700;">37 Alumni Members</strong><br>
+                        <strong style="color: #ffd700;"><span id="alumniCount">37</span> Alumni Members</strong><br>
                         <span style="color: #a0aec0;">Former clan members who contributed to our journey</span>
                     </p>
                 </div>
                 
-                <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 10px; max-height: 400px; overflow-y: auto; padding: 10px; background: #374151; border-radius: 8px;">
-                    <div style="background: #2d3748; padding: 8px; border-radius: 6px; text-align: center; border: 1px solid #4a5568;">
-                        <span style="color: #e2e8f0; font-size: 13px;">Dylan0001</span>
-                    </div>
-                    <div style="background: #2d3748; padding: 8px; border-radius: 6px; text-align: center; border: 1px solid #4a5568;">
-                        <span style="color: #e2e8f0; font-size: 13px;">porfiaak</span>
-                    </div>
-                    <div style="background: #2d3748; padding: 8px; border-radius: 6px; text-align: center; border: 1px solid #4a5568;">
-                        <span style="color: #e2e8f0; font-size: 13px;">espadin22</span>
-                    </div>
-                    <div style="background: #2d3748; padding: 8px; border-radius: 6px; text-align: center; border: 1px solid #4a5568;">
-                        <span style="color: #e2e8f0; font-size: 13px;">thatmanisgey</span>
-                    </div>
-                    <div style="background: #2d3748; padding: 8px; border-radius: 6px; text-align: center; border: 1px solid #4a5568;">
-                        <span style="color: #e2e8f0; font-size: 13px;">YeezyLord</span>
-                    </div>
-                    <div style="background: #2d3748; padding: 8px; border-radius: 6px; text-align: center; border: 1px solid #4a5568;">
-                        <span style="color: #e2e8f0; font-size: 13px;">moonkyy</span>
-                    </div>
-                    <div style="background: #2d3748; padding: 8px; border-radius: 6px; text-align: center; border: 1px solid #4a5568;">
-                        <span style="color: #e2e8f0; font-size: 13px;">tonserlars</span>
-                    </div>
-                    <div style="background: #2d3748; padding: 8px; border-radius: 6px; text-align: center; border: 1px solid #4a5568;">
-                        <span style="color: #e2e8f0; font-size: 13px;">khoprademon</span>
-                    </div>
-                    <div style="background: #2d3748; padding: 8px; border-radius: 6px; text-align: center; border: 1px solid #4a5568;">
-                        <span style="color: #e2e8f0; font-size: 13px;">offBait</span>
-                    </div>
-                    <div style="background: #2d3748; padding: 8px; border-radius: 6px; text-align: center; border: 1px solid #4a5568;">
-                        <span style="color: #e2e8f0; font-size: 13px;">j__d1</span>
-                    </div>
-                    <div style="background: #2d3748; padding: 8px; border-radius: 6px; text-align: center; border: 1px solid #4a5568;">
-                        <span style="color: #e2e8f0; font-size: 13px;">13mpty</span>
-                    </div>
-                    <div style="background: #2d3748; padding: 8px; border-radius: 6px; text-align: center; border: 1px solid #4a5568;">
-                        <span style="color: #e2e8f0; font-size: 13px;">bol4nd3ng</span>
-                    </div>
-                    <div style="background: #2d3748; padding: 8px; border-radius: 6px; text-align: center; border: 1px solid #4a5568;">
-                        <span style="color: #e2e8f0; font-size: 13px;">mo265489</span>
-                    </div>
-                    <div style="background: #2d3748; padding: 8px; border-radius: 6px; text-align: center; border: 1px solid #4a5568;">
-                        <span style="color: #e2e8f0; font-size: 13px;">Demoncracy</span>
-                    </div>
-                    <div style="background: #2d3748; padding: 8px; border-radius: 6px; text-align: center; border: 1px solid #4a5568;">
-                        <span style="color: #e2e8f0; font-size: 13px;">StrayKucsika97</span>
-                    </div>
-                    <div style="background: #2d3748; padding: 8px; border-radius: 6px; text-align: center; border: 1px solid #4a5568;">
-                        <span style="color: #e2e8f0; font-size: 13px;">D1L3R_PL</span>
-                    </div>
-                    <div style="background: #2d3748; padding: 8px; border-radius: 6px; text-align: center; border: 1px solid #4a5568;">
-                        <span style="color: #e2e8f0; font-size: 13px;">4nd333</span>
-                    </div>
-                    <div style="background: #2d3748; padding: 8px; border-radius: 6px; text-align: center; border: 1px solid #4a5568;">
-                        <span style="color: #e2e8f0; font-size: 13px;">hiimnhat</span>
-                    </div>
-                    <div style="background: #2d3748; padding: 8px; border-radius: 6px; text-align: center; border: 1px solid #4a5568;">
-                        <span style="color: #e2e8f0; font-size: 13px;">Ruzagi</span>
-                    </div>
-                    <div style="background: #2d3748; padding: 8px; border-radius: 6px; text-align: center; border: 1px solid #4a5568;">
-                        <span style="color: #e2e8f0; font-size: 13px;">NarutoUzuma</span>
-                    </div>
-                    <div style="background: #2d3748; padding: 8px; border-radius: 6px; text-align: center; border: 1px solid #4a5568;">
-                        <span style="color: #e2e8f0; font-size: 13px;">ByRess</span>
-                    </div>
-                    <div style="background: #2d3748; padding: 8px; border-radius: 6px; text-align: center; border: 1px solid #4a5568;">
-                        <span style="color: #e2e8f0; font-size: 13px;">Beef4Brains</span>
-                    </div>
-                    <div style="background: #2d3748; padding: 8px; border-radius: 6px; text-align: center; border: 1px solid #4a5568;">
-                        <span style="color: #e2e8f0; font-size: 13px;">E-Duke</span>
-                    </div>
-                    <div style="background: #2d3748; padding: 8px; border-radius: 6px; text-align: center; border: 1px solid #4a5568;">
-                        <span style="color: #e2e8f0; font-size: 13px;">bluebirds123456</span>
-                    </div>
-                    <div style="background: #2d3748; padding: 8px; border-radius: 6px; text-align: center; border: 1px solid #4a5568;">
-                        <span style="color: #e2e8f0; font-size: 13px;">2xc3</span>
-                    </div>
-                    <div style="background: #2d3748; padding: 8px; border-radius: 6px; text-align: center; border: 1px solid #4a5568;">
-                        <span style="color: #e2e8f0; font-size: 13px;">Chumuzuke</span>
-                    </div>
-                    <div style="background: #2d3748; padding: 8px; border-radius: 6px; text-align: center; border: 1px solid #4a5568;">
-                        <span style="color: #e2e8f0; font-size: 13px;">Coopet</span>
-                    </div>
-                    <div style="background: #2d3748; padding: 8px; border-radius: 6px; text-align: center; border: 1px solid #4a5568;">
-                        <span style="color: #e2e8f0; font-size: 13px;">StrayCleow:)</span>
-                    </div>
-                    <div style="background: #2d3748; padding: 8px; border-radius: 6px; text-align: center; border: 1px solid #4a5568;">
-                        <span style="color: #e2e8f0; font-size: 13px;">CheesyBreadSticks</span>
-                    </div>
-                    <div style="background: #2d3748; padding: 8px; border-radius: 6px; text-align: center; border: 1px solid #4a5568;">
-                        <span style="color: #e2e8f0; font-size: 13px;">starbin</span>
-                    </div>
-                    <div style="background: #2d3748; padding: 8px; border-radius: 6px; text-align: center; border: 1px solid #4a5568;">
-                        <span style="color: #e2e8f0; font-size: 13px;">BOBBYJANG</span>
-                    </div>
-                    <div style="background: #2d3748; padding: 8px; border-radius: 6px; text-align: center; border: 1px solid #4a5568;">
-                        <span style="color: #e2e8f0; font-size: 13px;">slaterhoㅣStray</span>
-                    </div>
-                    <div style="background: #2d3748; padding: 8px; border-radius: 6px; text-align: center; border: 1px solid #4a5568;">
-                        <span style="color: #e2e8f0; font-size: 13px;">lct404</span>
-                    </div>
-                    <div style="background: #2d3748; padding: 8px; border-radius: 6px; text-align: center; border: 1px solid #4a5568;">
-                        <span style="color: #e2e8f0; font-size: 13px;">CrackJackㅣStray</span>
-                    </div>
-                    <div style="background: #2d3748; padding: 8px; border-radius: 6px; text-align: center; border: 1px solid #4a5568;">
-                        <span style="color: #e2e8f0; font-size: 13px;">stray|alfred</span>
-                    </div>
-                    <div style="background: #2d3748; padding: 8px; border-radius: 6px; text-align: center; border: 1px solid #4a5568;">
-                        <span style="color: #e2e8f0; font-size: 13px;">Cunner</span>
-                    </div>
+                <div id="alumniGrid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 10px; max-height: 400px; overflow-y: auto; padding: 10px; background: #374151; border-radius: 8px;">
+                    <!-- Alumni will be populated by JavaScript -->
                 </div>
             </div>
         </div>
     </div>
 
-    <script>
-       const playerData = [
-    { name: "ꕤSettꕤ", cores: "160+", attack: 1618000, coresNum: 160, role: "Vice-Leader", lmeScore: 1249, lmeGain: "(+25)", cxScore: 2000, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+4.6K)" },
-    { name: "神Sterben死", cores: "130+", attack: 1592300, coresNum: 130, role: "Leader", lmeScore: 1104, lmeGain: "(+29)", cxScore: 2000, cxGain: "(+0)", coresGain: "(+5)", attackGain: "(+19.6K)" },
-    { name: "Cunner88", cores: "115+", attack: 1429000, coresNum: 115, role: "Member", lmeScore: 909, lmeGain: "(+33)", cxScore: 1600, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+38.1K)" },
-    { name: "Waiora | Stray", cores: "130+", attack: 1286300, coresNum: 130, role: "Member", lmeScore: 850, lmeGain: "(+20)", cxScore: 1500, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+34.7K)" },
-    { name: "Shadowage", cores: "155+", attack: 1317000, coresNum: 155, role: "Member", lmeScore: 807, lmeGain: "(+22)", cxScore: 1800, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+0)" },
-    { name: "ᴷᴵᵀᴴ", cores: "90+", attack: 980700, coresNum: 90, role: "Vice-Leader", lmeScore: 582, lmeGain: "(-5)", cxScore: 1900, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+2.5K)" },
-    { name: "HakiLuffy", cores: "95+", attack: 757500, coresNum: 95, role: "Member", lmeScore: 556, lmeGain: "(+556)", cxScore: 0, cxGain: "(+0)", coresGain: "(+5)", attackGain: "(+30.4K)" },
-    { name: "bimbabo", cores: "95+", attack: 934800, coresNum: 95, role: "Member", lmeScore: 557, lmeGain: "(+4)", cxScore: 1300, cxGain: "(+0)", coresGain: "(+5)", attackGain: "(+4.2K)" },
-    { name: "BobBobberson", cores: "85+", attack: 896600, coresNum: 85, role: "Member", lmeScore: 557, lmeGain: "(+0)", cxScore: 1900, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+3.1K)" },
-    { name: "魂Sterben死", cores: "65+", attack: 778700, coresNum: 65, role: "Member", lmeScore: 552, lmeGain: "(+5)", cxScore: 2000, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+21.6K)" },
-    { name: "SmallBotoㅣStray", cores: "55+", attack: 699600, coresNum: 55, role: "Member", lmeScore: 548, lmeGain: "(+16)", cxScore: 1900, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+59.9K)" },
-    { name: "Player 58934337", cores: "95+", attack: 1199700, coresNum: 95, role: "Member", lmeScore: 544, lmeGain: "(+4)", cxScore: 0, cxGain: "(+0)", coresGain: "(+5)", attackGain: "(+1.7K)" },
-    { name: "HonoraryCurve51", cores: "90+", attack: 776100, coresNum: 90, role: "Member", lmeScore: 544, lmeGain: "(+4)", cxScore: 0, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+2.6K)" },
-    { name: "THJF1948ㅣStray", cores: "70+", attack: 749600, coresNum: 70, role: "Member", lmeScore: 541, lmeGain: "(+7)", cxScore: 0, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+2.0K)" },
-    { name: "Player 66607264", cores: "95+", attack: 775400, coresNum: 95, role: "Member", lmeScore: 541, lmeGain: "(+2)", cxScore: 0, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+4.5K)" },
-    { name: "Belthazar", cores: "60+", attack: 893200, coresNum: 60, role: "Member", lmeScore: 539, lmeGain: "(+1)", cxScore: 1800, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+0.4K)" },
-    { name: "MrPlusUltra", cores: "75+", attack: 874700, coresNum: 75, role: "Member", lmeScore: 532, lmeGain: "(+7)", cxScore: 1900, cxGain: "(+0)", coresGain: "(+5)", attackGain: "(+3.4K)" },
-    { name: "Hiryu69", cores: "55+", attack: 797200, coresNum: 55, role: "Member", lmeScore: 530, lmeGain: "(+14)", cxScore: 0, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+35.6K)" },
-    { name: "Lemminkäinen", cores: "50+", attack: 571100, coresNum: 50, role: "Member", lmeScore: 481, lmeGain: "(+4)", cxScore: 1900, cxGain: "(+0)", coresGain: "(+5)", attackGain: "(+12.0K)" },
-    { name: "Slaterho", cores: "35+", attack: 561100, coresNum: 35, role: "Glory Member", lmeScore: 481, lmeGain: "(+4)", cxScore: 1900, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+4.3K)" },
-    { name: "swifft", cores: "40+", attack: 457900, coresNum: 40, role: "Member", lmeScore: 479, lmeGain: "(+3)", cxScore: 1100, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+9.3K)" },
-    { name: "HannaM", cores: "25+", attack: 459200, coresNum: 25, role: "Member", lmeScore: 460, lmeGain: "(+7)", cxScore: 1900, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+0)" },
-    { name: "Szoj", cores: "35+", attack: 449900, coresNum: 35, role: "Member", lmeScore: 455, lmeGain: "(+2)", cxScore: 1900, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+26.2K)" },
-    { name: "OmegaZz", cores: "50+", attack: 538900, coresNum: 50, role: "Member", lmeScore: 448, lmeGain: "(+1)", cxScore: 500, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+1.8K)" },
-    { name: "mc2084", cores: "25+", attack: 528200, coresNum: 25, role: "Member", lmeScore: 435, lmeGain: "(+19)", cxScore: 1600, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+3.5K)" },
-    { name: "Player 78792329", cores: "40+", attack: 494600, coresNum: 40, role: "Glory Member", lmeScore: 433, lmeGain: "(+24)", cxScore: 1500, cxGain: "(+0)", coresGain: "(+10)", attackGain: "(+5.4K)" },
-    { name: "HideOnBushs", cores: "20+", attack: 591300, coresNum: 20, role: "Member", lmeScore: 412, lmeGain: "(+9)", cxScore: 1700, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+22.4K)" },
-    { name: "Pookaz", cores: "30+", attack: 428200, coresNum: 30, role: "Member", lmeScore: 376, lmeGain: "(-16)", cxScore: 2000, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+3.5K)" },
-    { name: "Player 32236991", cores: "120+", attack: 917400, coresNum: 120, role: "Member", lmeScore: 536, lmeGain: "(+0)", cxScore: 300, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+113.2K)" },
-    { name: "N0M3rcy", cores: "55+", attack: 758200, coresNum: 55, role: "Glory Member", lmeScore: 0, lmeGain: "(-506)", cxScore: 1800, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+0)" },
-    { name: "SUJAY", cores: "80+", attack: 758100, coresNum: 80, role: "Member", lmeScore: 530, lmeGain: "(+0)", cxScore: 0, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+0)" },
-    { name: "b0ss", cores: "70+", attack: 755800, coresNum: 70, role: "Member", lmeScore: 515, lmeGain: "(+0)", cxScore: 0, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+7.4K)" },
-    { name: "lguinily", cores: "75+", attack: 735200, coresNum: 75, role: "Member", lmeScore: 483, lmeGain: "(+0)", cxScore: 1900, cxGain: "(+0)", coresGain: "(+5)", attackGain: "(+16.2K)" },
-    { name: "AileisterCrowley", cores: "45+", attack: 680400, coresNum: 45, role: "Member", lmeScore: 483, lmeGain: "(+0)", cxScore: 0, cxGain: "(+0)", coresGain: "(+5)", attackGain: "(+0)" },
-    { name: "6J4", cores: "35+", attack: 665800, coresNum: 35, role: "Member", lmeScore: 455, lmeGain: "(+0)", cxScore: 1700, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+8.0K)" },
-    { name: "Rzzza", cores: "55+", attack: 646300, coresNum: 55, role: "Member", lmeScore: 515, lmeGain: "(+0)", cxScore: 0, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+0)" },
-    { name: "cocacandy", cores: "40+", attack: 675800, coresNum: 40, role: "Member", lmeScore: 484, lmeGain: "(+0)", cxScore: 900, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+46.4K)" },
-    { name: "playerxd", cores: "65+", attack: 598300, coresNum: 65, role: "Member", lmeScore: 0, lmeGain: "(-502)", cxScore: 0, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+0)" },
-    { name: "Hobin357", cores: "35+", attack: 685700, coresNum: 35, role: "Member", lmeScore: 434, lmeGain: "(+0)", cxScore: 300, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+0)" },
-    { name: "Asdgner", cores: "80+", attack: 568200, coresNum: 80, role: "Member", lmeScore: 0, lmeGain: "(-499)", cxScore: 1300, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+0)" }
-];
+    <!-- External Data Files -->
+    <script src="playerData.js"></script>
+    <script src="clanStats.js"></script>
 
+    <script>
         let filteredData = [...playerData];
         let currentSort = 'lme';
+
+        // Initialize page with data from external files
+        function initializePage() {
+            // Update clan info
+            document.getElementById('clanName').textContent = clanStats.clanName;
+            document.getElementById('clanId').textContent = clanStats.clanId;
+            
+            // Update LME info
+            document.getElementById('lmePhase').textContent = clanStats.lmePhase;
+            document.getElementById('lmeDifficulty').textContent = clanStats.lmeDifficulty;
+            document.getElementById('lmeLeague').textContent = clanStats.lmeLeague;
+            document.getElementById('lunarPoints').textContent = clanStats.lunarPoints;
+            
+            // Update clan totals
+            document.getElementById('totalMembers').textContent = clanStats.totalMembers;
+            document.getElementById('totalCores').textContent = clanStats.totalCores;
+            document.getElementById('totalAttack').textContent = clanStats.totalAttack;
+            document.getElementById('averageAttack').textContent = clanStats.averageAttack;
+            
+            // Update alumni count
+            document.getElementById('alumniCount').textContent = clanStats.alumniCount;
+            
+            // Populate LME History
+            populateLMEHistory();
+            
+            // Populate Alumni
+            populateAlumni();
+        }
 
         function formatNumber(num) {
             if (num >= 1000000) {
@@ -727,9 +428,9 @@
         }
 
         function getCXColor(score) {
-            const topScore = 2000;
-            const greenThreshold = topScore * 0.7;
-            const yellowThreshold = topScore * 0.4;
+            const topScore = cxSettings.topScore;
+            const greenThreshold = topScore * cxSettings.greenThreshold;
+            const yellowThreshold = topScore * cxSettings.yellowThreshold;
             
             if (score >= greenThreshold) return '#48bb78';
             if (score >= yellowThreshold) return '#f59e0b';
@@ -782,6 +483,44 @@
                     </td>
                 `;
                 tbody.appendChild(row);
+            });
+        }
+
+        function populateLMEHistory() {
+            const tbody = document.getElementById('lmeHistoryTableBody');
+            tbody.innerHTML = '';
+            
+            lmeHistory.forEach((lme, index) => {
+                const row = document.createElement('tr');
+                row.style.borderBottom = '1px solid #4a5568';
+                if (index % 2 === 1) {
+                    row.style.backgroundColor = '#374151';
+                }
+                
+                const rankDisplay = lme.rankImage 
+                    ? `<img src="${lme.rankImage}" alt="#${lme.rank}" style="width: 20px; vertical-align: middle;">`
+                    : `<span style="color: #f56565; font-weight: 600;">#${lme.rank}</span>`;
+                
+                row.innerHTML = `
+                    <td style="padding: 10px 12px; color: #e2e8f0; text-align: center; font-weight: 600; font-size: 13px;">${lme.lmeNumber}</td>
+                    <td style="padding: 10px 12px; text-align: center; font-weight: 600; font-size: 13px;">${rankDisplay}</td>
+                    <td style="padding: 10px 12px; color: #e2e8f0; text-align: center; font-size: 13px;">${lme.atkDefPoints}</td>
+                    <td style="padding: 10px 12px; color: #68d391; text-align: center; font-weight: 600; font-size: 13px;">${lme.medals.toLocaleString()}</td>
+                    <td style="padding: 10px 12px; color: #ffd700; text-align: center; font-weight: 600; font-size: 13px; white-space: nowrap;">${lme.league}</td>
+                `;
+                tbody.appendChild(row);
+            });
+        }
+
+        function populateAlumni() {
+            const grid = document.getElementById('alumniGrid');
+            grid.innerHTML = '';
+            
+            alumniMembers.forEach(alumni => {
+                const div = document.createElement('div');
+                div.style.cssText = 'background: #2d3748; padding: 8px; border-radius: 6px; text-align: center; border: 1px solid #4a5568;';
+                div.innerHTML = `<span style="color: #e2e8f0; font-size: 13px;">${alumni}</span>`;
+                grid.appendChild(div);
             });
         }
 
@@ -891,7 +630,11 @@
             filterData(e.target.value);
         });
 
-        sortData('lme');
+        // Initialize the page when loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            initializePage();
+            sortData('lme');
+        });
     </script>
 </body>
 </html>
