@@ -1,146 +1,675 @@
-// clanStats.js
-// Freedomˢᵗʳᵃʸ Clan Statistics
-// Last Updated: Week 12 - October 2025
-
-const clanStats = {
-    // Basic clan information
-    clanName: "Freedomˢᵗʳᵃʸ",
-    clanId: "44262",
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freedomˢᵗʳᵃʸ Clan Stats</title>
     
-    // Current LME information
-    lmePhase: "18K+",
-    lmeDifficulty: 11,
-    lmeLeague: "Legend 1",
-    lunarPoints: 950,
-    
-    // Clan totals
-    totalMembers: "40/40",
-    totalCores: "2560+",
-    totalAttack: "26.83M",
-    averageAttack: "894K",
-    
-    // Leadership
-    leader: "神SterbenㅣStray",
-    viceLeaders: ["ꕤSettꕤ", "ᴷᴵᵀᴴ"],
-    
-    // Alumni count
-    alumniCount: 37
-};
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+            min-height: 100vh;
+            color: #e2e8f0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #f7fafc;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+            font-weight: 700;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .clan-name {
+            text-align: center;
+            color: #a0aec0;
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            font-weight: 500;
+        }
+        
+        .controls {
+            margin-bottom: 20px;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        
+        select, input {
+            padding: 10px 15px;
+            border: 2px solid #4a5568;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            background: #2d3748;
+            color: #e2e8f0;
+        }
+        
+        select:focus, input:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.3);
+        }
+        
+        .search-box {
+            flex-grow: 1;
+            min-width: 200px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: #2d3748;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+            font-size: 14px;
+        }
+        
+        th, td {
+            padding: 8px 4px;
+            word-break: break-word;
+        }
+        
+        th {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            text-align: center;
+            font-weight: 600;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        td {
+            border-bottom: 1px solid #4a5568;
+            transition: background-color 0.2s ease;
+            color: #e2e8f0;
+            text-align: center;
+            font-size: 13px;
+        }
+        
+        tr:hover {
+            background-color: #374151;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #374151;
+        }
+        
+        .rank-cell {
+            font-weight: 600;
+            color: #f7fafc;
+            background: linear-gradient(135deg, #4a5568, #2d3748);
+            border-radius: 6px;
+            text-align: center;
+            width: 60px;
+        }
+        
+        .name-cell {
+            font-weight: 500;
+            max-width: 200px;
+            word-break: break-word;
+        }
+        
+        .cores-cell {
+            font-weight: 600;
+            color: #b794f6;
+            text-align: center;
+        }
+        
+        .role-glorymember {
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+        
+        @keyframes glow {
+            from { text-shadow: 0 0 5px #ffd700; }
+            to { text-shadow: 0 0 15px #ffd700, 0 0 20px #ffd700; }
+        }
+        
+        .export-btn {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin-left: 10px;
+        }
+        
+        .export-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            .controls {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            
+            table {
+                font-size: 12px;
+                border-radius: 8px;
+            }
+            
+            th, td {
+                padding: 6px 2px;
+                font-size: 11px;
+            }
+            
+            th {
+                font-size: 10px;
+            }
+            
+            .name-cell {
+                max-width: 80px;
+                font-size: 11px;
+            }
+            
+            .export-btn {
+                font-size: 14px;
+                padding: 10px 16px;
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Clan Statistics</h1>
+        <div class="clan-name">Freedomˢᵗʳᵃʸ</div>
+        <div style="text-align: center; color: #a0aec0; font-size: 1em; margin-bottom: 10px; font-weight: 400;">ClanID: 44262</div>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin-bottom: 20px; text-align: center;">
+            <div style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 10px; border-radius: 8px; font-size: 14px; font-weight: 600; min-height: 40px; display: flex; align-items: center; justify-content: center;">
+                LME Phase: <span id="lmePhase">18K+</span> <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Medals.png" alt="" style="width: 16px; height: 16px; margin-left: 8px; vertical-align: middle;" onerror="this.style.display='none';">
+            </div>
+            <div style="background: linear-gradient(135deg, #ed8936, #dd6b20); color: white; padding: 10px; border-radius: 8px; font-size: 14px; font-weight: 600; min-height: 40px; display: flex; align-items: center; justify-content: center;">
+                LME Difficulty <span id="lmeDifficulty">11</span>
+            </div>
+            <div style="background: linear-gradient(135deg, #38b2ac, #319795); color: white; padding: 10px; border-radius: 8px; font-size: 14px; font-weight: 600; min-height: 40px; display: flex; flex-direction: column; align-items: center; justify-content: center; grid-column: 1 / -1; line-height: 1.2;">
+                <div>LME League: <span id="lmeLeague">Legend 1</span></div>
+                <div>Lunar Points: <span id="lunarPoints">950</span></div>
+            </div>
+        </div>
 
-// LME History Data
-const lmeHistory = [
-    {
-        lmeNumber: 12,
-        rank: 1,
-        rankImage: "https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Rank1.png",
-        atkDefPoints: 6,
-        medals: 270207,
-        league: "Legend 1"
-    },
-    {
-        lmeNumber: 11,
-        rank: 3,
-        rankImage: "https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Rank3.png",
-        atkDefPoints: 4,
-        medals: 105780,
-        league: "Legend 1"
-    },
-    {
-        lmeNumber: 10,
-        rank: 2,
-        rankImage: "https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Rank2.png",
-        atkDefPoints: 5,
-        medals: 206524,
-        league: "Legend 1"
-    },
-    {
-        lmeNumber: 9,
-        rank: 4,
-        rankImage: null, // No image, will show as text
-        atkDefPoints: 2,
-        medals: 32043,
-        league: "Legend 1"
-    },
-    {
-        lmeNumber: 8,
-        rank: 2,
-        rankImage: "https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Rank2.png",
-        atkDefPoints: 5,
-        medals: 86771,
-        league: "Elite 3"
-    },
-    {
-        lmeNumber: 7,
-        rank: 1,
-        rankImage: "https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Rank1.png",
-        atkDefPoints: 6,
-        medals: 122736,
-        league: "Elite 3"
-    },
-    {
-        lmeNumber: 6,
-        rank: 1,
-        rankImage: "https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Rank1.png",
-        atkDefPoints: 5,
-        medals: 115671,
-        league: "Elite 2"
-    },
-    {
-        lmeNumber: 5,
-        rank: 2,
-        rankImage: "https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Rank2.png",
-        atkDefPoints: 3,
-        medals: 65415,
-        league: "Elite 3"
-    },
-    {
-        lmeNumber: 4,
-        rank: 3,
-        rankImage: "https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Rank3.png",
-        atkDefPoints: 3,
-        medals: 82682,
-        league: "Elite 2"
-    },
-    {
-        lmeNumber: 3,
-        rank: 1,
-        rankImage: "https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Rank1.png",
-        atkDefPoints: 4,
-        medals: 88238,
-        league: "Elite 2"
-    },
-    {
-        lmeNumber: 2,
-        rank: 4,
-        rankImage: null, // No image, will show as text
-        atkDefPoints: 2,
-        medals: 53456,
-        league: "Elite 2"
-    },
-    {
-        lmeNumber: 1,
-        rank: 1,
-        rankImage: "https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Rank1.png",
-        atkDefPoints: 3,
-        medals: 99415,
-        league: "Elite 1"
-    }
-];
 
-// Alumni members list
-const alumniMembers = [
-    "Dylan0001", "porfiaak", "espadin22", "thatmanisgey", "YeezyLord", "moonkyy",
-    "tonserlars", "khoprademon", "offBait", "j__d1", "13mpty", "bol4nd3ng",
-    "mo265489", "Demoncracy", "StrayKucsika97", "D1L3R_PL", "4nd333", "hiimnhat",
-    "Ruzagi", "NarutoUzuma", "ByRess", "Beef4Brains", "E-Duke", "bluebirds123456",
-    "2xc3", "Chumuzuke", "Coopet", "StrayCleow:)", "CheesyBreadSticks", "starbin",
-    "BOBBYJANG", "slaterhoㅣStray", "lct404", "CrackJackㅣStray", "stray|alfred",
-    "Cunner"
-];
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin-bottom: 20px; text-align: center;">
+            <div style="background: linear-gradient(135deg, #38b2ac, #319795); color: white; padding: 10px; border-radius: 8px; font-size: 14px; font-weight: 600; min-height: 40px; display: flex; align-items: center; justify-content: center;">
+                Total Members: <span id="totalMembers">40/40</span>
+            </div>
+            <div style="background: linear-gradient(135deg, #38b2ac, #319795); color: white; padding: 10px; border-radius: 8px; font-size: 14px; font-weight: 600; min-height: 40px; display: flex; align-items: center; justify-content: center;">
+                Total Cores: <span id="totalCores">2560+</span>
+            </div>
+            <div style="background: linear-gradient(135deg, #ed8936, #dd6b20); color: white; padding: 10px; border-radius: 8px; font-size: 14px; font-weight: 600; min-height: 40px; display: flex; align-items: center; justify-content: center;">
+                Total ATK: <span id="totalAttack">26.83M</span>
+            </div>
+            <div style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 10px; border-radius: 8px; font-size: 14px; font-weight: 600; min-height: 40px; display: flex; align-items: center; justify-content: center;">
+                Avg ATK: <span id="avgAttack">894K</span>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <input type="text" id="searchInput" placeholder="Search player names..." class="search-box">
+            <select id="sortSelect">
+                <option value="lme">Sort by LME Score</option>
+                <option value="cx">Sort by CX</option>
+                <option value="cores">Sort by Relic Cores</option>
+                <option value="attack">Sort by ATK</option>
+                <option value="name">Sort by Name</option>
+                <option value="role">Sort by Role</option>
+            </select>
+            <button class="export-btn" onclick="exportToCSV()">Export CSV</button>
+            <button class="export-btn" onclick="openSecretScore()">🎯 Secret Score</button>
+            <button class="export-btn" onclick="openLMEHistory()">LME History</button>
+            <button class="export-btn" onclick="openAlumni()">Alumni</button>
+        </div>
+        
+        <!-- Compact Role Legend -->
+        <div style="display: flex; justify-content: center; gap: 20px; margin-bottom: 15px; flex-wrap: wrap; font-size: 12px;">
+            <span style="color: #fc8181; font-weight: 600;">● Leader</span>
+            <span style="color: #ed8936; font-weight: 600;">● Vice-Leader</span>
+            <span style="color: #ffd700; font-weight: 600; text-shadow: 0 0 10px #ffd700;">★ Glory Member</span>
+        </div>
+        
+        <table id="playerTable">
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Player Name</th>
+                    <th>
+                        <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Relic%20Cores.png" alt="Relic Cores" style="width: 20px; height: 20px; vertical-align: middle;" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
+                        <span style="display: none;">Relic Cores</span>
+                    </th>
+                    <th>
+                        <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/ATK.png" alt="ATK" style="width: 20px; height: 20px; vertical-align: middle;" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
+                        <span style="display: none;">ATK</span>
+                    </th>
+                    <th>
+                        <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Medals.png" alt="LME" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 6px;" onerror="this.style.display='none';">
+                        LME 1st Phase
+                    </th>
+                    <th>
+                        <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/CX.png" alt="CX" style="width: 20px; height: 20px; vertical-align: middle;" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
+                        <span style="display: none;">CX</span>
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+            </tbody>
+        </table>
 
-// CX Color settings
-const cxSettings = {
-    topScore: 100,
-    greenThreshold: 0.7,  // 70% of top score
-    yellowThreshold: 0.4  // 40% of top score
-};
+        <!-- LME History Modal -->
+        <div id="lmeHistoryModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 1000; overflow-y: auto;">
+            <div style="position: relative; margin: 20px auto; padding: 20px; background: #2d3748; border-radius: 15px; max-width: 95%; width: 800px; max-height: 90vh; overflow-y: auto; border: 1px solid #4a5568;">
+                <span onclick="closeLMEHistory()" style="position: absolute; top: 10px; right: 15px; font-size: 24px; cursor: pointer; color: #a0aec0;">&times;</span>
+                <h2 style="color: #f7fafc; margin-bottom: 20px; text-align: center; font-size: 1.5em; margin-top: 10px;">🌙 LME History</h2>
+                
+                <table id="lmeHistoryTable" style="width: 100%; border-collapse: collapse; background: #2d3748; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4); font-size: 14px;">
+                    <thead>
+                        <tr>
+                            <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 12px 12px; text-align: center; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; white-space: nowrap;">LME #</th>
+                            <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 12px 12px; text-align: center; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; white-space: nowrap;">
+                                <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Ranking.png" alt="Ranking" style="width: 16px; height: 16px; vertical-align: middle; margin-right: 4px;" onerror="this.style.display='none';">
+                                RANKING
+                            </th>
+                            <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 12px 12px; text-align: center; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; white-space: nowrap;">
+                                <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Defense_Attack%20Points.png" alt="ATK/DEF" style="width: 16px; height: 16px; vertical-align: middle; margin-right: 4px;" onerror="this.style.display='none';">
+                                ATK / DEF
+                            </th>
+                            <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 12px 12px; text-align: center; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; white-space: nowrap;">
+                                <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Medals.png" alt="Clash Rounds" style="width: 16px; height: 16px; vertical-align: middle; margin-right: 4px;" onerror="this.style.display='none';">
+                                DEFENSE EMBLEMS
+                            </th>
+                            <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 12px 12px; text-align: center; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; white-space: nowrap;">LEAGUE</th>
+                        </tr>
+                    </thead>
+                    <tbody id="lmeHistoryBody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Alumni Modal -->
+        <div id="alumniModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 1000; overflow-y: auto;">
+            <div style="position: relative; margin: 20px auto; padding: 20px; background: #2d3748; border-radius: 15px; max-width: 95%; width: 600px; max-height: 90vh; overflow-y: auto; border: 1px solid #4a5568;">
+                <span onclick="closeAlumni()" style="position: absolute; top: 10px; right: 15px; font-size: 24px; cursor: pointer; color: #a0aec0;">&times;</span>
+                <h2 style="color: #f7fafc; margin-bottom: 20px; text-align: center; font-size: 1.5em; margin-top: 10px;">👥 Freedomˢᵗʳᵃʸ Alumni</h2>
+                
+                <div style="background: #374151; border-radius: 8px; padding: 15px; margin-bottom: 15px; text-align: center;">
+                    <p style="color: #e2e8f0; margin: 0; font-size: 14px; line-height: 1.4;">
+                        <strong style="color: #ffd700;"><span id="alumniCount">37</span> Alumni Members</strong><br>
+                        <span style="color: #a0aec0;">Former clan members who contributed to our journey</span>
+                    </p>
+                </div>
+                
+                <div id="alumniGrid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 10px; max-height: 400px; overflow-y: auto; padding: 10px; background: #374151; border-radius: 8px;">
+                </div>
+            </div>
+        </div>
+
+        <!-- Secret Score Calculator Modal -->
+        <div id="secretScoreModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 1000; overflow-y: auto;">
+            <div style="position: relative; margin: 20px auto; padding: 20px; background: #2d3748; border-radius: 15px; max-width: 95%; width: 500px; max-height: 90vh; overflow-y: auto; border: 1px solid #4a5568;">
+                <span onclick="closeSecretScore()" style="position: absolute; top: 10px; right: 15px; font-size: 24px; cursor: pointer; color: #a0aec0;">&times;</span>
+                <h2 style="color: #ffd700; margin-bottom: 20px; text-align: center; font-size: 1.5em; margin-top: 10px; text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);">🎯 Secret Score Calculator</h2>
+                
+                <div style="display: grid; grid-template-columns: 1fr; gap: 15px; margin-bottom: 20px;">
+                    <div style="background: #374151; padding: 20px; border-radius: 8px; text-align: center; border: 2px solid #4a5568;">
+                        <div style="font-size: 0.9em; color: #a0aec0; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px;">Current LME Points</div>
+                        <div style="font-size: 2em; font-weight: 700; color: #ffd700;" id="modalCurrentLME">950</div>
+                    </div>
+                    <div style="background: #374151; padding: 20px; border-radius: 8px; text-align: center; border: 2px solid #4a5568;">
+                        <div style="font-size: 0.9em; color: #a0aec0; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px;">Rank Factor</div>
+                        <div style="font-size: 2em; font-weight: 700; color: #ffd700;" id="modalRankFactor">1.0000</div>
+                    </div>
+                    <div style="background: linear-gradient(135deg, #667eea, #764ba2); padding: 20px; border-radius: 8px; text-align: center; border: 2px solid #667eea;">
+                        <div style="font-size: 0.9em; color: white; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 600;">Secret Score</div>
+                        <div style="font-size: 2.5em; font-weight: 700; color: white;" id="modalSecretScore">950.0</div>
+                    </div>
+                </div>
+
+                <div style="background: #374151; padding: 15px; border-radius: 8px; margin-bottom: 15px; border-left: 4px solid #667eea;">
+                    <div style="font-size: 0.95em; color: #e2e8f0; line-height: 1.6;" id="modalCalcExplanation"></div>
+                </div>
+
+                <div style="background: #2d3748; padding: 15px; border-radius: 8px; border: 1px solid #4a5568;">
+                    <div style="font-size: 0.85em; color: #a0aec0; line-height: 1.6;">
+                        <strong style="color: #f7fafc;">How Matchmaking Works:</strong><br>
+                        Secret Score = LME Points × Rank Factor<br><br>
+                        <strong style="color: #f7fafc;">Rank Factor Changes:</strong><br>
+                        🥇 1st Place = Reset to 1.0<br>
+                        🥈 2nd Place = ×0.98<br>
+                        🥉 3rd Place = ×0.96<br>
+                        4th Place = ×0.94
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Load external data files -->
+    <script src="clanStats.js"></script>
+    <script src="playerData.js"></script>
+
+    <script>
+        let filteredData = [...playerData];
+        let currentSort = 'lme';
+
+        // Load clan stats into the page
+        function loadClanStats() {
+            document.getElementById('lmePhase').textContent = clanStats.lmePhase;
+            document.getElementById('lmeDifficulty').textContent = clanStats.lmeDifficulty;
+            document.getElementById('lmeLeague').textContent = clanStats.lmeLeague;
+            document.getElementById('lunarPoints').textContent = clanStats.lunarPoints;
+            document.getElementById('totalMembers').textContent = clanStats.totalMembers;
+            document.getElementById('totalCores').textContent = clanStats.totalCores;
+            document.getElementById('totalAttack').textContent = clanStats.totalAttack;
+            document.getElementById('avgAttack').textContent = clanStats.averageAttack;
+            document.getElementById('alumniCount').textContent = clanStats.alumniCount;
+        }
+
+        // Calculate Secret Score based on LME history
+        function calculateSecretScore() {
+            let rankFactor = 1.0;
+            let lastReset = null;
+            
+            // Process LME history from oldest to newest (reverse order)
+            const reversedHistory = [...lmeHistory].reverse();
+            
+            reversedHistory.forEach((lme) => {
+                if (lme.rank === 1) {
+                    rankFactor = 1.0;
+                    lastReset = lme.lmeNumber;
+                } else if (lme.rank === 2) {
+                    rankFactor *= 0.98;
+                } else if (lme.rank === 3) {
+                    rankFactor *= 0.96;
+                } else if (lme.rank === 4) {
+                    rankFactor *= 0.94;
+                }
+            });
+            
+            const secretScore = clanStats.lunarPoints * rankFactor;
+            
+            // Update modal display
+            document.getElementById('modalCurrentLME').textContent = clanStats.lunarPoints;
+            document.getElementById('modalRankFactor').textContent = rankFactor.toFixed(4);
+            document.getElementById('modalSecretScore').textContent = secretScore.toFixed(1);
+            
+            // Create simple explanation
+            let explanation = '';
+            if (rankFactor === 1.0 && lastReset) {
+                explanation = `Your Rank Factor is <strong style="color: #ffd700;">1.0</strong> because you placed <strong>🥇 1st</strong> in LME #${lastReset}, which reset your factor. You'll be matched with top-tier clans!`;
+            } else if (rankFactor === 1.0) {
+                explanation = `Your Rank Factor is <strong style="color: #ffd700;">1.0</strong> (starting value). You'll be matched with top-tier clans!`;
+            } else {
+                const sinceReset = lastReset ? `since your last 1st place in LME #${lastReset}` : 'from your placement history';
+                explanation = `Your Rank Factor has decreased to <strong style="color: #ffd700;">${rankFactor.toFixed(4)}</strong> ${sinceReset}. You'll be matched with clans that have a similar Secret Score around <strong style="color: #ffd700;">${secretScore.toFixed(1)}</strong>.`;
+            }
+            
+            document.getElementById('modalCalcExplanation').innerHTML = explanation;
+        }
+
+        // Load LME History into modal
+        function loadLMEHistory() {
+            const tbody = document.getElementById('lmeHistoryBody');
+            tbody.innerHTML = '';
+            
+            lmeHistory.forEach((lme, index) => {
+                const row = document.createElement('tr');
+                row.style.borderBottom = '1px solid #4a5568';
+                if (index % 2 === 1) row.style.background = '#374151';
+                
+                let rankDisplay = '';
+                if (lme.rankImage) {
+                    rankDisplay = `<img src="${lme.rankImage}" alt="#${lme.rank}" style="width: 20px; vertical-align: middle;">`;
+                } else {
+                    const rankColors = { 1: '#ffd700', 2: '#c0c0c0', 3: '#cd7930', 4: '#f56565' };
+                    rankDisplay = `<span style="color: ${rankColors[lme.rank] || '#f56565'}; font-weight: 600;">#${lme.rank}</span>`;
+                }
+                
+                row.innerHTML = `
+                    <td style="padding: 10px 12px; color: #e2e8f0; text-align: center; font-weight: 600; font-size: 13px;">${lme.lmeNumber}</td>
+                    <td style="padding: 10px 12px; text-align: center; font-weight: 600; font-size: 13px;">${rankDisplay}</td>
+                    <td style="padding: 10px 12px; color: #e2e8f0; text-align: center; font-size: 13px;">${lme.atkDefPoints}</td>
+                    <td style="padding: 10px 12px; color: #68d391; text-align: center; font-weight: 600; font-size: 13px;">${lme.medals.toLocaleString()}</td>
+                    <td style="padding: 10px 12px; color: #ffd700; text-align: center; font-weight: 600; font-size: 13px; white-space: nowrap;">${lme.league}</td>
+                `;
+                tbody.appendChild(row);
+            });
+        }
+
+        // Load Alumni into modal
+        function loadAlumni() {
+            const grid = document.getElementById('alumniGrid');
+            grid.innerHTML = '';
+            
+            alumniMembers.forEach(name => {
+                const div = document.createElement('div');
+                div.style = 'background: #2d3748; padding: 8px; border-radius: 6px; text-align: center; border: 1px solid #4a5568;';
+                div.innerHTML = `<span style="color: #e2e8f0; font-size: 13px;">${name}</span>`;
+                grid.appendChild(div);
+            });
+        }
+
+        function formatNumber(num) {
+            if (num >= 1000000) {
+                return (num / 1000000).toFixed(2) + 'M';
+            } else if (num >= 1000) {
+                return (num / 1000).toFixed(1) + 'K';
+            }
+            return num.toLocaleString();
+        }
+
+        function getCXColor(score) {
+            const topScore = cxSettings.topScore;
+            const greenThreshold = topScore * cxSettings.greenThreshold;
+            const yellowThreshold = topScore * cxSettings.yellowThreshold;
+            
+            if (score >= greenThreshold) return '#48bb78';
+            if (score >= yellowThreshold) return '#f59e0b';
+            return '#f56565';
+        }
+
+        function renderTable() {
+            const tbody = document.getElementById('tableBody');
+            tbody.innerHTML = '';
+            
+            filteredData.forEach((player, index) => {
+                const row = document.createElement('tr');
+                
+                let nameColor = '#f7fafc';
+                let nameClass = '';
+                if (player.role === 'Leader') {
+                    nameColor = '#fc8181';
+                } else if (player.role === 'Vice-Leader') {
+                    nameColor = '#ed8936';
+                } else if (player.role === 'Glory Member') {
+                    nameColor = '#ffd700';
+                    nameClass = 'role-glorymember';
+                }
+                
+                row.innerHTML = `
+                    <td class="rank-cell">${index + 1}</td>
+                    <td class="name-cell ${nameClass}" style="color: ${nameColor};">${player.name}</td>
+                    <td class="cores-cell">${player.cores}
+                        ${player.coresGain ? `<span style="color: ${player.coresGain.includes('+') && !player.coresGain.includes('(+0)') ? '#10b981' : player.coresGain.includes('(+0)') ? '#a0aec0' : '#f56565'}; font-size: 10px; margin-left: 2px; display: block;">
+                            ${player.coresGain}
+                        </span>` : ''}
+                    </td>
+                    <td style="text-align: center; font-weight: 600; color: #e2e8f0;">
+                        ${formatNumber(player.attack)}
+                        ${player.attackGain ? `<span style="color: ${player.attackGain.includes('+') && !player.attackGain.includes('(+0)') ? '#10b981' : player.attackGain.includes('(+0)') ? '#a0aec0' : '#f56565'}; font-size: 10px; margin-left: 2px; display: block;">
+                            ${player.attackGain}
+                        </span>` : ''}
+                    </td>
+                    <td style="text-align: center; font-weight: 600; color: #f59e0b;">
+                        ${player.lmeScore || 0}
+                        ${player.lmeGain ? `<span style="color: ${player.lmeGain.includes('+') && !player.lmeGain.includes('(+0)') ? '#10b981' : player.lmeGain.includes('(+0)') ? '#a0aec0' : '#f56565'}; font-size: 11px; margin-left: 4px;">
+                            ${player.lmeGain}
+                        </span>` : ''}
+                    </td>
+                    <td style="text-align: center; font-weight: 600; color: ${getCXColor(player.cxScore)};">
+                        ${player.cxScore}
+                        ${player.cxGain ? `<span style="color: ${player.cxGain.includes('(+0)') ? '#a0aec0' : '#f7fafc'}; font-size: 10px; margin-left: 2px; display: block;">
+                            ${player.cxGain}
+                        </span>` : ''}
+                    </td>
+                `;
+                tbody.appendChild(row);
+            });
+        }
+
+        function sortData(criteria) {
+            currentSort = criteria;
+            
+            switch(criteria) {
+                case 'name':
+                    filteredData.sort((a, b) => a.name.localeCompare(b.name));
+                    break;
+                case 'cores':
+                    filteredData.sort((a, b) => b.coresNum - a.coresNum);
+                    break;
+                case 'attack':
+                    filteredData.sort((a, b) => b.attack - a.attack);
+                    break;
+                case 'lme':
+                    filteredData.sort((a, b) => b.lmeScore - a.lmeScore);
+                    break;
+                case 'cx':
+                    filteredData.sort((a, b) => b.cxScore - a.cxScore);
+                    break;
+                case 'role':
+                    const roleOrder = { 'Leader': 1, 'Vice-Leader': 2, 'Glory Member': 3, 'Member': 4 };
+                    filteredData.sort((a, b) => {
+                        const roleA = roleOrder[a.role] || 5;
+                        const roleB = roleOrder[b.role] || 5;
+                        if (roleA !== roleB) {
+                            return roleA - roleB;
+                        }
+                        return b.lmeScore - a.lmeScore;
+                    });
+                    break;
+            }
+            
+            renderTable();
+        }
+
+        function filterData(searchTerm) {
+            filteredData = playerData.filter(player => 
+                player.name.toLowerCase().includes(searchTerm.toLowerCase())
+            );
+            sortData(currentSort);
+        }
+
+        function exportToCSV() {
+            const headers = ['Rank', 'Player Name', 'Relic Cores', 'Cores Gain', 'ATK', 'ATK Gain', 'LME Score', 'LME Gain', 'CX', 'CX Gain'];
+            const csvContent = [
+                headers.join(','),
+                ...filteredData.map((player, index) => [
+                    index + 1,
+                    `"${player.name}"`,
+                    player.cores,
+                    `"${player.coresGain || ''}"`,
+                    player.attack,
+                    `"${player.attackGain || ''}"`,
+                    player.lmeScore,
+                    `"${player.lmeGain || ''}"`,
+                    player.cxScore,
+                    `"${player.cxGain || ''}"`
+                ].join(','))
+            ].join('\n');
+            
+            const blob = new Blob([csvContent], { type: 'text/csv' });
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'Freedomstray_clan_stats.csv';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            window.URL.revokeObjectURL(url);
+        }
+
+        function openLMEHistory() {
+            document.getElementById('lmeHistoryModal').style.display = 'block';
+        }
+
+        function closeLMEHistory() {
+            document.getElementById('lmeHistoryModal').style.display = 'none';
+        }
+
+        function openAlumni() {
+            document.getElementById('alumniModal').style.display = 'block';
+        }
+
+        function closeAlumni() {
+            document.getElementById('alumniModal').style.display = 'none';
+        }
+
+        function openSecretScore() {
+            document.getElementById('secretScoreModal').style.display = 'block';
+        }
+
+        function closeSecretScore() {
+            document.getElementById('secretScoreModal').style.display = 'none';
+        }
+
+        window.onclick = function(event) {
+            const lmeModal = document.getElementById('lmeHistoryModal');
+            const alumniModal = document.getElementById('alumniModal');
+            const secretScoreModal = document.getElementById('secretScoreModal');
+            if (event.target === lmeModal) {
+                lmeModal.style.display = 'none';
+            }
+            if (event.target === alumniModal) {
+                alumniModal.style.display = 'none';
+            }
+            if (event.target === secretScoreModal) {
+                secretScoreModal.style.display = 'none';
+            }
+        }
+
+        document.getElementById('sortSelect').addEventListener('change', (e) => {
+            sortData(e.target.value);
+        });
+
+        document.getElementById('searchInput').addEventListener('input', (e) => {
+            filterData(e.target.value);
+        });
+
+        // Initialize page
+        loadClanStats();
+        calculateSecretScore();
+        loadLMEHistory();
+        loadAlumni();
+        sortData('lme');
+    </script>
+</body>
+</html>
