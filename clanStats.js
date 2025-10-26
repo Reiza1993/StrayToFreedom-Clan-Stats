@@ -1,6 +1,6 @@
 // clanStats.js
 // Freedomˢᵗʳᵃʸ Clan Statistics
-// Last Updated: Week 12 - October 2025
+// Last Updated: Week 13 - October 2025
 
 const clanStats = {
     // Basic clan information
@@ -20,7 +20,7 @@ const clanStats = {
     averageAttack: "894K",
     
     // Leadership
-    leader: "神Sterben死"
+    leader: "神SterbenㅣStray",
     viceLeaders: ["ꕤSettꕤ", "ᴷᴵᵀᴴ"],
     
     // Alumni count
@@ -143,7 +143,7 @@ const alumniMembers = [
     "Ruzagi", "NarutoUzuma", "ByRess", "Beef4Brains", "E-Duke", "bluebirds123456",
     "2xc3", "Chumuzuke", "Coopet", "StrayCleow:)", "CheesyBreadSticks", "starbin",
     "BOBBYJANG", "slaterhoㅣStray", "lct404", "CrackJackㅣStray", "stray|alfred",
-    "Cunner", "HideOnBushes", "Shadowage"
+    "Cunner", "Shadowage", "HideOnBushs"
 ];
 
 // CX Color settings
