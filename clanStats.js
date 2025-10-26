@@ -14,21 +14,29 @@ const clanStats = {
     lunarPoints: 950,
     
     // Clan totals
-    totalMembers: "40/40",
+    totalMembers: "39/40",
     totalCores: "2560+",
     totalAttack: "26.83M",
     averageAttack: "894K",
     
     // Leadership
-    leader: "神SterbenㅣStray",
+    leader: "神Sterben死"
     viceLeaders: ["ꕤSettꕤ", "ᴷᴵᵀᴴ"],
     
     // Alumni count
-    alumniCount: 37
+    alumniCount: 39
 };
 
 // LME History Data
 const lmeHistory = [
+    {
+        lmeNumber: 13,
+        rank: 1,
+        rankImage: "https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Rank1.png",
+        atkDefPoints: 6,
+        medals: 90401,
+        league: "Legend 1"
+    },
     {
         lmeNumber: 12,
         rank: 1,
@@ -135,7 +143,7 @@ const alumniMembers = [
     "Ruzagi", "NarutoUzuma", "ByRess", "Beef4Brains", "E-Duke", "bluebirds123456",
     "2xc3", "Chumuzuke", "Coopet", "StrayCleow:)", "CheesyBreadSticks", "starbin",
     "BOBBYJANG", "slaterhoㅣStray", "lct404", "CrackJackㅣStray", "stray|alfred",
-    "Cunner"
+    "Cunner", "HideOnBushes", "Shadowage"
 ];
 
 // CX Color settings
