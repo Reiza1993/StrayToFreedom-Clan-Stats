@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Freedomˢᵗʳᵃʸ Clan Stats</title>
     
-    <!-- Freedomˢᵗʳᵃʸ Clan Statistics - Modular Structure -->
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -158,6 +157,96 @@
             transform: translateY(-2px);
             box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
         }
+
+        /* Secret Score Calculator Styles */
+        .calculator-card {
+            background: linear-gradient(135deg, #2d3748, #374151);
+            border: 2px solid #4a5568;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+        }
+
+        .calculator-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .calculator-title {
+            font-size: 1.3em;
+            font-weight: 700;
+            color: #ffd700;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+        }
+
+        .calculator-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .calc-stat {
+            background: #2d3748;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #4a5568;
+            text-align: center;
+        }
+
+        .calc-label {
+            font-size: 0.85em;
+            color: #a0aec0;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .calc-value {
+            font-size: 1.5em;
+            font-weight: 700;
+            color: #ffd700;
+        }
+
+        .calc-breakdown {
+            background: #2d3748;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #4a5568;
+            font-size: 0.9em;
+            line-height: 1.6;
+        }
+
+        .calc-breakdown-title {
+            font-weight: 600;
+            color: #f7fafc;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .calc-history {
+            color: #e2e8f0;
+            font-family: 'Courier New', monospace;
+        }
+
+        .calc-note {
+            margin-top: 10px;
+            padding: 10px;
+            background: #374151;
+            border-left: 3px solid #667eea;
+            border-radius: 4px;
+            font-size: 0.85em;
+            color: #a0aec0;
+        }
+
+        .reset-indicator {
+            color: #ffd700;
+            font-weight: 600;
+        }
         
         @media (max-width: 768px) {
             body {
@@ -197,18 +286,23 @@
                 padding: 10px 16px;
                 margin-left: 0;
             }
+
+            .calculator-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .calculator-title {
+                font-size: 1.1em;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Clan Statistics</h1>
-        <div class="clan-name" id="clanName">Freedomˢᵗʳᵃʸ</div>
-        <div style="text-align: center; color: #a0aec0; font-size: 1em; margin-bottom: 10px; font-weight: 400;">
-            ClanID: <span id="clanId">44262</span>
-        </div>
+        <div class="clan-name">Freedomˢᵗʳᵃʸ</div>
+        <div style="text-align: center; color: #a0aec0; font-size: 1em; margin-bottom: 10px; font-weight: 400;">ClanID: 44262</div>
         
-        <!-- LME Info Boxes -->
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin-bottom: 20px; text-align: center;">
             <div style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 10px; border-radius: 8px; font-size: 14px; font-weight: 600; min-height: 40px; display: flex; align-items: center; justify-content: center;">
                 LME Phase: <span id="lmePhase">18K+</span> <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Medals.png" alt="" style="width: 16px; height: 16px; margin-left: 8px; vertical-align: middle;" onerror="this.style.display='none';">
@@ -221,8 +315,39 @@
                 <div>Lunar Points: <span id="lunarPoints">950</span></div>
             </div>
         </div>
+
+        <!-- Secret Score Calculator -->
+        <div class="calculator-card">
+            <div class="calculator-header">
+                <span style="font-size: 1.5em;">🎯</span>
+                <h2 class="calculator-title">LME Matchmaking Secret Score</h2>
+            </div>
+            
+            <div class="calculator-grid">
+                <div class="calc-stat">
+                    <div class="calc-label">Current LME Points</div>
+                    <div class="calc-value" id="currentLME">950</div>
+                </div>
+                <div class="calc-stat">
+                    <div class="calc-label">Rank Factor</div>
+                    <div class="calc-value" id="rankFactor">1.0000</div>
+                </div>
+                <div class="calc-stat">
+                    <div class="calc-label">Secret Score</div>
+                    <div class="calc-value" id="secretScore">950.0</div>
+                </div>
+            </div>
+
+            <div class="calc-breakdown">
+                <div class="calc-breakdown-title">📊 Calculation Breakdown</div>
+                <div class="calc-history" id="calcHistory"></div>
+                <div class="calc-note">
+                    <strong>How it works:</strong> Your Rank Factor starts at 1.0 and changes based on weekly rankings: 
+                    🥇1st = Reset to 1.0 | 🥈2nd = ×0.98 | 🥉3rd = ×0.96 | 4th = ×0.94
+                </div>
+            </div>
+        </div>
         
-        <!-- Clan Stats Boxes -->
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin-bottom: 20px; text-align: center;">
             <div style="background: linear-gradient(135deg, #38b2ac, #319795); color: white; padding: 10px; border-radius: 8px; font-size: 14px; font-weight: 600; min-height: 40px; display: flex; align-items: center; justify-content: center;">
                 Total Members: <span id="totalMembers">40/40</span>
@@ -234,7 +359,7 @@
                 Total ATK: <span id="totalAttack">26.83M</span>
             </div>
             <div style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 10px; border-radius: 8px; font-size: 14px; font-weight: 600; min-height: 40px; display: flex; align-items: center; justify-content: center;">
-                Avg ATK: <span id="averageAttack">894K</span>
+                Avg ATK: <span id="avgAttack">894K</span>
             </div>
         </div>
         
@@ -293,7 +418,7 @@
                 <span onclick="closeLMEHistory()" style="position: absolute; top: 10px; right: 15px; font-size: 24px; cursor: pointer; color: #a0aec0;">&times;</span>
                 <h2 style="color: #f7fafc; margin-bottom: 20px; text-align: center; font-size: 1.5em; margin-top: 10px;">🌙 LME History</h2>
                 
-                <table style="width: 100%; border-collapse: collapse; background: #2d3748; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4); font-size: 14px;">
+                <table id="lmeHistoryTable" style="width: 100%; border-collapse: collapse; background: #2d3748; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4); font-size: 14px;">
                     <thead>
                         <tr>
                             <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 12px 12px; text-align: center; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; white-space: nowrap;">LME #</th>
@@ -307,13 +432,12 @@
                             </th>
                             <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 12px 12px; text-align: center; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; white-space: nowrap;">
                                 <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Medals.png" alt="Clash Rounds" style="width: 16px; height: 16px; vertical-align: middle; margin-right: 4px;" onerror="this.style.display='none';">
-                                CLASH ROUNDS
+                                DEFENSE EMBLEMS
                             </th>
                             <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 12px 12px; text-align: center; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; white-space: nowrap;">LEAGUE</th>
                         </tr>
                     </thead>
-                    <tbody id="lmeHistoryTableBody">
-                        <!-- LME History will be populated by JavaScript -->
+                    <tbody id="lmeHistoryBody">
                     </tbody>
                 </table>
             </div>
@@ -333,46 +457,111 @@
                 </div>
                 
                 <div id="alumniGrid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 10px; max-height: 400px; overflow-y: auto; padding: 10px; background: #374151; border-radius: 8px;">
-                    <!-- Alumni will be populated by JavaScript -->
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- External Data Files -->
-    <script src="playerData.js"></script>
+    <!-- Load external data files -->
     <script src="clanStats.js"></script>
+    <script src="playerData.js"></script>
 
     <script>
         let filteredData = [...playerData];
         let currentSort = 'lme';
 
-        // Initialize page with data from external files
-        function initializePage() {
-            // Update clan info
-            document.getElementById('clanName').textContent = clanStats.clanName;
-            document.getElementById('clanId').textContent = clanStats.clanId;
-            
-            // Update LME info
+        // Load clan stats into the page
+        function loadClanStats() {
             document.getElementById('lmePhase').textContent = clanStats.lmePhase;
             document.getElementById('lmeDifficulty').textContent = clanStats.lmeDifficulty;
             document.getElementById('lmeLeague').textContent = clanStats.lmeLeague;
             document.getElementById('lunarPoints').textContent = clanStats.lunarPoints;
-            
-            // Update clan totals
             document.getElementById('totalMembers').textContent = clanStats.totalMembers;
             document.getElementById('totalCores').textContent = clanStats.totalCores;
             document.getElementById('totalAttack').textContent = clanStats.totalAttack;
-            document.getElementById('averageAttack').textContent = clanStats.averageAttack;
-            
-            // Update alumni count
+            document.getElementById('avgAttack').textContent = clanStats.averageAttack;
             document.getElementById('alumniCount').textContent = clanStats.alumniCount;
+        }
+
+        // Calculate Secret Score based on LME history
+        function calculateSecretScore() {
+            let rankFactor = 1.0;
+            let calculation = [];
             
-            // Populate LME History
-            populateLMEHistory();
+            // Process LME history from oldest to newest (reverse order)
+            const reversedHistory = [...lmeHistory].reverse();
             
-            // Populate Alumni
-            populateAlumni();
+            reversedHistory.forEach((lme, index) => {
+                if (lme.rank === 1) {
+                    calculation.push(`LME #${lme.lmemNumber}: 🥇 1st Place → <span class="reset-indicator">RESET to 1.0</span>`);
+                    rankFactor = 1.0;
+                } else if (lme.rank === 2) {
+                    calculation.push(`LME #${lme.lmeNumber}: 🥈 2nd Place → ×0.98`);
+                    rankFactor *= 0.98;
+                } else if (lme.rank === 3) {
+                    calculation.push(`LME #${lme.lmeNumber}: 🥉 3rd Place → ×0.96`);
+                    rankFactor *= 0.96;
+                } else if (lme.rank === 4) {
+                    calculation.push(`LME #${lme.lmeNumber}: 4th Place → ×0.94`);
+                    rankFactor *= 0.94;
+                }
+            });
+            
+            const secretScore = clanStats.lunarPoints * rankFactor;
+            
+            // Update display
+            document.getElementById('currentLME').textContent = clanStats.lunarPoints;
+            document.getElementById('rankFactor').textContent = rankFactor.toFixed(4);
+            document.getElementById('secretScore').textContent = secretScore.toFixed(1);
+            
+            // Show calculation breakdown
+            const historyHtml = calculation.length > 0 
+                ? calculation.join('<br>') + `<br><br><strong>Final Rank Factor:</strong> ${rankFactor.toFixed(4)}<br><strong>Secret Score:</strong> ${clanStats.lunarPoints} × ${rankFactor.toFixed(4)} = ${secretScore.toFixed(1)}`
+                : 'No LME history available yet.';
+            
+            document.getElementById('calcHistory').innerHTML = historyHtml;
+        }
+
+        // Load LME History into modal
+        function loadLMEHistory() {
+            const tbody = document.getElementById('lmeHistoryBody');
+            tbody.innerHTML = '';
+            
+            lmeHistory.forEach((lme, index) => {
+                const row = document.createElement('tr');
+                row.style.borderBottom = '1px solid #4a5568';
+                if (index % 2 === 1) row.style.background = '#374151';
+                
+                let rankDisplay = '';
+                if (lme.rankImage) {
+                    rankDisplay = `<img src="${lme.rankImage}" alt="#${lme.rank}" style="width: 20px; vertical-align: middle;">`;
+                } else {
+                    const rankColors = { 1: '#ffd700', 2: '#c0c0c0', 3: '#cd7930', 4: '#f56565' };
+                    rankDisplay = `<span style="color: ${rankColors[lme.rank] || '#f56565'}; font-weight: 600;">#${lme.rank}</span>`;
+                }
+                
+                row.innerHTML = `
+                    <td style="padding: 10px 12px; color: #e2e8f0; text-align: center; font-weight: 600; font-size: 13px;">${lme.lmeNumber}</td>
+                    <td style="padding: 10px 12px; text-align: center; font-weight: 600; font-size: 13px;">${rankDisplay}</td>
+                    <td style="padding: 10px 12px; color: #e2e8f0; text-align: center; font-size: 13px;">${lme.atkDefPoints}</td>
+                    <td style="padding: 10px 12px; color: #68d391; text-align: center; font-weight: 600; font-size: 13px;">${lme.medals.toLocaleString()}</td>
+                    <td style="padding: 10px 12px; color: #ffd700; text-align: center; font-weight: 600; font-size: 13px; white-space: nowrap;">${lme.league}</td>
+                `;
+                tbody.appendChild(row);
+            });
+        }
+
+        // Load Alumni into modal
+        function loadAlumni() {
+            const grid = document.getElementById('alumniGrid');
+            grid.innerHTML = '';
+            
+            alumniMembers.forEach(name => {
+                const div = document.createElement('div');
+                div.style = 'background: #2d3748; padding: 8px; border-radius: 6px; text-align: center; border: 1px solid #4a5568;';
+                div.innerHTML = `<span style="color: #e2e8f0; font-size: 13px;">${name}</span>`;
+                grid.appendChild(div);
+            });
         }
 
         function formatNumber(num) {
@@ -440,44 +629,6 @@
                     </td>
                 `;
                 tbody.appendChild(row);
-            });
-        }
-
-        function populateLMEHistory() {
-            const tbody = document.getElementById('lmeHistoryTableBody');
-            tbody.innerHTML = '';
-            
-            lmeHistory.forEach((lme, index) => {
-                const row = document.createElement('tr');
-                row.style.borderBottom = '1px solid #4a5568';
-                if (index % 2 === 1) {
-                    row.style.backgroundColor = '#374151';
-                }
-                
-                const rankDisplay = lme.rankImage 
-                    ? `<img src="${lme.rankImage}" alt="#${lme.rank}" style="width: 20px; vertical-align: middle;">`
-                    : `<span style="color: #f56565; font-weight: 600;">#${lme.rank}</span>`;
-                
-                row.innerHTML = `
-                    <td style="padding: 10px 12px; color: #e2e8f0; text-align: center; font-weight: 600; font-size: 13px;">${lme.lmeNumber}</td>
-                    <td style="padding: 10px 12px; text-align: center; font-weight: 600; font-size: 13px;">${rankDisplay}</td>
-                    <td style="padding: 10px 12px; color: #e2e8f0; text-align: center; font-size: 13px;">${lme.atkDefPoints}</td>
-                    <td style="padding: 10px 12px; color: #68d391; text-align: center; font-weight: 600; font-size: 13px;">${lme.medals.toLocaleString()}</td>
-                    <td style="padding: 10px 12px; color: #ffd700; text-align: center; font-weight: 600; font-size: 13px; white-space: nowrap;">${lme.league}</td>
-                `;
-                tbody.appendChild(row);
-            });
-        }
-
-        function populateAlumni() {
-            const grid = document.getElementById('alumniGrid');
-            grid.innerHTML = '';
-            
-            alumniMembers.forEach(alumni => {
-                const div = document.createElement('div');
-                div.style.cssText = 'background: #2d3748; padding: 8px; border-radius: 6px; text-align: center; border: 1px solid #4a5568;';
-                div.innerHTML = `<span style="color: #e2e8f0; font-size: 13px;">${alumni}</span>`;
-                grid.appendChild(div);
             });
         }
 
@@ -587,11 +738,12 @@
             filterData(e.target.value);
         });
 
-        // Initialize the page when loaded
-        document.addEventListener('DOMContentLoaded', function() {
-            initializePage();
-            sortData('lme');
-        });
+        // Initialize page
+        loadClanStats();
+        calculateSecretScore();
+        loadLMEHistory();
+        loadAlumni();
+        sortData('lme');
     </script>
 </body>
 </html>
