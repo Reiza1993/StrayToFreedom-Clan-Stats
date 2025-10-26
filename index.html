@@ -285,50 +285,48 @@
 
         <!-- LME History Modal -->
         <div id="lmeHistoryModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 1000; overflow-y: auto;">
-            <div style="position: relative; margin: 20px auto; padding: 20px; background: #2d3748; border-radius: 15px; max-width: 98%; width: 1100px; max-height: 90vh; overflow-y: auto; border: 1px solid #4a5568;">
+            <div style="position: relative; margin: 15px auto; padding: 15px; background: #2d3748; border-radius: 15px; max-width: 98%; width: 100%; max-height: 90vh; overflow-y: auto; border: 1px solid #4a5568;">
                 <span onclick="closeLMEHistory()" style="position: absolute; top: 10px; right: 15px; font-size: 24px; cursor: pointer; color: #a0aec0;">&times;</span>
                 <h2 style="color: #f7fafc; margin-bottom: 20px; text-align: center; font-size: 1.5em; margin-top: 10px;">🌙 LME History</h2>
                 
                 <!-- Secret Score Calculator Row -->
-                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-bottom: 20px;">
-                    <div style="background: linear-gradient(135deg, #667eea, #764ba2); padding: 15px; border-radius: 10px; text-align: center;">
-                        <div style="font-size: 0.85em; color: rgba(255,255,255,0.9); margin-bottom: 5px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; white-space: nowrap;">Lunar Points</div>
-                        <div style="font-size: 1.8em; font-weight: 700; color: white;" id="historyLunarPoints">950</div>
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 15px;">
+                    <div style="background: linear-gradient(135deg, #667eea, #764ba2); padding: 12px 8px; border-radius: 10px; text-align: center;">
+                        <div style="font-size: 0.75em; color: rgba(255,255,255,0.9); margin-bottom: 4px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.3px; white-space: nowrap;">Lunar Points</div>
+                        <div style="font-size: 1.5em; font-weight: 700; color: white;" id="historyLunarPoints">950</div>
                     </div>
-                    <div style="background: linear-gradient(135deg, #38b2ac, #319795); padding: 15px; border-radius: 10px; text-align: center;">
-                        <div style="font-size: 0.85em; color: rgba(255,255,255,0.9); margin-bottom: 5px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; white-space: nowrap;">Rank Factor</div>
-                        <div style="font-size: 1.8em; font-weight: 700; color: white;" id="historyRankFactor">1.0000</div>
+                    <div style="background: linear-gradient(135deg, #38b2ac, #319795); padding: 12px 8px; border-radius: 10px; text-align: center;">
+                        <div style="font-size: 0.75em; color: rgba(255,255,255,0.9); margin-bottom: 4px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.3px; white-space: nowrap;">Rank Factor</div>
+                        <div style="font-size: 1.5em; font-weight: 700; color: white;" id="historyRankFactor">1.0000</div>
                     </div>
-                    <div style="background: linear-gradient(135deg, #ffd700, #ed8936); padding: 15px; border-radius: 10px; text-align: center; border: 2px solid #ffd700; box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);">
-                        <div style="font-size: 0.85em; color: rgba(0,0,0,0.8); margin-bottom: 5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; white-space: nowrap;">Secret Score</div>
-                        <div style="font-size: 1.8em; font-weight: 700; color: #1a202c;" id="historySecretScore">950.0</div>
+                    <div style="background: linear-gradient(135deg, #ffd700, #ed8936); padding: 12px 8px; border-radius: 10px; text-align: center; border: 2px solid #ffd700; box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);">
+                        <div style="font-size: 0.75em; color: rgba(0,0,0,0.8); margin-bottom: 4px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.3px; white-space: nowrap;">Secret Score</div>
+                        <div style="font-size: 1.5em; font-weight: 700; color: #1a202c;" id="historySecretScore">950.0</div>
                     </div>
                 </div>
                 
-                <div style="overflow-x: auto; -webkit-overflow-scrolling: touch;">
-                <table id="lmeHistoryTable" style="width: 100%; border-collapse: collapse; background: #2d3748; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4); font-size: 14px; min-width: 700px;">
+                <table id="lmeHistoryTable" style="width: 100%; border-collapse: collapse; background: #2d3748; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4); font-size: 12px;">
                     <thead>
                         <tr>
-                            <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 12px 8px; text-align: center; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; white-space: nowrap;">LME #</th>
-                            <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 12px 8px; text-align: center; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; white-space: nowrap;">
-                                <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Ranking.png" alt="Ranking" style="width: 16px; height: 16px; vertical-align: middle; margin-right: 4px;" onerror="this.style.display='none';">
-                                RANKING
+                            <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 8px 3px; text-align: center; font-weight: 600; font-size: 10px; text-transform: uppercase; letter-spacing: 0.2px; white-space: nowrap;">LME #</th>
+                            <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 8px 3px; text-align: center; font-weight: 600; font-size: 10px; text-transform: uppercase; letter-spacing: 0.2px; white-space: nowrap;">
+                                <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Ranking.png" alt="Ranking" style="width: 12px; height: 12px; vertical-align: middle; margin-right: 2px;" onerror="this.style.display='none';">
+                                RANK
                             </th>
-                            <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 12px 8px; text-align: center; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; white-space: nowrap;">
-                                <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Defense_Attack%20Points.png" alt="ATK/DEF" style="width: 16px; height: 16px; vertical-align: middle; margin-right: 4px;" onerror="this.style.display='none';">
-                                ATK / DEF
+                            <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 8px 3px; text-align: center; font-weight: 600; font-size: 10px; text-transform: uppercase; letter-spacing: 0.2px; white-space: nowrap;">
+                                <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Defense_Attack%20Points.png" alt="ATK/DEF" style="width: 12px; height: 12px; vertical-align: middle; margin-right: 2px;" onerror="this.style.display='none';">
+                                A/D
                             </th>
-                            <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 12px 8px; text-align: center; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; white-space: nowrap;">
-                                <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Medals.png" alt="Emblems" style="width: 16px; height: 16px; vertical-align: middle; margin-right: 4px;" onerror="this.style.display='none';">
+                            <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 8px 3px; text-align: center; font-weight: 600; font-size: 10px; text-transform: uppercase; letter-spacing: 0.2px; white-space: nowrap;">
+                                <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Medals.png" alt="Emblems" style="width: 12px; height: 12px; vertical-align: middle; margin-right: 2px;" onerror="this.style.display='none';">
                                 EMBLEMS
                             </th>
-                            <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 12px 8px; text-align: center; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; white-space: nowrap;">LEAGUE</th>
+                            <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 8px 3px; text-align: center; font-weight: 600; font-size: 10px; text-transform: uppercase; letter-spacing: 0.2px; white-space: nowrap;">LEAGUE</th>
                         </tr>
                     </thead>
                     <tbody id="lmeHistoryBody">
                     </tbody>
                 </table>
-                </div>
             </div>
         </div>
 
@@ -418,11 +416,11 @@
                 }
                 
                 row.innerHTML = `
-                    <td style="padding: 10px 8px; color: #e2e8f0; text-align: center; font-weight: 600; font-size: 13px;">${lme.lmeNumber}</td>
-                    <td style="padding: 10px 8px; text-align: center; font-weight: 600; font-size: 13px;">${rankDisplay}</td>
-                    <td style="padding: 10px 8px; color: #e2e8f0; text-align: center; font-size: 13px;">${lme.atkDefPoints}</td>
-                    <td style="padding: 10px 8px; color: #68d391; text-align: center; font-weight: 600; font-size: 13px;">${lme.medals.toLocaleString()}</td>
-                    <td style="padding: 10px 8px; color: #ffd700; text-align: center; font-weight: 600; font-size: 13px; white-space: nowrap;">${lme.league}</td>
+                    <td style="padding: 8px 3px; color: #e2e8f0; text-align: center; font-weight: 600; font-size: 12px;">${lme.lmeNumber}</td>
+                    <td style="padding: 8px 3px; text-align: center; font-weight: 600; font-size: 12px;">${rankDisplay}</td>
+                    <td style="padding: 8px 3px; color: #e2e8f0; text-align: center; font-size: 12px;">${lme.atkDefPoints}</td>
+                    <td style="padding: 8px 3px; color: #68d391; text-align: center; font-weight: 600; font-size: 11px;">${lme.medals.toLocaleString()}</td>
+                    <td style="padding: 8px 3px; color: #ffd700; text-align: center; font-weight: 600; font-size: 11px; white-space: nowrap;">${lme.league}</td>
                 `;
                 tbody.appendChild(row);
             });
