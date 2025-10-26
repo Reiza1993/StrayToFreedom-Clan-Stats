@@ -157,96 +157,6 @@
             transform: translateY(-2px);
             box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
         }
-
-        /* Secret Score Calculator Styles */
-        .calculator-card {
-            background: linear-gradient(135deg, #2d3748, #374151);
-            border: 2px solid #4a5568;
-            border-radius: 12px;
-            padding: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
-        }
-
-        .calculator-header {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            margin-bottom: 15px;
-        }
-
-        .calculator-title {
-            font-size: 1.3em;
-            font-weight: 700;
-            color: #ffd700;
-            text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
-        }
-
-        .calculator-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-            margin-bottom: 15px;
-        }
-
-        .calc-stat {
-            background: #2d3748;
-            padding: 15px;
-            border-radius: 8px;
-            border: 1px solid #4a5568;
-            text-align: center;
-        }
-
-        .calc-label {
-            font-size: 0.85em;
-            color: #a0aec0;
-            margin-bottom: 8px;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        .calc-value {
-            font-size: 1.5em;
-            font-weight: 700;
-            color: #ffd700;
-        }
-
-        .calc-breakdown {
-            background: #2d3748;
-            padding: 15px;
-            border-radius: 8px;
-            border: 1px solid #4a5568;
-            font-size: 0.9em;
-            line-height: 1.6;
-        }
-
-        .calc-breakdown-title {
-            font-weight: 600;
-            color: #f7fafc;
-            margin-bottom: 10px;
-            font-size: 1.1em;
-        }
-
-        .calc-history {
-            color: #e2e8f0;
-            font-family: 'Courier New', monospace;
-        }
-
-        .calc-note {
-            margin-top: 10px;
-            padding: 10px;
-            background: #374151;
-            border-left: 3px solid #667eea;
-            border-radius: 4px;
-            font-size: 0.85em;
-            color: #a0aec0;
-        }
-
-        .reset-indicator {
-            color: #ffd700;
-            font-weight: 600;
-        }
         
         @media (max-width: 768px) {
             body {
@@ -286,14 +196,6 @@
                 padding: 10px 16px;
                 margin-left: 0;
             }
-
-            .calculator-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .calculator-title {
-                font-size: 1.1em;
-            }
         }
     </style>
 </head>
@@ -316,38 +218,7 @@
             </div>
         </div>
 
-        <!-- Secret Score Calculator -->
-        <div class="calculator-card">
-            <div class="calculator-header">
-                <span style="font-size: 1.5em;">🎯</span>
-                <h2 class="calculator-title">LME Matchmaking Secret Score</h2>
-            </div>
-            
-            <div class="calculator-grid">
-                <div class="calc-stat">
-                    <div class="calc-label">Current LME Points</div>
-                    <div class="calc-value" id="currentLME">950</div>
-                </div>
-                <div class="calc-stat">
-                    <div class="calc-label">Rank Factor</div>
-                    <div class="calc-value" id="rankFactor">1.0000</div>
-                </div>
-                <div class="calc-stat">
-                    <div class="calc-label">Secret Score</div>
-                    <div class="calc-value" id="secretScore">950.0</div>
-                </div>
-            </div>
 
-            <div class="calc-breakdown">
-                <div class="calc-breakdown-title">📊 Calculation Breakdown</div>
-                <div class="calc-history" id="calcHistory"></div>
-                <div class="calc-note">
-                    <strong>How it works:</strong> Your Rank Factor starts at 1.0 and changes based on weekly rankings: 
-                    🥇1st = Reset to 1.0 | 🥈2nd = ×0.98 | 🥉3rd = ×0.96 | 4th = ×0.94
-                </div>
-            </div>
-        </div>
-        
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin-bottom: 20px; text-align: center;">
             <div style="background: linear-gradient(135deg, #38b2ac, #319795); color: white; padding: 10px; border-radius: 8px; font-size: 14px; font-weight: 600; min-height: 40px; display: flex; align-items: center; justify-content: center;">
                 Total Members: <span id="totalMembers">40/40</span>
@@ -418,6 +289,22 @@
                 <span onclick="closeLMEHistory()" style="position: absolute; top: 10px; right: 15px; font-size: 24px; cursor: pointer; color: #a0aec0;">&times;</span>
                 <h2 style="color: #f7fafc; margin-bottom: 20px; text-align: center; font-size: 1.5em; margin-top: 10px;">🌙 LME History</h2>
                 
+                <!-- Secret Score Calculator Row -->
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-bottom: 20px;">
+                    <div style="background: linear-gradient(135deg, #667eea, #764ba2); padding: 15px; border-radius: 10px; text-align: center;">
+                        <div style="font-size: 0.85em; color: rgba(255,255,255,0.9); margin-bottom: 5px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">Lunar Points</div>
+                        <div style="font-size: 1.8em; font-weight: 700; color: white;" id="historyLunarPoints">950</div>
+                    </div>
+                    <div style="background: linear-gradient(135deg, #38b2ac, #319795); padding: 15px; border-radius: 10px; text-align: center;">
+                        <div style="font-size: 0.85em; color: rgba(255,255,255,0.9); margin-bottom: 5px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">Rank Factor</div>
+                        <div style="font-size: 1.8em; font-weight: 700; color: white;" id="historyRankFactor">1.0000</div>
+                    </div>
+                    <div style="background: linear-gradient(135deg, #ffd700, #ed8936); padding: 15px; border-radius: 10px; text-align: center; border: 2px solid #ffd700; box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);">
+                        <div style="font-size: 0.85em; color: rgba(0,0,0,0.8); margin-bottom: 5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">Secret Score</div>
+                        <div style="font-size: 1.8em; font-weight: 700; color: #1a202c;" id="historySecretScore">950.0</div>
+                    </div>
+                </div>
+                
                 <table id="lmeHistoryTable" style="width: 100%; border-collapse: collapse; background: #2d3748; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4); font-size: 14px;">
                     <thead>
                         <tr>
@@ -486,40 +373,28 @@
         // Calculate Secret Score based on LME history
         function calculateSecretScore() {
             let rankFactor = 1.0;
-            let calculation = [];
             
             // Process LME history from oldest to newest (reverse order)
             const reversedHistory = [...lmeHistory].reverse();
             
-            reversedHistory.forEach((lme, index) => {
+            reversedHistory.forEach((lme) => {
                 if (lme.rank === 1) {
-                    calculation.push(`LME #${lme.lmemNumber}: 🥇 1st Place → <span class="reset-indicator">RESET to 1.0</span>`);
                     rankFactor = 1.0;
                 } else if (lme.rank === 2) {
-                    calculation.push(`LME #${lme.lmeNumber}: 🥈 2nd Place → ×0.98`);
                     rankFactor *= 0.98;
                 } else if (lme.rank === 3) {
-                    calculation.push(`LME #${lme.lmeNumber}: 🥉 3rd Place → ×0.96`);
                     rankFactor *= 0.96;
                 } else if (lme.rank === 4) {
-                    calculation.push(`LME #${lme.lmeNumber}: 4th Place → ×0.94`);
                     rankFactor *= 0.94;
                 }
             });
             
             const secretScore = clanStats.lunarPoints * rankFactor;
             
-            // Update display
-            document.getElementById('currentLME').textContent = clanStats.lunarPoints;
-            document.getElementById('rankFactor').textContent = rankFactor.toFixed(4);
-            document.getElementById('secretScore').textContent = secretScore.toFixed(1);
-            
-            // Show calculation breakdown
-            const historyHtml = calculation.length > 0 
-                ? calculation.join('<br>') + `<br><br><strong>Final Rank Factor:</strong> ${rankFactor.toFixed(4)}<br><strong>Secret Score:</strong> ${clanStats.lunarPoints} × ${rankFactor.toFixed(4)} = ${secretScore.toFixed(1)}`
-                : 'No LME history available yet.';
-            
-            document.getElementById('calcHistory').innerHTML = historyHtml;
+            // Update LME History modal display
+            document.getElementById('historyLunarPoints').textContent = clanStats.lunarPoints;
+            document.getElementById('historyRankFactor').textContent = rankFactor.toFixed(4);
+            document.getElementById('historySecretScore').textContent = secretScore.toFixed(1);
         }
 
         // Load LME History into modal
