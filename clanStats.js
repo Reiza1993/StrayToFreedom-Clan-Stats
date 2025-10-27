@@ -10,7 +10,7 @@ const clanStats = {
     // Current LME information
     lmePhase: "18K+",
     lmeDifficulty: 11,
-    lmeLeague: "Legend 1",
+    lmeLeague: "Legend 2",
     lunarPoints: 1000,
     
     // Clan totals
