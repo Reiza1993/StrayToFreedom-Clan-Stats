@@ -15,12 +15,12 @@ const clanStats = {
     
     // Clan totals
     totalMembers: "39/40",
-    totalCores: "2560+",
-    totalAttack: "26.83M",
-    averageAttack: "894K",
+    totalCores: "2505+",
+    totalAttack: "27.07",
+    averageAttack: "902K",
     
     // Leadership
-    leader: "神SterbenㅣStray",
+    leader: "神Sterben死",
     viceLeaders: ["ꕤSettꕤ", "ᴷᴵᵀᴴ"],
     
     // Alumni count
