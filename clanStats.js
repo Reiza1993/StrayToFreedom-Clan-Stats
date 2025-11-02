@@ -30,6 +30,14 @@ const clanStats = {
 // LME History Data
 const lmeHistory = [
     {
+        lmeNumber: 14,
+        rank: 1,
+        rankImage: "https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Rank1.png",
+        atkDefPoints: 6,
+        medals: 59426,
+        league: "Legend 2"
+    },
+    {
         lmeNumber: 13,
         rank: 1,
         rankImage: "https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Rank1.png",
