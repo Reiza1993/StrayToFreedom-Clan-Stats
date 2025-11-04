@@ -31,7 +31,7 @@ const clanStats = {
 const lmeHistory = [
     {
         lmeNumber: 14,
-        rank: 1,
+        rank: 4,
         rankImage: "https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Rank1.png",
         atkDefPoints: 6,
         medals: 59426,
