@@ -24,7 +24,7 @@ const clanStats = {
     viceLeaders: ["ꕤSettꕤ", "ᴷᴵᵀᴴ"],
     
     // Alumni count
-    alumniCount: 39
+    alumniCount: 40
 };
 
 // LME History Data
@@ -151,7 +151,7 @@ const alumniMembers = [
     "Ruzagi", "NarutoUzuma", "ByRess", "Beef4Brains", "E-Duke", "bluebirds123456",
     "2xc3", "Chumuzuke", "Coopet", "StrayCleow:)", "CheesyBreadSticks", "starbin",
     "BOBBYJANG", "slaterhoㅣStray", "lct404", "CrackJackㅣStray", "stray|alfred",
-    "Cunner", "Shadowage", "HideOnBushs"
+    "Cunner", "Shadowage", "HideOnBushs" , "Asdgner"
 ];
 
 // CX Color settings
