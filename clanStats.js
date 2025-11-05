@@ -8,7 +8,7 @@ const clanStats = {
     clanId: "44262",
     
     // Current LME information
-    lmePhase: "18K+",
+    lmePhase: "19K+",
     lmeDifficulty: 11,
     lmeLeague: "Legend 2",
     lunarPoints: 1070,
