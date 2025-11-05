@@ -42,5 +42,4 @@ const playerData = [
     { name: "playerxd", cores: "65+", attack: 598300, coresNum: 65, role: "Member", lmeScore: 0, lmeGain: "(-516)", cxScore: 200, cxGain: "(+200)", coresGain: "(+0)", attackGain: "(+0)" },
     { name: "N0M3rcy", cores: "55+", attack: 778100, coresNum: 55, role: "Member", lmeScore: 0, lmeGain: "(-536)", cxScore: 800, cxGain: "(+400)", coresGain: "(+0)", attackGain: "(+19.9K)" },
     { name: "lguinily", cores: "75+", attack: 761200, coresNum: 75, role: "Member", lmeScore: 0, lmeGain: "(-503)", cxScore: 700, cxGain: "(+200)", coresGain: "(+0)", attackGain: "(+26.0K)" },
-    { name: "Asdgner", cores: "80+", attack: 568200, coresNum: 80, role: "Member", lmeScore: 0, lmeGain: "(+0)", cxScore: 0, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+0)" }
 ];
