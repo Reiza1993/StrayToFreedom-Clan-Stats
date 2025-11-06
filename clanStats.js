@@ -1,6 +1,6 @@
 // clanStats.js
 // Freedomˢᵗʳᵃʸ Clan Statistics
-// Last Updated: Week 13 - October 2025
+// Last Updated: Week 16 - November 2025
 
 const clanStats = {
     // Basic clan information
@@ -15,7 +15,7 @@ const clanStats = {
     
     // Clan totals
     totalMembers: "39/40",
-    totalCores: "2580+"
+    totalCores: "2580+",
     totalAttack: "28.35M",
     averageAttack: "945K",
     
@@ -72,7 +72,7 @@ const lmeHistory = [
     {
         lmeNumber: 9,
         rank: 4,
-        rankImage: null, // No image, will show as text
+        rankImage: null,
         atkDefPoints: 2,
         medals: 32043,
         league: "Legend 1"
@@ -128,7 +128,7 @@ const lmeHistory = [
     {
         lmeNumber: 2,
         rank: 4,
-        rankImage: null, // No image, will show as text
+        rankImage: null,
         atkDefPoints: 2,
         medals: 53456,
         league: "Elite 2"
@@ -151,7 +151,7 @@ const alumniMembers = [
     "Ruzagi", "NarutoUzuma", "ByRess", "Beef4Brains", "E-Duke", "bluebirds123456",
     "2xc3", "Chumuzuke", "Coopet", "StrayCleow:)", "CheesyBreadSticks", "starbin",
     "BOBBYJANG", "slaterhoㅣStray", "lct404", "CrackJackㅣStray", "stray|alfred",
-    "Cunner", "Shadowage", "HideOnBushs" , "Asdgner"
+    "Cunner", "Shadowage", "HideOnBushs", "Asdgner"
 ];
 
 // CX Color settings
