@@ -1,6 +1,6 @@
 // playerData.js
 // Freedomˢᵗʳᵃʸ Clan Player Statistics
-// Last Updated: Week 16 - November 2025 (Full Update: Cores, ATK, CX)
+// Last Updated: Week 17 - November 2025 (Added New Members)
 
 const playerData = [
     { name: "ꕤSettꕤ", cores: "160+", attack: 1633700, coresNum: 160, role: "Vice-Leader", lmeScore: 1381, lmeGain: "(+85)", cxScore: 1800, cxGain: "(+500)", coresGain: "(+0)", attackGain: "(+3.7K)" },
@@ -8,7 +8,6 @@ const playerData = [
     { name: "Cunner88", cores: "120+", attack: 1459800, coresNum: 120, role: "Member", lmeScore: 1028, lmeGain: "(-14)", cxScore: 1400, cxGain: "(+100)", coresGain: "(+0)", attackGain: "(+21.4K)" },
     { name: "WaioraㅣStray", cores: "130+", attack: 1303400, coresNum: 130, role: "Member", lmeScore: 935, lmeGain: "(+41)", cxScore: 1700, cxGain: "(+600)", coresGain: "(+0)", attackGain: "(+9.7K)" },
     { name: "盾Heathcliff剣", cores: "130+", attack: 1092900, coresNum: 130, role: "Member", lmeScore: 776, lmeGain: "(+776)", cxScore: 500, cxGain: "(+300)", coresGain: "(+20)", attackGain: "(+22.9K)" },
-    { name: "ᴷᴵᵀᴴ", cores: "95+", attack: 1008500, coresNum: 95, role: "Vice-Leader", lmeScore: 589, lmeGain: "(-19)", cxScore: 1600, cxGain: "(+400)", coresGain: "(+5)", attackGain: "(+9.7K)" },
     { name: "SmallBotoㅣStray", cores: "60+", attack: 848000, coresNum: 60, role: "Member", lmeScore: 594, lmeGain: "(+13)", cxScore: 1800, cxGain: "(+400)", coresGain: "(+0)", attackGain: "(+87.5K)" },
     { name: "HakiLuffy", cores: "95+", attack: 829300, coresNum: 95, role: "Member", lmeScore: 585, lmeGain: "(+5)", cxScore: 1800, cxGain: "(+400)", coresGain: "(+0)", attackGain: "(+24.5K)" },
     { name: "BobBobberson", cores: "90+", attack: 931800, coresNum: 90, role: "Member", lmeScore: 578, lmeGain: "(+13)", cxScore: 1800, cxGain: "(+400)", coresGain: "(+0)", attackGain: "(+35.2K)" },
@@ -27,7 +26,7 @@ const playerData = [
     { name: "cocacandy", cores: "45+", attack: 718200, coresNum: 45, role: "Member", lmeScore: 523, lmeGain: "(-2)", cxScore: 1600, cxGain: "(+400)", coresGain: "(+5)", attackGain: "(+25.9K)" },
     { name: "AleisterCrowley", cores: "45+", attack: 720300, coresNum: 45, role: "Member", lmeScore: 522, lmeGain: "(+3)", cxScore: 1800, cxGain: "(+300)", coresGain: "(+0)", attackGain: "(+9.3K)" },
     { name: "Hobin357", cores: "45+", attack: 827100, coresNum: 45, role: "Member", lmeScore: 521, lmeGain: "(+17)", cxScore: 800, cxGain: "(+100)", coresGain: "(+5)", attackGain: "(+73.8K)" },
-    { name: "Lemminkäinen", cores: "50+", attack: 607600, coresNum: 50, role: "Member", lmeScore: 516, lmeGain: "(+11)", cxScore: 1800, cxGain: "(+300)", coresGain: "(+0)", attackGain: "(+23.0K)" },
+    { name: "Lemminkäinen", cores: "50+", attack: 607600, coresNum: 50, role: "Vice-Leader", lmeScore: 516, lmeGain: "(+11)", cxScore: 1800, cxGain: "(+300)", coresGain: "(+0)", attackGain: "(+23.0K)" },
     { name: "swifft", cores: "40+", attack: 524500, coresNum: 40, role: "Member", lmeScore: 510, lmeGain: "(+10)", cxScore: 800, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+51.7K)" },
     { name: "6J4", cores: "35+", attack: 699100, coresNum: 35, role: "Member", lmeScore: 506, lmeGain: "(+20)", cxScore: 1700, cxGain: "(+300)", coresGain: "(+0)", attackGain: "(+14.1K)" },
     { name: "Slaterho", cores: "35+", attack: 573800, coresNum: 35, role: "Member", lmeScore: 499, lmeGain: "(+19)", cxScore: 800, cxGain: "(+400)", coresGain: "(+0)", attackGain: "(+9.0K)" },
@@ -42,4 +41,7 @@ const playerData = [
     { name: "playerxd", cores: "65+", attack: 610500, coresNum: 65, role: "Member", lmeScore: 522, lmeGain: "(+6)", cxScore: 400, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+12.2K)" },
     { name: "N0M3rcy", cores: "55+", attack: 862500, coresNum: 55, role: "Member", lmeScore: 551, lmeGain: "(+15)", cxScore: 1700, cxGain: "(+500)", coresGain: "(+0)", attackGain: "(+84.4K)" },
     { name: "lguinily", cores: "75+", attack: 761200, coresNum: 75, role: "Member", lmeScore: 500, lmeGain: "(-3)", cxScore: 1700, cxGain: "(+400)", coresGain: "(+0)", attackGain: "(+0)" }
+    { name: "CheasybreadSticks", cores: "35+", attack: 548210, coresNum: 35, role: "Member", lmeScore: 0, lmeGain: "(+0)", cxScore: 200, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+0)" }
+    { name: "PrinceZiko ", cores: "60+", attack: 935204, coresNum: 60, role: "Member", lmeScore: 0, lmeGain: "(+0)", cxScore: 0, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+0)" }
+
 ];
