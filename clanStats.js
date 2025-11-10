@@ -14,17 +14,17 @@ const clanStats = {
     lunarPoints: 1070,
     
     // Clan totals
-    totalMembers: "39/40",
+    totalMembers: "40/40",
     totalCores: "2580+",
     totalAttack: "28.35M",
     averageAttack: "945K",
     
     // Leadership
     leader: "神Sterben死",
-    viceLeaders: ["ꕤSettꕤ", "ᴷᴵᵀᴴ"],
+    viceLeaders: ["ꕤSettꕤ", "Lemminkäinen"],
     
     // Alumni count
-    alumniCount: 40
+    alumniCount: 39
 };
 
 // LME History Data
@@ -157,7 +157,7 @@ const alumniMembers = [
     "tonserlars", "khoprademon", "offBait", "j__d1", "13mpty", "bol4nd3ng",
     "mo265489", "Demoncracy", "StrayKucsika97", "D1L3R_PL", "4nd333", "hiimnhat",
     "Ruzagi", "NarutoUzuma", "ByRess", "Beef4Brains", "E-Duke", "bluebirds123456",
-    "2xc3", "Chumuzuke", "Coopet", "StrayCleow:)", "CheesyBreadSticks", "starbin",
+    "2xc3", "Chumuzuke", "Coopet", "StrayCleow:)", "starbin",
     "BOBBYJANG", "slaterhoㅣStray", "lct404", "CrackJackㅣStray", "stray|alfred",
     "Cunner", "Shadowage", "HideOnBushs", "Asdgner"
 ];
