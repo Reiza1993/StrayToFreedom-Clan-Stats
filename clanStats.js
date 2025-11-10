@@ -159,7 +159,7 @@ const alumniMembers = [
     "Ruzagi", "NarutoUzuma", "ByRess", "Beef4Brains", "E-Duke", "bluebirds123456",
     "2xc3", "Chumuzuke", "Coopet", "StrayCleow:)", "starbin",
     "BOBBYJANG", "slaterhoㅣStray", "lct404", "CrackJackㅣStray", "stray|alfred",
-    "Cunner", "Shadowage", "HideOnBushs", "Asdgner"
+    "Cunner", "Shadowage", "HideOnBushs", "Asdgner", "GentleMonster",
 ];
 
 // CX Color settings
