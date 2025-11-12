@@ -164,7 +164,7 @@ const alumniMembers = [
 
 // CX Color settings
 const cxSettings = {
-    topScore: 1800,
+    topScore: 2100,
     greenThreshold: 0.7,  // 70% of top score
     yellowThreshold: 0.4  // 40% of top score
 };
