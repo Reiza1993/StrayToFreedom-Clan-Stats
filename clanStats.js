@@ -14,17 +14,17 @@ const clanStats = {
     lunarPoints: 1075,
     
     // Clan totals
-    totalMembers: "40/40",
+    totalMembers: "36/40",
     totalCores: "2575+",
     totalAttack: "28.63M",
     averageAttack: "954K",
     
     // Leadership
     leader: "神Sterben死",
-    viceLeaders: ["ꕤSettꕤ", "Lemminkäinen"],
+    viceLeaders: ["Lemminkäinen"],
     
     // Alumni count
-    alumniCount: 39
+    alumniCount: 43
 };
 
 // LME History Data
@@ -159,12 +159,13 @@ const alumniMembers = [
     "Ruzagi", "NarutoUzuma", "ByRess", "Beef4Brains", "E-Duke", "bluebirds123456",
     "2xc3", "Chumuzuke", "Coopet", "StrayCleow:)", "starbin",
     "BOBBYJANG", "slaterhoㅣStray", "lct404", "CrackJackㅣStray", "stray|alfred",
-    "Cunner", "Shadowage", "HideOnBushs", "Asdgner", "GentleMonster",
+    "Cunner", "Shadowage", "HideOnBushs", "Asdgner", "GentleMonster","ꕤSettꕤ", "playerxd", 
+    "AleisterCrowley", "Szoj",
 ];
 
 // CX Color settings
 const cxSettings = {
-    topScore: 2100,
+    topScore: 2400,
     greenThreshold: 0.7,  // 70% of top score
     yellowThreshold: 0.4  // 40% of top score
 };
