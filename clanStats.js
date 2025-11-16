@@ -11,7 +11,7 @@ const clanStats = {
     lmePhase: "19K+",
     lmeDifficulty: 11,
     lmeLeague: "Legend 2",
-    lunarPoints: 1075,
+    lunarPoints: 1065,
     
     // Clan totals
     totalMembers: "36/40",
@@ -29,6 +29,14 @@ const clanStats = {
 
 // LME History Data
 const lmeHistory = [
+    {
+        lmeNumber: 16,
+        rank: 4,
+        rankImage: null,
+        atkDefPoints: 2,
+        medals: 47526,
+        league: "Legend 3"
+    },
     {
         lmeNumber: 15,
         rank: 3,
