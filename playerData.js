@@ -1,4 +1,4 @@
-I'm// playerData.js
+// playerData.js
 // Freedomˢᵗʳᵃʸ Clan Player Statistics
 // Last Updated: Week 19 - November 2025 (LME Score Update)
 
