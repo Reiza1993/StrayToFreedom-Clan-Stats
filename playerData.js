@@ -1,4 +1,4 @@
-// playerData.js
+I'm// playerData.js
 // Freedomˢᵗʳᵃʸ Clan Player Statistics
 // Last Updated: Week 19 - November 2025 (LME Score Update)
 
@@ -39,7 +39,7 @@ const playerData = [
     { name: "swifft", cores: "40+", attack: 572600, coresNum: 40, role: "Member", lmeScore: 519, lmeGain: "(+6)", cxScore: 1000, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+41.7K)" },
     { name: "OmegaZz", cores: "50+", attack: 561100, coresNum: 50, role: "Member", lmeScore: 0, lmeGain: "(-473)", cxScore: 1900, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+7.5K)" },
     { name: "Pookaz", cores: "30+", attack: 525900, coresNum: 30, role: "Member", lmeScore: 426, lmeGain: "(-5)", cxScore: 2300, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+15.5K)" },
-    { name: "Player 78792329", cores: "40+", attack: 524400, coresNum: 40, role: "Member", lmeScore: 0, lmeGain: "(-441)", cxScore: 1700, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+3.3K)" },
+    { name: "Player 78792329", cores: "40+", attack: 524400, coresNum: 40, role: "Member", lmeScore: 431, lmeGain: "(-10)", cxScore: 1700, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+3.3K)" },
     { name: "游戏人间之神", cores: "25+", attack: 520400, coresNum: 25, role: "Member", lmeScore: 395, lmeGain: "(+395)", cxScore: 0, cxGain: "(+0)", coresGain: "", attackGain: "" },
     { name: "HannaM", cores: "25+", attack: 487000, coresNum: 25, role: "Member", lmeScore: 491, lmeGain: "(-2)", cxScore: 2400, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+8.9K)" }
 ];
