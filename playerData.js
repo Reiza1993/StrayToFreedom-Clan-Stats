@@ -6,7 +6,7 @@ const playerData = [
     { name: "神Sterben死", cores: "135+", attack: 1690800, coresNum: 135, role: "Leader", lmeScore: 1362, lmeGain: "(+218)", cxScore: 2100, cxGain: "(+0)", coresGain: "(+5)", attackGain: "(+74.5K)" },
     { name: "Cunner88", cores: "120+", attack: 1469200, coresNum: 120, role: "Glory Member", lmeScore: 1120, lmeGain: "(+42)", cxScore: 1800, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+1.5K)" },
     { name: "WaioraㅣStray", cores: "135+", attack: 1311600, coresNum: 135, role: "Member", lmeScore: 1008, lmeGain: "(+71)", cxScore: 2200, cxGain: "(+0)", coresGain: "(+5)", attackGain: "(+0)" },
-    { name: "Player 58934337", cores: "100+", attack: 1248500, coresNum: 100, role: "Member", lmeScore: 0, lmeGain: "(-566)", cxScore: 100, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+13.5K)" },
+    { name: "Player 58934337", cores: "100+", attack: 1248500, coresNum: 100, role: "Member", lmeScore: 576, lmeGain: "(+10)", cxScore: 100, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+13.5K)" },
     { name: "PastalaVista", cores: "110+", attack: 1169500, coresNum: 110, role: "Member", lmeScore: 773, lmeGain: "(+773)", cxScore: 0, cxGain: "(+0)", coresGain: "", attackGain: "" },
     { name: "OsG", cores: "100+", attack: 1137600, coresNum: 100, role: "Member", lmeScore: 756, lmeGain: "(+756)", cxScore: 0, cxGain: "(+0)", coresGain: "", attackGain: "" },
     { name: "盾Heathcliff剣", cores: "130+", attack: 1134900, coresNum: 130, role: "Member", lmeScore: 781, lmeGain: "(+11)", cxScore: 800, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+33.7K)" },
