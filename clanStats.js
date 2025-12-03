@@ -21,7 +21,7 @@ const clanStats = {
     
     // Leadership
     leader: "神Sterben死",
-    viceLeaders: ["Lemminkäinen"],
+    viceLeaders: ["Lemminkäinen", "SmallBotoㅣStray"],
     
     // Alumni count
     alumniCount: 43
