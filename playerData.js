@@ -19,7 +19,7 @@ const playerData = [
     { name: "HakiLuffy", cores: "95+", attack: 922100, coresNum: 95, role: "Glory Member", lmeScore: 630, lmeGain: "(+37)", cxScore: 1200, cxGain: "(+600)", coresGain: "(+0)", attackGain: "(+1.9K)" },
     { name: "THJF1948ㅣStray", cores: "70+", attack: 874600, coresNum: 70, role: "Member", lmeScore: 576, lmeGain: "(+6)", cxScore: 700, cxGain: "(+500)", coresGain: "(+0)", attackGain: "(+0)" },
     { name: "HonoraryCurve51", cores: "100+", attack: 875500, coresNum: 100, role: "Member", lmeScore: 595, lmeGain: "(+5)", cxScore: 1000, cxGain: "(+600)", coresGain: "(+0)", attackGain: "(+11.9K)" },
-    { name: "N0M3rcy", cores: "70+", attack: 862500, coresNum: 70, role: "Member", lmeScore: 0, lmeGain: "(-554)", cxScore: 1000, cxGain: "(+200)", coresGain: "(+5)", attackGain: "(+0)" },
+    { name: "N0M3rcy", cores: "70+", attack: 862500, coresNum: 70, role: "Member", lmeScore: 568, lmeGain: "(+14)", cxScore: 1000, cxGain: "(+200)", coresGain: "(+5)", attackGain: "(+0)" },
     { name: "Hiryu69", cores: "60+", attack: 850100, coresNum: 60, role: "Member", lmeScore: 0, lmeGain: "(-569)", cxScore: 1000, cxGain: "(+400)", coresGain: "(+5)", attackGain: "(-11.8K)" },
     { name: "Hobin357", cores: "45+", attack: 862900, coresNum: 45, role: "Member", lmeScore: 517, lmeGain: "(+2)", cxScore: 600, cxGain: "(+100)", coresGain: "(+0)", attackGain: "(+24.8K)" },
     { name: "魂Sterben死", cores: "70+", attack: 815100, coresNum: 70, role: "Member", lmeScore: 579, lmeGain: "(+3)", cxScore: 1100, cxGain: "(+500)", coresGain: "(+0)", attackGain: "(-3.3K)" },
