@@ -24,7 +24,7 @@ const clanStats = {
     viceLeaders: ["Lemminkäinen", "SmallBotoㅣStray"],
     
     // Alumni count
-    alumniCount: 43
+    alumniCount: 44
 };
 
 // LME History Data
@@ -184,7 +184,7 @@ const alumniMembers = [
     "2xc3", "Chumuzuke", "Coopet", "StrayCleow:)", "starbin",
     "BOBBYJANG", "slaterhoㅣStray", "lct404", "CrackJackㅣStray", "stray|alfred",
     "Cunner", "Shadowage", "HideOnBushs", "Asdgner", "GentleMonster","ꕤSettꕤ", "playerxd", 
-    "AleisterCrowley", "Szoj",
+    "AleisterCrowley", "Szoj","Player 58934337",
 ];
 
 // CX Color settings
