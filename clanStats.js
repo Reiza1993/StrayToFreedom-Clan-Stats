@@ -24,7 +24,7 @@ const clanStats = {
     viceLeaders: ["Lemminkäinen", "SmallBotoㅣStray"],
     
     // Alumni count
-    alumniCount: 44
+    alumniCount: 45
 };
 
 // LME History Data
@@ -192,12 +192,12 @@ const alumniMembers = [
     "2xc3", "Chumuzuke", "Coopet", "StrayCleow:)", "starbin",
     "BOBBYJANG", "slaterhoㅣStray", "lct404", "CrackJackㅣStray", "stray|alfred",
     "Cunner", "Shadowage", "HideOnBushs", "Asdgner", "GentleMonster","ꕤSettꕤ", "playerxd", 
-    "AleisterCrowley", "Szoj","Player 58934337",
+    "AleisterCrowley", "Szoj","Player 58934337","OsG",
 ];
 
 // CX Color settings
 const cxSettings = {
-    topScore: 1400,
+    topScore: 1900,
     greenThreshold: 0.7,  // 70% of top score
     yellowThreshold: 0.4  // 40% of top score
 };
