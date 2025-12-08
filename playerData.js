@@ -8,7 +8,6 @@ const playerData = [
     { name: "WaioraㅣStray", cores: "135+", attack: 1322400, coresNum: 135, role: "Member", lmeScore: 1024, lmeGain: "(+30)", cxScore: 1300, cxGain: "(+600)", coresGain: "(+0)", attackGain: "(+0)" },
     { name: "SmallBotoㅣStray", cores: "70+", attack: 1230600, coresNum: 70, role: "Vice-Leader", lmeScore: 825, lmeGain: "(+38)", cxScore: 1600, cxGain: "(+400)", coresGain: "(+5)", attackGain: "(+196.8K)" },
     { name: "PastalaVista", cores: "115+", attack: 1205300, coresNum: 115, role: "Member", lmeScore: 858, lmeGain: "(+77)", cxScore: 1600, cxGain: "(+500)", coresGain: "(+5)", attackGain: "(+18.9K)" },
-    { name: "盾Heathcliff剣", cores: "130+", attack: 1168000, coresNum: 130, role: "Member", lmeScore: 860, lmeGain: "(+22)", cxScore: 1900, cxGain: "(+500)", coresGain: "(+0)", attackGain: "(+26.1K)" },
     { name: "Gritchen", cores: "TBD", attack: 1191800, coresNum: 0, role: "Member", lmeScore: 0, lmeGain: "", cxScore: 200, cxGain: "(+200)", coresGain: "", attackGain: "" },
     { name: "Limys", cores: "75+", attack: 1068500, coresNum: 75, role: "Member", lmeScore: 598, lmeGain: "(-6)", cxScore: 200, cxGain: "(+200)", coresGain: "(+0)", attackGain: "(+12.1K)" },
     { name: "MrPlusUltra", cores: "80+", attack: 1046500, coresNum: 80, role: "Member", lmeScore: 587, lmeGain: "(+4)", cxScore: 1900, cxGain: "(+600)", coresGain: "(+0)", attackGain: "(+13.1K)" },
