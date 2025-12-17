@@ -19,7 +19,7 @@ const playerData = [
     { name: "Belthazar", cores: "70+", attack: 942800, coresNum: 70, role: "Member", lmeScore: 563, lmeGain: "(+3)", cxScore: 2400, cxGain: "(+600)", coresGain: "(+0)", attackGain: "(+9.8K)" },
     { name: "HonoraryCurve51", cores: "105+", attack: 901500, coresNum: 105, role: "Member", lmeScore: 598, lmeGain: "(+1)", cxScore: 1600, cxGain: "(+300)", coresGain: "(+0)", attackGain: "(+5.7K)" },
     { name: "KusoYaroo", cores: "65+", attack: 888500, coresNum: 65, role: "Member", lmeScore: 580, lmeGain: "", cxScore: 500, cxGain: "", coresGain: "", attackGain: "" },
-    { name: "N0M3rcy", cores: "70+", attack: 877400, coresNum: 70, role: "Member", lmeScore: 0, lmeGain: "(-562)", cxScore: 2400, cxGain: "(+500)", coresGain: "(+0)", attackGain: "(+14.9K)" },
+    { name: "N0M3rcy", cores: "70+", attack: 877400, coresNum: 70, role: "Member", lmeScore: 564, lmeGain: "(+2)", cxScore: 2400, cxGain: "(+500)", coresGain: "(+0)", attackGain: "(+14.9K)" },
     { name: "THJF1948ㅣStray", cores: "75+", attack: 876900, coresNum: 75, role: "Member", lmeScore: 581, lmeGain: "(+2)", cxScore: 1400, cxGain: "(+300)", coresGain: "(+5)", attackGain: "(+2.3K)" },
     { name: "Hobin357", cores: "45+", attack: 874900, coresNum: 45, role: "Member", lmeScore: 522, lmeGain: "(+3)", cxScore: 700, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+3.1K)" },
     { name: "Hiryu69", cores: "60+", attack: 868500, coresNum: 60, role: "Member", lmeScore: 571, lmeGain: "(-4)", cxScore: 1900, cxGain: "(+400)", coresGain: "(+0)", attackGain: "(+10.6K)" },
