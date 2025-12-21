@@ -11,7 +11,7 @@ const clanStats = {
     lmePhase: "20.2K+",
     lmeDifficulty: 11,
     lmeLeague: "Legend 3",
-    lunarPoints: 1135,
+    lunarPoints: 1150,
     
     // Clan totals
     totalMembers: "40/40",
