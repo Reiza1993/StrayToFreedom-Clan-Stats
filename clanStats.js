@@ -8,16 +8,16 @@ const clanStats = {
     clanId: "44262",
     
     // Current LME information
-    lmePhase: "20.2K+",
+    lmePhase: "21.8K+",
     lmeDifficulty: 11,
     lmeLeague: "Legend 3",
     lunarPoints: 1150,
     
     // Clan totals
     totalMembers: "40/40",
-    totalCores: "2745+",
-    totalAttack: "30.45M",
-    averageAttack: "1.04M",
+    totalCores: "2810+",
+    totalAttack: "31.26M",
+    averageAttack: "1.042M",
     
     // Leadership
     leader: "神Sterben死",
