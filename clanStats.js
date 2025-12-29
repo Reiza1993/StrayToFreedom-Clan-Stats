@@ -11,10 +11,10 @@ const clanStats = {
     lmePhase: "21.8K+",
     lmeDifficulty: 11,
     lmeLeague: "Legend 3",
-    lunarPoints: 1150,
+    lunarPoints: 1130,
     
     // Clan totals
-    totalMembers: "40/40",
+    totalMembers: "39/40",
     totalCores: "2810+",
     totalAttack: "31.26M",
     averageAttack: "1.042M",
@@ -24,11 +24,19 @@ const clanStats = {
     viceLeaders: ["Lemminkäinen", "SmallBotoㅣStray"],
     
     // Alumni count
-    alumniCount: 46
+    alumniCount: 47
 };
 
 // LME History Data
 const lmeHistory = [
+             {
+        lmeNumber: 22,
+        rank: 4,
+        rankImage: null,
+        atkDefPoints: 1,
+        medals: 42989,
+        league: "Champion"
+    },
              {
         lmeNumber: 21,
         rank: 2,
@@ -208,12 +216,12 @@ const alumniMembers = [
     "2xc3", "Chumuzuke", "Coopet", "StrayCleow:)", "starbin",
     "BOBBYJANG", "slaterhoㅣStray", "lct404", "CrackJackㅣStray", "stray|alfred",
     "Cunner", "Shadowage", "HideOnBushs", "Asdgner", "GentleMonster","ꕤSettꕤ", "playerxd", 
-    "AleisterCrowley", "Szoj","Player 58934337","OsG","Slaterho"
+    "AleisterCrowley", "Szoj","Player 58934337","OsG","Slaterho","CheeseBreadSticks",
 ];
 
 // CX Color settings
 const cxSettings = {
-    topScore: 500,
+    topScore: 1200,
     greenThreshold: 0.7,  // 70% of top score
     yellowThreshold: 0.4  // 40% of top score
 };
