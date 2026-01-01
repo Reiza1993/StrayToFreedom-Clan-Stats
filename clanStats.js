@@ -15,9 +15,9 @@ const clanStats = {
     
     // Clan totals
     totalMembers: "39/40",
-    totalCores: "2810+",
-    totalAttack: "31.26M",
-    averageAttack: "1.042M",
+    totalCores: "2850+",
+    totalAttack: "32.04M",
+    averageAttack: "1.06M",
     
     // Leadership
     leader: "神Sterben死",
