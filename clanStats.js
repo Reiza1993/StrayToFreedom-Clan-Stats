@@ -11,10 +11,10 @@ const clanStats = {
     lmePhase: "21.8K+",
     lmeDifficulty: 11,
     lmeLeague: "Legend 3",
-    lunarPoints: 1130,
+    lunarPoints: 1160,
     
     // Clan totals
-    totalMembers: "39/40",
+    totalMembers: "38/40",
     totalCores: "2850+",
     totalAttack: "32.04M",
     averageAttack: "1.06M",
@@ -24,11 +24,19 @@ const clanStats = {
     viceLeaders: ["Lemminkäinen", "SmallBotoㅣStray"],
     
     // Alumni count
-    alumniCount: 47
+    alumniCount: 48
 };
 
 // LME History Data
 const lmeHistory = [
+             {
+        lmeNumber: 23,
+        rank: 1,
+        rankImage: "https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Rank1.png",
+        atkDefPoints: 6,
+        medals: 36390,
+        league: "Legend 3"
+    },
              {
         lmeNumber: 22,
         rank: 4,
@@ -216,12 +224,12 @@ const alumniMembers = [
     "2xc3", "Chumuzuke", "Coopet", "StrayCleow:)", "starbin",
     "BOBBYJANG", "slaterhoㅣStray", "lct404", "CrackJackㅣStray", "stray|alfred",
     "Cunner", "Shadowage", "HideOnBushs", "Asdgner", "GentleMonster","ꕤSettꕤ", "playerxd", 
-    "AleisterCrowley", "Szoj","Player 58934337","OsG","Slaterho","CheeseBreadSticks",
+    "AleisterCrowley", "Szoj","Player 58934337","OsG","Slaterho","CheesyBreadSticks","KusoYaroo",
 ];
 
 // CX Color settings
 const cxSettings = {
-    topScore: 1200,
+    topScore: 1900,
     greenThreshold: 0.7,  // 70% of top score
     yellowThreshold: 0.4  // 40% of top score
 };
