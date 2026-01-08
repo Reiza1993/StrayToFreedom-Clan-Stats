@@ -14,10 +14,10 @@ const clanStats = {
     lunarPoints: 1160,
     
     // Clan totals
-    totalMembers: "38/40",
-    totalCores: "2850+",
-    totalAttack: "32.04M",
-    averageAttack: "1.06M",
+    totalMembers: "39/40",
+    totalCores: "2900+",
+    totalAttack: "32.63M",
+    averageAttack: "1.08M",
     
     // Leadership
     leader: "神Sterben死",
