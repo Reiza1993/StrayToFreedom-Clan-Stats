@@ -1,6 +1,6 @@
 // clanStats.js
 // Freedomˢᵗʳᵃʸ Clan Statistics
-// Last Updated: Week 16 - November 2025
+// Last Updated: 8/01
 
 const clanStats = {
     // Basic clan information
@@ -8,7 +8,7 @@ const clanStats = {
     clanId: "44262",
     
     // Current LME information
-    lmePhase: "21.8K+",
+    lmePhase: "23K+",
     lmeDifficulty: 11,
     lmeLeague: "Legend 3",
     lunarPoints: 1160,
