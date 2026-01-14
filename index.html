@@ -218,7 +218,6 @@
             </div>
         </div>
 
-
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin-bottom: 20px; text-align: center;">
             <div style="background: linear-gradient(135deg, #38b2ac, #319795); color: white; padding: 10px; border-radius: 8px; font-size: 14px; font-weight: 600; min-height: 40px; display: flex; align-items: center; justify-content: center;">
                 Total Members: <span id="totalMembers">40/40</span>
@@ -237,7 +236,10 @@
         <div class="controls">
             <input type="text" id="searchInput" placeholder="Search player names..." class="search-box">
             <select id="sortSelect">
-                <option value="lme">Sort by LME Score</option>
+                <option value="lme">Sort by LME Week 1</option>
+                <option value="lme_w2">Sort by LME Week 2</option>
+                <option value="lme_w3">Sort by LME Week 3</option>
+                <option value="lme_w4">Sort by LME Week 4</option>
                 <option value="cx">Sort by CX</option>
                 <option value="cores">Sort by Relic Cores</option>
                 <option value="attack">Sort by ATK</option>
@@ -269,10 +271,20 @@
                         <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/ATK.png" alt="ATK" style="width: 20px; height: 20px; vertical-align: middle;" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
                         <span style="display: none;">ATK</span>
                     </th>
-                    <th>
+                    <th colspan="4" style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; text-align: center; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; border-bottom: 1px solid #4a5568;">
                         <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Medals.png" alt="LME" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 6px;" onerror="this.style.display='none';">
-                        LME 1st Phase
+                        LME 1ST PHASE
                     </th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th style="background: linear-gradient(135deg, #f59e0b, #d97706); color: white; text-align: center; font-weight: 600; font-size: 10px; padding: 4px 2px;">W1</th>
+                    <th style="background: linear-gradient(135deg, #f59e0b, #d97706); color: white; text-align: center; font-weight: 600; font-size: 10px; padding: 4px 2px;">W2</th>
+                    <th style="background: linear-gradient(135deg, #f59e0b, #d97706); color: white; text-align: center; font-weight: 600; font-size: 10px; padding: 4px 2px;">W3</th>
+                    <th style="background: linear-gradient(135deg, #f59e0b, #d97706); color: white; text-align: center; font-weight: 600; font-size: 10px; padding: 4px 2px;">W4</th>
                     <th>
                         <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/CX.png" alt="CX" style="width: 20px; height: 20px; vertical-align: middle;" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
                         <span style="display: none;">CX</span>
@@ -458,6 +470,14 @@
             return '#f56565';
         }
 
+        function calculateWeekGain(currentWeek, previousWeek) {
+            if (!currentWeek && !previousWeek) return "";
+            if (!previousWeek && currentWeek) return "";
+            if (currentWeek === previousWeek) return "(+0)";
+            const gain = currentWeek - previousWeek;
+            return gain > 0 ? `(+${gain})` : `(${gain})`;
+        }
+
         function renderTable() {
             const tbody = document.getElementById('tableBody');
             tbody.innerHTML = '';
@@ -476,6 +496,16 @@
                     nameClass = 'role-glorymember';
                 }
                 
+                // Calculate week gains automatically
+                const w1Score = player.lmeScores.week1 || 0;
+                const w2Score = player.lmeScores.week2 || 0;
+                const w3Score = player.lmeScores.week3 || 0;
+                const w4Score = player.lmeScores.week4 || 0;
+                
+                const w2Gain = calculateWeekGain(w2Score, w1Score);
+                const w3Gain = calculateWeekGain(w3Score, w2Score);
+                const w4Gain = calculateWeekGain(w4Score, w3Score);
+                
                 row.innerHTML = `
                     <td class="rank-cell">${index + 1}</td>
                     <td class="name-cell ${nameClass}" style="color: ${nameColor};">${player.name}</td>
@@ -490,10 +520,25 @@
                             ${player.attackGain}
                         </span>` : ''}
                     </td>
-                    <td style="text-align: center; font-weight: 600; color: #f59e0b;">
-                        ${player.lmeScore || 0}
-                        ${player.lmeGain ? `<span style="color: ${player.lmeGain.includes('+') && !player.lmeGain.includes('(+0)') ? '#10b981' : player.lmeGain.includes('(+0)') ? '#a0aec0' : '#f56565'}; font-size: 11px; margin-left: 4px;">
-                            ${player.lmeGain}
+                    <td style="text-align: center; font-weight: 600; color: #f59e0b; padding: 4px 2px; font-size: 12px;">
+                        ${w1Score || 0}
+                    </td>
+                    <td style="text-align: center; font-weight: 600; color: #f59e0b; padding: 4px 2px; font-size: 12px;">
+                        ${w2Score || 0}
+                        ${w2Gain ? `<span style="color: ${w2Gain.includes('+') && !w2Gain.includes('(+0)') ? '#10b981' : w2Gain.includes('(+0)') ? '#a0aec0' : '#f56565'}; font-size: 9px; display: block;">
+                            ${w2Gain}
+                        </span>` : ''}
+                    </td>
+                    <td style="text-align: center; font-weight: 600; color: #f59e0b; padding: 4px 2px; font-size: 12px;">
+                        ${w3Score || 0}
+                        ${w3Gain ? `<span style="color: ${w3Gain.includes('+') && !w3Gain.includes('(+0)') ? '#10b981' : w3Gain.includes('(+0)') ? '#a0aec0' : '#f56565'}; font-size: 9px; display: block;">
+                            ${w3Gain}
+                        </span>` : ''}
+                    </td>
+                    <td style="text-align: center; font-weight: 600; color: #f59e0b; padding: 4px 2px; font-size: 12px;">
+                        ${w4Score || 0}
+                        ${w4Gain ? `<span style="color: ${w4Gain.includes('+') && !w4Gain.includes('(+0)') ? '#10b981' : w4Gain.includes('(+0)') ? '#a0aec0' : '#f56565'}; font-size: 9px; display: block;">
+                            ${w4Gain}
                         </span>` : ''}
                     </td>
                     <td style="text-align: center; font-weight: 600; color: ${getCXColor(player.cxScore)};">
@@ -521,7 +566,16 @@
                     filteredData.sort((a, b) => b.attack - a.attack);
                     break;
                 case 'lme':
-                    filteredData.sort((a, b) => b.lmeScore - a.lmeScore);
+                    filteredData.sort((a, b) => b.lmeScores.week1 - a.lmeScores.week1);
+                    break;
+                case 'lme_w2':
+                    filteredData.sort((a, b) => b.lmeScores.week2 - a.lmeScores.week2);
+                    break;
+                case 'lme_w3':
+                    filteredData.sort((a, b) => b.lmeScores.week3 - a.lmeScores.week3);
+                    break;
+                case 'lme_w4':
+                    filteredData.sort((a, b) => b.lmeScores.week4 - a.lmeScores.week4);
                     break;
                 case 'cx':
                     filteredData.sort((a, b) => b.cxScore - a.cxScore);
@@ -534,7 +588,7 @@
                         if (roleA !== roleB) {
                             return roleA - roleB;
                         }
-                        return b.lmeScore - a.lmeScore;
+                        return b.lmeScores.week1 - a.lmeScores.week1;
                     });
                     break;
             }
@@ -550,7 +604,7 @@
         }
 
         function exportToCSV() {
-            const headers = ['Rank', 'Player Name', 'Relic Cores', 'Cores Gain', 'ATK', 'ATK Gain', 'LME Score', 'LME Gain', 'CX', 'CX Gain'];
+            const headers = ['Rank', 'Player Name', 'Relic Cores', 'Cores Gain', 'ATK', 'ATK Gain', 'LME W1', 'LME W2', 'LME W3', 'LME W4', 'CX', 'CX Gain'];
             const csvContent = [
                 headers.join(','),
                 ...filteredData.map((player, index) => [
@@ -560,8 +614,10 @@
                     `"${player.coresGain || ''}"`,
                     player.attack,
                     `"${player.attackGain || ''}"`,
-                    player.lmeScore,
-                    `"${player.lmeGain || ''}"`,
+                    player.lmeScores.week1 || 0,
+                    player.lmeScores.week2 || 0,
+                    player.lmeScores.week3 || 0,
+                    player.lmeScores.week4 || 0,
                     player.cxScore,
                     `"${player.cxGain || ''}"`
                 ].join(','))
