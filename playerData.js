@@ -131,3 +131,4 @@ const seasonConfig = {
     currentWeek: 1, // 1-4, manually update
     weeksPerSeason: 4
 };
+ 
