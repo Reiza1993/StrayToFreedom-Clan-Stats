@@ -261,8 +261,8 @@
         <table id="playerTable">
             <thead>
                 <tr>
-                    <th>Rank</th>
-                    <th>Player Name</th>
+                    <th style="width: 40px;">#</th>
+                    <th>PLAYER NAME</th>
                     <th>
                         <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Relic%20Cores.png" alt="Relic Cores" style="width: 20px; height: 20px; vertical-align: middle;" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
                         <span style="display: none;">Relic Cores</span>
@@ -275,16 +275,21 @@
                         <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Medals.png" alt="LME" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 6px;" onerror="this.style.display='none';">
                         LME 1ST PHASE
                     </th>
+                    <th>
+                        <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/CX.png" alt="CX" style="width: 20px; height: 20px; vertical-align: middle;" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
+                        <span style="display: none;">CX</span>
+                    </th>
                 </tr>
                 <tr>
                     <th></th>
                     <th></th>
                     <th></th>
                     <th></th>
-                    <th style="background: linear-gradient(135deg, #f59e0b, #d97706); color: white; text-align: center; font-weight: 600; font-size: 10px; padding: 4px 2px;">W1</th>
-                    <th style="background: linear-gradient(135deg, #f59e0b, #d97706); color: white; text-align: center; font-weight: 600; font-size: 10px; padding: 4px 2px;">W2</th>
-                    <th style="background: linear-gradient(135deg, #f59e0b, #d97706); color: white; text-align: center; font-weight: 600; font-size: 10px; padding: 4px 2px;">W3</th>
-                    <th style="background: linear-gradient(135deg, #f59e0b, #d97706); color: white; text-align: center; font-weight: 600; font-size: 10px; padding: 4px 2px;">W4</th>
+                    <th style="background: linear-gradient(135deg, #f59e0b, #d97706); color: white; text-align: center; font-weight: 600; font-size: 10px; padding: 4px 2px; width: 60px;">W1</th>
+                    <th style="background: linear-gradient(135deg, #f59e0b, #d97706); color: white; text-align: center; font-weight: 600; font-size: 10px; padding: 4px 2px; width: 60px;">W2</th>
+                    <th style="background: linear-gradient(135deg, #f59e0b, #d97706); color: white; text-align: center; font-weight: 600; font-size: 10px; padding: 4px 2px; width: 60px;">W3</th>
+                    <th style="background: linear-gradient(135deg, #f59e0b, #d97706); color: white; text-align: center; font-weight: 600; font-size: 10px; padding: 4px 2px; width: 60px;">W4</th>
+                    <th></th>
                     <th>
                         <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/CX.png" alt="CX" style="width: 20px; height: 20px; vertical-align: middle;" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
                         <span style="display: none;">CX</span>
@@ -363,7 +368,7 @@
 
     <!-- Load external data files -->
     <script src="clanStats.js"></script>
-    <script src="playerData.js"></script>
+    <script src="playerData_season41.js"></script>
 
     <script>
         let filteredData = [...playerData];
@@ -473,6 +478,7 @@
         function calculateWeekGain(currentWeek, previousWeek) {
             if (!currentWeek && !previousWeek) return "";
             if (!previousWeek && currentWeek) return "";
+            if (!currentWeek && previousWeek) return ""; // Don't show negative gain when current week is 0
             if (currentWeek === previousWeek) return "(+0)";
             const gain = currentWeek - previousWeek;
             return gain > 0 ? `(+${gain})` : `(${gain})`;
@@ -604,7 +610,7 @@
         }
 
         function exportToCSV() {
-            const headers = ['Rank', 'Player Name', 'Relic Cores', 'Cores Gain', 'ATK', 'ATK Gain', 'LME W1', 'LME W2', 'LME W3', 'LME W4', 'CX', 'CX Gain'];
+            const headers = ['#', 'Player Name', 'Relic Cores', 'Cores Gain', 'ATK', 'ATK Gain', 'LME W1', 'LME W2', 'LME W3', 'LME W4', 'CX', 'CX Gain'];
             const csvContent = [
                 headers.join(','),
                 ...filteredData.map((player, index) => [
