@@ -8,16 +8,16 @@ const clanStats = {
     clanId: "44262",
     
     // Current LME information
-    lmePhase: "23K+",
+    lmePhase: "23.6K+",
     lmeDifficulty: 11,
     lmeLeague: "Legend 3",
     lunarPoints: 1175,
     
     // Clan totals
-    totalMembers: "39/40",
-    totalCores: "2900+",
-    totalAttack: "32.63M",
-    averageAttack: "1.08M",
+    totalMembers: "40/40",
+    totalCores: "2965+",
+    totalAttack: "33.34M",
+    averageAttack: "1.11M",
     
     // Leadership
     leader: "神Sterben死",
@@ -237,7 +237,7 @@ const alumniMembers = [
 
 // CX Color settings
 const cxSettings = {
-    topScore: 2600,
+    topScore: 0,
     greenThreshold: 0.7,  // 70% of top score
     yellowThreshold: 0.4  // 40% of top score
 };
