@@ -25,7 +25,7 @@ const playerData = [
     { name: "SUJAY", cores: "100+", attack: 964800, coresNum: 100, role: "Member", lmeScore: 664, lmeGain: "(+0)", cxScore: 0, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+0)" },
     { name: "魂Hobin357死", cores: "75+", attack: 955800, coresNum: 75, role: "Member", lmeScore: 0, lmeGain: "(-595)", cxScore: 0, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+0)" },
     { name: "N0M3rcy", cores: "75+", attack: 953700, coresNum: 75, role: "Member", lmeScore: 581, lmeGain: "(+6)", cxScore: 0, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+2.6K)" },
-    { name: "Player 66607264", cores: "100+", attack: 928800, coresNum: 100, role: "Member", lmeScore: 0, lmeGain: "(-694)", cxScore: 0, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+0)" },
+    { name: "Player 66607264", cores: "100+", attack: 928800, coresNum: 100, role: "Member", lmeScore: 703, lmeGain: "(+9)", cxScore: 0, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+0)" },
     { name: "Epic|W", cores: "60+", attack: 904500, coresNum: 60, role: "Member", lmeScore: 0, lmeGain: "(-561)", cxScore: 0, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+0)" },
     { name: "lguinily", cores: "90+", attack: 888900, coresNum: 90, role: "Member", lmeScore: 547, lmeGain: "(+7)", cxScore: 0, cxGain: "(+0)", coresGain: "(+5)", attackGain: "(+41.2K)" },
     { name: "Hiryu69", cores: "70+", attack: 882900, coresNum: 70, role: "Member", lmeScore: 591, lmeGain: "(+591)", cxScore: 0, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+0.2K)" },
