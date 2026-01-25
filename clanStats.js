@@ -8,10 +8,10 @@ const clanStats = {
     clanId: "44262",
     
     // Current LME information
-    lmePhase: "23.6K+",
+    lmePhase: "24K+",
     lmeDifficulty: 11,
-    lmeLeague: "Legend 3",
-    lunarPoints: 1185,
+    lmeLeague: "Champion",
+    lunarPoints: 1200,
     
     // Clan totals
     totalMembers: "40/40",
@@ -29,6 +29,14 @@ const clanStats = {
 
 // LME History Data
 const lmeHistory = [
+             {
+        lmeNumber: 26,
+        rank: 2,
+        rankImage: "https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Rank2.png",
+        atkDefPoints: 4,
+        medals: 48603,
+        league: "Legend 3"
+    },
              {
         lmeNumber: 25,
         rank: 2,
