@@ -10,8 +10,8 @@ const clanStats = {
     // Current LME information
     lmePhase: "25K+",
     lmeDifficulty: 11,
-    lmeLeague: "Champion",
-    lunarPoints: 1200,
+    lmeLeague: "Legend 3",
+    lunarPoints: 1190,
     
     // Clan totals
     totalMembers: "40/40",
@@ -29,6 +29,14 @@ const clanStats = {
 
 // LME History Data
 const lmeHistory = [
+    {
+        lmeNumber: 27,
+        rank: 3,
+        rankImage: "https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Rank3.png",
+        atkDefPoints: 3,
+        medals: 63099,
+        league: "Champion"
+    },
              {
         lmeNumber: 26,
         rank: 2,
@@ -253,7 +261,7 @@ const alumniMembers = [
 
 // CX Color settings
 const cxSettings = {
-    topScore: 1200,
+    topScore: 1900,
     greenThreshold: 0.7,  // 70% of top score
     yellowThreshold: 0.4  // 40% of top score
 };
