@@ -14,7 +14,7 @@ const clanStats = {
     lunarPoints: 1190,
     
     // Clan totals
-    totalMembers: "40/40",
+    totalMembers: "39/40",
     totalCores: "3105+",
     totalAttack: "34.81M",
     averageAttack: "1.16M",
