@@ -8,15 +8,15 @@ const clanStats = {
     clanId: "44262",
     
     // Current LME information
-    lmePhase: "25K+",
+    lmePhase: "26.3K+",
     lmeDifficulty: 11,
     lmeLeague: "Legend 3",
     lunarPoints: 1190,
     
     // Clan totals
     totalMembers: "39/40",
-    totalCores: "3105+",
-    totalAttack: "34.81M",
+    totalCores: "3125+",
+    totalAttack: "35.02M",
     averageAttack: "1.16M",
     
     // Leadership
