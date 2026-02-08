@@ -1,6 +1,6 @@
 // clanStats.js
 // Freedomˢᵗʳᵃʸ Clan Statistics
-// Last Updated: 8/01
+// Last Updated: 8/01 - LME #28 Added
 
 const clanStats = {
     // Basic clan information
@@ -10,18 +10,18 @@ const clanStats = {
     // Current LME information
     lmePhase: "26.3K+",
     lmeDifficulty: 11,
-    lmeLeague: "Legend 3",
-    lunarPoints: 1190,
+    lmeLeague: "Champion",
+    lunarPoints: 1205,
     
     // Clan totals
-    totalMembers: "39/40",
+    totalMembers: "38/40",
     totalCores: "3125+",
     totalAttack: "35.02M",
     averageAttack: "1.16M",
     
     // Leadership
     leader: "神Sterben死",
-    viceLeaders: ["Lemminkäinen", "SmallBotoㅣStray"],
+    viceLeaders: ["Lemminkäinen", "Cunner88"],
     
     // Alumni count
     alumniCount: 50
@@ -29,6 +29,14 @@ const clanStats = {
 
 // LME History Data
 const lmeHistory = [
+    {
+        lmeNumber: 28,
+        rank: 2,
+        rankImage: "https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Rank2.png",
+        atkDefPoints: 4,
+        medals: 26237,
+        league: "Legend 3"
+    },
     {
         lmeNumber: 27,
         rank: 3,
@@ -265,3 +273,8 @@ const cxSettings = {
     greenThreshold: 0.7,  // 70% of top score
     yellowThreshold: 0.4  // 40% of top score
 };
+
+// Export for use in main application
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = { clanStats, alumniMembers, lmeHistory, cxSettings };
+}
