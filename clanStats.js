@@ -15,8 +15,8 @@ const clanStats = {
     
     // Clan totals
     totalMembers: "38/40",
-    totalCores: "3125+",
-    totalAttack: "35.02M",
+    totalCores: "3205+",
+    totalAttack: "34.49M",
     averageAttack: "1.16M",
     
     // Leadership
