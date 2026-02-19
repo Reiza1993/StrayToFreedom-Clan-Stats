@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Freedomˢᵗʳᵃʸ Clan Stats - Cyber Edition</title>
     
+    <!-- LOAD DATA FILES -->
+    <script src="playerData.js"></script>
+    <script src="clanStats.js"></script>
+    
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap');
         
@@ -275,157 +279,91 @@
                 0 5px 15px rgba(255, 0, 255, 0.4);
             background: linear-gradient(135deg, #ff00ff, #00f5ff);
         }
-        
-        /* Cyber role colors */
-        .role-leader { 
-            color: #ff0040 !important; 
-            text-shadow: 0 0 10px #ff0040;
-        }
-        .role-vice-leader { 
-            color: #ff6600 !important; 
-            text-shadow: 0 0 8px #ff6600;
-        }
-        .role-glory-member { 
-            color: #ffd700 !important; 
-            text-shadow: 0 0 15px #ffd700;
-        }
-        .role-member { 
-            color: #00f5ff !important; 
-            text-shadow: 0 0 5px #00f5ff;
-        }
-        
-        /* Enhanced stat colors */
-        .attack-stat { 
-            color: #ff6b9d !important; 
-            text-shadow: 0 0 8px #ff6b9d; 
-        }
-        .lme-stat { 
-            color: #4ecdc4 !important; 
-            text-shadow: 0 0 8px #4ecdc4; 
-        }
-        .cx-high { 
-            color: #00ff41 !important; 
-            text-shadow: 0 0 10px #00ff41; 
-        }
-        .cx-medium { 
-            color: #ffff00 !important; 
-            text-shadow: 0 0 8px #ffff00; 
-        }
-        .cx-low { 
-            color: #ff4444 !important; 
-            text-shadow: 0 0 8px #ff4444; 
-        }
-        
-        /* Neon info boxes */
-        .info-box {
-            background: linear-gradient(145deg, #1a1a1a, #0d0d0d) !important;
-            border: 1px solid rgba(0, 245, 255, 0.5) !important;
-            box-shadow: 
-                0 0 20px rgba(0, 245, 255, 0.2),
-                inset 0 0 20px rgba(0, 245, 255, 0.05) !important;
-            color: #ffffff !important;
-            text-shadow: 0 0 5px rgba(255, 255, 255, 0.8) !important;
-        }
-        
+
         /* Modal styling */
         .modal {
-            background: rgba(0, 0, 0, 0.9) !important;
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
             backdrop-filter: blur(5px);
         }
         
         .modal-content {
-            background: linear-gradient(145deg, #1a1a1a, #0d0d0d) !important;
-            border: 2px solid #00f5ff !important;
-            border-radius: 12px !important;
+            background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
+            margin: 5% auto;
+            padding: 20px;
+            border: 2px solid #00f5ff;
+            border-radius: 12px;
+            width: 90%;
+            max-width: 800px;
+            max-height: 80vh;
+            overflow-y: auto;
             box-shadow: 
                 0 0 50px rgba(0, 245, 255, 0.5),
-                inset 0 0 30px rgba(255, 0, 255, 0.1) !important;
+                inset 0 0 30px rgba(255, 0, 255, 0.1);
         }
         
         .close {
-            color: #ff00ff !important;
-            text-shadow: 0 0 10px #ff00ff !important;
+            color: #ff00ff;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+            text-shadow: 0 0 10px #ff00ff;
         }
         
         .close:hover {
-            color: #00f5ff !important;
-            text-shadow: 0 0 15px #00f5ff !important;
+            color: #00f5ff;
+            text-shadow: 0 0 15px #00f5ff;
+        }
+
+        .info-box {
+            background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
+            border: 1px solid rgba(0, 245, 255, 0.5);
+            box-shadow: 
+                0 0 20px rgba(0, 245, 255, 0.2),
+                inset 0 0 20px rgba(0, 245, 255, 0.05);
+            color: #ffffff;
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
         }
         
         @media (max-width: 768px) {
-            body {
-                padding: 10px;
-            }
-            
-            h1 {
-                font-size: 2.2em;
-            }
-            
-            .clan-name {
-                font-size: 1.1em;
-                letter-spacing: 2px;
-            }
-            
-            .controls {
-                flex-direction: column;
-                align-items: stretch;
-            }
-            
-            table {
-                font-size: 12px;
-                border-radius: 8px;
-            }
-            
-            th, td {
-                padding: 6px 2px;
-                font-size: 11px;
-            }
-            
-            th {
-                font-size: 10px;
-            }
-            
-            .name-cell {
-                max-width: 80px;
-                font-size: 11px;
-            }
-            
-            .export-btn {
-                font-size: 14px;
-                padding: 10px 16px;
-                margin-left: 0;
-            }
+            body { padding: 10px; }
+            h1 { font-size: 2.2em; }
+            .clan-name { font-size: 1.1em; letter-spacing: 2px; }
+            .controls { flex-direction: column; align-items: stretch; }
+            table { font-size: 12px; border-radius: 8px; }
+            th, td { padding: 6px 2px; font-size: 11px; }
+            th { font-size: 10px; }
+            .name-cell { max-width: 80px; font-size: 11px; }
+            .export-btn { font-size: 14px; padding: 10px 16px; margin-left: 0; }
         }
         
-        /* Scrollbar styling */
-        ::-webkit-scrollbar {
-            width: 8px;
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #1a1a1a; }
+        ::-webkit-scrollbar-thumb { 
+            background: linear-gradient(45deg, #00f5ff, #ff00ff); 
+            border-radius: 4px; 
         }
-        
-        ::-webkit-scrollbar-track {
-            background: #1a1a1a;
-        }
-        
-        ::-webkit-scrollbar-thumb {
-            background: linear-gradient(45deg, #00f5ff, #ff00ff);
-            border-radius: 4px;
-        }
-        
-        ::-webkit-scrollbar-thumb:hover {
-            background: linear-gradient(45deg, #ff00ff, #00ff41);
+        ::-webkit-scrollbar-thumb:hover { 
+            background: linear-gradient(45deg, #ff00ff, #00ff41); 
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>CLAN STATISTICS</h1>
-        <div class="clan-name">Freedomͧˢᵗʳᵃʸ</div>
+        <div class="clan-name">Freedomˢᵗʳᵃʸ</div>
         <div style="text-align: center; color: #00ff41; font-size: 1em; margin-bottom: 10px; font-weight: 600; text-shadow: 0 0 8px #00ff41;">CLAN ID: 44262</div>
         
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin-bottom: 20px; text-align: center;">
             <div class="info-box" style="padding: 12px; border-radius: 8px; font-size: 14px; font-weight: 700; min-height: 40px; display: flex; align-items: center; justify-content: center;">
                 LME PHASE: <span id="lmePhase" style="color: #00ff41; margin-left: 8px;">18K+</span>
-                <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Medals.png" alt="" style="width: 16px; height: 16px; margin-left: 8px; vertical-align: middle; filter: hue-rotate(180deg) saturate(2);" onerror="this.style.display='none';">
             </div>
             <div class="info-box" style="padding: 12px; border-radius: 8px; font-size: 14px; font-weight: 700; min-height: 40px; display: flex; align-items: center; justify-content: center;">
                 LME DIFFICULTY <span id="lmeDifficulty" style="color: #ff00ff; margin-left: 8px;">11</span>
@@ -449,9 +387,6 @@
                 AVG ATK: <span id="averageAttack" style="color: #4ecdc4; margin-left: 8px;">1.05M</span>
             </div>
         </div>
-        
-        <!-- Rest of your HTML content here... -->
-        <!-- I'll include the controls and table structure -->
         
         <div class="controls">
             <select id="sortSelect">
@@ -483,11 +418,322 @@
                 <!-- Table content will be populated by JavaScript -->
             </tbody>
         </table>
-        
-        <!-- Include your existing modals and JavaScript here -->
-        <!-- The rest of your original script can remain the same, just update the styling functions -->
+
+        <!-- LME History Modal -->
+        <div id="lmeHistoryModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeLMEHistory()">&times;</span>
+                <h2 style="color: #00f5ff; text-align: center; margin-bottom: 20px;">LME HISTORY</h2>
+                <table style="width: 100%; margin-top: 10px;">
+                    <thead>
+                        <tr>
+                            <th>LME #</th>
+                            <th>RANK</th>
+                            <th>ATK/DEF</th>
+                            <th>MEDALS</th>
+                            <th>LEAGUE</th>
+                        </tr>
+                    </thead>
+                    <tbody id="lmeHistoryBody"></tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Alumni Modal -->
+        <div id="alumniModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeAlumni()">&times;</span>
+                <h2 style="color: #00f5ff; text-align: center; margin-bottom: 20px;">ALUMNI MEMBERS</h2>
+                <p style="color: #a0aec0; text-align: center; margin-bottom: 20px;">Total Alumni: <span id="alumniCount" style="color: #00ff41;">0</span></p>
+                <div id="alumniGrid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px;"></div>
+            </div>
+        </div>
     </div>
-    
-    <!-- Add your existing JavaScript from the original file here -->
+
+    <script>
+        let filteredData = [];
+        let currentSort = 'lme';
+
+        // Load clan stats into info boxes
+        function loadClanStats() {
+            if (typeof clanStats !== 'undefined') {
+                document.getElementById('lmePhase').textContent = clanStats.lmePhase || '18K+';
+                document.getElementById('lmeDifficulty').textContent = clanStats.lmeDifficulty || '11';
+                document.getElementById('lmeLeague').textContent = clanStats.lmeLeague || 'Legend 1';
+                document.getElementById('lunarPoints').textContent = clanStats.lunarPoints || '950';
+                document.getElementById('totalMembers').textContent = clanStats.totalMembers || '38/40';
+                document.getElementById('totalCores').textContent = clanStats.totalCores || '3780+';
+                document.getElementById('totalAttack').textContent = clanStats.totalAttack || '40.1M';
+                document.getElementById('averageAttack').textContent = clanStats.averageAttack || '1.05M';
+            }
+        }
+
+        function calculateSecretScore() {
+            if (typeof playerData !== 'undefined') {
+                // Secret score calculation logic here if needed
+            }
+        }
+
+        // Load LME History
+        function loadLMEHistory() {
+            if (typeof lmeHistory === 'undefined') return;
+            
+            const tbody = document.getElementById('lmeHistoryBody');
+            tbody.innerHTML = '';
+            
+            lmeHistory.forEach(lme => {
+                const row = document.createElement('tr');
+                
+                let rankDisplay;
+                if (lme.rankImage) {
+                    rankDisplay = `<img src="${lme.rankImage}" alt="Rank ${lme.rank}" style="width: 20px; height: 20px; vertical-align: middle;" onerror="this.outerHTML='<span style=color:#f56565;font-weight:600;>#${lme.rank}</span>';">`;
+                } else {
+                    const rankColors = { 1: '#ffd700', 2: '#c0c0c0', 3: '#cd7930', 4: '#f56565' };
+                    rankDisplay = `<span style="color: ${rankColors[lme.rank] || '#f56565'}; font-weight: 600;">#${lme.rank}</span>`;
+                }
+                
+                row.innerHTML = `
+                    <td style="padding: 10px 6px; color: #e2e8f0; text-align: center; font-weight: 600; font-size: 12px;">${lme.lmeNumber}</td>
+                    <td style="padding: 10px 6px; text-align: center; font-weight: 600; font-size: 12px;">${rankDisplay}</td>
+                    <td style="padding: 10px 6px; color: #e2e8f0; text-align: center; font-size: 12px;">${lme.atkDefPoints}</td>
+                    <td style="padding: 10px 6px; color: #68d391; text-align: center; font-weight: 600; font-size: 11px;">${lme.medals.toLocaleString()}</td>
+                    <td style="padding: 10px 6px; color: #ffd700; text-align: center; font-weight: 600; font-size: 11px; white-space: nowrap;">${lme.league}</td>
+                `;
+                tbody.appendChild(row);
+            });
+        }
+
+        // Load Alumni
+        function loadAlumni() {
+            if (typeof alumniMembers === 'undefined' || typeof alumniCount === 'undefined') return;
+            
+            document.getElementById('alumniCount').textContent = alumniCount;
+            
+            const grid = document.getElementById('alumniGrid');
+            grid.innerHTML = '';
+            
+            alumniMembers.forEach(name => {
+                const div = document.createElement('div');
+                div.style = 'background: #2d3748; padding: 8px; border-radius: 6px; text-align: center; border: 1px solid #4a5568;';
+                div.innerHTML = `<span style="color: #e2e8f0; font-size: 13px;">${name}</span>`;
+                grid.appendChild(div);
+            });
+        }
+
+        function formatNumber(num) {
+            if (num >= 1000000) {
+                return (num / 1000000).toFixed(2) + 'M';
+            } else if (num >= 1000) {
+                return (num / 1000).toFixed(1) + 'K';
+            }
+            return num.toLocaleString();
+        }
+
+        function getCXColor(score) {
+            if (typeof cxSettings === 'undefined') {
+                // Fallback colors if cxSettings not loaded
+                if (score >= 350) return '#00ff41';
+                if (score >= 200) return '#ffff00';
+                return '#ff4444';
+            }
+            
+            const topScore = cxSettings.topScore;
+            const greenThreshold = topScore * cxSettings.greenThreshold;
+            const yellowThreshold = topScore * cxSettings.yellowThreshold;
+            
+            if (score >= greenThreshold) return '#00ff41';
+            if (score >= yellowThreshold) return '#ffff00';
+            return '#ff4444';
+        }
+
+        function getRoleColor(role) {
+            const colors = {
+                'Leader': '#ff0040',
+                'Vice-Leader': '#ff6600', 
+                'Glory Member': '#ffd700',
+                'Member': '#00f5ff'
+            };
+            return colors[role] || '#00f5ff';
+        }
+
+        function renderTable() {
+            const tbody = document.getElementById('tableBody');
+            tbody.innerHTML = '';
+            
+            filteredData.forEach((player, index) => {
+                const row = document.createElement('tr');
+                
+                let nameColor = getRoleColor(player.role);
+                let nameClass = '';
+                if (player.role === 'Glory Member') {
+                    nameClass = 'role-glorymember';
+                }
+                
+                row.innerHTML = `
+                    <td class="rank-cell">${index + 1}</td>
+                    <td class="name-cell ${nameClass}" style="color: ${nameColor}; text-shadow: 0 0 8px ${nameColor};">${player.name}</td>
+                    <td class="cores-cell">${player.cores}
+                        ${player.coresGain ? `<span style="color: ${player.coresGain.includes('+') && !player.coresGain.includes('(+0)') ? '#10b981' : player.coresGain.includes('(+0)') ? '#a0aec0' : '#f56565'}; font-size: 10px; margin-left: 2px; display: block;">
+                            ${player.coresGain}
+                        </span>` : ''}
+                    </td>
+                    <td style="text-align: center; font-weight: 600; color: #ff6b9d; text-shadow: 0 0 8px #ff6b9d;">
+                        ${formatNumber(player.attack)}
+                        ${player.attackGain ? `<span style="color: ${player.attackGain.includes('+') && !player.attackGain.includes('(+0)') ? '#10b981' : player.attackGain.includes('(+0)') ? '#a0aec0' : '#f56565'}; font-size: 10px; margin-left: 2px; display: block;">
+                            ${player.attackGain}
+                        </span>` : ''}
+                    </td>
+                    <td style="text-align: center; font-weight: 600; color: #4ecdc4; text-shadow: 0 0 8px #4ecdc4;">
+                        ${player.lmeScore || 0}
+                        ${player.lmeGain ? `<span style="color: ${player.lmeGain.includes('+') && !player.lmeGain.includes('(+0)') ? '#10b981' : player.lmeGain.includes('(+0)') ? '#a0aec0' : '#f56565'}; font-size: 11px; margin-left: 4px;">
+                            ${player.lmeGain}
+                        </span>` : ''}
+                    </td>
+                    <td style="text-align: center; font-weight: 600; color: ${getCXColor(player.cxScore)}; text-shadow: 0 0 8px ${getCXColor(player.cxScore)};">
+                        ${player.cxScore}
+                        ${player.cxGain ? `<span style="color: ${player.cxGain.includes('(+0)') ? '#a0aec0' : '#f7fafc'}; font-size: 10px; margin-left: 2px; display: block;">
+                            ${player.cxGain}
+                        </span>` : ''}
+                    </td>
+                `;
+                tbody.appendChild(row);
+            });
+        }
+
+        function sortData(criteria) {
+            currentSort = criteria;
+            
+            switch(criteria) {
+                case 'name':
+                    filteredData.sort((a, b) => a.name.localeCompare(b.name));
+                    break;
+                case 'cores':
+                    filteredData.sort((a, b) => b.coresNum - a.coresNum);
+                    break;
+                case 'attack':
+                    filteredData.sort((a, b) => b.attack - a.attack);
+                    break;
+                case 'lme':
+                    filteredData.sort((a, b) => b.lmeScore - a.lmeScore);
+                    break;
+                case 'cx':
+                    filteredData.sort((a, b) => b.cxScore - a.cxScore);
+                    break;
+                case 'role':
+                    const roleOrder = { 'Leader': 1, 'Vice-Leader': 2, 'Glory Member': 3, 'Member': 4 };
+                    filteredData.sort((a, b) => {
+                        const roleA = roleOrder[a.role] || 5;
+                        const roleB = roleOrder[b.role] || 5;
+                        if (roleA !== roleB) {
+                            return roleA - roleB;
+                        }
+                        return b.lmeScore - a.lmeScore;
+                    });
+                    break;
+            }
+            
+            renderTable();
+        }
+
+        function filterData(searchTerm) {
+            if (typeof playerData === 'undefined') return;
+            
+            filteredData = playerData.filter(player => 
+                player.name.toLowerCase().includes(searchTerm.toLowerCase())
+            );
+            sortData(currentSort);
+        }
+
+        function exportToCSV() {
+            const headers = ['Rank', 'Player Name', 'Relic Cores', 'Cores Gain', 'ATK', 'ATK Gain', 'LME Score', 'LME Gain', 'CX', 'CX Gain'];
+            const csvContent = [
+                headers.join(','),
+                ...filteredData.map((player, index) => [
+                    index + 1,
+                    `"${player.name}"`,
+                    player.cores,
+                    `"${player.coresGain || ''}"`,
+                    player.attack,
+                    `"${player.attackGain || ''}"`,
+                    player.lmeScore,
+                    `"${player.lmeGain || ''}"`,
+                    player.cxScore,
+                    `"${player.cxGain || ''}"`
+                ].join(','))
+            ].join('\n');
+            
+            const blob = new Blob([csvContent], { type: 'text/csv' });
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'Freedomstray_clan_stats.csv';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            window.URL.revokeObjectURL(url);
+        }
+
+        function openLMEHistory() {
+            document.getElementById('lmeHistoryModal').style.display = 'block';
+        }
+
+        function closeLMEHistory() {
+            document.getElementById('lmeHistoryModal').style.display = 'none';
+        }
+
+        function openAlumni() {
+            document.getElementById('alumniModal').style.display = 'block';
+        }
+
+        function closeAlumni() {
+            document.getElementById('alumniModal').style.display = 'none';
+        }
+
+        window.onclick = function(event) {
+            const lmeModal = document.getElementById('lmeHistoryModal');
+            const alumniModal = document.getElementById('alumniModal');
+            if (event.target === lmeModal) {
+                lmeModal.style.display = 'none';
+            }
+            if (event.target === alumniModal) {
+                alumniModal.style.display = 'none';
+            }
+        }
+
+        // Event listeners
+        document.getElementById('sortSelect').addEventListener('change', (e) => {
+            sortData(e.target.value);
+        });
+
+        document.getElementById('searchInput').addEventListener('input', (e) => {
+            filterData(e.target.value);
+        });
+
+        // Initialize page
+        function initializePage() {
+            // Check if data files are loaded
+            if (typeof playerData === 'undefined') {
+                console.error('playerData.js not loaded! Make sure the file exists and is included.');
+                document.getElementById('tableBody').innerHTML = '<tr><td colspan="6" style="color: #ff4444; text-align: center; padding: 20px;">❌ Error: playerData.js not found!</td></tr>';
+                return;
+            }
+
+            // Initialize with playerData
+            filteredData = [...playerData];
+            
+            loadClanStats();
+            calculateSecretScore();
+            loadLMEHistory();
+            loadAlumni();
+            sortData('lme');
+        }
+
+        // Wait for DOM to be ready
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initializePage);
+        } else {
+            initializePage();
+        }
+    </script>
 </body>
 </html>
