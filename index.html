@@ -1,9 +1,14 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Freedomˢᵗʳᵃʸ Clan Stats</title>
+    
+    <!-- LOAD DATA FILES -->
+    <script src="playerData.js"></script>
+    <script src="clanStats.js"></script>
     
     <style>
         body {
@@ -157,6 +162,43 @@
             transform: translateY(-2px);
             box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
         }
+
+        /* Modal styling */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+        }
+        
+        .modal-content {
+            background: #2d3748;
+            margin: 5% auto;
+            padding: 20px;
+            border: none;
+            border-radius: 12px;
+            width: 90%;
+            max-width: 800px;
+            max-height: 80vh;
+            overflow-y: auto;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+        }
+        
+        .close {
+            color: #a0aec0;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        .close:hover {
+            color: #e2e8f0;
+        }
         
         @media (max-width: 768px) {
             body {
@@ -211,7 +253,124 @@
             </div>
             <div style="background: linear-gradient(135deg, #ed8936, #dd6b20); color: white; padding: 10px; border-radius: 8px; font-size: 14px; font-weight: 600; min-height: 40px; display: flex; align-items: center; justify-content: center;">
                 LME Difficulty <span id="lmeDifficulty">11</span>
-< truncated lines 214-411 >
+            </div>
+            <div style="background: linear-gradient(135deg, #f6ad55, #ed8936); color: white; padding: 10px; border-radius: 8px; font-size: 14px; font-weight: 600; min-height: 40px; display: flex; align-items: center; justify-content: center;">
+                League: <span id="lmeLeague">Legend 1</span>
+            </div>
+            <div style="background: linear-gradient(135deg, #4299e1, #3182ce); color: white; padding: 10px; border-radius: 8px; font-size: 14px; font-weight: 600; min-height: 40px; display: flex; align-items: center; justify-content: center;">
+                Lunar Points: <span id="lunarPoints">950</span>
+            </div>
+            <div style="background: linear-gradient(135deg, #48bb78, #38a169); color: white; padding: 10px; border-radius: 8px; font-size: 14px; font-weight: 600; min-height: 40px; display: flex; align-items: center; justify-content: center;">
+                Members: <span id="totalMembers">38/40</span>
+            </div>
+            <div style="background: linear-gradient(135deg, #9f7aea, #805ad5); color: white; padding: 10px; border-radius: 8px; font-size: 14px; font-weight: 600; min-height: 40px; display: flex; align-items: center; justify-content: center;">
+                Total Cores: <span id="totalCores">3780+</span>
+            </div>
+            <div style="background: linear-gradient(135deg, #f56565, #e53e3e); color: white; padding: 10px; border-radius: 8px; font-size: 14px; font-weight: 600; min-height: 40px; display: flex; align-items: center; justify-content: center;">
+                Total Attack: <span id="totalAttack">40.1M</span>
+            </div>
+            <div style="background: linear-gradient(135deg, #38b2ac, #319795); color: white; padding: 10px; border-radius: 8px; font-size: 14px; font-weight: 600; min-height: 40px; display: flex; align-items: center; justify-content: center;">
+                Average Attack: <span id="averageAttack">1.05M</span>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <select id="sortSelect">
+                <option value="lme">Sort by LME</option>
+                <option value="attack">Sort by Attack</option>
+                <option value="cores">Sort by Cores</option>
+                <option value="cx">Sort by CX</option>
+                <option value="role">Sort by Role</option>
+                <option value="name">Sort by Name</option>
+            </select>
+            <input type="text" id="searchInput" class="search-box" placeholder="Search players...">
+            <button class="export-btn" onclick="exportToCSV()">Export CSV</button>
+            <button class="export-btn" onclick="openLMEHistory()">LME History</button>
+            <button class="export-btn" onclick="openAlumni()">Alumni</button>
+        </div>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Player</th>
+                    <th>Cores</th>
+                    <th>Attack</th>
+                    <th>LME</th>
+                    <th>CX</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <!-- Table content will be populated by JavaScript -->
+            </tbody>
+        </table>
+
+        <!-- LME History Modal -->
+        <div id="lmeHistoryModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeLMEHistory()">&times;</span>
+                <h2 style="color: #e2e8f0; text-align: center; margin-bottom: 20px;">LME History</h2>
+                <table style="width: 100%; margin-top: 10px;">
+                    <thead>
+                        <tr>
+                            <th>LME #</th>
+                            <th>Rank</th>
+                            <th>Atk/Def</th>
+                            <th>Medals</th>
+                            <th>League</th>
+                        </tr>
+                    </thead>
+                    <tbody id="lmeHistoryBody"></tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Alumni Modal -->
+        <div id="alumniModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeAlumni()">&times;</span>
+                <h2 style="color: #e2e8f0; text-align: center; margin-bottom: 20px;">Alumni Members</h2>
+                <p style="color: #a0aec0; text-align: center; margin-bottom: 20px;">Total Alumni: <span id="alumniCount" style="color: #48bb78;">0</span></p>
+                <div id="alumniGrid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px;"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let filteredData = [];
+        let currentSort = 'lme';
+
+        // Load clan stats into info boxes
+        function loadClanStats() {
+            if (typeof clanStats !== 'undefined') {
+                document.getElementById('lmePhase').textContent = clanStats.lmePhase || '18K+';
+                document.getElementById('lmeDifficulty').textContent = clanStats.lmeDifficulty || '11';
+                document.getElementById('lmeLeague').textContent = clanStats.lmeLeague || 'Legend 1';
+                document.getElementById('lunarPoints').textContent = clanStats.lunarPoints || '950';
+                document.getElementById('totalMembers').textContent = clanStats.totalMembers || '38/40';
+                document.getElementById('totalCores').textContent = clanStats.totalCores || '3780+';
+                document.getElementById('totalAttack').textContent = clanStats.totalAttack || '40.1M';
+                document.getElementById('averageAttack').textContent = clanStats.averageAttack || '1.05M';
+            }
+        }
+
+        function calculateSecretScore() {
+            // Secret score calculation logic if needed
+        }
+
+        // Load LME History
+        function loadLMEHistory() {
+            if (typeof lmeHistory === 'undefined') return;
+            
+            const tbody = document.getElementById('lmeHistoryBody');
+            tbody.innerHTML = '';
+            
+            lmeHistory.forEach(lme => {
+                const row = document.createElement('tr');
+                
+                let rankDisplay;
+                if (lme.rankImage) {
+                    rankDisplay = `<img src="${lme.rankImage}" alt="Rank ${lme.rank}" style="width: 20px; height: 20px; vertical-align: middle;" onerror="this.outerHTML='<span style=color:#f56565;font-weight:600;>#${lme.rank}</span>';">`;
                 } else {
                     const rankColors = { 1: '#ffd700', 2: '#c0c0c0', 3: '#cd7930', 4: '#f56565' };
                     rankDisplay = `<span style="color: ${rankColors[lme.rank] || '#f56565'}; font-weight: 600;">#${lme.rank}</span>`;
@@ -230,6 +389,10 @@
 
         // Load Alumni into modal
         function loadAlumni() {
+            if (typeof alumniMembers === 'undefined' || typeof alumniCount === 'undefined') return;
+            
+            document.getElementById('alumniCount').textContent = alumniCount;
+            
             const grid = document.getElementById('alumniGrid');
             grid.innerHTML = '';
             
@@ -251,6 +414,12 @@
         }
 
         function getCXColor(score) {
+            if (typeof cxSettings === 'undefined') {
+                if (score >= 350) return '#48bb78';
+                if (score >= 200) return '#f59e0b';
+                return '#f56565';
+            }
+            
             const topScore = cxSettings.topScore;
             const greenThreshold = topScore * cxSettings.greenThreshold;
             const yellowThreshold = topScore * cxSettings.yellowThreshold;
@@ -345,6 +514,8 @@
         }
 
         function filterData(searchTerm) {
+            if (typeof playerData === 'undefined') return;
+            
             filteredData = playerData.filter(player => 
                 player.name.toLowerCase().includes(searchTerm.toLowerCase())
             );
@@ -416,11 +587,26 @@
         });
 
         // Initialize page
-        loadClanStats();
-        calculateSecretScore();
-        loadLMEHistory();
-        loadAlumni();
-        sortData('lme');
+        function initializePage() {
+            if (typeof playerData === 'undefined') {
+                console.error('playerData.js not loaded!');
+                document.getElementById('tableBody').innerHTML = '<tr><td colspan="6" style="color: #f56565; text-align: center; padding: 20px;">❌ Error: playerData.js not found!</td></tr>';
+                return;
+            }
+
+            filteredData = [...playerData];
+            loadClanStats();
+            calculateSecretScore();
+            loadLMEHistory();
+            loadAlumni();
+            sortData('lme');
+        }
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initializePage);
+        } else {
+            initializePage();
+        }
     </script>
 </body>
 </html>
