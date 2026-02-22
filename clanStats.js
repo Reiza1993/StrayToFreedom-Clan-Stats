@@ -14,7 +14,7 @@ const clanStats = {
     lunarPoints: 1215,
     
     // Clan totals
-    totalMembers: "37/40",
+    totalMembers: "38/40",
     totalCores: "3320+",
     totalAttack: "35.16M",
     averageAttack: "1.17M",
@@ -277,7 +277,7 @@ const alumniMembers = [
 
 // CX Color settings
 const cxSettings = {
-    topScore: 500,
+    topScore: 1100,
     greenThreshold: 0.7,  // 70% of top score
     yellowThreshold: 0.4  // 40% of top score
 };
