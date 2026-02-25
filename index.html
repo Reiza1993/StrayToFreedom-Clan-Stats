@@ -537,12 +537,20 @@
             const avgCores       = totalCores / 30;
 
             // ── Top 30 by LME (current week) ──
-            const byLME        = [...playerData].sort((a, b) => b.lmeScore - a.lmeScore).slice(0, 30);
-            const totalLME     = byLME.reduce((s, p) => s + p.lmeScore, 0);
-            const prevTotalLME = byLME.reduce((s, p) => s + (p.lmeScore - parseGainValue(p.lmeGain)), 0);
-            const totalLMEGain = totalLME - prevTotalLME;
-            const avgLME       = totalLME / 30;
+            const byLME    = [...playerData].sort((a, b) => b.lmeScore - a.lmeScore).slice(0, 30);
+            const totalLME = byLME.reduce((s, p) => s + p.lmeScore, 0);
+            const avgLME   = totalLME / 30;
+
+            // Prev week: compute prev score for ALL players, then take top 30 of those.
+            // This correctly handles new members, comebacks, and players who fell out —
+            // their prev scores compete fairly for last week's top 30 spots.
+            const byLMEPrev    = [...playerData]
+                .map(p => ({ ...p, prevScore: p.lmeScore - parseGainValue(p.lmeGain) }))
+                .sort((a, b) => b.prevScore - a.prevScore)
+                .slice(0, 30);
+            const prevTotalLME = byLMEPrev.reduce((s, p) => s + p.prevScore, 0);
             const prevAvgLME   = prevTotalLME / 30;
+            const totalLMEGain = totalLME - prevTotalLME;
 
             // ── All members: CX ──
             const totalCX     = playerData.reduce((s, p) => s + p.cxScore, 0);
