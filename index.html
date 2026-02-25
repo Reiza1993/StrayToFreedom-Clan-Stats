@@ -267,10 +267,63 @@
     <div class="container">
         <h1>Clan Statistics</h1>
         <div class="clan-name">Freedomˢᵗʳᵃʸ</div>
+
+        <!-- ═══ Unified Stat Grid (auto-calculated from playerData) ═══ -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 8px; margin-bottom: 12px;">
+
+            <!-- Members (auto-counted) -->
+            <div class="calc-stat-card" style="border-color: #2c7a7b;">
+                <div class="calc-stat-label">Members</div>
+                <div class="calc-stat-value" style="color: #81e6d9;" id="calc-total-members">—</div>
+                <div class="calc-stat-gain" style="color: #718096; font-size:9px;" id="calc-members-cap">— / 40</div>
+            </div>
+
+            <!-- ATK -->
+            <div class="calc-stat-card" style="border-color: #553c9a;">
+                <div class="calc-stat-label">Total ATK <span style="font-size:8px; opacity:0.6;">(Top 30)</span></div>
+                <div class="calc-stat-value" style="color: #e2e8f0;" id="calc-total-atk">—</div>
+                <div class="calc-stat-gain" id="calc-total-atk-gain">—</div>
+            </div>
+            <div class="calc-stat-card" style="border-color: #553c9a;">
+                <div class="calc-stat-label">Avg ATK <span style="font-size:8px; opacity:0.6;">(Top 30)</span></div>
+                <div class="calc-stat-value" style="color: #e2e8f0;" id="calc-avg-atk">—</div>
+            </div>
+
+            <!-- Cores -->
+            <div class="calc-stat-card" style="border-color: #44337a;">
+                <div class="calc-stat-label">Total Cores <span style="font-size:8px; opacity:0.6;">(Top 30)</span></div>
+                <div class="calc-stat-value" style="color: #b794f6;" id="calc-total-cores">—</div>
+                <div class="calc-stat-gain" id="calc-total-cores-gain">—</div>
+            </div>
+            <div class="calc-stat-card" style="border-color: #44337a;">
+                <div class="calc-stat-label">Avg Cores <span style="font-size:8px; opacity:0.6;">(Top 30)</span></div>
+                <div class="calc-stat-value" style="color: #b794f6;" id="calc-avg-cores">—</div>
+            </div>
+
+            <!-- LME -->
+            <div class="calc-stat-card" style="border-color: #744210;">
+                <div class="calc-stat-label">Total LME <span style="font-size:8px; opacity:0.6;">(Top 30)</span></div>
+                <div class="calc-stat-value" style="color: #f59e0b;" id="calc-total-lme">—</div>
+                <div class="calc-stat-gain" id="calc-total-lme-gain">—</div>
+            </div>
+            <div class="calc-stat-card" style="border-color: #744210;">
+                <div class="calc-stat-label">Avg LME <span style="font-size:8px; opacity:0.6;">(Top 30)</span></div>
+                <div class="calc-stat-value" style="color: #f59e0b;" id="calc-avg-lme">—</div>
+            </div>
+
+            <!-- CX -->
+            <div class="calc-stat-card" style="border-color: #276749;">
+                <div class="calc-stat-label">Total CX <span style="font-size:8px; opacity:0.6;">(All)</span></div>
+                <div class="calc-stat-value" style="color: #68d391;" id="calc-total-cx">—</div>
+                <div class="calc-stat-gain" id="calc-total-cx-gain">—</div>
+            </div>
+
+        </div>
+
         <div style="text-align: center; color: #a0aec0; font-size: 1em; margin-bottom: 10px; font-weight: 400;">ClanID: 44262</div>
         
         <!-- LME Info Row -->
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin-bottom: 10px; text-align: center;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin-bottom: 20px; text-align: center;">
             <div style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 10px; border-radius: 8px; font-size: 14px; font-weight: 600; min-height: 40px; display: flex; align-items: center; justify-content: center;">
                 LME Phase: <span id="lmePhase">—</span> <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Medals.png" alt="" style="width: 16px; height: 16px; margin-left: 8px; vertical-align: middle;" onerror="this.style.display='none';">
             </div>
@@ -279,76 +332,7 @@
             </div>
             <div style="background: linear-gradient(135deg, #38b2ac, #319795); color: white; padding: 10px; border-radius: 8px; font-size: 14px; font-weight: 600; min-height: 40px; display: flex; flex-direction: column; align-items: center; justify-content: center; grid-column: 1 / -1; line-height: 1.2;">
                 <div>LME League: <span id="lmeLeague">—</span></div>
-                <div>Lunar Points: <span id="lunarPoints">—</span> <span id="lunarPointsCalcNote" style="font-size:10px; opacity:0.75;"></span></div>
-            </div>
-        </div>
-
-        <!-- Members / Auto-Calc Totals Row -->
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin-bottom: 10px; text-align: center;">
-            <div style="background: linear-gradient(135deg, #38b2ac, #319795); color: white; padding: 10px; border-radius: 8px; font-size: 14px; font-weight: 600; min-height: 40px; display: flex; align-items: center; justify-content: center;">
-                Members: <span id="totalMembers" style="margin-left:4px;">—</span>
-            </div>
-            <div style="background: linear-gradient(135deg, #38b2ac, #319795); color: white; padding: 10px; border-radius: 8px; font-size: 13px; font-weight: 600; min-height: 40px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-                <span style="font-size:10px; opacity:0.85; margin-bottom:2px;">TOP 30 TOTAL CORES</span>
-                <span id="totalCores">—</span>
-                <span id="totalCoresGainBadge" style="font-size:10px; margin-top:1px;"></span>
-            </div>
-            <div style="background: linear-gradient(135deg, #ed8936, #dd6b20); color: white; padding: 10px; border-radius: 8px; font-size: 13px; font-weight: 600; min-height: 40px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-                <span style="font-size:10px; opacity:0.85; margin-bottom:2px;">TOP 30 TOTAL ATK</span>
-                <span id="totalAttack">—</span>
-                <span id="totalAttackGainBadge" style="font-size:10px; margin-top:1px;"></span>
-            </div>
-            <div style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 10px; border-radius: 8px; font-size: 13px; font-weight: 600; min-height: 40px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-                <span style="font-size:10px; opacity:0.85; margin-bottom:2px;">TOP 30 AVG ATK</span>
-                <span id="avgAttack">—</span>
-            </div>
-        </div>
-
-        <!-- ═══ Calculated Stats Section ═══ -->
-        <div class="calc-stats-section">
-            <div class="calc-stats-header">📊 Auto-Calculated Stats (Top 30)</div>
-            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 8px;">
-
-                <!-- ATK -->
-                <div class="calc-stat-card" style="border-color: #553c9a;">
-                    <div class="calc-stat-label">Total ATK</div>
-                    <div class="calc-stat-value" style="color: #e2e8f0;" id="calc-total-atk">—</div>
-                    <div class="calc-stat-gain" id="calc-total-atk-gain">—</div>
-                </div>
-                <div class="calc-stat-card" style="border-color: #553c9a;">
-                    <div class="calc-stat-label">Avg ATK</div>
-                    <div class="calc-stat-value" style="color: #e2e8f0;" id="calc-avg-atk">—</div>
-                </div>
-
-                <!-- Cores -->
-                <div class="calc-stat-card" style="border-color: #44337a;">
-                    <div class="calc-stat-label">Total Cores</div>
-                    <div class="calc-stat-value" style="color: #b794f6;" id="calc-total-cores">—</div>
-                    <div class="calc-stat-gain" id="calc-total-cores-gain">—</div>
-                </div>
-                <div class="calc-stat-card" style="border-color: #44337a;">
-                    <div class="calc-stat-label">Avg Cores</div>
-                    <div class="calc-stat-value" style="color: #b794f6;" id="calc-avg-cores">—</div>
-                </div>
-
-                <!-- LME -->
-                <div class="calc-stat-card" style="border-color: #744210;">
-                    <div class="calc-stat-label">Total LME Score</div>
-                    <div class="calc-stat-value" style="color: #f59e0b;" id="calc-total-lme">—</div>
-                    <div class="calc-stat-gain" id="calc-total-lme-gain">—</div>
-                </div>
-                <div class="calc-stat-card" style="border-color: #744210;">
-                    <div class="calc-stat-label">Avg LME Score</div>
-                    <div class="calc-stat-value" style="color: #f59e0b;" id="calc-avg-lme">—</div>
-                </div>
-
-                <!-- CX (full width) -->
-                <div class="calc-stat-card" style="border-color: #276749; grid-column: span 2;">
-                    <div class="calc-stat-label">Total CX Score (All Members)</div>
-                    <div class="calc-stat-value" style="color: #68d391;" id="calc-total-cx">—</div>
-                    <div class="calc-stat-gain" id="calc-total-cx-gain">—</div>
-                </div>
-
+                <div>Lunar Points: <span id="lunarPoints">—</span></div>
             </div>
         </div>
         
@@ -520,6 +504,11 @@
         //  • All members → Total CX, CX Gain
         // ══════════════════════════════════════════════
         function calculateAndDisplayStats() {
+            // ── Total Members (auto-counted from playerData) ──
+            const totalMembers = playerData.length;
+            document.getElementById('calc-total-members').textContent = totalMembers;
+            document.getElementById('calc-members-cap').textContent   = totalMembers + ' / 40';
+
             // ── Top 30 by ATK ──
             const byATK = [...playerData].sort((a, b) => b.attack - a.attack).slice(0, 30);
             const totalATK     = byATK.reduce((s, p) => s + p.attack, 0);
@@ -542,28 +531,21 @@
             const totalCX     = playerData.reduce((s, p) => s + p.cxScore, 0);
             const totalCXGain = playerData.reduce((s, p) => s + parseGainValue(p.cxGain), 0);
 
-            // ── Update top stat bar ──
-            document.getElementById('totalAttack').textContent    = formatNumber(totalATK);
-            document.getElementById('avgAttack').textContent      = formatNumber(Math.round(avgATK));
-            document.getElementById('totalCores').textContent     = totalCores + '+';
-            document.getElementById('totalAttackGainBadge').innerHTML = formatGainHTML(totalATKGain, true);
-            document.getElementById('totalCoresGainBadge').innerHTML  = formatGainHTML(totalCoresGain);
+            // ── Update stat cards ──
+            document.getElementById('calc-total-atk').textContent      = formatNumber(totalATK);
+            document.getElementById('calc-total-atk-gain').innerHTML   = formatGainHTML(totalATKGain, true);
+            document.getElementById('calc-avg-atk').textContent        = formatNumber(Math.round(avgATK));
 
-            // ── Update detailed calc cards ──
-            document.getElementById('calc-total-atk').textContent       = formatNumber(totalATK);
-            document.getElementById('calc-total-atk-gain').innerHTML    = formatGainHTML(totalATKGain, true);
-            document.getElementById('calc-avg-atk').textContent         = formatNumber(Math.round(avgATK));
+            document.getElementById('calc-total-cores').textContent    = totalCores + '+';
+            document.getElementById('calc-total-cores-gain').innerHTML = formatGainHTML(totalCoresGain);
+            document.getElementById('calc-avg-cores').textContent      = Math.round(avgCores) + '+';
 
-            document.getElementById('calc-total-cores').textContent     = totalCores + '+';
-            document.getElementById('calc-total-cores-gain').innerHTML  = formatGainHTML(totalCoresGain);
-            document.getElementById('calc-avg-cores').textContent       = Math.round(avgCores) + '+';
+            document.getElementById('calc-total-lme').textContent      = totalLME.toLocaleString();
+            document.getElementById('calc-total-lme-gain').innerHTML   = formatGainHTML(totalLMEGain);
+            document.getElementById('calc-avg-lme').textContent        = Math.round(avgLME).toLocaleString();
 
-            document.getElementById('calc-total-lme').textContent       = totalLME.toLocaleString();
-            document.getElementById('calc-total-lme-gain').innerHTML    = formatGainHTML(totalLMEGain);
-            document.getElementById('calc-avg-lme').textContent         = Math.round(avgLME).toLocaleString();
-
-            document.getElementById('calc-total-cx').textContent        = totalCX.toLocaleString();
-            document.getElementById('calc-total-cx-gain').innerHTML     = formatGainHTML(totalCXGain);
+            document.getElementById('calc-total-cx').textContent       = totalCX.toLocaleString();
+            document.getElementById('calc-total-cx-gain').innerHTML    = formatGainHTML(totalCXGain);
         }
 
         // ══════════════════════════════════════════════
@@ -607,15 +589,12 @@
 
         // Load clan stats into the page
         function loadClanStats() {
-            document.getElementById('lmePhase').textContent     = clanStats.lmePhase;
+            document.getElementById('lmePhase').textContent      = clanStats.lmePhase;
             document.getElementById('lmeDifficulty').textContent = clanStats.lmeDifficulty;
-            document.getElementById('lmeLeague').textContent    = clanStats.lmeLeague;
-            document.getElementById('totalMembers').textContent = clanStats.totalMembers;
-            document.getElementById('alumniCount').textContent  = clanStats.alumniCount;
-
-            // Lunar Points — auto-calculated from lmeHistory
-            const calcLP = calculateLunarPoints();
-            document.getElementById('lunarPoints').textContent = calcLP;
+            document.getElementById('lmeLeague').textContent     = clanStats.lmeLeague;
+            document.getElementById('alumniCount').textContent   = clanStats.alumniCount;
+            // Lunar Points — static value from clanStats.js
+            document.getElementById('lunarPoints').textContent   = clanStats.lunarPoints;
         }
 
         // Calculate Secret Score based on LME history (existing formula kept intact)
@@ -629,10 +608,10 @@
                 else if (lme.rank === 4) rankFactor *= 0.94;
             });
 
-            const calcLP     = calculateLunarPoints();
-            const secretScore = calcLP * rankFactor;
+            const lunarPts    = clanStats.lunarPoints;
+            const secretScore = lunarPts * rankFactor;
 
-            document.getElementById('historyLunarPoints').textContent  = calcLP;
+            document.getElementById('historyLunarPoints').textContent  = lunarPts;
             document.getElementById('historyRankFactor').textContent   = rankFactor.toFixed(4);
             document.getElementById('historySecretScore').textContent  = secretScore.toFixed(1);
         }
