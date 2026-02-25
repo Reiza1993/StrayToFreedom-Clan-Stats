@@ -547,16 +547,30 @@
             document.getElementById('calc-members-cap').textContent   = totalMembers + ' / 40';
 
             // ── Top 30 by ATK ──
-            const byATK = [...playerData].sort((a, b) => b.attack - a.attack).slice(0, 30);
-            const totalATK     = byATK.reduce((s, p) => s + p.attack, 0);
-            const totalATKGain = byATK.reduce((s, p) => s + parseGainValue(p.attackGain), 0);
-            const avgATK       = totalATK / 30;
+            // Prev ATK = current attack minus the gain string (handles new members correctly)
+            const withPrevATK = playerData.map(p => ({
+                ...p,
+                prevATK: p.attack - parseGainValue(p.attackGain)
+            }));
+            const byATK     = [...withPrevATK].sort((a, b) => b.attack   - a.attack).slice(0, 30);
+            const byATKPrev = [...withPrevATK].sort((a, b) => b.prevATK  - a.prevATK).slice(0, 30);
+            const totalATK      = byATK.reduce((s, p) => s + p.attack,   0);
+            const prevTotalATK  = byATKPrev.reduce((s, p) => s + p.prevATK, 0);
+            const totalATKGain  = totalATK - prevTotalATK;
+            const avgATK        = totalATK / 30;
 
             // ── Top 30 by Cores ──
-            const byCores = [...playerData].sort((a, b) => b.coresNum - a.coresNum).slice(0, 30);
-            const totalCores     = byCores.reduce((s, p) => s + p.coresNum, 0);
-            const totalCoresGain = byCores.reduce((s, p) => s + parseGainValue(p.coresGain), 0);
-            const avgCores       = totalCores / 30;
+            // Same prev-top-30 approach to avoid counting new members' full cores as gains
+            const withPrevCores = playerData.map(p => ({
+                ...p,
+                prevCores: p.coresNum - parseGainValue(p.coresGain)
+            }));
+            const byCores     = [...withPrevCores].sort((a, b) => b.coresNum  - a.coresNum).slice(0, 30);
+            const byCoresPrev = [...withPrevCores].sort((a, b) => b.prevCores - a.prevCores).slice(0, 30);
+            const totalCores      = byCores.reduce((s, p) => s + p.coresNum,   0);
+            const prevTotalCores  = byCoresPrev.reduce((s, p) => s + p.prevCores, 0);
+            const totalCoresGain  = totalCores - prevTotalCores;
+            const avgCores        = totalCores / 30;
 
             // ── Top 30 by LME (current week) ──
             const byLME    = [...playerData].sort((a, b) => b.lmeScore - a.lmeScore).slice(0, 30);
