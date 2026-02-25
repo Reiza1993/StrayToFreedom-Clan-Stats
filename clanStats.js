@@ -1,33 +1,22 @@
 // clanStats.js
 // Freedomˢᵗʳᵃʸ Clan Statistics
-// Last Updated: 8/01 - LME #28 Added
+// Last Updated: Week 38 - February 2026
 
 const clanStats = {
-    // Basic clan information
-    clanName: "Freedomˢᵗʳᵃʸ",
-    clanId: "44262",
-    
-    // Current LME information
-    lmePhase: "27K+",
+    // Current LME information (update weekly)
     lmeDifficulty: 12,
     lmeLeague: "Champion",
+
+    // Lunar Points baseline — DO NOT change this value.
+    // The calculator adds/subtracts from LME #31 onward automatically.
     lunarPoints: 1225,
-    
-    // Clan totals
-    totalMembers: "38/40",
-    totalCores: "3320+",
-    totalAttack: "35.16M",
-    averageAttack: "1.17M",
-    
-    // Leadership
-    leader: "神Sterben死",
-    viceLeaders: ["Lemminkäinen", "Cunner88"],
-    
-    // Alumni count
+
+    // Alumni count (update when members leave)
     alumniCount: 51
 };
 
 // LME History Data
+// Add new results to the TOP of this array
 const lmeHistory = [
     {
         lmeNumber: 30,
@@ -61,7 +50,7 @@ const lmeHistory = [
         medals: 63099,
         league: "Champion"
     },
-             {
+    {
         lmeNumber: 26,
         rank: 2,
         rankImage: "https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Rank2.png",
@@ -69,7 +58,7 @@ const lmeHistory = [
         medals: 48603,
         league: "Legend 3"
     },
-             {
+    {
         lmeNumber: 25,
         rank: 2,
         rankImage: "https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Rank2.png",
@@ -77,7 +66,7 @@ const lmeHistory = [
         medals: 61547,
         league: "Champion"
     },
-             {
+    {
         lmeNumber: 24,
         rank: 2,
         rankImage: "https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Rank2.png",
@@ -85,7 +74,7 @@ const lmeHistory = [
         medals: 47265,
         league: "Legend 3"
     },
-             {
+    {
         lmeNumber: 23,
         rank: 1,
         rankImage: "https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Rank1.png",
@@ -93,7 +82,7 @@ const lmeHistory = [
         medals: 36390,
         league: "Legend 3"
     },
-             {
+    {
         lmeNumber: 22,
         rank: 4,
         rankImage: null,
@@ -101,7 +90,7 @@ const lmeHistory = [
         medals: 42989,
         league: "Champion"
     },
-             {
+    {
         lmeNumber: 21,
         rank: 2,
         rankImage: "https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Rank2.png",
@@ -109,7 +98,7 @@ const lmeHistory = [
         medals: 49188,
         league: "Legend 3"
     },
-            {
+    {
         lmeNumber: 20,
         rank: 1,
         rankImage: "https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Rank1.png",
@@ -117,7 +106,7 @@ const lmeHistory = [
         medals: 41983,
         league: "Legend 3"
     },
-            {
+    {
         lmeNumber: 19,
         rank: 3,
         rankImage: "https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Rank3.png",
@@ -125,7 +114,7 @@ const lmeHistory = [
         medals: 51199,
         league: "Legend 3"
     },
-        {
+    {
         lmeNumber: 18,
         rank: 1,
         rankImage: "https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Rank1.png",
@@ -279,18 +268,12 @@ const alumniMembers = [
     "Ruzagi", "NarutoUzuma", "ByRess", "Beef4Brains", "E-Duke", "bluebirds123456",
     "2xc3", "Chumuzuke", "Coopet", "StrayCleow:)", "starbin",
     "BOBBYJANG", "slaterhoㅣStray", "lct404", "CrackJackㅣStray", "stray|alfred",
-    "Cunner", "Shadowage", "HideOnBushs", "Asdgner", "GentleMonster","ꕤSettꕤ", "playerxd", 
-    "AleisterCrowley", "Szoj","Player 58934337","OsG","Slaterho","CheesyBreadSticks","KusoYaroo","cocacandy","chiknstrip","SmallBotoㅣStray",
+    "Cunner", "Shadowage", "HideOnBushs", "Asdgner", "GentleMonster", "ꕤSettꕤ", "playerxd",
+    "AleisterCrowley", "Szoj", "Player 58934337", "OsG", "Slaterho", "CheesyBreadSticks",
+    "KusoYaroo", "cocacandy", "chiknstrip", "SmallBotoㅣStray",
 ];
-
-// CX Color settings
-const cxSettings = {
-    topScore: 1100,
-    greenThreshold: 0.7,  // 70% of top score
-    yellowThreshold: 0.4  // 40% of top score
-};
 
 // Export for use in main application
 if (typeof module !== 'undefined' && module.exports) {
-    module.exports = { clanStats, alumniMembers, lmeHistory, cxSettings };
+    module.exports = { clanStats, alumniMembers, lmeHistory };
 }
