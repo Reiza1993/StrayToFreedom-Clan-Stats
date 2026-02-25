@@ -325,23 +325,27 @@
 
         </div>
 
-        <!-- LME Info — stacked full width -->
+        <!-- LME Info — stacked full width, inline label+value -->
         <div style="display: flex; flex-direction: column; gap: 8px; margin-bottom: 20px;">
 
-            <!-- Difficulty — full width -->
-            <div class="calc-stat-card" style="border-color: #553c9a;">
-                <div class="calc-stat-label">LME Difficulty</div>
-                <div class="calc-stat-value" style="color: #b794f6;" id="lmeDifficulty">—</div>
+            <!-- Difficulty — full width, inline -->
+            <div class="calc-stat-card" style="border-color: #553c9a; display: flex; align-items: center; justify-content: center; gap: 10px; padding: 10px 16px;">
+                <span class="calc-stat-label" style="margin-bottom: 0;">LME Difficulty</span>
+                <span class="calc-stat-value" style="color: #b794f6;" id="lmeDifficulty">—</span>
             </div>
 
-            <!-- League + Lunar Points merged — full width -->
-            <div class="calc-stat-card" style="border-color: #b7791f; box-shadow: 0 0 8px rgba(255,215,0,0.12);">
-                <div class="calc-stat-label">LME League</div>
-                <div class="calc-stat-value" style="color: #81e6d9;" id="lmeLeague">—</div>
+            <!-- League + Lunar Points merged — full width, inline rows -->
+            <div class="calc-stat-card" style="border-color: #b7791f; box-shadow: 0 0 8px rgba(255,215,0,0.12); padding: 10px 16px;">
+                <div style="display: flex; align-items: center; justify-content: center; gap: 10px;">
+                    <span class="calc-stat-label" style="margin-bottom: 0;">LME League</span>
+                    <span class="calc-stat-value" style="color: #81e6d9;" id="lmeLeague">—</span>
+                </div>
                 <div style="border-top: 1px solid #4a5568; margin: 8px 0;"></div>
-                <div class="calc-stat-label">Lunar Points</div>
-                <div class="calc-stat-value" style="color: #ffd700;" id="lunarPoints">—</div>
-                <div class="calc-stat-gain" id="lunarPointsGain">—</div>
+                <div style="display: flex; align-items: center; justify-content: center; gap: 10px; flex-wrap: wrap;">
+                    <span class="calc-stat-label" style="margin-bottom: 0;">Lunar Points</span>
+                    <span class="calc-stat-value" style="color: #ffd700;" id="lunarPoints">—</span>
+                    <span class="calc-stat-gain" id="lunarPointsGain">—</span>
+                </div>
             </div>
 
         </div>
