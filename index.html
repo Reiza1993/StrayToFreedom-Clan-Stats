@@ -321,19 +321,26 @@
         </div>
 
         <div style="text-align: center; color: #a0aec0; font-size: 1em; margin-bottom: 10px; font-weight: 400;">ClanID: 44262</div>
-        
-        <!-- LME Info Row -->
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin-bottom: 20px; text-align: center;">
-            <div style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 10px; border-radius: 8px; font-size: 14px; font-weight: 600; min-height: 40px; display: flex; align-items: center; justify-content: center;">
-                LME Phase: <span id="lmePhase">—</span> <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Medals.png" alt="" style="width: 16px; height: 16px; margin-left: 8px; vertical-align: middle;" onerror="this.style.display='none';">
+
+        <!-- LME Info Row — dark card style -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 8px; margin-bottom: 20px;">
+
+            <div class="calc-stat-card" style="border-color: #553c9a;">
+                <div class="calc-stat-label">LME Difficulty</div>
+                <div class="calc-stat-value" style="color: #b794f6;" id="lmeDifficulty">—</div>
             </div>
-            <div style="background: linear-gradient(135deg, #ed8936, #dd6b20); color: white; padding: 10px; border-radius: 8px; font-size: 14px; font-weight: 600; min-height: 40px; display: flex; align-items: center; justify-content: center;">
-                LME Difficulty <span id="lmeDifficulty">—</span>
+
+            <div class="calc-stat-card" style="border-color: #2c7a7b;">
+                <div class="calc-stat-label">LME League</div>
+                <div class="calc-stat-value" style="color: #81e6d9;" id="lmeLeague">—</div>
             </div>
-            <div style="background: linear-gradient(135deg, #38b2ac, #319795); color: white; padding: 10px; border-radius: 8px; font-size: 14px; font-weight: 600; min-height: 40px; display: flex; flex-direction: column; align-items: center; justify-content: center; grid-column: 1 / -1; line-height: 1.2;">
-                <div>LME League: <span id="lmeLeague">—</span></div>
-                <div>Lunar Points: <span id="lunarPoints">—</span></div>
+
+            <div class="calc-stat-card" style="border-color: #b7791f; box-shadow: 0 0 8px rgba(255,215,0,0.12);">
+                <div class="calc-stat-label">Lunar Points</div>
+                <div class="calc-stat-value" style="color: #ffd700;" id="lunarPoints">—</div>
+                <div class="calc-stat-gain" id="lunarPointsGain">—</div>
             </div>
+
         </div>
         
         <div class="controls">
@@ -589,12 +596,30 @@
 
         // Load clan stats into the page
         function loadClanStats() {
-            document.getElementById('lmePhase').textContent      = clanStats.lmePhase;
             document.getElementById('lmeDifficulty').textContent = clanStats.lmeDifficulty;
             document.getElementById('lmeLeague').textContent     = clanStats.lmeLeague;
             document.getElementById('alumniCount').textContent   = clanStats.alumniCount;
-            // Lunar Points — static value from clanStats.js
-            document.getElementById('lunarPoints').textContent   = clanStats.lunarPoints;
+        }
+
+        // ══════════════════════════════════════════════
+        //  LUNAR POINTS
+        //  Baseline: clanStats.lunarPoints (1225)
+        //  Changes calculated from LME #31 onward only
+        //  Champion: 1st +20 / 2nd +10 / 3rd -10 / 4th -20
+        //  Legend:   1st +30 / 2nd +15 / 3rd  +5 / 4th  -5
+        // ══════════════════════════════════════════════
+        function calculateLunarPointsFromBaseline() {
+            const CHAMPION = { 1: 20,  2: 10,  3: -10, 4: -20 };
+            const LEGEND   = { 1: 30,  2: 15,  3:   5, 4:  -5 };
+            let delta = 0;
+            lmeHistory.forEach(lme => {
+                if (lme.lmeNumber < 31) return; // skip everything before LME 31
+                const league = lme.league.toLowerCase();
+                if (league === 'champion')     delta += (CHAMPION[lme.rank] || 0);
+                else if (league.includes('legend')) delta += (LEGEND[lme.rank] || 0);
+            });
+            const baseline = clanStats.lunarPoints; // 1225
+            return { total: baseline + delta, delta };
         }
 
         // Calculate Secret Score based on LME history (existing formula kept intact)
@@ -608,9 +633,22 @@
                 else if (lme.rank === 4) rankFactor *= 0.94;
             });
 
-            const lunarPts    = clanStats.lunarPoints;
+            const { total: lunarPts, delta } = calculateLunarPointsFromBaseline();
             const secretScore = lunarPts * rankFactor;
 
+            // Update main page Lunar Points card
+            document.getElementById('lunarPoints').textContent = lunarPts;
+            if (delta !== 0) {
+                const sign = delta > 0 ? '+' : '';
+                const cls  = delta > 0 ? 'gain-positive' : 'gain-negative';
+                document.getElementById('lunarPointsGain').innerHTML =
+                    \`<span class="\${cls}">(\${sign}\${delta}) from LME 31+</span>\`;
+            } else {
+                document.getElementById('lunarPointsGain').innerHTML =
+                    '<span class="gain-neutral">No changes from LME 31+</span>';
+            }
+
+            // Update history modal
             document.getElementById('historyLunarPoints').textContent  = lunarPts;
             document.getElementById('historyRankFactor').textContent   = rankFactor.toFixed(4);
             document.getElementById('historySecretScore').textContent  = secretScore.toFixed(1);
