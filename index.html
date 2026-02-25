@@ -157,6 +157,70 @@
             transform: translateY(-2px);
             box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
         }
+
+        /* Calculated Stats Section */
+        .calc-stats-section {
+            margin-bottom: 20px;
+        }
+
+        .calc-stats-header {
+            text-align: center;
+            color: #a0aec0;
+            font-size: 0.78em;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .calc-stats-header::before,
+        .calc-stats-header::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #4a5568);
+        }
+
+        .calc-stats-header::after {
+            background: linear-gradient(90deg, #4a5568, transparent);
+        }
+
+        .calc-stat-card {
+            background: #2d3748;
+            border: 1px solid #4a5568;
+            padding: 10px 8px;
+            border-radius: 8px;
+            text-align: center;
+            position: relative;
+        }
+
+        .calc-stat-label {
+            color: #718096;
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+            font-weight: 600;
+        }
+
+        .calc-stat-value {
+            font-size: 1.05em;
+            font-weight: 700;
+        }
+
+        .calc-stat-gain {
+            font-size: 10px;
+            margin-top: 2px;
+            font-weight: 600;
+        }
+
+        .gain-positive { color: #10b981; }
+        .gain-negative { color: #f56565; }
+        .gain-neutral  { color: #a0aec0; }
         
         @media (max-width: 768px) {
             body {
@@ -203,34 +267,87 @@
     <div class="container">
         <h1>Clan Statistics</h1>
         <div class="clan-name">Freedomˢᵗʳᵃʸ</div>
-        <div style="text-align: center; color: #a0aec0; font-size: 1em; margin-bottom: 10px; font-weight: 400;">ClanID: 44262</div>
-        
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin-bottom: 20px; text-align: center;">
-            <div style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 10px; border-radius: 8px; font-size: 14px; font-weight: 600; min-height: 40px; display: flex; align-items: center; justify-content: center;">
-                LME Phase: <span id="lmePhase">18K+</span> <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Medals.png" alt="" style="width: 16px; height: 16px; margin-left: 8px; vertical-align: middle;" onerror="this.style.display='none';">
-            </div>
-            <div style="background: linear-gradient(135deg, #ed8936, #dd6b20); color: white; padding: 10px; border-radius: 8px; font-size: 14px; font-weight: 600; min-height: 40px; display: flex; align-items: center; justify-content: center;">
-                LME Difficulty <span id="lmeDifficulty">11</span>
-            </div>
-            <div style="background: linear-gradient(135deg, #38b2ac, #319795); color: white; padding: 10px; border-radius: 8px; font-size: 14px; font-weight: 600; min-height: 40px; display: flex; flex-direction: column; align-items: center; justify-content: center; grid-column: 1 / -1; line-height: 1.2;">
-                <div>LME League: <span id="lmeLeague">Legend 1</span></div>
-                <div>Lunar Points: <span id="lunarPoints">950</span></div>
-            </div>
+
+        <!-- ClanID — thin dark card -->
+        <div style="background: #2d3748; border: 1px solid #4a5568; border-radius: 8px; text-align: center; padding: 5px 12px; margin: 0 auto 16px auto; display: inline-block; width: 100%; box-sizing: border-box;">
+            <span style="color: #718096; font-size: 10px; text-transform: uppercase; letter-spacing: 1px; font-weight: 600;">ClanID: </span><span style="color: #a0aec0; font-size: 12px; font-weight: 600;">44262</span>
         </div>
 
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin-bottom: 20px; text-align: center;">
-            <div style="background: linear-gradient(135deg, #38b2ac, #319795); color: white; padding: 10px; border-radius: 8px; font-size: 14px; font-weight: 600; min-height: 40px; display: flex; align-items: center; justify-content: center;">
-                Total Members: <span id="totalMembers">40/40</span>
+        <!-- ═══ Unified Stat Grid (auto-calculated from playerData) ═══ -->
+        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin-bottom: 8px;">
+
+            <!-- Members (auto-counted) -->
+            <div class="calc-stat-card" style="border-color: #2c7a7b;">
+                <div class="calc-stat-label">Members</div>
+                <div class="calc-stat-value" style="color: #81e6d9;" id="calc-total-members">—</div>
+                <div class="calc-stat-gain" style="color: #718096; font-size:9px;" id="calc-members-cap">— / 40</div>
             </div>
-            <div style="background: linear-gradient(135deg, #38b2ac, #319795); color: white; padding: 10px; border-radius: 8px; font-size: 14px; font-weight: 600; min-height: 40px; display: flex; align-items: center; justify-content: center;">
-                Total Cores: <span id="totalCores">2560+</span>
+
+            <!-- ATK -->
+            <div class="calc-stat-card" style="border-color: #553c9a;">
+                <div class="calc-stat-label">Total ATK <span style="font-size:8px; opacity:0.6;">(Top 30)</span></div>
+                <div class="calc-stat-value" style="color: #e2e8f0;" id="calc-total-atk">—</div>
+                <div class="calc-stat-gain" id="calc-total-atk-gain">—</div>
             </div>
-            <div style="background: linear-gradient(135deg, #ed8936, #dd6b20); color: white; padding: 10px; border-radius: 8px; font-size: 14px; font-weight: 600; min-height: 40px; display: flex; align-items: center; justify-content: center;">
-                Total ATK: <span id="totalAttack">26.83M</span>
+            <div class="calc-stat-card" style="border-color: #553c9a;">
+                <div class="calc-stat-label">Avg ATK <span style="font-size:8px; opacity:0.6;">(Top 30)</span></div>
+                <div class="calc-stat-value" style="color: #e2e8f0;" id="calc-avg-atk">—</div>
             </div>
-            <div style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 10px; border-radius: 8px; font-size: 14px; font-weight: 600; min-height: 40px; display: flex; align-items: center; justify-content: center;">
-                Avg ATK: <span id="avgAttack">894K</span>
+
+            <!-- Cores -->
+            <div class="calc-stat-card" style="border-color: #44337a;">
+                <div class="calc-stat-label">Total Cores <span style="font-size:8px; opacity:0.6;">(Top 30)</span></div>
+                <div class="calc-stat-value" style="color: #b794f6;" id="calc-total-cores">—</div>
+                <div class="calc-stat-gain" id="calc-total-cores-gain">—</div>
             </div>
+            <div class="calc-stat-card" style="border-color: #44337a;">
+                <div class="calc-stat-label">Avg Cores <span style="font-size:8px; opacity:0.6;">(Top 30)</span></div>
+                <div class="calc-stat-value" style="color: #b794f6;" id="calc-avg-cores">—</div>
+            </div>
+
+            <!-- LME -->
+            <div class="calc-stat-card" style="border-color: #744210;">
+                <div class="calc-stat-label">Total LME <span style="font-size:8px; opacity:0.6;">(Top 30)</span></div>
+                <div class="calc-stat-value" style="color: #f59e0b;" id="calc-total-lme">—</div>
+                <div class="calc-stat-gain" id="calc-total-lme-gain">—</div>
+            </div>
+            <div class="calc-stat-card" style="border-color: #744210;">
+                <div class="calc-stat-label">Avg LME <span style="font-size:8px; opacity:0.6;">(Top 30)</span></div>
+                <div class="calc-stat-value" style="color: #f59e0b;" id="calc-avg-lme">—</div>
+            </div>
+
+            <!-- CX -->
+            <div class="calc-stat-card" style="border-color: #276749;">
+                <div class="calc-stat-label">Total CX <span style="font-size:8px; opacity:0.6;">(All)</span></div>
+                <div class="calc-stat-value" style="color: #68d391;" id="calc-total-cx">—</div>
+                <div class="calc-stat-gain" id="calc-total-cx-gain">—</div>
+            </div>
+
+        </div>
+
+        <!-- LME Info — stacked full width, inline label+value -->
+        <div style="display: flex; flex-direction: column; gap: 8px; margin-bottom: 20px;">
+
+            <!-- Difficulty — full width, inline -->
+            <div class="calc-stat-card" style="border-color: #553c9a; display: flex; align-items: center; justify-content: center; gap: 10px; padding: 10px 16px;">
+                <span class="calc-stat-label" style="margin-bottom: 0;">LME Difficulty</span>
+                <span class="calc-stat-value" style="color: #b794f6;" id="lmeDifficulty">—</span>
+            </div>
+
+            <!-- League + Lunar Points merged — full width, inline rows -->
+            <div class="calc-stat-card" style="border-color: #b7791f; box-shadow: 0 0 8px rgba(255,215,0,0.12); padding: 10px 16px;">
+                <div style="display: flex; align-items: center; justify-content: center; gap: 10px;">
+                    <span class="calc-stat-label" style="margin-bottom: 0;">LME League</span>
+                    <span class="calc-stat-value" style="color: #81e6d9;" id="lmeLeague">—</span>
+                </div>
+                <div style="border-top: 1px solid #4a5568; margin: 8px 0;"></div>
+                <div style="display: flex; align-items: center; justify-content: center; gap: 10px; flex-wrap: wrap;">
+                    <span class="calc-stat-label" style="margin-bottom: 0;">Lunar Points</span>
+                    <span class="calc-stat-value" style="color: #ffd700;" id="lunarPoints">—</span>
+                    <span class="calc-stat-gain" id="lunarPointsGain">—</span>
+                </div>
+            </div>
+
         </div>
         
         <div class="controls">
@@ -289,18 +406,18 @@
                 <h2 style="color: #f7fafc; margin-bottom: 20px; text-align: center; font-size: 1.5em; margin-top: 10px;">🌙 LME History</h2>
                 
                 <!-- Secret Score Calculator Row -->
-                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 15px;">
-                    <div style="background: linear-gradient(135deg, #667eea, #764ba2); padding: 14px 10px; border-radius: 10px; text-align: center;">
-                        <div style="font-size: 0.8em; color: rgba(255,255,255,0.9); margin-bottom: 5px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.3px; white-space: nowrap;">Lunar Points</div>
-                        <div style="font-size: 1.6em; font-weight: 700; color: white;" id="historyLunarPoints">950</div>
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 15px;">
+                    <div class="calc-stat-card" style="border-color: #553c9a;">
+                        <div class="calc-stat-label">Lunar Points</div>
+                        <div class="calc-stat-value" style="color: #ffd700;" id="historyLunarPoints">—</div>
                     </div>
-                    <div style="background: linear-gradient(135deg, #38b2ac, #319795); padding: 14px 10px; border-radius: 10px; text-align: center;">
-                        <div style="font-size: 0.8em; color: rgba(255,255,255,0.9); margin-bottom: 5px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.3px; white-space: nowrap;">Rank Factor</div>
-                        <div style="font-size: 1.6em; font-weight: 700; color: white;" id="historyRankFactor">1.0000</div>
+                    <div class="calc-stat-card" style="border-color: #2c7a7b;">
+                        <div class="calc-stat-label">Rank Factor</div>
+                        <div class="calc-stat-value" style="color: #81e6d9;" id="historyRankFactor">1.0000</div>
                     </div>
-                    <div style="background: linear-gradient(135deg, #ffd700, #ed8936); padding: 14px 10px; border-radius: 10px; text-align: center; border: 2px solid #ffd700; box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);">
-                        <div style="font-size: 0.8em; color: rgba(0,0,0,0.8); margin-bottom: 5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.3px; white-space: nowrap;">Secret Score</div>
-                        <div style="font-size: 1.6em; font-weight: 700; color: #1a202c;" id="historySecretScore">950.0</div>
+                    <div class="calc-stat-card" style="border-color: #b7791f; box-shadow: 0 0 8px rgba(255,215,0,0.12);">
+                        <div class="calc-stat-label">Secret Score</div>
+                        <div class="calc-stat-value" style="color: #ffd700;" id="historySecretScore">—</div>
                     </div>
                 </div>
                 
@@ -321,6 +438,7 @@
                                 <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Medals.png" alt="Emblems" style="width: 18px; height: 18px; vertical-align: middle;" onerror="this.innerHTML='EMBLEMS';">
                             </th>
                             <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 10px 6px; text-align: center; font-weight: 600; font-size: 10px; text-transform: uppercase; letter-spacing: 0.2px; white-space: nowrap;">LEAGUE</th>
+                            <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 10px 6px; text-align: center; font-weight: 600; font-size: 10px; text-transform: uppercase; letter-spacing: 0.2px; white-space: nowrap;">🌙 PTS</th>
                         </tr>
                     </thead>
                     <tbody id="lmeHistoryBody">
@@ -337,7 +455,7 @@
                 
                 <div style="background: #374151; border-radius: 8px; padding: 15px; margin-bottom: 15px; text-align: center;">
                     <p style="color: #e2e8f0; margin: 0; font-size: 14px; line-height: 1.4;">
-                        <strong style="color: #ffd700;"><span id="alumniCount">37</span> Alumni Members</strong><br>
+                        <strong style="color: #ffd700;"><span id="alumniCount">—</span> Alumni Members</strong><br>
                         <span style="color: #a0aec0;">Former clan members who contributed to our journey</span>
                     </p>
                 </div>
@@ -356,47 +474,194 @@
         let filteredData = [...playerData];
         let currentSort = 'lme';
 
+        // ══════════════════════════════════════════════
+        //  UTILITY: Parse gain strings → numeric value
+        //  Handles: "(+60.8K)", "(-5)", "(+0)", ""
+        // ══════════════════════════════════════════════
+        function parseGainValue(gainStr) {
+            if (!gainStr || gainStr.trim() === '') return 0;
+            const clean = gainStr.replace(/[()]/g, '').trim();
+            if (!clean) return 0;
+            const isNeg = clean.startsWith('-');
+            const numPart = clean.replace(/^[+\-]/, '');
+            let val;
+            if (numPart.toUpperCase().endsWith('K')) {
+                val = parseFloat(numPart) * 1000;
+            } else {
+                val = parseFloat(numPart) || 0;
+            }
+            return isNeg ? -val : val;
+        }
+
+        // ══════════════════════════════════════════════
+        //  UTILITY: Format a numeric gain for display
+        //  Returns HTML string with colour class
+        // ══════════════════════════════════════════════
+        function formatGainHTML(val, isATK = false) {
+            if (val === 0) return '<span class="gain-neutral">(+0)</span>';
+            const color = val > 0 ? 'gain-positive' : 'gain-negative';
+            if (isATK) {
+                const absK = Math.abs(val / 1000);
+                const sign  = val > 0 ? '+' : '-';
+                const str   = absK >= 1 ? sign + absK.toFixed(1) + 'K' : sign + Math.abs(val).toFixed(0);
+                return `<span class="${color}">(${str})</span>`;
+            }
+            const sign = val > 0 ? '+' : '';
+            return `<span class="${color}">(${sign}${Math.round(val).toLocaleString()})</span>`;
+        }
+
+        // ══════════════════════════════════════════════
+        //  AUTO-CALCULATE PLAYER STATS FROM playerData
+        //  • Top 30 ATK  → Total ATK, Avg ATK, ATK Gain
+        //  • Top 30 Cores → Total, Avg, Gain
+        //  • Top 30 LME  → Total, Avg, Gain
+        //  • All members → Total CX, CX Gain
+        // ══════════════════════════════════════════════
+        function calculateAndDisplayStats() {
+            // ── Total Members (auto-counted from playerData) ──
+            const totalMembers = playerData.length;
+            document.getElementById('calc-total-members').textContent = totalMembers;
+            document.getElementById('calc-members-cap').textContent   = totalMembers + ' / 40';
+
+            // ── Top 30 by ATK ──
+            const byATK = [...playerData].sort((a, b) => b.attack - a.attack).slice(0, 30);
+            const totalATK     = byATK.reduce((s, p) => s + p.attack, 0);
+            const totalATKGain = byATK.reduce((s, p) => s + parseGainValue(p.attackGain), 0);
+            const avgATK       = totalATK / 30;
+
+            // ── Top 30 by Cores ──
+            const byCores = [...playerData].sort((a, b) => b.coresNum - a.coresNum).slice(0, 30);
+            const totalCores     = byCores.reduce((s, p) => s + p.coresNum, 0);
+            const totalCoresGain = byCores.reduce((s, p) => s + parseGainValue(p.coresGain), 0);
+            const avgCores       = totalCores / 30;
+
+            // ── Top 30 by LME ──
+            const byLME = [...playerData].sort((a, b) => b.lmeScore - a.lmeScore).slice(0, 30);
+            const totalLME     = byLME.reduce((s, p) => s + p.lmeScore, 0);
+            const totalLMEGain = byLME.reduce((s, p) => s + parseGainValue(p.lmeGain), 0);
+            const avgLME       = totalLME / 30;
+
+            // ── All members: CX ──
+            const totalCX     = playerData.reduce((s, p) => s + p.cxScore, 0);
+            const totalCXGain = playerData.reduce((s, p) => s + parseGainValue(p.cxGain), 0);
+
+            // ── Update stat cards ──
+            document.getElementById('calc-total-atk').textContent      = formatNumber(totalATK);
+            document.getElementById('calc-total-atk-gain').innerHTML   = formatGainHTML(totalATKGain, true);
+            document.getElementById('calc-avg-atk').textContent        = formatNumber(Math.round(avgATK));
+
+            document.getElementById('calc-total-cores').textContent    = totalCores + '+';
+            document.getElementById('calc-total-cores-gain').innerHTML = formatGainHTML(totalCoresGain);
+            document.getElementById('calc-avg-cores').textContent      = Math.round(avgCores) + '+';
+
+            document.getElementById('calc-total-lme').textContent      = totalLME.toLocaleString();
+            document.getElementById('calc-total-lme-gain').innerHTML   = formatGainHTML(totalLMEGain);
+            document.getElementById('calc-avg-lme').textContent        = Math.round(avgLME).toLocaleString();
+
+            document.getElementById('calc-total-cx').textContent       = totalCX.toLocaleString();
+            document.getElementById('calc-total-cx-gain').innerHTML    = formatGainHTML(totalCXGain);
+        }
+
+        // ══════════════════════════════════════════════
+        //  LUNAR POINTS CALCULATOR
+        //  Reads lmeHistory from clanStats.js
+        //  Champion: 1st +20 / 2nd +10 / 3rd -10 / 4th -20
+        //  Legend:   1st +30 / 2nd +15 / 3rd  +5 / 4th  -5
+        //  Elite / other: no change
+        // ══════════════════════════════════════════════
+        function calculateLunarPoints() {
+            const POINTS = {
+                champion: { 1: 20, 2: 10, 3: -10, 4: -20 },
+                legend:   { 1: 30, 2: 15, 3:   5, 4:  -5 }
+            };
+
+            let total = 0;
+            lmeHistory.forEach(lme => {
+                const league = lme.league.toLowerCase();
+                if (league === 'champion') {
+                    total += (POINTS.champion[lme.rank] || 0);
+                } else if (league.includes('legend')) {
+                    total += (POINTS.legend[lme.rank] || 0);
+                }
+                // Elite and others: 0 points
+            });
+            return total;
+        }
+
+        // ══════════════════════════════════════════════
+        //  Get lunar points change for a single LME row
+        //  (used to render the ±pts column in history)
+        // ══════════════════════════════════════════════
+        function getLunarPointsForLME(lme) {
+            const league = lme.league.toLowerCase();
+            const CHAMPION = { 1: 20, 2: 10, 3: -10, 4: -20 };
+            const LEGEND   = { 1: 30, 2: 15, 3:   5, 4:  -5 };
+            if (league === 'champion')        return CHAMPION[lme.rank] || 0;
+            if (league.includes('legend'))    return LEGEND[lme.rank]   || 0;
+            return null; // Elite / other — show dash
+        }
+
         // Load clan stats into the page
         function loadClanStats() {
-            document.getElementById('lmePhase').textContent = clanStats.lmePhase;
             document.getElementById('lmeDifficulty').textContent = clanStats.lmeDifficulty;
-            document.getElementById('lmeLeague').textContent = clanStats.lmeLeague;
-            document.getElementById('lunarPoints').textContent = clanStats.lunarPoints;
-            document.getElementById('totalMembers').textContent = clanStats.totalMembers;
-            document.getElementById('totalCores').textContent = clanStats.totalCores;
-            document.getElementById('totalAttack').textContent = clanStats.totalAttack;
-            document.getElementById('avgAttack').textContent = clanStats.averageAttack;
-            document.getElementById('alumniCount').textContent = clanStats.alumniCount;
+            document.getElementById('lmeLeague').textContent     = clanStats.lmeLeague;
+            document.getElementById('alumniCount').textContent   = clanStats.alumniCount;
         }
 
-        // Calculate Secret Score based on LME history
+        // ══════════════════════════════════════════════
+        //  LUNAR POINTS
+        //  Baseline: clanStats.lunarPoints (1225)
+        //  Changes calculated from LME #31 onward only
+        //  Champion: 1st +20 / 2nd +10 / 3rd -10 / 4th -20
+        //  Legend:   1st +30 / 2nd +15 / 3rd  +5 / 4th  -5
+        // ══════════════════════════════════════════════
+        function calculateLunarPointsFromBaseline() {
+            const CHAMPION = { 1: 20,  2: 10,  3: -10, 4: -20 };
+            const LEGEND   = { 1: 30,  2: 15,  3:   5, 4:  -5 };
+            let delta = 0;
+            lmeHistory.forEach(lme => {
+                if (lme.lmeNumber < 31) return; // skip everything before LME 31
+                const league = lme.league.toLowerCase();
+                if (league === 'champion')     delta += (CHAMPION[lme.rank] || 0);
+                else if (league.includes('legend')) delta += (LEGEND[lme.rank] || 0);
+            });
+            const baseline = clanStats.lunarPoints; // 1225
+            return { total: baseline + delta, delta };
+        }
+
+        // Calculate Secret Score based on LME history (existing formula kept intact)
         function calculateSecretScore() {
             let rankFactor = 1.0;
-            
-            // Process LME history from oldest to newest (reverse order)
             const reversedHistory = [...lmeHistory].reverse();
-            
             reversedHistory.forEach((lme) => {
-                if (lme.rank === 1) {
-                    rankFactor = 1.0;
-                } else if (lme.rank === 2) {
-                    rankFactor *= 0.98;
-                } else if (lme.rank === 3) {
-                    rankFactor *= 0.96;
-                } else if (lme.rank === 4) {
-                    rankFactor *= 0.94;
-                }
+                if      (lme.rank === 1) rankFactor  = 1.0;
+                else if (lme.rank === 2) rankFactor *= 0.98;
+                else if (lme.rank === 3) rankFactor *= 0.96;
+                else if (lme.rank === 4) rankFactor *= 0.94;
             });
-            
-            const secretScore = clanStats.lunarPoints * rankFactor;
-            
-            // Update LME History modal display
-            document.getElementById('historyLunarPoints').textContent = clanStats.lunarPoints;
-            document.getElementById('historyRankFactor').textContent = rankFactor.toFixed(4);
-            document.getElementById('historySecretScore').textContent = secretScore.toFixed(1);
+
+            const { total: lunarPts, delta } = calculateLunarPointsFromBaseline();
+            const secretScore = lunarPts * rankFactor;
+
+            // Update main page Lunar Points card
+            document.getElementById('lunarPoints').textContent = lunarPts;
+            if (delta !== 0) {
+                const sign = delta > 0 ? '+' : '';
+                const cls  = delta > 0 ? 'gain-positive' : 'gain-negative';
+                document.getElementById('lunarPointsGain').innerHTML =
+                    `<span class="${cls}">(${sign}${delta}) from LME 31+</span>`;
+            } else {
+                document.getElementById('lunarPointsGain').innerHTML =
+                    '<span class="gain-neutral">No changes from LME 31+</span>';
+            }
+
+            // Update history modal
+            document.getElementById('historyLunarPoints').textContent  = lunarPts;
+            document.getElementById('historyRankFactor').textContent   = rankFactor.toFixed(4);
+            document.getElementById('historySecretScore').textContent  = secretScore.toFixed(1);
         }
 
-        // Load LME History into modal
+        // Load LME History into modal (now includes Lunar Points column)
         function loadLMEHistory() {
             const tbody = document.getElementById('lmeHistoryBody');
             tbody.innerHTML = '';
@@ -413,6 +678,19 @@
                     const rankColors = { 1: '#ffd700', 2: '#c0c0c0', 3: '#cd7930', 4: '#f56565' };
                     rankDisplay = `<span style="color: ${rankColors[lme.rank] || '#f56565'}; font-weight: 600;">#${lme.rank}</span>`;
                 }
+
+                // Lunar points column
+                const lp = getLunarPointsForLME(lme);
+                let lpDisplay;
+                if (lp === null) {
+                    lpDisplay = `<span style="color:#718096;">—</span>`;
+                } else if (lp > 0) {
+                    lpDisplay = `<span style="color:#10b981; font-weight:700;">+${lp}</span>`;
+                } else if (lp < 0) {
+                    lpDisplay = `<span style="color:#f56565; font-weight:700;">${lp}</span>`;
+                } else {
+                    lpDisplay = `<span style="color:#a0aec0;">0</span>`;
+                }
                 
                 row.innerHTML = `
                     <td style="padding: 10px 6px; color: #e2e8f0; text-align: center; font-weight: 600; font-size: 12px;">${lme.lmeNumber}</td>
@@ -420,6 +698,7 @@
                     <td style="padding: 10px 6px; color: #e2e8f0; text-align: center; font-size: 12px;">${lme.atkDefPoints}</td>
                     <td style="padding: 10px 6px; color: #68d391; text-align: center; font-weight: 600; font-size: 11px;">${lme.medals.toLocaleString()}</td>
                     <td style="padding: 10px 6px; color: #ffd700; text-align: center; font-weight: 600; font-size: 11px; white-space: nowrap;">${lme.league}</td>
+                    <td style="padding: 10px 6px; text-align: center; font-size: 12px;">${lpDisplay}</td>
                 `;
                 tbody.appendChild(row);
             });
@@ -429,7 +708,6 @@
         function loadAlumni() {
             const grid = document.getElementById('alumniGrid');
             grid.innerHTML = '';
-            
             alumniMembers.forEach(name => {
                 const div = document.createElement('div');
                 div.style = 'background: #2d3748; padding: 8px; border-radius: 6px; text-align: center; border: 1px solid #4a5568;';
@@ -439,20 +717,16 @@
         }
 
         function formatNumber(num) {
-            if (num >= 1000000) {
-                return (num / 1000000).toFixed(2) + 'M';
-            } else if (num >= 1000) {
-                return (num / 1000).toFixed(1) + 'K';
-            }
+            if (num >= 1000000) return (num / 1000000).toFixed(2) + 'M';
+            if (num >= 1000)    return (num / 1000).toFixed(1) + 'K';
             return num.toLocaleString();
         }
 
         function getCXColor(score) {
-            const topScore = cxSettings.topScore;
+            const topScore       = cxSettings.topScore;
             const greenThreshold = topScore * cxSettings.greenThreshold;
-            const yellowThreshold = topScore * cxSettings.yellowThreshold;
-            
-            if (score >= greenThreshold) return '#48bb78';
+            const yellowThreshold= topScore * cxSettings.yellowThreshold;
+            if (score >= greenThreshold)  return '#48bb78';
             if (score >= yellowThreshold) return '#f59e0b';
             return '#f56565';
         }
@@ -466,14 +740,9 @@
                 
                 let nameColor = '#f7fafc';
                 let nameClass = '';
-                if (player.role === 'Leader') {
-                    nameColor = '#fc8181';
-                } else if (player.role === 'Vice-Leader') {
-                    nameColor = '#ed8936';
-                } else if (player.role === 'Glory Member') {
-                    nameColor = '#ffd700';
-                    nameClass = 'role-glorymember';
-                }
+                if      (player.role === 'Leader')       { nameColor = '#fc8181'; }
+                else if (player.role === 'Vice-Leader')  { nameColor = '#ed8936'; }
+                else if (player.role === 'Glory Member') { nameColor = '#ffd700'; nameClass = 'role-glorymember'; }
                 
                 row.innerHTML = `
                     <td class="rank-cell">${index + 1}</td>
@@ -508,43 +777,27 @@
 
         function sortData(criteria) {
             currentSort = criteria;
-            
             switch(criteria) {
-                case 'name':
-                    filteredData.sort((a, b) => a.name.localeCompare(b.name));
-                    break;
-                case 'cores':
-                    filteredData.sort((a, b) => b.coresNum - a.coresNum);
-                    break;
-                case 'attack':
-                    filteredData.sort((a, b) => b.attack - a.attack);
-                    break;
-                case 'lme':
-                    filteredData.sort((a, b) => b.lmeScore - a.lmeScore);
-                    break;
-                case 'cx':
-                    filteredData.sort((a, b) => b.cxScore - a.cxScore);
-                    break;
-                case 'role':
+                case 'name':   filteredData.sort((a, b) => a.name.localeCompare(b.name)); break;
+                case 'cores':  filteredData.sort((a, b) => b.coresNum - a.coresNum); break;
+                case 'attack': filteredData.sort((a, b) => b.attack - a.attack); break;
+                case 'lme':    filteredData.sort((a, b) => b.lmeScore - a.lmeScore); break;
+                case 'cx':     filteredData.sort((a, b) => b.cxScore - a.cxScore); break;
+                case 'role': {
                     const roleOrder = { 'Leader': 1, 'Vice-Leader': 2, 'Glory Member': 3, 'Member': 4 };
                     filteredData.sort((a, b) => {
-                        const roleA = roleOrder[a.role] || 5;
-                        const roleB = roleOrder[b.role] || 5;
-                        if (roleA !== roleB) {
-                            return roleA - roleB;
-                        }
-                        return b.lmeScore - a.lmeScore;
+                        const rA = roleOrder[a.role] || 5;
+                        const rB = roleOrder[b.role] || 5;
+                        return rA !== rB ? rA - rB : b.lmeScore - a.lmeScore;
                     });
                     break;
+                }
             }
-            
             renderTable();
         }
 
         function filterData(searchTerm) {
-            filteredData = playerData.filter(player => 
-                player.name.toLowerCase().includes(searchTerm.toLowerCase())
-            );
+            filteredData = playerData.filter(p => p.name.toLowerCase().includes(searchTerm.toLowerCase()));
             sortData(currentSort);
         }
 
@@ -567,8 +820,8 @@
             ].join('\n');
             
             const blob = new Blob([csvContent], { type: 'text/csv' });
-            const url = window.URL.createObjectURL(blob);
-            const a = document.createElement('a');
+            const url  = window.URL.createObjectURL(blob);
+            const a    = document.createElement('a');
             a.href = url;
             a.download = 'Freedomstray_clan_stats.csv';
             document.body.appendChild(a);
@@ -577,43 +830,26 @@
             window.URL.revokeObjectURL(url);
         }
 
-        function openLMEHistory() {
-            document.getElementById('lmeHistoryModal').style.display = 'block';
-        }
-
-        function closeLMEHistory() {
-            document.getElementById('lmeHistoryModal').style.display = 'none';
-        }
-
-        function openAlumni() {
-            document.getElementById('alumniModal').style.display = 'block';
-        }
-
-        function closeAlumni() {
-            document.getElementById('alumniModal').style.display = 'none';
-        }
+        function openLMEHistory()  { document.getElementById('lmeHistoryModal').style.display = 'block'; }
+        function closeLMEHistory() { document.getElementById('lmeHistoryModal').style.display = 'none';  }
+        function openAlumni()      { document.getElementById('alumniModal').style.display = 'block'; }
+        function closeAlumni()     { document.getElementById('alumniModal').style.display = 'none';  }
 
         window.onclick = function(event) {
-            const lmeModal = document.getElementById('lmeHistoryModal');
+            const lmeModal    = document.getElementById('lmeHistoryModal');
             const alumniModal = document.getElementById('alumniModal');
-            if (event.target === lmeModal) {
-                lmeModal.style.display = 'none';
-            }
-            if (event.target === alumniModal) {
-                alumniModal.style.display = 'none';
-            }
-        }
+            if (event.target === lmeModal)    lmeModal.style.display    = 'none';
+            if (event.target === alumniModal) alumniModal.style.display = 'none';
+        };
 
-        document.getElementById('sortSelect').addEventListener('change', (e) => {
-            sortData(e.target.value);
-        });
+        document.getElementById('sortSelect').addEventListener('change', e => sortData(e.target.value));
+        document.getElementById('searchInput').addEventListener('input',  e => filterData(e.target.value));
 
-        document.getElementById('searchInput').addEventListener('input', (e) => {
-            filterData(e.target.value);
-        });
-
-        // Initialize page
+        // ══════════════════════════════════════════════
+        //  INIT
+        // ══════════════════════════════════════════════
         loadClanStats();
+        calculateAndDisplayStats();
         calculateSecretScore();
         loadLMEHistory();
         loadAlumni();
