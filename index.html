@@ -310,16 +310,11 @@
                 <div class="calc-stat-label">Total LME <span style="font-size:8px; opacity:0.6;">(Top 30)</span></div>
                 <div class="calc-stat-value" style="color: #f59e0b;" id="calc-total-lme">—</div>
                 <div class="calc-stat-gain" id="calc-total-lme-gain">—</div>
-                <div style="border-top: 1px solid #4a5568; margin: 6px 0;"></div>
-                <div class="calc-stat-label">Prev Week</div>
-                <div class="calc-stat-value" style="color: #a0aec0; font-size: 0.85em;" id="calc-prev-lme">—</div>
             </div>
             <div class="calc-stat-card" style="border-color: #744210;">
                 <div class="calc-stat-label">Avg LME <span style="font-size:8px; opacity:0.6;">(Top 30)</span></div>
                 <div class="calc-stat-value" style="color: #f59e0b;" id="calc-avg-lme">—</div>
-                <div style="border-top: 1px solid #4a5568; margin: 6px 0;"></div>
-                <div class="calc-stat-label">Prev Week Avg</div>
-                <div class="calc-stat-value" style="color: #a0aec0; font-size: 0.85em;" id="calc-prev-avg-lme">—</div>
+                <div class="calc-stat-gain" id="calc-avg-lme-gain">—</div>
             </div>
 
             <!-- CX -->
@@ -565,8 +560,7 @@
             document.getElementById('calc-total-lme').textContent      = totalLME.toLocaleString();
             document.getElementById('calc-total-lme-gain').innerHTML   = formatGainHTML(totalLMEGain);
             document.getElementById('calc-avg-lme').textContent        = Math.round(avgLME).toLocaleString();
-            document.getElementById('calc-prev-lme').textContent       = prevTotalLME.toLocaleString();
-            document.getElementById('calc-prev-avg-lme').textContent   = Math.round(prevAvgLME).toLocaleString();
+            document.getElementById('calc-avg-lme-gain').innerHTML     = formatGainHTML(Math.round(avgLME - prevAvgLME));
 
             document.getElementById('calc-total-cx').textContent       = totalCX.toLocaleString();
             document.getElementById('calc-total-cx-gain').innerHTML    = formatGainHTML(totalCXGain);
