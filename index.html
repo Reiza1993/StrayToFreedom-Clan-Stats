@@ -268,8 +268,13 @@
         <h1>Clan Statistics</h1>
         <div class="clan-name">Freedomˢᵗʳᵃʸ</div>
 
+        <!-- ClanID — thin dark card -->
+        <div style="background: #2d3748; border: 1px solid #4a5568; border-radius: 8px; text-align: center; padding: 5px 12px; margin: 0 auto 16px auto; display: inline-block; width: 100%; box-sizing: border-box;">
+            <span style="color: #718096; font-size: 10px; text-transform: uppercase; letter-spacing: 1px; font-weight: 600;">ClanID: </span><span style="color: #a0aec0; font-size: 12px; font-weight: 600;">44262</span>
+        </div>
+
         <!-- ═══ Unified Stat Grid (auto-calculated from playerData) ═══ -->
-        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 8px; margin-bottom: 12px;">
+        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin-bottom: 8px;">
 
             <!-- Members (auto-counted) -->
             <div class="calc-stat-card" style="border-color: #2c7a7b;">
@@ -320,22 +325,20 @@
 
         </div>
 
-        <div style="text-align: center; color: #a0aec0; font-size: 1em; margin-bottom: 10px; font-weight: 400;">ClanID: 44262</div>
+        <!-- LME Info — stacked full width -->
+        <div style="display: flex; flex-direction: column; gap: 8px; margin-bottom: 20px;">
 
-        <!-- LME Info Row — dark card style -->
-        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 8px; margin-bottom: 20px;">
-
+            <!-- Difficulty — full width -->
             <div class="calc-stat-card" style="border-color: #553c9a;">
                 <div class="calc-stat-label">LME Difficulty</div>
                 <div class="calc-stat-value" style="color: #b794f6;" id="lmeDifficulty">—</div>
             </div>
 
-            <div class="calc-stat-card" style="border-color: #2c7a7b;">
+            <!-- League + Lunar Points merged — full width -->
+            <div class="calc-stat-card" style="border-color: #b7791f; box-shadow: 0 0 8px rgba(255,215,0,0.12);">
                 <div class="calc-stat-label">LME League</div>
                 <div class="calc-stat-value" style="color: #81e6d9;" id="lmeLeague">—</div>
-            </div>
-
-            <div class="calc-stat-card" style="border-color: #b7791f; box-shadow: 0 0 8px rgba(255,215,0,0.12);">
+                <div style="border-top: 1px solid #4a5568; margin: 8px 0;"></div>
                 <div class="calc-stat-label">Lunar Points</div>
                 <div class="calc-stat-value" style="color: #ffd700;" id="lunarPoints">—</div>
                 <div class="calc-stat-gain" id="lunarPointsGain">—</div>
