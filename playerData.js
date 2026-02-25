@@ -43,7 +43,15 @@ const playerData = [
     { name: "Bensayyten", cores: "TBD", attack: 0, coresNum: 0, role: "Member", lmeScore: 0, lmeGain: "", cxScore: 0, cxGain: "(+0)", coresGain: "", attackGain: "" },
 ];
 
+// CX Color settings
+// Update topScore whenever the highest CX score in the clan changes
+const cxSettings = {
+    topScore: 1100,
+    greenThreshold: 0.7,  // 70% of top score → green
+    yellowThreshold: 0.4  // 40% of top score → yellow (below = red)
+};
+
 // Export for use in main application
 if (typeof module !== 'undefined' && module.exports) {
-    module.exports = playerData;
+    module.exports = { playerData, cxSettings };
 }
