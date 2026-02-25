@@ -8,7 +8,7 @@ const playerData = [
     { name: "PastalaVista", cores: "135+", attack: 1465500, coresNum: 135, role: "Member", lmeScore: 1607, lmeGain: "(+29)", cxScore: 1200, cxGain: "(+400)", coresGain: "(+5)", attackGain: "(+20.4K)" },
     { name: "Gritchen", cores: "135+", attack: 1453000, coresNum: 135, role: "Glory Member", lmeScore: 1127, lmeGain: "(+149)", cxScore: 1200, cxGain: "(+100)", coresGain: "(+5)", attackGain: "(+23.1K)" },
     { name: "命Waiora癒", cores: "140+", attack: 1373500, coresNum: 140, role: "Member", lmeScore: 1521, lmeGain: "(+15)", cxScore: 1200, cxGain: "(+200)", coresGain: "(+0)", attackGain: "(+0)" },
-    { name: "MMM|Mina475", cores: "105+", attack: 1369700, coresNum: 105, role: "Member", lmeScore: 954, lmeGain: "(+84)", cxScore: 600, cxGain: "(+200)", coresGain: "(+0)", attackGain: "(+62.0K)" },
+    { name: "MMM|Mina475", cores: "105+", attack: 1369700, coresNum: 105, role: "Member", lmeScore: 967, lmeGain: "(+97)", cxScore: 600, cxGain: "(+200)", coresGain: "(+0)", attackGain: "(+62.0K)" },
     { name: "盾Heathcliff剣", cores: "140+", attack: 1340200, coresNum: 140, role: "Member", lmeScore: 1582, lmeGain: "(+63)", cxScore: 1100, cxGain: "(+100)", coresGain: "(+0)", attackGain: "(+0)" },
     { name: "TieForFirstYo", cores: "100+", attack: 1282200, coresNum: 100, role: "Glory Member", lmeScore: 1304, lmeGain: "(+285)", cxScore: 1200, cxGain: "(+300)", coresGain: "(+0)", attackGain: "(+0)" },
     { name: "Player 32236991", cores: "145+", attack: 1252900, coresNum: 145, role: "Member", lmeScore: 1215, lmeGain: "(+131)", cxScore: 0, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+18.9K)" },
