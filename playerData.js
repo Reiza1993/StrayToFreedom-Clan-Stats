@@ -11,7 +11,7 @@ const playerData = [
     { name: "MMM|Mina475", cores: "105+", attack: 1369700, coresNum: 105, role: "Member", lmeScore: 954, lmeGain: "(+84)", cxScore: 600, cxGain: "(+200)", coresGain: "(+0)", attackGain: "(+62.0K)" },
     { name: "盾Heathcliff剣", cores: "140+", attack: 1340200, coresNum: 140, role: "Member", lmeScore: 1582, lmeGain: "(+63)", cxScore: 1100, cxGain: "(+100)", coresGain: "(+0)", attackGain: "(+0)" },
     { name: "TieForFirstYo", cores: "100+", attack: 1282200, coresNum: 100, role: "Glory Member", lmeScore: 1304, lmeGain: "(+285)", cxScore: 1200, cxGain: "(+300)", coresGain: "(+0)", attackGain: "(+0)" },
-    { name: "Player 32236991", cores: "145+", attack: 1252900, coresNum: 145, role: "Member", lmeScore: 1163, lmeGain: "(+79)", cxScore: 0, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+18.9K)" },
+    { name: "Player 32236991", cores: "145+", attack: 1252900, coresNum: 145, role: "Member", lmeScore: 1215, lmeGain: "(+131)", cxScore: 0, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+18.9K)" },
     { name: "bimbabo", cores: "145+", attack: 1219800, coresNum: 145, role: "Member", lmeScore: 893, lmeGain: "(+42)", cxScore: 300, cxGain: "(+100)", coresGain: "(+10)", attackGain: "(+87.6K)" },
     { name: "MrPlusUltra", cores: "100+", attack: 1178200, coresNum: 100, role: "Member", lmeScore: 910, lmeGain: "(+910)", cxScore: 200, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+0)" },
     { name: "EMBALOCO", cores: "130+", attack: 1177300, coresNum: 130, role: "Member", lmeScore: 849, lmeGain: "(+38)", cxScore: 1300, cxGain: "(+200)", coresGain: "(+5)", attackGain: "(+14.6K)" },
