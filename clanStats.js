@@ -1,6 +1,6 @@
 // clanStats.js
 // Freedomˢᵗʳᵃʸ Clan Statistics
-// Last Updated: Week 38 - February 2026
+// Last Updated: Week 41 - March 2026
 
 const clanStats = {
     // Current LME information (update weekly)
@@ -278,7 +278,7 @@ const alumniMembers = [
     "BOBBYJANG", "slaterhoㅣStray", "lct404", "CrackJackㅣStray", "stray|alfred",
     "Cunner", "Shadowage", "HideOnBushs", "Asdgner", "GentleMonster", "ꕤSettꕤ", "playerxd",
     "AleisterCrowley", "Szoj", "Player 58934337", "OsG", "Slaterho", "CheesyBreadSticks",
-    "KusoYaroo", "cocacandy", "chiknstrip", "SmallBotoㅣStray",
+    "KusoYaroo", "cocacandy", "chiknstrip", "SmallBotoㅣStray","Phley",
 ];
 
 // Export for use in main application
