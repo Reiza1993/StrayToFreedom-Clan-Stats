@@ -698,10 +698,10 @@
                 const sign = delta > 0 ? '+' : '';
                 const cls  = delta > 0 ? 'gain-positive' : 'gain-negative';
                 document.getElementById('lunarPointsGain').innerHTML =
-                    `<span class="${cls}">(${sign}${delta}) from LME 31+</span>`;
+                    `<span class="${cls}">(${sign}${delta})</span>`;
             } else {
                 document.getElementById('lunarPointsGain').innerHTML =
-                    '<span class="gain-neutral">No changes from LME 31+</span>';
+                    '<span class="gain-neutral">(+0)</span>';
             }
 
             // Update history modal
