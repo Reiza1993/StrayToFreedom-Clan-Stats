@@ -42,7 +42,7 @@ const playerData = [
     { name: "Pookaz", cores: "45+", attack: 708100, coresNum: 45, role: "Member", lmeScore: 523, lmeGain: "(+56)", cxScore: 1800, cxGain: "(+400)", coresGain: "(+0)", attackGain: "(+13.0K)" },
     { name: "HannaM", cores: "50+", attack: 701200, coresNum: 50, role: "Glory Member", lmeScore: 618, lmeGain: "(+23)", cxScore: 1900, cxGain: "(+500)", coresGain: "(+0)", attackGain: "(+0)" },
     { name: "Player 78792329", cores: "90+", attack: 670600, coresNum: 90, role: "Member", lmeScore: 566, lmeGain: "(-4)", cxScore: 1500, cxGain: "(+300)", coresGain: "(+0)", attackGain: "(+3.7K)" },
-    { name: "ilovemycats", cores: "TBD", attack: 0, coresNum: 0, role: "Member", lmeScore: 0, lmeGain: "", cxScore: 0, cxGain: "(+0)", coresGain: "", attackGain: "" },
+    { name: "han", cores: "TBD", attack: 0, coresNum: 0, role: "Member", lmeScore: 0, lmeGain: "", cxScore: 0, cxGain: "(+0)", coresGain: "", attackGain: "" },
 ];
 
 // CX Color settings
