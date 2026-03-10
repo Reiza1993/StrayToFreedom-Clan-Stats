@@ -1,6 +1,6 @@
 // clanStats.js
 // Freedomˢᵗʳᵃʸ Clan Statistics
-// Last Updated: Week 42 - March 2026
+// Last Updated: Week 43 - March 2026
 
 const clanStats = {
     // Current LME information (update weekly)
@@ -12,7 +12,7 @@ const clanStats = {
     lunarPoints: 1225,
 
     // Alumni count (update when members leave)
-    alumniCount: 53
+    alumniCount: 54
 };
 
 // LME History Data
@@ -287,6 +287,7 @@ const alumniMembers = [
     "Cunner", "Shadowage", "HideOnBushs", "Asdgner", "GentleMonster", "ꕤSettꕤ", "playerxd",
     "AleisterCrowley", "Szoj", "Player 58934337", "OsG", "Slaterho", "CheesyBreadSticks",
     "KusoYaroo", "cocacandy", "chiknstrip", "SmallBotoㅣStray", "Phley", "6J4",
+    "Mclovin404",
 ];
 
 // Export for use in main application
