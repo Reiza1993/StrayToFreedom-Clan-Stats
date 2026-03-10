@@ -667,15 +667,29 @@
         function calculateLunarPointsFromBaseline() {
             const CHAMPION = { 1: 20,  2: 10,  3: -10, 4: -20 };
             const LEGEND   = { 1: 30,  2: 15,  3:   5, 4:  -5 };
+
+            // Cumulative delta from LME 31 onward → used for the correct total
             let delta = 0;
             lmeHistory.forEach(lme => {
-                if (lme.lmeNumber < 31) return; // skip everything before LME 31
+                if (lme.lmeNumber < 31) return;
                 const league = lme.league.toLowerCase();
-                if (league === 'champion')     delta += (CHAMPION[lme.rank] || 0);
-                else if (league.includes('legend')) delta += (LEGEND[lme.rank] || 0);
+                if (league === 'champion')          delta += (CHAMPION[lme.rank] || 0);
+                else if (league.includes('legend')) delta += (LEGEND[lme.rank]   || 0);
             });
+
+            // Last-week gain → only the most recent LME entry (lmeHistory[0])
+            let lastGain = 0;
+            if (lmeHistory.length > 0) {
+                const latest = lmeHistory[0];
+                if (latest.lmeNumber >= 31) {
+                    const league = latest.league.toLowerCase();
+                    if (league === 'champion')          lastGain = (CHAMPION[latest.rank] || 0);
+                    else if (league.includes('legend')) lastGain = (LEGEND[latest.rank]   || 0);
+                }
+            }
+
             const baseline = clanStats.lunarPoints; // 1225
-            return { total: baseline + delta, delta };
+            return { total: baseline + delta, delta: lastGain };
         }
 
         // Calculate Secret Score based on LME history (existing formula kept intact)
