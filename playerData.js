@@ -43,6 +43,7 @@ const playerData = [
     { name: "han", cores: "110+", attack: 1268000, coresNum: 110, role: "Member", lmeScore: 1724, lmeGain: "(+66)", cxScore: 600, cxGain: "(+600)", coresGain: "", attackGain: "" },
     { name: "Nubis", cores: "0+", attack: 0, coresNum: 0, role: "Member", lmeScore: 1685, lmeGain: "(+1685)", cxScore: 0, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+0)" },
     { name: "Koncalaz", cores: "0+", attack: 0, coresNum: 0, role: "Member", lmeScore: 1801, lmeGain: "(+1801)", cxScore: 0, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+0)" },
+    { name: "Mclovin404", cores: "55+", attack: 808000, coresNum: 55, role: "Removed", lmeScore: 592, lmeGain: "(+0)", cxScore: 1300, cxGain: "(+100)", coresGain: "(+0)", attackGain: "(+0.9K)" },
 ];
 
 // CX Color settings
