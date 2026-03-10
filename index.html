@@ -163,7 +163,27 @@
             from { text-shadow: 0 0 5px #ffd700; }
             to { text-shadow: 0 0 15px #ffd700, 0 0 20px #ffd700; }
         }
-        
+
+        /* ── Removed row styling ── */
+        tr.removed-row {
+            opacity: 0.45;
+        }
+        tr.removed-row td {
+            color: #718096;
+            border-bottom: 1px solid #2d3748;
+        }
+        tr.removed-row:hover {
+            background-color: #2a3141 !important;
+        }
+        tr.removed-row .rank-cell {
+            background: linear-gradient(135deg, #2d3748, #1a202c);
+            color: #718096;
+            letter-spacing: 2px;
+        }
+        tr.removed-row .cores-cell {
+            color: #4a5568;
+        }
+
         .export-btn {
             background: linear-gradient(135deg, #667eea, #764ba2);
             color: white;
@@ -179,6 +199,28 @@
         .export-btn:hover {
             transform: translateY(-2px);
             box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        /* Toggle Removed button — distinct grey style */
+        .toggle-removed-btn {
+            background: #2d3748;
+            color: #718096;
+            border: 2px solid #4a5568;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 13px;
+            transition: all 0.3s ease;
+        }
+        .toggle-removed-btn:hover {
+            border-color: #718096;
+            color: #a0aec0;
+        }
+        .toggle-removed-btn.active {
+            background: #374151;
+            border-color: #718096;
+            color: #a0aec0;
         }
 
         /* Calculated Stats Section */
@@ -283,6 +325,11 @@
                 padding: 10px 16px;
                 margin-left: 0;
             }
+
+            .toggle-removed-btn {
+                font-size: 13px;
+                padding: 10px 16px;
+            }
         }
     </style>
 </head>
@@ -298,7 +345,7 @@
         <!-- ═══ Unified Stat Grid (auto-calculated from playerData) ═══ -->
         <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin-bottom: 8px;">
 
-            <!-- Members (auto-counted) -->
+            <!-- Members (auto-counted, excludes Removed) -->
             <div class="calc-stat-card" style="border-color: #2c7a7b;">
                 <div class="calc-stat-label">Members</div>
                 <div class="calc-stat-value" style="color: #81e6d9;" id="calc-total-members">—</div>
@@ -383,6 +430,7 @@
                 <option value="name">Sort by Name</option>
                 <option value="role">Sort by Role</option>
             </select>
+            <button class="toggle-removed-btn" id="toggleRemovedBtn" onclick="toggleRemoved()">👻 Show Removed</button>
             <button class="export-btn" onclick="exportToCSV()">Export CSV</button>
             <button class="export-btn" onclick="openLMEHistory()">LME History</button>
             <button class="export-btn" onclick="openAlumni()">Alumni</button>
@@ -494,8 +542,32 @@
     <script src="playerData.js"></script>
 
     <script>
-        let filteredData = [...playerData];
+        // ══════════════════════════════════════════════
+        //  REMOVED ROLE STATE
+        // ══════════════════════════════════════════════
+        let showRemoved = false;
+
+        // Active players = everyone except Removed role
+        // Used for all stat calculations and member counts
+        const activePlayerData = playerData.filter(p => p.role !== 'Removed');
+
+        let filteredData = [...activePlayerData];
         let currentSort = 'lme';
+
+        function toggleRemoved() {
+            showRemoved = !showRemoved;
+            const btn = document.getElementById('toggleRemovedBtn');
+            if (showRemoved) {
+                btn.textContent = '👻 Hide Removed';
+                btn.classList.add('active');
+            } else {
+                btn.textContent = '👻 Show Removed';
+                btn.classList.remove('active');
+            }
+            // Rebuild filtered data respecting current search
+            const searchTerm = document.getElementById('searchInput').value;
+            filterData(searchTerm);
+        }
 
         // ══════════════════════════════════════════════
         //  UTILITY: Parse gain strings → numeric value
@@ -535,20 +607,20 @@
 
         // ══════════════════════════════════════════════
         //  AUTO-CALCULATE PLAYER STATS FROM playerData
+        //  • Uses activePlayerData (excludes Removed)
         //  • Top 30 ATK  → Total ATK, Avg ATK, ATK Gain
         //  • Top 30 Cores → Total, Avg, Gain
         //  • Top 30 LME  → Total, Avg, Gain
-        //  • All members → Total CX, CX Gain
+        //  • All active members → Total CX, CX Gain
         // ══════════════════════════════════════════════
         function calculateAndDisplayStats() {
-            // ── Total Members (auto-counted from playerData) ──
-            const totalMembers = playerData.length;
+            // ── Total Members (active only, excludes Removed) ──
+            const totalMembers = activePlayerData.length;
             document.getElementById('calc-total-members').textContent = totalMembers;
             document.getElementById('calc-members-cap').textContent   = totalMembers + ' / 40';
 
             // ── Top 30 by ATK ──
-            // Prev ATK = current attack minus the gain string (handles new members correctly)
-            const withPrevATK = playerData.map(p => ({
+            const withPrevATK = activePlayerData.map(p => ({
                 ...p,
                 prevATK: p.attack - parseGainValue(p.attackGain)
             }));
@@ -560,8 +632,7 @@
             const avgATK        = totalATK / 30;
 
             // ── Top 30 by Cores ──
-            // Same prev-top-30 approach to avoid counting new members' full cores as gains
-            const withPrevCores = playerData.map(p => ({
+            const withPrevCores = activePlayerData.map(p => ({
                 ...p,
                 prevCores: p.coresNum - parseGainValue(p.coresGain)
             }));
@@ -573,14 +644,12 @@
             const avgCores        = totalCores / 30;
 
             // ── Top 30 by LME (current week) ──
-            const byLME    = [...playerData].sort((a, b) => b.lmeScore - a.lmeScore).slice(0, 30);
+            const byLME    = [...activePlayerData].sort((a, b) => b.lmeScore - a.lmeScore).slice(0, 30);
             const totalLME = byLME.reduce((s, p) => s + p.lmeScore, 0);
             const avgLME   = totalLME / 30;
 
-            // Prev week: compute prev score for ALL players, then take top 30 of those.
-            // This correctly handles new members, comebacks, and players who fell out —
-            // their prev scores compete fairly for last week's top 30 spots.
-            const byLMEPrev    = [...playerData]
+            // Prev week top 30 LME
+            const byLMEPrev    = [...activePlayerData]
                 .map(p => ({ ...p, prevScore: p.lmeScore - parseGainValue(p.lmeGain) }))
                 .sort((a, b) => b.prevScore - a.prevScore)
                 .slice(0, 30);
@@ -588,10 +657,9 @@
             const prevAvgLME   = prevTotalLME / 30;
             const totalLMEGain = totalLME - prevTotalLME;
 
-            // ── All members: CX ──
-            // Simple sum — CX only ever goes up, so total gain = sum of all individual gains.
-            const totalCX     = playerData.reduce((s, p) => s + p.cxScore, 0);
-            const totalCXGain = playerData.reduce((s, p) => s + parseGainValue(p.cxGain), 0);
+            // ── All active members: CX ──
+            const totalCX     = activePlayerData.reduce((s, p) => s + p.cxScore, 0);
+            const totalCXGain = activePlayerData.reduce((s, p) => s + parseGainValue(p.cxGain), 0);
 
             // ── Update stat cards ──
             document.getElementById('calc-total-atk').textContent      = formatNumber(totalATK);
@@ -661,14 +729,11 @@
         //  LUNAR POINTS
         //  Baseline: clanStats.lunarPoints (1225)
         //  Changes calculated from LME #31 onward only
-        //  Champion: 1st +20 / 2nd +10 / 3rd -10 / 4th -20
-        //  Legend:   1st +30 / 2nd +15 / 3rd  +5 / 4th  -5
         // ══════════════════════════════════════════════
         function calculateLunarPointsFromBaseline() {
             const CHAMPION = { 1: 20,  2: 10,  3: -10, 4: -20 };
             const LEGEND   = { 1: 30,  2: 15,  3:   5, 4:  -5 };
 
-            // Cumulative delta from LME 31 onward → used for the correct total
             let delta = 0;
             lmeHistory.forEach(lme => {
                 if (lme.lmeNumber < 31) return;
@@ -677,7 +742,6 @@
                 else if (league.includes('legend')) delta += (LEGEND[lme.rank]   || 0);
             });
 
-            // Last-week gain → only the most recent LME entry (lmeHistory[0])
             let lastGain = 0;
             if (lmeHistory.length > 0) {
                 const latest = lmeHistory[0];
@@ -688,11 +752,11 @@
                 }
             }
 
-            const baseline = clanStats.lunarPoints; // 1225
+            const baseline = clanStats.lunarPoints;
             return { total: baseline + delta, delta: lastGain };
         }
 
-        // Calculate Secret Score based on LME history (existing formula kept intact)
+        // Calculate Secret Score based on LME history
         function calculateSecretScore() {
             let rankFactor = 1.0;
             const reversedHistory = [...lmeHistory].reverse();
@@ -706,7 +770,6 @@
             const { total: lunarPts, delta } = calculateLunarPointsFromBaseline();
             const secretScore = lunarPts * rankFactor;
 
-            // Update main page Lunar Points card
             document.getElementById('lunarPoints').textContent = lunarPts;
             if (delta !== 0) {
                 const sign = delta > 0 ? '+' : '';
@@ -718,13 +781,12 @@
                     '<span class="gain-neutral">(+0)</span>';
             }
 
-            // Update history modal
             document.getElementById('historyLunarPoints').textContent  = lunarPts;
             document.getElementById('historyRankFactor').textContent   = rankFactor.toFixed(4);
             document.getElementById('historySecretScore').textContent  = secretScore.toFixed(1);
         }
 
-        // Load LME History into modal (now includes Lunar Points column)
+        // Load LME History into modal
         function loadLMEHistory() {
             const tbody = document.getElementById('lmeHistoryBody');
             tbody.innerHTML = '';
@@ -742,7 +804,6 @@
                     rankDisplay = `<span style="color: ${rankColors[lme.rank] || '#f56565'}; font-weight: 600;">#${lme.rank}</span>`;
                 }
 
-                // Lunar points column
                 const lp = getLunarPointsForLME(lme);
                 let lpDisplay;
                 if (lp === null) {
@@ -797,16 +858,21 @@
         function renderTable() {
             const tbody = document.getElementById('tableBody');
             tbody.innerHTML = '';
-            
-            filteredData.forEach((player, index) => {
+
+            // Separate active players from Removed
+            const activePlayers  = filteredData.filter(p => p.role !== 'Removed');
+            const removedPlayers = filteredData.filter(p => p.role === 'Removed');
+
+            // Render active players with real rank numbers
+            activePlayers.forEach((player, index) => {
                 const row = document.createElement('tr');
-                
+
                 let nameColor = '#f7fafc';
                 let nameClass = '';
                 if      (player.role === 'Leader')       { nameColor = '#fc8181'; }
                 else if (player.role === 'Vice-Leader')  { nameColor = '#ed8936'; }
                 else if (player.role === 'Glory Member') { nameColor = '#ffd700'; nameClass = 'role-glorymember'; }
-                
+
                 row.innerHTML = `
                     <td class="rank-cell">${index + 1}</td>
                     <td class="name-cell ${nameClass}" style="color: ${nameColor};">${player.name}</td>
@@ -836,39 +902,107 @@
                 `;
                 tbody.appendChild(row);
             });
+
+            // Render Removed players at the bottom (only if showRemoved is true)
+            if (showRemoved && removedPlayers.length > 0) {
+                // Thin separator row
+                const sep = document.createElement('tr');
+                sep.innerHTML = `<td colspan="6" style="background: #1a202c; padding: 4px; text-align: center; font-size: 10px; color: #4a5568; letter-spacing: 2px; text-transform: uppercase; border-bottom: 1px solid #2d3748;">— Removed —</td>`;
+                tbody.appendChild(sep);
+
+                removedPlayers.forEach(player => {
+                    const row = document.createElement('tr');
+                    row.classList.add('removed-row');
+
+                    row.innerHTML = `
+                        <td class="rank-cell" style="color: #4a5568; letter-spacing: 2px;">—</td>
+                        <td class="name-cell" style="color: #4a5568;">${player.name}</td>
+                        <td class="cores-cell" style="color: #4a5568;">${player.cores}
+                            ${player.coresGain ? `<span style="color: #4a5568; font-size: 10px; margin-left: 2px; display: block;">${player.coresGain}</span>` : ''}
+                        </td>
+                        <td style="text-align: center; font-weight: 600; color: #4a5568;">
+                            ${formatNumber(player.attack)}
+                            ${player.attackGain ? `<span style="color: #4a5568; font-size: 10px; margin-left: 2px; display: block;">${player.attackGain}</span>` : ''}
+                        </td>
+                        <td style="text-align: center; font-weight: 600; color: #4a5568;">
+                            ${player.lmeScore || 0}
+                            ${player.lmeGain ? `<span style="color: #4a5568; font-size: 11px; margin-left: 4px;">${player.lmeGain}</span>` : ''}
+                        </td>
+                        <td style="text-align: center; font-weight: 600; color: #4a5568;">
+                            ${player.cxScore}
+                            ${player.cxGain ? `<span style="color: #4a5568; font-size: 10px; margin-left: 2px; display: block;">${player.cxGain}</span>` : ''}
+                        </td>
+                    `;
+                    tbody.appendChild(row);
+                });
+            }
         }
 
         function sortData(criteria) {
             currentSort = criteria;
+            const roleOrder = { 'Leader': 1, 'Vice-Leader': 2, 'Glory Member': 3, 'Member': 4, 'Removed': 99 };
+
             switch(criteria) {
-                case 'name':   filteredData.sort((a, b) => a.name.localeCompare(b.name)); break;
-                case 'cores':  filteredData.sort((a, b) => b.coresNum - a.coresNum); break;
-                case 'attack': filteredData.sort((a, b) => b.attack - a.attack); break;
-                case 'lme':    filteredData.sort((a, b) => b.lmeScore - a.lmeScore); break;
-                case 'cx':     filteredData.sort((a, b) => b.cxScore - a.cxScore); break;
-                case 'role': {
-                    const roleOrder = { 'Leader': 1, 'Vice-Leader': 2, 'Glory Member': 3, 'Member': 4 };
+                case 'name':
+                    filteredData.sort((a, b) => {
+                        if (a.role === 'Removed' && b.role !== 'Removed') return 1;
+                        if (b.role === 'Removed' && a.role !== 'Removed') return -1;
+                        return a.name.localeCompare(b.name);
+                    });
+                    break;
+                case 'cores':
+                    filteredData.sort((a, b) => {
+                        if (a.role === 'Removed' && b.role !== 'Removed') return 1;
+                        if (b.role === 'Removed' && a.role !== 'Removed') return -1;
+                        return b.coresNum - a.coresNum;
+                    });
+                    break;
+                case 'attack':
+                    filteredData.sort((a, b) => {
+                        if (a.role === 'Removed' && b.role !== 'Removed') return 1;
+                        if (b.role === 'Removed' && a.role !== 'Removed') return -1;
+                        return b.attack - a.attack;
+                    });
+                    break;
+                case 'lme':
+                    filteredData.sort((a, b) => {
+                        if (a.role === 'Removed' && b.role !== 'Removed') return 1;
+                        if (b.role === 'Removed' && a.role !== 'Removed') return -1;
+                        return b.lmeScore - a.lmeScore;
+                    });
+                    break;
+                case 'cx':
+                    filteredData.sort((a, b) => {
+                        if (a.role === 'Removed' && b.role !== 'Removed') return 1;
+                        if (b.role === 'Removed' && a.role !== 'Removed') return -1;
+                        return b.cxScore - a.cxScore;
+                    });
+                    break;
+                case 'role':
                     filteredData.sort((a, b) => {
                         const rA = roleOrder[a.role] || 5;
                         const rB = roleOrder[b.role] || 5;
                         return rA !== rB ? rA - rB : b.lmeScore - a.lmeScore;
                     });
                     break;
-                }
             }
             renderTable();
         }
 
         function filterData(searchTerm) {
-            filteredData = playerData.filter(p => p.name.toLowerCase().includes(searchTerm.toLowerCase()));
+            // Base pool: active players always, Removed only if showRemoved
+            const pool = showRemoved ? playerData : activePlayerData;
+            filteredData = pool.filter(p => p.name.toLowerCase().includes(searchTerm.toLowerCase()));
             sortData(currentSort);
         }
 
         function exportToCSV() {
+            // CSV only exports active players (no Removed)
+            const exportData = filteredData.filter(p => p.role !== 'Removed');
             const headers = ['Rank', 'Player Name', 'Relic Cores', 'Cores Gain', 'ATK', 'ATK Gain', 'LME Score', 'LME Gain', 'CX', 'CX Gain'];
             const csvContent = [
                 headers.join(','),
-                ...filteredData.map((player, index) => [
+                ...exportData.map((player, index) => [
                     index + 1,
                     `"${player.name}"`,
                     player.cores,
