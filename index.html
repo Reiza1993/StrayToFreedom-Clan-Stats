@@ -164,26 +164,6 @@
             to { text-shadow: 0 0 15px #ffd700, 0 0 20px #ffd700; }
         }
 
-        /* ── Removed row styling ── */
-        tr.removed-row {
-            opacity: 0.45;
-        }
-        tr.removed-row td {
-            color: #718096;
-            border-bottom: 1px solid #2d3748;
-        }
-        tr.removed-row:hover {
-            background-color: #2a3141 !important;
-        }
-        tr.removed-row .rank-cell {
-            background: linear-gradient(135deg, #2d3748, #1a202c);
-            color: #718096;
-            letter-spacing: 2px;
-        }
-        tr.removed-row .cores-cell {
-            color: #4a5568;
-        }
-
         .export-btn {
             background: linear-gradient(135deg, #667eea, #764ba2);
             color: white;
@@ -430,7 +410,6 @@
                 <option value="name">Sort by Name</option>
                 <option value="role">Sort by Role</option>
             </select>
-            <button class="toggle-removed-btn" id="toggleRemovedBtn" onclick="toggleRemoved()">👻 Show Removed</button>
             <button class="export-btn" onclick="exportToCSV()">Export CSV</button>
             <button class="export-btn" onclick="openLMEHistory()">LME History</button>
             <button class="export-btn" onclick="openAlumni()">Alumni</button>
@@ -542,32 +521,12 @@
     <script src="playerData.js"></script>
 
     <script>
-        // ══════════════════════════════════════════════
-        //  REMOVED ROLE STATE
-        // ══════════════════════════════════════════════
-        let showRemoved = false;
-
         // Active players = everyone except Removed role
         // Used for all stat calculations and member counts
         const activePlayerData = playerData.filter(p => p.role !== 'Removed');
 
         let filteredData = [...activePlayerData];
         let currentSort = 'lme';
-
-        function toggleRemoved() {
-            showRemoved = !showRemoved;
-            const btn = document.getElementById('toggleRemovedBtn');
-            if (showRemoved) {
-                btn.textContent = '👻 Hide Removed';
-                btn.classList.add('active');
-            } else {
-                btn.textContent = '👻 Show Removed';
-                btn.classList.remove('active');
-            }
-            // Rebuild filtered data respecting current search
-            const searchTerm = document.getElementById('searchInput').value;
-            filterData(searchTerm);
-        }
 
         // ══════════════════════════════════════════════
         //  UTILITY: Parse gain strings → numeric value
@@ -859,12 +818,10 @@
             const tbody = document.getElementById('tableBody');
             tbody.innerHTML = '';
 
-            // Separate active players from Removed
-            const activePlayers  = filteredData.filter(p => p.role !== 'Removed');
-            const removedPlayers = filteredData.filter(p => p.role === 'Removed');
+            // Removed players are always invisible — filter them out
+            const visiblePlayers = filteredData.filter(p => p.role !== 'Removed');
 
-            // Render active players with real rank numbers
-            activePlayers.forEach((player, index) => {
+            visiblePlayers.forEach((player, index) => {
                 const row = document.createElement('tr');
 
                 let nameColor = '#f7fafc';
@@ -903,39 +860,6 @@
                 tbody.appendChild(row);
             });
 
-            // Render Removed players at the bottom (only if showRemoved is true)
-            if (showRemoved && removedPlayers.length > 0) {
-                // Thin separator row
-                const sep = document.createElement('tr');
-                sep.innerHTML = `<td colspan="6" style="background: #1a202c; padding: 4px; text-align: center; font-size: 10px; color: #4a5568; letter-spacing: 2px; text-transform: uppercase; border-bottom: 1px solid #2d3748;">— Removed —</td>`;
-                tbody.appendChild(sep);
-
-                removedPlayers.forEach(player => {
-                    const row = document.createElement('tr');
-                    row.classList.add('removed-row');
-
-                    row.innerHTML = `
-                        <td class="rank-cell" style="color: #4a5568; letter-spacing: 2px;">—</td>
-                        <td class="name-cell" style="color: #4a5568;">${player.name}</td>
-                        <td class="cores-cell" style="color: #4a5568;">${player.cores}
-                            ${player.coresGain ? `<span style="color: #4a5568; font-size: 10px; margin-left: 2px; display: block;">${player.coresGain}</span>` : ''}
-                        </td>
-                        <td style="text-align: center; font-weight: 600; color: #4a5568;">
-                            ${formatNumber(player.attack)}
-                            ${player.attackGain ? `<span style="color: #4a5568; font-size: 10px; margin-left: 2px; display: block;">${player.attackGain}</span>` : ''}
-                        </td>
-                        <td style="text-align: center; font-weight: 600; color: #4a5568;">
-                            ${player.lmeScore || 0}
-                            ${player.lmeGain ? `<span style="color: #4a5568; font-size: 11px; margin-left: 4px;">${player.lmeGain}</span>` : ''}
-                        </td>
-                        <td style="text-align: center; font-weight: 600; color: #4a5568;">
-                            ${player.cxScore}
-                            ${player.cxGain ? `<span style="color: #4a5568; font-size: 10px; margin-left: 2px; display: block;">${player.cxGain}</span>` : ''}
-                        </td>
-                    `;
-                    tbody.appendChild(row);
-                });
-            }
         }
 
         function sortData(criteria) {
@@ -990,9 +914,7 @@
         }
 
         function filterData(searchTerm) {
-            // Base pool: active players always, Removed only if showRemoved
-            const pool = showRemoved ? playerData : activePlayerData;
-            filteredData = pool.filter(p => p.name.toLowerCase().includes(searchTerm.toLowerCase()));
+            filteredData = activePlayerData.filter(p => p.name.toLowerCase().includes(searchTerm.toLowerCase()));
             sortData(currentSort);
         }
 
