@@ -5,7 +5,7 @@
 const playerData = [
     { name: "神Sterben死", cores: "165+", attack: 1992800, coresNum: 165, role: "Leader", lmeScore: 2201, lmeGain: "(+17)", cxScore: 2400, cxGain: "(+600)", coresGain: "(+5)", attackGain: "(+31.3K)" },
     { name: "Cunner88", cores: "150+", attack: 1814300, coresNum: 150, role: "Vice-Leader", lmeScore: 1857, lmeGain: "(-90)", cxScore: 1900, cxGain: "(+400)", coresGain: "(+0)", attackGain: "(+0)" },
-    { name: "PastalaVista", cores: "135+", attack: 1475200, coresNum: 135, role: "Glory Member", lmeScore: 0, lmeGain: "(-1667)", cxScore: 2300, cxGain: "(+700)", coresGain: "(+0)", attackGain: "(+3.5K)" },
+    { name: "PastalaVista", cores: "135+", attack: 1475200, coresNum: 135, role: "Glory Member", lmeScore: 1683, lmeGain: "(+16)", cxScore: 2300, cxGain: "(+700)", coresGain: "(+0)", attackGain: "(+3.5K)" },
     { name: "Gritchen", cores: "140+", attack: 1613800, coresNum: 140, role: "Glory Member", lmeScore: 1245, lmeGain: "(+39)", cxScore: 2200, cxGain: "(+700)", coresGain: "(+0)", attackGain: "(+4.5K)" },
     { name: "命Waiora癒", cores: "140+", attack: 1373500, coresNum: 140, role: "Member", lmeScore: 1568, lmeGain: "(+36)", cxScore: 2300, cxGain: "(+700)", coresGain: "(+0)", attackGain: "(+0)" },
     { name: "MMM|Mina475", cores: "120+", attack: 1421200, coresNum: 120, role: "Member", lmeScore: 988, lmeGain: "(-26)", cxScore: 700, cxGain: "(+100)", coresGain: "(+10)", attackGain: "(+42.4K)" },
@@ -23,7 +23,7 @@ const playerData = [
     { name: "Player 66607264", cores: "110+", attack: 1105000, coresNum: 110, role: "Glory Member", lmeScore: 904, lmeGain: "(+17)", cxScore: 2500, cxGain: "(+700)", coresGain: "(-2)", attackGain: "(+13.7K)" },
     { name: "Epic|W", cores: "70+", attack: 1064000, coresNum: 70, role: "Member", lmeScore: 604, lmeGain: "(+4)", cxScore: 1300, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+0)" },
     { name: "THJF1948ㅣStray", cores: "90+", attack: 1064000, coresNum: 90, role: "Member", lmeScore: 794, lmeGain: "(+21)", cxScore: 600, cxGain: "(+300)", coresGain: "(+0)", attackGain: "(+0.4K)" },
-    { name: "SUJAY", cores: "130+", attack: 1196200, coresNum: 130, role: "Member", lmeScore: 0, lmeGain: "(-801)", cxScore: 0, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+134.2K)" },
+    { name: "SUJAY", cores: "130+", attack: 1196200, coresNum: 130, role: "Member", lmeScore: 773, lmeGain: "(-28)", cxScore: 0, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+134.2K)" },
     { name: "Rzzza", cores: "85+", attack: 1050000, coresNum: 85, role: "Member", lmeScore: 801, lmeGain: "(+8)", cxScore: 2200, cxGain: "(+800)", coresGain: "(+0)", attackGain: "(+1.3K)" },
     { name: "Belthazar", cores: "80+", attack: 1053100, coresNum: 80, role: "Glory Member", lmeScore: 647, lmeGain: "(+6)", cxScore: 2500, cxGain: "(+700)", coresGain: "(+0)", attackGain: "(+11.8K)" },
     { name: "b0ss", cores: "100+", attack: 1011400, coresNum: 100, role: "Member", lmeScore: 824, lmeGain: "(+32)", cxScore: 1300, cxGain: "(+100)", coresGain: "(+0)", attackGain: "(+12.7K)" },
