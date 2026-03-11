@@ -18,7 +18,7 @@ const playerData = [
     { name: "MrPlusUltra", cores: "100+", attack: 1191600, coresNum: 100, role: "Member", lmeScore: 934, lmeGain: "(-25)", cxScore: 900, cxGain: "(+400)", coresGain: "(+0)", attackGain: "(+0)" },
     { name: "BobBobberson", cores: "105+", attack: 1192800, coresNum: 105, role: "Member", lmeScore: 811, lmeGain: "(+5)", cxScore: 2300, cxGain: "(+900)", coresGain: "(+0)", attackGain: "(+3.5K)" },
     { name: "HonoraryCurve51", cores: "130+", attack: 1109900, coresNum: 130, role: "Member", lmeScore: 0, lmeGain: "(-820)", cxScore: 700, cxGain: "(+0)", coresGain: "(-2)", attackGain: "(+0)" },
-    { name: "N0M3rcy", cores: "85+", attack: 1123300, coresNum: 85, role: "Glory Member", lmeScore: 0, lmeGain: "(-636)", cxScore: 2500, cxGain: "(+900)", coresGain: "(+0)", attackGain: "(+14.2K)" },
+    { name: "N0M3rcy", cores: "85+", attack: 1123300, coresNum: 85, role: "Glory Member", lmeScore: 638, lmeGain: "(+2)", cxScore: 2500, cxGain: "(+900)", coresGain: "(+0)", attackGain: "(+14.2K)" },
     { name: "魂Hobin357死", cores: "95+", attack: 1260200, coresNum: 95, role: "Glory Member", lmeScore: 0, lmeGain: "(-826)", cxScore: 2300, cxGain: "(+600)", coresGain: "(+5)", attackGain: "(+164.8K)" },
     { name: "Player 66607264", cores: "110+", attack: 1105000, coresNum: 110, role: "Glory Member", lmeScore: 930, lmeGain: "(+43)", cxScore: 2500, cxGain: "(+700)", coresGain: "(-2)", attackGain: "(+13.7K)" },
     { name: "Epic|W", cores: "70+", attack: 1064000, coresNum: 70, role: "Member", lmeScore: 604, lmeGain: "(+4)", cxScore: 1300, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+0)" },
@@ -44,7 +44,7 @@ const playerData = [
     { name: "Nubis", cores: "0+", attack: 0, coresNum: 0, role: "Member", lmeScore: 1685, lmeGain: "(+1685)", cxScore: 0, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+0)" },
     { name: "Koncalaz", cores: "0+", attack: 0, coresNum: 0, role: "Member", lmeScore: 1808, lmeGain: "(+1808)", cxScore: 0, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+0)" },
     { name: "Mclovin404", cores: "55+", attack: 808000, coresNum: 55, role: "Removed", lmeScore: 0, lmeGain: "(-592)", cxScore: 1300, cxGain: "(+100)", coresGain: "(+0)", attackGain: "(+0.9K)" },
-    { name: "6J4", cores: "55+", attack: 914500, coresNum: 55, role: "Removed", lmeScore: 0, lmeGain: "(-593)", cxScore: 400, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+18.2K)" },
+    { name: "6J4", cores: "0", attack: 914500, coresNum: 55, role: "Removed", lmeScore: 0, lmeGain: "(-593)", cxScore: 400, cxGain: "(+0)", coresGain: "(0)", attackGain: "(+18.2K)" },
 ];
 
 // CX Color settings
