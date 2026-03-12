@@ -525,6 +525,13 @@
         // Used for all stat calculations and member counts
         const activePlayerData = playerData.filter(p => p.role !== 'Removed');
 
+        // CX colour thresholds — topScore is auto-calculated from live data
+        const cxSettings = {
+            topScore:         Math.max(0, ...activePlayerData.map(p => p.cxScore)),
+            greenThreshold:   0.7,   // 70% of top score → green
+            yellowThreshold:  0.4    // 40% of top score → yellow (below = red)
+        };
+
         let filteredData = [...activePlayerData];
         let currentSort = 'lme';
 
