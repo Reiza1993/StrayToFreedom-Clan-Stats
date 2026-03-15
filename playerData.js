@@ -1,6 +1,6 @@
 // playerData.js
 // Freedomˢᵗʳᵃʸ Clan Player Statistics  
-// Last Updated: Week 45 - March 2026 (CX Score Update)
+// Last Updated: Week 44 - March 2026 (CX Scores Update)
 
 const playerData = [
     { name: "神Sterben死", cores: "165+", attack: 2008400, coresNum: 165, role: "Leader", lmeScore: 2224, lmeGain: "(+40)", cxScore: 400, cxGain: "(+400)", coresGain: "(+0)", attackGain: "(+15.6K)" },
@@ -12,7 +12,7 @@ const playerData = [
     { name: "盾Heathcliff剣", cores: "145+", attack: 1340200, coresNum: 145, role: "Member", lmeScore: 1605, lmeGain: "(+17)", cxScore: 200, cxGain: "(+200)", coresGain: "(+0)", attackGain: "(+0)" },
     { name: "TieForFirstYo", cores: "105+", attack: 1283200, coresNum: 105, role: "Member", lmeScore: 1407, lmeGain: "(+52)", cxScore: 300, cxGain: "(+300)", coresGain: "(+0)", attackGain: "(+1.0K)" },
     { name: "Player 32236991", cores: "165+", attack: 1489500, coresNum: 165, role: "Member", lmeScore: 1374, lmeGain: "(+286)", cxScore: 0, cxGain: "(+0)", coresGain: "(+15)", attackGain: "(+43.0K)" },
-    { name: "HakiLuffy", cores: "125+", attack: 1276900, coresNum: 125, role: "Member", lmeScore: 1244, lmeGain: "(+34)", cxScore: 400, cxGain: "(+400)", coresGain: "(+0)", attackGain: "(+7.7K)" },
+    { name: "HakiLuffy", cores: "125+", attack: 1276900, coresNum: 125, role: "Glory Member", lmeScore: 1244, lmeGain: "(+34)", cxScore: 400, cxGain: "(+400)", coresGain: "(+0)", attackGain: "(+7.7K)" },
     { name: "bimbabo", cores: "150+", attack: 1269800, coresNum: 150, role: "Member", lmeScore: 999, lmeGain: "(+103)", cxScore: 200, cxGain: "(+200)", coresGain: "(+5)", attackGain: "(+28.3K)" },
     { name: "EMBALOCO", cores: "140+", attack: 1220200, coresNum: 140, role: "Member", lmeScore: 916, lmeGain: "(+56)", cxScore: 400, cxGain: "(+400)", coresGain: "(+0)", attackGain: "(+9.5K)" },
     { name: "MrPlusUltra", cores: "105+", attack: 1207900, coresNum: 105, role: "Member", lmeScore: 934, lmeGain: "(-25)", cxScore: 0, cxGain: "(+0)", coresGain: "(+5)", attackGain: "(+16.3K)" },
@@ -20,7 +20,7 @@ const playerData = [
     { name: "HonoraryCurve51", cores: "130+", attack: 1116400, coresNum: 130, role: "Member", lmeScore: 817, lmeGain: "(-3)", cxScore: 0, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+6.5K)" },
     { name: "N0M3rcy", cores: "90+", attack: 1145300, coresNum: 90, role: "Member", lmeScore: 638, lmeGain: "(+2)", cxScore: 300, cxGain: "(+300)", coresGain: "(+5)", attackGain: "(+22.0K)" },
     { name: "魂Hobin357死", cores: "95+", attack: 1268800, coresNum: 95, role: "Member", lmeScore: 762, lmeGain: "(-64)", cxScore: 100, cxGain: "(+100)", coresGain: "(+0)", attackGain: "(+8.6K)" },
-    { name: "Player 66607264", cores: "110+", attack: 1118300, coresNum: 110, role: "Member", lmeScore: 930, lmeGain: "(+43)", cxScore: 400, cxGain: "(+400)", coresGain: "(+0)", attackGain: "(+13.3K)" },
+    { name: "Player 66607264", cores: "110+", attack: 1118300, coresNum: 110, role: "Glory Member", lmeScore: 930, lmeGain: "(+43)", cxScore: 400, cxGain: "(+400)", coresGain: "(+0)", attackGain: "(+13.3K)" },
     { name: "Epic|W", cores: "70+", attack: 1071000, coresNum: 70, role: "Member", lmeScore: 604, lmeGain: "(+4)", cxScore: 300, cxGain: "(+300)", coresGain: "(+0)", attackGain: "(+7.0K)" },
     { name: "THJF1948ㅣStray", cores: "90+", attack: 1110400, coresNum: 90, role: "Member", lmeScore: 794, lmeGain: "(+21)", cxScore: 200, cxGain: "(+200)", coresGain: "(+0)", attackGain: "(+46.4K)" },
     { name: "SUJAY", cores: "130+", attack: 1196200, coresNum: 130, role: "Member", lmeScore: 773, lmeGain: "(-28)", cxScore: 0, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+0)" },
@@ -40,12 +40,19 @@ const playerData = [
     { name: "Pookaz", cores: "45+", attack: 739500, coresNum: 45, role: "Member", lmeScore: 513, lmeGain: "(+6)", cxScore: 400, cxGain: "(+400)", coresGain: "(+0)", attackGain: "(+3.7K)" },
     { name: "HannaM", cores: "95+", attack: 831600, coresNum: 95, role: "Member", lmeScore: 619, lmeGain: "(+5)", cxScore: 400, cxGain: "(+400)", coresGain: "(+45)", attackGain: "(+130.4K)" },
     { name: "Player 78792329", cores: "90+", attack: 684400, coresNum: 90, role: "Member", lmeScore: 575, lmeGain: "(+1)", cxScore: 100, cxGain: "(+100)", coresGain: "(+0)", attackGain: "(+9.9K)" },
-    { name: "han", cores: "120+", attack: 1478400, coresNum: 120, role: "Member", lmeScore: 1796, lmeGain: "(+138)", cxScore: 400, cxGain: "(+400)", coresGain: "(+10)", attackGain: "(+210.4K)" },
+    { name: "han", cores: "120+", attack: 1478400, coresNum: 120, role: "Glory Member", lmeScore: 1796, lmeGain: "(+138)", cxScore: 400, cxGain: "(+400)", coresGain: "(+10)", attackGain: "(+210.4K)" },
     { name: "Nubis", cores: "155+", attack: 1508500, coresNum: 155, role: "Member", lmeScore: 1685, lmeGain: "(+1685)", cxScore: 400, cxGain: "(+400)", coresGain: "(+155)", attackGain: "(+1508.5K)" },
     { name: "Koncalaz", cores: "140+", attack: 1685700, coresNum: 140, role: "Member", lmeScore: 1808, lmeGain: "(+1808)", cxScore: 400, cxGain: "(+400)", coresGain: "(+140)", attackGain: "(+1685.7K)" },
 ];
 
+// CX Settings
+const cxSettings = {
+    topScore: 400,
+    greenThreshold: 300,
+    yellowThreshold: 100,
+};
+
 // Export for use in main application
 if (typeof module !== 'undefined' && module.exports) {
-    module.exports = { playerData };
-} 
+    module.exports = { playerData, cxSettings };
+}
