@@ -45,13 +45,6 @@ const playerData = [
     { name: "Koncalaz", cores: "140+", attack: 1685700, coresNum: 140, role: "Member", lmeScore: 1808, lmeGain: "(+1808)", cxScore: 400, cxGain: "(+400)", coresGain: "(+140)", attackGain: "(+1685.7K)" },
 ];
 
-// CX Settings
-const cxSettings = {
-    topScore: 400,
-    greenThreshold: 300,
-    yellowThreshold: 100,
-};
-
 // Export for use in main application
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = { playerData, cxSettings };
