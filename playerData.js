@@ -48,4 +48,4 @@ const playerData = [
 // Export for use in main application
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = { playerData };
-}
+} 
