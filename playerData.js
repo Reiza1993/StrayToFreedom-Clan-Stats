@@ -30,19 +30,21 @@ const playerData = [
     { name: "Lemminkäinen", cores: "85+", attack: 1056500, coresNum: 85, role: "Vice-Leader", lmeScore: 830, lmeGain: "(-3)", cxScore: 400, cxGain: "(+400)", coresGain: "(+0)", attackGain: "(+10.3K)" },
     { name: "lguinily", cores: "100+", attack: 978600, coresNum: 100, role: "Member", lmeScore: 607, lmeGain: "(+607)", cxScore: 300, cxGain: "(+300)", coresGain: "(+0)", attackGain: "(+14.2K)" },
     { name: "fesl", cores: "75+", attack: 967300, coresNum: 75, role: "Member", lmeScore: 679, lmeGain: "(+2)", cxScore: 100, cxGain: "(+100)", coresGain: "(+0)", attackGain: "(+8.4K)" },
-    { name: "Hiryu69", cores: "80+", attack: 956300, coresNum: 80, role: "Member", lmeScore: 612, lmeGain: "(+612)", cxScore: 0, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+0.3K)" },
+    { name: "Hiryu69", cores: "80+", attack: 956300, coresNum: 80, role: "Removed", lmeScore: 612, lmeGain: "(+612)", cxScore: 0, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+0.3K)" },
     { name: "groggen", cores: "85+", attack: 932000, coresNum: 85, role: "Member", lmeScore: 777, lmeGain: "(+54)", cxScore: 300, cxGain: "(+300)", coresGain: "(+5)", attackGain: "(+12.1K)" },
     { name: "KingRizzle", cores: "95+", attack: 981800, coresNum: 95, role: "Member", lmeScore: 817, lmeGain: "(+15)", cxScore: 300, cxGain: "(+300)", coresGain: "(+0)", attackGain: "(+6.7K)" },
     { name: "WeirdPlays", cores: "65+", attack: 894800, coresNum: 65, role: "Member", lmeScore: 606, lmeGain: "(+1)", cxScore: 200, cxGain: "(+200)", coresGain: "(+0)", attackGain: "(+2.8K)" },
     { name: "Bensayyten", cores: "65+", attack: 874100, coresNum: 65, role: "Member", lmeScore: 676, lmeGain: "(+45)", cxScore: 300, cxGain: "(+300)", coresGain: "(+0)", attackGain: "(+33.4K)" },
     { name: "mc2084", cores: "35+", attack: 797900, coresNum: 35, role: "Member", lmeScore: 569, lmeGain: "(+6)", cxScore: 400, cxGain: "(+400)", coresGain: "(+0)", attackGain: "(+0)" },
-    { name: "swifft", cores: "60+", attack: 740100, coresNum: 60, role: "Member", lmeScore: 603, lmeGain: "(+603)", cxScore: 0, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+0.2K)" },
+    { name: "swifft", cores: "60+", attack: 740100, coresNum: 60, role: "Removed", lmeScore: 603, lmeGain: "(+603)", cxScore: 0, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+0.2K)" },
     { name: "Pookaz", cores: "45+", attack: 739500, coresNum: 45, role: "Member", lmeScore: 513, lmeGain: "(+6)", cxScore: 400, cxGain: "(+400)", coresGain: "(+0)", attackGain: "(+3.7K)" },
     { name: "HannaM", cores: "95+", attack: 831600, coresNum: 95, role: "Member", lmeScore: 619, lmeGain: "(+5)", cxScore: 400, cxGain: "(+400)", coresGain: "(+45)", attackGain: "(+130.4K)" },
     { name: "Player 78792329", cores: "90+", attack: 684400, coresNum: 90, role: "Member", lmeScore: 575, lmeGain: "(+1)", cxScore: 100, cxGain: "(+100)", coresGain: "(+0)", attackGain: "(+9.9K)" },
     { name: "iruka", cores: "120+", attack: 1478400, coresNum: 120, role: "Glory Member", lmeScore: 1796, lmeGain: "(+138)", cxScore: 400, cxGain: "(+400)", coresGain: "(+10)", attackGain: "(+210.4K)" },
     { name: "Nubis", cores: "155+", attack: 1508500, coresNum: 155, role: "Member", lmeScore: 1685, lmeGain: "(+1685)", cxScore: 400, cxGain: "(+400)", coresGain: "(+155)", attackGain: "(+1508.5K)" },
     { name: "Koncalaz", cores: "140+", attack: 1685700, coresNum: 140, role: "Member", lmeScore: 1808, lmeGain: "(+1808)", cxScore: 400, cxGain: "(+400)", coresGain: "(+140)", attackGain: "(+1685.7K)" },
+    { name: "han", cores: "230+", attack: 2327384, coresNum: 230, role: "Member", lmeScore: 0, lmeGain: "(+0)", cxScore: 0, cxGain: "(+0)", coresGain: "(+230)", attackGain: "(+2327.3K)" },
+
 ];
 
 // Export for use in main application
