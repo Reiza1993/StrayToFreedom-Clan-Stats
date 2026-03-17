@@ -12,7 +12,7 @@ const clanStats = {
     lunarPoints: 1225,
 
     // Alumni count (update when members leave)
-    alumniCount: 56
+    alumniCount: 57
 };
 
 // LME History Data
@@ -294,7 +294,7 @@ const alumniMembers = [
     "BOBBYJANG", "slaterhoㅣStray", "lct404", "CrackJackㅣStray", "stray|alfred",
     "Cunner", "Shadowage", "HideOnBushs", "Asdgner", "GentleMonster", "ꕤSettꕤ", "playerxd",
     "AleisterCrowley", "Szoj", "Player 58934337", "OsG", "Slaterho", "CheesyBreadSticks",
-    "KusoYaroo", "cocacandy", "chiknstrip", "SmallBotoㅣStray", "Phley", "6J4",
+    "KusoYaroo", "cocacandy", "chiknstrip", "SmallBotoㅣStray", "Phley", "6J4","lguinily",
     "Mclovin404","Hiryu69","swifft",
 ];
 
