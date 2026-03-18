@@ -16,7 +16,7 @@ const playerData = [
     { name: "bimbabo", cores: "150+", attack: 1269800, coresNum: 150, role: "Member", lmeScore: 1016, lmeGain: "(+17)", cxScore: 200, cxGain: "(+200)", coresGain: "(+5)", attackGain: "(+28.3K)" },
     { name: "EMBALOCO", cores: "140+", attack: 1220200, coresNum: 140, role: "Member", lmeScore: 1028, lmeGain: "(+112)", cxScore: 400, cxGain: "(+400)", coresGain: "(+0)", attackGain: "(+9.5K)" },
     { name: "MrPlusUltra", cores: "105+", attack: 1207900, coresNum: 105, role: "Member", lmeScore: 948, lmeGain: "(+14)", cxScore: 0, cxGain: "(+0)", coresGain: "(+5)", attackGain: "(+16.3K)" },
-    { name: "BobBobberson", cores: "105+", attack: 1222600, coresNum: 105, role: "Member", lmeScore: 0, lmeGain: "(-811)", cxScore: 200, cxGain: "(+200)", coresGain: "(+0)", attackGain: "(+29.8K)" },
+    { name: "BobBobberson", cores: "105+", attack: 1222600, coresNum: 105, role: "Member", lmeScore: 801, lmeGain: "(-10)", cxScore: 200, cxGain: "(+200)", coresGain: "(+0)", attackGain: "(+29.8K)" },
     { name: "HonoraryCurve51", cores: "130+", attack: 1116400, coresNum: 130, role: "Member", lmeScore: 834, lmeGain: "(+17)", cxScore: 0, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+6.5K)" },
     { name: "N0M3rcy", cores: "90+", attack: 1145300, coresNum: 90, role: "Member", lmeScore: 653, lmeGain: "(+15)", cxScore: 300, cxGain: "(+300)", coresGain: "(+5)", attackGain: "(+22.0K)" },
     { name: "魂Hobin357死", cores: "95+", attack: 1268800, coresNum: 95, role: "Member", lmeScore: 848, lmeGain: "(+86)", cxScore: 100, cxGain: "(+100)", coresGain: "(+0)", attackGain: "(+8.6K)" },
