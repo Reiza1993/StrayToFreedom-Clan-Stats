@@ -29,7 +29,7 @@ const playerData = [
     { name: "b0ss", cores: "100+", attack: 1039700, coresNum: 100, role: "Member", lmeScore: 920, lmeGain: "(+35)", cxScore: 600, cxGain: "(+200)", coresGain: "(+0)", attackGain: "(+15.5K)" },
     { name: "Lemminkäinen", cores: "85+", attack: 1096200, coresNum: 85, role: "Vice-Leader", lmeScore: 971, lmeGain: "(+54)", cxScore: 1100, cxGain: "(+300)", coresGain: "(+0)", attackGain: "(+39.7K)" },
     { name: "lguinily", cores: "0", attack: 0, coresNum: 0, role: "Removed", lmeScore: 0, lmeGain: "(-607)", cxScore: 500, cxGain: "(+0)", coresGain: "(-100)", attackGain: "(-978.6K)" },
-    { name: "fesl", cores: "80+", attack: 1007100, coresNum: 80, role: "Member", lmeScore: 0, lmeGain: "(-742)", cxScore: 1100, cxGain: "(+300)", coresGain: "(+5)", attackGain: "(+39.8K)" },
+    { name: "fesl", cores: "80+", attack: 1007100, coresNum: 80, role: "Member", lmeScore: 793, lmeGain: "(-+51)", cxScore: 1100, cxGain: "(+300)", coresGain: "(+5)", attackGain: "(+39.8K)" },
     { name: "groggen", cores: "85+", attack: 950700, coresNum: 85, role: "Member", lmeScore: 822, lmeGain: "(+32)", cxScore: 900, cxGain: "(+100)", coresGain: "(+0)", attackGain: "(+18.7K)" },
     { name: "KingRizzle", cores: "95+", attack: 988400, coresNum: 95, role: "Member", lmeScore: 843, lmeGain: "(+23)", cxScore: 1000, cxGain: "(+300)", coresGain: "(+0)", attackGain: "(+6.6K)" },
     { name: "WeirdPlays", cores: "0", attack: 0, coresNum: 0, role: "Removed", lmeScore: 0, lmeGain: "(-613)", cxScore: 500, cxGain: "(+0)", coresGain: "(-65)", attackGain: "(-909.1K)" },
