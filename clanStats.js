@@ -1,6 +1,6 @@
 // clanStats.js
 // Freedomˢᵗʳᵃʸ Clan Statistics
-// Last Updated: Week 48 - March 2026
+// Last Updated: Week 51 - April 2026 (LME #36 | Waiora & Aiko to Alumni)
 
 const clanStats = {
     // Current LME information (update weekly)
@@ -12,12 +12,20 @@ const clanStats = {
     lunarPoints: 1225,
 
     // Alumni count (update when members leave)
-    alumniCount: 59
+    alumniCount: 61
 };
 
 // LME History Data
 // Add new results to the TOP of this array
 const lmeHistory = [
+    {
+        lmeNumber: 36,
+        rank: 2,
+        rankImage: "https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Rank2.png",
+        atkDefPoints: 5,
+        medals: 62570,
+        league: "Champion"
+    },
     {
         lmeNumber: 35,
         rank: 2,
@@ -311,7 +319,8 @@ const alumniMembers = [
     "Cunner", "Shadowage", "HideOnBushs", "Asdgner", "GentleMonster", "ꕤSettꕤ", "playerxd",
     "AleisterCrowley", "Szoj", "Player 58934337", "OsG", "Slaterho", "CheesyBreadSticks",
     "KusoYaroo", "cocacandy", "chiknstrip", "SmallBotoㅣStray", "Phley", "6J4", "lguinily",
-    "Mclovin404", "Hiryu69", "swifft", "WeirdPlays","mc2028."
+    "Mclovin404", "Hiryu69", "swifft", "WeirdPlays", "mc2028.",
+    "命Waiora癒", "аіко"
 ];
 
 // Export for use in main application
