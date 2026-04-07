@@ -164,6 +164,17 @@
             to { text-shadow: 0 0 15px #ffd700, 0 0 20px #ffd700; }
         }
 
+        .role-eternalglorymember {
+            background: linear-gradient(90deg, #a78bfa, #ffffff, #a78bfa);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: shine 4s linear infinite;
+            filter: drop-shadow(0 0 6px rgba(167, 139, 250, 0.6));
+            font-weight: 700;
+        }
+
         .export-btn {
             background: linear-gradient(135deg, #667eea, #764ba2);
             color: white;
@@ -419,6 +430,7 @@
         <div style="display: flex; justify-content: center; gap: 20px; margin-bottom: 15px; flex-wrap: wrap; font-size: 12px;">
             <span style="color: #fc8181; font-weight: 600;">● Leader</span>
             <span style="color: #ed8936; font-weight: 600;">● Vice-Leader</span>
+            <span style="background: linear-gradient(90deg, #a78bfa, #ffffff, #a78bfa); background-size: 200% auto; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; animation: shine 4s linear infinite; font-weight: 700; filter: drop-shadow(0 0 5px rgba(167,139,250,0.5));">✦ Eternal Glory</span>
             <span style="color: #ffd700; font-weight: 600; text-shadow: 0 0 10px #ffd700;">★ Glory Member</span>
         </div>
         
@@ -833,9 +845,10 @@
 
                 let nameColor = '#f7fafc';
                 let nameClass = '';
-                if      (player.role === 'Leader')       { nameColor = '#fc8181'; }
-                else if (player.role === 'Vice-Leader')  { nameColor = '#ed8936'; }
-                else if (player.role === 'Glory Member') { nameColor = '#ffd700'; nameClass = 'role-glorymember'; }
+                if      (player.role === 'Leader')         { nameColor = '#fc8181'; }
+                else if (player.role === 'Vice-Leader')    { nameColor = '#ed8936'; }
+                else if (player.role === 'Eternal Glory')  { nameColor = '#a78bfa'; nameClass = 'role-eternalglorymember'; }
+                else if (player.role === 'Glory Member')   { nameColor = '#ffd700'; nameClass = 'role-glorymember'; }
 
                 row.innerHTML = `
                     <td class="rank-cell">${index + 1}</td>
@@ -871,7 +884,7 @@
 
         function sortData(criteria) {
             currentSort = criteria;
-            const roleOrder = { 'Leader': 1, 'Vice-Leader': 2, 'Glory Member': 3, 'Member': 4, 'Removed': 99 };
+            const roleOrder = { 'Leader': 1, 'Vice-Leader': 2, 'Eternal Glory': 3, 'Glory Member': 4, 'Member': 5, 'Removed': 99 };
 
             switch(criteria) {
                 case 'name':
