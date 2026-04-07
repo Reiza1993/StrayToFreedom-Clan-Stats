@@ -40,7 +40,7 @@ const playerData = [
     { name: "Player 78792329", cores: "90+", attack: 696000, coresNum: 90, role: "Member", lmeScore: 571, lmeGain: "(-5)", cxScore: 0, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+2.6K)" },
     { name: "PinkyToeBeans", cores: "130+", attack: 1530200, coresNum: 130, role: "Glory Member", lmeScore: 1836, lmeGain: "(-13)", cxScore: 0, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+0)" },
     { name: "Nubis", cores: "155+", attack: 1643100, coresNum: 155, role: "Glory Member", lmeScore: 1808, lmeGain: "(+3)", cxScore: 0, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+73.6K)" },
-    { name: "Koncalaz", cores: "150+", attack: 1743900, coresNum: 150, role: "Glory Member", lmeScore: 1929, lmeGain: "(+25)", cxScore: 0, cxGain: "(+0)", coresGain: "(+5)", attackGain: "(+43.3K)" },
+    { name: "Player113322", cores: "150+", attack: 1743900, coresNum: 150, role: "Glory Member", lmeScore: 1929, lmeGain: "(+25)", cxScore: 0, cxGain: "(+0)", coresGain: "(+5)", attackGain: "(+43.3K)" },
     { name: "аіко", cores: "0", attack: 0, coresNum: 0, role: "Removed", lmeScore: 0, lmeGain: "(-2675)", cxScore: 0, cxGain: "(+0)", coresGain: "(-250)", attackGain: "(-2428.7K)" },
     { name: "Apathy_", cores: "95+", attack: 1009800, coresNum: 95, role: "Member", lmeScore: 866, lmeGain: "(+21)", cxScore: 0, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+93.5K)" },
     { name: "VictorMolusco", cores: "100+", attack: 961900, coresNum: 100, role: "Member", lmeScore: 894, lmeGain: "(+13)", cxScore: 0, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+0)" },
@@ -49,6 +49,7 @@ const playerData = [
     { name: "♚jojo♔", cores: "95+", attack: 1277300, coresNum: 95, role: "Member", lmeScore: 719, lmeGain: "(+719)", cxScore: 0, cxGain: "(+0)", coresGain: "(+95)", attackGain: "(+1277.3K)" },
     { name: "Fl3xas", cores: "0", attack: 0, coresNum: 0, role: "Member", lmeScore: 0, lmeGain: "(+0)", cxScore: 0, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+0)" },
     { name: "Hanter007", cores: "0", attack: 0, coresNum: 0, role: "Member", lmeScore: 0, lmeGain: "(+0)", cxScore: 0, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+0)" },
+    { name: "Koncalaz", cores: "0+", attack: 0, coresNum: 0, role: "Member", lmeScore: 0, lmeGain: "(+0)", cxScore: 0, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+0)" },
 ];
 
 // Export for use in main application
