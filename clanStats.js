@@ -4,7 +4,7 @@
 
 const clanStats = {
     // Current LME information (update weekly)
-    lmeDifficulty: 12,
+    lmeDifficulty: 13,
     lmeLeague: "Champion",
 
     // Lunar Points baseline — DO NOT change this value.
