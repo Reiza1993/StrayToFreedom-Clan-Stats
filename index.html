@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -534,12 +535,12 @@
 
     <script>
         // Active players = everyone except Removed role
-        // Used for all stat calculations and member counts
+        // Used for ATK, Cores, LME calculations and member counts
         const activePlayerData = playerData.filter(p => p.role !== 'Removed');
 
-        // CX colour thresholds — topScore is auto-calculated from live data
+        // CX colour thresholds — topScore is auto-calculated from ALL players (including Removed)
         const cxSettings = {
-            topScore:         Math.max(0, ...activePlayerData.map(p => p.cxScore)),
+            topScore:         Math.max(0, ...playerData.map(p => p.cxScore)),
             greenThreshold:   0.7,   // 70% of top score → green
             yellowThreshold:  0.4    // 40% of top score → yellow (below = red)
         };
@@ -585,11 +586,12 @@
 
         // ══════════════════════════════════════════════
         //  AUTO-CALCULATE PLAYER STATS FROM playerData
-        //  • Uses activePlayerData (excludes Removed)
-        //  • Top 30 ATK  → Total ATK, Avg ATK, ATK Gain
-        //  • Top 30 Cores → Total, Avg, Gain
-        //  • Top 30 LME  → Total, Avg, Gain
-        //  • All active members → Total CX, CX Gain
+        //  • Includes ALL players (even Removed) for gain calculations
+        //  • This way, removing a player shows the LOSS in gains
+        //  • Top 30 ATK  → Total ATK, Avg ATK, ATK Gain (loss shown)
+        //  • Top 30 Cores → Total, Avg, Gain (loss shown)
+        //  • Top 30 LME  → Total, Avg, Gain (loss shown)
+        //  • ALL players → Total CX, CX Gain
         // ══════════════════════════════════════════════
         function calculateAndDisplayStats() {
             // ── Total Members (active only, excludes Removed) ──
@@ -597,8 +599,8 @@
             document.getElementById('calc-total-members').textContent = totalMembers;
             document.getElementById('calc-members-cap').textContent   = totalMembers + ' / 40';
 
-            // ── Top 30 by ATK ──
-            const withPrevATK = activePlayerData.map(p => ({
+            // ── Top 30 by ATK (includes removed players to show loss) ──
+            const withPrevATK = playerData.map(p => ({
                 ...p,
                 prevATK: p.attack - parseGainValue(p.attackGain)
             }));
@@ -609,8 +611,8 @@
             const totalATKGain  = totalATK - prevTotalATK;
             const avgATK        = totalATK / 30;
 
-            // ── Top 30 by Cores ──
-            const withPrevCores = activePlayerData.map(p => ({
+            // ── Top 30 by Cores (includes removed players to show loss) ──
+            const withPrevCores = playerData.map(p => ({
                 ...p,
                 prevCores: p.coresNum - parseGainValue(p.coresGain)
             }));
@@ -621,13 +623,13 @@
             const totalCoresGain  = totalCores - prevTotalCores;
             const avgCores        = totalCores / 30;
 
-            // ── Top 30 by LME (current week) ──
-            const byLME    = [...activePlayerData].sort((a, b) => b.lmeScore - a.lmeScore).slice(0, 30);
+            // ── Top 30 by LME (includes removed players to show loss) ──
+            const byLME    = [...playerData].sort((a, b) => b.lmeScore - a.lmeScore).slice(0, 30);
             const totalLME = byLME.reduce((s, p) => s + p.lmeScore, 0);
             const avgLME   = totalLME / 30;
 
             // Prev week top 30 LME
-            const byLMEPrev    = [...activePlayerData]
+            const byLMEPrev    = [...playerData]
                 .map(p => ({ ...p, prevScore: p.lmeScore - parseGainValue(p.lmeGain) }))
                 .sort((a, b) => b.prevScore - a.prevScore)
                 .slice(0, 30);
@@ -635,9 +637,10 @@
             const prevAvgLME   = prevTotalLME / 30;
             const totalLMEGain = totalLME - prevTotalLME;
 
-            // ── All active members: CX ──
-            const totalCX     = activePlayerData.reduce((s, p) => s + p.cxScore, 0);
-            const totalCXGain = activePlayerData.reduce((s, p) => s + parseGainValue(p.cxGain), 0);
+            // ── ALL players (including Removed): CX ──
+            // Removed players' CX scores still count toward clan total
+            const totalCX     = playerData.reduce((s, p) => s + p.cxScore, 0);
+            const totalCXGain = playerData.reduce((s, p) => s + parseGainValue(p.cxGain), 0);
 
             // ── Update stat cards ──
             document.getElementById('calc-total-atk').textContent      = formatNumber(totalATK);
