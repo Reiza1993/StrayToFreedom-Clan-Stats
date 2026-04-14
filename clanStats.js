@@ -1,6 +1,6 @@
 // clanStats.js
 // Freedomˢᵗʳᵃʸ Clan Statistics
-// Last Updated: Week 51 - April 2026 (LME #36 | Waiora & Aiko to Alumni)
+// Last Updated: Week 52 - April 2026 (LME #37)
 
 const clanStats = {
     // Current LME information (update weekly)
@@ -18,6 +18,14 @@ const clanStats = {
 // LME History Data
 // Add new results to the TOP of this array
 const lmeHistory = [
+    {
+        lmeNumber: 37,
+        rank: 1,
+        rankImage: "https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Rank1.png",
+        atkDefPoints: 6,
+        medals: 615831,
+        league: "Champion"
+    },
     {
         lmeNumber: 36,
         rank: 2,
