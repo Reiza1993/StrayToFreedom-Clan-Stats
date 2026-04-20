@@ -1,6 +1,6 @@
 // clanStats.js
 // Freedomˢᵗʳᵃʸ Clan Statistics
-// Last Updated: Week 52 - April 2026 (LME #37)
+// Last Updated: Week 54 - April 2026 (LME #38)
 
 const clanStats = {
     // Current LME information (update weekly)
@@ -18,6 +18,14 @@ const clanStats = {
 // LME History Data
 // Add new results to the TOP of this array
 const lmeHistory = [
+    {
+        lmeNumber: 38,
+        rank: 2,
+        rankImage: "https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Rank2.png",
+        atkDefPoints: 3,
+        medals: 105149,
+        league: "Champion"
+    },
     {
         lmeNumber: 37,
         rank: 1,
