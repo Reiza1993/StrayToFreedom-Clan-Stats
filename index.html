@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -166,13 +165,13 @@
         }
 
         .role-eternalglorymember {
-            background: linear-gradient(90deg, #22d3ee, #ffffff, #22d3ee);
+            background: linear-gradient(90deg, #d3859b, #ffffff, #d3859b);
             background-size: 200% auto;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
             animation: shine 4s linear infinite;
-            filter: drop-shadow(0 0 8px rgba(34, 211, 238, 0.6));
+            filter: drop-shadow(0 0 8px rgba(211, 133, 155, 0.6));
             font-weight: 700;
         }
 
@@ -431,7 +430,7 @@
         <div style="display: flex; justify-content: center; gap: 20px; margin-bottom: 15px; flex-wrap: wrap; font-size: 12px;">
             <span style="color: #fc8181; font-weight: 600;">● Leader</span>
             <span style="color: #ed8936; font-weight: 600;">● Vice-Leader</span>
-            <span style="background: linear-gradient(90deg, #22d3ee, #ffffff, #22d3ee); background-size: 200% auto; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; animation: shine 4s linear infinite; font-weight: 700; filter: drop-shadow(0 0 5px rgba(34,211,238,0.5));">✦ Eternal Glory</span>
+            <span style="background: linear-gradient(90deg, #d3859b, #ffffff, #d3859b); background-size: 200% auto; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; animation: shine 4s linear infinite; font-weight: 700; filter: drop-shadow(0 0 5px rgba(211,133,155,0.5));">✦ Eternal Glory</span>
             <span style="color: #ffd700; font-weight: 600; text-shadow: 0 0 10px #ffd700;">★ Glory Member</span>
         </div>
         
@@ -850,7 +849,7 @@
                 let nameClass = '';
                 if      (player.role === 'Leader')         { nameColor = '#fc8181'; }
                 else if (player.role === 'Vice-Leader')    { nameColor = '#ed8936'; }
-                else if (player.role === 'Eternal Glory')  { nameColor = '#22d3ee'; nameClass = 'role-eternalglorymember'; }
+                else if (player.role === 'Eternal Glory')  { nameColor = '#d3859b'; nameClass = 'role-eternalglorymember'; }
                 else if (player.role === 'Glory Member')   { nameColor = '#ffd700'; nameClass = 'role-glorymember'; }
 
                 row.innerHTML = `
