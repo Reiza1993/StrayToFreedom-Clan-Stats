@@ -41,7 +41,7 @@ const playerData = [
     { name: "Apathy_", cores: "95+", attack: 1115700, coresNum: 95, role: "Member", lmeScore: 1278, lmeGain: "(+155)", cxScore: 1100, cxGain: "(+900)", coresGain: "(+0)", attackGain: "(+21.1K)" },
     { name: "VictorMolusco", cores: "100+", attack: 1137600, coresNum: 100, role: "Member", lmeScore: 1124, lmeGain: "(+40)", cxScore: 1100, cxGain: "(+800)", coresGain: "(+0)", attackGain: "(+175.7K)" },
     { name: "p88203044", cores: "110+", attack: 1494500, coresNum: 110, role: "Member", lmeScore: 1508, lmeGain: "(+68)", cxScore: 900, cxGain: "(+600)", coresGain: "(+0)", attackGain: "(+13.1K)" },
-    { name: "һan", cores: "390+", attack: 3112800, coresNum: 390, role: "Eternal Glory", lmeScore: 3317, lmeGain: "(+184)", cxScore: 1100, cxGain: "(+700)", coresGain: "(+0)", attackGain: "(+0)" },
+    { name: "һan", cores: "390+", attack: 3112800, coresNum: 390, role: "Eternal Glory", lmeScore: 3337, lmeGain: "(+204)", cxScore: 1100, cxGain: "(+700)", coresGain: "(+0)", attackGain: "(+0)" },
     { name: "♚jojo♔", cores: "0", attack: 0, coresNum: 0, role: "Removed", lmeScore: 0, lmeGain: "(-573)", cxScore: 600, cxGain: "(+500)", coresGain: "(-100)", attackGain: "(-1296.7K)" },
     { name: "Fl3xas", cores: "205+", attack: 2171900, coresNum: 205, role: "Glory Member", lmeScore: 2569, lmeGain: "(+102)", cxScore: 1100, cxGain: "(+700)", coresGain: "(+5)", attackGain: "(+6.0K)" },
     { name: "Hanter007", cores: "0", attack: 0, coresNum: 0, role: "Removed", lmeScore: 0, lmeGain: "(+0)", cxScore: 100, cxGain: "(+100)", coresGain: "(+0)", attackGain: "(+0)" },
