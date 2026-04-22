@@ -336,7 +336,7 @@ const alumniMembers = [
     "AleisterCrowley", "Szoj", "Player 58934337", "OsG", "Slaterho", "CheesyBreadSticks",
     "KusoYaroo", "cocacandy", "chiknstrip", "SmallBotoㅣStray", "Phley", "6J4", "lguinily",
     "Mclovin404", "Hiryu69", "swifft", "WeirdPlays", "mc2028.",
-    "命Waiora癒", "аіко","HannaH",
+    "命Waiora癒", "аіко","HannaH","♚jojo♔",
 ];
 
 // Export for use in main application
