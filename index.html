@@ -547,6 +547,13 @@
         let filteredData = [...activePlayerData];
         let currentSort = 'lme';
 
+        const TOP_N    = 30;  // top-N threshold for ATK / Cores / LME aggregations
+        const MEMBER_CAP = 40;
+        const LUNAR_POINTS_TABLE = {
+            champion: { 1: 20, 2: 10, 3: -10, 4: -20 },
+            legend:   { 1: 30, 2: 15, 3:   5, 4:  -5 }
+        };
+
         // ══════════════════════════════════════════════
         //  UTILITY: Parse gain strings → numeric value
         //  Handles: "(+60.8K)", "(-5)", "(+0)", ""
@@ -559,7 +566,7 @@
             const numPart = clean.replace(/^[+\-]/, '');
             let val;
             if (numPart.toUpperCase().endsWith('K')) {
-                val = parseFloat(numPart) * 1000;
+                val = (parseFloat(numPart) || 0) * 1000;
             } else {
                 val = parseFloat(numPart) || 0;
             }
@@ -596,44 +603,44 @@
             // ── Total Members (active only, excludes Removed) ──
             const totalMembers = activePlayerData.length;
             document.getElementById('calc-total-members').textContent = totalMembers;
-            document.getElementById('calc-members-cap').textContent   = totalMembers + ' / 40';
+            document.getElementById('calc-members-cap').textContent   = totalMembers + ' / ' + MEMBER_CAP;
 
             // ── Top 30 by ATK (includes removed players to show loss) ──
             const withPrevATK = playerData.map(p => ({
                 ...p,
                 prevATK: p.attack - parseGainValue(p.attackGain)
             }));
-            const byATK     = [...withPrevATK].sort((a, b) => b.attack   - a.attack).slice(0, 30);
-            const byATKPrev = [...withPrevATK].sort((a, b) => b.prevATK  - a.prevATK).slice(0, 30);
+            const byATK     = [...withPrevATK].sort((a, b) => b.attack   - a.attack).slice(0, TOP_N);
+            const byATKPrev = [...withPrevATK].sort((a, b) => b.prevATK  - a.prevATK).slice(0, TOP_N);
             const totalATK      = byATK.reduce((s, p) => s + p.attack,   0);
             const prevTotalATK  = byATKPrev.reduce((s, p) => s + p.prevATK, 0);
             const totalATKGain  = totalATK - prevTotalATK;
-            const avgATK        = totalATK / 30;
+            const avgATK        = totalATK / TOP_N;
 
             // ── Top 30 by Cores (includes removed players to show loss) ──
             const withPrevCores = playerData.map(p => ({
                 ...p,
                 prevCores: p.coresNum - parseGainValue(p.coresGain)
             }));
-            const byCores     = [...withPrevCores].sort((a, b) => b.coresNum  - a.coresNum).slice(0, 30);
-            const byCoresPrev = [...withPrevCores].sort((a, b) => b.prevCores - a.prevCores).slice(0, 30);
+            const byCores     = [...withPrevCores].sort((a, b) => b.coresNum  - a.coresNum).slice(0, TOP_N);
+            const byCoresPrev = [...withPrevCores].sort((a, b) => b.prevCores - a.prevCores).slice(0, TOP_N);
             const totalCores      = byCores.reduce((s, p) => s + p.coresNum,   0);
             const prevTotalCores  = byCoresPrev.reduce((s, p) => s + p.prevCores, 0);
             const totalCoresGain  = totalCores - prevTotalCores;
-            const avgCores        = totalCores / 30;
+            const avgCores        = totalCores / TOP_N;
 
             // ── Top 30 by LME (includes removed players to show loss) ──
-            const byLME    = [...playerData].sort((a, b) => b.lmeScore - a.lmeScore).slice(0, 30);
+            const byLME    = [...playerData].sort((a, b) => b.lmeScore - a.lmeScore).slice(0, TOP_N);
             const totalLME = byLME.reduce((s, p) => s + p.lmeScore, 0);
-            const avgLME   = totalLME / 30;
+            const avgLME   = totalLME / TOP_N;
 
             // Prev week top 30 LME
             const byLMEPrev    = [...playerData]
                 .map(p => ({ ...p, prevScore: p.lmeScore - parseGainValue(p.lmeGain) }))
                 .sort((a, b) => b.prevScore - a.prevScore)
-                .slice(0, 30);
+                .slice(0, TOP_N);
             const prevTotalLME = byLMEPrev.reduce((s, p) => s + p.prevScore, 0);
-            const prevAvgLME   = prevTotalLME / 30;
+            const prevAvgLME   = prevTotalLME / TOP_N;
             const totalLMEGain = totalLME - prevTotalLME;
 
             // ── ALL players (including Removed): CX ──
@@ -667,20 +674,14 @@
         //  Elite / other: no change
         // ══════════════════════════════════════════════
         function calculateLunarPoints() {
-            const POINTS = {
-                champion: { 1: 20, 2: 10, 3: -10, 4: -20 },
-                legend:   { 1: 30, 2: 15, 3:   5, 4:  -5 }
-            };
-
             let total = 0;
             lmeHistory.forEach(lme => {
                 const league = lme.league.toLowerCase();
                 if (league === 'champion') {
-                    total += (POINTS.champion[lme.rank] || 0);
+                    total += (LUNAR_POINTS_TABLE.champion[lme.rank] || 0);
                 } else if (league.includes('legend')) {
-                    total += (POINTS.legend[lme.rank] || 0);
+                    total += (LUNAR_POINTS_TABLE.legend[lme.rank] || 0);
                 }
-                // Elite and others: 0 points
             });
             return total;
         }
@@ -691,10 +692,8 @@
         // ══════════════════════════════════════════════
         function getLunarPointsForLME(lme) {
             const league = lme.league.toLowerCase();
-            const CHAMPION = { 1: 20, 2: 10, 3: -10, 4: -20 };
-            const LEGEND   = { 1: 30, 2: 15, 3:   5, 4:  -5 };
-            if (league === 'champion')        return CHAMPION[lme.rank] || 0;
-            if (league.includes('legend'))    return LEGEND[lme.rank]   || 0;
+            if (league === 'champion')        return LUNAR_POINTS_TABLE.champion[lme.rank] || 0;
+            if (league.includes('legend'))    return LUNAR_POINTS_TABLE.legend[lme.rank]   || 0;
             return null; // Elite / other — show dash
         }
 
@@ -711,15 +710,12 @@
         //  Changes calculated from LME #31 onward only
         // ══════════════════════════════════════════════
         function calculateLunarPointsFromBaseline() {
-            const CHAMPION = { 1: 20,  2: 10,  3: -10, 4: -20 };
-            const LEGEND   = { 1: 30,  2: 15,  3:   5, 4:  -5 };
-
             let delta = 0;
             lmeHistory.forEach(lme => {
                 if (lme.lmeNumber < 31) return;
                 const league = lme.league.toLowerCase();
-                if (league === 'champion')          delta += (CHAMPION[lme.rank] || 0);
-                else if (league.includes('legend')) delta += (LEGEND[lme.rank]   || 0);
+                if (league === 'champion')          delta += (LUNAR_POINTS_TABLE.champion[lme.rank] || 0);
+                else if (league.includes('legend')) delta += (LUNAR_POINTS_TABLE.legend[lme.rank]   || 0);
             });
 
             let lastGain = 0;
@@ -727,8 +723,8 @@
                 const latest = lmeHistory[0];
                 if (latest.lmeNumber >= 31) {
                     const league = latest.league.toLowerCase();
-                    if (league === 'champion')          lastGain = (CHAMPION[latest.rank] || 0);
-                    else if (league.includes('legend')) lastGain = (LEGEND[latest.rank]   || 0);
+                    if (league === 'champion')          lastGain = (LUNAR_POINTS_TABLE.champion[latest.rank] || 0);
+                    else if (league.includes('legend')) lastGain = (LUNAR_POINTS_TABLE.legend[latest.rank]   || 0);
                 }
             }
 
@@ -884,45 +880,33 @@
 
         }
 
+        function withRemovedLast(fn) {
+            return (a, b) => {
+                if (a.role === 'Removed' && b.role !== 'Removed') return 1;
+                if (b.role === 'Removed' && a.role !== 'Removed') return -1;
+                return fn(a, b);
+            };
+        }
+
         function sortData(criteria) {
             currentSort = criteria;
             const roleOrder = { 'Leader': 1, 'Vice-Leader': 2, 'Eternal Glory': 3, 'Glory Member': 4, 'Member': 5, 'Removed': 99 };
 
             switch(criteria) {
                 case 'name':
-                    filteredData.sort((a, b) => {
-                        if (a.role === 'Removed' && b.role !== 'Removed') return 1;
-                        if (b.role === 'Removed' && a.role !== 'Removed') return -1;
-                        return a.name.localeCompare(b.name);
-                    });
+                    filteredData.sort(withRemovedLast((a, b) => a.name.localeCompare(b.name)));
                     break;
                 case 'cores':
-                    filteredData.sort((a, b) => {
-                        if (a.role === 'Removed' && b.role !== 'Removed') return 1;
-                        if (b.role === 'Removed' && a.role !== 'Removed') return -1;
-                        return b.coresNum - a.coresNum;
-                    });
+                    filteredData.sort(withRemovedLast((a, b) => b.coresNum - a.coresNum));
                     break;
                 case 'attack':
-                    filteredData.sort((a, b) => {
-                        if (a.role === 'Removed' && b.role !== 'Removed') return 1;
-                        if (b.role === 'Removed' && a.role !== 'Removed') return -1;
-                        return b.attack - a.attack;
-                    });
+                    filteredData.sort(withRemovedLast((a, b) => b.attack - a.attack));
                     break;
                 case 'lme':
-                    filteredData.sort((a, b) => {
-                        if (a.role === 'Removed' && b.role !== 'Removed') return 1;
-                        if (b.role === 'Removed' && a.role !== 'Removed') return -1;
-                        return b.lmeScore - a.lmeScore;
-                    });
+                    filteredData.sort(withRemovedLast((a, b) => b.lmeScore - a.lmeScore));
                     break;
                 case 'cx':
-                    filteredData.sort((a, b) => {
-                        if (a.role === 'Removed' && b.role !== 'Removed') return 1;
-                        if (b.role === 'Removed' && a.role !== 'Removed') return -1;
-                        return b.cxScore - a.cxScore;
-                    });
+                    filteredData.sort(withRemovedLast((a, b) => b.cxScore - a.cxScore));
                     break;
                 case 'role':
                     filteredData.sort((a, b) => {
@@ -985,6 +969,12 @@
 
         document.getElementById('sortSelect').addEventListener('change', e => sortData(e.target.value));
         document.getElementById('searchInput').addEventListener('input',  e => filterData(e.target.value));
+
+        document.addEventListener('keydown', e => {
+            if (e.key !== 'Escape') return;
+            document.getElementById('lmeHistoryModal').style.display = 'none';
+            document.getElementById('alumniModal').style.display = 'none';
+        });
 
         // ══════════════════════════════════════════════
         //  INIT
