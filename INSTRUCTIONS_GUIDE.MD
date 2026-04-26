@@ -4,6 +4,18 @@ A quick-reference guide for maintaining `playerData.js` and `clanStats.js`.
 
 ---
 
+## Git & Committing
+
+- Always commit and push to the **`main`** branch.
+- Use a short, descriptive commit message. Examples:
+  - `Update LME scores Week 57`
+  - `Update CX scores (Explorer Badge Ranking Week 57)`
+  - `Add LME #40 result`
+  - `Promote [player] to Glory Member`
+  - `Remove [player], add to alumni`
+
+---
+
 ## Files You Maintain
 
 **`playerData.js`** — per-player stats:

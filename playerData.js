@@ -1,6 +1,8 @@
 // playerData.js
 // Freedomˢᵗʳᵃʸ Clan Player Statistics
 // Last Updated: Week 55 - April 2026 (ATK & Relic Cores Updated)
+//
+// See INSTRUCTIONS_GUIDE.MD for full update procedures (LME, ATK, CX, roles, removing members).
 
 const playerData = [
     { name: "神Sterben死", cores: "190+", attack: 2170200, coresNum: 190, role: "Leader", lmeScore: 2522, lmeGain: "(+84)", cxScore: 1800, cxGain: "(+700)", coresGain: "(+0)", attackGain: "(+0)" },

@@ -1,6 +1,8 @@
 // clanStats.js
 // Freedomˢᵗʳᵃʸ Clan Statistics
 // Last Updated: Week 54 - April 2026 (LME #38)
+//
+// See INSTRUCTIONS_GUIDE.MD for full update procedures (LME history, alumni, lunar points).
 
 const clanStats = {
     // Current LME information (update weekly)
