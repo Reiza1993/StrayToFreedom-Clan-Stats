@@ -5,7 +5,7 @@
 const playerData = [
     { name: "神Sterben死", cores: "190+", attack: 2170200, coresNum: 190, role: "Leader", lmeScore: 2522, lmeGain: "(+84)", cxScore: 1800, cxGain: "(+700)", coresGain: "(+0)", attackGain: "(+0)" },
     { name: "Cunner88", cores: "155+", attack: 1940500, coresNum: 155, role: "Vice-Leader", lmeScore: 2351, lmeGain: "(+98)", cxScore: 1800, cxGain: "(+700)", coresGain: "(+0)", attackGain: "(+36.4K)" },
-    { name: "PastalaVista", cores: "155+", attack: 1529500, coresNum: 155, role: "Member", lmeScore: 2006, lmeGain: "(+84)", cxScore: 1800, cxGain: "(+1000)", coresGain: "(+0)", attackGain: "(+13.4K)" },
+    { name: "PastalaVista", cores: "155+", attack: 1529500, coresNum: 155, role: "Glory Member", lmeScore: 2006, lmeGain: "(+84)", cxScore: 1800, cxGain: "(+1000)", coresGain: "(+0)", attackGain: "(+13.4K)" },
     { name: "Gritchen", cores: "160+", attack: 1726700, coresNum: 160, role: "Member", lmeScore: 1656, lmeGain: "(+120)", cxScore: 1700, cxGain: "(+700)", coresGain: "(+10)", attackGain: "(+12.3K)" },
     { name: "MMM|Mina475", cores: "130+", attack: 1431400, coresNum: 130, role: "Member", lmeScore: 1190, lmeGain: "(+11)", cxScore: 400, cxGain: "(+100)", coresGain: "(+0)", attackGain: "(+0)" },
     { name: "盾Heathcliff剣", cores: "145+", attack: 1354000, coresNum: 145, role: "Glory Member", lmeScore: 1833, lmeGain: "(+72)", cxScore: 1800, cxGain: "(+700)", coresGain: "(+0)", attackGain: "(+7.4K)" },
@@ -34,7 +34,7 @@ const playerData = [
     { name: "Pookaz", cores: "60+", attack: 783900, coresNum: 60, role: "Member", lmeScore: 554, lmeGain: "(+3)", cxScore: 1800, cxGain: "(+700)", coresGain: "(+5)", attackGain: "(+1.7K)" },
     { name: "HannaM", cores: "0", attack: 0, coresNum: 0, role: "Removed", lmeScore: 0, lmeGain: "(+0)", cxScore: 0, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+0)" },
     { name: "Player 78792329", cores: "90+", attack: 705400, coresNum: 90, role: "Member", lmeScore: 612, lmeGain: "(-4)", cxScore: 1300, cxGain: "(+500)", coresGain: "(+0)", attackGain: "(+2.6K)" },
-    { name: "PinkyToeBeans", cores: "130+", attack: 1530200, coresNum: 130, role: "Member", lmeScore: 2001, lmeGain: "(+84)", cxScore: 1900, cxGain: "(+800)", coresGain: "(+0)", attackGain: "(+0)" },
+    { name: "PinkyToeBeans", cores: "130+", attack: 1530200, coresNum: 130, role: "Glory Member", lmeScore: 2001, lmeGain: "(+84)", cxScore: 1900, cxGain: "(+800)", coresGain: "(+0)", attackGain: "(+0)" },
     { name: "Nubis", cores: "190+", attack: 1865700, coresNum: 190, role: "Glory Member", lmeScore: 1961, lmeGain: "(+58)", cxScore: 1800, cxGain: "(+900)", coresGain: "(+5)", attackGain: "(+9.8K)" },
     { name: "Player113322", cores: "150+", attack: 1775600, coresNum: 150, role: "Member", lmeScore: 0, lmeGain: "(-1954)", cxScore: 400, cxGain: "(+400)", coresGain: "(+0)", attackGain: "(+3.0K)" },
     { name: "аіко", cores: "0", attack: 0, coresNum: 0, role: "Removed", lmeScore: 0, lmeGain: "(+0)", cxScore: 0, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+0)" },
