@@ -1094,6 +1094,7 @@
             {
                 title: '🏅 Top 5 LME Score',
                 color: '#f59e0b',
+                showGain: false,
                 rows: () => [...activePlayerData]
                     .sort((a, b) => b.lmeScore - a.lmeScore)
                     .slice(0, 5)
@@ -1102,6 +1103,7 @@
             {
                 title: '📈 Top 5 LME Gain',
                 color: '#10b981',
+                showGain: true,
                 // exclude players whose previous score was 0 (comeback ≠ true weekly gain)
                 rows: () => [...activePlayerData]
                     .filter(p => (p.lmeScore - parseGainValue(p.lmeGain)) > 0)
@@ -1112,6 +1114,7 @@
             {
                 title: '<img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/ATK.png" style="width:14px;height:14px;vertical-align:middle;margin-right:4px;" onerror="this.style.display=\'none\'"> Top 5 ATK',
                 color: '#e2e8f0',
+                showGain: false,
                 rows: () => [...activePlayerData]
                     .sort((a, b) => b.attack - a.attack)
                     .slice(0, 5)
@@ -1120,6 +1123,7 @@
             {
                 title: '<img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Relic%20Cores.png" style="width:14px;height:14px;vertical-align:middle;margin-right:4px;" onerror="this.style.display=\'none\'"> Top 5 Relic Cores',
                 color: '#81e6d9',
+                showGain: false,
                 rows: () => [...activePlayerData]
                     .sort((a, b) => b.coresNum - a.coresNum)
                     .slice(0, 5)
@@ -1155,7 +1159,7 @@
                         : (idx + 1);
                     const gainVal = parseGainValue(r.gain);
                     const gainColor = gainVal > 0 ? '#10b981' : gainVal < 0 ? '#f56565' : '#a0aec0';
-                    const gainStr = gainVal !== 0 ? `<span style="color:${gainColor}; font-size:10px;">${r.gain}</span>` : '';
+                    const gainStr = cat.showGain && gainVal !== 0 ? `<span style="color:${gainColor}; font-size:10px;">${r.gain}</span>` : '';
                     return `
                         <div class="lb-row">
                             <span class="lb-rank ${rankClass}">${rankSymbol}</span>
