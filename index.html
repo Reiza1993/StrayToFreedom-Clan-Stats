@@ -278,6 +278,107 @@
         .gain-negative { color: #f56565; }
         .gain-neutral  { color: #a0aec0; }
         
+        /* ── Top 5 Leaderboard Widget ── */
+        .leaderboard-widget {
+            background: linear-gradient(135deg, #1a202c, #2d3748);
+            border: 1px solid #4a5568;
+            border-radius: 14px;
+            overflow: hidden;
+            margin-bottom: 18px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+        }
+        .lb-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 16px 8px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+        }
+        .lb-title {
+            font-size: 13px;
+            font-weight: 700;
+            color: #fff;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+        .lb-dots {
+            display: flex;
+            gap: 6px;
+        }
+        .lb-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.35);
+            cursor: pointer;
+            transition: background 0.3s, transform 0.3s;
+        }
+        .lb-dot.active {
+            background: #fff;
+            transform: scale(1.25);
+        }
+        .lb-viewport {
+            position: relative;
+            overflow: hidden;
+            height: 186px;
+        }
+        .lb-panel {
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            padding: 8px 14px 10px;
+            opacity: 0;
+            transform: translateX(60px);
+            transition: opacity 0.4s ease, transform 0.4s ease;
+            pointer-events: none;
+        }
+        .lb-panel.active {
+            opacity: 1;
+            transform: translateX(0);
+            pointer-events: auto;
+        }
+        .lb-panel.exit {
+            opacity: 0;
+            transform: translateX(-60px);
+        }
+        .lb-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 5px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+        .lb-row:last-child { border-bottom: none; }
+        .lb-rank {
+            font-size: 12px;
+            font-weight: 700;
+            color: #a0aec0;
+            width: 20px;
+            text-align: center;
+            flex-shrink: 0;
+        }
+        .lb-rank.gold   { color: #ffd700; }
+        .lb-rank.silver { color: #c0c0c0; }
+        .lb-rank.bronze { color: #cd7930; }
+        .lb-name {
+            font-size: 12px;
+            font-weight: 600;
+            flex: 1;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .lb-value {
+            font-size: 12px;
+            font-weight: 700;
+            color: #e2e8f0;
+            white-space: nowrap;
+        }
+        .lb-gain {
+            font-size: 10px;
+            color: #10b981;
+            white-space: nowrap;
+        }
+
         @media (max-width: 768px) {
             body {
                 padding: 10px;
@@ -434,6 +535,22 @@
             <span style="color: #ffd700; font-weight: 600; text-shadow: 0 0 10px #ffd700;">★ Glory Member</span>
         </div>
         
+        <!-- ── Top 5 Leaderboard Widget ── -->
+        <div class="leaderboard-widget">
+            <div class="lb-header">
+                <span class="lb-title" id="lb-title">Top 5 LME Score</span>
+                <div class="lb-dots" id="lb-dots">
+                    <span class="lb-dot active" onclick="goToPanel(0)"></span>
+                    <span class="lb-dot" onclick="goToPanel(1)"></span>
+                    <span class="lb-dot" onclick="goToPanel(2)"></span>
+                    <span class="lb-dot" onclick="goToPanel(3)"></span>
+                </div>
+            </div>
+            <div class="lb-viewport" id="lb-viewport">
+                <!-- panels injected by JS -->
+            </div>
+        </div>
+
         <table id="playerTable">
             <thead>
                 <tr>
@@ -970,6 +1087,103 @@
         document.getElementById('sortSelect').addEventListener('change', e => sortData(e.target.value));
         document.getElementById('searchInput').addEventListener('input',  e => filterData(e.target.value));
 
+        // ══════════════════════════════════════════════
+        //  TOP 5 LEADERBOARD WIDGET
+        // ══════════════════════════════════════════════
+        const LB_CATEGORIES = [
+            {
+                title: '🏅 Top 5 LME Score',
+                color: '#f59e0b',
+                rows: () => [...activePlayerData]
+                    .sort((a, b) => b.lmeScore - a.lmeScore)
+                    .slice(0, 5)
+                    .map(p => ({ name: p.name, role: p.role, value: p.lmeScore.toLocaleString(), gain: p.lmeGain }))
+            },
+            {
+                title: '📈 Top 5 LME Gain',
+                color: '#10b981',
+                rows: () => [...activePlayerData]
+                    .sort((a, b) => parseGainValue(b.lmeGain) - parseGainValue(a.lmeGain))
+                    .slice(0, 5)
+                    .map(p => ({ name: p.name, role: p.role, value: p.lmeScore.toLocaleString(), gain: p.lmeGain }))
+            },
+            {
+                title: '⚔️ Top 5 ATK',
+                color: '#e2e8f0',
+                rows: () => [...activePlayerData]
+                    .sort((a, b) => b.attack - a.attack)
+                    .slice(0, 5)
+                    .map(p => ({ name: p.name, role: p.role, value: formatNumber(p.attack), gain: p.attackGain }))
+            },
+            {
+                title: '🔵 Top 5 CX Score',
+                color: '#68d391',
+                rows: () => [...activePlayerData]
+                    .sort((a, b) => b.cxScore - a.cxScore)
+                    .slice(0, 5)
+                    .map(p => ({ name: p.name, role: p.role, value: p.cxScore.toLocaleString(), gain: p.cxGain }))
+            }
+        ];
+
+        let lbCurrent = 0;
+        let lbTimer   = null;
+
+        function lbRoleColor(role) {
+            if (role === 'Leader')        return '#fc8181';
+            if (role === 'Vice-Leader')   return '#ed8936';
+            if (role === 'Eternal Glory') return '#d3859b';
+            if (role === 'Glory Member')  return '#ffd700';
+            return '#e2e8f0';
+        }
+
+        function buildLeaderboard() {
+            const viewport = document.getElementById('lb-viewport');
+            viewport.innerHTML = '';
+            LB_CATEGORIES.forEach((cat, i) => {
+                const panel = document.createElement('div');
+                panel.className = 'lb-panel' + (i === 0 ? ' active' : '');
+                panel.id = 'lb-panel-' + i;
+
+                const rows = cat.rows();
+                panel.innerHTML = rows.map((r, idx) => {
+                    const rankClass = idx === 0 ? 'gold' : idx === 1 ? 'silver' : idx === 2 ? 'bronze' : '';
+                    const rankSymbol = idx === 0 ? '🥇' : idx === 1 ? '🥈' : idx === 2 ? '🥉' : (idx + 1);
+                    const gainVal = parseGainValue(r.gain);
+                    const gainColor = gainVal > 0 ? '#10b981' : gainVal < 0 ? '#f56565' : '#a0aec0';
+                    const gainStr = gainVal !== 0 ? `<span style="color:${gainColor}; font-size:10px;">${r.gain}</span>` : '';
+                    return `
+                        <div class="lb-row">
+                            <span class="lb-rank ${rankClass}">${rankSymbol}</span>
+                            <span class="lb-name" style="color:${lbRoleColor(r.role)};">${r.name}</span>
+                            <span class="lb-value" style="color:${cat.color};">${r.value}</span>
+                            ${gainStr}
+                        </div>`;
+                }).join('');
+                viewport.appendChild(panel);
+            });
+        }
+
+        function goToPanel(idx) {
+            clearTimeout(lbTimer);
+            const panels = document.querySelectorAll('.lb-panel');
+            const dots   = document.querySelectorAll('.lb-dot');
+
+            panels[lbCurrent].classList.remove('active');
+            panels[lbCurrent].classList.add('exit');
+            setTimeout(() => panels[lbCurrent].classList.remove('exit'), 420);
+
+            lbCurrent = idx;
+            panels[lbCurrent].classList.add('active');
+            document.getElementById('lb-title').textContent = LB_CATEGORIES[lbCurrent].title;
+
+            dots.forEach((d, i) => d.classList.toggle('active', i === lbCurrent));
+            lbTimer = setTimeout(lbNext, 5000);
+        }
+
+        function lbNext() {
+            goToPanel((lbCurrent + 1) % LB_CATEGORIES.length);
+        }
+
         document.addEventListener('keydown', e => {
             if (e.key !== 'Escape') return;
             document.getElementById('lmeHistoryModal').style.display = 'none';
@@ -985,6 +1199,8 @@
         loadLMEHistory();
         loadAlumni();
         sortData('lme');
+        buildLeaderboard();
+        lbTimer = setTimeout(lbNext, 5000);
     </script>
 </body>
 </html>
