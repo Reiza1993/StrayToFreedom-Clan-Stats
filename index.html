@@ -575,12 +575,15 @@
         <!-- ── Top 5 Leaderboard Widget ── -->
         <div class="leaderboard-widget">
             <div class="lb-header">
-                <span class="lb-title" id="lb-title">Top 5 LME Score</span>
-                <div class="lb-dots" id="lb-dots">
-                    <span class="lb-dot active" onclick="goToPanel(0)"></span>
-                    <span class="lb-dot" onclick="goToPanel(1)"></span>
-                    <span class="lb-dot" onclick="goToPanel(2)"></span>
-                    <span class="lb-dot" onclick="goToPanel(3)"></span>
+                <span class="lb-title" id="lb-title">Top 5 LME Gain</span>
+                <div style="display:flex;align-items:center;gap:10px;">
+                    <span id="lb-copy-btn" onclick="lbCopyToClipboard()" style="cursor:pointer;font-size:10px;color:rgba(255,255,255,0.65);user-select:none;padding:2px 5px;border:1px solid rgba(255,255,255,0.25);border-radius:4px;" title="Copy to clipboard">📋 copy</span>
+                    <div class="lb-dots" id="lb-dots">
+                        <span class="lb-dot active" onclick="goToPanel(0)"></span>
+                        <span class="lb-dot" onclick="goToPanel(1)"></span>
+                        <span class="lb-dot" onclick="goToPanel(2)"></span>
+                        <span class="lb-dot" onclick="goToPanel(3)"></span>
+                    </div>
                 </div>
             </div>
             <div class="lb-viewport" id="lb-viewport">
@@ -1127,44 +1130,48 @@
         // ══════════════════════════════════════════════
         //  TOP 5 LEADERBOARD WIDGET
         // ══════════════════════════════════════════════
+        const ICON_BASE = 'https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/';
         const LB_CATEGORIES = [
             {
-                title: '<img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Medals.png" style="width:14px;height:14px;vertical-align:middle;margin-right:4px;" onerror="this.style.display=\'none\'"> Top 5 LME Score',
-                color: '#f59e0b',
-                showGain: false,
-                rows: () => [...activePlayerData]
-                    .sort((a, b) => b.lmeScore - a.lmeScore)
-                    .slice(0, 5)
-                    .map(p => ({ name: p.name, role: p.role, value: p.lmeScore.toLocaleString(), gain: p.lmeGain }))
-            },
-            {
-                title: '<img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Medals.png" style="width:14px;height:14px;vertical-align:middle;margin-right:4px;" onerror="this.style.display=\'none\'"> Top 5 LME Gain',
+                title: `<img src="${ICON_BASE}Medals.png" style="height:14px;width:auto;vertical-align:middle;margin-right:4px;" onerror="this.style.display='none'"> Top 5 LME Gain`,
+                label: 'Top 5 LME Gain',
                 color: '#10b981',
-                showGain: true,
                 // exclude players whose previous score was 0 (comeback ≠ true weekly gain)
                 rows: () => [...activePlayerData]
                     .filter(p => (p.lmeScore - parseGainValue(p.lmeGain)) > 0)
                     .sort((a, b) => parseGainValue(b.lmeGain) - parseGainValue(a.lmeGain))
                     .slice(0, 5)
-                    .map(p => ({ name: p.name, role: p.role, value: p.lmeScore.toLocaleString(), gain: p.lmeGain }))
+                    .map(p => ({ name: p.name, role: p.role, value: p.lmeGain, gain: p.lmeGain }))
             },
             {
-                title: '<img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/ATK.png" style="width:14px;height:14px;vertical-align:middle;margin-right:4px;" onerror="this.style.display=\'none\'"> Top 5 ATK',
+                title: `<img src="${ICON_BASE}ATK.png" style="height:14px;width:auto;vertical-align:middle;margin-right:4px;" onerror="this.style.display='none'"> Top 5 ATK Gain`,
+                label: 'Top 5 ATK Gain',
                 color: '#e2e8f0',
-                showGain: false,
                 rows: () => [...activePlayerData]
-                    .sort((a, b) => b.attack - a.attack)
+                    .filter(p => parseGainValue(p.attackGain) > 0)
+                    .sort((a, b) => parseGainValue(b.attackGain) - parseGainValue(a.attackGain))
                     .slice(0, 5)
-                    .map(p => ({ name: p.name, role: p.role, value: formatNumber(p.attack), gain: p.attackGain }))
+                    .map(p => ({ name: p.name, role: p.role, value: p.attackGain, gain: p.attackGain }))
             },
             {
-                title: '<img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Relic%20Cores.png" style="width:14px;height:14px;vertical-align:middle;margin-right:4px;" onerror="this.style.display=\'none\'"> Top 5 Relic Cores',
+                title: `<img src="${ICON_BASE}Relic%20Cores.png" style="height:14px;width:auto;vertical-align:middle;margin-right:4px;" onerror="this.style.display='none'"> Top 5 Cores Gain`,
+                label: 'Top 5 Cores Gain',
                 color: '#81e6d9',
-                showGain: false,
                 rows: () => [...activePlayerData]
-                    .sort((a, b) => b.coresNum - a.coresNum)
+                    .filter(p => parseGainValue(p.coresGain) > 0)
+                    .sort((a, b) => parseGainValue(b.coresGain) - parseGainValue(a.coresGain))
                     .slice(0, 5)
-                    .map(p => ({ name: p.name, role: p.role, value: p.cores, gain: p.coresGain }))
+                    .map(p => ({ name: p.name, role: p.role, value: p.coresGain, gain: p.coresGain }))
+            },
+            {
+                title: `<img src="${ICON_BASE}Medals.png" style="height:14px;width:auto;vertical-align:middle;margin-right:4px;" onerror="this.style.display='none'"> Top 5 CX Gain`,
+                label: 'Top 5 CX Gain',
+                color: '#a78bfa',
+                rows: () => [...activePlayerData]
+                    .filter(p => parseGainValue(p.cxGain) > 0)
+                    .sort((a, b) => parseGainValue(b.cxGain) - parseGainValue(a.cxGain))
+                    .slice(0, 5)
+                    .map(p => ({ name: p.name, role: p.role, value: p.cxGain, gain: p.cxGain }))
             }
         ];
 
@@ -1185,26 +1192,37 @@
                 panel.className = 'lb-panel' + (i === 0 ? ' active' : '');
                 panel.id = 'lb-panel-' + i;
 
-                const ICON_BASE = 'https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/';
                 const rows = cat.rows();
                 panel.innerHTML = rows.map((r, idx) => {
                     const rankClass = idx === 0 ? 'gold' : idx === 1 ? 'silver' : idx === 2 ? 'bronze' : '';
                     const rankSymbol = idx < 3
-                        ? `<img src="${ICON_BASE}Rank${idx + 1}.png" style="width:14px;height:14px;vertical-align:middle;" onerror="this.outerHTML='${idx + 1}'">`
+                        ? `<img src="${ICON_BASE}Rank${idx + 1}.png" style="height:14px;width:auto;vertical-align:middle;" onerror="this.outerHTML='${idx + 1}'">`
                         : (idx + 1);
                     const gainVal = parseGainValue(r.gain);
                     const gainColor = gainVal > 0 ? '#10b981' : gainVal < 0 ? '#f56565' : '#a0aec0';
-                    const gainStr = cat.showGain && gainVal !== 0 ? `<span style="color:${gainColor}; font-size:10px;">${r.gain}</span>` : '';
                     return `
                         <div class="lb-row">
                             <span class="lb-rank ${rankClass}">${rankSymbol}</span>
                             <span ${lbNameAttrs(r.role)}>${r.name}</span>
-                            <span class="lb-value" style="color:${cat.color};">${r.value}</span>
-                            ${gainStr}
+                            <span class="lb-value" style="color:${gainColor};">${r.value}</span>
                         </div>`;
                 }).join('');
                 viewport.appendChild(panel);
             });
+            document.getElementById('lb-title').innerHTML = LB_CATEGORIES[0].title;
+        }
+
+        function lbCopyToClipboard() {
+            const cat = LB_CATEGORIES[lbCurrent];
+            const rows = cat.rows();
+            const lines = [cat.label, ...rows.map((r, i) => `${i + 1}. ${r.name}: ${r.value}`)];
+            navigator.clipboard.writeText(lines.join('\n')).then(() => {
+                const btn = document.getElementById('lb-copy-btn');
+                const orig = btn.textContent;
+                btn.textContent = 'Copied!';
+                btn.style.color = '#10b981';
+                setTimeout(() => { btn.textContent = orig; btn.style.color = ''; }, 1500);
+            }).catch(() => {});
         }
 
         function goToPanel(idx) {
