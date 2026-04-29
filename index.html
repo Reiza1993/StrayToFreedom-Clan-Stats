@@ -320,7 +320,7 @@
         .lb-viewport {
             position: relative;
             overflow: hidden;
-            height: 158px;
+            height: 138px;
         }
         .lb-panel {
             position: absolute;
@@ -1134,12 +1134,10 @@
         let lbCurrent = 0;
         let lbTimer   = null;
 
-        function lbRoleColor(role) {
-            if (role === 'Leader')        return '#fc8181';
-            if (role === 'Vice-Leader')   return '#ed8936';
-            if (role === 'Eternal Glory') return '#d3859b';
-            if (role === 'Glory Member')  return '#ffd700';
-            return '#e2e8f0';
+        function lbNameAttrs(role) {
+            if (role === 'Eternal Glory') return 'class="lb-name role-eternalglorymember"';
+            const colors = { 'Leader': '#fc8181', 'Vice-Leader': '#ed8936', 'Glory Member': '#ffd700' };
+            return `class="lb-name" style="color:${colors[role] || '#e2e8f0'};"`;
         }
 
         function buildLeaderboard() {
@@ -1163,7 +1161,7 @@
                     return `
                         <div class="lb-row">
                             <span class="lb-rank ${rankClass}">${rankSymbol}</span>
-                            <span class="lb-name" style="color:${lbRoleColor(r.role)};">${r.name}</span>
+                            <span ${lbNameAttrs(r.role)}>${r.name}</span>
                             <span class="lb-value" style="color:${cat.color};">${r.value}</span>
                             ${gainStr}
                         </div>`;
