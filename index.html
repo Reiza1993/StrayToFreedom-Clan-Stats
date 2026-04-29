@@ -1133,8 +1133,8 @@
         const ICON_BASE = 'https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/';
         const LB_CATEGORIES = [
             {
-                title: `<img src="${ICON_BASE}Medals.png" style="height:14px;width:auto;vertical-align:middle;margin-right:4px;" onerror="this.style.display='none'"> Top 5 LME Gain`,
-                label: 'Top 5 LME Gain',
+                title: `<img src="${ICON_BASE}Medals.png" style="height:14px;width:auto;vertical-align:middle;margin-right:4px;" onerror="this.style.display='none'"> Top 5 LME Gainers`,
+                label: 'Top 5 LME Gainers',
                 color: '#10b981',
                 // exclude players whose previous score was 0 (comeback ≠ true weekly gain)
                 rows: () => [...activePlayerData]
@@ -1144,8 +1144,8 @@
                     .map(p => ({ name: p.name, role: p.role, value: p.lmeGain, gain: p.lmeGain }))
             },
             {
-                title: `<img src="${ICON_BASE}ATK.png" style="height:14px;width:auto;vertical-align:middle;margin-right:4px;" onerror="this.style.display='none'"> Top 5 ATK Gain`,
-                label: 'Top 5 ATK Gain',
+                title: `<img src="${ICON_BASE}ATK.png" style="height:14px;width:auto;vertical-align:middle;margin-right:4px;" onerror="this.style.display='none'"> Top 5 ATK Gainers`,
+                label: 'Top 5 ATK Gainers',
                 color: '#e2e8f0',
                 rows: () => [...activePlayerData]
                     .filter(p => parseGainValue(p.attackGain) > 0)
@@ -1154,8 +1154,8 @@
                     .map(p => ({ name: p.name, role: p.role, value: p.attackGain, gain: p.attackGain }))
             },
             {
-                title: `<img src="${ICON_BASE}Relic%20Cores.png" style="height:14px;width:auto;vertical-align:middle;margin-right:4px;" onerror="this.style.display='none'"> Top 5 Cores Gain`,
-                label: 'Top 5 Cores Gain',
+                title: `<img src="${ICON_BASE}Relic%20Cores.png" style="height:14px;width:auto;vertical-align:middle;margin-right:4px;" onerror="this.style.display='none'"> Top 5 Cores Gainers`,
+                label: 'Top 5 Cores Gainers',
                 color: '#81e6d9',
                 rows: () => [...activePlayerData]
                     .filter(p => parseGainValue(p.coresGain) > 0)
@@ -1164,8 +1164,8 @@
                     .map(p => ({ name: p.name, role: p.role, value: p.coresGain, gain: p.coresGain }))
             },
             {
-                title: `<img src="${ICON_BASE}Medals.png" style="height:14px;width:auto;vertical-align:middle;margin-right:4px;" onerror="this.style.display='none'"> Top 5 CX Gain`,
-                label: 'Top 5 CX Gain',
+                title: `<img src="${ICON_BASE}CX.png" style="height:14px;width:auto;vertical-align:middle;margin-right:4px;" onerror="this.style.display='none'"> Top 5 CX Gainers`,
+                label: 'Top 5 CX Gainers',
                 color: '#a78bfa',
                 rows: () => [...activePlayerData]
                     .filter(p => parseGainValue(p.cxGain) > 0)
