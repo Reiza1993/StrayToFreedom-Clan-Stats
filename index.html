@@ -320,7 +320,7 @@
         .lb-viewport {
             position: relative;
             overflow: hidden;
-            height: 186px;
+            height: 158px;
         }
         .lb-panel {
             position: absolute;
@@ -1102,7 +1102,9 @@
             {
                 title: '📈 Top 5 LME Gain',
                 color: '#10b981',
+                // exclude players whose previous score was 0 (comeback ≠ true weekly gain)
                 rows: () => [...activePlayerData]
+                    .filter(p => (p.lmeScore - parseGainValue(p.lmeGain)) > 0)
                     .sort((a, b) => parseGainValue(b.lmeGain) - parseGainValue(a.lmeGain))
                     .slice(0, 5)
                     .map(p => ({ name: p.name, role: p.role, value: p.lmeScore.toLocaleString(), gain: p.lmeGain }))
@@ -1116,12 +1118,12 @@
                     .map(p => ({ name: p.name, role: p.role, value: formatNumber(p.attack), gain: p.attackGain }))
             },
             {
-                title: '🔵 Top 5 CX Score',
-                color: '#68d391',
+                title: '💎 Top 5 Relic Cores',
+                color: '#81e6d9',
                 rows: () => [...activePlayerData]
-                    .sort((a, b) => b.cxScore - a.cxScore)
+                    .sort((a, b) => b.coresNum - a.coresNum)
                     .slice(0, 5)
-                    .map(p => ({ name: p.name, role: p.role, value: p.cxScore.toLocaleString(), gain: p.cxGain }))
+                    .map(p => ({ name: p.name, role: p.role, value: p.cores, gain: p.coresGain }))
             }
         ];
 
