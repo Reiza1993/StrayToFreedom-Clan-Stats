@@ -278,6 +278,38 @@
         .gain-negative { color: #f56565; }
         .gain-neutral  { color: #a0aec0; }
         
+        /* ── Font Size Control ── */
+        .font-ctrl {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            background: #374151;
+            border: 1px solid #4a5568;
+            border-radius: 8px;
+            padding: 4px 8px;
+            flex-shrink: 0;
+        }
+        .font-ctrl button {
+            background: none;
+            border: none;
+            color: #e2e8f0;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 700;
+            padding: 2px 6px;
+            border-radius: 4px;
+            transition: background 0.2s;
+            line-height: 1;
+        }
+        .font-ctrl button:hover { background: #4a5568; }
+        .font-ctrl span {
+            color: #a0aec0;
+            font-size: 11px;
+            min-width: 34px;
+            text-align: center;
+            user-select: none;
+        }
+
         /* ── Top 5 Leaderboard Widget ── */
         .leaderboard-widget {
             background: linear-gradient(135deg, #1a202c, #2d3748);
@@ -525,6 +557,11 @@
             <button class="export-btn" onclick="exportToCSV()">Export CSV</button>
             <button class="export-btn" onclick="openLMEHistory()">LME History</button>
             <button class="export-btn" onclick="openAlumni()">Alumni</button>
+            <div class="font-ctrl">
+                <button onclick="adjustFontSize(-0.05)" title="Decrease font size">A−</button>
+                <span id="fontSizeLabel">100%</span>
+                <button onclick="adjustFontSize(+0.05)" title="Increase font size">A+</button>
+            </div>
         </div>
         
         <!-- Compact Role Legend -->
@@ -1191,6 +1228,24 @@
             goToPanel((lbCurrent + 1) % LB_CATEGORIES.length);
         }
 
+        // ══════════════════════════════════════════════
+        //  GLOBAL FONT SIZE CONTROL
+        //  Zooms the whole container; persists in localStorage
+        // ══════════════════════════════════════════════
+        const FS_MIN = 0.7, FS_MAX = 1.4, FS_STEP = 0.05;
+        let fontScale = parseFloat(localStorage.getItem('fontScale') || '1');
+
+        function applyFontScale() {
+            document.querySelector('.container').style.zoom = fontScale;
+            document.getElementById('fontSizeLabel').textContent = Math.round(fontScale * 100) + '%';
+            localStorage.setItem('fontScale', fontScale);
+        }
+
+        function adjustFontSize(delta) {
+            fontScale = Math.min(FS_MAX, Math.max(FS_MIN, Math.round((fontScale + delta) * 100) / 100));
+            applyFontScale();
+        }
+
         document.addEventListener('keydown', e => {
             if (e.key !== 'Escape') return;
             document.getElementById('lmeHistoryModal').style.display = 'none';
@@ -1200,6 +1255,7 @@
         // ══════════════════════════════════════════════
         //  INIT
         // ══════════════════════════════════════════════
+        applyFontScale();
         loadClanStats();
         calculateAndDisplayStats();
         calculateSecretScore();
