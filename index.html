@@ -214,6 +214,13 @@
             color: #a0aec0;
         }
 
+        .glory-btn {
+            background: linear-gradient(135deg, #b7791f, #d69e2e);
+        }
+        .glory-btn:hover {
+            box-shadow: 0 10px 20px rgba(255, 215, 0, 0.3);
+        }
+
         /* Calculated Stats Section */
         .calc-stats-section {
             margin-bottom: 20px;
@@ -557,6 +564,7 @@
             <button class="export-btn" onclick="exportToCSV()">Export CSV</button>
             <button class="export-btn" onclick="openLMEHistory()">LME History</button>
             <button class="export-btn" onclick="openAlumni()">Alumni</button>
+            <button class="export-btn glory-btn" onclick="openGloryModal()">⭐ Next Glory</button>
             <div class="font-ctrl">
                 <button onclick="adjustFontSize(-0.05)" title="Decrease font size">A−</button>
                 <span id="fontSizeLabel">100%</span>
@@ -681,6 +689,18 @@
                 
                 <div id="alumniGrid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 10px; max-height: 400px; overflow-y: auto; padding: 10px; background: #374151; border-radius: 8px;">
                 </div>
+            </div>
+        </div>
+        <!-- Next Glory Members Modal -->
+        <div id="gloryModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 1000; overflow-y: auto;">
+            <div style="position: relative; margin: 20px auto; padding: 20px; background: #2d3748; border-radius: 15px; max-width: 95%; width: 560px; max-height: 90vh; overflow-y: auto; border: 1px solid #b7791f; box-shadow: 0 0 30px rgba(255,215,0,0.12);">
+                <span onclick="closeGloryModal()" style="position: absolute; top: 10px; right: 15px; font-size: 24px; cursor: pointer; color: #a0aec0;">&times;</span>
+                <h2 style="color: #ffd700; margin-bottom: 4px; text-align: center; font-size: 1.4em; margin-top: 10px; text-shadow: 0 0 12px rgba(255,215,0,0.4);">⭐ Next Glory Members</h2>
+                <p style="color: #718096; font-size: 11px; text-align: center; margin: 0 0 16px 0; letter-spacing: 0.3px;">Ranked by CX Score → LME tiebreaker · Excludes Leader, Vice-Leader, Eternal Glory, Glory Members &amp; inactive (LME = 0)</p>
+
+                <div id="gloryModalBody" style="display: flex; flex-direction: column; gap: 4px;"></div>
+
+                <p style="color: #4a5568; font-size: 10px; text-align: center; margin: 14px 0 0 0;">★ = tied at highest CX score — LME used as tiebreaker</p>
             </div>
         </div>
     </div>
@@ -1117,11 +1137,102 @@
         function openAlumni()      { document.getElementById('alumniModal').style.display = 'block'; }
         function closeAlumni()     { document.getElementById('alumniModal').style.display = 'none';  }
 
+        // ══════════════════════════════════════════════
+        //  NEXT GLORY MEMBERS CALCULATOR
+        //  1. Filter: exclude Leader, Vice-Leader, Eternal Glory, Glory Member, Removed, lmeScore=0
+        //  2. Sort: CX desc → LME desc (tiebreaker)
+        //  3. Top CX tier = primary candidates (highlighted gold)
+        // ══════════════════════════════════════════════
+        function openGloryModal() {
+            const EXCLUDED_ROLES = new Set(['Leader', 'Vice-Leader', 'Eternal Glory', 'Glory Member', 'Removed']);
+            const candidates = activePlayerData.filter(p => !EXCLUDED_ROLES.has(p.role) && p.lmeScore > 0);
+
+            const body = document.getElementById('gloryModalBody');
+            body.innerHTML = '';
+
+            if (!candidates.length) {
+                body.innerHTML = '<p style="color:#718096; text-align:center;">No eligible candidates found.</p>';
+                document.getElementById('gloryModal').style.display = 'block';
+                return;
+            }
+
+            const sorted = [...candidates].sort((a, b) =>
+                b.cxScore !== a.cxScore ? b.cxScore - a.cxScore : b.lmeScore - a.lmeScore
+            );
+
+            const topCX = sorted[0].cxScore;
+
+            // Section label for top tier
+            const topLabel = document.createElement('div');
+            topLabel.style = 'font-size:10px; text-transform:uppercase; letter-spacing:1.5px; color:#d69e2e; font-weight:700; margin-bottom:2px; padding: 0 4px;';
+            topLabel.textContent = `Top Tier — CX ${topCX.toLocaleString()}`;
+            body.appendChild(topLabel);
+
+            let inTopTier = true;
+
+            sorted.forEach((p, idx) => {
+                const isTop = p.cxScore === topCX;
+
+                // Insert divider when switching from top tier to lower tiers
+                if (!isTop && inTopTier) {
+                    inTopTier = false;
+                    const divider = document.createElement('div');
+                    divider.style = 'border-top: 1px solid #4a5568; margin: 8px 0 4px 0;';
+                    body.appendChild(divider);
+                    const lowerLabel = document.createElement('div');
+                    lowerLabel.style = 'font-size:10px; text-transform:uppercase; letter-spacing:1.5px; color:#718096; font-weight:700; margin-bottom:2px; padding: 0 4px;';
+                    lowerLabel.textContent = 'Other Candidates';
+                    body.appendChild(lowerLabel);
+                }
+
+                const row = document.createElement('div');
+                row.style = `
+                    display: flex; align-items: center; gap: 10px;
+                    padding: 9px 12px; border-radius: 8px;
+                    background: ${isTop ? 'rgba(183,121,31,0.15)' : '#374151'};
+                    border: 1px solid ${isTop ? '#b7791f' : '#4a5568'};
+                `;
+
+                const rankEl = document.createElement('span');
+                rankEl.style = 'font-size:12px; font-weight:700; color:#a0aec0; width:22px; text-align:center; flex-shrink:0;';
+                rankEl.textContent = idx + 1;
+
+                const badge = document.createElement('span');
+                badge.style = 'font-size:13px; flex-shrink:0; width:16px; text-align:center;';
+                badge.textContent = isTop ? '★' : '';
+
+                const nameEl = document.createElement('span');
+                nameEl.style = `font-size:13px; font-weight:600; flex:1; color:${isTop ? '#ffd700' : '#e2e8f0'};`;
+                nameEl.textContent = p.name;
+
+                const cxEl = document.createElement('span');
+                cxEl.style = 'font-size:12px; font-weight:700; color:#68d391; white-space:nowrap;';
+                cxEl.innerHTML = `<span style="color:#4a5568;font-size:10px;">CX</span> ${p.cxScore.toLocaleString()}`;
+
+                const lmeEl = document.createElement('span');
+                lmeEl.style = 'font-size:12px; font-weight:700; color:#f59e0b; white-space:nowrap;';
+                lmeEl.innerHTML = `<span style="color:#4a5568;font-size:10px;">LME</span> ${p.lmeScore.toLocaleString()}`;
+
+                row.appendChild(rankEl);
+                row.appendChild(badge);
+                row.appendChild(nameEl);
+                row.appendChild(cxEl);
+                row.appendChild(lmeEl);
+                body.appendChild(row);
+            });
+
+            document.getElementById('gloryModal').style.display = 'block';
+        }
+
+        function closeGloryModal() { document.getElementById('gloryModal').style.display = 'none'; }
+
         window.onclick = function(event) {
             const lmeModal    = document.getElementById('lmeHistoryModal');
             const alumniModal = document.getElementById('alumniModal');
+            const gloryModal  = document.getElementById('gloryModal');
             if (event.target === lmeModal)    lmeModal.style.display    = 'none';
             if (event.target === alumniModal) alumniModal.style.display = 'none';
+            if (event.target === gloryModal)  gloryModal.style.display  = 'none';
         };
 
         document.getElementById('sortSelect').addEventListener('change', e => sortData(e.target.value));
@@ -1268,6 +1379,7 @@
             if (e.key !== 'Escape') return;
             document.getElementById('lmeHistoryModal').style.display = 'none';
             document.getElementById('alumniModal').style.display = 'none';
+            document.getElementById('gloryModal').style.display = 'none';
         });
 
         // ══════════════════════════════════════════════
