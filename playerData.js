@@ -5,7 +5,7 @@
 // See INSTRUCTIONS_GUIDE.MD for full update procedures (LME, ATK, CX, roles, removing members).
 
 const playerData = [
-    { name: "神Sterben死test", cores: "195+", attack: 2170200, coresNum: 195, role: "Leader", lmeScore: 2555, lmeGain: "(+33)", cxScore: 1900, cxGain: "(+100)", coresGain: "(+5)", attackGain: "(+0)" },
+    { name: "神Sterben死", cores: "195+", attack: 2170200, coresNum: 195, role: "Leader", lmeScore: 2555, lmeGain: "(+33)", cxScore: 1900, cxGain: "(+100)", coresGain: "(+5)", attackGain: "(+0)" },
     { name: "Cunner88", cores: "155+", attack: 1973800, coresNum: 155, role: "Vice-Leader", lmeScore: 2438, lmeGain: "(+87)", cxScore: 1900, cxGain: "(+100)", coresGain: "(+0)", attackGain: "(+33.3K)" },
     { name: "PastalaVista", cores: "155+", attack: 1543200, coresNum: 155, role: "Glory Member", lmeScore: 2056, lmeGain: "(+50)", cxScore: 2200, cxGain: "(+400)", coresGain: "(+0)", attackGain: "(+13.7K)" },
     { name: "Gritchen", cores: "160+", attack: 1739800, coresNum: 160, role: "Member", lmeScore: 1611, lmeGain: "(-45)", cxScore: 2000, cxGain: "(+300)", coresGain: "(+0)", attackGain: "(+13.1K)" },
