@@ -32,8 +32,7 @@ const playerData = [
     { name: "groggen", cores: "95+", attack: 1180800, coresNum: 95, role: "Member", lmeScore: 1491, lmeGain: "(+81)", cxScore: 2200, cxGain: "(+400)", coresGain: "(+0)", attackGain: "(+0)" },
     { name: "KingRizzle", cores: "95+", attack: 1111400, coresNum: 95, role: "Member", lmeScore: 1294, lmeGain: "(+48)", cxScore: 1700, cxGain: "(+100)", coresGain: "(+0)", attackGain: "(+15.0K)" },
     { name: "Bensayyten", cores: "70+", attack: 1239500, coresNum: 70, role: "Member", lmeScore: 1256, lmeGain: "(-3)", cxScore: 2200, cxGain: "(+400)", coresGain: "(+0)", attackGain: "(+2.4K)" },
-    { name: "Pookaz", cores: "0", attack: 0, coresNum: 0, role: "Removed", lmeScore: 0, lmeGain: "(+0)", cxScore: 0
-2100, cxGain: "(+500)", coresGain: "(+0)", attackGain: "(+0)" },
+    { name: "Pookaz", cores: "0", attack: 0, coresNum: 0, role: "Removed", lmeScore: 0, lmeGain: "(+0)", cxScore: 0, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+0)" },
     { name: "Player 78792329", cores: "90+", attack: 706000, coresNum: 90, role: "Member", lmeScore: 620, lmeGain: "(+8)", cxScore: 1600, cxGain: "(+300)", coresGain: "(+0)", attackGain: "(+0.6K)" },
     { name: "PinkyToeBeans", cores: "130+", attack: 1530200, coresNum: 130, role: "Glory Member", lmeScore: 2009, lmeGain: "(+8)", cxScore: 2100, cxGain: "(+200)", coresGain: "(+0)", attackGain: "(+0)" },
     { name: "Nubis", cores: "190+", attack: 1865700, coresNum: 190, role: "Glory Member", lmeScore: 1993, lmeGain: "(+32)", cxScore: 2200, cxGain: "(+400)", coresGain: "(+0)", attackGain: "(+0)" },
