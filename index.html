@@ -1467,7 +1467,7 @@
             // ── Requirements ──
             const roundedATKReq = Math.round((avgATK - 500000) / 50000) * 50000;
             const mVal = roundedATKReq / 1000000;
-            const atkReqStr = (mVal % 1 === 0 ? mVal.toFixed(0) : mVal.toFixed(2)) + 'M+';
+            const atkReqStr = (mVal % 1 === 0 ? mVal.toFixed(0) : parseFloat(mVal.toFixed(2)).toString()) + 'M+';
 
             const roundedLMEReq = Math.round((avgLME - 400) / 50) * 50;
             const lmeReqStr = roundedLMEReq.toLocaleString() + '+';
@@ -1476,34 +1476,52 @@
             const totalATKStr = totalATK >= 1e6
                 ? (totalATK / 1e6).toFixed(1) + 'M'
                 : (totalATK / 1e3).toFixed(1) + 'K';
-            const centerLine1 = `${totalATKStr} ATK  •  ${totalCores.toLocaleString()}+ Cores`;
-            const centerLine2 = `D${clanStats.lmeDifficulty}  •  ${totalLME.toLocaleString()} Medals`;
-            const centerLine3 = `${clanStats.lmeLeague} League`;
 
             // ── Text content ──
             const leftItems  = ['Auto Gift Code Claiming', 'Online Clan Stats Page', 'All CX & LME Rewards', 'Helpful Leadership'];
             const rightItems = [`${atkReqStr} ATK`, `${lmeReqStr} LME Medals`, 'Active in LME and CX', 'Use s.io-tools'];
 
-            // ── Draw helper ──
-            function drawText(ctx, text, x, y, size, align) {
-                ctx.font = `bold ${size}px "Arial Black", Arial, sans-serif`;
+            // ── Draw helpers ──
+            function glow(ctx, color, blur) { ctx.shadowColor = color; ctx.shadowBlur = blur; }
+            function noGlow(ctx) { ctx.shadowBlur = 0; }
+
+            function drawText(ctx, text, x, y, size, align, fillColor, glowColor, glowBlur) {
+                ctx.font      = `${size}px Impact, "Arial Black", sans-serif`;
                 ctx.textAlign = align || 'left';
-                ctx.lineJoin = 'round';
-                ctx.lineWidth = 4;
-                ctx.strokeStyle = 'rgba(0,0,0,0.95)';
+                ctx.lineJoin  = 'round';
+                if (glowColor) glow(ctx, glowColor, glowBlur || 14);
+                ctx.lineWidth   = 2.5;
+                ctx.strokeStyle = 'rgba(0,0,0,0.92)';
                 ctx.strokeText(text, x, y);
-                ctx.fillStyle = '#ffffff';
+                ctx.fillStyle = fillColor || '#ffffff';
                 ctx.fillText(text, x, y);
+                noGlow(ctx);
+            }
+
+            function drawRoundRect(ctx, x, y, w, h, r) {
+                ctx.beginPath();
+                if (ctx.roundRect) {
+                    ctx.roundRect(x, y, w, h, r);
+                } else {
+                    ctx.moveTo(x + r, y);
+                    ctx.lineTo(x + w - r, y);
+                    ctx.quadraticCurveTo(x + w, y, x + w, y + r);
+                    ctx.lineTo(x + w, y + h - r);
+                    ctx.quadraticCurveTo(x + w, y + h, x + w - r, y + h);
+                    ctx.lineTo(x + r, y + h);
+                    ctx.quadraticCurveTo(x, y + h, x, y + h - r);
+                    ctx.lineTo(x, y + r);
+                    ctx.quadraticCurveTo(x, y, x + r, y);
+                    ctx.closePath();
+                }
             }
 
             const img = new Image();
             img.onload = function () {
-                const W = img.naturalWidth;   // 970
-                const H = img.naturalHeight;  // 530
-                const scaleX = W / 970;
-                const scaleY = H / 530;
-                function sx(v) { return Math.round(v * scaleX); }
-                function sy(v) { return Math.round(v * scaleY); }
+                const W = img.naturalWidth;
+                const H = img.naturalHeight;
+                const sx = v => v * W / 970;
+                const sy = v => v * H / 530;
 
                 const canvas  = document.createElement('canvas');
                 canvas.width  = W;
@@ -1511,30 +1529,46 @@
                 const ctx = canvas.getContext('2d');
                 ctx.drawImage(img, 0, 0);
 
-                // Dark backing rect behind center stats
-                ctx.fillStyle = 'rgba(0,0,0,0.50)';
-                ctx.beginPath();
-                if (ctx.roundRect) {
-                    ctx.roundRect(sx(305), sy(350), sx(360), sy(120), sy(8));
-                } else {
-                    ctx.rect(sx(305), sy(350), sx(360), sy(120));
-                }
-                ctx.fill();
-
-                // Center stats
-                drawText(ctx, centerLine1, sx(485), sy(385), sy(17), 'center');
-                drawText(ctx, centerLine2, sx(485), sy(420), sy(17), 'center');
-                drawText(ctx, centerLine3, sx(485), sy(455), sy(17), 'center');
-
-                // Left panel items
+                // ── LEFT PANEL items — aligned to checkmark rows ──
+                // Template rows (970×530 native): y ≈ 222, 290, 358, 426
+                const panelRowY = [222, 290, 358, 426];
                 leftItems.forEach((text, i) => {
-                    drawText(ctx, text, sx(68), sy(327) + i * sy(47), sy(16));
+                    drawText(ctx, text, sx(68), sy(panelRowY[i]), sy(17), 'left', '#ffffff', '#00e5ff', 13);
                 });
 
-                // Right panel items
+                // ── RIGHT PANEL items — same row y positions ──
                 rightItems.forEach((text, i) => {
-                    drawText(ctx, text, sx(762), sy(327) + i * sy(47), sy(16));
+                    drawText(ctx, text, sx(720), sy(panelRowY[i]), sy(17), 'left', '#ffffff', '#ffd700', 13);
                 });
+
+                // ── CENTER STATS — styled dark panel, colored lines ──
+                drawRoundRect(ctx, sx(290), sy(342), sx(390), sy(148), sy(10));
+                ctx.fillStyle = 'rgba(10, 12, 28, 0.68)';
+                ctx.fill();
+                glow(ctx, '#667eea', 12);
+                ctx.strokeStyle = 'rgba(102, 126, 234, 0.70)';
+                ctx.lineWidth = sx(1.8);
+                ctx.stroke();
+                noGlow(ctx);
+
+                // Thin purple top accent bar
+                ctx.fillStyle = 'rgba(102, 126, 234, 0.85)';
+                ctx.fillRect(sx(292), sy(342), sx(386), sy(3));
+
+                // ATK & Cores — white, purple glow
+                drawText(ctx,
+                    `${totalATKStr} ATK  •  ${totalCores.toLocaleString()}+ Cores`,
+                    sx(485), sy(383), sy(19), 'center', '#ffffff', '#a78bfa', 16);
+
+                // Difficulty & Medals — cyan
+                drawText(ctx,
+                    `D${clanStats.lmeDifficulty}  •  ${totalLME.toLocaleString()} Medals`,
+                    sx(485), sy(420), sy(19), 'center', '#67e8f9', '#22d3ee', 16);
+
+                // League — gold, slightly larger
+                drawText(ctx,
+                    `${clanStats.lmeLeague} League`,
+                    sx(485), sy(460), sy(22), 'center', '#fbbf24', '#ffd700', 18);
 
                 const link = document.createElement('a');
                 link.download = 'freedomstray-recruitment.png';
