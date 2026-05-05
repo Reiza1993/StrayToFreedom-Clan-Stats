@@ -192,6 +192,13 @@
             box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
         }
 
+        .recruit-btn {
+            background: linear-gradient(135deg, #10b981, #059669);
+        }
+        .recruit-btn:hover {
+            box-shadow: 0 10px 20px rgba(16, 185, 129, 0.3);
+        }
+
         /* Toggle Removed button — distinct grey style */
         .toggle-removed-btn {
             background: #2d3748;
@@ -565,6 +572,7 @@
             <button class="export-btn" onclick="openLMEHistory()">LME History</button>
             <button class="export-btn" onclick="openAlumni()">Alumni</button>
             <button class="export-btn glory-btn" onclick="openGloryModal()">⭐ Next Glory</button>
+            <button class="export-btn recruit-btn" id="recruitBtn" onclick="generateRecruitmentImage()">🎨 Generate Recruitment Image</button>
             <div class="font-ctrl">
                 <button onclick="adjustFontSize(-0.05)" title="Decrease font size">A−</button>
                 <span id="fontSizeLabel">100%</span>
@@ -1437,6 +1445,111 @@
                 btn.style.color = '#10b981';
                 setTimeout(() => { btn.textContent = orig; btn.style.color = ''; }, 2000);
             }).catch(() => {});
+        }
+
+        function generateRecruitmentImage() {
+            const btn = document.getElementById('recruitBtn');
+            btn.textContent = '⏳ Generating...';
+            btn.disabled = true;
+
+            // ── Calculate stats ──
+            const byATK    = [...playerData].sort((a, b) => b.attack   - a.attack).slice(0, TOP_N);
+            const totalATK = byATK.reduce((s, p) => s + p.attack, 0);
+            const avgATK   = totalATK / TOP_N;
+
+            const byCores    = [...playerData].sort((a, b) => b.coresNum - a.coresNum).slice(0, TOP_N);
+            const totalCores = byCores.reduce((s, p) => s + p.coresNum, 0);
+
+            const byLME    = [...playerData].sort((a, b) => b.lmeScore - a.lmeScore).slice(0, TOP_N);
+            const totalLME = byLME.reduce((s, p) => s + p.lmeScore, 0);
+            const avgLME   = totalLME / TOP_N;
+
+            // ── Requirements ──
+            const roundedATKReq = Math.round((avgATK - 500000) / 50000) * 50000;
+            const mVal = roundedATKReq / 1000000;
+            const atkReqStr = (mVal % 1 === 0 ? mVal.toFixed(0) : mVal.toFixed(2)) + 'M+';
+
+            const roundedLMEReq = Math.round((avgLME - 400) / 50) * 50;
+            const lmeReqStr = roundedLMEReq.toLocaleString() + '+';
+
+            // ── Center stat strings ──
+            const totalATKStr = totalATK >= 1e6
+                ? (totalATK / 1e6).toFixed(1) + 'M'
+                : (totalATK / 1e3).toFixed(1) + 'K';
+            const centerLine1 = `${totalATKStr} ATK  •  ${totalCores.toLocaleString()}+ Cores`;
+            const centerLine2 = `D${clanStats.lmeDifficulty}  •  ${totalLME.toLocaleString()} Medals`;
+            const centerLine3 = `${clanStats.lmeLeague} League`;
+
+            // ── Text content ──
+            const leftItems  = ['Auto Gift Code Claiming', 'Online Clan Stats Page', 'All CX & LME Rewards', 'Helpful Leadership'];
+            const rightItems = [`${atkReqStr} ATK`, `${lmeReqStr} LME Medals`, 'Active in LME and CX', 'Use s.io-tools'];
+
+            // ── Draw helper ──
+            function drawText(ctx, text, x, y, size, align) {
+                ctx.font = `bold ${size}px "Arial Black", Arial, sans-serif`;
+                ctx.textAlign = align || 'left';
+                ctx.lineJoin = 'round';
+                ctx.lineWidth = 4;
+                ctx.strokeStyle = 'rgba(0,0,0,0.95)';
+                ctx.strokeText(text, x, y);
+                ctx.fillStyle = '#ffffff';
+                ctx.fillText(text, x, y);
+            }
+
+            const img = new Image();
+            img.onload = function () {
+                const W = img.naturalWidth;   // 970
+                const H = img.naturalHeight;  // 530
+                const scaleX = W / 970;
+                const scaleY = H / 530;
+                function sx(v) { return Math.round(v * scaleX); }
+                function sy(v) { return Math.round(v * scaleY); }
+
+                const canvas  = document.createElement('canvas');
+                canvas.width  = W;
+                canvas.height = H;
+                const ctx = canvas.getContext('2d');
+                ctx.drawImage(img, 0, 0);
+
+                // Dark backing rect behind center stats
+                ctx.fillStyle = 'rgba(0,0,0,0.50)';
+                ctx.beginPath();
+                if (ctx.roundRect) {
+                    ctx.roundRect(sx(305), sy(350), sx(360), sy(120), sy(8));
+                } else {
+                    ctx.rect(sx(305), sy(350), sx(360), sy(120));
+                }
+                ctx.fill();
+
+                // Center stats
+                drawText(ctx, centerLine1, sx(485), sy(385), sy(17), 'center');
+                drawText(ctx, centerLine2, sx(485), sy(420), sy(17), 'center');
+                drawText(ctx, centerLine3, sx(485), sy(455), sy(17), 'center');
+
+                // Left panel items
+                leftItems.forEach((text, i) => {
+                    drawText(ctx, text, sx(68), sy(327) + i * sy(47), sy(16));
+                });
+
+                // Right panel items
+                rightItems.forEach((text, i) => {
+                    drawText(ctx, text, sx(762), sy(327) + i * sy(47), sy(16));
+                });
+
+                const link = document.createElement('a');
+                link.download = 'freedomstray-recruitment.png';
+                link.href = canvas.toDataURL('image/png');
+                link.click();
+
+                btn.textContent = '✅ Downloaded!';
+                setTimeout(() => { btn.textContent = '🎨 Generate Recruitment Image'; btn.disabled = false; }, 2000);
+            };
+            img.onerror = function () {
+                btn.textContent = '❌ Template not found';
+                btn.disabled = false;
+                setTimeout(() => { btn.textContent = '🎨 Generate Recruitment Image'; }, 2500);
+            };
+            img.src = 'recruitment-template.png';
         }
 
         function goToPanel(idx) {
