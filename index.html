@@ -585,7 +585,7 @@
             <div class="lb-header">
                 <span class="lb-title" id="lb-title">Top 5 LME Gain</span>
                 <div style="display:flex;align-items:center;gap:10px;">
-                    <span id="lb-copy-btn" onclick="lbCopyToClipboard()" style="cursor:pointer;font-size:10px;color:rgba(255,255,255,0.65);user-select:none;padding:2px 5px;border:1px solid rgba(255,255,255,0.25);border-radius:4px;" title="Copy to clipboard">📋 copy</span>
+                    <span id="lb-copy-btn" onclick="lbDiscordCopy()" style="cursor:pointer;font-size:10px;color:rgba(255,255,255,0.65);user-select:none;padding:2px 5px;border:1px solid rgba(255,255,255,0.25);border-radius:4px;" title="Copy Discord message">📋 Discord Copy</span>
                     <div class="lb-dots" id="lb-dots">
                         <span class="lb-dot active" onclick="goToPanel(0)"></span>
                         <span class="lb-dot" onclick="goToPanel(1)"></span>
@@ -1323,16 +1323,119 @@
             document.getElementById('lb-title').innerHTML = LB_CATEGORIES[0].title;
         }
 
-        function lbCopyToClipboard() {
-            const cat = LB_CATEGORIES[lbCurrent];
-            const rows = cat.rows();
-            const lines = [cat.label, ...rows.map((r, i) => `${i + 1}. ${r.name}: ${r.value}`)];
+        function lbDiscordCopy() {
+            // ── Recalculate totals (mirrors calculateAndDisplayStats) ──
+            const withPrevATK = playerData.map(p => ({ ...p, prevATK: p.attack - parseGainValue(p.attackGain) }));
+            const byATK       = [...withPrevATK].sort((a, b) => b.attack  - a.attack).slice(0, TOP_N);
+            const byATKPrev   = [...withPrevATK].sort((a, b) => b.prevATK - a.prevATK).slice(0, TOP_N);
+            const totalATK     = byATK.reduce((s, p) => s + p.attack, 0);
+            const totalATKGain = totalATK - byATKPrev.reduce((s, p) => s + p.prevATK, 0);
+
+            const withPrevCores = playerData.map(p => ({ ...p, prevCores: p.coresNum - parseGainValue(p.coresGain) }));
+            const byCores       = [...withPrevCores].sort((a, b) => b.coresNum  - a.coresNum).slice(0, TOP_N);
+            const byCoresPrev   = [...withPrevCores].sort((a, b) => b.prevCores - a.prevCores).slice(0, TOP_N);
+            const totalCores     = byCores.reduce((s, p) => s + p.coresNum, 0);
+            const totalCoresGain = totalCores - byCoresPrev.reduce((s, p) => s + p.prevCores, 0);
+
+            const byLME     = [...playerData].sort((a, b) => b.lmeScore - a.lmeScore).slice(0, TOP_N);
+            const totalLME  = byLME.reduce((s, p) => s + p.lmeScore, 0);
+            const byLMEPrev = [...playerData]
+                .map(p => ({ ...p, prevScore: p.lmeScore - parseGainValue(p.lmeGain) }))
+                .sort((a, b) => b.prevScore - a.prevScore).slice(0, TOP_N);
+            const totalLMEGain = totalLME - byLMEPrev.reduce((s, p) => s + p.prevScore, 0);
+
+            const totalCX     = playerData.reduce((s, p) => s + p.cxScore, 0);
+            const totalCXGain = playerData.reduce((s, p) => s + parseGainValue(p.cxGain), 0);
+
+            // ── Top 5 lists (same filters as LB_CATEGORIES) ──
+            const medals = ['🥇', '🥈', '🥉', '4️⃣', '5️⃣'];
+
+            const topLME = [...activePlayerData]
+                .filter(p => (p.lmeScore - parseGainValue(p.lmeGain)) > 0)
+                .sort((a, b) => parseGainValue(b.lmeGain) - parseGainValue(a.lmeGain))
+                .slice(0, 5);
+
+            const topATK = [...activePlayerData]
+                .filter(p => parseGainValue(p.attackGain) > 0)
+                .sort((a, b) => parseGainValue(b.attackGain) - parseGainValue(a.attackGain))
+                .slice(0, 5);
+
+            const topCores = [...activePlayerData]
+                .filter(p => parseGainValue(p.coresGain) > 0)
+                .sort((a, b) => parseGainValue(b.coresGain) - parseGainValue(a.coresGain))
+                .slice(0, 5);
+
+            const topCX = [...activePlayerData]
+                .filter(p => parseGainValue(p.cxGain) > 0)
+                .sort((a, b) => parseGainValue(b.cxGain) - parseGainValue(a.cxGain))
+                .slice(0, 5);
+
+            // ── Plain-text formatters ──
+            function fmtATKGain(val) {
+                const sign = val >= 0 ? '+' : '-';
+                const abs  = Math.abs(val);
+                if (abs >= 1000000) return `(${sign}${(abs / 1000000).toFixed(2)}M)`;
+                if (abs >= 1000)    return `(${sign}${(abs / 1000).toFixed(1)}K)`;
+                return `(${sign}${Math.round(abs).toLocaleString()})`;
+            }
+            function fmtGain(val) {
+                const sign = val >= 0 ? '+' : '';
+                return `(${sign}${Math.round(val).toLocaleString()})`;
+            }
+            const totalATKStr = totalATK >= 1000000
+                ? (totalATK / 1000000).toFixed(1) + 'M'
+                : (totalATK / 1000).toFixed(1) + 'K';
+
+            // ── Build message ──
+            const lines = [
+                '# 📊 FREEDOM PROTOCOL // Weekly Stats Update',
+                '',
+                '## 🎯 Clan Performance Overview',
+                '',
+                `**⚔️ Total ATK:** ${totalATKStr} **${fmtATKGain(totalATKGain)}**`,
+                `**🏅 Total LME:** ${totalLME.toLocaleString()} **${fmtGain(totalLMEGain)}**`,
+                `**💎 Total Cores:** ${totalCores.toLocaleString()}+ **${fmtGain(totalCoresGain)}**`,
+                '',
+                '---',
+                '',
+                '## 🏆 Top 5 LME Gainers',
+                ...(topLME.length
+                    ? topLME.map((p, i) => `${medals[i]} **${p.name}:** ${p.lmeScore.toLocaleString()} **${p.lmeGain}**`)
+                    : ['*No gainers this week*']),
+                '',
+                '## ⚔️ Top 5 ATK Gainers',
+                ...(topATK.length
+                    ? topATK.map((p, i) => `${medals[i]} **${p.name}:** ${formatNumber(p.attack)} **${p.attackGain}**`)
+                    : ['*No gainers this week*']),
+                '',
+                '## 💎 Top 5 Cores Gainers',
+                ...(topCores.length
+                    ? topCores.map((p, i) => `${medals[i]} **${p.name}:** ${p.coresNum}+ **${p.coresGain}**`)
+                    : ['*No gainers this week*']),
+                '',
+                '---',
+                '',
+                '## 🌟 CX Progress Report',
+                '',
+                '**🎖️ Top 5 CX Contributors:**',
+                ...(topCX.length
+                    ? topCX.map((p, i) => `${i + 1}. **${p.name}:** ${p.cxGain.replace(/[()]/g, '')}`)
+                    : ['*No contributions this week*']),
+                '',
+                `**📈 Total CX Progress:** ${totalCX.toLocaleString()} **${fmtGain(totalCXGain)}**`,
+                '',
+                '---',
+                '',
+                '🔗 **Full Dashboard:** https://freedomstray.netlify.app/',
+                '*Freedomˢᵗʳᵃʸ*'
+            ];
+
             navigator.clipboard.writeText(lines.join('\n')).then(() => {
-                const btn = document.getElementById('lb-copy-btn');
+                const btn  = document.getElementById('lb-copy-btn');
                 const orig = btn.textContent;
-                btn.textContent = 'Copied!';
+                btn.textContent = '✅ Copied!';
                 btn.style.color = '#10b981';
-                setTimeout(() => { btn.textContent = orig; btn.style.color = ''; }, 1500);
+                setTimeout(() => { btn.textContent = orig; btn.style.color = ''; }, 2000);
             }).catch(() => {});
         }
 
