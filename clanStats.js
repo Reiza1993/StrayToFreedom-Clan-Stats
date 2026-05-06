@@ -1,12 +1,12 @@
 // clanStats.js
 // Freedomˢᵗʳᵃʸ Clan Statistics
-// Last Updated: Week 57 - May 2026 (LME #40)
+// Last Updated: Week 58 - May 2026 (Difficulty 14, Glory Reset)
 //
 // See INSTRUCTIONS_GUIDE.MD for full update procedures (LME history, alumni, lunar points).
 
 const clanStats = {
     // Current LME information (update weekly)
-    lmeDifficulty: 13,
+    lmeDifficulty: 14,
     lmeLeague: "Champion",
 
     // Lunar Points baseline — DO NOT change this value.
