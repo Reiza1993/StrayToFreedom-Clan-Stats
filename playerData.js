@@ -20,7 +20,7 @@ const playerData = [
     { name: "BobBobberson", cores: "110+", attack: 1478100, coresNum: 110, role: "Member", lmeScore: 1478, lmeGain: "(+96)", cxScore: 400, cxGain: "(+400)", coresGain: "(+0)", attackGain: "(+23.3K)" },
     { name: "N0M3rcy", cores: "100+", attack: 1231700, coresNum: 100, role: "Member", lmeScore: 991, lmeGain: "(+173)", cxScore: 200, cxGain: "(+200)", coresGain: "(+0)", attackGain: "(+10.0K)" },
     { name: "魂Hobin357死", cores: "105+", attack: 1697500, coresNum: 105, role: "Member", lmeScore: 1918, lmeGain: "(+172)", cxScore: 200, cxGain: "(+200)", coresGain: "(+0)", attackGain: "(+164.5K)" },
-    { name: "Player 66607264", cores: "120+", attack: 1311800, coresNum: 120, role: "Member", lmeScore: 0, lmeGain: "(+0)", cxScore: 400, cxGain: "(+400)", coresGain: "(+0)", attackGain: "(+0)" },
+    { name: "Player 66607264", cores: "120+", attack: 1311800, coresNum: 120, role: "Member", lmeScore: 1905, lmeGain: "(+1905)", cxScore: 400, cxGain: "(+400)", coresGain: "(+0)", attackGain: "(+0)" },
     { name: "Epic|W", cores: "85+", attack: 1143400, coresNum: 85, role: "Member", lmeScore: 909, lmeGain: "(+62)", cxScore: 0, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+3.4K)" },
     { name: "THJF1948ㅣStray", cores: "100+", attack: 1290300, coresNum: 100, role: "Member", lmeScore: 1386, lmeGain: "(+109)", cxScore: 0, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+6.7K)" },
     { name: "Rzzza", cores: "110+", attack: 1431700, coresNum: 110, role: "Member", lmeScore: 1612, lmeGain: "(+181)", cxScore: 0, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+2.3K)" },
