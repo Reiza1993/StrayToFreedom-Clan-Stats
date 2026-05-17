@@ -1,6 +1,6 @@
 // clanStats.js
 // Freedomˢᵗʳᵃʸ Clan Statistics
-// Last Updated: Week 58 - May 2026 (LME #41 Added)
+// Last Updated: Week 59 - May 2026 (LME #42 Added, Fl3xas2 renamed to BIRB)
 //
 // See INSTRUCTIONS_GUIDE.MD for full update procedures (LME history, alumni, lunar points).
 
@@ -20,6 +20,14 @@ const clanStats = {
 // LME History Data
 // Add new results to the TOP of this array
 const lmeHistory = [
+    {
+        lmeNumber: 42,
+        rank: 2,
+        rankImage: "https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Rank2.png",
+        atkDefPoints: 3,
+        medals: 100929,
+        league: "Champion"
+    },
     {
         lmeNumber: 41,
         rank: 1,
