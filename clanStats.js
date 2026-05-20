@@ -371,7 +371,7 @@ const alumniMembers = [
     "KusoYaroo", "cocacandy", "chiknstrip", "SmallBotoㅣStray", "Phley", "6J4", "lguinily",
     "Mclovin404", "Hiryu69", "swifft", "WeirdPlays", "mc2028.",
     "命Waiora癒", "аіко","HannaH","♚Jojo♔",
-    "SUJAY", "Pookaz", "Hanter007",
+    "SUJAY", "Pookaz", "Hanter007","BIRB",
 ];
 
 // Export for use in main application
