@@ -14,7 +14,7 @@ const clanStats = {
     lunarPoints: 1225,
 
     // Alumni count (update when members leave)
-    alumniCount: 66
+    alumniCount: 67
 };
 
 // LME History Data
