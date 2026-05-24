@@ -1,6 +1,6 @@
 // clanStats.js
 // Freedomˢᵗʳᵃʸ Clan Statistics
-// Last Updated: Week 59 - May 2026 (LME #42 Added, Fl3xas2 renamed to BIRB)
+// Last Updated: Week 60 - May 2026 (LME #43 Added, CX Updated, Glory Members Assigned)
 //
 // See INSTRUCTIONS_GUIDE.MD for full update procedures (LME history, alumni, lunar points).
 
@@ -14,12 +14,20 @@ const clanStats = {
     lunarPoints: 1225,
 
     // Alumni count (update when members leave)
-    alumniCount: 67
+    alumniCount: 66
 };
 
 // LME History Data
 // Add new results to the TOP of this array
 const lmeHistory = [
+    {
+        lmeNumber: 43,
+        rank: 4,
+        rankImage: null,
+        atkDefPoints: 3,
+        medals: 76430,
+        league: "Champion"
+    },
     {
         lmeNumber: 42,
         rank: 2,
@@ -370,8 +378,8 @@ const alumniMembers = [
     "AleisterCrowley", "Szoj", "Player 58934337", "OsG", "Slaterho", "CheesyBreadSticks",
     "KusoYaroo", "cocacandy", "chiknstrip", "SmallBotoㅣStray", "Phley", "6J4", "lguinily",
     "Mclovin404", "Hiryu69", "swifft", "WeirdPlays", "mc2028.",
-    "命Waiora癒", "аіко","HannaH","♚Jojo♔",
-    "SUJAY", "Pookaz", "Hanter007","BIRB",
+    "命 Waiora癒", "аіко","HannaH","♙Jojo♔",
+    "SUJAY", "Pookaz", "Hanter007",
 ];
 
 // Export for use in main application
