@@ -1,6 +1,6 @@
 // clanStats.js
 // Freedomˢᵗʳᵃʸ Clan Statistics
-// Last Updated: Week 60 - May 2026 (LME #43 Added, CX Updated, Glory Members Assigned)
+// Last Updated: Week 61 - May 2026 (LME Scores Updated, ATK/Cores Updated, Bensayyten Removed, theLP/Rėtrø Added)
 //
 // See INSTRUCTIONS_GUIDE.MD for full update procedures (LME history, alumni, lunar points).
 
