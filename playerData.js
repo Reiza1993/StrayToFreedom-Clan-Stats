@@ -40,7 +40,7 @@ const playerData = [
     { name: "p88203044", cores: "110+", attack: 1543400, coresNum: 110, role: "Member", lmeScore: 1881, lmeGain: "(+65)", cxScore: 1600, cxGain: "(+500)", coresGain: "(+0)", attackGain: "(+21.4K)" },
     { name: "һan", cores: "390+", attack: 3321300, coresNum: 390, role: "Eternal Glory", lmeScore: 3436, lmeGain: "(-18)", cxScore: 1700, cxGain: "(+700)", coresGain: "(+0)", attackGain: "(+0)" },
     { name: "Fl3xas", cores: "300+", attack: 2562100, coresNum: 300, role: "Glory Member", lmeScore: 2963, lmeGain: "(+24)", cxScore: 1900, cxGain: "(+700)", coresGain: "(+0)", attackGain: "(+0)" },
-    { name: "BIRB", cores: "0", attack: 0, coresNum: 0, role: "Removed", lmeScore: 0, lmeGain: "(-2647)", cxScore: 700, cxGain: "(+500)", coresGain: "(-205)", attackGain: "(-2219.0K)" },
+    { name: "BIRB", cores: "0", attack: 0, coresNum: 0, role: "Removed", lmeScore: 0, lmeGain: "(+0)", cxScore: 700, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+0)" },
     { name: "Koncalaz", cores: "180+", attack: 2029200, coresNum: 180, role: "Member", lmeScore: 2500, lmeGain: "(+13)", cxScore: 1500, cxGain: "(+500)", coresGain: "(+0)", attackGain: "(+12.9K)" },
     { name: "ergiangi", cores: "90+", attack: 1365300, coresNum: 90, role: "Member", lmeScore: 1732, lmeGain: "(+41)", cxScore: 1400, cxGain: "(+500)", coresGain: "(+0)", attackGain: "(+15.0K)" },
     { name: "samwise08", cores: "125+", attack: 1323000, coresNum: 125, role: "Member", lmeScore: 1755, lmeGain: "(+161)", cxScore: 1200, cxGain: "(+500)", coresGain: "(+5)", attackGain: "(+84.2K)" },
