@@ -633,7 +633,7 @@
                 <h2 style="color: #f7fafc; margin-bottom: 20px; text-align: center; font-size: 1.5em; margin-top: 10px;">🌙 LME History</h2>
                 
                 <!-- Secret Score Calculator Row -->
-                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 15px;">
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin-bottom: 8px;">
                     <div class="calc-stat-card" style="border-color: #553c9a;">
                         <div class="calc-stat-label">Lunar Points</div>
                         <div class="calc-stat-value" style="color: #ffd700;" id="historyLunarPoints">—</div>
@@ -642,9 +642,15 @@
                         <div class="calc-stat-label">Rank Factor</div>
                         <div class="calc-stat-value" style="color: #81e6d9;" id="historyRankFactor">1.0000</div>
                     </div>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin-bottom: 15px;">
                     <div class="calc-stat-card" style="border-color: #b7791f; box-shadow: 0 0 8px rgba(255,215,0,0.12);">
                         <div class="calc-stat-label">Secret Score</div>
                         <div class="calc-stat-value" style="color: #ffd700;" id="historySecretScore">—</div>
+                    </div>
+                    <div class="calc-stat-card" style="border-color: #2b6cb0;">
+                        <div class="calc-stat-label">Avg Rank <span style="font-size:8px; opacity:0.6;">(Last 10)</span></div>
+                        <div class="calc-stat-value" id="historyAvgRank">—</div>
                     </div>
                 </div>
                 
@@ -979,6 +985,16 @@
                 `;
                 tbody.appendChild(row);
             });
+
+            // Average rank over last 10 LMEs
+            const last10 = lmeHistory.slice(0, 10);
+            const avgRank = last10.reduce((s, l) => s + l.rank, 0) / last10.length;
+            const avgRankEl = document.getElementById('historyAvgRank');
+            avgRankEl.textContent = avgRank.toFixed(2);
+            if      (avgRank <= 1.5) avgRankEl.style.color = '#ffd700';
+            else if (avgRank <= 2.5) avgRankEl.style.color = '#c0c0c0';
+            else if (avgRank <= 3.5) avgRankEl.style.color = '#cd7930';
+            else                     avgRankEl.style.color = '#f56565';
         }
 
         // Load Alumni into modal
