@@ -1,6 +1,6 @@
 // playerData.js
 // Freedomˢᵗʳᵃʸ Clan Player Statistics
-// Last Updated: Week 62 - May 2026 (LME #44 Added, CX Updated)
+// Last Updated: Week 62 - May 2026 (LME #44 Added, CX Updated, Glory Members Assigned)
 //
 // See INSTRUCTIONS_GUIDE.MD for full update procedures (LME, ATK, CX, roles, removing members).
 
@@ -33,11 +33,11 @@ const playerData = [
     { name: "Bensayyten", cores: "0", attack: 0, coresNum: 0, role: "Removed", lmeScore: 0, lmeGain: "(-1523)", cxScore: 1800, cxGain: "(+200)", coresGain: "(-80)", attackGain: "(-1269.4K)" },
     { name: "Player 78792329", cores: "90+", attack: 707100, coresNum: 90, role: "Member", lmeScore: 618, lmeGain: "(-4)", cxScore: 900, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+0)" },
     { name: "PinkyToeBeans", cores: "130+", attack: 1530200, coresNum: 130, role: "Glory Member", lmeScore: 2158, lmeGain: "(+12)", cxScore: 2100, cxGain: "(+300)", coresGain: "(+0)", attackGain: "(+0)" },
-    { name: "Nubis", cores: "200+", attack: 1955800, coresNum: 200, role: "Member", lmeScore: 2210, lmeGain: "(+29)", cxScore: 2200, cxGain: "(+600)", coresGain: "(+0)", attackGain: "(+17.5K)" },
+    { name: "Nubis", cores: "200+", attack: 1955800, coresNum: 200, role: "Glory Member", lmeScore: 2210, lmeGain: "(+29)", cxScore: 2200, cxGain: "(+600)", coresGain: "(+0)", attackGain: "(+17.5K)" },
     { name: "Player113322", cores: "160+", attack: 1783200, coresNum: 160, role: "Member", lmeScore: 1928, lmeGain: "(-47)", cxScore: 100, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+3.7K)" },
     { name: "Apathy_", cores: "105+", attack: 1299800, coresNum: 105, role: "Member", lmeScore: 1728, lmeGain: "(+120)", cxScore: 2200, cxGain: "(+400)", coresGain: "(+0)", attackGain: "(+11.3K)" },
     { name: "VictorMolusco", cores: "105+", attack: 1205600, coresNum: 105, role: "Glory Member", lmeScore: 1707, lmeGain: "(+27)", cxScore: 2100, cxGain: "(+300)", coresGain: "(+0)", attackGain: "(+13.3K)" },
-    { name: "p88203044", cores: "110+", attack: 1543400, coresNum: 110, role: "Member", lmeScore: 1881, lmeGain: "(+65)", cxScore: 2200, cxGain: "(+600)", coresGain: "(+0)", attackGain: "(+21.4K)" },
+    { name: "p88203044", cores: "110+", attack: 1543400, coresNum: 110, role: "Glory Member", lmeScore: 1881, lmeGain: "(+65)", cxScore: 2200, cxGain: "(+600)", coresGain: "(+0)", attackGain: "(+21.4K)" },
     { name: "һan", cores: "390+", attack: 3321300, coresNum: 390, role: "Eternal Glory", lmeScore: 3436, lmeGain: "(-18)", cxScore: 1800, cxGain: "(+100)", coresGain: "(+0)", attackGain: "(+0)" },
     { name: "Fl3xas", cores: "300+", attack: 2562100, coresNum: 300, role: "Glory Member", lmeScore: 2963, lmeGain: "(+24)", cxScore: 2200, cxGain: "(+300)", coresGain: "(+0)", attackGain: "(+0)" },
     { name: "BIRB", cores: "0", attack: 0, coresNum: 0, role: "Removed", lmeScore: 0, lmeGain: "(+0)", cxScore: 700, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+0)" },
