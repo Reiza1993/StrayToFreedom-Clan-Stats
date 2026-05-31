@@ -1,6 +1,6 @@
 // clanStats.js
 // Freedomˢᵗʳᵃʸ Clan Statistics
-// Last Updated: Week 61 - May 2026 (LME Scores Updated, ATK/Cores Updated, Bensayyten Removed, theLP/Rėtrø Added)
+// Last Updated: Week 62 - May 2026 (LME #44 Added, CX Updated)
 //
 // See INSTRUCTIONS_GUIDE.MD for full update procedures (LME history, alumni, lunar points).
 
@@ -20,6 +20,14 @@ const clanStats = {
 // LME History Data
 // Add new results to the TOP of this array
 const lmeHistory = [
+    {
+        lmeNumber: 44,
+        rank: 1,
+        rankImage: "https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Rank1.png",
+        atkDefPoints: 4,
+        medals: 105920,
+        league: "Champion"
+    },
     {
         lmeNumber: 43,
         rank: 4,
@@ -247,7 +255,7 @@ const lmeHistory = [
     {
         lmeNumber: 15,
         rank: 3,
-        rankImage: "https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Rank3.png",
+        rankImage: "https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Rank1.png",
         atkDefPoints: 2,
         medals: 36313,
         league: "Legend 3"
