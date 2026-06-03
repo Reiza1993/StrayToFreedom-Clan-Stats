@@ -11,7 +11,6 @@ A quick-reference guide for maintaining `playerData.js` and `clanStats.js`.
   - `Update LME scores Week 57`
   - `Update CX scores (Explorer Badge Ranking Week 57)`
   - `Add LME #40 result`
-  - `Promote [player] to Glory Member`
   - `Remove [player], add to alumni`
 
 ---
@@ -25,6 +24,15 @@ A quick-reference guide for maintaining `playerData.js` and `clanStats.js`.
 **`clanStats.js`** — clan-wide data:
 - `lmeDifficulty`, `lmeLeague`, `lunarPoints` (**never modify**)
 - `alumniCount`, `lmeHistory` array, `alumniMembers` array
+
+---
+
+## LME Screenshots — Authoritative Member List
+
+The LME result screenshots show the current clan roster. Use them as the definitive list:
+- Players appearing in the screenshots are active members.
+- Players **not** appearing scored 0 for that LME (or are no longer in the clan).
+- If a previously `"Removed"` player reappears in the screenshots, they have rejoined — restore their role to `"Member"` and update their LME score accordingly.
 
 ---
 
@@ -44,7 +52,7 @@ A quick-reference guide for maintaining `playerData.js` and `clanStats.js`.
 From the pasted table:
 
 - Update `attack` and `attackGain` (difference vs previous, in K)
-  - Example: `(+31.3K)`
+  - Example: `(+31.3K)` or `(+0K)`
 - Update `cores` (display string, e.g. `"145+"`) and `coresNum` (number only)
 - Update `coresGain` (difference vs previous)
   - Example: `(+5)` or `(+0)`
@@ -53,25 +61,38 @@ From the pasted table:
 
 ## Updating CX Scores
 
-- Update `cxScore` and `cxGain` (difference vs previous)
-- The index detects `topScore` automatically from `playerData` — **do not maintain a `cxSettings` block**
+- Update `cxScore` and `cxGain` (difference vs previous).
+- The index detects `topScore` automatically from `playerData` — **do not maintain a `cxSettings` block**.
 
 ---
 
-## Glory Member Rules
+## Season CX Reset
 
-**Never touched (always excluded):**
-- 神Sterben死 (Leader)
-- Cunner88 (Vice-Leader)
-- Lemminkäinen (Vice-Leader)
-- Han (Eternal Glory)
+At the end of each season, all CX scores are reset:
+- Set `cxScore: 0` and `cxGain: "(+0)"` for **all** players, including `"Removed"` ones.
+- This is the final step that allows fully-zeroed Removed players to be deleted (see below).
 
-**When adding 2 Glory Members:**
+---
 
-1. Count current Glory Members in the pasted `playerData`.
-2. **If count < 8** → pick the 2 highest CX scores from eligible non-Glory Members and set `role: "Glory Member"`.
-3. **If count = 8** → demote ALL current Glory Members to `"Member"` first, then pick 2 new ones from the full eligible pool (resets to 2).
-4. **Tiebreaker:** if CX scores are tied, the higher LME Score wins.
+## Removing a Member
+
+When a player leaves the clan, apply the following changes across subsequent updates:
+
+**Step 1 — Role:** Set `role: "Removed"`.
+
+**Step 2 — ATK & Cores:** Set both to `0`. Show the negative gain from their last known values.
+- Example: `attack: 0, attackGain: "(-1269.4K)"` · `cores: "0", coresNum: 0, coresGain: "(-80)"`
+- On every subsequent ATK/Cores update: keep at `0` with `(+0K)` / `(+0)` gains.
+
+**Step 3 — LME:** On the next LME update, set `lmeScore: 0` and show the negative gain from their previous score.
+- Example: `lmeScore: 0, lmeGain: "(-1523)"`
+- On every subsequent LME update: keep at `0` with `(+0)` gain.
+
+**Step 4 — CX:** The `cxScore` stays frozen for the rest of the season — removed players can't contribute. The `cxGain` becomes `(+0)` going forward.
+
+**Delete trigger:** Once **all** fields read `0 (+0)` — including CX — the player can be deleted entirely from `playerData`. Since CX only resets at season end, deletion naturally happens after that reset.
+
+**Alumni tracking:** When removing a player, update `clanStats.js`: increment `alumniCount` and add their name to `alumniMembers`.
 
 ---
 
@@ -82,30 +103,3 @@ From the pasted table:
 - **`alumniCount`** — increment by the number of members removed; add their names to `alumniMembers`
 - **`lmeDifficulty` / `lmeLeague`** — update only when told to
 - **`lunarPoints`** — **never modify** (the calculator handles this automatically)
-
----
-
-## Removing a Member
-
-Set the player's `role` to `"Removed"` and perform the following:
-
-**If `clanStats` is provided:** update `alumniMembers` and increment `alumniCount`.
-
-**When updating LME Scores:**
-- Set score to `0` and calculate loss from previous week
-- Example progression:
-  - Week 1: `"0 (-672)"`
-  - Week 2: `"0 (+0)"`
-
-**When updating ATK and Cores:**
-- Set values to `0` and calculate loss from previous week
-- Example progression:
-  - Week 1: `ATK: 0k (-800k)`, `Cores: 0 (-65)`
-  - Week 2: `ATK: 0k (+0k)`, `Cores: 0 (+0)`
-
-**CX scores:** removed players **keep their CX scores intact** even during full CX updates.
-
-**When to delete entirely:** a removed member can be deleted from `playerData` once their stats all read:
-- ATK: `0k (+0k)`
-- Cores: `0 (+0)`
-- CX: `0 (+0)`
