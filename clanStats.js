@@ -1,6 +1,6 @@
 // clanStats.js
 // Freedomˢᵗʳᵃʸ Clan Statistics
-// Last Updated: Week 62 - May 2026 (LME #44 Added, CX Updated)
+// Last Updated: June 2026 (LME #45 Added, CX Updated)
 //
 // See INSTRUCTIONS_GUIDE.MD for full update procedures (LME history, alumni, lunar points).
 
@@ -20,6 +20,14 @@ const clanStats = {
 // LME History Data
 // Add new results to the TOP of this array
 const lmeHistory = [
+    {
+        lmeNumber: 45,
+        rank: 4,
+        rankImage: null,
+        atkDefPoints: 2,
+        medals: 83091,
+        league: "Champion"
+    },
     {
         lmeNumber: 44,
         rank: 1,
