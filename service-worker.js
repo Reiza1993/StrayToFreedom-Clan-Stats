@@ -1,10 +1,11 @@
-const CACHE_NAME = 'freedom-protocol-v1';
+const CACHE_NAME = 'freedom-protocol-v2';
 
 const STATIC_ASSETS = [
     './',
     './index.html',
     './playerData.js',
     './clanStats.js',
+    './icon.png',
     './Game Icons/ATK.png',
     './Game Icons/Rank1.png',
     './Game Icons/Rank2.png',
