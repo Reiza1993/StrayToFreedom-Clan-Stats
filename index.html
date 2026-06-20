@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FREEDOM PROTOCOL // Freedomˢᵗʳᵃʸ</title>
+
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#1a202c">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Freedomˢᵗʳᵃʸ">
+    <link rel="apple-touch-icon" href="Game Icons/Ranking.png">
     
     <style>
         body {
@@ -1513,6 +1522,10 @@
         sortData('lme');
         buildLeaderboard();
         lbTimer = setTimeout(lbNext, 5000);
+
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('./service-worker.js');
+        }
     </script>
 </body>
 </html>
