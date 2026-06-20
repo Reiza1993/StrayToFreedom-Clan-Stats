@@ -33,23 +33,27 @@ self.addEventListener('activate', event => {
     self.clients.claim();
 });
 
+// Data files — always fetch fresh, fall back to cache when offline
+const NETWORK_FIRST = ['playerData.js', 'clanStats.js'];
+
 self.addEventListener('fetch', event => {
-    // Skip non-GET and cross-origin requests
     if (event.request.method !== 'GET') return;
     const url = new URL(event.request.url);
     if (url.origin !== self.location.origin) return;
 
-    event.respondWith(
-        caches.match(event.request).then(cached => {
-            const networkFetch = fetch(event.request).then(response => {
-                if (response && response.status === 200) {
-                    const clone = response.clone();
-                    caches.open(CACHE_NAME).then(cache => cache.put(event.request, clone));
-                }
-                return response;
-            }).catch(() => cached);
+    const isDataFile = NETWORK_FIRST.some(f => url.pathname.endsWith(f));
 
-            return cached || networkFetch;
-        })
-    );
+    if (isDataFile) {
+        event.respondWith(
+            fetch(event.request).then(response => {
+                const clone = response.clone();
+                caches.open(CACHE_NAME).then(cache => cache.put(event.request, clone));
+                return response;
+            }).catch(() => caches.match(event.request))
+        );
+    } else {
+        event.respondWith(
+            caches.match(event.request).then(cached => cached || fetch(event.request))
+        );
+    }
 });
