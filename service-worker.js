@@ -1,8 +1,9 @@
-const CACHE_NAME = 'freedom-protocol-v2';
+const CACHE_NAME = 'freedom-protocol-v3';
 
 const STATIC_ASSETS = [
     './',
     './index.html',
+    './i18n.js',
     './playerData.js',
     './clanStats.js',
     './icon.png',
