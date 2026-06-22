@@ -550,41 +550,41 @@
 
             <!-- ATK -->
             <div class="calc-stat-card" style="border-color: #553c9a;">
-                <div class="calc-stat-label">Total ATK <span style="font-size:8px; opacity:0.6;">(Top 30)</span></div>
+                <div class="calc-stat-label"><span data-i18n="stat.total_atk">Total ATK</span> <span style="font-size:8px; opacity:0.6;">(Top 30)</span></div>
                 <div class="calc-stat-value" style="color: #e2e8f0;" id="calc-total-atk">—</div>
                 <div class="calc-stat-gain" id="calc-total-atk-gain">—</div>
             </div>
             <div class="calc-stat-card" style="border-color: #553c9a;">
-                <div class="calc-stat-label">Avg ATK <span style="font-size:8px; opacity:0.6;">(Top 30)</span></div>
+                <div class="calc-stat-label"><span data-i18n="stat.avg_atk">Avg ATK</span> <span style="font-size:8px; opacity:0.6;">(Top 30)</span></div>
                 <div class="calc-stat-value" style="color: #e2e8f0;" id="calc-avg-atk">—</div>
             </div>
 
             <!-- Cores -->
             <div class="calc-stat-card" style="border-color: #44337a;">
-                <div class="calc-stat-label">Total Cores <span style="font-size:8px; opacity:0.6;">(Top 30)</span></div>
+                <div class="calc-stat-label"><span data-i18n="stat.total_cores">Total Cores</span> <span style="font-size:8px; opacity:0.6;">(Top 30)</span></div>
                 <div class="calc-stat-value" style="color: #b794f6;" id="calc-total-cores">—</div>
                 <div class="calc-stat-gain" id="calc-total-cores-gain">—</div>
             </div>
             <div class="calc-stat-card" style="border-color: #44337a;">
-                <div class="calc-stat-label">Avg Cores <span style="font-size:8px; opacity:0.6;">(Top 30)</span></div>
+                <div class="calc-stat-label"><span data-i18n="stat.avg_cores">Avg Cores</span> <span style="font-size:8px; opacity:0.6;">(Top 30)</span></div>
                 <div class="calc-stat-value" style="color: #b794f6;" id="calc-avg-cores">—</div>
             </div>
 
             <!-- LME -->
             <div class="calc-stat-card" style="border-color: #744210;">
-                <div class="calc-stat-label">Total LME <span style="font-size:8px; opacity:0.6;">(Top 30)</span></div>
+                <div class="calc-stat-label"><span data-i18n="stat.total_lme">Total LME</span> <span style="font-size:8px; opacity:0.6;">(Top 30)</span></div>
                 <div class="calc-stat-value" style="color: #f59e0b;" id="calc-total-lme">—</div>
                 <div class="calc-stat-gain" id="calc-total-lme-gain">—</div>
             </div>
             <div class="calc-stat-card" style="border-color: #744210;">
-                <div class="calc-stat-label">Avg LME <span style="font-size:8px; opacity:0.6;">(Top 30)</span></div>
+                <div class="calc-stat-label"><span data-i18n="stat.avg_lme">Avg LME</span> <span style="font-size:8px; opacity:0.6;">(Top 30)</span></div>
                 <div class="calc-stat-value" style="color: #f59e0b;" id="calc-avg-lme">—</div>
                 <div class="calc-stat-gain" id="calc-avg-lme-gain">—</div>
             </div>
 
             <!-- CX -->
             <div class="calc-stat-card" style="border-color: #276749;">
-                <div class="calc-stat-label">Total CX <span style="font-size:8px; opacity:0.6;">(All)</span></div>
+                <div class="calc-stat-label"><span data-i18n="stat.total_cx">Total CX</span> <span style="font-size:8px; opacity:0.6;">(All)</span></div>
                 <div class="calc-stat-value" style="color: #68d391;" id="calc-total-cx">—</div>
                 <div class="calc-stat-gain" id="calc-total-cx-gain">—</div>
             </div>
@@ -596,19 +596,19 @@
 
             <!-- Difficulty — full width, inline -->
             <div class="calc-stat-card" style="border-color: #553c9a; display: flex; align-items: center; justify-content: center; gap: 10px; padding: 10px 16px;">
-                <span class="calc-stat-label" style="margin-bottom: 0;">LME Difficulty</span>
+                <span class="calc-stat-label" style="margin-bottom: 0;" data-i18n="stat.lme_difficulty">LME Difficulty</span>
                 <span class="calc-stat-value" style="color: #b794f6;" id="lmeDifficulty">—</span>
             </div>
 
             <!-- League + Lunar Points merged — full width, inline rows -->
             <div class="calc-stat-card" style="border-color: #b7791f; box-shadow: 0 0 8px rgba(255,215,0,0.12); padding: 10px 16px;">
                 <div style="display: flex; align-items: center; justify-content: center; gap: 10px;">
-                    <span class="calc-stat-label" style="margin-bottom: 0;">LME League</span>
+                    <span class="calc-stat-label" style="margin-bottom: 0;" data-i18n="stat.lme_league">LME League</span>
                     <span class="calc-stat-value" style="color: #81e6d9;" id="lmeLeague">—</span>
                 </div>
                 <div style="border-top: 1px solid #4a5568; margin: 8px 0;"></div>
                 <div style="display: flex; align-items: center; justify-content: center; gap: 10px; flex-wrap: wrap;">
-                    <span class="calc-stat-label" style="margin-bottom: 0;">Lunar Points</span>
+                    <span class="calc-stat-label" style="margin-bottom: 0;" data-i18n="stat.lunar_pts">Lunar Points</span>
                     <span class="calc-stat-value" style="color: #ffd700;" id="lunarPoints">—</span>
                     <span class="calc-stat-gain" id="lunarPointsGain">—</span>
                 </div>
@@ -663,8 +663,8 @@
         <table id="playerTable">
             <thead>
                 <tr>
-                    <th>Rank</th>
-                    <th>Player Name</th>
+                    <th data-i18n="table.col.rank">Rank</th>
+                    <th data-i18n="table.col.player_name">Player Name</th>
                     <th>
                         <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Relic%20Cores.png" alt="Relic Cores" style="width: 20px; height: 20px; vertical-align: middle;" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
                         <span style="display: none;">Relic Cores</span>
@@ -675,7 +675,7 @@
                     </th>
                     <th>
                         <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Medals.png" alt="LME" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 6px;" onerror="this.style.display='none';">
-                        LME 1st Phase
+                        <span data-i18n="table.col.lme_phase1">LME 1st Phase</span>
                     </th>
                     <th>
                         <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/CX.png" alt="CX" style="width: 20px; height: 20px; vertical-align: middle;" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
@@ -691,26 +691,26 @@
         <div id="lmeHistoryModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 1000; overflow-y: auto;">
             <div style="position: relative; margin: 15px auto; padding: 15px; background: #2d3748; border-radius: 15px; max-width: 98%; width: 100%; max-height: 90vh; overflow-y: auto; border: 1px solid #4a5568;">
                 <span onclick="closeLMEHistory()" style="position: absolute; top: 10px; right: 15px; font-size: 24px; cursor: pointer; color: #a0aec0;">&times;</span>
-                <h2 style="color: #f7fafc; margin-bottom: 20px; text-align: center; font-size: 1.5em; margin-top: 10px;">🌙 LME History</h2>
+                <h2 style="color: #f7fafc; margin-bottom: 20px; text-align: center; font-size: 1.5em; margin-top: 10px;">🌙 <span data-i18n="modal.lme_history.title">LME History</span></h2>
                 
                 <!-- Secret Score Calculator Row -->
                 <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin-bottom: 8px;">
                     <div class="calc-stat-card" style="border-color: #553c9a;">
-                        <div class="calc-stat-label">Lunar Points</div>
+                        <div class="calc-stat-label" data-i18n="stat.lunar_pts">Lunar Points</div>
                         <div class="calc-stat-value" style="color: #ffd700;" id="historyLunarPoints">—</div>
                     </div>
                     <div class="calc-stat-card" style="border-color: #2c7a7b;">
-                        <div class="calc-stat-label">Rank Factor</div>
+                        <div class="calc-stat-label" data-i18n="modal.lme_history.rank_factor">Rank Factor</div>
                         <div class="calc-stat-value" style="color: #81e6d9;" id="historyRankFactor">1.0000</div>
                     </div>
                 </div>
                 <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin-bottom: 15px;">
                     <div class="calc-stat-card" style="border-color: #b7791f; box-shadow: 0 0 8px rgba(255,215,0,0.12);">
-                        <div class="calc-stat-label">Secret Score</div>
+                        <div class="calc-stat-label" data-i18n="modal.lme_history.secret_score">Secret Score</div>
                         <div class="calc-stat-value" style="color: #ffd700;" id="historySecretScore">—</div>
                     </div>
                     <div class="calc-stat-card" style="border-color: #2b6cb0;">
-                        <div class="calc-stat-label">Avg Rank <span style="font-size:8px; opacity:0.6;">(Last 10)</span></div>
+                        <div class="calc-stat-label"><span data-i18n="modal.lme_history.avg_rank">Avg Rank</span> <span style="font-size:8px; opacity:0.6;">(Last 10)</span></div>
                         <div class="calc-stat-value" id="historyAvgRank">—</div>
                     </div>
                 </div>
@@ -745,12 +745,12 @@
         <div id="alumniModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 1000; overflow-y: auto;">
             <div style="position: relative; margin: 20px auto; padding: 20px; background: #2d3748; border-radius: 15px; max-width: 95%; width: 600px; max-height: 90vh; overflow-y: auto; border: 1px solid #4a5568;">
                 <span onclick="closeAlumni()" style="position: absolute; top: 10px; right: 15px; font-size: 24px; cursor: pointer; color: #a0aec0;">&times;</span>
-                <h2 style="color: #f7fafc; margin-bottom: 20px; text-align: center; font-size: 1.5em; margin-top: 10px;">👥 Freedomˢᵗʳᵃʸ Alumni</h2>
-                
+                <h2 style="color: #f7fafc; margin-bottom: 20px; text-align: center; font-size: 1.5em; margin-top: 10px;">👥 Freedomˢᵗʳᵃʸ <span data-i18n="modal.alumni.title">Alumni</span></h2>
+
                 <div style="background: #374151; border-radius: 8px; padding: 15px; margin-bottom: 15px; text-align: center;">
                     <p style="color: #e2e8f0; margin: 0; font-size: 14px; line-height: 1.4;">
-                        <strong style="color: #ffd700;"><span id="alumniCount">—</span> Alumni Members</strong><br>
-                        <span style="color: #a0aec0;">Former clan members who contributed to our journey</span>
+                        <strong style="color: #ffd700;" id="alumniCountDisplay">— Alumni Members</strong><br>
+                        <span style="color: #a0aec0;" data-i18n="modal.alumni.subtitle">Former clan members who contributed to our journey</span>
                     </p>
                 </div>
                 
@@ -837,6 +837,7 @@
             document.documentElement.dir = (code === 'fa') ? 'rtl' : 'ltr';
             document.getElementById('langSelector').value = code;
             applyTranslations();
+            loadClanStats();
             buildLeaderboard();
             goToPanel(lbCurrent);
             sortData(currentSort);
@@ -1013,7 +1014,7 @@
         function loadClanStats() {
             document.getElementById('lmeDifficulty').textContent = clanStats.lmeDifficulty;
             document.getElementById('lmeLeague').textContent     = clanStats.lmeLeague;
-            document.getElementById('alumniCount').textContent   = clanStats.alumniCount;
+            document.getElementById('alumniCountDisplay').textContent = t('modal.alumni.count_label').replace('{n}', clanStats.alumniCount);
         }
 
         // ══════════════════════════════════════════════
