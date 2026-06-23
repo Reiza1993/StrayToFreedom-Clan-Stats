@@ -1,5 +1,19 @@
 // i18n.js — Freedomˢᵗʳᵃʸ Clan Stats translations
 // Languages: en, it, tlh-Latn, tlh-Piqd, fa, zh-Hans, ja, ko
+//
+// NOTE on tlh-Piqd (Klingon pIqaD script): pIqaD has no official Unicode
+// encoding; it lives in the Private Use Area (U+F8D0–U+F8FF, ConScript
+// Unicode Registry) and renders as empty boxes without a CSUR pIqaD webfont.
+// This block is intentionally empty {} so the loader falls back to tlh-Latn.
+// To actually render pIqaD: bundle a CSUR-mapped @font-face scoped to
+// tlh-Piqd and generate glyphs by transliterating the tlh-Latn strings.
+// Make sure your t() lookup falls back:  tlh-Piqd -> tlh-Latn -> en.
+//
+// Klingon coinages (no canonical word — flagged for community correction):
+//   nagh tIQ = "Relic Cores" (lit. "ancient stone")
+//   nIvwI'/Dun/QaQ = league tiers (Champion/Legend/Elite)
+//   "Discord lI'", "CSV ta'" = Copy/Export (loose coinages)
+//   "vagh … law'" = "Top 5 …" (abbreviated law'/puS superlative)
 
 const TRANSLATIONS = {
   en: {
@@ -147,15 +161,15 @@ const TRANSLATIONS = {
   },
 
   "tlh-Latn": {
-    "app.title": "tlhob chut",
+    "app.title": "tlhab chut",
     "app.subtitle": "Freedomˢᵗʳᵃʸ — ClanID: 44262",
     "stat.members": "beqpu'",
     "stat.avg_lme": "LME motlh",
     "stat.avg_cx": "CX motlh",
     "stat.total_atk": "ATK naQ",
     "stat.avg_atk": "ATK motlh",
-    "stat.total_cores": "nagh naQ",
-    "stat.avg_cores": "nagh motlh",
+    "stat.total_cores": "nagh tIQ naQ",
+    "stat.avg_cores": "nagh tIQ motlh",
     "stat.total_lme": "LME naQ",
     "stat.total_cx": "CX naQ",
     "stat.members_cap": "beqpu': {n} / 50",
@@ -165,7 +179,7 @@ const TRANSLATIONS = {
     "ctrl.search_placeholder": "yInej...",
     "ctrl.sort_lme": "LME mIvwa'mey buv",
     "ctrl.sort_cx": "CX buv",
-    "ctrl.sort_cores": "yoD nagh buv",
+    "ctrl.sort_cores": "nagh tIQ buv",
     "ctrl.sort_atk": "ATK buv",
     "ctrl.sort_name": "pong buv",
     "ctrl.sort_role": "Qu' buv",
@@ -180,12 +194,12 @@ const TRANSLATIONS = {
     "table.col.role": "Qu'",
     "table.col.lme_score": "LME mIvwa'mey",
     "table.col.cx_score": "CX mIvwa'mey",
-    "table.col.relic_cores": "yoD nagh",
+    "table.col.relic_cores": "nagh tIQ",
     "table.col.atk": "ATK",
     "lb.top5_lme_gainers": "vagh LME mIvwa'mey ghur law'",
     "lb.top5_cx": "vagh CX mIvwa'mey law'",
     "lb.top5_atk": "vagh ATK law'",
-    "lb.top5_cores": "vagh yoD nagh law'",
+    "lb.top5_cores": "vagh nagh tIQ law'",
     "lb.top5_lme_score": "vagh LME mIvwa'mey law'",
     "lb.copy_discord": "Discord lI'",
     "lb.discord_header": "🏆 Freedomˢᵗʳᵃʸ patlh mI' poj",
@@ -218,10 +232,8 @@ const TRANSLATIONS = {
     "font.increase": "ngutlh tInmoH"
   },
 
-  "tlh-Piqd": {
-    "app.title": "",
-    "app.subtitle": "Freedomˢᵗʳᵃʸ — ClanID: 44262"
-  },
+  // pIqaD: intentionally empty — falls back to tlh-Latn (see header note).
+  "tlh-Piqd": {},
 
   fa: {
     "app.title": "پروتکل آزادی",
@@ -368,7 +380,7 @@ const TRANSLATIONS = {
   },
 
   ja: {
-    "app.title": "フリーダム·プロトコル",
+    "app.title": "フリーダム・プロトコル",
     "app.subtitle": "Freedomˢᵗʳᵃʸ — ClanID: 44262",
     "stat.members": "メンバー",
     "stat.avg_lme": "LME 平均",
@@ -392,7 +404,7 @@ const TRANSLATIONS = {
     "ctrl.sort_role": "役割順",
     "ctrl.export_csv": "CSV エクスポート",
     "ctrl.lme_history": "LME 履歴",
-    "ctrl.alumni": "アルムナイ",
+    "ctrl.alumni": "元メンバー",
     "ctrl.next_glory": "⭐ 次の栄光メンバー",
     "ctrl.settings": "設定",
     "table.col.rank": "#",
@@ -429,7 +441,7 @@ const TRANSLATIONS = {
     "modal.lme_history.avg_rank": "平均ランク",
     "modal.lme_history.rank_factor": "ランク係数",
     "modal.lme_history.secret_score": "シークレットスコア",
-    "modal.alumni.title": "アルムナイ",
+    "modal.alumni.title": "元メンバー",
     "modal.alumni.subtitle": "Freedomˢᵗʳᵃʸ 元メンバー",
     "modal.alumni.count_label": "{n} 人の元メンバー",
     "settings.title": "⚙ 設定",
