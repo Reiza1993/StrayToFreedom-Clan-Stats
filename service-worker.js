@@ -1,4 +1,4 @@
-const CACHE_NAME = 'freedom-protocol-v3';
+const CACHE_NAME = 'freedom-protocol-v4';
 
 const STATIC_ASSETS = [
     './',
