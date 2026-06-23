@@ -481,6 +481,11 @@
         [dir=rtl] .lb-header    { flex-direction: row-reverse; }
         [dir=rtl] .lb-row       { flex-direction: row-reverse; }
 
+        /* On mobile, RTL controls must stay columnar (overrides row-reverse above) */
+        @media (max-width: 768px) {
+            [dir=rtl] .controls { flex-direction: column; }
+        }
+
         @media (max-width: 768px) {
             body {
                 padding: 10px;
@@ -838,6 +843,7 @@
             document.getElementById('langSelector').value = code;
             applyTranslations();
             loadClanStats();
+            loadLMEHistory();
             buildLeaderboard();
             goToPanel(lbCurrent);
             sortData(currentSort);
