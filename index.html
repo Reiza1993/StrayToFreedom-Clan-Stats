@@ -486,6 +486,121 @@
             [dir=rtl] .controls { flex-direction: column; }
         }
 
+        /* ── Hamburger button ── */
+        #hamburgerBtn {
+            position: fixed;
+            top: 14px;
+            right: 14px;
+            z-index: 1500;
+            background: #2d3748;
+            border: 1px solid #4a5568;
+            color: #e2e8f0;
+            font-size: 20px;
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1;
+        }
+        #hamburgerBtn:hover { background: #3a4a5c; }
+
+        /* ── Drawer overlay ── */
+        #drawerOverlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.55);
+            z-index: 1998;
+        }
+
+        /* ── Side drawer ── */
+        #sideDrawer {
+            position: fixed;
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 280px;
+            max-width: 85vw;
+            background: #2d3748;
+            border-left: 1px solid #4a5568;
+            z-index: 1999;
+            transform: translateX(100%);
+            transition: transform 290ms ease;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+        }
+        #sideDrawer.drawer-open { transform: translateX(0); }
+
+        .drawer-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px 18px;
+            border-bottom: 1px solid #4a5568;
+        }
+        .drawer-header span {
+            color: #a0aec0;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+        .drawer-close-btn {
+            background: none;
+            border: none;
+            color: #a0aec0;
+            font-size: 22px;
+            cursor: pointer;
+            padding: 0 2px;
+            line-height: 1;
+        }
+        .drawer-close-btn:hover { color: #f7fafc; }
+
+        .drawer-item {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 16px 20px;
+            border: none;
+            border-bottom: 1px solid rgba(74,85,104,0.5);
+            background: none;
+            color: #e2e8f0;
+            font-size: 15px;
+            font-weight: 500;
+            cursor: pointer;
+            text-align: left;
+            width: 100%;
+            transition: background 160ms ease;
+        }
+        .drawer-item:hover { background: #3a4a5c; }
+        .drawer-item .drawer-icon { font-size: 18px; width: 24px; text-align: center; flex-shrink: 0; }
+        .drawer-item.glory-drawer  { color: #ffd700; }
+        .drawer-item.glory-drawer:hover { background: rgba(183,121,31,0.18); }
+
+        /* ── Modal slide-in from right ── */
+        #lmeHistoryModal > div,
+        #alumniModal > div,
+        #gloryModal > div,
+        #settingsModal > .settings-modal-inner {
+            transform: translateX(100vw);
+            transition: transform 290ms ease;
+        }
+        #lmeHistoryModal.modal-open > div,
+        #alumniModal.modal-open > div,
+        #gloryModal.modal-open > div,
+        #settingsModal.modal-open > .settings-modal-inner {
+            transform: translateX(0);
+        }
+
+        /* RTL: drawer slides in from the left */
+        [dir=rtl] #sideDrawer { right: auto; left: 0; border-left: none; border-right: 1px solid #4a5568; transform: translateX(-100%); }
+        [dir=rtl] #sideDrawer.drawer-open { transform: translateX(0); }
+        [dir=rtl] #hamburgerBtn { right: auto; left: 14px; }
+
         @media (max-width: 768px) {
             body {
                 padding: 10px;
@@ -535,6 +650,41 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&family=Noto+Sans+JP&family=Noto+Sans+KR&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <!-- Hamburger -->
+    <button id="hamburgerBtn" onclick="openDrawer()" aria-label="Menu">☰</button>
+
+    <!-- Drawer backdrop -->
+    <div id="drawerOverlay" onclick="closeDrawer()"></div>
+
+    <!-- Side drawer -->
+    <div id="sideDrawer">
+        <div class="drawer-header">
+            <span>Freedomˢᵗʳᵃʸ</span>
+            <button class="drawer-close-btn" onclick="closeDrawer()">✕</button>
+        </div>
+        <button class="drawer-item glory-drawer" onclick="closeDrawer(); openGloryModal()">
+            <span class="drawer-icon">⭐</span>
+            <span data-i18n="ctrl.next_glory">Next Glory Members</span>
+        </button>
+        <button class="drawer-item" onclick="closeDrawer(); openLMEHistory()">
+            <span class="drawer-icon">📊</span>
+            <span data-i18n="ctrl.lme_history">LME History</span>
+        </button>
+        <button class="drawer-item" onclick="closeDrawer(); openAlumni()">
+            <span class="drawer-icon">🎓</span>
+            <span data-i18n="ctrl.alumni">Alumni</span>
+        </button>
+        <button class="drawer-item" onclick="closeDrawer(); exportToCSV()">
+            <span class="drawer-icon">📤</span>
+            <span data-i18n="ctrl.export_csv">Export CSV</span>
+        </button>
+        <button class="drawer-item" onclick="closeDrawer(); openSettings()">
+            <span class="drawer-icon">⚙️</span>
+            <span data-i18n="ctrl.settings">Settings</span>
+        </button>
+    </div>
+
     <div class="container">
         <div class="title-tag">Freedomˢᵗʳᵃʸ // Intel Dashboard</div><h1>Freedom Protocol</h1>
 
@@ -631,11 +781,6 @@
                 <option value="name" data-i18n="ctrl.sort_name">Sort by Name</option>
                 <option value="role" data-i18n="ctrl.sort_role">Sort by Role</option>
             </select>
-            <button class="export-btn" onclick="exportToCSV()" data-i18n="ctrl.export_csv">Export CSV</button>
-            <button class="export-btn" onclick="openLMEHistory()" data-i18n="ctrl.lme_history">LME History</button>
-            <button class="export-btn" onclick="openAlumni()" data-i18n="ctrl.alumni">Alumni</button>
-            <button class="export-btn glory-btn" onclick="openGloryModal()" data-i18n="ctrl.next_glory">⭐ Next Glory</button>
-            <button id="settingsBtn" class="export-btn settings-btn" onclick="openSettings()">⚙ <span data-i18n="ctrl.settings">Settings</span></button>
         </div>
         
         <!-- Compact Role Legend -->
@@ -851,8 +996,25 @@
             sortData(currentSort);
         }
 
-        function openSettings()  { document.getElementById('settingsModal').style.display = 'block'; }
-        function closeSettings() { document.getElementById('settingsModal').style.display = 'none'; }
+        function openSettings() {
+            const m = document.getElementById('settingsModal');
+            m.style.display = 'block';
+            requestAnimationFrame(() => m.classList.add('modal-open'));
+        }
+        function closeSettings() {
+            const m = document.getElementById('settingsModal');
+            m.classList.remove('modal-open');
+            setTimeout(() => { m.style.display = 'none'; }, 290);
+        }
+
+        function openDrawer() {
+            document.getElementById('drawerOverlay').style.display = 'block';
+            requestAnimationFrame(() => document.getElementById('sideDrawer').classList.add('drawer-open'));
+        }
+        function closeDrawer() {
+            document.getElementById('sideDrawer').classList.remove('drawer-open');
+            setTimeout(() => { document.getElementById('drawerOverlay').style.display = 'none'; }, 290);
+        }
 
         // Active players = everyone except Removed role
         // Used for ATK, Cores, LME calculations and member counts
@@ -1299,10 +1461,26 @@
             window.URL.revokeObjectURL(url);
         }
 
-        function openLMEHistory()  { document.getElementById('lmeHistoryModal').style.display = 'block'; }
-        function closeLMEHistory() { document.getElementById('lmeHistoryModal').style.display = 'none';  }
-        function openAlumni()      { document.getElementById('alumniModal').style.display = 'block'; }
-        function closeAlumni()     { document.getElementById('alumniModal').style.display = 'none';  }
+        function openLMEHistory() {
+            const m = document.getElementById('lmeHistoryModal');
+            m.style.display = 'block';
+            requestAnimationFrame(() => m.classList.add('modal-open'));
+        }
+        function closeLMEHistory() {
+            const m = document.getElementById('lmeHistoryModal');
+            m.classList.remove('modal-open');
+            setTimeout(() => { m.style.display = 'none'; }, 290);
+        }
+        function openAlumni() {
+            const m = document.getElementById('alumniModal');
+            m.style.display = 'block';
+            requestAnimationFrame(() => m.classList.add('modal-open'));
+        }
+        function closeAlumni() {
+            const m = document.getElementById('alumniModal');
+            m.classList.remove('modal-open');
+            setTimeout(() => { m.style.display = 'none'; }, 290);
+        }
 
         // ══════════════════════════════════════════════
         //  NEXT GLORY MEMBERS CALCULATOR
@@ -1388,20 +1566,22 @@
                 body.appendChild(row);
             });
 
-            document.getElementById('gloryModal').style.display = 'block';
+            const m = document.getElementById('gloryModal');
+            m.style.display = 'block';
+            requestAnimationFrame(() => m.classList.add('modal-open'));
         }
 
-        function closeGloryModal() { document.getElementById('gloryModal').style.display = 'none'; }
+        function closeGloryModal() {
+            const m = document.getElementById('gloryModal');
+            m.classList.remove('modal-open');
+            setTimeout(() => { m.style.display = 'none'; }, 290);
+        }
 
         window.onclick = function(event) {
-            const lmeModal      = document.getElementById('lmeHistoryModal');
-            const alumniModal   = document.getElementById('alumniModal');
-            const gloryModal    = document.getElementById('gloryModal');
-            const settingsModal = document.getElementById('settingsModal');
-            if (event.target === lmeModal)      lmeModal.style.display      = 'none';
-            if (event.target === alumniModal)   alumniModal.style.display   = 'none';
-            if (event.target === gloryModal)    gloryModal.style.display    = 'none';
-            if (event.target === settingsModal) settingsModal.style.display = 'none';
+            if (event.target === document.getElementById('lmeHistoryModal')) closeLMEHistory();
+            if (event.target === document.getElementById('alumniModal'))     closeAlumni();
+            if (event.target === document.getElementById('gloryModal'))      closeGloryModal();
+            if (event.target === document.getElementById('settingsModal'))   closeSettings();
         };
 
         document.getElementById('sortSelect').addEventListener('change', e => sortData(e.target.value));
