@@ -844,8 +844,10 @@
             applyTranslations();
             loadClanStats();
             loadLMEHistory();
+            const savedPanel = lbCurrent;
+            lbCurrent = 0;
             buildLeaderboard();
-            goToPanel(lbCurrent);
+            goToPanel(savedPanel);
             sortData(currentSort);
         }
 
