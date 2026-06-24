@@ -24,7 +24,7 @@ const playerData = [
     { name: "Epic|W", cores: "90+", attack: 1209500, coresNum: 90, role: "Member", lmeScore: 1347, lmeGain: "(+122)", cxScore: 900, cxGain: "(+600)", coresGain: "(+0)", attackGain: "(+7.7K)" },
     { name: "THJF1948ㅣStray", cores: "115+", attack: 1317400, coresNum: 115, role: "Member", lmeScore: 1552, lmeGain: "(+2)", cxScore: 300, cxGain: "(+100)", coresGain: "(+0)", attackGain: "(+1.6K)" },
     { name: "Rzzza", cores: "130+", attack: 1561300, coresNum: 130, role: "Member", lmeScore: 1802, lmeGain: "(+74)", cxScore: 400, cxGain: "(+0)", coresGain: "(+10)", attackGain: "(+0K)" },
-    { name: "Belthazar", cores: "85+", attack: 1329500, coresNum: 85, role: "Member", lmeScore: 1592, lmeGain: "(+22)", cxScore: 1900, cxGain: "(+800)", coresGain: "(+0)", attackGain: "(+3.2K)" },
+    { name: "Belthazar", cores: "85+", attack: 1329500, coresNum: 85, role: "Glory Member", lmeScore: 1592, lmeGain: "(+22)", cxScore: 1900, cxGain: "(+800)", coresGain: "(+0)", attackGain: "(+3.2K)" },
     { name: "b0ss", cores: "115+", attack: 1264400, coresNum: 115, role: "Member", lmeScore: 1902, lmeGain: "(+158)", cxScore: 700, cxGain: "(+200)", coresGain: "(+0)", attackGain: "(+8.4K)" },
     { name: "Lemminkäinen", cores: "115+", attack: 1395600, coresNum: 115, role: "Vice-Leader", lmeScore: 1940, lmeGain: "(+52)", cxScore: 1800, cxGain: "(+1000)", coresGain: "(+5)", attackGain: "(+0K)" },
     { name: "fesl", cores: "110+", attack: 1432400, coresNum: 110, role: "Member", lmeScore: 1579, lmeGain: "(+36)", cxScore: 1700, cxGain: "(+800)", coresGain: "(+5)", attackGain: "(+81.4K)" },
@@ -43,7 +43,7 @@ const playerData = [
     { name: "ergiangi", cores: "95+", attack: 1406500, coresNum: 95, role: "Member", lmeScore: 1837, lmeGain: "(+36)", cxScore: 800, cxGain: "(+0)", coresGain: "(+0)", attackGain: "(+11.1K)" },
     { name: "samwise08", cores: "130+", attack: 1376600, coresNum: 130, role: "Member", lmeScore: 1872, lmeGain: "(+21)", cxScore: 1800, cxGain: "(+900)", coresGain: "(+0)", attackGain: "(+5.2K)" },
     { name: "Cheeselife", cores: "105+", attack: 1166500, coresNum: 105, role: "Member", lmeScore: 1731, lmeGain: "(-93)", cxScore: 1200, cxGain: "(+600)", coresGain: "(+0)", attackGain: "(+9.0K)" },
-    { name: "theLP", cores: "140+", attack: 1377800, coresNum: 140, role: "Member", lmeScore: 1953, lmeGain: "(+156)", cxScore: 1900, cxGain: "(+800)", coresGain: "(+0)", attackGain: "(+77.0K)" },
+    { name: "theLP", cores: "140+", attack: 1377800, coresNum: 140, role: "Glory Member", lmeScore: 1953, lmeGain: "(+156)", cxScore: 1900, cxGain: "(+800)", coresGain: "(+0)", attackGain: "(+77.0K)" },
     { name: "Rėtrø", cores: "140+", attack: 1948500, coresNum: 140, role: "Member", lmeScore: 2201, lmeGain: "(+212)", cxScore: 600, cxGain: "(+300)", coresGain: "(+0)", attackGain: "(+0K)" },
 ];
 
