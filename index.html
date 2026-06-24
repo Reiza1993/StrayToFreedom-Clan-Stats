@@ -1895,8 +1895,10 @@
         document.getElementById('langSelector').value = currentLang;
         applyTranslations();
 
-        requestAnimationFrame(updateMainHeaderOffset);
-        document.fonts.ready.then(updateMainHeaderOffset);
+        // ResizeObserver fires on initial render and on any header height change
+        // (e.g. when Orbitron loads via @import and the h1 reflows), so padding-top
+        // is always set correctly without any timing hacks.
+        new ResizeObserver(updateMainHeaderOffset).observe(document.getElementById('main-header'));
         window.addEventListener('resize', updateMainHeaderOffset);
 
         if ('serviceWorker' in navigator) {
