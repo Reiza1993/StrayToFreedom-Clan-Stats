@@ -626,9 +626,14 @@
         [dir=rtl] #sideDrawer { right: auto; left: 0; border-left: none; border-right: 1px solid #4a5568; transform: translateX(-100%); }
         [dir=rtl] #sideDrawer.drawer-open { transform: translateX(0); }
         [dir=rtl] #hamburgerBtn { right: auto; left: 14px; }
-        /* RTL: panels slide from the left */
+        /* RTL: panels slide from the left, back arrow on right pointing left */
         [dir=rtl] .page-panel { transform: translateX(-100%); }
         [dir=rtl] .page-panel.panel-open { transform: translateX(0); }
+        [dir=rtl] .panel-header { flex-direction: row-reverse; }
+        [dir=rtl] .panel-title { left: auto; right: 50%; transform: translateX(50%); }
+        [dir=rtl] .panel-back-btn::before { content: '←'; }
+        [dir=rtl] .panel-back-btn { font-size: 0; }
+        [dir=rtl] .panel-back-btn::before { font-size: 22px; }
 
         @media (max-width: 768px) {
             body {
@@ -869,7 +874,7 @@
         <!-- LME History Panel -->
         <div id="lmeHistoryModal" class="page-panel">
             <div class="panel-header">
-                <button class="panel-back-btn" onclick="closeLMEHistory()">←</button>
+                <button class="panel-back-btn" onclick="closeLMEHistory()">→</button>
                 <span class="panel-title">🌙 <span data-i18n="modal.lme_history.title">LME History</span></span>
             </div>
             <div class="panel-body">
@@ -923,7 +928,7 @@
         <!-- Alumni Panel -->
         <div id="alumniModal" class="page-panel">
             <div class="panel-header">
-                <button class="panel-back-btn" onclick="closeAlumni()">←</button>
+                <button class="panel-back-btn" onclick="closeAlumni()">→</button>
                 <span class="panel-title">👥 Freedomˢᵗʳᵃʸ <span data-i18n="modal.alumni.title">Alumni</span></span>
             </div>
             <div class="panel-body">
@@ -941,7 +946,7 @@
         <!-- Next Glory Members Panel -->
         <div id="gloryModal" class="page-panel">
             <div class="panel-header">
-                <button class="panel-back-btn" onclick="closeGloryModal()">←</button>
+                <button class="panel-back-btn" onclick="closeGloryModal()">→</button>
                 <span class="panel-title" data-i18n="modal.glory.title">⭐ Next Glory Members</span>
             </div>
             <div class="panel-body">
@@ -955,7 +960,7 @@
         <!-- Settings Panel -->
         <div id="settingsModal" class="page-panel">
             <div class="panel-header">
-                <button class="panel-back-btn" onclick="closeSettings()">←</button>
+                <button class="panel-back-btn" onclick="closeSettings()">→</button>
                 <span class="panel-title" data-i18n="settings.title">⚙ Settings</span>
             </div>
             <div class="panel-body">
