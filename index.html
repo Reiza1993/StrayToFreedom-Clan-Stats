@@ -441,18 +441,7 @@
             transform: none;
         }
 
-        /* ── Settings Modal ── */
-        .settings-modal-inner {
-            position: relative;
-            margin: 20px auto;
-            padding: 24px;
-            background: #2d3748;
-            border-radius: 15px;
-            max-width: 95%;
-            width: 420px;
-            border: 1px solid #4a5568;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
-        }
+        /* ── Settings sections (inside panel body) ── */
         .settings-section { margin-bottom: 20px; }
         .settings-section:last-child { margin-bottom: 0; }
         .settings-section-label {
@@ -581,25 +570,65 @@
         .drawer-item.glory-drawer  { color: #ffd700; }
         .drawer-item.glory-drawer:hover { background: rgba(183,121,31,0.18); }
 
-        /* ── Modal slide-in from right ── */
-        #lmeHistoryModal > div,
-        #alumniModal > div,
-        #gloryModal > div,
-        #settingsModal > .settings-modal-inner {
-            transform: translateX(100vw);
+        /* ── Full-screen page panels ── */
+        .page-panel {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: #1a202c;
+            z-index: 1100;
+            transform: translateX(100%);
             transition: transform 290ms ease;
+            display: none;
+            flex-direction: column;
+            overflow: hidden;
         }
-        #lmeHistoryModal.modal-open > div,
-        #alumniModal.modal-open > div,
-        #gloryModal.modal-open > div,
-        #settingsModal.modal-open > .settings-modal-inner {
-            transform: translateX(0);
+        .page-panel.panel-open { transform: translateX(0); }
+
+        .panel-header {
+            display: flex;
+            align-items: center;
+            padding: 12px 16px;
+            background: #2d3748;
+            border-bottom: 1px solid #4a5568;
+            flex-shrink: 0;
+            position: relative;
+            min-height: 52px;
+        }
+        .panel-back-btn {
+            background: none;
+            border: none;
+            color: #a0aec0;
+            font-size: 22px;
+            cursor: pointer;
+            padding: 4px 8px;
+            line-height: 1;
+            z-index: 1;
+        }
+        .panel-back-btn:hover { color: #f7fafc; }
+        .panel-title {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #f7fafc;
+            font-size: 16px;
+            font-weight: 600;
+            white-space: nowrap;
+            pointer-events: none;
+        }
+        .panel-body {
+            flex: 1;
+            overflow-y: auto;
+            padding: 12px 10px;
         }
 
         /* RTL: drawer slides in from the left */
         [dir=rtl] #sideDrawer { right: auto; left: 0; border-left: none; border-right: 1px solid #4a5568; transform: translateX(-100%); }
         [dir=rtl] #sideDrawer.drawer-open { transform: translateX(0); }
         [dir=rtl] #hamburgerBtn { right: auto; left: 14px; }
+        /* RTL: panels slide from the left */
+        [dir=rtl] .page-panel { transform: translateX(-100%); }
+        [dir=rtl] .page-panel.panel-open { transform: translateX(0); }
 
         @media (max-width: 768px) {
             body {
@@ -837,12 +866,13 @@
             </tbody>
         </table>
 
-        <!-- LME History Modal -->
-        <div id="lmeHistoryModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 1000; overflow-y: auto;">
-            <div style="position: relative; margin: 8px auto; padding: 10px; background: #2d3748; border-radius: 15px; max-width: 98%; width: 100%; max-height: 90vh; overflow-y: auto; border: 1px solid #4a5568;">
-                <span onclick="closeLMEHistory()" style="position: absolute; top: 10px; left: 15px; font-size: 24px; cursor: pointer; color: #a0aec0;">&times;</span>
-                <h2 style="color: #f7fafc; margin-bottom: 10px; text-align: center; font-size: 1.5em; margin-top: 5px;">🌙 <span data-i18n="modal.lme_history.title">LME History</span></h2>
-
+        <!-- LME History Panel -->
+        <div id="lmeHistoryModal" class="page-panel">
+            <div class="panel-header">
+                <button class="panel-back-btn" onclick="closeLMEHistory()">←</button>
+                <span class="panel-title">🌙 <span data-i18n="modal.lme_history.title">LME History</span></span>
+            </div>
+            <div class="panel-body">
                 <!-- Secret Score Calculator Row -->
                 <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin-bottom: 5px;">
                     <div class="calc-stat-card" style="border-color: #553c9a;">
@@ -864,7 +894,7 @@
                         <div class="calc-stat-value" id="historyAvgRank">—</div>
                     </div>
                 </div>
-                
+
                 <table id="lmeHistoryTable" style="width: 100%; border-collapse: collapse; background: #2d3748; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4); font-size: 12px;">
                     <thead>
                         <tr>
@@ -890,28 +920,31 @@
             </div>
         </div>
 
-        <!-- Alumni Modal -->
-        <div id="alumniModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 1000; overflow-y: auto;">
-            <div style="position: relative; margin: 10px auto; padding: 12px; background: #2d3748; border-radius: 15px; max-width: 95%; width: 600px; max-height: 90vh; overflow-y: auto; border: 1px solid #4a5568;">
-                <span onclick="closeAlumni()" style="position: absolute; top: 10px; left: 15px; font-size: 24px; cursor: pointer; color: #a0aec0;">&times;</span>
-                <h2 style="color: #f7fafc; margin-bottom: 10px; text-align: center; font-size: 1.5em; margin-top: 5px;">👥 Freedomˢᵗʳᵃʸ <span data-i18n="modal.alumni.title">Alumni</span></h2>
-
+        <!-- Alumni Panel -->
+        <div id="alumniModal" class="page-panel">
+            <div class="panel-header">
+                <button class="panel-back-btn" onclick="closeAlumni()">←</button>
+                <span class="panel-title">👥 Freedomˢᵗʳᵃʸ <span data-i18n="modal.alumni.title">Alumni</span></span>
+            </div>
+            <div class="panel-body">
                 <div style="background: #374151; border-radius: 8px; padding: 10px; margin-bottom: 10px; text-align: center;">
                     <p style="color: #e2e8f0; margin: 0; font-size: 14px; line-height: 1.4;">
                         <strong style="color: #ffd700;" id="alumniCountDisplay">— Alumni Members</strong><br>
                         <span style="color: #a0aec0;" data-i18n="modal.alumni.subtitle">Former clan members who contributed to our journey</span>
                     </p>
                 </div>
-                
-                <div id="alumniGrid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 7px; max-height: 400px; overflow-y: auto; padding: 7px; background: #374151; border-radius: 8px;">
+
+                <div id="alumniGrid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 7px; padding: 7px; background: #374151; border-radius: 8px;">
                 </div>
             </div>
         </div>
-        <!-- Next Glory Members Modal -->
-        <div id="gloryModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 1000; overflow-y: auto;">
-            <div style="position: relative; margin: 10px auto; padding: 12px; background: #2d3748; border-radius: 15px; max-width: 95%; width: 560px; max-height: 90vh; overflow-y: auto; border: 1px solid #b7791f; box-shadow: 0 0 30px rgba(255,215,0,0.12);">
-                <span onclick="closeGloryModal()" style="position: absolute; top: 10px; left: 15px; font-size: 24px; cursor: pointer; color: #a0aec0;">&times;</span>
-                <h2 style="color: #ffd700; margin-bottom: 4px; text-align: center; font-size: 1.4em; margin-top: 5px; text-shadow: 0 0 12px rgba(255,215,0,0.4);" data-i18n="modal.glory.title">⭐ Next Glory Members</h2>
+        <!-- Next Glory Members Panel -->
+        <div id="gloryModal" class="page-panel">
+            <div class="panel-header">
+                <button class="panel-back-btn" onclick="closeGloryModal()">←</button>
+                <span class="panel-title" data-i18n="modal.glory.title">⭐ Next Glory Members</span>
+            </div>
+            <div class="panel-body">
                 <p style="color: #718096; font-size: 11px; text-align: center; margin: 0 0 8px 0; letter-spacing: 0.3px;" data-i18n="modal.glory.subtitle">Ranked by CX Score → LME tiebreaker · Excludes Leader, Vice-Leader, Eternal Glory, Glory Members &amp; inactive (LME = 0)</p>
 
                 <div id="gloryModalBody" style="display: flex; flex-direction: column; gap: 4px;"></div>
@@ -919,12 +952,13 @@
                 <p style="color: #4a5568; font-size: 10px; text-align: center; margin: 8px 0 0 0;" data-i18n="modal.glory.tiebreak">★ = tied at highest CX score — LME used as tiebreaker</p>
             </div>
         </div>
-        <!-- Settings Modal -->
-        <div id="settingsModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); z-index:1001; overflow-y:auto;">
-            <div class="settings-modal-inner">
-                <span onclick="closeSettings()" style="position:absolute; top:10px; left:15px; font-size:24px; cursor:pointer; color:#a0aec0;">&times;</span>
-                <h2 style="color:#f7fafc; margin-bottom:24px; text-align:center; font-size:1.4em; margin-top:8px;" data-i18n="settings.title">⚙ Settings</h2>
-
+        <!-- Settings Panel -->
+        <div id="settingsModal" class="page-panel">
+            <div class="panel-header">
+                <button class="panel-back-btn" onclick="closeSettings()">←</button>
+                <span class="panel-title" data-i18n="settings.title">⚙ Settings</span>
+            </div>
+            <div class="panel-body">
                 <div class="settings-section">
                     <div class="settings-section-label" data-i18n="settings.language">Language</div>
                     <select id="langSelector" onchange="setLang(this.value)">
@@ -997,12 +1031,12 @@
 
         function openSettings() {
             const m = document.getElementById('settingsModal');
-            m.style.display = 'block';
-            requestAnimationFrame(() => m.classList.add('modal-open'));
+            m.style.display = 'flex';
+            requestAnimationFrame(() => m.classList.add('panel-open'));
         }
         function closeSettings() {
             const m = document.getElementById('settingsModal');
-            m.classList.remove('modal-open');
+            m.classList.remove('panel-open');
             setTimeout(() => { m.style.display = 'none'; }, 290);
         }
 
@@ -1010,8 +1044,8 @@
             let delay = 0;
             ['lmeHistoryModal','alumniModal','gloryModal','settingsModal'].forEach(id => {
                 const m = document.getElementById(id);
-                if (m.classList.contains('modal-open')) {
-                    m.classList.remove('modal-open');
+                if (m.classList.contains('panel-open')) {
+                    m.classList.remove('panel-open');
                     setTimeout(() => { m.style.display = 'none'; }, 290);
                     delay = 300;
                 }
@@ -1449,22 +1483,22 @@
 
         function openLMEHistory() {
             const m = document.getElementById('lmeHistoryModal');
-            m.style.display = 'block';
-            requestAnimationFrame(() => m.classList.add('modal-open'));
+            m.style.display = 'flex';
+            requestAnimationFrame(() => m.classList.add('panel-open'));
         }
         function closeLMEHistory() {
             const m = document.getElementById('lmeHistoryModal');
-            m.classList.remove('modal-open');
+            m.classList.remove('panel-open');
             setTimeout(() => { m.style.display = 'none'; }, 290);
         }
         function openAlumni() {
             const m = document.getElementById('alumniModal');
-            m.style.display = 'block';
-            requestAnimationFrame(() => m.classList.add('modal-open'));
+            m.style.display = 'flex';
+            requestAnimationFrame(() => m.classList.add('panel-open'));
         }
         function closeAlumni() {
             const m = document.getElementById('alumniModal');
-            m.classList.remove('modal-open');
+            m.classList.remove('panel-open');
             setTimeout(() => { m.style.display = 'none'; }, 290);
         }
 
@@ -1483,7 +1517,9 @@
 
             if (!candidates.length) {
                 body.innerHTML = `<p style="color:#718096; text-align:center;">${t('modal.glory.empty')}</p>`;
-                document.getElementById('gloryModal').style.display = 'block';
+                const mg = document.getElementById('gloryModal');
+                mg.style.display = 'flex';
+                requestAnimationFrame(() => mg.classList.add('panel-open'));
                 return;
             }
 
@@ -1553,22 +1589,15 @@
             });
 
             const m = document.getElementById('gloryModal');
-            m.style.display = 'block';
-            requestAnimationFrame(() => m.classList.add('modal-open'));
+            m.style.display = 'flex';
+            requestAnimationFrame(() => m.classList.add('panel-open'));
         }
 
         function closeGloryModal() {
             const m = document.getElementById('gloryModal');
-            m.classList.remove('modal-open');
+            m.classList.remove('panel-open');
             setTimeout(() => { m.style.display = 'none'; }, 290);
         }
-
-        window.onclick = function(event) {
-            if (event.target === document.getElementById('lmeHistoryModal')) closeLMEHistory();
-            if (event.target === document.getElementById('alumniModal'))     closeAlumni();
-            if (event.target === document.getElementById('gloryModal'))      closeGloryModal();
-            if (event.target === document.getElementById('settingsModal'))   closeSettings();
-        };
 
         document.getElementById('sortSelect').addEventListener('change', e => sortData(e.target.value));
         document.getElementById('searchInput').addEventListener('input',  e => filterData(e.target.value));
