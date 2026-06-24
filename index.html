@@ -504,6 +504,10 @@
             background: #1a202c;
             padding: 14px 20px 8px;
             text-align: center;
+            /* Break out of body's horizontal padding to cover full viewport width */
+            width: 100vw;
+            box-sizing: border-box;
+            margin-left: calc(-50vw + 50%);
         }
 
         /* ── Drawer overlay ── */
