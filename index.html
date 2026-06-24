@@ -839,12 +839,12 @@
 
         <!-- LME History Modal -->
         <div id="lmeHistoryModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 1000; overflow-y: auto;">
-            <div style="position: relative; margin: 15px auto; padding: 15px; background: #2d3748; border-radius: 15px; max-width: 98%; width: 100%; max-height: 90vh; overflow-y: auto; border: 1px solid #4a5568;">
+            <div style="position: relative; margin: 8px auto; padding: 10px; background: #2d3748; border-radius: 15px; max-width: 98%; width: 100%; max-height: 90vh; overflow-y: auto; border: 1px solid #4a5568;">
                 <span onclick="closeLMEHistory()" style="position: absolute; top: 10px; left: 15px; font-size: 24px; cursor: pointer; color: #a0aec0;">&times;</span>
-                <h2 style="color: #f7fafc; margin-bottom: 20px; text-align: center; font-size: 1.5em; margin-top: 10px;">🌙 <span data-i18n="modal.lme_history.title">LME History</span></h2>
-                
+                <h2 style="color: #f7fafc; margin-bottom: 10px; text-align: center; font-size: 1.5em; margin-top: 5px;">🌙 <span data-i18n="modal.lme_history.title">LME History</span></h2>
+
                 <!-- Secret Score Calculator Row -->
-                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin-bottom: 8px;">
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin-bottom: 5px;">
                     <div class="calc-stat-card" style="border-color: #553c9a;">
                         <div class="calc-stat-label" data-i18n="stat.lunar_pts">Lunar Points</div>
                         <div class="calc-stat-value" style="color: #ffd700;" id="historyLunarPoints">—</div>
@@ -854,7 +854,7 @@
                         <div class="calc-stat-value" style="color: #81e6d9;" id="historyRankFactor">1.0000</div>
                     </div>
                 </div>
-                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin-bottom: 15px;">
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin-bottom: 8px;">
                     <div class="calc-stat-card" style="border-color: #b7791f; box-shadow: 0 0 8px rgba(255,215,0,0.12);">
                         <div class="calc-stat-label" data-i18n="modal.lme_history.secret_score">Secret Score</div>
                         <div class="calc-stat-value" style="color: #ffd700;" id="historySecretScore">—</div>
@@ -893,31 +893,31 @@
 
         <!-- Alumni Modal -->
         <div id="alumniModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 1000; overflow-y: auto;">
-            <div style="position: relative; margin: 20px auto; padding: 20px; background: #2d3748; border-radius: 15px; max-width: 95%; width: 600px; max-height: 90vh; overflow-y: auto; border: 1px solid #4a5568;">
+            <div style="position: relative; margin: 10px auto; padding: 12px; background: #2d3748; border-radius: 15px; max-width: 95%; width: 600px; max-height: 90vh; overflow-y: auto; border: 1px solid #4a5568;">
                 <span onclick="closeAlumni()" style="position: absolute; top: 10px; left: 15px; font-size: 24px; cursor: pointer; color: #a0aec0;">&times;</span>
-                <h2 style="color: #f7fafc; margin-bottom: 20px; text-align: center; font-size: 1.5em; margin-top: 10px;">👥 Freedomˢᵗʳᵃʸ <span data-i18n="modal.alumni.title">Alumni</span></h2>
+                <h2 style="color: #f7fafc; margin-bottom: 10px; text-align: center; font-size: 1.5em; margin-top: 5px;">👥 Freedomˢᵗʳᵃʸ <span data-i18n="modal.alumni.title">Alumni</span></h2>
 
-                <div style="background: #374151; border-radius: 8px; padding: 15px; margin-bottom: 15px; text-align: center;">
+                <div style="background: #374151; border-radius: 8px; padding: 10px; margin-bottom: 10px; text-align: center;">
                     <p style="color: #e2e8f0; margin: 0; font-size: 14px; line-height: 1.4;">
                         <strong style="color: #ffd700;" id="alumniCountDisplay">— Alumni Members</strong><br>
                         <span style="color: #a0aec0;" data-i18n="modal.alumni.subtitle">Former clan members who contributed to our journey</span>
                     </p>
                 </div>
                 
-                <div id="alumniGrid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 10px; max-height: 400px; overflow-y: auto; padding: 10px; background: #374151; border-radius: 8px;">
+                <div id="alumniGrid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 7px; max-height: 400px; overflow-y: auto; padding: 7px; background: #374151; border-radius: 8px;">
                 </div>
             </div>
         </div>
         <!-- Next Glory Members Modal -->
         <div id="gloryModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 1000; overflow-y: auto;">
-            <div style="position: relative; margin: 20px auto; padding: 20px; background: #2d3748; border-radius: 15px; max-width: 95%; width: 560px; max-height: 90vh; overflow-y: auto; border: 1px solid #b7791f; box-shadow: 0 0 30px rgba(255,215,0,0.12);">
+            <div style="position: relative; margin: 10px auto; padding: 12px; background: #2d3748; border-radius: 15px; max-width: 95%; width: 560px; max-height: 90vh; overflow-y: auto; border: 1px solid #b7791f; box-shadow: 0 0 30px rgba(255,215,0,0.12);">
                 <span onclick="closeGloryModal()" style="position: absolute; top: 10px; left: 15px; font-size: 24px; cursor: pointer; color: #a0aec0;">&times;</span>
-                <h2 style="color: #ffd700; margin-bottom: 4px; text-align: center; font-size: 1.4em; margin-top: 10px; text-shadow: 0 0 12px rgba(255,215,0,0.4);" data-i18n="modal.glory.title">⭐ Next Glory Members</h2>
-                <p style="color: #718096; font-size: 11px; text-align: center; margin: 0 0 16px 0; letter-spacing: 0.3px;" data-i18n="modal.glory.subtitle">Ranked by CX Score → LME tiebreaker · Excludes Leader, Vice-Leader, Eternal Glory, Glory Members &amp; inactive (LME = 0)</p>
+                <h2 style="color: #ffd700; margin-bottom: 4px; text-align: center; font-size: 1.4em; margin-top: 5px; text-shadow: 0 0 12px rgba(255,215,0,0.4);" data-i18n="modal.glory.title">⭐ Next Glory Members</h2>
+                <p style="color: #718096; font-size: 11px; text-align: center; margin: 0 0 8px 0; letter-spacing: 0.3px;" data-i18n="modal.glory.subtitle">Ranked by CX Score → LME tiebreaker · Excludes Leader, Vice-Leader, Eternal Glory, Glory Members &amp; inactive (LME = 0)</p>
 
                 <div id="gloryModalBody" style="display: flex; flex-direction: column; gap: 4px;"></div>
 
-                <p style="color: #4a5568; font-size: 10px; text-align: center; margin: 14px 0 0 0;" data-i18n="modal.glory.tiebreak">★ = tied at highest CX score — LME used as tiebreaker</p>
+                <p style="color: #4a5568; font-size: 10px; text-align: center; margin: 8px 0 0 0;" data-i18n="modal.glory.tiebreak">★ = tied at highest CX score — LME used as tiebreaker</p>
             </div>
         </div>
         <!-- Settings Modal -->
@@ -1008,15 +1008,19 @@
         }
 
         function openDrawer() {
+            let delay = 0;
             ['lmeHistoryModal','alumniModal','gloryModal','settingsModal'].forEach(id => {
                 const m = document.getElementById(id);
                 if (m.classList.contains('modal-open')) {
                     m.classList.remove('modal-open');
-                    m.style.display = 'none';
+                    setTimeout(() => { m.style.display = 'none'; }, 290);
+                    delay = 300;
                 }
             });
-            document.getElementById('drawerOverlay').style.display = 'block';
-            requestAnimationFrame(() => document.getElementById('sideDrawer').classList.add('drawer-open'));
+            setTimeout(() => {
+                document.getElementById('drawerOverlay').style.display = 'block';
+                requestAnimationFrame(() => document.getElementById('sideDrawer').classList.add('drawer-open'));
+            }, delay);
         }
         function closeDrawer() {
             document.getElementById('sideDrawer').classList.remove('drawer-open');
