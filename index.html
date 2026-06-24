@@ -496,6 +496,18 @@
         }
         #hamburgerBtn:hover { background: #3a4a5c; }
 
+        /* ── Fixed main-page header ── */
+        #main-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            background: #1a202c;
+            padding: 14px 20px 8px;
+            text-align: center;
+        }
+
         /* ── Drawer overlay ── */
         #drawerOverlay {
             display: none;
@@ -719,13 +731,15 @@
         </button>
     </div>
 
-    <div class="container">
+    <div id="main-header">
         <div class="title-tag">Freedomˢᵗʳᵃʸ // Intel Dashboard</div><h1>Freedom Protocol</h1>
-
         <!-- ClanID — thin dark card -->
-        <div style="background: #2d3748; border: 1px solid #4a5568; border-radius: 8px; text-align: center; padding: 5px 12px; margin: 0 auto 8px auto; display: inline-block; width: 100%; box-sizing: border-box;">
+        <div style="background: #2d3748; border: 1px solid #4a5568; border-radius: 8px; text-align: center; padding: 5px 12px; margin: 0 auto 0 auto; display: inline-block; width: 100%; box-sizing: border-box;">
             <span style="color: #718096; font-size: 10px; text-transform: uppercase; letter-spacing: 1px; font-weight: 600;">ClanID: </span><span style="color: #a0aec0; font-size: 12px; font-weight: 600;">44262</span>
         </div>
+    </div>
+
+    <div class="container">
 
         <!-- ═══ Unified Stat Grid (auto-calculated from playerData) ═══ -->
         <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px; margin-bottom: 6px;">
@@ -1841,6 +1855,17 @@
         function adjustFontSize(delta) {
             fontScale = Math.min(FS_MAX, Math.max(FS_MIN, Math.round((fontScale + delta) * 100) / 100));
             applyFontScale();
+            updateMainHeaderOffset();
+        }
+
+        function updateMainHeaderOffset() {
+            const hdr = document.getElementById('main-header');
+            if (!hdr) return;
+            // Header is fixed (removed from flow). Body has 20px top padding which already
+            // offsets .container from the viewport top. Divide by fontScale to convert
+            // viewport pixels into pre-zoom container padding pixels.
+            const extra = Math.max(0, hdr.offsetHeight - 20);
+            document.querySelector('.container').style.paddingTop = (extra / fontScale) + 'px';
         }
 
         document.addEventListener('keydown', e => {
@@ -1869,6 +1894,9 @@
         document.documentElement.dir  = (currentLang === 'fa') ? 'rtl' : 'ltr';
         document.getElementById('langSelector').value = currentLang;
         applyTranslations();
+
+        updateMainHeaderOffset();
+        window.addEventListener('resize', updateMainHeaderOffset);
 
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register('./service-worker.js');
