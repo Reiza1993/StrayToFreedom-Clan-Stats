@@ -496,12 +496,10 @@
         }
         #hamburgerBtn:hover { background: #3a4a5c; }
 
-        /* ── Fixed main-page header ── */
+        /* ── Sticky main-page header ── */
         #main-header {
-            position: fixed;
+            position: sticky;
             top: 0;
-            left: 0;
-            right: 0;
             z-index: 100;
             background: #1a202c;
             padding: 14px 20px 8px;
@@ -1855,17 +1853,6 @@
         function adjustFontSize(delta) {
             fontScale = Math.min(FS_MAX, Math.max(FS_MIN, Math.round((fontScale + delta) * 100) / 100));
             applyFontScale();
-            updateMainHeaderOffset();
-        }
-
-        function updateMainHeaderOffset() {
-            const hdr = document.getElementById('main-header');
-            if (!hdr) return;
-            // Header is fixed (removed from flow). Body has 20px top padding which already
-            // offsets .container from the viewport top. Divide by fontScale to convert
-            // viewport pixels into pre-zoom container padding pixels.
-            const extra = Math.max(0, hdr.offsetHeight - 20);
-            document.querySelector('.container').style.paddingTop = (extra / fontScale) + 'px';
         }
 
         document.addEventListener('keydown', e => {
@@ -1894,12 +1881,6 @@
         document.documentElement.dir  = (currentLang === 'fa') ? 'rtl' : 'ltr';
         document.getElementById('langSelector').value = currentLang;
         applyTranslations();
-
-        // ResizeObserver fires on initial render and on any header height change
-        // (e.g. when Orbitron loads via @import and the h1 reflows), so padding-top
-        // is always set correctly without any timing hacks.
-        new ResizeObserver(updateMainHeaderOffset).observe(document.getElementById('main-header'));
-        window.addEventListener('resize', updateMainHeaderOffset);
 
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register('./service-worker.js');
