@@ -1,6 +1,6 @@
 // clanStats.js
 // Freedomˢᵗʳᵃʸ Clan Statistics
-// Last Updated: June 2026 (LME #47 Added)
+// Last Updated: June 2026 (LME #48 Added, MrPlusUltra → Alumni)
 //
 // See INSTRUCTIONS_GUIDE.MD for full update procedures (LME history, alumni, lunar points).
 
@@ -14,12 +14,20 @@ const clanStats = {
     lunarPoints: 1225,
 
     // Alumni count (update when members leave)
-    alumniCount: 66
+    alumniCount: 67
 };
 
 // LME History Data
 // Add new results to the TOP of this array
 const lmeHistory = [
+    {
+        lmeNumber: 48,
+        rank: 2,
+        rankImage: "https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Rank2.png",
+        atkDefPoints: 5,
+        medals: 62522,
+        league: "Champion"
+    },
     {
         lmeNumber: 47,
         rank: 1,
@@ -411,7 +419,7 @@ const alumniMembers = [
     "KusoYaroo", "cocacandy", "chiknstrip", "SmallBotoㅣStray", "Phley", "6J4", "lguinily",
     "Mclovin404", "Hiryu69", "swifft", "WeirdPlays", "mc2028.",
     "命 Waiora癒", "аіко","HannaH","♙Jojo♔",
-    "SUJAY", "Pookaz", "Hanter007",
+    "SUJAY", "Pookaz", "Hanter007", "MrPlusUltra",
 ];
 
 // Export for use in main application
