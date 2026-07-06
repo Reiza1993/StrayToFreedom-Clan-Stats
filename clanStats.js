@@ -1,6 +1,6 @@
 // clanStats.js
 // Freedomˢᵗʳᵃʸ Clan Statistics
-// Last Updated: June 2026 (LME #48 Added, MrPlusUltra → Alumni)
+// Last Updated: July 2026 (LME #49 Added)
 //
 // See INSTRUCTIONS_GUIDE.MD for full update procedures (LME history, alumni, lunar points).
 
@@ -20,6 +20,14 @@ const clanStats = {
 // LME History Data
 // Add new results to the TOP of this array
 const lmeHistory = [
+    {
+        lmeNumber: 49,
+        rank: 2,
+        rankImage: "https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Rank2.png",
+        atkDefPoints: 3,
+        medals: 80517,
+        league: "Champion"
+    },
     {
         lmeNumber: 48,
         rank: 2,
