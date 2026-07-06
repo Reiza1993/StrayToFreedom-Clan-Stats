@@ -19,6 +19,7 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, 'Noto Sans SC', 'Noto Sans JP', 'Noto Sans KR', sans-serif;
             margin: 0;
             padding: 20px;
+            padding-bottom: calc(70px + env(safe-area-inset-bottom));
             background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
             min-height: 100vh;
             color: #e2e8f0;
@@ -182,23 +183,6 @@
             animation: shine 4s linear infinite;
             filter: drop-shadow(0 0 8px rgba(211, 133, 155, 0.6));
             font-weight: 700;
-        }
-
-        .export-btn {
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            color: white;
-            border: none;
-            padding: 12px 24px;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            margin-left: 10px;
-        }
-        
-        .export-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
         }
 
         /* Toggle Removed button — distinct grey style */
@@ -475,26 +459,43 @@
             [dir=rtl] .controls { flex-direction: column; }
         }
 
-        /* ── Hamburger button ── */
-        #hamburgerBtn {
+        /* ── Bottom Navigation Bar ── */
+        #bottom-nav {
             position: fixed;
-            top: 14px;
-            right: 14px;
-            z-index: 1500;
+            bottom: 0;
+            left: 0;
+            right: 0;
             background: #2d3748;
-            border: 1px solid #4a5568;
-            color: #e2e8f0;
-            font-size: 20px;
-            width: 40px;
-            height: 40px;
-            border-radius: 8px;
-            cursor: pointer;
+            border-top: 1px solid #4a5568;
             display: flex;
+            align-items: flex-start;
+            z-index: 1500;
+            box-shadow: 0 -4px 12px rgba(0,0,0,0.3);
+            padding-bottom: env(safe-area-inset-bottom);
+            box-sizing: content-box;
+        }
+        .nav-tab {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
-            line-height: 1;
+            gap: 3px;
+            border: none;
+            background: none;
+            color: #718096;
+            cursor: pointer;
+            padding: 8px 2px;
+            height: 56px;
+            box-sizing: border-box;
+            transition: color 160ms ease, background 160ms ease;
+            -webkit-tap-highlight-color: transparent;
         }
-        #hamburgerBtn:hover { background: #3a4a5c; }
+        .nav-tab:hover { background: rgba(255,255,255,0.05); color: #a78bfa; }
+        .nav-tab.active { color: #a78bfa; }
+        .nav-tab.glory-tab:hover, .nav-tab.glory-tab.active { color: #ffd700; }
+        .nav-tab-icon { font-size: 18px; line-height: 1; }
+        .nav-tab-label { font-size: 10px; font-weight: 600; letter-spacing: 0.3px; line-height: 1; }
 
         /* ── Sticky main-page header ── */
         #main-header {
@@ -509,80 +510,6 @@
             box-sizing: border-box;
             margin-left: calc(-50vw + 50%);
         }
-
-        /* ── Drawer overlay ── */
-        #drawerOverlay {
-            display: none;
-            position: fixed;
-            inset: 0;
-            background: rgba(0,0,0,0.55);
-            z-index: 1998;
-        }
-
-        /* ── Side drawer ── */
-        #sideDrawer {
-            position: fixed;
-            top: 0;
-            right: 0;
-            height: 100%;
-            width: 280px;
-            max-width: 85vw;
-            background: #2d3748;
-            border-left: 1px solid #4a5568;
-            z-index: 1999;
-            transform: translateX(100%);
-            transition: transform 290ms ease;
-            overflow-y: auto;
-            display: flex;
-            flex-direction: column;
-        }
-        #sideDrawer.drawer-open { transform: translateX(0); }
-
-        .drawer-header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 16px 18px;
-            border-bottom: 1px solid #4a5568;
-        }
-        .drawer-header span {
-            color: #a0aec0;
-            font-size: 13px;
-            font-weight: 600;
-            letter-spacing: 0.5px;
-            text-transform: uppercase;
-        }
-        .drawer-close-btn {
-            background: none;
-            border: none;
-            color: #a0aec0;
-            font-size: 22px;
-            cursor: pointer;
-            padding: 0 2px;
-            line-height: 1;
-        }
-        .drawer-close-btn:hover { color: #f7fafc; }
-
-        .drawer-item {
-            display: flex;
-            align-items: center;
-            gap: 14px;
-            padding: 16px 20px;
-            border: none;
-            border-bottom: 1px solid rgba(74,85,104,0.5);
-            background: none;
-            color: #e2e8f0;
-            font-size: 15px;
-            font-weight: 500;
-            cursor: pointer;
-            text-align: left;
-            width: 100%;
-            transition: background 160ms ease;
-        }
-        .drawer-item:hover { background: #3a4a5c; }
-        .drawer-item .drawer-icon { font-size: 18px; width: 24px; text-align: center; flex-shrink: 0; }
-        .drawer-item.glory-drawer  { color: #ffd700; }
-        .drawer-item.glory-drawer:hover { background: rgba(183,121,31,0.18); }
 
         /* ── Full-screen page panels ── */
         .page-panel {
@@ -636,10 +563,6 @@
             padding: 12px 10px;
         }
 
-        /* RTL: drawer slides in from the left */
-        [dir=rtl] #sideDrawer { right: auto; left: 0; border-left: none; border-right: 1px solid #4a5568; transform: translateX(-100%); }
-        [dir=rtl] #sideDrawer.drawer-open { transform: translateX(0); }
-        [dir=rtl] #hamburgerBtn { right: auto; left: 14px; }
         /* RTL: panels slide from the left, back arrow on right pointing left */
         [dir=rtl] .page-panel { transform: translateX(-100%); }
         [dir=rtl] .page-panel.panel-open { transform: translateX(0); }
@@ -652,40 +575,35 @@
         @media (max-width: 768px) {
             body {
                 padding: 10px;
+                padding-bottom: calc(70px + env(safe-area-inset-bottom));
             }
-            
+
             h1 {
                 font-size: 2em;
             }
-            
+
             .controls {
                 flex-direction: column;
                 align-items: stretch;
             }
-            
+
             table {
                 font-size: 12px;
                 border-radius: 8px;
             }
-            
+
             th, td {
                 padding: 6px 2px;
                 font-size: 11px;
             }
-            
+
             th {
                 font-size: 10px;
             }
-            
+
             .name-cell {
                 max-width: 80px;
                 font-size: 11px;
-            }
-            
-            .export-btn {
-                font-size: 14px;
-                padding: 10px 16px;
-                margin-left: 0;
             }
 
             .toggle-removed-btn {
@@ -705,40 +623,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&family=Noto+Sans+JP&family=Noto+Sans+KR&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <!-- Hamburger -->
-    <button id="hamburgerBtn" onclick="openDrawer()" aria-label="Menu">☰</button>
-
-    <!-- Drawer backdrop -->
-    <div id="drawerOverlay" onclick="closeDrawer()"></div>
-
-    <!-- Side drawer -->
-    <div id="sideDrawer">
-        <div class="drawer-header">
-            <span>Freedomˢᵗʳᵃʸ</span>
-            <button class="drawer-close-btn" onclick="closeDrawer()">✕</button>
-        </div>
-        <button class="drawer-item glory-drawer" onclick="closeDrawer(); openGloryModal()">
-            <span class="drawer-icon">⭐</span>
-            <span data-i18n="ctrl.next_glory">Next Glory Members</span>
-        </button>
-        <button class="drawer-item" onclick="closeDrawer(); openLMEHistory()">
-            <span class="drawer-icon">📊</span>
-            <span data-i18n="ctrl.lme_history">LME History</span>
-        </button>
-        <button class="drawer-item" onclick="closeDrawer(); openAlumni()">
-            <span class="drawer-icon">🎓</span>
-            <span data-i18n="ctrl.alumni">Alumni</span>
-        </button>
-        <button class="drawer-item" onclick="closeDrawer(); exportToCSV()">
-            <span class="drawer-icon">📤</span>
-            <span data-i18n="ctrl.export_csv">Export CSV</span>
-        </button>
-        <button class="drawer-item" onclick="closeDrawer(); openSettings()">
-            <span class="drawer-icon">⚙️</span>
-            <span data-i18n="ctrl.settings">Settings</span>
-        </button>
-    </div>
 
     <div id="main-header">
         <div class="title-tag">Freedomˢᵗʳᵃʸ // Intel Dashboard</div><h1>Freedom Protocol</h1>
@@ -1013,6 +897,26 @@
         </div>
     </div>
 
+    <!-- Bottom Navigation Bar -->
+    <nav id="bottom-nav" aria-label="Navigation">
+        <button id="nav-glory" class="nav-tab glory-tab" onclick="openGloryModal()" aria-label="Next Glory Members">
+            <span class="nav-tab-icon">⭐</span>
+            <span class="nav-tab-label" data-i18n="ctrl.next_glory">Next Glory</span>
+        </button>
+        <button id="nav-lme" class="nav-tab" onclick="openLMEHistory()" aria-label="LME History">
+            <span class="nav-tab-icon">📊</span>
+            <span class="nav-tab-label" data-i18n="ctrl.lme_history">LME History</span>
+        </button>
+        <button id="nav-alumni" class="nav-tab" onclick="openAlumni()" aria-label="Alumni">
+            <span class="nav-tab-icon">🎓</span>
+            <span class="nav-tab-label" data-i18n="ctrl.alumni">Alumni</span>
+        </button>
+        <button id="nav-settings" class="nav-tab" onclick="openSettings()" aria-label="Settings">
+            <span class="nav-tab-icon">⚙️</span>
+            <span class="nav-tab-label" data-i18n="ctrl.settings">Settings</span>
+        </button>
+    </nav>
+
     <!-- Load external data files -->
     <script src="i18n.js"></script>
     <script src="clanStats.js"></script>
@@ -1057,36 +961,40 @@
             sortData(currentSort);
         }
 
-        function openSettings() {
-            const m = document.getElementById('settingsModal');
+        function setNavActive(tabId) {
+            document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
+            if (tabId) { const el = document.getElementById(tabId); if (el) el.classList.add('active'); }
+        }
+
+        function openPanel(id, navId) {
+            ['lmeHistoryModal','alumniModal','gloryModal','settingsModal'].forEach(otherId => {
+                if (otherId !== id) {
+                    const other = document.getElementById(otherId);
+                    other.classList.remove('panel-open');
+                    other.style.display = 'none';
+                }
+            });
+            setNavActive(navId);
+            const m = document.getElementById(id);
             m.style.display = 'flex';
             requestAnimationFrame(() => m.classList.add('panel-open'));
         }
-        function closeSettings() {
-            const m = document.getElementById('settingsModal');
+
+        function closePanel(id) {
+            const m = document.getElementById(id);
             m.classList.remove('panel-open');
+            setNavActive(null);
             setTimeout(() => { m.style.display = 'none'; }, 290);
         }
 
-        function openDrawer() {
-            let delay = 0;
-            ['lmeHistoryModal','alumniModal','gloryModal','settingsModal'].forEach(id => {
-                const m = document.getElementById(id);
-                if (m.classList.contains('panel-open')) {
-                    m.classList.remove('panel-open');
-                    setTimeout(() => { m.style.display = 'none'; }, 290);
-                    delay = 300;
-                }
-            });
-            setTimeout(() => {
-                document.getElementById('drawerOverlay').style.display = 'block';
-                requestAnimationFrame(() => document.getElementById('sideDrawer').classList.add('drawer-open'));
-            }, delay);
-        }
-        function closeDrawer() {
-            document.getElementById('sideDrawer').classList.remove('drawer-open');
-            setTimeout(() => { document.getElementById('drawerOverlay').style.display = 'none'; }, 290);
-        }
+        function openSettings()    { openPanel('settingsModal',   'nav-settings'); }
+        function closeSettings()   { closePanel('settingsModal'); }
+
+        function openLMEHistory()  { openPanel('lmeHistoryModal', 'nav-lme'); }
+        function closeLMEHistory() { closePanel('lmeHistoryModal'); }
+
+        function openAlumni()      { openPanel('alumniModal',     'nav-alumni'); }
+        function closeAlumni()     { closePanel('alumniModal'); }
 
         // Active players = everyone except Removed role
         // Used for ATK, Cores, LME calculations and member counts
@@ -1478,58 +1386,6 @@
             sortData(currentSort);
         }
 
-        function exportToCSV() {
-            // CSV only exports active players (no Removed)
-            const exportData = filteredData.filter(p => p.role !== 'Removed');
-            const headers = ['Rank', 'Player Name', 'Relic Cores', 'Cores Gain', 'ATK', 'ATK Gain', 'LME Score', 'LME Gain', 'CX', 'CX Gain'];
-            const csvContent = [
-                headers.join(','),
-                ...exportData.map((player, index) => [
-                    index + 1,
-                    `"${player.name}"`,
-                    player.cores,
-                    `"${player.coresGain || ''}"`,
-                    player.attack,
-                    `"${player.attackGain || ''}"`,
-                    player.lmeScore,
-                    `"${player.lmeGain || ''}"`,
-                    player.cxScore,
-                    `"${player.cxGain || ''}"`
-                ].join(','))
-            ].join('\n');
-            
-            const blob = new Blob([csvContent], { type: 'text/csv' });
-            const url  = window.URL.createObjectURL(blob);
-            const a    = document.createElement('a');
-            a.href = url;
-            a.download = 'Freedomstray_clan_stats.csv';
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-            window.URL.revokeObjectURL(url);
-        }
-
-        function openLMEHistory() {
-            const m = document.getElementById('lmeHistoryModal');
-            m.style.display = 'flex';
-            requestAnimationFrame(() => m.classList.add('panel-open'));
-        }
-        function closeLMEHistory() {
-            const m = document.getElementById('lmeHistoryModal');
-            m.classList.remove('panel-open');
-            setTimeout(() => { m.style.display = 'none'; }, 290);
-        }
-        function openAlumni() {
-            const m = document.getElementById('alumniModal');
-            m.style.display = 'flex';
-            requestAnimationFrame(() => m.classList.add('panel-open'));
-        }
-        function closeAlumni() {
-            const m = document.getElementById('alumniModal');
-            m.classList.remove('panel-open');
-            setTimeout(() => { m.style.display = 'none'; }, 290);
-        }
-
         // ══════════════════════════════════════════════
         //  NEXT GLORY MEMBERS CALCULATOR
         //  1. Filter: exclude Leader, Vice-Leader, Eternal Glory, Glory Member, Removed, lmeScore=0
@@ -1537,6 +1393,13 @@
         //  3. Top CX tier = primary candidates (highlighted gold)
         // ══════════════════════════════════════════════
         function openGloryModal() {
+            ['lmeHistoryModal','alumniModal','settingsModal'].forEach(otherId => {
+                const other = document.getElementById(otherId);
+                other.classList.remove('panel-open');
+                other.style.display = 'none';
+            });
+            setNavActive('nav-glory');
+
             const EXCLUDED_ROLES = new Set(['Leader', 'Vice-Leader', 'Eternal Glory', 'Glory Member', 'Removed']);
             const candidates = activePlayerData.filter(p => !EXCLUDED_ROLES.has(p.role) && p.lmeScore > 0);
 
@@ -1621,11 +1484,7 @@
             requestAnimationFrame(() => m.classList.add('panel-open'));
         }
 
-        function closeGloryModal() {
-            const m = document.getElementById('gloryModal');
-            m.classList.remove('panel-open');
-            setTimeout(() => { m.style.display = 'none'; }, 290);
-        }
+        function closeGloryModal() { closePanel('gloryModal'); }
 
         document.getElementById('sortSelect').addEventListener('change', e => sortData(e.target.value));
         document.getElementById('searchInput').addEventListener('input',  e => filterData(e.target.value));
@@ -1868,10 +1727,10 @@
 
         document.addEventListener('keydown', e => {
             if (e.key !== 'Escape') return;
-            document.getElementById('lmeHistoryModal').style.display = 'none';
-            document.getElementById('alumniModal').style.display = 'none';
-            document.getElementById('gloryModal').style.display = 'none';
-            document.getElementById('settingsModal').style.display = 'none';
+            closeLMEHistory();
+            closeAlumni();
+            closeGloryModal();
+            closeSettings();
         });
 
         // ══════════════════════════════════════════════
