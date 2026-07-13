@@ -14,12 +14,20 @@ const clanStats = {
     lunarPoints: 1225,
 
     // Alumni count (update when members leave)
-    alumniCount: 67
+    alumniCount: 68
 };
 
 // LME History Data
 // Add new results to the TOP of this array
 const lmeHistory = [
+    {
+        lmeNumber: 50,
+        rank: 2,
+        rankImage: "https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Rank2.png",
+        atkDefPoints: 4,
+        medals: 46243,
+        league: "Champion"
+    },
     {
         lmeNumber: 49,
         rank: 2,
@@ -427,7 +435,7 @@ const alumniMembers = [
     "KusoYaroo", "cocacandy", "chiknstrip", "SmallBotoㅣStray", "Phley", "6J4", "lguinily",
     "Mclovin404", "Hiryu69", "swifft", "WeirdPlays", "mc2028.",
     "命 Waiora癒", "аіко","HannaH","♙Jojo♔",
-    "SUJAY", "Pookaz", "Hanter007", "MrPlusUltra",
+    "SUJAY", "Pookaz", "Hanter007", "MrPlusUltra","魂Hobin357死",
 ];
 
 // Export for use in main application
