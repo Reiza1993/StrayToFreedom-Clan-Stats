@@ -1,9 +1,14 @@
-const CACHE_NAME = 'freedom-protocol-v2';
+const CACHE_NAME = 'freedom-protocol-v20';
 
 const STATIC_ASSETS = [
     './',
     './index.html',
-    './playerData.js',
+    './i18n.js',
+    './playerStats.js',
+    './playerCores.js',
+    './playerLME.js',
+    './playerCXRank.js',
+    './playerCXBoss.js',
     './clanStats.js',
     './icon.png',
     './Game Icons/ATK.png',
@@ -34,7 +39,7 @@ self.addEventListener('activate', event => {
 });
 
 // Data files — always fetch fresh, fall back to cache when offline
-const NETWORK_FIRST = ['playerData.js', 'clanStats.js'];
+const NETWORK_FIRST = ['playerStats.js', 'playerCores.js', 'playerLME.js', 'playerCXRank.js', 'playerCXBoss.js', 'clanStats.js'];
 
 self.addEventListener('fetch', event => {
     if (event.request.method !== 'GET') return;
