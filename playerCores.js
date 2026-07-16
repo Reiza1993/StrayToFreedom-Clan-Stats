@@ -1,6 +1,6 @@
 // playerCores.js
 // Freedomˢᵗʳᵃʸ — Relic Cores / Transmute Cores / Chaos Fusion Power
-// Last Updated: 2026-07-15
+// Last Updated: 2026-07-16
 const playerCores = {
     current: {
         "102263647": {
@@ -175,8 +175,8 @@ const playerCores = {
         },
         "83339881": {
             "chaosFusionPower": 45,
-            "relicCores": 297,
-            "transmuteCores": 18
+            "relicCores": 305,
+            "transmuteCores": 36
         },
         "83861839": {
             "chaosFusionPower": 13,
