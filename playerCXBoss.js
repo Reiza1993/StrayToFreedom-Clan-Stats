@@ -1,91 +1,91 @@
 // playerCXBoss.js
 // Clan 44262 — CX Boss Score (from CX Boss endpoint)
-// Last Updated: 2026-07-15
+// Last Updated: 2026-07-21
 const playerCXBoss = {
     current: {
         "102263647": {
-            "cxBossScore": 730
+            "cxBossScore": 781
         },
         "104730405": {
             "cxBossScore": 703
         },
         "10754439": {
-            "cxBossScore": 732
+            "cxBossScore": 726
         },
         "110301719": {
-            "cxBossScore": 679
+            "cxBossScore": 682
         },
         "112772047": {
             "cxBossScore": 685
         },
         "113690788": {
-            "cxBossScore": 685
+            "cxBossScore": 687
         },
         "115369352": {
-            "cxBossScore": 722
+            "cxBossScore": 726
         },
         "115742768": {
             "cxBossScore": 0
         },
         "18115624": {
-            "cxBossScore": 759
+            "cxBossScore": 757
         },
         "18297536": {
-            "cxBossScore": 690
-        },
-        "21471954": {
             "cxBossScore": 0
         },
+        "21471954": {
+            "cxBossScore": 670
+        },
         "21496121": {
-            "cxBossScore": 708
+            "cxBossScore": 710
         },
         "22085142": {
-            "cxBossScore": 691
+            "cxBossScore": 690
         },
         "26277677": {
-            "cxBossScore": 704
+            "cxBossScore": 0
         },
         "29398372": {
             "cxBossScore": 0
         },
         "29904762": {
-            "cxBossScore": 693
+            "cxBossScore": 702
         },
         "30658936": {
-            "cxBossScore": 721
+            "cxBossScore": 722
         },
         "32236991": {
             "cxBossScore": 0
         },
         "32556489": {
-            "cxBossScore": 681
+            "cxBossScore": 683
         },
         "36484758": {
-            "cxBossScore": 655
+            "cxBossScore": 664
         },
         "41742773": {
-            "cxBossScore": 740
+            "cxBossScore": 640
         },
         "51071110": {
-            "cxBossScore": 652
+            "cxBossScore": 716
         },
         "56780908": {
             "cxBossScore": 0
         },
         "57543766": {
-            "cxBossScore": 694
+            "cxBossScore": 697
         },
         "60687252": {
-            "cxBossScore": 850
+            "cxBossScore": 881
         },
         "61140731": {
             "cxBossScore": 692
         },
         "64676255": {
-            "cxBossScore": 742
+            "cxBossScore": 744
         },
         "66607264": {
-            "cxBossScore": 729
+            "cxBossScore": 732
         },
         "71028860": {
             "cxBossScore": 0
@@ -94,34 +94,34 @@ const playerCXBoss = {
             "cxBossScore": 744
         },
         "77879578": {
-            "cxBossScore": 705
+            "cxBossScore": 710
         },
         "79510960": {
-            "cxBossScore": 726
+            "cxBossScore": 730
         },
         "80972473": {
-            "cxBossScore": 798
+            "cxBossScore": 785
         },
         "81635898": {
-            "cxBossScore": 686
+            "cxBossScore": 692
         },
         "83339881": {
             "cxBossScore": 804
         },
         "83861839": {
-            "cxBossScore": 711
+            "cxBossScore": 718
         },
         "86388317": {
-            "cxBossScore": 647
+            "cxBossScore": 646
         },
         "87244358": {
-            "cxBossScore": 793
+            "cxBossScore": 808
         },
         "88203044": {
-            "cxBossScore": 723
+            "cxBossScore": 726
         },
         "89511116": {
-            "cxBossScore": 678
+            "cxBossScore": 702
         }
     },
     previous: {}
