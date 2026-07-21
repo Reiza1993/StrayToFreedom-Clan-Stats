@@ -58,7 +58,7 @@ const playerStats = {
         "18115624": {
             "atk": 2308609,
             "name": "Nubis",
-            "role": "Member",
+            "role": "Glory Member",
             "roleTier": null
         },
         "18297536": {
@@ -82,7 +82,7 @@ const playerStats = {
         "22085142": {
             "atk": 1486291,
             "name": "bimbabo",
-            "role": "Member",
+            "role": "Glory Member",
             "roleTier": null
         },
         "26277677": {
