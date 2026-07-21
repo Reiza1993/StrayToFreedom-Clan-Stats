@@ -1063,6 +1063,7 @@
                     <th data-i18n="table.col.rank">#</th>
                     <th data-i18n="table.col.player_name">Player Name</th>
                     <th><img src="${ICON_BASE}Relic%20Cores.png" alt="Relic Cores" style="width:20px;height:20px;vertical-align:middle;" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><span style="display:none;" data-i18n="table.col.relic_cores">Relic Cores</span></th>
+                    <th><img src="${ICON_BASE}TransmutaCore.png" alt="Transmute Cores" style="width:20px;height:20px;vertical-align:middle;" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><span style="display:none;" data-i18n="table.col.transmute_cores">Transmute Cores</span></th>
                     <th><img src="${ICON_BASE}ATK.png" alt="ATK" style="width:20px;height:20px;vertical-align:middle;" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><span style="display:none;" data-i18n="table.col.atk">ATK</span></th>`;
             } else if (currentSubTab === 'lme') {
                 tr.innerHTML = `
@@ -1095,10 +1096,14 @@
                              <td class="name-cell ${nameClass}" style="color:${nameColor};">${player.name}</td>`;
 
                 if (currentSubTab === 'stats') {
-                    const coresGain = player.relicCores - player.prevRelicCores;
-                    const atkGain   = player.atk - player.prevAtk;
+                    const coresGain     = player.relicCores - player.prevRelicCores;
+                    const transmuteGain = player.transmuteCores - player.prevTransmuteCores;
+                    const atkGain       = player.atk - player.prevAtk;
                     cells += `<td class="cores-cell">${player.relicCores}
                         <span style="font-size:10px;display:block;">${formatGainHTML(coresGain)}</span>
+                    </td>
+                    <td class="cores-cell">${player.transmuteCores}
+                        <span style="font-size:10px;display:block;">${formatGainHTML(transmuteGain)}</span>
                     </td>
                     <td style="text-align:center;font-weight:600;color:#e2e8f0;">${formatNumber(player.atk)}
                         <span style="font-size:10px;display:block;">${formatGainHTML(atkGain, true)}</span>
@@ -1159,7 +1164,7 @@
         }
 
         function exportToCSV() {
-            const headers = ['Rank', 'Player Name', 'Role', 'ATK', 'ATK Gain', 'Relic Cores', 'Cores Gain', 'LME Score', 'LME Gain', 'CX Rank', 'CX Boss'];
+            const headers = ['Rank', 'Player Name', 'Role', 'ATK', 'ATK Gain', 'Relic Cores', 'Cores Gain', 'Transmute Cores', 'Transmute Gain', 'LME Score', 'LME Gain', 'CX Rank', 'CX Boss'];
             const csvContent = [
                 headers.join(','),
                 ...allPlayers.map((p, index) => [
@@ -1170,6 +1175,8 @@
                     p.atk - p.prevAtk,
                     p.relicCores,
                     p.relicCores - p.prevRelicCores,
+                    p.transmuteCores,
+                    p.transmuteCores - p.prevTransmuteCores,
                     p.lmeScore,
                     p.lmeScore - p.prevLmeScore,
                     p.cxRankScore,
