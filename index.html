@@ -477,6 +477,16 @@
                         <div class="calc-stat-value" style="color: #e2e8f0;" id="stats-total-atk">—</div>
                         <div class="calc-stat-gain" id="stats-total-atk-gain">—</div>
                     </div>
+                    <div class="calc-stat-card" style="border-color: #44337a;">
+                        <div class="calc-stat-label"><span data-i18n="stat.total_label">Total</span> <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Relic%20Cores.png" alt="Relic Cores" style="width: 14px; height: 14px; vertical-align: middle;" onerror="this.style.display='none';"> <span style="font-size:8px; opacity:0.6;">(Top 30)</span></div>
+                        <div class="calc-stat-value" style="color: #b794f6;" id="stats-total-relic-cores">—</div>
+                        <div class="calc-stat-gain" id="stats-total-relic-cores-gain">—</div>
+                    </div>
+                    <div class="calc-stat-card" style="border-color: #44337a;">
+                        <div class="calc-stat-label"><span data-i18n="stat.total_label">Total</span> <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/TransmutaCore.png" alt="Transmute Cores" style="width: 14px; height: 14px; vertical-align: middle;" onerror="this.style.display='none';"> <span style="font-size:8px; opacity:0.6;">(Top 30)</span></div>
+                        <div class="calc-stat-value" style="color: #b794f6;" id="stats-total-transmute-cores">—</div>
+                        <div class="calc-stat-gain" id="stats-total-transmute-cores-gain">—</div>
+                    </div>
                     <div class="calc-stat-card" style="border-color: #553c9a;">
                         <div class="calc-stat-label"><span data-i18n="stat.avg_atk">Avg ATK</span> <span style="font-size:8px; opacity:0.6;">(Top 30)</span></div>
                         <div class="calc-stat-value" style="color: #e2e8f0;" id="stats-avg-atk">—</div>
@@ -485,10 +495,6 @@
                         <div class="calc-stat-label"><span data-i18n="stat.total_cores">Total Cores</span> <span style="font-size:8px; opacity:0.6;">(Top 30)</span></div>
                         <div class="calc-stat-value" style="color: #b794f6;" id="stats-total-cores">—</div>
                         <div class="calc-stat-gain" id="stats-total-cores-gain">—</div>
-                    </div>
-                    <div class="calc-stat-card" style="border-color: #44337a;">
-                        <div class="calc-stat-label"><span data-i18n="stat.avg_cores">Avg Cores</span> <span style="font-size:8px; opacity:0.6;">(Top 30)</span></div>
-                        <div class="calc-stat-value" style="color: #b794f6;" id="stats-avg-cores">—</div>
                     </div>
                 </div>
             </div>
@@ -811,12 +817,21 @@
 
             const byCores  = [...allPlayers].sort((a, b) => b.relicCores     - a.relicCores).slice(0, TOP_N);
             const byCorP   = [...allPlayers].sort((a, b) => b.prevRelicCores - a.prevRelicCores).slice(0, TOP_N);
-            const totalCores     = byCores.reduce((s, p) => s + p.relicCores,     0);
-            const prevTotalCores = byCorP.reduce((s, p)  => s + p.prevRelicCores, 0);
+            const totalRelicCores     = byCores.reduce((s, p) => s + p.relicCores,         0);
+            const prevTotalRelicCores = byCorP.reduce((s, p)  => s + p.prevRelicCores,     0);
+            const totalTransmuteCores     = byCores.reduce((s, p) => s + p.transmuteCores,     0);
+            const prevTotalTransmuteCores = byCorP.reduce((s, p) => s + p.prevTransmuteCores,  0);
 
+            document.getElementById('stats-total-relic-cores').textContent    = totalRelicCores + '+';
+            document.getElementById('stats-total-relic-cores-gain').innerHTML = formatGainHTML(totalRelicCores - prevTotalRelicCores);
+
+            document.getElementById('stats-total-transmute-cores').textContent    = totalTransmuteCores + '+';
+            document.getElementById('stats-total-transmute-cores-gain').innerHTML = formatGainHTML(totalTransmuteCores - prevTotalTransmuteCores);
+
+            const totalCores     = totalRelicCores + totalTransmuteCores;
+            const prevTotalCores = prevTotalRelicCores + prevTotalTransmuteCores;
             document.getElementById('stats-total-cores').textContent    = totalCores + '+';
             document.getElementById('stats-total-cores-gain').innerHTML = formatGainHTML(totalCores - prevTotalCores);
-            document.getElementById('stats-avg-cores').textContent      = Math.round(totalCores / Math.min(TOP_N, byCores.length)) + '+';
         }
 
         function calculateLMETabSummary() {
