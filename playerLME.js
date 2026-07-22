@@ -1,13 +1,13 @@
 // playerLME.js
 // Clan 44262 — LME Score (from LME endpoint, per-player scores shape)
-// Last Updated: 2026-07-22
+// Last Updated: 2026-07-23
 const playerLME = {
     current: {
         "102263647": {
-            "lmeScore": 2646
+            "lmeScore": 2663
         },
         "104730405": {
-            "lmeScore": 0
+            "lmeScore": 1907
         },
         "10754439": {
             "lmeScore": 2134
@@ -85,7 +85,7 @@ const playerLME = {
             "lmeScore": 2270
         },
         "66607264": {
-            "lmeScore": 0
+            "lmeScore": 2207
         },
         "71028860": {
             "lmeScore": 1839
