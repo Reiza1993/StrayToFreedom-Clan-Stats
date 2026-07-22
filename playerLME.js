@@ -10,7 +10,7 @@ const playerLME = {
             "lmeScore": 0
         },
         "10754439": {
-            "lmeScore": 2122
+            "lmeScore": 2134
         },
         "110301719": {
             "lmeScore": 0
@@ -22,7 +22,7 @@ const playerLME = {
             "lmeScore": 2069
         },
         "115369352": {
-            "lmeScore": 0
+            "lmeScore": 2129
         },
         "115742768": {
             "lmeScore": 0
@@ -34,13 +34,13 @@ const playerLME = {
             "lmeScore": 1945
         },
         "21471954": {
-            "lmeScore": 0
+            "lmeScore": 1508
         },
         "21496121": {
             "lmeScore": 1978
         },
         "22085142": {
-            "lmeScore": 1781
+            "lmeScore": 1803
         },
         "26277677": {
             "lmeScore": 2027
@@ -52,7 +52,7 @@ const playerLME = {
             "lmeScore": 1946
         },
         "30658936": {
-            "lmeScore": 2131
+            "lmeScore": 2142
         },
         "32236991": {
             "lmeScore": 2066
@@ -91,13 +91,13 @@ const playerLME = {
             "lmeScore": 1839
         },
         "75174428": {
-            "lmeScore": 0
+            "lmeScore": 2394
         },
         "77879578": {
             "lmeScore": 1943
         },
         "79510960": {
-            "lmeScore": 0
+            "lmeScore": 2119
         },
         "80972473": {
             "lmeScore": 2772
@@ -121,7 +121,7 @@ const playerLME = {
             "lmeScore": 2184
         },
         "89511116": {
-            "lmeScore": 0
+            "lmeScore": 1951
         }
     },
     previous: {
