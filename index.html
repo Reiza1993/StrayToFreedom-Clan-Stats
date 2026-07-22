@@ -265,7 +265,7 @@
             color: #fff;
         }
 
-        /* ── Lunar Details: sub-tabs, clan chips, mode toggle ── */
+        /* ── Lunar Details: sub-tabs, mode toggle ── */
         .lunar-tab-btn {
             flex: 1;
             padding: 9px 12px;
@@ -285,30 +285,6 @@
             border-color: #667eea;
             color: #fff;
         }
-        .clan-chip {
-            flex: 0 0 auto;
-            padding: 8px 14px;
-            background: #2d3748;
-            border: 1px solid #4a5568;
-            border-radius: 20px;
-            color: #a0aec0;
-            font-size: 12px;
-            font-weight: 600;
-            cursor: pointer;
-            white-space: nowrap;
-            transition: all 0.2s ease;
-        }
-        .clan-chip:hover { background: #374151; color: #e2e8f0; }
-        .clan-chip.active {
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            border-color: #667eea;
-            color: #fff;
-        }
-        .clan-chip.own-clan { border-color: #ffd700; }
-        .clan-chip .chip-you {
-            color: #ffd700;
-            margin-left: 4px;
-        }
         .lunar-mode-btn {
             flex: 1;
             padding: 8px 10px;
@@ -327,6 +303,15 @@
             background: linear-gradient(135deg, #667eea, #764ba2);
             border-color: #667eea;
             color: #fff;
+        }
+        .lunar-clan-row {
+            cursor: pointer;
+            transition: background 0.15s ease;
+        }
+        .lunar-clan-row:hover { background: #4a5568 !important; }
+        .lunar-clan-row.active {
+            background: rgba(102, 126, 234, 0.25) !important;
+            box-shadow: inset 3px 0 0 #667eea;
         }
         .lunar-member-row {
             display: flex;
@@ -494,42 +479,44 @@
 
             <!-- Lunar Details Sub-tab -->
             <div id="lunar-details-subtab" class="lunar-subtab-content">
-                <div id="lunarClanChips" style="display:flex; gap:6px; margin-bottom:10px; overflow-x:auto; padding-bottom:2px;"></div>
-
-                <div id="lunarClanHeader" style="text-align:center; margin-bottom:8px;">
-                    <span style="color:#e2e8f0; font-size:15px; font-weight:700;" id="lunarClanName">—</span>
-                    <span style="color:#718096; font-size:11px; margin-left:6px;" id="lunarClanId">#—</span>
+                <div style="overflow-x:auto; margin-bottom: 12px; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.4);">
+                    <table id="lunarClanTable" style="width: 100%; border-collapse: collapse; background: #2d3748; font-size: 12px;">
+                        <thead>
+                            <tr>
+                                <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 10px 8px; text-align: left; font-weight: 600; font-size: 10px; text-transform: uppercase; letter-spacing: 0.2px; white-space: nowrap;" data-i18n="lunar.col.clan">Clan</th>
+                                <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 10px 6px; text-align: center; font-weight: 600; font-size: 10px; text-transform: uppercase; letter-spacing: 0.2px; white-space: nowrap;">🌙</th>
+                                <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 10px 6px; text-align: center; font-weight: 600; font-size: 10px; text-transform: uppercase; letter-spacing: 0.2px; white-space: nowrap;">
+                                    <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/ATK.png" alt="ATK" style="width:18px;height:18px;vertical-align:middle;" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><span style="display:none;" data-i18n="table.col.atk">ATK</span>
+                                </th>
+                                <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 10px 6px; text-align: center; font-weight: 600; font-size: 10px; text-transform: uppercase; letter-spacing: 0.2px; white-space: nowrap;">
+                                    <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Relic%20Cores.png" alt="Relic Cores" style="width:18px;height:18px;vertical-align:middle;" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><span style="display:none;" data-i18n="table.col.relic_cores">Relic Cores</span>
+                                </th>
+                                <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 10px 6px; text-align: center; font-weight: 600; font-size: 10px; text-transform: uppercase; letter-spacing: 0.2px; white-space: nowrap;">
+                                    <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/TransmutaCore.png" alt="Transmute Cores" style="width:18px;height:18px;vertical-align:middle;" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><span style="display:none;" data-i18n="table.col.transmute_cores">Transmute Cores</span>
+                                </th>
+                                <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 10px 6px; text-align: center; font-weight: 600; font-size: 10px; text-transform: uppercase; letter-spacing: 0.2px; white-space: nowrap;" data-i18n="stat.total_cores">Total Cores</th>
+                            </tr>
+                        </thead>
+                        <tbody id="lunarClanTableBody"></tbody>
+                    </table>
                 </div>
 
-                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px; margin-bottom: 12px;">
-                    <div class="calc-stat-card" style="border-color: #553c9a;">
-                        <div class="calc-stat-label" data-i18n="stat.lunar_pts">Lunar Points</div>
-                        <div class="calc-stat-value" style="color: #ffd700;" id="lunarClanPoints">—</div>
+                <div id="lunarMemberSection" style="display:none;">
+                    <div style="text-align:center; margin-bottom:8px;">
+                        <span style="color:#e2e8f0; font-size:15px; font-weight:700;" id="lunarClanName">—</span>
+                        <span style="color:#718096; font-size:11px; margin-left:6px;" id="lunarClanMembers">—</span>
                     </div>
-                    <div class="calc-stat-card" style="border-color: #2c7a7b;">
-                        <div class="calc-stat-label" data-i18n="stat.members">Members</div>
-                        <div class="calc-stat-value" style="color: #81e6d9;" id="lunarClanMembers">—</div>
-                    </div>
-                    <div class="calc-stat-card" style="border-color: #553c9a;">
-                        <div class="calc-stat-label" data-i18n="stat.total_atk">Total ATK</div>
-                        <div class="calc-stat-value" style="color: #e2e8f0;" id="lunarClanAtk">—</div>
-                    </div>
-                    <div class="calc-stat-card" style="border-color: #44337a;">
-                        <div class="calc-stat-label"><span data-i18n="stat.total_label">Total</span> <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Relic%20Cores.png" alt="Relic Cores" style="width: 14px; height: 14px; vertical-align: middle;" onerror="this.style.display='none';"></div>
-                        <div class="calc-stat-value" style="color: #b794f6;" id="lunarClanRelic">—</div>
-                    </div>
-                    <div class="calc-stat-card" style="border-color: #44337a;">
-                        <div class="calc-stat-label"><span data-i18n="stat.total_label">Total</span> <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/TransmutaCore.png" alt="Transmute Cores" style="width: 14px; height: 14px; vertical-align: middle;" onerror="this.style.display='none';"></div>
-                        <div class="calc-stat-value" style="color: #b794f6;" id="lunarClanTransmute">—</div>
-                    </div>
-                </div>
 
-                <div style="display:flex; gap:6px; margin-bottom:10px;">
-                    <button class="lunar-mode-btn active" data-mode="atk" onclick="setLunarMemberMode('atk')" data-i18n="lunar.mode_atk">Name / ATK</button>
-                    <button class="lunar-mode-btn" data-mode="cores" onclick="setLunarMemberMode('cores')" data-i18n="lunar.mode_cores">Name / Cores</button>
-                </div>
+                    <div style="display:flex; gap:6px; margin-bottom:10px;">
+                        <button class="lunar-mode-btn active" data-mode="atk" onclick="setLunarMemberMode('atk')" data-i18n="lunar.mode_atk">Attack</button>
+                        <button class="lunar-mode-btn" data-mode="cores" onclick="setLunarMemberMode('cores')">
+                            <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Relic%20Cores.png" alt="Relic Cores" style="width:14px;height:14px;vertical-align:middle;" onerror="this.style.display='none';"> -
+                            <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/TransmutaCore.png" alt="Transmute Cores" style="width:14px;height:14px;vertical-align:middle;" onerror="this.style.display='none';">
+                        </button>
+                    </div>
 
-                <div id="lunarMemberList" style="display:flex; flex-direction:column; gap:4px;"></div>
+                    <div id="lunarMemberList" style="display:flex; flex-direction:column; gap:4px;"></div>
+                </div>
             </div>
 
             <!-- LME History Sub-tab -->
@@ -1145,7 +1132,6 @@
         // ══════════════════════════════════════════════
         //  PRO LUNAR DETAILS — 4-clan weekly match-up scouting
         // ══════════════════════════════════════════════
-        const OWN_CLAN_ID = '44262';
         let lunarClanOrder    = [];
         let currentLunarClan  = null;
         let currentLunarMode  = 'atk'; // 'atk' | 'cores'
@@ -1158,28 +1144,46 @@
             });
         }
 
+        function lunarCombinedCores(clan) {
+            const relic     = clan.totalRelicCores     ?? null;
+            const transmute = clan.totalTransmuteCores ?? null;
+            if (relic === null && transmute === null) return null;
+            return (relic || 0) + (transmute || 0);
+        }
+
         function loadLunarDetails() {
             if (typeof lunarDetails === 'undefined') return;
             lunarClanOrder = Object.keys(lunarDetails).sort((a, b) => {
-                if (a === OWN_CLAN_ID) return -1;
-                if (b === OWN_CLAN_ID) return 1;
-                return (lunarDetails[b].lunarPoints || 0) - (lunarDetails[a].lunarPoints || 0);
+                const byPoints = (lunarDetails[b].lunarPoints || 0) - (lunarDetails[a].lunarPoints || 0);
+                if (byPoints !== 0) return byPoints;
+                return (lunarDetails[b].totalAtk || 0) - (lunarDetails[a].totalAtk || 0);
             });
 
-            const chips = document.getElementById('lunarClanChips');
-            chips.innerHTML = '';
-            lunarClanOrder.forEach(clanId => {
+            const tbody = document.getElementById('lunarClanTableBody');
+            tbody.innerHTML = '';
+            lunarClanOrder.forEach((clanId, index) => {
                 const clan = lunarDetails[clanId];
-                const isOwn = clanId === OWN_CLAN_ID;
-                const chip = document.createElement('button');
-                chip.className = 'clan-chip' + (isOwn ? ' own-clan' : '');
-                chip.dataset.clanId = clanId;
-                chip.innerHTML = `${clan.name}${isOwn ? ' <span class="chip-you" data-i18n="lunar.you">YOU</span>' : ''}`;
-                chip.onclick = () => selectLunarClan(clanId);
-                chips.appendChild(chip);
-            });
+                const relic     = clan.totalRelicCores     ?? null;
+                const transmute = clan.totalTransmuteCores ?? null;
+                const combined  = lunarCombinedCores(clan);
 
-            selectLunarClan(lunarClanOrder[0]);
+                const row = document.createElement('tr');
+                row.className = 'lunar-clan-row';
+                row.dataset.clanId = clanId;
+                row.style.borderBottom = '1px solid #4a5568';
+                if (index % 2 === 1) row.style.background = '#374151';
+                row.onclick = () => selectLunarClan(clanId);
+
+                row.innerHTML = `
+                    <td style="padding: 10px 8px; color: #e2e8f0; font-weight: 600; white-space: nowrap;">${clan.name}</td>
+                    <td style="padding: 10px 6px; text-align: center; color: #ffd700; font-weight: 700;">${(clan.lunarPoints ?? 0).toLocaleString()}</td>
+                    <td style="padding: 10px 6px; text-align: center; color: #e2e8f0; font-weight: 600;">${formatNumber(clan.totalAtk || 0)}</td>
+                    <td style="padding: 10px 6px; text-align: center; color: #b794f6; font-weight: 600;">${relic === null ? '—' : relic.toLocaleString() + '+'}</td>
+                    <td style="padding: 10px 6px; text-align: center; color: #b794f6; font-weight: 600;">${transmute === null ? '—' : transmute.toLocaleString() + '+'}</td>
+                    <td style="padding: 10px 6px; text-align: center; color: #b794f6; font-weight: 700;">${combined === null ? '—' : combined.toLocaleString() + '+'}</td>
+                `;
+                tbody.appendChild(row);
+            });
         }
 
         function selectLunarClan(clanId) {
@@ -1187,20 +1191,15 @@
             if (!clan) return;
             currentLunarClan = clanId;
 
-            document.querySelectorAll('#lunarClanChips .clan-chip').forEach(chip => {
-                chip.classList.toggle('active', chip.dataset.clanId === clanId);
+            document.querySelectorAll('#lunarClanTableBody .lunar-clan-row').forEach(row => {
+                row.classList.toggle('active', row.dataset.clanId === clanId);
             });
 
+            document.getElementById('lunarMemberSection').style.display = '';
             document.getElementById('lunarClanName').textContent    = clan.name;
-            document.getElementById('lunarClanId').textContent      = '#' + clan.clanId;
-            document.getElementById('lunarClanPoints').textContent  = (clan.lunarPoints ?? 0).toLocaleString();
             document.getElementById('lunarClanMembers').textContent = Object.keys(clan.members).length + ' / 40';
-            document.getElementById('lunarClanAtk').textContent     = formatNumber(clan.totalAtk || 0);
-            document.getElementById('lunarClanRelic').textContent   = (clan.totalRelicCores     ?? null) === null ? '—' : clan.totalRelicCores.toLocaleString() + '+';
-            document.getElementById('lunarClanTransmute').textContent = (clan.totalTransmuteCores ?? null) === null ? '—' : clan.totalTransmuteCores.toLocaleString() + '+';
 
             renderLunarMemberList();
-            applyTranslations();
         }
 
         function setLunarMemberMode(mode) {
