@@ -265,6 +265,79 @@
             color: #fff;
         }
 
+        /* ── Lunar Details: sub-tabs, clan chips, mode toggle ── */
+        .lunar-tab-btn {
+            flex: 1;
+            padding: 9px 12px;
+            background: #2d3748;
+            border: 1px solid #4a5568;
+            border-radius: 8px;
+            color: #a0aec0;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-align: center;
+        }
+        .lunar-tab-btn:hover { background: #374151; color: #e2e8f0; }
+        .lunar-tab-btn.active {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-color: #667eea;
+            color: #fff;
+        }
+        .clan-chip {
+            flex: 0 0 auto;
+            padding: 8px 14px;
+            background: #2d3748;
+            border: 1px solid #4a5568;
+            border-radius: 20px;
+            color: #a0aec0;
+            font-size: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: all 0.2s ease;
+        }
+        .clan-chip:hover { background: #374151; color: #e2e8f0; }
+        .clan-chip.active {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-color: #667eea;
+            color: #fff;
+        }
+        .clan-chip.own-clan { border-color: #ffd700; }
+        .clan-chip .chip-you {
+            color: #ffd700;
+            margin-left: 4px;
+        }
+        .lunar-mode-btn {
+            flex: 1;
+            padding: 8px 10px;
+            background: #2d3748;
+            border: 1px solid #4a5568;
+            border-radius: 8px;
+            color: #a0aec0;
+            font-size: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-align: center;
+        }
+        .lunar-mode-btn:hover { background: #374151; color: #e2e8f0; }
+        .lunar-mode-btn.active {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-color: #667eea;
+            color: #fff;
+        }
+        .lunar-member-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 10px;
+            border-radius: 8px;
+            background: #2d3748;
+            border: 1px solid #4a5568;
+        }
+
         /* ── Settings Section ── */
         .settings-section { margin-bottom: 20px; }
         .settings-section:last-child { margin-bottom: 0; }
@@ -410,48 +483,98 @@
             <p style="color: #4a5568; font-size: 10px; text-align: center; margin: 8px 0 0 0;" data-i18n="modal.glory.tiebreak">★ = tied at highest CX score — LME used as tiebreaker</p>
         </div>
 
-        <!-- ─── View 1: LME History ─── -->
+        <!-- ─── View 1: PRO Lunar Details ─── -->
         <div id="view-lme" class="view">
-            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin-bottom: 5px;">
-                <div class="calc-stat-card" style="border-color: #553c9a;">
-                    <div class="calc-stat-label" data-i18n="stat.lunar_pts">Lunar Points</div>
-                    <div class="calc-stat-value" style="color: #ffd700;" id="historyLunarPoints">—</div>
-                </div>
-                <div class="calc-stat-card" style="border-color: #2c7a7b;">
-                    <div class="calc-stat-label" data-i18n="modal.lme_history.rank_factor">Rank Factor</div>
-                    <div class="calc-stat-value" style="color: #81e6d9;" id="historyRankFactor">1.0000</div>
-                </div>
-            </div>
-            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin-bottom: 8px;">
-                <div class="calc-stat-card" style="border-color: #b7791f; box-shadow: 0 0 8px rgba(255,215,0,0.12);">
-                    <div class="calc-stat-label" data-i18n="modal.lme_history.secret_score">Secret Score</div>
-                    <div class="calc-stat-value" style="color: #ffd700;" id="historySecretScore">—</div>
-                </div>
-                <div class="calc-stat-card" style="border-color: #2b6cb0;">
-                    <div class="calc-stat-label"><span data-i18n="modal.lme_history.avg_rank">Avg Rank</span> <span style="font-size:8px; opacity:0.6;">(Last 10)</span></div>
-                    <div class="calc-stat-value" id="historyAvgRank">—</div>
-                </div>
+
+            <!-- Sub-tab Navigation -->
+            <div class="subtab-bar">
+                <button class="lunar-tab-btn active" data-lunartab="details" onclick="switchLunarSubTab('details')" data-i18n="tab.lunar_details">Lunar Details</button>
+                <button class="lunar-tab-btn" data-lunartab="history" onclick="switchLunarSubTab('history')" data-i18n="ctrl.lme_history">LME History</button>
             </div>
 
-            <table id="lmeHistoryTable" style="width: 100%; border-collapse: collapse; background: #2d3748; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.4); font-size: 12px;">
-                <thead>
-                    <tr>
-                        <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 10px 6px; text-align: center; font-weight: 600; font-size: 10px; text-transform: uppercase; letter-spacing: 0.2px; white-space: nowrap;">🌙</th>
-                        <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 10px 6px; text-align: center; font-weight: 600; font-size: 10px; text-transform: uppercase; letter-spacing: 0.2px; white-space: nowrap;">
-                            <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Ranking.png" alt="Ranking" style="width: 16px; height: 16px; vertical-align: middle; margin-right: 3px;" onerror="this.style.display='none';">RANK
-                        </th>
-                        <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 10px 6px; text-align: center; font-weight: 600; font-size: 10px; text-transform: uppercase; letter-spacing: 0.2px; white-space: nowrap;">
-                            <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Defense_Attack%20Points.png" alt="ATK/DEF" style="width: 18px; height: 18px; vertical-align: middle;" onerror="this.innerHTML='A/D';">
-                        </th>
-                        <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 10px 6px; text-align: center; font-weight: 600; font-size: 10px; text-transform: uppercase; letter-spacing: 0.2px; white-space: nowrap;">
-                            <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Medals.png" alt="Emblems" style="width: 18px; height: 18px; vertical-align: middle;" onerror="this.innerHTML='EMBLEMS';">
-                        </th>
-                        <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 10px 6px; text-align: center; font-weight: 600; font-size: 10px; text-transform: uppercase; letter-spacing: 0.2px; white-space: nowrap;" data-i18n="modal.lme_history.col.league">LEAGUE</th>
-                        <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 10px 6px; text-align: center; font-weight: 600; font-size: 10px; text-transform: uppercase; letter-spacing: 0.2px; white-space: nowrap;">🌙 PTS</th>
-                    </tr>
-                </thead>
-                <tbody id="lmeHistoryBody"></tbody>
-            </table>
+            <!-- Lunar Details Sub-tab -->
+            <div id="lunar-details-subtab" class="lunar-subtab-content">
+                <div id="lunarClanChips" style="display:flex; gap:6px; margin-bottom:10px; overflow-x:auto; padding-bottom:2px;"></div>
+
+                <div id="lunarClanHeader" style="text-align:center; margin-bottom:8px;">
+                    <span style="color:#e2e8f0; font-size:15px; font-weight:700;" id="lunarClanName">—</span>
+                    <span style="color:#718096; font-size:11px; margin-left:6px;" id="lunarClanId">#—</span>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px; margin-bottom: 12px;">
+                    <div class="calc-stat-card" style="border-color: #553c9a;">
+                        <div class="calc-stat-label" data-i18n="stat.lunar_pts">Lunar Points</div>
+                        <div class="calc-stat-value" style="color: #ffd700;" id="lunarClanPoints">—</div>
+                    </div>
+                    <div class="calc-stat-card" style="border-color: #2c7a7b;">
+                        <div class="calc-stat-label" data-i18n="stat.members">Members</div>
+                        <div class="calc-stat-value" style="color: #81e6d9;" id="lunarClanMembers">—</div>
+                    </div>
+                    <div class="calc-stat-card" style="border-color: #553c9a;">
+                        <div class="calc-stat-label" data-i18n="stat.total_atk">Total ATK</div>
+                        <div class="calc-stat-value" style="color: #e2e8f0;" id="lunarClanAtk">—</div>
+                    </div>
+                    <div class="calc-stat-card" style="border-color: #44337a;">
+                        <div class="calc-stat-label"><span data-i18n="stat.total_label">Total</span> <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Relic%20Cores.png" alt="Relic Cores" style="width: 14px; height: 14px; vertical-align: middle;" onerror="this.style.display='none';"></div>
+                        <div class="calc-stat-value" style="color: #b794f6;" id="lunarClanRelic">—</div>
+                    </div>
+                    <div class="calc-stat-card" style="border-color: #44337a;">
+                        <div class="calc-stat-label"><span data-i18n="stat.total_label">Total</span> <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/TransmutaCore.png" alt="Transmute Cores" style="width: 14px; height: 14px; vertical-align: middle;" onerror="this.style.display='none';"></div>
+                        <div class="calc-stat-value" style="color: #b794f6;" id="lunarClanTransmute">—</div>
+                    </div>
+                </div>
+
+                <div style="display:flex; gap:6px; margin-bottom:10px;">
+                    <button class="lunar-mode-btn active" data-mode="atk" onclick="setLunarMemberMode('atk')" data-i18n="lunar.mode_atk">Name / ATK</button>
+                    <button class="lunar-mode-btn" data-mode="cores" onclick="setLunarMemberMode('cores')" data-i18n="lunar.mode_cores">Name / Cores</button>
+                </div>
+
+                <div id="lunarMemberList" style="display:flex; flex-direction:column; gap:4px;"></div>
+            </div>
+
+            <!-- LME History Sub-tab -->
+            <div id="lme-history-subtab" class="lunar-subtab-content" style="display:none;">
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin-bottom: 5px;">
+                    <div class="calc-stat-card" style="border-color: #553c9a;">
+                        <div class="calc-stat-label" data-i18n="stat.lunar_pts">Lunar Points</div>
+                        <div class="calc-stat-value" style="color: #ffd700;" id="historyLunarPoints">—</div>
+                    </div>
+                    <div class="calc-stat-card" style="border-color: #2c7a7b;">
+                        <div class="calc-stat-label" data-i18n="modal.lme_history.rank_factor">Rank Factor</div>
+                        <div class="calc-stat-value" style="color: #81e6d9;" id="historyRankFactor">1.0000</div>
+                    </div>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin-bottom: 8px;">
+                    <div class="calc-stat-card" style="border-color: #b7791f; box-shadow: 0 0 8px rgba(255,215,0,0.12);">
+                        <div class="calc-stat-label" data-i18n="modal.lme_history.secret_score">Secret Score</div>
+                        <div class="calc-stat-value" style="color: #ffd700;" id="historySecretScore">—</div>
+                    </div>
+                    <div class="calc-stat-card" style="border-color: #2b6cb0;">
+                        <div class="calc-stat-label"><span data-i18n="modal.lme_history.avg_rank">Avg Rank</span> <span style="font-size:8px; opacity:0.6;">(Last 10)</span></div>
+                        <div class="calc-stat-value" id="historyAvgRank">—</div>
+                    </div>
+                </div>
+
+                <table id="lmeHistoryTable" style="width: 100%; border-collapse: collapse; background: #2d3748; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.4); font-size: 12px;">
+                    <thead>
+                        <tr>
+                            <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 10px 6px; text-align: center; font-weight: 600; font-size: 10px; text-transform: uppercase; letter-spacing: 0.2px; white-space: nowrap;">🌙</th>
+                            <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 10px 6px; text-align: center; font-weight: 600; font-size: 10px; text-transform: uppercase; letter-spacing: 0.2px; white-space: nowrap;">
+                                <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Ranking.png" alt="Ranking" style="width: 16px; height: 16px; vertical-align: middle; margin-right: 3px;" onerror="this.style.display='none';">RANK
+                            </th>
+                            <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 10px 6px; text-align: center; font-weight: 600; font-size: 10px; text-transform: uppercase; letter-spacing: 0.2px; white-space: nowrap;">
+                                <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Defense_Attack%20Points.png" alt="ATK/DEF" style="width: 18px; height: 18px; vertical-align: middle;" onerror="this.innerHTML='A/D';">
+                            </th>
+                            <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 10px 6px; text-align: center; font-weight: 600; font-size: 10px; text-transform: uppercase; letter-spacing: 0.2px; white-space: nowrap;">
+                                <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Medals.png" alt="Emblems" style="width: 18px; height: 18px; vertical-align: middle;" onerror="this.innerHTML='EMBLEMS';">
+                            </th>
+                            <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 10px 6px; text-align: center; font-weight: 600; font-size: 10px; text-transform: uppercase; letter-spacing: 0.2px; white-space: nowrap;" data-i18n="modal.lme_history.col.league">LEAGUE</th>
+                            <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 10px 6px; text-align: center; font-weight: 600; font-size: 10px; text-transform: uppercase; letter-spacing: 0.2px; white-space: nowrap;">🌙 PTS</th>
+                        </tr>
+                    </thead>
+                    <tbody id="lmeHistoryBody"></tbody>
+                </table>
+            </div>
         </div>
 
         <!-- ─── View 2: Home (default) ─── -->
@@ -623,9 +746,9 @@
             <span class="nav-tab-icon">⭐</span>
             <span class="nav-tab-label" data-i18n="ctrl.next_glory">Next Glory</span>
         </button>
-        <button id="nav-lme" class="nav-tab" onclick="goToView(1)" aria-label="LME History">
-            <span class="nav-tab-icon">📊</span>
-            <span class="nav-tab-label" data-i18n="ctrl.lme_history">LME History</span>
+        <button id="nav-lme" class="nav-tab" onclick="goToView(1)" aria-label="PRO Lunar Details">
+            <span class="nav-tab-icon">🌙</span>
+            <span class="nav-tab-label" data-i18n="ctrl.lunar_details">PRO Lunar Details</span>
         </button>
         <button id="nav-home" class="nav-tab active" onclick="goToView(2)" aria-label="Home">
             <span class="nav-tab-icon">🏠</span>
@@ -649,6 +772,7 @@
     <script src="playerLME.js"></script>
     <script src="playerCXRank.js"></script>
     <script src="playerCXBoss.js"></script>
+    <script src="lunarDetails.js"></script>
 
     <script>
         // ── i18n ──
@@ -1018,6 +1142,114 @@
             return num.toLocaleString();
         }
 
+        // ══════════════════════════════════════════════
+        //  PRO LUNAR DETAILS — 4-clan weekly match-up scouting
+        // ══════════════════════════════════════════════
+        const OWN_CLAN_ID = '44262';
+        let lunarClanOrder    = [];
+        let currentLunarClan  = null;
+        let currentLunarMode  = 'atk'; // 'atk' | 'cores'
+
+        function switchLunarSubTab(tab) {
+            document.querySelectorAll('.lunar-subtab-content').forEach(el => { el.style.display = 'none'; });
+            document.getElementById((tab === 'details' ? 'lunar-details-subtab' : 'lme-history-subtab')).style.display = '';
+            document.querySelectorAll('.lunar-tab-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.lunartab === tab);
+            });
+        }
+
+        function loadLunarDetails() {
+            if (typeof lunarDetails === 'undefined') return;
+            lunarClanOrder = Object.keys(lunarDetails).sort((a, b) => {
+                if (a === OWN_CLAN_ID) return -1;
+                if (b === OWN_CLAN_ID) return 1;
+                return (lunarDetails[b].lunarPoints || 0) - (lunarDetails[a].lunarPoints || 0);
+            });
+
+            const chips = document.getElementById('lunarClanChips');
+            chips.innerHTML = '';
+            lunarClanOrder.forEach(clanId => {
+                const clan = lunarDetails[clanId];
+                const isOwn = clanId === OWN_CLAN_ID;
+                const chip = document.createElement('button');
+                chip.className = 'clan-chip' + (isOwn ? ' own-clan' : '');
+                chip.dataset.clanId = clanId;
+                chip.innerHTML = `${clan.name}${isOwn ? ' <span class="chip-you" data-i18n="lunar.you">YOU</span>' : ''}`;
+                chip.onclick = () => selectLunarClan(clanId);
+                chips.appendChild(chip);
+            });
+
+            selectLunarClan(lunarClanOrder[0]);
+        }
+
+        function selectLunarClan(clanId) {
+            const clan = lunarDetails[clanId];
+            if (!clan) return;
+            currentLunarClan = clanId;
+
+            document.querySelectorAll('#lunarClanChips .clan-chip').forEach(chip => {
+                chip.classList.toggle('active', chip.dataset.clanId === clanId);
+            });
+
+            document.getElementById('lunarClanName').textContent    = clan.name;
+            document.getElementById('lunarClanId').textContent      = '#' + clan.clanId;
+            document.getElementById('lunarClanPoints').textContent  = (clan.lunarPoints ?? 0).toLocaleString();
+            document.getElementById('lunarClanMembers').textContent = Object.keys(clan.members).length + ' / 40';
+            document.getElementById('lunarClanAtk').textContent     = formatNumber(clan.totalAtk || 0);
+            document.getElementById('lunarClanRelic').textContent   = (clan.totalRelicCores     ?? null) === null ? '—' : clan.totalRelicCores.toLocaleString() + '+';
+            document.getElementById('lunarClanTransmute').textContent = (clan.totalTransmuteCores ?? null) === null ? '—' : clan.totalTransmuteCores.toLocaleString() + '+';
+
+            renderLunarMemberList();
+            applyTranslations();
+        }
+
+        function setLunarMemberMode(mode) {
+            currentLunarMode = mode;
+            document.querySelectorAll('.lunar-mode-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.mode === mode);
+            });
+            renderLunarMemberList();
+        }
+
+        function renderLunarMemberList() {
+            const list = document.getElementById('lunarMemberList');
+            list.innerHTML = '';
+            const clan = lunarDetails[currentLunarClan];
+            if (!clan) return;
+
+            const members = Object.values(clan.members).sort((a, b) => b.atk - a.atk);
+
+            members.forEach((member, idx) => {
+                const row = document.createElement('div');
+                row.className = 'lunar-member-row';
+
+                const rankEl = document.createElement('span');
+                rankEl.style = 'font-size:12px; font-weight:700; color:#a0aec0; width:22px; text-align:center; flex-shrink:0;';
+                rankEl.textContent = idx + 1;
+
+                const nameEl = document.createElement('span');
+                nameEl.style = 'font-size:13px; font-weight:600; flex:1; color:#e2e8f0;';
+                nameEl.textContent = member.name;
+
+                const statEl = document.createElement('span');
+                statEl.style = 'font-size:12px; font-weight:700; white-space:nowrap;';
+                if (currentLunarMode === 'atk') {
+                    statEl.style.color = '#e2e8f0';
+                    statEl.textContent = formatNumber(member.atk);
+                } else {
+                    const relic     = member.relicCores     ?? null;
+                    const transmute = member.transmuteCores ?? null;
+                    statEl.style.color = '#b794f6';
+                    statEl.innerHTML = `${relic === null ? '—' : relic.toLocaleString()} <span style="color:#4a5568;">-</span> ${transmute === null ? '—' : transmute.toLocaleString()}`;
+                }
+
+                row.appendChild(rankEl);
+                row.appendChild(nameEl);
+                row.appendChild(statEl);
+                list.appendChild(row);
+            });
+        }
+
         function getCXRankColor(score) {
             if (topCXRankScore === 0) return '#68d391';
             const ratio = score / topCXRankScore;
@@ -1305,6 +1537,7 @@
         calculateCXTabSummary();
         calculateSecretScore();
         loadLMEHistory();
+        loadLunarDetails();
         loadAlumni();
         switchSubTab('stats');
 
