@@ -888,7 +888,44 @@
             });
         }
 
-        const allPlayers = buildRoster().filter(p => p.role !== 'Removed');
+        // Members who dropped out of playerStats.current since the last cycle
+        // (left the clan) but still have a previous.* entry somewhere. They
+        // never appear in allPlayers/the table - buildRoster only walks
+        // playerStats.current - but their prior contribution still needs to
+        // count on the "previous" side of a Top 30 Total gain, otherwise a
+        // departed top-30 member's history just vanishes from both totals.
+        function buildDepartedRoster() {
+            const currentIds  = new Set(Object.keys(playerStats.current));
+            const departedIds = new Set();
+            [playerStats.previous, playerCores.previous, playerLME.previous, playerEndersEcho.previous]
+                .forEach(prevSource => {
+                    Object.keys(prevSource).forEach(id => {
+                        if (!currentIds.has(id)) departedIds.add(id);
+                    });
+                });
+
+            return [...departedIds].map(id => {
+                const prevStat = playerStats.previous[id]      || {};
+                const prevCore = playerCores.previous[id]      || {};
+                const prevLme  = playerLME.previous[id]        || {};
+                const prevEe   = playerEndersEcho.previous[id];
+                return {
+                    id,
+                    prevAtk:            prevStat.atk           ?? 0,
+                    prevRelicCores:     prevCore.relicCores    ?? 0,
+                    prevTransmuteCores: prevCore.transmuteCores ?? 0,
+                    prevLmeScore:       prevLme.lmeScore       ?? 0,
+                    prevEeBestScore:    prevEe ? (prevEe.eeBestScore ?? null) : null,
+                };
+            });
+        }
+
+        const allPlayers      = buildRoster().filter(p => p.role !== 'Removed');
+        const departedPlayers = buildDepartedRoster();
+        // Previous-side pool for Top 30 Total gain math: current roster +
+        // departed members, so CurrentTotal - PreviousTotal stays accurate
+        // even when a top-30 contributor has since left the clan.
+        const gainPool = [...allPlayers, ...departedPlayers];
         const topCXRankScore = Math.max(0, ...allPlayers.map(p => p.cxRankScore || 0));
         let filteredData = [...allPlayers];
         let currentSort  = 'attack';
@@ -993,7 +1030,7 @@
             document.getElementById('stats-members-cap').textContent = allPlayers.length + ' / ' + MEMBER_CAP;
 
             const byATK  = [...allPlayers].sort((a, b) => b.atk     - a.atk).slice(0, TOP_N);
-            const byAtkP = [...allPlayers].sort((a, b) => b.prevAtk - a.prevAtk).slice(0, TOP_N);
+            const byAtkP = [...gainPool].sort((a, b) => b.prevAtk - a.prevAtk).slice(0, TOP_N);
             const totalATK     = byATK.reduce((s, p)  => s + p.atk,     0);
             const prevTotalATK = byAtkP.reduce((s, p) => s + p.prevAtk, 0);
 
@@ -1002,7 +1039,7 @@
             document.getElementById('stats-avg-atk').textContent      = formatNumber(Math.round(totalATK / Math.min(TOP_N, byATK.length)));
 
             const byCores  = [...allPlayers].sort((a, b) => b.relicCores     - a.relicCores).slice(0, TOP_N);
-            const byCorP   = [...allPlayers].sort((a, b) => b.prevRelicCores - a.prevRelicCores).slice(0, TOP_N);
+            const byCorP   = [...gainPool].sort((a, b) => b.prevRelicCores - a.prevRelicCores).slice(0, TOP_N);
             const totalRelicCores     = byCores.reduce((s, p) => s + p.relicCores,         0);
             const prevTotalRelicCores = byCorP.reduce((s, p)  => s + p.prevRelicCores,     0);
             const totalTransmuteCores     = byCores.reduce((s, p) => s + p.transmuteCores,     0);
@@ -1021,10 +1058,11 @@
         }
 
         function calculateLMETabSummary() {
-            const byLME    = [...allPlayers].sort((a, b) => b.lmeScore - a.lmeScore).slice(0, TOP_N);
+            const byLME    = [...allPlayers].sort((a, b) => b.lmeScore     - a.lmeScore).slice(0, TOP_N);
+            const byLMEP   = [...gainPool].sort((a, b) => b.prevLmeScore - a.prevLmeScore).slice(0, TOP_N);
             const n        = Math.min(TOP_N, byLME.length);
             const totalLME = byLME.reduce((s, p) => s + p.lmeScore,     0);
-            const prevLME  = byLME.reduce((s, p) => s + p.prevLmeScore, 0);
+            const prevLME  = byLMEP.reduce((s, p) => s + p.prevLmeScore, 0);
 
             document.getElementById('lme-total-score').textContent    = totalLME.toLocaleString();
             document.getElementById('lme-total-score-gain').innerHTML = formatGainHTML(totalLME - prevLME);
@@ -1044,14 +1082,16 @@
             const topEE  = [...scored].sort((a, b) => b.eeBestScore - a.eeBestScore).slice(0, TOP_N);
             const n      = topEE.length;
 
+            const prevScored = gainPool.filter(p => p.prevEeBestScore !== null);
+            const prevTopEE  = [...prevScored].sort((a, b) => b.prevEeBestScore - a.prevEeBestScore).slice(0, TOP_N);
+
             if (n > 0) {
                 const totalEE = topEE.reduce((s, p) => s + p.eeBestScore, 0);
                 document.getElementById('ee-total-score').textContent = formatEEScore(totalEE);
                 document.getElementById('ee-avg-score').textContent   = formatEEScore(totalEE / n);
 
-                const hasPrevData = topEE.some(p => p.prevEeBestScore !== null);
-                if (hasPrevData) {
-                    const prevTotalEE = topEE.reduce((s, p) => s + (p.prevEeBestScore ?? p.eeBestScore), 0);
+                if (prevTopEE.length > 0) {
+                    const prevTotalEE = prevTopEE.reduce((s, p) => s + p.prevEeBestScore, 0);
                     document.getElementById('ee-total-score-gain').innerHTML = formatGainHTML(totalEE - prevTotalEE, 'ee');
                     document.getElementById('ee-avg-score-gain').innerHTML   = formatGainHTML((totalEE - prevTotalEE) / n, 'ee');
                 } else {
