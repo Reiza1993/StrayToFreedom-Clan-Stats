@@ -572,6 +572,7 @@
                 <button class="subtab-btn active" data-tab="stats" onclick="switchSubTab('stats')" data-i18n="tab.stats">Stats</button>
                 <button class="subtab-btn" data-tab="lme" onclick="switchSubTab('lme')" data-i18n="tab.lme">LME</button>
                 <button class="subtab-btn" data-tab="cx" onclick="switchSubTab('cx')" data-i18n="tab.cx">CX</button>
+                <button class="subtab-btn" data-tab="ee" onclick="switchSubTab('ee')" data-i18n="tab.ee">Ender's Echo</button>
             </div>
 
             <!-- Stats Tab -->
@@ -653,6 +654,26 @@
                     <div class="calc-stat-card" style="border-color: #276749;">
                         <div class="calc-stat-label" data-i18n="stat.total_cx_boss">Total CX Boss</div>
                         <div class="calc-stat-value" style="color: #68d391;" id="cx-total-boss">—</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ender's Echo Tab -->
+            <div id="ee-tab" class="subtab-content" style="display: none;">
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px; margin-bottom: 12px;">
+                    <div class="calc-stat-card" style="border-color: #9f1239;">
+                        <div class="calc-stat-label"><span data-i18n="stat.total_ee">Total EE Best</span> <span style="font-size:8px; opacity:0.6;">(Top 30)</span></div>
+                        <div class="calc-stat-value" style="color: #fb7185;" id="ee-total-score">—</div>
+                        <div class="calc-stat-gain" id="ee-total-score-gain">—</div>
+                    </div>
+                    <div class="calc-stat-card" style="border-color: #9f1239;">
+                        <div class="calc-stat-label"><span data-i18n="stat.avg_ee">Avg EE Best</span> <span style="font-size:8px; opacity:0.6;">(Top 30)</span></div>
+                        <div class="calc-stat-value" style="color: #fb7185;" id="ee-avg-score">—</div>
+                        <div class="calc-stat-gain" id="ee-avg-score-gain">—</div>
+                    </div>
+                    <div class="calc-stat-card" style="border-color: #4a5568; grid-column: span 2;">
+                        <div class="calc-stat-label" data-i18n="stat.ee_recorded">Scores Recorded</div>
+                        <div class="calc-stat-value" style="color: #e2e8f0;" id="ee-recorded-count">—</div>
                     </div>
                 </div>
             </div>
@@ -759,6 +780,7 @@
     <script src="playerLME.js"></script>
     <script src="playerCXRank.js"></script>
     <script src="playerCXBoss.js"></script>
+    <script src="playerEndersEcho.js"></script>
     <script src="lunarDetails.js"></script>
 
     <script>
@@ -846,6 +868,8 @@
                 const prevLme  = playerLME.previous[id]    || {};
                 const cxr      = playerCXRank.current[id]  || {};
                 const cxb      = playerCXBoss.current[id]  || {};
+                const ee       = playerEndersEcho.current[id];
+                const prevEe   = playerEndersEcho.previous[id];
                 return {
                     id, name: stat.name, role: stat.role, roleTier: stat.roleTier,
                     atk:            stat.atk,
@@ -858,6 +882,8 @@
                     prevLmeScore: prevLme.lmeScore ?? (lme.lmeScore ?? 0),
                     cxRankScore: cxr.cxRankScore ?? 0,
                     cxBossScore: cxb.cxBossScore ?? 0,
+                    eeBestScore:     ee     ? (ee.eeBestScore     ?? null) : null,
+                    prevEeBestScore: prevEe ? (prevEe.eeBestScore ?? null) : null,
                 };
             });
         }
@@ -889,25 +915,74 @@
                 { value: 'cxBoss', key: 'ctrl.sort_cx_boss' },
                 { value: 'name',   key: 'ctrl.sort_name' },
                 { value: 'role',   key: 'ctrl.sort_role' }
+            ],
+            ee: [
+                { value: 'ee',   key: 'ctrl.sort_ee' },
+                { value: 'name', key: 'ctrl.sort_name' },
+                { value: 'role', key: 'ctrl.sort_role' }
             ]
         };
-        const DEFAULT_SORT = { stats: 'attack', lme: 'lme', cx: 'cxRank' };
+        const DEFAULT_SORT = { stats: 'attack', lme: 'lme', cx: 'cxRank', ee: 'ee' };
         const LUNAR_POINTS_TABLE = {
             champion: { 1: 20, 2: 10, 3: -10, 4: -20 },
             legend:   { 1: 30, 2: 15, 3:   5, 4:  -5 }
         };
 
         // ══════════════════════════════════════════════
+        //  UTILITY: Ender's Echo suffix formatter (K..Vg)
+        //  Largest tier where value/unit >= 100, mantissa 100.0-99999.9,
+        //  1 decimal place. Confirmed via in-game test at the Qa->Qi
+        //  boundary; assumed to hold uniformly at every other tier.
+        // ══════════════════════════════════════════════
+        const EE_TIERS = [
+            { unit: 1e63, suffix: 'Vg'  },
+            { unit: 1e60, suffix: 'NoD' },
+            { unit: 1e57, suffix: 'OcD' },
+            { unit: 1e54, suffix: 'SpD' },
+            { unit: 1e51, suffix: 'SxD' },
+            { unit: 1e48, suffix: 'QiD' },
+            { unit: 1e45, suffix: 'QaD' },
+            { unit: 1e42, suffix: 'TD'  },
+            { unit: 1e39, suffix: 'DD'  },
+            { unit: 1e36, suffix: 'Ud'  },
+            { unit: 1e33, suffix: 'Dc'  },
+            { unit: 1e30, suffix: 'No'  },
+            { unit: 1e27, suffix: 'Oc'  },
+            { unit: 1e24, suffix: 'Sp'  },
+            { unit: 1e21, suffix: 'Sx'  },
+            { unit: 1e18, suffix: 'Qi'  },
+            { unit: 1e15, suffix: 'Qa'  },
+            { unit: 1e12, suffix: 'T'   },
+            { unit: 1e9,  suffix: 'B'   },
+            { unit: 1e6,  suffix: 'M'   },
+            { unit: 1e3,  suffix: 'K'   }
+        ];
+
+        function formatEEScore(num) {
+            if (num === null || num === undefined) return '—';
+            for (const tier of EE_TIERS) {
+                if (num / tier.unit >= 100) {
+                    return (num / tier.unit).toFixed(1) + tier.suffix;
+                }
+            }
+            return Math.round(num).toLocaleString();
+        }
+
+        // ══════════════════════════════════════════════
         //  UTILITY: Format a numeric gain for display
         // ══════════════════════════════════════════════
-        function formatGainHTML(val, isATK = false) {
+        function formatGainHTML(val, mode = false) {
             if (val === 0) return '<span class="gain-neutral">(+0)</span>';
             const color = val > 0 ? 'gain-positive' : 'gain-negative';
-            if (isATK) {
+            if (mode === true) {
                 const absK = Math.abs(val / 1000);
                 const sign  = val > 0 ? '+' : '-';
                 const str   = absK >= 1 ? sign + absK.toFixed(1) + 'K' : sign + Math.abs(val).toFixed(0);
                 return `<span class="${color}">(${str})</span>`;
+            }
+            if (mode === 'ee') {
+                const sign = val > 0 ? '+' : '-';
+                return `<span class="${color}">(${sign}${formatEEScore(Math.abs(val))})</span>`;
             }
             const sign = val > 0 ? '+' : '';
             return `<span class="${color}">(${sign}${Math.round(val).toLocaleString()})</span>`;
@@ -962,6 +1037,35 @@
             const totalBoss = allPlayers.reduce((s, p) => s + (p.cxBossScore || 0), 0);
             document.getElementById('cx-total-rank').textContent = totalRank.toLocaleString();
             document.getElementById('cx-total-boss').textContent = totalBoss.toLocaleString();
+        }
+
+        function calculateEETabSummary() {
+            const scored = allPlayers.filter(p => p.eeBestScore !== null);
+            const topEE  = [...scored].sort((a, b) => b.eeBestScore - a.eeBestScore).slice(0, TOP_N);
+            const n      = topEE.length;
+
+            if (n > 0) {
+                const totalEE = topEE.reduce((s, p) => s + p.eeBestScore, 0);
+                document.getElementById('ee-total-score').textContent = formatEEScore(totalEE);
+                document.getElementById('ee-avg-score').textContent   = formatEEScore(totalEE / n);
+
+                const hasPrevData = topEE.some(p => p.prevEeBestScore !== null);
+                if (hasPrevData) {
+                    const prevTotalEE = topEE.reduce((s, p) => s + (p.prevEeBestScore ?? p.eeBestScore), 0);
+                    document.getElementById('ee-total-score-gain').innerHTML = formatGainHTML(totalEE - prevTotalEE, 'ee');
+                    document.getElementById('ee-avg-score-gain').innerHTML   = formatGainHTML((totalEE - prevTotalEE) / n, 'ee');
+                } else {
+                    document.getElementById('ee-total-score-gain').innerHTML = '';
+                    document.getElementById('ee-avg-score-gain').innerHTML   = '';
+                }
+            } else {
+                document.getElementById('ee-total-score').textContent      = '—';
+                document.getElementById('ee-total-score-gain').innerHTML   = '';
+                document.getElementById('ee-avg-score').textContent        = '—';
+                document.getElementById('ee-avg-score-gain').innerHTML     = '';
+            }
+
+            document.getElementById('ee-recorded-count').textContent = scored.length + ' / ' + allPlayers.length;
         }
 
         // ══════════════════════════════════════════════
@@ -1301,12 +1405,17 @@
                     <th data-i18n="table.col.rank">#</th>
                     <th data-i18n="table.col.player_name">Player Name</th>
                     <th><img src="${ICON_BASE}Medals.png" alt="LME" style="width:20px;height:20px;vertical-align:middle;margin-right:6px;" onerror="this.style.display='none'"><span data-i18n="table.col.lme_phase1">LME 1st Phase</span></th>`;
-            } else {
+            } else if (currentSubTab === 'cx') {
                 tr.innerHTML = `
                     <th data-i18n="table.col.rank">#</th>
                     <th data-i18n="table.col.player_name">Player Name</th>
                     <th><img src="${ICON_BASE}CX.png" alt="CX Rank" style="width:20px;height:20px;vertical-align:middle;margin-right:4px;" onerror="this.style.display='none'"><span data-i18n="table.col.cx_rank_score">CX Rank Score</span></th>
                     <th data-i18n="table.col.cx_boss_score">CX Boss Score</th>`;
+            } else {
+                tr.innerHTML = `
+                    <th data-i18n="table.col.rank">#</th>
+                    <th data-i18n="table.col.player_name">Player Name</th>
+                    <th>🌀 <span data-i18n="table.col.ee_best_score">EE Best Score</span></th>`;
             }
             applyTranslations();
         }
@@ -1344,9 +1453,20 @@
                     cells += `<td style="text-align:center;font-weight:600;color:#f59e0b;">${player.lmeScore.toLocaleString()}
                         <span style="font-size:11px;">${formatGainHTML(lmeGain)}</span>
                     </td>`;
-                } else {
+                } else if (currentSubTab === 'cx') {
                     cells += `<td style="text-align:center;font-weight:600;color:${getCXRankColor(player.cxRankScore)};">${player.cxRankScore.toLocaleString()}</td>
                     <td style="text-align:center;font-weight:600;color:#a78bfa;">${player.cxBossScore.toLocaleString()}</td>`;
+                } else {
+                    if (player.eeBestScore === null) {
+                        cells += `<td style="text-align:center;font-weight:600;color:#718096;">—</td>`;
+                    } else if (player.prevEeBestScore === null) {
+                        cells += `<td style="text-align:center;font-weight:600;color:#fb7185;">${formatEEScore(player.eeBestScore)}</td>`;
+                    } else {
+                        const eeGain = player.eeBestScore - player.prevEeBestScore;
+                        cells += `<td style="text-align:center;font-weight:600;color:#fb7185;">${formatEEScore(player.eeBestScore)}
+                            <span style="font-size:10px;display:block;">${formatGainHTML(eeGain, 'ee')}</span>
+                        </td>`;
+                    }
                 }
                 row.innerHTML = cells;
                 tbody.appendChild(row);
@@ -1378,6 +1498,14 @@
                 case 'cxBoss':
                     filteredData.sort((a, b) => b.cxBossScore - a.cxBossScore);
                     break;
+                case 'ee':
+                    filteredData.sort((a, b) => {
+                        if (a.eeBestScore === null && b.eeBestScore === null) return 0;
+                        if (a.eeBestScore === null) return 1;
+                        if (b.eeBestScore === null) return -1;
+                        return b.eeBestScore - a.eeBestScore;
+                    });
+                    break;
                 case 'role':
                     filteredData.sort((a, b) => {
                         const rA = roleOrder[a.role] || 5;
@@ -1395,7 +1523,7 @@
         }
 
         function exportToCSV() {
-            const headers = ['Rank', 'Player Name', 'Role', 'ATK', 'ATK Gain', 'Relic Cores', 'Cores Gain', 'Transmute Cores', 'Transmute Gain', 'LME Score', 'LME Gain', 'CX Rank', 'CX Boss'];
+            const headers = ['Rank', 'Player Name', 'Role', 'ATK', 'ATK Gain', 'Relic Cores', 'Cores Gain', 'Transmute Cores', 'Transmute Gain', 'LME Score', 'LME Gain', 'CX Rank', 'CX Boss', 'EE Best Score', 'EE Best Score Gain'];
             const csvContent = [
                 headers.join(','),
                 ...allPlayers.map((p, index) => [
@@ -1411,7 +1539,9 @@
                     p.lmeScore,
                     p.lmeScore - p.prevLmeScore,
                     p.cxRankScore,
-                    p.cxBossScore
+                    p.cxBossScore,
+                    p.eeBestScore === null ? '' : p.eeBestScore,
+                    (p.eeBestScore === null || p.prevEeBestScore === null) ? '' : (p.eeBestScore - p.prevEeBestScore)
                 ].join(','))
             ].join('\n');
 
@@ -1534,6 +1664,7 @@
         calculateStatsTabSummary();
         calculateLMETabSummary();
         calculateCXTabSummary();
+        calculateEETabSummary();
         calculateSecretScore();
         loadLMEHistory();
         loadLunarDetails();
