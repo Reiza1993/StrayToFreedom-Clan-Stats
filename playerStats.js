@@ -146,7 +146,7 @@ const playerStats = {
             "roleTier": null
         },
         "60687252": {
-            "atk": 3621221,
+            "atk": 3739424,
             "name": "һan",
             "role": "Eternal Glory",
             "roleTier": null
