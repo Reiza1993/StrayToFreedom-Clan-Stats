@@ -62,7 +62,7 @@ const playerStats = {
             "roleTier": null
         },
         "21471954": {
-            "atk": 1467537,
+            "atk": 1468337,
             "name": "N0M3rcy",
             "role": "Member",
             "roleTier": null
@@ -80,7 +80,7 @@ const playerStats = {
             "roleTier": null
         },
         "26277677": {
-            "atk": 1866995,
+            "atk": 1881794,
             "name": "BobBobberson",
             "role": "Member",
             "roleTier": null
