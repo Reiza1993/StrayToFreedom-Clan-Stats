@@ -1,246 +1,246 @@
 // playerLME.js
 // Clan 44262 — LME Score (from LME endpoint, per-player scores shape)
-// Last Updated: 2026-07-30
+// Last Updated: 2026-08-06
 const playerLME = {
     current: {
         "102263647": {
-            "lmeScore": 2675
+            "lmeScore": 2699
         },
         "104730405": {
-            "lmeScore": 1916
+            "lmeScore": 1943
         },
         "10754439": {
             "lmeScore": 2150
         },
         "110301719": {
-            "lmeScore": 1671
+            "lmeScore": 1680
         },
         "112772047": {
-            "lmeScore": 1975
+            "lmeScore": 2077
         },
         "113690788": {
-            "lmeScore": 2085
+            "lmeScore": 2115
         },
         "115742768": {
             "lmeScore": 0
         },
         "18115624": {
-            "lmeScore": 2582
+            "lmeScore": 2574
         },
         "18297536": {
-            "lmeScore": 1936
+            "lmeScore": 1893
         },
         "21471954": {
-            "lmeScore": 1567
+            "lmeScore": 1582
         },
         "21496121": {
-            "lmeScore": 2020
+            "lmeScore": 2040
         },
         "22085142": {
-            "lmeScore": 1813
+            "lmeScore": 1825
         },
         "26277677": {
-            "lmeScore": 2140
+            "lmeScore": 2148
         },
         "29398372": {
-            "lmeScore": 2122
+            "lmeScore": 2054
         },
         "29904762": {
-            "lmeScore": 1936
+            "lmeScore": 1967
         },
         "30658936": {
-            "lmeScore": 2152
+            "lmeScore": 2182
         },
         "32236991": {
-            "lmeScore": 2078
+            "lmeScore": 2098
         },
         "32556489": {
-            "lmeScore": 1982
+            "lmeScore": 1928
         },
         "36484758": {
-            "lmeScore": 1669
+            "lmeScore": 1662
         },
         "41742773": {
-            "lmeScore": 2348
+            "lmeScore": 2376
         },
         "51071110": {
-            "lmeScore": 2141
+            "lmeScore": 2153
         },
         "56780908": {
-            "lmeScore": 2185
+            "lmeScore": 2203
         },
         "57543766": {
-            "lmeScore": 1870
-        },
-        "60687252": {
-            "lmeScore": 3526
-        },
-        "61140731": {
-            "lmeScore": 1773
-        },
-        "64676255": {
-            "lmeScore": 2285
-        },
-        "66607264": {
-            "lmeScore": 2223
-        },
-        "71028860": {
-            "lmeScore": 0
-        },
-        "75174428": {
-            "lmeScore": 2400
-        },
-        "77879578": {
-            "lmeScore": 1987
-        },
-        "79510960": {
-            "lmeScore": 2132
-        },
-        "80972473": {
-            "lmeScore": 2787
-        },
-        "81635898": {
-            "lmeScore": 2216
-        },
-        "83339881": {
-            "lmeScore": 3160
-        },
-        "83861839": {
-            "lmeScore": 2091
-        },
-        "86388317": {
-            "lmeScore": 1499
-        },
-        "87244358": {
-            "lmeScore": 2948
-        },
-        "88203044": {
-            "lmeScore": 2257
-        },
-        "89511116": {
-            "lmeScore": 1957
-        }
-    },
-    previous: {
-        "102263647": {
-            "lmeScore": 2663
-        },
-        "104730405": {
-            "lmeScore": 1907
-        },
-        "10754439": {
-            "lmeScore": 2134
-        },
-        "110301719": {
-            "lmeScore": 0
-        },
-        "112772047": {
-            "lmeScore": 1989
-        },
-        "113690788": {
-            "lmeScore": 2069
-        },
-        "115369352": {
-            "lmeScore": 2129
-        },
-        "115742768": {
-            "lmeScore": 0
-        },
-        "18115624": {
-            "lmeScore": 2544
-        },
-        "18297536": {
-            "lmeScore": 1945
-        },
-        "21471954": {
-            "lmeScore": 1508
-        },
-        "21496121": {
-            "lmeScore": 1978
-        },
-        "22085142": {
-            "lmeScore": 1803
-        },
-        "26277677": {
-            "lmeScore": 2027
-        },
-        "29398372": {
-            "lmeScore": 0
-        },
-        "29904762": {
-            "lmeScore": 1946
-        },
-        "30658936": {
-            "lmeScore": 2142
-        },
-        "32236991": {
-            "lmeScore": 2066
-        },
-        "32556489": {
-            "lmeScore": 1970
-        },
-        "36484758": {
-            "lmeScore": 1657
-        },
-        "41742773": {
-            "lmeScore": 2336
-        },
-        "51071110": {
-            "lmeScore": 2116
-        },
-        "56780908": {
-            "lmeScore": 2166
-        },
-        "57543766": {
-            "lmeScore": 1852
+            "lmeScore": 1898
         },
         "60687252": {
             "lmeScore": 3532
         },
         "61140731": {
-            "lmeScore": 1739
+            "lmeScore": 1865
         },
         "64676255": {
-            "lmeScore": 2270
+            "lmeScore": 2278
         },
         "66607264": {
-            "lmeScore": 2207
+            "lmeScore": 2251
         },
         "71028860": {
-            "lmeScore": 1839
+            "lmeScore": 2111
         },
         "75174428": {
-            "lmeScore": 2394
+            "lmeScore": 2397
         },
         "77879578": {
-            "lmeScore": 1943
+            "lmeScore": 1993
         },
         "79510960": {
-            "lmeScore": 2119
+            "lmeScore": 2163
         },
         "80972473": {
-            "lmeScore": 2772
+            "lmeScore": 2789
         },
         "81635898": {
-            "lmeScore": 2204
+            "lmeScore": 2276
         },
         "83339881": {
-            "lmeScore": 3162
+            "lmeScore": 3199
         },
         "83861839": {
-            "lmeScore": 2073
+            "lmeScore": 2136
         },
         "86388317": {
-            "lmeScore": 1461
+            "lmeScore": 1538
         },
         "87244358": {
-            "lmeScore": 2936
+            "lmeScore": 2973
         },
         "88203044": {
-            "lmeScore": 2184
+            "lmeScore": 2262
         },
         "89511116": {
-            "lmeScore": 1951
+            "lmeScore": 1995
+        }
+    },
+    previous: {
+        "102263647": {
+            "lmeScore": 2699
+        },
+        "104730405": {
+            "lmeScore": 1943
+        },
+        "106518480": {
+            "lmeScore": 0
+        },
+        "10754439": {
+            "lmeScore": 2150
+        },
+        "110301719": {
+            "lmeScore": 1680
+        },
+        "112772047": {
+            "lmeScore": 2077
+        },
+        "113690788": {
+            "lmeScore": 2115
+        },
+        "115742768": {
+            "lmeScore": 0
+        },
+        "18115624": {
+            "lmeScore": 2574
+        },
+        "18297536": {
+            "lmeScore": 1893
+        },
+        "21471954": {
+            "lmeScore": 1582
+        },
+        "21496121": {
+            "lmeScore": 2040
+        },
+        "22085142": {
+            "lmeScore": 1825
+        },
+        "26277677": {
+            "lmeScore": 2148
+        },
+        "29398372": {
+            "lmeScore": 2054
+        },
+        "29904762": {
+            "lmeScore": 1967
+        },
+        "30658936": {
+            "lmeScore": 2182
+        },
+        "32236991": {
+            "lmeScore": 2098
+        },
+        "32556489": {
+            "lmeScore": 1928
+        },
+        "36484758": {
+            "lmeScore": 1662
+        },
+        "41742773": {
+            "lmeScore": 2376
+        },
+        "51071110": {
+            "lmeScore": 2153
+        },
+        "56780908": {
+            "lmeScore": 2203
+        },
+        "57543766": {
+            "lmeScore": 1898
+        },
+        "60687252": {
+            "lmeScore": 3532
+        },
+        "61140731": {
+            "lmeScore": 1865
+        },
+        "64676255": {
+            "lmeScore": 2278
+        },
+        "66607264": {
+            "lmeScore": 2251
+        },
+        "71028860": {
+            "lmeScore": 2111
+        },
+        "75174428": {
+            "lmeScore": 2397
+        },
+        "77879578": {
+            "lmeScore": 1993
+        },
+        "79510960": {
+            "lmeScore": 2163
+        },
+        "80972473": {
+            "lmeScore": 2789
+        },
+        "81635898": {
+            "lmeScore": 2276
+        },
+        "83339881": {
+            "lmeScore": 3199
+        },
+        "83861839": {
+            "lmeScore": 2136
+        },
+        "86388317": {
+            "lmeScore": 1538
+        },
+        "87244358": {
+            "lmeScore": 2973
+        },
+        "88203044": {
+            "lmeScore": 2262
+        },
+        "89511116": {
+            "lmeScore": 1995
         }
     }
 };

@@ -2,7 +2,7 @@
 // Freedomˢᵗʳᵃʸ — Ender's Echo Best Score (single highest individual attempt
 // per member against the current boss - NOT a per-day total, see
 // lunar_details.py's LunarClanMember.ee_best_score)
-// Last Updated: 2026-07-30
+// Last Updated: 2026-08-06
 // Keys are real account IDs from the clan roster fetch. eeBestScore: null
 // means the member was either never scanned or confirmed to have zero
 // recorded attempts.
@@ -14,7 +14,7 @@
 const playerEndersEcho = {
     current: {
         "102263647": {
-            "eeBestScore": null,
+            "eeBestScore": 3.702984944366188e+20,
             "name": "Koncalaz"
         },
         "104730405": {
@@ -22,7 +22,7 @@ const playerEndersEcho = {
             "name": "KingRizzle"
         },
         "10754439": {
-            "eeBestScore": 3.053405890166697e+19,
+            "eeBestScore": 2.650075806787221e+19,
             "name": "HakiLuffy"
         },
         "110301719": {
@@ -30,11 +30,11 @@ const playerEndersEcho = {
             "name": "Epic|W"
         },
         "112772047": {
-            "eeBestScore": 1.3015942557792102e+19,
+            "eeBestScore": 1.3915340713259172e+19,
             "name": "VictorMolusco"
         },
         "113690788": {
-            "eeBestScore": 1.3771127007456502e+19,
+            "eeBestScore": 1.229015325318013e+19,
             "name": "Apathy_"
         },
         "115742768": {
@@ -42,7 +42,7 @@ const playerEndersEcho = {
             "name": "SterbyTools"
         },
         "18115624": {
-            "eeBestScore": 2.3264007563660047e+20,
+            "eeBestScore": 4.1006679801720445e+20,
             "name": "Nubis"
         },
         "18297536": {
@@ -54,7 +54,7 @@ const playerEndersEcho = {
             "name": "N0M3rcy"
         },
         "21496121": {
-            "eeBestScore": null,
+            "eeBestScore": 1.1123745993667836e+19,
             "name": "b0ss"
         },
         "22085142": {
@@ -62,11 +62,11 @@ const playerEndersEcho = {
             "name": "bimbabo"
         },
         "26277677": {
-            "eeBestScore": 1.6936958188035545e+19,
+            "eeBestScore": 1.8501026580142436e+19,
             "name": "BobBobberson"
         },
         "29398372": {
-            "eeBestScore": 2.464075980796738e+19,
+            "eeBestScore": null,
             "name": "Player113322"
         },
         "29904762": {
@@ -74,31 +74,31 @@ const playerEndersEcho = {
             "name": "Cheeselife"
         },
         "30658936": {
-            "eeBestScore": 2.780402113339702e+19,
+            "eeBestScore": 3.4029678343213564e+19,
             "name": "Gritchen"
         },
         "32236991": {
-            "eeBestScore": 2.03671712261788e+19,
+            "eeBestScore": 1.5957888644970367e+19,
             "name": "Player 32236991"
         },
         "32556489": {
-            "eeBestScore": null,
+            "eeBestScore": 5.204423648550164e+18,
             "name": "Bensayyten"
         },
         "36484758": {
-            "eeBestScore": 2.321080616956341e+18,
+            "eeBestScore": 1.4775441027170388e+18,
             "name": "Belthazar"
         },
         "41742773": {
-            "eeBestScore": 8.06746575532928e+19,
+            "eeBestScore": 9.96231513919219e+19,
             "name": "PinkyToeBeans"
         },
         "51071110": {
-            "eeBestScore": null,
+            "eeBestScore": 1.035823293060641e+19,
             "name": "samwise08"
         },
         "56780908": {
-            "eeBestScore": null,
+            "eeBestScore": 1.469659548293645e+19,
             "name": "TieForFirstYo"
         },
         "57543766": {
@@ -106,27 +106,27 @@ const playerEndersEcho = {
             "name": "THJF1948ㅣStray"
         },
         "60687252": {
-            "eeBestScore": 2.9067562513575273e+22,
+            "eeBestScore": 7.560059099165882e+21,
             "name": "һan"
         },
         "61140731": {
-            "eeBestScore": null,
+            "eeBestScore": 4.121560094175487e+18,
             "name": "fesl"
         },
         "64676255": {
-            "eeBestScore": null,
+            "eeBestScore": 2.6020618513780257e+19,
             "name": "盾Heathcliff剣"
         },
         "66607264": {
-            "eeBestScore": null,
+            "eeBestScore": 3.940905178801608e+19,
             "name": "Player 66607264"
         },
         "71028860": {
-            "eeBestScore": 9.07065425240887e+18,
+            "eeBestScore": 1.9425710607365706e+19,
             "name": "Rzzza"
         },
         "75174428": {
-            "eeBestScore": null,
+            "eeBestScore": 1.3203129465568592e+20,
             "name": "PastalaVista"
         },
         "77879578": {
@@ -134,7 +134,7 @@ const playerEndersEcho = {
             "name": "MMM|Mina475"
         },
         "79510960": {
-            "eeBestScore": null,
+            "eeBestScore": 2.1681898352654574e+19,
             "name": "theLP"
         },
         "80972473": {
@@ -146,31 +146,149 @@ const playerEndersEcho = {
             "name": "Rėtrø"
         },
         "83339881": {
-            "eeBestScore": 4.79590806944757e+21,
+            "eeBestScore": 4.355558595249646e+21,
             "name": "Fl3xas"
         },
         "83861839": {
-            "eeBestScore": null,
+            "eeBestScore": 1.2397052344166154e+19,
             "name": "groggen"
         },
         "86388317": {
-            "eeBestScore": null,
+            "eeBestScore": 8.771872209409079e+17,
             "name": "GG║BG2020"
         },
         "87244358": {
-            "eeBestScore": 1.2907537410617788e+21,
+            "eeBestScore": null,
             "name": "神Sterben死"
         },
         "88203044": {
-            "eeBestScore": 4.3726645201112646e+19,
+            "eeBestScore": 5.302429178668665e+19,
             "name": "p88203044"
         },
         "89511116": {
-            "eeBestScore": null,
+            "eeBestScore": 1.3006474062659353e+19,
             "name": "EMBALOCO"
         }
     },
-    previous: {}
+    previous: {
+        "102263647": {
+            "eeBestScore": 3.702984944366188e+20
+        },
+        "104730405": {
+            "eeBestScore": null
+        },
+        "10754439": {
+            "eeBestScore": 1.8747220761203835e+19
+        },
+        "110301719": {
+            "eeBestScore": null
+        },
+        "112772047": {
+            "eeBestScore": 1.3915340713259172e+19
+        },
+        "113690788": {
+            "eeBestScore": 1.229015325318013e+19
+        },
+        "115742768": {
+            "eeBestScore": null
+        },
+        "18115624": {
+            "eeBestScore": 3.1505145945776397e+20
+        },
+        "18297536": {
+            "eeBestScore": null
+        },
+        "21471954": {
+            "eeBestScore": null
+        },
+        "21496121": {
+            "eeBestScore": 9.725120195800957e+18
+        },
+        "22085142": {
+            "eeBestScore": null
+        },
+        "26277677": {
+            "eeBestScore": 1.8501026580142436e+19
+        },
+        "29398372": {
+            "eeBestScore": null
+        },
+        "29904762": {
+            "eeBestScore": null
+        },
+        "30658936": {
+            "eeBestScore": 3.4029678343213564e+19
+        },
+        "32236991": {
+            "eeBestScore": 1.5957888644970367e+19
+        },
+        "32556489": {
+            "eeBestScore": 5.204423648550164e+18
+        },
+        "36484758": {
+            "eeBestScore": 1.4775441027170388e+18
+        },
+        "41742773": {
+            "eeBestScore": 9.96231513919219e+19
+        },
+        "51071110": {
+            "eeBestScore": 1.035823293060641e+19
+        },
+        "56780908": {
+            "eeBestScore": 1.469659548293645e+19
+        },
+        "57543766": {
+            "eeBestScore": null
+        },
+        "60687252": {
+            "eeBestScore": 7.560059099165882e+21
+        },
+        "61140731": {
+            "eeBestScore": 4.121560094175487e+18
+        },
+        "64676255": {
+            "eeBestScore": 2.6020618513780257e+19
+        },
+        "66607264": {
+            "eeBestScore": 3.940905178801608e+19
+        },
+        "71028860": {
+            "eeBestScore": 1.9425710607365706e+19
+        },
+        "75174428": {
+            "eeBestScore": 1.3203129465568592e+20
+        },
+        "77879578": {
+            "eeBestScore": null
+        },
+        "79510960": {
+            "eeBestScore": 2.1681898352654574e+19
+        },
+        "80972473": {
+            "eeBestScore": null
+        },
+        "81635898": {
+            "eeBestScore": null
+        },
+        "83339881": {
+            "eeBestScore": 3.8959680791602266e+21
+        },
+        "83861839": {
+            "eeBestScore": 1.2397052344166154e+19
+        },
+        "86388317": {
+            "eeBestScore": 8.771872209409079e+17
+        },
+        "87244358": {
+            "eeBestScore": null
+        },
+        "88203044": {
+            "eeBestScore": 5.302429178668665e+19
+        },
+        "89511116": {
+            "eeBestScore": 1.3006474062659353e+19
+        }
+    }
 };
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = { playerEndersEcho };
