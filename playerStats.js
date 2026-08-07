@@ -1,6 +1,6 @@
 // playerStats.js
 // Freedomˢᵗʳᵃʸ — Roster / Identity (from clan roster fetch)
-// Last Updated: 2026-08-06
+// Last Updated: 2026-08-08
 // Keys are real account IDs from the clan roster fetch.
 // TODO: roleTier/role are not yet reverse-engineered from the clan API
 // response - both are written as null below. Fill them in manually (or
@@ -22,7 +22,7 @@ const playerStats = {
         "10754439": {
             "atk": 1796773,
             "name": "HakiLuffy",
-            "role": "Glory Member",
+            "role": "Member",
             "roleTier": null
         },
         "110301719": {
@@ -52,7 +52,7 @@ const playerStats = {
         "18115624": {
             "atk": 2459759,
             "name": "Nubis",
-            "role": "Glory Member",
+            "role": "Member",
             "roleTier": null
         },
         "18297536": {
@@ -76,7 +76,7 @@ const playerStats = {
         "22085142": {
             "atk": 1598705,
             "name": "bimbabo",
-            "role": "Glory Member",
+            "role": "Member",
             "roleTier": null
         },
         "26277677": {
@@ -112,13 +112,13 @@ const playerStats = {
         "32556489": {
             "atk": 1604404,
             "name": "Bensayyten",
-            "role": "Glory Member",
+            "role": "Member",
             "roleTier": null
         },
         "36484758": {
             "atk": 1440817,
             "name": "Belthazar",
-            "role": "Glory Member",
+            "role": "Member",
             "roleTier": null
         },
         "41742773": {
@@ -190,7 +190,7 @@ const playerStats = {
         "79510960": {
             "atk": 1557352,
             "name": "theLP",
-            "role": "Glory Member",
+            "role": "Member",
             "roleTier": null
         },
         "80972473": {
@@ -208,7 +208,7 @@ const playerStats = {
         "83339881": {
             "atk": 3202902,
             "name": "Fl3xas",
-            "role": "Glory Member",
+            "role": "Member",
             "roleTier": null
         },
         "83861839": {
@@ -232,13 +232,13 @@ const playerStats = {
         "88203044": {
             "atk": 2084481,
             "name": "p88203044",
-            "role": "Glory Member",
+            "role": "Member",
             "roleTier": null
         },
         "89511116": {
             "atk": 1802243,
             "name": "EMBALOCO",
-            "role": "Glory Member",
+            "role": "Member",
             "roleTier": null
         }
     },
