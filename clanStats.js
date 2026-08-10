@@ -25,7 +25,7 @@ const lmeHistory = [
         rank: 3,
         rankImage: "https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Rank3.png",
         atkDefPoints: 3,
-        medals: 87873
+        medals: 87873,
         league: "Champion"
     },
     {
