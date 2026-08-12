@@ -7,7 +7,7 @@ const playerLME = {
             "lmeScore": 2786
         },
         "104730405": {
-            "lmeScore": 0
+            "lmeScore": 1965
         },
         "10754439": {
             "lmeScore": 2206
@@ -85,7 +85,7 @@ const playerLME = {
             "lmeScore": 2297
         },
         "66607264": {
-            "lmeScore": 0
+            "lmeScore": 2304
         },
         "71028860": {
             "lmeScore": 2148
