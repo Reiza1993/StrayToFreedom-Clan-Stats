@@ -14,7 +14,7 @@ const clanStats = {
     lunarPoints: 1225,
 
     // Alumni count (update when members leave)
-    alumniCount: 68
+    alumniCount: 69
 };
 
 // LME History Data
@@ -475,7 +475,7 @@ const alumniMembers = [
     "KusoYaroo", "cocacandy", "chiknstrip", "SmallBotoㅣStray", "Phley", "6J4", "lguinily",
     "Mclovin404", "Hiryu69", "swifft", "WeirdPlays", "mc2028.",
     "命 Waiora癒", "аіко","HannaH","♙Jojo♔",
-    "SUJAY", "Pookaz", "Hanter007", "MrPlusUltra","魂Hobin357死",
+    "SUJAY", "Pookaz", "Hanter007", "MrPlusUltra","魂Hobin357死","Lemminkäinen",
 ];
 
 // Export for use in main application
