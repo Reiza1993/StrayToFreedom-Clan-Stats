@@ -1,127 +1,148 @@
 // playerCXRank.js
 // Clan 44262 — CX Rank Score (from CX Rank endpoint)
-// Last Updated: 2026-08-12
+// Last Updated: 2026-08-17
 const playerCXRank = {
     current: {
         "102263647": {
-            "cxRankScore": 3200
+            "cxRankScore": 2000
+        },
+        "103516442": {
+            "cxRankScore": 0
         },
         "104730405": {
-            "cxRankScore": 5200
+            "cxRankScore": 2400
+        },
+        "106162623": {
+            "cxRankScore": 0
         },
         "10754439": {
-            "cxRankScore": 7600
+            "cxRankScore": 6100
         },
-        "110301719": {
+        "108546985": {
             "cxRankScore": 0
         },
         "112772047": {
-            "cxRankScore": 1400
+            "cxRankScore": 1200
         },
         "113690788": {
-            "cxRankScore": 1700
+            "cxRankScore": 3000
+        },
+        "11463573": {
+            "cxRankScore": 0
         },
         "115742768": {
             "cxRankScore": 0
         },
         "18115624": {
-            "cxRankScore": 1600
+            "cxRankScore": 800
         },
         "18297536": {
-            "cxRankScore": 800
+            "cxRankScore": 1500
         },
-        "21471954": {
-            "cxRankScore": 4000
-        },
-        "21496121": {
-            "cxRankScore": 4400
-        },
-        "22085142": {
-            "cxRankScore": 5300
-        },
-        "26277677": {
-            "cxRankScore": 7800
-        },
-        "29398372": {
-            "cxRankScore": 800
-        },
-        "29904762": {
-            "cxRankScore": 4000
-        },
-        "30658936": {
-            "cxRankScore": 3000
-        },
-        "32236991": {
+        "19575414": {
             "cxRankScore": 0
         },
-        "32556489": {
+        "21471954": {
+            "cxRankScore": 800
+        },
+        "21496121": {
+            "cxRankScore": 4100
+        },
+        "22085142": {
+            "cxRankScore": 3600
+        },
+        "26277677": {
+            "cxRankScore": 6100
+        },
+        "29904762": {
+            "cxRankScore": 3000
+        },
+        "30658936": {
             "cxRankScore": 2700
         },
-        "34847701": {
+        "32556489": {
+            "cxRankScore": 5000
+        },
+        "35869301": {
             "cxRankScore": 0
         },
         "36484758": {
-            "cxRankScore": 7200
+            "cxRankScore": 6800
         },
         "41742773": {
-            "cxRankScore": 6300
-        },
-        "51071110": {
-            "cxRankScore": 1600
-        },
-        "56780908": {
-            "cxRankScore": 2600
-        },
-        "57543766": {
-            "cxRankScore": 3200
-        },
-        "60687252": {
-            "cxRankScore": 1600
-        },
-        "61140731": {
             "cxRankScore": 5300
         },
+        "51071110": {
+            "cxRankScore": 2500
+        },
+        "56780908": {
+            "cxRankScore": 1600
+        },
+        "57543766": {
+            "cxRankScore": 1600
+        },
+        "59566866": {
+            "cxRankScore": 0
+        },
+        "60687252": {
+            "cxRankScore": 1800
+        },
+        "61140731": {
+            "cxRankScore": 2800
+        },
         "64676255": {
-            "cxRankScore": 8800
+            "cxRankScore": 5100
         },
         "66607264": {
-            "cxRankScore": 6100
+            "cxRankScore": 5200
+        },
+        "69676999": {
+            "cxRankScore": 0
+        },
+        "70603922": {
+            "cxRankScore": 0
         },
         "71028860": {
-            "cxRankScore": 800
+            "cxRankScore": 1000
+        },
+        "72894129": {
+            "cxRankScore": 0
         },
         "75174428": {
-            "cxRankScore": 3200
+            "cxRankScore": 1800
         },
         "77879578": {
-            "cxRankScore": 800
+            "cxRankScore": 400
         },
         "79510960": {
-            "cxRankScore": 4400
+            "cxRankScore": 1600
+        },
+        "80018314": {
+            "cxRankScore": 0
         },
         "80972473": {
             "cxRankScore": 4000
         },
-        "81635898": {
-            "cxRankScore": 0
-        },
         "83339881": {
-            "cxRankScore": 2500
+            "cxRankScore": 2800
         },
         "83861839": {
-            "cxRankScore": 1500
+            "cxRankScore": 2500
         },
         "86388317": {
-            "cxRankScore": 4500
+            "cxRankScore": 4700
         },
         "87244358": {
-            "cxRankScore": 2000
+            "cxRankScore": 1600
+        },
+        "87954282": {
+            "cxRankScore": 0
         },
         "88203044": {
-            "cxRankScore": 3700
+            "cxRankScore": 2800
         },
         "89511116": {
-            "cxRankScore": 2500
+            "cxRankScore": 1900
         }
     },
     previous: {}
