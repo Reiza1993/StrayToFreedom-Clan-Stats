@@ -14,12 +14,36 @@ const clanStats = {
     lunarPoints: 1225,
 
     // Alumni count (update when members leave)
-    alumniCount: 68
+    alumniCount: 69
 };
 
 // LME History Data
 // Add new results to the TOP of this array
 const lmeHistory = [
+    {
+        lmeNumber: 55,
+        rank: 2,
+        rankImage: "https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Rank2.png",
+        atkDefPoints: 4,
+        medals: 70181,
+        league: "Champion"
+    },
+    {
+        lmeNumber: 54,
+        rank: 3,
+        rankImage: "https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Rank3.png",
+        atkDefPoints: 3,
+        medals: 87873,
+        league: "Champion"
+    },
+    {
+        lmeNumber: 53,
+        rank: 2,
+        rankImage: "https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Rank2.png",
+        atkDefPoints: 4,
+        medals: 77246,
+        league: "Champion"
+    },
     {
         lmeNumber: 52,
         rank: 1,
@@ -451,7 +475,7 @@ const alumniMembers = [
     "KusoYaroo", "cocacandy", "chiknstrip", "SmallBotoㅣStray", "Phley", "6J4", "lguinily",
     "Mclovin404", "Hiryu69", "swifft", "WeirdPlays", "mc2028.",
     "命 Waiora癒", "аіко","HannaH","♙Jojo♔",
-    "SUJAY", "Pookaz", "Hanter007", "MrPlusUltra","魂Hobin357死",
+    "SUJAY", "Pookaz", "Hanter007", "MrPlusUltra","魂Hobin357死","Lemminkäinen",
 ];
 
 // Export for use in main application

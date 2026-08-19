@@ -1,0 +1,284 @@
+{
+  "current": {
+    "102263647": {
+      "eeBestScore": 7.702609623910734e+20,
+      "name": "Koncalaz"
+    },
+    "104730405": {
+      "eeBestScore": null,
+      "name": "KingRizzle"
+    },
+    "10754439": {
+      "eeBestScore": 4.360681697283655e+19,
+      "name": "HakiLuffy"
+    },
+    "110301719": {
+      "eeBestScore": 3.938407535840826e+18,
+      "name": "Epic|W"
+    },
+    "112772047": {
+      "eeBestScore": 2.069314423514282e+19,
+      "name": "VictorMolusco"
+    },
+    "113690788": {
+      "eeBestScore": 2.2997433915049206e+19,
+      "name": "Apathy_"
+    },
+    "115742768": {
+      "eeBestScore": null,
+      "name": "SterbyTools"
+    },
+    "18115624": {
+      "eeBestScore": 7.956845877126939e+20,
+      "name": "Nubis"
+    },
+    "18297536": {
+      "eeBestScore": null,
+      "name": "ergiangi"
+    },
+    "21471954": {
+      "eeBestScore": 2.0455797491633298e+18,
+      "name": "N0M3rcy"
+    },
+    "21496121": {
+      "eeBestScore": 1.8606947297622716e+19,
+      "name": "b0ss"
+    },
+    "22085142": {
+      "eeBestScore": 6.159274906127556e+18,
+      "name": "bimbabo"
+    },
+    "26277677": {
+      "eeBestScore": 2.3592887482097308e+19,
+      "name": "BobBobberson"
+    },
+    "29398372": {
+      "eeBestScore": null,
+      "name": "Player113322"
+    },
+    "29904762": {
+      "eeBestScore": 6.307257417750434e+18,
+      "name": "Cheeselife"
+    },
+    "30658936": {
+      "eeBestScore": 3.3950157231178826e+19,
+      "name": "Gritchen"
+    },
+    "32236991": {
+      "eeBestScore": 2.175650938303603e+19,
+      "name": "Player 32236991"
+    },
+    "32556489": {
+      "eeBestScore": 1.6484064421109117e+19,
+      "name": "Bensayyten"
+    },
+    "34847701": {
+      "eeBestScore": 1.2695183445670264e+17,
+      "name": "Christofire"
+    },
+    "36484758": {
+      "eeBestScore": 2.697414494220131e+18,
+      "name": "Belthazar"
+    },
+    "41742773": {
+      "eeBestScore": 1.391032174325737e+20,
+      "name": "PinkyToeBeans"
+    },
+    "51071110": {
+      "eeBestScore": 2.0141488653523075e+19,
+      "name": "samwise08"
+    },
+    "56780908": {
+      "eeBestScore": 5.997727339707996e+19,
+      "name": "TieForFirstYo"
+    },
+    "57543766": {
+      "eeBestScore": null,
+      "name": "THJF1948\u3163Stray"
+    },
+    "60687252": {
+      "eeBestScore": 3.2481698986019296e+22,
+      "name": "\u04bban"
+    },
+    "61140731": {
+      "eeBestScore": null,
+      "name": "fesl"
+    },
+    "64676255": {
+      "eeBestScore": 4.924456369341253e+19,
+      "name": "\u76feHeathcliff\u5263"
+    },
+    "66607264": {
+      "eeBestScore": 7.492216362606921e+19,
+      "name": "Player 66607264"
+    },
+    "71028860": {
+      "eeBestScore": 3.405502917684204e+19,
+      "name": "Rzzza"
+    },
+    "75174428": {
+      "eeBestScore": 1.6317169274117915e+20,
+      "name": "PastalaVista"
+    },
+    "77879578": {
+      "eeBestScore": null,
+      "name": "MMM|Mina475"
+    },
+    "79510960": {
+      "eeBestScore": 4.718918386954229e+19,
+      "name": "theLP"
+    },
+    "80972473": {
+      "eeBestScore": 7.884510547639797e+20,
+      "name": "Cunner88"
+    },
+    "81635898": {
+      "eeBestScore": null,
+      "name": "R\u0117tr\u00f8"
+    },
+    "83339881": {
+      "eeBestScore": 5.514235938783548e+21,
+      "name": "Fl3xas"
+    },
+    "83861839": {
+      "eeBestScore": 2.4910005794902565e+19,
+      "name": "groggen"
+    },
+    "86388317": {
+      "eeBestScore": 1.361007837500528e+18,
+      "name": "GG\u2551BG2020"
+    },
+    "87244358": {
+      "eeBestScore": 1.9993238495858113e+21,
+      "name": "\u795eSterben\u6b7b"
+    },
+    "88203044": {
+      "eeBestScore": 5.347974069935453e+19,
+      "name": "p88203044"
+    },
+    "89511116": {
+      "eeBestScore": 2.250711132764057e+19,
+      "name": "EMBALOCO"
+    }
+  },
+  "cycle_id": "2026-W33",
+  "previous": {
+    "102263647": {
+      "eeBestScore": 3.702984944366188e+20
+    },
+    "104730405": {
+      "eeBestScore": null
+    },
+    "10754439": {
+      "eeBestScore": 2.650075806787221e+19
+    },
+    "110301719": {
+      "eeBestScore": null
+    },
+    "112772047": {
+      "eeBestScore": 1.3915340713259172e+19
+    },
+    "113690788": {
+      "eeBestScore": 1.229015325318013e+19
+    },
+    "115742768": {
+      "eeBestScore": null
+    },
+    "18115624": {
+      "eeBestScore": 4.1006679801720445e+20
+    },
+    "18297536": {
+      "eeBestScore": null
+    },
+    "21471954": {
+      "eeBestScore": null
+    },
+    "21496121": {
+      "eeBestScore": 1.1123745993667836e+19
+    },
+    "22085142": {
+      "eeBestScore": null
+    },
+    "26277677": {
+      "eeBestScore": 1.8501026580142436e+19
+    },
+    "29398372": {
+      "eeBestScore": null
+    },
+    "29904762": {
+      "eeBestScore": null
+    },
+    "30658936": {
+      "eeBestScore": 3.4029678343213564e+19
+    },
+    "32236991": {
+      "eeBestScore": 1.5957888644970367e+19
+    },
+    "32556489": {
+      "eeBestScore": 5.204423648550164e+18
+    },
+    "36484758": {
+      "eeBestScore": 1.4775441027170388e+18
+    },
+    "41742773": {
+      "eeBestScore": 9.96231513919219e+19
+    },
+    "51071110": {
+      "eeBestScore": 1.035823293060641e+19
+    },
+    "56780908": {
+      "eeBestScore": 1.469659548293645e+19
+    },
+    "57543766": {
+      "eeBestScore": null
+    },
+    "60687252": {
+      "eeBestScore": 7.560059099165882e+21
+    },
+    "61140731": {
+      "eeBestScore": 4.121560094175487e+18
+    },
+    "64676255": {
+      "eeBestScore": 2.6020618513780257e+19
+    },
+    "66607264": {
+      "eeBestScore": 3.940905178801608e+19
+    },
+    "71028860": {
+      "eeBestScore": 1.9425710607365706e+19
+    },
+    "75174428": {
+      "eeBestScore": 1.3203129465568592e+20
+    },
+    "77879578": {
+      "eeBestScore": null
+    },
+    "79510960": {
+      "eeBestScore": 2.1681898352654574e+19
+    },
+    "80972473": {
+      "eeBestScore": null
+    },
+    "81635898": {
+      "eeBestScore": null
+    },
+    "83339881": {
+      "eeBestScore": 4.355558595249646e+21
+    },
+    "83861839": {
+      "eeBestScore": 1.2397052344166154e+19
+    },
+    "86388317": {
+      "eeBestScore": 8.771872209409079e+17
+    },
+    "87244358": {
+      "eeBestScore": null
+    },
+    "88203044": {
+      "eeBestScore": 5.302429178668665e+19
+    },
+    "89511116": {
+      "eeBestScore": 1.3006474062659353e+19
+    }
+  }
+}
