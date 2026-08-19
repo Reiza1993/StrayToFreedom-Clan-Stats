@@ -859,13 +859,17 @@
         // ══════════════════════════════════════════════
         //  DATA JOIN: merge 5 data files into unified player objects
         // ══════════════════════════════════════════════
+        // prevX fields are null when the member has no previous.* record at
+        // all (brand new joiner, or a stat that hasn't had a cycle roll over
+        // yet) - distinct from a real previous value of 0. individualGain()
+        // below is what turns that null into "gain = current score".
         function buildRoster() {
             return Object.entries(playerStats.current).map(([id, stat]) => {
-                const prevStat = playerStats.previous[id]  || {};
+                const prevStat = playerStats.previous[id];
                 const core     = playerCores.current[id]   || {};
-                const prevCore = playerCores.previous[id]  || {};
+                const prevCore = playerCores.previous[id];
                 const lme      = playerLME.current[id]     || {};
-                const prevLme  = playerLME.previous[id]    || {};
+                const prevLme  = playerLME.previous[id];
                 const cxr      = playerCXRank.current[id]  || {};
                 const cxb      = playerCXBoss.current[id]  || {};
                 const ee       = playerEndersEcho.current[id];
@@ -873,19 +877,26 @@
                 return {
                     id, name: stat.name, role: stat.role, roleTier: stat.roleTier,
                     atk:            stat.atk,
-                    prevAtk:        prevStat.atk        ?? stat.atk,
+                    prevAtk:        prevStat ? (prevStat.atk ?? 0) : null,
                     relicCores:     core.relicCores     ?? 0,
                     transmuteCores: core.transmuteCores ?? 0,
-                    prevRelicCores:     prevCore.relicCores     ?? (core.relicCores     ?? 0),
-                    prevTransmuteCores: prevCore.transmuteCores ?? (core.transmuteCores ?? 0),
+                    prevRelicCores:     prevCore ? (prevCore.relicCores     ?? 0) : null,
+                    prevTransmuteCores: prevCore ? (prevCore.transmuteCores ?? 0) : null,
                     lmeScore:     lme.lmeScore  ?? 0,
-                    prevLmeScore: prevLme.lmeScore ?? (lme.lmeScore ?? 0),
+                    prevLmeScore: prevLme ? (prevLme.lmeScore ?? 0) : null,
                     cxRankScore: cxr.cxRankScore ?? 0,
                     cxBossScore: cxb.cxBossScore ?? 0,
                     eeBestScore:     ee     ? (ee.eeBestScore     ?? null) : null,
                     prevEeBestScore: prevEe ? (prevEe.eeBestScore ?? null) : null,
                 };
             });
+        }
+
+        // Individuals: current - previous, or the full current score when no
+        // previous record exists at all (new joiner / stat with no history
+        // yet) - a "0 gain" would misleadingly say nothing changed.
+        function individualGain(current, previous) {
+            return previous === null ? current : (current - previous);
         }
 
         // Members who dropped out of playerStats.current since the last cycle
@@ -905,17 +916,17 @@
                 });
 
             return [...departedIds].map(id => {
-                const prevStat = playerStats.previous[id]      || {};
-                const prevCore = playerCores.previous[id]      || {};
-                const prevLme  = playerLME.previous[id]        || {};
+                const prevStat = playerStats.previous[id];
+                const prevCore = playerCores.previous[id];
+                const prevLme  = playerLME.previous[id];
                 const prevEe   = playerEndersEcho.previous[id];
                 return {
                     id,
-                    prevAtk:            prevStat.atk           ?? 0,
-                    prevRelicCores:     prevCore.relicCores    ?? 0,
-                    prevTransmuteCores: prevCore.transmuteCores ?? 0,
-                    prevLmeScore:       prevLme.lmeScore       ?? 0,
-                    prevEeBestScore:    prevEe ? (prevEe.eeBestScore ?? null) : null,
+                    prevAtk:            prevStat ? (prevStat.atk           ?? 0) : null,
+                    prevRelicCores:     prevCore ? (prevCore.relicCores    ?? 0) : null,
+                    prevTransmuteCores: prevCore ? (prevCore.transmuteCores ?? 0) : null,
+                    prevLmeScore:       prevLme  ? (prevLme.lmeScore       ?? 0) : null,
+                    prevEeBestScore:    prevEe   ? (prevEe.eeBestScore     ?? null) : null,
                 };
             });
         }
@@ -1030,44 +1041,47 @@
             document.getElementById('stats-members-cap').textContent = allPlayers.length + ' / ' + MEMBER_CAP;
 
             const byATK  = [...allPlayers].sort((a, b) => b.atk     - a.atk).slice(0, TOP_N);
-            const byAtkP = [...gainPool].sort((a, b) => b.prevAtk - a.prevAtk).slice(0, TOP_N);
+            const byAtkP = gainPool.filter(p => p.prevAtk !== null)
+                .sort((a, b) => b.prevAtk - a.prevAtk).slice(0, TOP_N);
             const totalATK     = byATK.reduce((s, p)  => s + p.atk,     0);
             const prevTotalATK = byAtkP.reduce((s, p) => s + p.prevAtk, 0);
 
             document.getElementById('stats-total-atk').textContent    = formatNumber(totalATK);
-            document.getElementById('stats-total-atk-gain').innerHTML = formatGainHTML(totalATK - prevTotalATK, true);
+            document.getElementById('stats-total-atk-gain').innerHTML = byAtkP.length > 0 ? formatGainHTML(totalATK - prevTotalATK, true) : '';
             document.getElementById('stats-avg-atk').textContent      = formatNumber(Math.round(totalATK / Math.min(TOP_N, byATK.length)));
 
             const byCores  = [...allPlayers].sort((a, b) => b.relicCores     - a.relicCores).slice(0, TOP_N);
-            const byCorP   = [...gainPool].sort((a, b) => b.prevRelicCores - a.prevRelicCores).slice(0, TOP_N);
+            const byCorP   = gainPool.filter(p => p.prevRelicCores !== null)
+                .sort((a, b) => b.prevRelicCores - a.prevRelicCores).slice(0, TOP_N);
             const totalRelicCores     = byCores.reduce((s, p) => s + p.relicCores,         0);
             const prevTotalRelicCores = byCorP.reduce((s, p)  => s + p.prevRelicCores,     0);
             const totalTransmuteCores     = byCores.reduce((s, p) => s + p.transmuteCores,     0);
             const prevTotalTransmuteCores = byCorP.reduce((s, p) => s + p.prevTransmuteCores,  0);
 
             document.getElementById('stats-total-relic-cores').textContent    = totalRelicCores + '+';
-            document.getElementById('stats-total-relic-cores-gain').innerHTML = formatGainHTML(totalRelicCores - prevTotalRelicCores);
+            document.getElementById('stats-total-relic-cores-gain').innerHTML = byCorP.length > 0 ? formatGainHTML(totalRelicCores - prevTotalRelicCores) : '';
 
             document.getElementById('stats-total-transmute-cores').textContent    = totalTransmuteCores + '+';
-            document.getElementById('stats-total-transmute-cores-gain').innerHTML = formatGainHTML(totalTransmuteCores - prevTotalTransmuteCores);
+            document.getElementById('stats-total-transmute-cores-gain').innerHTML = byCorP.length > 0 ? formatGainHTML(totalTransmuteCores - prevTotalTransmuteCores) : '';
 
             const totalCores     = totalRelicCores + totalTransmuteCores;
             const prevTotalCores = prevTotalRelicCores + prevTotalTransmuteCores;
             document.getElementById('stats-total-cores').textContent    = totalCores + '+';
-            document.getElementById('stats-total-cores-gain').innerHTML = formatGainHTML(totalCores - prevTotalCores);
+            document.getElementById('stats-total-cores-gain').innerHTML = byCorP.length > 0 ? formatGainHTML(totalCores - prevTotalCores) : '';
         }
 
         function calculateLMETabSummary() {
             const byLME    = [...allPlayers].sort((a, b) => b.lmeScore     - a.lmeScore).slice(0, TOP_N);
-            const byLMEP   = [...gainPool].sort((a, b) => b.prevLmeScore - a.prevLmeScore).slice(0, TOP_N);
+            const byLMEP   = gainPool.filter(p => p.prevLmeScore !== null)
+                .sort((a, b) => b.prevLmeScore - a.prevLmeScore).slice(0, TOP_N);
             const n        = Math.min(TOP_N, byLME.length);
             const totalLME = byLME.reduce((s, p) => s + p.lmeScore,     0);
             const prevLME  = byLMEP.reduce((s, p) => s + p.prevLmeScore, 0);
 
             document.getElementById('lme-total-score').textContent    = totalLME.toLocaleString();
-            document.getElementById('lme-total-score-gain').innerHTML = formatGainHTML(totalLME - prevLME);
+            document.getElementById('lme-total-score-gain').innerHTML = byLMEP.length > 0 ? formatGainHTML(totalLME - prevLME) : '';
             document.getElementById('lme-avg-score').textContent      = Math.round(totalLME / n).toLocaleString();
-            document.getElementById('lme-avg-score-gain').innerHTML   = formatGainHTML(Math.round((totalLME - prevLME) / n));
+            document.getElementById('lme-avg-score-gain').innerHTML   = byLMEP.length > 0 ? formatGainHTML(Math.round((totalLME - prevLME) / n)) : '';
         }
 
         function calculateCXTabSummary() {
@@ -1476,9 +1490,9 @@
                              <td class="name-cell ${nameClass}" style="color:${nameColor};">${player.name}</td>`;
 
                 if (currentSubTab === 'stats') {
-                    const coresGain     = player.relicCores - player.prevRelicCores;
-                    const transmuteGain = player.transmuteCores - player.prevTransmuteCores;
-                    const atkGain       = player.atk - player.prevAtk;
+                    const coresGain     = individualGain(player.relicCores, player.prevRelicCores);
+                    const transmuteGain = individualGain(player.transmuteCores, player.prevTransmuteCores);
+                    const atkGain       = individualGain(player.atk, player.prevAtk);
                     cells += `<td class="cores-cell">${player.relicCores}
                         <span style="font-size:10px;display:block;">${formatGainHTML(coresGain)}</span>
                     </td>
@@ -1489,7 +1503,7 @@
                         <span style="font-size:10px;display:block;">${formatGainHTML(atkGain, true)}</span>
                     </td>`;
                 } else if (currentSubTab === 'lme') {
-                    const lmeGain = player.lmeScore - player.prevLmeScore;
+                    const lmeGain = individualGain(player.lmeScore, player.prevLmeScore);
                     cells += `<td style="text-align:center;font-weight:600;color:#f59e0b;">${player.lmeScore.toLocaleString()}
                         <span style="font-size:11px;">${formatGainHTML(lmeGain)}</span>
                     </td>`;
@@ -1499,10 +1513,8 @@
                 } else {
                     if (player.eeBestScore === null) {
                         cells += `<td style="text-align:center;font-weight:600;color:#718096;">—</td>`;
-                    } else if (player.prevEeBestScore === null) {
-                        cells += `<td style="text-align:center;font-weight:600;color:#fb7185;">${formatEEScore(player.eeBestScore)}</td>`;
                     } else {
-                        const eeGain = player.eeBestScore - player.prevEeBestScore;
+                        const eeGain = individualGain(player.eeBestScore, player.prevEeBestScore);
                         cells += `<td style="text-align:center;font-weight:600;color:#fb7185;">${formatEEScore(player.eeBestScore)}
                             <span style="font-size:10px;display:block;">${formatGainHTML(eeGain, 'ee')}</span>
                         </td>`;
@@ -1571,17 +1583,17 @@
                     `"${p.name}"`,
                     `"${p.role}"`,
                     p.atk,
-                    p.atk - p.prevAtk,
+                    individualGain(p.atk, p.prevAtk),
                     p.relicCores,
-                    p.relicCores - p.prevRelicCores,
+                    individualGain(p.relicCores, p.prevRelicCores),
                     p.transmuteCores,
-                    p.transmuteCores - p.prevTransmuteCores,
+                    individualGain(p.transmuteCores, p.prevTransmuteCores),
                     p.lmeScore,
-                    p.lmeScore - p.prevLmeScore,
+                    individualGain(p.lmeScore, p.prevLmeScore),
                     p.cxRankScore,
                     p.cxBossScore,
                     p.eeBestScore === null ? '' : p.eeBestScore,
-                    (p.eeBestScore === null || p.prevEeBestScore === null) ? '' : (p.eeBestScore - p.prevEeBestScore)
+                    p.eeBestScore === null ? '' : individualGain(p.eeBestScore, p.prevEeBestScore)
                 ].join(','))
             ].join('\n');
 
