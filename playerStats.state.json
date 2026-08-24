@@ -9,7 +9,7 @@
     "103516442": {
       "atk": 2831569,
       "name": "DAYO-P",
-      "role": "Member",
+      "role": "Glory Member",
       "roleTier": null
     },
     "106162623": {
@@ -81,7 +81,7 @@
     "26277677": {
       "atk": 2012827,
       "name": "BobBobberson",
-      "role": "Member",
+      "role": "Glory Member",
       "roleTier": null
     },
     "29321884": {
@@ -145,9 +145,9 @@
       "roleTier": null
     },
     "64676255": {
-      "atk": 2223576,
+      "atk": 2232576,
       "name": "\u76feHeathcliff\u5263",
-      "role": "Member",
+      "role": "Glory Member",
       "roleTier": null
     },
     "66607264": {
@@ -241,7 +241,7 @@
       "roleTier": null
     }
   },
-  "cycle_id": "2026-W34",
+  "cycle_id": "2026-W35",
   "previous": {
     "102263647": {
       "atk": 2436979

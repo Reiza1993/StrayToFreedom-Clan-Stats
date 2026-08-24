@@ -1,6 +1,6 @@
 // playerStats.js
 // Freedomˢᵗʳᵃʸ — Roster / Identity (from clan roster fetch)
-// Last Updated: 2026-08-20
+// Last Updated: 2026-08-24
 // Keys are real account IDs from the clan roster fetch.
 // TODO: roleTier/role are not yet reverse-engineered from the clan API
 // response - both are written as null below. Fill them in manually (or
@@ -16,7 +16,7 @@ const playerStats = {
         "103516442": {
             "atk": 2831569,
             "name": "DAYO-P",
-            "role": "Member",
+            "role": "Glory Member",
             "roleTier": null
         },
         "106162623": {
@@ -88,7 +88,7 @@ const playerStats = {
         "26277677": {
             "atk": 2012827,
             "name": "BobBobberson",
-            "role": "Member",
+            "role": "Glory Member",
             "roleTier": null
         },
         "29321884": {
@@ -152,9 +152,9 @@ const playerStats = {
             "roleTier": null
         },
         "64676255": {
-            "atk": 2223576,
+            "atk": 2232576,
             "name": "盾Heathcliff剣",
-            "role": "Member",
+            "role": "Glory Member",
             "roleTier": null
         },
         "66607264": {
