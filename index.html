@@ -1075,18 +1075,18 @@
             const totalResonanceChips     = byCores.reduce((s, p) => s + p.resonanceChips,     0);
             const prevTotalResonanceChips = byCorP.reduce((s, p) => s + p.prevResonanceChips,  0);
 
-            document.getElementById('stats-total-relic-cores').textContent    = totalRelicCores + '+';
+            document.getElementById('stats-total-relic-cores').textContent    = totalRelicCores.toLocaleString();
             document.getElementById('stats-total-relic-cores-gain').innerHTML = byCorP.length > 0 ? formatGainHTML(totalRelicCores - prevTotalRelicCores) : '';
 
-            document.getElementById('stats-total-transmute-cores').textContent    = totalTransmuteCores + '+';
+            document.getElementById('stats-total-transmute-cores').textContent    = totalTransmuteCores.toLocaleString();
             document.getElementById('stats-total-transmute-cores-gain').innerHTML = byCorP.length > 0 ? formatGainHTML(totalTransmuteCores - prevTotalTransmuteCores) : '';
 
-            document.getElementById('stats-total-resonance-chips').textContent    = totalResonanceChips + '+';
+            document.getElementById('stats-total-resonance-chips').textContent    = totalResonanceChips.toLocaleString();
             document.getElementById('stats-total-resonance-chips-gain').innerHTML = byCorP.length > 0 ? formatGainHTML(totalResonanceChips - prevTotalResonanceChips) : '';
 
             const totalCores     = totalRelicCores + totalTransmuteCores + totalResonanceChips;
             const prevTotalCores = prevTotalRelicCores + prevTotalTransmuteCores + prevTotalResonanceChips;
-            document.getElementById('stats-total-cores').textContent    = totalCores + '+';
+            document.getElementById('stats-total-cores').textContent    = totalCores.toLocaleString();
             document.getElementById('stats-total-cores-gain').innerHTML = byCorP.length > 0 ? formatGainHTML(totalCores - prevTotalCores) : '';
         }
 
@@ -1360,10 +1360,10 @@
                     <td style="padding: 10px 8px; color: #e2e8f0; font-weight: 600; white-space: nowrap;">${clan.name}</td>
                     <td style="padding: 10px 6px; text-align: center; color: #ffd700; font-weight: 700;">${(clan.lunarPoints ?? 0).toLocaleString()}</td>
                     <td style="padding: 10px 6px; text-align: center; color: #e2e8f0; font-weight: 600;">${formatNumber(clan.totalAtk || 0)}</td>
-                    <td style="padding: 10px 6px; text-align: center; color: #b794f6; font-weight: 600;">${relic === null ? '—' : relic.toLocaleString() + '+'}</td>
-                    <td style="padding: 10px 6px; text-align: center; color: #b794f6; font-weight: 600;">${transmute === null ? '—' : transmute.toLocaleString() + '+'}</td>
-                    <td style="padding: 10px 6px; text-align: center; color: #b794f6; font-weight: 600;">${resonance === null ? '—' : resonance.toLocaleString() + '+'}</td>
-                    <td style="padding: 10px 6px; text-align: center; color: #b794f6; font-weight: 700;">${combined === null ? '—' : combined.toLocaleString() + '+'}</td>
+                    <td style="padding: 10px 6px; text-align: center; color: #b794f6; font-weight: 600;">${relic === null ? '—' : relic.toLocaleString()}</td>
+                    <td style="padding: 10px 6px; text-align: center; color: #b794f6; font-weight: 600;">${transmute === null ? '—' : transmute.toLocaleString()}</td>
+                    <td style="padding: 10px 6px; text-align: center; color: #b794f6; font-weight: 600;">${resonance === null ? '—' : resonance.toLocaleString()}</td>
+                    <td style="padding: 10px 6px; text-align: center; color: #b794f6; font-weight: 700;">${combined === null ? '—' : combined.toLocaleString()}</td>
                 `;
                 tbody.appendChild(row);
             });
