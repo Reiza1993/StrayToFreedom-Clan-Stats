@@ -494,6 +494,9 @@
                                 <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 10px 6px; text-align: center; font-weight: 600; font-size: 10px; text-transform: uppercase; letter-spacing: 0.2px; white-space: nowrap;">
                                     <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/TransmutaCore.png" alt="Transmute Cores" style="width:18px;height:18px;vertical-align:middle;" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><span style="display:none;" data-i18n="table.col.transmute_cores">Transmute Cores</span>
                                 </th>
+                                <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 10px 6px; text-align: center; font-weight: 600; font-size: 10px; text-transform: uppercase; letter-spacing: 0.2px; white-space: nowrap;">
+                                    <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Resonance%20Chips.png" alt="Resonance Chips" style="width:18px;height:18px;vertical-align:middle;" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><span style="display:none;" data-i18n="table.col.resonance_chips">Resonance Chips</span>
+                                </th>
                                 <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 10px 6px; text-align: center; font-weight: 600; font-size: 10px; text-transform: uppercase; letter-spacing: 0.2px; white-space: nowrap;" data-i18n="stat.total_cores">Total Cores</th>
                             </tr>
                         </thead>
@@ -511,7 +514,8 @@
                         <button class="lunar-mode-btn active" data-mode="atk" onclick="setLunarMemberMode('atk')" data-i18n="lunar.mode_atk">Attack</button>
                         <button class="lunar-mode-btn" data-mode="cores" onclick="setLunarMemberMode('cores')">
                             <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Relic%20Cores.png" alt="Relic Cores" style="width:14px;height:14px;vertical-align:middle;" onerror="this.style.display='none';"> -
-                            <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/TransmutaCore.png" alt="Transmute Cores" style="width:14px;height:14px;vertical-align:middle;" onerror="this.style.display='none';">
+                            <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/TransmutaCore.png" alt="Transmute Cores" style="width:14px;height:14px;vertical-align:middle;" onerror="this.style.display='none';"> -
+                            <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Resonance%20Chips.png" alt="Resonance Chips" style="width:14px;height:14px;vertical-align:middle;" onerror="this.style.display='none';">
                         </button>
                     </div>
 
@@ -597,6 +601,11 @@
                         <div class="calc-stat-label"><span data-i18n="stat.total_label">Total</span> <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/TransmutaCore.png" alt="Transmute Cores" style="width: 14px; height: 14px; vertical-align: middle;" onerror="this.style.display='none';"> <span style="font-size:8px; opacity:0.6;">(Top 30)</span></div>
                         <div class="calc-stat-value" style="color: #b794f6;" id="stats-total-transmute-cores">—</div>
                         <div class="calc-stat-gain" id="stats-total-transmute-cores-gain">—</div>
+                    </div>
+                    <div class="calc-stat-card" style="border-color: #44337a;">
+                        <div class="calc-stat-label"><span data-i18n="stat.total_label">Total</span> <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Resonance%20Chips.png" alt="Resonance Chips" style="width: 14px; height: 14px; vertical-align: middle;" onerror="this.style.display='none';"> <span style="font-size:8px; opacity:0.6;">(Top 30)</span></div>
+                        <div class="calc-stat-value" style="color: #b794f6;" id="stats-total-resonance-chips">—</div>
+                        <div class="calc-stat-gain" id="stats-total-resonance-chips-gain">—</div>
                     </div>
                     <div class="calc-stat-card" style="border-color: #553c9a;">
                         <div class="calc-stat-label"><span data-i18n="stat.avg_atk">Avg ATK</span> <span style="font-size:8px; opacity:0.6;">(Top 30)</span></div>
@@ -863,6 +872,8 @@
         // all (brand new joiner, or a stat that hasn't had a cycle roll over
         // yet) - distinct from a real previous value of 0. individualGain()
         // below is what turns that null into "gain = current score".
+        // Note: playerCores.js's raw field for this is "chipsCount" - the
+        // roster/UI layer calls it resonanceChips (Resonance Chips) throughout.
         function buildRoster() {
             return Object.entries(playerStats.current).map(([id, stat]) => {
                 const prevStat = playerStats.previous[id];
@@ -880,8 +891,10 @@
                     prevAtk:        prevStat ? (prevStat.atk ?? 0) : null,
                     relicCores:     core.relicCores     ?? 0,
                     transmuteCores: core.transmuteCores ?? 0,
+                    resonanceChips: core.chipsCount ?? 0,
                     prevRelicCores:     prevCore ? (prevCore.relicCores     ?? 0) : null,
                     prevTransmuteCores: prevCore ? (prevCore.transmuteCores ?? 0) : null,
+                    prevResonanceChips: prevCore ? (prevCore.chipsCount ?? 0) : null,
                     lmeScore:     lme.lmeScore  ?? 0,
                     prevLmeScore: prevLme ? (prevLme.lmeScore ?? 0) : null,
                     cxRankScore: cxr.cxRankScore ?? 0,
@@ -925,6 +938,7 @@
                     prevAtk:            prevStat ? (prevStat.atk           ?? 0) : null,
                     prevRelicCores:     prevCore ? (prevCore.relicCores    ?? 0) : null,
                     prevTransmuteCores: prevCore ? (prevCore.transmuteCores ?? 0) : null,
+                    prevResonanceChips: prevCore ? (prevCore.chipsCount ?? 0) : null,
                     prevLmeScore:       prevLme  ? (prevLme.lmeScore       ?? 0) : null,
                     prevEeBestScore:    prevEe   ? (prevEe.eeBestScore     ?? null) : null,
                 };
@@ -950,6 +964,7 @@
                 { value: 'attack',    key: 'ctrl.sort_atk' },
                 { value: 'cores',     key: 'ctrl.sort_cores' },
                 { value: 'transmute', key: 'ctrl.sort_transmute' },
+                { value: 'resonance', key: 'ctrl.sort_resonance' },
                 { value: 'name',      key: 'ctrl.sort_name' },
                 { value: 'role',      key: 'ctrl.sort_role' }
             ],
@@ -1057,6 +1072,8 @@
             const prevTotalRelicCores = byCorP.reduce((s, p)  => s + p.prevRelicCores,     0);
             const totalTransmuteCores     = byCores.reduce((s, p) => s + p.transmuteCores,     0);
             const prevTotalTransmuteCores = byCorP.reduce((s, p) => s + p.prevTransmuteCores,  0);
+            const totalResonanceChips     = byCores.reduce((s, p) => s + p.resonanceChips,     0);
+            const prevTotalResonanceChips = byCorP.reduce((s, p) => s + p.prevResonanceChips,  0);
 
             document.getElementById('stats-total-relic-cores').textContent    = totalRelicCores + '+';
             document.getElementById('stats-total-relic-cores-gain').innerHTML = byCorP.length > 0 ? formatGainHTML(totalRelicCores - prevTotalRelicCores) : '';
@@ -1064,8 +1081,11 @@
             document.getElementById('stats-total-transmute-cores').textContent    = totalTransmuteCores + '+';
             document.getElementById('stats-total-transmute-cores-gain').innerHTML = byCorP.length > 0 ? formatGainHTML(totalTransmuteCores - prevTotalTransmuteCores) : '';
 
-            const totalCores     = totalRelicCores + totalTransmuteCores;
-            const prevTotalCores = prevTotalRelicCores + prevTotalTransmuteCores;
+            document.getElementById('stats-total-resonance-chips').textContent    = totalResonanceChips + '+';
+            document.getElementById('stats-total-resonance-chips-gain').innerHTML = byCorP.length > 0 ? formatGainHTML(totalResonanceChips - prevTotalResonanceChips) : '';
+
+            const totalCores     = totalRelicCores + totalTransmuteCores + totalResonanceChips;
+            const prevTotalCores = prevTotalRelicCores + prevTotalTransmuteCores + prevTotalResonanceChips;
             document.getElementById('stats-total-cores').textContent    = totalCores + '+';
             document.getElementById('stats-total-cores-gain').innerHTML = byCorP.length > 0 ? formatGainHTML(totalCores - prevTotalCores) : '';
         }
@@ -1302,11 +1322,14 @@
             });
         }
 
+        // lunarDetails.js's raw clan field for this is "totalChips" (Resonance
+        // Chips throughout the UI).
         function lunarCombinedCores(clan) {
-            const relic     = clan.totalRelicCores     ?? null;
-            const transmute = clan.totalTransmuteCores ?? null;
-            if (relic === null && transmute === null) return null;
-            return (relic || 0) + (transmute || 0);
+            const relic     = clan.totalRelicCores      ?? null;
+            const transmute = clan.totalTransmuteCores  ?? null;
+            const resonance = clan.totalChips  ?? null;
+            if (relic === null && transmute === null && resonance === null) return null;
+            return (relic || 0) + (transmute || 0) + (resonance || 0);
         }
 
         function loadLunarDetails() {
@@ -1321,8 +1344,9 @@
             tbody.innerHTML = '';
             lunarClanOrder.forEach((clanId, index) => {
                 const clan = lunarDetails[clanId];
-                const relic     = clan.totalRelicCores     ?? null;
-                const transmute = clan.totalTransmuteCores ?? null;
+                const relic     = clan.totalRelicCores      ?? null;
+                const transmute = clan.totalTransmuteCores  ?? null;
+                const resonance = clan.totalChips  ?? null;
                 const combined  = lunarCombinedCores(clan);
 
                 const row = document.createElement('tr');
@@ -1338,6 +1362,7 @@
                     <td style="padding: 10px 6px; text-align: center; color: #e2e8f0; font-weight: 600;">${formatNumber(clan.totalAtk || 0)}</td>
                     <td style="padding: 10px 6px; text-align: center; color: #b794f6; font-weight: 600;">${relic === null ? '—' : relic.toLocaleString() + '+'}</td>
                     <td style="padding: 10px 6px; text-align: center; color: #b794f6; font-weight: 600;">${transmute === null ? '—' : transmute.toLocaleString() + '+'}</td>
+                    <td style="padding: 10px 6px; text-align: center; color: #b794f6; font-weight: 600;">${resonance === null ? '—' : resonance.toLocaleString() + '+'}</td>
                     <td style="padding: 10px 6px; text-align: center; color: #b794f6; font-weight: 700;">${combined === null ? '—' : combined.toLocaleString() + '+'}</td>
                 `;
                 tbody.appendChild(row);
@@ -1394,10 +1419,11 @@
                     statEl.style.color = '#e2e8f0';
                     statEl.textContent = formatNumber(member.atk);
                 } else {
-                    const relic     = member.relicCores     ?? null;
-                    const transmute = member.transmuteCores ?? null;
+                    const relic     = member.relicCores      ?? null;
+                    const transmute = member.transmuteCores  ?? null;
+                    const resonance = member.chipsCount      ?? null;
                     statEl.style.color = '#b794f6';
-                    statEl.innerHTML = `${relic === null ? '—' : relic.toLocaleString()} <span style="color:#4a5568;">-</span> ${transmute === null ? '—' : transmute.toLocaleString()}`;
+                    statEl.innerHTML = `${relic === null ? '—' : relic.toLocaleString()} <span style="color:#4a5568;">-</span> ${transmute === null ? '—' : transmute.toLocaleString()} <span style="color:#4a5568;">-</span> ${resonance === null ? '—' : resonance.toLocaleString()}`;
                 }
 
                 row.appendChild(rankEl);
@@ -1453,6 +1479,7 @@
                     <th data-i18n="table.col.player_name">Player Name</th>
                     <th><img src="${ICON_BASE}Relic%20Cores.png" alt="Relic Cores" style="width:20px;height:20px;vertical-align:middle;" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><span style="display:none;" data-i18n="table.col.relic_cores">Relic Cores</span></th>
                     <th><img src="${ICON_BASE}TransmutaCore.png" alt="Transmute Cores" style="width:20px;height:20px;vertical-align:middle;" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><span style="display:none;" data-i18n="table.col.transmute_cores">Transmute Cores</span></th>
+                    <th><img src="${ICON_BASE}Resonance%20Chips.png" alt="Resonance Chips" style="width:20px;height:20px;vertical-align:middle;" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><span style="display:none;" data-i18n="table.col.resonance_chips">Resonance Chips</span></th>
                     <th><img src="${ICON_BASE}ATK.png" alt="ATK" style="width:20px;height:20px;vertical-align:middle;" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><span style="display:none;" data-i18n="table.col.atk">ATK</span></th>`;
             } else if (currentSubTab === 'lme') {
                 tr.innerHTML = `
@@ -1492,12 +1519,16 @@
                 if (currentSubTab === 'stats') {
                     const coresGain     = individualGain(player.relicCores, player.prevRelicCores);
                     const transmuteGain = individualGain(player.transmuteCores, player.prevTransmuteCores);
+                    const resonanceGain = individualGain(player.resonanceChips, player.prevResonanceChips);
                     const atkGain       = individualGain(player.atk, player.prevAtk);
                     cells += `<td class="cores-cell">${player.relicCores}
                         <span style="font-size:10px;display:block;">${formatGainHTML(coresGain)}</span>
                     </td>
                     <td class="cores-cell">${player.transmuteCores}
                         <span style="font-size:10px;display:block;">${formatGainHTML(transmuteGain)}</span>
+                    </td>
+                    <td class="cores-cell">${player.resonanceChips}
+                        <span style="font-size:10px;display:block;">${formatGainHTML(resonanceGain)}</span>
                     </td>
                     <td style="text-align:center;font-weight:600;color:#e2e8f0;">${formatNumber(player.atk)}
                         <span style="font-size:10px;display:block;">${formatGainHTML(atkGain, true)}</span>
@@ -1538,6 +1569,9 @@
                 case 'transmute':
                     filteredData.sort((a, b) => b.transmuteCores - a.transmuteCores);
                     break;
+                case 'resonance':
+                    filteredData.sort((a, b) => b.resonanceChips - a.resonanceChips);
+                    break;
                 case 'attack':
                     filteredData.sort((a, b) => b.atk - a.atk);
                     break;
@@ -1575,7 +1609,7 @@
         }
 
         function exportToCSV() {
-            const headers = ['Rank', 'Player Name', 'Role', 'ATK', 'ATK Gain', 'Relic Cores', 'Cores Gain', 'Transmute Cores', 'Transmute Gain', 'LME Score', 'LME Gain', 'CX Rank', 'CX Boss', 'EE Best Score', 'EE Best Score Gain'];
+            const headers = ['Rank', 'Player Name', 'Role', 'ATK', 'ATK Gain', 'Relic Cores', 'Cores Gain', 'Transmute Cores', 'Transmute Gain', 'Resonance Chips', 'Resonance Chips Gain', 'LME Score', 'LME Gain', 'CX Rank', 'CX Boss', 'EE Best Score', 'EE Best Score Gain'];
             const csvContent = [
                 headers.join(','),
                 ...allPlayers.map((p, index) => [
@@ -1588,6 +1622,8 @@
                     individualGain(p.relicCores, p.prevRelicCores),
                     p.transmuteCores,
                     individualGain(p.transmuteCores, p.prevTransmuteCores),
+                    p.resonanceChips,
+                    individualGain(p.resonanceChips, p.prevResonanceChips),
                     p.lmeScore,
                     individualGain(p.lmeScore, p.prevLmeScore),
                     p.cxRankScore,
