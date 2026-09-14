@@ -1,6 +1,6 @@
 // playerStats.js
 // Freedomˢᵗʳᵃʸ — Roster / Identity (from clan roster fetch)
-// Last Updated: 2026-09-10
+// Last Updated: 2026-09-14
 // Keys are real account IDs from the clan roster fetch.
 // TODO: roleTier/role are not yet reverse-engineered from the clan API
 // response - both are written as null below. Fill them in manually (or
@@ -10,7 +10,7 @@ const playerStats = {
         "100876140": {
             "atk": 2535211,
             "name": "Scoundrel536",
-            "role": "Member",
+            "role": "Glory Member",
             "roleTier": null
         },
         "102263647": {
@@ -34,7 +34,7 @@ const playerStats = {
         "10754439": {
             "atk": 1873051,
             "name": "HakiLuffy",
-            "role": "Glory Member",
+            "role": "Member",
             "roleTier": null
         },
         "108546985": {
@@ -46,13 +46,13 @@ const playerStats = {
         "112772047": {
             "atk": 1863099,
             "name": "VictorMolusco",
-            "role": "Member",
+            "role": "Glory Member",
             "roleTier": null
         },
         "113690788": {
             "atk": 1824703,
             "name": "Apathy_",
-            "role": "Glory Member",
+            "role": "Member",
             "roleTier": null
         },
         "11463573": {
@@ -70,7 +70,7 @@ const playerStats = {
         "18115624": {
             "atk": 2551478,
             "name": "Nubis",
-            "role": "Member",
+            "role": "Glory Member",
             "roleTier": null
         },
         "18297536": {
@@ -94,7 +94,7 @@ const playerStats = {
         "29321884": {
             "atk": 3080438,
             "name": "RABBIT5",
-            "role": "Glory Member",
+            "role": "Member",
             "roleTier": null
         },
         "29904762": {
@@ -112,7 +112,7 @@ const playerStats = {
         "32556489": {
             "atk": 1784814,
             "name": "Bensayyten",
-            "role": "Member",
+            "role": "Glory Member",
             "roleTier": null
         },
         "35869301": {
@@ -124,7 +124,7 @@ const playerStats = {
         "36484758": {
             "atk": 1642000,
             "name": "Belthazar",
-            "role": "Member",
+            "role": "Glory Member",
             "roleTier": null
         },
         "41742773": {
@@ -154,13 +154,13 @@ const playerStats = {
         "64676255": {
             "atk": 2303724,
             "name": "盾Heathcliff剣",
-            "role": "Glory Member",
+            "role": "Member",
             "roleTier": null
         },
         "66607264": {
             "atk": 2070523,
             "name": "Player 66607264",
-            "role": "Glory Member",
+            "role": "Member",
             "roleTier": null
         },
         "69676999": {
@@ -202,7 +202,7 @@ const playerStats = {
         "80018314": {
             "atk": 1798192,
             "name": "Player 80018314",
-            "role": "Glory Member",
+            "role": "Member",
             "roleTier": null
         },
         "80972473": {
@@ -238,7 +238,7 @@ const playerStats = {
         "88203044": {
             "atk": 2204760,
             "name": "p88203044",
-            "role": "Member",
+            "role": "Glory Member",
             "roleTier": null
         },
         "89511116": {
