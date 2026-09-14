@@ -21,6 +21,14 @@ const clanStats = {
 // Add new results to the TOP of this array
 const lmeHistory = [
     {
+        lmeNumber: 59,
+        rank: 2,
+        rankImage: "https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Rank2.png",
+        atkDefPoints: 4,
+        medals: 100641,
+        league: "Champion"
+    },
+    {
         lmeNumber: 58,
         rank: 2,
         rankImage: "https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Rank2.png",
