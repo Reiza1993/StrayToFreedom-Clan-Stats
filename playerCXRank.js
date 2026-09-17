@@ -13,7 +13,7 @@ const playerCXRank = {
         "cxRankScore": 400
     },
     "106162623": {
-        "cxRankScore": 0
+        "cxRankScore": 400
     },
     "10754439": {
         "cxRankScore": 400
@@ -28,7 +28,7 @@ const playerCXRank = {
         "cxRankScore": 0
     },
     "11463573": {
-        "cxRankScore": 0
+        "cxRankScore": 400
     },
     "115742768": {
         "cxRankScore": 0
@@ -43,7 +43,7 @@ const playerCXRank = {
         "cxRankScore": 0
     },
     "29321884": {
-        "cxRankScore": 0
+        "cxRankScore": 400
     },
     "29904762": {
         "cxRankScore": 0
@@ -58,7 +58,7 @@ const playerCXRank = {
         "cxRankScore": 0
     },
     "36484758": {
-        "cxRankScore": 0
+        "cxRankScore": 400
     },
     "41742773": {
         "cxRankScore": 400
