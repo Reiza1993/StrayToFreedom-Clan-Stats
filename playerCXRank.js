@@ -43,7 +43,7 @@ const playerCXRank = {
         "cxRankScore": 0
     },
     "29321884": {
-        "cxRankScore": 1200
+        "cxRankScore": 1300
     },
     "29904762": {
         "cxRankScore": 0
@@ -109,7 +109,7 @@ const playerCXRank = {
         "cxRankScore": 400
     },
     "87244358": {
-        "cxRankScore": 0
+        "cxRankScore": 400
     },
     "87954282": {
         "cxRankScore": 0
