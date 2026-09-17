@@ -4,31 +4,31 @@
 const playerCXRank = {
     current: {
     "100876140": {
-        "cxRankScore": 800
+        "cxRankScore": 1200
     },
     "102263647": {
-        "cxRankScore": 0
+        "cxRankScore": 400
     },
     "103516442": {
-        "cxRankScore": 1200
+        "cxRankScore": 1400
     },
     "106162623": {
         "cxRankScore": 400
     },
     "10754439": {
-        "cxRankScore": 1200
+        "cxRankScore": 1600
     },
     "108546985": {
         "cxRankScore": 0
     },
     "112772047": {
-        "cxRankScore": 0
+        "cxRankScore": 400
     },
     "113690788": {
-        "cxRankScore": 400
+        "cxRankScore": 800
     },
     "11463573": {
-        "cxRankScore": 400
+        "cxRankScore": 700
     },
     "115742768": {
         "cxRankScore": 0
@@ -49,10 +49,10 @@ const playerCXRank = {
         "cxRankScore": 0
     },
     "30658936": {
-        "cxRankScore": 0
+        "cxRankScore": 400
     },
     "32556489": {
-        "cxRankScore": 400
+        "cxRankScore": 800
     },
     "35869301": {
         "cxRankScore": 0
@@ -61,43 +61,43 @@ const playerCXRank = {
         "cxRankScore": 1600
     },
     "41742773": {
-        "cxRankScore": 800
+        "cxRankScore": 1200
     },
     "51071110": {
         "cxRankScore": 400
     },
     "59566866": {
-        "cxRankScore": 400
+        "cxRankScore": 800
     },
     "60687252": {
         "cxRankScore": 0
     },
     "64676255": {
-        "cxRankScore": 1200
+        "cxRankScore": 1400
     },
     "66607264": {
-        "cxRankScore": 1300
+        "cxRankScore": 1700
     },
     "69676999": {
         "cxRankScore": 0
     },
     "70603922": {
-        "cxRankScore": 0
+        "cxRankScore": 400
     },
     "71028860": {
         "cxRankScore": 0
     },
     "72894129": {
-        "cxRankScore": 0
+        "cxRankScore": 400
     },
     "75174428": {
-        "cxRankScore": 0
+        "cxRankScore": 400
     },
     "79510960": {
-        "cxRankScore": 300
+        "cxRankScore": 700
     },
     "80018314": {
-        "cxRankScore": 600
+        "cxRankScore": 1000
     },
     "80972473": {
         "cxRankScore": 0
@@ -112,13 +112,13 @@ const playerCXRank = {
         "cxRankScore": 400
     },
     "87954282": {
-        "cxRankScore": 0
+        "cxRankScore": 400
     },
     "88203044": {
         "cxRankScore": 800
     },
     "89511116": {
-        "cxRankScore": 0
+        "cxRankScore": 400
     }
 },
     previous: {}
