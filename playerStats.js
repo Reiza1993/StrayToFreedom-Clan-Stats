@@ -1,6 +1,6 @@
 // playerStats.js
 // Freedomˢᵗʳᵃʸ — Roster / Identity (from clan roster fetch)
-// Last Updated: 2026-09-17
+// Last Updated: 2026-09-21
 // Keys are real account IDs from the clan roster fetch.
 // TODO: roleTier/role are not yet reverse-engineered from the clan API
 // response - both are written as null below. Fill them in manually (or
@@ -10,7 +10,7 @@ const playerStats = {
         "100876140": {
             "atk": 2304389,
             "name": "Scoundrel536",
-            "role": "Glory Member",
+            "role": "Member",
             "roleTier": null
         },
         "102263647": {
@@ -22,7 +22,7 @@ const playerStats = {
         "103516442": {
             "atk": 2857068,
             "name": "DAYO-P",
-            "role": "Member",
+            "role": "Glory Member",
             "roleTier": null
         },
         "106162623": {
@@ -46,7 +46,7 @@ const playerStats = {
         "112772047": {
             "atk": 1872274,
             "name": "VictorMolusco",
-            "role": "Glory Member",
+            "role": "Member",
             "roleTier": null
         },
         "113690788": {
@@ -70,7 +70,7 @@ const playerStats = {
         "18115624": {
             "atk": 2622756,
             "name": "Nubis",
-            "role": "Glory Member",
+            "role": "Member",
             "roleTier": null
         },
         "18297536": {
@@ -106,7 +106,7 @@ const playerStats = {
         "32556489": {
             "atk": 1831606,
             "name": "Bensayyten",
-            "role": "Glory Member",
+            "role": "Member",
             "roleTier": null
         },
         "35869301": {
@@ -118,7 +118,7 @@ const playerStats = {
         "36484758": {
             "atk": 1650140,
             "name": "Belthazar",
-            "role": "Glory Member",
+            "role": "Member",
             "roleTier": null
         },
         "41742773": {
@@ -136,7 +136,7 @@ const playerStats = {
         "59566866": {
             "atk": 2075966,
             "name": "FlyingDutchy",
-            "role": "Member",
+            "role": "Glory Member",
             "roleTier": null
         },
         "60687252": {
@@ -190,7 +190,7 @@ const playerStats = {
         "79510960": {
             "atk": 1641750,
             "name": "theLP",
-            "role": "Member",
+            "role": "Glory Member",
             "roleTier": null
         },
         "80018314": {
@@ -208,13 +208,13 @@ const playerStats = {
         "83339881": {
             "atk": 3423073,
             "name": "Fl3xas",
-            "role": "Member",
+            "role": "Glory Member",
             "roleTier": null
         },
         "83861839": {
             "atk": 2211611,
             "name": "groggen",
-            "role": "Member",
+            "role": "Glory Member",
             "roleTier": null
         },
         "87244358": {
@@ -226,13 +226,13 @@ const playerStats = {
         "87954282": {
             "atk": 2475991,
             "name": "SngphO",
-            "role": "Member",
+            "role": "Glory Member",
             "roleTier": null
         },
         "88203044": {
             "atk": 2290116,
             "name": "p88203044",
-            "role": "Glory Member",
+            "role": "Member",
             "roleTier": null
         },
         "89511116": {
