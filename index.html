@@ -231,7 +231,9 @@
             font-size: 11px;
         }
         .lme-cycle-table th {
-            color: #718096;
+            background: transparent;
+            color: #a0aec0;
+            font-weight: 600;
             font-size: 9px;
             text-transform: uppercase;
             letter-spacing: 0.3px;
@@ -248,6 +250,7 @@
         .lme-cycle-table tbody tr.lme-cycle-own-row { background: rgba(104, 211, 145, 0.12); }
         .lme-cycle-table th.lme-sortable-th { cursor: pointer; user-select: none; white-space: nowrap; }
         .lme-cycle-table th.lme-sortable-th:hover { color: #e2e8f0; }
+        .lme-cycle-table th img { width: 16px; height: 16px; vertical-align: middle; }
 
         .gain-positive { color: #10b981; }
         .gain-negative { color: #f56565; }
@@ -1235,6 +1238,19 @@
         //  array is intentionally NOT used here for now.
         // ══════════════════════════════════════════════
         const LME_CYCLES_FOLDER = 'Lunar Mine Expedition';
+        const LME_RANK_COLORS = { 1: '#ffd700', 2: '#c0c0c0', 3: '#cd7930', 4: '#f56565' };
+
+        // Rank 1-3 render as the Game Icons rank badges (matching the rest
+        // of the app); rank 4 (no icon file for it) and any missing rank
+        // fall back to a colored "#N" label.
+        function rankBadgeHTML(rank) {
+            if (!rank) return '<span style="color:#718096;">—</span>';
+            const color = LME_RANK_COLORS[rank] || '#f56565';
+            if (rank >= 1 && rank <= 3) {
+                return `<img src="${ICON_BASE}Rank${rank}.png" alt="#${rank}" style="width:20px; height:20px; vertical-align:middle;" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><span style="display:none; color:${color}; font-weight:700;">#${rank}</span>`;
+            }
+            return `<span style="color:${color}; font-weight:700;">#${rank}</span>`;
+        }
 
         function escapeHtml(str) {
             const div = document.createElement('div');
@@ -1319,10 +1335,9 @@
             if (!detail) return;
             detail.innerHTML = '';
 
-            const rankColors = { 1: '#ffd700', 2: '#c0c0c0', 3: '#cd7930', 4: '#f56565' };
             const ranking = [...(cycle.finalRanking || [])].sort((a, b) => a.rank - b.rank);
             const own = ranking.find(c => c.clanId === cycle.freedomClanId) || {};
-            const rankColor = rankColors[own.rank] || '#f56565';
+            const rankColor = LME_RANK_COLORS[own.rank] || '#f56565';
 
             const panel = document.createElement('div');
             panel.className = 'lme-cycle-card';
@@ -1353,7 +1368,7 @@
         function buildLMECycleBody(cycle, ranking, own) {
             const rankRows = ranking.map(c => `
                 <tr class="${c.clanId === cycle.freedomClanId ? 'lme-cycle-own-row' : ''}">
-                    <td>#${c.rank}</td>
+                    <td>${rankBadgeHTML(c.rank)}</td>
                     <td style="font-weight:600;">${escapeHtml(c.clanName)}</td>
                     <td style="color:#68d391;">${(c.medals ?? 0).toLocaleString()}</td>
                     <td>${(c.p1TotalScore ?? 0).toLocaleString()}</td>
@@ -1389,7 +1404,14 @@
 
                 <div class="lme-cycle-section-label">Lunar Details</div>
                 <table class="lme-cycle-table">
-                    <thead><tr><th>Clan</th><th>🌙 Pts</th><th>ATK</th><th>Chips</th><th>Relic</th><th>Transmute</th></tr></thead>
+                    <thead><tr>
+                        <th>Clan</th>
+                        <th>🌙 Pts</th>
+                        <th>ATK</th>
+                        <th><img src="${ICON_BASE}Resonance%20Chips.png" alt="Chips" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><span style="display:none;">Chips</span></th>
+                        <th><img src="${ICON_BASE}Relic%20Cores.png" alt="Relic Cores" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><span style="display:none;">Relic</span></th>
+                        <th><img src="${ICON_BASE}TransmutaCore.png" alt="Transmute Cores" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><span style="display:none;">Transmute</span></th>
+                    </tr></thead>
                     <tbody>${lunarRows}</tbody>
                 </table>
 
