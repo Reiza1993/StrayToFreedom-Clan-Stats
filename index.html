@@ -241,6 +241,10 @@
             text-align: center;
         }
         .lme-cycle-table th:first-child, .lme-cycle-table td:first-child { text-align: left; }
+        /* Rank is the first column in the Final Ranking table, but unlike
+           the other tables' first column (a name) it holds a badge/number
+           and should stay centered, not inherit the name-column left-align. */
+        .lme-cycle-table th.lme-rank-col, .lme-cycle-table td.lme-rank-col { text-align: center; }
         .lme-cycle-table td {
             padding: 5px 6px;
             text-align: center;
@@ -848,13 +852,19 @@
         }
 
         // ── SPA Navigation ──
-        const VIEW_IDS = ['view-glory', 'view-lme', 'view-home', 'view-alumni', 'view-settings'];
-        const NAV_IDS  = ['nav-glory',  'nav-lme',  'nav-home',  'nav-alumni',  'nav-settings'];
-        let currentView = 2; // Home is the default
+        const VIEW_IDS  = ['view-glory', 'view-lme', 'view-home', 'view-alumni', 'view-settings'];
+        const NAV_IDS   = ['nav-glory',  'nav-lme',  'nav-home',  'nav-alumni',  'nav-settings'];
+        const HOME_VIEW = 2;
+        let currentView = HOME_VIEW; // Home is the default
+
+        // The "Freedom Protocol" banner is only relevant on the Home view.
+        document.getElementById('main-header').style.display = currentView === HOME_VIEW ? '' : 'none';
 
         function goToView(idx) {
             if (idx === currentView) return;
             if (idx === 0) populateGloryView();
+
+            document.getElementById('main-header').style.display = idx === HOME_VIEW ? '' : 'none';
 
             const dir   = idx > currentView ? 1 : -1;
             const outEl = document.getElementById(VIEW_IDS[currentView]);
@@ -1343,7 +1353,6 @@
 
             const ranking = [...(cycle.finalRanking || [])].sort((a, b) => a.rank - b.rank);
             const own = ranking.find(c => c.clanId === cycle.freedomClanId) || {};
-            const rankColor = LME_RANK_COLORS[own.rank] || '#f56565';
 
             const panel = document.createElement('div');
             panel.className = 'lme-cycle-card';
@@ -1353,7 +1362,6 @@
             header.innerHTML = `
                 <div style="display:flex; align-items:center; gap:8px; min-width:0;">
                     <span style="font-weight:700; color:#e2e8f0; font-size:13px; white-space:nowrap;">LME #${cycle.lmeNumber}</span>
-                    <span style="color:${rankColor}; font-weight:700; font-size:12px; white-space:nowrap;">#${own.rank ?? '—'}</span>
                 </div>
                 <div style="display:flex; align-items:center; gap:10px; flex-shrink:0;">
                     <span style="color:#68d391; font-size:11px; font-weight:600; white-space:nowrap;">${(own.medals ?? 0).toLocaleString()}</span>
@@ -1374,7 +1382,7 @@
         function buildLMECycleBody(cycle, ranking, own) {
             const rankRows = ranking.map(c => `
                 <tr class="${c.clanId === cycle.freedomClanId ? 'lme-cycle-own-row' : ''}">
-                    <td>${rankBadgeHTML(c.rank)}</td>
+                    <td class="lme-rank-col">${rankBadgeHTML(c.rank)}</td>
                     <td style="font-weight:600;">${escapeHtml(c.clanName)}</td>
                     <td style="color:#68d391;">${(c.medals ?? 0).toLocaleString()}</td>
                     <td style="color:#ffd700; font-weight:700;">${c.points ?? 0}</td>
@@ -1405,7 +1413,7 @@
                 <div class="lme-cycle-section-label">Final Ranking</div>
                 <table class="lme-cycle-table">
                     <thead><tr>
-                        <th>Rank</th>
+                        <th class="lme-rank-col">Rank</th>
                         <th>Clan</th>
                         <th><span class="lme-th-icon-label"><img src="${ICON_BASE}Medals.png" alt="" onerror="this.style.display='none'">Rounds</span></th>
                         <th><span class="lme-th-icon-label"><img src="${ICON_BASE}Defense_Attack%20Points.png" alt="" onerror="this.style.display='none'">ATK / DEF</span></th>
