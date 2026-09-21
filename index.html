@@ -250,7 +250,7 @@
         .lme-cycle-table tbody tr.lme-cycle-own-row { background: rgba(104, 211, 145, 0.12); }
         .lme-cycle-table th.lme-sortable-th { cursor: pointer; user-select: none; white-space: nowrap; }
         .lme-cycle-table th.lme-sortable-th:hover { color: #e2e8f0; }
-        .lme-cycle-table th img { width: 16px; height: 16px; vertical-align: middle; }
+        .lme-cycle-table th img { height: 16px; width: auto; vertical-align: middle; }
 
         .gain-positive { color: #10b981; }
         .gain-negative { color: #f56565; }
@@ -1247,7 +1247,7 @@
             if (!rank) return '<span style="color:#718096;">—</span>';
             const color = LME_RANK_COLORS[rank] || '#f56565';
             if (rank >= 1 && rank <= 3) {
-                return `<img src="${ICON_BASE}Rank${rank}.png" alt="#${rank}" style="width:20px; height:20px; vertical-align:middle;" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><span style="display:none; color:${color}; font-weight:700;">#${rank}</span>`;
+                return `<img src="${ICON_BASE}Rank${rank}.png" alt="#${rank}" style="height:20px; width:auto; vertical-align:middle;" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><span style="display:none; color:${color}; font-weight:700;">#${rank}</span>`;
             }
             return `<span style="color:${color}; font-weight:700;">#${rank}</span>`;
         }
@@ -1371,8 +1371,8 @@
                     <td>${rankBadgeHTML(c.rank)}</td>
                     <td style="font-weight:600;">${escapeHtml(c.clanName)}</td>
                     <td style="color:#68d391;">${(c.medals ?? 0).toLocaleString()}</td>
-                    <td>${(c.p1TotalScore ?? 0).toLocaleString()}</td>
                     <td style="color:#ffd700; font-weight:700;">${c.points ?? 0}</td>
+                    <td>${(c.p1TotalScore ?? 0).toLocaleString()}</td>
                 </tr>
             `).join('');
 
@@ -1398,7 +1398,13 @@
             wrap.innerHTML = `
                 <div class="lme-cycle-section-label">Final Ranking</div>
                 <table class="lme-cycle-table">
-                    <thead><tr><th>Rank</th><th>Clan</th><th>Medals</th><th>P1 Score</th><th>Points</th></tr></thead>
+                    <thead><tr>
+                        <th>Rank</th>
+                        <th>Clan</th>
+                        <th><img src="${ICON_BASE}Medals.png" alt="Rounds" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><span style="display:none;">Rounds</span></th>
+                        <th><img src="${ICON_BASE}Defense_Attack%20Points.png" alt="ATK / DEF" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><span style="display:none;">ATK / DEF</span></th>
+                        <th><img src="${ICON_BASE}Medals.png" alt="P1 Total" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><span style="display:none;">P1 Total</span></th>
+                    </tr></thead>
                     <tbody>${rankRows}</tbody>
                 </table>
 
@@ -1407,7 +1413,7 @@
                     <thead><tr>
                         <th>Clan</th>
                         <th>🌙 Pts</th>
-                        <th>ATK</th>
+                        <th><img src="${ICON_BASE}ATK.png" alt="ATK" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><span style="display:none;">ATK</span></th>
                         <th><img src="${ICON_BASE}Resonance%20Chips.png" alt="Chips" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><span style="display:none;">Chips</span></th>
                         <th><img src="${ICON_BASE}Relic%20Cores.png" alt="Relic Cores" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><span style="display:none;">Relic</span></th>
                         <th><img src="${ICON_BASE}TransmutaCore.png" alt="Transmute Cores" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><span style="display:none;">Transmute</span></th>
