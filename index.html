@@ -307,6 +307,29 @@
         .lme-trend-tooltip-key { display: inline-block; width: 10px; height: 2px; flex-shrink: 0; }
         .lme-trend-tooltip-label { color: #718096; }
         .lme-trend-tooltip-value { color: #e2e8f0; margin-left: auto; padding-left: 8px; }
+        .lme-trend-filter-row {
+            display: flex;
+            justify-content: center;
+            gap: 6px;
+            margin-bottom: 8px;
+        }
+        .lme-trend-filter-btn {
+            padding: 4px 10px;
+            background: #2d3748;
+            border: 1px solid #4a5568;
+            border-radius: 999px;
+            color: #a0aec0;
+            font-size: 10px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.15s ease;
+        }
+        .lme-trend-filter-btn:hover { background: #374151; color: #e2e8f0; }
+        .lme-trend-filter-btn.active {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-color: #667eea;
+            color: #fff;
+        }
 
         .gain-positive { color: #10b981; }
         .gain-negative { color: #f56565; }
@@ -1642,7 +1665,52 @@
 
             container.innerHTML = '';
             if (points.length < 2) return;
-            container.appendChild(buildLunarTrendChart(points));
+            container.appendChild(buildLunarTrendSection(points));
+        }
+
+        // Each LME cycle runs roughly weekly, so "last N weeks" is just the
+        // last N plotted points — there's no independent weekly timestamp to
+        // filter by, especially for the legacy (undated) baseline segment.
+        const LME_TREND_FILTERS = [
+            { key: '10',  label: 'Last 10 weeks' },
+            { key: '20',  label: 'Last 20 weeks' },
+            { key: 'all', label: 'All weeks' },
+        ];
+
+        function buildLunarTrendSection(allPoints) {
+            const section = document.createElement('div');
+
+            const filterRow = document.createElement('div');
+            filterRow.className = 'lme-trend-filter-row';
+
+            const chartMount = document.createElement('div');
+
+            let activeKey = 'all';
+            function rerenderChart() {
+                chartMount.innerHTML = '';
+                const sliced = activeKey === 'all' ? allPoints : allPoints.slice(-parseInt(activeKey, 10));
+                chartMount.appendChild(buildLunarTrendChart(sliced.length >= 2 ? sliced : allPoints));
+            }
+
+            LME_TREND_FILTERS.forEach(f => {
+                const btn = document.createElement('button');
+                btn.type = 'button';
+                btn.className = 'lme-trend-filter-btn' + (f.key === activeKey ? ' active' : '');
+                btn.textContent = f.label;
+                btn.onclick = () => {
+                    if (activeKey === f.key) return;
+                    activeKey = f.key;
+                    filterRow.querySelectorAll('.lme-trend-filter-btn').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    rerenderChart();
+                };
+                filterRow.appendChild(btn);
+            });
+
+            section.appendChild(filterRow);
+            section.appendChild(chartMount);
+            rerenderChart();
+            return section;
         }
 
         function buildLunarTrendChart(points) {
@@ -1707,7 +1775,7 @@
                         <line class="lme-trend-crosshair" x1="0" y1="${padT}" x2="0" y2="${H - padB}" stroke="#a0aec0" stroke-width="1" style="display:none;"/>
                         <circle class="lme-trend-hover-dot lme-trend-hover-lunar"  r="4" fill="#3987e5" stroke="#2d3748" stroke-width="2" style="display:none;"/>
                         <circle class="lme-trend-hover-dot lme-trend-hover-secret" r="4" fill="#d95926" stroke="#2d3748" stroke-width="2" style="display:none;"/>
-                        <rect class="lme-trend-hit" x="${padL}" y="0" width="${plotW}" height="${H}" fill="transparent" style="cursor:crosshair;" tabindex="0"/>
+                        <rect class="lme-trend-hit" x="${padL}" y="0" width="${plotW}" height="${H}" fill="transparent" style="cursor:pointer;" tabindex="0"/>
                     </svg>
                     <div class="lme-trend-tooltip" style="display:none;"></div>
                 </div>
@@ -1765,6 +1833,7 @@
             }
 
             function hide() {
+                if (pinnedIdx !== null) return; // a clicked/tapped point stays put
                 crosshair.style.display = 'none';
                 dotLunar.style.display  = 'none';
                 dotSecret.style.display = 'none';
@@ -1780,15 +1849,45 @@
                 return Math.max(0, Math.min(points.length - 1, idx));
             }
 
-            hitRect.addEventListener('pointermove', (e) => showAt(nearestIndex(e.clientX)));
+            // Hovering with a mouse works, but landing exactly on a thin 2px
+            // line is fussy, and touch has no hover at all — so a tap/click
+            // anywhere along the chart snaps to and PINS the nearest point,
+            // keeping its tooltip open until another point (or the outside)
+            // is clicked.
+            let pinnedIdx = null;
+            hitRect.addEventListener('click', (e) => {
+                const idx = nearestIndex(e.clientX);
+                if (pinnedIdx === idx) {
+                    pinnedIdx = null;
+                    hide();
+                } else {
+                    pinnedIdx = idx;
+                    showAt(idx);
+                }
+            });
+            function onDocClick(e) {
+                if (!document.body.contains(wrap)) {
+                    document.removeEventListener('click', onDocClick); // this chart got swapped out (e.g. filter change) — stop listening
+                    return;
+                }
+                if (pinnedIdx !== null && !wrap.contains(e.target)) {
+                    pinnedIdx = null;
+                    hide();
+                }
+            }
+            document.addEventListener('click', onDocClick);
+
+            hitRect.addEventListener('pointermove', (e) => {
+                if (pinnedIdx === null) showAt(nearestIndex(e.clientX));
+            });
             hitRect.addEventListener('pointerleave', hide);
 
             let focusedIdx = points.length - 1;
-            hitRect.addEventListener('focus', () => showAt(focusedIdx));
+            hitRect.addEventListener('focus', () => { if (pinnedIdx === null) showAt(focusedIdx); });
             hitRect.addEventListener('blur', hide);
             hitRect.addEventListener('keydown', (e) => {
-                if (e.key === 'ArrowLeft')  { focusedIdx = Math.max(0, focusedIdx - 1); showAt(focusedIdx); e.preventDefault(); }
-                if (e.key === 'ArrowRight') { focusedIdx = Math.min(points.length - 1, focusedIdx + 1); showAt(focusedIdx); e.preventDefault(); }
+                if (e.key === 'ArrowLeft')  { pinnedIdx = null; focusedIdx = Math.max(0, focusedIdx - 1); showAt(focusedIdx); e.preventDefault(); }
+                if (e.key === 'ArrowRight') { pinnedIdx = null; focusedIdx = Math.min(points.length - 1, focusedIdx + 1); showAt(focusedIdx); e.preventDefault(); }
             });
 
             return wrap;
