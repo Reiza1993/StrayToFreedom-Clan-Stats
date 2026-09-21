@@ -250,7 +250,13 @@
         .lme-cycle-table tbody tr.lme-cycle-own-row { background: rgba(104, 211, 145, 0.12); }
         .lme-cycle-table th.lme-sortable-th { cursor: pointer; user-select: none; white-space: nowrap; }
         .lme-cycle-table th.lme-sortable-th:hover { color: #e2e8f0; }
-        .lme-cycle-table th img { height: 16px; width: auto; vertical-align: middle; margin-right: 4px; }
+        .lme-cycle-table th img { height: 16px; width: auto; }
+        .lme-th-icon-label {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 4px;
+        }
 
         .gain-positive { color: #10b981; }
         .gain-negative { color: #f56565; }
@@ -1401,9 +1407,9 @@
                     <thead><tr>
                         <th>Rank</th>
                         <th>Clan</th>
-                        <th><img src="${ICON_BASE}Medals.png" alt="" onerror="this.style.display='none'">Rounds</th>
-                        <th><img src="${ICON_BASE}Defense_Attack%20Points.png" alt="" onerror="this.style.display='none'">ATK / DEF</th>
-                        <th><img src="${ICON_BASE}Medals.png" alt="" onerror="this.style.display='none'">P1 Total</th>
+                        <th><span class="lme-th-icon-label"><img src="${ICON_BASE}Medals.png" alt="" onerror="this.style.display='none'">Rounds</span></th>
+                        <th><span class="lme-th-icon-label"><img src="${ICON_BASE}Defense_Attack%20Points.png" alt="" onerror="this.style.display='none'">ATK / DEF</span></th>
+                        <th><span class="lme-th-icon-label"><img src="${ICON_BASE}Medals.png" alt="" onerror="this.style.display='none'">P1 Total</span></th>
                     </tr></thead>
                     <tbody>${rankRows}</tbody>
                 </table>
