@@ -1,0 +1,1867 @@
+{
+  "finalRank": {
+    "medals": 77460,
+    "points": 4,
+    "rank": 2
+  },
+  "freedomClanId": 44262,
+  "freedomClanName": "Freedom\u02e2\u1d57\u02b3\u1d43\u02b8",
+  "generatedAt": "2026-09-20T16:19:06.312936+00:00",
+  "lmeNumber": 1,
+  "lunarDetails": {
+    "14037": {
+      "clanId": 14037,
+      "lunarPoints": 1380,
+      "members": {
+        "102991599": {
+          "atk": 871854,
+          "chipsCount": 20,
+          "eeBestScore": null,
+          "name": "\uc81c\uac08\ubf40\uc090",
+          "relicCores": 107,
+          "transmuteCores": 6
+        },
+        "13464098": {
+          "atk": 938441,
+          "chipsCount": 4,
+          "eeBestScore": null,
+          "name": "\ub450\ucac0\ucfe0\u2661\u2661",
+          "relicCores": 67,
+          "transmuteCores": 6
+        },
+        "20759637": {
+          "atk": 1012957,
+          "chipsCount": 9,
+          "eeBestScore": null,
+          "name": "ylyy",
+          "relicCores": 70,
+          "transmuteCores": 0
+        },
+        "23716512": {
+          "atk": 919143,
+          "chipsCount": 12,
+          "eeBestScore": null,
+          "name": "\uaf43\uc528\uc5b8\ub2c8",
+          "relicCores": 57,
+          "transmuteCores": 0
+        },
+        "24804645": {
+          "atk": 1156302,
+          "chipsCount": 10,
+          "eeBestScore": null,
+          "name": "\uc544\uc774\ub85c",
+          "relicCores": 104,
+          "transmuteCores": 0
+        },
+        "29851516": {
+          "atk": 1237476,
+          "chipsCount": 27,
+          "eeBestScore": null,
+          "name": "\uc18c\ucfe0\ubc0d",
+          "relicCores": 100,
+          "transmuteCores": 2
+        },
+        "31435225": {
+          "atk": 1836232,
+          "chipsCount": 23,
+          "eeBestScore": null,
+          "name": "bangoogrl",
+          "relicCores": 113,
+          "transmuteCores": 18
+        },
+        "34064725": {
+          "atk": 1190404,
+          "chipsCount": 21,
+          "eeBestScore": null,
+          "name": "Lkhoist",
+          "relicCores": 192,
+          "transmuteCores": 14
+        },
+        "34787046": {
+          "atk": 739000,
+          "chipsCount": 5,
+          "eeBestScore": null,
+          "name": "\ub2ec\ub824\ub77c\ubc25\ud1b5",
+          "relicCores": 74,
+          "transmuteCores": 0
+        },
+        "36606519": {
+          "atk": 2443815,
+          "chipsCount": 43,
+          "eeBestScore": null,
+          "name": "\uc2dc\uc628\uc544\ube60",
+          "relicCores": 199,
+          "transmuteCores": 11
+        },
+        "36737421": {
+          "atk": 808469,
+          "chipsCount": 19,
+          "eeBestScore": null,
+          "name": "\ud310\uad50\uc5ed\ub85c145",
+          "relicCores": 127,
+          "transmuteCores": 1
+        },
+        "37005830": {
+          "atk": 877392,
+          "chipsCount": 6,
+          "eeBestScore": null,
+          "name": "\uaf2c\ubd80\uae3011",
+          "relicCores": 132,
+          "transmuteCores": 2
+        },
+        "37008330": {
+          "atk": 1926920,
+          "chipsCount": 31,
+          "eeBestScore": null,
+          "name": "\ub2f9\ud558",
+          "relicCores": 126,
+          "transmuteCores": 11
+        },
+        "37093296": {
+          "atk": 1011685,
+          "chipsCount": 14,
+          "eeBestScore": null,
+          "name": "\uc544\uc6b0\uadc0\ucc2e\uc544",
+          "relicCores": 88,
+          "transmuteCores": 0
+        },
+        "38149900": {
+          "atk": 476825,
+          "chipsCount": 0,
+          "eeBestScore": null,
+          "name": "\uc548\ub450\ub07c",
+          "relicCores": 72,
+          "transmuteCores": 0
+        },
+        "43097127": {
+          "atk": 2563260,
+          "chipsCount": 73,
+          "eeBestScore": null,
+          "name": "\uc9d1\uacb0\uc9c0",
+          "relicCores": 205,
+          "transmuteCores": 46
+        },
+        "44143852": {
+          "atk": 1365830,
+          "chipsCount": 35,
+          "eeBestScore": null,
+          "name": "\uc0bc\uc9c0\uc544\ube60",
+          "relicCores": 177,
+          "transmuteCores": 20
+        },
+        "46559560": {
+          "atk": 1371288,
+          "chipsCount": 16,
+          "eeBestScore": null,
+          "name": "\uc778\ucc9c\ub9cc\uc218\ub3d9",
+          "relicCores": 121,
+          "transmuteCores": 0
+        },
+        "46569912": {
+          "atk": 942731,
+          "chipsCount": 0,
+          "eeBestScore": null,
+          "name": "Milkiss",
+          "relicCores": 123,
+          "transmuteCores": 0
+        },
+        "46593768": {
+          "atk": 1548082,
+          "chipsCount": 1,
+          "eeBestScore": null,
+          "name": "\ud0d5\ud0d5\uc11c\uae08\uc774",
+          "relicCores": 126,
+          "transmuteCores": 2
+        },
+        "48576527": {
+          "atk": 1571802,
+          "chipsCount": 4,
+          "eeBestScore": null,
+          "name": "Player 48576527",
+          "relicCores": 140,
+          "transmuteCores": 1
+        },
+        "48795330": {
+          "atk": 1556456,
+          "chipsCount": 34,
+          "eeBestScore": null,
+          "name": "lliilliill",
+          "relicCores": 160,
+          "transmuteCores": 19
+        },
+        "56396841": {
+          "atk": 2267828,
+          "chipsCount": 39,
+          "eeBestScore": null,
+          "name": "\ucc9c\uc6d0\uc601",
+          "relicCores": 197,
+          "transmuteCores": 11
+        },
+        "57098853": {
+          "atk": 1953380,
+          "chipsCount": 12,
+          "eeBestScore": null,
+          "name": "T\uc77c\ub9c1T",
+          "relicCores": 171,
+          "transmuteCores": 4
+        },
+        "58406255": {
+          "atk": 1003689,
+          "chipsCount": 17,
+          "eeBestScore": null,
+          "name": "\ub77c\uba38\uc2a4",
+          "relicCores": 83,
+          "transmuteCores": 0
+        },
+        "59461636": {
+          "atk": 2246532,
+          "chipsCount": 45,
+          "eeBestScore": null,
+          "name": "\uc218\ubabd\uc774",
+          "relicCores": 199,
+          "transmuteCores": 11
+        },
+        "60485289": {
+          "atk": 1405282,
+          "chipsCount": 6,
+          "eeBestScore": null,
+          "name": "2OOO",
+          "relicCores": 84,
+          "transmuteCores": 0
+        },
+        "64065816": {
+          "atk": 719474,
+          "chipsCount": 0,
+          "eeBestScore": null,
+          "name": "sonless",
+          "relicCores": 0,
+          "transmuteCores": 0
+        },
+        "65179265": {
+          "atk": 1463917,
+          "chipsCount": 14,
+          "eeBestScore": null,
+          "name": "OneFineday",
+          "relicCores": 119,
+          "transmuteCores": 0
+        },
+        "66333577": {
+          "atk": 1137629,
+          "chipsCount": 0,
+          "eeBestScore": null,
+          "name": "\u30db\u30e4\u30db\u30e4",
+          "relicCores": 136,
+          "transmuteCores": 4
+        },
+        "69275226": {
+          "atk": 852197,
+          "chipsCount": 1,
+          "eeBestScore": null,
+          "name": "\ub0a8\uc794Hotpink",
+          "relicCores": 137,
+          "transmuteCores": 10
+        },
+        "73178080": {
+          "atk": 1581657,
+          "chipsCount": 29,
+          "eeBestScore": null,
+          "name": "\uc73c\ub178\ud30d",
+          "relicCores": 162,
+          "transmuteCores": 4
+        },
+        "73354096": {
+          "atk": 1889190,
+          "chipsCount": 0,
+          "eeBestScore": null,
+          "name": "\ubc30\ub4dc\uacf5\uaca9\ub300",
+          "relicCores": 0,
+          "transmuteCores": 0
+        },
+        "84092010": {
+          "atk": 1676430,
+          "chipsCount": 15,
+          "eeBestScore": null,
+          "name": "\uba48\uba38123",
+          "relicCores": 122,
+          "transmuteCores": 24
+        },
+        "84581224": {
+          "atk": 2748383,
+          "chipsCount": 74,
+          "eeBestScore": null,
+          "name": "\uc218\ub2a5",
+          "relicCores": 303,
+          "transmuteCores": 28
+        },
+        "88670323": {
+          "atk": 1246980,
+          "chipsCount": 30,
+          "eeBestScore": null,
+          "name": "zPzG",
+          "relicCores": 101,
+          "transmuteCores": 1
+        }
+      },
+      "name": "PURE",
+      "totalAtk": 46091113,
+      "totalChips": 688,
+      "totalEe": null,
+      "totalRelicCores": 4228,
+      "totalTransmuteCores": 256
+    },
+    "37994": {
+      "clanId": 37994,
+      "lunarPoints": 1435,
+      "members": {
+        "10760311": {
+          "atk": 3223071,
+          "chipsCount": 89,
+          "eeBestScore": null,
+          "name": "\ub9c8\ube14\ud669\uae08\uc54c2",
+          "relicCores": 296,
+          "transmuteCores": 24
+        },
+        "113675769": {
+          "atk": 1578946,
+          "chipsCount": 20,
+          "eeBestScore": null,
+          "name": "\u1d40\u1d37\uac1c\ub098\ub2c8",
+          "relicCores": 114,
+          "transmuteCores": 14
+        },
+        "22001788": {
+          "atk": 1091027,
+          "chipsCount": 15,
+          "eeBestScore": null,
+          "name": "\ub3d9\ub3d9\uc774SS",
+          "relicCores": 71,
+          "transmuteCores": 2
+        },
+        "22343180": {
+          "atk": 2659362,
+          "chipsCount": 0,
+          "eeBestScore": null,
+          "name": "\ub3d9\ub3d9\uc774S",
+          "relicCores": 0,
+          "transmuteCores": 0
+        },
+        "22929265": {
+          "atk": 2637818,
+          "chipsCount": 76,
+          "eeBestScore": null,
+          "name": "NeoFlint",
+          "relicCores": 159,
+          "transmuteCores": 24
+        },
+        "23047452": {
+          "atk": 1942224,
+          "chipsCount": 49,
+          "eeBestScore": null,
+          "name": "\ubd95\ub098\ub77c\ucc28\ubfd4\uae4c",
+          "relicCores": 132,
+          "transmuteCores": 6
+        },
+        "24465542": {
+          "atk": 1841830,
+          "chipsCount": 46,
+          "eeBestScore": null,
+          "name": "Mio\u3161\u3145\u3161",
+          "relicCores": 161,
+          "transmuteCores": 6
+        },
+        "27293287": {
+          "atk": 1359550,
+          "chipsCount": 49,
+          "eeBestScore": null,
+          "name": "\ucf54\ube44\ub4dc",
+          "relicCores": 142,
+          "transmuteCores": 4
+        },
+        "27301982": {
+          "atk": 1450744,
+          "chipsCount": 13,
+          "eeBestScore": null,
+          "name": "\ubfcc\ub9b4\ud081",
+          "relicCores": 153,
+          "transmuteCores": 20
+        },
+        "32508218": {
+          "atk": 2228636,
+          "chipsCount": 39,
+          "eeBestScore": null,
+          "name": "\uc601\uc790",
+          "relicCores": 134,
+          "transmuteCores": 12
+        },
+        "33527532": {
+          "atk": 1207757,
+          "chipsCount": 3,
+          "eeBestScore": null,
+          "name": "\uc728\uc774\ub124",
+          "relicCores": 49,
+          "transmuteCores": 0
+        },
+        "35847624": {
+          "atk": 1793972,
+          "chipsCount": 30,
+          "eeBestScore": null,
+          "name": "ZBKT",
+          "relicCores": 177,
+          "transmuteCores": 6
+        },
+        "36547157": {
+          "atk": 2202338,
+          "chipsCount": 20,
+          "eeBestScore": null,
+          "name": "\uc624\uc9c0\ub9c8\uc0b4\ub824\uc918",
+          "relicCores": 206,
+          "transmuteCores": 8
+        },
+        "36745986": {
+          "atk": 1378233,
+          "chipsCount": 25,
+          "eeBestScore": null,
+          "name": "\ud0d5\uc218\uc721\ud0d5\ud0d5S",
+          "relicCores": 131,
+          "transmuteCores": 26
+        },
+        "37365363": {
+          "atk": 2086642,
+          "chipsCount": 42,
+          "eeBestScore": null,
+          "name": "\uc2dc\ub098\uc740",
+          "relicCores": 97,
+          "transmuteCores": 14
+        },
+        "38903593": {
+          "atk": 1469176,
+          "chipsCount": 62,
+          "eeBestScore": null,
+          "name": "\uc601\uc77c\uc2e0",
+          "relicCores": 170,
+          "transmuteCores": 0
+        },
+        "41256099": {
+          "atk": 2412820,
+          "chipsCount": 45,
+          "eeBestScore": null,
+          "name": "\ud1a0\ub07c\uacf5\uc96cS",
+          "relicCores": 204,
+          "transmuteCores": 15
+        },
+        "41405016": {
+          "atk": 2558911,
+          "chipsCount": 27,
+          "eeBestScore": null,
+          "name": "\ub85c\ube44\uc900",
+          "relicCores": 147,
+          "transmuteCores": 1
+        },
+        "41847676": {
+          "atk": 1719540,
+          "chipsCount": 27,
+          "eeBestScore": null,
+          "name": "\u1d40\u1d37Art\uc624\ud638\ud1b5",
+          "relicCores": 159,
+          "transmuteCores": 2
+        },
+        "44238354": {
+          "atk": 1860619,
+          "chipsCount": 70,
+          "eeBestScore": null,
+          "name": "\ub178\uc2a4\ub2e4",
+          "relicCores": 149,
+          "transmuteCores": 24
+        },
+        "44552315": {
+          "atk": 2319808,
+          "chipsCount": 18,
+          "eeBestScore": null,
+          "name": "\uac13\ubb34\ub108S",
+          "relicCores": 154,
+          "transmuteCores": 32
+        },
+        "51176156": {
+          "atk": 2651436,
+          "chipsCount": 0,
+          "eeBestScore": null,
+          "name": "\uc131\uc7ac\uc784",
+          "relicCores": 0,
+          "transmuteCores": 0
+        },
+        "52605179": {
+          "atk": 1969287,
+          "chipsCount": 85,
+          "eeBestScore": null,
+          "name": "\ud06c\ub989\uc774S",
+          "relicCores": 179,
+          "transmuteCores": 20
+        },
+        "52822666": {
+          "atk": 2390831,
+          "chipsCount": 60,
+          "eeBestScore": null,
+          "name": "\ud50c\ub808\uc774\uc5b4HG",
+          "relicCores": 160,
+          "transmuteCores": 28
+        },
+        "57543644": {
+          "atk": 2727678,
+          "chipsCount": 31,
+          "eeBestScore": null,
+          "name": "\ub77c\ubc14S",
+          "relicCores": 137,
+          "transmuteCores": 16
+        },
+        "61054469": {
+          "atk": 1962948,
+          "chipsCount": 65,
+          "eeBestScore": null,
+          "name": "\uaf2c\ub3c4\ub9ac\uc57c",
+          "relicCores": 210,
+          "transmuteCores": 12
+        },
+        "63993071": {
+          "atk": 1599053,
+          "chipsCount": 37,
+          "eeBestScore": null,
+          "name": "\u1d40\u1d37\uc544\ub098\ucf58\ub2e4",
+          "relicCores": 193,
+          "transmuteCores": 11
+        },
+        "65421071": {
+          "atk": 2396057,
+          "chipsCount": 44,
+          "eeBestScore": null,
+          "name": "\uc2a4\ud2b8\ub871\ubbf8\ub2c8",
+          "relicCores": 115,
+          "transmuteCores": 14
+        },
+        "65565411": {
+          "atk": 2192425,
+          "chipsCount": 42,
+          "eeBestScore": null,
+          "name": "\uadf8\uac8c\ubb50\ub77c\uace0S",
+          "relicCores": 185,
+          "transmuteCores": 24
+        },
+        "72544305": {
+          "atk": 2607807,
+          "chipsCount": 33,
+          "eeBestScore": null,
+          "name": "\ubcc4\ub9bc\uc774S",
+          "relicCores": 137,
+          "transmuteCores": 1
+        },
+        "72622429": {
+          "atk": 2678993,
+          "chipsCount": 62,
+          "eeBestScore": null,
+          "name": "\uaf2c\uaf2c\ud669\uc81cS",
+          "relicCores": 179,
+          "transmuteCores": 11
+        },
+        "74041152": {
+          "atk": 1961945,
+          "chipsCount": 66,
+          "eeBestScore": null,
+          "name": "\uc2ac\ud508\ubc14\ub2e4",
+          "relicCores": 163,
+          "transmuteCores": 28
+        },
+        "80117912": {
+          "atk": 2733515,
+          "chipsCount": 36,
+          "eeBestScore": null,
+          "name": "\uaf2c\uaf2c\uc5d0\uc774\uc2acS",
+          "relicCores": 148,
+          "transmuteCores": 6
+        },
+        "83482632": {
+          "atk": 1787832,
+          "chipsCount": 33,
+          "eeBestScore": null,
+          "name": "Amorwoo",
+          "relicCores": 131,
+          "transmuteCores": 16
+        },
+        "83849954": {
+          "atk": 1876932,
+          "chipsCount": 44,
+          "eeBestScore": null,
+          "name": "\u1d40\u1d37\ucf54\uc2a4\ud2b9\ud638",
+          "relicCores": 179,
+          "transmuteCores": 24
+        },
+        "84860069": {
+          "atk": 1021977,
+          "chipsCount": 26,
+          "eeBestScore": null,
+          "name": "Observer\u1e68\u0110",
+          "relicCores": 75,
+          "transmuteCores": 15
+        },
+        "88702105": {
+          "atk": 2081176,
+          "chipsCount": 71,
+          "eeBestScore": null,
+          "name": "\ud558\uad6c\ub808\uba54\ud0c8",
+          "relicCores": 161,
+          "transmuteCores": 38
+        }
+      },
+      "name": "Team.SD3",
+      "totalAtk": 66684452,
+      "totalChips": 1431,
+      "totalEe": null,
+      "totalRelicCores": 4951,
+      "totalTransmuteCores": 500
+    },
+    "44262": {
+      "clanId": 44262,
+      "lunarPoints": 1465,
+      "members": {
+        "100876140": {
+          "atk": 2304389,
+          "chipsCount": 0,
+          "eeBestScore": null,
+          "name": "Scoundrel536",
+          "relicCores": 0,
+          "transmuteCores": 0
+        },
+        "102263647": {
+          "atk": 2516477,
+          "chipsCount": 80,
+          "eeBestScore": null,
+          "name": "Koncalaz",
+          "relicCores": 181,
+          "transmuteCores": 28
+        },
+        "103516442": {
+          "atk": 2857068,
+          "chipsCount": 82,
+          "eeBestScore": null,
+          "name": "DAYO-P",
+          "relicCores": 243,
+          "transmuteCores": 60
+        },
+        "106162623": {
+          "atk": 1757799,
+          "chipsCount": 23,
+          "eeBestScore": null,
+          "name": "gubrax",
+          "relicCores": 111,
+          "transmuteCores": 16
+        },
+        "10754439": {
+          "atk": 2017072,
+          "chipsCount": 45,
+          "eeBestScore": null,
+          "name": "HakiLuffy",
+          "relicCores": 140,
+          "transmuteCores": 18
+        },
+        "108546985": {
+          "atk": 2102204,
+          "chipsCount": 46,
+          "eeBestScore": null,
+          "name": "pumpenjoe",
+          "relicCores": 186,
+          "transmuteCores": 30
+        },
+        "112772047": {
+          "atk": 1872274,
+          "chipsCount": 28,
+          "eeBestScore": null,
+          "name": "VictorMolusco",
+          "relicCores": 114,
+          "transmuteCores": 32
+        },
+        "113690788": {
+          "atk": 1757798,
+          "chipsCount": 35,
+          "eeBestScore": null,
+          "name": "Apathy_",
+          "relicCores": 110,
+          "transmuteCores": 20
+        },
+        "11463573": {
+          "atk": 1817942,
+          "chipsCount": 0,
+          "eeBestScore": null,
+          "name": "faxnem",
+          "relicCores": 0,
+          "transmuteCores": 0
+        },
+        "115742768": {
+          "atk": 48926,
+          "chipsCount": 2,
+          "eeBestScore": null,
+          "name": "SterbyTools",
+          "relicCores": 0,
+          "transmuteCores": 0
+        },
+        "18115624": {
+          "atk": 2622756,
+          "chipsCount": 118,
+          "eeBestScore": null,
+          "name": "Nubis",
+          "relicCores": 210,
+          "transmuteCores": 8
+        },
+        "18297536": {
+          "atk": 1818251,
+          "chipsCount": 46,
+          "eeBestScore": null,
+          "name": "ergiangi",
+          "relicCores": 101,
+          "transmuteCores": 28
+        },
+        "26277677": {
+          "atk": 2189171,
+          "chipsCount": 31,
+          "eeBestScore": null,
+          "name": "BobBobberson",
+          "relicCores": 135,
+          "transmuteCores": 12
+        },
+        "29321884": {
+          "atk": 3098349,
+          "chipsCount": 77,
+          "eeBestScore": null,
+          "name": "RABBIT5",
+          "relicCores": 210,
+          "transmuteCores": 28
+        },
+        "29904762": {
+          "atk": 1469998,
+          "chipsCount": 39,
+          "eeBestScore": null,
+          "name": "Cheeselife",
+          "relicCores": 126,
+          "transmuteCores": 40
+        },
+        "30658936": {
+          "atk": 2149465,
+          "chipsCount": 65,
+          "eeBestScore": null,
+          "name": "Gritchen",
+          "relicCores": 188,
+          "transmuteCores": 16
+        },
+        "32556489": {
+          "atk": 1831606,
+          "chipsCount": 48,
+          "eeBestScore": null,
+          "name": "Bensayyten",
+          "relicCores": 102,
+          "transmuteCores": 14
+        },
+        "35869301": {
+          "atk": 2623343,
+          "chipsCount": 120,
+          "eeBestScore": null,
+          "name": "Toddlerr",
+          "relicCores": 257,
+          "transmuteCores": 28
+        },
+        "36484758": {
+          "atk": 1650140,
+          "chipsCount": 12,
+          "eeBestScore": null,
+          "name": "Belthazar",
+          "relicCores": 86,
+          "transmuteCores": 3
+        },
+        "41742773": {
+          "atk": 1449670,
+          "chipsCount": 52,
+          "eeBestScore": null,
+          "name": "PinkyToeBeans",
+          "relicCores": 174,
+          "transmuteCores": 0
+        },
+        "51071110": {
+          "atk": 2239370,
+          "chipsCount": 42,
+          "eeBestScore": null,
+          "name": "samwise08",
+          "relicCores": 132,
+          "transmuteCores": 28
+        },
+        "59566866": {
+          "atk": 2075966,
+          "chipsCount": 57,
+          "eeBestScore": null,
+          "name": "FlyingDutchy",
+          "relicCores": 156,
+          "transmuteCores": 7
+        },
+        "60687252": {
+          "atk": 3909324,
+          "chipsCount": 207,
+          "eeBestScore": null,
+          "name": "\u04bban",
+          "relicCores": 374,
+          "transmuteCores": 58
+        },
+        "64676255": {
+          "atk": 2314802,
+          "chipsCount": 37,
+          "eeBestScore": null,
+          "name": "\u76feHeathcliff\u5263",
+          "relicCores": 132,
+          "transmuteCores": 14
+        },
+        "66607264": {
+          "atk": 2192205,
+          "chipsCount": 32,
+          "eeBestScore": null,
+          "name": "Player 66607264",
+          "relicCores": 165,
+          "transmuteCores": 25
+        },
+        "69676999": {
+          "atk": 2020679,
+          "chipsCount": 42,
+          "eeBestScore": null,
+          "name": "datamaster",
+          "relicCores": 154,
+          "transmuteCores": 3
+        },
+        "70603922": {
+          "atk": 1719065,
+          "chipsCount": 47,
+          "eeBestScore": null,
+          "name": "BlackFlamE",
+          "relicCores": 130,
+          "transmuteCores": 2
+        },
+        "71028860": {
+          "atk": 1906420,
+          "chipsCount": 35,
+          "eeBestScore": null,
+          "name": "Rzzza",
+          "relicCores": 140,
+          "transmuteCores": 20
+        },
+        "72894129": {
+          "atk": 2151472,
+          "chipsCount": 96,
+          "eeBestScore": null,
+          "name": "NeonCBV",
+          "relicCores": 169,
+          "transmuteCores": 46
+        },
+        "75174428": {
+          "atk": 2325615,
+          "chipsCount": 66,
+          "eeBestScore": null,
+          "name": "PastalaVista",
+          "relicCores": 182,
+          "transmuteCores": 9
+        },
+        "79510960": {
+          "atk": 1641750,
+          "chipsCount": 55,
+          "eeBestScore": null,
+          "name": "theLP",
+          "relicCores": 179,
+          "transmuteCores": 3
+        },
+        "80018314": {
+          "atk": 1802862,
+          "chipsCount": 44,
+          "eeBestScore": null,
+          "name": "Player 80018314",
+          "relicCores": 175,
+          "transmuteCores": 4
+        },
+        "80972473": {
+          "atk": 3088996,
+          "chipsCount": 81,
+          "eeBestScore": null,
+          "name": "Cunner88",
+          "relicCores": 177,
+          "transmuteCores": 38
+        },
+        "83339881": {
+          "atk": 3423073,
+          "chipsCount": 120,
+          "eeBestScore": null,
+          "name": "Fl3xas",
+          "relicCores": 305,
+          "transmuteCores": 60
+        },
+        "83861839": {
+          "atk": 2211611,
+          "chipsCount": 37,
+          "eeBestScore": null,
+          "name": "groggen",
+          "relicCores": 116,
+          "transmuteCores": 28
+        },
+        "87244358": {
+          "atk": 2809997,
+          "chipsCount": 106,
+          "eeBestScore": null,
+          "name": "\u795eSterben\u6b7b",
+          "relicCores": 190,
+          "transmuteCores": 24
+        },
+        "87954282": {
+          "atk": 2475991,
+          "chipsCount": 74,
+          "eeBestScore": null,
+          "name": "SngphO",
+          "relicCores": 223,
+          "transmuteCores": 66
+        },
+        "88203044": {
+          "atk": 2290116,
+          "chipsCount": 51,
+          "eeBestScore": null,
+          "name": "p88203044",
+          "relicCores": 126,
+          "transmuteCores": 24
+        },
+        "89511116": {
+          "atk": 2135616,
+          "chipsCount": 55,
+          "eeBestScore": null,
+          "name": "EMBALOCO",
+          "relicCores": 190,
+          "transmuteCores": 16
+        }
+      },
+      "name": "Freedom\u02e2\u1d57\u02b3\u1d43\u02b8",
+      "totalAtk": 71391620,
+      "totalChips": 2070,
+      "totalEe": null,
+      "totalRelicCores": 5465,
+      "totalTransmuteCores": 841
+    },
+    "48643": {
+      "clanId": 48643,
+      "lunarPoints": 1465,
+      "members": {
+        "104650978": {
+          "atk": 3078176,
+          "chipsCount": 104,
+          "eeBestScore": null,
+          "name": "Hylidae",
+          "relicCores": 220,
+          "transmuteCores": 36
+        },
+        "117977358": {
+          "atk": 1844209,
+          "chipsCount": 0,
+          "eeBestScore": null,
+          "name": "\u3046\u305a\u3089\u1d5f\u1d42",
+          "relicCores": 0,
+          "transmuteCores": 0
+        },
+        "25578150": {
+          "atk": 2895790,
+          "chipsCount": 52,
+          "eeBestScore": null,
+          "name": "\u3042\u3084\u3053\u308a\u1d5f\u1d42",
+          "relicCores": 151,
+          "transmuteCores": 28
+        },
+        "30921402": {
+          "atk": 2819297,
+          "chipsCount": 62,
+          "eeBestScore": null,
+          "name": "\uff80\uff9b\uff70\uff80\uff9b\uff70",
+          "relicCores": 136,
+          "transmuteCores": 6
+        },
+        "38743735": {
+          "atk": 2980275,
+          "chipsCount": 133,
+          "eeBestScore": null,
+          "name": "Player 38743735",
+          "relicCores": 342,
+          "transmuteCores": 40
+        },
+        "41522604": {
+          "atk": 2251934,
+          "chipsCount": 62,
+          "eeBestScore": null,
+          "name": "\u3081\u3081\u3046",
+          "relicCores": 169,
+          "transmuteCores": 15
+        },
+        "42023488": {
+          "atk": 2678548,
+          "chipsCount": 97,
+          "eeBestScore": null,
+          "name": "sen\u1d5f\u1d42",
+          "relicCores": 242,
+          "transmuteCores": 58
+        },
+        "42049762": {
+          "atk": 2866316,
+          "chipsCount": 77,
+          "eeBestScore": null,
+          "name": "\u304d\u3087\u3093P",
+          "relicCores": 160,
+          "transmuteCores": 32
+        },
+        "42299304": {
+          "atk": 2787111,
+          "chipsCount": 84,
+          "eeBestScore": null,
+          "name": "area491",
+          "relicCores": 234,
+          "transmuteCores": 38
+        },
+        "44570142": {
+          "atk": 2236392,
+          "chipsCount": 21,
+          "eeBestScore": null,
+          "name": "\u3042\u3055\u307c\u3089\u3051",
+          "relicCores": 193,
+          "transmuteCores": 6
+        },
+        "45165744": {
+          "atk": 2788099,
+          "chipsCount": 57,
+          "eeBestScore": null,
+          "name": "\u30df\u30c3\u30c1\u30fc\u1d5f\u1d42",
+          "relicCores": 160,
+          "transmuteCores": 36
+        },
+        "45782376": {
+          "atk": 3062106,
+          "chipsCount": 72,
+          "eeBestScore": null,
+          "name": "Sum\u1d5f\u1d42",
+          "relicCores": 201,
+          "transmuteCores": 28
+        },
+        "45807238": {
+          "atk": 2706865,
+          "chipsCount": 170,
+          "eeBestScore": null,
+          "name": "\u30df\u30c3\u30c6\u30fc",
+          "relicCores": 158,
+          "transmuteCores": 0
+        },
+        "47400344": {
+          "atk": 3589899,
+          "chipsCount": 103,
+          "eeBestScore": null,
+          "name": "Tai-c\u1d5f\u1d42",
+          "relicCores": 314,
+          "transmuteCores": 54
+        },
+        "52221942": {
+          "atk": 2671497,
+          "chipsCount": 65,
+          "eeBestScore": null,
+          "name": "\u30b7\u30e7\u30a6U\u1d5f\u1d42",
+          "relicCores": 167,
+          "transmuteCores": 14
+        },
+        "53998761": {
+          "atk": 2099082,
+          "chipsCount": 64,
+          "eeBestScore": null,
+          "name": "\u30d6\u30e9\u30ca\u30a4\u6b66\u7530",
+          "relicCores": 146,
+          "transmuteCores": 24
+        },
+        "54004311": {
+          "atk": 3098462,
+          "chipsCount": 98,
+          "eeBestScore": null,
+          "name": "\u00bf\u22a5\u00bf",
+          "relicCores": 221,
+          "transmuteCores": 24
+        },
+        "57114517": {
+          "atk": 2043309,
+          "chipsCount": 19,
+          "eeBestScore": null,
+          "name": "pataloha",
+          "relicCores": 177,
+          "transmuteCores": 4
+        },
+        "63510663": {
+          "atk": 2713334,
+          "chipsCount": 54,
+          "eeBestScore": null,
+          "name": "\u7d14\u70c8",
+          "relicCores": 177,
+          "transmuteCores": 20
+        },
+        "63962444": {
+          "atk": 2309228,
+          "chipsCount": 87,
+          "eeBestScore": null,
+          "name": "okmrmnh",
+          "relicCores": 116,
+          "transmuteCores": 10
+        },
+        "64672938": {
+          "atk": 2017160,
+          "chipsCount": 26,
+          "eeBestScore": null,
+          "name": "\u3061\u3087\u3073\u305f\u3093",
+          "relicCores": 137,
+          "transmuteCores": 24
+        },
+        "64884304": {
+          "atk": 1826364,
+          "chipsCount": 9,
+          "eeBestScore": null,
+          "name": "APEX\u6700\u9ad8\u3060\u3041",
+          "relicCores": 124,
+          "transmuteCores": 30
+        },
+        "66987023": {
+          "atk": 2566361,
+          "chipsCount": 24,
+          "eeBestScore": null,
+          "name": "\u307f\u3083\u3082\u3093",
+          "relicCores": 161,
+          "transmuteCores": 46
+        },
+        "71317570": {
+          "atk": 1840979,
+          "chipsCount": 0,
+          "eeBestScore": null,
+          "name": "\u30eb\u30ad\u1d5f\u1d42",
+          "relicCores": 0,
+          "transmuteCores": 0
+        },
+        "71654481": {
+          "atk": 1971324,
+          "chipsCount": 13,
+          "eeBestScore": null,
+          "name": "\u30aa\u30aa\u30cf\u30b7\u541b",
+          "relicCores": 140,
+          "transmuteCores": 6
+        },
+        "72351878": {
+          "atk": 3197911,
+          "chipsCount": 107,
+          "eeBestScore": null,
+          "name": "f\u03bfrt\u0451\u1d5f\u1d42",
+          "relicCores": 204,
+          "transmuteCores": 40
+        },
+        "78728656": {
+          "atk": 2706530,
+          "chipsCount": 140,
+          "eeBestScore": null,
+          "name": "kdmsh",
+          "relicCores": 113,
+          "transmuteCores": 10
+        },
+        "80039204": {
+          "atk": 3128926,
+          "chipsCount": 63,
+          "eeBestScore": null,
+          "name": "\u63d0\u706f\u9b9f\u9c47",
+          "relicCores": 276,
+          "transmuteCores": 24
+        },
+        "81470771": {
+          "atk": 2802829,
+          "chipsCount": 55,
+          "eeBestScore": null,
+          "name": "\u30ad\u30ad\u30ab\u30a4\u30ab\u30a4",
+          "relicCores": 157,
+          "transmuteCores": 14
+        },
+        "83775824": {
+          "atk": 2863213,
+          "chipsCount": 65,
+          "eeBestScore": null,
+          "name": "Player 83775824",
+          "relicCores": 118,
+          "transmuteCores": 14
+        },
+        "83797317": {
+          "atk": 3111576,
+          "chipsCount": 49,
+          "eeBestScore": null,
+          "name": "\uff2b\u30b4\u30f3",
+          "relicCores": 195,
+          "transmuteCores": 28
+        },
+        "83964356": {
+          "atk": 2949192,
+          "chipsCount": 48,
+          "eeBestScore": null,
+          "name": "\u611b\u5a9b\u306e\u6f01\u5e2b",
+          "relicCores": 243,
+          "transmuteCores": 28
+        },
+        "86752834": {
+          "atk": 3155279,
+          "chipsCount": 52,
+          "eeBestScore": null,
+          "name": "xionTakanori",
+          "relicCores": 212,
+          "transmuteCores": 50
+        },
+        "89470798": {
+          "atk": 2691341,
+          "chipsCount": 78,
+          "eeBestScore": null,
+          "name": "\u306f\u308b\u3075\u308f\u1d5f\u1d42",
+          "relicCores": 147,
+          "transmuteCores": 24
+        }
+      },
+      "name": "Quiet Wolf",
+      "totalAtk": 82866038,
+      "totalChips": 2188,
+      "totalEe": null,
+      "totalRelicCores": 5682,
+      "totalTransmuteCores": 807
+    }
+  },
+  "p1LmeScores": {
+    "members": [
+      {
+        "name": "\u04bban",
+        "rank": 1,
+        "score": 3653,
+        "uid": 60687252
+      },
+      {
+        "name": "Fl3xas",
+        "rank": 2,
+        "score": 3448,
+        "uid": 83339881
+      },
+      {
+        "name": "RABBIT5",
+        "rank": 3,
+        "score": 3210,
+        "uid": 29321884
+      },
+      {
+        "name": "\u795eSterben\u6b7b",
+        "rank": 4,
+        "score": 3169,
+        "uid": 87244358
+      },
+      {
+        "name": "DAYO-P",
+        "rank": 5,
+        "score": 3095,
+        "uid": 103516442
+      },
+      {
+        "name": "Cunner88",
+        "rank": 6,
+        "score": 3071,
+        "uid": 80972473
+      },
+      {
+        "name": "Nubis",
+        "rank": 7,
+        "score": 3044,
+        "uid": 18115624
+      },
+      {
+        "name": "Koncalaz",
+        "rank": 8,
+        "score": 2959,
+        "uid": 102263647
+      },
+      {
+        "name": "SngphO",
+        "rank": 9,
+        "score": 2949,
+        "uid": 87954282
+      },
+      {
+        "name": "Toddlerr",
+        "rank": 10,
+        "score": 2940,
+        "uid": 35869301
+      },
+      {
+        "name": "pumpenjoe",
+        "rank": 11,
+        "score": 2898,
+        "uid": 108546985
+      },
+      {
+        "name": "NeonCBV",
+        "rank": 12,
+        "score": 2820,
+        "uid": 72894129
+      },
+      {
+        "name": "Scoundrel536",
+        "rank": 13,
+        "score": 2728,
+        "uid": 100876140
+      },
+      {
+        "name": "PastalaVista",
+        "rank": 14,
+        "score": 2695,
+        "uid": 75174428
+      },
+      {
+        "name": "\u76feHeathcliff\u5263",
+        "rank": 15,
+        "score": 2691,
+        "uid": 64676255
+      },
+      {
+        "name": "MadameMischief",
+        "rank": 16,
+        "score": 2579,
+        "uid": 41742773
+      },
+      {
+        "name": "p88203044",
+        "rank": 17,
+        "score": 2550,
+        "uid": 88203044
+      },
+      {
+        "name": null,
+        "rank": 18,
+        "score": 2550,
+        "uid": 66607264
+      },
+      {
+        "name": "samwise08",
+        "rank": 19,
+        "score": 2510,
+        "uid": 51071110
+      },
+      {
+        "name": "Bensayyten",
+        "rank": 20,
+        "score": 2492,
+        "uid": 32556489
+      },
+      {
+        "name": "FlyingDutchy",
+        "rank": 21,
+        "score": 2478,
+        "uid": 59566866
+      },
+      {
+        "name": "groggen",
+        "rank": 22,
+        "score": 2473,
+        "uid": 83861839
+      },
+      {
+        "name": "faxnem",
+        "rank": 23,
+        "score": 2437,
+        "uid": 11463573
+      },
+      {
+        "name": "VictorMolusco",
+        "rank": 24,
+        "score": 2426,
+        "uid": 112772047
+      },
+      {
+        "name": "Gritchen",
+        "rank": 25,
+        "score": 2421,
+        "uid": 30658936
+      },
+      {
+        "name": "ergiangi",
+        "rank": 26,
+        "score": 2403,
+        "uid": 18297536
+      },
+      {
+        "name": "HakiLuffy",
+        "rank": 27,
+        "score": 2397,
+        "uid": 10754439
+      },
+      {
+        "name": "BobBobberson",
+        "rank": 28,
+        "score": 2372,
+        "uid": 26277677
+      },
+      {
+        "name": "Apathy_",
+        "rank": 29,
+        "score": 2368,
+        "uid": 113690788
+      },
+      {
+        "name": "theLP",
+        "rank": 30,
+        "score": 2346,
+        "uid": 79510960
+      },
+      {
+        "name": "EMBALOCO",
+        "rank": 31,
+        "score": 2298,
+        "uid": 89511116
+      },
+      {
+        "name": "Rzzza",
+        "rank": 32,
+        "score": 2282,
+        "uid": 71028860
+      },
+      {
+        "name": "gubrax",
+        "rank": 33,
+        "score": 2274,
+        "uid": 106162623
+      },
+      {
+        "name": "Cheeselife",
+        "rank": 34,
+        "score": 2247,
+        "uid": 29904762
+      },
+      {
+        "name": "BlackFlamE",
+        "rank": 35,
+        "score": 2235,
+        "uid": 70603922
+      },
+      {
+        "name": "datamaster",
+        "rank": 36,
+        "score": 2187,
+        "uid": 69676999
+      },
+      {
+        "name": null,
+        "rank": 37,
+        "score": 2184,
+        "uid": 80018314
+      },
+      {
+        "name": "Belthazar",
+        "rank": 38,
+        "score": 1937,
+        "uid": 36484758
+      },
+      {
+        "name": "SterbyTools",
+        "rank": 39,
+        "score": 0,
+        "uid": 115742768
+      }
+    ],
+    "totalScore": 82172
+  },
+  "roundProgression": {
+    "1": {
+      "medalsEnd": 32328,
+      "medalsStart": 0,
+      "outcomeAttacking": {
+        "attackerProgress": 32328,
+        "cleared": true,
+        "medalsRequired": 31200,
+        "offensiveOverload": false,
+        "opponentClan": "PURE",
+        "opponentClanId": 14037,
+        "ownerScore": 41033,
+        "role": "attacker"
+      },
+      "outcomeDefending": {
+        "attackerProgress": 10029,
+        "cleared": false,
+        "medalsRequired": 21100,
+        "offensiveOverload": false,
+        "opponentClan": "PURE",
+        "opponentClanId": 14037,
+        "ownerScore": 82172,
+        "role": "owner"
+      },
+      "pointsEnd": 2,
+      "pointsStart": 0,
+      "roundsHit": {
+        "attacksRecorded": 10,
+        "scoredEntries": [
+          {
+            "name": "DAYO-P",
+            "score": 6275
+          },
+          {
+            "name": "pumpenjoe",
+            "score": 5569
+          },
+          {
+            "name": "NeonCBV",
+            "score": 4801
+          },
+          {
+            "name": "HakiLuffy",
+            "score": 3125
+          },
+          {
+            "name": "FlyingDutchy",
+            "score": 3092
+          },
+          {
+            "name": "faxnem",
+            "score": 3042
+          },
+          {
+            "name": "BobBobberson",
+            "score": 2686
+          },
+          {
+            "name": "datamaster",
+            "score": 1853
+          },
+          {
+            "name": null,
+            "score": 1667
+          },
+          {
+            "name": null,
+            "score": 218
+          }
+        ],
+        "totalMembers": 39
+      }
+    },
+    "2": {
+      "medalsEnd": 58902,
+      "medalsStart": 32328,
+      "outcomeAttacking": {
+        "attackerProgress": 26574,
+        "cleared": true,
+        "medalsRequired": 20100,
+        "offensiveOverload": true,
+        "opponentClan": "Team.SD3",
+        "opponentClanId": 37994,
+        "ownerScore": 75087,
+        "role": "attacker"
+      },
+      "outcomeDefending": {
+        "attackerProgress": 15178,
+        "cleared": false,
+        "medalsRequired": 42200,
+        "offensiveOverload": false,
+        "opponentClan": "Team.SD3",
+        "opponentClanId": 37994,
+        "ownerScore": 82172,
+        "role": "owner"
+      },
+      "pointsEnd": 4,
+      "pointsStart": 2,
+      "roundsHit": {
+        "attacksRecorded": 32,
+        "scoredEntries": [
+          {
+            "name": "\u04bban",
+            "score": 3407
+          },
+          {
+            "name": "Fl3xas",
+            "score": 2416
+          },
+          {
+            "name": "Nubis",
+            "score": 1561
+          },
+          {
+            "name": "pumpenjoe",
+            "score": 1530
+          },
+          {
+            "name": "RABBIT5",
+            "score": 1468
+          },
+          {
+            "name": "DAYO-P",
+            "score": 1456
+          },
+          {
+            "name": "\u795eSterben\u6b7b",
+            "score": 1241
+          },
+          {
+            "name": "Toddlerr",
+            "score": 952
+          },
+          {
+            "name": "SngphO",
+            "score": 880
+          },
+          {
+            "name": "Koncalaz",
+            "score": 817
+          },
+          {
+            "name": "Scoundrel536",
+            "score": 678
+          },
+          {
+            "name": "PastalaVista",
+            "score": 657
+          },
+          {
+            "name": null,
+            "score": 602
+          },
+          {
+            "name": "PinkyToeBeans",
+            "score": 594
+          },
+          {
+            "name": "FlyingDutchy",
+            "score": 578
+          },
+          {
+            "name": "theLP",
+            "score": 572
+          },
+          {
+            "name": "samwise08",
+            "score": 557
+          },
+          {
+            "name": "HakiLuffy",
+            "score": 544
+          },
+          {
+            "name": "Bensayyten",
+            "score": 540
+          },
+          {
+            "name": "EMBALOCO",
+            "score": 537
+          },
+          {
+            "name": "p88203044",
+            "score": 523
+          },
+          {
+            "name": "Apathy_",
+            "score": 512
+          },
+          {
+            "name": "gubrax",
+            "score": 510
+          },
+          {
+            "name": "Gritchen",
+            "score": 508
+          },
+          {
+            "name": "BlackFlamE",
+            "score": 507
+          },
+          {
+            "name": "BobBobberson",
+            "score": 507
+          },
+          {
+            "name": "Rzzza",
+            "score": 503
+          },
+          {
+            "name": "datamaster",
+            "score": 502
+          },
+          {
+            "name": "VictorMolusco",
+            "score": 470
+          },
+          {
+            "name": null,
+            "score": 445
+          },
+          {
+            "name": "Cheeselife",
+            "score": 441
+          },
+          {
+            "name": "Belthazar",
+            "score": 402
+          }
+        ],
+        "totalMembers": 39
+      }
+    },
+    "3": {
+      "medalsEnd": 77460,
+      "medalsStart": 58902,
+      "outcomeAttacking": {
+        "attackerProgress": 18558,
+        "cleared": false,
+        "medalsRequired": 21600,
+        "offensiveOverload": false,
+        "opponentClan": "Quiet Wolf",
+        "opponentClanId": 48643,
+        "ownerScore": 86744,
+        "role": "attacker"
+      },
+      "outcomeDefending": {
+        "attackerProgress": 24026,
+        "cleared": true,
+        "medalsRequired": 21100,
+        "offensiveOverload": false,
+        "opponentClan": "Quiet Wolf",
+        "opponentClanId": 48643,
+        "ownerScore": 82172,
+        "role": "owner"
+      },
+      "pointsEnd": 4,
+      "pointsStart": 4,
+      "roundsHit": {
+        "attacksRecorded": 33,
+        "scoredEntries": [
+          {
+            "name": "\u04bban",
+            "score": 2135
+          },
+          {
+            "name": "Fl3xas",
+            "score": 1039
+          },
+          {
+            "name": "RABBIT5",
+            "score": 821
+          },
+          {
+            "name": "DAYO-P",
+            "score": 791
+          },
+          {
+            "name": "pumpenjoe",
+            "score": 766
+          },
+          {
+            "name": "Nubis",
+            "score": 744
+          },
+          {
+            "name": "Cunner88",
+            "score": 739
+          },
+          {
+            "name": "\u795eSterben\u6b7b",
+            "score": 709
+          },
+          {
+            "name": "Toddlerr",
+            "score": 636
+          },
+          {
+            "name": "Scoundrel536",
+            "score": 565
+          },
+          {
+            "name": "NeonCBV",
+            "score": 560
+          },
+          {
+            "name": "SngphO",
+            "score": 558
+          },
+          {
+            "name": "Koncalaz",
+            "score": 534
+          },
+          {
+            "name": "MadameMischief",
+            "score": 510
+          },
+          {
+            "name": "Bensayyten",
+            "score": 502
+          },
+          {
+            "name": "FlyingDutchy",
+            "score": 500
+          },
+          {
+            "name": null,
+            "score": 500
+          },
+          {
+            "name": "Gritchen",
+            "score": 491
+          },
+          {
+            "name": "HakiLuffy",
+            "score": 485
+          },
+          {
+            "name": "theLP",
+            "score": 483
+          },
+          {
+            "name": "ergiangi",
+            "score": 478
+          },
+          {
+            "name": "p88203044",
+            "score": 474
+          },
+          {
+            "name": "\u76feHeathcliff\u5263",
+            "score": 474
+          },
+          {
+            "name": "faxnem",
+            "score": 463
+          },
+          {
+            "name": "samwise08",
+            "score": 455
+          },
+          {
+            "name": "groggen",
+            "score": 444
+          },
+          {
+            "name": "BobBobberson",
+            "score": 443
+          },
+          {
+            "name": "BlackFlamE",
+            "score": 434
+          },
+          {
+            "name": "Cheeselife",
+            "score": 415
+          },
+          {
+            "name": "Apathy_",
+            "score": 410
+          },
+          {
+            "name": "gubrax",
+            "score": 395
+          },
+          {
+            "name": null,
+            "score": 382
+          },
+          {
+            "name": "Belthazar",
+            "score": 361
+          }
+        ],
+        "totalMembers": 39
+      }
+    }
+  },
+  "warnings": []
+}
