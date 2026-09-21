@@ -1,6 +1,7 @@
 {
   "finalRanking": [
     {
+      "clanId": 48643,
       "clanName": "Quiet Wolf",
       "medals": 200763,
       "p1TotalScore": 86744,
@@ -8,6 +9,7 @@
       "rank": 1
     },
     {
+      "clanId": 44262,
       "clanName": "Freedom\u02e2\u1d57\u02b3\u1d43\u02b8",
       "medals": 77460,
       "p1TotalScore": 82172,
@@ -15,13 +17,15 @@
       "rank": 2
     },
     {
+      "clanId": 37994,
       "clanName": "Team.SD\u3000",
       "medals": 141521,
-      "p1TotalScore": null,
+      "p1TotalScore": 75087,
       "points": 2,
       "rank": 3
     },
     {
+      "clanId": 14037,
       "clanName": "PURE",
       "medals": 29140,
       "p1TotalScore": 41033,
