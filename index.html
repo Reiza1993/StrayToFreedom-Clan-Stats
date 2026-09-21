@@ -262,6 +262,52 @@
             gap: 4px;
         }
 
+        /* ── LME History: Lunar Points / Secret Score trend chart ── */
+        .lme-trend-chart {
+            background: #2d3748;
+            border: 1px solid #4a5568;
+            border-radius: 10px;
+            padding: 10px 12px 6px 12px;
+            margin-bottom: 12px;
+        }
+        .lme-trend-legend {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-bottom: 6px;
+        }
+        .lme-trend-legend-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: #a0aec0;
+            font-size: 10px;
+            font-weight: 600;
+        }
+        .lme-trend-tooltip {
+            position: absolute;
+            top: 2px;
+            background: #1a202c;
+            border: 1px solid #4a5568;
+            border-radius: 8px;
+            padding: 6px 10px;
+            min-width: 120px;
+            pointer-events: none;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+            z-index: 2;
+        }
+        .lme-trend-tooltip-row {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 11px;
+            white-space: nowrap;
+        }
+        .lme-trend-tooltip-row + .lme-trend-tooltip-row { margin-top: 2px; }
+        .lme-trend-tooltip-key { display: inline-block; width: 10px; height: 2px; flex-shrink: 0; }
+        .lme-trend-tooltip-label { color: #718096; }
+        .lme-trend-tooltip-value { color: #e2e8f0; margin-left: auto; padding-left: 8px; }
+
         .gain-positive { color: #10b981; }
         .gain-negative { color: #f56565; }
         .gain-neutral  { color: #a0aec0; }
@@ -584,6 +630,7 @@
 
             <!-- LME History Sub-tab -->
             <div id="lme-history-subtab" class="lunar-subtab-content" style="display:none;">
+                <div id="lmeTrendChart"></div>
                 <p style="color: #718096; font-size: 11px; text-align: center; margin: 0 0 10px 0;" data-i18n="modal.lme_history.subtitle">Pick a cycle to see its full results</p>
                 <select id="lmeCycleSelect" style="width:100%; margin-bottom:10px;"></select>
                 <div id="lmeCycleDetail"></div>
@@ -1513,6 +1560,240 @@
             return table;
         }
 
+        // ══════════════════════════════════════════════
+        //  LUNAR POINTS / SECRET SCORE TREND
+        //  Phase 1: clanStats.js's lmeHistory (legacy), from LME #31
+        //  onward — same baseline + league/rank delta formula as the
+        //  "Lunar Points" stat on the LME tab. Phase 2: continues with
+        //  the new per-cycle JSON files, which report the clan's
+        //  absolute lunar points directly instead of a delta.
+        //  Secret Score = lunar points * a rank-factor that resets to
+        //  1.0 on a 1st-place finish and decays otherwise — walked
+        //  across BOTH phases as one unbroken streak.
+        // ══════════════════════════════════════════════
+        function computeLunarTrend(newCycles) {
+            const points = [];
+            let rankFactor = 1.0;
+            const applyRankFactor = (rank) => {
+                if      (rank === 1) rankFactor  = 1.0;
+                else if (rank === 2) rankFactor *= 0.98;
+                else if (rank === 3) rankFactor *= 0.96;
+                else if (rank === 4) rankFactor *= 0.94;
+            };
+
+            const legacyChrono = [...lmeHistory].sort((a, b) => a.lmeNumber - b.lmeNumber);
+            let lunarPts = clanStats.lunarPoints;
+            let baselineAnchored = false;
+
+            legacyChrono.forEach(entry => {
+                applyRankFactor(entry.rank);
+                if (entry.lmeNumber < 31) return;
+
+                if (!baselineAnchored) {
+                    points.push({ label: 'Baseline', lunarPoints: lunarPts, secretScore: lunarPts * rankFactor, phase: 'legacy' });
+                    baselineAnchored = true;
+                }
+
+                const league = (entry.league || '').toLowerCase();
+                let delta = 0;
+                if (league === 'champion')          delta = LUNAR_POINTS_TABLE.champion[entry.rank] || 0;
+                else if (league.includes('legend')) delta = LUNAR_POINTS_TABLE.legend[entry.rank]   || 0;
+                lunarPts += delta;
+
+                points.push({ label: `#${entry.lmeNumber}`, lunarPoints: lunarPts, secretScore: lunarPts * rankFactor, phase: 'legacy' });
+            });
+
+            [...newCycles].sort((a, b) => a.lmeNumber - b.lmeNumber).forEach(cycle => {
+                const own = (cycle.finalRanking || []).find(c => c.clanId === cycle.freedomClanId) || {};
+                applyRankFactor(own.rank);
+
+                const pts = cycle.lunarDetails?.[cycle.freedomClanId]?.lunarPoints;
+                if (pts === null || pts === undefined) return;
+
+                points.push({
+                    label: formatCycleDate(cycle.generatedAt),
+                    lunarPoints: pts,
+                    secretScore: pts * rankFactor,
+                    phase: 'new',
+                });
+            });
+
+            return points;
+        }
+
+        async function fetchAllLMECycles() {
+            const cycles = [];
+            let n = 1;
+            while (true) {
+                const cycle = await fetchLMECycle(n);
+                if (!cycle) break;
+                cycles.push(cycle);
+                n++;
+            }
+            return cycles;
+        }
+
+        async function loadLunarTrendChart() {
+            const container = document.getElementById('lmeTrendChart');
+            if (!container) return;
+
+            const newCycles = await fetchAllLMECycles();
+            const points = computeLunarTrend(newCycles);
+
+            container.innerHTML = '';
+            if (points.length < 2) return;
+            container.appendChild(buildLunarTrendChart(points));
+        }
+
+        function buildLunarTrendChart(points) {
+            const W = 640, H = 220;
+            const padL = 46, padR = 14, padT = 14, padB = 8;
+            const plotW = W - padL - padR;
+            const plotH = H - padT - padB;
+
+            const allVals = points.flatMap(p => [p.lunarPoints, p.secretScore]);
+            const rawMin = Math.min(...allVals);
+            const rawMax = Math.max(...allVals);
+            const span = Math.max(rawMax - rawMin, 1);
+            const yMin = Math.floor((rawMin - span * 0.1) / 10) * 10;
+            const yMax = Math.ceil((rawMax + span * 0.1) / 10) * 10;
+            const yRange = (yMax - yMin) || 1;
+
+            const xAt = (i) => points.length > 1 ? padL + (i / (points.length - 1)) * plotW : padL + plotW / 2;
+            const yAt = (v) => padT + plotH - ((v - yMin) / yRange) * plotH;
+
+            const tickCount = 4;
+            const ticks = Array.from({ length: tickCount + 1 }, (_, i) => yMin + (i / tickCount) * yRange);
+            const gridLines = ticks.map(t => `
+                <line x1="${padL}" y1="${yAt(t).toFixed(1)}" x2="${W - padR}" y2="${yAt(t).toFixed(1)}" stroke="#374151" stroke-width="1"/>
+                <text x="${padL - 8}" y="${(yAt(t) + 3).toFixed(1)}" text-anchor="end" font-size="9" fill="#718096">${Math.round(t).toLocaleString()}</text>
+            `).join('');
+
+            const lunarPath  = points.map((p, i) => `${i === 0 ? 'M' : 'L'} ${xAt(i).toFixed(1)},${yAt(p.lunarPoints).toFixed(1)}`).join(' ');
+            const secretPath = points.map((p, i) => `${i === 0 ? 'M' : 'L'} ${xAt(i).toFixed(1)},${yAt(p.secretScore).toFixed(1)}`).join(' ');
+
+            const transitionIdx = points.findIndex(p => p.phase === 'new');
+            let transitionMarker = '';
+            if (transitionIdx > 0) {
+                const tx = xAt(transitionIdx).toFixed(1);
+                transitionMarker = `
+                    <line x1="${tx}" y1="${padT}" x2="${tx}" y2="${H - padB}" stroke="#4a5568" stroke-width="1" stroke-dasharray="3,3"/>
+                `;
+            }
+
+            const lastIdx = points.length - 1;
+            const endMarkers = [
+                { v: points[lastIdx].lunarPoints,  color: '#3987e5' },
+                { v: points[lastIdx].secretScore, color: '#d95926' },
+            ].map(m => `
+                <circle cx="${xAt(lastIdx).toFixed(1)}" cy="${yAt(m.v).toFixed(1)}" r="6" fill="#2d3748"/>
+                <circle cx="${xAt(lastIdx).toFixed(1)}" cy="${yAt(m.v).toFixed(1)}" r="4" fill="${m.color}"/>
+            `).join('');
+
+            const wrap = document.createElement('div');
+            wrap.className = 'lme-trend-chart';
+            wrap.innerHTML = `
+                <div class="lme-trend-legend">
+                    <span class="lme-trend-legend-item"><svg width="16" height="4" viewBox="0 0 16 4"><line x1="0" y1="2" x2="16" y2="2" stroke="#3987e5" stroke-width="2" stroke-linecap="round"/></svg>Lunar Points</span>
+                    <span class="lme-trend-legend-item"><svg width="16" height="4" viewBox="0 0 16 4"><line x1="0" y1="2" x2="16" y2="2" stroke="#d95926" stroke-width="2" stroke-linecap="round"/></svg>Secret Score</span>
+                </div>
+                <div style="position:relative;">
+                    <svg viewBox="0 0 ${W} ${H}" style="width:100%; height:auto; display:block; overflow:visible;">
+                        ${gridLines}
+                        ${transitionMarker}
+                        <path d="${secretPath}" fill="none" stroke="#d95926" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="${lunarPath}"  fill="none" stroke="#3987e5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        ${endMarkers}
+                        <line class="lme-trend-crosshair" x1="0" y1="${padT}" x2="0" y2="${H - padB}" stroke="#a0aec0" stroke-width="1" style="display:none;"/>
+                        <circle class="lme-trend-hover-dot lme-trend-hover-lunar"  r="4" fill="#3987e5" stroke="#2d3748" stroke-width="2" style="display:none;"/>
+                        <circle class="lme-trend-hover-dot lme-trend-hover-secret" r="4" fill="#d95926" stroke="#2d3748" stroke-width="2" style="display:none;"/>
+                        <rect class="lme-trend-hit" x="${padL}" y="0" width="${plotW}" height="${H}" fill="transparent" style="cursor:crosshair;" tabindex="0"/>
+                    </svg>
+                    <div class="lme-trend-tooltip" style="display:none;"></div>
+                </div>
+                <div style="display:flex; justify-content:space-between; font-size:9px; color:#718096; margin: 2px ${padR}px 0 ${padL}px;">
+                    <span>${points[0].label}</span>
+                    <span>${points[lastIdx].label}</span>
+                </div>
+            `;
+
+            const svg       = wrap.querySelector('svg');
+            const hitRect    = wrap.querySelector('.lme-trend-hit');
+            const crosshair  = wrap.querySelector('.lme-trend-crosshair');
+            const dotLunar   = wrap.querySelector('.lme-trend-hover-lunar');
+            const dotSecret  = wrap.querySelector('.lme-trend-hover-secret');
+            const tooltip    = wrap.querySelector('.lme-trend-tooltip');
+
+            function showAt(idx) {
+                const p = points[idx];
+                const x = xAt(idx);
+
+                crosshair.setAttribute('x1', x);
+                crosshair.setAttribute('x2', x);
+                crosshair.style.display = '';
+
+                dotLunar.setAttribute('cx', x);
+                dotLunar.setAttribute('cy', yAt(p.lunarPoints));
+                dotLunar.style.display = '';
+
+                dotSecret.setAttribute('cx', x);
+                dotSecret.setAttribute('cy', yAt(p.secretScore));
+                dotSecret.style.display = '';
+
+                tooltip.innerHTML = `
+                    <div style="font-size:10px; color:#a0aec0; margin-bottom:3px;"></div>
+                    <div class="lme-trend-tooltip-row">
+                        <span class="lme-trend-tooltip-key" style="background:#3987e5;"></span>
+                        <span class="lme-trend-tooltip-label">Lunar Points</span>
+                        <strong class="lme-trend-tooltip-value"></strong>
+                    </div>
+                    <div class="lme-trend-tooltip-row">
+                        <span class="lme-trend-tooltip-key" style="background:#d95926;"></span>
+                        <span class="lme-trend-tooltip-label">Secret Score</span>
+                        <strong class="lme-trend-tooltip-value"></strong>
+                    </div>
+                `;
+                tooltip.querySelector('div').textContent = p.label;
+                const values = tooltip.querySelectorAll('.lme-trend-tooltip-value');
+                values[0].textContent = Math.round(p.lunarPoints).toLocaleString();
+                values[1].textContent = p.secretScore.toFixed(1);
+
+                const pct = points.length > 1 ? idx / (points.length - 1) : 0.5;
+                tooltip.style.display = '';
+                tooltip.style.left = `${pct * 100}%`;
+                tooltip.style.transform = `translateX(${pct > 0.7 ? '-100%' : pct < 0.3 ? '0%' : '-50%'})`;
+            }
+
+            function hide() {
+                crosshair.style.display = 'none';
+                dotLunar.style.display  = 'none';
+                dotSecret.style.display = 'none';
+                tooltip.style.display   = 'none';
+            }
+
+            function nearestIndex(clientX) {
+                const rect = svg.getBoundingClientRect();
+                const svgX = rect.width > 0 ? ((clientX - rect.left) / rect.width) * W : padL;
+                const idx = points.length > 1
+                    ? Math.round(((svgX - padL) / plotW) * (points.length - 1))
+                    : 0;
+                return Math.max(0, Math.min(points.length - 1, idx));
+            }
+
+            hitRect.addEventListener('pointermove', (e) => showAt(nearestIndex(e.clientX)));
+            hitRect.addEventListener('pointerleave', hide);
+
+            let focusedIdx = points.length - 1;
+            hitRect.addEventListener('focus', () => showAt(focusedIdx));
+            hitRect.addEventListener('blur', hide);
+            hitRect.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowLeft')  { focusedIdx = Math.max(0, focusedIdx - 1); showAt(focusedIdx); e.preventDefault(); }
+                if (e.key === 'ArrowRight') { focusedIdx = Math.min(points.length - 1, focusedIdx + 1); showAt(focusedIdx); e.preventDefault(); }
+            });
+
+            return wrap;
+        }
+
         function loadAlumni() {
             const grid = document.getElementById('alumniGrid');
             grid.innerHTML = '';
@@ -1978,6 +2259,7 @@
         calculateEETabSummary();
         updateLunarPointsDisplay();
         loadLMEHistory();
+        loadLunarTrendChart();
         loadLunarDetails();
         loadAlumni();
         switchSubTab('stats');
