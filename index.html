@@ -203,7 +203,7 @@
             font-weight: 600;
         }
 
-        /* ── LME History: per-cycle expandable cards ── */
+        /* ── LME History: single-cycle detail panel ── */
         .lme-cycle-card {
             background: #2d3748;
             border: 1px solid #4a5568;
@@ -216,10 +216,7 @@
             justify-content: space-between;
             gap: 8px;
             padding: 10px 12px;
-            cursor: pointer;
-            user-select: none;
         }
-        .lme-cycle-header:hover { background: #374151; }
         .lme-cycle-section-label {
             color: #a0aec0;
             font-size: 10px;
@@ -251,19 +248,6 @@
         .lme-cycle-table tbody tr.lme-cycle-own-row { background: rgba(104, 211, 145, 0.12); }
         .lme-cycle-table th.lme-sortable-th { cursor: pointer; user-select: none; white-space: nowrap; }
         .lme-cycle-table th.lme-sortable-th:hover { color: #e2e8f0; }
-
-        .lme-cycle-nav-chip {
-            padding: 4px 10px;
-            background: #2d3748;
-            border: 1px solid #4a5568;
-            border-radius: 999px;
-            color: #a0aec0;
-            font-size: 11px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.15s ease;
-        }
-        .lme-cycle-nav-chip:hover { background: #374151; color: #e2e8f0; border-color: #667eea; }
 
         .gain-positive { color: #10b981; }
         .gain-negative { color: #f56565; }
@@ -587,9 +571,9 @@
 
             <!-- LME History Sub-tab -->
             <div id="lme-history-subtab" class="lunar-subtab-content" style="display:none;">
-                <p style="color: #718096; font-size: 11px; text-align: center; margin: 0 0 10px 0;" data-i18n="modal.lme_history.subtitle">Full results per cycle — tap a row to expand</p>
-                <div id="lmeCyclesNav" style="display:flex; flex-wrap:wrap; gap:6px; margin-bottom:10px;"></div>
-                <div id="lmeCyclesContainer" style="display:flex; flex-direction:column; gap:8px;"></div>
+                <p style="color: #718096; font-size: 11px; text-align: center; margin: 0 0 10px 0;" data-i18n="modal.lme_history.subtitle">Pick a cycle to see its full results</p>
+                <select id="lmeCycleSelect" style="width:100%; margin-bottom:10px;"></select>
+                <div id="lmeCycleDetail"></div>
             </div>
         </div>
 
@@ -1280,71 +1264,68 @@
             }
         }
 
+        // cycle number -> already-fetched JSON, so switching the dropdown
+        // doesn't need to re-fetch a cycle it already has.
+        let lmeCyclesCache = {};
+
         async function loadLMEHistory() {
-            const container = document.getElementById('lmeCyclesContainer');
-            const nav = document.getElementById('lmeCyclesNav');
-            if (!container || !nav) return;
+            const select = document.getElementById('lmeCycleSelect');
+            const detail = document.getElementById('lmeCycleDetail');
+            if (!select || !detail) return;
 
-            container.innerHTML = '';
-            nav.innerHTML = '';
+            select.innerHTML = '';
+            detail.innerHTML = '';
+            lmeCyclesCache = {};
+            select.onchange = () => {
+                const cycle = lmeCyclesCache[select.value];
+                if (cycle) renderLMECycleDetail(cycle);
+            };
 
-            // Cycles are fetched one at a time (they don't all arrive together),
-            // so each card is appended as soon as it's ready, newest on top —
-            // the nav chips let you jump straight to one that's already loaded
-            // instead of waiting for/scrolling through the rest.
+            // Cycles are fetched one at a time (they don't all arrive
+            // together) — each is added to the dropdown as soon as it's
+            // ready, and shown immediately so there's something on screen
+            // rather than a blank wait for every cycle to finish loading.
             let n = 1;
             let found = 0;
             while (true) {
                 const cycle = await fetchLMECycle(n);
                 if (!cycle) break;
                 found++;
+                lmeCyclesCache[cycle.lmeNumber] = cycle;
 
-                const prevNewest = container.firstElementChild;
-                if (prevNewest) {
-                    prevNewest.querySelector('.lme-cycle-body').style.display = 'none';
-                    prevNewest.querySelector('.lme-cycle-chevron').textContent = '▼';
-                }
+                const option = document.createElement('option');
+                option.value = cycle.lmeNumber;
+                option.textContent = `LME #${cycle.lmeNumber} — ${formatCycleDate(cycle.generatedAt)}`;
+                select.insertBefore(option, select.firstChild);
 
-                const card = buildLMECycleCard(cycle, true);
-                container.insertBefore(card, container.firstChild);
-                nav.appendChild(buildLMECycleNavChip(cycle, container));
+                select.value = cycle.lmeNumber;
+                renderLMECycleDetail(cycle);
 
                 n++;
             }
 
+            select.style.display = found === 0 ? 'none' : '';
             if (found === 0) {
-                container.innerHTML = `<p style="color:#718096; font-size:12px; text-align:center; padding: 12px 0;" data-i18n="modal.lme_history.empty">No LME cycle data available yet.</p>`;
+                detail.innerHTML = `<p style="color:#718096; font-size:12px; text-align:center; padding: 12px 0;" data-i18n="modal.lme_history.empty">No LME cycle data available yet.</p>`;
                 applyTranslations();
             }
         }
 
-        function buildLMECycleNavChip(cycle, container) {
-            const chip = document.createElement('button');
-            chip.type = 'button';
-            chip.className = 'lme-cycle-nav-chip';
-            chip.textContent = `#${cycle.lmeNumber}`;
-            chip.onclick = () => {
-                const target = container.querySelector(`[data-lme-number="${cycle.lmeNumber}"]`);
-                if (!target) return;
-                const body = target.querySelector('.lme-cycle-body');
-                if (body.style.display === 'none') {
-                    body.style.display = '';
-                    target.querySelector('.lme-cycle-chevron').textContent = '▲';
-                }
-                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            };
-            return chip;
-        }
+        // Renders exactly one cycle's detail — the previously shown cycle
+        // is discarded (detail.innerHTML reset) each time the dropdown
+        // selection changes.
+        function renderLMECycleDetail(cycle) {
+            const detail = document.getElementById('lmeCycleDetail');
+            if (!detail) return;
+            detail.innerHTML = '';
 
-        function buildLMECycleCard(cycle, expanded) {
             const rankColors = { 1: '#ffd700', 2: '#c0c0c0', 3: '#cd7930', 4: '#f56565' };
             const ranking = [...(cycle.finalRanking || [])].sort((a, b) => a.rank - b.rank);
             const own = ranking.find(c => c.clanId === cycle.freedomClanId) || {};
             const rankColor = rankColors[own.rank] || '#f56565';
 
-            const card = document.createElement('div');
-            card.className = 'lme-cycle-card';
-            card.dataset.lmeNumber = cycle.lmeNumber;
+            const panel = document.createElement('div');
+            panel.className = 'lme-cycle-card';
 
             const header = document.createElement('div');
             header.className = 'lme-cycle-header';
@@ -1356,26 +1337,17 @@
                 <div style="display:flex; align-items:center; gap:10px; flex-shrink:0;">
                     <span style="color:#68d391; font-size:11px; font-weight:600; white-space:nowrap;">${(own.medals ?? 0).toLocaleString()}</span>
                     <span style="color:#718096; font-size:10px; white-space:nowrap;">${formatCycleDate(cycle.generatedAt)}</span>
-                    <span class="lme-cycle-chevron" style="color:#a0aec0; font-size:10px;">${expanded ? '▲' : '▼'}</span>
                 </div>
             `;
 
             const body = document.createElement('div');
-            body.className = 'lme-cycle-body';
-            body.style.display = expanded ? '' : 'none';
             body.style.padding = '0 12px 12px 12px';
             body.style.borderTop = '1px solid #4a5568';
             body.appendChild(buildLMECycleBody(cycle, ranking, own));
 
-            header.onclick = () => {
-                const isOpen = body.style.display !== 'none';
-                body.style.display = isOpen ? 'none' : '';
-                header.querySelector('.lme-cycle-chevron').textContent = isOpen ? '▼' : '▲';
-            };
-
-            card.appendChild(header);
-            card.appendChild(body);
-            return card;
+            panel.appendChild(header);
+            panel.appendChild(body);
+            detail.appendChild(panel);
         }
 
         function buildLMECycleBody(cycle, ranking, own) {
