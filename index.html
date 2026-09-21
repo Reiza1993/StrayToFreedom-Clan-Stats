@@ -1785,7 +1785,6 @@
                 </div>
             `;
 
-            const svg       = wrap.querySelector('svg');
             const hitRect    = wrap.querySelector('.lme-trend-hit');
             const crosshair  = wrap.querySelector('.lme-trend-crosshair');
             const dotLunar   = wrap.querySelector('.lme-trend-hover-lunar');
@@ -1841,10 +1840,17 @@
             }
 
             function nearestIndex(clientX) {
-                const rect = svg.getBoundingClientRect();
-                const svgX = rect.width > 0 ? ((clientX - rect.left) / rect.width) * W : padL;
+                // hitRect's own box already IS the plot area (x=padL, width=plotW
+                // in viewBox units) — no need to go back through the full SVG's
+                // bounding box. (Using wrap.querySelector('svg') here used to grab
+                // the WRONG <svg> — the legend's tiny 16x4 line-key icon is the
+                // first <svg> in document order, not the chart — which is why
+                // hover used to jump to whichever end the resulting bogus scale
+                // factor clamped to instead of tracking the cursor.)
+                const rect = hitRect.getBoundingClientRect();
+                const rel = rect.width > 0 ? (clientX - rect.left) / rect.width : 0;
                 const idx = points.length > 1
-                    ? Math.round(((svgX - padL) / plotW) * (points.length - 1))
+                    ? Math.round(rel * (points.length - 1))
                     : 0;
                 return Math.max(0, Math.min(points.length - 1, idx));
             }
