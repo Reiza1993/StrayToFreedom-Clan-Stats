@@ -239,6 +239,7 @@
             letter-spacing: 0.3px;
             padding: 4px 6px;
             text-align: center;
+            white-space: nowrap;
         }
         .lme-cycle-table th:first-child, .lme-cycle-table td:first-child { text-align: left; }
         /* Rank is the first column in the Final Ranking table, but unlike
@@ -249,6 +250,11 @@
             padding: 5px 6px;
             text-align: center;
             color: #e2e8f0;
+            /* Overrides the page-wide `td { word-break: break-word }` rule,
+               which — on a narrow phone screen with 5-6 columns squeezed
+               into it — was breaking names onto one character per line.
+               The wrapping div below scrolls horizontally instead. */
+            white-space: nowrap;
         }
         .lme-cycle-table tbody tr:nth-child(even) { background: #374151; }
         .lme-cycle-table tbody tr.lme-cycle-own-row { background: rgba(104, 211, 145, 0.12); }
@@ -1481,32 +1487,36 @@
             const wrap = document.createElement('div');
             wrap.innerHTML = `
                 <div class="lme-cycle-section-label">Final Ranking</div>
-                <table class="lme-cycle-table">
-                    <thead><tr>
-                        <th class="lme-rank-col">Rank</th>
-                        <th>Clan</th>
-                        <th><span class="lme-th-icon-label"><img src="${ICON_BASE}Medals.png" alt="" onerror="this.style.display='none'">Rounds</span></th>
-                        <th><span class="lme-th-icon-label"><img src="${ICON_BASE}Defense_Attack%20Points.png" alt="" onerror="this.style.display='none'">ATK / DEF</span></th>
-                        <th><span class="lme-th-icon-label"><img src="${ICON_BASE}Medals.png" alt="" onerror="this.style.display='none'">P1 Total</span></th>
-                    </tr></thead>
-                    <tbody>${rankRows}</tbody>
-                </table>
+                <div style="overflow-x:auto;">
+                    <table class="lme-cycle-table">
+                        <thead><tr>
+                            <th class="lme-rank-col">Rank</th>
+                            <th>Clan</th>
+                            <th><span class="lme-th-icon-label"><img src="${ICON_BASE}Medals.png" alt="" onerror="this.style.display='none'">Rounds</span></th>
+                            <th><span class="lme-th-icon-label"><img src="${ICON_BASE}Defense_Attack%20Points.png" alt="" onerror="this.style.display='none'">ATK / DEF</span></th>
+                            <th><span class="lme-th-icon-label"><img src="${ICON_BASE}Medals.png" alt="" onerror="this.style.display='none'">P1 Total</span></th>
+                        </tr></thead>
+                        <tbody>${rankRows}</tbody>
+                    </table>
+                </div>
 
                 <div class="lme-cycle-section-label">Lunar Details</div>
-                <table class="lme-cycle-table">
-                    <thead><tr>
-                        <th>Clan</th>
-                        <th>🌙 Pts</th>
-                        <th><img src="${ICON_BASE}ATK.png" alt="ATK" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><span style="display:none;">ATK</span></th>
-                        <th><img src="${ICON_BASE}Resonance%20Chips.png" alt="Chips" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><span style="display:none;">Chips</span></th>
-                        <th><img src="${ICON_BASE}Relic%20Cores.png" alt="Relic Cores" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><span style="display:none;">Relic</span></th>
-                        <th><img src="${ICON_BASE}TransmutaCore.png" alt="Transmute Cores" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><span style="display:none;">Transmute</span></th>
-                    </tr></thead>
-                    <tbody>${lunarRows}</tbody>
-                </table>
+                <div style="overflow-x:auto;">
+                    <table class="lme-cycle-table">
+                        <thead><tr>
+                            <th>Clan</th>
+                            <th>🌙 Pts</th>
+                            <th><img src="${ICON_BASE}ATK.png" alt="ATK" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><span style="display:none;">ATK</span></th>
+                            <th><img src="${ICON_BASE}Resonance%20Chips.png" alt="Chips" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><span style="display:none;">Chips</span></th>
+                            <th><img src="${ICON_BASE}Relic%20Cores.png" alt="Relic Cores" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><span style="display:none;">Relic</span></th>
+                            <th><img src="${ICON_BASE}TransmutaCore.png" alt="Transmute Cores" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><span style="display:none;">Transmute</span></th>
+                        </tr></thead>
+                        <tbody>${lunarRows}</tbody>
+                    </table>
+                </div>
 
                 <div class="lme-cycle-section-label">Members (${memberCount})</div>
-                <div class="lme-members-mount" style="max-height:260px; overflow-y:auto;"></div>
+                <div class="lme-members-mount" style="max-height:260px; overflow:auto;"></div>
                 ${warnings}
             `;
             wrap.querySelector('.lme-members-mount').appendChild(buildLMEMembersTable(cycle.members || []));
