@@ -1,0 +1,165 @@
+{
+  "finalRanking": [
+    {
+      "clanId": 44262,
+      "clanName": "Freedomˢᵗʳᵃʸ",
+      "medals": 118902,
+      "p1TotalScore": 90344,
+      "points": 6,
+      "rank": 1
+    },
+    {
+      "clanId": 48643,
+      "clanName": "Quiet Wolf",
+      "medals": 95217,
+      "p1TotalScore": 84105,
+      "points": 4,
+      "rank": 2
+    },
+    {
+      "clanId": 37994,
+      "clanName": "Team.SD　",
+      "medals": 60318,
+      "p1TotalScore": 71890,
+      "points": 2,
+      "rank": 3
+    },
+    {
+      "clanId": 14037,
+      "clanName": "PURE",
+      "medals": 31204,
+      "p1TotalScore": 39887,
+      "points": 0,
+      "rank": 4
+    }
+  ],
+  "freedomClanId": 44262,
+  "freedomClanName": "Freedomˢᵗʳᵃʸ",
+  "generatedAt": "2026-09-27T16:05:12.512936+00:00",
+  "lmeNumber": 2,
+  "lunarDetails": {
+    "14037": {
+      "clanId": 14037,
+      "lunarPoints": 1385,
+      "name": "PURE",
+      "totalAtk": 47812009,
+      "totalChips": 701,
+      "totalEe": null,
+      "totalRelicCores": 4301,
+      "totalTransmuteCores": 261
+    },
+    "37994": {
+      "clanId": 37994,
+      "lunarPoints": 1428,
+      "name": "Team.SD3",
+      "totalAtk": 64220118,
+      "totalChips": 1390,
+      "totalEe": null,
+      "totalRelicCores": 4877,
+      "totalTransmuteCores": 488
+    },
+    "44262": {
+      "clanId": 44262,
+      "lunarPoints": 1477,
+      "name": "Freedomˢᵗʳᵃʸ",
+      "totalAtk": 73958210,
+      "totalChips": 2144,
+      "totalEe": null,
+      "totalRelicCores": 5601,
+      "totalTransmuteCores": 869
+    },
+    "48643": {
+      "clanId": 48643,
+      "lunarPoints": 1458,
+      "name": "Quiet Wolf",
+      "totalAtk": 81004552,
+      "totalChips": 2093,
+      "totalEe": null,
+      "totalRelicCores": 5590,
+      "totalTransmuteCores": 780
+    }
+  },
+  "members": [
+    {
+      "lmeScore": 3801,
+      "name": "һan",
+      "round1": 1320,
+      "round2": 1509,
+      "round3": 972,
+      "uid": 60687252
+    },
+    {
+      "lmeScore": 3502,
+      "name": "Fl3xas",
+      "round1": 980,
+      "round2": 1611,
+      "round3": 911,
+      "uid": 83339881
+    },
+    {
+      "lmeScore": 3288,
+      "name": "RABBIT5",
+      "round1": 802,
+      "round2": 1590,
+      "round3": 896,
+      "uid": 29321884
+    },
+    {
+      "lmeScore": 3201,
+      "name": "神Sterben死",
+      "round1": 715,
+      "round2": 1487,
+      "round3": 999,
+      "uid": 87244358
+    },
+    {
+      "lmeScore": 3140,
+      "name": "DAYO-P",
+      "round1": 1801,
+      "round2": 780,
+      "round3": 559,
+      "uid": 103516442
+    },
+    {
+      "lmeScore": 2988,
+      "name": "Cunner88",
+      "round1": 600,
+      "round2": 1500,
+      "round3": 888,
+      "uid": 80972473
+    },
+    {
+      "lmeScore": 2911,
+      "name": "Nubis",
+      "round1": 400,
+      "round2": 1611,
+      "round3": 900,
+      "uid": 18115624
+    },
+    {
+      "lmeScore": 2740,
+      "name": "Koncalaz",
+      "round1": 300,
+      "round2": 1440,
+      "round3": 1000,
+      "uid": 102263647
+    },
+    {
+      "lmeScore": 2655,
+      "name": "SngphO",
+      "round1": 0,
+      "round2": 1655,
+      "round3": 1000,
+      "uid": 87954282
+    },
+    {
+      "lmeScore": 0,
+      "name": "SterbyTools",
+      "round1": 0,
+      "round2": 0,
+      "round3": 0,
+      "uid": 115742768
+    }
+  ],
+  "warnings": []
+}

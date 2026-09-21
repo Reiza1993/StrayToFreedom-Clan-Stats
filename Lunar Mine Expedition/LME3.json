@@ -1,0 +1,167 @@
+{
+  "finalRanking": [
+    {
+      "clanId": 48643,
+      "clanName": "Quiet Wolf",
+      "medals": 152004,
+      "p1TotalScore": 93211,
+      "points": 6,
+      "rank": 1
+    },
+    {
+      "clanId": 44262,
+      "clanName": "Freedomˢᵗʳᵃʸ",
+      "medals": 101558,
+      "p1TotalScore": 88760,
+      "points": 4,
+      "rank": 2
+    },
+    {
+      "clanId": 14037,
+      "clanName": "PURE",
+      "medals": 48226,
+      "p1TotalScore": 52140,
+      "points": 2,
+      "rank": 3
+    },
+    {
+      "clanId": 37994,
+      "clanName": "Team.SD　",
+      "medals": 29981,
+      "p1TotalScore": 45602,
+      "points": 0,
+      "rank": 4
+    }
+  ],
+  "freedomClanId": 44262,
+  "freedomClanName": "Freedomˢᵗʳᵃʸ",
+  "generatedAt": "2026-10-04T15:58:47.118222+00:00",
+  "lmeNumber": 3,
+  "lunarDetails": {
+    "14037": {
+      "clanId": 14037,
+      "lunarPoints": 1392,
+      "name": "PURE",
+      "totalAtk": 49004512,
+      "totalChips": 715,
+      "totalEe": null,
+      "totalRelicCores": 4355,
+      "totalTransmuteCores": 270
+    },
+    "37994": {
+      "clanId": 37994,
+      "lunarPoints": 1410,
+      "name": "Team.SD3",
+      "totalAtk": 61887320,
+      "totalChips": 1322,
+      "totalEe": null,
+      "totalRelicCores": 4790,
+      "totalTransmuteCores": 460
+    },
+    "44262": {
+      "clanId": 44262,
+      "lunarPoints": 1489,
+      "name": "Freedomˢᵗʳᵃʸ",
+      "totalAtk": 75620844,
+      "totalChips": 2201,
+      "totalEe": null,
+      "totalRelicCores": 5688,
+      "totalTransmuteCores": 902
+    },
+    "48643": {
+      "clanId": 48643,
+      "lunarPoints": 1502,
+      "name": "Quiet Wolf",
+      "totalAtk": 85114207,
+      "totalChips": 2255,
+      "totalEe": null,
+      "totalRelicCores": 5799,
+      "totalTransmuteCores": 833
+    }
+  },
+  "members": [
+    {
+      "lmeScore": 3960,
+      "name": "һan",
+      "round1": 1450,
+      "round2": 1580,
+      "round3": 930,
+      "uid": 60687252
+    },
+    {
+      "lmeScore": 3611,
+      "name": "Fl3xas",
+      "round1": 1100,
+      "round2": 1590,
+      "round3": 921,
+      "uid": 83339881
+    },
+    {
+      "lmeScore": 3305,
+      "name": "RABBIT5",
+      "round1": 900,
+      "round2": 1520,
+      "round3": 885,
+      "uid": 29321884
+    },
+    {
+      "lmeScore": 3260,
+      "name": "神Sterben死",
+      "round1": 850,
+      "round2": 1490,
+      "round3": 920,
+      "uid": 87244358
+    },
+    {
+      "lmeScore": 3005,
+      "name": "DAYO-P",
+      "round1": 1650,
+      "round2": 800,
+      "round3": 555,
+      "uid": 103516442
+    },
+    {
+      "lmeScore": 2870,
+      "name": "Cunner88",
+      "round1": 500,
+      "round2": 1470,
+      "round3": 900,
+      "uid": 80972473
+    },
+    {
+      "lmeScore": 2799,
+      "name": "Nubis",
+      "round1": 350,
+      "round2": 1549,
+      "round3": 900,
+      "uid": 18115624
+    },
+    {
+      "lmeScore": 2680,
+      "name": "Koncalaz",
+      "round1": 280,
+      "round2": 1400,
+      "round3": 1000,
+      "uid": 102263647
+    },
+    {
+      "lmeScore": 2590,
+      "name": "SngphO",
+      "round1": 0,
+      "round2": 1590,
+      "round3": 1000,
+      "uid": 87954282
+    },
+    {
+      "lmeScore": 0,
+      "name": "SterbyTools",
+      "round1": 0,
+      "round2": 0,
+      "round3": 0,
+      "uid": 115742768
+    }
+  ],
+  "warnings": [
+    "This is synthetic test data generated for exercising the reworked LME History UI."
+  ]
+}

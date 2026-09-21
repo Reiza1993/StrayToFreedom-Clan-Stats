@@ -203,6 +203,53 @@
             font-weight: 600;
         }
 
+        /* ── LME History: per-cycle expandable cards ── */
+        .lme-cycle-card {
+            background: #2d3748;
+            border: 1px solid #4a5568;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .lme-cycle-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 8px;
+            padding: 10px 12px;
+            cursor: pointer;
+            user-select: none;
+        }
+        .lme-cycle-header:hover { background: #374151; }
+        .lme-cycle-section-label {
+            color: #a0aec0;
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-weight: 600;
+            margin: 10px 0 4px 0;
+        }
+        .lme-cycle-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 11px;
+        }
+        .lme-cycle-table th {
+            color: #718096;
+            font-size: 9px;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+            padding: 4px 6px;
+            text-align: center;
+        }
+        .lme-cycle-table th:first-child, .lme-cycle-table td:first-child { text-align: left; }
+        .lme-cycle-table td {
+            padding: 5px 6px;
+            text-align: center;
+            color: #e2e8f0;
+        }
+        .lme-cycle-table tbody tr:nth-child(even) { background: #374151; }
+        .lme-cycle-table tbody tr.lme-cycle-own-row { background: rgba(104, 211, 145, 0.12); }
+
         .gain-positive { color: #10b981; }
         .gain-negative { color: #f56565; }
         .gain-neutral  { color: #a0aec0; }
@@ -525,46 +572,8 @@
 
             <!-- LME History Sub-tab -->
             <div id="lme-history-subtab" class="lunar-subtab-content" style="display:none;">
-                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin-bottom: 5px;">
-                    <div class="calc-stat-card" style="border-color: #553c9a;">
-                        <div class="calc-stat-label" data-i18n="stat.lunar_pts">Lunar Points</div>
-                        <div class="calc-stat-value" style="color: #ffd700;" id="historyLunarPoints">—</div>
-                    </div>
-                    <div class="calc-stat-card" style="border-color: #2c7a7b;">
-                        <div class="calc-stat-label" data-i18n="modal.lme_history.rank_factor">Rank Factor</div>
-                        <div class="calc-stat-value" style="color: #81e6d9;" id="historyRankFactor">1.0000</div>
-                    </div>
-                </div>
-                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin-bottom: 8px;">
-                    <div class="calc-stat-card" style="border-color: #b7791f; box-shadow: 0 0 8px rgba(255,215,0,0.12);">
-                        <div class="calc-stat-label" data-i18n="modal.lme_history.secret_score">Secret Score</div>
-                        <div class="calc-stat-value" style="color: #ffd700;" id="historySecretScore">—</div>
-                    </div>
-                    <div class="calc-stat-card" style="border-color: #2b6cb0;">
-                        <div class="calc-stat-label"><span data-i18n="modal.lme_history.avg_rank">Avg Rank</span> <span style="font-size:8px; opacity:0.6;">(Last 10)</span></div>
-                        <div class="calc-stat-value" id="historyAvgRank">—</div>
-                    </div>
-                </div>
-
-                <table id="lmeHistoryTable" style="width: 100%; border-collapse: collapse; background: #2d3748; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.4); font-size: 12px;">
-                    <thead>
-                        <tr>
-                            <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 10px 6px; text-align: center; font-weight: 600; font-size: 10px; text-transform: uppercase; letter-spacing: 0.2px; white-space: nowrap;">🌙</th>
-                            <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 10px 6px; text-align: center; font-weight: 600; font-size: 10px; text-transform: uppercase; letter-spacing: 0.2px; white-space: nowrap;">
-                                <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Ranking.png" alt="Ranking" style="width: 16px; height: 16px; vertical-align: middle; margin-right: 3px;" onerror="this.style.display='none';">RANK
-                            </th>
-                            <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 10px 6px; text-align: center; font-weight: 600; font-size: 10px; text-transform: uppercase; letter-spacing: 0.2px; white-space: nowrap;">
-                                <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Defense_Attack%20Points.png" alt="ATK/DEF" style="width: 18px; height: 18px; vertical-align: middle;" onerror="this.innerHTML='A/D';">
-                            </th>
-                            <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 10px 6px; text-align: center; font-weight: 600; font-size: 10px; text-transform: uppercase; letter-spacing: 0.2px; white-space: nowrap;">
-                                <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Medals.png" alt="Emblems" style="width: 18px; height: 18px; vertical-align: middle;" onerror="this.innerHTML='EMBLEMS';">
-                            </th>
-                            <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 10px 6px; text-align: center; font-weight: 600; font-size: 10px; text-transform: uppercase; letter-spacing: 0.2px; white-space: nowrap;" data-i18n="modal.lme_history.col.league">LEAGUE</th>
-                            <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 10px 6px; text-align: center; font-weight: 600; font-size: 10px; text-transform: uppercase; letter-spacing: 0.2px; white-space: nowrap;">🌙 PTS</th>
-                        </tr>
-                    </thead>
-                    <tbody id="lmeHistoryBody"></tbody>
-                </table>
+                <p style="color: #718096; font-size: 11px; text-align: center; margin: 0 0 10px 0;" data-i18n="modal.lme_history.subtitle">Full results per cycle — tap a row to expand</p>
+                <div id="lmeCyclesContainer" style="display:flex; flex-direction:column; gap:8px;"></div>
             </div>
         </div>
 
@@ -1158,13 +1167,6 @@
             return total;
         }
 
-        function getLunarPointsForLME(lme) {
-            const league = lme.league.toLowerCase();
-            if (league === 'champion')        return LUNAR_POINTS_TABLE.champion[lme.rank] || 0;
-            if (league.includes('legend'))    return LUNAR_POINTS_TABLE.legend[lme.rank]   || 0;
-            return null;
-        }
-
         function translateLeague(str) {
             if (!str) return str;
             const parts = str.trim().split(' ');
@@ -1211,18 +1213,8 @@
             return { total: baseline + delta, delta: lastGain };
         }
 
-        function calculateSecretScore() {
-            let rankFactor = 1.0;
-            const reversedHistory = [...lmeHistory].reverse();
-            reversedHistory.forEach((lme) => {
-                if      (lme.rank === 1) rankFactor  = 1.0;
-                else if (lme.rank === 2) rankFactor *= 0.98;
-                else if (lme.rank === 3) rankFactor *= 0.96;
-                else if (lme.rank === 4) rankFactor *= 0.94;
-            });
-
+        function updateLunarPointsDisplay() {
             const { total: lunarPts, delta } = calculateLunarPointsFromBaseline();
-            const secretScore = lunarPts * rankFactor;
 
             document.getElementById('lme-lunar-pts').textContent = lunarPts;
             if (delta !== 0) {
@@ -1234,60 +1226,172 @@
                 document.getElementById('lme-lunar-pts-gain').innerHTML =
                     '<span class="gain-neutral">(+0)</span>';
             }
-
-            document.getElementById('historyLunarPoints').textContent  = lunarPts;
-            document.getElementById('historyRankFactor').textContent   = rankFactor.toFixed(4);
-            document.getElementById('historySecretScore').textContent  = secretScore.toFixed(1);
         }
 
-        function loadLMEHistory() {
-            const tbody = document.getElementById('lmeHistoryBody');
-            tbody.innerHTML = '';
+        // ══════════════════════════════════════════════
+        //  LME HISTORY — one JSON file per cycle, fetched from
+        //  "Lunar Mine Expedition/LME{n}.json" (probed sequentially
+        //  from 1 until a fetch fails/404s). clanStats.js's lmeHistory
+        //  array is intentionally NOT used here for now.
+        // ══════════════════════════════════════════════
+        const LME_CYCLES_FOLDER = 'Lunar Mine Expedition';
 
-            lmeHistory.forEach((lme, index) => {
-                const row = document.createElement('tr');
-                row.style.borderBottom = '1px solid #4a5568';
-                if (index % 2 === 1) row.style.background = '#374151';
+        function escapeHtml(str) {
+            const div = document.createElement('div');
+            div.textContent = str ?? '';
+            return div.innerHTML;
+        }
 
-                let rankDisplay = '';
-                if (lme.rankImage) {
-                    rankDisplay = `<img src="${lme.rankImage}" alt="#${lme.rank}" style="width: 20px; vertical-align: middle;">`;
-                } else {
-                    const rankColors = { 1: '#ffd700', 2: '#c0c0c0', 3: '#cd7930', 4: '#f56565' };
-                    rankDisplay = `<span style="color: ${rankColors[lme.rank] || '#f56565'}; font-weight: 600;">#${lme.rank}</span>`;
-                }
+        function formatCycleDate(iso) {
+            if (!iso) return '—';
+            const d = new Date(iso);
+            if (isNaN(d.getTime())) return '—';
+            return d.toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' });
+        }
 
-                const lp = getLunarPointsForLME(lme);
-                let lpDisplay;
-                if (lp === null) {
-                    lpDisplay = `<span style="color:#718096;">—</span>`;
-                } else if (lp > 0) {
-                    lpDisplay = `<span style="color:#10b981; font-weight:700;">+${lp}</span>`;
-                } else if (lp < 0) {
-                    lpDisplay = `<span style="color:#f56565; font-weight:700;">${lp}</span>`;
-                } else {
-                    lpDisplay = `<span style="color:#a0aec0;">0</span>`;
-                }
+        async function fetchLMECycle(n) {
+            let res;
+            try {
+                res = await fetch(encodeURI(`${LME_CYCLES_FOLDER}/LME${n}.json`), { cache: 'no-cache' });
+            } catch (err) {
+                return null;
+            }
+            if (!res.ok) return null;
+            try {
+                return await res.json();
+            } catch (err) {
+                return null;
+            }
+        }
 
-                row.innerHTML = `
-                    <td style="padding: 10px 6px; color: #e2e8f0; text-align: center; font-weight: 600; font-size: 12px;">${lme.lmeNumber}</td>
-                    <td style="padding: 10px 6px; text-align: center; font-weight: 600; font-size: 12px;">${rankDisplay}</td>
-                    <td style="padding: 10px 6px; color: #e2e8f0; text-align: center; font-size: 12px;">${lme.atkDefPoints}</td>
-                    <td style="padding: 10px 6px; color: #68d391; text-align: center; font-weight: 600; font-size: 11px;">${lme.medals.toLocaleString()}</td>
-                    <td style="padding: 10px 6px; color: #ffd700; text-align: center; font-weight: 600; font-size: 11px; white-space: nowrap;">${translateLeague(lme.league)}</td>
-                    <td style="padding: 10px 6px; text-align: center; font-size: 12px;">${lpDisplay}</td>
-                `;
-                tbody.appendChild(row);
+        async function loadLMEHistory() {
+            const container = document.getElementById('lmeCyclesContainer');
+            if (!container) return;
+
+            const cycles = [];
+            let n = 1;
+            while (true) {
+                const cycle = await fetchLMECycle(n);
+                if (!cycle) break;
+                cycles.push(cycle);
+                n++;
+            }
+
+            container.innerHTML = '';
+            if (cycles.length === 0) {
+                container.innerHTML = `<p style="color:#718096; font-size:12px; text-align:center; padding: 12px 0;" data-i18n="modal.lme_history.empty">No LME cycle data available yet.</p>`;
+                applyTranslations();
+                return;
+            }
+
+            cycles.reverse().forEach((cycle, idx) => {
+                container.appendChild(buildLMECycleCard(cycle, idx === 0));
             });
+        }
 
-            const last10 = lmeHistory.slice(0, 10);
-            const avgRank = last10.reduce((s, l) => s + l.rank, 0) / last10.length;
-            const avgRankEl = document.getElementById('historyAvgRank');
-            avgRankEl.textContent = avgRank.toFixed(2);
-            if      (avgRank <= 1.5) avgRankEl.style.color = '#ffd700';
-            else if (avgRank <= 2.5) avgRankEl.style.color = '#c0c0c0';
-            else if (avgRank <= 3.5) avgRankEl.style.color = '#cd7930';
-            else                     avgRankEl.style.color = '#f56565';
+        function buildLMECycleCard(cycle, expanded) {
+            const rankColors = { 1: '#ffd700', 2: '#c0c0c0', 3: '#cd7930', 4: '#f56565' };
+            const ranking = [...(cycle.finalRanking || [])].sort((a, b) => a.rank - b.rank);
+            const own = ranking.find(c => c.clanId === cycle.freedomClanId) || {};
+            const rankColor = rankColors[own.rank] || '#f56565';
+
+            const card = document.createElement('div');
+            card.className = 'lme-cycle-card';
+
+            const header = document.createElement('div');
+            header.className = 'lme-cycle-header';
+            header.innerHTML = `
+                <div style="display:flex; align-items:center; gap:8px; min-width:0;">
+                    <span style="font-weight:700; color:#e2e8f0; font-size:13px; white-space:nowrap;">LME #${cycle.lmeNumber}</span>
+                    <span style="color:${rankColor}; font-weight:700; font-size:12px; white-space:nowrap;">#${own.rank ?? '—'}</span>
+                </div>
+                <div style="display:flex; align-items:center; gap:10px; flex-shrink:0;">
+                    <span style="color:#68d391; font-size:11px; font-weight:600; white-space:nowrap;">${(own.medals ?? 0).toLocaleString()}</span>
+                    <span style="color:#718096; font-size:10px; white-space:nowrap;">${formatCycleDate(cycle.generatedAt)}</span>
+                    <span class="lme-cycle-chevron" style="color:#a0aec0; font-size:10px;">${expanded ? '▲' : '▼'}</span>
+                </div>
+            `;
+
+            const body = document.createElement('div');
+            body.className = 'lme-cycle-body';
+            body.style.display = expanded ? '' : 'none';
+            body.style.padding = '0 12px 12px 12px';
+            body.style.borderTop = '1px solid #4a5568';
+            body.innerHTML = buildLMECycleBodyHTML(cycle, ranking, own);
+
+            header.onclick = () => {
+                const isOpen = body.style.display !== 'none';
+                body.style.display = isOpen ? 'none' : '';
+                header.querySelector('.lme-cycle-chevron').textContent = isOpen ? '▼' : '▲';
+            };
+
+            card.appendChild(header);
+            card.appendChild(body);
+            return card;
+        }
+
+        function buildLMECycleBodyHTML(cycle, ranking, own) {
+            const rankRows = ranking.map(c => `
+                <tr class="${c.clanId === cycle.freedomClanId ? 'lme-cycle-own-row' : ''}">
+                    <td>#${c.rank}</td>
+                    <td style="font-weight:600;">${escapeHtml(c.clanName)}</td>
+                    <td style="color:#68d391;">${(c.medals ?? 0).toLocaleString()}</td>
+                    <td>${(c.p1TotalScore ?? 0).toLocaleString()}</td>
+                    <td style="color:#ffd700; font-weight:700;">${c.points ?? 0}</td>
+                </tr>
+            `).join('');
+
+            const lunarClans = Object.values(cycle.lunarDetails || {})
+                .sort((a, b) => (b.lunarPoints || 0) - (a.lunarPoints || 0));
+            const lunarRows = lunarClans.map(clan => `
+                <tr class="${String(clan.clanId) === String(cycle.freedomClanId) ? 'lme-cycle-own-row' : ''}">
+                    <td style="font-weight:600;">${escapeHtml(clan.name)}</td>
+                    <td style="color:#ffd700; font-weight:700;">${(clan.lunarPoints ?? 0).toLocaleString()}</td>
+                    <td>${formatNumber(clan.totalAtk || 0)}</td>
+                    <td style="color:#b794f6;">${clan.totalChips ?? '—'}</td>
+                    <td style="color:#b794f6;">${clan.totalRelicCores ?? '—'}</td>
+                    <td style="color:#b794f6;">${clan.totalTransmuteCores ?? '—'}</td>
+                </tr>
+            `).join('');
+
+            const members = [...(cycle.members || [])].sort((a, b) => (b.lmeScore ?? 0) - (a.lmeScore ?? 0));
+            const memberRows = members.map((m, idx) => `
+                <tr>
+                    <td style="color:#a0aec0;">${idx + 1}</td>
+                    <td style="font-weight:600;">${escapeHtml(m.name)}</td>
+                    <td style="color:#a0aec0;">${(m.round1 ?? 0).toLocaleString()}</td>
+                    <td style="color:#a0aec0;">${(m.round2 ?? 0).toLocaleString()}</td>
+                    <td style="color:#a0aec0;">${(m.round3 ?? 0).toLocaleString()}</td>
+                    <td style="color:#68d391; font-weight:700;">${(m.lmeScore ?? 0).toLocaleString()}</td>
+                </tr>
+            `).join('');
+
+            const warnings = (cycle.warnings || []).map(w =>
+                `<p style="color:#f6ad55; font-size:10px; margin:8px 0 0 0;">⚠ ${escapeHtml(w)}</p>`
+            ).join('');
+
+            return `
+                <div class="lme-cycle-section-label">Final Ranking</div>
+                <table class="lme-cycle-table">
+                    <thead><tr><th>Rank</th><th>Clan</th><th>Medals</th><th>P1 Score</th><th>Points</th></tr></thead>
+                    <tbody>${rankRows}</tbody>
+                </table>
+
+                <div class="lme-cycle-section-label">Lunar Details</div>
+                <table class="lme-cycle-table">
+                    <thead><tr><th>Clan</th><th>🌙 Pts</th><th>ATK</th><th>Chips</th><th>Relic</th><th>Transmute</th></tr></thead>
+                    <tbody>${lunarRows}</tbody>
+                </table>
+
+                <div class="lme-cycle-section-label">Members (${members.length})</div>
+                <div style="max-height:260px; overflow-y:auto;">
+                    <table class="lme-cycle-table">
+                        <thead><tr><th>#</th><th>Name</th><th>R1</th><th>R2</th><th>R3</th><th>Total</th></tr></thead>
+                        <tbody>${memberRows}</tbody>
+                    </table>
+                </div>
+                ${warnings}
+            `;
         }
 
         function loadAlumni() {
@@ -1753,7 +1857,7 @@
         calculateLMETabSummary();
         calculateCXTabSummary();
         calculateEETabSummary();
-        calculateSecretScore();
+        updateLunarPointsDisplay();
         loadLMEHistory();
         loadLunarDetails();
         loadAlumni();
