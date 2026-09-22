@@ -1,0 +1,378 @@
+[
+  {
+    "lmeNumber": 11,
+    "date": "2025-10-23",
+    "totalP1Score": 20937,
+    "finalRank": 3,
+    "lunarPoints": 950,
+    "league": "Legend 1"
+  },
+  {
+    "lmeNumber": 12,
+    "date": "2025-10-26",
+    "totalP1Score": 20937,
+    "finalRank": 1,
+    "lunarPoints": 950,
+    "league": "Legend 1"
+  },
+  {
+    "lmeNumber": 13,
+    "date": "2025-11-01",
+    "totalP1Score": 22198,
+    "finalRank": 1,
+    "lunarPoints": 1000,
+    "league": "Legend 1"
+  },
+  {
+    "lmeNumber": 14,
+    "date": "2025-11-09",
+    "totalP1Score": 23346,
+    "finalRank": 1,
+    "lunarPoints": 1070,
+    "league": "Legend 2"
+  },
+  {
+    "lmeNumber": 15,
+    "date": "2025-11-17",
+    "totalP1Score": 21006,
+    "finalRank": 3,
+    "lunarPoints": 1075,
+    "league": "Legend 3"
+  },
+  {
+    "lmeNumber": 16,
+    "date": "2025-11-23",
+    "totalP1Score": 22279,
+    "finalRank": 4,
+    "lunarPoints": 1065,
+    "league": "Legend 3"
+  },
+  {
+    "lmeNumber": 17,
+    "date": "2025-11-27",
+    "totalP1Score": 22731,
+    "finalRank": 3,
+    "lunarPoints": 1070,
+    "league": "Legend 2"
+  },
+  {
+    "lmeNumber": 18,
+    "date": "2025-12-05",
+    "totalP1Score": 24070,
+    "finalRank": 1,
+    "lunarPoints": 1100,
+    "league": "Legend 2"
+  },
+  {
+    "lmeNumber": 19,
+    "date": "2025-12-15",
+    "totalP1Score": 24688,
+    "finalRank": 3,
+    "lunarPoints": 1105,
+    "league": "Legend 3"
+  },
+  {
+    "lmeNumber": 20,
+    "date": "2025-12-22",
+    "totalP1Score": 25244,
+    "finalRank": 1,
+    "lunarPoints": 1135,
+    "league": "Legend 3"
+  },
+  {
+    "lmeNumber": 21,
+    "date": "2025-12-29",
+    "totalP1Score": 26005,
+    "finalRank": 2,
+    "lunarPoints": 1150,
+    "league": "Legend 3"
+  },
+  {
+    "lmeNumber": 22,
+    "date": "2026-01-05",
+    "totalP1Score": 23725,
+    "finalRank": 4,
+    "lunarPoints": 1130,
+    "league": "Champion"
+  },
+  {
+    "lmeNumber": 23,
+    "date": "2026-01-12",
+    "totalP1Score": 26888,
+    "finalRank": 1,
+    "lunarPoints": 1160,
+    "league": "Legend 3"
+  },
+  {
+    "lmeNumber": 24,
+    "date": "2026-01-19",
+    "totalP1Score": 27026,
+    "finalRank": 2,
+    "lunarPoints": 1175,
+    "league": "Legend 3"
+  },
+  {
+    "lmeNumber": 25,
+    "date": "2026-01-22",
+    "totalP1Score": 30044,
+    "finalRank": 2,
+    "lunarPoints": 1185,
+    "league": "Champion"
+  },
+  {
+    "lmeNumber": 26,
+    "date": "2026-02-02",
+    "totalP1Score": 30027,
+    "finalRank": 2,
+    "lunarPoints": 1200,
+    "league": "Legend 3"
+  },
+  {
+    "lmeNumber": 27,
+    "date": "2026-02-06",
+    "totalP1Score": 30662,
+    "finalRank": 3,
+    "lunarPoints": 1190,
+    "league": "Champion"
+  },
+  {
+    "lmeNumber": 28,
+    "date": "2026-02-13",
+    "totalP1Score": 28986,
+    "finalRank": 2,
+    "lunarPoints": 1205,
+    "league": "Legend 3"
+  },
+  {
+    "lmeNumber": 29,
+    "date": "2026-02-22",
+    "totalP1Score": 29736,
+    "finalRank": 2,
+    "lunarPoints": 1215,
+    "league": "Champion"
+  },
+  {
+    "lmeNumber": 30,
+    "date": "2026-03-02",
+    "totalP1Score": 34783,
+    "finalRank": 2,
+    "lunarPoints": 1225,
+    "league": "Champion"
+  },
+  {
+    "lmeNumber": 31,
+    "date": "2026-03-09",
+    "totalP1Score": 34660,
+    "finalRank": 2,
+    "lunarPoints": 1235,
+    "league": "Champion"
+  },
+  {
+    "lmeNumber": 32,
+    "date": "2026-03-15",
+    "totalP1Score": 40243,
+    "finalRank": 2,
+    "lunarPoints": 1245,
+    "league": "Champion"
+  },
+  {
+    "lmeNumber": 33,
+    "date": "2026-03-23",
+    "totalP1Score": 44724,
+    "finalRank": 1,
+    "lunarPoints": 1265,
+    "league": "Champion"
+  },
+  {
+    "lmeNumber": 34,
+    "date": "2026-03-26",
+    "totalP1Score": 46108,
+    "finalRank": 3,
+    "lunarPoints": 1255,
+    "league": "Champion"
+  },
+  {
+    "lmeNumber": 35,
+    "date": "2026-04-07",
+    "totalP1Score": 45024,
+    "finalRank": 2,
+    "lunarPoints": 1265,
+    "league": "Champion"
+  },
+  {
+    "lmeNumber": 36,
+    "date": "2026-04-12",
+    "totalP1Score": 52287,
+    "finalRank": 2,
+    "lunarPoints": 1275,
+    "league": "Champion"
+  },
+  {
+    "lmeNumber": 37,
+    "date": "2026-04-20",
+    "totalP1Score": 53555,
+    "finalRank": 1,
+    "lunarPoints": 1295,
+    "league": "Champion"
+  },
+  {
+    "lmeNumber": 38,
+    "date": "2026-04-26",
+    "totalP1Score": 59809,
+    "finalRank": 2,
+    "lunarPoints": 1305,
+    "league": "Champion"
+  },
+  {
+    "lmeNumber": 39,
+    "date": "2026-05-03",
+    "totalP1Score": 63642,
+    "finalRank": 2,
+    "lunarPoints": 1315,
+    "league": "Champion"
+  },
+  {
+    "lmeNumber": 40,
+    "date": "2026-05-10",
+    "totalP1Score": 64710,
+    "finalRank": 2,
+    "lunarPoints": 1325,
+    "league": "Champion"
+  },
+  {
+    "lmeNumber": 41,
+    "date": "2026-05-14",
+    "totalP1Score": 68601,
+    "finalRank": 1,
+    "lunarPoints": 1345,
+    "league": "Champion"
+  },
+  {
+    "lmeNumber": 42,
+    "date": "2026-05-20",
+    "totalP1Score": 70206,
+    "finalRank": 2,
+    "lunarPoints": 1355,
+    "league": "Champion"
+  },
+  {
+    "lmeNumber": 43,
+    "date": "2026-05-27",
+    "totalP1Score": 69007,
+    "finalRank": 4,
+    "lunarPoints": 1335,
+    "league": "Champion"
+  },
+  {
+    "lmeNumber": 44,
+    "date": "2026-06-03",
+    "totalP1Score": 77471,
+    "finalRank": 1,
+    "lunarPoints": 1355,
+    "league": "Champion"
+  },
+  {
+    "lmeNumber": 45,
+    "date": "2026-06-10",
+    "totalP1Score": 78230,
+    "finalRank": 4,
+    "lunarPoints": 1335,
+    "league": "Champion"
+  },
+  {
+    "lmeNumber": 46,
+    "date": "2026-06-17",
+    "totalP1Score": 78443,
+    "finalRank": 2,
+    "lunarPoints": 1345,
+    "league": "Champion"
+  },
+  {
+    "lmeNumber": 47,
+    "date": "2026-07-14",
+    "totalP1Score": 83579,
+    "finalRank": 1,
+    "lunarPoints": 1365,
+    "league": "Champion"
+  },
+  {
+    "lmeNumber": 50,
+    "date": "2026-07-16",
+    "totalP1Score": 78499,
+    "finalRank": 2,
+    "lunarPoints": 1395,
+    "league": "Champion"
+  },
+  {
+    "lmeNumber": 51,
+    "date": "2026-07-23",
+    "totalP1Score": 79733,
+    "finalRank": 3,
+    "lunarPoints": 1385,
+    "league": "Champion"
+  },
+  {
+    "lmeNumber": 52,
+    "date": "2026-07-30",
+    "totalP1Score": 80254,
+    "finalRank": 1,
+    "lunarPoints": 1405,
+    "league": "Champion"
+  },
+  {
+    "lmeNumber": 53,
+    "date": "2026-08-06",
+    "totalP1Score": 83005,
+    "finalRank": 2,
+    "lunarPoints": 1415,
+    "league": "Champion"
+  },
+  {
+    "lmeNumber": 54,
+    "date": "2026-08-13",
+    "totalP1Score": 81600,
+    "finalRank": 3,
+    "lunarPoints": 1405,
+    "league": "Champion"
+  },
+  {
+    "lmeNumber": 55,
+    "date": "2026-08-20",
+    "totalP1Score": 95096,
+    "finalRank": 2,
+    "lunarPoints": 1415,
+    "league": "Champion"
+  },
+  {
+    "lmeNumber": 56,
+    "date": "2026-08-27",
+    "totalP1Score": 98685,
+    "finalRank": 1,
+    "lunarPoints": 1435,
+    "league": "Champion"
+  },
+  {
+    "lmeNumber": 57,
+    "date": "2026-09-03",
+    "totalP1Score": 100294,
+    "finalRank": 2,
+    "lunarPoints": 1445,
+    "league": "Champion"
+  },
+  {
+    "lmeNumber": 58,
+    "date": "2026-09-10",
+    "totalP1Score": 101294,
+    "finalRank": 2,
+    "lunarPoints": 1455,
+    "league": "Champion"
+  },
+  {
+    "lmeNumber": 59,
+    "date": "2026-09-17",
+    "totalP1Score": 99816,
+    "finalRank": 2,
+    "lunarPoints": 1465,
+    "league": "Champion"
+  }
+]

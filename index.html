@@ -1699,12 +1699,35 @@
             const container = document.getElementById('lmeTrendChart');
             if (!container) return;
 
-            const newCycles = await fetchAllLMECycles();
+            const [newCycles, p1Points] = await Promise.all([
+                fetchAllLMECycles(),
+                fetchP1ScoreHistory(),
+            ]);
             const points = computeLunarTrend(newCycles);
 
             container.innerHTML = '';
             if (points.length < 2) return;
-            container.appendChild(buildLunarTrendSection(points));
+            container.appendChild(buildLunarTrendSection(points, p1Points));
+        }
+
+        // lme-history/summary.json — a lightweight per-LME index (clan
+        // totals only, no per-member/per-round detail) kept purely for
+        // fast trend charts like this one. Ascending by lmeNumber already
+        // (see INSTRUCTIONS_GUIDE.MD), unlike clanStats.js's lmeHistory.
+        async function fetchP1ScoreHistory() {
+            let res;
+            try {
+                res = await fetch('lme-history/summary.json', { cache: 'no-cache' });
+            } catch (err) {
+                return [];
+            }
+            if (!res.ok) return [];
+            try {
+                const rows = await res.json();
+                return Array.isArray(rows) ? rows : [];
+            } catch (err) {
+                return [];
+            }
         }
 
         // Each LME cycle runs roughly weekly, so "last N weeks" is just the
@@ -1797,12 +1820,13 @@
             });
         }
 
-        function buildLunarTrendSection(allPoints) {
+        function buildLunarTrendSection(allPoints, allP1Points) {
             const section = document.createElement('div');
 
             const filterRow = document.createElement('div');
             filterRow.className = 'lme-trend-filter-row';
 
+            const SLIDE_COUNT = 3;
             const carousel = document.createElement('div');
             carousel.className = 'lme-trend-carousel';
             const track = document.createElement('div');
@@ -1811,17 +1835,21 @@
             slideLunar.className = 'lme-trend-carousel-slide';
             const slideRank = document.createElement('div');
             slideRank.className = 'lme-trend-carousel-slide';
+            const slideP1 = document.createElement('div');
+            slideP1.className = 'lme-trend-carousel-slide';
             track.appendChild(slideLunar);
             track.appendChild(slideRank);
+            track.appendChild(slideP1);
             carousel.appendChild(track);
 
             const dotsRow = document.createElement('div');
             dotsRow.className = 'lme-trend-carousel-dots';
-            const dots = [0, 1].map(i => {
+            const dotLabels = ['Lunar Points chart', 'Rank chart', 'P1 Score chart'];
+            const dots = Array.from({ length: SLIDE_COUNT }, (_, i) => {
                 const dot = document.createElement('button');
                 dot.type = 'button';
                 dot.className = 'lme-trend-dot' + (i === 0 ? ' active' : '');
-                dot.setAttribute('aria-label', i === 0 ? 'Lunar Points chart' : 'Rank chart');
+                dot.setAttribute('aria-label', dotLabels[i]);
                 dot.onclick = () => goToSlide(i);
                 dotsRow.appendChild(dot);
                 return dot;
@@ -1829,7 +1857,7 @@
 
             let currentSlide = 0;
             function goToSlide(i) {
-                currentSlide = Math.max(0, Math.min(1, i));
+                currentSlide = Math.max(0, Math.min(SLIDE_COUNT - 1, i));
                 track.style.transform = `translateX(-${currentSlide * 100}%)`;
                 dots.forEach((d, idx) => d.classList.toggle('active', idx === currentSlide));
             }
@@ -1856,14 +1884,25 @@
                 }
             });
 
+            function sliceByFilter(list, key) {
+                const sliced = key === 'all' ? list : list.slice(-parseInt(key, 10));
+                return sliced.length >= 2 ? sliced : list;
+            }
+
             let activeKey = 'all';
             function rerenderCharts() {
-                const sliced = activeKey === 'all' ? allPoints : allPoints.slice(-parseInt(activeKey, 10));
-                const pts = sliced.length >= 2 ? sliced : allPoints;
+                const pts = sliceByFilter(allPoints, activeKey);
                 slideLunar.innerHTML = '';
                 slideLunar.appendChild(buildLunarTrendChart(pts));
                 slideRank.innerHTML = '';
                 slideRank.appendChild(buildRankTrendChart(pts));
+
+                slideP1.innerHTML = '';
+                if (allP1Points.length >= 2) {
+                    slideP1.appendChild(buildP1ScoreTrendChart(sliceByFilter(allP1Points, activeKey)));
+                } else {
+                    slideP1.innerHTML = `<p style="color:#718096; font-size:12px; text-align:center; padding: 40px 0;">No P1 score history available yet.</p>`;
+                }
             }
 
             LME_TREND_FILTERS.forEach(f => {
@@ -2112,6 +2151,112 @@
                 `;
                 tooltip.querySelector('div').textContent = p.label;
                 tooltip.querySelector('.lme-trend-tooltip-value').textContent = p.rank ? `#${p.rank}` : '—';
+
+                const pct = points.length > 1 ? idx / (points.length - 1) : 0.5;
+                tooltip.style.display = '';
+                tooltip.style.left = `${pct * 100}%`;
+                tooltip.style.transform = `translateX(${pct > 0.7 ? '-100%' : pct < 0.3 ? '0%' : '-50%'})`;
+            }
+
+            function hide() {
+                crosshair.style.display = 'none';
+                dot.style.display = 'none';
+                tooltip.style.display = 'none';
+            }
+
+            wireTrendInteraction({ hitRect, wrap, points, showAt, hide });
+            return wrap;
+        }
+
+        // Single-series chart: the clan's total LME Phase 1 score (sum of
+        // every player's lmeScore) per cycle, from lme-history/summary.json
+        // — a separate, much lighter data source than the per-cycle JSON
+        // files the other two charts on this page use, kept fast on
+        // purpose (see INSTRUCTIONS_GUIDE.MD). Aqua (palette slot 3) to
+        // stay visually distinct from the blue/orange Lunar chart and the
+        // violet Rank chart in the same carousel.
+        function buildP1ScoreTrendChart(points) {
+            const W = 640, H = 220;
+            const padL = 50, padR = 14, padT = 14, padB = 8;
+            const plotW = W - padL - padR;
+            const plotH = H - padT - padB;
+
+            const vals = points.map(p => p.totalP1Score);
+            const rawMin = Math.min(...vals);
+            const rawMax = Math.max(...vals);
+            const span = Math.max(rawMax - rawMin, 1);
+            const yMin = Math.floor((rawMin - span * 0.1) / 100) * 100;
+            const yMax = Math.ceil((rawMax + span * 0.1) / 100) * 100;
+            const yRange = (yMax - yMin) || 1;
+
+            const xAt = (i) => points.length > 1 ? padL + (i / (points.length - 1)) * plotW : padL + plotW / 2;
+            const yAt = (v) => padT + plotH - ((v - yMin) / yRange) * plotH;
+
+            const tickCount = 4;
+            const ticks = Array.from({ length: tickCount + 1 }, (_, i) => yMin + (i / tickCount) * yRange);
+            const gridLines = ticks.map(t => `
+                <line x1="${padL}" y1="${yAt(t).toFixed(1)}" x2="${W - padR}" y2="${yAt(t).toFixed(1)}" stroke="#374151" stroke-width="1"/>
+                <text x="${padL - 8}" y="${(yAt(t) + 3).toFixed(1)}" text-anchor="end" font-size="9" fill="#718096">${Math.round(t).toLocaleString()}</text>
+            `).join('');
+
+            const linePath = points.map((p, i) => `${i === 0 ? 'M' : 'L'} ${xAt(i).toFixed(1)},${yAt(p.totalP1Score).toFixed(1)}`).join(' ');
+
+            const lastIdx = points.length - 1;
+            const endMarker = `
+                <circle cx="${xAt(lastIdx).toFixed(1)}" cy="${yAt(points[lastIdx].totalP1Score).toFixed(1)}" r="6" fill="#2d3748"/>
+                <circle cx="${xAt(lastIdx).toFixed(1)}" cy="${yAt(points[lastIdx].totalP1Score).toFixed(1)}" r="4" fill="#199e70"/>
+            `;
+
+            const wrap = document.createElement('div');
+            wrap.className = 'lme-trend-chart';
+            wrap.innerHTML = `
+                <div class="lme-trend-legend">
+                    <span class="lme-trend-legend-item"><svg width="16" height="4" viewBox="0 0 16 4"><line x1="0" y1="2" x2="16" y2="2" stroke="#199e70" stroke-width="2" stroke-linecap="round"/></svg>P1 Score</span>
+                </div>
+                <div style="position:relative;">
+                    <svg viewBox="0 0 ${W} ${H}" style="width:100%; height:auto; display:block; overflow:visible;">
+                        ${gridLines}
+                        <path d="${linePath}" fill="none" stroke="#199e70" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        ${endMarker}
+                        <line class="lme-trend-crosshair" x1="0" y1="${padT}" x2="0" y2="${H - padB}" stroke="#a0aec0" stroke-width="1" style="display:none;"/>
+                        <circle class="lme-trend-hover-dot" r="4" fill="#199e70" stroke="#2d3748" stroke-width="2" style="display:none;"/>
+                        <rect class="lme-trend-hit" x="${padL}" y="0" width="${plotW}" height="${H}" fill="transparent" style="cursor:pointer;" tabindex="0"/>
+                    </svg>
+                    <div class="lme-trend-tooltip" style="display:none;"></div>
+                </div>
+                <div style="display:flex; justify-content:space-between; font-size:9px; color:#718096; margin: 2px ${padR}px 0 ${padL}px;">
+                    <span>#${points[0].lmeNumber}</span>
+                    <span>#${points[lastIdx].lmeNumber}</span>
+                </div>
+            `;
+
+            const hitRect   = wrap.querySelector('.lme-trend-hit');
+            const crosshair = wrap.querySelector('.lme-trend-crosshair');
+            const dot       = wrap.querySelector('.lme-trend-hover-dot');
+            const tooltip   = wrap.querySelector('.lme-trend-tooltip');
+
+            function showAt(idx) {
+                const p = points[idx];
+                const x = xAt(idx);
+
+                crosshair.setAttribute('x1', x);
+                crosshair.setAttribute('x2', x);
+                crosshair.style.display = '';
+
+                dot.setAttribute('cx', x);
+                dot.setAttribute('cy', yAt(p.totalP1Score));
+                dot.style.display = '';
+
+                tooltip.innerHTML = `
+                    <div style="font-size:10px; color:#a0aec0; margin-bottom:3px;"></div>
+                    <div class="lme-trend-tooltip-row">
+                        <span class="lme-trend-tooltip-key" style="background:#199e70;"></span>
+                        <span class="lme-trend-tooltip-label">P1 Score</span>
+                        <strong class="lme-trend-tooltip-value"></strong>
+                    </div>
+                `;
+                tooltip.querySelector('div').textContent = `#${p.lmeNumber} — ${p.date}`;
+                tooltip.querySelector('.lme-trend-tooltip-value').textContent = p.totalP1Score.toLocaleString();
 
                 const pct = points.length > 1 ? idx / (points.length - 1) : 0.5;
                 tooltip.style.display = '';
