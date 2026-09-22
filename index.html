@@ -336,6 +336,31 @@
             border-color: #667eea;
             color: #fff;
         }
+        /* Without this, a touch-drag meant to scrub the chart gets claimed by
+           the browser as a scroll/zoom gesture instead — pointer events then
+           arrive late, get cancelled, or don't arrive at all. This hands the
+           whole gesture to our own pointer handlers. */
+        .lme-trend-hit { touch-action: none; }
+
+        .lme-trend-carousel { position: relative; overflow: hidden; }
+        .lme-trend-carousel-track { display: flex; transition: transform 0.25s ease; }
+        .lme-trend-carousel-slide { flex: 0 0 100%; min-width: 0; box-sizing: border-box; }
+        .lme-trend-carousel-dots { display: flex; justify-content: center; gap: 6px; margin-top: 8px; }
+        .lme-trend-dot {
+            width: 8px; height: 8px;
+            padding: 0; border: none; border-radius: 50%;
+            background: #4a5568;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .lme-trend-dot.active { background: #a78bfa; width: 20px; border-radius: 4px; }
+
+        /* The wrapper already scrolls horizontally (overflow-x:auto), and the
+           header cells were already nowrap, but the data cells weren't — on a
+           narrow phone the numbers (1,465 / 71.39M / …) were squeezed into
+           wrapping one or two digits per line instead of just letting the
+           table (safely, inside its own scrollable wrapper) run wider. */
+        #lunarClanTable td { white-space: nowrap; }
 
         .gain-positive { color: #10b981; }
         .gain-negative { color: #f56565; }
@@ -1594,7 +1619,7 @@
         }
 
         // ══════════════════════════════════════════════
-        //  LUNAR POINTS / SECRET SCORE TREND
+        //  LUNAR POINTS / SECRET SCORE / RANK TREND
         //  Phase 1: clanStats.js's lmeHistory (legacy), from LME #31
         //  onward — same baseline + league/rank delta formula as the
         //  "Lunar Points" stat on the LME tab. Phase 2: continues with
@@ -1602,7 +1627,10 @@
         //  absolute lunar points directly instead of a delta.
         //  Secret Score = lunar points * a rank-factor that resets to
         //  1.0 on a 1st-place finish and decays otherwise — walked
-        //  across BOTH phases as one unbroken streak.
+        //  across BOTH phases as one unbroken streak. Each point also
+        //  carries that cycle's placement (1st-4th) for the Rank chart;
+        //  the synthetic "Baseline" anchor point has no cycle of its
+        //  own, so its rank is null.
         // ══════════════════════════════════════════════
         function computeLunarTrend(newCycles) {
             const points = [];
@@ -1623,7 +1651,7 @@
                 if (entry.lmeNumber < 31) return;
 
                 if (!baselineAnchored) {
-                    points.push({ label: 'Baseline', lunarPoints: lunarPts, secretScore: lunarPts * rankFactor, phase: 'legacy' });
+                    points.push({ label: 'Baseline', lunarPoints: lunarPts, secretScore: lunarPts * rankFactor, rank: null, phase: 'legacy' });
                     baselineAnchored = true;
                 }
 
@@ -1633,7 +1661,7 @@
                 else if (league.includes('legend')) delta = LUNAR_POINTS_TABLE.legend[entry.rank]   || 0;
                 lunarPts += delta;
 
-                points.push({ label: `#${entry.lmeNumber}`, lunarPoints: lunarPts, secretScore: lunarPts * rankFactor, phase: 'legacy' });
+                points.push({ label: `#${entry.lmeNumber}`, lunarPoints: lunarPts, secretScore: lunarPts * rankFactor, rank: entry.rank, phase: 'legacy' });
             });
 
             [...newCycles].sort((a, b) => a.lmeNumber - b.lmeNumber).forEach(cycle => {
@@ -1647,6 +1675,7 @@
                     label: formatCycleDate(cycle.generatedAt),
                     lunarPoints: pts,
                     secretScore: pts * rankFactor,
+                    rank: own.rank ?? null,
                     phase: 'new',
                 });
             });
@@ -1687,19 +1716,154 @@
             { key: 'all', label: 'All weeks' },
         ];
 
+        // Shared hover/tap/drag/keyboard wiring for both trend charts.
+        // showAt(idx)/hide() are supplied by the caller and only draw —
+        // this owns picking WHICH index is active and when to call them.
+        //
+        // Touch gets a scrub gesture, not just a tap: pointerdown pins
+        // immediately, pointermove while held keeps updating (dragging a
+        // finger across the chart scrubs through dates), and releasing
+        // leaves it pinned at the last point — a plain tap (no movement)
+        // instead toggles the pin on/off, same as a click always did.
+        // setPointerCapture keeps the drag tracking even if the finger
+        // strays outside the hit rect mid-gesture.
+        function wireTrendInteraction({ hitRect, wrap, points, showAt, hide }) {
+            function nearestIndex(clientX) {
+                // hitRect's own box already IS the plot area (x=padL, width=plotW
+                // in viewBox units) — no need to go back through the full SVG's
+                // bounding box.
+                const rect = hitRect.getBoundingClientRect();
+                const rel = rect.width > 0 ? (clientX - rect.left) / rect.width : 0;
+                const idx = points.length > 1
+                    ? Math.round(rel * (points.length - 1))
+                    : 0;
+                return Math.max(0, Math.min(points.length - 1, idx));
+            }
+
+            let pinnedIdx = null;
+            let isDown = false;
+            let didDrag = false;
+            let downX = 0;
+
+            hitRect.addEventListener('pointerdown', (e) => {
+                isDown = true;
+                didDrag = false;
+                downX = e.clientX;
+                try { hitRect.setPointerCapture(e.pointerId); } catch (err) {}
+                showAt(nearestIndex(e.clientX));
+            });
+
+            hitRect.addEventListener('pointermove', (e) => {
+                if (isDown) {
+                    if (Math.abs(e.clientX - downX) > 3) didDrag = true;
+                    showAt(nearestIndex(e.clientX));
+                    return;
+                }
+                if (pinnedIdx === null) showAt(nearestIndex(e.clientX));
+            });
+
+            function finishPointer(e) {
+                if (!isDown) return;
+                isDown = false;
+                const idx = nearestIndex(e.clientX);
+                pinnedIdx = didDrag ? idx : (pinnedIdx === idx ? null : idx);
+                if (pinnedIdx === null) hide(); else showAt(pinnedIdx);
+            }
+            hitRect.addEventListener('pointerup', finishPointer);
+            hitRect.addEventListener('pointercancel', () => { isDown = false; });
+
+            hitRect.addEventListener('pointerleave', () => {
+                if (!isDown && pinnedIdx === null) hide();
+            });
+
+            function onDocClick(e) {
+                if (!document.body.contains(wrap)) {
+                    document.removeEventListener('click', onDocClick); // this chart got swapped out (e.g. filter change) — stop listening
+                    return;
+                }
+                if (pinnedIdx !== null && !wrap.contains(e.target)) {
+                    pinnedIdx = null;
+                    hide();
+                }
+            }
+            document.addEventListener('click', onDocClick);
+
+            let focusedIdx = points.length - 1;
+            hitRect.addEventListener('focus', () => { if (pinnedIdx === null) showAt(focusedIdx); });
+            hitRect.addEventListener('blur', () => { if (pinnedIdx === null) hide(); });
+            hitRect.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowLeft')  { pinnedIdx = null; focusedIdx = Math.max(0, focusedIdx - 1); showAt(focusedIdx); e.preventDefault(); }
+                if (e.key === 'ArrowRight') { pinnedIdx = null; focusedIdx = Math.min(points.length - 1, focusedIdx + 1); showAt(focusedIdx); e.preventDefault(); }
+            });
+        }
+
         function buildLunarTrendSection(allPoints) {
             const section = document.createElement('div');
 
             const filterRow = document.createElement('div');
             filterRow.className = 'lme-trend-filter-row';
 
-            const chartMount = document.createElement('div');
+            const carousel = document.createElement('div');
+            carousel.className = 'lme-trend-carousel';
+            const track = document.createElement('div');
+            track.className = 'lme-trend-carousel-track';
+            const slideLunar = document.createElement('div');
+            slideLunar.className = 'lme-trend-carousel-slide';
+            const slideRank = document.createElement('div');
+            slideRank.className = 'lme-trend-carousel-slide';
+            track.appendChild(slideLunar);
+            track.appendChild(slideRank);
+            carousel.appendChild(track);
+
+            const dotsRow = document.createElement('div');
+            dotsRow.className = 'lme-trend-carousel-dots';
+            const dots = [0, 1].map(i => {
+                const dot = document.createElement('button');
+                dot.type = 'button';
+                dot.className = 'lme-trend-dot' + (i === 0 ? ' active' : '');
+                dot.setAttribute('aria-label', i === 0 ? 'Lunar Points chart' : 'Rank chart');
+                dot.onclick = () => goToSlide(i);
+                dotsRow.appendChild(dot);
+                return dot;
+            });
+
+            let currentSlide = 0;
+            function goToSlide(i) {
+                currentSlide = Math.max(0, Math.min(1, i));
+                track.style.transform = `translateX(-${currentSlide * 100}%)`;
+                dots.forEach((d, idx) => d.classList.toggle('active', idx === currentSlide));
+            }
+
+            // Swiping switches slides, but only when the gesture starts
+            // outside the chart's own SVG — inside it, a horizontal drag
+            // means "scrub through dates" (see wireTrendInteraction), not
+            // "change chart", so the two never fight over the same touch.
+            let swipeStartX = null, swipeStartY = null, swiping = false;
+            carousel.addEventListener('pointerdown', (e) => {
+                if (e.target.closest('svg')) return;
+                swipeStartX = e.clientX;
+                swipeStartY = e.clientY;
+                swiping = true;
+            });
+            window.addEventListener('pointerup', (e) => {
+                if (!swiping) return;
+                swiping = false;
+                if (!document.body.contains(carousel)) return;
+                const dx = e.clientX - swipeStartX;
+                const dy = e.clientY - swipeStartY;
+                if (Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy)) {
+                    goToSlide(currentSlide + (dx < 0 ? 1 : -1));
+                }
+            });
 
             let activeKey = 'all';
-            function rerenderChart() {
-                chartMount.innerHTML = '';
+            function rerenderCharts() {
                 const sliced = activeKey === 'all' ? allPoints : allPoints.slice(-parseInt(activeKey, 10));
-                chartMount.appendChild(buildLunarTrendChart(sliced.length >= 2 ? sliced : allPoints));
+                const pts = sliced.length >= 2 ? sliced : allPoints;
+                slideLunar.innerHTML = '';
+                slideLunar.appendChild(buildLunarTrendChart(pts));
+                slideRank.innerHTML = '';
+                slideRank.appendChild(buildRankTrendChart(pts));
             }
 
             LME_TREND_FILTERS.forEach(f => {
@@ -1712,14 +1876,15 @@
                     activeKey = f.key;
                     filterRow.querySelectorAll('.lme-trend-filter-btn').forEach(b => b.classList.remove('active'));
                     btn.classList.add('active');
-                    rerenderChart();
+                    rerenderCharts();
                 };
                 filterRow.appendChild(btn);
             });
 
             section.appendChild(filterRow);
-            section.appendChild(chartMount);
-            rerenderChart();
+            section.appendChild(carousel);
+            section.appendChild(dotsRow);
+            rerenderCharts();
             return section;
         }
 
@@ -1842,70 +2007,125 @@
             }
 
             function hide() {
-                if (pinnedIdx !== null) return; // a clicked/tapped point stays put
                 crosshair.style.display = 'none';
                 dotLunar.style.display  = 'none';
                 dotSecret.style.display = 'none';
                 tooltip.style.display   = 'none';
             }
 
-            function nearestIndex(clientX) {
-                // hitRect's own box already IS the plot area (x=padL, width=plotW
-                // in viewBox units) — no need to go back through the full SVG's
-                // bounding box. (Using wrap.querySelector('svg') here used to grab
-                // the WRONG <svg> — the legend's tiny 16x4 line-key icon is the
-                // first <svg> in document order, not the chart — which is why
-                // hover used to jump to whichever end the resulting bogus scale
-                // factor clamped to instead of tracking the cursor.)
-                const rect = hitRect.getBoundingClientRect();
-                const rel = rect.width > 0 ? (clientX - rect.left) / rect.width : 0;
-                const idx = points.length > 1
-                    ? Math.round(rel * (points.length - 1))
-                    : 0;
-                return Math.max(0, Math.min(points.length - 1, idx));
+            wireTrendInteraction({ hitRect, wrap, points, showAt, hide });
+            return wrap;
+        }
+
+        // Single-series chart: the clan's placement (1st-4th) per cycle.
+        // Rank is a small fixed ordinal domain, not a continuous measure,
+        // so the y-axis is just the 4 fixed rows "#1".."#4" (inverted -
+        // 1st place at the top) rather than computed nice-number ticks.
+        // Point colors reuse LME_RANK_COLORS (gold/silver/bronze/red) to
+        // stay visually consistent with the Final Ranking badges
+        // elsewhere in this tab; the connecting line stays a neutral
+        // violet since it doesn't belong to any single rank.
+        function buildRankTrendChart(points) {
+            const W = 640, H = 220;
+            const padL = 34, padR = 14, padT = 14, padB = 8;
+            const plotW = W - padL - padR;
+            const plotH = H - padT - padB;
+
+            const xAt = (i) => points.length > 1 ? padL + (i / (points.length - 1)) * plotW : padL + plotW / 2;
+            const yAt = (rank) => padT + ((rank - 1) / 3) * plotH;
+
+            const gridLines = [1, 2, 3, 4].map(r => `
+                <line x1="${padL}" y1="${yAt(r).toFixed(1)}" x2="${W - padR}" y2="${yAt(r).toFixed(1)}" stroke="#374151" stroke-width="1"/>
+                <text x="${padL - 8}" y="${(yAt(r) + 3).toFixed(1)}" text-anchor="end" font-size="9" font-weight="700" fill="${LME_RANK_COLORS[r]}">#${r}</text>
+            `).join('');
+
+            const ranked = points.map((p, i) => ({ i, rank: p.rank })).filter(d => d.rank != null);
+            const linePath = ranked.map((d, idx) => `${idx === 0 ? 'M' : 'L'} ${xAt(d.i).toFixed(1)},${yAt(d.rank).toFixed(1)}`).join(' ');
+            const rankDots = ranked.map(d => `
+                <circle cx="${xAt(d.i).toFixed(1)}" cy="${yAt(d.rank).toFixed(1)}" r="5" fill="#2d3748"/>
+                <circle cx="${xAt(d.i).toFixed(1)}" cy="${yAt(d.rank).toFixed(1)}" r="3.5" fill="${LME_RANK_COLORS[d.rank] || '#f56565'}"/>
+            `).join('');
+
+            const transitionIdx = points.findIndex(p => p.phase === 'new');
+            let transitionMarker = '';
+            if (transitionIdx > 0) {
+                const tx = xAt(transitionIdx).toFixed(1);
+                transitionMarker = `<line x1="${tx}" y1="${padT}" x2="${tx}" y2="${H - padB}" stroke="#4a5568" stroke-width="1" stroke-dasharray="3,3"/>`;
             }
 
-            // Hovering with a mouse works, but landing exactly on a thin 2px
-            // line is fussy, and touch has no hover at all — so a tap/click
-            // anywhere along the chart snaps to and PINS the nearest point,
-            // keeping its tooltip open until another point (or the outside)
-            // is clicked.
-            let pinnedIdx = null;
-            hitRect.addEventListener('click', (e) => {
-                const idx = nearestIndex(e.clientX);
-                if (pinnedIdx === idx) {
-                    pinnedIdx = null;
-                    hide();
+            const lastIdx = points.length - 1;
+
+            const wrap = document.createElement('div');
+            wrap.className = 'lme-trend-chart';
+            wrap.innerHTML = `
+                <div class="lme-trend-legend">
+                    <span class="lme-trend-legend-item" style="color:#a0aec0;">Clan Rank</span>
+                </div>
+                <div style="position:relative;">
+                    <svg viewBox="0 0 ${W} ${H}" style="width:100%; height:auto; display:block; overflow:visible;">
+                        ${gridLines}
+                        ${transitionMarker}
+                        <path d="${linePath}" fill="none" stroke="#9085e9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        ${rankDots}
+                        <line class="lme-trend-crosshair" x1="0" y1="${padT}" x2="0" y2="${H - padB}" stroke="#a0aec0" stroke-width="1" style="display:none;"/>
+                        <circle class="lme-trend-hover-dot" r="5" fill="#9085e9" stroke="#2d3748" stroke-width="2" style="display:none;"/>
+                        <rect class="lme-trend-hit" x="${padL}" y="0" width="${plotW}" height="${H}" fill="transparent" style="cursor:pointer;" tabindex="0"/>
+                    </svg>
+                    <div class="lme-trend-tooltip" style="display:none;"></div>
+                </div>
+                <div style="display:flex; justify-content:space-between; font-size:9px; color:#718096; margin: 2px ${padR}px 0 ${padL}px;">
+                    <span>${points[0].label}</span>
+                    <span>${points[lastIdx].label}</span>
+                </div>
+            `;
+
+            const hitRect   = wrap.querySelector('.lme-trend-hit');
+            const crosshair = wrap.querySelector('.lme-trend-crosshair');
+            const dot       = wrap.querySelector('.lme-trend-hover-dot');
+            const tooltip   = wrap.querySelector('.lme-trend-tooltip');
+
+            function showAt(idx) {
+                const p = points[idx];
+                const x = xAt(idx);
+
+                crosshair.setAttribute('x1', x);
+                crosshair.setAttribute('x2', x);
+                crosshair.style.display = '';
+
+                if (p.rank == null) {
+                    dot.style.display = 'none';
                 } else {
-                    pinnedIdx = idx;
-                    showAt(idx);
+                    dot.setAttribute('cx', x);
+                    dot.setAttribute('cy', yAt(p.rank));
+                    dot.setAttribute('fill', LME_RANK_COLORS[p.rank] || '#f56565');
+                    dot.style.display = '';
                 }
-            });
-            function onDocClick(e) {
-                if (!document.body.contains(wrap)) {
-                    document.removeEventListener('click', onDocClick); // this chart got swapped out (e.g. filter change) — stop listening
-                    return;
-                }
-                if (pinnedIdx !== null && !wrap.contains(e.target)) {
-                    pinnedIdx = null;
-                    hide();
-                }
+
+                const rankColor = p.rank ? (LME_RANK_COLORS[p.rank] || '#f56565') : '#718096';
+                tooltip.innerHTML = `
+                    <div style="font-size:10px; color:#a0aec0; margin-bottom:3px;"></div>
+                    <div class="lme-trend-tooltip-row">
+                        <span class="lme-trend-tooltip-key" style="background:${rankColor};"></span>
+                        <span class="lme-trend-tooltip-label">Rank</span>
+                        <strong class="lme-trend-tooltip-value"></strong>
+                    </div>
+                `;
+                tooltip.querySelector('div').textContent = p.label;
+                tooltip.querySelector('.lme-trend-tooltip-value').textContent = p.rank ? `#${p.rank}` : '—';
+
+                const pct = points.length > 1 ? idx / (points.length - 1) : 0.5;
+                tooltip.style.display = '';
+                tooltip.style.left = `${pct * 100}%`;
+                tooltip.style.transform = `translateX(${pct > 0.7 ? '-100%' : pct < 0.3 ? '0%' : '-50%'})`;
             }
-            document.addEventListener('click', onDocClick);
 
-            hitRect.addEventListener('pointermove', (e) => {
-                if (pinnedIdx === null) showAt(nearestIndex(e.clientX));
-            });
-            hitRect.addEventListener('pointerleave', hide);
+            function hide() {
+                crosshair.style.display = 'none';
+                dot.style.display = 'none';
+                tooltip.style.display = 'none';
+            }
 
-            let focusedIdx = points.length - 1;
-            hitRect.addEventListener('focus', () => { if (pinnedIdx === null) showAt(focusedIdx); });
-            hitRect.addEventListener('blur', hide);
-            hitRect.addEventListener('keydown', (e) => {
-                if (e.key === 'ArrowLeft')  { pinnedIdx = null; focusedIdx = Math.max(0, focusedIdx - 1); showAt(focusedIdx); e.preventDefault(); }
-                if (e.key === 'ArrowRight') { pinnedIdx = null; focusedIdx = Math.min(points.length - 1, focusedIdx + 1); showAt(focusedIdx); e.preventDefault(); }
-            });
-
+            wireTrendInteraction({ hitRect, wrap, points, showAt, hide });
             return wrap;
         }
 
