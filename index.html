@@ -366,50 +366,20 @@
         .gain-negative { color: #f56565; }
         .gain-neutral  { color: #a0aec0; }
 
-        /* ── Ender's Echo: seasonal leaderboard + drill-down ── */
-        .ee-row-card {
-            background: #2d3748;
-            border: 1px solid #4a5568;
-            border-radius: 10px;
-            overflow: hidden;
-        }
-        .ee-row-header {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            padding: 10px 12px;
-            cursor: pointer;
-            user-select: none;
-        }
-        .ee-row-header:hover { background: #374151; }
-        .ee-row-rank {
-            width: 22px; flex-shrink: 0;
-            text-align: center;
-            font-weight: 700;
-            font-size: 12px;
-            color: #a0aec0;
-        }
-        .ee-row-name { flex: 1; min-width: 0; font-weight: 600; font-size: 13px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-        .ee-row-total { text-align: right; font-weight: 700; font-size: 13px; color: #fb7185; white-space: nowrap; }
-        .ee-row-gain { text-align: right; font-size: 10px; min-width: 56px; white-space: nowrap; }
-        .ee-row-chevron { color: #718096; font-size: 10px; flex-shrink: 0; }
-        .ee-row-body { display: none; padding: 0 12px 12px 12px; border-top: 1px solid #4a5568; }
+        /* ── Ender's Echo: seasonal sheet + attempt tooltip ── */
+        .ee-sheet-wrap { overflow-x: auto; border-radius: 12px; }
+        .ee-sheet-table { min-width: 100%; }
+        .ee-sheet-table th, .ee-sheet-table td { white-space: nowrap; padding: 8px 6px; }
+        .ee-sheet-rank  { font-weight: 700; color: #a0aec0; }
+        .ee-sheet-name  { font-weight: 600; }
+        .ee-sheet-day   { cursor: pointer; font-weight: 600; color: #fb7185; border-bottom: 1px dashed rgba(251,113,133,0.45); }
+        .ee-sheet-day:hover { background-color: #374151; }
+        .ee-sheet-day-empty { color: #718096; font-weight: 400; cursor: default; border-bottom: none; }
+        .ee-sheet-day-empty:hover { background-color: transparent; }
+        .ee-sheet-day-count { font-size: 9px; color: #a0aec0; font-weight: 500; }
+        .ee-sheet-total { font-weight: 700; color: #fb7185; }
+        .ee-sheet-gain  { font-size: 11px; }
 
-        .ee-mini-season-card { background: #1a202c; border: 1px solid #4a5568; border-radius: 8px; overflow: hidden; margin-top: 8px; }
-        .ee-mini-season-header {
-            display: flex; align-items: center; justify-content: space-between;
-            padding: 8px 10px; cursor: pointer; user-select: none; gap: 8px;
-        }
-        .ee-mini-season-header:hover { background: #232b3a; }
-        .ee-mini-season-label { font-size: 11px; font-weight: 600; color: #cbd5e0; }
-        .ee-mini-season-total { font-size: 11px; font-weight: 700; color: #fb7185; }
-        .ee-mini-season-body { display: none; padding: 0 10px 10px 10px; }
-
-        .ee-day-card { background: #2d3748; border-radius: 6px; padding: 8px 10px; margin-top: 6px; }
-        .ee-day-title { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 6px; }
-        .ee-day-date { font-size: 10px; color: #a0aec0; font-weight: 600; }
-        .ee-day-total { font-size: 11px; color: #fb7185; font-weight: 700; }
-        .ee-attempts { display: flex; flex-wrap: wrap; gap: 5px; }
         .ee-attempt-chip {
             font-size: 10px; font-weight: 600; padding: 3px 7px;
             border-radius: 999px; background: #374151; color: #a0aec0;
@@ -419,7 +389,19 @@
             color: #ffd700;
             border: 1px solid rgba(255, 215, 0, 0.4);
         }
-        .ee-no-attempts { font-size: 10px; color: #718096; font-style: italic; }
+        .ee-sheet-tooltip {
+            position: fixed;
+            z-index: 200;
+            background: #1a202c;
+            border: 1px solid #4a5568;
+            border-radius: 8px;
+            padding: 7px 9px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            max-width: 220px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.45);
+        }
 
         /* ── Font Size Control ── */
         .font-ctrl {
@@ -848,7 +830,8 @@
             <!-- Ender's Echo Tab -->
             <div id="ee-tab" class="subtab-content" style="display: none;">
                 <p style="color: #718096; font-size: 11px; text-align: center; margin: 0 0 10px 0;" data-i18n="modal.ee_season.subtitle">Pick a season to see results</p>
-                <select id="eeSeasonSelect" style="width:100%; margin-bottom:10px;"></select>
+                <select id="eeSeasonSelect" style="width:100%; margin-bottom:8px;"></select>
+                <select id="eeMiniSeasonSelect" style="width:100%; margin-bottom:10px;"></select>
                 <input type="text" id="eeSearchInput" placeholder="Search player names..." class="search-box" data-i18n-placeholder="ctrl.search_placeholder" style="width:100%; box-sizing:border-box; margin-bottom:10px;">
 
                 <!-- Compact Role Legend -->
@@ -859,7 +842,8 @@
                     <span style="color: #ffd700; font-weight: 600; text-shadow: 0 0 10px #ffd700;">★ Glory Member</span>
                 </div>
 
-                <div id="eeLeaderboard" style="display:flex; flex-direction:column; gap:8px;"></div>
+                <p style="color:#718096; font-size:10px; text-align:center; margin:0 0 6px 0;" data-i18n="modal.ee_season.tap_hint">Tap a day's score to see every attempt</p>
+                <div id="eeLeaderboard"></div>
             </div>
 
             <div id="sharedTableSection">
@@ -1004,7 +988,8 @@
             updateSortDropdown();
             updateTableHeader();
             sortData(currentSort);
-            filterEnderEchoLeaderboard(document.getElementById('eeSearchInput').value);
+            populateEEMiniSeasonSelect();
+            renderEESheet(document.getElementById('eeSearchInput').value);
         }
 
         // ── SPA Navigation ──
@@ -2412,12 +2397,12 @@
             });
 
             // Ender's Echo doesn't fit the flat sortable-table paradigm the
-            // other tabs share (it's a season -> mini-season -> day
-            // drill-down), so it gets its own view and the shared
-            // controls/table are hidden rather than repurposed.
+            // other tabs share (it's a season/mini-season sheet), so it
+            // gets its own view and the shared controls/table are hidden
+            // rather than repurposed.
             document.getElementById('sharedTableSection').style.display = tab === 'ee' ? 'none' : '';
             if (tab === 'ee') {
-                filterEnderEchoLeaderboard(document.getElementById('eeSearchInput').value);
+                renderEESheet(document.getElementById('eeSearchInput').value);
                 return;
             }
 
@@ -2588,6 +2573,7 @@
         // doesn't need to re-fetch a season it already has.
         let eeSeasonsCache = {};
         let currentEESeason = null;
+        let currentEEMiniSeason = null;
 
         async function loadEnderEchoSeasons() {
             const select = document.getElementById('eeSeasonSelect');
@@ -2598,7 +2584,8 @@
             currentEESeason = null;
             select.onchange = () => {
                 currentEESeason = eeSeasonsCache[select.value];
-                filterEnderEchoLeaderboard(document.getElementById('eeSearchInput').value);
+                populateEEMiniSeasonSelect();
+                renderEESheet(document.getElementById('eeSearchInput').value);
             };
 
             let n = 1;
@@ -2621,9 +2608,47 @@
             }
 
             select.style.display = found === 0 ? 'none' : '';
+            populateEEMiniSeasonSelect();
             if (currentSubTab === 'ee') {
-                filterEnderEchoLeaderboard(document.getElementById('eeSearchInput').value);
+                renderEESheet(document.getElementById('eeSearchInput').value);
             }
+        }
+
+        // Mini-season picker: shows one mini-season's 3 days at a time
+        // (rather than all 9 side by side) so the sheet stays narrow
+        // enough to read without horizontal scrolling on a phone screen.
+        // Defaults to the season file's latest mini-season on every
+        // season switch.
+        function populateEEMiniSeasonSelect() {
+            const sel = document.getElementById('eeMiniSeasonSelect');
+            if (!sel) return;
+
+            sel.innerHTML = '';
+            const numbers = currentEESeason
+                ? [...new Set((currentEESeason.miniSeasons || []).map(ms => ms.miniSeasonNumber))].sort((a, b) => a - b)
+                : [];
+
+            numbers.forEach(n => {
+                const opt = document.createElement('option');
+                opt.value = n;
+                opt.textContent = `${t('modal.ee_season.mini_season')} ${n}`;
+                sel.appendChild(opt);
+            });
+
+            sel.style.display = numbers.length === 0 ? 'none' : '';
+            // Keep the current mini-season selected across a relabel (e.g.
+            // a language switch just rebuilding the option text) — only
+            // reset to the latest one when it's no longer valid, such as
+            // switching to a different season file.
+            if (!numbers.includes(currentEEMiniSeason)) {
+                currentEEMiniSeason = numbers.length ? numbers[numbers.length - 1] : null;
+            }
+            if (currentEEMiniSeason !== null) sel.value = currentEEMiniSeason;
+
+            sel.onchange = () => {
+                currentEEMiniSeason = Number(sel.value);
+                renderEESheet(document.getElementById('eeSearchInput').value);
+            };
         }
 
         function eeRoleStyle(role) {
@@ -2651,9 +2676,17 @@
             return `<span class="${color}">(${sign}${formatEEDecimal(val)})</span>`;
         }
 
-        function filterEnderEchoLeaderboard(searchTerm) {
+        // Renders the whole Ender's Echo tab as a spreadsheet: one row per
+        // player, one column per day of the currently-selected mini-season,
+        // plus the season total/gain columns. Tapping a day cell reveals
+        // that player's full attempt list for the day (see
+        // toggleEETooltip below) without recomputing anything — the
+        // pushed file's top2Sum is trusted and displayed as-is.
+        function renderEESheet(searchTerm) {
             const container = document.getElementById('eeLeaderboard');
             if (!container) return;
+
+            closeEETooltip();
 
             if (!currentEESeason) {
                 container.innerHTML = `<p style="color:#718096; font-size:12px; text-align:center; padding: 12px 0;" data-i18n="modal.ee_season.empty">No Ender's Echo season data available yet.</p>`;
@@ -2673,133 +2706,108 @@
                 return;
             }
 
-            const dayLookup = buildEEDayLookup(currentEESeason, rows.map(r => r.name));
-            rows.forEach(entry => {
-                container.appendChild(buildEERowCard(entry, roleByName.get(entry.name), dayLookup.get(entry.name) || []));
-            });
-        }
+            const miniSeason = (currentEESeason.miniSeasons || []).find(ms => ms.miniSeasonNumber === currentEEMiniSeason);
+            const days = miniSeason ? [...(miniSeason.days || [])].sort((a, b) => a.day - b.day) : [];
 
-        // Flattens the season's miniSeasons -> days structure into, per
-        // player name, an ordered list of { miniSeasonNumber, day, date,
-        // attempts, top2Sum } — the shape the drill-down actually renders
-        // from, built once per season-select/search rather than re-walked
-        // per leaderboard row.
-        function buildEEDayLookup(season, names) {
-            const lookup = new Map(names.map(n => [n, []]));
-            (season.miniSeasons || []).forEach(ms => {
-                (ms.days || []).forEach(day => {
-                    (day.players || []).forEach(p => {
-                        if (!lookup.has(p.name)) return;
-                        lookup.get(p.name).push({
-                            miniSeasonNumber: ms.miniSeasonNumber,
-                            day: day.day,
-                            date: day.date,
-                            attempts: p.attempts || [],
-                            top2Sum: p.top2Sum ?? 0
-                        });
-                    });
-                });
-            });
-            return lookup;
-        }
+            const wrap = document.createElement('div');
+            wrap.className = 'ee-sheet-wrap';
 
-        function buildEERowCard(entry, role, dayEntries) {
-            const style = eeRoleStyle(role);
-
-            const card = document.createElement('div');
-            card.className = 'ee-row-card';
-
-            const header = document.createElement('div');
-            header.className = 'ee-row-header';
-            header.innerHTML = `
-                <span class="ee-row-rank">#${entry.rank}</span>
-                <span class="ee-row-name ${style.cls}" style="color:${style.color};">${escapeHtml(entry.name)}</span>
-                <span class="ee-row-total">${formatEEDecimal(entry.seasonTotal)}</span>
-                <span class="ee-row-gain">${formatEEGainHTML(entry.gainVsPreviousSeason)}</span>
-                <span class="ee-row-chevron">▼</span>
+            const table = document.createElement('table');
+            table.className = 'ee-sheet-table';
+            table.innerHTML = `
+                <thead>
+                    <tr>
+                        <th data-i18n="table.col.rank">#</th>
+                        <th data-i18n="table.col.player_name">Player Name</th>
+                        ${days.map(d => `<th>${t('modal.ee_season.day')} ${d.day}</th>`).join('')}
+                        <th>${t('modal.ee_season.col.total')}</th>
+                        <th>${t('modal.ee_season.col.gain')}</th>
+                    </tr>
+                </thead>
             `;
 
-            const body = document.createElement('div');
-            body.className = 'ee-row-body';
-            body.appendChild(buildEEMiniSeasons(dayEntries));
-
-            header.addEventListener('click', () => {
-                const open = body.style.display === 'block';
-                body.style.display = open ? 'none' : 'block';
-                header.querySelector('.ee-row-chevron').textContent = open ? '▼' : '▲';
-            });
-
-            card.appendChild(header);
-            card.appendChild(body);
-            return card;
-        }
-
-        function buildEEMiniSeasons(dayEntries) {
-            const wrap = document.createElement('div');
-
-            // Regroup the flat day list back into its (up to 9) mini-seasons,
-            // preserving whatever mini-season numbers the season file used.
-            const byMini = new Map();
-            dayEntries.forEach(d => {
-                if (!byMini.has(d.miniSeasonNumber)) byMini.set(d.miniSeasonNumber, []);
-                byMini.get(d.miniSeasonNumber).push(d);
-            });
-
-            [...byMini.keys()].sort((a, b) => a - b).forEach(msNum => {
-                const days = byMini.get(msNum).sort((a, b) => a.day - b.day);
-                const subtotal = days.reduce((s, d) => s + (d.top2Sum || 0), 0);
-
-                const card = document.createElement('div');
-                card.className = 'ee-mini-season-card';
-
-                const header = document.createElement('div');
-                header.className = 'ee-mini-season-header';
-                header.innerHTML = `
-                    <span class="ee-mini-season-label">${t('modal.ee_season.mini_season')} ${msNum}</span>
-                    <span class="ee-mini-season-total">${formatEEDecimal(subtotal)}</span>
+            const tbody = document.createElement('tbody');
+            rows.forEach(entry => {
+                const style = eeRoleStyle(roleByName.get(entry.name));
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+                    <td class="ee-sheet-rank">#${entry.rank}</td>
+                    <td class="ee-sheet-name ${style.cls}" style="color:${style.color};">${escapeHtml(entry.name)}</td>
+                    ${days.map(day => buildEESheetDayCellHTML((day.players || []).find(p => p.name === entry.name))).join('')}
+                    <td class="ee-sheet-total">${formatEEDecimal(entry.seasonTotal)}</td>
+                    <td class="ee-sheet-gain">${formatEEGainHTML(entry.gainVsPreviousSeason)}</td>
                 `;
+                tbody.appendChild(tr);
+            });
+            table.appendChild(tbody);
 
-                const body = document.createElement('div');
-                body.className = 'ee-mini-season-body';
-                days.forEach(d => body.appendChild(buildEEDayCard(d)));
-
-                header.addEventListener('click', () => {
-                    body.style.display = body.style.display === 'block' ? 'none' : 'block';
-                });
-
-                card.appendChild(header);
-                card.appendChild(body);
-                wrap.appendChild(card);
+            tbody.addEventListener('click', e => {
+                const cell = e.target.closest('.ee-sheet-day');
+                if (cell) toggleEETooltip(cell);
             });
 
-            return wrap;
+            wrap.appendChild(table);
+            container.appendChild(wrap);
+            applyTranslations();
         }
 
-        function buildEEDayCard(d) {
-            const card = document.createElement('div');
-            card.className = 'ee-day-card';
+        function buildEESheetDayCellHTML(playerDay) {
+            const attempts = playerDay ? (playerDay.attempts || []) : [];
+            if (!playerDay || attempts.length === 0) {
+                return `<td class="ee-sheet-day ee-sheet-day-empty">—</td>`;
+            }
+            return `<td class="ee-sheet-day" data-attempts="${JSON.stringify(attempts)}">${formatEEDecimal(playerDay.top2Sum)} <span class="ee-sheet-day-count">(x${attempts.length})</span></td>`;
+        }
 
-            // The pushed file's top2Sum is trusted as-is and just displayed
-            // below — this only decides which two chips visually match that
-            // trusted sum, it never recomputes or overrides it.
+        // ── Attempt tooltip: a lightweight, non-modal popover (not a
+        // hardcoded dialog) toggled by click/tap so it works the same on
+        // touch as it does with a mouse. Only one is ever open at a time.
+        let eeTooltipEl = null;
+        let eeTooltipForCell = null;
+
+        function closeEETooltip() {
+            if (eeTooltipEl) { eeTooltipEl.remove(); eeTooltipEl = null; }
+            eeTooltipForCell = null;
+        }
+
+        function toggleEETooltip(cell) {
+            if (eeTooltipForCell === cell) { closeEETooltip(); return; }
+            closeEETooltip();
+
+            const attempts = JSON.parse(cell.dataset.attempts || '[]');
+            if (attempts.length === 0) return;
+
+            // Highlight matches the day's trusted top2Sum only visually —
+            // it never recomputes or overrides that pushed value.
             const countedIdx = new Set(
-                [...d.attempts.keys()]
-                    .sort((a, b) => d.attempts[b] - d.attempts[a])
-                    .slice(0, 2)
+                [...attempts.keys()].sort((a, b) => attempts[b] - attempts[a]).slice(0, 2)
             );
 
-            const attemptsHTML = d.attempts.length === 0
-                ? `<span class="ee-no-attempts">${t('modal.ee_season.no_attempts')}</span>`
-                : d.attempts.map((val, i) => `<span class="ee-attempt-chip${countedIdx.has(i) ? ' counted' : ''}">${formatEEDecimal(val)}</span>`).join('');
+            const tip = document.createElement('div');
+            tip.className = 'ee-sheet-tooltip';
+            tip.innerHTML = attempts
+                .map((val, i) => `<span class="ee-attempt-chip${countedIdx.has(i) ? ' counted' : ''}">${formatEEDecimal(val)}</span>`)
+                .join('');
 
-            card.innerHTML = `
-                <div class="ee-day-title">
-                    <span class="ee-day-date">${t('modal.ee_season.day')} ${d.day} · ${formatCycleDate(d.date)}</span>
-                    <span class="ee-day-total">${formatEEDecimal(d.top2Sum)}</span>
-                </div>
-                <div class="ee-attempts">${attemptsHTML}</div>
-            `;
-            return card;
+            document.body.appendChild(tip);
+            positionEETooltip(tip, cell);
+
+            eeTooltipEl = tip;
+            eeTooltipForCell = cell;
+        }
+
+        function positionEETooltip(tip, cell) {
+            const rect = cell.getBoundingClientRect();
+            tip.style.top  = `${rect.bottom + 6}px`;
+            tip.style.left = `${rect.left}px`;
+
+            const tipRect = tip.getBoundingClientRect();
+            if (tipRect.right > window.innerWidth - 8) {
+                tip.style.left = `${Math.max(8, window.innerWidth - tipRect.width - 8)}px`;
+            }
+            if (tipRect.bottom > window.innerHeight - 8) {
+                tip.style.top = `${Math.max(8, rect.top - tipRect.height - 6)}px`;
+            }
         }
 
         function exportToCSV() {
@@ -2920,7 +2928,18 @@
 
         document.getElementById('sortSelect').addEventListener('change', e => sortData(e.target.value));
         document.getElementById('searchInput').addEventListener('input',  e => filterData(e.target.value));
-        document.getElementById('eeSearchInput').addEventListener('input', e => filterEnderEchoLeaderboard(e.target.value));
+        document.getElementById('eeSearchInput').addEventListener('input', e => renderEESheet(e.target.value));
+
+        // Dismiss the attempt tooltip on an outside click/tap, or on
+        // scroll/resize (it's fixed-positioned against the cell it was
+        // opened from, so it can't track either).
+        document.addEventListener('click', e => {
+            if (!eeTooltipEl) return;
+            if (e.target.closest('.ee-sheet-day') || e.target.closest('.ee-sheet-tooltip')) return;
+            closeEETooltip();
+        });
+        window.addEventListener('scroll', closeEETooltip, true);
+        window.addEventListener('resize', closeEETooltip);
 
         // ══════════════════════════════════════════════
         //  GLOBAL FONT SIZE CONTROL

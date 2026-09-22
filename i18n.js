@@ -104,7 +104,7 @@ const TRANSLATIONS = {
     "modal.ee_season.col.gain": "Gain vs Prev",
     "modal.ee_season.mini_season": "Mini-Season",
     "modal.ee_season.day": "Day",
-    "modal.ee_season.no_attempts": "No attempts recorded",
+    "modal.ee_season.tap_hint": "Tap a day's score to see every attempt",
     "modal.alumni.title": "Alumni",
     "modal.alumni.subtitle": "Former clan members who contributed to our journey",
     "modal.alumni.count_label": "{n} former members",
