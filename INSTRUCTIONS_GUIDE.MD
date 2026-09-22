@@ -127,10 +127,15 @@ append **one new row**:
 
 - `lmeNumber`, `finalRank` (= the new `lmeHistory` entry's `rank`), `league`
   — copy straight from the `lmeHistory` entry you just added.
-- `totalP1Score` — sum every player's current LME score (from
-  `playerLME.js`'s `current` object as of this update — this is the file
-  that actually carries live P1 scores now; `playerData.js` is a retired
-  file kept only for its pre-2026-07-14 history).
+- `totalP1Score` — **the same Top 30 total already shown on the LME tab**
+  ("Total LME (Top 30)" stat, `lme-total-score` — see
+  `calculateLMETabSummary()` in `index.html`): sort every player's current
+  LME score descending (from `playerLME.js`'s `current` object as of this
+  update — this is the file that actually carries live P1 scores now;
+  `playerData.js` is a retired file kept only for its pre-2026-07-14
+  history) and sum the top 30. **Not** every player's score — that
+  overcounts against a 39-40 member roster and won't match the dashboard's
+  own number.
 - `lunarPoints` — the clan's current Lunar Points figure as shown on the
   dashboard (baseline + the running per-cycle delta from LME #31 onward;
   see `calculateLunarPointsFromBaseline()` in `index.html`).

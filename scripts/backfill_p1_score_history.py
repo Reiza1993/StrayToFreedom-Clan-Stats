@@ -1,10 +1,14 @@
 #!/usr/bin/env python3
 """backfill_p1_score_history.py — one-time reconstruction of the clan's
-total LME Phase 1 score (sum of every player's lmeScore) across all past
-LME cycles, by walking git history. Not part of the regular update
-workflow — run once to seed lme-history/summary.json, then the normal
-per-LME update procedure (documented in INSTRUCTIONS_GUIDE.MD) appends to
-it going forward.
+total LME Phase 1 score across all past LME cycles, by walking git
+history. Matches index.html's own "Total LME" stat exactly
+(calculateLMETabSummary(), TOP_N = 30): the sum of the top 30 lmeScore
+values for that cycle, not every player's score — the same Top-30
+convention every other "Total ___" stat on the dashboard already uses
+(Total ATK, Total Cores, etc.). Not part of the regular update workflow —
+run once to seed lme-history/summary.json, then the normal per-LME update
+procedure (documented in INSTRUCTIONS_GUIDE.MD) appends to it going
+forward.
 
 Background (see the branch/history investigation this script's commit
 message and PR description cover in full):
@@ -74,6 +78,11 @@ LUNAR_POINTS_TABLE = {
     "legend": {1: 30, 2: 15, 3: 5, 4: -5},
 }
 LUNAR_POINTS_CUTOVER_LME = 31
+
+# Mirrors index.html's `const TOP_N = 30` (calculateLMETabSummary and
+# every other "Total ___ (Top 30)" stat on the dashboard) — keep these in
+# sync if that ever changes.
+TOP_N = 30
 
 
 class BackfillError(RuntimeError):
@@ -148,17 +157,31 @@ def score_from_player_record(p):
     return None
 
 
-def sum_player_data_array(players):
-    """playerData.js shape: flat array of player objects."""
-    total = 0
+def top30_sum(records):
+    """Sums the top TOP_N scores (descending) across the given player
+    records — matching index.html's own Total LME (Top 30) stat exactly,
+    not a sum of every player. A player with no recognizable score field
+    is excluded from ranking entirely (not treated as a 0, which could
+    wrongly bump them into a "top 30" of zeroes) but still counted toward
+    `missing`/`total_count` for the caller's diagnostics.
+    Returns (total, missing_count, total_count)."""
+    scores = []
     missing = 0
-    for p in players:
-        score = score_from_player_record(p)
+    total_count = 0
+    for rec in records:
+        total_count += 1
+        score = score_from_player_record(rec) if isinstance(rec, dict) else None
         if score is None:
             missing += 1
             continue
-        total += score
-    return total, missing, len(players)
+        scores.append(score)
+    scores.sort(reverse=True)
+    return sum(scores[:TOP_N]), missing, total_count
+
+
+def sum_player_data_array(players):
+    """playerData.js shape: flat array of player objects."""
+    return top30_sum(players)
 
 
 def sum_player_lme_current(player_lme):
@@ -166,15 +189,7 @@ def sum_player_lme_current(player_lme):
     current = player_lme.get("current") if isinstance(player_lme, dict) else None
     if not isinstance(current, dict):
         return 0, 0, 0
-    total = 0
-    missing = 0
-    for _uid, rec in current.items():
-        score = score_from_player_record(rec) if isinstance(rec, dict) else None
-        if score is None:
-            missing += 1
-            continue
-        total += score
-    return total, missing, len(current)
+    return top30_sum(current.values())
 
 
 def process_phase(repo_dir, node_helper, tmp_dir, commit_hashes, file_path, var_name, sum_fn, phase_label):
