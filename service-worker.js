@@ -1,4 +1,4 @@
-const CACHE_NAME = 'freedom-protocol-v21';
+const CACHE_NAME = 'freedom-protocol-v22';
 
 const STATIC_ASSETS = [
     './',
@@ -54,8 +54,17 @@ self.addEventListener('fetch', event => {
     const isDataFile = url.pathname.endsWith('/') || NETWORK_FIRST.some(f => url.pathname.endsWith(f));
 
     if (isDataFile) {
+        // { cache: 'no-cache' } forces a revalidation round-trip to the
+        // origin every time instead of letting the browser's own HTTP
+        // cache silently hand back a response it considers still fresh —
+        // plain fetch(event.request) here previously could do exactly
+        // that, defeating "network-first" for these actively-edited files
+        // without ever hitting the Cache Storage fallback below to explain
+        // it (e.g. a newly added i18n.js key rendering as its raw key
+        // because the page fetched a pre-change i18n.js straight from HTTP
+        // cache, with no service-worker involvement in the staleness).
         event.respondWith(
-            fetch(event.request).then(response => {
+            fetch(event.request.url, { cache: 'no-cache' }).then(response => {
                 const clone = response.clone();
                 caches.open(CACHE_NAME).then(cache => cache.put(event.request, clone));
                 return response;
