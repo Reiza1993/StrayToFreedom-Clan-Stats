@@ -106,11 +106,14 @@ When a player leaves the clan, apply the following changes across subsequent upd
 
 ---
 
-## Updating `lme-history/summary.json`
+## Updating `Lunar Mine Expedition/Summary.json`
 
 A lightweight per-LME index (clan totals only — no per-member or per-round
 data; that stays in the full per-LME detail files) used by the P1 Score
-progression graph on the LME History page. After finishing the LME update
+progression graph on the LME History page. Lives alongside that folder's
+`LME{n}.json` cycle files so the Clash Tracker can maintain it the same
+way going forward — until then, update it manually. After finishing the
+LME update
 above (player scores + the new `lmeHistory` entry in `clanStats.js`),
 append **one new row**:
 

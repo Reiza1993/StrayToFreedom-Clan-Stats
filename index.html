@@ -1669,14 +1669,17 @@
             container.appendChild(buildLunarTrendSection(points, p1Points));
         }
 
-        // lme-history/summary.json — a lightweight per-LME index (clan
-        // totals only, no per-member/per-round detail) kept purely for
-        // fast trend charts like this one. Ascending by lmeNumber already
-        // (see INSTRUCTIONS_GUIDE.MD), unlike clanStats.js's lmeHistory.
+        // Lunar Mine Expedition/Summary.json — a lightweight per-LME index
+        // (clan totals only, no per-member/per-round detail) kept purely
+        // for fast trend charts like this one. Ascending by lmeNumber
+        // already (see INSTRUCTIONS_GUIDE.MD), unlike clanStats.js's
+        // lmeHistory. Lives alongside LME{n}.json in the same folder so
+        // the Clash Tracker can maintain it going forward the same way it
+        // already maintains those.
         async function fetchP1ScoreHistory() {
             let res;
             try {
-                res = await fetch('lme-history/summary.json', { cache: 'no-cache' });
+                res = await fetch(encodeURI(`${LME_CYCLES_FOLDER}/Summary.json`), { cache: 'no-cache' });
             } catch (err) {
                 return [];
             }
@@ -2128,10 +2131,11 @@
         }
 
         // Single-series chart: the clan's total LME Phase 1 score (sum of
-        // every player's lmeScore) per cycle, from lme-history/summary.json
-        // — a separate, much lighter data source than the per-cycle JSON
-        // files the other two charts on this page use, kept fast on
-        // purpose (see INSTRUCTIONS_GUIDE.MD). Aqua (palette slot 3) to
+        // every player's lmeScore) per cycle, from
+        // "Lunar Mine Expedition"/Summary.json — a separate, much lighter
+        // data source than the per-cycle JSON files the other two charts
+        // on this page use, kept fast on purpose (see
+        // INSTRUCTIONS_GUIDE.MD). Aqua (palette slot 3) to
         // stay visually distinct from the blue/orange Lunar chart and the
         // violet Rank chart in the same carousel.
         function buildP1ScoreTrendChart(points) {
