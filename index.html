@@ -2658,12 +2658,54 @@
             return { color: '#f7fafc', cls: '' };
         }
 
-        // Season totals/attempts/day sums are decimal (e.g. 527.8,
-        // 15355.1) — a different scale from every other integer stat in
-        // the app, so they get their own fixed-1-decimal formatter rather
-        // than reusing formatNumber()/toLocaleString() defaults elsewhere.
+        // This game's suffix tiers (used for Ender's Echo scores, which
+        // can run far larger than any other stat in the app) do NOT
+        // follow the common convention where a tier's mantissa is
+        // 1.0-999.9 before rolling to the next suffix. Confirmed via
+        // direct in-game test: a tier displays 100.0-99999.9 (six
+        // significant figures) before advancing — 99999.9 Qa
+        // (Quadrillion, 1e15) rolls over to exactly 100.0 Qi (Quintillion,
+        // 1e18), not at 1000 Qa. This is a different, unrelated suffix
+        // system from formatNumber()'s plain K/M (used for ATK etc.),
+        // which keeps the ordinary >=1 rule and isn't reused here.
+        const EE_SUFFIX_TIERS = [
+            { unit: 1e63, suffix: 'Vg'  },
+            { unit: 1e60, suffix: 'NoD' },
+            { unit: 1e57, suffix: 'OcD' },
+            { unit: 1e54, suffix: 'SpD' },
+            { unit: 1e51, suffix: 'SxD' },
+            { unit: 1e48, suffix: 'QiD' },
+            { unit: 1e45, suffix: 'QaD' },
+            { unit: 1e42, suffix: 'TD'  },
+            { unit: 1e39, suffix: 'DD'  },
+            { unit: 1e36, suffix: 'Ud'  },
+            { unit: 1e33, suffix: 'Dc'  },
+            { unit: 1e30, suffix: 'No'  },
+            { unit: 1e27, suffix: 'Oc'  },
+            { unit: 1e24, suffix: 'Sp'  },
+            { unit: 1e21, suffix: 'Sx'  },
+            { unit: 1e18, suffix: 'Qi'  },
+            { unit: 1e15, suffix: 'Qa'  },
+            { unit: 1e12, suffix: 'T'   },
+            { unit: 1e9,  suffix: 'B'   },
+            { unit: 1e6,  suffix: 'M'   },
+            { unit: 1e3,  suffix: 'K'   }
+        ];
+
+        // Every EE season score (day totals, mini-season totals, and the
+        // individual attempts in the tap-to-reveal popover) goes through
+        // this one formatter, so fixing/extending it here covers all of
+        // them at once. Below the K tier's threshold (100,000) it keeps
+        // the plain fixed-1-decimal display the season file's raw values
+        // already use (e.g. 527.8) — the tier loop only ever engages once
+        // a score is actually large enough to need a suffix.
         function formatEEDecimal(num) {
             if (num === null || num === undefined) return '—';
+            for (const tier of EE_SUFFIX_TIERS) {
+                if (num / tier.unit >= 100) {
+                    return (num / tier.unit).toFixed(1) + tier.suffix;
+                }
+            }
             return num.toLocaleString(undefined, { minimumFractionDigits: 1, maximumFractionDigits: 1 });
         }
 
