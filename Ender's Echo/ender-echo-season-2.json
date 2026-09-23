@@ -1,0 +1,2718 @@
+{
+  "seasonNumber": 2,
+  "startDate": "2026-08-29",
+  "endDate": "2026-09-25",
+  "miniSeasons": [
+    {
+      "miniSeasonNumber": 1,
+      "days": [
+        {
+          "day": 1,
+          "date": "2026-08-29",
+          "players": [
+            {
+              "name": "һan",
+              "attempts": [
+                140.4,
+                166.3,
+                205.6
+              ],
+              "top2Sum": 371.9
+            },
+            {
+              "name": "Fl3xas",
+              "attempts": [
+                139.8,
+                199.8,
+                302.8
+              ],
+              "top2Sum": 502.6
+            },
+            {
+              "name": "RABBIT5",
+              "attempts": [
+                222.7,
+                297.9,
+                410.2
+              ],
+              "top2Sum": 708.1
+            },
+            {
+              "name": "神Sterben死",
+              "attempts": [
+                172.8,
+                296.6,
+                418.7,
+                446.4
+              ],
+              "top2Sum": 865.1
+            },
+            {
+              "name": "DAYO-P",
+              "attempts": [
+                472.5,
+                533.7
+              ],
+              "top2Sum": 1006.2
+            },
+            {
+              "name": "Cunner88",
+              "attempts": [
+                320.6,
+                549.8,
+                560.8
+              ],
+              "top2Sum": 1110.6
+            },
+            {
+              "name": "Nubis",
+              "attempts": [
+                542.9,
+                550.3
+              ],
+              "top2Sum": 1093.2
+            },
+            {
+              "name": "SngphO",
+              "attempts": [
+                349.0,
+                632.3,
+                671.3,
+                677.5
+              ],
+              "top2Sum": 1348.8
+            },
+            {
+              "name": "Toddlerr",
+              "attempts": [
+                673.8,
+                820.7
+              ],
+              "top2Sum": 1494.5
+            },
+            {
+              "name": "pumpenjoe",
+              "attempts": [
+                352.3,
+                558.3,
+                821.7
+              ],
+              "top2Sum": 1380.0
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "date": "2026-08-30",
+          "players": [
+            {
+              "name": "һan",
+              "attempts": [
+                104.7,
+                139.2
+              ],
+              "top2Sum": 243.9
+            },
+            {
+              "name": "Fl3xas",
+              "attempts": [
+                160.3,
+                207.2,
+                288.3,
+                307.9
+              ],
+              "top2Sum": 596.2
+            },
+            {
+              "name": "RABBIT5",
+              "attempts": [
+                286.1,
+                366.6,
+                388.9
+              ],
+              "top2Sum": 755.5
+            },
+            {
+              "name": "神Sterben死",
+              "attempts": [
+                462.0,
+                471.6,
+                479.0
+              ],
+              "top2Sum": 950.6
+            },
+            {
+              "name": "DAYO-P",
+              "attempts": [
+                239.7,
+                322.3,
+                473.0
+              ],
+              "top2Sum": 795.3
+            },
+            {
+              "name": "Cunner88",
+              "attempts": [
+                283.1,
+                629.9
+              ],
+              "top2Sum": 913.0
+            },
+            {
+              "name": "Nubis",
+              "attempts": [
+                591.6,
+                629.4,
+                705.9,
+                711.8
+              ],
+              "top2Sum": 1417.7
+            },
+            {
+              "name": "SngphO",
+              "attempts": [
+                324.8,
+                415.5,
+                483.3
+              ],
+              "top2Sum": 898.8
+            },
+            {
+              "name": "Toddlerr",
+              "attempts": [
+                564.4,
+                689.0
+              ],
+              "top2Sum": 1253.4
+            },
+            {
+              "name": "pumpenjoe",
+              "attempts": [
+                494.5,
+                562.4,
+                568.4,
+                728.4
+              ],
+              "top2Sum": 1296.8
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "date": "2026-08-31",
+          "players": [
+            {
+              "name": "һan",
+              "attempts": [
+                93.8,
+                128.9,
+                183.9,
+                238.2
+              ],
+              "top2Sum": 422.1
+            },
+            {
+              "name": "Fl3xas",
+              "attempts": [
+                130.3,
+                164.8,
+                296.4,
+                315.1
+              ],
+              "top2Sum": 611.5
+            },
+            {
+              "name": "RABBIT5",
+              "attempts": [
+                155.5,
+                174.7,
+                317.9
+              ],
+              "top2Sum": 492.6
+            },
+            {
+              "name": "神Sterben死",
+              "attempts": [
+                267.4,
+                327.5
+              ],
+              "top2Sum": 594.9
+            },
+            {
+              "name": "DAYO-P",
+              "attempts": [
+                283.9,
+                395.8
+              ],
+              "top2Sum": 679.7
+            },
+            {
+              "name": "Cunner88",
+              "attempts": [
+                414.5,
+                505.6,
+                536.1
+              ],
+              "top2Sum": 1041.7
+            },
+            {
+              "name": "Nubis",
+              "attempts": [
+                323.6,
+                446.0,
+                448.0,
+                600.0
+              ],
+              "top2Sum": 1048.0
+            },
+            {
+              "name": "SngphO",
+              "attempts": [
+                598.4,
+                711.9
+              ],
+              "top2Sum": 1310.3
+            },
+            {
+              "name": "Toddlerr",
+              "attempts": [
+                323.3,
+                516.3,
+                557.9
+              ],
+              "top2Sum": 1074.2
+            },
+            {
+              "name": "pumpenjoe",
+              "attempts": [
+                393.3,
+                863.3
+              ],
+              "top2Sum": 1256.6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "miniSeasonNumber": 2,
+      "days": [
+        {
+          "day": 4,
+          "date": "2026-09-01",
+          "players": [
+            {
+              "name": "һan",
+              "attempts": [
+                99.8,
+                151.3,
+                197.9,
+                241.1
+              ],
+              "top2Sum": 439.0
+            },
+            {
+              "name": "Fl3xas",
+              "attempts": [
+                143.2,
+                157.9,
+                301.7
+              ],
+              "top2Sum": 459.6
+            },
+            {
+              "name": "RABBIT5",
+              "attempts": [
+                168.0,
+                200.4,
+                315.3
+              ],
+              "top2Sum": 515.7
+            },
+            {
+              "name": "神Sterben死",
+              "attempts": [
+                186.4,
+                276.7
+              ],
+              "top2Sum": 463.1
+            },
+            {
+              "name": "DAYO-P",
+              "attempts": [
+                273.0,
+                488.0
+              ],
+              "top2Sum": 761.0
+            },
+            {
+              "name": "Cunner88",
+              "attempts": [
+                311.0,
+                314.7,
+                362.0,
+                589.3
+              ],
+              "top2Sum": 951.3
+            },
+            {
+              "name": "Nubis",
+              "attempts": [
+                531.2,
+                621.9
+              ],
+              "top2Sum": 1153.1
+            },
+            {
+              "name": "SngphO",
+              "attempts": [
+                345.5,
+                353.1,
+                724.8
+              ],
+              "top2Sum": 1077.9
+            },
+            {
+              "name": "Toddlerr",
+              "attempts": [
+                367.4,
+                760.8,
+                799.6
+              ],
+              "top2Sum": 1560.4
+            },
+            {
+              "name": "pumpenjoe",
+              "attempts": [
+                340.8,
+                822.6
+              ],
+              "top2Sum": 1163.4
+            }
+          ]
+        },
+        {
+          "day": 5,
+          "date": "2026-09-02",
+          "players": [
+            {
+              "name": "һan",
+              "attempts": [
+                92.3,
+                188.5
+              ],
+              "top2Sum": 280.8
+            },
+            {
+              "name": "Fl3xas",
+              "attempts": [
+                127.9,
+                231.4,
+                278.5
+              ],
+              "top2Sum": 509.9
+            },
+            {
+              "name": "RABBIT5",
+              "attempts": [
+                160.4,
+                240.7,
+                263.9,
+                302.9
+              ],
+              "top2Sum": 566.8
+            },
+            {
+              "name": "神Sterben死",
+              "attempts": [
+                184.1,
+                331.1,
+                472.0
+              ],
+              "top2Sum": 803.1
+            },
+            {
+              "name": "DAYO-P",
+              "attempts": [
+                219.6,
+                366.4,
+                389.8,
+                553.4
+              ],
+              "top2Sum": 943.2
+            },
+            {
+              "name": "Cunner88",
+              "attempts": [
+                269.3,
+                403.0,
+                579.9
+              ],
+              "top2Sum": 982.9
+            },
+            {
+              "name": "Nubis",
+              "attempts": [
+                285.5,
+                288.9,
+                537.0,
+                678.8
+              ],
+              "top2Sum": 1215.8
+            },
+            {
+              "name": "SngphO",
+              "attempts": [
+                343.5,
+                602.9
+              ],
+              "top2Sum": 946.4
+            },
+            {
+              "name": "Toddlerr",
+              "attempts": [
+                490.4,
+                607.7,
+                617.9,
+                872.8
+              ],
+              "top2Sum": 1490.7
+            },
+            {
+              "name": "pumpenjoe",
+              "attempts": [
+                598.9,
+                645.8,
+                824.5
+              ],
+              "top2Sum": 1470.3
+            }
+          ]
+        },
+        {
+          "day": 6,
+          "date": "2026-09-03",
+          "players": [
+            {
+              "name": "һan",
+              "attempts": [
+                199.0,
+                232.9
+              ],
+              "top2Sum": 431.9
+            },
+            {
+              "name": "Fl3xas",
+              "attempts": [
+                163.4,
+                166.4,
+                215.1,
+                273.9
+              ],
+              "top2Sum": 489.0
+            },
+            {
+              "name": "RABBIT5",
+              "attempts": [
+                250.5,
+                339.5,
+                365.8
+              ],
+              "top2Sum": 705.3
+            },
+            {
+              "name": "神Sterben死",
+              "attempts": [
+                289.7,
+                306.5,
+                382.5
+              ],
+              "top2Sum": 689.0
+            },
+            {
+              "name": "DAYO-P",
+              "attempts": [
+                372.4,
+                451.0
+              ],
+              "top2Sum": 823.4
+            },
+            {
+              "name": "Cunner88",
+              "attempts": [
+                263.2,
+                573.3
+              ],
+              "top2Sum": 836.5
+            },
+            {
+              "name": "Nubis",
+              "attempts": [
+                426.2,
+                601.1
+              ],
+              "top2Sum": 1027.3
+            },
+            {
+              "name": "SngphO",
+              "attempts": [
+                567.5,
+                583.2
+              ],
+              "top2Sum": 1150.7
+            },
+            {
+              "name": "Toddlerr",
+              "attempts": [
+                539.3,
+                625.5,
+                687.4,
+                803.6
+              ],
+              "top2Sum": 1491.0
+            },
+            {
+              "name": "pumpenjoe",
+              "attempts": [
+                779.7,
+                871.1,
+                933.5
+              ],
+              "top2Sum": 1804.6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "miniSeasonNumber": 3,
+      "days": [
+        {
+          "day": 7,
+          "date": "2026-09-04",
+          "players": [
+            {
+              "name": "һan",
+              "attempts": [
+                107.0,
+                115.6,
+                142.1,
+                174.8
+              ],
+              "top2Sum": 316.9
+            },
+            {
+              "name": "Fl3xas",
+              "attempts": [
+                140.1,
+                165.5,
+                301.1
+              ],
+              "top2Sum": 466.6
+            },
+            {
+              "name": "RABBIT5",
+              "attempts": [
+                174.2,
+                204.2,
+                218.2
+              ],
+              "top2Sum": 422.4
+            },
+            {
+              "name": "神Sterben死",
+              "attempts": [
+                431.5,
+                440.0,
+                481.3
+              ],
+              "top2Sum": 921.3
+            },
+            {
+              "name": "DAYO-P",
+              "attempts": [
+                402.9,
+                422.2,
+                440.3,
+                446.6
+              ],
+              "top2Sum": 886.9
+            },
+            {
+              "name": "Cunner88",
+              "attempts": [
+                299.8,
+                336.3,
+                353.8,
+                519.1
+              ],
+              "top2Sum": 872.9
+            },
+            {
+              "name": "Nubis",
+              "attempts": [
+                318.3,
+                336.2,
+                416.0
+              ],
+              "top2Sum": 752.2
+            },
+            {
+              "name": "SngphO",
+              "attempts": [
+                293.7,
+                351.6,
+                486.5,
+                607.5
+              ],
+              "top2Sum": 1094.0
+            },
+            {
+              "name": "Toddlerr",
+              "attempts": [
+                394.6,
+                519.5,
+                563.8,
+                607.7
+              ],
+              "top2Sum": 1171.5
+            },
+            {
+              "name": "pumpenjoe",
+              "attempts": [
+                684.3,
+                780.1,
+                814.4
+              ],
+              "top2Sum": 1594.5
+            }
+          ]
+        },
+        {
+          "day": 8,
+          "date": "2026-09-05",
+          "players": [
+            {
+              "name": "һan",
+              "attempts": [
+                115.7,
+                238.0
+              ],
+              "top2Sum": 353.7
+            },
+            {
+              "name": "Fl3xas",
+              "attempts": [
+                127.3,
+                134.3,
+                209.1,
+                213.3
+              ],
+              "top2Sum": 422.4
+            },
+            {
+              "name": "RABBIT5",
+              "attempts": [
+                174.0,
+                216.8,
+                262.2,
+                346.3
+              ],
+              "top2Sum": 608.5
+            },
+            {
+              "name": "神Sterben死",
+              "attempts": [
+                205.6,
+                359.6,
+                386.7
+              ],
+              "top2Sum": 746.3
+            },
+            {
+              "name": "DAYO-P",
+              "attempts": [
+                213.9,
+                343.2,
+                418.6,
+                443.7
+              ],
+              "top2Sum": 862.3
+            },
+            {
+              "name": "Cunner88",
+              "attempts": [
+                309.9,
+                621.0
+              ],
+              "top2Sum": 930.9
+            },
+            {
+              "name": "Nubis",
+              "attempts": [
+                387.0,
+                610.3
+              ],
+              "top2Sum": 997.3
+            },
+            {
+              "name": "SngphO",
+              "attempts": [
+                281.8,
+                666.8
+              ],
+              "top2Sum": 948.6
+            },
+            {
+              "name": "Toddlerr",
+              "attempts": [
+                378.4,
+                608.9
+              ],
+              "top2Sum": 987.3
+            },
+            {
+              "name": "pumpenjoe",
+              "attempts": [
+                642.5,
+                849.5
+              ],
+              "top2Sum": 1492.0
+            }
+          ]
+        },
+        {
+          "day": 9,
+          "date": "2026-09-06",
+          "players": [
+            {
+              "name": "һan",
+              "attempts": [
+                96.7,
+                101.7,
+                234.4
+              ],
+              "top2Sum": 336.1
+            },
+            {
+              "name": "Fl3xas",
+              "attempts": [
+                133.5,
+                216.9
+              ],
+              "top2Sum": 350.4
+            },
+            {
+              "name": "RABBIT5",
+              "attempts": [
+                297.5,
+                298.1,
+                334.1
+              ],
+              "top2Sum": 632.2
+            },
+            {
+              "name": "神Sterben死",
+              "attempts": [
+                262.7,
+                299.5,
+                478.7
+              ],
+              "top2Sum": 778.2
+            },
+            {
+              "name": "DAYO-P",
+              "attempts": [
+                425.6,
+                493.3
+              ],
+              "top2Sum": 918.9
+            },
+            {
+              "name": "Cunner88",
+              "attempts": [
+                261.0,
+                326.2,
+                578.7,
+                610.3
+              ],
+              "top2Sum": 1189.0
+            },
+            {
+              "name": "Nubis",
+              "attempts": [
+                287.9,
+                439.3,
+                601.7,
+                660.4
+              ],
+              "top2Sum": 1262.1
+            },
+            {
+              "name": "SngphO",
+              "attempts": [
+                365.3,
+                451.2
+              ],
+              "top2Sum": 816.5
+            },
+            {
+              "name": "Toddlerr",
+              "attempts": [
+                415.4,
+                607.7,
+                666.3,
+                748.0
+              ],
+              "top2Sum": 1414.3
+            },
+            {
+              "name": "pumpenjoe",
+              "attempts": [
+                783.7,
+                838.1,
+                840.6
+              ],
+              "top2Sum": 1678.7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "miniSeasonNumber": 4,
+      "days": [
+        {
+          "day": 10,
+          "date": "2026-09-07",
+          "players": [
+            {
+              "name": "һan",
+              "attempts": [
+                106.9,
+                132.6
+              ],
+              "top2Sum": 239.5
+            },
+            {
+              "name": "Fl3xas",
+              "attempts": [
+                248.0,
+                282.5
+              ],
+              "top2Sum": 530.5
+            },
+            {
+              "name": "RABBIT5",
+              "attempts": [
+                163.6,
+                268.1,
+                312.2,
+                399.1
+              ],
+              "top2Sum": 711.3
+            },
+            {
+              "name": "神Sterben死",
+              "attempts": [
+                313.5,
+                350.4,
+                412.8,
+                465.2
+              ],
+              "top2Sum": 878.0
+            },
+            {
+              "name": "DAYO-P",
+              "attempts": [
+                314.0,
+                316.6,
+                556.0,
+                561.7
+              ],
+              "top2Sum": 1117.7
+            },
+            {
+              "name": "Cunner88",
+              "attempts": [
+                252.7,
+                351.2,
+                409.7
+              ],
+              "top2Sum": 760.9
+            },
+            {
+              "name": "Nubis",
+              "attempts": [
+                285.8,
+                416.4,
+                529.1
+              ],
+              "top2Sum": 945.5
+            },
+            {
+              "name": "SngphO",
+              "attempts": [
+                307.4,
+                513.1,
+                710.9
+              ],
+              "top2Sum": 1224.0
+            },
+            {
+              "name": "Toddlerr",
+              "attempts": [
+                672.9,
+                862.9
+              ],
+              "top2Sum": 1535.8
+            },
+            {
+              "name": "pumpenjoe",
+              "attempts": [
+                646.7,
+                713.8
+              ],
+              "top2Sum": 1360.5
+            }
+          ]
+        },
+        {
+          "day": 11,
+          "date": "2026-09-08",
+          "players": [
+            {
+              "name": "һan",
+              "attempts": [
+                187.1,
+                213.7,
+                249.9
+              ],
+              "top2Sum": 463.6
+            },
+            {
+              "name": "Fl3xas",
+              "attempts": [
+                214.7,
+                293.3
+              ],
+              "top2Sum": 508.0
+            },
+            {
+              "name": "RABBIT5",
+              "attempts": [
+                194.0,
+                278.1,
+                306.0,
+                400.8
+              ],
+              "top2Sum": 706.8
+            },
+            {
+              "name": "神Sterben死",
+              "attempts": [
+                203.3,
+                279.9,
+                457.2
+              ],
+              "top2Sum": 737.1
+            },
+            {
+              "name": "DAYO-P",
+              "attempts": [
+                211.6,
+                228.3,
+                435.9,
+                458.7
+              ],
+              "top2Sum": 894.6
+            },
+            {
+              "name": "Cunner88",
+              "attempts": [
+                376.8,
+                444.1,
+                480.1
+              ],
+              "top2Sum": 924.2
+            },
+            {
+              "name": "Nubis",
+              "attempts": [
+                433.1,
+                570.2,
+                615.2
+              ],
+              "top2Sum": 1185.4
+            },
+            {
+              "name": "SngphO",
+              "attempts": [
+                614.9,
+                688.8
+              ],
+              "top2Sum": 1303.7
+            },
+            {
+              "name": "Toddlerr",
+              "attempts": [
+                493.0,
+                623.3
+              ],
+              "top2Sum": 1116.3
+            },
+            {
+              "name": "pumpenjoe",
+              "attempts": [
+                508.1,
+                739.6,
+                781.4
+              ],
+              "top2Sum": 1521.0
+            }
+          ]
+        },
+        {
+          "day": 12,
+          "date": "2026-09-09",
+          "players": [
+            {
+              "name": "һan",
+              "attempts": [
+                113.4,
+                145.6,
+                187.5,
+                236.3
+              ],
+              "top2Sum": 423.8
+            },
+            {
+              "name": "Fl3xas",
+              "attempts": [
+                184.2,
+                259.8,
+                261.1
+              ],
+              "top2Sum": 520.9
+            },
+            {
+              "name": "RABBIT5",
+              "attempts": [
+                303.3,
+                395.5
+              ],
+              "top2Sum": 698.8
+            },
+            {
+              "name": "神Sterben死",
+              "attempts": [
+                275.1,
+                348.6,
+                375.6
+              ],
+              "top2Sum": 724.2
+            },
+            {
+              "name": "DAYO-P",
+              "attempts": [
+                444.8,
+                503.5
+              ],
+              "top2Sum": 948.3
+            },
+            {
+              "name": "Cunner88",
+              "attempts": [
+                263.3,
+                505.6,
+                607.2,
+                642.8
+              ],
+              "top2Sum": 1250.0
+            },
+            {
+              "name": "Nubis",
+              "attempts": [
+                335.7,
+                351.6,
+                421.1,
+                421.4
+              ],
+              "top2Sum": 842.5
+            },
+            {
+              "name": "SngphO",
+              "attempts": [
+                358.5,
+                377.8,
+                798.5
+              ],
+              "top2Sum": 1176.3
+            },
+            {
+              "name": "Toddlerr",
+              "attempts": [
+                362.4,
+                745.0,
+                787.0
+              ],
+              "top2Sum": 1532.0
+            },
+            {
+              "name": "pumpenjoe",
+              "attempts": [
+                355.0,
+                540.9,
+                807.9,
+                880.8
+              ],
+              "top2Sum": 1688.7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "miniSeasonNumber": 5,
+      "days": [
+        {
+          "day": 13,
+          "date": "2026-09-10",
+          "players": [
+            {
+              "name": "һan",
+              "attempts": [
+                115.5,
+                189.9
+              ],
+              "top2Sum": 305.4
+            },
+            {
+              "name": "Fl3xas",
+              "attempts": [
+                284.9,
+                298.0
+              ],
+              "top2Sum": 582.9
+            },
+            {
+              "name": "RABBIT5",
+              "attempts": [
+                155.1,
+                337.2
+              ],
+              "top2Sum": 492.3
+            },
+            {
+              "name": "神Sterben死",
+              "attempts": [
+                246.1,
+                312.0,
+                386.1
+              ],
+              "top2Sum": 698.1
+            },
+            {
+              "name": "DAYO-P",
+              "attempts": [
+                283.6,
+                475.2,
+                486.8
+              ],
+              "top2Sum": 962.0
+            },
+            {
+              "name": "Cunner88",
+              "attempts": [
+                354.0,
+                563.6
+              ],
+              "top2Sum": 917.6
+            },
+            {
+              "name": "Nubis",
+              "attempts": [
+                342.1,
+                570.0,
+                676.1
+              ],
+              "top2Sum": 1246.1
+            },
+            {
+              "name": "SngphO",
+              "attempts": [
+                424.5,
+                476.6,
+                518.2,
+                790.5
+              ],
+              "top2Sum": 1308.7
+            },
+            {
+              "name": "Toddlerr",
+              "attempts": [
+                397.2,
+                418.7,
+                543.8,
+                650.0
+              ],
+              "top2Sum": 1193.8
+            },
+            {
+              "name": "pumpenjoe",
+              "attempts": [
+                364.0,
+                562.3,
+                630.3
+              ],
+              "top2Sum": 1192.6
+            }
+          ]
+        },
+        {
+          "day": 14,
+          "date": "2026-09-11",
+          "players": [
+            {
+              "name": "һan",
+              "attempts": [
+                176.3,
+                209.1
+              ],
+              "top2Sum": 385.4
+            },
+            {
+              "name": "Fl3xas",
+              "attempts": [
+                178.7,
+                283.1
+              ],
+              "top2Sum": 461.8
+            },
+            {
+              "name": "RABBIT5",
+              "attempts": [
+                264.1,
+                281.3,
+                366.7
+              ],
+              "top2Sum": 648.0
+            },
+            {
+              "name": "神Sterben死",
+              "attempts": [
+                241.1,
+                472.3
+              ],
+              "top2Sum": 713.4
+            },
+            {
+              "name": "DAYO-P",
+              "attempts": [
+                350.5,
+                524.1,
+                541.0
+              ],
+              "top2Sum": 1065.1
+            },
+            {
+              "name": "Cunner88",
+              "attempts": [
+                323.0,
+                434.8,
+                641.7
+              ],
+              "top2Sum": 1076.5
+            },
+            {
+              "name": "Nubis",
+              "attempts": [
+                297.5,
+                356.5,
+                400.8
+              ],
+              "top2Sum": 757.3
+            },
+            {
+              "name": "SngphO",
+              "attempts": [
+                349.4,
+                427.2,
+                616.3,
+                689.9
+              ],
+              "top2Sum": 1306.2
+            },
+            {
+              "name": "Toddlerr",
+              "attempts": [
+                383.9,
+                702.2,
+                707.6
+              ],
+              "top2Sum": 1409.8
+            },
+            {
+              "name": "pumpenjoe",
+              "attempts": [
+                343.3,
+                714.0,
+                894.6
+              ],
+              "top2Sum": 1608.6
+            }
+          ]
+        },
+        {
+          "day": 15,
+          "date": "2026-09-12",
+          "players": [
+            {
+              "name": "һan",
+              "attempts": [
+                181.8,
+                229.9
+              ],
+              "top2Sum": 411.7
+            },
+            {
+              "name": "Fl3xas",
+              "attempts": [
+                168.4,
+                208.9,
+                249.5,
+                286.0
+              ],
+              "top2Sum": 535.5
+            },
+            {
+              "name": "RABBIT5",
+              "attempts": [
+                156.2,
+                256.2
+              ],
+              "top2Sum": 412.4
+            },
+            {
+              "name": "神Sterben死",
+              "attempts": [
+                205.6,
+                316.2,
+                360.7,
+                459.2
+              ],
+              "top2Sum": 819.9
+            },
+            {
+              "name": "DAYO-P",
+              "attempts": [
+                409.7,
+                430.7
+              ],
+              "top2Sum": 840.4
+            },
+            {
+              "name": "Cunner88",
+              "attempts": [
+                284.3,
+                325.0,
+                404.3,
+                482.2
+              ],
+              "top2Sum": 886.5
+            },
+            {
+              "name": "Nubis",
+              "attempts": [
+                339.0,
+                497.1,
+                565.2
+              ],
+              "top2Sum": 1062.3
+            },
+            {
+              "name": "SngphO",
+              "attempts": [
+                313.0,
+                542.0,
+                551.7
+              ],
+              "top2Sum": 1093.7
+            },
+            {
+              "name": "Toddlerr",
+              "attempts": [
+                527.7,
+                573.2,
+                621.2,
+                667.7
+              ],
+              "top2Sum": 1288.9
+            },
+            {
+              "name": "pumpenjoe",
+              "attempts": [
+                341.6,
+                489.2,
+                821.7
+              ],
+              "top2Sum": 1310.9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "miniSeasonNumber": 6,
+      "days": [
+        {
+          "day": 16,
+          "date": "2026-09-13",
+          "players": [
+            {
+              "name": "һan",
+              "attempts": [
+                107.0,
+                130.1,
+                200.0
+              ],
+              "top2Sum": 330.1
+            },
+            {
+              "name": "Fl3xas",
+              "attempts": [
+                126.2,
+                189.1,
+                235.7,
+                277.0
+              ],
+              "top2Sum": 512.7
+            },
+            {
+              "name": "RABBIT5",
+              "attempts": [
+                190.4,
+                268.3,
+                330.3,
+                352.8
+              ],
+              "top2Sum": 683.1
+            },
+            {
+              "name": "神Sterben死",
+              "attempts": [
+                213.3,
+                228.4,
+                398.8,
+                471.4
+              ],
+              "top2Sum": 870.2
+            },
+            {
+              "name": "DAYO-P",
+              "attempts": [
+                213.3,
+                305.6
+              ],
+              "top2Sum": 518.9
+            },
+            {
+              "name": "Cunner88",
+              "attempts": [
+                356.6,
+                596.0
+              ],
+              "top2Sum": 952.6
+            },
+            {
+              "name": "Nubis",
+              "attempts": [
+                493.3,
+                506.3,
+                716.2
+              ],
+              "top2Sum": 1222.5
+            },
+            {
+              "name": "SngphO",
+              "attempts": [
+                296.8,
+                426.8,
+                614.7
+              ],
+              "top2Sum": 1041.5
+            },
+            {
+              "name": "Toddlerr",
+              "attempts": [
+                494.2,
+                799.2
+              ],
+              "top2Sum": 1293.4
+            },
+            {
+              "name": "pumpenjoe",
+              "attempts": [
+                603.1,
+                828.4
+              ],
+              "top2Sum": 1431.5
+            }
+          ]
+        },
+        {
+          "day": 17,
+          "date": "2026-09-14",
+          "players": [
+            {
+              "name": "һan",
+              "attempts": [
+                154.6,
+                214.5,
+                239.9
+              ],
+              "top2Sum": 454.4
+            },
+            {
+              "name": "Fl3xas",
+              "attempts": [
+                224.9,
+                225.1
+              ],
+              "top2Sum": 450.0
+            },
+            {
+              "name": "RABBIT5",
+              "attempts": [
+                165.6,
+                215.1,
+                257.5,
+                259.1
+              ],
+              "top2Sum": 516.6
+            },
+            {
+              "name": "神Sterben死",
+              "attempts": [
+                272.8,
+                344.4
+              ],
+              "top2Sum": 617.2
+            },
+            {
+              "name": "DAYO-P",
+              "attempts": [
+                306.4,
+                318.3
+              ],
+              "top2Sum": 624.7
+            },
+            {
+              "name": "Cunner88",
+              "attempts": [
+                403.0,
+                477.1,
+                513.7
+              ],
+              "top2Sum": 990.8
+            },
+            {
+              "name": "Nubis",
+              "attempts": [
+                461.2,
+                592.8,
+                679.7
+              ],
+              "top2Sum": 1272.5
+            },
+            {
+              "name": "SngphO",
+              "attempts": [
+                420.7,
+                771.4,
+                788.2,
+                797.6
+              ],
+              "top2Sum": 1585.8
+            },
+            {
+              "name": "Toddlerr",
+              "attempts": [
+                536.7,
+                688.0
+              ],
+              "top2Sum": 1224.7
+            },
+            {
+              "name": "pumpenjoe",
+              "attempts": [
+                420.3,
+                753.8,
+                829.5,
+                923.8
+              ],
+              "top2Sum": 1753.3
+            }
+          ]
+        },
+        {
+          "day": 18,
+          "date": "2026-09-15",
+          "players": [
+            {
+              "name": "һan",
+              "attempts": [
+                110.8,
+                129.2,
+                163.2,
+                203.5
+              ],
+              "top2Sum": 366.7
+            },
+            {
+              "name": "Fl3xas",
+              "attempts": [
+                196.5,
+                200.1,
+                240.4,
+                248.6
+              ],
+              "top2Sum": 489.0
+            },
+            {
+              "name": "RABBIT5",
+              "attempts": [
+                164.0,
+                243.1,
+                262.7,
+                264.3
+              ],
+              "top2Sum": 527.0
+            },
+            {
+              "name": "神Sterben死",
+              "attempts": [
+                297.3,
+                339.2
+              ],
+              "top2Sum": 636.5
+            },
+            {
+              "name": "DAYO-P",
+              "attempts": [
+                206.7,
+                265.9,
+                300.1,
+                552.1
+              ],
+              "top2Sum": 852.2
+            },
+            {
+              "name": "Cunner88",
+              "attempts": [
+                333.3,
+                333.9,
+                386.5,
+                459.9
+              ],
+              "top2Sum": 846.4
+            },
+            {
+              "name": "Nubis",
+              "attempts": [
+                351.8,
+                538.7,
+                577.3
+              ],
+              "top2Sum": 1116.0
+            },
+            {
+              "name": "SngphO",
+              "attempts": [
+                316.3,
+                348.4,
+                382.0
+              ],
+              "top2Sum": 730.4
+            },
+            {
+              "name": "Toddlerr",
+              "attempts": [
+                558.9,
+                818.0
+              ],
+              "top2Sum": 1376.9
+            },
+            {
+              "name": "pumpenjoe",
+              "attempts": [
+                835.3,
+                933.0
+              ],
+              "top2Sum": 1768.3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "miniSeasonNumber": 7,
+      "days": [
+        {
+          "day": 19,
+          "date": "2026-09-16",
+          "players": [
+            {
+              "name": "һan",
+              "attempts": [
+                182.0,
+                201.8,
+                208.8
+              ],
+              "top2Sum": 410.6
+            },
+            {
+              "name": "Fl3xas",
+              "attempts": [
+                271.9,
+                302.4,
+                311.1
+              ],
+              "top2Sum": 613.5
+            },
+            {
+              "name": "RABBIT5",
+              "attempts": [
+                176.0,
+                280.1,
+                314.8,
+                356.7
+              ],
+              "top2Sum": 671.5
+            },
+            {
+              "name": "神Sterben死",
+              "attempts": [
+                245.8,
+                423.1
+              ],
+              "top2Sum": 668.9
+            },
+            {
+              "name": "DAYO-P",
+              "attempts": [
+                206.8,
+                333.5,
+                401.9
+              ],
+              "top2Sum": 735.4
+            },
+            {
+              "name": "Cunner88",
+              "attempts": [
+                251.6,
+                278.5,
+                391.2,
+                595.4
+              ],
+              "top2Sum": 986.6
+            },
+            {
+              "name": "Nubis",
+              "attempts": [
+                498.2,
+                589.0,
+                612.7,
+                638.2
+              ],
+              "top2Sum": 1250.9
+            },
+            {
+              "name": "SngphO",
+              "attempts": [
+                343.0,
+                442.9
+              ],
+              "top2Sum": 785.9
+            },
+            {
+              "name": "Toddlerr",
+              "attempts": [
+                561.7,
+                693.1
+              ],
+              "top2Sum": 1254.8
+            },
+            {
+              "name": "pumpenjoe",
+              "attempts": [
+                411.3,
+                674.2,
+                846.9
+              ],
+              "top2Sum": 1521.1
+            }
+          ]
+        },
+        {
+          "day": 20,
+          "date": "2026-09-17",
+          "players": [
+            {
+              "name": "һan",
+              "attempts": [
+                120.2,
+                162.3,
+                242.6,
+                251.9
+              ],
+              "top2Sum": 494.5
+            },
+            {
+              "name": "Fl3xas",
+              "attempts": [
+                229.6,
+                298.1
+              ],
+              "top2Sum": 527.7
+            },
+            {
+              "name": "RABBIT5",
+              "attempts": [
+                187.6,
+                230.1,
+                334.0
+              ],
+              "top2Sum": 564.1
+            },
+            {
+              "name": "神Sterben死",
+              "attempts": [
+                260.9,
+                335.9,
+                472.7
+              ],
+              "top2Sum": 808.6
+            },
+            {
+              "name": "DAYO-P",
+              "attempts": [
+                289.7,
+                431.8
+              ],
+              "top2Sum": 721.5
+            },
+            {
+              "name": "Cunner88",
+              "attempts": [
+                263.2,
+                339.3,
+                482.1,
+                486.5
+              ],
+              "top2Sum": 968.6
+            },
+            {
+              "name": "Nubis",
+              "attempts": [
+                323.4,
+                330.2,
+                560.7,
+                693.8
+              ],
+              "top2Sum": 1254.5
+            },
+            {
+              "name": "SngphO",
+              "attempts": [
+                299.2,
+                453.6,
+                747.5,
+                758.9
+              ],
+              "top2Sum": 1506.4
+            },
+            {
+              "name": "Toddlerr",
+              "attempts": [
+                351.0,
+                846.4
+              ],
+              "top2Sum": 1197.4
+            },
+            {
+              "name": "pumpenjoe",
+              "attempts": [
+                462.6,
+                496.0,
+                687.2,
+                715.7
+              ],
+              "top2Sum": 1402.9
+            }
+          ]
+        },
+        {
+          "day": 21,
+          "date": "2026-09-18",
+          "players": [
+            {
+              "name": "һan",
+              "attempts": [
+                173.3,
+                195.0
+              ],
+              "top2Sum": 368.3
+            },
+            {
+              "name": "Fl3xas",
+              "attempts": [
+                170.0,
+                182.5,
+                256.7
+              ],
+              "top2Sum": 439.2
+            },
+            {
+              "name": "RABBIT5",
+              "attempts": [
+                185.9,
+                252.5,
+                265.3,
+                328.5
+              ],
+              "top2Sum": 593.8
+            },
+            {
+              "name": "神Sterben死",
+              "attempts": [
+                235.4,
+                324.8,
+                363.9
+              ],
+              "top2Sum": 688.7
+            },
+            {
+              "name": "DAYO-P",
+              "attempts": [
+                315.1,
+                515.5,
+                562.3
+              ],
+              "top2Sum": 1077.8
+            },
+            {
+              "name": "Cunner88",
+              "attempts": [
+                278.9,
+                379.6,
+                633.7
+              ],
+              "top2Sum": 1013.3
+            },
+            {
+              "name": "Nubis",
+              "attempts": [
+                300.8,
+                308.5,
+                364.6,
+                462.4
+              ],
+              "top2Sum": 827.0
+            },
+            {
+              "name": "SngphO",
+              "attempts": [
+                328.2,
+                428.9
+              ],
+              "top2Sum": 757.1
+            },
+            {
+              "name": "Toddlerr",
+              "attempts": [
+                543.5,
+                798.3,
+                854.5
+              ],
+              "top2Sum": 1652.8
+            },
+            {
+              "name": "pumpenjoe",
+              "attempts": [
+                837.2,
+                911.9
+              ],
+              "top2Sum": 1749.1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "miniSeasonNumber": 8,
+      "days": [
+        {
+          "day": 22,
+          "date": "2026-09-19",
+          "players": [
+            {
+              "name": "һan",
+              "attempts": [
+                142.1,
+                173.3,
+                176.1,
+                217.8
+              ],
+              "top2Sum": 393.9
+            },
+            {
+              "name": "Fl3xas",
+              "attempts": [
+                136.1,
+                225.1,
+                308.5
+              ],
+              "top2Sum": 533.6
+            },
+            {
+              "name": "RABBIT5",
+              "attempts": [
+                201.2,
+                279.2,
+                403.2
+              ],
+              "top2Sum": 682.4
+            },
+            {
+              "name": "神Sterben死",
+              "attempts": [
+                185.8,
+                260.0,
+                361.0
+              ],
+              "top2Sum": 621.0
+            },
+            {
+              "name": "DAYO-P",
+              "attempts": [
+                200.1,
+                236.9,
+                302.7,
+                445.7
+              ],
+              "top2Sum": 748.4
+            },
+            {
+              "name": "Cunner88",
+              "attempts": [
+                529.6,
+                594.6
+              ],
+              "top2Sum": 1124.2
+            },
+            {
+              "name": "Nubis",
+              "attempts": [
+                423.0,
+                439.3,
+                519.1
+              ],
+              "top2Sum": 958.4
+            },
+            {
+              "name": "SngphO",
+              "attempts": [
+                428.1,
+                466.6
+              ],
+              "top2Sum": 894.7
+            },
+            {
+              "name": "Toddlerr",
+              "attempts": [
+                464.4,
+                592.7,
+                741.3
+              ],
+              "top2Sum": 1334.0
+            },
+            {
+              "name": "pumpenjoe",
+              "attempts": [
+                405.4,
+                576.4,
+                754.5,
+                937.6
+              ],
+              "top2Sum": 1692.1
+            }
+          ]
+        },
+        {
+          "day": 23,
+          "date": "2026-09-20",
+          "players": [
+            {
+              "name": "һan",
+              "attempts": [
+                113.8,
+                151.0,
+                183.3
+              ],
+              "top2Sum": 334.3
+            },
+            {
+              "name": "Fl3xas",
+              "attempts": [
+                126.4,
+                146.4,
+                225.7,
+                227.7
+              ],
+              "top2Sum": 453.4
+            },
+            {
+              "name": "RABBIT5",
+              "attempts": [
+                183.4,
+                283.0,
+                359.5
+              ],
+              "top2Sum": 642.5
+            },
+            {
+              "name": "神Sterben死",
+              "attempts": [
+                214.9,
+                271.9,
+                295.7,
+                467.5
+              ],
+              "top2Sum": 763.2
+            },
+            {
+              "name": "DAYO-P",
+              "attempts": [
+                307.7,
+                321.4,
+                470.4,
+                503.3
+              ],
+              "top2Sum": 973.7
+            },
+            {
+              "name": "Cunner88",
+              "attempts": [
+                231.0,
+                423.5,
+                429.7,
+                460.4
+              ],
+              "top2Sum": 890.1
+            },
+            {
+              "name": "Nubis",
+              "attempts": [
+                525.5,
+                567.8,
+                711.8
+              ],
+              "top2Sum": 1279.6
+            },
+            {
+              "name": "SngphO",
+              "attempts": [
+                416.0,
+                588.6,
+                605.5,
+                731.9
+              ],
+              "top2Sum": 1337.4
+            },
+            {
+              "name": "Toddlerr",
+              "attempts": [
+                634.6,
+                716.7,
+                748.0,
+                751.8
+              ],
+              "top2Sum": 1499.8
+            },
+            {
+              "name": "pumpenjoe",
+              "attempts": [
+                630.2,
+                657.4,
+                779.8,
+                813.0
+              ],
+              "top2Sum": 1592.8
+            }
+          ]
+        },
+        {
+          "day": 24,
+          "date": "2026-09-21",
+          "players": [
+            {
+              "name": "һan",
+              "attempts": [
+                94.9,
+                114.4,
+                204.0
+              ],
+              "top2Sum": 318.4
+            },
+            {
+              "name": "Fl3xas",
+              "attempts": [
+                120.6,
+                140.5,
+                149.6,
+                185.0
+              ],
+              "top2Sum": 334.6
+            },
+            {
+              "name": "RABBIT5",
+              "attempts": [
+                198.2,
+                270.1,
+                278.2,
+                307.7
+              ],
+              "top2Sum": 585.9
+            },
+            {
+              "name": "神Sterben死",
+              "attempts": [
+                335.8,
+                349.3,
+                395.5,
+                402.4
+              ],
+              "top2Sum": 797.9
+            },
+            {
+              "name": "DAYO-P",
+              "attempts": [
+                336.4,
+                367.0,
+                373.9,
+                550.7
+              ],
+              "top2Sum": 924.6
+            },
+            {
+              "name": "Cunner88",
+              "attempts": [
+                367.8,
+                372.8,
+                526.8,
+                548.2
+              ],
+              "top2Sum": 1075.0
+            },
+            {
+              "name": "Nubis",
+              "attempts": [
+                375.2,
+                478.6,
+                628.9,
+                701.2
+              ],
+              "top2Sum": 1330.1
+            },
+            {
+              "name": "SngphO",
+              "attempts": [
+                394.9,
+                568.4,
+                784.5
+              ],
+              "top2Sum": 1352.9
+            },
+            {
+              "name": "Toddlerr",
+              "attempts": [
+                698.9,
+                707.3,
+                745.1
+              ],
+              "top2Sum": 1452.4
+            },
+            {
+              "name": "pumpenjoe",
+              "attempts": [
+                528.6,
+                548.3,
+                911.9
+              ],
+              "top2Sum": 1460.2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "miniSeasonNumber": 9,
+      "days": [
+        {
+          "day": 25,
+          "date": "2026-09-22",
+          "players": [
+            {
+              "name": "һan",
+              "attempts": [
+                110.1,
+                135.5,
+                153.4,
+                203.3
+              ],
+              "top2Sum": 356.7
+            },
+            {
+              "name": "Fl3xas",
+              "attempts": [
+                360491.3,
+                248052.0,
+                573107.4
+              ],
+              "top2Sum": 933598.7
+            },
+            {
+              "name": "RABBIT5",
+              "attempts": [
+                154.7,
+                164.6,
+                400.1
+              ],
+              "top2Sum": 564.7
+            },
+            {
+              "name": "神Sterben死",
+              "attempts": [
+                197083586.3,
+                498323302.8,
+                387697796.0
+              ],
+              "top2Sum": 886021098.8
+            },
+            {
+              "name": "DAYO-P",
+              "attempts": [
+                187699301103.6,
+                479833226573.1,
+                174372177987.3,
+                431869694380.6
+              ],
+              "top2Sum": 911702920953.7
+            },
+            {
+              "name": "Cunner88",
+              "attempts": [
+                195406025323502.3,
+                208963458673512.3,
+                425937472942634.1,
+                687453881036824.8
+              ],
+              "top2Sum": 1113391353979458.9
+            },
+            {
+              "name": "Nubis",
+              "attempts": [
+                2.3047127474726963e+17,
+                2.951053269945594e+17,
+                5.5783159456363296e+17,
+                7.660108125970537e+17
+              ],
+              "top2Sum": 1.3238424071606866e+18
+            },
+            {
+              "name": "SngphO",
+              "attempts": [
+                5.2511691660137424e+20,
+                4.078423085230071e+20,
+                7.84565818635398e+20,
+                1.802787424015416e+20
+              ],
+              "top2Sum": 1.3096827352367723e+21
+            },
+            {
+              "name": "Toddlerr",
+              "attempts": [
+                7.080044983816418e+23,
+                3.3824603611558956e+23,
+                2.437658041823344e+23
+              ],
+              "top2Sum": 1.0462505344972313e+24
+            },
+            {
+              "name": "pumpenjoe",
+              "attempts": [
+                2.265649547509394e+26,
+                3.505131856662573e+26,
+                6.804821334280204e+26,
+                2.6747214695055935e+26
+              ],
+              "top2Sum": 1.0309953190942776e+27
+            }
+          ]
+        },
+        {
+          "day": 26,
+          "date": "2026-09-23",
+          "players": [
+            {
+              "name": "һan",
+              "attempts": [
+                128.6,
+                199.2
+              ],
+              "top2Sum": 327.8
+            },
+            {
+              "name": "Fl3xas",
+              "attempts": [
+                528040.1,
+                565293.8,
+                392058.4,
+                506033.9
+              ],
+              "top2Sum": 1093333.9
+            },
+            {
+              "name": "RABBIT5",
+              "attempts": [
+                153.1,
+                394.4
+              ],
+              "top2Sum": 547.5
+            },
+            {
+              "name": "神Sterben死",
+              "attempts": [
+                190812833.7,
+                188740760.5,
+                283873163.3
+              ],
+              "top2Sum": 474685997.0
+            },
+            {
+              "name": "DAYO-P",
+              "attempts": [
+                592259982568.2,
+                427934998685.1,
+                354195660744.9
+              ],
+              "top2Sum": 1020194981253.3
+            },
+            {
+              "name": "Cunner88",
+              "attempts": [
+                530615211279965.2,
+                444569844641003.9
+              ],
+              "top2Sum": 975185055920969.0
+            },
+            {
+              "name": "Nubis",
+              "attempts": [
+                3.4484854796139354e+17,
+                6.663466629896193e+17,
+                6.043463819242213e+17
+              ],
+              "top2Sum": 1.2706930449138406e+18
+            },
+            {
+              "name": "SngphO",
+              "attempts": [
+                3.0866273196939936e+20,
+                5.2337541166813617e+20
+              ],
+              "top2Sum": 8.320381436375356e+20
+            },
+            {
+              "name": "Toddlerr",
+              "attempts": [
+                4.913777274774434e+23,
+                7.188393721227289e+23
+              ],
+              "top2Sum": 1.2102170996001723e+24
+            },
+            {
+              "name": "pumpenjoe",
+              "attempts": [
+                6.241394381354914e+26,
+                3.371595471786212e+26,
+                7.871136508701784e+26,
+                2.2674275586572538e+26
+              ],
+              "top2Sum": 1.41125308900567e+27
+            }
+          ]
+        },
+        {
+          "day": 27,
+          "date": "2026-09-24",
+          "players": [
+            {
+              "name": "һan",
+              "attempts": [
+                119.1,
+                185.0,
+                216.8
+              ],
+              "top2Sum": 401.8
+            },
+            {
+              "name": "Fl3xas",
+              "attempts": [
+                421779.8,
+                642141.6,
+                248789.9,
+                467826.0
+              ],
+              "top2Sum": 1109967.6
+            },
+            {
+              "name": "RABBIT5",
+              "attempts": [
+                169.0,
+                271.7,
+                394.9,
+                407.2
+              ],
+              "top2Sum": 802.1
+            },
+            {
+              "name": "神Sterben死",
+              "attempts": [
+                175484717.1,
+                584340306.7
+              ],
+              "top2Sum": 759825023.8
+            },
+            {
+              "name": "DAYO-P",
+              "attempts": [
+                646971063038.3,
+                522466861180.3,
+                719060577690.1
+              ],
+              "top2Sum": 1366031640728.4
+            },
+            {
+              "name": "Cunner88",
+              "attempts": [
+                353935883351262.9,
+                601941988077878.5
+              ],
+              "top2Sum": 955877871429141.4
+            },
+            {
+              "name": "Nubis",
+              "attempts": [
+                5.36340420118262e+17,
+                5.269318827836199e+17
+              ],
+              "top2Sum": 1.0632723029018819e+18
+            },
+            {
+              "name": "SngphO",
+              "attempts": [
+                4.465334653459185e+20,
+                6.959790573331519e+20,
+                7.640427118201593e+20
+              ],
+              "top2Sum": 1.4600217691533111e+21
+            },
+            {
+              "name": "Toddlerr",
+              "attempts": [
+                4.581639193227689e+23,
+                5.816989335585383e+23,
+                1.894351279381928e+23,
+                6.059698138478755e+23
+              ],
+              "top2Sum": 1.1876687474064138e+24
+            },
+            {
+              "name": "pumpenjoe",
+              "attempts": [
+                5.706337554429847e+26,
+                7.955123606533121e+26,
+                6.842511112963146e+26
+              ],
+              "top2Sum": 1.4797634719496266e+27
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "leaderboard": [
+    {
+      "name": "pumpenjoe",
+      "seasonTotal": 40441.7,
+      "rank": 1,
+      "gainVsPreviousSeason": null
+    },
+    {
+      "name": "Toddlerr",
+      "seasonTotal": 36631.8,
+      "rank": 2,
+      "gainVsPreviousSeason": 4772.8
+    },
+    {
+      "name": "SngphO",
+      "seasonTotal": 31073.6,
+      "rank": 3,
+      "gainVsPreviousSeason": 628.9
+    },
+    {
+      "name": "Nubis",
+      "seasonTotal": 29205.9,
+      "rank": 4,
+      "gainVsPreviousSeason": 2655.0
+    },
+    {
+      "name": "Cunner88",
+      "seasonTotal": 26155.5,
+      "rank": 5,
+      "gainVsPreviousSeason": 3005.0
+    },
+    {
+      "name": "DAYO-P",
+      "seasonTotal": 23326.7,
+      "rank": 6,
+      "gainVsPreviousSeason": 3043.9
+    },
+    {
+      "name": "神Sterben死",
+      "seasonTotal": 19972.9,
+      "rank": 7,
+      "gainVsPreviousSeason": 1923.9
+    },
+    {
+      "name": "RABBIT5",
+      "seasonTotal": 16457.9,
+      "rank": 8,
+      "gainVsPreviousSeason": 2178.0
+    },
+    {
+      "name": "Fl3xas",
+      "seasonTotal": 13768.1,
+      "rank": 9,
+      "gainVsPreviousSeason": 2639.3
+    },
+    {
+      "name": "һan",
+      "seasonTotal": 9983.2,
+      "rank": 10,
+      "gainVsPreviousSeason": 773.9
+    }
+  ]
+}

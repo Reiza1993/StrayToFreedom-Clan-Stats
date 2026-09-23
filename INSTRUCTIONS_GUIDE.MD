@@ -103,3 +103,48 @@ When a player leaves the clan, apply the following changes across subsequent upd
 - **`alumniCount`** — increment by the number of members removed; add their names to `alumniMembers`
 - **`lmeDifficulty` / `lmeLeague`** — update only when told to
 - **`lunarPoints`** — **never modify** (the calculator handles this automatically)
+
+---
+
+## Updating `lme-history/summary.json`
+
+A lightweight per-LME index (clan totals only — no per-member or per-round
+data; that stays in the full per-LME detail files) used by the P1 Score
+progression graph on the LME History page. After finishing the LME update
+above (player scores + the new `lmeHistory` entry in `clanStats.js`),
+append **one new row**:
+
+```json
+{
+  "lmeNumber": 60,
+  "date": "2026-09-22",
+  "totalP1Score": 101558,
+  "finalRank": 2,
+  "lunarPoints": 1477,
+  "league": "Champion"
+}
+```
+
+- `lmeNumber`, `finalRank` (= the new `lmeHistory` entry's `rank`), `league`
+  — copy straight from the `lmeHistory` entry you just added.
+- `totalP1Score` — **the same Top 30 total already shown on the LME tab**
+  ("Total LME (Top 30)" stat, `lme-total-score` — see
+  `calculateLMETabSummary()` in `index.html`): sort every player's current
+  LME score descending (from `playerLME.js`'s `current` object as of this
+  update — this is the file that actually carries live P1 scores now;
+  `playerData.js` is a retired file kept only for its pre-2026-07-14
+  history) and sum the top 30. **Not** every player's score — that
+  overcounts against a 39-40 member roster and won't match the dashboard's
+  own number.
+- `lunarPoints` — the clan's current Lunar Points figure as shown on the
+  dashboard (baseline + the running per-cycle delta from LME #31 onward;
+  see `calculateLunarPointsFromBaseline()` in `index.html`).
+- `date` — the date of this update.
+
+**Ordering: append to the bottom (ascending by `lmeNumber`)** — the
+opposite of `lmeHistory`'s newest-first convention. This file is read
+directly as a chart time series (oldest → newest, left → right), so it's
+kept in that order rather than matching `lmeHistory`.
+
+If a mid-cycle score correction comes in before the next LME, update that
+same row in place rather than appending a duplicate.
