@@ -3,15 +3,15 @@
   "leaderboard": [
     {
       "gainVsPreviousSeason": null,
-      "name": "\u04bban",
+      "name": "Fl3xas",
       "rank": 1,
-      "seasonTotal": 4.694631162579542e+22
+      "seasonTotal": 6.983533349017213e+22
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Fl3xas",
+      "name": "\u04bban",
       "rank": 2,
-      "seasonTotal": 3.1898034097403743e+22
+      "seasonTotal": 4.694631162579542e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -27,21 +27,21 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "DAYO-P",
+      "name": "Koncalaz",
       "rank": 5,
+      "seasonTotal": 7.659573820676995e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "DAYO-P",
+      "rank": 6,
       "seasonTotal": 4.992412365512616e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "RABBIT5",
-      "rank": 6,
-      "seasonTotal": 4.1765409472892376e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "Koncalaz",
       "rank": 7,
-      "seasonTotal": 3.1560022056861717e+21
+      "seasonTotal": 4.1765409472892376e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -69,33 +69,33 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "\u76feHeathcliff\u5263",
+      "name": "MadameMischief",
       "rank": 12,
+      "seasonTotal": 9.30212862403146e+20
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "\u76feHeathcliff\u5263",
+      "rank": 13,
       "seasonTotal": 4.620427458299845e+20
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "MadameMischief",
-      "rank": 13,
-      "seasonTotal": 4.216973334605479e+20
+      "name": "HakiLuffy",
+      "rank": 14,
+      "seasonTotal": 4.412868044757606e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "VictorMolusco",
-      "rank": 14,
+      "rank": 15,
       "seasonTotal": 2.205094137131167e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "p88203044",
-      "rank": 15,
-      "seasonTotal": 2.1285435921475407e+20
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "HakiLuffy",
       "rank": 16,
-      "seasonTotal": 2.0915997253468966e+20
+      "seasonTotal": 2.1285435921475407e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -159,15 +159,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "BobBobberson",
+      "name": "datamaster",
       "rank": 27,
-      "seasonTotal": 6.3535733079751115e+19
+      "seasonTotal": 6.546690140123986e+19
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "datamaster",
+      "name": "BobBobberson",
       "rank": 28,
-      "seasonTotal": 4.1979727901491995e+19
+      "seasonTotal": 6.3535733079751115e+19
     },
     {
       "gainVsPreviousSeason": null,
@@ -462,6 +462,54 @@
               ],
               "name": "Player 80018314",
               "top2Sum": 3.0648211050386317e+19
+            }
+          ]
+        },
+        {
+          "date": "2026-09-25",
+          "day": 2,
+          "players": [
+            {
+              "attempts": [
+                1.5164445407870783e+19,
+                8.322728091877086e+18
+              ],
+              "name": "datamaster",
+              "top2Sum": 2.348717349974787e+19
+            },
+            {
+              "attempts": [
+                1.818106340293305e+21,
+                2.6854652746975187e+21
+              ],
+              "name": "Koncalaz",
+              "top2Sum": 4.5035716149908236e+21
+            },
+            {
+              "attempts": [
+                9.683258416729001e+19,
+                1.3529424777378093e+20
+              ],
+              "name": "HakiLuffy",
+              "top2Sum": 2.3212683194107095e+20
+            },
+            {
+              "attempts": [
+                1.5978426855927763e+22,
+                2.1446754134385156e+22,
+                1.6490545258383228e+22,
+                1.42298994665473e+22
+              ],
+              "name": "Fl3xas",
+              "top2Sum": 3.793729939276838e+22
+            },
+            {
+              "attempts": [
+                2.342220264489455e+20,
+                2.7429350249365258e+20
+              ],
+              "name": "MadameMischief",
+              "top2Sum": 5.085155289425981e+20
             }
           ]
         }
