@@ -33,74 +33,110 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "pumpenjoe",
+      "name": "RABBIT5",
       "rank": 6,
+      "seasonTotal": 2.5766333153607e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "pumpenjoe",
+      "rank": 7,
       "seasonTotal": 1.7560438170621586e+21
     },
     {
       "gainVsPreviousSeason": null,
+      "name": "PastalaVista",
+      "rank": 8,
+      "seasonTotal": 1.1232360925281769e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "RetinaDNA",
+      "rank": 9,
+      "seasonTotal": 1.0753659961032354e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
       "name": "MadameMischief",
-      "rank": 7,
+      "rank": 10,
       "seasonTotal": 4.216973334605479e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "VictorMolusco",
-      "rank": 8,
+      "rank": 11,
       "seasonTotal": 2.205094137131167e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "HakiLuffy",
-      "rank": 9,
+      "rank": 12,
       "seasonTotal": 2.0273986943222546e+20
     },
     {
       "gainVsPreviousSeason": null,
+      "name": "groggen",
+      "rank": 13,
+      "seasonTotal": 1.7514837946370756e+20
+    },
+    {
+      "gainVsPreviousSeason": null,
       "name": "Gritchen",
-      "rank": 10,
+      "rank": 14,
       "seasonTotal": 1.666816451072231e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "p88203044",
-      "rank": 11,
+      "rank": 15,
       "seasonTotal": 1.4239588164917289e+20
     },
     {
       "gainVsPreviousSeason": null,
+      "name": "theLP",
+      "rank": 16,
+      "seasonTotal": 1.3167349960136471e+20
+    },
+    {
+      "gainVsPreviousSeason": null,
       "name": "faxnem",
-      "rank": 12,
+      "rank": 17,
       "seasonTotal": 8.712756201540131e+19
     },
     {
       "gainVsPreviousSeason": null,
       "name": "BlackFlamE",
-      "rank": 13,
+      "rank": 18,
       "seasonTotal": 6.991164454676635e+19
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Apathy_",
-      "rank": 14,
+      "rank": 19,
       "seasonTotal": 6.933193682477248e+19
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Bensayyten",
-      "rank": 15,
+      "rank": 20,
       "seasonTotal": 4.278112512192798e+19
     },
     {
       "gainVsPreviousSeason": null,
       "name": "datamaster",
-      "rank": 16,
+      "rank": 21,
       "seasonTotal": 4.1979727901491995e+19
     },
     {
       "gainVsPreviousSeason": null,
+      "name": "Rzzza",
+      "rank": 22,
+      "seasonTotal": 3.228788324166999e+19
+    },
+    {
+      "gainVsPreviousSeason": null,
       "name": "Belthazar",
-      "rank": 17,
+      "rank": 23,
       "seasonTotal": 2.976862686340168e+19
     }
   ],
@@ -156,7 +192,8 @@
                 2.1762745078613827e+21,
                 1.4215317032634176e+21,
                 2.6233475412581653e+21,
-                2.3690648242544517e+21
+                2.3690648242544517e+21,
+                2.1895135846518049e+21
               ],
               "name": "DAYO-P",
               "top2Sum": 4.992412365512616e+21
@@ -250,6 +287,51 @@
               ],
               "name": "SngphO",
               "top2Sum": 3.074183350650852e+21
+            },
+            {
+              "attempts": [
+                5.584349419061153e+20,
+                5.169310541971201e+20
+              ],
+              "name": "RetinaDNA",
+              "top2Sum": 1.0753659961032354e+21
+            },
+            {
+              "attempts": [
+                6.736959840272063e+19,
+                6.4303901198644085e+19
+              ],
+              "name": "theLP",
+              "top2Sum": 1.3167349960136471e+20
+            },
+            {
+              "attempts": [
+                3.228788324166999e+19
+              ],
+              "name": "Rzzza",
+              "top2Sum": 3.228788324166999e+19
+            },
+            {
+              "attempts": [
+                6.136113523057922e+20,
+                5.0962474022238473e+20
+              ],
+              "name": "PastalaVista",
+              "top2Sum": 1.1232360925281769e+21
+            },
+            {
+              "attempts": [
+                1.7514837946370756e+20
+              ],
+              "name": "groggen",
+              "top2Sum": 1.7514837946370756e+20
+            },
+            {
+              "attempts": [
+                2.5766333153607e+21
+              ],
+              "name": "RABBIT5",
+              "top2Sum": 2.5766333153607e+21
             }
           ]
         }
