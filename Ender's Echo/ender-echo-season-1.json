@@ -17,7 +17,7 @@
       "gainVsPreviousSeason": null,
       "name": "Nubis",
       "rank": 3,
-      "seasonTotal": 9.685388314152526e+21
+      "seasonTotal": 1.801754476118072e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -35,7 +35,7 @@
       "gainVsPreviousSeason": null,
       "name": "DAYO-P",
       "rank": 6,
-      "seasonTotal": 4.992412365512616e+21
+      "seasonTotal": 7.483894140856806e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -87,33 +87,33 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "VictorMolusco",
+      "name": "Gritchen",
       "rank": 15,
+      "seasonTotal": 2.5302203755219688e+20
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "VictorMolusco",
+      "rank": 16,
       "seasonTotal": 2.205094137131167e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "p88203044",
-      "rank": 16,
+      "rank": 17,
       "seasonTotal": 2.1285435921475407e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Player 66607264",
-      "rank": 17,
+      "rank": 18,
       "seasonTotal": 1.793402646790163e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "groggen",
-      "rank": 18,
-      "seasonTotal": 1.7514837946370756e+20
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "Gritchen",
       "rank": 19,
-      "seasonTotal": 1.666816451072231e+20
+      "seasonTotal": 1.7514837946370756e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -510,6 +510,30 @@
               ],
               "name": "MadameMischief",
               "top2Sum": 5.085155289425981e+20
+            },
+            {
+              "attempts": [
+                8.63403924449738e+19
+              ],
+              "name": "Gritchen",
+              "top2Sum": 8.63403924449738e+19
+            },
+            {
+              "attempts": [
+                2.4914817753441894e+21
+              ],
+              "name": "DAYO-P",
+              "top2Sum": 2.4914817753441894e+21
+            },
+            {
+              "attempts": [
+                4.230409149988208e+21,
+                4.056970929710297e+21,
+                4.1017472970399867e+21,
+                4.0256268814346056e+21
+              ],
+              "name": "Nubis",
+              "top2Sum": 8.332156447028194e+21
             }
           ]
         }
