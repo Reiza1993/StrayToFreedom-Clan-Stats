@@ -69,51 +69,51 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "MadameMischief",
+      "name": "\u76feHeathcliff\u5263",
       "rank": 12,
+      "seasonTotal": 4.620427458299845e+20
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "MadameMischief",
+      "rank": 13,
       "seasonTotal": 4.216973334605479e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "VictorMolusco",
-      "rank": 13,
+      "rank": 14,
       "seasonTotal": 2.205094137131167e+20
     },
     {
       "gainVsPreviousSeason": null,
+      "name": "p88203044",
+      "rank": 15,
+      "seasonTotal": 2.1285435921475407e+20
+    },
+    {
+      "gainVsPreviousSeason": null,
       "name": "HakiLuffy",
-      "rank": 14,
+      "rank": 16,
       "seasonTotal": 2.0915997253468966e+20
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "\u76feHeathcliff\u5263",
-      "rank": 15,
-      "seasonTotal": 2.0584446771382387e+20
-    },
-    {
-      "gainVsPreviousSeason": null,
       "name": "Player 66607264",
-      "rank": 16,
+      "rank": 17,
       "seasonTotal": 1.793402646790163e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "groggen",
-      "rank": 17,
+      "rank": 18,
       "seasonTotal": 1.7514837946370756e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Gritchen",
-      "rank": 18,
-      "seasonTotal": 1.666816451072231e+20
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "p88203044",
       "rank": 19,
-      "seasonTotal": 1.4239588164917289e+20
+      "seasonTotal": 1.666816451072231e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -183,8 +183,14 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Belthazar",
+      "name": "Player 80018314",
       "rank": 31,
+      "seasonTotal": 3.0648211050386317e+19
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "Belthazar",
+      "rank": 32,
       "seasonTotal": 2.976862686340168e+19
     }
   ],
@@ -327,10 +333,11 @@
             },
             {
               "attempts": [
-                1.4239588164917289e+20
+                1.4239588164917289e+20,
+                7.045847756558118e+19
               ],
               "name": "p88203044",
-              "top2Sum": 1.4239588164917289e+20
+              "top2Sum": 2.1285435921475407e+20
             },
             {
               "attempts": [
@@ -428,10 +435,11 @@
             },
             {
               "attempts": [
-                2.0584446771382387e+20
+                2.0584446771382387e+20,
+                2.5619827811616063e+20
               ],
               "name": "\u76feHeathcliff\u5263",
-              "top2Sum": 2.0584446771382387e+20
+              "top2Sum": 4.620427458299845e+20
             },
             {
               "attempts": [
@@ -446,6 +454,14 @@
               ],
               "name": "BobBobberson",
               "top2Sum": 6.3535733079751115e+19
+            },
+            {
+              "attempts": [
+                1.669511651134776e+19,
+                1.395309453903856e+19
+              ],
+              "name": "Player 80018314",
+              "top2Sum": 3.0648211050386317e+19
             }
           ]
         }
