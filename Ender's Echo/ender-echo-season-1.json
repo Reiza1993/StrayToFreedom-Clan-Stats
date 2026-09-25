@@ -3,15 +3,15 @@
   "leaderboard": [
     {
       "gainVsPreviousSeason": null,
-      "name": "Fl3xas",
+      "name": "\u04bban",
       "rank": 1,
-      "seasonTotal": 6.983533349017213e+22
+      "seasonTotal": 9.265514685594196e+22
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "\u04bban",
+      "name": "Fl3xas",
       "rank": 2,
-      "seasonTotal": 4.694631162579542e+22
+      "seasonTotal": 6.983533349017213e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -93,57 +93,57 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Gritchen",
+      "name": "VictorMolusco",
       "rank": 16,
+      "seasonTotal": 4.000548442207443e+20
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "Gritchen",
+      "rank": 17,
       "seasonTotal": 3.16193433208079e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "BlackFlamE",
-      "rank": 17,
+      "rank": 18,
       "seasonTotal": 2.5197318932064613e+20
     },
     {
       "gainVsPreviousSeason": null,
+      "name": "EMBALOCO",
+      "rank": 19,
+      "seasonTotal": 2.518446551634643e+20
+    },
+    {
+      "gainVsPreviousSeason": null,
       "name": "theLP",
-      "rank": 18,
+      "rank": 20,
       "seasonTotal": 2.3388095884083505e+20
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "VictorMolusco",
-      "rank": 19,
-      "seasonTotal": 2.205094137131167e+20
-    },
-    {
-      "gainVsPreviousSeason": null,
       "name": "Player 66607264",
-      "rank": 20,
+      "rank": 21,
       "seasonTotal": 1.793402646790163e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "groggen",
-      "rank": 21,
+      "rank": 22,
       "seasonTotal": 1.7514837946370756e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Apathy_",
-      "rank": 22,
+      "rank": 23,
       "seasonTotal": 1.444512260002012e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "samwise08",
-      "rank": 23,
-      "seasonTotal": 1.2818243546427176e+20
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "EMBALOCO",
       "rank": 24,
-      "seasonTotal": 1.2575446570297449e+20
+      "seasonTotal": 1.2818243546427176e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -153,45 +153,45 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "faxnem",
+      "name": "Player 80018314",
       "rank": 26,
+      "seasonTotal": 9.098470675997642e+19
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "faxnem",
+      "rank": 27,
       "seasonTotal": 8.712756201540131e+19
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Bensayyten",
-      "rank": 27,
+      "rank": 28,
       "seasonTotal": 8.417322422829747e+19
     },
     {
       "gainVsPreviousSeason": null,
       "name": "datamaster",
-      "rank": 28,
+      "rank": 29,
       "seasonTotal": 6.546690140123986e+19
     },
     {
       "gainVsPreviousSeason": null,
       "name": "BobBobberson",
-      "rank": 29,
+      "rank": 30,
       "seasonTotal": 6.3535733079751115e+19
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Belthazar",
-      "rank": 30,
+      "rank": 31,
       "seasonTotal": 5.436194250693497e+19
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Rzzza",
-      "rank": 31,
-      "seasonTotal": 3.228788324166999e+19
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "Player 80018314",
       "rank": 32,
-      "seasonTotal": 3.0648211050386317e+19
+      "seasonTotal": 3.228788324166999e+19
     }
   ],
   "miniSeasons": [
@@ -623,6 +623,37 @@
               ],
               "name": "RABBIT5",
               "top2Sum": 2.561642546852557e+21
+            },
+            {
+              "attempts": [
+                5.800675277765789e+19,
+                1.2153867772996965e+20
+              ],
+              "name": "VictorMolusco",
+              "top2Sum": 1.7954543050762754e+20
+            },
+            {
+              "attempts": [
+                4.570883523014655e+22
+              ],
+              "name": "\u04bban",
+              "top2Sum": 4.570883523014655e+22
+            },
+            {
+              "attempts": [
+                6.64315058584621e+19,
+                5.965868360202771e+19
+              ],
+              "name": "EMBALOCO",
+              "top2Sum": 1.260901894604898e+20
+            },
+            {
+              "attempts": [
+                3.226801539713268e+19,
+                2.8068480312457425e+19
+              ],
+              "name": "Player 80018314",
+              "top2Sum": 6.033649570959011e+19
             }
           ]
         }
