@@ -39,15 +39,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "RABBIT5",
+      "name": "SngphO",
       "rank": 7,
-      "seasonTotal": 4.1765409472892376e+21
+      "seasonTotal": 6.403902946902356e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "SngphO",
+      "name": "RABBIT5",
       "rank": 8,
-      "seasonTotal": 3.074183350650852e+21
+      "seasonTotal": 4.1765409472892376e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -93,33 +93,33 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "VictorMolusco",
+      "name": "theLP",
       "rank": 16,
+      "seasonTotal": 2.3388095884083505e+20
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "VictorMolusco",
+      "rank": 17,
       "seasonTotal": 2.205094137131167e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "p88203044",
-      "rank": 17,
+      "rank": 18,
       "seasonTotal": 2.1285435921475407e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Player 66607264",
-      "rank": 18,
+      "rank": 19,
       "seasonTotal": 1.793402646790163e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "groggen",
-      "rank": 19,
-      "seasonTotal": 1.7514837946370756e+20
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "theLP",
       "rank": 20,
-      "seasonTotal": 1.3167349960136471e+20
+      "seasonTotal": 1.7514837946370756e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -534,6 +534,22 @@
               ],
               "name": "Nubis",
               "top2Sum": 8.332156447028194e+21
+            },
+            {
+              "attempts": [
+                4.443827336772201e+19,
+                5.7769185871748325e+19
+              ],
+              "name": "theLP",
+              "top2Sum": 1.0220745923947033e+20
+            },
+            {
+              "attempts": [
+                1.8077219404204223e+21,
+                1.5219976558310814e+21
+              ],
+              "name": "SngphO",
+              "top2Sum": 3.3297195962515037e+21
             }
           ]
         }
