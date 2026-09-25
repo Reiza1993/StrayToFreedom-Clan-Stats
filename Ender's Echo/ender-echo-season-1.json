@@ -23,31 +23,31 @@
       "gainVsPreviousSeason": null,
       "name": "DAYO-P",
       "rank": 4,
-      "seasonTotal": 1.0090776868912435e+22
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "\u795eSterben\u6b7b",
-      "rank": 5,
-      "seasonTotal": 9.049203013527458e+21
+      "seasonTotal": 1.2150170651109548e+22
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Koncalaz",
-      "rank": 6,
-      "seasonTotal": 7.659573820676995e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "RABBIT5",
-      "rank": 7,
-      "seasonTotal": 6.738183494141795e+21
+      "rank": 5,
+      "seasonTotal": 1.0806186440543594e+22
     },
     {
       "gainVsPreviousSeason": null,
       "name": "SngphO",
+      "rank": 6,
+      "seasonTotal": 9.827588731810473e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "\u795eSterben\u6b7b",
+      "rank": 7,
+      "seasonTotal": 9.049203013527458e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "RABBIT5",
       "rank": 8,
-      "seasonTotal": 6.403902946902356e+21
+      "seasonTotal": 6.738183494141795e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -71,43 +71,43 @@
       "gainVsPreviousSeason": null,
       "name": "MadameMischief",
       "rank": 12,
-      "seasonTotal": 9.30212862403146e+20
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "\u76feHeathcliff\u5263",
-      "rank": 13,
-      "seasonTotal": 4.620427458299845e+20
+      "seasonTotal": 1.5753178239667232e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "HakiLuffy",
+      "rank": 13,
+      "seasonTotal": 6.712006827098033e+20
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "Gritchen",
       "rank": 14,
-      "seasonTotal": 4.412868044757606e+20
+      "seasonTotal": 4.809834927970445e+20
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "\u76feHeathcliff\u5263",
+      "rank": 15,
+      "seasonTotal": 4.620427458299845e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "p88203044",
-      "rank": 15,
+      "rank": 16,
       "seasonTotal": 4.117938658173086e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "VictorMolusco",
-      "rank": 16,
-      "seasonTotal": 4.000548442207443e+20
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "Gritchen",
       "rank": 17,
-      "seasonTotal": 3.16193433208079e+20
+      "seasonTotal": 4.000548442207443e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "BlackFlamE",
       "rank": 18,
-      "seasonTotal": 2.5197318932064613e+20
+      "seasonTotal": 3.0307675644226096e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -189,8 +189,14 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Rzzza",
+      "name": "ergiangi",
       "rank": 32,
+      "seasonTotal": 5.2529945458542174e+19
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "Rzzza",
+      "rank": 33,
       "seasonTotal": 3.228788324166999e+19
     }
   ],
@@ -654,6 +660,73 @@
               ],
               "name": "Player 80018314",
               "top2Sum": 6.033649570959011e+19
+            }
+          ]
+        },
+        {
+          "date": "2026-09-26",
+          "day": 3,
+          "players": [
+            {
+              "attempts": [
+                7.50697830995933e+19,
+                8.972027648937222e+19
+              ],
+              "name": "Gritchen",
+              "top2Sum": 1.647900595889655e+20
+            },
+            {
+              "attempts": [
+                2.0593937821971138e+21
+              ],
+              "name": "DAYO-P",
+              "top2Sum": 2.0593937821971138e+21
+            },
+            {
+              "attempts": [
+                1.0816557318441658e+21,
+                2.064956888022432e+21
+              ],
+              "name": "Koncalaz",
+              "top2Sum": 3.146612619866598e+21
+            },
+            {
+              "attempts": [
+                1.4758919393888588e+21,
+                1.9477938455192582e+21
+              ],
+              "name": "SngphO",
+              "top2Sum": 3.423685784908117e+21
+            },
+            {
+              "attempts": [
+                1.2582537365151193e+20,
+                1.0408850458253084e+20
+              ],
+              "name": "HakiLuffy",
+              "top2Sum": 2.299138782340428e+20
+            },
+            {
+              "attempts": [
+                5.11035671216148e+19
+              ],
+              "name": "BlackFlamE",
+              "top2Sum": 5.11035671216148e+19
+            },
+            {
+              "attempts": [
+                5.2529945458542174e+19
+              ],
+              "name": "ergiangi",
+              "top2Sum": 5.2529945458542174e+19
+            },
+            {
+              "attempts": [
+                3.037552161137893e+20,
+                3.4134974544978765e+20
+              ],
+              "name": "MadameMischief",
+              "top2Sum": 6.45104961563577e+20
             }
           ]
         }
