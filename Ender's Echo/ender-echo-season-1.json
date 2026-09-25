@@ -17,7 +17,7 @@
       "gainVsPreviousSeason": null,
       "name": "Nubis",
       "rank": 3,
-      "seasonTotal": 1.801754476118072e+22
+      "seasonTotal": 2.723381386377151e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -727,6 +727,14 @@
               ],
               "name": "MadameMischief",
               "top2Sum": 6.45104961563577e+20
+            },
+            {
+              "attempts": [
+                4.2619953853782504e+21,
+                4.954273717212538e+21
+              ],
+              "name": "Nubis",
+              "top2Sum": 9.216269102590788e+21
             }
           ]
         }
