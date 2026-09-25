@@ -21,21 +21,21 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "\u795eSterben\u6b7b",
+      "name": "DAYO-P",
       "rank": 4,
+      "seasonTotal": 1.0090776868912435e+22
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "\u795eSterben\u6b7b",
+      "rank": 5,
       "seasonTotal": 9.049203013527458e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Koncalaz",
-      "rank": 5,
-      "seasonTotal": 7.659573820676995e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "DAYO-P",
       "rank": 6,
-      "seasonTotal": 7.483894140856806e+21
+      "seasonTotal": 7.659573820676995e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -51,21 +51,21 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "PastalaVista",
+      "name": "RetinaDNA",
       "rank": 9,
+      "seasonTotal": 2.2535720852447528e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "PastalaVista",
+      "rank": 10,
       "seasonTotal": 1.781685286656212e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "pumpenjoe",
-      "rank": 10,
-      "seasonTotal": 1.7560438170621586e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "RetinaDNA",
       "rank": 11,
-      "seasonTotal": 1.0753659961032354e+21
+      "seasonTotal": 1.7560438170621586e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -87,33 +87,33 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Gritchen",
+      "name": "p88203044",
       "rank": 15,
-      "seasonTotal": 2.5302203755219688e+20
+      "seasonTotal": 4.117938658173086e+20
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "Gritchen",
+      "rank": 16,
+      "seasonTotal": 3.16193433208079e+20
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "BlackFlamE",
+      "rank": 17,
+      "seasonTotal": 2.5197318932064613e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "theLP",
-      "rank": 16,
+      "rank": 18,
       "seasonTotal": 2.3388095884083505e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "VictorMolusco",
-      "rank": 17,
-      "seasonTotal": 2.205094137131167e+20
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "p88203044",
-      "rank": 18,
-      "seasonTotal": 2.1285435921475407e+20
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "BlackFlamE",
       "rank": 19,
-      "seasonTotal": 1.7963547071893353e+20
+      "seasonTotal": 2.205094137131167e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -129,33 +129,33 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "EMBALOCO",
+      "name": "Apathy_",
       "rank": 22,
+      "seasonTotal": 1.444512260002012e+20
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "EMBALOCO",
+      "rank": 23,
       "seasonTotal": 1.2575446570297449e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "faxnem",
-      "rank": 23,
+      "rank": 24,
       "seasonTotal": 8.712756201540131e+19
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Bensayyten",
-      "rank": 24,
+      "rank": 25,
       "seasonTotal": 8.417322422829747e+19
     },
     {
       "gainVsPreviousSeason": null,
       "name": "samwise08",
-      "rank": 25,
-      "seasonTotal": 7.847446069587357e+19
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "Apathy_",
       "rank": 26,
-      "seasonTotal": 6.933193682477248e+19
+      "seasonTotal": 7.847446069587357e+19
     },
     {
       "gainVsPreviousSeason": null,
@@ -513,17 +513,19 @@
             },
             {
               "attempts": [
-                8.63403924449738e+19
+                8.63403924449738e+19,
+                6.317139565588206e+19
               ],
               "name": "Gritchen",
-              "top2Sum": 8.63403924449738e+19
+              "top2Sum": 1.4951178810085586e+20
             },
             {
               "attempts": [
-                2.4914817753441894e+21
+                2.4914817753441894e+21,
+                2.6068827280556294e+21
               ],
               "name": "DAYO-P",
-              "top2Sum": 2.4914817753441894e+21
+              "top2Sum": 5.098364503399818e+21
             },
             {
               "attempts": [
@@ -560,10 +562,35 @@
             },
             {
               "attempts": [
-                5.437666594085229e+19
+                5.437666594085229e+19,
+                7.233771860171263e+19
               ],
               "name": "BlackFlamE",
-              "top2Sum": 5.437666594085229e+19
+              "top2Sum": 1.2671438454256493e+20
+            },
+            {
+              "attempts": [
+                6.073071639316156e+20,
+                5.7089892520990206e+20
+              ],
+              "name": "RetinaDNA",
+              "top2Sum": 1.1782060891415175e+21
+            },
+            {
+              "attempts": [
+                5.1339351968238535e+19,
+                2.3779937207190196e+19
+              ],
+              "name": "Apathy_",
+              "top2Sum": 7.511928917542873e+19
+            },
+            {
+              "attempts": [
+                8.925832651137384e+19,
+                1.0968118009118068e+20
+              ],
+              "name": "p88203044",
+              "top2Sum": 1.9893950660255452e+20
             }
           ]
         }
