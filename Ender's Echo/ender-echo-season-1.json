@@ -39,15 +39,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "SngphO",
+      "name": "RABBIT5",
       "rank": 7,
-      "seasonTotal": 6.403902946902356e+21
+      "seasonTotal": 6.738183494141795e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "RABBIT5",
+      "name": "SngphO",
       "rank": 8,
-      "seasonTotal": 4.1765409472892376e+21
+      "seasonTotal": 6.403902946902356e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -147,51 +147,51 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "faxnem",
+      "name": "gubrax",
       "rank": 25,
+      "seasonTotal": 9.376174192330074e+19
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "faxnem",
+      "rank": 26,
       "seasonTotal": 8.712756201540131e+19
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Bensayyten",
-      "rank": 26,
+      "rank": 27,
       "seasonTotal": 8.417322422829747e+19
     },
     {
       "gainVsPreviousSeason": null,
       "name": "datamaster",
-      "rank": 27,
+      "rank": 28,
       "seasonTotal": 6.546690140123986e+19
     },
     {
       "gainVsPreviousSeason": null,
       "name": "BobBobberson",
-      "rank": 28,
+      "rank": 29,
       "seasonTotal": 6.3535733079751115e+19
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "gubrax",
-      "rank": 29,
-      "seasonTotal": 4.039906729508025e+19
+      "name": "Belthazar",
+      "rank": 30,
+      "seasonTotal": 5.436194250693497e+19
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Rzzza",
-      "rank": 30,
+      "rank": 31,
       "seasonTotal": 3.228788324166999e+19
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Player 80018314",
-      "rank": 31,
-      "seasonTotal": 3.0648211050386317e+19
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "Belthazar",
       "rank": 32,
-      "seasonTotal": 2.976862686340168e+19
+      "seasonTotal": 3.0648211050386317e+19
     }
   ],
   "miniSeasons": [
@@ -600,6 +600,29 @@
               ],
               "name": "samwise08",
               "top2Sum": 4.970797476839819e+19
+            },
+            {
+              "attempts": [
+                1.4460309535448056e+19,
+                1.013300610808523e+19
+              ],
+              "name": "Belthazar",
+              "top2Sum": 2.4593315643533287e+19
+            },
+            {
+              "attempts": [
+                2.992050111173785e+19,
+                2.344217351648264e+19
+              ],
+              "name": "gubrax",
+              "top2Sum": 5.336267462822049e+19
+            },
+            {
+              "attempts": [
+                2.561642546852557e+21
+              ],
+              "name": "RABBIT5",
+              "top2Sum": 2.561642546852557e+21
             }
           ]
         }
