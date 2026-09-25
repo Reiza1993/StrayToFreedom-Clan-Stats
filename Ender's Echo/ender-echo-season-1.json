@@ -135,27 +135,27 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "EMBALOCO",
+      "name": "samwise08",
       "rank": 23,
+      "seasonTotal": 1.2818243546427176e+20
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "EMBALOCO",
+      "rank": 24,
       "seasonTotal": 1.2575446570297449e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "faxnem",
-      "rank": 24,
+      "rank": 25,
       "seasonTotal": 8.712756201540131e+19
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Bensayyten",
-      "rank": 25,
-      "seasonTotal": 8.417322422829747e+19
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "samwise08",
       "rank": 26,
-      "seasonTotal": 7.847446069587357e+19
+      "seasonTotal": 8.417322422829747e+19
     },
     {
       "gainVsPreviousSeason": null,
@@ -522,7 +522,9 @@
             {
               "attempts": [
                 2.4914817753441894e+21,
-                2.6068827280556294e+21
+                2.6068827280556294e+21,
+                1.5973648789909374e+21,
+                2.036353380384206e+21
               ],
               "name": "DAYO-P",
               "top2Sum": 5.098364503399818e+21
@@ -591,6 +593,13 @@
               ],
               "name": "p88203044",
               "top2Sum": 1.9893950660255452e+20
+            },
+            {
+              "attempts": [
+                4.970797476839819e+19
+              ],
+              "name": "samwise08",
+              "top2Sum": 4.970797476839819e+19
             }
           ]
         }
