@@ -17,19 +17,19 @@
       "gainVsPreviousSeason": null,
       "name": "Nubis",
       "rank": 3,
-      "seasonTotal": 2.723381386377151e+22
+      "seasonTotal": 3.3840408461957692e+22
     },
     {
       "gainVsPreviousSeason": null,
       "name": "DAYO-P",
       "rank": 4,
-      "seasonTotal": 1.3376663887625832e+22
+      "seasonTotal": 1.5976046372843703e+22
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Koncalaz",
       "rank": 5,
-      "seasonTotal": 1.0806186440543594e+22
+      "seasonTotal": 1.3609537447701332e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -57,33 +57,33 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "PastalaVista",
+      "name": "MadameMischief",
       "rank": 10,
+      "seasonTotal": 2.084592517375578e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "PastalaVista",
+      "rank": 11,
       "seasonTotal": 1.781685286656212e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "pumpenjoe",
-      "rank": 11,
-      "seasonTotal": 1.7560438170621586e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "MadameMischief",
       "rank": 12,
-      "seasonTotal": 1.5753178239667232e+21
+      "seasonTotal": 1.7560438170621586e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "HakiLuffy",
       "rank": 13,
-      "seasonTotal": 6.712006827098033e+20
+      "seasonTotal": 8.84105238051487e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "BlackFlamE",
       "rank": 14,
-      "seasonTotal": 5.3466108524972854e+20
+      "seasonTotal": 5.364544640761043e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -799,10 +799,53 @@
             {
               "attempts": [
                 8.726652765744177e+19,
-                5.952241603062393e+19
+                5.952241603062393e+19,
+                6.1315794856999715e+19
               ],
               "name": "BlackFlamE",
-              "top2Sum": 1.4678894368806571e+20
+              "top2Sum": 1.4858232251444147e+20
+            },
+            {
+              "attempts": [
+                1.3905081198845991e+21,
+                1.2088743653332712e+21,
+                1.0846203490017983e+21
+              ],
+              "name": "DAYO-P",
+              "top2Sum": 2.5993824852178706e+21
+            },
+            {
+              "attempts": [
+                1.3524271059226783e+21,
+                1.4509239012350584e+21
+              ],
+              "name": "Koncalaz",
+              "top2Sum": 2.8033510071577367e+21
+            },
+            {
+              "attempts": [
+                8.008779006272984e+19,
+                1.157822813251518e+20,
+                9.712227401653186e+19
+              ],
+              "name": "HakiLuffy",
+              "top2Sum": 2.1290455534168365e+20
+            },
+            {
+              "attempts": [
+                3.3346978657818735e+21,
+                3.27189673240431e+21
+              ],
+              "name": "Nubis",
+              "top2Sum": 6.606594598186183e+21
+            },
+            {
+              "attempts": [
+                2.6370686628421213e+20,
+                2.4556782712464274e+20
+              ],
+              "name": "MadameMischief",
+              "top2Sum": 5.092746934088549e+20
             }
           ]
         },
