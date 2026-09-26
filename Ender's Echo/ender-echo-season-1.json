@@ -3,15 +3,15 @@
   "leaderboard": [
     {
       "gainVsPreviousSeason": null,
-      "name": "\u04bban",
+      "name": "Fl3xas",
       "rank": 1,
-      "seasonTotal": 1.7857043800350742e+23
+      "seasonTotal": 1.0628937733002405e+23
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Fl3xas",
+      "name": "\u04bban",
       "rank": 2,
-      "seasonTotal": 1.0628937733002405e+23
+      "seasonTotal": 9.265514685594196e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -111,51 +111,51 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "EMBALOCO",
-      "rank": 19,
-      "seasonTotal": 3.7649824104613636e+20
-    },
-    {
-      "gainVsPreviousSeason": null,
       "name": "theLP",
-      "rank": 20,
+      "rank": 19,
       "seasonTotal": 3.166567911157624e+20
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "groggen",
-      "rank": 21,
-      "seasonTotal": 2.881541328090123e+20
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "Apathy_",
-      "rank": 22,
-      "seasonTotal": 2.1200094796613694e+20
+      "name": "EMBALOCO",
+      "rank": 20,
+      "seasonTotal": 2.518446551634643e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "samwise08",
-      "rank": 23,
+      "rank": 21,
       "seasonTotal": 2.0059244285743658e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Player 66607264",
-      "rank": 24,
+      "rank": 22,
       "seasonTotal": 1.793402646790163e+20
     },
     {
       "gainVsPreviousSeason": null,
+      "name": "groggen",
+      "rank": 23,
+      "seasonTotal": 1.7514837946370756e+20
+    },
+    {
+      "gainVsPreviousSeason": null,
       "name": "BobBobberson",
-      "rank": 25,
+      "rank": 24,
       "seasonTotal": 1.5661969163421005e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "gubrax",
-      "rank": 26,
+      "rank": 25,
       "seasonTotal": 1.4935604997334008e+20
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "Apathy_",
+      "rank": 26,
+      "seasonTotal": 1.444512260002012e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -784,6 +784,14 @@
               ],
               "name": "RetinaDNA",
               "top2Sum": 9.393204304526311e+20
+            },
+            {
+              "attempts": [
+                2.9746998024181154e+19,
+                2.5847310025858167e+19
+              ],
+              "name": "gubrax",
+              "top2Sum": 5.5594308050039325e+19
             }
           ]
         }
@@ -798,12 +806,10 @@
           "players": [
             {
               "attempts": [
-                8.726652765744177e+19,
-                5.952241603062393e+19,
-                6.1315794856999715e+19
+                8.413314444416426e+19
               ],
-              "name": "BlackFlamE",
-              "top2Sum": 1.4858232251444147e+20
+              "name": "Gritchen",
+              "top2Sum": 8.413314444416426e+19
             },
             {
               "attempts": [
@@ -833,6 +839,15 @@
             },
             {
               "attempts": [
+                8.726652765744177e+19,
+                5.952241603062393e+19,
+                6.1315794856999715e+19
+              ],
+              "name": "BlackFlamE",
+              "top2Sum": 1.4858232251444147e+20
+            },
+            {
+              "attempts": [
                 3.3346978657818735e+21,
                 3.27189673240431e+21,
                 2.8912586296078306e+21,
@@ -848,58 +863,6 @@
               ],
               "name": "MadameMischief",
               "top2Sum": 5.092746934088549e+20
-            },
-            {
-              "attempts": [
-                8.413314444416426e+19
-              ],
-              "name": "Gritchen",
-              "top2Sum": 8.413314444416426e+19
-            }
-          ]
-        },
-        {
-          "date": "2026-09-29",
-          "day": 6,
-          "players": [
-            {
-              "attempts": [
-                2.703950200674475e+19,
-                4.051021995919098e+19
-              ],
-              "name": "Apathy_",
-              "top2Sum": 6.754972196593572e+19
-            },
-            {
-              "attempts": [
-                2.9746998024181154e+19,
-                2.5847310025858167e+19
-              ],
-              "name": "gubrax",
-              "top2Sum": 5.5594308050039325e+19
-            },
-            {
-              "attempts": [
-                4.088945516017824e+22,
-                4.502583598738722e+22
-              ],
-              "name": "\u04bban",
-              "top2Sum": 8.591529114756546e+22
-            },
-            {
-              "attempts": [
-                1.1300575334530476e+20
-              ],
-              "name": "groggen",
-              "top2Sum": 1.1300575334530476e+20
-            },
-            {
-              "attempts": [
-                6.496554569928916e+19,
-                5.96880401833829e+19
-              ],
-              "name": "EMBALOCO",
-              "top2Sum": 1.2465358588267207e+20
             }
           ]
         }
