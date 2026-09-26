@@ -23,7 +23,7 @@
       "gainVsPreviousSeason": null,
       "name": "DAYO-P",
       "rank": 4,
-      "seasonTotal": 1.2150170651109548e+22
+      "seasonTotal": 1.3135306963015036e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -123,63 +123,63 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Player 66607264",
+      "name": "samwise08",
       "rank": 21,
+      "seasonTotal": 2.0059244285743658e+20
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "Player 66607264",
+      "rank": 22,
       "seasonTotal": 1.793402646790163e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "groggen",
-      "rank": 22,
+      "rank": 23,
       "seasonTotal": 1.7514837946370756e+20
     },
     {
       "gainVsPreviousSeason": null,
+      "name": "BobBobberson",
+      "rank": 24,
+      "seasonTotal": 1.5661969163421005e+20
+    },
+    {
+      "gainVsPreviousSeason": null,
       "name": "Apathy_",
-      "rank": 23,
+      "rank": 25,
       "seasonTotal": 1.444512260002012e+20
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "samwise08",
-      "rank": 24,
-      "seasonTotal": 1.2818243546427176e+20
-    },
-    {
-      "gainVsPreviousSeason": null,
       "name": "datamaster",
-      "rank": 25,
+      "rank": 26,
       "seasonTotal": 1.1831980644213485e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "gubrax",
-      "rank": 26,
+      "rank": 27,
       "seasonTotal": 9.376174192330074e+19
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Player 80018314",
-      "rank": 27,
+      "rank": 28,
       "seasonTotal": 9.098470675997642e+19
     },
     {
       "gainVsPreviousSeason": null,
       "name": "faxnem",
-      "rank": 28,
+      "rank": 29,
       "seasonTotal": 8.712756201540131e+19
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Bensayyten",
-      "rank": 29,
-      "seasonTotal": 8.417322422829747e+19
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "BobBobberson",
       "rank": 30,
-      "seasonTotal": 6.3535733079751115e+19
+      "seasonTotal": 8.417322422829747e+19
     },
     {
       "gainVsPreviousSeason": null,
@@ -677,10 +677,11 @@
             },
             {
               "attempts": [
-                2.0593937821971138e+21
+                2.0593937821971138e+21,
+                9.851363119054877e+20
               ],
               "name": "DAYO-P",
-              "top2Sum": 2.0593937821971138e+21
+              "top2Sum": 3.0445300941026015e+21
             },
             {
               "attempts": [
@@ -751,6 +752,20 @@
               ],
               "name": "theLP",
               "top2Sum": 8.27758322749273e+19
+            },
+            {
+              "attempts": [
+                7.241000739316482e+19
+              ],
+              "name": "samwise08",
+              "top2Sum": 7.241000739316482e+19
+            },
+            {
+              "attempts": [
+                9.308395855445891e+19
+              ],
+              "name": "BobBobberson",
+              "top2Sum": 9.308395855445891e+19
             }
           ]
         }
