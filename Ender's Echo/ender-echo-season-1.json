@@ -3,15 +3,15 @@
   "leaderboard": [
     {
       "gainVsPreviousSeason": null,
-      "name": "Fl3xas",
+      "name": "\u04bban",
       "rank": 1,
-      "seasonTotal": 1.0628937733002405e+23
+      "seasonTotal": 1.7857043800350742e+23
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "\u04bban",
+      "name": "Fl3xas",
       "rank": 2,
-      "seasonTotal": 9.265514685594196e+22
+      "seasonTotal": 1.0628937733002405e+23
     },
     {
       "gainVsPreviousSeason": null,
@@ -81,87 +81,87 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Gritchen",
+      "name": "BlackFlamE",
       "rank": 14,
+      "seasonTotal": 5.3466108524972854e+20
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "Gritchen",
+      "rank": 15,
       "seasonTotal": 4.809834927970445e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "\u76feHeathcliff\u5263",
-      "rank": 15,
+      "rank": 16,
       "seasonTotal": 4.620427458299845e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "p88203044",
-      "rank": 16,
+      "rank": 17,
       "seasonTotal": 4.117938658173086e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "VictorMolusco",
-      "rank": 17,
+      "rank": 18,
       "seasonTotal": 4.000548442207443e+20
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "BlackFlamE",
-      "rank": 18,
-      "seasonTotal": 3.878721415616628e+20
+      "name": "EMBALOCO",
+      "rank": 19,
+      "seasonTotal": 3.7649824104613636e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "theLP",
-      "rank": 19,
+      "rank": 20,
       "seasonTotal": 3.166567911157624e+20
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "EMBALOCO",
-      "rank": 20,
-      "seasonTotal": 2.518446551634643e+20
+      "name": "groggen",
+      "rank": 21,
+      "seasonTotal": 2.881541328090123e+20
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "Apathy_",
+      "rank": 22,
+      "seasonTotal": 2.1200094796613694e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "samwise08",
-      "rank": 21,
+      "rank": 23,
       "seasonTotal": 2.0059244285743658e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Player 66607264",
-      "rank": 22,
+      "rank": 24,
       "seasonTotal": 1.793402646790163e+20
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "groggen",
-      "rank": 23,
-      "seasonTotal": 1.7514837946370756e+20
-    },
-    {
-      "gainVsPreviousSeason": null,
       "name": "BobBobberson",
-      "rank": 24,
+      "rank": 25,
       "seasonTotal": 1.5661969163421005e+20
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Apathy_",
-      "rank": 25,
-      "seasonTotal": 1.444512260002012e+20
+      "name": "gubrax",
+      "rank": 26,
+      "seasonTotal": 1.4935604997334008e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "datamaster",
-      "rank": 26,
-      "seasonTotal": 1.1831980644213485e+20
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "gubrax",
       "rank": 27,
-      "seasonTotal": 9.376174192330074e+19
+      "seasonTotal": 1.1831980644213485e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -789,6 +789,70 @@
         }
       ],
       "miniSeasonNumber": 1
+    },
+    {
+      "days": [
+        {
+          "date": "2026-09-27",
+          "day": 4,
+          "players": [
+            {
+              "attempts": [
+                8.726652765744177e+19,
+                5.952241603062393e+19
+              ],
+              "name": "BlackFlamE",
+              "top2Sum": 1.4678894368806571e+20
+            }
+          ]
+        },
+        {
+          "date": "2026-09-29",
+          "day": 6,
+          "players": [
+            {
+              "attempts": [
+                2.703950200674475e+19,
+                4.051021995919098e+19
+              ],
+              "name": "Apathy_",
+              "top2Sum": 6.754972196593572e+19
+            },
+            {
+              "attempts": [
+                2.9746998024181154e+19,
+                2.5847310025858167e+19
+              ],
+              "name": "gubrax",
+              "top2Sum": 5.5594308050039325e+19
+            },
+            {
+              "attempts": [
+                4.088945516017824e+22,
+                4.502583598738722e+22
+              ],
+              "name": "\u04bban",
+              "top2Sum": 8.591529114756546e+22
+            },
+            {
+              "attempts": [
+                1.1300575334530476e+20
+              ],
+              "name": "groggen",
+              "top2Sum": 1.1300575334530476e+20
+            },
+            {
+              "attempts": [
+                6.496554569928916e+19,
+                5.96880401833829e+19
+              ],
+              "name": "EMBALOCO",
+              "top2Sum": 1.2465358588267207e+20
+            }
+          ]
+        }
+      ],
+      "miniSeasonNumber": 2
     }
   ],
   "seasonNumber": 1,
