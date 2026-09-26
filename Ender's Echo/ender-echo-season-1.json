@@ -147,15 +147,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "gubrax",
+      "name": "datamaster",
       "rank": 25,
-      "seasonTotal": 9.376174192330074e+19
+      "seasonTotal": 1.1831980644213485e+20
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "datamaster",
+      "name": "gubrax",
       "rank": 26,
-      "seasonTotal": 9.198668101338261e+19
+      "seasonTotal": 9.376174192330074e+19
     },
     {
       "gainVsPreviousSeason": null,
@@ -738,10 +738,11 @@
             },
             {
               "attempts": [
-                2.651977961214274e+19
+                2.651977961214274e+19,
+                2.633312542875224e+19
               ],
               "name": "datamaster",
-              "top2Sum": 2.651977961214274e+19
+              "top2Sum": 5.2852905040894984e+19
             },
             {
               "attempts": [
