@@ -3,15 +3,15 @@
   "leaderboard": [
     {
       "gainVsPreviousSeason": null,
-      "name": "\u04bban",
+      "name": "Fl3xas",
       "rank": 1,
-      "seasonTotal": 9.265514685594196e+22
+      "seasonTotal": 1.0628937733002405e+23
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Fl3xas",
+      "name": "\u04bban",
       "rank": 2,
-      "seasonTotal": 6.983533349017213e+22
+      "seasonTotal": 9.265514685594196e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -23,7 +23,7 @@
       "gainVsPreviousSeason": null,
       "name": "DAYO-P",
       "rank": 4,
-      "seasonTotal": 1.3135306963015036e+22
+      "seasonTotal": 1.3376663887625832e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -678,10 +678,11 @@
             {
               "attempts": [
                 2.0593937821971138e+21,
-                9.851363119054877e+20
+                9.851363119054877e+20,
+                1.2264932365162845e+21
               ],
               "name": "DAYO-P",
-              "top2Sum": 3.0445300941026015e+21
+              "top2Sum": 3.2858870187133984e+21
             },
             {
               "attempts": [
@@ -766,6 +767,14 @@
               ],
               "name": "BobBobberson",
               "top2Sum": 9.308395855445891e+19
+            },
+            {
+              "attempts": [
+                2.3035555746523745e+22,
+                1.3418488093328183e+22
+              ],
+              "name": "Fl3xas",
+              "top2Sum": 3.6454043839851928e+22
             }
           ]
         }
