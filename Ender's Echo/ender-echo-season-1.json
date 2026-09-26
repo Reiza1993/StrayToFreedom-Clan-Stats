@@ -105,21 +105,21 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "BlackFlamE",
+      "name": "theLP",
       "rank": 18,
+      "seasonTotal": 3.166567911157624e+20
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "BlackFlamE",
+      "rank": 19,
       "seasonTotal": 3.0307675644226096e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "EMBALOCO",
-      "rank": 19,
-      "seasonTotal": 2.518446551634643e+20
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "theLP",
       "rank": 20,
-      "seasonTotal": 2.3388095884083505e+20
+      "seasonTotal": 2.518446551634643e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -153,27 +153,27 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Player 80018314",
+      "name": "datamaster",
       "rank": 26,
+      "seasonTotal": 9.198668101338261e+19
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "Player 80018314",
+      "rank": 27,
       "seasonTotal": 9.098470675997642e+19
     },
     {
       "gainVsPreviousSeason": null,
       "name": "faxnem",
-      "rank": 27,
+      "rank": 28,
       "seasonTotal": 8.712756201540131e+19
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Bensayyten",
-      "rank": 28,
-      "seasonTotal": 8.417322422829747e+19
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "datamaster",
       "rank": 29,
-      "seasonTotal": 6.546690140123986e+19
+      "seasonTotal": 8.417322422829747e+19
     },
     {
       "gainVsPreviousSeason": null,
@@ -735,6 +735,21 @@
               ],
               "name": "Nubis",
               "top2Sum": 9.216269102590788e+21
+            },
+            {
+              "attempts": [
+                2.651977961214274e+19
+              ],
+              "name": "datamaster",
+              "top2Sum": 2.651977961214274e+19
+            },
+            {
+              "attempts": [
+                4.338386766171224e+19,
+                3.939196461321507e+19
+              ],
+              "name": "theLP",
+              "top2Sum": 8.27758322749273e+19
             }
           ]
         }
