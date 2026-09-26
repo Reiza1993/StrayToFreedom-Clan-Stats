@@ -17,7 +17,7 @@
       "gainVsPreviousSeason": null,
       "name": "Nubis",
       "rank": 3,
-      "seasonTotal": 3.3840408461957692e+22
+      "seasonTotal": 3.4359764079688523e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -81,15 +81,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "BlackFlamE",
+      "name": "Gritchen",
       "rank": 14,
-      "seasonTotal": 5.364544640761043e+20
+      "seasonTotal": 5.6511663724120873e+20
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Gritchen",
+      "name": "BlackFlamE",
       "rank": 15,
-      "seasonTotal": 4.809834927970445e+20
+      "seasonTotal": 5.364544640761043e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -834,10 +834,12 @@
             {
               "attempts": [
                 3.3346978657818735e+21,
-                3.27189673240431e+21
+                3.27189673240431e+21,
+                2.8912586296078306e+21,
+                3.791252350135143e+21
               ],
               "name": "Nubis",
-              "top2Sum": 6.606594598186183e+21
+              "top2Sum": 7.125950215917016e+21
             },
             {
               "attempts": [
@@ -846,6 +848,13 @@
               ],
               "name": "MadameMischief",
               "top2Sum": 5.092746934088549e+20
+            },
+            {
+              "attempts": [
+                8.413314444416426e+19
+              ],
+              "name": "Gritchen",
+              "top2Sum": 8.413314444416426e+19
             }
           ]
         },
