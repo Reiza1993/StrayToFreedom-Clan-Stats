@@ -53,7 +53,7 @@
       "gainVsPreviousSeason": null,
       "name": "RetinaDNA",
       "rank": 9,
-      "seasonTotal": 2.2535720852447528e+21
+      "seasonTotal": 3.192892515697384e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -105,15 +105,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "theLP",
+      "name": "BlackFlamE",
       "rank": 18,
-      "seasonTotal": 3.166567911157624e+20
+      "seasonTotal": 3.878721415616628e+20
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "BlackFlamE",
+      "name": "theLP",
       "rank": 19,
-      "seasonTotal": 3.0307675644226096e+20
+      "seasonTotal": 3.166567911157624e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -710,10 +710,11 @@
             },
             {
               "attempts": [
-                5.11035671216148e+19
+                5.11035671216148e+19,
+                8.47953851194019e+19
               ],
               "name": "BlackFlamE",
-              "top2Sum": 5.11035671216148e+19
+              "top2Sum": 1.358989522410167e+20
             },
             {
               "attempts": [
@@ -775,6 +776,14 @@
               ],
               "name": "Fl3xas",
               "top2Sum": 3.6454043839851928e+22
+            },
+            {
+              "attempts": [
+                4.402391435879248e+20,
+                4.9908128686470634e+20
+              ],
+              "name": "RetinaDNA",
+              "top2Sum": 9.393204304526311e+20
             }
           ]
         }
