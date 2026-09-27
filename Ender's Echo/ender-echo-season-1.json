@@ -5,7 +5,7 @@
       "gainVsPreviousSeason": null,
       "name": "Fl3xas",
       "rank": 1,
-      "seasonTotal": 1.4035383862642559e+23
+      "seasonTotal": 1.579525469370353e+23
     },
     {
       "gainVsPreviousSeason": null,
@@ -17,7 +17,7 @@
       "gainVsPreviousSeason": null,
       "name": "Nubis",
       "rank": 3,
-      "seasonTotal": 3.4359764079688523e+22
+      "seasonTotal": 4.211306542061326e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -51,15 +51,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "RetinaDNA",
+      "name": "pumpenjoe",
       "rank": 9,
-      "seasonTotal": 3.610122151795102e+21
+      "seasonTotal": 4.524357479966259e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "pumpenjoe",
+      "name": "RetinaDNA",
       "rank": 10,
-      "seasonTotal": 2.9411962462524e+21
+      "seasonTotal": 3.610122151795102e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -81,21 +81,21 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "\u76feHeathcliff\u5263",
+      "name": "VictorMolusco",
       "rank": 14,
+      "seasonTotal": 8.020050690614703e+20
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "\u76feHeathcliff\u5263",
+      "rank": 15,
       "seasonTotal": 7.837060302871132e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "BlackFlamE",
-      "rank": 15,
-      "seasonTotal": 6.567384900008951e+20
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "VictorMolusco",
       "rank": 16,
-      "seasonTotal": 6.318839532813383e+20
+      "seasonTotal": 6.567384900008951e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -111,21 +111,21 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "EMBALOCO",
+      "name": "theLP",
       "rank": 19,
+      "seasonTotal": 4.1987973067290064e+20
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "EMBALOCO",
+      "rank": 20,
       "seasonTotal": 3.761774310493685e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "groggen",
-      "rank": 20,
-      "seasonTotal": 3.1900201057854285e+20
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "theLP",
       "rank": 21,
-      "seasonTotal": 3.166567911157624e+20
+      "seasonTotal": 3.1900201057854285e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -167,7 +167,7 @@
       "gainVsPreviousSeason": null,
       "name": "datamaster",
       "rank": 28,
-      "seasonTotal": 1.1831980644213485e+20
+      "seasonTotal": 1.2267586192093836e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -1035,6 +1035,53 @@
               ],
               "name": "MadameMischief",
               "top2Sum": 5.04926814534249e+20
+            },
+            {
+              "attempts": [
+                4.3560554788035185e+18
+              ],
+              "name": "datamaster",
+              "top2Sum": 4.3560554788035185e+18
+            },
+            {
+              "attempts": [
+                5.482150778678362e+19,
+                4.840143177035469e+19
+              ],
+              "name": "theLP",
+              "top2Sum": 1.032229395571383e+20
+            },
+            {
+              "attempts": [
+                7.854078880238558e+19,
+                9.158032697774637e+19
+              ],
+              "name": "VictorMolusco",
+              "top2Sum": 1.7012111578013195e+20
+            },
+            {
+              "attempts": [
+                1.5831612337138594e+21
+              ],
+              "name": "pumpenjoe",
+              "top2Sum": 1.5831612337138594e+21
+            },
+            {
+              "attempts": [
+                3.8716972210985695e+21,
+                2.7404111763243443e+21,
+                2.6983209701803887e+21,
+                3.881604119826164e+21
+              ],
+              "name": "Nubis",
+              "top2Sum": 7.753301340924733e+21
+            },
+            {
+              "attempts": [
+                1.75987083106097e+22
+              ],
+              "name": "Fl3xas",
+              "top2Sum": 1.75987083106097e+22
             }
           ]
         }
