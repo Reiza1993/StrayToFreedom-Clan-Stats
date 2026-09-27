@@ -5,7 +5,7 @@
       "gainVsPreviousSeason": null,
       "name": "Fl3xas",
       "rank": 1,
-      "seasonTotal": 1.2227761653471821e+23
+      "seasonTotal": 1.4035383862642559e+23
     },
     {
       "gainVsPreviousSeason": null,
@@ -53,55 +53,55 @@
       "gainVsPreviousSeason": null,
       "name": "RetinaDNA",
       "rank": 9,
-      "seasonTotal": 3.192892515697384e+21
+      "seasonTotal": 3.610122151795102e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "pumpenjoe",
+      "rank": 10,
+      "seasonTotal": 2.9411962462524e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "PastalaVista",
-      "rank": 10,
+      "rank": 11,
       "seasonTotal": 2.66806196117143e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "MadameMischief",
-      "rank": 11,
-      "seasonTotal": 2.084592517375578e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "pumpenjoe",
       "rank": 12,
-      "seasonTotal": 1.7560438170621586e+21
+      "seasonTotal": 2.589519331909827e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "HakiLuffy",
       "rank": 13,
-      "seasonTotal": 8.84105238051487e+20
+      "seasonTotal": 1.1096678603723171e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "\u76feHeathcliff\u5263",
       "rank": 14,
-      "seasonTotal": 6.530130746975372e+20
+      "seasonTotal": 7.837060302871132e+20
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "BlackFlamE",
+      "rank": 15,
+      "seasonTotal": 6.567384900008951e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "VictorMolusco",
-      "rank": 15,
+      "rank": 16,
       "seasonTotal": 6.318839532813383e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Gritchen",
-      "rank": 16,
-      "seasonTotal": 6.245423518616591e+20
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "BlackFlamE",
       "rank": 17,
-      "seasonTotal": 5.364544640761043e+20
+      "seasonTotal": 6.245423518616591e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -113,7 +113,7 @@
       "gainVsPreviousSeason": null,
       "name": "EMBALOCO",
       "rank": 19,
-      "seasonTotal": 3.6680791653585794e+20
+      "seasonTotal": 3.761774310493685e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -954,10 +954,11 @@
             },
             {
               "attempts": [
-                1.9097032886755276e+20
+                1.9097032886755276e+20,
+                1.3069295558957588e+20
               ],
               "name": "\u76feHeathcliff\u5263",
-              "top2Sum": 1.9097032886755276e+20
+              "top2Sum": 3.2166328445712866e+20
             },
             {
               "attempts": [
@@ -976,18 +977,64 @@
             },
             {
               "attempts": [
-                1.5988239204694157e+22
+                1.5988239204694157e+22,
+                1.8076222091707382e+22
               ],
               "name": "Fl3xas",
-              "top2Sum": 1.5988239204694157e+22
+              "top2Sum": 3.4064461296401537e+22
             },
             {
               "attempts": [
                 6.570794667026022e+19,
-                4.925531470213347e+19
+                4.925531470213347e+19,
+                5.8624829215644025e+19
               ],
               "name": "EMBALOCO",
-              "top2Sum": 1.1496326137239368e+20
+              "top2Sum": 1.2433277588590425e+20
+            },
+            {
+              "attempts": [
+                4.17229636097718e+20
+              ],
+              "name": "RetinaDNA",
+              "top2Sum": 4.17229636097718e+20
+            },
+            {
+              "attempts": [
+                1.1851524291902416e+21
+              ],
+              "name": "pumpenjoe",
+              "top2Sum": 1.1851524291902416e+21
+            }
+          ]
+        },
+        {
+          "date": "2026-09-28",
+          "day": 5,
+          "players": [
+            {
+              "attempts": [
+                1.1917805367018883e+20,
+                1.0638456865064138e+20
+              ],
+              "name": "HakiLuffy",
+              "top2Sum": 2.255626223208302e+20
+            },
+            {
+              "attempts": [
+                6.788414387707329e+19,
+                5.23998820477175e+19
+              ],
+              "name": "BlackFlamE",
+              "top2Sum": 1.2028402592479078e+20
+            },
+            {
+              "attempts": [
+                2.5055384607826687e+20,
+                2.5437296845598215e+20
+              ],
+              "name": "MadameMischief",
+              "top2Sum": 5.04926814534249e+20
             }
           ]
         }
