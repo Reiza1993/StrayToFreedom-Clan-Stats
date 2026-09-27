@@ -35,7 +35,7 @@
       "gainVsPreviousSeason": null,
       "name": "SngphO",
       "rank": 6,
-      "seasonTotal": 9.827588731810473e+21
+      "seasonTotal": 1.2266447389499108e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -81,33 +81,33 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Gritchen",
+      "name": "VictorMolusco",
       "rank": 14,
-      "seasonTotal": 5.6511663724120873e+20
+      "seasonTotal": 6.318839532813383e+20
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "Gritchen",
+      "rank": 15,
+      "seasonTotal": 6.245423518616591e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "BlackFlamE",
-      "rank": 15,
+      "rank": 16,
       "seasonTotal": 5.364544640761043e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "\u76feHeathcliff\u5263",
-      "rank": 16,
+      "rank": 17,
       "seasonTotal": 4.620427458299845e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "p88203044",
-      "rank": 17,
-      "seasonTotal": 4.117938658173086e+20
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "VictorMolusco",
       "rank": 18,
-      "seasonTotal": 4.000548442207443e+20
+      "seasonTotal": 4.117938658173086e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -806,10 +806,11 @@
           "players": [
             {
               "attempts": [
-                8.413314444416426e+19
+                8.413314444416426e+19,
+                5.942571462045036e+19
               ],
               "name": "Gritchen",
-              "top2Sum": 8.413314444416426e+19
+              "top2Sum": 1.4355885906461462e+20
             },
             {
               "attempts": [
@@ -863,6 +864,24 @@
               ],
               "name": "MadameMischief",
               "top2Sum": 5.092746934088549e+20
+            },
+            {
+              "attempts": [
+                1.1963892567131236e+20,
+                1.1219018338928168e+20
+              ],
+              "name": "VictorMolusco",
+              "top2Sum": 2.3182910906059404e+20
+            },
+            {
+              "attempts": [
+                1.4027707511295485e+21,
+                7.881876833742756e+20,
+                1.0345279616846567e+21,
+                1.0360879065590859e+21
+              ],
+              "name": "SngphO",
+              "top2Sum": 2.4388586576886345e+21
             }
           ]
         }
