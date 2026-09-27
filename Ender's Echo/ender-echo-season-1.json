@@ -99,15 +99,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "\u76feHeathcliff\u5263",
+      "name": "p88203044",
       "rank": 17,
-      "seasonTotal": 4.620427458299845e+20
+      "seasonTotal": 5.268421195820913e+20
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "p88203044",
+      "name": "\u76feHeathcliff\u5263",
       "rank": 18,
-      "seasonTotal": 4.117938658173086e+20
+      "seasonTotal": 4.620427458299845e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -117,51 +117,51 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "EMBALOCO",
+      "name": "samwise08",
       "rank": 20,
+      "seasonTotal": 2.850960991157673e+20
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "Apathy_",
+      "rank": 21,
+      "seasonTotal": 2.6403347932928777e+20
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "EMBALOCO",
+      "rank": 22,
       "seasonTotal": 2.518446551634643e+20
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "samwise08",
-      "rank": 21,
-      "seasonTotal": 2.0059244285743658e+20
+      "name": "Bensayyten",
+      "rank": 23,
+      "seasonTotal": 2.170659270782844e+20
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "gubrax",
+      "rank": 24,
+      "seasonTotal": 2.1280896547511537e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Player 66607264",
-      "rank": 22,
+      "rank": 25,
       "seasonTotal": 1.793402646790163e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "groggen",
-      "rank": 23,
+      "rank": 26,
       "seasonTotal": 1.7514837946370756e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "BobBobberson",
-      "rank": 24,
-      "seasonTotal": 1.5661969163421005e+20
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "gubrax",
-      "rank": 25,
-      "seasonTotal": 1.4935604997334008e+20
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "Apathy_",
-      "rank": 26,
-      "seasonTotal": 1.444512260002012e+20
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "Bensayyten",
       "rank": 27,
-      "seasonTotal": 1.2845628831680456e+20
+      "seasonTotal": 1.5661969163421005e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -183,21 +183,21 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Belthazar",
+      "name": "Rzzza",
       "rank": 31,
+      "seasonTotal": 5.99109601148185e+19
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "Belthazar",
+      "rank": 32,
       "seasonTotal": 5.436194250693497e+19
     },
     {
       "gainVsPreviousSeason": null,
       "name": "ergiangi",
-      "rank": 32,
-      "seasonTotal": 5.2529945458542174e+19
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "Rzzza",
       "rank": 33,
-      "seasonTotal": 3.228788324166999e+19
+      "seasonTotal": 5.2529945458542174e+19
     }
   ],
   "miniSeasons": [
@@ -885,10 +885,11 @@
             },
             {
               "attempts": [
-                4.42830640885071e+19
+                4.42830640885071e+19,
+                8.860963876147983e+19
               ],
               "name": "Bensayyten",
-              "top2Sum": 4.42830640885071e+19
+              "top2Sum": 1.3289270284998692e+20
             },
             {
               "attempts": [
@@ -897,6 +898,43 @@
               ],
               "name": "PastalaVista",
               "top2Sum": 8.863766745152175e+20
+            },
+            {
+              "attempts": [
+                4.558968379501785e+19,
+                7.399256953406872e+19
+              ],
+              "name": "Apathy_",
+              "top2Sum": 1.1958225332908658e+20
+            },
+            {
+              "attempts": [
+                3.3897721994751693e+19,
+                2.95551935070236e+19
+              ],
+              "name": "gubrax",
+              "top2Sum": 6.345291550177529e+19
+            },
+            {
+              "attempts": [
+                1.1504825376478272e+20
+              ],
+              "name": "p88203044",
+              "top2Sum": 1.1504825376478272e+20
+            },
+            {
+              "attempts": [
+                2.7623076873148514e+19
+              ],
+              "name": "Rzzza",
+              "top2Sum": 2.7623076873148514e+19
+            },
+            {
+              "attempts": [
+                8.450365625833072e+19
+              ],
+              "name": "samwise08",
+              "top2Sum": 8.450365625833072e+19
             }
           ]
         }
