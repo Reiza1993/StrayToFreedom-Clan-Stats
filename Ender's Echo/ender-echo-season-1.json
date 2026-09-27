@@ -57,15 +57,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "MadameMischief",
+      "name": "PastalaVista",
       "rank": 10,
-      "seasonTotal": 2.084592517375578e+21
+      "seasonTotal": 2.66806196117143e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "PastalaVista",
+      "name": "MadameMischief",
       "rank": 11,
-      "seasonTotal": 1.781685286656212e+21
+      "seasonTotal": 2.084592517375578e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -159,27 +159,27 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "datamaster",
+      "name": "Bensayyten",
       "rank": 27,
+      "seasonTotal": 1.2845628831680456e+20
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "datamaster",
+      "rank": 28,
       "seasonTotal": 1.1831980644213485e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Player 80018314",
-      "rank": 28,
+      "rank": 29,
       "seasonTotal": 9.098470675997642e+19
     },
     {
       "gainVsPreviousSeason": null,
       "name": "faxnem",
-      "rank": 29,
-      "seasonTotal": 8.712756201540131e+19
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "Bensayyten",
       "rank": 30,
-      "seasonTotal": 8.417322422829747e+19
+      "seasonTotal": 8.712756201540131e+19
     },
     {
       "gainVsPreviousSeason": null,
@@ -882,6 +882,21 @@
               ],
               "name": "SngphO",
               "top2Sum": 2.4388586576886345e+21
+            },
+            {
+              "attempts": [
+                4.42830640885071e+19
+              ],
+              "name": "Bensayyten",
+              "top2Sum": 4.42830640885071e+19
+            },
+            {
+              "attempts": [
+                4.38919140982654e+20,
+                4.4745753353256364e+20
+              ],
+              "name": "PastalaVista",
+              "top2Sum": 8.863766745152175e+20
             }
           ]
         }
