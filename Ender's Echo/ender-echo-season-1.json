@@ -39,15 +39,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "\u795eSterben\u6b7b",
+      "name": "RABBIT5",
       "rank": 7,
-      "seasonTotal": 9.049203013527458e+21
+      "seasonTotal": 1.094577925337102e+22
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "RABBIT5",
+      "name": "\u795eSterben\u6b7b",
       "rank": 8,
-      "seasonTotal": 6.738183494141795e+21
+      "seasonTotal": 9.049203013527458e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -935,6 +935,14 @@
               ],
               "name": "samwise08",
               "top2Sum": 8.450365625833072e+19
+            },
+            {
+              "attempts": [
+                1.5020579285055497e+21,
+                2.705537830723677e+21
+              ],
+              "name": "RABBIT5",
+              "top2Sum": 4.2075957592292265e+21
             }
           ]
         }
