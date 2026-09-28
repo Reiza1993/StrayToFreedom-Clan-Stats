@@ -17,7 +17,7 @@
       "gainVsPreviousSeason": null,
       "name": "Nubis",
       "rank": 3,
-      "seasonTotal": 4.211306542061326e+22
+      "seasonTotal": 5.005245040585006e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -81,33 +81,33 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "p88203044",
+      "name": "VictorMolusco",
       "rank": 14,
+      "seasonTotal": 1.0044146352252867e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "p88203044",
+      "rank": 15,
       "seasonTotal": 8.563979017640714e+20
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "VictorMolusco",
-      "rank": 15,
-      "seasonTotal": 8.020050690614703e+20
+      "name": "Gritchen",
+      "rank": 16,
+      "seasonTotal": 8.256700155904794e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "\u76feHeathcliff\u5263",
-      "rank": 16,
+      "rank": 17,
       "seasonTotal": 7.837060302871132e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "NeonCBV",
-      "rank": 17,
-      "seasonTotal": 7.40338254681875e+20
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "Gritchen",
       "rank": 18,
-      "seasonTotal": 7.327408572650096e+20
+      "seasonTotal": 7.40338254681875e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -147,27 +147,27 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "BobBobberson",
+      "name": "faxnem",
       "rank": 25,
+      "seasonTotal": 3.0467003491433074e+20
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "BobBobberson",
+      "rank": 26,
       "seasonTotal": 2.9466209058429937e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "samwise08",
-      "rank": 26,
+      "rank": 27,
       "seasonTotal": 2.850960991157673e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "gubrax",
-      "rank": 27,
-      "seasonTotal": 2.758563891710193e+20
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "faxnem",
       "rank": 28,
-      "seasonTotal": 1.9668211755115872e+20
+      "seasonTotal": 2.758563891710193e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -1220,10 +1220,11 @@
             },
             {
               "attempts": [
-                1.095545555357574e+20
+                1.095545555357574e+20,
+                1.0798791736317205e+20
               ],
               "name": "faxnem",
-              "top2Sum": 1.095545555357574e+20
+              "top2Sum": 2.1754247289892943e+20
             },
             {
               "attempts": [
@@ -1243,6 +1244,29 @@
               ],
               "name": "Fl3xas",
               "top2Sum": 4.116475876225942e+22
+            },
+            {
+              "attempts": [
+                9.29291583254698e+19
+              ],
+              "name": "Gritchen",
+              "top2Sum": 9.29291583254698e+19
+            },
+            {
+              "attempts": [
+                1.161232405524746e+20,
+                8.628632561134184e+19
+              ],
+              "name": "VictorMolusco",
+              "top2Sum": 2.0240956616381645e+20
+            },
+            {
+              "attempts": [
+                3.7665463013437855e+21,
+                4.172838683893012e+21
+              ],
+              "name": "Nubis",
+              "top2Sum": 7.939384985236797e+21
             }
           ]
         }
