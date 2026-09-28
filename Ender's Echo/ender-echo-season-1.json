@@ -21,27 +21,27 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "DAYO-P",
+      "name": "RABBIT5",
       "rank": 4,
+      "seasonTotal": 1.7308959608454118e+22
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "DAYO-P",
+      "rank": 5,
       "seasonTotal": 1.5976046372843703e+22
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Koncalaz",
-      "rank": 5,
+      "rank": 6,
       "seasonTotal": 1.3609537447701332e+22
     },
     {
       "gainVsPreviousSeason": null,
       "name": "SngphO",
-      "rank": 6,
-      "seasonTotal": 1.2266447389499108e+22
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "RABBIT5",
       "rank": 7,
-      "seasonTotal": 1.094577925337102e+22
+      "seasonTotal": 1.2266447389499108e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -1094,6 +1094,14 @@
               ],
               "name": "Gritchen",
               "top2Sum": 1.0819850540335055e+20
+            },
+            {
+              "attempts": [
+                2.2849029523795922e+21,
+                4.078277402703505e+21
+              ],
+              "name": "RABBIT5",
+              "top2Sum": 6.363180355083097e+21
             }
           ]
         }
