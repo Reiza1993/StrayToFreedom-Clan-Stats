@@ -39,15 +39,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Koncalaz",
+      "name": "SngphO",
       "rank": 7,
-      "seasonTotal": 1.3609537447701332e+22
+      "seasonTotal": 1.4584733721256486e+22
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "SngphO",
+      "name": "Koncalaz",
       "rank": 8,
-      "seasonTotal": 1.2266447389499108e+22
+      "seasonTotal": 1.3609537447701332e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -111,21 +111,21 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "theLP",
+      "name": "EMBALOCO",
       "rank": 19,
+      "seasonTotal": 4.4874169870234714e+20
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "theLP",
+      "rank": 20,
       "seasonTotal": 4.1987973067290064e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Apathy_",
-      "rank": 20,
-      "seasonTotal": 3.9012639714327344e+20
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "EMBALOCO",
       "rank": 21,
-      "seasonTotal": 3.761774310493685e+20
+      "seasonTotal": 3.9012639714327344e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -165,27 +165,27 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "datamaster",
+      "name": "Player 80018314",
       "rank": 28,
+      "seasonTotal": 1.3818824297975335e+20
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "datamaster",
+      "rank": 29,
       "seasonTotal": 1.281020678969742e+20
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Player 80018314",
-      "rank": 29,
-      "seasonTotal": 9.098470675997642e+19
+      "name": "Belthazar",
+      "rank": 30,
+      "seasonTotal": 1.196787516465513e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "faxnem",
-      "rank": 30,
-      "seasonTotal": 8.712756201540131e+19
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "Belthazar",
       "rank": 31,
-      "seasonTotal": 8.215649655710707e+19
+      "seasonTotal": 8.712756201540131e+19
     },
     {
       "gainVsPreviousSeason": null,
@@ -1151,6 +1151,37 @@
               ],
               "name": "gubrax",
               "top2Sum": 6.304742369590391e+19
+            },
+            {
+              "attempts": [
+                1.92577932082283e+19,
+                1.8264461881215924e+19
+              ],
+              "name": "Belthazar",
+              "top2Sum": 3.7522255089444225e+19
+            },
+            {
+              "attempts": [
+                1.3552924500009484e+21,
+                9.6299388175643e+20
+              ],
+              "name": "SngphO",
+              "top2Sum": 2.3182863317573784e+21
+            },
+            {
+              "attempts": [
+                7.256426765297862e+19
+              ],
+              "name": "EMBALOCO",
+              "top2Sum": 7.256426765297862e+19
+            },
+            {
+              "attempts": [
+                2.5446763792075768e+19,
+                2.175677242770116e+19
+              ],
+              "name": "Player 80018314",
+              "top2Sum": 4.7203536219776926e+19
             }
           ]
         }
