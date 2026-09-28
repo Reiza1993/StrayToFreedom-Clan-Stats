@@ -147,15 +147,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Bensayyten",
+      "name": "gubrax",
       "rank": 25,
-      "seasonTotal": 2.170659270782844e+20
+      "seasonTotal": 2.758563891710193e+20
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "gubrax",
+      "name": "Bensayyten",
       "rank": 26,
-      "seasonTotal": 2.1280896547511537e+20
+      "seasonTotal": 2.170659270782844e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -1143,6 +1143,14 @@
               ],
               "name": "p88203044",
               "top2Sum": 3.295557821819801e+20
+            },
+            {
+              "attempts": [
+                2.794171770933296e+19,
+                3.510570598657095e+19
+              ],
+              "name": "gubrax",
+              "top2Sum": 6.304742369590391e+19
             }
           ]
         }
