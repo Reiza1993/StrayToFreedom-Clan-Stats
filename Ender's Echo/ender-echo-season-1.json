@@ -5,7 +5,7 @@
       "gainVsPreviousSeason": null,
       "name": "Fl3xas",
       "rank": 1,
-      "seasonTotal": 1.579525469370353e+23
+      "seasonTotal": 1.750227725239166e+23
     },
     {
       "gainVsPreviousSeason": null,
@@ -93,15 +93,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "BlackFlamE",
+      "name": "Gritchen",
       "rank": 16,
-      "seasonTotal": 6.567384900008951e+20
+      "seasonTotal": 7.327408572650096e+20
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Gritchen",
+      "name": "BlackFlamE",
       "rank": 17,
-      "seasonTotal": 6.245423518616591e+20
+      "seasonTotal": 6.567384900008951e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -167,7 +167,7 @@
       "gainVsPreviousSeason": null,
       "name": "datamaster",
       "rank": 28,
-      "seasonTotal": 1.2267586192093836e+20
+      "seasonTotal": 1.281020678969742e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -1038,10 +1038,11 @@
             },
             {
               "attempts": [
-                4.3560554788035185e+18
+                4.3560554788035185e+18,
+                5.426205976035837e+18
               ],
               "name": "datamaster",
-              "top2Sum": 4.3560554788035185e+18
+              "top2Sum": 9.782261454839355e+18
             },
             {
               "attempts": [
@@ -1078,10 +1079,21 @@
             },
             {
               "attempts": [
-                1.75987083106097e+22
+                1.75987083106097e+22,
+                9.311014908496305e+21,
+                1.2960881057584453e+22,
+                1.7070225586881307e+22
               ],
               "name": "Fl3xas",
-              "top2Sum": 1.75987083106097e+22
+              "top2Sum": 3.4668933897491006e+22
+            },
+            {
+              "attempts": [
+                5.744471767148722e+19,
+                5.075378773186334e+19
+              ],
+              "name": "Gritchen",
+              "top2Sum": 1.0819850540335055e+20
             }
           ]
         }
