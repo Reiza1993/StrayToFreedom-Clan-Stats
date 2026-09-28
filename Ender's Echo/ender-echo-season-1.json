@@ -11,7 +11,7 @@
       "gainVsPreviousSeason": null,
       "name": "\u04bban",
       "rank": 2,
-      "seasonTotal": 9.265514685594196e+22
+      "seasonTotal": 1.70101127341382e+23
     },
     {
       "gainVsPreviousSeason": null,
@@ -21,33 +21,33 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "RABBIT5",
+      "name": "DAYO-P",
       "rank": 4,
+      "seasonTotal": 1.841990014269357e+22
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "RABBIT5",
+      "rank": 5,
       "seasonTotal": 1.7308959608454118e+22
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "DAYO-P",
-      "rank": 5,
-      "seasonTotal": 1.5976046372843703e+22
+      "name": "\u795eSterben\u6b7b",
+      "rank": 6,
+      "seasonTotal": 1.6267331401483987e+22
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Koncalaz",
-      "rank": 6,
+      "rank": 7,
       "seasonTotal": 1.3609537447701332e+22
     },
     {
       "gainVsPreviousSeason": null,
       "name": "SngphO",
-      "rank": 7,
-      "seasonTotal": 1.2266447389499108e+22
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "\u795eSterben\u6b7b",
       "rank": 8,
-      "seasonTotal": 9.049203013527458e+21
+      "seasonTotal": 1.2266447389499108e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -81,33 +81,33 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "VictorMolusco",
+      "name": "p88203044",
       "rank": 14,
+      "seasonTotal": 8.563979017640714e+20
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "VictorMolusco",
+      "rank": 15,
       "seasonTotal": 8.020050690614703e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "\u76feHeathcliff\u5263",
-      "rank": 15,
+      "rank": 16,
       "seasonTotal": 7.837060302871132e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Gritchen",
-      "rank": 16,
+      "rank": 17,
       "seasonTotal": 7.327408572650096e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "BlackFlamE",
-      "rank": 17,
-      "seasonTotal": 6.567384900008951e+20
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "p88203044",
       "rank": 18,
-      "seasonTotal": 5.268421195820913e+20
+      "seasonTotal": 6.567384900008951e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -1110,6 +1110,39 @@
               ],
               "name": "Apathy_",
               "top2Sum": 1.2609291781398564e+20
+            },
+            {
+              "attempts": [
+                1.2104383401597324e+21,
+                1.2334154296901354e+21,
+                1.0939027315915415e+21
+              ],
+              "name": "DAYO-P",
+              "top2Sum": 2.443853769849868e+21
+            },
+            {
+              "attempts": [
+                3.7394648152582337e+21,
+                3.4786635726982957e+21
+              ],
+              "name": "\u795eSterben\u6b7b",
+              "top2Sum": 7.218128387956529e+21
+            },
+            {
+              "attempts": [
+                3.5882552490852046e+22,
+                4.1563427994588e+22
+              ],
+              "name": "\u04bban",
+              "top2Sum": 7.744598048544004e+22
+            },
+            {
+              "attempts": [
+                1.378731537890987e+20,
+                1.9168262839288136e+20
+              ],
+              "name": "p88203044",
+              "top2Sum": 3.295557821819801e+20
             }
           ]
         }
