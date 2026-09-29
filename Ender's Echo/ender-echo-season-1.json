@@ -5,7 +5,7 @@
       "gainVsPreviousSeason": null,
       "name": "Fl3xas",
       "rank": 1,
-      "seasonTotal": 2.6763097684277446e+23
+      "seasonTotal": 2.68336625074363e+23
     },
     {
       "gainVsPreviousSeason": null,
@@ -33,15 +33,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "\u795eSterben\u6b7b",
+      "name": "SngphO",
       "rank": 6,
-      "seasonTotal": 1.98365354160865e+22
+      "seasonTotal": 2.3003428987019373e+22
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "SngphO",
+      "name": "\u795eSterben\u6b7b",
       "rank": 7,
-      "seasonTotal": 1.8906523311476746e+22
+      "seasonTotal": 1.98365354160865e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -93,21 +93,21 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "p88203044",
+      "name": "Gritchen",
       "rank": 16,
+      "seasonTotal": 1.0014091562640293e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "p88203044",
+      "rank": 17,
       "seasonTotal": 8.563979017640714e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "BlackFlamE",
-      "rank": 17,
-      "seasonTotal": 8.53554015432694e+20
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "Gritchen",
       "rank": 18,
-      "seasonTotal": 8.256700155904794e+20
+      "seasonTotal": 8.53554015432694e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -1443,10 +1443,30 @@
             {
               "attempts": [
                 2.2226888766108478e+22,
-                2.9216556790489945e+22
+                2.9216556790489945e+22,
+                2.2932536997697013e+22,
+                2.204499265012825e+22,
+                2.0485200924247295e+22
               ],
               "name": "Fl3xas",
-              "top2Sum": 5.144344555659842e+22
+              "top2Sum": 5.214909378818696e+22
+            },
+            {
+              "attempts": [
+                8.196301474234992e+19,
+                9.377612593120002e+19
+              ],
+              "name": "Gritchen",
+              "top2Sum": 1.7573914067354996e+20
+            },
+            {
+              "attempts": [
+                1.269304525131049e+21,
+                2.4175710506579505e+21,
+                1.6793346248846771e+21
+              ],
+              "name": "SngphO",
+              "top2Sum": 4.0969056755426274e+21
             }
           ]
         }
