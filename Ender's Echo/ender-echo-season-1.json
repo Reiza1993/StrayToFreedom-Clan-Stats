@@ -29,7 +29,7 @@
       "gainVsPreviousSeason": null,
       "name": "DAYO-P",
       "rank": 5,
-      "seasonTotal": 2.199746374129056e+22
+      "seasonTotal": 2.2297387720879897e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -117,57 +117,57 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Apathy_",
+      "name": "EMBALOCO",
       "rank": 20,
+      "seasonTotal": 5.7918827166527363e+20
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "Apathy_",
+      "rank": 21,
       "seasonTotal": 5.32941052706371e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "theLP",
-      "rank": 21,
+      "rank": 22,
       "seasonTotal": 5.212981950640272e+20
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "EMBALOCO",
-      "rank": 22,
-      "seasonTotal": 5.2086861743028745e+20
+      "name": "BobBobberson",
+      "rank": 23,
+      "seasonTotal": 4.230649847285871e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Bensayyten",
-      "rank": 23,
+      "rank": 24,
       "seasonTotal": 4.0084959747481023e+20
     },
     {
       "gainVsPreviousSeason": null,
+      "name": "gubrax",
+      "rank": 25,
+      "seasonTotal": 3.500838298628259e+20
+    },
+    {
+      "gainVsPreviousSeason": null,
       "name": "groggen",
-      "rank": 24,
+      "rank": 26,
       "seasonTotal": 3.1900201057854285e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "faxnem",
-      "rank": 25,
+      "rank": 27,
       "seasonTotal": 3.0467003491433074e+20
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "BobBobberson",
-      "rank": 26,
-      "seasonTotal": 2.9466209058429937e+20
-    },
-    {
-      "gainVsPreviousSeason": null,
       "name": "samwise08",
-      "rank": 27,
-      "seasonTotal": 2.850960991157673e+20
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "gubrax",
       "rank": 28,
-      "seasonTotal": 2.758563891710193e+20
+      "seasonTotal": 2.850960991157673e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -177,15 +177,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Player 80018314",
+      "name": "Belthazar",
       "rank": 30,
-      "seasonTotal": 1.3818824297975335e+20
+      "seasonTotal": 1.489823799392085e+20
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Belthazar",
+      "name": "Player 80018314",
       "rank": 31,
-      "seasonTotal": 1.3442594489422723e+20
+      "seasonTotal": 1.3818824297975335e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -1215,10 +1215,11 @@
               "attempts": [
                 9.772936111447364e+20,
                 1.573647321993031e+21,
-                2.0039162766039573e+21
+                2.0039162766039573e+21,
+                1.873571301582367e+21
               ],
               "name": "DAYO-P",
-              "top2Sum": 3.577563598596988e+21
+              "top2Sum": 3.8774875781863246e+21
             },
             {
               "attempts": [
@@ -1335,10 +1336,11 @@
             },
             {
               "attempts": [
-                1.4747193247675947e+19
+                1.4747193247675947e+19,
+                1.455643504498125e+19
               ],
               "name": "Belthazar",
-              "top2Sum": 1.4747193247675947e+19
+              "top2Sum": 2.9303628292657197e+19
             },
             {
               "attempts": [
@@ -1346,6 +1348,29 @@
               ],
               "name": "\u76feHeathcliff\u5263",
               "top2Sum": 2.177891486923152e+20
+            },
+            {
+              "attempts": [
+                4.378649578976488e+19,
+                3.044094490204174e+19
+              ],
+              "name": "gubrax",
+              "top2Sum": 7.422744069180662e+19
+            },
+            {
+              "attempts": [
+                6.416900632237849e+19,
+                6.4233887821909254e+19
+              ],
+              "name": "BobBobberson",
+              "top2Sum": 1.2840289414428774e+20
+            },
+            {
+              "attempts": [
+                5.831965423498618e+19
+              ],
+              "name": "EMBALOCO",
+              "top2Sum": 5.831965423498618e+19
             }
           ]
         }
