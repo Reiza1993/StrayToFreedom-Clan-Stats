@@ -29,7 +29,7 @@
       "gainVsPreviousSeason": null,
       "name": "DAYO-P",
       "rank": 5,
-      "seasonTotal": 2.2297387720879897e+22
+      "seasonTotal": 2.3159080035509397e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -119,7 +119,7 @@
       "gainVsPreviousSeason": null,
       "name": "EMBALOCO",
       "rank": 20,
-      "seasonTotal": 5.7918827166527363e+20
+      "seasonTotal": 6.613383420310515e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -153,39 +153,39 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "groggen",
+      "name": "Player 66607264",
       "rank": 26,
+      "seasonTotal": 3.474631023315443e+20
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "groggen",
+      "rank": 27,
       "seasonTotal": 3.1900201057854285e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "faxnem",
-      "rank": 27,
+      "rank": 28,
       "seasonTotal": 3.0467003491433074e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "samwise08",
-      "rank": 28,
+      "rank": 29,
       "seasonTotal": 2.850960991157673e+20
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Player 66607264",
-      "rank": 29,
-      "seasonTotal": 1.793402646790163e+20
+      "name": "Player 80018314",
+      "rank": 30,
+      "seasonTotal": 1.5036059029145616e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Belthazar",
-      "rank": 30,
-      "seasonTotal": 1.489823799392085e+20
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "Player 80018314",
       "rank": 31,
-      "seasonTotal": 1.3818824297975335e+20
+      "seasonTotal": 1.489823799392085e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -1216,10 +1216,11 @@
                 9.772936111447364e+20,
                 1.573647321993031e+21,
                 2.0039162766039573e+21,
-                1.873571301582367e+21
+                1.873571301582367e+21,
+                2.735263616211871e+21
               ],
               "name": "DAYO-P",
-              "top2Sum": 3.8774875781863246e+21
+              "top2Sum": 4.739179892815828e+21
             },
             {
               "attempts": [
@@ -1367,10 +1368,26 @@
             },
             {
               "attempts": [
-                5.831965423498618e+19
+                5.831965423498618e+19,
+                8.215007036577776e+19,
+                5.586975391110724e+19
               ],
               "name": "EMBALOCO",
-              "top2Sum": 5.831965423498618e+19
+              "top2Sum": 1.4046972460076394e+20
+            },
+            {
+              "attempts": [
+                1.68122837652528e+20
+              ],
+              "name": "Player 66607264",
+              "top2Sum": 1.68122837652528e+20
+            },
+            {
+              "attempts": [
+                1.2172347311702819e+19
+              ],
+              "name": "Player 80018314",
+              "top2Sum": 1.2172347311702819e+19
             }
           ]
         }
