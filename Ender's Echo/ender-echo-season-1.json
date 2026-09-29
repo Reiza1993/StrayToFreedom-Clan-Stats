@@ -3,15 +3,15 @@
   "leaderboard": [
     {
       "gainVsPreviousSeason": null,
-      "name": "\u04bban",
+      "name": "Fl3xas",
       "rank": 1,
-      "seasonTotal": 2.2712278708579443e+23
+      "seasonTotal": 2.6763097684277446e+23
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Fl3xas",
+      "name": "\u04bban",
       "rank": 2,
-      "seasonTotal": 2.1618753128617604e+23
+      "seasonTotal": 2.2712278708579443e+23
     },
     {
       "gainVsPreviousSeason": null,
@@ -21,15 +21,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "RABBIT5",
+      "name": "DAYO-P",
       "rank": 4,
-      "seasonTotal": 2.330583333547645e+22
+      "seasonTotal": 3.048875662803899e+22
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "DAYO-P",
+      "name": "RABBIT5",
       "rank": 5,
-      "seasonTotal": 2.3159080035509397e+22
+      "seasonTotal": 2.330583333547645e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -57,33 +57,33 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "RetinaDNA",
+      "name": "PastalaVista",
       "rank": 10,
+      "seasonTotal": 3.8511867991478234e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "RetinaDNA",
+      "rank": 11,
       "seasonTotal": 3.610122151795102e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "MadameMischief",
-      "rank": 11,
-      "seasonTotal": 2.971379398090834e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "PastalaVista",
       "rank": 12,
-      "seasonTotal": 2.66806196117143e+21
+      "seasonTotal": 2.971379398090834e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "HakiLuffy",
       "rank": 13,
-      "seasonTotal": 1.3442033532101633e+21
+      "seasonTotal": 1.596496479165385e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "VictorMolusco",
       "rank": 14,
-      "seasonTotal": 1.0044146352252867e+21
+      "seasonTotal": 1.3390729641976626e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -99,15 +99,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Gritchen",
+      "name": "BlackFlamE",
       "rank": 17,
-      "seasonTotal": 8.256700155904794e+20
+      "seasonTotal": 8.53554015432694e+20
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "BlackFlamE",
+      "name": "Gritchen",
       "rank": 18,
-      "seasonTotal": 7.815643869330895e+20
+      "seasonTotal": 8.256700155904794e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -1393,6 +1393,65 @@
         }
       ],
       "miniSeasonNumber": 2
+    },
+    {
+      "days": [
+        {
+          "date": "2026-09-30",
+          "day": 7,
+          "players": [
+            {
+              "attempts": [
+                3.4479060850602646e+21,
+                3.727394160198872e+21,
+                3.602282432330723e+21
+              ],
+              "name": "DAYO-P",
+              "top2Sum": 7.329676592529596e+21
+            },
+            {
+              "attempts": [
+                1.729061576684547e+20,
+                1.6175217130392122e+20
+              ],
+              "name": "VictorMolusco",
+              "top2Sum": 3.346583289723759e+20
+            },
+            {
+              "attempts": [
+                6.650512414774138e+20,
+                5.180735964989799e+20
+              ],
+              "name": "PastalaVista",
+              "top2Sum": 1.1831248379763936e+21
+            },
+            {
+              "attempts": [
+                1.258427478823229e+20,
+                1.2645037807289872e+20
+              ],
+              "name": "HakiLuffy",
+              "top2Sum": 2.5229312595522162e+20
+            },
+            {
+              "attempts": [
+                7.198962849960447e+19
+              ],
+              "name": "BlackFlamE",
+              "top2Sum": 7.198962849960447e+19
+            },
+            {
+              "attempts": [
+                2.2226888766108478e+22,
+                2.9216556790489945e+22
+              ],
+              "name": "Fl3xas",
+              "top2Sum": 5.144344555659842e+22
+            }
+          ]
+        }
+      ],
+      "miniSeasonNumber": 3
     }
   ],
   "seasonNumber": 1,
