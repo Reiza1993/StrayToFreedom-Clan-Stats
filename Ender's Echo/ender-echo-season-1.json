@@ -3,15 +3,15 @@
   "leaderboard": [
     {
       "gainVsPreviousSeason": null,
-      "name": "Fl3xas",
+      "name": "\u04bban",
       "rank": 1,
-      "seasonTotal": 2.1618753128617604e+23
+      "seasonTotal": 2.2712278708579443e+23
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "\u04bban",
+      "name": "Fl3xas",
       "rank": 2,
-      "seasonTotal": 1.70101127341382e+23
+      "seasonTotal": 2.1618753128617604e+23
     },
     {
       "gainVsPreviousSeason": null,
@@ -21,21 +21,21 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "DAYO-P",
+      "name": "\u795eSterben\u6b7b",
       "rank": 4,
+      "seasonTotal": 1.98365354160865e+22
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "DAYO-P",
+      "rank": 5,
       "seasonTotal": 1.9397193753838305e+22
     },
     {
       "gainVsPreviousSeason": null,
       "name": "RABBIT5",
-      "rank": 5,
-      "seasonTotal": 1.7308959608454118e+22
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "\u795eSterben\u6b7b",
       "rank": 6,
-      "seasonTotal": 1.6267331401483987e+22
+      "seasonTotal": 1.7308959608454118e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -1276,6 +1276,20 @@
               ],
               "name": "BlackFlamE",
               "top2Sum": 1.2482589693219445e+20
+            },
+            {
+              "attempts": [
+                3.569204014602511e+21
+              ],
+              "name": "\u795eSterben\u6b7b",
+              "top2Sum": 3.569204014602511e+21
+            },
+            {
+              "attempts": [
+                5.702165974441243e+22
+              ],
+              "name": "\u04bban",
+              "top2Sum": 5.702165974441243e+22
             }
           ]
         }
