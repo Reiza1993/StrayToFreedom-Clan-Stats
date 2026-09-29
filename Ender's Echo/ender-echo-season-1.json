@@ -105,15 +105,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "NeonCBV",
+      "name": "BlackFlamE",
       "rank": 18,
-      "seasonTotal": 7.40338254681875e+20
+      "seasonTotal": 7.815643869330895e+20
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "BlackFlamE",
+      "name": "NeonCBV",
       "rank": 19,
-      "seasonTotal": 6.567384900008951e+20
+      "seasonTotal": 7.40338254681875e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -1267,6 +1267,15 @@
               ],
               "name": "Nubis",
               "top2Sum": 7.939384985236797e+21
+            },
+            {
+              "attempts": [
+                6.237497365427791e+19,
+                5.609353673874138e+19,
+                6.245092327791655e+19
+              ],
+              "name": "BlackFlamE",
+              "top2Sum": 1.2482589693219445e+20
             }
           ]
         }
