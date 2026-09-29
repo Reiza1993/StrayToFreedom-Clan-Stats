@@ -27,15 +27,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "\u795eSterben\u6b7b",
+      "name": "DAYO-P",
       "rank": 5,
-      "seasonTotal": 1.98365354160865e+22
+      "seasonTotal": 2.199746374129056e+22
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "DAYO-P",
+      "name": "\u795eSterben\u6b7b",
       "rank": 6,
-      "seasonTotal": 1.9397193753838305e+22
+      "seasonTotal": 1.98365354160865e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -87,21 +87,21 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "p88203044",
+      "name": "\u76feHeathcliff\u5263",
       "rank": 15,
+      "seasonTotal": 1.0014951789794284e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "p88203044",
+      "rank": 16,
       "seasonTotal": 8.563979017640714e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Gritchen",
-      "rank": 16,
-      "seasonTotal": 8.256700155904794e+20
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "\u76feHeathcliff\u5263",
       "rank": 17,
-      "seasonTotal": 7.837060302871132e+20
+      "seasonTotal": 8.256700155904794e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -183,15 +183,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "datamaster",
+      "name": "Belthazar",
       "rank": 31,
-      "seasonTotal": 1.281020678969742e+20
+      "seasonTotal": 1.3442594489422723e+20
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Belthazar",
+      "name": "datamaster",
       "rank": 32,
-      "seasonTotal": 1.196787516465513e+20
+      "seasonTotal": 1.281020678969742e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -1213,10 +1213,12 @@
             },
             {
               "attempts": [
-                9.772936111447364e+20
+                9.772936111447364e+20,
+                1.573647321993031e+21,
+                2.0039162766039573e+21
               ],
               "name": "DAYO-P",
-              "top2Sum": 9.772936111447364e+20
+              "top2Sum": 3.577563598596988e+21
             },
             {
               "attempts": [
@@ -1330,6 +1332,20 @@
               ],
               "name": "MadameMischief",
               "top2Sum": 3.8186006618100675e+20
+            },
+            {
+              "attempts": [
+                1.4747193247675947e+19
+              ],
+              "name": "Belthazar",
+              "top2Sum": 1.4747193247675947e+19
+            },
+            {
+              "attempts": [
+                2.177891486923152e+20
+              ],
+              "name": "\u76feHeathcliff\u5263",
+              "top2Sum": 2.177891486923152e+20
             }
           ]
         }
