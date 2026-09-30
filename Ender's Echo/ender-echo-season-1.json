@@ -17,7 +17,7 @@
       "gainVsPreviousSeason": null,
       "name": "Nubis",
       "rank": 3,
-      "seasonTotal": 5.838710254210289e+22
+      "seasonTotal": 6.8991125684538925e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -57,21 +57,21 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "RetinaDNA",
+      "name": "MadameMischief",
       "rank": 10,
+      "seasonTotal": 4.4673931662681975e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "RetinaDNA",
+      "rank": 11,
       "seasonTotal": 4.466319205848237e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "PastalaVista",
-      "rank": 11,
-      "seasonTotal": 3.8511867991478234e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "MadameMischief",
       "rank": 12,
-      "seasonTotal": 3.759541649590427e+21
+      "seasonTotal": 3.8511867991478234e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -99,15 +99,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Gritchen",
+      "name": "BlackFlamE",
       "rank": 17,
-      "seasonTotal": 1.0014091562640293e+21
+      "seasonTotal": 1.0118068055892937e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "BlackFlamE",
+      "name": "Gritchen",
       "rank": 18,
-      "seasonTotal": 9.398589886776502e+20
+      "seasonTotal": 1.0014091562640293e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -153,21 +153,21 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "gubrax",
+      "name": "groggen",
       "rank": 26,
+      "seasonTotal": 5.528527660587044e+20
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "gubrax",
+      "rank": 27,
       "seasonTotal": 4.1845655016934697e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "samwise08",
-      "rank": 27,
-      "seasonTotal": 4.0597386643805654e+20
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "groggen",
       "rank": 28,
-      "seasonTotal": 3.1900201057854285e+20
+      "seasonTotal": 4.0597386643805654e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -1654,6 +1654,38 @@
               ],
               "name": "Fl3xas",
               "top2Sum": 6.28404213962772e+22
+            },
+            {
+              "attempts": [
+                2.3385075548016155e+20
+              ],
+              "name": "groggen",
+              "top2Sum": 2.3385075548016155e+20
+            },
+            {
+              "attempts": [
+                7.194781691164345e+19
+              ],
+              "name": "BlackFlamE",
+              "top2Sum": 7.194781691164345e+19
+            },
+            {
+              "attempts": [
+                4.669173701456735e+21,
+                4.638265997747538e+21,
+                5.31536661848928e+21,
+                5.288656523946756e+21
+              ],
+              "name": "Nubis",
+              "top2Sum": 1.0604023142436036e+22
+            },
+            {
+              "attempts": [
+                3.857759235771716e+20,
+                3.2207559310059903e+20
+              ],
+              "name": "MadameMischief",
+              "top2Sum": 7.078515166777707e+20
             }
           ]
         }
