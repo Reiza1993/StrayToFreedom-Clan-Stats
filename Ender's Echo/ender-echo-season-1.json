@@ -17,7 +17,7 @@
       "gainVsPreviousSeason": null,
       "name": "Nubis",
       "rank": 3,
-      "seasonTotal": 5.005245040585006e+22
+      "seasonTotal": 5.769498571467654e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -87,27 +87,27 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "\u76feHeathcliff\u5263",
+      "name": "p88203044",
       "rank": 15,
-      "seasonTotal": 1.0014951789794284e+21
+      "seasonTotal": 1.0973892198284742e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "\u76feHeathcliff\u5263",
+      "rank": 16,
+      "seasonTotal": 1.0182058144823606e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Gritchen",
-      "rank": 16,
+      "rank": 17,
       "seasonTotal": 1.0014091562640293e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "BlackFlamE",
-      "rank": 17,
-      "seasonTotal": 9.398589886776502e+20
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "p88203044",
       "rank": 18,
-      "seasonTotal": 8.563979017640714e+20
+      "seasonTotal": 9.398589886776502e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -135,21 +135,21 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "BobBobberson",
+      "name": "Bensayyten",
       "rank": 23,
+      "seasonTotal": 5.844085642177345e+20
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "BobBobberson",
+      "rank": 24,
       "seasonTotal": 4.230649847285871e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "gubrax",
-      "rank": 24,
-      "seasonTotal": 4.1845655016934697e+20
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "Bensayyten",
       "rank": 25,
-      "seasonTotal": 4.0084959747481023e+20
+      "seasonTotal": 4.1845655016934697e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -179,7 +179,7 @@
       "gainVsPreviousSeason": null,
       "name": "Rzzza",
       "rank": 30,
-      "seasonTotal": 2.3675327442205265e+20
+      "seasonTotal": 2.7842546592227577e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -1504,10 +1504,11 @@
             {
               "attempts": [
                 5.896677791175384e+19,
-                1.1787553639548033e+20
+                1.1787553639548033e+20,
+                1.0063896941197697e+20
               ],
               "name": "Rzzza",
-              "top2Sum": 1.7684231430723417e+20
+              "top2Sum": 2.185145058074573e+20
             },
             {
               "attempts": [
@@ -1524,6 +1525,36 @@
               ],
               "name": "theLP",
               "top2Sum": 1.6590072664493598e+20
+            },
+            {
+              "attempts": [
+                8.277783146783392e+19,
+                1.0078113527509038e+20
+              ],
+              "name": "Bensayyten",
+              "top2Sum": 1.835589667429243e+20
+            },
+            {
+              "attempts": [
+                2.4099131806440276e+20
+              ],
+              "name": "p88203044",
+              "top2Sum": 2.4099131806440276e+20
+            },
+            {
+              "attempts": [
+                1.6710635502932228e+19
+              ],
+              "name": "\u76feHeathcliff\u5263",
+              "top2Sum": 1.6710635502932228e+19
+            },
+            {
+              "attempts": [
+                3.473534831459395e+21,
+                4.169000477367094e+21
+              ],
+              "name": "Nubis",
+              "top2Sum": 7.642535308826489e+21
             }
           ]
         }
