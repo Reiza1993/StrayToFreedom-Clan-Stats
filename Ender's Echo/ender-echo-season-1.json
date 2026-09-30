@@ -77,7 +77,7 @@
       "gainVsPreviousSeason": null,
       "name": "HakiLuffy",
       "rank": 13,
-      "seasonTotal": 1.596496479165385e+21
+      "seasonTotal": 1.606092937032228e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -87,15 +87,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "p88203044",
+      "name": "\u76feHeathcliff\u5263",
       "rank": 15,
-      "seasonTotal": 1.0973892198284742e+21
+      "seasonTotal": 1.2949197502884377e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "\u76feHeathcliff\u5263",
+      "name": "p88203044",
       "rank": 16,
-      "seasonTotal": 1.0182058144823606e+21
+      "seasonTotal": 1.0973892198284742e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -111,15 +111,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Apathy_",
+      "name": "EMBALOCO",
       "rank": 19,
-      "seasonTotal": 7.821678223003551e+20
+      "seasonTotal": 8.460312803454456e+20
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "EMBALOCO",
+      "name": "Apathy_",
       "rank": 20,
-      "seasonTotal": 7.455818657871056e+20
+      "seasonTotal": 7.821678223003551e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -135,33 +135,33 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Bensayyten",
+      "name": "BobBobberson",
       "rank": 23,
+      "seasonTotal": 6.041174250635832e+20
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "Bensayyten",
+      "rank": 24,
       "seasonTotal": 5.844085642177345e+20
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "BobBobberson",
-      "rank": 24,
-      "seasonTotal": 5.163058435187926e+20
+      "name": "Player 66607264",
+      "rank": 25,
+      "seasonTotal": 5.828787071535743e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "gubrax",
-      "rank": 25,
+      "rank": 26,
       "seasonTotal": 4.1845655016934697e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "samwise08",
-      "rank": 26,
-      "seasonTotal": 4.0597386643805654e+20
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "Player 66607264",
       "rank": 27,
-      "seasonTotal": 3.474631023315443e+20
+      "seasonTotal": 4.0597386643805654e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -183,15 +183,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Belthazar",
+      "name": "Player 80018314",
       "rank": 31,
-      "seasonTotal": 1.8383959488090243e+20
+      "seasonTotal": 2.407953964177196e+20
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Player 80018314",
+      "name": "Belthazar",
       "rank": 32,
-      "seasonTotal": 1.5036059029145616e+20
+      "seasonTotal": 1.8383959488090243e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -1431,10 +1431,11 @@
             {
               "attempts": [
                 1.258427478823229e+20,
-                1.2645037807289872e+20
+                1.2645037807289872e+20,
+                1.3543920574916582e+20
               ],
               "name": "HakiLuffy",
-              "top2Sum": 2.5229312595522162e+20
+              "top2Sum": 2.6188958382206452e+20
             },
             {
               "attempts": [
@@ -1546,10 +1547,11 @@
             },
             {
               "attempts": [
-                1.6710635502932228e+19
+                1.6710635502932228e+19,
+                2.7671393580607694e+20
               ],
               "name": "\u76feHeathcliff\u5263",
-              "top2Sum": 1.6710635502932228e+19
+              "top2Sum": 2.9342457130900917e+20
             },
             {
               "attempts": [
@@ -1562,10 +1564,11 @@
             },
             {
               "attempts": [
-                9.324085879020554e+19
+                9.324085879020554e+19,
+                8.781158154479056e+19
               ],
               "name": "BobBobberson",
-              "top2Sum": 9.324085879020554e+19
+              "top2Sum": 1.8105244033499608e+20
             },
             {
               "attempts": [
@@ -1591,10 +1594,11 @@
             },
             {
               "attempts": [
-                8.424352375605418e+19
+                8.424352375605418e+19,
+                1.0044941455833994e+20
               ],
               "name": "EMBALOCO",
-              "top2Sum": 8.424352375605418e+19
+              "top2Sum": 1.846929383143941e+20
             },
             {
               "attempts": [
@@ -1603,6 +1607,21 @@
               ],
               "name": "RABBIT5",
               "top2Sum": 9.118546729453352e+21
+            },
+            {
+              "attempts": [
+                2.3541560482203002e+20
+              ],
+              "name": "Player 66607264",
+              "top2Sum": 2.3541560482203002e+20
+            },
+            {
+              "attempts": [
+                5.825984470925822e+19,
+                3.2174961417005203e+19
+              ],
+              "name": "Player 80018314",
+              "top2Sum": 9.043480612626344e+19
             }
           ]
         }
