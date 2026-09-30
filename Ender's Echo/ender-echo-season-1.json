@@ -17,25 +17,25 @@
       "gainVsPreviousSeason": null,
       "name": "Nubis",
       "rank": 3,
-      "seasonTotal": 5.769498571467654e+22
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "DAYO-P",
-      "rank": 4,
-      "seasonTotal": 3.091569937727863e+22
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "SngphO",
-      "rank": 5,
-      "seasonTotal": 2.3372348455323395e+22
+      "seasonTotal": 5.838710254210289e+22
     },
     {
       "gainVsPreviousSeason": null,
       "name": "RABBIT5",
+      "rank": 4,
+      "seasonTotal": 3.24243800649298e+22
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "DAYO-P",
+      "rank": 5,
+      "seasonTotal": 3.1592975203454457e+22
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "SngphO",
       "rank": 6,
-      "seasonTotal": 2.330583333547645e+22
+      "seasonTotal": 2.3372348455323395e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -47,7 +47,7 @@
       "gainVsPreviousSeason": null,
       "name": "Koncalaz",
       "rank": 8,
-      "seasonTotal": 1.3609537447701332e+22
+      "seasonTotal": 1.5936135319796664e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -117,21 +117,21 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "NeonCBV",
+      "name": "EMBALOCO",
       "rank": 20,
+      "seasonTotal": 7.455818657871056e+20
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "NeonCBV",
+      "rank": 21,
       "seasonTotal": 7.40338254681875e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "theLP",
-      "rank": 21,
-      "seasonTotal": 6.871989217089632e+20
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "EMBALOCO",
       "rank": 22,
-      "seasonTotal": 6.613383420310515e+20
+      "seasonTotal": 6.871989217089632e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -153,27 +153,27 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Player 66607264",
+      "name": "samwise08",
       "rank": 26,
+      "seasonTotal": 4.0597386643805654e+20
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "Player 66607264",
+      "rank": 27,
       "seasonTotal": 3.474631023315443e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "groggen",
-      "rank": 27,
+      "rank": 28,
       "seasonTotal": 3.1900201057854285e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "faxnem",
-      "rank": 28,
-      "seasonTotal": 3.0467003491433074e+20
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "samwise08",
       "rank": 29,
-      "seasonTotal": 2.850960991157673e+20
+      "seasonTotal": 3.0467003491433074e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -183,15 +183,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Player 80018314",
+      "name": "Belthazar",
       "rank": 31,
-      "seasonTotal": 1.5036059029145616e+20
+      "seasonTotal": 1.8383959488090243e+20
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Belthazar",
+      "name": "Player 80018314",
       "rank": 32,
-      "seasonTotal": 1.489823799392085e+20
+      "seasonTotal": 1.5036059029145616e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -1405,10 +1405,12 @@
                 3.4479060850602646e+21,
                 3.727394160198872e+21,
                 3.602282432330723e+21,
-                4.0292251815703604e+21
+                4.0292251815703604e+21,
+                1.8664706921397105e+21,
+                4.4046699863746984e+21
               ],
               "name": "DAYO-P",
-              "top2Sum": 7.756619341769233e+21
+              "top2Sum": 8.433895167945059e+21
             },
             {
               "attempts": [
@@ -1552,10 +1554,11 @@
             {
               "attempts": [
                 3.473534831459395e+21,
-                4.169000477367094e+21
+                4.169000477367094e+21,
+                4.1656516588857317e+21
               ],
               "name": "Nubis",
-              "top2Sum": 7.642535308826489e+21
+              "top2Sum": 8.334652136252826e+21
             },
             {
               "attempts": [
@@ -1563,6 +1566,43 @@
               ],
               "name": "BobBobberson",
               "top2Sum": 9.324085879020554e+19
+            },
+            {
+              "attempts": [
+                1.4461179485938444e+19,
+                2.0396035455755485e+19
+              ],
+              "name": "Belthazar",
+              "top2Sum": 3.4857214941693927e+19
+            },
+            {
+              "attempts": [
+                2.326597872095332e+21
+              ],
+              "name": "Koncalaz",
+              "top2Sum": 2.326597872095332e+21
+            },
+            {
+              "attempts": [
+                1.2087776732228926e+20
+              ],
+              "name": "samwise08",
+              "top2Sum": 1.2087776732228926e+20
+            },
+            {
+              "attempts": [
+                8.424352375605418e+19
+              ],
+              "name": "EMBALOCO",
+              "top2Sum": 8.424352375605418e+19
+            },
+            {
+              "attempts": [
+                3.80822451011855e+21,
+                5.310322219334801e+21
+              ],
+              "name": "RABBIT5",
+              "top2Sum": 9.118546729453352e+21
             }
           ]
         }
