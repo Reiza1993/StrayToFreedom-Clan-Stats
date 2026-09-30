@@ -23,7 +23,7 @@
       "gainVsPreviousSeason": null,
       "name": "DAYO-P",
       "rank": 4,
-      "seasonTotal": 3.048875662803899e+22
+      "seasonTotal": 3.091569937727863e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -143,7 +143,7 @@
       "gainVsPreviousSeason": null,
       "name": "BobBobberson",
       "rank": 24,
-      "seasonTotal": 4.230649847285871e+20
+      "seasonTotal": 5.163058435187926e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -1404,10 +1404,11 @@
               "attempts": [
                 3.4479060850602646e+21,
                 3.727394160198872e+21,
-                3.602282432330723e+21
+                3.602282432330723e+21,
+                4.0292251815703604e+21
               ],
               "name": "DAYO-P",
-              "top2Sum": 7.329676592529596e+21
+              "top2Sum": 7.756619341769233e+21
             },
             {
               "attempts": [
@@ -1555,6 +1556,13 @@
               ],
               "name": "Nubis",
               "top2Sum": 7.642535308826489e+21
+            },
+            {
+              "attempts": [
+                9.324085879020554e+19
+              ],
+              "name": "BobBobberson",
+              "top2Sum": 9.324085879020554e+19
             }
           ]
         }
