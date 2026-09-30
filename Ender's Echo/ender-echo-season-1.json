@@ -3,15 +3,15 @@
   "leaderboard": [
     {
       "gainVsPreviousSeason": null,
-      "name": "\u04bban",
+      "name": "Fl3xas",
       "rank": 1,
-      "seasonTotal": 3.2578116366434414e+23
+      "seasonTotal": 3.311770464706402e+23
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Fl3xas",
+      "name": "\u04bban",
       "rank": 2,
-      "seasonTotal": 2.68336625074363e+23
+      "seasonTotal": 3.2578116366434414e+23
     },
     {
       "gainVsPreviousSeason": null,
@@ -21,15 +21,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "RABBIT5",
+      "name": "DAYO-P",
       "rank": 4,
-      "seasonTotal": 3.24243800649298e+22
+      "seasonTotal": 3.820265281893728e+22
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "DAYO-P",
+      "name": "RABBIT5",
       "rank": 5,
-      "seasonTotal": 3.1592975203454457e+22
+      "seasonTotal": 3.24243800649298e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -77,7 +77,7 @@
       "gainVsPreviousSeason": null,
       "name": "HakiLuffy",
       "rank": 13,
-      "seasonTotal": 1.606092937032228e+21
+      "seasonTotal": 1.74559229639352e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -1622,6 +1622,38 @@
               ],
               "name": "Player 80018314",
               "top2Sum": 9.043480612626344e+19
+            }
+          ]
+        },
+        {
+          "date": "2026-10-01",
+          "day": 8,
+          "players": [
+            {
+              "attempts": [
+                2.5575729927581503e+21,
+                2.790243407406646e+21,
+                3.4888716733297e+21,
+                3.1208059421531224e+21
+              ],
+              "name": "DAYO-P",
+              "top2Sum": 6.609677615482822e+21
+            },
+            {
+              "attempts": [
+                1.3949935936129201e+20
+              ],
+              "name": "HakiLuffy",
+              "top2Sum": 1.3949935936129201e+20
+            },
+            {
+              "attempts": [
+                3.2180700016930734e+22,
+                1.8614243845899509e+22,
+                3.065972137934647e+22
+              ],
+              "name": "Fl3xas",
+              "top2Sum": 6.28404213962772e+22
             }
           ]
         }
