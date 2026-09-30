@@ -3,15 +3,15 @@
   "leaderboard": [
     {
       "gainVsPreviousSeason": null,
-      "name": "Fl3xas",
+      "name": "\u04bban",
       "rank": 1,
-      "seasonTotal": 2.68336625074363e+23
+      "seasonTotal": 3.2578116366434414e+23
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "\u04bban",
+      "name": "Fl3xas",
       "rank": 2,
-      "seasonTotal": 2.2712278708579443e+23
+      "seasonTotal": 2.68336625074363e+23
     },
     {
       "gainVsPreviousSeason": null,
@@ -27,15 +27,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "RABBIT5",
+      "name": "SngphO",
       "rank": 5,
-      "seasonTotal": 2.330583333547645e+22
+      "seasonTotal": 2.3372348455323395e+22
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "SngphO",
+      "name": "RABBIT5",
       "rank": 6,
-      "seasonTotal": 2.3003428987019373e+22
+      "seasonTotal": 2.330583333547645e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -57,21 +57,21 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "PastalaVista",
+      "name": "RetinaDNA",
       "rank": 10,
-      "seasonTotal": 3.8511867991478234e+21
+      "seasonTotal": 4.466319205848237e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "RetinaDNA",
+      "name": "PastalaVista",
       "rank": 11,
-      "seasonTotal": 3.610122151795102e+21
+      "seasonTotal": 3.8511867991478234e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "MadameMischief",
       "rank": 12,
-      "seasonTotal": 2.971379398090834e+21
+      "seasonTotal": 3.759541649590427e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -111,21 +111,21 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "NeonCBV",
+      "name": "Apathy_",
       "rank": 19,
+      "seasonTotal": 7.821678223003551e+20
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "NeonCBV",
+      "rank": 20,
       "seasonTotal": 7.40338254681875e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "EMBALOCO",
-      "rank": 20,
-      "seasonTotal": 6.613383420310515e+20
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "Apathy_",
       "rank": 21,
-      "seasonTotal": 5.32941052706371e+20
+      "seasonTotal": 6.613383420310515e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -141,15 +141,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Bensayyten",
+      "name": "gubrax",
       "rank": 24,
-      "seasonTotal": 4.0084959747481023e+20
+      "seasonTotal": 4.1845655016934697e+20
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "gubrax",
+      "name": "Bensayyten",
       "rank": 25,
-      "seasonTotal": 3.500838298628259e+20
+      "seasonTotal": 4.0084959747481023e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -177,27 +177,27 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Player 80018314",
+      "name": "Rzzza",
       "rank": 30,
+      "seasonTotal": 2.3675327442205265e+20
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "Player 80018314",
+      "rank": 31,
       "seasonTotal": 1.5036059029145616e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Belthazar",
-      "rank": 31,
+      "rank": 32,
       "seasonTotal": 1.489823799392085e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "datamaster",
-      "rank": 32,
-      "seasonTotal": 1.281020678969742e+20
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "Rzzza",
       "rank": 33,
-      "seasonTotal": 5.99109601148185e+19
+      "seasonTotal": 1.281020678969742e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -1463,10 +1463,58 @@
               "attempts": [
                 1.269304525131049e+21,
                 2.4175710506579505e+21,
-                1.6793346248846771e+21
+                1.6793346248846771e+21,
+                2.0482540931886972e+21
               ],
               "name": "SngphO",
-              "top2Sum": 4.0969056755426274e+21
+              "top2Sum": 4.465825143846648e+21
+            },
+            {
+              "attempts": [
+                8.561970540531355e+20
+              ],
+              "name": "RetinaDNA",
+              "top2Sum": 8.561970540531355e+20
+            },
+            {
+              "attempts": [
+                1.0286960990216385e+20,
+                1.4635715969182027e+20
+              ],
+              "name": "Apathy_",
+              "top2Sum": 2.4922676959398412e+20
+            },
+            {
+              "attempts": [
+                3.076914467243627e+19,
+                3.760357563408475e+19
+              ],
+              "name": "gubrax",
+              "top2Sum": 6.8372720306521014e+19
+            },
+            {
+              "attempts": [
+                4.481782098100288e+22,
+                5.3840555597546845e+22
+              ],
+              "name": "\u04bban",
+              "top2Sum": 9.865837657854971e+22
+            },
+            {
+              "attempts": [
+                5.896677791175384e+19,
+                1.1787553639548033e+20
+              ],
+              "name": "Rzzza",
+              "top2Sum": 1.7684231430723417e+20
+            },
+            {
+              "attempts": [
+                3.5370028641622163e+20,
+                4.344619650833717e+20
+              ],
+              "name": "MadameMischief",
+              "top2Sum": 7.881622514995933e+20
             }
           ]
         }
