@@ -35,7 +35,7 @@
       "gainVsPreviousSeason": null,
       "name": "SngphO",
       "rank": 6,
-      "seasonTotal": 2.873052507525955e+22
+      "seasonTotal": 3.1200483757392904e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -51,21 +51,21 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "RetinaDNA",
+      "name": "MadameMischief",
       "rank": 9,
+      "seasonTotal": 5.176727590680946e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "RetinaDNA",
+      "rank": 10,
       "seasonTotal": 5.109069251188332e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "pumpenjoe",
-      "rank": 10,
-      "seasonTotal": 4.524357479966259e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "MadameMischief",
       "rank": 11,
-      "seasonTotal": 4.4673931662681975e+21
+      "seasonTotal": 4.524357479966259e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -93,21 +93,21 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "\u76feHeathcliff\u5263",
+      "name": "Apathy_",
       "rank": 16,
+      "seasonTotal": 1.457194502457768e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "\u76feHeathcliff\u5263",
+      "rank": 17,
       "seasonTotal": 1.2949197502884377e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Gritchen",
-      "rank": 17,
-      "seasonTotal": 1.2177046289059954e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "Apathy_",
       "rank": 18,
-      "seasonTotal": 1.1189734794149389e+21
+      "seasonTotal": 1.2177046289059954e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -1883,6 +1883,29 @@
               ],
               "name": "Fl3xas",
               "top2Sum": 5.844960869635283e+22
+            },
+            {
+              "attempts": [
+                1.9111857817878338e+20,
+                1.4710244486404561e+20
+              ],
+              "name": "Apathy_",
+              "top2Sum": 3.38221023042829e+20
+            },
+            {
+              "attempts": [
+                2.469958682133353e+21
+              ],
+              "name": "SngphO",
+              "top2Sum": 2.469958682133353e+21
+            },
+            {
+              "attempts": [
+                3.058885196822469e+20,
+                4.03445904730502e+20
+              ],
+              "name": "MadameMischief",
+              "top2Sum": 7.093344244127489e+20
             }
           ]
         }
