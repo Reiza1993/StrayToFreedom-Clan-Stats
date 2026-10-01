@@ -11,25 +11,25 @@
       "gainVsPreviousSeason": null,
       "name": "Fl3xas",
       "rank": 2,
-      "seasonTotal": 3.311770464706402e+23
+      "seasonTotal": 3.8962665516699303e+23
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Nubis",
       "rank": 3,
-      "seasonTotal": 6.8991125684538925e+22
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "RABBIT5",
-      "rank": 4,
-      "seasonTotal": 4.238902557370976e+22
+      "seasonTotal": 7.953546457239557e+22
     },
     {
       "gainVsPreviousSeason": null,
       "name": "DAYO-P",
+      "rank": 4,
+      "seasonTotal": 4.4519880422592635e+22
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "RABBIT5",
       "rank": 5,
-      "seasonTotal": 3.829469596559346e+22
+      "seasonTotal": 4.238902557370976e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -99,15 +99,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Apathy_",
+      "name": "Gritchen",
       "rank": 17,
-      "seasonTotal": 1.1189734794149389e+21
+      "seasonTotal": 1.2177046289059954e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Gritchen",
+      "name": "Apathy_",
       "rank": 18,
-      "seasonTotal": 1.1006020912018653e+21
+      "seasonTotal": 1.1189734794149389e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -147,39 +147,39 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "BobBobberson",
+      "name": "faxnem",
       "rank": 25,
+      "seasonTotal": 6.217682882843194e+20
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "BobBobberson",
+      "rank": 26,
       "seasonTotal": 6.041174250635832e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "groggen",
-      "rank": 26,
+      "rank": 27,
       "seasonTotal": 5.528527660587044e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "gubrax",
-      "rank": 27,
+      "rank": 28,
       "seasonTotal": 5.351786929626711e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Rzzza",
-      "rank": 28,
+      "rank": 29,
       "seasonTotal": 4.782751964315603e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "samwise08",
-      "rank": 29,
-      "seasonTotal": 4.0597386643805654e+20
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "faxnem",
       "rank": 30,
-      "seasonTotal": 3.0467003491433074e+20
+      "seasonTotal": 4.0597386643805654e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -1833,6 +1833,56 @@
               ],
               "name": "Player 80018314",
               "top2Sum": 4.850498036118566e+19
+            }
+          ]
+        },
+        {
+          "date": "2026-10-02",
+          "day": 9,
+          "players": [
+            {
+              "attempts": [
+                5.8565078025661506e+19,
+                5.853745967846872e+19
+              ],
+              "name": "Gritchen",
+              "top2Sum": 1.1710253770413022e+20
+            },
+            {
+              "attempts": [
+                8.785397441594373e+20,
+                3.145577182734235e+21,
+                3.079607274264945e+21
+              ],
+              "name": "DAYO-P",
+              "top2Sum": 6.22518445699918e+21
+            },
+            {
+              "attempts": [
+                1.403985709792521e+20,
+                1.766996823907365e+20
+              ],
+              "name": "faxnem",
+              "top2Sum": 3.170982533699886e+20
+            },
+            {
+              "attempts": [
+                5.111142646385751e+21,
+                5.433196241470891e+21,
+                5.044598874320527e+21
+              ],
+              "name": "Nubis",
+              "top2Sum": 1.0544338887856643e+22
+            },
+            {
+              "attempts": [
+                2.8531446646746183e+22,
+                2.991816204960665e+22,
+                9.115307649505838e+21,
+                1.806441461622036e+22
+              ],
+              "name": "Fl3xas",
+              "top2Sum": 5.844960869635283e+22
             }
           ]
         }
