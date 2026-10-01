@@ -33,15 +33,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "\u795eSterben\u6b7b",
+      "name": "SngphO",
       "rank": 6,
-      "seasonTotal": 2.4704077451743113e+22
+      "seasonTotal": 2.873052507525955e+22
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "SngphO",
+      "name": "\u795eSterben\u6b7b",
       "rank": 7,
-      "seasonTotal": 2.3372348455323395e+22
+      "seasonTotal": 2.4704077451743113e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -51,27 +51,27 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "pumpenjoe",
+      "name": "RetinaDNA",
       "rank": 9,
+      "seasonTotal": 5.109069251188332e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "pumpenjoe",
+      "rank": 10,
       "seasonTotal": 4.524357479966259e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "MadameMischief",
-      "rank": 10,
-      "seasonTotal": 4.4673931662681975e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "RetinaDNA",
       "rank": 11,
-      "seasonTotal": 4.466319205848237e+21
+      "seasonTotal": 4.4673931662681975e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "PastalaVista",
       "rank": 12,
-      "seasonTotal": 3.8511867991478234e+21
+      "seasonTotal": 4.441302381376888e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -204,6 +204,12 @@
       "name": "ergiangi",
       "rank": 34,
       "seasonTotal": 5.2529945458542174e+19
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "Cheeselife",
+      "rank": 35,
+      "seasonTotal": 2.101163410746618e+19
     }
   ],
   "miniSeasons": [
@@ -1725,6 +1731,35 @@
               ],
               "name": "\u04bban",
               "top2Sum": 8.8293180713974e+22
+            },
+            {
+              "attempts": [
+                6.42750045340095e+20
+              ],
+              "name": "RetinaDNA",
+              "top2Sum": 6.42750045340095e+20
+            },
+            {
+              "attempts": [
+                2.101163410746618e+19
+              ],
+              "name": "Cheeselife",
+              "top2Sum": 2.101163410746618e+19
+            },
+            {
+              "attempts": [
+                5.9011558222906465e+20
+              ],
+              "name": "PastalaVista",
+              "top2Sum": 5.9011558222906465e+20
+            },
+            {
+              "attempts": [
+                2.5612896162597726e+21,
+                2.796887003676381e+21
+              ],
+              "name": "SngphO",
+              "top2Sum": 5.358176619936153e+21
             }
           ]
         }
