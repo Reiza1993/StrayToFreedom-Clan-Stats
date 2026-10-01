@@ -3,15 +3,15 @@
   "leaderboard": [
     {
       "gainVsPreviousSeason": null,
-      "name": "Fl3xas",
+      "name": "\u04bban",
       "rank": 1,
-      "seasonTotal": 3.311770464706402e+23
+      "seasonTotal": 4.1407434437831816e+23
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "\u04bban",
+      "name": "Fl3xas",
       "rank": 2,
-      "seasonTotal": 3.2578116366434414e+23
+      "seasonTotal": 3.311770464706402e+23
     },
     {
       "gainVsPreviousSeason": null,
@@ -33,15 +33,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "SngphO",
+      "name": "\u795eSterben\u6b7b",
       "rank": 6,
-      "seasonTotal": 2.3372348455323395e+22
+      "seasonTotal": 2.4704077451743113e+22
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "\u795eSterben\u6b7b",
+      "name": "SngphO",
       "rank": 7,
-      "seasonTotal": 1.98365354160865e+22
+      "seasonTotal": 2.3372348455323395e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -77,13 +77,13 @@
       "gainVsPreviousSeason": null,
       "name": "HakiLuffy",
       "rank": 13,
-      "seasonTotal": 1.74559229639352e+21
+      "seasonTotal": 1.8928037635502522e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "VictorMolusco",
       "rank": 14,
-      "seasonTotal": 1.3390729641976626e+21
+      "seasonTotal": 1.6675773333593737e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -93,33 +93,33 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "p88203044",
+      "name": "Gritchen",
       "rank": 16,
+      "seasonTotal": 1.1006020912018653e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "p88203044",
+      "rank": 17,
       "seasonTotal": 1.0973892198284742e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "BlackFlamE",
-      "rank": 17,
+      "rank": 18,
       "seasonTotal": 1.0118068055892937e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Gritchen",
-      "rank": 18,
-      "seasonTotal": 1.0014091562640293e+21
+      "name": "Apathy_",
+      "rank": 19,
+      "seasonTotal": 9.399619134833817e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "EMBALOCO",
-      "rank": 19,
-      "seasonTotal": 8.460312803454456e+20
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "Apathy_",
       "rank": 20,
-      "seasonTotal": 7.821678223003551e+20
+      "seasonTotal": 8.460312803454456e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -1641,10 +1641,11 @@
             },
             {
               "attempts": [
-                1.3949935936129201e+20
+                1.3949935936129201e+20,
+                1.4721146715673231e+20
               ],
               "name": "HakiLuffy",
-              "top2Sum": 1.3949935936129201e+20
+              "top2Sum": 2.8671082651802432e+20
             },
             {
               "attempts": [
@@ -1686,6 +1687,44 @@
               ],
               "name": "MadameMischief",
               "top2Sum": 7.078515166777707e+20
+            },
+            {
+              "attempts": [
+                4.7394067972067066e+19,
+                5.179886696576889e+19
+              ],
+              "name": "Gritchen",
+              "top2Sum": 9.919293493783596e+19
+            },
+            {
+              "attempts": [
+                1.5779409118302657e+20
+              ],
+              "name": "Apathy_",
+              "top2Sum": 1.5779409118302657e+20
+            },
+            {
+              "attempts": [
+                1.671892223717286e+20,
+                1.613151467899827e+20
+              ],
+              "name": "VictorMolusco",
+              "top2Sum": 3.2850436916171126e+20
+            },
+            {
+              "attempts": [
+                4.867542035656613e+21
+              ],
+              "name": "\u795eSterben\u6b7b",
+              "top2Sum": 4.867542035656613e+21
+            },
+            {
+              "attempts": [
+                3.018551687252168e+22,
+                5.810766384145232e+22
+              ],
+              "name": "\u04bban",
+              "top2Sum": 8.8293180713974e+22
             }
           ]
         }
