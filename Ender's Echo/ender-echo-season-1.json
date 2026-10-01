@@ -23,7 +23,7 @@
       "gainVsPreviousSeason": null,
       "name": "DAYO-P",
       "rank": 4,
-      "seasonTotal": 3.820265281893728e+22
+      "seasonTotal": 3.829469596559346e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -87,33 +87,33 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "\u76feHeathcliff\u5263",
+      "name": "p88203044",
       "rank": 15,
+      "seasonTotal": 1.457490772070481e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "\u76feHeathcliff\u5263",
+      "rank": 16,
       "seasonTotal": 1.2949197502884377e+21
     },
     {
       "gainVsPreviousSeason": null,
+      "name": "Apathy_",
+      "rank": 17,
+      "seasonTotal": 1.1189734794149389e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
       "name": "Gritchen",
-      "rank": 16,
+      "rank": 18,
       "seasonTotal": 1.1006020912018653e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "p88203044",
-      "rank": 17,
-      "seasonTotal": 1.0973892198284742e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
       "name": "BlackFlamE",
-      "rank": 18,
-      "seasonTotal": 1.0118068055892937e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "Apathy_",
       "rank": 19,
-      "seasonTotal": 9.399619134833817e+20
+      "seasonTotal": 1.0986113460609219e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -161,7 +161,7 @@
       "gainVsPreviousSeason": null,
       "name": "gubrax",
       "rank": 27,
-      "seasonTotal": 4.1845655016934697e+20
+      "seasonTotal": 5.351786929626711e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -1640,10 +1640,11 @@
                 2.5575729927581503e+21,
                 2.790243407406646e+21,
                 3.4888716733297e+21,
-                3.1208059421531224e+21
+                3.1208059421531224e+21,
+                3.2128490888093033e+21
               ],
               "name": "DAYO-P",
-              "top2Sum": 6.609677615482822e+21
+              "top2Sum": 6.701720762139003e+21
             },
             {
               "attempts": [
@@ -1671,10 +1672,11 @@
             },
             {
               "attempts": [
-                7.194781691164345e+19
+                7.194781691164345e+19,
+                8.680454047162827e+19
               ],
               "name": "BlackFlamE",
-              "top2Sum": 7.194781691164345e+19
+              "top2Sum": 1.587523573832717e+20
             },
             {
               "attempts": [
@@ -1704,10 +1706,11 @@
             },
             {
               "attempts": [
-                1.5779409118302657e+20
+                1.5779409118302657e+20,
+                1.7901156593155716e+20
               ],
               "name": "Apathy_",
-              "top2Sum": 1.5779409118302657e+20
+              "top2Sum": 3.3680565711458376e+20
             },
             {
               "attempts": [
@@ -1760,6 +1763,22 @@
               ],
               "name": "SngphO",
               "top2Sum": 5.358176619936153e+21
+            },
+            {
+              "attempts": [
+                6.1001937001627296e+19,
+                5.5720205791696904e+19
+              ],
+              "name": "gubrax",
+              "top2Sum": 1.167221427933242e+20
+            },
+            {
+              "attempts": [
+                1.7315614427720584e+20,
+                1.869454079648011e+20
+              ],
+              "name": "p88203044",
+              "top2Sum": 3.6010155224200695e+20
             }
           ]
         }
