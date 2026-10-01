@@ -129,27 +129,27 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "NeonCBV",
+      "name": "Player 66607264",
       "rank": 22,
+      "seasonTotal": 8.569081617127278e+20
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "NeonCBV",
+      "rank": 23,
       "seasonTotal": 7.40338254681875e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "theLP",
-      "rank": 23,
+      "rank": 24,
       "seasonTotal": 6.871989217089632e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "BobBobberson",
-      "rank": 24,
-      "seasonTotal": 6.041174250635832e+20
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "Player 66607264",
       "rank": 25,
-      "seasonTotal": 5.828787071535743e+20
+      "seasonTotal": 6.041174250635832e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -185,7 +185,7 @@
       "gainVsPreviousSeason": null,
       "name": "Player 80018314",
       "rank": 31,
-      "seasonTotal": 2.407953964177196e+20
+      "seasonTotal": 2.8930037677890526e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -1819,6 +1819,20 @@
               ],
               "name": "RABBIT5",
               "top2Sum": 9.964645508779963e+21
+            },
+            {
+              "attempts": [
+                2.7402945455915346e+20
+              ],
+              "name": "Player 66607264",
+              "top2Sum": 2.7402945455915346e+20
+            },
+            {
+              "attempts": [
+                4.850498036118566e+19
+              ],
+              "name": "Player 80018314",
+              "top2Sum": 4.850498036118566e+19
             }
           ]
         }
