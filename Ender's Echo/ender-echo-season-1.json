@@ -21,15 +21,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "DAYO-P",
+      "name": "RABBIT5",
       "rank": 4,
-      "seasonTotal": 3.829469596559346e+22
+      "seasonTotal": 4.238902557370976e+22
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "RABBIT5",
+      "name": "DAYO-P",
       "rank": 5,
-      "seasonTotal": 3.24243800649298e+22
+      "seasonTotal": 3.829469596559346e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -119,13 +119,13 @@
       "gainVsPreviousSeason": null,
       "name": "EMBALOCO",
       "rank": 20,
-      "seasonTotal": 8.460312803454456e+20
+      "seasonTotal": 1.0561393699530612e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Bensayyten",
       "rank": 21,
-      "seasonTotal": 7.991625523641309e+20
+      "seasonTotal": 9.972018244587964e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -1790,10 +1790,11 @@
             },
             {
               "attempts": [
-                2.1475398814639646e+20
+                2.1475398814639646e+20,
+                1.9803927209466547e+20
               ],
               "name": "Bensayyten",
-              "top2Sum": 2.1475398814639646e+20
+              "top2Sum": 4.1279326024106194e+20
             },
             {
               "attempts": [
@@ -1802,6 +1803,22 @@
               ],
               "name": "Rzzza",
               "top2Sum": 1.998497305092845e+20
+            },
+            {
+              "attempts": [
+                1.1747612159224157e+20,
+                9.263196801537402e+19
+              ],
+              "name": "EMBALOCO",
+              "top2Sum": 2.101080896076156e+20
+            },
+            {
+              "attempts": [
+                5.457232573403983e+21,
+                4.5074129353759795e+21
+              ],
+              "name": "RABBIT5",
+              "top2Sum": 9.964645508779963e+21
             }
           ]
         }
