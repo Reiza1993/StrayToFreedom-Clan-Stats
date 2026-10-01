@@ -123,27 +123,27 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "NeonCBV",
+      "name": "Bensayyten",
       "rank": 21,
+      "seasonTotal": 7.991625523641309e+20
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "NeonCBV",
+      "rank": 22,
       "seasonTotal": 7.40338254681875e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "theLP",
-      "rank": 22,
+      "rank": 23,
       "seasonTotal": 6.871989217089632e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "BobBobberson",
-      "rank": 23,
-      "seasonTotal": 6.041174250635832e+20
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "Bensayyten",
       "rank": 24,
-      "seasonTotal": 5.844085642177345e+20
+      "seasonTotal": 6.041174250635832e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -165,21 +165,21 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "samwise08",
+      "name": "Rzzza",
       "rank": 28,
+      "seasonTotal": 4.782751964315603e+20
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "samwise08",
+      "rank": 29,
       "seasonTotal": 4.0597386643805654e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "faxnem",
-      "rank": 29,
-      "seasonTotal": 3.0467003491433074e+20
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "Rzzza",
       "rank": 30,
-      "seasonTotal": 2.7842546592227577e+20
+      "seasonTotal": 3.0467003491433074e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -191,7 +191,7 @@
       "gainVsPreviousSeason": null,
       "name": "Belthazar",
       "rank": 32,
-      "seasonTotal": 1.8383959488090243e+20
+      "seasonTotal": 2.3130966972574086e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -1779,6 +1779,29 @@
               ],
               "name": "p88203044",
               "top2Sum": 3.6010155224200695e+20
+            },
+            {
+              "attempts": [
+                2.1697623448118768e+19,
+                2.5772451396719673e+19
+              ],
+              "name": "Belthazar",
+              "top2Sum": 4.7470074844838445e+19
+            },
+            {
+              "attempts": [
+                2.1475398814639646e+20
+              ],
+              "name": "Bensayyten",
+              "top2Sum": 2.1475398814639646e+20
+            },
+            {
+              "attempts": [
+                1.0439572501688956e+20,
+                9.545400549239497e+19
+              ],
+              "name": "Rzzza",
+              "top2Sum": 1.998497305092845e+20
             }
           ]
         }
