@@ -35,7 +35,7 @@
       "gainVsPreviousSeason": null,
       "name": "SngphO",
       "rank": 6,
-      "seasonTotal": 3.1200483757392904e+22
+      "seasonTotal": 3.3921937403652877e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -51,15 +51,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "MadameMischief",
+      "name": "RetinaDNA",
       "rank": 9,
-      "seasonTotal": 5.176727590680946e+21
+      "seasonTotal": 6.213332814627405e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "RetinaDNA",
+      "name": "MadameMischief",
       "rank": 10,
-      "seasonTotal": 5.109069251188332e+21
+      "seasonTotal": 5.176727590680946e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -135,39 +135,39 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "NeonCBV",
+      "name": "theLP",
       "rank": 23,
+      "seasonTotal": 8.427935041133993e+20
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "NeonCBV",
+      "rank": 24,
       "seasonTotal": 7.40338254681875e+20
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "theLP",
-      "rank": 24,
-      "seasonTotal": 6.871989217089632e+20
+      "name": "gubrax",
+      "rank": 25,
+      "seasonTotal": 6.28128186393418e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "faxnem",
-      "rank": 25,
+      "rank": 26,
       "seasonTotal": 6.217682882843194e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "BobBobberson",
-      "rank": 26,
+      "rank": 27,
       "seasonTotal": 6.041174250635832e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "groggen",
-      "rank": 27,
-      "seasonTotal": 5.528527660587044e+20
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "gubrax",
       "rank": 28,
-      "seasonTotal": 5.351786929626711e+20
+      "seasonTotal": 5.528527660587044e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -1894,10 +1894,12 @@
             },
             {
               "attempts": [
-                2.469958682133353e+21
+                2.469958682133353e+21,
+                1.859143958695496e+21,
+                2.7214536462599727e+21
               ],
               "name": "SngphO",
-              "top2Sum": 2.469958682133353e+21
+              "top2Sum": 5.191412328393326e+21
             },
             {
               "attempts": [
@@ -1906,6 +1908,29 @@
               ],
               "name": "MadameMischief",
               "top2Sum": 7.093344244127489e+20
+            },
+            {
+              "attempts": [
+                1.1042635634390731e+21
+              ],
+              "name": "RetinaDNA",
+              "top2Sum": 1.1042635634390731e+21
+            },
+            {
+              "attempts": [
+                5.605558941079857e+19,
+                3.689390401994824e+19
+              ],
+              "name": "gubrax",
+              "top2Sum": 9.294949343074681e+19
+            },
+            {
+              "attempts": [
+                7.972957996138883e+19,
+                7.586500244304727e+19
+              ],
+              "name": "theLP",
+              "top2Sum": 1.555945824044361e+20
             }
           ]
         }
