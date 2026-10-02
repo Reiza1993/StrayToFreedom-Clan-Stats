@@ -4,19 +4,19 @@
 const playerCXRank = {
     current: {
     "100876140": {
-        "cxRankScore": 1600
+        "cxRankScore": 2000
     },
     "102263647": {
         "cxRankScore": 400
     },
     "103516442": {
-        "cxRankScore": 2400
+        "cxRankScore": 2600
     },
     "106162623": {
         "cxRankScore": 800
     },
     "10754439": {
-        "cxRankScore": 2500
+        "cxRankScore": 2900
     },
     "108546985": {
         "cxRankScore": 400
@@ -43,7 +43,7 @@ const playerCXRank = {
         "cxRankScore": 400
     },
     "26277677": {
-        "cxRankScore": 1600
+        "cxRankScore": 2000
     },
     "29321884": {
         "cxRankScore": 1200
@@ -55,16 +55,16 @@ const playerCXRank = {
         "cxRankScore": 800
     },
     "32556489": {
-        "cxRankScore": 2200
+        "cxRankScore": 2600
     },
     "35869301": {
         "cxRankScore": 0
     },
     "36484758": {
-        "cxRankScore": 2800
+        "cxRankScore": 3200
     },
     "41742773": {
-        "cxRankScore": 1500
+        "cxRankScore": 1900
     },
     "51071110": {
         "cxRankScore": 1500
@@ -79,10 +79,10 @@ const playerCXRank = {
         "cxRankScore": 2000
     },
     "66607264": {
-        "cxRankScore": 3000
+        "cxRankScore": 3400
     },
     "70603922": {
-        "cxRankScore": 1200
+        "cxRankScore": 1600
     },
     "71028860": {
         "cxRankScore": 0
@@ -94,16 +94,16 @@ const playerCXRank = {
         "cxRankScore": 400
     },
     "79510960": {
-        "cxRankScore": 1200
+        "cxRankScore": 1600
     },
     "80018314": {
-        "cxRankScore": 800
+        "cxRankScore": 1200
     },
     "80972473": {
         "cxRankScore": 0
     },
     "83339881": {
-        "cxRankScore": 1200
+        "cxRankScore": 1600
     },
     "83861839": {
         "cxRankScore": 800
@@ -115,7 +115,7 @@ const playerCXRank = {
         "cxRankScore": 400
     },
     "88203044": {
-        "cxRankScore": 2000
+        "cxRankScore": 2400
     },
     "89511116": {
         "cxRankScore": 800
