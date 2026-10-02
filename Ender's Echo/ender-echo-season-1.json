@@ -119,7 +119,7 @@
       "gainVsPreviousSeason": null,
       "name": "EMBALOCO",
       "rank": 20,
-      "seasonTotal": 1.0561393699530612e+21
+      "seasonTotal": 1.1705230085784142e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -1983,6 +1983,13 @@
               ],
               "name": "RABBIT5",
               "top2Sum": 9.105885430791243e+21
+            },
+            {
+              "attempts": [
+                1.1438363862535293e+20
+              ],
+              "name": "EMBALOCO",
+              "top2Sum": 1.1438363862535293e+20
             }
           ]
         }
