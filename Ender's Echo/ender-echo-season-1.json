@@ -21,15 +21,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "DAYO-P",
+      "name": "RABBIT5",
       "rank": 4,
-      "seasonTotal": 4.4519880422592635e+22
+      "seasonTotal": 5.1494911004501005e+22
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "RABBIT5",
+      "name": "DAYO-P",
       "rank": 5,
-      "seasonTotal": 4.238902557370976e+22
+      "seasonTotal": 4.4519880422592635e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -53,7 +53,7 @@
       "gainVsPreviousSeason": null,
       "name": "RetinaDNA",
       "rank": 9,
-      "seasonTotal": 6.213332814627405e+21
+      "seasonTotal": 7.021940875674316e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -129,86 +129,92 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Player 66607264",
+      "name": "Scoundrel536",
       "rank": 22,
+      "seasonTotal": 9.90066499069551e+20
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "Player 66607264",
+      "rank": 23,
       "seasonTotal": 8.569081617127278e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "theLP",
-      "rank": 23,
+      "rank": 24,
       "seasonTotal": 8.427935041133993e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "NeonCBV",
-      "rank": 24,
+      "rank": 25,
       "seasonTotal": 7.40338254681875e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "gubrax",
-      "rank": 25,
+      "rank": 26,
       "seasonTotal": 6.28128186393418e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "faxnem",
-      "rank": 26,
+      "rank": 27,
       "seasonTotal": 6.217682882843194e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "BobBobberson",
-      "rank": 27,
+      "rank": 28,
       "seasonTotal": 6.041174250635832e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "groggen",
-      "rank": 28,
+      "rank": 29,
       "seasonTotal": 5.528527660587044e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Rzzza",
-      "rank": 29,
+      "rank": 30,
       "seasonTotal": 4.782751964315603e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "samwise08",
-      "rank": 30,
+      "rank": 31,
       "seasonTotal": 4.0597386643805654e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Player 80018314",
-      "rank": 31,
+      "rank": 32,
       "seasonTotal": 2.8930037677890526e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Belthazar",
-      "rank": 32,
+      "rank": 33,
       "seasonTotal": 2.3130966972574086e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "datamaster",
-      "rank": 33,
+      "rank": 34,
       "seasonTotal": 1.281020678969742e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "ergiangi",
-      "rank": 34,
+      "rank": 35,
       "seasonTotal": 5.2529945458542174e+19
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Cheeselife",
-      "rank": 35,
+      "rank": 36,
       "seasonTotal": 2.101163410746618e+19
     }
   ],
@@ -1911,10 +1917,11 @@
             },
             {
               "attempts": [
-                1.1042635634390731e+21
+                1.1042635634390731e+21,
+                8.086080610469115e+20
               ],
               "name": "RetinaDNA",
-              "top2Sum": 1.1042635634390731e+21
+              "top2Sum": 1.9128716244859848e+21
             },
             {
               "attempts": [
@@ -1961,6 +1968,21 @@
               ],
               "name": "BlackFlamE",
               "top2Sum": 1.411873152656535e+20
+            },
+            {
+              "attempts": [
+                9.90066499069551e+20
+              ],
+              "name": "Scoundrel536",
+              "top2Sum": 9.90066499069551e+20
+            },
+            {
+              "attempts": [
+                4.6759012861984343e+21,
+                4.429984144592809e+21
+              ],
+              "name": "RABBIT5",
+              "top2Sum": 9.105885430791243e+21
             }
           ]
         }
