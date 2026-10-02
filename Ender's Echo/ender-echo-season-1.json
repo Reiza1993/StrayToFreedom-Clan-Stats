@@ -41,7 +41,7 @@
       "gainVsPreviousSeason": null,
       "name": "\u795eSterben\u6b7b",
       "rank": 7,
-      "seasonTotal": 2.4704077451743113e+22
+      "seasonTotal": 2.9580384698294847e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -63,33 +63,33 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "pumpenjoe",
+      "name": "PastalaVista",
       "rank": 11,
+      "seasonTotal": 4.991418280671504e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "pumpenjoe",
+      "rank": 12,
       "seasonTotal": 4.524357479966259e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "PastalaVista",
-      "rank": 12,
-      "seasonTotal": 4.441302381376888e+21
+      "name": "p88203044",
+      "rank": 13,
+      "seasonTotal": 2.1771598142002855e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "HakiLuffy",
-      "rank": 13,
+      "rank": 14,
       "seasonTotal": 1.8928037635502522e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "VictorMolusco",
-      "rank": 14,
-      "seasonTotal": 1.6675773333593737e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "p88203044",
       "rank": 15,
-      "seasonTotal": 1.457490772070481e+21
+      "seasonTotal": 1.6675773333593737e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -105,15 +105,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Gritchen",
+      "name": "BlackFlamE",
       "rank": 18,
-      "seasonTotal": 1.2177046289059954e+21
+      "seasonTotal": 1.2397986613265755e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "BlackFlamE",
+      "name": "Gritchen",
       "rank": 19,
-      "seasonTotal": 1.0986113460609219e+21
+      "seasonTotal": 1.2177046289059954e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -1931,6 +1931,36 @@
               ],
               "name": "theLP",
               "top2Sum": 1.555945824044361e+20
+            },
+            {
+              "attempts": [
+                4.876307246551734e+21
+              ],
+              "name": "\u795eSterben\u6b7b",
+              "top2Sum": 4.876307246551734e+21
+            },
+            {
+              "attempts": [
+                2.716635359330543e+20,
+                4.480055061967502e+20
+              ],
+              "name": "p88203044",
+              "top2Sum": 7.196690421298045e+20
+            },
+            {
+              "attempts": [
+                5.501158992946152e+20
+              ],
+              "name": "PastalaVista",
+              "top2Sum": 5.501158992946152e+20
+            },
+            {
+              "attempts": [
+                7.073709389855876e+19,
+                7.045022136709475e+19
+              ],
+              "name": "BlackFlamE",
+              "top2Sum": 1.411873152656535e+20
             }
           ]
         }
