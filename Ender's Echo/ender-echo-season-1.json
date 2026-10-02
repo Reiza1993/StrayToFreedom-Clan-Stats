@@ -17,7 +17,7 @@
       "gainVsPreviousSeason": null,
       "name": "Nubis",
       "rank": 3,
-      "seasonTotal": 7.953546457239557e+22
+      "seasonTotal": 9.050416450511784e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -59,7 +59,7 @@
       "gainVsPreviousSeason": null,
       "name": "MadameMischief",
       "rank": 10,
-      "seasonTotal": 5.176727590680946e+21
+      "seasonTotal": 5.828033918784552e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -2110,6 +2110,22 @@
               ],
               "name": "Fl3xas",
               "top2Sum": 4.572609485429818e+22
+            },
+            {
+              "attempts": [
+                5.554800030007811e+21,
+                5.413899902714455e+21
+              ],
+              "name": "Nubis",
+              "top2Sum": 1.0968699932722267e+22
+            },
+            {
+              "attempts": [
+                3.272153548304901e+20,
+                3.240909732731152e+20
+              ],
+              "name": "MadameMischief",
+              "top2Sum": 6.513063281036052e+20
             }
           ]
         }
