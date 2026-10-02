@@ -125,19 +125,19 @@
       "gainVsPreviousSeason": null,
       "name": "Bensayyten",
       "rank": 21,
-      "seasonTotal": 9.972018244587964e+20
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "Scoundrel536",
-      "rank": 22,
-      "seasonTotal": 9.90066499069551e+20
+      "seasonTotal": 1.1621135600067552e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Player 66607264",
+      "rank": 22,
+      "seasonTotal": 1.0856426745819224e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "Scoundrel536",
       "rank": 23,
-      "seasonTotal": 8.569081617127278e+20
+      "seasonTotal": 9.90066499069551e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -197,7 +197,7 @@
       "gainVsPreviousSeason": null,
       "name": "Belthazar",
       "rank": 33,
-      "seasonTotal": 2.3130966972574086e+20
+      "seasonTotal": 2.734023476633528e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -2021,6 +2021,28 @@
               ],
               "name": "FlyingDutchy",
               "top2Sum": 1.1164910124195791e+20
+            },
+            {
+              "attempts": [
+                2.1079164047789257e+19,
+                2.1013513889822667e+19
+              ],
+              "name": "Belthazar",
+              "top2Sum": 4.209267793761192e+19
+            },
+            {
+              "attempts": [
+                1.6491173554795882e+20
+              ],
+              "name": "Bensayyten",
+              "top2Sum": 1.6491173554795882e+20
+            },
+            {
+              "attempts": [
+                2.2873451286919466e+20
+              ],
+              "name": "Player 66607264",
+              "top2Sum": 2.2873451286919466e+20
             }
           ]
         }
