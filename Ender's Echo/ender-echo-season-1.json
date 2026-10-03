@@ -75,15 +75,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "VictorMolusco",
+      "name": "p88203044",
       "rank": 13,
-      "seasonTotal": 2.2742953805752e+21
+      "seasonTotal": 2.7197100622433967e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "p88203044",
+      "name": "VictorMolusco",
       "rank": 14,
-      "seasonTotal": 2.1771598142002855e+21
+      "seasonTotal": 2.2742953805752e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -159,21 +159,21 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "faxnem",
+      "name": "groggen",
       "rank": 27,
+      "seasonTotal": 6.983469297541857e+20
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "faxnem",
+      "rank": 28,
       "seasonTotal": 6.217682882843194e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "BobBobberson",
-      "rank": 28,
-      "seasonTotal": 6.041174250635832e+20
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "groggen",
       "rank": 29,
-      "seasonTotal": 5.528527660587044e+20
+      "seasonTotal": 6.041174250635832e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -2126,6 +2126,21 @@
               ],
               "name": "MadameMischief",
               "top2Sum": 6.513063281036052e+20
+            },
+            {
+              "attempts": [
+                2.1780794709655467e+20,
+                3.2474230094655645e+20
+              ],
+              "name": "p88203044",
+              "top2Sum": 5.425502480431111e+20
+            },
+            {
+              "attempts": [
+                1.4549416369548123e+20
+              ],
+              "name": "groggen",
+              "top2Sum": 1.4549416369548123e+20
             }
           ]
         }
