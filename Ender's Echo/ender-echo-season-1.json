@@ -105,21 +105,21 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Gritchen",
+      "name": "EMBALOCO",
       "rank": 18,
+      "seasonTotal": 1.4202324504149877e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "Gritchen",
+      "rank": 19,
       "seasonTotal": 1.3808459572814084e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "BlackFlamE",
-      "rank": 19,
-      "seasonTotal": 1.3064546840553453e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "EMBALOCO",
       "rank": 20,
-      "seasonTotal": 1.2719889057879003e+21
+      "seasonTotal": 1.3608558783172072e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -215,7 +215,7 @@
       "gainVsPreviousSeason": null,
       "name": "ergiangi",
       "rank": 36,
-      "seasonTotal": 5.2529945458542174e+19
+      "seasonTotal": 9.205040187777548e+19
     },
     {
       "gainVsPreviousSeason": null,
@@ -2101,10 +2101,11 @@
             },
             {
               "attempts": [
-                6.6656022728769815e+19
+                6.6656022728769815e+19,
+                5.440119426186182e+19
               ],
               "name": "BlackFlamE",
-              "top2Sum": 6.6656022728769815e+19
+              "top2Sum": 1.2105721699063162e+20
             },
             {
               "attempts": [
@@ -2175,6 +2176,21 @@
               ],
               "name": "RABBIT5",
               "top2Sum": 5.685325775250429e+21
+            },
+            {
+              "attempts": [
+                3.952045641923331e+19
+              ],
+              "name": "ergiangi",
+              "top2Sum": 3.952045641923331e+19
+            },
+            {
+              "attempts": [
+                6.880174201856146e+19,
+                7.944180260852598e+19
+              ],
+              "name": "EMBALOCO",
+              "top2Sum": 1.4824354462708744e+20
             }
           ]
         }
