@@ -29,7 +29,7 @@
       "gainVsPreviousSeason": null,
       "name": "DAYO-P",
       "rank": 5,
-      "seasonTotal": 4.536147864846971e+22
+      "seasonTotal": 5.224877032743685e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -63,15 +63,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "pumpenjoe",
+      "name": "PastalaVista",
       "rank": 11,
-      "seasonTotal": 5.353334754640706e+21
+      "seasonTotal": 5.515969833871466e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "PastalaVista",
+      "name": "pumpenjoe",
       "rank": 12,
-      "seasonTotal": 4.991418280671504e+21
+      "seasonTotal": 5.353334754640706e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -101,7 +101,7 @@
       "gainVsPreviousSeason": null,
       "name": "Apathy_",
       "rank": 17,
-      "seasonTotal": 1.457194502457768e+21
+      "seasonTotal": 1.7422718017663336e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -165,21 +165,21 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Rzzza",
+      "name": "BobBobberson",
       "rank": 28,
+      "seasonTotal": 6.91366866557691e+20
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "Rzzza",
+      "rank": 29,
       "seasonTotal": 6.386115916513245e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "faxnem",
-      "rank": 29,
-      "seasonTotal": 6.217682882843194e+20
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "BobBobberson",
       "rank": 30,
-      "seasonTotal": 6.041174250635832e+20
+      "seasonTotal": 6.217682882843194e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -189,15 +189,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Player 80018314",
+      "name": "Belthazar",
       "rank": 32,
-      "seasonTotal": 2.8930037677890526e+20
+      "seasonTotal": 3.1064003675064834e+20
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Belthazar",
+      "name": "Player 80018314",
       "rank": 33,
-      "seasonTotal": 2.734023476633528e+20
+      "seasonTotal": 2.8930037677890526e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -2191,6 +2191,44 @@
               ],
               "name": "EMBALOCO",
               "top2Sum": 1.4824354462708744e+20
+            },
+            {
+              "attempts": [
+                1.987536339734669e+19,
+                1.7362325689948891e+19
+              ],
+              "name": "Belthazar",
+              "top2Sum": 3.723768908729558e+19
+            },
+            {
+              "attempts": [
+                1.3055841186524863e+20,
+                1.545188874433171e+20
+              ],
+              "name": "Apathy_",
+              "top2Sum": 2.8507729930856573e+20
+            },
+            {
+              "attempts": [
+                3.372095375744186e+21,
+                3.5151963032229527e+21
+              ],
+              "name": "DAYO-P",
+              "top2Sum": 6.887291678967139e+21
+            },
+            {
+              "attempts": [
+                5.24551553199963e+20
+              ],
+              "name": "PastalaVista",
+              "top2Sum": 5.24551553199963e+20
+            },
+            {
+              "attempts": [
+                8.724944149410775e+19
+              ],
+              "name": "BobBobberson",
+              "top2Sum": 8.724944149410775e+19
             }
           ]
         }
