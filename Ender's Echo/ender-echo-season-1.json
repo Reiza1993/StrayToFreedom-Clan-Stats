@@ -35,7 +35,7 @@
       "gainVsPreviousSeason": null,
       "name": "SngphO",
       "rank": 6,
-      "seasonTotal": 3.7669570199751364e+22
+      "seasonTotal": 3.797890379962268e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -107,7 +107,7 @@
       "gainVsPreviousSeason": null,
       "name": "Gritchen",
       "rank": 18,
-      "seasonTotal": 1.3519767964642886e+21
+      "seasonTotal": 1.3808459572814084e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -2058,10 +2058,11 @@
             {
               "attempts": [
                 7.794583371428125e+19,
-                5.632633384401207e+19
+                5.632633384401207e+19,
+                8.519549466113178e+19
               ],
               "name": "Gritchen",
-              "top2Sum": 1.3427216755829332e+20
+              "top2Sum": 1.63141328375413e+20
             },
             {
               "attempts": [
@@ -2082,10 +2083,12 @@
             {
               "attempts": [
                 1.4130444030798822e+21,
-                2.3345883930186062e+21
+                2.3345883930186062e+21,
+                1.2971505020888854e+21,
+                1.7223780029511935e+21
               ],
               "name": "SngphO",
-              "top2Sum": 3.747632796098488e+21
+              "top2Sum": 4.0569663959697997e+21
             },
             {
               "attempts": [
