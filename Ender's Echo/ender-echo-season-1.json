@@ -23,7 +23,7 @@
       "gainVsPreviousSeason": null,
       "name": "RABBIT5",
       "rank": 4,
-      "seasonTotal": 5.1494911004501005e+22
+      "seasonTotal": 5.718023677975143e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -63,15 +63,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "PastalaVista",
+      "name": "pumpenjoe",
       "rank": 11,
-      "seasonTotal": 4.991418280671504e+21
+      "seasonTotal": 5.353334754640706e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "pumpenjoe",
+      "name": "PastalaVista",
       "rank": 12,
-      "seasonTotal": 4.524357479966259e+21
+      "seasonTotal": 4.991418280671504e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -165,27 +165,27 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "faxnem",
+      "name": "Rzzza",
       "rank": 28,
+      "seasonTotal": 6.386115916513245e+20
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "faxnem",
+      "rank": 29,
       "seasonTotal": 6.217682882843194e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "BobBobberson",
-      "rank": 29,
-      "seasonTotal": 6.041174250635832e+20
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "Rzzza",
       "rank": 30,
-      "seasonTotal": 4.782751964315603e+20
+      "seasonTotal": 6.041174250635832e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "samwise08",
       "rank": 31,
-      "seasonTotal": 4.0597386643805654e+20
+      "seasonTotal": 5.592695516977645e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -2144,6 +2144,37 @@
               ],
               "name": "groggen",
               "top2Sum": 1.4549416369548123e+20
+            },
+            {
+              "attempts": [
+                1.0397621426836406e+20,
+                5.636018095140013e+19
+              ],
+              "name": "Rzzza",
+              "top2Sum": 1.6033639521976418e+20
+            },
+            {
+              "attempts": [
+                1.018014109190578e+20,
+                5.149427434065013e+19
+              ],
+              "name": "samwise08",
+              "top2Sum": 1.5329568525970794e+20
+            },
+            {
+              "attempts": [
+                8.289772746744465e+20
+              ],
+              "name": "pumpenjoe",
+              "top2Sum": 8.289772746744465e+20
+            },
+            {
+              "attempts": [
+                3.541450562938578e+21,
+                2.1438752123118512e+21
+              ],
+              "name": "RABBIT5",
+              "top2Sum": 5.685325775250429e+21
             }
           ]
         }
