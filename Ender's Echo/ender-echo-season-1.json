@@ -57,15 +57,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "MadameMischief",
+      "name": "PastalaVista",
       "rank": 10,
-      "seasonTotal": 5.828033918784552e+21
+      "seasonTotal": 6.068166115123859e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "PastalaVista",
+      "name": "MadameMischief",
       "rank": 11,
-      "seasonTotal": 5.515969833871466e+21
+      "seasonTotal": 5.828033918784552e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -81,21 +81,21 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "VictorMolusco",
-      "rank": 14,
-      "seasonTotal": 2.2742953805752e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
       "name": "HakiLuffy",
-      "rank": 15,
-      "seasonTotal": 2.1141791601885226e+21
+      "rank": 14,
+      "seasonTotal": 2.3621533273611064e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "\u76feHeathcliff\u5263",
+      "rank": 15,
+      "seasonTotal": 2.3213454807599253e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "VictorMolusco",
       "rank": 16,
-      "seasonTotal": 1.8811663231700954e+21
+      "seasonTotal": 2.2742953805752e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -105,27 +105,27 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "EMBALOCO",
-      "rank": 18,
-      "seasonTotal": 1.4202324504149877e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
       "name": "Gritchen",
-      "rank": 19,
-      "seasonTotal": 1.3808459572814084e+21
+      "rank": 18,
+      "seasonTotal": 1.6078178901971805e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "BlackFlamE",
+      "rank": 19,
+      "seasonTotal": 1.491651938098628e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "EMBALOCO",
       "rank": 20,
-      "seasonTotal": 1.3608558783172072e+21
+      "seasonTotal": 1.4202324504149877e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Bensayyten",
       "rank": 21,
-      "seasonTotal": 1.1621135600067552e+21
+      "seasonTotal": 1.4053465512041526e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -143,7 +143,7 @@
       "gainVsPreviousSeason": null,
       "name": "theLP",
       "rank": 24,
-      "seasonTotal": 8.427935041133993e+20
+      "seasonTotal": 9.835467137604583e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -189,15 +189,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Belthazar",
+      "name": "Player 80018314",
       "rank": 32,
-      "seasonTotal": 3.1064003675064834e+20
+      "seasonTotal": 3.5305940518199624e+20
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Player 80018314",
+      "name": "Belthazar",
       "rank": 33,
-      "seasonTotal": 2.8930037677890526e+20
+      "seasonTotal": 3.1064003675064834e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -2218,10 +2218,11 @@
             },
             {
               "attempts": [
-                5.24551553199963e+20
+                5.24551553199963e+20,
+                5.521962812523925e+20
               ],
               "name": "PastalaVista",
-              "top2Sum": 5.24551553199963e+20
+              "top2Sum": 1.0767478344523554e+21
             },
             {
               "attempts": [
@@ -2229,6 +2230,70 @@
               ],
               "name": "BobBobberson",
               "top2Sum": 8.724944149410775e+19
+            },
+            {
+              "attempts": [
+                1.1706572729015065e+20,
+                1.261672639072468e+20
+              ],
+              "name": "Bensayyten",
+              "top2Sum": 2.4323299119739745e+20
+            },
+            {
+              "attempts": [
+                7.42851101082987e+19,
+                6.646809953876029e+19
+              ],
+              "name": "theLP",
+              "top2Sum": 1.40753209647059e+20
+            },
+            {
+              "attempts": [
+                2.3298887730365392e+20,
+                2.071902802861758e+20
+              ],
+              "name": "\u76feHeathcliff\u5263",
+              "top2Sum": 4.4017915758982975e+20
+            },
+            {
+              "attempts": [
+                3.6274487040255738e+19,
+                2.7484541362835243e+19
+              ],
+              "name": "Player 80018314",
+              "top2Sum": 6.375902840309098e+19
+            }
+          ]
+        },
+        {
+          "date": "2026-10-04",
+          "day": 11,
+          "players": [
+            {
+              "attempts": [
+                8.965838515397385e+19,
+                1.3731354776179827e+20
+              ],
+              "name": "Gritchen",
+              "top2Sum": 2.269719329157721e+20
+            },
+            {
+              "attempts": [
+                9.400629849457128e+19,
+                9.903845229597237e+19,
+                9.281554084502487e+19,
+                1.4893571487661153e+20
+              ],
+              "name": "HakiLuffy",
+              "top2Sum": 2.479741671725839e+20
+            },
+            {
+              "attempts": [
+                7.65523044351655e+19,
+                5.424375534625543e+19
+              ],
+              "name": "BlackFlamE",
+              "top2Sum": 1.3079605978142092e+20
             }
           ]
         }
