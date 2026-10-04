@@ -29,7 +29,7 @@
       "gainVsPreviousSeason": null,
       "name": "DAYO-P",
       "rank": 5,
-      "seasonTotal": 5.444045034368373e+22
+      "seasonTotal": 5.886885355521293e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -81,33 +81,33 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "HakiLuffy",
+      "name": "VictorMolusco",
       "rank": 14,
+      "seasonTotal": 2.4096263904623193e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "HakiLuffy",
+      "rank": 15,
       "seasonTotal": 2.3621533273611064e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "\u76feHeathcliff\u5263",
-      "rank": 15,
+      "rank": 16,
       "seasonTotal": 2.3213454807599253e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "VictorMolusco",
-      "rank": 16,
-      "seasonTotal": 2.2742953805752e+21
+      "name": "Apathy_",
+      "rank": 17,
+      "seasonTotal": 2.0389335808229722e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Scoundrel536",
-      "rank": 17,
-      "seasonTotal": 1.7694925674744722e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "Apathy_",
       "rank": 18,
-      "seasonTotal": 1.7422718017663336e+21
+      "seasonTotal": 1.7694925674744722e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -125,7 +125,7 @@
       "gainVsPreviousSeason": null,
       "name": "EMBALOCO",
       "rank": 21,
-      "seasonTotal": 1.4202324504149877e+21
+      "seasonTotal": 1.486528479631727e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -197,7 +197,7 @@
       "gainVsPreviousSeason": null,
       "name": "Belthazar",
       "rank": 33,
-      "seasonTotal": 3.1064003675064834e+20
+      "seasonTotal": 3.4484969467150264e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -2297,10 +2297,15 @@
             },
             {
               "attempts": [
-                2.1916800162468782e+21
+                2.1916800162468782e+21,
+                1.4912705741424188e+21,
+                4.0692166142800765e+21,
+                2.550866613496004e+21,
+                8.910189444012359e+20,
+                1.454788504825308e+21
               ],
               "name": "DAYO-P",
-              "top2Sum": 2.1916800162468782e+21
+              "top2Sum": 6.62008322777608e+21
             },
             {
               "attempts": [
@@ -2373,6 +2378,36 @@
               ],
               "name": "Scoundrel536",
               "top2Sum": 7.794260684049213e+20
+            },
+            {
+              "attempts": [
+                1.541862019340106e+19,
+                1.879103772745325e+19
+              ],
+              "name": "Belthazar",
+              "top2Sum": 3.420965792085431e+19
+            },
+            {
+              "attempts": [
+                1.4547631838005084e+20,
+                1.5118546067658788e+20
+              ],
+              "name": "Apathy_",
+              "top2Sum": 2.966617790566387e+20
+            },
+            {
+              "attempts": [
+                1.3533100988711952e+20
+              ],
+              "name": "VictorMolusco",
+              "top2Sum": 1.3533100988711952e+20
+            },
+            {
+              "attempts": [
+                6.629602921673921e+19
+              ],
+              "name": "EMBALOCO",
+              "top2Sum": 6.629602921673921e+19
             }
           ]
         }
