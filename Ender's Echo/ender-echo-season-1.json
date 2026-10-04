@@ -53,13 +53,13 @@
       "gainVsPreviousSeason": null,
       "name": "RetinaDNA",
       "rank": 9,
-      "seasonTotal": 7.711992334234304e+21
+      "seasonTotal": 8.25499071294719e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "MadameMischief",
       "rank": 10,
-      "seasonTotal": 6.794383997983593e+21
+      "seasonTotal": 7.209824033231146e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -159,33 +159,33 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "NeonCBV",
+      "name": "groggen",
       "rank": 27,
+      "seasonTotal": 8.106247239241306e+20
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "NeonCBV",
+      "rank": 28,
       "seasonTotal": 7.40338254681875e+20
     },
     {
       "gainVsPreviousSeason": null,
+      "name": "Rzzza",
+      "rank": 29,
+      "seasonTotal": 7.293063481056741e+20
+    },
+    {
+      "gainVsPreviousSeason": null,
       "name": "samwise08",
-      "rank": 28,
+      "rank": 30,
       "seasonTotal": 7.273701122103514e+20
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "groggen",
-      "rank": 29,
-      "seasonTotal": 6.983469297541857e+20
-    },
-    {
-      "gainVsPreviousSeason": null,
       "name": "BobBobberson",
-      "rank": 30,
-      "seasonTotal": 6.91366866557691e+20
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "Rzzza",
       "rank": 31,
-      "seasonTotal": 6.386115916513245e+20
+      "seasonTotal": 6.91366866557691e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -2508,10 +2508,32 @@
             },
             {
               "attempts": [
-                3.473779111221129e+20
+                3.473779111221129e+20,
+                4.154400352475527e+20
               ],
               "name": "MadameMischief",
-              "top2Sum": 3.473779111221129e+20
+              "top2Sum": 7.628179463696655e+20
+            },
+            {
+              "attempts": [
+                5.429983787128867e+20
+              ],
+              "name": "RetinaDNA",
+              "top2Sum": 5.429983787128867e+20
+            },
+            {
+              "attempts": [
+                9.069475645434972e+19
+              ],
+              "name": "Rzzza",
+              "top2Sum": 9.069475645434972e+19
+            },
+            {
+              "attempts": [
+                1.1227779416994493e+20
+              ],
+              "name": "groggen",
+              "top2Sum": 1.1227779416994493e+20
             }
           ]
         }
