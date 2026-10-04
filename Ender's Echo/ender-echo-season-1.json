@@ -99,45 +99,45 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Apathy_",
+      "name": "Scoundrel536",
       "rank": 17,
+      "seasonTotal": 1.7694925674744722e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "Apathy_",
+      "rank": 18,
       "seasonTotal": 1.7422718017663336e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Gritchen",
-      "rank": 18,
+      "rank": 19,
       "seasonTotal": 1.6078178901971805e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "BlackFlamE",
-      "rank": 19,
+      "rank": 20,
       "seasonTotal": 1.491651938098628e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "EMBALOCO",
-      "rank": 20,
+      "rank": 21,
       "seasonTotal": 1.4202324504149877e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Bensayyten",
-      "rank": 21,
+      "rank": 22,
       "seasonTotal": 1.4053465512041526e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Player 66607264",
-      "rank": 22,
-      "seasonTotal": 1.4039371555685899e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "Scoundrel536",
       "rank": 23,
-      "seasonTotal": 9.90066499069551e+20
+      "seasonTotal": 1.4039371555685899e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -2366,6 +2366,13 @@
               ],
               "name": "samwise08",
               "top2Sum": 1.6810056051258697e+20
+            },
+            {
+              "attempts": [
+                7.794260684049213e+20
+              ],
+              "name": "Scoundrel536",
+              "top2Sum": 7.794260684049213e+20
             }
           ]
         }
