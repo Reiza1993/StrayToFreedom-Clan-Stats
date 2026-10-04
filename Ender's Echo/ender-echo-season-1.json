@@ -21,27 +21,27 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "RABBIT5",
+      "name": "DAYO-P",
       "rank": 4,
+      "seasonTotal": 6.6847635180479526e+22
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "RABBIT5",
+      "rank": 5,
       "seasonTotal": 6.257180772861248e+22
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "DAYO-P",
-      "rank": 5,
-      "seasonTotal": 5.886885355521293e+22
+      "name": "\u795eSterben\u6b7b",
+      "rank": 6,
+      "seasonTotal": 4.285578864896293e+22
     },
     {
       "gainVsPreviousSeason": null,
       "name": "SngphO",
-      "rank": 6,
-      "seasonTotal": 4.271379977359915e+22
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "\u795eSterben\u6b7b",
       "rank": 7,
-      "seasonTotal": 3.5525722912040386e+22
+      "seasonTotal": 4.271379977359915e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -57,15 +57,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "PastalaVista",
+      "name": "MadameMischief",
       "rank": 10,
-      "seasonTotal": 6.448956920341589e+21
+      "seasonTotal": 6.794383997983593e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "MadameMischief",
+      "name": "PastalaVista",
       "rank": 11,
-      "seasonTotal": 6.44700608686148e+21
+      "seasonTotal": 6.448956920341589e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -2489,6 +2489,29 @@
               ],
               "name": "Cunner88",
               "top2Sum": 2.770641648897865e+21
+            },
+            {
+              "attempts": [
+                3.688954558277867e+21,
+                2.8637153800130805e+21,
+                4.2898270669887326e+21
+              ],
+              "name": "DAYO-P",
+              "top2Sum": 7.978781625266599e+21
+            },
+            {
+              "attempts": [
+                7.330065736922542e+21
+              ],
+              "name": "\u795eSterben\u6b7b",
+              "top2Sum": 7.330065736922542e+21
+            },
+            {
+              "attempts": [
+                3.473779111221129e+20
+              ],
+              "name": "MadameMischief",
+              "top2Sum": 3.473779111221129e+20
             }
           ]
         }
