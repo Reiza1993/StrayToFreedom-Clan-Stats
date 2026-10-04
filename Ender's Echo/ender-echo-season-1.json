@@ -131,7 +131,7 @@
       "gainVsPreviousSeason": null,
       "name": "Player 66607264",
       "rank": 22,
-      "seasonTotal": 1.0856426745819224e+21
+      "seasonTotal": 1.4039371555685899e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -2342,6 +2342,14 @@
               ],
               "name": "Nubis",
               "top2Sum": 1.1075189468884814e+22
+            },
+            {
+              "attempts": [
+                1.2815527408921338e+20,
+                1.9013920689745396e+20
+              ],
+              "name": "Player 66607264",
+              "top2Sum": 3.1829448098666735e+20
             }
           ]
         }
