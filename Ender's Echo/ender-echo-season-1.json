@@ -81,27 +81,27 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Cunner88",
+      "name": "VictorMolusco",
       "rank": 14,
+      "seasonTotal": 2.8390904937703827e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "Cunner88",
+      "rank": 15,
       "seasonTotal": 2.770641648897865e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "p88203044",
-      "rank": 15,
+      "rank": 16,
       "seasonTotal": 2.7197100622433967e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "HakiLuffy",
-      "rank": 16,
-      "seasonTotal": 2.593247259906607e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "VictorMolusco",
       "rank": 17,
-      "seasonTotal": 2.5354657431884954e+21
+      "seasonTotal": 2.593247259906607e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -207,15 +207,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "datamaster",
+      "name": "FlyingDutchy",
       "rank": 35,
-      "seasonTotal": 1.281020678969742e+20
+      "seasonTotal": 1.7882416526254014e+20
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "FlyingDutchy",
+      "name": "datamaster",
       "rank": 36,
-      "seasonTotal": 1.1164910124195791e+20
+      "seasonTotal": 1.281020678969742e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -228,6 +228,12 @@
       "name": "Cheeselife",
       "rank": 38,
       "seasonTotal": 2.101163410746618e+19
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "XvFps",
+      "rank": 39,
+      "seasonTotal": 10429448864430.0
     }
   ],
   "miniSeasons": [
@@ -2630,6 +2636,28 @@
               ],
               "name": "EMBALOCO",
               "top2Sum": 1.5120215475724632e+20
+            },
+            {
+              "attempts": [
+                10429448864430.0
+              ],
+              "name": "XvFps",
+              "top2Sum": 10429448864430.0
+            },
+            {
+              "attempts": [
+                1.603349817453796e+20,
+                1.432897688365076e+20
+              ],
+              "name": "VictorMolusco",
+              "top2Sum": 3.036247505818872e+20
+            },
+            {
+              "attempts": [
+                6.717506402058223e+19
+              ],
+              "name": "FlyingDutchy",
+              "top2Sum": 6.717506402058223e+19
             }
           ]
         }
