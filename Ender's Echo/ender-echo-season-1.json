@@ -75,15 +75,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Cunner88",
+      "name": "\u76feHeathcliff\u5263",
       "rank": 13,
-      "seasonTotal": 2.770641648897865e+21
+      "seasonTotal": 3.015106682384195e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "\u76feHeathcliff\u5263",
+      "name": "Cunner88",
       "rank": 14,
-      "seasonTotal": 2.76820951938954e+21
+      "seasonTotal": 2.770641648897865e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -129,15 +129,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "BlackFlamE",
+      "name": "EMBALOCO",
       "rank": 22,
-      "seasonTotal": 1.6233134586231139e+21
+      "seasonTotal": 1.7233436219440596e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "EMBALOCO",
+      "name": "BlackFlamE",
       "rank": 23,
-      "seasonTotal": 1.5721414671868132e+21
+      "seasonTotal": 1.6233134586231139e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -153,21 +153,21 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "gubrax",
+      "name": "groggen",
       "rank": 26,
-      "seasonTotal": 8.449332706279539e+20
+      "seasonTotal": 9.851002755069035e+20
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "gubrax",
+      "rank": 27,
+      "seasonTotal": 9.377065401329729e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Rzzza",
-      "rank": 27,
-      "seasonTotal": 8.169325707277582e+20
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "groggen",
       "rank": 28,
-      "seasonTotal": 8.106247239241306e+20
+      "seasonTotal": 8.169325707277582e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -195,15 +195,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Player 80018314",
+      "name": "Belthazar",
       "rank": 33,
-      "seasonTotal": 3.5305940518199624e+20
+      "seasonTotal": 3.898734698544685e+20
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Belthazar",
+      "name": "Player 80018314",
       "rank": 34,
-      "seasonTotal": 3.4484969467150264e+20
+      "seasonTotal": 3.5305940518199624e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -2536,10 +2536,11 @@
             },
             {
               "attempts": [
-                1.1227779416994493e+20
+                1.1227779416994493e+20,
+                1.744755515827729e+20
               ],
               "name": "groggen",
-              "top2Sum": 1.1227779416994493e+20
+              "top2Sum": 2.8675334575271782e+20
             },
             {
               "attempts": [
@@ -2598,6 +2599,37 @@
               ],
               "name": "Player 66607264",
               "top2Sum": 4.490354874627054e+20
+            },
+            {
+              "attempts": [
+                2.9936726115174412e+19,
+                1.50870490677914e+19
+              ],
+              "name": "Belthazar",
+              "top2Sum": 4.502377518296582e+19
+            },
+            {
+              "attempts": [
+                4.577321658244686e+19,
+                4.700005292257211e+19
+              ],
+              "name": "gubrax",
+              "top2Sum": 9.277326950501897e+19
+            },
+            {
+              "attempts": [
+                2.468971629946549e+20
+              ],
+              "name": "\u76feHeathcliff\u5263",
+              "top2Sum": 2.468971629946549e+20
+            },
+            {
+              "attempts": [
+                8.504874943596639e+19,
+                6.615340532127994e+19
+              ],
+              "name": "EMBALOCO",
+              "top2Sum": 1.5120215475724632e+20
             }
           ]
         }
