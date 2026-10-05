@@ -59,7 +59,7 @@
       "gainVsPreviousSeason": null,
       "name": "MadameMischief",
       "rank": 10,
-      "seasonTotal": 7.209824033231146e+21
+      "seasonTotal": 7.726145078161187e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -81,21 +81,21 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "\u76feHeathcliff\u5263",
+      "name": "VictorMolusco",
       "rank": 14,
+      "seasonTotal": 3.14048389161179e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "\u76feHeathcliff\u5263",
+      "rank": 15,
       "seasonTotal": 3.015106682384195e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "HakiLuffy",
-      "rank": 15,
-      "seasonTotal": 2.863400428063387e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "VictorMolusco",
       "rank": 16,
-      "seasonTotal": 2.8390904937703827e+21
+      "seasonTotal": 2.863400428063387e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -207,32 +207,38 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "FlyingDutchy",
+      "name": "Toddlerr",
       "rank": 35,
+      "seasonTotal": 2.401598798424772e+20
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "FlyingDutchy",
+      "rank": 36,
       "seasonTotal": 1.7882416526254014e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "datamaster",
-      "rank": 36,
+      "rank": 37,
       "seasonTotal": 1.281020678969742e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "ergiangi",
-      "rank": 37,
+      "rank": 38,
       "seasonTotal": 9.205040187777548e+19
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Cheeselife",
-      "rank": 38,
+      "rank": 39,
       "seasonTotal": 2.101163410746618e+19
     },
     {
       "gainVsPreviousSeason": null,
       "name": "XvFps",
-      "rank": 39,
+      "rank": 40,
       "seasonTotal": 10429448864430.0
     }
   ],
@@ -2721,6 +2727,29 @@
               ],
               "name": "Cunner88",
               "top2Sum": 2.743271691401699e+21
+            },
+            {
+              "attempts": [
+                1.200298180723959e+20,
+                1.8136357976901137e+20
+              ],
+              "name": "VictorMolusco",
+              "top2Sum": 3.0139339784140725e+20
+            },
+            {
+              "attempts": [
+                2.401598798424772e+20
+              ],
+              "name": "Toddlerr",
+              "top2Sum": 2.401598798424772e+20
+            },
+            {
+              "attempts": [
+                2.1819366655350155e+20,
+                2.9812737837653964e+20
+              ],
+              "name": "MadameMischief",
+              "top2Sum": 5.163210449300412e+20
             }
           ]
         }
