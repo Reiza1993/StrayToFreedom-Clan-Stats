@@ -29,19 +29,19 @@
       "gainVsPreviousSeason": null,
       "name": "DAYO-P",
       "rank": 5,
-      "seasonTotal": 6.6847635180479526e+22
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "\u795eSterben\u6b7b",
-      "rank": 6,
-      "seasonTotal": 4.285578864896293e+22
+      "seasonTotal": 6.6995547447242116e+22
     },
     {
       "gainVsPreviousSeason": null,
       "name": "SngphO",
+      "rank": 6,
+      "seasonTotal": 4.611329466626392e+22
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "\u795eSterben\u6b7b",
       "rank": 7,
-      "seasonTotal": 4.271379977359915e+22
+      "seasonTotal": 4.285578864896293e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -107,7 +107,7 @@
       "gainVsPreviousSeason": null,
       "name": "Apathy_",
       "rank": 18,
-      "seasonTotal": 2.0389335808229722e+21
+      "seasonTotal": 2.264999134670102e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -159,27 +159,27 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "groggen",
+      "name": "Rzzza",
       "rank": 27,
+      "seasonTotal": 8.169325707277582e+20
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "groggen",
+      "rank": 28,
       "seasonTotal": 8.106247239241306e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "samwise08",
-      "rank": 28,
+      "rank": 29,
       "seasonTotal": 7.904409850555471e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "NeonCBV",
-      "rank": 29,
-      "seasonTotal": 7.40338254681875e+20
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "Rzzza",
       "rank": 30,
-      "seasonTotal": 7.293063481056741e+20
+      "seasonTotal": 7.40338254681875e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -2496,10 +2496,13 @@
               "attempts": [
                 3.688954558277867e+21,
                 2.8637153800130805e+21,
-                4.2898270669887326e+21
+                4.2898270669887326e+21,
+                3.8368668250404574e+21,
+                2.756575416996081e+21,
+                3.2135763977006256e+21
               ],
               "name": "DAYO-P",
-              "top2Sum": 7.978781625266599e+21
+              "top2Sum": 8.12669389202919e+21
             },
             {
               "attempts": [
@@ -2525,10 +2528,11 @@
             },
             {
               "attempts": [
-                9.069475645434972e+19
+                9.069475645434972e+19,
+                8.762622262208396e+19
               ],
               "name": "Rzzza",
-              "top2Sum": 9.069475645434972e+19
+              "top2Sum": 1.7832097907643367e+20
             },
             {
               "attempts": [
@@ -2570,6 +2574,21 @@
               ],
               "name": "RABBIT5",
               "top2Sum": 6.639757101883338e+21
+            },
+            {
+              "attempts": [
+                2.2606555384712983e+20
+              ],
+              "name": "Apathy_",
+              "top2Sum": 2.2606555384712983e+20
+            },
+            {
+              "attempts": [
+                1.864611890741235e+21,
+                1.5348830019235293e+21
+              ],
+              "name": "SngphO",
+              "top2Sum": 3.399494892664764e+21
             }
           ]
         }
