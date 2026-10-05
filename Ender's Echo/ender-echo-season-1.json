@@ -17,7 +17,7 @@
       "gainVsPreviousSeason": null,
       "name": "Nubis",
       "rank": 3,
-      "seasonTotal": 1.0157935397400265e+23
+      "seasonTotal": 1.1131419499474396e+23
     },
     {
       "gainVsPreviousSeason": null,
@@ -165,21 +165,21 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "NeonCBV",
+      "name": "samwise08",
       "rank": 28,
+      "seasonTotal": 7.904409850555471e+20
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "NeonCBV",
+      "rank": 29,
       "seasonTotal": 7.40338254681875e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Rzzza",
-      "rank": 29,
-      "seasonTotal": 7.293063481056741e+20
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "samwise08",
       "rank": 30,
-      "seasonTotal": 7.273701122103514e+20
+      "seasonTotal": 7.293063481056741e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -2534,6 +2534,24 @@
               ],
               "name": "groggen",
               "top2Sum": 1.1227779416994493e+20
+            },
+            {
+              "attempts": [
+                2.289026228343086e+19,
+                4.018061056176478e+19
+              ],
+              "name": "samwise08",
+              "top2Sum": 6.307087284519564e+19
+            },
+            {
+              "attempts": [
+                4.461265670161268e+21,
+                3.9212881517667166e+21,
+                4.931318991830142e+21,
+                4.803522028911174e+21
+              ],
+              "name": "Nubis",
+              "top2Sum": 9.734841020741317e+21
             }
           ]
         }
