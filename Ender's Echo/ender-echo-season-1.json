@@ -21,15 +21,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "DAYO-P",
+      "name": "RABBIT5",
       "rank": 4,
-      "seasonTotal": 6.6847635180479526e+22
+      "seasonTotal": 6.921156483049582e+22
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "RABBIT5",
+      "name": "DAYO-P",
       "rank": 5,
-      "seasonTotal": 6.257180772861248e+22
+      "seasonTotal": 6.6847635180479526e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -93,15 +93,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "VictorMolusco",
+      "name": "HakiLuffy",
       "rank": 16,
-      "seasonTotal": 2.5354657431884954e+21
+      "seasonTotal": 2.593247259906607e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "HakiLuffy",
+      "name": "VictorMolusco",
       "rank": 17,
-      "seasonTotal": 2.4813017318487417e+21
+      "seasonTotal": 2.5354657431884954e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -111,27 +111,27 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Scoundrel536",
+      "name": "Gritchen",
       "rank": 19,
+      "seasonTotal": 1.8225205783202085e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "Scoundrel536",
+      "rank": 20,
       "seasonTotal": 1.7694925674744722e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Gritchen",
-      "rank": 20,
-      "seasonTotal": 1.6078178901971805e+21
+      "name": "BlackFlamE",
+      "rank": 21,
+      "seasonTotal": 1.6233134586231139e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "EMBALOCO",
-      "rank": 21,
-      "seasonTotal": 1.5721414671868132e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "BlackFlamE",
       "rank": 22,
-      "seasonTotal": 1.5447849098519616e+21
+      "seasonTotal": 1.5721414671868132e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -2462,17 +2462,19 @@
           "players": [
             {
               "attempts": [
-                1.1914840448763534e+20
+                1.1914840448763534e+20,
+                1.1194552805786529e+20
               ],
               "name": "HakiLuffy",
-              "top2Sum": 1.1914840448763534e+20
+              "top2Sum": 2.3109393254550064e+20
             },
             {
               "attempts": [
-                5.3132971753333465e+19
+                5.3132971753333465e+19,
+                7.85285487711525e+19
               ],
               "name": "BlackFlamE",
-              "top2Sum": 5.3132971753333465e+19
+              "top2Sum": 1.3166152052448595e+20
             },
             {
               "attempts": [
@@ -2552,6 +2554,22 @@
               ],
               "name": "Nubis",
               "top2Sum": 9.734841020741317e+21
+            },
+            {
+              "attempts": [
+                1.035084848709591e+20,
+                1.1119420325206893e+20
+              ],
+              "name": "Gritchen",
+              "top2Sum": 2.1470268812302805e+20
+            },
+            {
+              "attempts": [
+                2.985083321320382e+21,
+                3.6546737805629556e+21
+              ],
+              "name": "RABBIT5",
+              "top2Sum": 6.639757101883338e+21
             }
           ]
         }
