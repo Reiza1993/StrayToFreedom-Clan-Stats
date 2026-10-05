@@ -5,7 +5,7 @@
       "gainVsPreviousSeason": null,
       "name": "Fl3xas",
       "rank": 1,
-      "seasonTotal": 5.320659269085614e+23
+      "seasonTotal": 5.845256215013326e+23
     },
     {
       "gainVsPreviousSeason": null,
@@ -17,7 +17,7 @@
       "gainVsPreviousSeason": null,
       "name": "Nubis",
       "rank": 3,
-      "seasonTotal": 1.1131419499474396e+23
+      "seasonTotal": 1.2038150729557732e+23
     },
     {
       "gainVsPreviousSeason": null,
@@ -69,33 +69,33 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "pumpenjoe",
+      "name": "Cunner88",
       "rank": 12,
+      "seasonTotal": 5.513913340299564e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "pumpenjoe",
+      "rank": 13,
       "seasonTotal": 5.353334754640706e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "\u76feHeathcliff\u5263",
-      "rank": 13,
+      "rank": 14,
       "seasonTotal": 3.015106682384195e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "HakiLuffy",
-      "rank": 14,
+      "rank": 15,
       "seasonTotal": 2.863400428063387e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "VictorMolusco",
-      "rank": 15,
-      "seasonTotal": 2.8390904937703827e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "Cunner88",
       "rank": 16,
-      "seasonTotal": 2.770641648897865e+21
+      "seasonTotal": 2.8390904937703827e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -107,7 +107,7 @@
       "gainVsPreviousSeason": null,
       "name": "Apathy_",
       "rank": 18,
-      "seasonTotal": 2.377566811706686e+21
+      "seasonTotal": 2.6507088697474427e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -2686,6 +2686,41 @@
               ],
               "name": "HakiLuffy",
               "top2Sum": 2.7015316815677958e+20
+            },
+            {
+              "attempts": [
+                1.1524052967206466e+20,
+                1.5790152836869207e+20
+              ],
+              "name": "Apathy_",
+              "top2Sum": 2.7314205804075673e+20
+            },
+            {
+              "attempts": [
+                4.6341878524972426e+21,
+                4.433124448336113e+21,
+                2.8514926076400574e+21,
+                3.850855813424639e+21
+              ],
+              "name": "Nubis",
+              "top2Sum": 9.067312300833355e+21
+            },
+            {
+              "attempts": [
+                2.412507295304165e+22,
+                2.1863716485808488e+22,
+                2.1577867834652713e+22,
+                2.833462163972958e+22
+              ],
+              "name": "Fl3xas",
+              "top2Sum": 5.245969459277123e+22
+            },
+            {
+              "attempts": [
+                2.743271691401699e+21
+              ],
+              "name": "Cunner88",
+              "top2Sum": 2.743271691401699e+21
             }
           ]
         }
