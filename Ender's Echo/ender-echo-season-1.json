@@ -21,15 +21,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "RABBIT5",
+      "name": "DAYO-P",
       "rank": 4,
-      "seasonTotal": 6.921156483049582e+22
+      "seasonTotal": 7.461396829863813e+22
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "DAYO-P",
+      "name": "RABBIT5",
       "rank": 5,
-      "seasonTotal": 6.6995547447242116e+22
+      "seasonTotal": 6.921156483049582e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -81,27 +81,27 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "VictorMolusco",
+      "name": "HakiLuffy",
       "rank": 14,
+      "seasonTotal": 2.863400428063387e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "VictorMolusco",
+      "rank": 15,
       "seasonTotal": 2.8390904937703827e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Cunner88",
-      "rank": 15,
+      "rank": 16,
       "seasonTotal": 2.770641648897865e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "p88203044",
-      "rank": 16,
-      "seasonTotal": 2.7197100622433967e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "HakiLuffy",
       "rank": 17,
-      "seasonTotal": 2.593247259906607e+21
+      "seasonTotal": 2.7197100622433967e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -2663,6 +2663,34 @@
         }
       ],
       "miniSeasonNumber": 4
+    },
+    {
+      "days": [
+        {
+          "date": "2026-10-06",
+          "day": 13,
+          "players": [
+            {
+              "attempts": [
+                3.338803336152422e+21,
+                4.279617515243589e+21,
+                2.3022648811481546e+21
+              ],
+              "name": "DAYO-P",
+              "top2Sum": 7.618420851396011e+21
+            },
+            {
+              "attempts": [
+                1.1528539301064599e+20,
+                1.548677751461336e+20
+              ],
+              "name": "HakiLuffy",
+              "top2Sum": 2.7015316815677958e+20
+            }
+          ]
+        }
+      ],
+      "miniSeasonNumber": 5
     }
   ],
   "seasonNumber": 1,
