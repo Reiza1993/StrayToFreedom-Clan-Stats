@@ -23,7 +23,7 @@
       "gainVsPreviousSeason": null,
       "name": "DAYO-P",
       "rank": 4,
-      "seasonTotal": 7.564152958116963e+22
+      "seasonTotal": 7.617959798008506e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -161,13 +161,13 @@
       "gainVsPreviousSeason": null,
       "name": "groggen",
       "rank": 27,
-      "seasonTotal": 9.851002755069035e+20
+      "seasonTotal": 1.110120515170369e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "gubrax",
       "rank": 28,
-      "seasonTotal": 9.377065401329729e+20
+      "seasonTotal": 1.036636161415385e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -2694,10 +2694,11 @@
                 4.279617515243589e+21,
                 2.3022648811481546e+21,
                 4.366364618683937e+21,
-                3.1004797137107655e+21
+                3.1004797137107655e+21,
+                4.817685914159e+21
               ],
               "name": "DAYO-P",
-              "top2Sum": 8.645982133927526e+21
+              "top2Sum": 9.184050532842937e+21
             },
             {
               "attempts": [
@@ -2832,6 +2833,21 @@
               ],
               "name": "Player 66607264",
               "top2Sum": 1.8307957197099896e+20
+            },
+            {
+              "attempts": [
+                5.042284581794771e+19,
+                4.850677546446446e+19
+              ],
+              "name": "gubrax",
+              "top2Sum": 9.892962128241217e+19
+            },
+            {
+              "attempts": [
+                1.2502023966346543e+20
+              ],
+              "name": "groggen",
+              "top2Sum": 1.2502023966346543e+20
             }
           ]
         }
