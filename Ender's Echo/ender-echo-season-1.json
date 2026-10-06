@@ -29,7 +29,7 @@
       "gainVsPreviousSeason": null,
       "name": "RABBIT5",
       "rank": 5,
-      "seasonTotal": 6.921156483049582e+22
+      "seasonTotal": 7.558658427345014e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -59,7 +59,7 @@
       "gainVsPreviousSeason": null,
       "name": "RetinaDNA",
       "rank": 10,
-      "seasonTotal": 8.25499071294719e+21
+      "seasonTotal": 8.586537679496128e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -87,15 +87,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "VictorMolusco",
+      "name": "\u76feHeathcliff\u5263",
       "rank": 15,
-      "seasonTotal": 3.14048389161179e+21
+      "seasonTotal": 3.3948851496944455e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "\u76feHeathcliff\u5263",
+      "name": "VictorMolusco",
       "rank": 16,
-      "seasonTotal": 3.015106682384195e+21
+      "seasonTotal": 3.14048389161179e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -129,15 +129,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Scoundrel536",
+      "name": "EMBALOCO",
       "rank": 22,
-      "seasonTotal": 1.7694925674744722e+21
+      "seasonTotal": 1.9363901349311907e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "EMBALOCO",
+      "name": "Scoundrel536",
       "rank": 23,
-      "seasonTotal": 1.7233436219440596e+21
+      "seasonTotal": 1.7694925674744722e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -171,27 +171,27 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Rzzza",
-      "rank": 29,
-      "seasonTotal": 8.169325707277582e+20
-    },
-    {
-      "gainVsPreviousSeason": null,
       "name": "samwise08",
-      "rank": 30,
-      "seasonTotal": 7.904409850555471e+20
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "NeonCBV",
-      "rank": 31,
-      "seasonTotal": 7.40338254681875e+20
+      "rank": 29,
+      "seasonTotal": 8.928704105965535e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "BobBobberson",
+      "rank": 30,
+      "seasonTotal": 8.701948816976929e+20
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "Rzzza",
+      "rank": 31,
+      "seasonTotal": 8.169325707277582e+20
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "NeonCBV",
       "rank": 32,
-      "seasonTotal": 6.91366866557691e+20
+      "seasonTotal": 7.40338254681875e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -209,7 +209,7 @@
       "gainVsPreviousSeason": null,
       "name": "Belthazar",
       "rank": 35,
-      "seasonTotal": 3.898734698544685e+20
+      "seasonTotal": 4.345871739017027e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -2848,6 +2848,60 @@
               ],
               "name": "groggen",
               "top2Sum": 1.2502023966346543e+20
+            },
+            {
+              "attempts": [
+                3.3154696654893797e+20
+              ],
+              "name": "RetinaDNA",
+              "top2Sum": 3.3154696654893797e+20
+            },
+            {
+              "attempts": [
+                1.9170581425411113e+19,
+                2.554312262182315e+19
+              ],
+              "name": "Belthazar",
+              "top2Sum": 4.471370404723426e+19
+            },
+            {
+              "attempts": [
+                2.2461602748585178e+20,
+                1.5516243982439845e+20
+              ],
+              "name": "\u76feHeathcliff\u5263",
+              "top2Sum": 3.797784673102502e+20
+            },
+            {
+              "attempts": [
+                1.0242942554100636e+20
+              ],
+              "name": "samwise08",
+              "top2Sum": 1.0242942554100636e+20
+            },
+            {
+              "attempts": [
+                7.130966311111146e+19,
+                1.0751835202889046e+20
+              ],
+              "name": "BobBobberson",
+              "top2Sum": 1.7882801514000194e+20
+            },
+            {
+              "attempts": [
+                1.035096956944754e+20,
+                1.0953681729265569e+20
+              ],
+              "name": "EMBALOCO",
+              "top2Sum": 2.130465129871311e+20
+            },
+            {
+              "attempts": [
+                3.619005581751139e+21,
+                2.756013861203177e+21
+              ],
+              "name": "RABBIT5",
+              "top2Sum": 6.375019442954316e+21
             }
           ]
         }
