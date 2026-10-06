@@ -5,7 +5,7 @@
       "gainVsPreviousSeason": null,
       "name": "Fl3xas",
       "rank": 1,
-      "seasonTotal": 5.845256215013326e+23
+      "seasonTotal": 6.364186962317411e+23
     },
     {
       "gainVsPreviousSeason": null,
@@ -35,7 +35,7 @@
       "gainVsPreviousSeason": null,
       "name": "SngphO",
       "rank": 6,
-      "seasonTotal": 5.008694972465865e+22
+      "seasonTotal": 5.434487105296031e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -95,7 +95,7 @@
       "gainVsPreviousSeason": null,
       "name": "VictorMolusco",
       "rank": 16,
-      "seasonTotal": 3.14048389161179e+21
+      "seasonTotal": 3.2789899295663624e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -143,7 +143,7 @@
       "gainVsPreviousSeason": null,
       "name": "BlackFlamE",
       "rank": 24,
-      "seasonTotal": 1.704877399725424e+21
+      "seasonTotal": 1.767186334244438e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -2972,6 +2972,36 @@
               ],
               "name": "silverxz",
               "top2Sum": 1.7679054148510948e+20
+            },
+            {
+              "attempts": [
+                1.3850603795457232e+20
+              ],
+              "name": "VictorMolusco",
+              "top2Sum": 1.3850603795457232e+20
+            },
+            {
+              "attempts": [
+                2.333917056738207e+21,
+                1.9240042715634587e+21
+              ],
+              "name": "SngphO",
+              "top2Sum": 4.2579213283016657e+21
+            },
+            {
+              "attempts": [
+                6.230893451901409e+19
+              ],
+              "name": "BlackFlamE",
+              "top2Sum": 6.230893451901409e+19
+            },
+            {
+              "attempts": [
+                2.6648118763758446e+22,
+                2.524495596664998e+22
+              ],
+              "name": "Fl3xas",
+              "top2Sum": 5.189307473040843e+22
             }
           ]
         }
