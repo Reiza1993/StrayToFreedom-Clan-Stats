@@ -23,7 +23,7 @@
       "gainVsPreviousSeason": null,
       "name": "DAYO-P",
       "rank": 4,
-      "seasonTotal": 7.617959798008506e+22
+      "seasonTotal": 8.242859490513818e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -65,13 +65,13 @@
       "gainVsPreviousSeason": null,
       "name": "MadameMischief",
       "rank": 11,
-      "seasonTotal": 7.726145078161187e+21
+      "seasonTotal": 8.479829976229039e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "PastalaVista",
       "rank": 12,
-      "seasonTotal": 6.448956920341589e+21
+      "seasonTotal": 7.464812237619014e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -101,13 +101,13 @@
       "gainVsPreviousSeason": null,
       "name": "HakiLuffy",
       "rank": 17,
-      "seasonTotal": 2.863400428063387e+21
+      "seasonTotal": 3.074541501135119e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "p88203044",
       "rank": 18,
-      "seasonTotal": 2.7197100622433967e+21
+      "seasonTotal": 3.0278004540346687e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -2902,6 +2902,51 @@
               ],
               "name": "RABBIT5",
               "top2Sum": 6.375019442954316e+21
+            },
+            {
+              "attempts": [
+                3.080903917912719e+20
+              ],
+              "name": "p88203044",
+              "top2Sum": 3.080903917912719e+20
+            },
+            {
+              "attempts": [
+                4.8539707814142444e+20,
+                5.3045823913600116e+20
+              ],
+              "name": "PastalaVista",
+              "top2Sum": 1.0158553172774255e+21
+            }
+          ]
+        },
+        {
+          "date": "2026-10-07",
+          "day": 14,
+          "players": [
+            {
+              "attempts": [
+                3.114566038075145e+21,
+                3.1344308869779864e+21
+              ],
+              "name": "DAYO-P",
+              "top2Sum": 6.248996925053132e+21
+            },
+            {
+              "attempts": [
+                8.969212007035211e+19,
+                1.2144895300138036e+20
+              ],
+              "name": "HakiLuffy",
+              "top2Sum": 2.111410730717325e+20
+            },
+            {
+              "attempts": [
+                3.3931827813057364e+20,
+                4.14366619937278e+20
+              ],
+              "name": "MadameMischief",
+              "top2Sum": 7.536848980678516e+20
             }
           ]
         }
