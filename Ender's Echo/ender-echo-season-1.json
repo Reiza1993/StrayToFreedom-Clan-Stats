@@ -35,7 +35,7 @@
       "gainVsPreviousSeason": null,
       "name": "SngphO",
       "rank": 6,
-      "seasonTotal": 4.611329466626392e+22
+      "seasonTotal": 5.008694972465865e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -149,7 +149,7 @@
       "gainVsPreviousSeason": null,
       "name": "theLP",
       "rank": 25,
-      "seasonTotal": 1.1381693876487203e+21
+      "seasonTotal": 1.2791186614318344e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -195,21 +195,21 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Belthazar",
+      "name": "Toddlerr",
       "rank": 33,
+      "seasonTotal": 5.741700902372607e+20
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "Belthazar",
+      "rank": 34,
       "seasonTotal": 3.898734698544685e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Player 80018314",
-      "rank": 34,
-      "seasonTotal": 3.5305940518199624e+20
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "Toddlerr",
       "rank": 35,
-      "seasonTotal": 2.401598798424772e+20
+      "seasonTotal": 3.5305940518199624e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -2738,10 +2738,11 @@
             },
             {
               "attempts": [
-                2.401598798424772e+20
+                2.401598798424772e+20,
+                3.340102103947835e+20
               ],
               "name": "Toddlerr",
-              "top2Sum": 2.401598798424772e+20
+              "top2Sum": 5.741700902372607e+20
             },
             {
               "attempts": [
@@ -2750,6 +2751,22 @@
               ],
               "name": "MadameMischief",
               "top2Sum": 5.163210449300412e+20
+            },
+            {
+              "attempts": [
+                7.729076467784134e+19,
+                6.365850910527273e+19
+              ],
+              "name": "theLP",
+              "top2Sum": 1.4094927378311407e+20
+            },
+            {
+              "attempts": [
+                1.8638280944637116e+21,
+                2.1098269639310188e+21
+              ],
+              "name": "SngphO",
+              "top2Sum": 3.9736550583947305e+21
             }
           ]
         }
