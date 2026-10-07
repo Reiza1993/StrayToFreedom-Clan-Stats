@@ -113,7 +113,7 @@
       "gainVsPreviousSeason": null,
       "name": "Apathy_",
       "rank": 19,
-      "seasonTotal": 2.6507088697474427e+21
+      "seasonTotal": 2.901162454895448e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -165,21 +165,21 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "gubrax",
+      "name": "BobBobberson",
       "rank": 28,
-      "seasonTotal": 1.036636161415385e+21
+      "seasonTotal": 1.0811431462184797e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "gubrax",
+      "rank": 29,
+      "seasonTotal": 1.078852008148765e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "samwise08",
-      "rank": 29,
-      "seasonTotal": 8.928704105965535e+20
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "BobBobberson",
       "rank": 30,
-      "seasonTotal": 8.701948816976929e+20
+      "seasonTotal": 8.928704105965535e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -3049,6 +3049,29 @@
               ],
               "name": "RABBIT5",
               "top2Sum": 8.175176342211083e+21
+            },
+            {
+              "attempts": [
+                1.104849944120593e+20,
+                1.3996859073594604e+20
+              ],
+              "name": "Apathy_",
+              "top2Sum": 2.5045358514800532e+20
+            },
+            {
+              "attempts": [
+                4.221584673337987e+19
+              ],
+              "name": "gubrax",
+              "top2Sum": 4.221584673337987e+19
+            },
+            {
+              "attempts": [
+                1.054389426516667e+20,
+                1.0550932186912011e+20
+              ],
+              "name": "BobBobberson",
+              "top2Sum": 2.109482645207868e+20
             }
           ]
         }
