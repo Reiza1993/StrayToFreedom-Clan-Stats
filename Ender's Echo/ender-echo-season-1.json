@@ -17,7 +17,7 @@
       "gainVsPreviousSeason": null,
       "name": "Nubis",
       "rank": 3,
-      "seasonTotal": 1.30227538821141e+23
+      "seasonTotal": 1.4086790138988509e+23
     },
     {
       "gainVsPreviousSeason": null,
@@ -41,7 +41,7 @@
       "gainVsPreviousSeason": null,
       "name": "SngphO",
       "rank": 7,
-      "seasonTotal": 5.434487105296031e+22
+      "seasonTotal": 5.895422424644117e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -59,7 +59,7 @@
       "gainVsPreviousSeason": null,
       "name": "MadameMischief",
       "rank": 10,
-      "seasonTotal": 8.792546177505906e+21
+      "seasonTotal": 9.222054852209677e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -95,61 +95,61 @@
       "gainVsPreviousSeason": null,
       "name": "VictorMolusco",
       "rank": 16,
-      "seasonTotal": 3.437960503927742e+21
+      "seasonTotal": 3.7472931222790907e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "Scoundrel536",
+      "rank": 17,
+      "seasonTotal": 3.3456161093016884e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "HakiLuffy",
-      "rank": 17,
+      "rank": 18,
       "seasonTotal": 3.330017003523017e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "p88203044",
-      "rank": 18,
+      "rank": 19,
       "seasonTotal": 3.0278004540346687e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Apathy_",
-      "rank": 19,
+      "rank": 20,
       "seasonTotal": 2.901162454895448e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Player 66607264",
-      "rank": 20,
+      "rank": 21,
       "seasonTotal": 2.349687404204135e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Gritchen",
-      "rank": 21,
-      "seasonTotal": 2.1884287051673373e+21
+      "rank": 22,
+      "seasonTotal": 2.2584696611142086e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "EMBALOCO",
-      "rank": 22,
+      "rank": 23,
       "seasonTotal": 2.1408606047756346e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Bensayyten",
-      "rank": 23,
+      "rank": 24,
       "seasonTotal": 1.874524932271345e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "BlackFlamE",
-      "rank": 24,
-      "seasonTotal": 1.8354420300499255e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "Scoundrel536",
       "rank": 25,
-      "seasonTotal": 1.7694925674744722e+21
+      "seasonTotal": 1.8354420300499255e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -3132,10 +3132,53 @@
             },
             {
               "attempts": [
-                3.12716201276867e+20
+                3.12716201276867e+20,
+                4.2950867470377124e+20
               ],
               "name": "MadameMischief",
-              "top2Sum": 3.12716201276867e+20
+              "top2Sum": 7.422248759806383e+20
+            },
+            {
+              "attempts": [
+                7.004095594687116e+19
+              ],
+              "name": "Gritchen",
+              "top2Sum": 7.004095594687116e+19
+            },
+            {
+              "attempts": [
+                1.6406666133201502e+20,
+                1.4526595701933366e+20
+              ],
+              "name": "VictorMolusco",
+              "top2Sum": 3.093326183513487e+20
+            },
+            {
+              "attempts": [
+                8.091494665191969e+20,
+                7.669740753080193e+20
+              ],
+              "name": "Scoundrel536",
+              "top2Sum": 1.5761235418272162e+21
+            },
+            {
+              "attempts": [
+                2.3541427601705683e+21,
+                2.2552104333102906e+21
+              ],
+              "name": "SngphO",
+              "top2Sum": 4.609353193480859e+21
+            },
+            {
+              "attempts": [
+                4.5886379178265223e+21,
+                4.6890838316482806e+21,
+                4.396573753874606e+21,
+                4.964710611673427e+21,
+                5.675651957070659e+21
+              ],
+              "name": "Nubis",
+              "top2Sum": 1.0640362568744088e+22
             }
           ]
         }
