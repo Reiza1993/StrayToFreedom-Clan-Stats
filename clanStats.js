@@ -14,7 +14,7 @@ const clanStats = {
     lunarPoints: 1225,
 
     // Alumni count (update when members leave)
-    alumniCount: 85
+    alumniCount: 86
 };
 
 // LME History Data
@@ -520,6 +520,7 @@ const alumniMembers = [
     "b0ss",
     "Zveryok",
     "datamaster",
+    "Koncalaz",
 ];
 
 // Export for use in main application
