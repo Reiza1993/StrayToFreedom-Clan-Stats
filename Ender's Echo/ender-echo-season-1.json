@@ -39,15 +39,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "SngphO",
+      "name": "\u2623zSpec\u2623",
       "rank": 7,
-      "seasonTotal": 5.895422424644117e+22
+      "seasonTotal": 5.963375487191269e+22
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "\u2623zSpec\u2623",
+      "name": "SngphO",
       "rank": 8,
-      "seasonTotal": 2.7765438926070403e+22
+      "seasonTotal": 5.895422424644117e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -179,7 +179,7 @@
       "gainVsPreviousSeason": null,
       "name": "Rzzza",
       "rank": 30,
-      "seasonTotal": 9.428143263173559e+20
+      "seasonTotal": 1.0429486239691753e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -3109,10 +3109,11 @@
           "players": [
             {
               "attempts": [
-                1.2588175558959772e+20
+                1.2588175558959772e+20,
+                1.0013429765181945e+20
               ],
               "name": "Rzzza",
-              "top2Sum": 1.2588175558959772e+20
+              "top2Sum": 2.2601605324141717e+20
             },
             {
               "attempts": [
@@ -3179,6 +3180,13 @@
               ],
               "name": "Nubis",
               "top2Sum": 1.0640362568744088e+22
+            },
+            {
+              "attempts": [
+                3.186831594584229e+22
+              ],
+              "name": "\u2623zSpec\u2623",
+              "top2Sum": 3.186831594584229e+22
             }
           ]
         }
