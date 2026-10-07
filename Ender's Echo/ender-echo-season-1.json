@@ -21,15 +21,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "DAYO-P",
+      "name": "RABBIT5",
       "rank": 4,
-      "seasonTotal": 8.242859490513818e+22
+      "seasonTotal": 8.376176061566122e+22
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "RABBIT5",
+      "name": "DAYO-P",
       "rank": 5,
-      "seasonTotal": 7.558658427345014e+22
+      "seasonTotal": 8.242859490513818e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -89,7 +89,7 @@
       "gainVsPreviousSeason": null,
       "name": "\u76feHeathcliff\u5263",
       "rank": 15,
-      "seasonTotal": 3.3948851496944455e+21
+      "seasonTotal": 3.60357555875253e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -123,21 +123,21 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Player 66607264",
+      "name": "EMBALOCO",
       "rank": 21,
-      "seasonTotal": 2.036052215002294e+21
+      "seasonTotal": 2.1408606047756346e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "EMBALOCO",
+      "name": "Player 66607264",
       "rank": 22,
-      "seasonTotal": 1.9363901349311907e+21
+      "seasonTotal": 2.036052215002294e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Bensayyten",
       "rank": 23,
-      "seasonTotal": 1.7890456699497593e+21
+      "seasonTotal": 1.874524932271345e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -155,7 +155,7 @@
       "gainVsPreviousSeason": null,
       "name": "theLP",
       "rank": 26,
-      "seasonTotal": 1.3613605035994343e+21
+      "seasonTotal": 1.4196198626142962e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -2927,7 +2927,8 @@
             {
               "attempts": [
                 3.114566038075145e+21,
-                3.1344308869779864e+21
+                3.1344308869779864e+21,
+                3.094773011849443e+21
               ],
               "name": "DAYO-P",
               "top2Sum": 6.248996925053132e+21
@@ -3005,17 +3006,19 @@
             },
             {
               "attempts": [
-                1.2064584776052421e+20
+                1.2064584776052421e+20,
+                8.54792623215856e+19
               ],
               "name": "Bensayyten",
-              "top2Sum": 1.2064584776052421e+20
+              "top2Sum": 2.0612511008210983e+20
             },
             {
               "attempts": [
-                8.224184216759986e+19
+                8.224184216759986e+19,
+                5.8259359014861816e+19
               ],
               "name": "theLP",
-              "top2Sum": 8.224184216759986e+19
+              "top2Sum": 1.4050120118246167e+20
             },
             {
               "attempts": [
@@ -3023,6 +3026,29 @@
               ],
               "name": "PastalaVista",
               "top2Sum": 5.302442148719921e+20
+            },
+            {
+              "attempts": [
+                2.086904090580846e+20
+              ],
+              "name": "\u76feHeathcliff\u5263",
+              "top2Sum": 2.086904090580846e+20
+            },
+            {
+              "attempts": [
+                7.653540979001077e+19,
+                1.2793506005443304e+20
+              ],
+              "name": "EMBALOCO",
+              "top2Sum": 2.044704698444438e+20
+            },
+            {
+              "attempts": [
+                5.00454817114079e+21,
+                3.170628171070293e+21
+              ],
+              "name": "RABBIT5",
+              "top2Sum": 8.175176342211083e+21
             }
           ]
         }
