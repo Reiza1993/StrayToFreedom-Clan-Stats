@@ -5,7 +5,7 @@
       "gainVsPreviousSeason": null,
       "name": "Fl3xas",
       "rank": 1,
-      "seasonTotal": 6.364186962317411e+23
+      "seasonTotal": 6.875150001419343e+23
     },
     {
       "gainVsPreviousSeason": null,
@@ -57,21 +57,21 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "RetinaDNA",
+      "name": "MadameMischief",
       "rank": 10,
+      "seasonTotal": 8.792546177505906e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "RetinaDNA",
+      "rank": 11,
       "seasonTotal": 8.586537679496128e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "PastalaVista",
-      "rank": 11,
-      "seasonTotal": 8.52994153274562e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "MadameMischief",
       "rank": 12,
-      "seasonTotal": 8.479829976229039e+21
+      "seasonTotal": 8.52994153274562e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -101,7 +101,7 @@
       "gainVsPreviousSeason": null,
       "name": "HakiLuffy",
       "rank": 17,
-      "seasonTotal": 3.074541501135119e+21
+      "seasonTotal": 3.330017003523017e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -117,21 +117,21 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Gritchen",
+      "name": "Player 66607264",
       "rank": 20,
+      "seasonTotal": 2.349687404204135e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "Gritchen",
+      "rank": 21,
       "seasonTotal": 2.1884287051673373e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "EMBALOCO",
-      "rank": 21,
-      "seasonTotal": 2.1408606047756346e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "Player 66607264",
       "rank": 22,
-      "seasonTotal": 2.036052215002294e+21
+      "seasonTotal": 2.1408606047756346e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -177,15 +177,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "samwise08",
+      "name": "Rzzza",
       "rank": 30,
-      "seasonTotal": 8.928704105965535e+20
+      "seasonTotal": 9.428143263173559e+20
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Rzzza",
+      "name": "samwise08",
       "rank": 31,
-      "seasonTotal": 8.169325707277582e+20
+      "seasonTotal": 8.928704105965535e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -3093,6 +3093,49 @@
               ],
               "name": "\u795eSterben\u6b7b",
               "top2Sum": 1.0555642486456809e+22
+            },
+            {
+              "attempts": [
+                3.1363518920184077e+20
+              ],
+              "name": "Player 66607264",
+              "top2Sum": 3.1363518920184077e+20
+            }
+          ]
+        },
+        {
+          "date": "2026-10-08",
+          "day": 15,
+          "players": [
+            {
+              "attempts": [
+                1.2588175558959772e+20
+              ],
+              "name": "Rzzza",
+              "top2Sum": 1.2588175558959772e+20
+            },
+            {
+              "attempts": [
+                1.345170876515663e+20,
+                1.2095841473633113e+20
+              ],
+              "name": "HakiLuffy",
+              "top2Sum": 2.5547550238789743e+20
+            },
+            {
+              "attempts": [
+                2.8436671954197347e+22,
+                2.2659631955995884e+22
+              ],
+              "name": "Fl3xas",
+              "top2Sum": 5.109630391019323e+22
+            },
+            {
+              "attempts": [
+                3.12716201276867e+20
+              ],
+              "name": "MadameMischief",
+              "top2Sum": 3.12716201276867e+20
             }
           ]
         }
