@@ -29,19 +29,19 @@
       "gainVsPreviousSeason": null,
       "name": "DAYO-P",
       "rank": 5,
-      "seasonTotal": 8.242859490513818e+22
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "SngphO",
-      "rank": 6,
-      "seasonTotal": 5.434487105296031e+22
+      "seasonTotal": 8.246434073657362e+22
     },
     {
       "gainVsPreviousSeason": null,
       "name": "\u795eSterben\u6b7b",
+      "rank": 6,
+      "seasonTotal": 6.048088652100522e+22
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "SngphO",
       "rank": 7,
-      "seasonTotal": 4.992524403454841e+22
+      "seasonTotal": 5.434487105296031e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -63,15 +63,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "MadameMischief",
+      "name": "PastalaVista",
       "rank": 11,
-      "seasonTotal": 8.479829976229039e+21
+      "seasonTotal": 8.52994153274562e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "PastalaVista",
+      "name": "MadameMischief",
       "rank": 12,
-      "seasonTotal": 7.995056452491007e+21
+      "seasonTotal": 8.479829976229039e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -89,13 +89,13 @@
       "gainVsPreviousSeason": null,
       "name": "\u76feHeathcliff\u5263",
       "rank": 15,
-      "seasonTotal": 3.60357555875253e+21
+      "seasonTotal": 3.862354030593183e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "VictorMolusco",
       "rank": 16,
-      "seasonTotal": 3.2789899295663624e+21
+      "seasonTotal": 3.437960503927742e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -141,15 +141,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Scoundrel536",
+      "name": "BlackFlamE",
       "rank": 24,
-      "seasonTotal": 1.7694925674744722e+21
+      "seasonTotal": 1.8354420300499255e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "BlackFlamE",
+      "name": "Scoundrel536",
       "rank": 25,
-      "seasonTotal": 1.767186334244438e+21
+      "seasonTotal": 1.7694925674744722e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -159,21 +159,21 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "groggen",
+      "name": "gubrax",
       "rank": 27,
+      "seasonTotal": 1.1348776803859409e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "groggen",
+      "rank": 28,
       "seasonTotal": 1.110120515170369e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "BobBobberson",
-      "rank": 28,
-      "seasonTotal": 1.0811431462184797e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "gubrax",
       "rank": 29,
-      "seasonTotal": 1.078852008148765e+21
+      "seasonTotal": 1.0811431462184797e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -209,7 +209,7 @@
       "gainVsPreviousSeason": null,
       "name": "Belthazar",
       "rank": 35,
-      "seasonTotal": 4.345871739017027e+20
+      "seasonTotal": 4.7617001131603467e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -2928,10 +2928,11 @@
               "attempts": [
                 3.114566038075145e+21,
                 3.1344308869779864e+21,
-                3.094773011849443e+21
+                3.094773011849443e+21,
+                3.1503118695105707e+21
               ],
               "name": "DAYO-P",
-              "top2Sum": 6.248996925053132e+21
+              "top2Sum": 6.284742756488557e+21
             },
             {
               "attempts": [
@@ -2976,10 +2977,11 @@
             },
             {
               "attempts": [
-                1.3850603795457232e+20
+                1.3850603795457232e+20,
+                1.589705743613799e+20
               ],
               "name": "VictorMolusco",
-              "top2Sum": 1.3850603795457232e+20
+              "top2Sum": 2.974766123159522e+20
             },
             {
               "attempts": [
@@ -2991,10 +2993,11 @@
             },
             {
               "attempts": [
-                6.230893451901409e+19
+                6.230893451901409e+19,
+                6.825569580548735e+19
               ],
               "name": "BlackFlamE",
-              "top2Sum": 6.230893451901409e+19
+              "top2Sum": 1.3056463032450145e+20
             },
             {
               "attempts": [
@@ -3022,17 +3025,19 @@
             },
             {
               "attempts": [
-                5.302442148719921e+20
+                5.302442148719921e+20,
+                5.3488508025461375e+20
               ],
               "name": "PastalaVista",
-              "top2Sum": 5.302442148719921e+20
+              "top2Sum": 1.0651292951266059e+21
             },
             {
               "attempts": [
-                2.086904090580846e+20
+                2.086904090580846e+20,
+                2.587784718406525e+20
               ],
               "name": "\u76feHeathcliff\u5263",
-              "top2Sum": 2.086904090580846e+20
+              "top2Sum": 4.6746888089873705e+20
             },
             {
               "attempts": [
@@ -3060,10 +3065,11 @@
             },
             {
               "attempts": [
-                4.221584673337987e+19
+                4.221584673337987e+19,
+                5.602567223717594e+19
               ],
               "name": "gubrax",
-              "top2Sum": 4.221584673337987e+19
+              "top2Sum": 9.824151897055581e+19
             },
             {
               "attempts": [
@@ -3072,6 +3078,21 @@
               ],
               "name": "BobBobberson",
               "top2Sum": 2.109482645207868e+20
+            },
+            {
+              "attempts": [
+                2.021892596664425e+19,
+                2.1363911447687676e+19
+              ],
+              "name": "Belthazar",
+              "top2Sum": 4.1582837414331924e+19
+            },
+            {
+              "attempts": [
+                1.0555642486456809e+22
+              ],
+              "name": "\u795eSterben\u6b7b",
+              "top2Sum": 1.0555642486456809e+22
             }
           ]
         }
