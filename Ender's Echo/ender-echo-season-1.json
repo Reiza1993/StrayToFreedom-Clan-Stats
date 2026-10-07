@@ -71,7 +71,7 @@
       "gainVsPreviousSeason": null,
       "name": "PastalaVista",
       "rank": 12,
-      "seasonTotal": 7.464812237619014e+21
+      "seasonTotal": 7.995056452491007e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -135,27 +135,27 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Scoundrel536",
+      "name": "Bensayyten",
       "rank": 23,
+      "seasonTotal": 1.7890456699497593e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "Scoundrel536",
+      "rank": 24,
       "seasonTotal": 1.7694925674744722e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "BlackFlamE",
-      "rank": 24,
-      "seasonTotal": 1.767186334244438e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "Bensayyten",
       "rank": 25,
-      "seasonTotal": 1.668399822189235e+21
+      "seasonTotal": 1.767186334244438e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "theLP",
       "rank": 26,
-      "seasonTotal": 1.2791186614318344e+21
+      "seasonTotal": 1.3613605035994343e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -3002,6 +3002,27 @@
               ],
               "name": "Fl3xas",
               "top2Sum": 5.189307473040843e+22
+            },
+            {
+              "attempts": [
+                1.2064584776052421e+20
+              ],
+              "name": "Bensayyten",
+              "top2Sum": 1.2064584776052421e+20
+            },
+            {
+              "attempts": [
+                8.224184216759986e+19
+              ],
+              "name": "theLP",
+              "top2Sum": 8.224184216759986e+19
+            },
+            {
+              "attempts": [
+                5.302442148719921e+20
+              ],
+              "name": "PastalaVista",
+              "top2Sum": 5.302442148719921e+20
             }
           ]
         }
