@@ -17,31 +17,31 @@
       "gainVsPreviousSeason": null,
       "name": "Nubis",
       "rank": 3,
-      "seasonTotal": 1.4086790138988509e+23
+      "seasonTotal": 1.567726868062684e+23
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "\u2623zSpec\u2623",
+      "rank": 4,
+      "seasonTotal": 1.330648380129283e+23
     },
     {
       "gainVsPreviousSeason": null,
       "name": "DAYO-P",
-      "rank": 4,
+      "rank": 5,
       "seasonTotal": 1.0597324743953672e+23
     },
     {
       "gainVsPreviousSeason": null,
       "name": "RABBIT5",
-      "rank": 5,
+      "rank": 6,
       "seasonTotal": 9.311621226070804e+22
     },
     {
       "gainVsPreviousSeason": null,
       "name": "\u795eSterben\u6b7b",
-      "rank": 6,
-      "seasonTotal": 6.048088652100522e+22
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "\u2623zSpec\u2623",
       "rank": 7,
-      "seasonTotal": 5.963375487191269e+22
+      "seasonTotal": 6.048088652100522e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -89,7 +89,7 @@
       "gainVsPreviousSeason": null,
       "name": "\u76feHeathcliff\u5263",
       "rank": 15,
-      "seasonTotal": 3.862354030593183e+21
+      "seasonTotal": 4.5925217662046935e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -207,21 +207,21 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Belthazar",
+      "name": "silverxz",
       "rank": 35,
+      "seasonTotal": 5.4278413602578e+20
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "Belthazar",
+      "rank": 36,
       "seasonTotal": 5.115380867338047e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Player 80018314",
-      "rank": 36,
-      "seasonTotal": 3.9836073030400744e+20
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "silverxz",
       "rank": 37,
-      "seasonTotal": 2.5425199129908127e+20
+      "seasonTotal": 3.9836073030400744e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -3329,6 +3329,40 @@
               ],
               "name": "MadameMischief",
               "top2Sum": 9.135628473319264e+20
+            },
+            {
+              "attempts": [
+                3.014609821547344e+20,
+                4.287067534567767e+20
+              ],
+              "name": "\u76feHeathcliff\u5263",
+              "top2Sum": 7.30167735611511e+20
+            },
+            {
+              "attempts": [
+                3.8903090123526275e+22,
+                3.4527993017489345e+22
+              ],
+              "name": "\u2623zSpec\u2623",
+              "top2Sum": 7.3431083141015615e+22
+            },
+            {
+              "attempts": [
+                6.922573588593226e+21,
+                7.977315771828458e+21,
+                6.516029020277149e+21,
+                7.927469644554827e+21
+              ],
+              "name": "Nubis",
+              "top2Sum": 1.5904785416383285e+22
+            },
+            {
+              "attempts": [
+                1.129331459298338e+20,
+                1.7559899879686495e+20
+              ],
+              "name": "silverxz",
+              "top2Sum": 2.8853214472669875e+20
             }
           ]
         }
