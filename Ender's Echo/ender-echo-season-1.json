@@ -153,45 +153,45 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "theLP",
+      "name": "NeonCBV",
       "rank": 26,
+      "seasonTotal": 1.4257292275402618e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "theLP",
+      "rank": 27,
       "seasonTotal": 1.4196198626142962e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "gubrax",
-      "rank": 27,
+      "rank": 28,
       "seasonTotal": 1.1348776803859409e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "groggen",
-      "rank": 28,
+      "rank": 29,
       "seasonTotal": 1.110120515170369e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "BobBobberson",
-      "rank": 29,
+      "rank": 30,
       "seasonTotal": 1.0811431462184797e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Rzzza",
-      "rank": 30,
-      "seasonTotal": 1.0429486239691753e+21
+      "rank": 31,
+      "seasonTotal": 1.0731882608473515e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "samwise08",
-      "rank": 31,
-      "seasonTotal": 8.928704105965535e+20
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "NeonCBV",
       "rank": 32,
-      "seasonTotal": 7.40338254681875e+20
+      "seasonTotal": 8.928704105965535e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -3110,10 +3110,11 @@
             {
               "attempts": [
                 1.2588175558959772e+20,
-                1.0013429765181945e+20
+                1.0013429765181945e+20,
+                1.3037393452999552e+20
               ],
               "name": "Rzzza",
-              "top2Sum": 2.2601605324141717e+20
+              "top2Sum": 2.5625569011959326e+20
             },
             {
               "attempts": [
@@ -3197,6 +3198,13 @@
               ],
               "name": "BlackFlamE",
               "top2Sum": 1.366239267867954e+20
+            },
+            {
+              "attempts": [
+                6.853909728583867e+20
+              ],
+              "name": "NeonCBV",
+              "top2Sum": 6.853909728583867e+20
             }
           ]
         }
