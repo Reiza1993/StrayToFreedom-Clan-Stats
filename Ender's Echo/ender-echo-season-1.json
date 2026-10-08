@@ -123,15 +123,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Gritchen",
+      "name": "Player 66607264",
       "rank": 21,
-      "seasonTotal": 2.4058198093250167e+21
+      "seasonTotal": 2.861794984198141e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Player 66607264",
+      "name": "Gritchen",
       "rank": 22,
-      "seasonTotal": 2.349687404204135e+21
+      "seasonTotal": 2.4058198093250167e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -3276,6 +3276,14 @@
               ],
               "name": "Player 80018314",
               "top2Sum": 4.530132512201121e+19
+            },
+            {
+              "attempts": [
+                2.0819029212649754e+20,
+                3.039172878675085e+20
+              ],
+              "name": "Player 66607264",
+              "top2Sum": 5.121075799940061e+20
             }
           ]
         }
