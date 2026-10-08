@@ -21,15 +21,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "RABBIT5",
+      "name": "DAYO-P",
       "rank": 4,
-      "seasonTotal": 8.376176061566122e+22
+      "seasonTotal": 9.251478093114513e+22
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "DAYO-P",
+      "name": "RABBIT5",
       "rank": 5,
-      "seasonTotal": 8.246434073657362e+22
+      "seasonTotal": 8.376176061566122e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -191,7 +191,7 @@
       "gainVsPreviousSeason": null,
       "name": "samwise08",
       "rank": 32,
-      "seasonTotal": 8.928704105965535e+20
+      "seasonTotal": 9.971507171552676e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -3205,6 +3205,24 @@
               ],
               "name": "NeonCBV",
               "top2Sum": 6.853909728583867e+20
+            },
+            {
+              "attempts": [
+                4.934805903505458e+21,
+                5.11563429106605e+21,
+                2.048307266289459e+21,
+                4.8848862817761e+21,
+                4.353475269438111e+21
+              ],
+              "name": "DAYO-P",
+              "top2Sum": 1.0050440194571509e+22
+            },
+            {
+              "attempts": [
+                1.0428030655871409e+20
+              ],
+              "name": "samwise08",
+              "top2Sum": 1.0428030655871409e+20
             }
           ]
         }
