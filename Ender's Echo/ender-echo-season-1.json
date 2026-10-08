@@ -21,15 +21,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "DAYO-P",
+      "name": "RABBIT5",
       "rank": 4,
-      "seasonTotal": 9.251478093114513e+22
+      "seasonTotal": 9.311621226070804e+22
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "RABBIT5",
+      "name": "DAYO-P",
       "rank": 5,
-      "seasonTotal": 8.376176061566122e+22
+      "seasonTotal": 9.251478093114513e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -167,7 +167,7 @@
       "gainVsPreviousSeason": null,
       "name": "gubrax",
       "rank": 28,
-      "seasonTotal": 1.1348776803859409e+21
+      "seasonTotal": 1.2183410981800821e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -209,7 +209,7 @@
       "gainVsPreviousSeason": null,
       "name": "Belthazar",
       "rank": 35,
-      "seasonTotal": 4.7617001131603467e+20
+      "seasonTotal": 5.115380867338047e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -3212,7 +3212,8 @@
                 5.11563429106605e+21,
                 2.048307266289459e+21,
                 4.8848862817761e+21,
-                4.353475269438111e+21
+                4.353475269438111e+21,
+                3.301228576500383e+21
               ],
               "name": "DAYO-P",
               "top2Sum": 1.0050440194571509e+22
@@ -3223,6 +3224,30 @@
               ],
               "name": "samwise08",
               "top2Sum": 1.0428030655871409e+20
+            },
+            {
+              "attempts": [
+                1.7789343538856557e+19,
+                1.757873187891354e+19
+              ],
+              "name": "Belthazar",
+              "top2Sum": 3.53680754177701e+19
+            },
+            {
+              "attempts": [
+                3.999661874932159e+19,
+                4.346679904481961e+19
+              ],
+              "name": "gubrax",
+              "top2Sum": 8.34634177941412e+19
+            },
+            {
+              "attempts": [
+                4.273182283727942e+21,
+                5.081269361318884e+21
+              ],
+              "name": "RABBIT5",
+              "top2Sum": 9.354451645046825e+21
             }
           ]
         }
