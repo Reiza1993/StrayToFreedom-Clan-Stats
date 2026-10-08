@@ -5,7 +5,7 @@
       "gainVsPreviousSeason": null,
       "name": "Fl3xas",
       "rank": 1,
-      "seasonTotal": 6.875150001419343e+23
+      "seasonTotal": 7.694956419165792e+23
     },
     {
       "gainVsPreviousSeason": null,
@@ -21,15 +21,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "RABBIT5",
+      "name": "DAYO-P",
       "rank": 4,
-      "seasonTotal": 9.311621226070804e+22
+      "seasonTotal": 1.0597324743953672e+23
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "DAYO-P",
+      "name": "RABBIT5",
       "rank": 5,
-      "seasonTotal": 9.251478093114513e+22
+      "seasonTotal": 9.311621226070804e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -59,7 +59,7 @@
       "gainVsPreviousSeason": null,
       "name": "MadameMischief",
       "rank": 10,
-      "seasonTotal": 9.222054852209677e+21
+      "seasonTotal": 1.0135617699541605e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -99,15 +99,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Scoundrel536",
+      "name": "HakiLuffy",
       "rank": 17,
-      "seasonTotal": 3.3456161093016884e+21
+      "seasonTotal": 3.683653266576957e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "HakiLuffy",
+      "name": "Scoundrel536",
       "rank": 18,
-      "seasonTotal": 3.330017003523017e+21
+      "seasonTotal": 3.3456161093016884e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -3289,6 +3289,51 @@
         }
       ],
       "miniSeasonNumber": 5
+    },
+    {
+      "days": [
+        {
+          "date": "2026-10-09",
+          "day": 16,
+          "players": [
+            {
+              "attempts": [
+                7.238742322379194e+21,
+                5.675019952647783e+21,
+                4.2533190051622714e+21,
+                6.219724186012385e+21
+              ],
+              "name": "DAYO-P",
+              "top2Sum": 1.3458466508391578e+22
+            },
+            {
+              "attempts": [
+                1.7769498041436704e+20,
+                1.759412826395734e+20
+              ],
+              "name": "HakiLuffy",
+              "top2Sum": 3.536362630539404e+20
+            },
+            {
+              "attempts": [
+                3.545129069552303e+22,
+                4.652935107912183e+22
+              ],
+              "name": "Fl3xas",
+              "top2Sum": 8.198064177464486e+22
+            },
+            {
+              "attempts": [
+                3.656021485384438e+20,
+                5.479606987934825e+20
+              ],
+              "name": "MadameMischief",
+              "top2Sum": 9.135628473319264e+20
+            }
+          ]
+        }
+      ],
+      "miniSeasonNumber": 6
     }
   ],
   "seasonNumber": 1,
