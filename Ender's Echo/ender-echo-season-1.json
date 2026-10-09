@@ -45,15 +45,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "SngphO",
+      "name": "\u795eSterben\u6b7b",
       "rank": 8,
-      "seasonTotal": 6.418633372271518e+22
+      "seasonTotal": 7.0674516711358025e+22
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "\u795eSterben\u6b7b",
+      "name": "SngphO",
       "rank": 9,
-      "seasonTotal": 6.048088652100522e+22
+      "seasonTotal": 6.418633372271518e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -63,27 +63,27 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "MadameMischief",
+      "name": "PastalaVista",
       "rank": 11,
+      "seasonTotal": 1.0355921453473446e+22
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "MadameMischief",
+      "rank": 12,
       "seasonTotal": 1.0135617699541605e+22
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "PastalaVista",
-      "rank": 12,
-      "seasonTotal": 9.027572980758541e+21
+      "name": "Cunner88",
+      "rank": 13,
+      "seasonTotal": 9.108727701368212e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "RetinaDNA",
-      "rank": 13,
-      "seasonTotal": 8.586537679496128e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "Cunner88",
       "rank": 14,
-      "seasonTotal": 5.513913340299564e+21
+      "seasonTotal": 8.586537679496128e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -143,19 +143,19 @@
       "gainVsPreviousSeason": null,
       "name": "EMBALOCO",
       "rank": 24,
-      "seasonTotal": 2.2261809222880193e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "BlackFlamE",
-      "rank": 25,
-      "seasonTotal": 2.176565799379324e+21
+      "seasonTotal": 2.413396004275354e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Bensayyten",
+      "rank": 25,
+      "seasonTotal": 2.237682283501363e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "BlackFlamE",
       "rank": 26,
-      "seasonTotal": 2.0834646931371464e+21
+      "seasonTotal": 2.176565799379324e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -183,21 +183,21 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "samwise08",
+      "name": "BobBobberson",
       "rank": 31,
+      "seasonTotal": 1.3407156732382476e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "samwise08",
+      "rank": 32,
       "seasonTotal": 1.1508046999008291e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "groggen",
-      "rank": 32,
-      "seasonTotal": 1.110120515170369e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "BobBobberson",
       "rank": 33,
-      "seasonTotal": 1.0811431462184797e+21
+      "seasonTotal": 1.110120515170369e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -3430,10 +3430,11 @@
             },
             {
               "attempts": [
-                2.0893976086580154e+20
+                2.0893976086580154e+20,
+                1.5421759036421633e+20
               ],
               "name": "Bensayyten",
-              "top2Sum": 2.0893976086580154e+20
+              "top2Sum": 3.631573512300179e+20
             },
             {
               "attempts": [
@@ -3489,6 +3490,43 @@
               ],
               "name": "gubrax",
               "top2Sum": 1.590277490723019e+20
+            },
+            {
+              "attempts": [
+                1.0193630190352806e+22
+              ],
+              "name": "\u795eSterben\u6b7b",
+              "top2Sum": 1.0193630190352806e+22
+            },
+            {
+              "attempts": [
+                6.445721803851178e+20,
+                6.837762923297872e+20
+              ],
+              "name": "PastalaVista",
+              "top2Sum": 1.328348472714905e+21
+            },
+            {
+              "attempts": [
+                1.4384074456289242e+20,
+                1.157317824568755e+20
+              ],
+              "name": "BobBobberson",
+              "top2Sum": 2.5957252701976792e+20
+            },
+            {
+              "attempts": [
+                1.872150819873345e+20
+              ],
+              "name": "EMBALOCO",
+              "top2Sum": 1.872150819873345e+20
+            },
+            {
+              "attempts": [
+                3.594814361068647e+21
+              ],
+              "name": "Cunner88",
+              "top2Sum": 3.594814361068647e+21
             }
           ]
         }
