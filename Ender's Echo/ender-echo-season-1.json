@@ -5,7 +5,7 @@
       "gainVsPreviousSeason": null,
       "name": "Fl3xas",
       "rank": 1,
-      "seasonTotal": 7.694956419165792e+23
+      "seasonTotal": 7.836863071368921e+23
     },
     {
       "gainVsPreviousSeason": null,
@@ -111,21 +111,21 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "HakiLuffy",
+      "name": "Player 66607264",
       "rank": 19,
-      "seasonTotal": 3.683653266576957e+21
+      "seasonTotal": 3.765049912695302e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Player 66607264",
+      "name": "HakiLuffy",
       "rank": 20,
-      "seasonTotal": 3.293934935262053e+21
+      "seasonTotal": 3.683653266576957e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Apathy_",
       "rank": 21,
-      "seasonTotal": 3.144615126290579e+21
+      "seasonTotal": 3.327896925016311e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -159,21 +159,21 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "NeonCBV",
+      "name": "theLP",
       "rank": 27,
-      "seasonTotal": 1.4257292275402618e+21
+      "seasonTotal": 1.6126379228289607e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "theLP",
+      "name": "NeonCBV",
       "rank": 28,
-      "seasonTotal": 1.4196198626142962e+21
+      "seasonTotal": 1.4257292275402618e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Rzzza",
       "rank": 29,
-      "seasonTotal": 1.2500435294933596e+21
+      "seasonTotal": 1.3531678692030126e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -3307,7 +3307,8 @@
                 7.238742322379194e+21,
                 5.675019952647783e+21,
                 4.2533190051622714e+21,
-                6.219724186012385e+21
+                6.219724186012385e+21,
+                5.767545037603497e+21
               ],
               "name": "DAYO-P",
               "top2Sum": 1.3458466508391578e+22
@@ -3323,10 +3324,11 @@
             {
               "attempts": [
                 3.545129069552303e+22,
-                4.652935107912183e+22
+                4.652935107912183e+22,
+                4.964195591583599e+22
               ],
               "name": "Fl3xas",
-              "top2Sum": 8.198064177464486e+22
+              "top2Sum": 9.617130699495781e+22
             },
             {
               "attempts": [
@@ -3420,10 +3422,11 @@
             },
             {
               "attempts": [
-                2.4345267139513083e+20
+                2.4345267139513083e+20,
+                1.832817987257326e+20
               ],
               "name": "Apathy_",
-              "top2Sum": 2.4345267139513083e+20
+              "top2Sum": 4.267344701208634e+20
             },
             {
               "attempts": [
@@ -3434,10 +3437,11 @@
             },
             {
               "attempts": [
-                1.7685526864600803e+20
+                1.7685526864600803e+20,
+                1.0312433970965306e+20
               ],
               "name": "Rzzza",
-              "top2Sum": 1.7685526864600803e+20
+              "top2Sum": 2.799796083556611e+20
             },
             {
               "attempts": [
@@ -3448,10 +3452,11 @@
             },
             {
               "attempts": [
-                4.3213995106391176e+20
+                4.3213995106391176e+20,
+                4.711149774332496e+20
               ],
               "name": "Player 66607264",
-              "top2Sum": 4.3213995106391176e+20
+              "top2Sum": 9.032549284971613e+20
             },
             {
               "attempts": [
@@ -3468,6 +3473,14 @@
               ],
               "name": "RABBIT5",
               "top2Sum": 1.4806706736532382e+22
+            },
+            {
+              "attempts": [
+                1.1000944373013162e+20,
+                8.300861648453293e+19
+              ],
+              "name": "theLP",
+              "top2Sum": 1.9301806021466456e+20
             }
           ]
         }
