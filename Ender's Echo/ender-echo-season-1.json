@@ -17,7 +17,7 @@
       "gainVsPreviousSeason": null,
       "name": "Nubis",
       "rank": 3,
-      "seasonTotal": 1.567726868062684e+23
+      "seasonTotal": 1.7085282007516517e+23
     },
     {
       "gainVsPreviousSeason": null,
@@ -27,21 +27,21 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "RABBIT5",
+      "name": "\u00d0\u318d\u2623zSpec\u2623",
       "rank": 5,
+      "seasonTotal": 1.2860811321600587e+23
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "RABBIT5",
+      "rank": 6,
       "seasonTotal": 1.0792291899724042e+23
     },
     {
       "gainVsPreviousSeason": null,
       "name": "DAYO-P",
-      "rank": 6,
-      "seasonTotal": 1.0597324743953672e+23
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "\u00d0\u318d\u2623zSpec\u2623",
       "rank": 7,
-      "seasonTotal": 8.873014336608558e+22
+      "seasonTotal": 1.0597324743953672e+23
     },
     {
       "gainVsPreviousSeason": null,
@@ -201,27 +201,27 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "faxnem",
+      "name": "silverxz",
       "rank": 34,
+      "seasonTotal": 8.135952554776855e+20
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "faxnem",
+      "rank": 35,
       "seasonTotal": 7.936030004950381e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Toddlerr",
-      "rank": 35,
+      "rank": 36,
       "seasonTotal": 5.741700902372607e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Belthazar",
-      "rank": 36,
-      "seasonTotal": 5.6779842866865943e+20
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "silverxz",
       "rank": 37,
-      "seasonTotal": 5.4278413602578e+20
+      "seasonTotal": 5.6779842866865943e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -3581,6 +3581,29 @@
               ],
               "name": "MadameMischief",
               "top2Sum": 9.603075954467735e+20
+            },
+            {
+              "attempts": [
+                3.987796984992029e+22
+              ],
+              "name": "\u00d0\u318d\u2623zSpec\u2623",
+              "top2Sum": 3.987796984992029e+22
+            },
+            {
+              "attempts": [
+                6.606891543573161e+21,
+                7.47324172532362e+21,
+                6.388170801974141e+21
+              ],
+              "name": "Nubis",
+              "top2Sum": 1.4080133268896781e+22
+            },
+            {
+              "attempts": [
+                2.708111194519054e+20
+              ],
+              "name": "silverxz",
+              "top2Sum": 2.708111194519054e+20
             }
           ]
         }
