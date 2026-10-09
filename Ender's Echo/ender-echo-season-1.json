@@ -87,27 +87,27 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "\u76feHeathcliff\u5263",
+      "name": "Scoundrel536",
       "rank": 15,
+      "seasonTotal": 4.971123693488782e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "\u76feHeathcliff\u5263",
+      "rank": 16,
       "seasonTotal": 4.5925217662046935e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "VictorMolusco",
-      "rank": 16,
+      "rank": 17,
       "seasonTotal": 3.7472931222790907e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "HakiLuffy",
-      "rank": 17,
-      "seasonTotal": 3.683653266576957e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "Scoundrel536",
       "rank": 18,
-      "seasonTotal": 3.3456161093016884e+21
+      "seasonTotal": 3.683653266576957e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -131,7 +131,7 @@
       "gainVsPreviousSeason": null,
       "name": "Gritchen",
       "rank": 22,
-      "seasonTotal": 2.4058198093250167e+21
+      "seasonTotal": 2.6239686244233825e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -3363,6 +3363,21 @@
               ],
               "name": "silverxz",
               "top2Sum": 2.8853214472669875e+20
+            },
+            {
+              "attempts": [
+                1.1347037264080498e+20,
+                1.0467844245756102e+20
+              ],
+              "name": "Gritchen",
+              "top2Sum": 2.18148815098366e+20
+            },
+            {
+              "attempts": [
+                1.6255075841870935e+21
+              ],
+              "name": "Scoundrel536",
+              "top2Sum": 1.6255075841870935e+21
             }
           ]
         }
