@@ -171,15 +171,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Rzzza",
+      "name": "gubrax",
       "rank": 29,
-      "seasonTotal": 1.3531678692030126e+21
+      "seasonTotal": 1.377368847252384e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "gubrax",
+      "name": "Rzzza",
       "rank": 30,
-      "seasonTotal": 1.2183410981800821e+21
+      "seasonTotal": 1.3531678692030126e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -3481,6 +3481,14 @@
               ],
               "name": "theLP",
               "top2Sum": 1.9301806021466456e+20
+            },
+            {
+              "attempts": [
+                7.613700202076942e+19,
+                8.28907470515325e+19
+              ],
+              "name": "gubrax",
+              "top2Sum": 1.590277490723019e+20
             }
           ]
         }
