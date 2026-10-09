@@ -63,27 +63,27 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "PastalaVista",
+      "name": "MadameMischief",
       "rank": 11,
+      "seasonTotal": 1.1095925294988379e+22
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "PastalaVista",
+      "rank": 12,
       "seasonTotal": 1.0355921453473446e+22
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "MadameMischief",
-      "rank": 12,
-      "seasonTotal": 1.0135617699541605e+22
+      "name": "RetinaDNA",
+      "rank": 13,
+      "seasonTotal": 9.79898825295215e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Cunner88",
-      "rank": 13,
-      "seasonTotal": 9.108727701368212e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "RetinaDNA",
       "rank": 14,
-      "seasonTotal": 8.586537679496128e+21
+      "seasonTotal": 9.108727701368212e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -111,27 +111,27 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Player 66607264",
+      "name": "HakiLuffy",
       "rank": 19,
+      "seasonTotal": 4.100701459387305e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "Player 66607264",
+      "rank": 20,
       "seasonTotal": 3.765049912695302e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "HakiLuffy",
-      "rank": 20,
-      "seasonTotal": 3.683653266576957e+21
+      "name": "p88203044",
+      "rank": 21,
+      "seasonTotal": 3.4484612963551423e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Apathy_",
-      "rank": 21,
-      "seasonTotal": 3.327896925016311e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "p88203044",
       "rank": 22,
-      "seasonTotal": 3.0278004540346687e+21
+      "seasonTotal": 3.327896925016311e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -143,7 +143,7 @@
       "gainVsPreviousSeason": null,
       "name": "EMBALOCO",
       "rank": 24,
-      "seasonTotal": 2.413396004275354e+21
+      "seasonTotal": 2.565892032475912e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -165,15 +165,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "NeonCBV",
+      "name": "gubrax",
       "rank": 28,
-      "seasonTotal": 1.4257292275402618e+21
+      "seasonTotal": 1.54186269103974e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "gubrax",
+      "name": "NeonCBV",
       "rank": 29,
-      "seasonTotal": 1.377368847252384e+21
+      "seasonTotal": 1.4257292275402618e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -227,7 +227,7 @@
       "gainVsPreviousSeason": null,
       "name": "Player 80018314",
       "rank": 38,
-      "seasonTotal": 3.9836073030400744e+20
+      "seasonTotal": 5.1920983161427794e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -3516,10 +3516,11 @@
             },
             {
               "attempts": [
-                1.872150819873345e+20
+                1.872150819873345e+20,
+                1.5249602820055856e+20
               ],
               "name": "EMBALOCO",
-              "top2Sum": 1.872150819873345e+20
+              "top2Sum": 3.3971111018789306e+20
             },
             {
               "attempts": [
@@ -3527,6 +3528,59 @@
               ],
               "name": "Cunner88",
               "top2Sum": 3.594814361068647e+21
+            },
+            {
+              "attempts": [
+                1.212450573456022e+21
+              ],
+              "name": "RetinaDNA",
+              "top2Sum": 1.212450573456022e+21
+            },
+            {
+              "attempts": [
+                4.206608423204736e+20
+              ],
+              "name": "p88203044",
+              "top2Sum": 4.206608423204736e+20
+            },
+            {
+              "attempts": [
+                5.957939188231944e+19,
+                2.357893585792399e+19,
+                6.126970942795107e+19
+              ],
+              "name": "Player 80018314",
+              "top2Sum": 1.208491013102705e+20
+            }
+          ]
+        },
+        {
+          "date": "2026-10-10",
+          "day": 17,
+          "players": [
+            {
+              "attempts": [
+                8.176375243257286e+19,
+                8.273009135478304e+19
+              ],
+              "name": "gubrax",
+              "top2Sum": 1.644938437873559e+20
+            },
+            {
+              "attempts": [
+                2.0993115259643743e+20,
+                2.0711704021391055e+20
+              ],
+              "name": "HakiLuffy",
+              "top2Sum": 4.17048192810348e+20
+            },
+            {
+              "attempts": [
+                4.806875905059487e+20,
+                4.796200049408248e+20
+              ],
+              "name": "MadameMischief",
+              "top2Sum": 9.603075954467735e+20
             }
           ]
         }
