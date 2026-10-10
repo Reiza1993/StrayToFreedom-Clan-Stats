@@ -53,7 +53,7 @@
       "gainVsPreviousSeason": null,
       "name": "SngphO",
       "rank": 9,
-      "seasonTotal": 6.418633372271518e+22
+      "seasonTotal": 6.969711329625319e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -147,15 +147,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Bensayyten",
+      "name": "BlackFlamE",
       "rank": 25,
-      "seasonTotal": 2.237682283501363e+21
+      "seasonTotal": 2.3835423178634413e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "BlackFlamE",
+      "name": "Bensayyten",
       "rank": 26,
-      "seasonTotal": 2.176565799379324e+21
+      "seasonTotal": 2.237682283501363e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -3620,6 +3620,23 @@
               ],
               "name": "Apathy_",
               "top2Sum": 5.461485345048291e+20
+            },
+            {
+              "attempts": [
+                2.8963983719081726e+21,
+                2.614381201629836e+21,
+                2.4885577145427716e+21
+              ],
+              "name": "SngphO",
+              "top2Sum": 5.510779573538008e+21
+            },
+            {
+              "attempts": [
+                1.176412009589298e+20,
+                8.933531752518733e+19
+              ],
+              "name": "BlackFlamE",
+              "top2Sum": 2.0697651848411713e+20
             }
           ]
         }
