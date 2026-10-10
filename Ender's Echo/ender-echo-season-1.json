@@ -5,7 +5,7 @@
       "gainVsPreviousSeason": null,
       "name": "Fl3xas",
       "rank": 1,
-      "seasonTotal": 7.836863071368921e+23
+      "seasonTotal": 8.469881877141739e+23
     },
     {
       "gainVsPreviousSeason": null,
@@ -35,13 +35,13 @@
       "gainVsPreviousSeason": null,
       "name": "DAYO-P",
       "rank": 6,
-      "seasonTotal": 1.184495039954227e+23
+      "seasonTotal": 1.2034239788565872e+23
     },
     {
       "gainVsPreviousSeason": null,
       "name": "RABBIT5",
       "rank": 7,
-      "seasonTotal": 1.11184728653392e+23
+      "seasonTotal": 1.1609250537946675e+23
     },
     {
       "gainVsPreviousSeason": null,
@@ -143,13 +143,13 @@
       "gainVsPreviousSeason": null,
       "name": "EMBALOCO",
       "rank": 24,
-      "seasonTotal": 2.565892032475912e+21
+      "seasonTotal": 2.880569299871533e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Bensayyten",
       "rank": 25,
-      "seasonTotal": 2.4043292003789093e+21
+      "seasonTotal": 2.629225584023173e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -161,7 +161,7 @@
       "gainVsPreviousSeason": null,
       "name": "theLP",
       "rank": 27,
-      "seasonTotal": 1.6126379228289607e+21
+      "seasonTotal": 1.8693766175807672e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -201,15 +201,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "silverxz",
+      "name": "faxnem",
       "rank": 34,
-      "seasonTotal": 8.135952554776855e+20
+      "seasonTotal": 1.2855120714023906e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "faxnem",
+      "name": "silverxz",
       "rank": 35,
-      "seasonTotal": 7.936030004950381e+20
+      "seasonTotal": 8.135952554776855e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -219,15 +219,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Toddlerr",
+      "name": "Belthazar",
       "rank": 37,
-      "seasonTotal": 5.741700902372607e+20
+      "seasonTotal": 6.152503801741094e+20
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Belthazar",
+      "name": "Toddlerr",
       "rank": 38,
-      "seasonTotal": 5.6779842866865943e+20
+      "seasonTotal": 5.741700902372607e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -3640,10 +3640,11 @@
             },
             {
               "attempts": [
-                1.6664691687754655e+20
+                1.6664691687754655e+20,
+                2.2489638364426358e+20
               ],
               "name": "Bensayyten",
-              "top2Sum": 1.6664691687754655e+20
+              "top2Sum": 3.9154330052181013e+20
             },
             {
               "attempts": [
@@ -3664,10 +3665,11 @@
             },
             {
               "attempts": [
-                3.2618096561515775e+21
+                3.2618096561515775e+21,
+                4.907776726074756e+21
               ],
               "name": "RABBIT5",
-              "top2Sum": 3.2618096561515775e+21
+              "top2Sum": 8.169586382226334e+21
             },
             {
               "attempts": [
@@ -3703,10 +3705,12 @@
               "attempts": [
                 6.938008223717247e+21,
                 5.18264062835325e+21,
-                5.538248332168751e+21
+                5.538248332168751e+21,
+                3.1629380089279745e+21,
+                7.431142222404767e+21
               ],
               "name": "DAYO-P",
-              "top2Sum": 1.2476256555885998e+22
+              "top2Sum": 1.4369150446122014e+22
             },
             {
               "attempts": [
@@ -3723,6 +3727,47 @@
               ],
               "name": "\u76feHeathcliff\u5263",
               "top2Sum": 8.72045403973337e+20
+            },
+            {
+              "attempts": [
+                1.869684875038573e+19,
+                2.875510275506421e+19
+              ],
+              "name": "Belthazar",
+              "top2Sum": 4.745195150544994e+19
+            },
+            {
+              "attempts": [
+                1.353630079550043e+20,
+                1.2137568679680238e+20
+              ],
+              "name": "theLP",
+              "top2Sum": 2.567386947518067e+20
+            },
+            {
+              "attempts": [
+                2.50252105147064e+20,
+                2.4165696576028842e+20
+              ],
+              "name": "faxnem",
+              "top2Sum": 4.919090709073524e+20
+            },
+            {
+              "attempts": [
+                2.599153513600733e+22,
+                3.7310345441274428e+22,
+                2.3837774581582004e+22
+              ],
+              "name": "Fl3xas",
+              "top2Sum": 6.330188057728176e+22
+            },
+            {
+              "attempts": [
+                1.7057636012906797e+20,
+                1.4410090726655279e+20
+              ],
+              "name": "EMBALOCO",
+              "top2Sum": 3.1467726739562077e+20
             }
           ]
         }
