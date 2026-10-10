@@ -165,39 +165,39 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "gubrax",
+      "name": "BobBobberson",
       "rank": 28,
+      "seasonTotal": 1.5747184001075045e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "gubrax",
+      "rank": 29,
       "seasonTotal": 1.54186269103974e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "NeonCBV",
-      "rank": 29,
+      "rank": 30,
       "seasonTotal": 1.4257292275402618e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Rzzza",
-      "rank": 30,
+      "rank": 31,
       "seasonTotal": 1.3531678692030126e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "BobBobberson",
-      "rank": 31,
-      "seasonTotal": 1.3407156732382476e+21
+      "name": "groggen",
+      "rank": 32,
+      "seasonTotal": 1.3291773131834846e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "samwise08",
-      "rank": 32,
-      "seasonTotal": 1.1508046999008291e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "groggen",
       "rank": 33,
-      "seasonTotal": 1.110120515170369e+21
+      "seasonTotal": 1.3250349731363155e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -3676,6 +3676,28 @@
               ],
               "name": "Player 80018314",
               "top2Sum": 1.0212451414669708e+20
+            },
+            {
+              "attempts": [
+                1.7423027323548638e+20
+              ],
+              "name": "samwise08",
+              "top2Sum": 1.7423027323548638e+20
+            },
+            {
+              "attempts": [
+                2.190567980131155e+20
+              ],
+              "name": "groggen",
+              "top2Sum": 2.190567980131155e+20
+            },
+            {
+              "attempts": [
+                9.923192884358622e+19,
+                1.3477079802567062e+20
+              ],
+              "name": "BobBobberson",
+              "top2Sum": 2.3400272686925683e+20
             }
           ]
         }
