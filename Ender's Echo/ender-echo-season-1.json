@@ -5,7 +5,7 @@
       "gainVsPreviousSeason": null,
       "name": "Fl3xas",
       "rank": 1,
-      "seasonTotal": 8.469881877141739e+23
+      "seasonTotal": 9.41466611867106e+23
     },
     {
       "gainVsPreviousSeason": null,
@@ -17,7 +17,7 @@
       "gainVsPreviousSeason": null,
       "name": "Nubis",
       "rank": 3,
-      "seasonTotal": 1.7085282007516517e+23
+      "seasonTotal": 1.8735859432323063e+23
     },
     {
       "gainVsPreviousSeason": null,
@@ -27,21 +27,21 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "\u00d0\u318d\u2623zSpec\u2623",
-      "rank": 5,
-      "seasonTotal": 1.2860811321600587e+23
-    },
-    {
-      "gainVsPreviousSeason": null,
       "name": "DAYO-P",
-      "rank": 6,
-      "seasonTotal": 1.2034239788565872e+23
+      "rank": 5,
+      "seasonTotal": 1.3282702906413878e+23
     },
     {
       "gainVsPreviousSeason": null,
       "name": "RABBIT5",
+      "rank": 6,
+      "seasonTotal": 1.2979412509059472e+23
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "\u00d0\u318d\u2623zSpec\u2623",
       "rank": 7,
-      "seasonTotal": 1.1609250537946675e+23
+      "seasonTotal": 1.2860811321600587e+23
     },
     {
       "gainVsPreviousSeason": null,
@@ -63,15 +63,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "PastalaVista",
+      "name": "MadameMischief",
       "rank": 11,
-      "seasonTotal": 1.176382013425861e+22
+      "seasonTotal": 1.2274093040940184e+22
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "MadameMischief",
+      "name": "PastalaVista",
       "rank": 12,
-      "seasonTotal": 1.1095925294988379e+22
+      "seasonTotal": 1.176382013425861e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -105,21 +105,21 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "VictorMolusco",
+      "name": "HakiLuffy",
       "rank": 18,
-      "seasonTotal": 4.4303064319558796e+21
+      "seasonTotal": 4.444238684748344e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "HakiLuffy",
+      "name": "VictorMolusco",
       "rank": 19,
-      "seasonTotal": 4.100701459387305e+21
+      "seasonTotal": 4.4303064319558796e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Apathy_",
       "rank": 20,
-      "seasonTotal": 3.87404545952114e+21
+      "seasonTotal": 4.108261749327788e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -155,37 +155,37 @@
       "gainVsPreviousSeason": null,
       "name": "BlackFlamE",
       "rank": 26,
-      "seasonTotal": 2.3835423178634413e+21
+      "seasonTotal": 2.5973520140228e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "theLP",
       "rank": 27,
-      "seasonTotal": 1.8693766175807672e+21
+      "seasonTotal": 2.095843930795623e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "Rzzza",
+      "rank": 28,
+      "seasonTotal": 1.660654074740095e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "BobBobberson",
-      "rank": 28,
+      "rank": 29,
       "seasonTotal": 1.5747184001075045e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "gubrax",
-      "rank": 29,
+      "rank": 30,
       "seasonTotal": 1.54186269103974e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "NeonCBV",
-      "rank": 30,
-      "seasonTotal": 1.4257292275402618e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "Rzzza",
       "rank": 31,
-      "seasonTotal": 1.3531678692030126e+21
+      "seasonTotal": 1.4257292275402618e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -237,15 +237,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "datamaster",
+      "name": "ergiangi",
       "rank": 40,
-      "seasonTotal": 1.281020678969742e+20
+      "seasonTotal": 1.3435347348719568e+20
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "ergiangi",
+      "name": "datamaster",
       "rank": 41,
-      "seasonTotal": 9.205040187777548e+19
+      "seasonTotal": 1.281020678969742e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -3756,10 +3756,11 @@
               "attempts": [
                 2.599153513600733e+22,
                 3.7310345441274428e+22,
-                2.3837774581582004e+22
+                2.3837774581582004e+22,
+                3.406636212203082e+22
               ],
               "name": "Fl3xas",
-              "top2Sum": 6.330188057728176e+22
+              "top2Sum": 7.137670756330525e+22
             },
             {
               "attempts": [
@@ -3768,6 +3769,103 @@
               ],
               "name": "EMBALOCO",
               "top2Sum": 3.1467726739562077e+20
+            }
+          ]
+        },
+        {
+          "date": "2026-10-11",
+          "day": 18,
+          "players": [
+            {
+              "attempts": [
+                2.3421628980664782e+20
+              ],
+              "name": "Apathy_",
+              "top2Sum": 2.3421628980664782e+20
+            },
+            {
+              "attempts": [
+                7.37819534336379e+21,
+                5.028176020186641e+21,
+                5.106435835116271e+21
+              ],
+              "name": "DAYO-P",
+              "top2Sum": 1.2484631178480062e+22
+            },
+            {
+              "attempts": [
+                1.1140687383873185e+20,
+                1.1506043937612402e+20
+              ],
+              "name": "theLP",
+              "top2Sum": 2.2646731321485587e+20
+            },
+            {
+              "attempts": [
+                1.339913065842178e+20,
+                8.680590420079983e+19,
+                1.7349489895286463e+20
+              ],
+              "name": "Rzzza",
+              "top2Sum": 3.074862055370824e+20
+            },
+            {
+              "attempts": [
+                1.452176410491732e+20,
+                1.9831958431186554e+20
+              ],
+              "name": "HakiLuffy",
+              "top2Sum": 3.435372253610388e+20
+            },
+            {
+              "attempts": [
+                9.943792822462002e+19,
+                1.1437176793473873e+20
+              ],
+              "name": "BlackFlamE",
+              "top2Sum": 2.1380969615935875e+20
+            },
+            {
+              "attempts": [
+                8.511010092380812e+21,
+                7.531898250559852e+21,
+                7.994764155684663e+21,
+                7.228957960492269e+21,
+                7.73154574084742e+21
+              ],
+              "name": "Nubis",
+              "top2Sum": 1.6505774248065476e+22
+            },
+            {
+              "attempts": [
+                4.50768689547258e+22,
+                4.132672821218295e+22
+              ],
+              "name": "Fl3xas",
+              "top2Sum": 8.640359716690875e+22
+            },
+            {
+              "attempts": [
+                4.23030716094202e+19
+              ],
+              "name": "ergiangi",
+              "top2Sum": 4.23030716094202e+19
+            },
+            {
+              "attempts": [
+                6.058001158385295e+21,
+                7.643618552742673e+21
+              ],
+              "name": "RABBIT5",
+              "top2Sum": 1.3701619711127969e+22
+            },
+            {
+              "attempts": [
+                5.737055527651343e+20,
+                6.044621931866716e+20
+              ],
+              "name": "MadameMischief",
+              "top2Sum": 1.1781677459518059e+21
             }
           ]
         }
