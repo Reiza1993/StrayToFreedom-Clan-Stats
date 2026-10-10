@@ -33,15 +33,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "RABBIT5",
+      "name": "DAYO-P",
       "rank": 6,
-      "seasonTotal": 1.11184728653392e+23
+      "seasonTotal": 1.184495039954227e+23
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "DAYO-P",
+      "name": "RABBIT5",
       "rank": 7,
-      "seasonTotal": 1.0597324743953672e+23
+      "seasonTotal": 1.11184728653392e+23
     },
     {
       "gainVsPreviousSeason": null,
@@ -93,21 +93,21 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Scoundrel536",
+      "name": "\u76feHeathcliff\u5263",
       "rank": 16,
-      "seasonTotal": 4.971123693488782e+21
+      "seasonTotal": 5.46456717017803e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "\u76feHeathcliff\u5263",
+      "name": "Scoundrel536",
       "rank": 17,
-      "seasonTotal": 4.5925217662046935e+21
+      "seasonTotal": 4.971123693488782e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "VictorMolusco",
       "rank": 18,
-      "seasonTotal": 4.161860696966838e+21
+      "seasonTotal": 4.4303064319558796e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -3698,6 +3698,31 @@
               ],
               "name": "BobBobberson",
               "top2Sum": 2.3400272686925683e+20
+            },
+            {
+              "attempts": [
+                6.938008223717247e+21,
+                5.18264062835325e+21,
+                5.538248332168751e+21
+              ],
+              "name": "DAYO-P",
+              "top2Sum": 1.2476256555885998e+22
+            },
+            {
+              "attempts": [
+                2.58571223039036e+20,
+                9.87451195000547e+18
+              ],
+              "name": "VictorMolusco",
+              "top2Sum": 2.6844573498904147e+20
+            },
+            {
+              "attempts": [
+                3.529017170884212e+20,
+                5.191436868849157e+20
+              ],
+              "name": "\u76feHeathcliff\u5263",
+              "top2Sum": 8.72045403973337e+20
             }
           ]
         }
