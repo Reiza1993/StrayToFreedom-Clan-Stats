@@ -35,7 +35,7 @@
       "gainVsPreviousSeason": null,
       "name": "RABBIT5",
       "rank": 6,
-      "seasonTotal": 1.0792291899724042e+23
+      "seasonTotal": 1.11184728653392e+23
     },
     {
       "gainVsPreviousSeason": null,
@@ -63,15 +63,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "MadameMischief",
+      "name": "PastalaVista",
       "rank": 11,
-      "seasonTotal": 1.1095925294988379e+22
+      "seasonTotal": 1.176382013425861e+22
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "PastalaVista",
+      "name": "MadameMischief",
       "rank": 12,
-      "seasonTotal": 1.0355921453473446e+22
+      "seasonTotal": 1.1095925294988379e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -89,7 +89,7 @@
       "gainVsPreviousSeason": null,
       "name": "pumpenjoe",
       "rank": 15,
-      "seasonTotal": 5.353334754640706e+21
+      "seasonTotal": 9.004130351643443e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -147,15 +147,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "BlackFlamE",
+      "name": "Bensayyten",
       "rank": 25,
-      "seasonTotal": 2.3835423178634413e+21
+      "seasonTotal": 2.4043292003789093e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Bensayyten",
+      "name": "BlackFlamE",
       "rank": 26,
-      "seasonTotal": 2.237682283501363e+21
+      "seasonTotal": 2.3835423178634413e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -213,21 +213,21 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Toddlerr",
+      "name": "Player 80018314",
       "rank": 36,
+      "seasonTotal": 6.213343457609751e+20
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "Toddlerr",
+      "rank": 37,
       "seasonTotal": 5.741700902372607e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Belthazar",
-      "rank": 37,
-      "seasonTotal": 5.6779842866865943e+20
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "Player 80018314",
       "rank": 38,
-      "seasonTotal": 5.1920983161427794e+20
+      "seasonTotal": 5.6779842866865943e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -3637,6 +3637,45 @@
               ],
               "name": "BlackFlamE",
               "top2Sum": 2.0697651848411713e+20
+            },
+            {
+              "attempts": [
+                1.6664691687754655e+20
+              ],
+              "name": "Bensayyten",
+              "top2Sum": 1.6664691687754655e+20
+            },
+            {
+              "attempts": [
+                7.263515548977254e+20,
+                6.815471258874379e+20
+              ],
+              "name": "PastalaVista",
+              "top2Sum": 1.4078986807851633e+21
+            },
+            {
+              "attempts": [
+                1.5728961924448523e+21,
+                9.788407508448153e+20,
+                2.0778994045578856e+21
+              ],
+              "name": "pumpenjoe",
+              "top2Sum": 3.650795597002738e+21
+            },
+            {
+              "attempts": [
+                3.2618096561515775e+21
+              ],
+              "name": "RABBIT5",
+              "top2Sum": 3.2618096561515775e+21
+            },
+            {
+              "attempts": [
+                6.2368845617843995e+19,
+                3.975566852885308e+19
+              ],
+              "name": "Player 80018314",
+              "top2Sum": 1.0212451414669708e+20
             }
           ]
         }
