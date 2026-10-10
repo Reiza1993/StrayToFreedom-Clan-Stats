@@ -117,27 +117,27 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Player 66607264",
+      "name": "Apathy_",
       "rank": 20,
+      "seasonTotal": 3.87404545952114e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "Player 66607264",
+      "rank": 21,
       "seasonTotal": 3.765049912695302e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "p88203044",
-      "rank": 21,
-      "seasonTotal": 3.4484612963551423e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "Apathy_",
       "rank": 22,
-      "seasonTotal": 3.327896925016311e+21
+      "seasonTotal": 3.4484612963551423e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Gritchen",
       "rank": 23,
-      "seasonTotal": 2.6239686244233825e+21
+      "seasonTotal": 3.062198166782595e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -3604,6 +3604,22 @@
               ],
               "name": "silverxz",
               "top2Sum": 2.708111194519054e+20
+            },
+            {
+              "attempts": [
+                2.1935578082994586e+20,
+                2.188737615292662e+20
+              ],
+              "name": "Gritchen",
+              "top2Sum": 4.382295423592121e+20
+            },
+            {
+              "attempts": [
+                2.576249494458983e+20,
+                2.8852358505893082e+20
+              ],
+              "name": "Apathy_",
+              "top2Sum": 5.461485345048291e+20
             }
           ]
         }
