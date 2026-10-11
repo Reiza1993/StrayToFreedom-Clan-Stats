@@ -143,7 +143,7 @@
       "gainVsPreviousSeason": null,
       "name": "EMBALOCO",
       "rank": 24,
-      "seasonTotal": 3.042636736235598e+21
+      "seasonTotal": 3.1819756273245576e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -171,39 +171,39 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "gubrax",
+      "name": "faxnem",
       "rank": 29,
+      "seasonTotal": 1.7332553070507503e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "gubrax",
+      "rank": 30,
       "seasonTotal": 1.6696458284544992e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Rzzza",
-      "rank": 30,
+      "rank": 31,
       "seasonTotal": 1.660654074740095e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "groggen",
-      "rank": 31,
+      "rank": 32,
       "seasonTotal": 1.5298742411223522e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "NeonCBV",
-      "rank": 32,
+      "rank": 33,
       "seasonTotal": 1.4257292275402618e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "samwise08",
-      "rank": 33,
-      "seasonTotal": 1.3250349731363155e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "faxnem",
       "rank": 34,
-      "seasonTotal": 1.2855120714023906e+21
+      "seasonTotal": 1.3250349731363155e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -3977,10 +3977,19 @@
             },
             {
               "attempts": [
-                1.6206743636406495e+20
+                1.6206743636406495e+20,
+                1.3933889108895972e+20
               ],
               "name": "EMBALOCO",
-              "top2Sum": 1.6206743636406495e+20
+              "top2Sum": 3.0140632745302465e+20
+            },
+            {
+              "attempts": [
+                1.621043136314358e+20,
+                2.8563892201692404e+20
+              ],
+              "name": "faxnem",
+              "top2Sum": 4.477432356483598e+20
             }
           ]
         }
