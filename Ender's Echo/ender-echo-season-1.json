@@ -29,7 +29,7 @@
       "gainVsPreviousSeason": null,
       "name": "DAYO-P",
       "rank": 5,
-      "seasonTotal": 1.454246090948053e+23
+      "seasonTotal": 1.461709523319008e+23
     },
     {
       "gainVsPreviousSeason": null,
@@ -131,7 +131,7 @@
       "gainVsPreviousSeason": null,
       "name": "Gritchen",
       "rank": 22,
-      "seasonTotal": 3.627510705955409e+21
+      "seasonTotal": 3.743756397481259e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -171,21 +171,21 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "faxnem",
+      "name": "Rzzza",
       "rank": 29,
+      "seasonTotal": 1.7738252059490795e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "faxnem",
+      "rank": 30,
       "seasonTotal": 1.7332553070507503e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "gubrax",
-      "rank": 30,
-      "seasonTotal": 1.6696458284544992e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "Rzzza",
       "rank": 31,
-      "seasonTotal": 1.660654074740095e+21
+      "seasonTotal": 1.6696458284544992e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -4013,10 +4013,11 @@
             {
               "attempts": [
                 6.159878709090218e+21,
-                4.835936871365214e+21
+                4.835936871365214e+21,
+                5.582280108460712e+21
               ],
               "name": "DAYO-P",
-              "top2Sum": 1.0995815580455433e+22
+              "top2Sum": 1.174215881755093e+22
             },
             {
               "attempts": [
@@ -4051,6 +4052,20 @@
               ],
               "name": "Cunner88",
               "top2Sum": 7.012741456389136e+21
+            },
+            {
+              "attempts": [
+                1.1624569152585033e+20
+              ],
+              "name": "Gritchen",
+              "top2Sum": 1.1624569152585033e+20
+            },
+            {
+              "attempts": [
+                1.131711312089844e+20
+              ],
+              "name": "Rzzza",
+              "top2Sum": 1.131711312089844e+20
             }
           ]
         }
