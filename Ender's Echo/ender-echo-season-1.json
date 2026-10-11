@@ -105,15 +105,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "HakiLuffy",
+      "name": "VictorMolusco",
       "rank": 18,
-      "seasonTotal": 4.444238684748344e+21
+      "seasonTotal": 4.671465506687022e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "VictorMolusco",
+      "name": "HakiLuffy",
       "rank": 19,
-      "seasonTotal": 4.4303064319558796e+21
+      "seasonTotal": 4.444238684748344e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -3912,6 +3912,14 @@
               ],
               "name": "\u00d0\u318d\u2623zSpec\u2623",
               "top2Sum": 1.0019555733231777e+23
+            },
+            {
+              "attempts": [
+                2.314901396404399e+20,
+                9.668935090702248e+18
+              ],
+              "name": "VictorMolusco",
+              "top2Sum": 2.4115907473114215e+20
             }
           ]
         }
