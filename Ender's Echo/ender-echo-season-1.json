@@ -165,21 +165,21 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "gubrax",
+      "name": "BobBobberson",
       "rank": 28,
+      "seasonTotal": 1.677506346726527e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "gubrax",
+      "rank": 29,
       "seasonTotal": 1.6696458284544992e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Rzzza",
-      "rank": 29,
-      "seasonTotal": 1.660654074740095e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "BobBobberson",
       "rank": 30,
-      "seasonTotal": 1.5747184001075045e+21
+      "seasonTotal": 1.660654074740095e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -209,19 +209,19 @@
       "gainVsPreviousSeason": null,
       "name": "silverxz",
       "rank": 35,
-      "seasonTotal": 8.135952554776855e+20
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "Player 80018314",
-      "rank": 36,
-      "seasonTotal": 6.213343457609751e+20
+      "seasonTotal": 1.0643779731972253e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Belthazar",
+      "rank": 36,
+      "seasonTotal": 6.619516297233034e+20
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "Player 80018314",
       "rank": 37,
-      "seasonTotal": 6.152503801741094e+20
+      "seasonTotal": 6.213343457609751e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -3920,6 +3920,28 @@
               ],
               "name": "VictorMolusco",
               "top2Sum": 2.4115907473114215e+20
+            },
+            {
+              "attempts": [
+                3.1925402451084337e+19,
+                1.4775847098109665e+19
+              ],
+              "name": "Belthazar",
+              "top2Sum": 4.6701249549194e+19
+            },
+            {
+              "attempts": [
+                1.0278794661902248e+20
+              ],
+              "name": "BobBobberson",
+              "top2Sum": 1.0278794661902248e+20
+            },
+            {
+              "attempts": [
+                2.507827177195399e+20
+              ],
+              "name": "silverxz",
+              "top2Sum": 2.507827177195399e+20
             }
           ]
         }
