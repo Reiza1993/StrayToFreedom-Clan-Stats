@@ -45,15 +45,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "\u795eSterben\u6b7b",
+      "name": "SngphO",
       "rank": 8,
-      "seasonTotal": 7.0674516711358025e+22
+      "seasonTotal": 7.545009692857761e+22
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "SngphO",
+      "name": "\u795eSterben\u6b7b",
       "rank": 9,
-      "seasonTotal": 6.969711329625319e+22
+      "seasonTotal": 7.0674516711358025e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -251,7 +251,7 @@
       "gainVsPreviousSeason": null,
       "name": "Cheeselife",
       "rank": 42,
-      "seasonTotal": 2.101163410746618e+19
+      "seasonTotal": 7.833963109564036e+19
     },
     {
       "gainVsPreviousSeason": null,
@@ -3866,6 +3866,21 @@
               ],
               "name": "MadameMischief",
               "top2Sum": 1.1781677459518059e+21
+            },
+            {
+              "attempts": [
+                5.732799698817418e+19
+              ],
+              "name": "Cheeselife",
+              "top2Sum": 5.732799698817418e+19
+            },
+            {
+              "attempts": [
+                2.6849320418920607e+21,
+                3.0680515904323584e+21
+              ],
+              "name": "SngphO",
+              "top2Sum": 5.75298363232442e+21
             }
           ]
         }
