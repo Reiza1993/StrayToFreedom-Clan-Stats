@@ -5,7 +5,7 @@
       "gainVsPreviousSeason": null,
       "name": "Fl3xas",
       "rank": 1,
-      "seasonTotal": 9.41466611867106e+23
+      "seasonTotal": 1.0060026856574305e+24
     },
     {
       "gainVsPreviousSeason": null,
@@ -29,7 +29,7 @@
       "gainVsPreviousSeason": null,
       "name": "DAYO-P",
       "rank": 5,
-      "seasonTotal": 1.3442879351434987e+23
+      "seasonTotal": 1.454246090948053e+23
     },
     {
       "gainVsPreviousSeason": null,
@@ -57,33 +57,33 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Koncalaz",
+      "name": "Cunner88",
       "rank": 10,
-      "seasonTotal": 1.5936135319796664e+22
+      "seasonTotal": 1.6121469157757346e+22
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "PastalaVista",
+      "name": "Koncalaz",
       "rank": 11,
-      "seasonTotal": 1.253331526126173e+22
+      "seasonTotal": 1.5936135319796664e+22
     },
     {
       "gainVsPreviousSeason": null,
       "name": "MadameMischief",
       "rank": 12,
-      "seasonTotal": 1.2274093040940184e+22
+      "seasonTotal": 1.302478109757107e+22
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "PastalaVista",
+      "rank": 13,
+      "seasonTotal": 1.253331526126173e+22
     },
     {
       "gainVsPreviousSeason": null,
       "name": "RetinaDNA",
-      "rank": 13,
-      "seasonTotal": 9.79898825295215e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "Cunner88",
       "rank": 14,
-      "seasonTotal": 9.108727701368212e+21
+      "seasonTotal": 9.79898825295215e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -105,21 +105,21 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "VictorMolusco",
-      "rank": 18,
-      "seasonTotal": 4.671465506687022e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
       "name": "HakiLuffy",
-      "rank": 19,
-      "seasonTotal": 4.444238684748344e+21
+      "rank": 18,
+      "seasonTotal": 4.806532525613966e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Apathy_",
+      "rank": 19,
+      "seasonTotal": 4.689945745455537e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "VictorMolusco",
       "rank": 20,
-      "seasonTotal": 4.347400187579576e+21
+      "seasonTotal": 4.671465506687022e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -3995,6 +3995,67 @@
         }
       ],
       "miniSeasonNumber": 6
+    },
+    {
+      "days": [
+        {
+          "date": "2026-10-12",
+          "day": 19,
+          "players": [
+            {
+              "attempts": [
+                1.6528271874683607e+20,
+                1.7726283912912522e+20
+              ],
+              "name": "Apathy_",
+              "top2Sum": 3.425455578759613e+20
+            },
+            {
+              "attempts": [
+                6.159878709090218e+21,
+                4.835936871365214e+21
+              ],
+              "name": "DAYO-P",
+              "top2Sum": 1.0995815580455433e+22
+            },
+            {
+              "attempts": [
+                1.5745257204117592e+20,
+                1.7821732365654396e+20,
+                1.8407651720907732e+20
+              ],
+              "name": "HakiLuffy",
+              "top2Sum": 3.622938408656213e+20
+            },
+            {
+              "attempts": [
+                3.2677919391206844e+22,
+                3.1858154399117668e+22
+              ],
+              "name": "Fl3xas",
+              "top2Sum": 6.4536073790324516e+22
+            },
+            {
+              "attempts": [
+                3.1692058792618204e+20,
+                4.3376746870470345e+20
+              ],
+              "name": "MadameMischief",
+              "top2Sum": 7.506880566308855e+20
+            },
+            {
+              "attempts": [
+                3.1646780785338053e+21,
+                3.765149467662102e+21,
+                3.247591988727034e+21
+              ],
+              "name": "Cunner88",
+              "top2Sum": 7.012741456389136e+21
+            }
+          ]
+        }
+      ],
+      "miniSeasonNumber": 7
     }
   ],
   "seasonNumber": 1,
