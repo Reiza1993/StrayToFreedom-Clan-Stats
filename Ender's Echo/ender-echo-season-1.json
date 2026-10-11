@@ -15,33 +15,33 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Nubis",
+      "name": "\u00d0\u318d\u2623zSpec\u2623",
       "rank": 3,
+      "seasonTotal": 2.2880367054832363e+23
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "Nubis",
+      "rank": 4,
       "seasonTotal": 1.8735859432323063e+23
     },
     {
       "gainVsPreviousSeason": null,
       "name": "\u2623zSpec\u2623",
-      "rank": 4,
+      "rank": 5,
       "seasonTotal": 1.330648380129283e+23
     },
     {
       "gainVsPreviousSeason": null,
       "name": "DAYO-P",
-      "rank": 5,
+      "rank": 6,
       "seasonTotal": 1.3282702906413878e+23
     },
     {
       "gainVsPreviousSeason": null,
       "name": "RABBIT5",
-      "rank": 6,
-      "seasonTotal": 1.2979412509059472e+23
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "\u00d0\u318d\u2623zSpec\u2623",
       "rank": 7,
-      "seasonTotal": 1.2860811321600587e+23
+      "seasonTotal": 1.2979412509059472e+23
     },
     {
       "gainVsPreviousSeason": null,
@@ -63,15 +63,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "MadameMischief",
+      "name": "PastalaVista",
       "rank": 11,
-      "seasonTotal": 1.2274093040940184e+22
+      "seasonTotal": 1.253331526126173e+22
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "PastalaVista",
+      "name": "MadameMischief",
       "rank": 12,
-      "seasonTotal": 1.176382013425861e+22
+      "seasonTotal": 1.2274093040940184e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -129,15 +129,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "p88203044",
+      "name": "Gritchen",
       "rank": 22,
-      "seasonTotal": 3.4484612963551423e+21
+      "seasonTotal": 3.627510705955409e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Gritchen",
+      "name": "p88203044",
       "rank": 23,
-      "seasonTotal": 3.062198166782595e+21
+      "seasonTotal": 3.4484612963551423e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -165,21 +165,21 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Rzzza",
+      "name": "gubrax",
       "rank": 28,
+      "seasonTotal": 1.6696458284544992e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "Rzzza",
+      "rank": 29,
       "seasonTotal": 1.660654074740095e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "BobBobberson",
-      "rank": 29,
-      "seasonTotal": 1.5747184001075045e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "gubrax",
       "rank": 30,
-      "seasonTotal": 1.54186269103974e+21
+      "seasonTotal": 1.5747184001075045e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -3881,6 +3881,37 @@
               ],
               "name": "SngphO",
               "top2Sum": 5.75298363232442e+21
+            },
+            {
+              "attempts": [
+                2.327814927542386e+20,
+                3.325310464185755e+20
+              ],
+              "name": "Gritchen",
+              "top2Sum": 5.653125391728141e+20
+            },
+            {
+              "attempts": [
+                7.1985422859353055e+19,
+                5.5797714555406156e+19
+              ],
+              "name": "gubrax",
+              "top2Sum": 1.2778313741475922e+20
+            },
+            {
+              "attempts": [
+                7.694951270031196e+20
+              ],
+              "name": "PastalaVista",
+              "top2Sum": 7.694951270031196e+20
+            },
+            {
+              "attempts": [
+                4.672583120217753e+22,
+                5.346972613014023e+22
+              ],
+              "name": "\u00d0\u318d\u2623zSpec\u2623",
+              "top2Sum": 1.0019555733231777e+23
             }
           ]
         }
