@@ -5,7 +5,7 @@
       "gainVsPreviousSeason": null,
       "name": "Fl3xas",
       "rank": 1,
-      "seasonTotal": 1.0060026856574305e+24
+      "seasonTotal": 1.0814786937638548e+24
     },
     {
       "gainVsPreviousSeason": null,
@@ -23,7 +23,7 @@
       "gainVsPreviousSeason": null,
       "name": "Nubis",
       "rank": 4,
-      "seasonTotal": 1.8735859432323063e+23
+      "seasonTotal": 1.9311104085419883e+23
     },
     {
       "gainVsPreviousSeason": null,
@@ -93,27 +93,27 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "\u76feHeathcliff\u5263",
+      "name": "Scoundrel536",
       "rank": 16,
+      "seasonTotal": 6.652527244127699e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "\u76feHeathcliff\u5263",
+      "rank": 17,
       "seasonTotal": 6.008395128331382e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "VictorMolusco",
-      "rank": 17,
+      "rank": 18,
       "seasonTotal": 5.316361858147028e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "HakiLuffy",
-      "rank": 18,
-      "seasonTotal": 5.149230717018237e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "Scoundrel536",
       "rank": 19,
-      "seasonTotal": 4.971123693488782e+21
+      "seasonTotal": 5.149230717018237e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -183,27 +183,27 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "groggen",
+      "name": "Rzzza",
       "rank": 31,
+      "seasonTotal": 1.9220706325391538e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "groggen",
+      "rank": 32,
       "seasonTotal": 1.8635194613947784e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "gubrax",
-      "rank": 32,
+      "rank": 33,
       "seasonTotal": 1.8011503396051548e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "silverxz",
-      "rank": 33,
-      "seasonTotal": 1.7743497972625318e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "Rzzza",
       "rank": 34,
-      "seasonTotal": 1.7738252059490795e+21
+      "seasonTotal": 1.7743497972625318e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -4290,6 +4290,35 @@
               ],
               "name": "Cunner88",
               "top2Sum": 3.968156028262093e+21
+            },
+            {
+              "attempts": [
+                1.4824542659007434e+20
+              ],
+              "name": "Rzzza",
+              "top2Sum": 1.4824542659007434e+20
+            },
+            {
+              "attempts": [
+                1.681403550638917e+21
+              ],
+              "name": "Scoundrel536",
+              "top2Sum": 1.681403550638917e+21
+            },
+            {
+              "attempts": [
+                5.752446530968221e+21
+              ],
+              "name": "Nubis",
+              "top2Sum": 5.752446530968221e+21
+            },
+            {
+              "attempts": [
+                3.6244034536772913e+22,
+                3.9231973569651334e+22
+              ],
+              "name": "Fl3xas",
+              "top2Sum": 7.547600810642425e+22
             }
           ]
         }
