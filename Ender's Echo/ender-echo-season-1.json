@@ -29,7 +29,7 @@
       "gainVsPreviousSeason": null,
       "name": "DAYO-P",
       "rank": 5,
-      "seasonTotal": 1.461709523319008e+23
+      "seasonTotal": 1.4879808823255425e+23
     },
     {
       "gainVsPreviousSeason": null,
@@ -47,7 +47,7 @@
       "gainVsPreviousSeason": null,
       "name": "SngphO",
       "rank": 8,
-      "seasonTotal": 7.80509699868823e+22
+      "seasonTotal": 8.039270956674917e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -171,33 +171,33 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "BobBobberson",
+      "name": "groggen",
       "rank": 29,
+      "seasonTotal": 1.8635194613947784e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "BobBobberson",
+      "rank": 30,
       "seasonTotal": 1.8543261071370648e+21
     },
     {
       "gainVsPreviousSeason": null,
+      "name": "gubrax",
+      "rank": 31,
+      "seasonTotal": 1.8011503396051548e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
       "name": "Rzzza",
-      "rank": 30,
+      "rank": 32,
       "seasonTotal": 1.7738252059490795e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "faxnem",
-      "rank": 31,
-      "seasonTotal": 1.7332553070507503e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "gubrax",
-      "rank": 32,
-      "seasonTotal": 1.6696458284544992e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "groggen",
       "rank": 33,
-      "seasonTotal": 1.5298742411223522e+21
+      "seasonTotal": 1.7332553070507503e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -251,7 +251,7 @@
       "gainVsPreviousSeason": null,
       "name": "Cheeselife",
       "rank": 42,
-      "seasonTotal": 7.833963109564036e+19
+      "seasonTotal": 1.1887187337881292e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -4014,10 +4014,13 @@
               "attempts": [
                 6.159878709090218e+21,
                 4.835936871365214e+21,
-                5.582280108460712e+21
+                5.582280108460712e+21,
+                7.823637136292782e+21,
+                5.450114487561479e+21,
+                6.545657581911602e+21
               ],
               "name": "DAYO-P",
-              "top2Sum": 1.174215881755093e+22
+              "top2Sum": 1.4369294718204383e+22
             },
             {
               "attempts": [
@@ -4118,10 +4121,11 @@
             },
             {
               "attempts": [
-                2.600873058304708e+21
+                2.600873058304708e+21,
+                2.3417395798668566e+21
               ],
               "name": "SngphO",
-              "top2Sum": 2.600873058304708e+21
+              "top2Sum": 4.942612638171564e+21
             },
             {
               "attempts": [
@@ -4130,6 +4134,29 @@
               ],
               "name": "RABBIT5",
               "top2Sum": 1.1184180365639197e+22
+            },
+            {
+              "attempts": [
+                5.577604849453667e+19,
+                7.572846265611883e+19
+              ],
+              "name": "gubrax",
+              "top2Sum": 1.315045111506555e+20
+            },
+            {
+              "attempts": [
+                4.053224228317256e+19
+              ],
+              "name": "Cheeselife",
+              "top2Sum": 4.053224228317256e+19
+            },
+            {
+              "attempts": [
+                7.494882211644e+19,
+                2.5869639815598614e+20
+              ],
+              "name": "groggen",
+              "top2Sum": 3.336452202724261e+20
             }
           ]
         }
