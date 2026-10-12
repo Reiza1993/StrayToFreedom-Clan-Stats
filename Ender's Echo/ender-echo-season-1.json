@@ -33,27 +33,27 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "\u2623zSpec\u2623",
+      "name": "RABBIT5",
       "rank": 6,
+      "seasonTotal": 1.4097830545623392e+23
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "\u2623zSpec\u2623",
+      "rank": 7,
       "seasonTotal": 1.330648380129283e+23
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "RABBIT5",
-      "rank": 7,
-      "seasonTotal": 1.2979412509059472e+23
+      "name": "SngphO",
+      "rank": 8,
+      "seasonTotal": 7.80509699868823e+22
     },
     {
       "gainVsPreviousSeason": null,
       "name": "\u795eSterben\u6b7b",
-      "rank": 8,
-      "seasonTotal": 7.693343069906271e+22
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "SngphO",
       "rank": 9,
-      "seasonTotal": 7.545009692857761e+22
+      "seasonTotal": 7.693343069906271e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -125,7 +125,7 @@
       "gainVsPreviousSeason": null,
       "name": "Gritchen",
       "rank": 21,
-      "seasonTotal": 3.8577346810774133e+21
+      "seasonTotal": 4.0822105837606944e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -215,7 +215,7 @@
       "gainVsPreviousSeason": null,
       "name": "Belthazar",
       "rank": 36,
-      "seasonTotal": 6.619516297233034e+20
+      "seasonTotal": 7.044697288711922e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -4056,10 +4056,12 @@
             {
               "attempts": [
                 1.1624569152585033e+20,
-                1.1397828359615401e+20
+                1.1397828359615401e+20,
+                2.0152344277353238e+20,
+                2.5317643503175323e+20
               ],
               "name": "Gritchen",
-              "top2Sum": 2.3022397512200434e+20
+              "top2Sum": 4.546998778052856e+20
             },
             {
               "attempts": [
@@ -4105,6 +4107,29 @@
               ],
               "name": "NeonCBV",
               "top2Sum": 1.4652964765944956e+21
+            },
+            {
+              "attempts": [
+                2.2086194093296628e+19,
+                2.0431905054592217e+19
+              ],
+              "name": "Belthazar",
+              "top2Sum": 4.2518099147888845e+19
+            },
+            {
+              "attempts": [
+                2.600873058304708e+21
+              ],
+              "name": "SngphO",
+              "top2Sum": 2.600873058304708e+21
+            },
+            {
+              "attempts": [
+                6.526185721008467e+21,
+                4.6579946446307286e+21
+              ],
+              "name": "RABBIT5",
+              "top2Sum": 1.1184180365639197e+22
             }
           ]
         }
