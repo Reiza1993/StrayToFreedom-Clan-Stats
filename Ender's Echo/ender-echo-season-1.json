@@ -45,15 +45,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "SngphO",
+      "name": "\u795eSterben\u6b7b",
       "rank": 8,
-      "seasonTotal": 8.039270956674917e+22
+      "seasonTotal": 9.451145623583033e+22
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "\u795eSterben\u6b7b",
+      "name": "SngphO",
       "rank": 9,
-      "seasonTotal": 7.693343069906271e+22
+      "seasonTotal": 8.039270956674917e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -135,27 +135,27 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "p88203044",
+      "name": "EMBALOCO",
       "rank": 23,
+      "seasonTotal": 3.4620638674749473e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "p88203044",
+      "rank": 24,
       "seasonTotal": 3.4484612963551423e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "EMBALOCO",
-      "rank": 24,
-      "seasonTotal": 3.327237627218685e+21
+      "name": "Bensayyten",
+      "rank": 25,
+      "seasonTotal": 3.2709102425619e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "NeonCBV",
-      "rank": 25,
-      "seasonTotal": 2.891025704134757e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "Bensayyten",
       "rank": 26,
-      "seasonTotal": 2.8157216897788837e+21
+      "seasonTotal": 2.891025704134757e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -4183,10 +4183,11 @@
             },
             {
               "attempts": [
-                1.4526199989412741e+20
+                1.4526199989412741e+20,
+                1.3482624025626213e+20
               ],
               "name": "EMBALOCO",
-              "top2Sum": 1.4526199989412741e+20
+              "top2Sum": 2.8008824015038952e+20
             },
             {
               "attempts": [
@@ -4194,6 +4195,22 @@
               ],
               "name": "FlyingDutchy",
               "top2Sum": 1.2480167027522737e+20
+            },
+            {
+              "attempts": [
+                2.315055706784265e+20,
+                2.2368298210458983e+20
+              ],
+              "name": "Bensayyten",
+              "top2Sum": 4.5518855278301636e+20
+            },
+            {
+              "attempts": [
+                6.840971434119309e+21,
+                1.0737054102648309e+22
+              ],
+              "name": "\u795eSterben\u6b7b",
+              "top2Sum": 1.7578025536767618e+22
             }
           ]
         }
