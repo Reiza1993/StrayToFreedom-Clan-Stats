@@ -105,21 +105,21 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "HakiLuffy",
+      "name": "VictorMolusco",
       "rank": 18,
+      "seasonTotal": 4.853408526525028e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "HakiLuffy",
+      "rank": 19,
       "seasonTotal": 4.806532525613966e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Apathy_",
-      "rank": 19,
-      "seasonTotal": 4.689945745455537e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "VictorMolusco",
       "rank": 20,
-      "seasonTotal": 4.671465506687022e+21
+      "seasonTotal": 4.689945745455537e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -195,21 +195,21 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "NeonCBV",
+      "name": "silverxz",
       "rank": 33,
+      "seasonTotal": 1.4708400977290542e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "NeonCBV",
+      "rank": 34,
       "seasonTotal": 1.4257292275402618e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "samwise08",
-      "rank": 34,
-      "seasonTotal": 1.3250349731363155e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "silverxz",
       "rank": 35,
-      "seasonTotal": 1.0643779731972253e+21
+      "seasonTotal": 1.3250349731363155e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -4066,6 +4066,21 @@
               ],
               "name": "Rzzza",
               "top2Sum": 1.131711312089844e+20
+            },
+            {
+              "attempts": [
+                1.8194301983800574e+20
+              ],
+              "name": "VictorMolusco",
+              "top2Sum": 1.8194301983800574e+20
+            },
+            {
+              "attempts": [
+                2.0756380947368146e+20,
+                1.9889831505814743e+20
+              ],
+              "name": "silverxz",
+              "top2Sum": 4.064621245318289e+20
             }
           ]
         }
