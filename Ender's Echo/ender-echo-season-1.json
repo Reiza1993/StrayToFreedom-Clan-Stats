@@ -123,15 +123,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Player 66607264",
+      "name": "Gritchen",
       "rank": 21,
-      "seasonTotal": 3.765049912695302e+21
+      "seasonTotal": 3.8577346810774133e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Gritchen",
+      "name": "Player 66607264",
       "rank": 22,
-      "seasonTotal": 3.743756397481259e+21
+      "seasonTotal": 3.765049912695302e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -147,63 +147,63 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Bensayyten",
+      "name": "NeonCBV",
       "rank": 25,
+      "seasonTotal": 2.891025704134757e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "Bensayyten",
+      "rank": 26,
       "seasonTotal": 2.8157216897788837e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "BlackFlamE",
-      "rank": 26,
-      "seasonTotal": 2.5973520140228e+21
+      "rank": 27,
+      "seasonTotal": 2.7343801212173733e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "theLP",
-      "rank": 27,
-      "seasonTotal": 2.095843930795623e+21
+      "rank": 28,
+      "seasonTotal": 2.535059365164474e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "BobBobberson",
-      "rank": 28,
+      "rank": 29,
       "seasonTotal": 1.8543261071370648e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Rzzza",
-      "rank": 29,
+      "rank": 30,
       "seasonTotal": 1.7738252059490795e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "faxnem",
-      "rank": 30,
+      "rank": 31,
       "seasonTotal": 1.7332553070507503e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "gubrax",
-      "rank": 31,
+      "rank": 32,
       "seasonTotal": 1.6696458284544992e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "groggen",
-      "rank": 32,
+      "rank": 33,
       "seasonTotal": 1.5298742411223522e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "silverxz",
-      "rank": 33,
-      "seasonTotal": 1.4708400977290542e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "NeonCBV",
       "rank": 34,
-      "seasonTotal": 1.4257292275402618e+21
+      "seasonTotal": 1.4708400977290542e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -4055,10 +4055,11 @@
             },
             {
               "attempts": [
-                1.1624569152585033e+20
+                1.1624569152585033e+20,
+                1.1397828359615401e+20
               ],
               "name": "Gritchen",
-              "top2Sum": 1.1624569152585033e+20
+              "top2Sum": 2.3022397512200434e+20
             },
             {
               "attempts": [
@@ -4081,6 +4082,29 @@
               ],
               "name": "silverxz",
               "top2Sum": 4.064621245318289e+20
+            },
+            {
+              "attempts": [
+                2.2133087113759595e+20,
+                2.178845632312553e+20
+              ],
+              "name": "theLP",
+              "top2Sum": 4.3921543436885125e+20
+            },
+            {
+              "attempts": [
+                7.0363095128924406e+19,
+                6.666501206564872e+19
+              ],
+              "name": "BlackFlamE",
+              "top2Sum": 1.3702810719457313e+20
+            },
+            {
+              "attempts": [
+                1.4652964765944956e+21
+              ],
+              "name": "NeonCBV",
+              "top2Sum": 1.4652964765944956e+21
             }
           ]
         }
