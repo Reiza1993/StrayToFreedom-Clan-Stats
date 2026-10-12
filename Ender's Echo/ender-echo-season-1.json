@@ -29,7 +29,7 @@
       "gainVsPreviousSeason": null,
       "name": "DAYO-P",
       "rank": 5,
-      "seasonTotal": 1.4879808823255425e+23
+      "seasonTotal": 1.6358811549492004e+23
     },
     {
       "gainVsPreviousSeason": null,
@@ -59,7 +59,7 @@
       "gainVsPreviousSeason": null,
       "name": "Cunner88",
       "rank": 10,
-      "seasonTotal": 1.6121469157757346e+22
+      "seasonTotal": 2.008962518601944e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -77,13 +77,13 @@
       "gainVsPreviousSeason": null,
       "name": "MadameMischief",
       "rank": 13,
-      "seasonTotal": 1.302478109757107e+22
+      "seasonTotal": 1.3816128856274497e+22
     },
     {
       "gainVsPreviousSeason": null,
       "name": "RetinaDNA",
       "rank": 14,
-      "seasonTotal": 9.79898825295215e+21
+      "seasonTotal": 1.0756838994827842e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -99,21 +99,21 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Scoundrel536",
-      "rank": 17,
-      "seasonTotal": 4.971123693488782e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
       "name": "VictorMolusco",
-      "rank": 18,
-      "seasonTotal": 4.853408526525028e+21
+      "rank": 17,
+      "seasonTotal": 5.316361858147028e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "HakiLuffy",
+      "rank": 18,
+      "seasonTotal": 5.149230717018237e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "Scoundrel536",
       "rank": 19,
-      "seasonTotal": 4.806532525613966e+21
+      "seasonTotal": 4.971123693488782e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -123,27 +123,27 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Gritchen",
+      "name": "p88203044",
       "rank": 21,
+      "seasonTotal": 4.38460892504787e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "Gritchen",
+      "rank": 22,
       "seasonTotal": 4.0822105837606944e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Player 66607264",
-      "rank": 22,
+      "rank": 23,
       "seasonTotal": 3.765049912695302e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "EMBALOCO",
-      "rank": 23,
-      "seasonTotal": 3.4620638674749473e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "p88203044",
       "rank": 24,
-      "seasonTotal": 3.4484612963551423e+21
+      "seasonTotal": 3.4620638674749473e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -171,39 +171,39 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "BobBobberson",
+      "name": "faxnem",
       "rank": 29,
+      "seasonTotal": 2.2508550872925235e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "BobBobberson",
+      "rank": 30,
       "seasonTotal": 2.0711101338480982e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "groggen",
-      "rank": 30,
+      "rank": 31,
       "seasonTotal": 1.8635194613947784e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "gubrax",
-      "rank": 31,
+      "rank": 32,
       "seasonTotal": 1.8011503396051548e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Rzzza",
-      "rank": 32,
-      "seasonTotal": 1.7738252059490795e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "faxnem",
-      "rank": 33,
-      "seasonTotal": 1.7332553070507503e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
       "name": "silverxz",
+      "rank": 33,
+      "seasonTotal": 1.7743497972625318e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "Rzzza",
       "rank": 34,
-      "seasonTotal": 1.4708400977290542e+21
+      "seasonTotal": 1.7738252059490795e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -4211,6 +4211,85 @@
               ],
               "name": "\u795eSterben\u6b7b",
               "top2Sum": 1.7578025536767618e+22
+            },
+            {
+              "attempts": [
+                9.578507418756923e+20
+              ],
+              "name": "RetinaDNA",
+              "top2Sum": 9.578507418756923e+20
+            },
+            {
+              "attempts": [
+                4.9086407050961545e+20,
+                4.452835581831121e+20
+              ],
+              "name": "p88203044",
+              "top2Sum": 9.361476286927275e+20
+            },
+            {
+              "attempts": [
+                2.697495249406102e+20,
+                2.4785025530116312e+20
+              ],
+              "name": "faxnem",
+              "top2Sum": 5.175997802417733e+20
+            }
+          ]
+        },
+        {
+          "date": "2026-10-13",
+          "day": 20,
+          "players": [
+            {
+              "attempts": [
+                6.392659344397828e+21,
+                7.477835100113373e+21,
+                7.312192162252426e+21,
+                6.575092614599458e+21
+              ],
+              "name": "DAYO-P",
+              "top2Sum": 1.4790027262365798e+22
+            },
+            {
+              "attempts": [
+                2.0032352145783348e+20,
+                2.6262981016416662e+20
+              ],
+              "name": "VictorMolusco",
+              "top2Sum": 4.6295333162200007e+20
+            },
+            {
+              "attempts": [
+                1.672943348987014e+20,
+                1.480797374578066e+20,
+                1.754038565055706e+20
+              ],
+              "name": "HakiLuffy",
+              "top2Sum": 3.42698191404272e+20
+            },
+            {
+              "attempts": [
+                1.8228908443505302e+20,
+                1.2122061509842457e+20
+              ],
+              "name": "silverxz",
+              "top2Sum": 3.035096995334776e+20
+            },
+            {
+              "attempts": [
+                3.4096132942714516e+20,
+                4.5038642927628314e+20
+              ],
+              "name": "MadameMischief",
+              "top2Sum": 7.913477587034282e+20
+            },
+            {
+              "attempts": [
+                3.968156028262093e+21
+              ],
+              "name": "Cunner88",
+              "top2Sum": 3.968156028262093e+21
             }
           ]
         }
