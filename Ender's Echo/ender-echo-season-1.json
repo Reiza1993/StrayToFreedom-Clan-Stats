@@ -69,15 +69,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "MadameMischief",
+      "name": "PastalaVista",
       "rank": 12,
-      "seasonTotal": 1.302478109757107e+22
+      "seasonTotal": 1.4148274366780438e+22
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "PastalaVista",
+      "name": "MadameMischief",
       "rank": 13,
-      "seasonTotal": 1.253331526126173e+22
+      "seasonTotal": 1.302478109757107e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -143,7 +143,7 @@
       "gainVsPreviousSeason": null,
       "name": "EMBALOCO",
       "rank": 24,
-      "seasonTotal": 3.1819756273245576e+21
+      "seasonTotal": 3.327237627218685e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -171,15 +171,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "groggen",
+      "name": "BobBobberson",
       "rank": 29,
-      "seasonTotal": 1.8635194613947784e+21
+      "seasonTotal": 2.0711101338480982e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "BobBobberson",
+      "name": "groggen",
       "rank": 30,
-      "seasonTotal": 1.8543261071370648e+21
+      "seasonTotal": 1.8635194613947784e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -233,13 +233,13 @@
       "gainVsPreviousSeason": null,
       "name": "FlyingDutchy",
       "rank": 39,
-      "seasonTotal": 1.7882416526254014e+20
+      "seasonTotal": 3.036258355377675e+20
     },
     {
       "gainVsPreviousSeason": null,
       "name": "ergiangi",
       "rank": 40,
-      "seasonTotal": 1.3435347348719568e+20
+      "seasonTotal": 2.1399798995735255e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -4157,6 +4157,43 @@
               ],
               "name": "groggen",
               "top2Sum": 3.336452202724261e+20
+            },
+            {
+              "attempts": [
+                7.624972061741578e+20,
+                8.524618993445527e+20
+              ],
+              "name": "PastalaVista",
+              "top2Sum": 1.6149591055187103e+21
+            },
+            {
+              "attempts": [
+                1.0771886918426935e+20,
+                1.0906515752676398e+20
+              ],
+              "name": "BobBobberson",
+              "top2Sum": 2.167840267110333e+20
+            },
+            {
+              "attempts": [
+                7.964451647015687e+19
+              ],
+              "name": "ergiangi",
+              "top2Sum": 7.964451647015687e+19
+            },
+            {
+              "attempts": [
+                1.4526199989412741e+20
+              ],
+              "name": "EMBALOCO",
+              "top2Sum": 1.4526199989412741e+20
+            },
+            {
+              "attempts": [
+                1.2480167027522737e+20
+              ],
+              "name": "FlyingDutchy",
+              "top2Sum": 1.2480167027522737e+20
             }
           ]
         }
