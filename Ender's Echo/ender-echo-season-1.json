@@ -5,7 +5,7 @@
       "gainVsPreviousSeason": null,
       "name": "Fl3xas",
       "rank": 1,
-      "seasonTotal": 1.0814786937638548e+24
+      "seasonTotal": 1.1523766697126352e+24
     },
     {
       "gainVsPreviousSeason": null,
@@ -29,7 +29,7 @@
       "gainVsPreviousSeason": null,
       "name": "DAYO-P",
       "rank": 5,
-      "seasonTotal": 1.6358811549492004e+23
+      "seasonTotal": 1.789501338361356e+23
     },
     {
       "gainVsPreviousSeason": null,
@@ -69,15 +69,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "PastalaVista",
+      "name": "MadameMischief",
       "rank": 12,
-      "seasonTotal": 1.4148274366780438e+22
+      "seasonTotal": 1.4867226695193235e+22
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "MadameMischief",
+      "name": "PastalaVista",
       "rank": 13,
-      "seasonTotal": 1.3816128856274497e+22
+      "seasonTotal": 1.4148274366780438e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -105,15 +105,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "VictorMolusco",
+      "name": "HakiLuffy",
       "rank": 18,
-      "seasonTotal": 5.316361858147028e+21
+      "seasonTotal": 5.504835649104581e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "HakiLuffy",
+      "name": "VictorMolusco",
       "rank": 19,
-      "seasonTotal": 5.149230717018237e+21
+      "seasonTotal": 5.316361858147028e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -153,15 +153,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "theLP",
+      "name": "BlackFlamE",
       "rank": 26,
-      "seasonTotal": 2.937452243784918e+21
+      "seasonTotal": 3.0547279058132476e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "BlackFlamE",
+      "name": "theLP",
       "rank": 27,
-      "seasonTotal": 2.897811167677893e+21
+      "seasonTotal": 2.937452243784918e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -221,7 +221,7 @@
       "gainVsPreviousSeason": null,
       "name": "Player 80018314",
       "rank": 37,
-      "seasonTotal": 6.213343457609751e+20
+      "seasonTotal": 7.063892495762755e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -4468,6 +4468,63 @@
               ],
               "name": "faxnem",
               "top2Sum": 4.604890928472015e+20
+            },
+            {
+              "attempts": [
+                4.178892208904276e+19,
+                4.326598172625764e+19
+              ],
+              "name": "Player 80018314",
+              "top2Sum": 8.505490381530042e+19
+            }
+          ]
+        },
+        {
+          "date": "2026-10-14",
+          "day": 21,
+          "players": [
+            {
+              "attempts": [
+                6.913820978631148e+21,
+                3.9476695970317646e+21,
+                8.222763761157848e+21,
+                5.760340377705708e+21,
+                7.139254580057686e+21
+              ],
+              "name": "DAYO-P",
+              "top2Sum": 1.5362018341215535e+22
+            },
+            {
+              "attempts": [
+                1.4048187017382946e+20,
+                2.1512306191251417e+20
+              ],
+              "name": "HakiLuffy",
+              "top2Sum": 3.5560493208634366e+20
+            },
+            {
+              "attempts": [
+                8.894420454496879e+19,
+                6.797253359038608e+19
+              ],
+              "name": "BlackFlamE",
+              "top2Sum": 1.5691673813535487e+20
+            },
+            {
+              "attempts": [
+                3.5932850808148344e+22,
+                3.49651251406321e+22
+              ],
+              "name": "Fl3xas",
+              "top2Sum": 7.0897975948780444e+22
+            },
+            {
+              "attempts": [
+                4.658620661887376e+20,
+                5.852357727300004e+20
+              ],
+              "name": "MadameMischief",
+              "top2Sum": 1.051097838918738e+21
             }
           ]
         }
