@@ -123,15 +123,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "p88203044",
+      "name": "Gritchen",
       "rank": 21,
-      "seasonTotal": 4.38460892504787e+21
+      "seasonTotal": 4.607011135643738e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Gritchen",
+      "name": "p88203044",
       "rank": 22,
-      "seasonTotal": 4.0822105837606944e+21
+      "seasonTotal": 4.38460892504787e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -141,33 +141,33 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "EMBALOCO",
+      "name": "Bensayyten",
       "rank": 24,
+      "seasonTotal": 3.606058822451758e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "EMBALOCO",
+      "rank": 25,
       "seasonTotal": 3.4620638674749473e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Bensayyten",
-      "rank": 25,
-      "seasonTotal": 3.2709102425619e+21
+      "name": "theLP",
+      "rank": 26,
+      "seasonTotal": 2.937452243784918e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "NeonCBV",
-      "rank": 26,
+      "rank": 27,
       "seasonTotal": 2.891025704134757e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "BlackFlamE",
-      "rank": 27,
-      "seasonTotal": 2.7343801212173733e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "theLP",
       "rank": 28,
-      "seasonTotal": 2.535059365164474e+21
+      "seasonTotal": 2.7343801212173733e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -177,15 +177,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "BobBobberson",
+      "name": "Rzzza",
       "rank": 30,
-      "seasonTotal": 2.0711101338480982e+21
+      "seasonTotal": 2.1044448028712666e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Rzzza",
+      "name": "BobBobberson",
       "rank": 31,
-      "seasonTotal": 1.9220706325391538e+21
+      "seasonTotal": 2.0711101338480982e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -4293,10 +4293,11 @@
             },
             {
               "attempts": [
-                1.4824542659007434e+20
+                1.4824542659007434e+20,
+                1.8237417033211288e+20
               ],
               "name": "Rzzza",
-              "top2Sum": 1.4824542659007434e+20
+              "top2Sum": 3.306195969221872e+20
             },
             {
               "attempts": [
@@ -4329,6 +4330,32 @@
               ],
               "name": "Apathy_",
               "top2Sum": 3.817235394200517e+20
+            },
+            {
+              "attempts": [
+                1.071006968396814e+20,
+                1.9777259354131238e+20,
+                2.4761280077558746e+20,
+                2.771877511074563e+20
+              ],
+              "name": "Gritchen",
+              "top2Sum": 5.2480055188304377e+20
+            },
+            {
+              "attempts": [
+                1.6520310352557936e+20,
+                1.6994547636427837e+20
+              ],
+              "name": "Bensayyten",
+              "top2Sum": 3.351485798898577e+20
+            },
+            {
+              "attempts": [
+                2.105958897495454e+20,
+                1.9179698887089842e+20
+              ],
+              "name": "theLP",
+              "top2Sum": 4.023928786204438e+20
             }
           ]
         }
