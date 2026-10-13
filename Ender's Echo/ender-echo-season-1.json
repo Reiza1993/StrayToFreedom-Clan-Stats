@@ -123,21 +123,21 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Gritchen",
+      "name": "p88203044",
       "rank": 21,
-      "seasonTotal": 4.607011135643738e+21
+      "seasonTotal": 4.741219426992447e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "p88203044",
+      "name": "Gritchen",
       "rank": 22,
-      "seasonTotal": 4.38460892504787e+21
+      "seasonTotal": 4.607011135643738e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Player 66607264",
       "rank": 23,
-      "seasonTotal": 3.765049912695302e+21
+      "seasonTotal": 4.420346964891284e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -191,7 +191,7 @@
       "gainVsPreviousSeason": null,
       "name": "groggen",
       "rank": 32,
-      "seasonTotal": 1.8635194613947784e+21
+      "seasonTotal": 1.9537368310773297e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -4247,7 +4247,8 @@
                 7.477835100113373e+21,
                 7.312192162252426e+21,
                 6.575092614599458e+21,
-                5.83607896083639e+21
+                5.83607896083639e+21,
+                4.786631573789247e+21
               ],
               "name": "DAYO-P",
               "top2Sum": 1.4790027262365798e+22
@@ -4388,6 +4389,28 @@
               ],
               "name": "RABBIT5",
               "top2Sum": 5.956680595151253e+21
+            },
+            {
+              "attempts": [
+                3.5661050194457716e+20
+              ],
+              "name": "p88203044",
+              "top2Sum": 3.5661050194457716e+20
+            },
+            {
+              "attempts": [
+                2.770922443273686e+20,
+                3.7820480786861326e+20
+              ],
+              "name": "Player 66607264",
+              "top2Sum": 6.552970521959819e+20
+            },
+            {
+              "attempts": [
+                9.021736968255111e+19
+              ],
+              "name": "groggen",
+              "top2Sum": 9.021736968255111e+19
             }
           ]
         }
