@@ -23,7 +23,7 @@
       "gainVsPreviousSeason": null,
       "name": "Nubis",
       "rank": 4,
-      "seasonTotal": 1.9311104085419883e+23
+      "seasonTotal": 1.988458308201698e+23
     },
     {
       "gainVsPreviousSeason": null,
@@ -87,15 +87,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "pumpenjoe",
+      "name": "Scoundrel536",
       "rank": 15,
-      "seasonTotal": 9.004130351643443e+21
+      "seasonTotal": 9.035990590251768e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Scoundrel536",
+      "name": "pumpenjoe",
       "rank": 16,
-      "seasonTotal": 6.652527244127699e+21
+      "seasonTotal": 9.004130351643443e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -119,7 +119,7 @@
       "gainVsPreviousSeason": null,
       "name": "Apathy_",
       "rank": 20,
-      "seasonTotal": 4.689945745455537e+21
+      "seasonTotal": 5.071669284875589e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -4300,17 +4300,19 @@
             },
             {
               "attempts": [
-                1.681403550638917e+21
+                1.681403550638917e+21,
+                2.383463346124068e+21
               ],
               "name": "Scoundrel536",
-              "top2Sum": 1.681403550638917e+21
+              "top2Sum": 4.0648668967629855e+21
             },
             {
               "attempts": [
-                5.752446530968221e+21
+                5.752446530968221e+21,
+                5.73478996597096e+21
               ],
               "name": "Nubis",
-              "top2Sum": 5.752446530968221e+21
+              "top2Sum": 1.1487236496939182e+22
             },
             {
               "attempts": [
@@ -4319,6 +4321,14 @@
               ],
               "name": "Fl3xas",
               "top2Sum": 7.547600810642425e+22
+            },
+            {
+              "attempts": [
+                2.188267798304174e+20,
+                1.6289675958963424e+20
+              ],
+              "name": "Apathy_",
+              "top2Sum": 3.817235394200517e+20
             }
           ]
         }
