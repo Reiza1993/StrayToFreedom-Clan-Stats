@@ -35,7 +35,7 @@
       "gainVsPreviousSeason": null,
       "name": "RABBIT5",
       "rank": 6,
-      "seasonTotal": 1.4693498605138518e+23
+      "seasonTotal": 1.52103726792318e+23
     },
     {
       "gainVsPreviousSeason": null,
@@ -83,7 +83,7 @@
       "gainVsPreviousSeason": null,
       "name": "RetinaDNA",
       "rank": 14,
-      "seasonTotal": 1.0756838994827842e+22
+      "seasonTotal": 1.3343070817671186e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -101,7 +101,7 @@
       "gainVsPreviousSeason": null,
       "name": "\u76feHeathcliff\u5263",
       "rank": 17,
-      "seasonTotal": 6.008395128331382e+21
+      "seasonTotal": 6.506275479546362e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -4385,10 +4385,11 @@
             },
             {
               "attempts": [
-                5.956680595151253e+21
+                5.956680595151253e+21,
+                5.168740740932825e+21
               ],
               "name": "RABBIT5",
-              "top2Sum": 5.956680595151253e+21
+              "top2Sum": 1.1125421336084078e+22
             },
             {
               "attempts": [
@@ -4411,6 +4412,22 @@
               ],
               "name": "groggen",
               "top2Sum": 9.021736968255111e+19
+            },
+            {
+              "attempts": [
+                1.4200015128381416e+21,
+                1.1662303100052022e+21
+              ],
+              "name": "RetinaDNA",
+              "top2Sum": 2.586231822843344e+21
+            },
+            {
+              "attempts": [
+                1.944907293384415e+20,
+                3.033896218765389e+20
+              ],
+              "name": "\u76feHeathcliff\u5263",
+              "top2Sum": 4.9788035121498037e+20
             }
           ]
         }
