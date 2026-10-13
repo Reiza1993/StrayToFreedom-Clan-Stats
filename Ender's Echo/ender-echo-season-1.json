@@ -35,7 +35,7 @@
       "gainVsPreviousSeason": null,
       "name": "RABBIT5",
       "rank": 6,
-      "seasonTotal": 1.4097830545623392e+23
+      "seasonTotal": 1.4693498605138518e+23
     },
     {
       "gainVsPreviousSeason": null,
@@ -53,7 +53,7 @@
       "gainVsPreviousSeason": null,
       "name": "SngphO",
       "rank": 9,
-      "seasonTotal": 8.039270956674917e+22
+      "seasonTotal": 8.31021711012027e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -159,15 +159,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "NeonCBV",
+      "name": "BlackFlamE",
       "rank": 27,
-      "seasonTotal": 2.891025704134757e+21
+      "seasonTotal": 2.897811167677893e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "BlackFlamE",
+      "name": "NeonCBV",
       "rank": 28,
-      "seasonTotal": 2.7343801212173733e+21
+      "seasonTotal": 2.891025704134757e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -209,7 +209,7 @@
       "gainVsPreviousSeason": null,
       "name": "samwise08",
       "rank": 35,
-      "seasonTotal": 1.3250349731363155e+21
+      "seasonTotal": 1.6335341561428766e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -4246,7 +4246,8 @@
                 6.392659344397828e+21,
                 7.477835100113373e+21,
                 7.312192162252426e+21,
-                6.575092614599458e+21
+                6.575092614599458e+21,
+                5.83607896083639e+21
               ],
               "name": "DAYO-P",
               "top2Sum": 1.4790027262365798e+22
@@ -4356,6 +4357,37 @@
               ],
               "name": "theLP",
               "top2Sum": 4.023928786204438e+20
+            },
+            {
+              "attempts": [
+                1.7440506154368077e+20,
+                1.3409412146288026e+20
+              ],
+              "name": "samwise08",
+              "top2Sum": 3.08499183006561e+20
+            },
+            {
+              "attempts": [
+                5.7663477839464025e+20,
+                2.132826756058885e+21
+              ],
+              "name": "SngphO",
+              "top2Sum": 2.7094615344535254e+21
+            },
+            {
+              "attempts": [
+                9.914500610462743e+19,
+                6.428604035589183e+19
+              ],
+              "name": "BlackFlamE",
+              "top2Sum": 1.6343104646051925e+20
+            },
+            {
+              "attempts": [
+                5.956680595151253e+21
+              ],
+              "name": "RABBIT5",
+              "top2Sum": 5.956680595151253e+21
             }
           ]
         }
