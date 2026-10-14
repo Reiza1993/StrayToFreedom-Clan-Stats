@@ -75,15 +75,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "PastalaVista",
+      "name": "RetinaDNA",
       "rank": 13,
-      "seasonTotal": 1.4148274366780438e+22
+      "seasonTotal": 1.4328241426920838e+22
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "RetinaDNA",
+      "name": "PastalaVista",
       "rank": 14,
-      "seasonTotal": 1.3343070817671186e+22
+      "seasonTotal": 1.4148274366780438e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -4658,6 +4658,13 @@
               ],
               "name": "groggen",
               "top2Sum": 2.5733718079198357e+20
+            },
+            {
+              "attempts": [
+                9.851706092496519e+20
+              ],
+              "name": "RetinaDNA",
+              "top2Sum": 9.851706092496519e+20
             }
           ]
         }
