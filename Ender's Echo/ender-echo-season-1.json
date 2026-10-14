@@ -107,13 +107,13 @@
       "gainVsPreviousSeason": null,
       "name": "VictorMolusco",
       "rank": 18,
-      "seasonTotal": 5.772574118559176e+21
+      "seasonTotal": 6.117193205166654e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Apathy_",
       "rank": 19,
-      "seasonTotal": 5.725773689231447e+21
+      "seasonTotal": 5.895399262891902e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -125,7 +125,7 @@
       "gainVsPreviousSeason": null,
       "name": "Gritchen",
       "rank": 21,
-      "seasonTotal": 4.984418252148801e+21
+      "seasonTotal": 5.278684888711929e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -189,21 +189,21 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "BobBobberson",
+      "name": "silverxz",
       "rank": 32,
+      "seasonTotal": 2.0970600163082922e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "BobBobberson",
+      "rank": 33,
       "seasonTotal": 2.0711101338480982e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "gubrax",
-      "rank": 33,
-      "seasonTotal": 2.0671159736037333e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "silverxz",
       "rank": 34,
-      "seasonTotal": 1.9847832973617366e+21
+      "seasonTotal": 2.0671159736037333e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -4679,10 +4679,11 @@
           "players": [
             {
               "attempts": [
-                1.392658051336398e+20
+                1.392658051336398e+20,
+                1.6962557366045517e+20
               ],
               "name": "Apathy_",
-              "top2Sum": 1.392658051336398e+20
+              "top2Sum": 3.08891378794095e+20
             },
             {
               "attempts": [
@@ -4718,10 +4719,27 @@
             },
             {
               "attempts": [
-                1.392378272795425e+20
+                1.392378272795425e+20,
+                1.1227671894655564e+20
               ],
               "name": "silverxz",
-              "top2Sum": 1.392378272795425e+20
+              "top2Sum": 2.5151454622609814e+20
+            },
+            {
+              "attempts": [
+                1.4156394369453108e+20,
+                1.527026928685977e+20
+              ],
+              "name": "Gritchen",
+              "top2Sum": 2.9426663656312878e+20
+            },
+            {
+              "attempts": [
+                1.8680991180250582e+20,
+                1.578091748049719e+20
+              ],
+              "name": "VictorMolusco",
+              "top2Sum": 3.446190866074778e+20
             }
           ]
         }
