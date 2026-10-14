@@ -11,7 +11,7 @@
       "gainVsPreviousSeason": null,
       "name": "\u04bban",
       "rank": 2,
-      "seasonTotal": 4.4157051629772535e+23
+      "seasonTotal": 5.488154097569013e+23
     },
     {
       "gainVsPreviousSeason": null,
@@ -29,7 +29,7 @@
       "gainVsPreviousSeason": null,
       "name": "DAYO-P",
       "rank": 5,
-      "seasonTotal": 1.789501338361356e+23
+      "seasonTotal": 1.7912055034476117e+23
     },
     {
       "gainVsPreviousSeason": null,
@@ -183,21 +183,21 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "BobBobberson",
+      "name": "groggen",
       "rank": 31,
-      "seasonTotal": 2.0711101338480982e+21
+      "seasonTotal": 2.2110740118693132e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "groggen",
+      "name": "BobBobberson",
       "rank": 32,
-      "seasonTotal": 1.9537368310773297e+21
+      "seasonTotal": 2.0711101338480982e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "gubrax",
       "rank": 33,
-      "seasonTotal": 1.9157165332118467e+21
+      "seasonTotal": 2.0671159736037333e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -215,7 +215,7 @@
       "gainVsPreviousSeason": null,
       "name": "Belthazar",
       "rank": 36,
-      "seasonTotal": 7.339267248058646e+20
+      "seasonTotal": 7.78607212186539e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -4489,10 +4489,11 @@
                 3.9476695970317646e+21,
                 8.222763761157848e+21,
                 5.760340377705708e+21,
-                7.139254580057686e+21
+                7.139254580057686e+21,
+                7.309671088683281e+21
               ],
               "name": "DAYO-P",
-              "top2Sum": 1.5362018341215535e+22
+              "top2Sum": 1.5532434849841128e+22
             },
             {
               "attempts": [
@@ -4626,6 +4627,37 @@
               ],
               "name": "Scoundrel536",
               "top2Sum": 4.0098331637404454e+21
+            },
+            {
+              "attempts": [
+                2.2040138555187958e+19,
+                2.2640348825486512e+19
+              ],
+              "name": "Belthazar",
+              "top2Sum": 4.468048738067447e+19
+            },
+            {
+              "attempts": [
+                7.8711535191112e+19,
+                7.268790520077455e+19
+              ],
+              "name": "gubrax",
+              "top2Sum": 1.5139944039188657e+20
+            },
+            {
+              "attempts": [
+                6.3314948117254015e+22,
+                4.392994534192191e+22
+              ],
+              "name": "\u04bban",
+              "top2Sum": 1.0724489345917592e+23
+            },
+            {
+              "attempts": [
+                2.5733718079198357e+20
+              ],
+              "name": "groggen",
+              "top2Sum": 2.5733718079198357e+20
             }
           ]
         }
