@@ -87,15 +87,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "pumpenjoe",
+      "name": "Scoundrel536",
       "rank": 15,
-      "seasonTotal": 1.1698871109772475e+22
+      "seasonTotal": 1.3045823753992213e+22
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Scoundrel536",
+      "name": "pumpenjoe",
       "rank": 16,
-      "seasonTotal": 9.035990590251768e+21
+      "seasonTotal": 1.1698871109772475e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -4618,6 +4618,14 @@
               ],
               "name": "\u76feHeathcliff\u5263",
               "top2Sum": 3.8118990047069313e+20
+            },
+            {
+              "attempts": [
+                2.0275578799428519e+21,
+                1.9822752837975938e+21
+              ],
+              "name": "Scoundrel536",
+              "top2Sum": 4.0098331637404454e+21
             }
           ]
         }
