@@ -47,7 +47,7 @@
       "gainVsPreviousSeason": null,
       "name": "\u795eSterben\u6b7b",
       "rank": 8,
-      "seasonTotal": 1.0711093773801516e+23
+      "seasonTotal": 1.1395516094412701e+23
     },
     {
       "gainVsPreviousSeason": null,
@@ -123,15 +123,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "p88203044",
+      "name": "Gritchen",
       "rank": 21,
-      "seasonTotal": 4.741219426992447e+21
+      "seasonTotal": 4.984418252148801e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Gritchen",
+      "name": "p88203044",
       "rank": 22,
-      "seasonTotal": 4.607011135643738e+21
+      "seasonTotal": 4.741219426992447e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -153,15 +153,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "BlackFlamE",
+      "name": "theLP",
       "rank": 26,
-      "seasonTotal": 3.0547279058132476e+21
+      "seasonTotal": 3.349026225484801e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "theLP",
+      "name": "BlackFlamE",
       "rank": 27,
-      "seasonTotal": 2.937452243784918e+21
+      "seasonTotal": 3.0547279058132476e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -179,7 +179,7 @@
       "gainVsPreviousSeason": null,
       "name": "Rzzza",
       "rank": 30,
-      "seasonTotal": 2.1044448028712666e+21
+      "seasonTotal": 2.2272034599252043e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -4549,6 +4549,36 @@
               ],
               "name": "silverxz",
               "top2Sum": 7.119567281966245e+19
+            },
+            {
+              "attempts": [
+                1.390543244720408e+20,
+                2.38352792033022e+20
+              ],
+              "name": "Gritchen",
+              "top2Sum": 3.774071165050628e+20
+            },
+            {
+              "attempts": [
+                2.047697640871092e+20,
+                2.068042176127741e+20
+              ],
+              "name": "theLP",
+              "top2Sum": 4.115739816998833e+20
+            },
+            {
+              "attempts": [
+                6.844223206111852e+21
+              ],
+              "name": "\u795eSterben\u6b7b",
+              "top2Sum": 6.844223206111852e+21
+            },
+            {
+              "attempts": [
+                1.2275865705393761e+20
+              ],
+              "name": "Rzzza",
+              "top2Sum": 1.2275865705393761e+20
             }
           ]
         }
