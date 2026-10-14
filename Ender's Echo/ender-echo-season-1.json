@@ -101,7 +101,7 @@
       "gainVsPreviousSeason": null,
       "name": "\u76feHeathcliff\u5263",
       "rank": 17,
-      "seasonTotal": 6.506275479546362e+21
+      "seasonTotal": 6.887465380017055e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -111,15 +111,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "HakiLuffy",
+      "name": "Apathy_",
       "rank": 19,
-      "seasonTotal": 5.504835649104581e+21
+      "seasonTotal": 5.586507884097807e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Apathy_",
+      "name": "HakiLuffy",
       "rank": 20,
-      "seasonTotal": 5.071669284875589e+21
+      "seasonTotal": 5.504835649104581e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -4602,6 +4602,22 @@
               ],
               "name": "SngphO",
               "top2Sum": 2.4233345638062946e+21
+            },
+            {
+              "attempts": [
+                2.7577269559119554e+20,
+                2.390659036310222e+20
+              ],
+              "name": "Apathy_",
+              "top2Sum": 5.1483859922221774e+20
+            },
+            {
+              "attempts": [
+                1.8569989170458686e+20,
+                1.9549000876610627e+20
+              ],
+              "name": "\u76feHeathcliff\u5263",
+              "top2Sum": 3.8118990047069313e+20
             }
           ]
         }
