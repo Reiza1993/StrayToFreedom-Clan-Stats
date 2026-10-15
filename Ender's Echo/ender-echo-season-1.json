@@ -89,7 +89,7 @@
       "gainVsPreviousSeason": null,
       "name": "PastalaVista",
       "rank": 15,
-      "seasonTotal": 1.4148274366780438e+22
+      "seasonTotal": 1.4915293075383398e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -101,7 +101,7 @@
       "gainVsPreviousSeason": null,
       "name": "\u76feHeathcliff\u5263",
       "rank": 17,
-      "seasonTotal": 7.044083099627994e+21
+      "seasonTotal": 7.276623628433065e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -155,7 +155,7 @@
       "gainVsPreviousSeason": null,
       "name": "EMBALOCO",
       "rank": 26,
-      "seasonTotal": 3.4620638674749473e+21
+      "seasonTotal": 3.6032551712234364e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -221,7 +221,7 @@
       "gainVsPreviousSeason": null,
       "name": "Player 80018314",
       "rank": 37,
-      "seasonTotal": 7.063892495762755e+20
+      "seasonTotal": 7.773349906294909e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -4689,7 +4689,9 @@
               "attempts": [
                 3.190489197451304e+21,
                 4.210350854987155e+21,
-                4.301549138032356e+21
+                4.301549138032356e+21,
+                3.015639558725583e+21,
+                2.831756273688965e+21
               ],
               "name": "DAYO-P",
               "top2Sum": 8.511899993019511e+21
@@ -4754,10 +4756,11 @@
             },
             {
               "attempts": [
-                1.5661771961093915e+20
+                1.5661771961093915e+20,
+                2.3254052880507113e+20
               ],
               "name": "\u76feHeathcliff\u5263",
-              "top2Sum": 1.5661771961093915e+20
+              "top2Sum": 3.891582484160103e+20
             },
             {
               "attempts": [
@@ -4883,6 +4886,30 @@
               ],
               "name": "Belthazar",
               "top2Sum": 3.6484605699394523e+19
+            },
+            {
+              "attempts": [
+                3.4489375681947134e+20,
+                4.221249517834879e+20
+              ],
+              "name": "PastalaVista",
+              "top2Sum": 7.670187086029592e+20
+            },
+            {
+              "attempts": [
+                6.941087260668552e+19,
+                7.1780431141803704e+19
+              ],
+              "name": "EMBALOCO",
+              "top2Sum": 1.4119130374848922e+20
+            },
+            {
+              "attempts": [
+                3.6115328718304158e+19,
+                3.483041233491128e+19
+              ],
+              "name": "Player 80018314",
+              "top2Sum": 7.094574105321544e+19
             }
           ]
         }
