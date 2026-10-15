@@ -69,15 +69,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "MadameMischief",
+      "name": "RetinaDNA",
       "rank": 12,
-      "seasonTotal": 1.4867226695193235e+22
+      "seasonTotal": 1.5816774948733309e+22
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "RetinaDNA",
+      "name": "MadameMischief",
       "rank": 13,
-      "seasonTotal": 1.4328241426920838e+22
+      "seasonTotal": 1.5405427136133052e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -87,15 +87,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Scoundrel536",
+      "name": "pumpenjoe",
       "rank": 15,
-      "seasonTotal": 1.3045823753992213e+22
+      "seasonTotal": 1.3561181321860496e+22
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "pumpenjoe",
+      "name": "Scoundrel536",
       "rank": 16,
-      "seasonTotal": 1.1698871109772475e+22
+      "seasonTotal": 1.3045823753992213e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -147,15 +147,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "EMBALOCO",
+      "name": "theLP",
       "rank": 25,
-      "seasonTotal": 3.4620638674749473e+21
+      "seasonTotal": 3.6884454346888645e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "theLP",
+      "name": "EMBALOCO",
       "rank": 26,
-      "seasonTotal": 3.349026225484801e+21
+      "seasonTotal": 3.4620638674749473e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -179,7 +179,7 @@
       "gainVsPreviousSeason": null,
       "name": "Rzzza",
       "rank": 30,
-      "seasonTotal": 2.2272034599252043e+21
+      "seasonTotal": 2.3555727029282967e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -189,21 +189,21 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "silverxz",
+      "name": "gubrax",
       "rank": 32,
+      "seasonTotal": 2.1624198429137885e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "silverxz",
+      "rank": 33,
       "seasonTotal": 2.0970600163082922e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "BobBobberson",
-      "rank": 33,
-      "seasonTotal": 2.0711101338480982e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "gubrax",
       "rank": 34,
-      "seasonTotal": 2.0671159736037333e+21
+      "seasonTotal": 2.0711101338480982e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -4766,6 +4766,52 @@
               ],
               "name": "SngphO",
               "top2Sum": 3.727345671073335e+21
+            },
+            {
+              "attempts": [
+                8.059976825881516e+20,
+                6.825358392243198e+20
+              ],
+              "name": "RetinaDNA",
+              "top2Sum": 1.4885335218124714e+21
+            },
+            {
+              "attempts": [
+                4.646710831162462e+19,
+                4.883676099843048e+19
+              ],
+              "name": "gubrax",
+              "top2Sum": 9.53038693100551e+19
+            },
+            {
+              "attempts": [
+                1.7599649399148482e+20,
+                1.6342271521257855e+20
+              ],
+              "name": "theLP",
+              "top2Sum": 3.394192092040634e+20
+            },
+            {
+              "attempts": [
+                1.283692430030924e+20
+              ],
+              "name": "Rzzza",
+              "top2Sum": 1.283692430030924e+20
+            },
+            {
+              "attempts": [
+                1.8623102120880216e+21
+              ],
+              "name": "pumpenjoe",
+              "top2Sum": 1.8623102120880216e+21
+            },
+            {
+              "attempts": [
+                2.5909948590769743e+20,
+                2.7910095503212e+20
+              ],
+              "name": "MadameMischief",
+              "top2Sum": 5.382004409398175e+20
             }
           ]
         }
