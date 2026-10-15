@@ -7,7 +7,7 @@ const playerCXRank = {
         "cxRankScore": 400
     },
     "103516442": {
-        "cxRankScore": 1600
+        "cxRankScore": 1900
     },
     "106162623": {
         "cxRankScore": 400
@@ -16,7 +16,7 @@ const playerCXRank = {
         "cxRankScore": 1600
     },
     "108546985": {
-        "cxRankScore": 0
+        "cxRankScore": 400
     },
     "108860725": {
         "cxRankScore": 800
@@ -34,7 +34,7 @@ const playerCXRank = {
         "cxRankScore": 0
     },
     "18115624": {
-        "cxRankScore": 0
+        "cxRankScore": 400
     },
     "18297536": {
         "cxRankScore": 0
@@ -43,7 +43,7 @@ const playerCXRank = {
         "cxRankScore": 1200
     },
     "27113479": {
-        "cxRankScore": 1100
+        "cxRankScore": 1200
     },
     "29321884": {
         "cxRankScore": 1200
@@ -61,13 +61,13 @@ const playerCXRank = {
         "cxRankScore": 0
     },
     "36484758": {
-        "cxRankScore": 1600
+        "cxRankScore": 2000
     },
     "41742773": {
         "cxRankScore": 800
     },
     "51071110": {
-        "cxRankScore": 400
+        "cxRankScore": 800
     },
     "59566866": {
         "cxRankScore": 400
@@ -79,10 +79,10 @@ const playerCXRank = {
         "cxRankScore": 800
     },
     "66607264": {
-        "cxRankScore": 1600
+        "cxRankScore": 2000
     },
     "70603922": {
-        "cxRankScore": 800
+        "cxRankScore": 1200
     },
     "71028860": {
         "cxRankScore": 400
@@ -94,7 +94,7 @@ const playerCXRank = {
         "cxRankScore": 0
     },
     "79510960": {
-        "cxRankScore": 800
+        "cxRankScore": 1200
     },
     "80018314": {
         "cxRankScore": 400
@@ -106,7 +106,7 @@ const playerCXRank = {
         "cxRankScore": 1200
     },
     "83861839": {
-        "cxRankScore": 400
+        "cxRankScore": 800
     },
     "87244358": {
         "cxRankScore": 300
@@ -115,7 +115,7 @@ const playerCXRank = {
         "cxRankScore": 800
     },
     "88203044": {
-        "cxRankScore": 800
+        "cxRankScore": 1200
     },
     "89511116": {
         "cxRankScore": 1000
