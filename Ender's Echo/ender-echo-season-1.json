@@ -147,27 +147,27 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "theLP",
+      "name": "NeonCBV",
       "rank": 25,
+      "seasonTotal": 4.0030110122678855e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "theLP",
+      "rank": 26,
       "seasonTotal": 3.6884454346888645e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "EMBALOCO",
-      "rank": 26,
+      "rank": 27,
       "seasonTotal": 3.6032551712234364e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "BlackFlamE",
-      "rank": 27,
-      "seasonTotal": 3.186650649644753e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "NeonCBV",
       "rank": 28,
-      "seasonTotal": 2.891025704134757e+21
+      "seasonTotal": 3.186650649644753e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -4978,6 +4978,13 @@
               ],
               "name": "RABBIT5",
               "top2Sum": 6.250217684464168e+21
+            },
+            {
+              "attempts": [
+                1.1119853081331283e+21
+              ],
+              "name": "NeonCBV",
+              "top2Sum": 1.1119853081331283e+21
             }
           ]
         }
