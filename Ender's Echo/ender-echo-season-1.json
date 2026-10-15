@@ -23,7 +23,7 @@
       "gainVsPreviousSeason": null,
       "name": "Nubis",
       "rank": 4,
-      "seasonTotal": 2.170023030042254e+23
+      "seasonTotal": 2.2770523761375173e+23
     },
     {
       "gainVsPreviousSeason": null,
@@ -35,7 +35,7 @@
       "gainVsPreviousSeason": null,
       "name": "RABBIT5",
       "rank": 6,
-      "seasonTotal": 1.52103726792318e+23
+      "seasonTotal": 1.5853881892044858e+23
     },
     {
       "gainVsPreviousSeason": null,
@@ -75,27 +75,27 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "MadameMischief",
+      "name": "Scoundrel536",
       "rank": 13,
+      "seasonTotal": 1.5583911911825336e+22
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "MadameMischief",
+      "rank": 14,
       "seasonTotal": 1.5405427136133052e+22
     },
     {
       "gainVsPreviousSeason": null,
       "name": "PastalaVista",
-      "rank": 14,
+      "rank": 15,
       "seasonTotal": 1.4148274366780438e+22
     },
     {
       "gainVsPreviousSeason": null,
       "name": "pumpenjoe",
-      "rank": 15,
-      "seasonTotal": 1.3561181321860496e+22
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "Scoundrel536",
       "rank": 16,
-      "seasonTotal": 1.3045823753992213e+22
+      "seasonTotal": 1.3561181321860496e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -131,19 +131,19 @@
       "gainVsPreviousSeason": null,
       "name": "p88203044",
       "rank": 22,
-      "seasonTotal": 4.741219426992447e+21
+      "seasonTotal": 4.99780993181079e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Player 66607264",
       "rank": 23,
-      "seasonTotal": 4.420346964891284e+21
+      "seasonTotal": 4.850676916460389e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Bensayyten",
       "rank": 24,
-      "seasonTotal": 4.0939046877704057e+21
+      "seasonTotal": 4.4779584504589546e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -177,15 +177,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Rzzza",
+      "name": "groggen",
       "rank": 30,
-      "seasonTotal": 2.3555727029282967e+21
+      "seasonTotal": 2.3745203137296104e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "groggen",
+      "name": "Rzzza",
       "rank": 31,
-      "seasonTotal": 2.2110740118693132e+21
+      "seasonTotal": 2.3555727029282967e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -195,15 +195,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "silverxz",
+      "name": "BobBobberson",
       "rank": 33,
-      "seasonTotal": 2.0970600163082922e+21
+      "seasonTotal": 2.1599421334856286e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "BobBobberson",
+      "name": "silverxz",
       "rank": 34,
-      "seasonTotal": 2.0711101338480982e+21
+      "seasonTotal": 2.0970600163082922e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -4812,6 +4812,68 @@
               ],
               "name": "MadameMischief",
               "top2Sum": 5.382004409398175e+20
+            },
+            {
+              "attempts": [
+                1.9879438083098037e+20,
+                1.852593818575687e+20
+              ],
+              "name": "Bensayyten",
+              "top2Sum": 3.8405376268854906e+20
+            },
+            {
+              "attempts": [
+                2.5659050481834285e+20
+              ],
+              "name": "p88203044",
+              "top2Sum": 2.5659050481834285e+20
+            },
+            {
+              "attempts": [
+                1.8386615887576685e+20,
+                2.4646379269333785e+20
+              ],
+              "name": "Player 66607264",
+              "top2Sum": 4.303299515691047e+20
+            },
+            {
+              "attempts": [
+                1.1686820166727552e+21,
+                1.369406141160369e+21
+              ],
+              "name": "Scoundrel536",
+              "top2Sum": 2.538088157833124e+21
+            },
+            {
+              "attempts": [
+                1.634463018602972e+20
+              ],
+              "name": "groggen",
+              "top2Sum": 1.634463018602972e+20
+            },
+            {
+              "attempts": [
+                8.883199963753021e+19
+              ],
+              "name": "BobBobberson",
+              "top2Sum": 8.883199963753021e+19
+            },
+            {
+              "attempts": [
+                4.6675837399470907e+21,
+                5.252345160543574e+21,
+                5.450589448982787e+21
+              ],
+              "name": "Nubis",
+              "top2Sum": 1.070293460952636e+22
+            },
+            {
+              "attempts": [
+                3.294066719022833e+21,
+                3.141025409107753e+21
+              ],
+              "name": "RABBIT5",
+              "top2Sum": 6.435092128130586e+21
             }
           ]
         }
