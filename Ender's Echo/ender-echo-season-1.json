@@ -47,13 +47,13 @@
       "gainVsPreviousSeason": null,
       "name": "\u795eSterben\u6b7b",
       "rank": 8,
-      "seasonTotal": 1.1395516094412701e+23
+      "seasonTotal": 1.2416498597235244e+23
     },
     {
       "gainVsPreviousSeason": null,
       "name": "SngphO",
       "rank": 9,
-      "seasonTotal": 8.552550566500898e+22
+      "seasonTotal": 8.925285133608232e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -101,7 +101,7 @@
       "gainVsPreviousSeason": null,
       "name": "\u76feHeathcliff\u5263",
       "rank": 17,
-      "seasonTotal": 6.887465380017055e+21
+      "seasonTotal": 7.044083099627994e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -4740,6 +4740,29 @@
               ],
               "name": "VictorMolusco",
               "top2Sum": 3.446190866074778e+20
+            },
+            {
+              "attempts": [
+                5.013105033762067e+21,
+                5.196719994463354e+21
+              ],
+              "name": "\u795eSterben\u6b7b",
+              "top2Sum": 1.020982502822542e+22
+            },
+            {
+              "attempts": [
+                1.5661771961093915e+20
+              ],
+              "name": "\u76feHeathcliff\u5263",
+              "top2Sum": 1.5661771961093915e+20
+            },
+            {
+              "attempts": [
+                1.6746690906067095e+21,
+                2.052676580466626e+21
+              ],
+              "name": "SngphO",
+              "top2Sum": 3.727345671073335e+21
             }
           ]
         }
