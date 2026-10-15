@@ -5,7 +5,7 @@
       "gainVsPreviousSeason": null,
       "name": "Fl3xas",
       "rank": 1,
-      "seasonTotal": 1.220887631301346e+24
+      "seasonTotal": 1.2736462673013463e+24
     },
     {
       "gainVsPreviousSeason": null,
@@ -29,13 +29,13 @@
       "gainVsPreviousSeason": null,
       "name": "DAYO-P",
       "rank": 5,
-      "seasonTotal": 1.8763245033778068e+23
+      "seasonTotal": 1.993862302641138e+23
     },
     {
       "gainVsPreviousSeason": null,
       "name": "RABBIT5",
       "rank": 6,
-      "seasonTotal": 1.5853881892044858e+23
+      "seasonTotal": 1.6478903660491276e+23
     },
     {
       "gainVsPreviousSeason": null,
@@ -119,7 +119,7 @@
       "gainVsPreviousSeason": null,
       "name": "HakiLuffy",
       "rank": 20,
-      "seasonTotal": 5.719488407067119e+21
+      "seasonTotal": 5.865870525100699e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -179,13 +179,13 @@
       "gainVsPreviousSeason": null,
       "name": "groggen",
       "rank": 30,
-      "seasonTotal": 2.3745203137296104e+21
+      "seasonTotal": 2.5820498018326943e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Rzzza",
       "rank": 31,
-      "seasonTotal": 2.3555727029282967e+21
+      "seasonTotal": 2.476285536273549e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -195,21 +195,21 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "gubrax",
+      "name": "silverxz",
       "rank": 33,
-      "seasonTotal": 2.1624198429137885e+21
+      "seasonTotal": 2.205381847944565e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "silverxz",
+      "name": "gubrax",
       "rank": 34,
-      "seasonTotal": 2.0970600163082922e+21
+      "seasonTotal": 2.1624198429137885e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "samwise08",
       "rank": 35,
-      "seasonTotal": 1.6335341561428766e+21
+      "seasonTotal": 1.7807177460698136e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -4910,6 +4910,74 @@
               ],
               "name": "Player 80018314",
               "top2Sum": 7.094574105321544e+19
+            }
+          ]
+        },
+        {
+          "date": "2026-10-16",
+          "day": 23,
+          "players": [
+            {
+              "attempts": [
+                4.3603250884080136e+21,
+                6.499188840917662e+21,
+                5.254591085415438e+21
+              ],
+              "name": "DAYO-P",
+              "top2Sum": 1.1753779926333101e+22
+            },
+            {
+              "attempts": [
+                1.2071283334525202e+20
+              ],
+              "name": "Rzzza",
+              "top2Sum": 1.2071283334525202e+20
+            },
+            {
+              "attempts": [
+                6.668880728120083e+19,
+                8.049478264573616e+19
+              ],
+              "name": "samwise08",
+              "top2Sum": 1.47183589926937e+20
+            },
+            {
+              "attempts": [
+                9.806386665260012e+19,
+                1.0946562145048388e+20
+              ],
+              "name": "groggen",
+              "top2Sum": 2.07529488103084e+20
+            },
+            {
+              "attempts": [
+                1.463821180335803e+20
+              ],
+              "name": "HakiLuffy",
+              "top2Sum": 1.463821180335803e+20
+            },
+            {
+              "attempts": [
+                2.642382676959651e+22,
+                2.633480923040353e+22
+              ],
+              "name": "Fl3xas",
+              "top2Sum": 5.275863600000004e+22
+            },
+            {
+              "attempts": [
+                1.083218316362728e+20
+              ],
+              "name": "silverxz",
+              "top2Sum": 1.083218316362728e+20
+            },
+            {
+              "attempts": [
+                2.9809191632251933e+21,
+                3.269298521238975e+21
+              ],
+              "name": "RABBIT5",
+              "top2Sum": 6.250217684464168e+21
             }
           ]
         }
