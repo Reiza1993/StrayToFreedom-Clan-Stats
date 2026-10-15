@@ -189,15 +189,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "gubrax",
+      "name": "BobBobberson",
       "rank": 32,
-      "seasonTotal": 2.1624198429137885e+21
+      "seasonTotal": 2.21011530507929e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "BobBobberson",
+      "name": "gubrax",
       "rank": 33,
-      "seasonTotal": 2.1599421334856286e+21
+      "seasonTotal": 2.1624198429137885e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -215,7 +215,7 @@
       "gainVsPreviousSeason": null,
       "name": "Belthazar",
       "rank": 36,
-      "seasonTotal": 7.78607212186539e+20
+      "seasonTotal": 8.150918178859335e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -4853,10 +4853,11 @@
             },
             {
               "attempts": [
-                8.883199963753021e+19
+                8.883199963753021e+19,
+                5.017317159366161e+19
               ],
               "name": "BobBobberson",
-              "top2Sum": 8.883199963753021e+19
+              "top2Sum": 1.3900517123119183e+20
             },
             {
               "attempts": [
@@ -4874,6 +4875,14 @@
               ],
               "name": "RABBIT5",
               "top2Sum": 6.435092128130586e+21
+            },
+            {
+              "attempts": [
+                1.7125329392449761e+19,
+                1.935927630694476e+19
+              ],
+              "name": "Belthazar",
+              "top2Sum": 3.6484605699394523e+19
             }
           ]
         }
