@@ -13,7 +13,7 @@ const playerCXRank = {
         "cxRankScore": 400
     },
     "10754439": {
-        "cxRankScore": 1600
+        "cxRankScore": 2000
     },
     "108546985": {
         "cxRankScore": 400
@@ -40,28 +40,28 @@ const playerCXRank = {
         "cxRankScore": 400
     },
     "26277677": {
-        "cxRankScore": 1600
+        "cxRankScore": 1900
     },
     "27113479": {
-        "cxRankScore": 1200
+        "cxRankScore": 1600
     },
     "29321884": {
-        "cxRankScore": 1200
+        "cxRankScore": 1600
     },
     "29904762": {
         "cxRankScore": 0
     },
     "30658936": {
-        "cxRankScore": 800
+        "cxRankScore": 1200
     },
     "32556489": {
-        "cxRankScore": 1500
+        "cxRankScore": 1900
     },
     "35869301": {
         "cxRankScore": 400
     },
     "36484758": {
-        "cxRankScore": 2000
+        "cxRankScore": 2400
     },
     "41742773": {
         "cxRankScore": 800
@@ -79,7 +79,7 @@ const playerCXRank = {
         "cxRankScore": 800
     },
     "66607264": {
-        "cxRankScore": 2300
+        "cxRankScore": 2700
     },
     "70603922": {
         "cxRankScore": 1200
@@ -115,7 +115,7 @@ const playerCXRank = {
         "cxRankScore": 800
     },
     "88203044": {
-        "cxRankScore": 1200
+        "cxRankScore": 1600
     },
     "89511116": {
         "cxRankScore": 1000
