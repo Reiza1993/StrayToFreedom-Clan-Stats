@@ -63,21 +63,21 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Koncalaz",
+      "name": "RetinaDNA",
       "rank": 11,
+      "seasonTotal": 1.7401219032516957e+22
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "Koncalaz",
+      "rank": 12,
       "seasonTotal": 1.5936135319796664e+22
     },
     {
       "gainVsPreviousSeason": null,
       "name": "MadameMischief",
-      "rank": 12,
-      "seasonTotal": 1.5922725698050493e+22
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "RetinaDNA",
       "rank": 13,
-      "seasonTotal": 1.5816774948733309e+22
+      "seasonTotal": 1.5922725698050493e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -101,19 +101,19 @@
       "gainVsPreviousSeason": null,
       "name": "\u76feHeathcliff\u5263",
       "rank": 17,
-      "seasonTotal": 7.276623628433065e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "Apathy_",
-      "rank": 18,
-      "seasonTotal": 6.150380240464387e+21
+      "seasonTotal": 7.350856914584528e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "VictorMolusco",
+      "rank": 18,
+      "seasonTotal": 6.39985899269483e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "Apathy_",
       "rank": 19,
-      "seasonTotal": 6.117193205166654e+21
+      "seasonTotal": 6.150380240464387e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -137,13 +137,13 @@
       "gainVsPreviousSeason": null,
       "name": "Player 66607264",
       "rank": 23,
-      "seasonTotal": 4.850676916460389e+21
+      "seasonTotal": 5.323463508197586e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Bensayyten",
       "rank": 24,
-      "seasonTotal": 4.640535235671874e+21
+      "seasonTotal": 4.803231632008643e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -161,7 +161,7 @@
       "gainVsPreviousSeason": null,
       "name": "EMBALOCO",
       "rank": 27,
-      "seasonTotal": 3.6032551712234364e+21
+      "seasonTotal": 3.648045057172778e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -5062,10 +5062,11 @@
             },
             {
               "attempts": [
-                1.6257678521291925e+20
+                1.6257678521291925e+20,
+                1.626963963367686e+20
               ],
               "name": "Bensayyten",
-              "top2Sum": 1.6257678521291925e+20
+              "top2Sum": 3.2527318154968787e+20
             },
             {
               "attempts": [
@@ -5090,6 +5091,45 @@
               ],
               "name": "MadameMischief",
               "top2Sum": 5.172985619174422e+20
+            },
+            {
+              "attempts": [
+                8.033434244439702e+20,
+                4.2693147354187216e+20,
+                7.81100659339677e+20
+              ],
+              "name": "RetinaDNA",
+              "top2Sum": 1.5844440837836474e+21
+            },
+            {
+              "attempts": [
+                9.931633340174605e+19,
+                1.8334945412642996e+20
+              ],
+              "name": "VictorMolusco",
+              "top2Sum": 2.82665787528176e+20
+            },
+            {
+              "attempts": [
+                7.42332861514635e+19
+              ],
+              "name": "\u76feHeathcliff\u5263",
+              "top2Sum": 7.42332861514635e+19
+            },
+            {
+              "attempts": [
+                1.9950198738903168e+20,
+                2.7328460434816526e+20
+              ],
+              "name": "Player 66607264",
+              "top2Sum": 4.72786591737197e+20
+            },
+            {
+              "attempts": [
+                4.4789885949341745e+19
+              ],
+              "name": "EMBALOCO",
+              "top2Sum": 4.4789885949341745e+19
             }
           ]
         }
