@@ -125,13 +125,13 @@
       "gainVsPreviousSeason": null,
       "name": "Gritchen",
       "rank": 21,
-      "seasonTotal": 5.278684888711929e+21
+      "seasonTotal": 5.599563364670789e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "p88203044",
       "rank": 22,
-      "seasonTotal": 4.99780993181079e+21
+      "seasonTotal": 5.42825019890609e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -147,15 +147,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "NeonCBV",
+      "name": "theLP",
       "rank": 25,
-      "seasonTotal": 4.0030110122678855e+21
+      "seasonTotal": 4.0489844442776606e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "theLP",
+      "name": "NeonCBV",
       "rank": 26,
-      "seasonTotal": 3.6884454346888645e+21
+      "seasonTotal": 4.0030110122678855e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -167,7 +167,7 @@
       "gainVsPreviousSeason": null,
       "name": "BlackFlamE",
       "rank": 28,
-      "seasonTotal": 3.186650649644753e+21
+      "seasonTotal": 3.3160851739547544e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -5000,6 +5000,38 @@
               ],
               "name": "\u04bban",
               "top2Sum": 4.536344355412981e+22
+            },
+            {
+              "attempts": [
+                1.4020197822964593e+20,
+                1.8067649772921432e+20
+              ],
+              "name": "Gritchen",
+              "top2Sum": 3.2087847595886025e+20
+            },
+            {
+              "attempts": [
+                1.922557118756197e+20,
+                1.6828329771317648e+20
+              ],
+              "name": "theLP",
+              "top2Sum": 3.605390095887962e+20
+            },
+            {
+              "attempts": [
+                2.1868523128068555e+20,
+                2.117550358146149e+20
+              ],
+              "name": "p88203044",
+              "top2Sum": 4.3044026709530044e+20
+            },
+            {
+              "attempts": [
+                6.603055798345869e+19,
+                6.340396632654237e+19
+              ],
+              "name": "BlackFlamE",
+              "top2Sum": 1.2943452431000106e+20
             }
           ]
         }
