@@ -29,7 +29,7 @@
       "gainVsPreviousSeason": null,
       "name": "DAYO-P",
       "rank": 5,
-      "seasonTotal": 1.993862302641138e+23
+      "seasonTotal": 2.0148645461069735e+23
     },
     {
       "gainVsPreviousSeason": null,
@@ -105,15 +105,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "VictorMolusco",
+      "name": "Apathy_",
       "rank": 18,
-      "seasonTotal": 6.117193205166654e+21
+      "seasonTotal": 6.150380240464387e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Apathy_",
+      "name": "VictorMolusco",
       "rank": 19,
-      "seasonTotal": 5.895399262891902e+21
+      "seasonTotal": 6.117193205166654e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -191,19 +191,19 @@
       "gainVsPreviousSeason": null,
       "name": "BobBobberson",
       "rank": 32,
-      "seasonTotal": 2.21011530507929e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "silverxz",
-      "rank": 33,
-      "seasonTotal": 2.205381847944565e+21
+      "seasonTotal": 2.2987312636113857e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "gubrax",
+      "rank": 33,
+      "seasonTotal": 2.2494942638665344e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "silverxz",
       "rank": 34,
-      "seasonTotal": 2.1624198429137885e+21
+      "seasonTotal": 2.205381847944565e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -4921,10 +4921,12 @@
               "attempts": [
                 4.3603250884080136e+21,
                 6.499188840917662e+21,
-                5.254591085415438e+21
+                5.254591085415438e+21,
+                4.642094209406326e+21,
+                7.354815431999009e+21
               ],
               "name": "DAYO-P",
-              "top2Sum": 1.1753779926333101e+22
+              "top2Sum": 1.385400427291667e+22
             },
             {
               "attempts": [
@@ -5032,6 +5034,29 @@
               ],
               "name": "BlackFlamE",
               "top2Sum": 1.2943452431000106e+20
+            },
+            {
+              "attempts": [
+                1.1329740992782066e+20,
+                1.4168356764466458e+20
+              ],
+              "name": "Apathy_",
+              "top2Sum": 2.5498097757248523e+20
+            },
+            {
+              "attempts": [
+                5.327109538937486e+19,
+                3.3803325563371094e+19
+              ],
+              "name": "gubrax",
+              "top2Sum": 8.707442095274595e+19
+            },
+            {
+              "attempts": [
+                8.861595853209575e+19
+              ],
+              "name": "BobBobberson",
+              "top2Sum": 8.861595853209575e+19
             }
           ]
         }
