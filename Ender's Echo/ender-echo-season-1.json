@@ -15,15 +15,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "\u00d0\u318d\u2623zSpec\u2623",
+      "name": "Nubis",
       "rank": 3,
-      "seasonTotal": 2.2880367054832363e+23
+      "seasonTotal": 2.3895894781938824e+23
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Nubis",
+      "name": "\u00d0\u318d\u2623zSpec\u2623",
       "rank": 4,
-      "seasonTotal": 2.2770523761375173e+23
+      "seasonTotal": 2.2880367054832363e+23
     },
     {
       "gainVsPreviousSeason": null,
@@ -69,21 +69,21 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "RetinaDNA",
+      "name": "MadameMischief",
       "rank": 12,
+      "seasonTotal": 1.5922725698050493e+22
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "RetinaDNA",
+      "rank": 13,
       "seasonTotal": 1.5816774948733309e+22
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Scoundrel536",
-      "rank": 13,
-      "seasonTotal": 1.5583911911825336e+22
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "MadameMischief",
       "rank": 14,
-      "seasonTotal": 1.5405427136133052e+22
+      "seasonTotal": 1.5583911911825336e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -215,7 +215,7 @@
       "gainVsPreviousSeason": null,
       "name": "Belthazar",
       "rank": 36,
-      "seasonTotal": 8.150918178859335e+20
+      "seasonTotal": 8.430899676744197e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -5066,6 +5066,30 @@
               ],
               "name": "Bensayyten",
               "top2Sum": 1.6257678521291925e+20
+            },
+            {
+              "attempts": [
+                1.305856450710483e+19,
+                1.4939585281381315e+19
+              ],
+              "name": "Belthazar",
+              "top2Sum": 2.7998149788486144e+19
+            },
+            {
+              "attempts": [
+                5.349188748649862e+21,
+                5.904521456986636e+21
+              ],
+              "name": "Nubis",
+              "top2Sum": 1.1253710205636498e+22
+            },
+            {
+              "attempts": [
+                3.3739242548283566e+20,
+                1.7990613643460657e+20
+              ],
+              "name": "MadameMischief",
+              "top2Sum": 5.172985619174422e+20
             }
           ]
         }
