@@ -143,7 +143,7 @@
       "gainVsPreviousSeason": null,
       "name": "Bensayyten",
       "rank": 24,
-      "seasonTotal": 4.4779584504589546e+21
+      "seasonTotal": 4.640535235671874e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -177,21 +177,21 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "groggen",
+      "name": "Rzzza",
       "rank": 30,
-      "seasonTotal": 2.5820498018326943e+21
+      "seasonTotal": 2.605708241067809e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Rzzza",
+      "name": "groggen",
       "rank": 31,
-      "seasonTotal": 2.476285536273549e+21
+      "seasonTotal": 2.5820498018326943e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "BobBobberson",
       "rank": 32,
-      "seasonTotal": 2.2987312636113857e+21
+      "seasonTotal": 2.381610308505597e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -4930,10 +4930,11 @@
             },
             {
               "attempts": [
-                1.2071283334525202e+20
+                1.2071283334525202e+20,
+                1.2942270479426052e+20
               ],
               "name": "Rzzza",
-              "top2Sum": 1.2071283334525202e+20
+              "top2Sum": 2.5013553813951254e+20
             },
             {
               "attempts": [
@@ -5053,10 +5054,18 @@
             },
             {
               "attempts": [
-                8.861595853209575e+19
+                8.861595853209575e+19,
+                8.28790448942115e+19
               ],
               "name": "BobBobberson",
-              "top2Sum": 8.861595853209575e+19
+              "top2Sum": 1.7149500342630724e+20
+            },
+            {
+              "attempts": [
+                1.6257678521291925e+20
+              ],
+              "name": "Bensayyten",
+              "top2Sum": 1.6257678521291925e+20
             }
           ]
         }
