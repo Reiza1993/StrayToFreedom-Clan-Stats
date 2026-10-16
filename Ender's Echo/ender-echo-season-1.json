@@ -11,7 +11,7 @@
       "gainVsPreviousSeason": null,
       "name": "\u04bban",
       "rank": 2,
-      "seasonTotal": 5.488154097569013e+23
+      "seasonTotal": 5.941788533110311e+23
     },
     {
       "gainVsPreviousSeason": null,
@@ -39,15 +39,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "\u2623zSpec\u2623",
+      "name": "\u795eSterben\u6b7b",
       "rank": 7,
-      "seasonTotal": 1.330648380129283e+23
+      "seasonTotal": 1.3680480533861564e+23
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "\u795eSterben\u6b7b",
+      "name": "\u2623zSpec\u2623",
       "rank": 8,
-      "seasonTotal": 1.2416498597235244e+23
+      "seasonTotal": 1.330648380129283e+23
     },
     {
       "gainVsPreviousSeason": null,
@@ -4985,6 +4985,21 @@
               ],
               "name": "NeonCBV",
               "top2Sum": 1.1119853081331283e+21
+            },
+            {
+              "attempts": [
+                7.326728360884051e+21,
+                5.313091005379146e+21
+              ],
+              "name": "\u795eSterben\u6b7b",
+              "top2Sum": 1.2639819366263199e+22
+            },
+            {
+              "attempts": [
+                4.536344355412981e+22
+              ],
+              "name": "\u04bban",
+              "top2Sum": 4.536344355412981e+22
             }
           ]
         }
