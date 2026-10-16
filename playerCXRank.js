@@ -4,13 +4,13 @@
 const playerCXRank = {
     current: {
     "100876140": {
-        "cxRankScore": 800
+        "cxRankScore": 1200
     },
     "103516442": {
-        "cxRankScore": 2000
+        "cxRankScore": 2400
     },
     "106162623": {
-        "cxRankScore": 400
+        "cxRankScore": 800
     },
     "10754439": {
         "cxRankScore": 2000
@@ -25,7 +25,7 @@ const playerCXRank = {
         "cxRankScore": 400
     },
     "113690788": {
-        "cxRankScore": 1200
+        "cxRankScore": 1600
     },
     "11463573": {
         "cxRankScore": 0
@@ -40,13 +40,13 @@ const playerCXRank = {
         "cxRankScore": 400
     },
     "26277677": {
-        "cxRankScore": 2300
+        "cxRankScore": 2700
     },
     "27113479": {
-        "cxRankScore": 1600
+        "cxRankScore": 2000
     },
     "29321884": {
-        "cxRankScore": 1700
+        "cxRankScore": 2000
     },
     "29904762": {
         "cxRankScore": 400
@@ -55,22 +55,22 @@ const playerCXRank = {
         "cxRankScore": 1200
     },
     "32556489": {
-        "cxRankScore": 2200
+        "cxRankScore": 2600
     },
     "35869301": {
         "cxRankScore": 400
     },
     "36484758": {
-        "cxRankScore": 3200
+        "cxRankScore": 3500
     },
     "41742773": {
-        "cxRankScore": 800
+        "cxRankScore": 1200
     },
     "51071110": {
         "cxRankScore": 1200
     },
     "59566866": {
-        "cxRankScore": 800
+        "cxRankScore": 1200
     },
     "60687252": {
         "cxRankScore": 0
@@ -82,7 +82,7 @@ const playerCXRank = {
         "cxRankScore": 2700
     },
     "70603922": {
-        "cxRankScore": 1600
+        "cxRankScore": 2000
     },
     "71028860": {
         "cxRankScore": 400
@@ -94,10 +94,10 @@ const playerCXRank = {
         "cxRankScore": 0
     },
     "79510960": {
-        "cxRankScore": 1600
+        "cxRankScore": 2000
     },
     "80018314": {
-        "cxRankScore": 800
+        "cxRankScore": 1200
     },
     "80972473": {
         "cxRankScore": 0
@@ -106,7 +106,7 @@ const playerCXRank = {
         "cxRankScore": 2000
     },
     "83861839": {
-        "cxRankScore": 800
+        "cxRankScore": 1200
     },
     "87244358": {
         "cxRankScore": 300
