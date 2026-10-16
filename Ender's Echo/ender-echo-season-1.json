@@ -53,37 +53,37 @@
       "gainVsPreviousSeason": null,
       "name": "SngphO",
       "rank": 9,
-      "seasonTotal": 8.925285133608232e+22
+      "seasonTotal": 9.294313220179452e+22
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Cunner88",
       "rank": 10,
-      "seasonTotal": 2.345617706624561e+22
+      "seasonTotal": 2.5876869013830275e+22
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "Scoundrel536",
+      "rank": 11,
+      "seasonTotal": 1.8261581495347035e+22
     },
     {
       "gainVsPreviousSeason": null,
       "name": "RetinaDNA",
-      "rank": 11,
+      "rank": 12,
       "seasonTotal": 1.7401219032516957e+22
     },
     {
       "gainVsPreviousSeason": null,
       "name": "MadameMischief",
-      "rank": 12,
+      "rank": 13,
       "seasonTotal": 1.664837338890678e+22
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Koncalaz",
-      "rank": 13,
-      "seasonTotal": 1.5936135319796664e+22
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "Scoundrel536",
       "rank": 14,
-      "seasonTotal": 1.5583911911825336e+22
+      "seasonTotal": 1.5936135319796664e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -167,7 +167,7 @@
       "gainVsPreviousSeason": null,
       "name": "BlackFlamE",
       "rank": 28,
-      "seasonTotal": 3.37315452618115e+21
+      "seasonTotal": 3.444592176337237e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -5162,10 +5162,11 @@
             },
             {
               "attempts": [
-                5.70693522263959e+19
+                5.70693522263959e+19,
+                7.143765015608659e+19
               ],
               "name": "BlackFlamE",
-              "top2Sum": 5.70693522263959e+19
+              "top2Sum": 1.2850700238248249e+20
             },
             {
               "attempts": [
@@ -5182,6 +5183,31 @@
               ],
               "name": "MadameMischief",
               "top2Sum": 7.25647690856288e+20
+            },
+            {
+              "attempts": [
+                1.2151008251786725e+21,
+                1.4625687583430256e+21
+              ],
+              "name": "Scoundrel536",
+              "top2Sum": 2.677669583521698e+21
+            },
+            {
+              "attempts": [
+                1.7507556031695778e+21,
+                1.547792655604933e+21,
+                1.9395252625426198e+21,
+                1.4657313668637126e+21
+              ],
+              "name": "SngphO",
+              "top2Sum": 3.6902808657121976e+21
+            },
+            {
+              "attempts": [
+                2.4206919475846667e+21
+              ],
+              "name": "Cunner88",
+              "top2Sum": 2.4206919475846667e+21
             }
           ]
         }
