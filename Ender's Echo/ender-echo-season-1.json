@@ -5,7 +5,7 @@
       "gainVsPreviousSeason": null,
       "name": "Fl3xas",
       "rank": 1,
-      "seasonTotal": 1.3199940730188035e+24
+      "seasonTotal": 1.3503915237687702e+24
     },
     {
       "gainVsPreviousSeason": null,
@@ -119,7 +119,7 @@
       "gainVsPreviousSeason": null,
       "name": "HakiLuffy",
       "rank": 20,
-      "seasonTotal": 5.987228414203535e+21
+      "seasonTotal": 6.275953077998475e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -167,7 +167,7 @@
       "gainVsPreviousSeason": null,
       "name": "BlackFlamE",
       "rank": 28,
-      "seasonTotal": 3.4544663541836315e+21
+      "seasonTotal": 3.574673374579972e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -5324,6 +5324,40 @@
         }
       ],
       "miniSeasonNumber": 8
+    },
+    {
+      "days": [
+        {
+          "date": "2026-10-18",
+          "day": 25,
+          "players": [
+            {
+              "attempts": [
+                1.2695792418236739e+20,
+                1.617667396125726e+20
+              ],
+              "name": "HakiLuffy",
+              "top2Sum": 2.8872466379494e+20
+            },
+            {
+              "attempts": [
+                5.062638821726457e+19,
+                6.958063217907589e+19
+              ],
+              "name": "BlackFlamE",
+              "top2Sum": 1.2020702039634046e+20
+            },
+            {
+              "attempts": [
+                3.0397450749966817e+22
+              ],
+              "name": "Fl3xas",
+              "top2Sum": 3.0397450749966817e+22
+            }
+          ]
+        }
+      ],
+      "miniSeasonNumber": 9
     }
   ],
   "seasonNumber": 1,
