@@ -5,7 +5,7 @@
       "gainVsPreviousSeason": null,
       "name": "Fl3xas",
       "rank": 1,
-      "seasonTotal": 1.387705969692577e+24
+      "seasonTotal": 1.3950717839886315e+24
     },
     {
       "gainVsPreviousSeason": null,
@@ -29,7 +29,7 @@
       "gainVsPreviousSeason": null,
       "name": "DAYO-P",
       "rank": 5,
-      "seasonTotal": 2.156253810260675e+23
+      "seasonTotal": 2.207792265427678e+23
     },
     {
       "gainVsPreviousSeason": null,
@@ -53,7 +53,7 @@
       "gainVsPreviousSeason": null,
       "name": "SngphO",
       "rank": 9,
-      "seasonTotal": 9.294313220179452e+22
+      "seasonTotal": 9.727177064933355e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -63,15 +63,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "RetinaDNA",
+      "name": "Scoundrel536",
       "rank": 11,
-      "seasonTotal": 1.893082709198997e+22
+      "seasonTotal": 1.9031626021564475e+22
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Scoundrel536",
+      "name": "RetinaDNA",
       "rank": 12,
-      "seasonTotal": 1.8261581495347035e+22
+      "seasonTotal": 1.893082709198997e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -173,7 +173,7 @@
       "gainVsPreviousSeason": null,
       "name": "groggen",
       "rank": 29,
-      "seasonTotal": 2.924377498237638e+21
+      "seasonTotal": 3.510462653294193e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -5350,10 +5350,12 @@
             {
               "attempts": [
                 3.0397450749966817e+22,
-                3.7314445923806763e+22
+                3.7314445923806763e+22,
+                3.3954413736150117e+22,
+                3.776326504602135e+22
               ],
               "name": "Fl3xas",
-              "top2Sum": 6.7711896673773576e+22
+              "top2Sum": 7.507771096982811e+22
             },
             {
               "attempts": [
@@ -5378,6 +5380,38 @@
               ],
               "name": "MadameMischief",
               "top2Sum": 8.693670784924452e+20
+            },
+            {
+              "attempts": [
+                5.153845516700301e+21
+              ],
+              "name": "DAYO-P",
+              "top2Sum": 5.153845516700301e+21
+            },
+            {
+              "attempts": [
+                7.7004452621744e+20
+              ],
+              "name": "Scoundrel536",
+              "top2Sum": 7.7004452621744e+20
+            },
+            {
+              "attempts": [
+                1.6258810707739237e+20,
+                2.7354493582488653e+20,
+                1.4418979573037813e+20,
+                3.125402192316682e+20
+              ],
+              "name": "groggen",
+              "top2Sum": 5.8608515505655474e+20
+            },
+            {
+              "attempts": [
+                2.73413222010476e+21,
+                1.5945062274342605e+21
+              ],
+              "name": "SngphO",
+              "top2Sum": 4.3286384475390204e+21
             }
           ]
         }
