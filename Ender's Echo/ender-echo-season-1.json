@@ -171,21 +171,21 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "faxnem",
+      "name": "groggen",
       "rank": 29,
+      "seasonTotal": 2.924377498237638e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "faxnem",
+      "rank": 30,
       "seasonTotal": 2.711344180139725e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Rzzza",
-      "rank": 30,
-      "seasonTotal": 2.701155446343473e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "groggen",
       "rank": 31,
-      "seasonTotal": 2.5820498018326943e+21
+      "seasonTotal": 2.701155446343473e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -5208,6 +5208,14 @@
               ],
               "name": "Cunner88",
               "top2Sum": 2.4206919475846667e+21
+            },
+            {
+              "attempts": [
+                1.1624833276140385e+20,
+                2.260793636435396e+20
+              ],
+              "name": "groggen",
+              "top2Sum": 3.423276964049435e+20
             }
           ]
         }
