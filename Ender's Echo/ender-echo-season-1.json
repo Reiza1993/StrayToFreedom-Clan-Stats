@@ -5,7 +5,7 @@
       "gainVsPreviousSeason": null,
       "name": "Fl3xas",
       "rank": 1,
-      "seasonTotal": 1.3503915237687702e+24
+      "seasonTotal": 1.387705969692577e+24
     },
     {
       "gainVsPreviousSeason": null,
@@ -77,7 +77,7 @@
       "gainVsPreviousSeason": null,
       "name": "MadameMischief",
       "rank": 13,
-      "seasonTotal": 1.664837338890678e+22
+      "seasonTotal": 1.7517740467399227e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -105,15 +105,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "VictorMolusco",
+      "name": "Apathy_",
       "rank": 18,
-      "seasonTotal": 6.692907683322506e+21
+      "seasonTotal": 6.714976150645182e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Apathy_",
+      "name": "VictorMolusco",
       "rank": 19,
-      "seasonTotal": 6.357477283904677e+21
+      "seasonTotal": 6.692907683322506e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -189,21 +189,21 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "BobBobberson",
+      "name": "silverxz",
       "rank": 32,
+      "seasonTotal": 2.640383763468978e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "BobBobberson",
+      "rank": 33,
       "seasonTotal": 2.381610308505597e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "gubrax",
-      "rank": 33,
-      "seasonTotal": 2.338351588383424e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "silverxz",
       "rank": 34,
-      "seasonTotal": 2.205381847944565e+21
+      "seasonTotal": 2.338351588383424e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -5349,10 +5349,35 @@
             },
             {
               "attempts": [
-                3.0397450749966817e+22
+                3.0397450749966817e+22,
+                3.7314445923806763e+22
               ],
               "name": "Fl3xas",
-              "top2Sum": 3.0397450749966817e+22
+              "top2Sum": 6.7711896673773576e+22
+            },
+            {
+              "attempts": [
+                1.4954461235257033e+20,
+                2.079542543879346e+20
+              ],
+              "name": "Apathy_",
+              "top2Sum": 3.5749886674050495e+20
+            },
+            {
+              "attempts": [
+                1.8931120970507626e+20,
+                2.4569070581933674e+20
+              ],
+              "name": "silverxz",
+              "top2Sum": 4.35001915524413e+20
+            },
+            {
+              "attempts": [
+                3.83982423288445e+20,
+                4.853846552040002e+20
+              ],
+              "name": "MadameMischief",
+              "top2Sum": 8.693670784924452e+20
             }
           ]
         }
