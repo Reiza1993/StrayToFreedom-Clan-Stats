@@ -17,7 +17,7 @@
       "gainVsPreviousSeason": null,
       "name": "Nubis",
       "rank": 3,
-      "seasonTotal": 2.3895894781938824e+23
+      "seasonTotal": 2.5080479004864626e+23
     },
     {
       "gainVsPreviousSeason": null,
@@ -63,15 +63,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Scoundrel536",
+      "name": "RetinaDNA",
       "rank": 11,
-      "seasonTotal": 1.8261581495347035e+22
+      "seasonTotal": 1.893082709198997e+22
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "RetinaDNA",
+      "name": "Scoundrel536",
       "rank": 12,
-      "seasonTotal": 1.7401219032516957e+22
+      "seasonTotal": 1.8261581495347035e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -5263,6 +5263,22 @@
               ],
               "name": "samwise08",
               "top2Sum": 1.4703887020989232e+20
+            },
+            {
+              "attempts": [
+                8.55424420267668e+20,
+                6.741836392053438e+20
+              ],
+              "name": "RetinaDNA",
+              "top2Sum": 1.5296080594730117e+21
+            },
+            {
+              "attempts": [
+                5.225718285207413e+21,
+                6.62012394405061e+21
+              ],
+              "name": "Nubis",
+              "top2Sum": 1.1845842229258023e+22
             }
           ]
         }
