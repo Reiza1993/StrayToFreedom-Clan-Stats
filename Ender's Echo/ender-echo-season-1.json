@@ -125,7 +125,7 @@
       "gainVsPreviousSeason": null,
       "name": "Gritchen",
       "rank": 21,
-      "seasonTotal": 5.599563364670789e+21
+      "seasonTotal": 5.869639831070975e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -5216,6 +5216,14 @@
               ],
               "name": "groggen",
               "top2Sum": 3.423276964049435e+20
+            },
+            {
+              "attempts": [
+                1.9460990335024615e+20,
+                7.54665630499401e+19
+              ],
+              "name": "Gritchen",
+              "top2Sum": 2.7007646640018627e+20
             }
           ]
         }
