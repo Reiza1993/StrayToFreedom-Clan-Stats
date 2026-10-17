@@ -35,7 +35,7 @@
       "gainVsPreviousSeason": null,
       "name": "RABBIT5",
       "rank": 6,
-      "seasonTotal": 1.6478903660491276e+23
+      "seasonTotal": 1.673638545380227e+23
     },
     {
       "gainVsPreviousSeason": null,
@@ -107,7 +107,7 @@
       "gainVsPreviousSeason": null,
       "name": "VictorMolusco",
       "rank": 18,
-      "seasonTotal": 6.39985899269483e+21
+      "seasonTotal": 6.692907683322506e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -131,7 +131,7 @@
       "gainVsPreviousSeason": null,
       "name": "p88203044",
       "rank": 22,
-      "seasonTotal": 5.42825019890609e+21
+      "seasonTotal": 5.622657779774445e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -149,7 +149,7 @@
       "gainVsPreviousSeason": null,
       "name": "theLP",
       "rank": 25,
-      "seasonTotal": 4.0489844442776606e+21
+      "seasonTotal": 4.378049182073532e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -161,13 +161,13 @@
       "gainVsPreviousSeason": null,
       "name": "EMBALOCO",
       "rank": 27,
-      "seasonTotal": 3.648045057172778e+21
+      "seasonTotal": 3.8238537177684163e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "BlackFlamE",
       "rank": 28,
-      "seasonTotal": 3.444592176337237e+21
+      "seasonTotal": 3.4544663541836315e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -5163,10 +5163,11 @@
             {
               "attempts": [
                 5.70693522263959e+19,
-                7.143765015608659e+19
+                7.143765015608659e+19,
+                6.694353007279063e+19
               ],
               "name": "BlackFlamE",
-              "top2Sum": 1.2850700238248249e+20
+              "top2Sum": 1.3838118022887722e+20
             },
             {
               "attempts": [
@@ -5279,6 +5280,45 @@
               ],
               "name": "Nubis",
               "top2Sum": 1.1845842229258023e+22
+            },
+            {
+              "attempts": [
+                1.8146000424817947e+20,
+                1.4760473354769187e+20
+              ],
+              "name": "theLP",
+              "top2Sum": 3.2906473779587134e+20
+            },
+            {
+              "attempts": [
+                1.2054254155209251e+20,
+                1.725061490755828e+20
+              ],
+              "name": "VictorMolusco",
+              "top2Sum": 2.9304869062767532e+20
+            },
+            {
+              "attempts": [
+                1.9440758086835447e+20
+              ],
+              "name": "p88203044",
+              "top2Sum": 1.9440758086835447e+20
+            },
+            {
+              "attempts": [
+                8.791161904892237e+19,
+                8.78970415467158e+19
+              ],
+              "name": "EMBALOCO",
+              "top2Sum": 1.7580866059563817e+20
+            },
+            {
+              "attempts": [
+                1.205605969749268e+21,
+                1.369211963360665e+21
+              ],
+              "name": "RABBIT5",
+              "top2Sum": 2.574817933109933e+21
             }
           ]
         }
