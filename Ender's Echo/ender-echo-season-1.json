@@ -89,7 +89,7 @@
       "gainVsPreviousSeason": null,
       "name": "PastalaVista",
       "rank": 15,
-      "seasonTotal": 1.4915293075383398e+22
+      "seasonTotal": 1.5422110611339194e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -5224,6 +5224,13 @@
               ],
               "name": "Gritchen",
               "top2Sum": 2.7007646640018627e+20
+            },
+            {
+              "attempts": [
+                5.068175359557956e+20
+              ],
+              "name": "PastalaVista",
+              "top2Sum": 5.068175359557956e+20
             }
           ]
         }
