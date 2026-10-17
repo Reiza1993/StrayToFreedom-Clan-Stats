@@ -113,7 +113,7 @@
       "gainVsPreviousSeason": null,
       "name": "Apathy_",
       "rank": 19,
-      "seasonTotal": 6.150380240464387e+21
+      "seasonTotal": 6.357477283904677e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -197,7 +197,7 @@
       "gainVsPreviousSeason": null,
       "name": "gubrax",
       "rank": 33,
-      "seasonTotal": 2.2494942638665344e+21
+      "seasonTotal": 2.338351588383424e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -209,13 +209,13 @@
       "gainVsPreviousSeason": null,
       "name": "samwise08",
       "rank": 35,
-      "seasonTotal": 1.7807177460698136e+21
+      "seasonTotal": 1.9277566162797058e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Belthazar",
       "rank": 36,
-      "seasonTotal": 8.430899676744197e+20
+      "seasonTotal": 8.758544967568148e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -5231,6 +5231,38 @@
               ],
               "name": "PastalaVista",
               "top2Sum": 5.068175359557956e+20
+            },
+            {
+              "attempts": [
+                1.6402664991277556e+19,
+                1.6361864091117541e+19
+              ],
+              "name": "Belthazar",
+              "top2Sum": 3.27645290823951e+19
+            },
+            {
+              "attempts": [
+                1.2876747643422299e+20,
+                7.83295670060665e+19
+              ],
+              "name": "Apathy_",
+              "top2Sum": 2.070970434402895e+20
+            },
+            {
+              "attempts": [
+                5.506789212014621e+19,
+                3.3789432396743418e+19
+              ],
+              "name": "gubrax",
+              "top2Sum": 8.885732451688962e+19
+            },
+            {
+              "attempts": [
+                7.099504434677132e+19,
+                7.6043825863121e+19
+              ],
+              "name": "samwise08",
+              "top2Sum": 1.4703887020989232e+20
             }
           ]
         }
