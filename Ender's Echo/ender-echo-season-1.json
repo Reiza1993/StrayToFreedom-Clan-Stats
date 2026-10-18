@@ -17,7 +17,7 @@
       "gainVsPreviousSeason": null,
       "name": "Nubis",
       "rank": 3,
-      "seasonTotal": 2.5080479004864626e+23
+      "seasonTotal": 2.6241173555881596e+23
     },
     {
       "gainVsPreviousSeason": null,
@@ -29,13 +29,13 @@
       "gainVsPreviousSeason": null,
       "name": "DAYO-P",
       "rank": 5,
-      "seasonTotal": 2.2602673667240786e+23
+      "seasonTotal": 2.2711471149327143e+23
     },
     {
       "gainVsPreviousSeason": null,
       "name": "RABBIT5",
       "rank": 6,
-      "seasonTotal": 1.673638545380227e+23
+      "seasonTotal": 1.8945820787512144e+23
     },
     {
       "gainVsPreviousSeason": null,
@@ -63,15 +63,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Scoundrel536",
+      "name": "RetinaDNA",
       "rank": 11,
-      "seasonTotal": 1.9031626021564475e+22
+      "seasonTotal": 1.9845448816868544e+22
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "RetinaDNA",
+      "name": "Scoundrel536",
       "rank": 12,
-      "seasonTotal": 1.893082709198997e+22
+      "seasonTotal": 1.9031626021564475e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -101,7 +101,7 @@
       "gainVsPreviousSeason": null,
       "name": "\u76feHeathcliff\u5263",
       "rank": 17,
-      "seasonTotal": 7.350856914584528e+21
+      "seasonTotal": 7.679314433573016e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -119,25 +119,25 @@
       "gainVsPreviousSeason": null,
       "name": "HakiLuffy",
       "rank": 20,
-      "seasonTotal": 6.333253568289415e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "p88203044",
-      "rank": 21,
-      "seasonTotal": 5.930063988544763e+21
+      "seasonTotal": 6.495938716413621e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Gritchen",
-      "rank": 22,
-      "seasonTotal": 5.869639831070975e+21
+      "rank": 21,
+      "seasonTotal": 6.15486456128889e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Player 66607264",
+      "rank": 22,
+      "seasonTotal": 5.982670656082173e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "p88203044",
       "rank": 23,
-      "seasonTotal": 5.323463508197586e+21
+      "seasonTotal": 5.930063988544763e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -149,7 +149,7 @@
       "gainVsPreviousSeason": null,
       "name": "theLP",
       "rank": 25,
-      "seasonTotal": 4.378049182073532e+21
+      "seasonTotal": 4.808000546822244e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -161,7 +161,7 @@
       "gainVsPreviousSeason": null,
       "name": "EMBALOCO",
       "rank": 27,
-      "seasonTotal": 3.8238537177684163e+21
+      "seasonTotal": 3.9514984935621415e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -215,7 +215,7 @@
       "gainVsPreviousSeason": null,
       "name": "Belthazar",
       "rank": 36,
-      "seasonTotal": 8.758544967568148e+20
+      "seasonTotal": 9.12312113276638e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -5385,10 +5385,11 @@
             {
               "attempts": [
                 5.153845516700301e+21,
-                5.24751012964005e+21
+                5.24751012964005e+21,
+                6.241820337563874e+21
               ],
               "name": "DAYO-P",
-              "top2Sum": 1.0401355646340352e+22
+              "top2Sum": 1.1489330467203925e+22
             },
             {
               "attempts": [
@@ -5484,6 +5485,99 @@
               ],
               "name": "pumpenjoe",
               "top2Sum": 4.75701422838797e+21
+            },
+            {
+              "attempts": [
+                1.4522413884298664e+20,
+                1.4000059137492797e+20
+              ],
+              "name": "Gritchen",
+              "top2Sum": 2.8522473021791463e+20
+            },
+            {
+              "attempts": [
+                9.146217248785754e+20
+              ],
+              "name": "RetinaDNA",
+              "top2Sum": 9.146217248785754e+20
+            },
+            {
+              "attempts": [
+                1.3477839274030037e+19,
+                2.2979777245793112e+19
+              ],
+              "name": "Belthazar",
+              "top2Sum": 3.6457616519823147e+19
+            },
+            {
+              "attempts": [
+                2.0367661987396357e+20,
+                2.2627474487474844e+20
+              ],
+              "name": "theLP",
+              "top2Sum": 4.29951364748712e+20
+            },
+            {
+              "attempts": [
+                7.73399244920331e+19,
+                2.5111759449645475e+20
+              ],
+              "name": "\u76feHeathcliff\u5263",
+              "top2Sum": 3.284575189884878e+20
+            },
+            {
+              "attempts": [
+                3.695795831122423e+20,
+                2.7328725932007575e+20,
+                2.8962756477234522e+20
+              ],
+              "name": "Player 66607264",
+              "top2Sum": 6.592071478845875e+20
+            },
+            {
+              "attempts": [
+                5.915086889158257e+21,
+                5.691858621011456e+21
+              ],
+              "name": "Nubis",
+              "top2Sum": 1.1606945510169713e+22
+            },
+            {
+              "attempts": [
+                1.2764477579372528e+20
+              ],
+              "name": "EMBALOCO",
+              "top2Sum": 1.2764477579372528e+20
+            },
+            {
+              "attempts": [
+                6.008482806228917e+21,
+                4.186973262964128e+21,
+                5.414570920072756e+21
+              ],
+              "name": "RABBIT5",
+              "top2Sum": 1.1423053726301674e+22
+            }
+          ]
+        },
+        {
+          "date": "2026-10-19",
+          "day": 26,
+          "players": [
+            {
+              "attempts": [
+                1.626851481242059e+20
+              ],
+              "name": "HakiLuffy",
+              "top2Sum": 1.626851481242059e+20
+            },
+            {
+              "attempts": [
+                4.691383061444592e+21,
+                5.979916549352437e+21
+              ],
+              "name": "RABBIT5",
+              "top2Sum": 1.0671299610797029e+22
             }
           ]
         }
