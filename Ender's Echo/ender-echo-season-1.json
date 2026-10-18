@@ -119,7 +119,7 @@
       "gainVsPreviousSeason": null,
       "name": "HakiLuffy",
       "rank": 20,
-      "seasonTotal": 6.275953077998475e+21
+      "seasonTotal": 6.333253568289415e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -5334,10 +5334,11 @@
             {
               "attempts": [
                 1.2695792418236739e+20,
-                1.617667396125726e+20
+                1.617667396125726e+20,
+                1.8425841447330746e+20
               ],
               "name": "HakiLuffy",
-              "top2Sum": 2.8872466379494e+20
+              "top2Sum": 3.460251540858801e+20
             },
             {
               "attempts": [
