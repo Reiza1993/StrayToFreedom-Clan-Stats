@@ -143,7 +143,7 @@
       "gainVsPreviousSeason": null,
       "name": "Bensayyten",
       "rank": 24,
-      "seasonTotal": 4.803231632008643e+21
+      "seasonTotal": 5.215549147460173e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -5429,6 +5429,15 @@
               ],
               "name": "VictorMolusco",
               "top2Sum": 4.0330038188760734e+20
+            },
+            {
+              "attempts": [
+                1.7527211795669372e+20,
+                1.2772861273536704e+20,
+                2.370453974948364e+20
+              ],
+              "name": "Bensayyten",
+              "top2Sum": 4.123175154515301e+20
             }
           ]
         }
