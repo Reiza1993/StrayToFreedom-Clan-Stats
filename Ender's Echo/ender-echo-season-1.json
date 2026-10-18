@@ -29,7 +29,7 @@
       "gainVsPreviousSeason": null,
       "name": "DAYO-P",
       "rank": 5,
-      "seasonTotal": 2.207792265427678e+23
+      "seasonTotal": 2.2602673667240786e+23
     },
     {
       "gainVsPreviousSeason": null,
@@ -75,27 +75,27 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "MadameMischief",
+      "name": "pumpenjoe",
       "rank": 13,
-      "seasonTotal": 1.7517740467399227e+22
+      "seasonTotal": 1.8318195550248466e+22
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Koncalaz",
+      "name": "MadameMischief",
       "rank": 14,
-      "seasonTotal": 1.5936135319796664e+22
+      "seasonTotal": 1.7517740467399227e+22
     },
     {
       "gainVsPreviousSeason": null,
       "name": "PastalaVista",
       "rank": 15,
-      "seasonTotal": 1.5422110611339194e+22
+      "seasonTotal": 1.6838635407894167e+22
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "pumpenjoe",
+      "name": "Koncalaz",
       "rank": 16,
-      "seasonTotal": 1.3561181321860496e+22
+      "seasonTotal": 1.5936135319796664e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -123,15 +123,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Gritchen",
+      "name": "p88203044",
       "rank": 21,
-      "seasonTotal": 5.869639831070975e+21
+      "seasonTotal": 5.930063988544763e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "p88203044",
+      "name": "Gritchen",
       "rank": 22,
-      "seasonTotal": 5.622657779774445e+21
+      "seasonTotal": 5.869639831070975e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -195,21 +195,21 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "gubrax",
+      "name": "BobBobberson",
       "rank": 33,
-      "seasonTotal": 2.420037432061125e+21
+      "seasonTotal": 2.5039020864916113e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "BobBobberson",
+      "name": "gubrax",
       "rank": 34,
-      "seasonTotal": 2.381610308505597e+21
+      "seasonTotal": 2.420037432061125e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "samwise08",
       "rank": 35,
-      "seasonTotal": 1.9277566162797058e+21
+      "seasonTotal": 2.0240295339684806e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -243,15 +243,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "datamaster",
+      "name": "Cheeselife",
       "rank": 41,
-      "seasonTotal": 1.281020678969742e+20
+      "seasonTotal": 1.537637336606771e+20
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Cheeselife",
+      "name": "datamaster",
       "rank": 42,
-      "seasonTotal": 1.1887187337881292e+20
+      "seasonTotal": 1.281020678969742e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -5383,10 +5383,11 @@
             },
             {
               "attempts": [
-                5.153845516700301e+21
+                5.153845516700301e+21,
+                5.24751012964005e+21
               ],
               "name": "DAYO-P",
-              "top2Sum": 5.153845516700301e+21
+              "top2Sum": 1.0401355646340352e+22
             },
             {
               "attempts": [
@@ -5438,6 +5439,50 @@
               ],
               "name": "Bensayyten",
               "top2Sum": 4.123175154515301e+20
+            },
+            {
+              "attempts": [
+                3.074062087703177e+20
+              ],
+              "name": "p88203044",
+              "top2Sum": 3.074062087703177e+20
+            },
+            {
+              "attempts": [
+                3.489186028186419e+19
+              ],
+              "name": "Cheeselife",
+              "top2Sum": 3.489186028186419e+19
+            },
+            {
+              "attempts": [
+                7.167264895528408e+20,
+                6.997983070021312e+20
+              ],
+              "name": "PastalaVista",
+              "top2Sum": 1.416524796554972e+21
+            },
+            {
+              "attempts": [
+                9.627291768877489e+19
+              ],
+              "name": "samwise08",
+              "top2Sum": 9.627291768877489e+19
+            },
+            {
+              "attempts": [
+                1.2229177798601445e+20
+              ],
+              "name": "BobBobberson",
+              "top2Sum": 1.2229177798601445e+20
+            },
+            {
+              "attempts": [
+                2.0201356996601774e+21,
+                2.736878528727792e+21
+              ],
+              "name": "pumpenjoe",
+              "top2Sum": 4.75701422838797e+21
             }
           ]
         }
