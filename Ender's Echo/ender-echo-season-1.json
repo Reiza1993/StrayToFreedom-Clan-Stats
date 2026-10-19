@@ -21,15 +21,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "\u00d0\u318d\u2623zSpec\u2623",
+      "name": "DAYO-P",
       "rank": 4,
-      "seasonTotal": 2.2880367054832363e+23
+      "seasonTotal": 2.4212283262014435e+23
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "DAYO-P",
+      "name": "\u00d0\u318d\u2623zSpec\u2623",
       "rank": 5,
-      "seasonTotal": 2.2711471149327143e+23
+      "seasonTotal": 2.2880367054832363e+23
     },
     {
       "gainVsPreviousSeason": null,
@@ -173,7 +173,7 @@
       "gainVsPreviousSeason": null,
       "name": "BlackFlamE",
       "rank": 29,
-      "seasonTotal": 3.574673374579972e+21
+      "seasonTotal": 3.6571297326886667e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -5687,6 +5687,22 @@
               ],
               "name": "FlyingDutchy",
               "top2Sum": 1.408141702462194e+20
+            },
+            {
+              "attempts": [
+                7.018589677821274e+21,
+                7.658483823899771e+21,
+                7.349637302973148e+21
+              ],
+              "name": "DAYO-P",
+              "top2Sum": 1.500812112687292e+22
+            },
+            {
+              "attempts": [
+                8.24563581086946e+19
+              ],
+              "name": "BlackFlamE",
+              "top2Sum": 8.24563581086946e+19
             }
           ]
         }
