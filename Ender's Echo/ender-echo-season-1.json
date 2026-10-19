@@ -41,7 +41,7 @@
       "gainVsPreviousSeason": null,
       "name": "\u795eSterben\u6b7b",
       "rank": 7,
-      "seasonTotal": 1.3680480533861564e+23
+      "seasonTotal": 1.4080428442970766e+23
     },
     {
       "gainVsPreviousSeason": null,
@@ -53,7 +53,7 @@
       "gainVsPreviousSeason": null,
       "name": "SngphO",
       "rank": 9,
-      "seasonTotal": 9.858649744258412e+22
+      "seasonTotal": 1.0111945864653744e+23
     },
     {
       "gainVsPreviousSeason": null,
@@ -75,15 +75,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "pumpenjoe",
+      "name": "MadameMischief",
       "rank": 13,
-      "seasonTotal": 1.8318195550248466e+22
+      "seasonTotal": 1.835775619995219e+22
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "MadameMischief",
+      "name": "pumpenjoe",
       "rank": 14,
-      "seasonTotal": 1.7517740467399227e+22
+      "seasonTotal": 1.8318195550248466e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -113,7 +113,7 @@
       "gainVsPreviousSeason": null,
       "name": "VictorMolusco",
       "rank": 19,
-      "seasonTotal": 7.096208065210113e+21
+      "seasonTotal": 7.142859399136702e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -177,15 +177,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "faxnem",
+      "name": "Rzzza",
       "rank": 30,
-      "seasonTotal": 2.711344180139725e+21
+      "seasonTotal": 2.815386712578243e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Rzzza",
+      "name": "faxnem",
       "rank": 31,
-      "seasonTotal": 2.701155446343473e+21
+      "seasonTotal": 2.711344180139725e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -5595,6 +5595,43 @@
               ],
               "name": "Fl3xas",
               "top2Sum": 7.2082103312637e+22
+            },
+            {
+              "attempts": [
+                1.5836373634268748e+19,
+                3.0814960292321112e+19
+              ],
+              "name": "VictorMolusco",
+              "top2Sum": 4.665133392658986e+19
+            },
+            {
+              "attempts": [
+                3.9994790910920224e+21
+              ],
+              "name": "\u795eSterben\u6b7b",
+              "top2Sum": 3.9994790910920224e+21
+            },
+            {
+              "attempts": [
+                1.1423126623477034e+20
+              ],
+              "name": "Rzzza",
+              "top2Sum": 1.1423126623477034e+20
+            },
+            {
+              "attempts": [
+                2.5329612039533195e+21
+              ],
+              "name": "SngphO",
+              "top2Sum": 2.5329612039533195e+21
+            },
+            {
+              "attempts": [
+                4.715529785394827e+20,
+                3.6846275401348055e+20
+              ],
+              "name": "MadameMischief",
+              "top2Sum": 8.400157325529632e+20
             }
           ]
         }
