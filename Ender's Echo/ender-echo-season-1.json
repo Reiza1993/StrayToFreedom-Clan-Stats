@@ -105,57 +105,57 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Apathy_",
+      "name": "NeonCBV",
       "rank": 18,
+      "seasonTotal": 7.622657550193639e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "Apathy_",
+      "rank": 19,
       "seasonTotal": 7.14718191112899e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "VictorMolusco",
-      "rank": 19,
+      "rank": 20,
       "seasonTotal": 7.142859399136702e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "HakiLuffy",
-      "rank": 20,
+      "rank": 21,
       "seasonTotal": 6.495938716413621e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Gritchen",
-      "rank": 21,
+      "rank": 22,
       "seasonTotal": 6.15486456128889e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Player 66607264",
-      "rank": 22,
+      "rank": 23,
       "seasonTotal": 5.982670656082173e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "p88203044",
-      "rank": 23,
+      "rank": 24,
       "seasonTotal": 5.930063988544763e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Bensayyten",
-      "rank": 24,
+      "rank": 25,
       "seasonTotal": 5.215549147460173e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "theLP",
-      "rank": 25,
-      "seasonTotal": 4.808000546822244e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "NeonCBV",
       "rank": 26,
-      "seasonTotal": 4.0030110122678855e+21
+      "seasonTotal": 4.808000546822244e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -197,7 +197,7 @@
       "gainVsPreviousSeason": null,
       "name": "BobBobberson",
       "rank": 33,
-      "seasonTotal": 2.5039020864916113e+21
+      "seasonTotal": 2.637413084034433e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -5632,6 +5632,21 @@
               ],
               "name": "MadameMischief",
               "top2Sum": 8.400157325529632e+20
+            },
+            {
+              "attempts": [
+                1.3351099754282164e+20
+              ],
+              "name": "BobBobberson",
+              "top2Sum": 1.3351099754282164e+20
+            },
+            {
+              "attempts": [
+                1.711414436075721e+21,
+                1.9082321018500326e+21
+              ],
+              "name": "NeonCBV",
+              "top2Sum": 3.6196465379257536e+21
             }
           ]
         }
