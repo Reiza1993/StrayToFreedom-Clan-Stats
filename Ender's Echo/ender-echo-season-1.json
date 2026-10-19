@@ -77,7 +77,7 @@
       "gainVsPreviousSeason": null,
       "name": "MadameMischief",
       "rank": 13,
-      "seasonTotal": 1.835775619995219e+22
+      "seasonTotal": 1.8994353121365873e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -111,15 +111,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Apathy_",
+      "name": "VictorMolusco",
       "rank": 19,
-      "seasonTotal": 7.14718191112899e+21
+      "seasonTotal": 7.150043221259512e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "VictorMolusco",
+      "name": "Apathy_",
       "rank": 20,
-      "seasonTotal": 7.142859399136702e+21
+      "seasonTotal": 7.14718191112899e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -131,7 +131,7 @@
       "gainVsPreviousSeason": null,
       "name": "HakiLuffy",
       "rank": 22,
-      "seasonTotal": 6.495938716413621e+21
+      "seasonTotal": 6.666696062946561e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -5753,6 +5753,35 @@
               ],
               "name": "Player 66607264",
               "top2Sum": 7.472316373078449e+20
+            }
+          ]
+        },
+        {
+          "date": "2026-10-20",
+          "day": 27,
+          "players": [
+            {
+              "attempts": [
+                4.577973465257511e+18,
+                2.6058486575523845e+18
+              ],
+              "name": "VictorMolusco",
+              "top2Sum": 7.183822122809895e+18
+            },
+            {
+              "attempts": [
+                1.707573465329398e+20
+              ],
+              "name": "HakiLuffy",
+              "top2Sum": 1.707573465329398e+20
+            },
+            {
+              "attempts": [
+                1.974394154918369e+20,
+                4.391575059218485e+20
+              ],
+              "name": "MadameMischief",
+              "top2Sum": 6.365969214136855e+20
             }
           ]
         }
