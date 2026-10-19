@@ -89,7 +89,7 @@
       "gainVsPreviousSeason": null,
       "name": "PastalaVista",
       "rank": 15,
-      "seasonTotal": 1.6838635407894167e+22
+      "seasonTotal": 1.825768255323454e+22
     },
     {
       "gainVsPreviousSeason": null,
@@ -149,7 +149,7 @@
       "gainVsPreviousSeason": null,
       "name": "Bensayyten",
       "rank": 25,
-      "seasonTotal": 5.215549147460173e+21
+      "seasonTotal": 5.687658441092638e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -159,21 +159,21 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "EMBALOCO",
+      "name": "groggen",
       "rank": 27,
+      "seasonTotal": 4.112261821661208e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "EMBALOCO",
+      "rank": 28,
       "seasonTotal": 3.9514984935621415e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "BlackFlamE",
-      "rank": 28,
-      "seasonTotal": 3.574673374579972e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "groggen",
       "rank": 29,
-      "seasonTotal": 3.510462653294193e+21
+      "seasonTotal": 3.574673374579972e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -215,7 +215,7 @@
       "gainVsPreviousSeason": null,
       "name": "Belthazar",
       "rank": 36,
-      "seasonTotal": 9.12312113276638e+20
+      "seasonTotal": 9.546246501144743e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -233,7 +233,7 @@
       "gainVsPreviousSeason": null,
       "name": "FlyingDutchy",
       "rank": 39,
-      "seasonTotal": 3.036258355377675e+20
+      "seasonTotal": 4.444400057839869e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -5647,6 +5647,46 @@
               ],
               "name": "NeonCBV",
               "top2Sum": 3.6196465379257536e+21
+            },
+            {
+              "attempts": [
+                2.3891535202571354e+19,
+                1.842100163526499e+19
+              ],
+              "name": "Belthazar",
+              "top2Sum": 4.231253683783634e+19
+            },
+            {
+              "attempts": [
+                2.0094770903925624e+20,
+                1.876988388284342e+20,
+                2.711615845932087e+20
+              ],
+              "name": "Bensayyten",
+              "top2Sum": 4.7210929363246495e+20
+            },
+            {
+              "attempts": [
+                6.983023210207411e+20,
+                7.207448243196329e+20
+              ],
+              "name": "PastalaVista",
+              "top2Sum": 1.4190471453403738e+21
+            },
+            {
+              "attempts": [
+                3.136955960484933e+20,
+                2.881035723185222e+20
+              ],
+              "name": "groggen",
+              "top2Sum": 6.017991683670155e+20
+            },
+            {
+              "attempts": [
+                1.408141702462194e+20
+              ],
+              "name": "FlyingDutchy",
+              "top2Sum": 1.408141702462194e+20
             }
           ]
         }
