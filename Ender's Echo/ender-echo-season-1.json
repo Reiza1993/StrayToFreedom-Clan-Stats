@@ -101,7 +101,7 @@
       "gainVsPreviousSeason": null,
       "name": "\u76feHeathcliff\u5263",
       "rank": 17,
-      "seasonTotal": 8.074183441821064e+21
+      "seasonTotal": 8.33703362569705e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -123,27 +123,27 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "HakiLuffy",
+      "name": "Player 66607264",
       "rank": 21,
+      "seasonTotal": 6.729902293390018e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "HakiLuffy",
+      "rank": 22,
       "seasonTotal": 6.495938716413621e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Gritchen",
-      "rank": 22,
-      "seasonTotal": 6.15486456128889e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "Player 66607264",
-      "rank": 23,
-      "seasonTotal": 5.982670656082173e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
       "name": "p88203044",
+      "rank": 23,
+      "seasonTotal": 6.326876562453258e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "Gritchen",
       "rank": 24,
-      "seasonTotal": 5.930063988544763e+21
+      "seasonTotal": 6.15486456128889e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -155,7 +155,7 @@
       "gainVsPreviousSeason": null,
       "name": "theLP",
       "rank": 26,
-      "seasonTotal": 4.808000546822244e+21
+      "seasonTotal": 5.177674937270747e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -173,7 +173,7 @@
       "gainVsPreviousSeason": null,
       "name": "BlackFlamE",
       "rank": 29,
-      "seasonTotal": 3.6571297326886667e+21
+      "seasonTotal": 3.7424937227761064e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -203,7 +203,7 @@
       "gainVsPreviousSeason": null,
       "name": "gubrax",
       "rank": 34,
-      "seasonTotal": 2.420037432061125e+21
+      "seasonTotal": 2.552389034583362e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -5700,17 +5700,20 @@
             },
             {
               "attempts": [
-                8.24563581086946e+19
+                8.24563581086946e+19,
+                8.536399008744004e+19
               ],
               "name": "BlackFlamE",
-              "top2Sum": 8.24563581086946e+19
+              "top2Sum": 1.6782034819613465e+20
             },
             {
               "attempts": [
-                3.9486900824804825e+20
+                3.9486900824804825e+20,
+                2.0883915405378057e+20,
+                2.628501838759853e+20
               ],
               "name": "\u76feHeathcliff\u5263",
-              "top2Sum": 3.9486900824804825e+20
+              "top2Sum": 6.577191921240336e+20
             },
             {
               "attempts": [
@@ -5719,6 +5722,37 @@
               ],
               "name": "Nubis",
               "top2Sum": 1.2620034677145822e+22
+            },
+            {
+              "attempts": [
+                7.312039635021041e+19,
+                5.923120617202643e+19
+              ],
+              "name": "gubrax",
+              "top2Sum": 1.3235160252223685e+20
+            },
+            {
+              "attempts": [
+                2.1706109588738602e+20,
+                1.5261329456111652e+20
+              ],
+              "name": "theLP",
+              "top2Sum": 3.6967439044850254e+20
+            },
+            {
+              "attempts": [
+                3.968125739084953e+20
+              ],
+              "name": "p88203044",
+              "top2Sum": 3.968125739084953e+20
+            },
+            {
+              "attempts": [
+                3.755070594437298e+20,
+                3.71724577864115e+20
+              ],
+              "name": "Player 66607264",
+              "top2Sum": 7.472316373078449e+20
             }
           ]
         }
