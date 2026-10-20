@@ -99,15 +99,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "\u76feHeathcliff\u5263",
+      "name": "NeonCBV",
       "rank": 17,
-      "seasonTotal": 8.33703362569705e+21
+      "seasonTotal": 1.002729624446809e+22
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "NeonCBV",
+      "name": "\u76feHeathcliff\u5263",
       "rank": 18,
-      "seasonTotal": 7.622657550193639e+21
+      "seasonTotal": 8.33703362569705e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -215,7 +215,7 @@
       "gainVsPreviousSeason": null,
       "name": "Belthazar",
       "rank": 36,
-      "seasonTotal": 9.546246501144743e+20
+      "seasonTotal": 9.8983639443043e+20
     },
     {
       "gainVsPreviousSeason": null,
@@ -5828,6 +5828,21 @@
               ],
               "name": "Rzzza",
               "top2Sum": 1.1253950011928278e+20
+            },
+            {
+              "attempts": [
+                1.9993477780033634e+19,
+                1.5218266535922125e+19
+              ],
+              "name": "Belthazar",
+              "top2Sum": 3.5211744315955757e+19
+            },
+            {
+              "attempts": [
+                2.4046386942744514e+21
+              ],
+              "name": "NeonCBV",
+              "top2Sum": 2.4046386942744514e+21
             }
           ]
         }
