@@ -23,7 +23,7 @@
       "gainVsPreviousSeason": null,
       "name": "DAYO-P",
       "rank": 4,
-      "seasonTotal": 2.5045612990435136e+23
+      "seasonTotal": 2.5802155698364624e+23
     },
     {
       "gainVsPreviousSeason": null,
@@ -161,7 +161,7 @@
       "gainVsPreviousSeason": null,
       "name": "groggen",
       "rank": 27,
-      "seasonTotal": 4.112261821661208e+21
+      "seasonTotal": 4.315412678562859e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -173,7 +173,7 @@
       "gainVsPreviousSeason": null,
       "name": "BlackFlamE",
       "rank": 29,
-      "seasonTotal": 3.7424937227761064e+21
+      "seasonTotal": 3.893504354244954e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -209,7 +209,7 @@
       "gainVsPreviousSeason": null,
       "name": "samwise08",
       "rank": 35,
-      "seasonTotal": 2.0240295339684806e+21
+      "seasonTotal": 2.1336081302726325e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -5786,10 +5786,12 @@
             {
               "attempts": [
                 3.7298098483830703e+21,
-                4.6034874358239425e+21
+                4.6034874358239425e+21,
+                8.25502321604154e+21,
+                7.643701147460342e+21
               ],
               "name": "DAYO-P",
-              "top2Sum": 8.333297284207012e+21
+              "top2Sum": 1.589872436350188e+22
             },
             {
               "attempts": [
@@ -5843,6 +5845,28 @@
               ],
               "name": "NeonCBV",
               "top2Sum": 2.4046386942744514e+21
+            },
+            {
+              "attempts": [
+                1.0957859630415186e+20
+              ],
+              "name": "samwise08",
+              "top2Sum": 1.0957859630415186e+20
+            },
+            {
+              "attempts": [
+                2.0315085690165117e+20
+              ],
+              "name": "groggen",
+              "top2Sum": 2.0315085690165117e+20
+            },
+            {
+              "attempts": [
+                8.509518345674491e+19,
+                6.59154480121028e+19
+              ],
+              "name": "BlackFlamE",
+              "top2Sum": 1.5101063146884773e+20
             }
           ]
         }
