@@ -107,7 +107,7 @@
       "gainVsPreviousSeason": null,
       "name": "\u76feHeathcliff\u5263",
       "rank": 18,
-      "seasonTotal": 8.33703362569705e+21
+      "seasonTotal": 8.64883325843079e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -5891,6 +5891,13 @@
               ],
               "name": "Nubis",
               "top2Sum": 1.2868565842780639e+22
+            },
+            {
+              "attempts": [
+                3.117996327337396e+20
+              ],
+              "name": "\u76feHeathcliff\u5263",
+              "top2Sum": 3.117996327337396e+20
             }
           ]
         }
