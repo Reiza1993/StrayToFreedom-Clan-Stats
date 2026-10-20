@@ -177,15 +177,15 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "silverxz",
+      "name": "Rzzza",
       "rank": 30,
-      "seasonTotal": 2.8663645064430984e+21
+      "seasonTotal": 2.927926212697526e+21
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "Rzzza",
+      "name": "silverxz",
       "rank": 31,
-      "seasonTotal": 2.815386712578243e+21
+      "seasonTotal": 2.8663645064430984e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -5821,6 +5821,13 @@
               ],
               "name": "RABBIT5",
               "top2Sum": 1.4318355379166743e+22
+            },
+            {
+              "attempts": [
+                1.1253950011928278e+20
+              ],
+              "name": "Rzzza",
+              "top2Sum": 1.1253950011928278e+20
             }
           ]
         }
