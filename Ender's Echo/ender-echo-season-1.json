@@ -17,7 +17,7 @@
       "gainVsPreviousSeason": null,
       "name": "Nubis",
       "rank": 3,
-      "seasonTotal": 2.7503177023596178e+23
+      "seasonTotal": 2.8790033607874243e+23
     },
     {
       "gainVsPreviousSeason": null,
@@ -111,21 +111,21 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "VictorMolusco",
+      "name": "Player 66607264",
       "rank": 19,
+      "seasonTotal": 7.416126971168023e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "VictorMolusco",
+      "rank": 20,
       "seasonTotal": 7.150043221259512e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "Apathy_",
-      "rank": 20,
-      "seasonTotal": 7.14718191112899e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "Player 66607264",
       "rank": 21,
-      "seasonTotal": 6.729902293390018e+21
+      "seasonTotal": 7.14718191112899e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -203,7 +203,7 @@
       "gainVsPreviousSeason": null,
       "name": "gubrax",
       "rank": 34,
-      "seasonTotal": 2.552389034583362e+21
+      "seasonTotal": 2.6591232378013913e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -5867,6 +5867,30 @@
               ],
               "name": "BlackFlamE",
               "top2Sum": 1.5101063146884773e+20
+            },
+            {
+              "attempts": [
+                4.898757325741375e+19,
+                5.774662996061556e+19
+              ],
+              "name": "gubrax",
+              "top2Sum": 1.0673420321802931e+20
+            },
+            {
+              "attempts": [
+                3.9037765137383005e+20,
+                2.958470264041752e+20
+              ],
+              "name": "Player 66607264",
+              "top2Sum": 6.862246777780052e+20
+            },
+            {
+              "attempts": [
+                6.730738438191667e+21,
+                6.137827404588973e+21
+              ],
+              "name": "Nubis",
+              "top2Sum": 1.2868565842780639e+22
             }
           ]
         }
