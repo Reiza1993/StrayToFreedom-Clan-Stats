@@ -106,48 +106,27 @@ When a player leaves the clan, apply the following changes across subsequent upd
 
 ---
 
-## Updating `Lunar Mine Expedition/Summary.json`
+## `Lunar Mine Expedition/Summary.json` & `SummaryLegacy.json`
 
-A lightweight per-LME index (clan totals only — no per-member or per-round
-data; that stays in the full per-LME detail files) used by the P1 Score
-progression graph on the LME History page. Lives alongside that folder's
-`LME{n}.json` cycle files so the Clash Tracker can maintain it the same
-way going forward — until then, update it manually. After finishing the
-LME update
-above (player scores + the new `lmeHistory` entry in `clanStats.js`),
-append **one new row**:
+Together these feed the P1 Score progression graph and the Lunar Points
+stat on the LME tab. **Fully automated now — nothing to update by hand.**
 
-```json
-{
-  "lmeNumber": 60,
-  "date": "2026-09-22",
-  "totalP1Score": 101558,
-  "finalRank": 2,
-  "lunarPoints": 1477,
-  "league": "Champion"
-}
-```
-
-- `lmeNumber`, `finalRank` (= the new `lmeHistory` entry's `rank`), `league`
-  — copy straight from the `lmeHistory` entry you just added.
-- `totalP1Score` — **the same Top 30 total already shown on the LME tab**
-  ("Total LME (Top 30)" stat, `lme-total-score` — see
-  `calculateLMETabSummary()` in `index.html`): sort every player's current
-  LME score descending (from `playerLME.js`'s `current` object as of this
-  update — this is the file that actually carries live P1 scores now;
-  `playerData.js` is a retired file kept only for its pre-2026-07-14
-  history) and sum the top 30. **Not** every player's score — that
-  overcounts against a 39-40 member roster and won't match the dashboard's
-  own number.
-- `lunarPoints` — the clan's current Lunar Points figure as shown on the
-  dashboard (baseline + the running per-cycle delta from LME #31 onward;
-  see `calculateLunarPointsFromBaseline()` in `index.html`).
-- `date` — the date of this update.
-
-**Ordering: append to the bottom (ascending by `lmeNumber`)** — the
-opposite of `lmeHistory`'s newest-first convention. This file is read
-directly as a chart time series (oldest → newest, left → right), so it's
-kept in that order rather than matching `lmeHistory`.
+- **`SummaryLegacy.json`** — the backfilled history (lmeNumber 11-59),
+  frozen in this repo's own schema (`lmeNumber`/`date`/`totalP1Score`/
+  `finalRank`/`lunarPoints`/`league`). It won't change again; it exists
+  purely so the chart keeps its pre-tracker history.
+- **`Summary.json`** — the Clash Tracker's own live file, append-only, in
+  its own schema (`lmeNumber`/`generatedAt`/`rank`/`totalLme1stScore`/
+  `lunarPoints`, no `league`) and its own cycle numbering (unrelated to
+  the legacy `lmeNumber` sequence — don't assume one bridges the other).
+  The tracker maintains this on its own each cycle; nobody needs to edit
+  it.
+- `fetchP1ScoreHistory()` in `index.html` fetches both, normalizes the
+  live rows into the legacy shape, and sorts the combined set by actual
+  date (the only field comparable across both schemas) — so the chart
+  (and `updateLunarPointsDisplay()`, which just reads the latest row's
+  `lunarPoints`) see one continuous series without needing either file's
+  schema to match the other.
 
 If a mid-cycle score correction comes in before the next LME, update that
 same row in place rather than appending a duplicate.

@@ -1230,22 +1230,6 @@
             document.getElementById('cx-total-boss').textContent = totalBoss.toLocaleString();
         }
 
-        // ══════════════════════════════════════════════
-        //  LUNAR POINTS CALCULATOR
-        // ══════════════════════════════════════════════
-        function calculateLunarPoints() {
-            let total = 0;
-            lmeHistory.forEach(lme => {
-                const league = lme.league.toLowerCase();
-                if (league === 'champion') {
-                    total += (LUNAR_POINTS_TABLE.champion[lme.rank] || 0);
-                } else if (league.includes('legend')) {
-                    total += (LUNAR_POINTS_TABLE.legend[lme.rank] || 0);
-                }
-            });
-            return total;
-        }
-
         function translateLeague(str) {
             if (!str) return str;
             const parts = str.trim().split(' ');
@@ -1266,36 +1250,35 @@
         }
 
         // ══════════════════════════════════════════════
-        //  LUNAR POINTS — baseline from clanStats.js
-        //  Changes calculated from LME #31 onward only
+        //  LUNAR POINTS — read directly from the latest entry in
+        //  "Lunar Mine Expedition"/Summary.json (the Clash Tracker's own,
+        //  authoritative per-cycle value), not recomputed from
+        //  clanStats.js's lmeHistory + LUNAR_POINTS_TABLE. lmeHistory
+        //  stopped being reliably kept current (stuck at lmeNumber 60 for
+        //  weeks while Summary.json already has several newer cycles),
+        //  and the real per-cycle deltas no longer match that simple
+        //  rank/league table either once other mechanics (a win-streak
+        //  bonus, the difficulty-16 era) started affecting them — so this
+        //  trusts the tracker's own number instead of re-deriving one.
+        //  computeLunarTrend() below still uses the old table for its
+        //  pre-tracker legacy segment, which that formula is still valid
+        //  for.
         // ══════════════════════════════════════════════
-        function calculateLunarPointsFromBaseline() {
-            let delta = 0;
-            lmeHistory.forEach(lme => {
-                if (lme.lmeNumber < 31) return;
-                const league = lme.league.toLowerCase();
-                if (league === 'champion')          delta += (LUNAR_POINTS_TABLE.champion[lme.rank] || 0);
-                else if (league.includes('legend')) delta += (LUNAR_POINTS_TABLE.legend[lme.rank]   || 0);
-            });
+        async function updateLunarPointsDisplay() {
+            const rows = await fetchP1ScoreHistory();
+            const withPoints = rows.filter(r => r.lunarPoints !== null && r.lunarPoints !== undefined);
 
-            let lastGain = 0;
-            if (lmeHistory.length > 0) {
-                const latest = lmeHistory[0];
-                if (latest.lmeNumber >= 31) {
-                    const league = latest.league.toLowerCase();
-                    if (league === 'champion')          lastGain = (LUNAR_POINTS_TABLE.champion[latest.rank] || 0);
-                    else if (league.includes('legend')) lastGain = (LUNAR_POINTS_TABLE.legend[latest.rank]   || 0);
-                }
+            if (withPoints.length === 0) {
+                document.getElementById('lme-lunar-pts').textContent = '—';
+                document.getElementById('lme-lunar-pts-gain').innerHTML = '';
+                return;
             }
 
-            const baseline = clanStats.lunarPoints;
-            return { total: baseline + delta, delta: lastGain };
-        }
+            const latest = withPoints[withPoints.length - 1];
+            const prev   = withPoints[withPoints.length - 2];
+            const delta  = prev ? latest.lunarPoints - prev.lunarPoints : 0;
 
-        function updateLunarPointsDisplay() {
-            const { total: lunarPts, delta } = calculateLunarPointsFromBaseline();
-
-            document.getElementById('lme-lunar-pts').textContent = lunarPts;
+            document.getElementById('lme-lunar-pts').textContent = latest.lunarPoints;
             if (delta !== 0) {
                 const sign = delta > 0 ? '+' : '';
                 const cls  = delta > 0 ? 'gain-positive' : 'gain-negative';
@@ -1669,17 +1652,22 @@
             container.appendChild(buildLunarTrendSection(points, p1Points));
         }
 
-        // Lunar Mine Expedition/Summary.json — a lightweight per-LME index
-        // (clan totals only, no per-member/per-round detail) kept purely
-        // for fast trend charts like this one. Ascending by lmeNumber
-        // already (see INSTRUCTIONS_GUIDE.MD), unlike clanStats.js's
-        // lmeHistory. Lives alongside LME{n}.json in the same folder so
-        // the Clash Tracker can maintain it going forward the same way it
-        // already maintains those.
-        async function fetchP1ScoreHistory() {
+        // Lunar Mine Expedition/SummaryLegacy.json — the backfilled P1
+        // Score history (lmeNumber 11-59), frozen in this repo's own
+        // schema (date/totalP1Score/finalRank/lunarPoints/league) once
+        // the Clash Tracker started maintaining its own Summary.json from
+        // the next cycle onward. Lunar Mine Expedition/Summary.json is
+        // that live file: append-only, in the tracker's OWN schema
+        // (generatedAt/rank/totalLme1stScore, no league) and its OWN
+        // cycle numbering — don't assume a fixed offset bridges the two
+        // numbering schemes, they just aren't the same sequence. Both are
+        // normalized to the legacy shape here so they chart as one
+        // series, and sorted by real date rather than lmeNumber since
+        // date is the only thing comparable across both sources.
+        async function fetchSummaryFile(filename) {
             let res;
             try {
-                res = await fetch(encodeURI(`${LME_CYCLES_FOLDER}/Summary.json`), { cache: 'no-cache' });
+                res = await fetch(encodeURI(`${LME_CYCLES_FOLDER}/${filename}`), { cache: 'no-cache' });
             } catch (err) {
                 return [];
             }
@@ -1690,6 +1678,24 @@
             } catch (err) {
                 return [];
             }
+        }
+
+        async function fetchP1ScoreHistory() {
+            const [legacyRows, liveRows] = await Promise.all([
+                fetchSummaryFile('SummaryLegacy.json'),
+                fetchSummaryFile('Summary.json'),
+            ]);
+
+            const normalizedLive = liveRows.map(r => ({
+                lmeNumber: r.lmeNumber,
+                date: (r.generatedAt || '').slice(0, 10),
+                totalP1Score: r.totalLme1stScore,
+                finalRank: r.rank,
+                lunarPoints: r.lunarPoints,
+                league: null,
+            }));
+
+            return [...legacyRows, ...normalizedLive].sort((a, b) => new Date(a.date) - new Date(b.date));
         }
 
         // Each LME cycle runs roughly weekly, so "last N weeks" is just the
