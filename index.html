@@ -1250,19 +1250,29 @@
         }
 
         // ══════════════════════════════════════════════
-        //  LUNAR POINTS — read directly from the latest entry in
+        //  LUNAR POINTS — read from the latest entry in
         //  "Lunar Mine Expedition"/Summary.json (the Clash Tracker's own,
         //  authoritative per-cycle value), not recomputed from
         //  clanStats.js's lmeHistory + LUNAR_POINTS_TABLE. lmeHistory
         //  stopped being reliably kept current (stuck at lmeNumber 60 for
-        //  weeks while Summary.json already has several newer cycles),
-        //  and the real per-cycle deltas no longer match that simple
-        //  rank/league table either once other mechanics (a win-streak
-        //  bonus, the difficulty-16 era) started affecting them — so this
-        //  trusts the tracker's own number instead of re-deriving one.
-        //  computeLunarTrend() below still uses the old table for its
-        //  pre-tracker legacy segment, which that formula is still valid
-        //  for.
+        //  weeks while Summary.json already had several newer cycles).
+        //
+        //  One correction is still needed: Summary.json is generated
+        //  while that cycle's "Ranking Day" is still in progress, so its
+        //  own rank is already known but the game hasn't credited that
+        //  cycle's Lunar Points yet — the `lunarPoints` value on the
+        //  LATEST row is still last cycle's already-credited total, not
+        //  this cycle's. Verified against the full 50-transition merged
+        //  history: every tracker-generated transition's delta matches
+        //  LUNAR_POINTS_TABLE[league][the PREVIOUS row's rank], never its
+        //  own row's rank (the table itself is still exactly right — no
+        //  streak bonus or difficulty-16 scaling needed). So the latest
+        //  row's own not-yet-credited rank is projected forward by one
+        //  table lookup instead of taken at face value. This only
+        //  applies to Summary.json rows (flagged pendingRankCredit in
+        //  fetchP1ScoreHistory()) — SummaryLegacy.json's lunarPoints were
+        //  already fully credited when backfilled, so a legacy row never
+        //  needs this projection.
         // ══════════════════════════════════════════════
         async function updateLunarPointsDisplay() {
             const rows = await fetchP1ScoreHistory();
@@ -1275,10 +1285,20 @@
             }
 
             const latest = withPoints[withPoints.length - 1];
-            const prev   = withPoints[withPoints.length - 2];
-            const delta  = prev ? latest.lunarPoints - prev.lunarPoints : 0;
+            let lunarPts, delta;
 
-            document.getElementById('lme-lunar-pts').textContent = latest.lunarPoints;
+            if (latest.pendingRankCredit && latest.finalRank != null) {
+                const league = (clanStats.lmeLeague || '').toLowerCase();
+                const table  = league.includes('legend') ? LUNAR_POINTS_TABLE.legend : LUNAR_POINTS_TABLE.champion;
+                delta    = table[latest.finalRank] || 0;
+                lunarPts = latest.lunarPoints + delta;
+            } else {
+                const prev = withPoints[withPoints.length - 2];
+                delta    = prev ? latest.lunarPoints - prev.lunarPoints : 0;
+                lunarPts = latest.lunarPoints;
+            }
+
+            document.getElementById('lme-lunar-pts').textContent = lunarPts;
             if (delta !== 0) {
                 const sign = delta > 0 ? '+' : '';
                 const cls  = delta > 0 ? 'gain-positive' : 'gain-negative';
@@ -1686,6 +1706,11 @@
                 fetchSummaryFile('Summary.json'),
             ]);
 
+            // pendingRankCredit flags rows whose lunarPoints hasn't had
+            // that SAME row's own rank credited yet (see
+            // updateLunarPointsDisplay()) — only ever true for live rows,
+            // never for the already-settled legacy backfill.
+            const normalizedLegacy = legacyRows.map(r => ({ ...r, pendingRankCredit: false }));
             const normalizedLive = liveRows.map(r => ({
                 lmeNumber: r.lmeNumber,
                 date: (r.generatedAt || '').slice(0, 10),
@@ -1693,10 +1718,12 @@
                 finalRank: r.rank,
                 lunarPoints: r.lunarPoints,
                 league: null,
+                pendingRankCredit: true,
             }));
 
-            return [...legacyRows, ...normalizedLive].sort((a, b) => new Date(a.date) - new Date(b.date));
+            return [...normalizedLegacy, ...normalizedLive].sort((a, b) => new Date(a.date) - new Date(b.date));
         }
+
 
         // Each LME cycle runs roughly weekly, so "last N weeks" is just the
         // last N plotted points — there's no independent weekly timestamp to
