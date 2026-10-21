@@ -1265,14 +1265,19 @@
         //  this cycle's. Verified against the full 50-transition merged
         //  history: every tracker-generated transition's delta matches
         //  LUNAR_POINTS_TABLE[league][the PREVIOUS row's rank], never its
-        //  own row's rank (the table itself is still exactly right — no
-        //  streak bonus or difficulty-16 scaling needed). So the latest
-        //  row's own not-yet-credited rank is projected forward by one
-        //  table lookup instead of taken at face value. This only
-        //  applies to Summary.json rows (flagged pendingRankCredit in
-        //  fetchP1ScoreHistory()) — SummaryLegacy.json's lunarPoints were
-        //  already fully credited when backfilled, so a legacy row never
-        //  needs this projection.
+        //  own row's rank. So the latest row's own not-yet-credited rank
+        //  is projected forward by one table lookup instead of taken at
+        //  face value. This only applies to Summary.json rows (flagged
+        //  pendingRankCredit in fetchP1ScoreHistory()) —
+        //  SummaryLegacy.json's lunarPoints were already fully credited
+        //  when backfilled, so a legacy row never needs this projection.
+        //
+        //  Back-to-back 1st-place bonus: a 2nd CONSECUTIVE rank-1 finish
+        //  doubles that cycle's reward (Champion: +20 -> +40). Confirmed
+        //  sequence: 1st(+20), 1st(+40), 4th(-20) [streak broken],
+        //  1st(+20), 1st(+40). A 3rd+ consecutive rank-1 finish (not yet
+        //  seen in practice) is assumed to stay doubled rather than reset
+        //  or escalate further — flag this if that's wrong.
         // ══════════════════════════════════════════════
         async function updateLunarPointsDisplay() {
             const rows = await fetchP1ScoreHistory();
@@ -1285,15 +1290,19 @@
             }
 
             const latest = withPoints[withPoints.length - 1];
+            const prev   = withPoints[withPoints.length - 2];
             let lunarPts, delta;
 
             if (latest.pendingRankCredit && latest.finalRank != null) {
                 const league = (clanStats.lmeLeague || '').toLowerCase();
                 const table  = league.includes('legend') ? LUNAR_POINTS_TABLE.legend : LUNAR_POINTS_TABLE.champion;
-                delta    = table[latest.finalRank] || 0;
-                lunarPts = latest.lunarPoints + delta;
+                let reward = table[latest.finalRank] || 0;
+                if (latest.finalRank === 1 && prev && prev.finalRank === 1) {
+                    reward *= 2;
+                }
+                delta    = reward;
+                lunarPts = latest.lunarPoints + reward;
             } else {
-                const prev = withPoints[withPoints.length - 2];
                 delta    = prev ? latest.lunarPoints - prev.lunarPoints : 0;
                 lunarPts = latest.lunarPoints;
             }
