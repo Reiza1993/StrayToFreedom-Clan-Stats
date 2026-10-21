@@ -1,7 +1,48 @@
 {
   "endDate": "2026-11-18",
-  "leaderboard": [],
-  "miniSeasons": [],
+  "leaderboard": [
+    {
+      "gainVsPreviousSeason": -2.5559637615420688e+23,
+      "name": "DAYO-P",
+      "rank": 1,
+      "seasonTotal": 1.8338687869380687e+22
+    },
+    {
+      "gainVsPreviousSeason": -5.967191239271268e+21,
+      "name": "Bensayyten",
+      "rank": 2,
+      "seasonTotal": 2.2867418390941578e+20
+    }
+  ],
+  "miniSeasons": [
+    {
+      "days": [
+        {
+          "date": "2026-10-22",
+          "day": 1,
+          "players": [
+            {
+              "attempts": [
+                2.2867418390941578e+20
+              ],
+              "name": "Bensayyten",
+              "top2Sum": 2.2867418390941578e+20
+            },
+            {
+              "attempts": [
+                9.105054537453592e+21,
+                5.247101174914377e+21,
+                9.233633331927096e+21
+              ],
+              "name": "DAYO-P",
+              "top2Sum": 1.8338687869380687e+22
+            }
+          ]
+        }
+      ],
+      "miniSeasonNumber": 1
+    }
+  ],
   "seasonNumber": 2,
   "startDate": "2026-10-22"
 }
