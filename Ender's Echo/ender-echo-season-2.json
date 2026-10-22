@@ -20,75 +20,87 @@
       "seasonTotal": 1.761148460895548e+22
     },
     {
+      "gainVsPreviousSeason": -2.009991717061309e+23,
+      "name": "RABBIT5",
+      "rank": 4,
+      "seasonTotal": 1.7095746927324069e+22
+    },
+    {
       "gainVsPreviousSeason": -1.3533127876050363e+23,
       "name": "\u795eSterben\u6b7b",
-      "rank": 4,
+      "rank": 5,
       "seasonTotal": 9.47248476029604e+21
     },
     {
       "gainVsPreviousSeason": -1.0643660230788055e+23,
       "name": "SngphO",
-      "rank": 5,
+      "rank": 6,
       "seasonTotal": 6.241780323320505e+21
     },
     {
       "gainVsPreviousSeason": -1.041312401884149e+22,
       "name": "NeonCBV",
-      "rank": 6,
+      "rank": 7,
       "seasonTotal": 3.927043021751084e+21
     },
     {
       "gainVsPreviousSeason": -1.8886017253655332e+22,
       "name": "MadameMischief",
-      "rank": 7,
+      "rank": 8,
       "seasonTotal": 1.0652735014540263e+21
     },
     {
       "gainVsPreviousSeason": -5.959261394892608e+21,
       "name": "Gritchen",
-      "rank": 8,
+      "rank": 9,
       "seasonTotal": 4.808278966141965e+20
     },
     {
       "gainVsPreviousSeason": -5.173104155348981e+21,
       "name": "theLP",
-      "rank": 9,
+      "rank": 10,
       "seasonTotal": 4.479066226839001e+20
     },
     {
       "gainVsPreviousSeason": -5.841566593650146e+21,
       "name": "Bensayyten",
-      "rank": 10,
+      "rank": 11,
       "seasonTotal": 3.5429882953053766e+20
     },
     {
       "gainVsPreviousSeason": -2.820924904370475e+21,
       "name": "Rzzza",
-      "rank": 11,
+      "rank": 12,
       "seasonTotal": 3.3377207468110355e+20
     },
     {
       "gainVsPreviousSeason": -6.703243568394734e+21,
       "name": "HakiLuffy",
-      "rank": 12,
+      "rank": 13,
       "seasonTotal": 3.184682555580745e+20
     },
     {
       "gainVsPreviousSeason": -6.714410189578995e+21,
       "name": "p88203044",
-      "rank": 13,
+      "rank": 14,
       "seasonTotal": 3.166851555530758e+20
     },
     {
-      "gainVsPreviousSeason": -3.9671456431102545e+21,
+      "gainVsPreviousSeason": -3.795780120807247e+21,
+      "name": "EMBALOCO",
+      "rank": 15,
+      "seasonTotal": 2.833631485486197e+20
+    },
+    {
+      "gainVsPreviousSeason": -3.854366265186206e+21,
       "name": "BlackFlamE",
-      "rank": 14,
-      "seasonTotal": 9.681788467888492e+19
+      "rank": 16,
+      "seasonTotal": 2.095972626029331e+20
     },
     {
       "gainVsPreviousSeason": -6.942646264277375e+20,
       "name": "Player 80018314",
-      "rank": 15,
+      "rank": 17,
       "seasonTotal": 8.30703642017534e+19
     }
   ],
@@ -217,10 +229,27 @@
             },
             {
               "attempts": [
-                9.681788467888492e+19
+                9.681788467888492e+19,
+                1.1277937792404818e+20
               ],
               "name": "BlackFlamE",
-              "top2Sum": 9.681788467888492e+19
+              "top2Sum": 2.095972626029331e+20
+            },
+            {
+              "attempts": [
+                1.2610745452089324e+20,
+                1.5725569402772645e+20
+              ],
+              "name": "EMBALOCO",
+              "top2Sum": 2.833631485486197e+20
+            },
+            {
+              "attempts": [
+                7.516741017468035e+21,
+                9.579005909856034e+21
+              ],
+              "name": "RABBIT5",
+              "top2Sum": 1.7095746927324069e+22
             }
           ]
         }
