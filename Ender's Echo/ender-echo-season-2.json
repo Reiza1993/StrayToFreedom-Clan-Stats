@@ -50,40 +50,40 @@
       "seasonTotal": 1.0652735014540263e+21
     },
     {
+      "gainVsPreviousSeason": -6.397474538484173e+21,
+      "name": "p88203044",
+      "rank": 9,
+      "seasonTotal": 6.336208066478986e+20
+    },
+    {
       "gainVsPreviousSeason": -5.959261394892608e+21,
       "name": "Gritchen",
-      "rank": 9,
+      "rank": 10,
       "seasonTotal": 4.808278966141965e+20
     },
     {
       "gainVsPreviousSeason": -5.173104155348981e+21,
       "name": "theLP",
-      "rank": 10,
+      "rank": 11,
       "seasonTotal": 4.479066226839001e+20
     },
     {
       "gainVsPreviousSeason": -5.841566593650146e+21,
       "name": "Bensayyten",
-      "rank": 11,
+      "rank": 12,
       "seasonTotal": 3.5429882953053766e+20
     },
     {
       "gainVsPreviousSeason": -2.820924904370475e+21,
       "name": "Rzzza",
-      "rank": 12,
+      "rank": 13,
       "seasonTotal": 3.3377207468110355e+20
     },
     {
       "gainVsPreviousSeason": -6.703243568394734e+21,
       "name": "HakiLuffy",
-      "rank": 13,
-      "seasonTotal": 3.184682555580745e+20
-    },
-    {
-      "gainVsPreviousSeason": -6.714410189578995e+21,
-      "name": "p88203044",
       "rank": 14,
-      "seasonTotal": 3.166851555530758e+20
+      "seasonTotal": 3.184682555580745e+20
     },
     {
       "gainVsPreviousSeason": -3.795780120807247e+21,
@@ -123,7 +123,10 @@
               "attempts": [
                 9.105054537453592e+21,
                 5.247101174914377e+21,
-                9.233633331927096e+21
+                9.233633331927096e+21,
+                8.039486379254318e+21,
+                5.021963373857142e+21,
+                8.613892124063742e+21
               ],
               "name": "DAYO-P",
               "top2Sum": 1.8338687869380687e+22
@@ -146,10 +149,11 @@
             },
             {
               "attempts": [
-                3.166851555530758e+20
+                3.166851555530758e+20,
+                3.169356510948228e+20
               ],
               "name": "p88203044",
-              "top2Sum": 3.166851555530758e+20
+              "top2Sum": 6.336208066478986e+20
             },
             {
               "attempts": [
