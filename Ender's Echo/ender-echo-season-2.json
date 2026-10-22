@@ -62,87 +62,99 @@
       "seasonTotal": 1.0652735014540263e+21
     },
     {
+      "gainVsPreviousSeason": -1.8939407407079175e+22,
+      "name": "PastalaVista",
+      "rank": 11,
+      "seasonTotal": 7.557464600278368e+20
+    },
+    {
       "gainVsPreviousSeason": -6.397474538484173e+21,
       "name": "p88203044",
-      "rank": 11,
+      "rank": 12,
       "seasonTotal": 6.336208066478986e+20
     },
     {
       "gainVsPreviousSeason": -8.764850939742306e+21,
       "name": "\u76feHeathcliff\u5263",
-      "rank": 12,
+      "rank": 13,
       "seasonTotal": 5.906509596702711e+20
     },
     {
       "gainVsPreviousSeason": -5.959261394892608e+21,
       "name": "Gritchen",
-      "rank": 13,
+      "rank": 14,
       "seasonTotal": 4.808278966141965e+20
     },
     {
       "gainVsPreviousSeason": -5.173104155348981e+21,
       "name": "theLP",
-      "rank": 14,
+      "rank": 15,
       "seasonTotal": 4.479066226839001e+20
+    },
+    {
+      "gainVsPreviousSeason": -7.760607575675058e+21,
+      "name": "Player 66607264",
+      "rank": 16,
+      "seasonTotal": 4.214041063105253e+20
     },
     {
       "gainVsPreviousSeason": -7.192547700250165e+21,
       "name": "Apathy_",
-      "rank": 15,
+      "rank": 17,
       "seasonTotal": 3.902032655774906e+20
     },
     {
       "gainVsPreviousSeason": -5.841566593650146e+21,
       "name": "Bensayyten",
-      "rank": 16,
+      "rank": 18,
       "seasonTotal": 3.5429882953053766e+20
     },
     {
       "gainVsPreviousSeason": -2.820924904370475e+21,
       "name": "Rzzza",
-      "rank": 17,
+      "rank": 19,
       "seasonTotal": 3.3377207468110355e+20
     },
     {
       "gainVsPreviousSeason": -6.703243568394734e+21,
       "name": "HakiLuffy",
-      "rank": 18,
+      "rank": 20,
       "seasonTotal": 3.184682555580745e+20
     },
     {
       "gainVsPreviousSeason": -3.795780120807247e+21,
       "name": "EMBALOCO",
-      "rank": 19,
+      "rank": 21,
       "seasonTotal": 2.833631485486197e+20
     },
     {
       "gainVsPreviousSeason": -3.854366265186206e+21,
       "name": "BlackFlamE",
-      "rank": 20,
+      "rank": 22,
       "seasonTotal": 2.095972626029331e+20
     },
     {
       "gainVsPreviousSeason": -2.883575403178978e+21,
       "name": "BobBobberson",
-      "rank": 21,
+      "rank": 23,
       "seasonTotal": 1.50471757197978e+20
     },
     {
       "gainVsPreviousSeason": -2.645595497521782e+21,
       "name": "gubrax",
-      "rank": 22,
+      "rank": 24,
       "seasonTotal": 1.4587934280184614e+20
     },
     {
       "gainVsPreviousSeason": -6.942646264277375e+20,
       "name": "Player 80018314",
-      "rank": 23,
+      "rank": 25,
       "seasonTotal": 8.30703642017534e+19
     },
     {
       "gainVsPreviousSeason": -9.83720632457256e+20,
       "name": "Belthazar",
-      "rank": 24,
+      "rank": 26,
       "seasonTotal": 5.298707442153852e+19
     }
   ],
@@ -350,6 +362,20 @@
               ],
               "name": "BobBobberson",
               "top2Sum": 1.50471757197978e+20
+            },
+            {
+              "attempts": [
+                7.557464600278368e+20
+              ],
+              "name": "PastalaVista",
+              "top2Sum": 7.557464600278368e+20
+            },
+            {
+              "attempts": [
+                4.214041063105253e+20
+              ],
+              "name": "Player 66607264",
+              "top2Sum": 4.214041063105253e+20
             }
           ]
         }
