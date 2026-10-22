@@ -50,27 +50,33 @@
       "seasonTotal": 4.808278966141965e+20
     },
     {
+      "gainVsPreviousSeason": -2.820924904370475e+21,
+      "name": "Rzzza",
+      "rank": 9,
+      "seasonTotal": 3.3377207468110355e+20
+    },
+    {
       "gainVsPreviousSeason": -6.703243568394734e+21,
       "name": "HakiLuffy",
-      "rank": 9,
+      "rank": 10,
       "seasonTotal": 3.184682555580745e+20
     },
     {
       "gainVsPreviousSeason": -6.714410189578995e+21,
       "name": "p88203044",
-      "rank": 10,
+      "rank": 11,
       "seasonTotal": 3.166851555530758e+20
     },
     {
       "gainVsPreviousSeason": -5.967191239271268e+21,
       "name": "Bensayyten",
-      "rank": 11,
+      "rank": 12,
       "seasonTotal": 2.2867418390941578e+20
     },
     {
       "gainVsPreviousSeason": -6.942646264277375e+20,
       "name": "Player 80018314",
-      "rank": 12,
+      "rank": 13,
       "seasonTotal": 8.30703642017534e+19
     }
   ],
@@ -173,6 +179,15 @@
               ],
               "name": "Player 80018314",
               "top2Sum": 8.30703642017534e+19
+            },
+            {
+              "attempts": [
+                1.4678345369833464e+20,
+                1.8381378032531236e+20,
+                1.4995829435579122e+20
+              ],
+              "name": "Rzzza",
+              "top2Sum": 3.3377207468110355e+20
             }
           ]
         }
