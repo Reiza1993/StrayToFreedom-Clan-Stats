@@ -14,16 +14,16 @@
       "seasonTotal": 1.8338687869380687e+22
     },
     {
-      "gainVsPreviousSeason": -1.3533127876050363e+23,
-      "name": "\u795eSterben\u6b7b",
+      "gainVsPreviousSeason": -2.8349282606033987e+23,
+      "name": "Nubis",
       "rank": 3,
-      "seasonTotal": 9.47248476029604e+21
+      "seasonTotal": 1.761148460895548e+22
     },
     {
-      "gainVsPreviousSeason": -2.9421668770614982e+23,
-      "name": "Nubis",
+      "gainVsPreviousSeason": -1.3533127876050363e+23,
+      "name": "\u795eSterben\u6b7b",
       "rank": 4,
-      "seasonTotal": 6.887622963145517e+21
+      "seasonTotal": 9.47248476029604e+21
     },
     {
       "gainVsPreviousSeason": -1.0643660230788055e+23,
@@ -32,10 +32,10 @@
       "seasonTotal": 6.241780323320505e+21
     },
     {
-      "gainVsPreviousSeason": -1.2567505949020322e+22,
+      "gainVsPreviousSeason": -1.041312401884149e+22,
       "name": "NeonCBV",
       "rank": 6,
-      "seasonTotal": 1.772661091572251e+21
+      "seasonTotal": 3.927043021751084e+21
     },
     {
       "gainVsPreviousSeason": -1.8886017253655332e+22,
@@ -50,33 +50,45 @@
       "seasonTotal": 4.808278966141965e+20
     },
     {
+      "gainVsPreviousSeason": -5.173104155348981e+21,
+      "name": "theLP",
+      "rank": 9,
+      "seasonTotal": 4.479066226839001e+20
+    },
+    {
+      "gainVsPreviousSeason": -5.841566593650146e+21,
+      "name": "Bensayyten",
+      "rank": 10,
+      "seasonTotal": 3.5429882953053766e+20
+    },
+    {
       "gainVsPreviousSeason": -2.820924904370475e+21,
       "name": "Rzzza",
-      "rank": 9,
+      "rank": 11,
       "seasonTotal": 3.3377207468110355e+20
     },
     {
       "gainVsPreviousSeason": -6.703243568394734e+21,
       "name": "HakiLuffy",
-      "rank": 10,
+      "rank": 12,
       "seasonTotal": 3.184682555580745e+20
     },
     {
       "gainVsPreviousSeason": -6.714410189578995e+21,
       "name": "p88203044",
-      "rank": 11,
+      "rank": 13,
       "seasonTotal": 3.166851555530758e+20
     },
     {
-      "gainVsPreviousSeason": -5.967191239271268e+21,
-      "name": "Bensayyten",
-      "rank": 12,
-      "seasonTotal": 2.2867418390941578e+20
+      "gainVsPreviousSeason": -3.9671456431102545e+21,
+      "name": "BlackFlamE",
+      "rank": 14,
+      "seasonTotal": 9.681788467888492e+19
     },
     {
       "gainVsPreviousSeason": -6.942646264277375e+20,
       "name": "Player 80018314",
-      "rank": 13,
+      "rank": 15,
       "seasonTotal": 8.30703642017534e+19
     }
   ],
@@ -89,10 +101,11 @@
           "players": [
             {
               "attempts": [
-                2.2867418390941578e+20
+                2.2867418390941578e+20,
+                1.2562464562112188e+20
               ],
               "name": "Bensayyten",
-              "top2Sum": 2.2867418390941578e+20
+              "top2Sum": 3.5429882953053766e+20
             },
             {
               "attempts": [
@@ -144,10 +157,14 @@
             },
             {
               "attempts": [
-                6.887622963145517e+21
+                6.887622963145517e+21,
+                6.023793570646505e+21,
+                8.677924583181574e+21,
+                8.160985638826077e+21,
+                8.933560025773905e+21
               ],
               "name": "Nubis",
-              "top2Sum": 6.887622963145517e+21
+              "top2Sum": 1.761148460895548e+22
             },
             {
               "attempts": [
@@ -167,10 +184,11 @@
             },
             {
               "attempts": [
-                1.772661091572251e+21
+                1.772661091572251e+21,
+                2.154381930178833e+21
               ],
               "name": "NeonCBV",
-              "top2Sum": 1.772661091572251e+21
+              "top2Sum": 3.927043021751084e+21
             },
             {
               "attempts": [
@@ -188,6 +206,21 @@
               ],
               "name": "Rzzza",
               "top2Sum": 3.3377207468110355e+20
+            },
+            {
+              "attempts": [
+                2.432952287372694e+20,
+                2.046113939466307e+20
+              ],
+              "name": "theLP",
+              "top2Sum": 4.479066226839001e+20
+            },
+            {
+              "attempts": [
+                9.681788467888492e+19
+              ],
+              "name": "BlackFlamE",
+              "top2Sum": 9.681788467888492e+19
             }
           ]
         }
