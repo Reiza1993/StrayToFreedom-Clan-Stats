@@ -20,16 +20,16 @@
       "seasonTotal": 3.783245599368026e+22
     },
     {
-      "gainVsPreviousSeason": -1.8572522583098782e+23,
-      "name": "RABBIT5",
+      "gainVsPreviousSeason": -2.6618516755426776e+23,
+      "name": "Nubis",
       "rank": 4,
-      "seasonTotal": 3.236969280246714e+22
+      "seasonTotal": 3.4919143115027577e+22
     },
     {
-      "gainVsPreviousSeason": -2.8349282606033987e+23,
-      "name": "Nubis",
+      "gainVsPreviousSeason": -1.8572522583098782e+23,
+      "name": "RABBIT5",
       "rank": 5,
-      "seasonTotal": 1.761148460895548e+22
+      "seasonTotal": 3.236969280246714e+22
     },
     {
       "gainVsPreviousSeason": -1.0015529549917119e+23,
@@ -62,40 +62,40 @@
       "seasonTotal": 1.960331940139057e+21
     },
     {
+      "gainVsPreviousSeason": -8.143067444035563e+21,
+      "name": "\u76feHeathcliff\u5263",
+      "rank": 11,
+      "seasonTotal": 1.2124344553770142e+21
+    },
+    {
       "gainVsPreviousSeason": -5.973116414349015e+21,
       "name": "p88203044",
-      "rank": 11,
+      "rank": 12,
       "seasonTotal": 1.0579789307830559e+21
     },
     {
       "gainVsPreviousSeason": -1.8939407407079175e+22,
       "name": "PastalaVista",
-      "rank": 12,
+      "rank": 13,
       "seasonTotal": 7.557464600278368e+20
     },
     {
       "gainVsPreviousSeason": -6.829776810902633e+21,
       "name": "Apathy_",
-      "rank": 13,
+      "rank": 14,
       "seasonTotal": 7.529741549250229e+20
     },
     {
       "gainVsPreviousSeason": -5.719406312981437e+21,
       "name": "Gritchen",
-      "rank": 14,
+      "rank": 15,
       "seasonTotal": 7.206829785253678e+20
     },
     {
       "gainVsPreviousSeason": -4.963693419864706e+21,
       "name": "theLP",
-      "rank": 15,
-      "seasonTotal": 6.57317358168176e+20
-    },
-    {
-      "gainVsPreviousSeason": -8.764850939742306e+21,
-      "name": "\u76feHeathcliff\u5263",
       "rank": 16,
-      "seasonTotal": 5.906509596702711e+20
+      "seasonTotal": 6.57317358168176e+20
     },
     {
       "gainVsPreviousSeason": -6.48269597395613e+21,
@@ -110,58 +110,64 @@
       "seasonTotal": 5.269976644797133e+20
     },
     {
+      "gainVsPreviousSeason": -3.6154083839173754e+21,
+      "name": "EMBALOCO",
+      "rank": 19,
+      "seasonTotal": 4.6373488543849126e+20
+    },
+    {
       "gainVsPreviousSeason": -7.104220126126605e+21,
       "name": "VictorMolusco",
-      "rank": 19,
+      "rank": 20,
       "seasonTotal": 4.4912347702051425e+20
     },
     {
       "gainVsPreviousSeason": -7.760607575675058e+21,
       "name": "Player 66607264",
-      "rank": 20,
+      "rank": 21,
       "seasonTotal": 4.214041063105253e+20
+    },
+    {
+      "gainVsPreviousSeason": -2.6381558872693423e+21,
+      "name": "BobBobberson",
+      "rank": 22,
+      "seasonTotal": 3.958912731076136e+20
     },
     {
       "gainVsPreviousSeason": -5.841566593650146e+21,
       "name": "Bensayyten",
-      "rank": 21,
+      "rank": 23,
       "seasonTotal": 3.5429882953053766e+20
     },
     {
       "gainVsPreviousSeason": -2.4784318137342493e+21,
       "name": "gubrax",
-      "rank": 22,
+      "rank": 24,
       "seasonTotal": 3.1304302658937913e+20
-    },
-    {
-      "gainVsPreviousSeason": -3.795780120807247e+21,
-      "name": "EMBALOCO",
-      "rank": 23,
-      "seasonTotal": 2.833631485486197e+20
     },
     {
       "gainVsPreviousSeason": -3.854366265186206e+21,
       "name": "BlackFlamE",
-      "rank": 24,
+      "rank": 25,
       "seasonTotal": 2.095972626029331e+20
     },
     {
       "gainVsPreviousSeason": -5.942726348432904e+20,
       "name": "Player 80018314",
-      "rank": 25,
+      "rank": 26,
       "seasonTotal": 1.8306235578620058e+20
     },
     {
-      "gainVsPreviousSeason": -2.883575403178978e+21,
-      "name": "BobBobberson",
-      "rank": 26,
-      "seasonTotal": 1.50471757197978e+20
-    },
-    {
-      "gainVsPreviousSeason": -9.83720632457256e+20,
+      "gainVsPreviousSeason": -9.258815515823623e+20,
       "name": "Belthazar",
       "rank": 27,
-      "seasonTotal": 5.298707442153852e+19
+      "seasonTotal": 1.1082615529643214e+20
+    },
+    {
+      "gainVsPreviousSeason": -2.280053616716978e+21,
+      "name": "samwise08",
+      "rank": 28,
+      "seasonTotal": 5.94060275485811e+19
     }
   ],
   "miniSeasons": [
@@ -501,6 +507,55 @@
               ],
               "name": "Player 80018314",
               "top2Sum": 9.999199158444717e+19
+            },
+            {
+              "attempts": [
+                3.1417453344808657e+19,
+                2.642162753008497e+19
+              ],
+              "name": "Belthazar",
+              "top2Sum": 5.783908087489362e+19
+            },
+            {
+              "attempts": [
+                2.8415504711506264e+20,
+                3.376284485916804e+20
+              ],
+              "name": "\u76feHeathcliff\u5263",
+              "top2Sum": 6.21783495706743e+20
+            },
+            {
+              "attempts": [
+                5.94060275485811e+19
+              ],
+              "name": "samwise08",
+              "top2Sum": 5.94060275485811e+19
+            },
+            {
+              "attempts": [
+                1.0419237575768474e+20,
+                1.4122714015195087e+20
+              ],
+              "name": "BobBobberson",
+              "top2Sum": 2.454195159096356e+20
+            },
+            {
+              "attempts": [
+                8.326389869225128e+21,
+                7.182939006510846e+21,
+                6.935514020901741e+21,
+                8.981268636846973e+21
+              ],
+              "name": "Nubis",
+              "top2Sum": 1.73076585060721e+22
+            },
+            {
+              "attempts": [
+                7.473204456114125e+19,
+                1.0563969232873031e+20
+              ],
+              "name": "EMBALOCO",
+              "top2Sum": 1.8037173688987156e+20
             }
           ]
         }
