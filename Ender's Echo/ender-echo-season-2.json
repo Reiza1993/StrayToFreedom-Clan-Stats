@@ -14,10 +14,10 @@
       "seasonTotal": 7.358540823283592e+22
     },
     {
-      "gainVsPreviousSeason": -2.2046411922433012e+23,
+      "gainVsPreviousSeason": -2.1659253402299793e+23,
       "name": "DAYO-P",
       "rank": 3,
-      "seasonTotal": 5.3470944799257415e+22
+      "seasonTotal": 5.734253000058962e+22
     },
     {
       "gainVsPreviousSeason": -2.6618516755426776e+23,
@@ -32,10 +32,10 @@
       "seasonTotal": 3.236969280246714e+22
     },
     {
-      "gainVsPreviousSeason": -1.0015529549917119e+23,
+      "gainVsPreviousSeason": -9.463220651541456e+22,
       "name": "SngphO",
       "rank": 6,
-      "seasonTotal": 1.2523087132029882e+22
+      "seasonTotal": 1.8046176115786502e+22
     },
     {
       "gainVsPreviousSeason": -1.3533127876050363e+23,
@@ -50,16 +50,16 @@
       "seasonTotal": 3.927043021751084e+21
     },
     {
-      "gainVsPreviousSeason": -1.8722484629254357e+22,
-      "name": "RetinaDNA",
+      "gainVsPreviousSeason": -1.7035907923943287e+22,
+      "name": "MadameMischief",
       "rank": 9,
-      "seasonTotal": 2.037585912492762e+21
+      "seasonTotal": 2.9153828311660715e+21
     },
     {
-      "gainVsPreviousSeason": -1.7990958814970302e+22,
-      "name": "MadameMischief",
+      "gainVsPreviousSeason": -1.8722484629254357e+22,
+      "name": "RetinaDNA",
       "rank": 10,
-      "seasonTotal": 1.960331940139057e+21
+      "seasonTotal": 2.037585912492762e+21
     },
     {
       "gainVsPreviousSeason": -8.143067444035563e+21,
@@ -104,28 +104,28 @@
       "seasonTotal": 7.529741549250229e+20
     },
     {
+      "gainVsPreviousSeason": -2.423337932527663e+21,
+      "name": "Rzzza",
+      "rank": 18,
+      "seasonTotal": 7.313590465239161e+20
+    },
+    {
       "gainVsPreviousSeason": -5.719406312981437e+21,
       "name": "Gritchen",
-      "rank": 18,
+      "rank": 19,
       "seasonTotal": 7.206829785253678e+20
     },
     {
-      "gainVsPreviousSeason": -2.6276993145718655e+21,
-      "name": "Rzzza",
-      "rank": 19,
-      "seasonTotal": 5.269976644797133e+20
+      "gainVsPreviousSeason": -3.459788001537153e+21,
+      "name": "EMBALOCO",
+      "rank": 20,
+      "seasonTotal": 6.193552678187138e+20
     },
     {
       "gainVsPreviousSeason": -2.3136290214586069e+21,
       "name": "gubrax",
-      "rank": 20,
-      "seasonTotal": 4.7784581886502135e+20
-    },
-    {
-      "gainVsPreviousSeason": -3.6154083839173754e+21,
-      "name": "EMBALOCO",
       "rank": 21,
-      "seasonTotal": 4.6373488543849126e+20
+      "seasonTotal": 4.7784581886502135e+20
     },
     {
       "gainVsPreviousSeason": -7.104220126126605e+21,
@@ -591,10 +591,13 @@
               "attempts": [
                 7.179762420897521e+21,
                 5.330857032339204e+21,
-                8.458726384679635e+21
+                8.458726384679635e+21,
+                2.5859522869579444e+21,
+                9.132821385257107e+21,
+                1.0377252621652253e+22
               ],
               "name": "DAYO-P",
-              "top2Sum": 1.5638488805577157e+22
+              "top2Sum": 1.951007400690936e+22
             },
             {
               "attempts": [
@@ -604,6 +607,36 @@
               ],
               "name": "HakiLuffy",
               "top2Sum": 2.957856807199725e+20
+            },
+            {
+              "attempts": [
+                2.0436138204420276e+20
+              ],
+              "name": "Rzzza",
+              "top2Sum": 2.0436138204420276e+20
+            },
+            {
+              "attempts": [
+                2.9164872164473176e+21,
+                2.606601767309302e+21
+              ],
+              "name": "SngphO",
+              "top2Sum": 5.523088983756619e+21
+            },
+            {
+              "attempts": [
+                1.5562038238022245e+20
+              ],
+              "name": "EMBALOCO",
+              "top2Sum": 1.5562038238022245e+20
+            },
+            {
+              "attempts": [
+                5.1590477143148986e+20,
+                4.3914611959552436e+20
+              ],
+              "name": "MadameMischief",
+              "top2Sum": 9.550508910270142e+20
             }
           ]
         }
