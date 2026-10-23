@@ -14,10 +14,10 @@
       "seasonTotal": 7.358540823283592e+22
     },
     {
-      "gainVsPreviousSeason": -2.361026080299073e+23,
+      "gainVsPreviousSeason": -2.2046411922433012e+23,
       "name": "DAYO-P",
       "rank": 3,
-      "seasonTotal": 3.783245599368026e+22
+      "seasonTotal": 5.3470944799257415e+22
     },
     {
       "gainVsPreviousSeason": -2.6618516755426776e+23,
@@ -86,28 +86,28 @@
       "seasonTotal": 8.688769516647937e+20
     },
     {
+      "gainVsPreviousSeason": -6.186910293236157e+21,
+      "name": "HakiLuffy",
+      "rank": 15,
+      "seasonTotal": 8.348015307166518e+20
+    },
+    {
       "gainVsPreviousSeason": -1.8939407407079175e+22,
       "name": "PastalaVista",
-      "rank": 15,
+      "rank": 16,
       "seasonTotal": 7.557464600278368e+20
     },
     {
       "gainVsPreviousSeason": -6.829776810902633e+21,
       "name": "Apathy_",
-      "rank": 16,
+      "rank": 17,
       "seasonTotal": 7.529741549250229e+20
     },
     {
       "gainVsPreviousSeason": -5.719406312981437e+21,
       "name": "Gritchen",
-      "rank": 17,
-      "seasonTotal": 7.206829785253678e+20
-    },
-    {
-      "gainVsPreviousSeason": -6.48269597395613e+21,
-      "name": "HakiLuffy",
       "rank": 18,
-      "seasonTotal": 5.3901584999667925e+20
+      "seasonTotal": 7.206829785253678e+20
     },
     {
       "gainVsPreviousSeason": -2.6276993145718655e+21,
@@ -116,40 +116,40 @@
       "seasonTotal": 5.269976644797133e+20
     },
     {
+      "gainVsPreviousSeason": -2.3136290214586069e+21,
+      "name": "gubrax",
+      "rank": 20,
+      "seasonTotal": 4.7784581886502135e+20
+    },
+    {
       "gainVsPreviousSeason": -3.6154083839173754e+21,
       "name": "EMBALOCO",
-      "rank": 20,
+      "rank": 21,
       "seasonTotal": 4.6373488543849126e+20
     },
     {
       "gainVsPreviousSeason": -7.104220126126605e+21,
       "name": "VictorMolusco",
-      "rank": 21,
+      "rank": 22,
       "seasonTotal": 4.4912347702051425e+20
     },
     {
       "gainVsPreviousSeason": -2.6381558872693423e+21,
       "name": "BobBobberson",
-      "rank": 22,
+      "rank": 23,
       "seasonTotal": 3.958912731076136e+20
     },
     {
       "gainVsPreviousSeason": -5.841566593650146e+21,
       "name": "Bensayyten",
-      "rank": 23,
+      "rank": 24,
       "seasonTotal": 3.5429882953053766e+20
     },
     {
       "gainVsPreviousSeason": -3.7436982513788854e+21,
       "name": "BlackFlamE",
-      "rank": 24,
-      "seasonTotal": 3.202652764102539e+20
-    },
-    {
-      "gainVsPreviousSeason": -2.4784318137342493e+21,
-      "name": "gubrax",
       "rank": 25,
-      "seasonTotal": 3.1304302658937913e+20
+      "seasonTotal": 3.202652764102539e+20
     },
     {
       "gainVsPreviousSeason": -5.942726348432904e+20,
@@ -572,6 +572,38 @@
               ],
               "name": "BlackFlamE",
               "top2Sum": 1.1066801380732078e+20
+            }
+          ]
+        },
+        {
+          "date": "2026-10-24",
+          "day": 3,
+          "players": [
+            {
+              "attempts": [
+                9.474103391038656e+19,
+                7.0061758365255655e+19
+              ],
+              "name": "gubrax",
+              "top2Sum": 1.6480279227564222e+20
+            },
+            {
+              "attempts": [
+                7.179762420897521e+21,
+                5.330857032339204e+21,
+                8.458726384679635e+21
+              ],
+              "name": "DAYO-P",
+              "top2Sum": 1.5638488805577157e+22
+            },
+            {
+              "attempts": [
+                1.486232969079728e+20,
+                1.131528653698443e+20,
+                1.471623838119997e+20
+              ],
+              "name": "HakiLuffy",
+              "top2Sum": 2.957856807199725e+20
             }
           ]
         }
