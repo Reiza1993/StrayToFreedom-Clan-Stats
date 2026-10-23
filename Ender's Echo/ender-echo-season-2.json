@@ -20,16 +20,16 @@
       "seasonTotal": 5.734253000058962e+22
     },
     {
-      "gainVsPreviousSeason": -2.6618516755426776e+23,
-      "name": "Nubis",
+      "gainVsPreviousSeason": -1.7353585068157623e+23,
+      "name": "RABBIT5",
       "rank": 4,
-      "seasonTotal": 3.4919143115027577e+22
+      "seasonTotal": 4.455906795187872e+22
     },
     {
-      "gainVsPreviousSeason": -1.8572522583098782e+23,
-      "name": "RABBIT5",
+      "gainVsPreviousSeason": -2.6618516755426776e+23,
+      "name": "Nubis",
       "rank": 5,
-      "seasonTotal": 3.236969280246714e+22
+      "seasonTotal": 3.4919143115027577e+22
     },
     {
       "gainVsPreviousSeason": -9.463220651541456e+22,
@@ -68,52 +68,52 @@
       "seasonTotal": 1.2124344553770142e+21
     },
     {
+      "gainVsPreviousSeason": -5.254764123884507e+21,
+      "name": "Gritchen",
+      "rank": 12,
+      "seasonTotal": 1.185325167622298e+21
+    },
+    {
       "gainVsPreviousSeason": -5.973116414349015e+21,
       "name": "p88203044",
-      "rank": 12,
+      "rank": 13,
       "seasonTotal": 1.0579789307830559e+21
     },
     {
       "gainVsPreviousSeason": -7.252182163066811e+21,
       "name": "Player 66607264",
-      "rank": 13,
+      "rank": 14,
       "seasonTotal": 9.29829518918773e+20
     },
     {
       "gainVsPreviousSeason": -4.752133826368089e+21,
       "name": "theLP",
-      "rank": 14,
+      "rank": 15,
       "seasonTotal": 8.688769516647937e+20
     },
     {
       "gainVsPreviousSeason": -6.186910293236157e+21,
       "name": "HakiLuffy",
-      "rank": 15,
+      "rank": 16,
       "seasonTotal": 8.348015307166518e+20
     },
     {
       "gainVsPreviousSeason": -1.8939407407079175e+22,
       "name": "PastalaVista",
-      "rank": 16,
+      "rank": 17,
       "seasonTotal": 7.557464600278368e+20
     },
     {
       "gainVsPreviousSeason": -6.829776810902633e+21,
       "name": "Apathy_",
-      "rank": 17,
+      "rank": 18,
       "seasonTotal": 7.529741549250229e+20
     },
     {
       "gainVsPreviousSeason": -2.423337932527663e+21,
       "name": "Rzzza",
-      "rank": 18,
-      "seasonTotal": 7.313590465239161e+20
-    },
-    {
-      "gainVsPreviousSeason": -5.719406312981437e+21,
-      "name": "Gritchen",
       "rank": 19,
-      "seasonTotal": 7.206829785253678e+20
+      "seasonTotal": 7.313590465239161e+20
     },
     {
       "gainVsPreviousSeason": -3.459788001537153e+21,
@@ -637,6 +637,22 @@
               ],
               "name": "MadameMischief",
               "top2Sum": 9.550508910270142e+20
+            },
+            {
+              "attempts": [
+                2.4187519903332614e+20,
+                2.2276699006360404e+20
+              ],
+              "name": "Gritchen",
+              "top2Sum": 4.646421890969302e+20
+            },
+            {
+              "attempts": [
+                6.41169427038036e+21,
+                5.777680879031228e+21
+              ],
+              "name": "RABBIT5",
+              "top2Sum": 1.2189375149411588e+22
             }
           ]
         }
