@@ -74,58 +74,58 @@
       "seasonTotal": 1.0579789307830559e+21
     },
     {
+      "gainVsPreviousSeason": -7.252182163066811e+21,
+      "name": "Player 66607264",
+      "rank": 13,
+      "seasonTotal": 9.29829518918773e+20
+    },
+    {
+      "gainVsPreviousSeason": -4.752133826368089e+21,
+      "name": "theLP",
+      "rank": 14,
+      "seasonTotal": 8.688769516647937e+20
+    },
+    {
       "gainVsPreviousSeason": -1.8939407407079175e+22,
       "name": "PastalaVista",
-      "rank": 13,
+      "rank": 15,
       "seasonTotal": 7.557464600278368e+20
     },
     {
       "gainVsPreviousSeason": -6.829776810902633e+21,
       "name": "Apathy_",
-      "rank": 14,
+      "rank": 16,
       "seasonTotal": 7.529741549250229e+20
     },
     {
       "gainVsPreviousSeason": -5.719406312981437e+21,
       "name": "Gritchen",
-      "rank": 15,
+      "rank": 17,
       "seasonTotal": 7.206829785253678e+20
-    },
-    {
-      "gainVsPreviousSeason": -4.963693419864706e+21,
-      "name": "theLP",
-      "rank": 16,
-      "seasonTotal": 6.57317358168176e+20
     },
     {
       "gainVsPreviousSeason": -6.48269597395613e+21,
       "name": "HakiLuffy",
-      "rank": 17,
+      "rank": 18,
       "seasonTotal": 5.3901584999667925e+20
     },
     {
       "gainVsPreviousSeason": -2.6276993145718655e+21,
       "name": "Rzzza",
-      "rank": 18,
+      "rank": 19,
       "seasonTotal": 5.269976644797133e+20
     },
     {
       "gainVsPreviousSeason": -3.6154083839173754e+21,
       "name": "EMBALOCO",
-      "rank": 19,
+      "rank": 20,
       "seasonTotal": 4.6373488543849126e+20
     },
     {
       "gainVsPreviousSeason": -7.104220126126605e+21,
       "name": "VictorMolusco",
-      "rank": 20,
-      "seasonTotal": 4.4912347702051425e+20
-    },
-    {
-      "gainVsPreviousSeason": -7.760607575675058e+21,
-      "name": "Player 66607264",
       "rank": 21,
-      "seasonTotal": 4.214041063105253e+20
+      "seasonTotal": 4.4912347702051425e+20
     },
     {
       "gainVsPreviousSeason": -2.6381558872693423e+21,
@@ -140,16 +140,16 @@
       "seasonTotal": 3.5429882953053766e+20
     },
     {
-      "gainVsPreviousSeason": -2.4784318137342493e+21,
-      "name": "gubrax",
+      "gainVsPreviousSeason": -3.7436982513788854e+21,
+      "name": "BlackFlamE",
       "rank": 24,
-      "seasonTotal": 3.1304302658937913e+20
+      "seasonTotal": 3.202652764102539e+20
     },
     {
-      "gainVsPreviousSeason": -3.854366265186206e+21,
-      "name": "BlackFlamE",
+      "gainVsPreviousSeason": -2.4784318137342493e+21,
+      "name": "gubrax",
       "rank": 25,
-      "seasonTotal": 2.095972626029331e+20
+      "seasonTotal": 3.1304302658937913e+20
     },
     {
       "gainVsPreviousSeason": -5.942726348432904e+20,
@@ -158,16 +158,16 @@
       "seasonTotal": 1.8306235578620058e+20
     },
     {
-      "gainVsPreviousSeason": -9.258815515823623e+20,
-      "name": "Belthazar",
+      "gainVsPreviousSeason": -2.1743669473841077e+21,
+      "name": "samwise08",
       "rank": 27,
-      "seasonTotal": 1.1082615529643214e+20
+      "seasonTotal": 1.6509269688145163e+20
     },
     {
-      "gainVsPreviousSeason": -2.280053616716978e+21,
-      "name": "samwise08",
+      "gainVsPreviousSeason": -9.258815515823623e+20,
+      "name": "Belthazar",
       "rank": 28,
-      "seasonTotal": 5.94060275485811e+19
+      "seasonTotal": 1.1082615529643214e+20
     }
   ],
   "miniSeasons": [
@@ -480,10 +480,11 @@
             },
             {
               "attempts": [
-                2.0941073548427582e+20
+                2.0941073548427582e+20,
+                2.115595934966178e+20
               ],
               "name": "theLP",
-              "top2Sum": 2.0941073548427582e+20
+              "top2Sum": 4.209703289808936e+20
             },
             {
               "attempts": [
@@ -526,10 +527,11 @@
             },
             {
               "attempts": [
-                5.94060275485811e+19
+                5.94060275485811e+19,
+                1.0568666933287053e+20
               ],
               "name": "samwise08",
-              "top2Sum": 5.94060275485811e+19
+              "top2Sum": 1.6509269688145163e+20
             },
             {
               "attempts": [
@@ -556,6 +558,20 @@
               ],
               "name": "EMBALOCO",
               "top2Sum": 1.8037173688987156e+20
+            },
+            {
+              "attempts": [
+                5.0842541260824766e+20
+              ],
+              "name": "Player 66607264",
+              "top2Sum": 5.0842541260824766e+20
+            },
+            {
+              "attempts": [
+                1.1066801380732078e+20
+              ],
+              "name": "BlackFlamE",
+              "top2Sum": 1.1066801380732078e+20
             }
           ]
         }
