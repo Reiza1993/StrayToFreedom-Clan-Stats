@@ -2,10 +2,10 @@
   "endDate": "2026-11-18",
   "leaderboard": [
     {
-      "gainVsPreviousSeason": -1.3770584248083942e+24,
+      "gainVsPreviousSeason": -1.3183407953573026e+24,
       "name": "Fl3xas",
       "rank": 1,
-      "seasonTotal": 2.3026283679082964e+23
+      "seasonTotal": 2.889804662419212e+23
     },
     {
       "gainVsPreviousSeason": -1.9676391362331596e+23,
@@ -32,28 +32,28 @@
       "seasonTotal": 4.455906795187872e+22
     },
     {
+      "gainVsPreviousSeason": -9.247319580487743e+22,
+      "name": "SngphO",
+      "rank": 6,
+      "seasonTotal": 2.0205186826323634e+22
+    },
+    {
       "gainVsPreviousSeason": -1.258965146730114e+23,
       "name": "\u795eSterben\u6b7b",
-      "rank": 6,
+      "rank": 7,
       "seasonTotal": 1.890724884778827e+22
     },
     {
-      "gainVsPreviousSeason": -9.463220651541456e+22,
-      "name": "SngphO",
-      "rank": 7,
-      "seasonTotal": 1.8046176115786502e+22
+      "gainVsPreviousSeason": -1.5979402014724268e+22,
+      "name": "MadameMischief",
+      "rank": 8,
+      "seasonTotal": 3.971888740385091e+21
     },
     {
       "gainVsPreviousSeason": -1.041312401884149e+22,
       "name": "NeonCBV",
-      "rank": 8,
-      "seasonTotal": 3.927043021751084e+21
-    },
-    {
-      "gainVsPreviousSeason": -1.7035907923943287e+22,
-      "name": "MadameMischief",
       "rank": 9,
-      "seasonTotal": 2.9153828311660715e+21
+      "seasonTotal": 3.927043021751084e+21
     },
     {
       "gainVsPreviousSeason": -1.8722484629254357e+22,
@@ -830,6 +830,29 @@
               ],
               "name": "VictorMolusco",
               "top2Sum": 4.16985122064219e+20
+            },
+            {
+              "attempts": [
+                2.159010710537134e+21
+              ],
+              "name": "SngphO",
+              "top2Sum": 2.159010710537134e+21
+            },
+            {
+              "attempts": [
+                3.138185097882762e+22,
+                2.7335778472263963e+22
+              ],
+              "name": "Fl3xas",
+              "top2Sum": 5.871762945109158e+22
+            },
+            {
+              "attempts": [
+                5.453698023261402e+20,
+                5.1113610689287946e+20
+              ],
+              "name": "MadameMischief",
+              "top2Sum": 1.0565059092190197e+21
             }
           ]
         }
