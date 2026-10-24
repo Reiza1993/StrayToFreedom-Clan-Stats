@@ -2,10 +2,10 @@
   "endDate": "2026-11-18",
   "leaderboard": [
     {
-      "gainVsPreviousSeason": -1.461309803227368e+24,
+      "gainVsPreviousSeason": -1.3770584248083942e+24,
       "name": "Fl3xas",
       "rank": 1,
-      "seasonTotal": 1.4601145837185589e+23
+      "seasonTotal": 2.3026283679082964e+23
     },
     {
       "gainVsPreviousSeason": -5.2059344507819524e+23,
@@ -92,22 +92,22 @@
       "seasonTotal": 1.0579789307830559e+21
     },
     {
+      "gainVsPreviousSeason": -6.649667361410583e+21,
+      "name": "Apathy_",
+      "rank": 16,
+      "seasonTotal": 9.33083604417073e+20
+    },
+    {
       "gainVsPreviousSeason": -6.186910293236157e+21,
       "name": "HakiLuffy",
-      "rank": 16,
+      "rank": 17,
       "seasonTotal": 8.348015307166518e+20
     },
     {
       "gainVsPreviousSeason": -1.8939407407079175e+22,
       "name": "PastalaVista",
-      "rank": 17,
-      "seasonTotal": 7.557464600278368e+20
-    },
-    {
-      "gainVsPreviousSeason": -6.829776810902633e+21,
-      "name": "Apathy_",
       "rank": 18,
-      "seasonTotal": 7.529741549250229e+20
+      "seasonTotal": 7.557464600278368e+20
     },
     {
       "gainVsPreviousSeason": -2.423337932527663e+21,
@@ -152,22 +152,28 @@
       "seasonTotal": 3.5429882953053766e+20
     },
     {
+      "gainVsPreviousSeason": -2.502229831209713e+21,
+      "name": "faxnem",
+      "rank": 26,
+      "seasonTotal": 2.091143489300118e+20
+    },
+    {
       "gainVsPreviousSeason": -5.942726348432904e+20,
       "name": "Player 80018314",
-      "rank": 26,
+      "rank": 27,
       "seasonTotal": 1.8306235578620058e+20
     },
     {
       "gainVsPreviousSeason": -2.1743669473841077e+21,
       "name": "samwise08",
-      "rank": 27,
+      "rank": 28,
       "seasonTotal": 1.6509269688145163e+20
     },
     {
-      "gainVsPreviousSeason": -9.258815515823623e+20,
+      "gainVsPreviousSeason": -8.721850557876125e+20,
       "name": "Belthazar",
-      "rank": 28,
-      "seasonTotal": 1.1082615529643214e+20
+      "rank": 29,
+      "seasonTotal": 1.64522651091182e+20
     }
   ],
   "miniSeasons": [
@@ -693,6 +699,36 @@
               ],
               "name": "Nubis",
               "top2Sum": 1.6448081801103079e+22
+            },
+            {
+              "attempts": [
+                2.6976491389623673e+19,
+                2.6720004405126173e+19
+              ],
+              "name": "Belthazar",
+              "top2Sum": 5.369649579474985e+19
+            },
+            {
+              "attempts": [
+                1.8010944949205005e+20
+              ],
+              "name": "Apathy_",
+              "top2Sum": 1.8010944949205005e+20
+            },
+            {
+              "attempts": [
+                2.091143489300118e+20
+              ],
+              "name": "faxnem",
+              "top2Sum": 2.091143489300118e+20
+            },
+            {
+              "attempts": [
+                3.649588802342823e+22,
+                4.77554903955455e+22
+              ],
+              "name": "Fl3xas",
+              "top2Sum": 8.425137841897373e+22
             }
           ]
         }
