@@ -62,34 +62,34 @@
       "seasonTotal": 2.037585912492762e+21
     },
     {
+      "gainVsPreviousSeason": -4.394255081390763e+21,
+      "name": "theLP",
+      "rank": 11,
+      "seasonTotal": 1.2267556966421186e+21
+    },
+    {
       "gainVsPreviousSeason": -8.143067444035563e+21,
       "name": "\u76feHeathcliff\u5263",
-      "rank": 11,
+      "rank": 12,
       "seasonTotal": 1.2124344553770142e+21
     },
     {
       "gainVsPreviousSeason": -5.254764123884507e+21,
       "name": "Gritchen",
-      "rank": 12,
+      "rank": 13,
       "seasonTotal": 1.185325167622298e+21
     },
     {
       "gainVsPreviousSeason": -5.973116414349015e+21,
       "name": "p88203044",
-      "rank": 13,
+      "rank": 14,
       "seasonTotal": 1.0579789307830559e+21
     },
     {
       "gainVsPreviousSeason": -7.252182163066811e+21,
       "name": "Player 66607264",
-      "rank": 14,
-      "seasonTotal": 9.29829518918773e+20
-    },
-    {
-      "gainVsPreviousSeason": -4.752133826368089e+21,
-      "name": "theLP",
       "rank": 15,
-      "seasonTotal": 8.688769516647937e+20
+      "seasonTotal": 9.29829518918773e+20
     },
     {
       "gainVsPreviousSeason": -6.186910293236157e+21,
@@ -134,22 +134,22 @@
       "seasonTotal": 4.4912347702051425e+20
     },
     {
+      "gainVsPreviousSeason": -3.623000994867959e+21,
+      "name": "BlackFlamE",
+      "rank": 23,
+      "seasonTotal": 4.4096253292118e+20
+    },
+    {
       "gainVsPreviousSeason": -2.6381558872693423e+21,
       "name": "BobBobberson",
-      "rank": 23,
+      "rank": 24,
       "seasonTotal": 3.958912731076136e+20
     },
     {
       "gainVsPreviousSeason": -5.841566593650146e+21,
       "name": "Bensayyten",
-      "rank": 24,
-      "seasonTotal": 3.5429882953053766e+20
-    },
-    {
-      "gainVsPreviousSeason": -3.7436982513788854e+21,
-      "name": "BlackFlamE",
       "rank": 25,
-      "seasonTotal": 3.202652764102539e+20
+      "seasonTotal": 3.5429882953053766e+20
     },
     {
       "gainVsPreviousSeason": -5.942726348432904e+20,
@@ -660,6 +660,21 @@
               ],
               "name": "\u795eSterben\u6b7b",
               "top2Sum": 9.434764087492232e+21
+            },
+            {
+              "attempts": [
+                1.9089592942808927e+20,
+                1.6698281554923572e+20
+              ],
+              "name": "theLP",
+              "top2Sum": 3.57878744977325e+20
+            },
+            {
+              "attempts": [
+                1.2069725651092614e+20
+              ],
+              "name": "BlackFlamE",
+              "top2Sum": 1.2069725651092614e+20
             }
           ]
         }
