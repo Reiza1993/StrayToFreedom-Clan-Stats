@@ -32,16 +32,16 @@
       "seasonTotal": 3.4919143115027577e+22
     },
     {
-      "gainVsPreviousSeason": -9.463220651541456e+22,
-      "name": "SngphO",
+      "gainVsPreviousSeason": -1.258965146730114e+23,
+      "name": "\u795eSterben\u6b7b",
       "rank": 6,
-      "seasonTotal": 1.8046176115786502e+22
+      "seasonTotal": 1.890724884778827e+22
     },
     {
-      "gainVsPreviousSeason": -1.3533127876050363e+23,
-      "name": "\u795eSterben\u6b7b",
+      "gainVsPreviousSeason": -9.463220651541456e+22,
+      "name": "SngphO",
       "rank": 7,
-      "seasonTotal": 9.47248476029604e+21
+      "seasonTotal": 1.8046176115786502e+22
     },
     {
       "gainVsPreviousSeason": -1.041312401884149e+22,
@@ -653,6 +653,13 @@
               ],
               "name": "RABBIT5",
               "top2Sum": 1.2189375149411588e+22
+            },
+            {
+              "attempts": [
+                9.434764087492232e+21
+              ],
+              "name": "\u795eSterben\u6b7b",
+              "top2Sum": 9.434764087492232e+21
             }
           ]
         }
