@@ -62,34 +62,34 @@
       "seasonTotal": 2.037585912492762e+21
     },
     {
+      "gainVsPreviousSeason": -6.215895304598213e+21,
+      "name": "Player 66607264",
+      "rank": 11,
+      "seasonTotal": 1.9661163773873708e+21
+    },
+    {
       "gainVsPreviousSeason": -4.394255081390763e+21,
       "name": "theLP",
-      "rank": 11,
+      "rank": 12,
       "seasonTotal": 1.2267556966421186e+21
     },
     {
       "gainVsPreviousSeason": -8.143067444035563e+21,
       "name": "\u76feHeathcliff\u5263",
-      "rank": 12,
+      "rank": 13,
       "seasonTotal": 1.2124344553770142e+21
     },
     {
       "gainVsPreviousSeason": -5.254764123884507e+21,
       "name": "Gritchen",
-      "rank": 13,
+      "rank": 14,
       "seasonTotal": 1.185325167622298e+21
     },
     {
       "gainVsPreviousSeason": -5.973116414349015e+21,
       "name": "p88203044",
-      "rank": 14,
-      "seasonTotal": 1.0579789307830559e+21
-    },
-    {
-      "gainVsPreviousSeason": -7.252182163066811e+21,
-      "name": "Player 66607264",
       "rank": 15,
-      "seasonTotal": 9.29829518918773e+20
+      "seasonTotal": 1.0579789307830559e+21
     },
     {
       "gainVsPreviousSeason": -6.186910293236157e+21,
@@ -675,6 +675,14 @@
               ],
               "name": "BlackFlamE",
               "top2Sum": 1.2069725651092614e+20
+            },
+            {
+              "attempts": [
+                5.163899394498679e+20,
+                5.198969190187297e+20
+              ],
+              "name": "Player 66607264",
+              "top2Sum": 1.0362868584685977e+21
             }
           ]
         }
