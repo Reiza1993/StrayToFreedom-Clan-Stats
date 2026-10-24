@@ -74,40 +74,40 @@
       "seasonTotal": 1.5844403555730032e+21
     },
     {
-      "gainVsPreviousSeason": -4.394255081390763e+21,
-      "name": "theLP",
+      "gainVsPreviousSeason": -4.906807198513584e+21,
+      "name": "Gritchen",
       "rank": 13,
-      "seasonTotal": 1.2267556966421186e+21
+      "seasonTotal": 1.533282092993221e+21
     },
     {
-      "gainVsPreviousSeason": -5.254764123884507e+21,
-      "name": "Gritchen",
+      "gainVsPreviousSeason": -6.210315627139393e+21,
+      "name": "VictorMolusco",
       "rank": 14,
-      "seasonTotal": 1.185325167622298e+21
+      "seasonTotal": 1.3430279760077264e+21
+    },
+    {
+      "gainVsPreviousSeason": -4.394255081390763e+21,
+      "name": "theLP",
+      "rank": 15,
+      "seasonTotal": 1.2267556966421186e+21
     },
     {
       "gainVsPreviousSeason": -6.471018658542214e+21,
       "name": "Apathy_",
-      "rank": 15,
+      "rank": 16,
       "seasonTotal": 1.1117323072854418e+21
     },
     {
       "gainVsPreviousSeason": -5.973116414349015e+21,
       "name": "p88203044",
-      "rank": 16,
+      "rank": 17,
       "seasonTotal": 1.0579789307830559e+21
     },
     {
       "gainVsPreviousSeason": -2.2248827559427876e+21,
       "name": "Rzzza",
-      "rank": 17,
-      "seasonTotal": 9.298142231087913e+20
-    },
-    {
-      "gainVsPreviousSeason": -6.627300749203612e+21,
-      "name": "VictorMolusco",
       "rank": 18,
-      "seasonTotal": 9.260428539435074e+20
+      "seasonTotal": 9.298142231087913e+20
     },
     {
       "gainVsPreviousSeason": -6.186910293236157e+21,
@@ -122,22 +122,22 @@
       "seasonTotal": 7.557464600278368e+20
     },
     {
+      "gainVsPreviousSeason": -2.1501311032736e+21,
+      "name": "gubrax",
+      "rank": 21,
+      "seasonTotal": 6.413437370500282e+20
+    },
+    {
       "gainVsPreviousSeason": -3.459788001537153e+21,
       "name": "EMBALOCO",
-      "rank": 21,
+      "rank": 22,
       "seasonTotal": 6.193552678187138e+20
     },
     {
       "gainVsPreviousSeason": -2.4353754055127225e+21,
       "name": "BobBobberson",
-      "rank": 22,
-      "seasonTotal": 5.986717548642335e+20
-    },
-    {
-      "gainVsPreviousSeason": -2.3136290214586069e+21,
-      "name": "gubrax",
       "rank": 23,
-      "seasonTotal": 4.7784581886502135e+20
+      "seasonTotal": 5.986717548642335e+20
     },
     {
       "gainVsPreviousSeason": -3.623000994867959e+21,
@@ -806,6 +806,30 @@
               ],
               "name": "silverxz",
               "top2Sum": 1.7666580587291083e+20
+            },
+            {
+              "attempts": [
+                1.936748887948132e+20,
+                1.542820365761097e+20
+              ],
+              "name": "Gritchen",
+              "top2Sum": 3.479569253709229e+20
+            },
+            {
+              "attempts": [
+                8.82524703571048e+19,
+                7.5245447827902e+19
+              ],
+              "name": "gubrax",
+              "top2Sum": 1.6349791818500683e+20
+            },
+            {
+              "attempts": [
+                1.884457104302116e+20,
+                2.285394116340074e+20
+              ],
+              "name": "VictorMolusco",
+              "top2Sum": 4.16985122064219e+20
             }
           ]
         }
