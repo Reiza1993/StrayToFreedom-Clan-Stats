@@ -8,16 +8,16 @@
       "seasonTotal": 2.3026283679082964e+23
     },
     {
-      "gainVsPreviousSeason": -5.2059344507819524e+23,
-      "name": "\u04bban",
+      "gainVsPreviousSeason": -1.9676391362331596e+23,
+      "name": "DAYO-P",
       "rank": 2,
-      "seasonTotal": 7.358540823283592e+22
+      "seasonTotal": 7.717115040027159e+22
     },
     {
-      "gainVsPreviousSeason": -2.1659253402299793e+23,
-      "name": "DAYO-P",
+      "gainVsPreviousSeason": -5.2059344507819524e+23,
+      "name": "\u04bban",
       "rank": 3,
-      "seasonTotal": 5.734253000058962e+22
+      "seasonTotal": 7.358540823283592e+22
     },
     {
       "gainVsPreviousSeason": -2.497370857531647e+23,
@@ -98,28 +98,28 @@
       "seasonTotal": 1.0579789307830559e+21
     },
     {
+      "gainVsPreviousSeason": -2.2248827559427876e+21,
+      "name": "Rzzza",
+      "rank": 17,
+      "seasonTotal": 9.298142231087913e+20
+    },
+    {
       "gainVsPreviousSeason": -6.627300749203612e+21,
       "name": "VictorMolusco",
-      "rank": 17,
+      "rank": 18,
       "seasonTotal": 9.260428539435074e+20
     },
     {
       "gainVsPreviousSeason": -6.186910293236157e+21,
       "name": "HakiLuffy",
-      "rank": 18,
+      "rank": 19,
       "seasonTotal": 8.348015307166518e+20
     },
     {
       "gainVsPreviousSeason": -1.8939407407079175e+22,
       "name": "PastalaVista",
-      "rank": 19,
-      "seasonTotal": 7.557464600278368e+20
-    },
-    {
-      "gainVsPreviousSeason": -2.423337932527663e+21,
-      "name": "Rzzza",
       "rank": 20,
-      "seasonTotal": 7.313590465239161e+20
+      "seasonTotal": 7.557464600278368e+20
     },
     {
       "gainVsPreviousSeason": -3.459788001537153e+21,
@@ -170,9 +170,15 @@
       "seasonTotal": 2.091143489300118e+20
     },
     {
+      "gainVsPreviousSeason": -3.161370149363645e+21,
+      "name": "silverxz",
+      "rank": 29,
+      "seasonTotal": 1.7666580587291083e+20
+    },
+    {
       "gainVsPreviousSeason": -8.721850557876125e+20,
       "name": "Belthazar",
-      "rank": 29,
+      "rank": 30,
       "seasonTotal": 1.64522651091182e+20
     }
   ],
@@ -771,6 +777,40 @@
         }
       ],
       "miniSeasonNumber": 1
+    },
+    {
+      "days": [
+        {
+          "date": "2026-10-25",
+          "day": 4,
+          "players": [
+            {
+              "attempts": [
+                9.48644349557067e+21,
+                7.362632983135683e+21,
+                1.034217690411129e+22
+              ],
+              "name": "DAYO-P",
+              "top2Sum": 1.9828620399681963e+22
+            },
+            {
+              "attempts": [
+                1.9845517658487515e+20
+              ],
+              "name": "Rzzza",
+              "top2Sum": 1.9845517658487515e+20
+            },
+            {
+              "attempts": [
+                1.7666580587291083e+20
+              ],
+              "name": "silverxz",
+              "top2Sum": 1.7666580587291083e+20
+            }
+          ]
+        }
+      ],
+      "miniSeasonNumber": 2
     }
   ],
   "seasonNumber": 2,
