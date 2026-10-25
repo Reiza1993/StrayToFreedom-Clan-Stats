@@ -32,10 +32,10 @@
       "seasonTotal": 4.455906795187872e+22
     },
     {
-      "gainVsPreviousSeason": -9.247319580487743e+22,
+      "gainVsPreviousSeason": -9.055883875033262e+22,
       "name": "SngphO",
       "rank": 6,
-      "seasonTotal": 2.0205186826323634e+22
+      "seasonTotal": 2.2119543880868445e+22
     },
     {
       "gainVsPreviousSeason": -1.258965146730114e+23,
@@ -92,28 +92,28 @@
       "seasonTotal": 1.2267556966421186e+21
     },
     {
+      "gainVsPreviousSeason": -5.896098510238906e+21,
+      "name": "HakiLuffy",
+      "rank": 16,
+      "seasonTotal": 1.1256133137139026e+21
+    },
+    {
       "gainVsPreviousSeason": -6.471018658542214e+21,
       "name": "Apathy_",
-      "rank": 16,
+      "rank": 17,
       "seasonTotal": 1.1117323072854418e+21
     },
     {
       "gainVsPreviousSeason": -5.973116414349015e+21,
       "name": "p88203044",
-      "rank": 17,
+      "rank": 18,
       "seasonTotal": 1.0579789307830559e+21
     },
     {
       "gainVsPreviousSeason": -2.2248827559427876e+21,
       "name": "Rzzza",
-      "rank": 18,
-      "seasonTotal": 9.298142231087913e+20
-    },
-    {
-      "gainVsPreviousSeason": -6.186910293236157e+21,
-      "name": "HakiLuffy",
       "rank": 19,
-      "seasonTotal": 8.348015307166518e+20
+      "seasonTotal": 9.298142231087913e+20
     },
     {
       "gainVsPreviousSeason": -1.8939407407079175e+22,
@@ -833,10 +833,11 @@
             },
             {
               "attempts": [
-                2.159010710537134e+21
+                2.159010710537134e+21,
+                1.9143570545448109e+21
               ],
               "name": "SngphO",
-              "top2Sum": 2.159010710537134e+21
+              "top2Sum": 4.073367765081945e+21
             },
             {
               "attempts": [
@@ -853,6 +854,14 @@
               ],
               "name": "MadameMischief",
               "top2Sum": 1.0565059092190197e+21
+            },
+            {
+              "attempts": [
+                1.4676707663779448e+20,
+                1.4404470635945632e+20
+              ],
+              "name": "HakiLuffy",
+              "top2Sum": 2.908117829972508e+20
             }
           ]
         }
