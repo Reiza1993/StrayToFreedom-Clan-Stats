@@ -80,58 +80,58 @@
       "seasonTotal": 1.533282092993221e+21
     },
     {
+      "gainVsPreviousSeason": -5.666228443233936e+21,
+      "name": "p88203044",
+      "rank": 14,
+      "seasonTotal": 1.3648669018981353e+21
+    },
+    {
       "gainVsPreviousSeason": -6.210315627139393e+21,
       "name": "VictorMolusco",
-      "rank": 14,
+      "rank": 15,
       "seasonTotal": 1.3430279760077264e+21
+    },
+    {
+      "gainVsPreviousSeason": -1.8407325501329498e+22,
+      "name": "PastalaVista",
+      "rank": 16,
+      "seasonTotal": 1.2878283657775153e+21
     },
     {
       "gainVsPreviousSeason": -4.394255081390763e+21,
       "name": "theLP",
-      "rank": 15,
+      "rank": 17,
       "seasonTotal": 1.2267556966421186e+21
     },
     {
       "gainVsPreviousSeason": -5.896098510238906e+21,
       "name": "HakiLuffy",
-      "rank": 16,
+      "rank": 18,
       "seasonTotal": 1.1256133137139026e+21
     },
     {
       "gainVsPreviousSeason": -6.471018658542214e+21,
       "name": "Apathy_",
-      "rank": 17,
+      "rank": 19,
       "seasonTotal": 1.1117323072854418e+21
-    },
-    {
-      "gainVsPreviousSeason": -5.973116414349015e+21,
-      "name": "p88203044",
-      "rank": 18,
-      "seasonTotal": 1.0579789307830559e+21
     },
     {
       "gainVsPreviousSeason": -2.2248827559427876e+21,
       "name": "Rzzza",
-      "rank": 19,
+      "rank": 20,
       "seasonTotal": 9.298142231087913e+20
     },
     {
-      "gainVsPreviousSeason": -1.8939407407079175e+22,
-      "name": "PastalaVista",
-      "rank": 20,
-      "seasonTotal": 7.557464600278368e+20
+      "gainVsPreviousSeason": -3.1823281574726116e+21,
+      "name": "EMBALOCO",
+      "rank": 21,
+      "seasonTotal": 8.968151118832549e+20
     },
     {
       "gainVsPreviousSeason": -2.1501311032736e+21,
       "name": "gubrax",
-      "rank": 21,
-      "seasonTotal": 6.413437370500282e+20
-    },
-    {
-      "gainVsPreviousSeason": -3.459788001537153e+21,
-      "name": "EMBALOCO",
       "rank": 22,
-      "seasonTotal": 6.193552678187138e+20
+      "seasonTotal": 6.413437370500282e+20
     },
     {
       "gainVsPreviousSeason": -3.455908199551224e+21,
@@ -146,45 +146,51 @@
       "seasonTotal": 5.986717548642335e+20
     },
     {
+      "gainVsPreviousSeason": -2.261578435210541e+22,
+      "name": "pumpenjoe",
+      "rank": 25,
+      "seasonTotal": 4.594254265310263e+20
+    },
+    {
       "gainVsPreviousSeason": -5.841566593650146e+21,
       "name": "Bensayyten",
-      "rank": 25,
+      "rank": 26,
       "seasonTotal": 3.5429882953053766e+20
     },
     {
       "gainVsPreviousSeason": -2.0516478119538836e+21,
       "name": "samwise08",
-      "rank": 26,
+      "rank": 27,
       "seasonTotal": 2.8781183231167568e+20
     },
     {
       "gainVsPreviousSeason": -5.655961536658063e+20,
       "name": "Player 80018314",
-      "rank": 27,
+      "rank": 28,
       "seasonTotal": 2.1173883696368465e+20
     },
     {
       "gainVsPreviousSeason": -2.502229831209713e+21,
       "name": "faxnem",
-      "rank": 28,
+      "rank": 29,
       "seasonTotal": 2.091143489300118e+20
     },
     {
       "gainVsPreviousSeason": -3.161370149363645e+21,
       "name": "silverxz",
-      "rank": 29,
+      "rank": 30,
       "seasonTotal": 1.7666580587291083e+20
     },
     {
       "gainVsPreviousSeason": -8.721850557876125e+20,
       "name": "Belthazar",
-      "rank": 30,
+      "rank": 31,
       "seasonTotal": 1.64522651091182e+20
     },
     {
       "gainVsPreviousSeason": -1.822666833140271e+20,
       "name": "Cheeselife",
-      "rank": 31,
+      "rank": 32,
       "seasonTotal": 6.388910628514195e+18
     }
   ],
@@ -794,7 +800,8 @@
               "attempts": [
                 9.48644349557067e+21,
                 7.362632983135683e+21,
-                1.034217690411129e+22
+                1.034217690411129e+22,
+                8.048776056325657e+21
               ],
               "name": "DAYO-P",
               "top2Sum": 1.9828620399681963e+22
@@ -891,6 +898,35 @@
               ],
               "name": "NeonCBV",
               "top2Sum": 3.416358158732082e+21
+            },
+            {
+              "attempts": [
+                3.0688797111507957e+20
+              ],
+              "name": "p88203044",
+              "top2Sum": 3.0688797111507957e+20
+            },
+            {
+              "attempts": [
+                5.320819057496785e+20
+              ],
+              "name": "PastalaVista",
+              "top2Sum": 5.320819057496785e+20
+            },
+            {
+              "attempts": [
+                4.594254265310263e+20
+              ],
+              "name": "pumpenjoe",
+              "top2Sum": 4.594254265310263e+20
+            },
+            {
+              "attempts": [
+                1.1794951407154156e+20,
+                1.5951032999299963e+20
+              ],
+              "name": "EMBALOCO",
+              "top2Sum": 2.774598440645412e+20
             }
           ]
         }
