@@ -50,10 +50,10 @@
       "seasonTotal": 7.343401180483165e+21
     },
     {
-      "gainVsPreviousSeason": -1.5979402014724268e+22,
+      "gainVsPreviousSeason": -1.5113344968755268e+22,
       "name": "MadameMischief",
       "rank": 9,
-      "seasonTotal": 3.971888740385091e+21
+      "seasonTotal": 4.83794578635409e+21
     },
     {
       "gainVsPreviousSeason": -1.7876113487713905e+22,
@@ -68,58 +68,58 @@
       "seasonTotal": 2.274666003637881e+21
     },
     {
+      "gainVsPreviousSeason": -7.465132199296239e+21,
+      "name": "\u76feHeathcliff\u5263",
+      "rank": 12,
+      "seasonTotal": 1.8903697001163388e+21
+    },
+    {
       "gainVsPreviousSeason": -5.293754714396297e+21,
       "name": "p88203044",
-      "rank": 12,
+      "rank": 13,
       "seasonTotal": 1.7373406307357735e+21
+    },
+    {
+      "gainVsPreviousSeason": -5.82323134228109e+21,
+      "name": "VictorMolusco",
+      "rank": 14,
+      "seasonTotal": 1.730112260866029e+21
+    },
+    {
+      "gainVsPreviousSeason": -4.753831111512503e+21,
+      "name": "Gritchen",
+      "rank": 15,
+      "seasonTotal": 1.6862581799943023e+21
     },
     {
       "gainVsPreviousSeason": -4.0193020229156083e+21,
       "name": "theLP",
-      "rank": 13,
+      "rank": 16,
       "seasonTotal": 1.6017087551172735e+21
-    },
-    {
-      "gainVsPreviousSeason": -7.771061543839575e+21,
-      "name": "\u76feHeathcliff\u5263",
-      "rank": 14,
-      "seasonTotal": 1.5844403555730032e+21
-    },
-    {
-      "gainVsPreviousSeason": -4.906807198513584e+21,
-      "name": "Gritchen",
-      "rank": 15,
-      "seasonTotal": 1.533282092993221e+21
     },
     {
       "gainVsPreviousSeason": -5.62698013865786e+21,
       "name": "HakiLuffy",
-      "rank": 16,
+      "rank": 17,
       "seasonTotal": 1.3947316852949495e+21
     },
     {
-      "gainVsPreviousSeason": -6.210315627139393e+21,
-      "name": "VictorMolusco",
-      "rank": 17,
-      "seasonTotal": 1.3430279760077264e+21
+      "gainVsPreviousSeason": -6.217272977539631e+21,
+      "name": "Apathy_",
+      "rank": 18,
+      "seasonTotal": 1.3654779882880248e+21
     },
     {
       "gainVsPreviousSeason": -1.8407325501329498e+22,
       "name": "PastalaVista",
-      "rank": 18,
+      "rank": 19,
       "seasonTotal": 1.2878283657775153e+21
     },
     {
-      "gainVsPreviousSeason": -6.471018658542214e+21,
-      "name": "Apathy_",
-      "rank": 19,
-      "seasonTotal": 1.1117323072854418e+21
-    },
-    {
-      "gainVsPreviousSeason": -2.2248827559427876e+21,
+      "gainVsPreviousSeason": -2.0511692418487608e+21,
       "name": "Rzzza",
       "rank": 20,
-      "seasonTotal": 9.298142231087913e+20
+      "seasonTotal": 1.1035277372028183e+21
     },
     {
       "gainVsPreviousSeason": -3.1823281574726116e+21,
@@ -176,27 +176,33 @@
       "seasonTotal": 2.9590032528718456e+20
     },
     {
+      "gainVsPreviousSeason": -4.711619183849452e+21,
+      "name": "groggen",
+      "rank": 30,
+      "seasonTotal": 2.300293099935694e+20
+    },
+    {
       "gainVsPreviousSeason": -2.502229831209713e+21,
       "name": "faxnem",
-      "rank": 30,
+      "rank": 31,
       "seasonTotal": 2.091143489300118e+20
     },
     {
       "gainVsPreviousSeason": -8.347664794928278e+20,
       "name": "Belthazar",
-      "rank": 31,
+      "rank": 32,
       "seasonTotal": 2.0194122738596672e+20
     },
     {
       "gainVsPreviousSeason": -1.6606770927807837e+20,
       "name": "ergiangi",
-      "rank": 32,
+      "rank": 33,
       "seasonTotal": 4.79302806792742e+19
     },
     {
       "gainVsPreviousSeason": -1.822666833140271e+20,
       "name": "Cheeselife",
-      "rank": 33,
+      "rank": 34,
       "seasonTotal": 6.388910628514195e+18
     }
   ],
@@ -1062,6 +1068,59 @@
               ],
               "name": "silverxz",
               "top2Sum": 2.1242277467100876e+20
+            },
+            {
+              "attempts": [
+                8.110950823309327e+19,
+                7.1866578767988154e+19
+              ],
+              "name": "Gritchen",
+              "top2Sum": 1.529760870010814e+20
+            },
+            {
+              "attempts": [
+                1.0613348767996397e+20,
+                1.4761219332261908e+20
+              ],
+              "name": "Apathy_",
+              "top2Sum": 2.5374568100258303e+20
+            },
+            {
+              "attempts": [
+                1.9252139939862872e+20,
+                1.9456288545967404e+20
+              ],
+              "name": "VictorMolusco",
+              "top2Sum": 3.870842848583027e+20
+            },
+            {
+              "attempts": [
+                1.737135140940269e+20
+              ],
+              "name": "Rzzza",
+              "top2Sum": 1.737135140940269e+20
+            },
+            {
+              "attempts": [
+                3.059293445433357e+20
+              ],
+              "name": "\u76feHeathcliff\u5263",
+              "top2Sum": 3.059293445433357e+20
+            },
+            {
+              "attempts": [
+                2.300293099935694e+20
+              ],
+              "name": "groggen",
+              "top2Sum": 2.300293099935694e+20
+            },
+            {
+              "attempts": [
+                4.986235018032485e+20,
+                3.674335441657501e+20
+              ],
+              "name": "MadameMischief",
+              "top2Sum": 8.660570459689986e+20
             }
           ]
         }
