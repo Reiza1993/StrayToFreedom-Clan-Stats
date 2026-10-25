@@ -44,16 +44,16 @@
       "seasonTotal": 1.890724884778827e+22
     },
     {
-      "gainVsPreviousSeason": -1.5979402014724268e+22,
-      "name": "MadameMischief",
+      "gainVsPreviousSeason": -6.996765860109409e+21,
+      "name": "NeonCBV",
       "rank": 8,
-      "seasonTotal": 3.971888740385091e+21
+      "seasonTotal": 7.343401180483165e+21
     },
     {
-      "gainVsPreviousSeason": -1.041312401884149e+22,
-      "name": "NeonCBV",
+      "gainVsPreviousSeason": -1.5979402014724268e+22,
+      "name": "MadameMischief",
       "rank": 9,
-      "seasonTotal": 3.927043021751084e+21
+      "seasonTotal": 3.971888740385091e+21
     },
     {
       "gainVsPreviousSeason": -1.8722484629254357e+22,
@@ -134,16 +134,16 @@
       "seasonTotal": 6.193552678187138e+20
     },
     {
-      "gainVsPreviousSeason": -2.4353754055127225e+21,
-      "name": "BobBobberson",
+      "gainVsPreviousSeason": -3.455908199551224e+21,
+      "name": "BlackFlamE",
       "rank": 23,
-      "seasonTotal": 5.986717548642335e+20
+      "seasonTotal": 6.080553282379152e+20
     },
     {
-      "gainVsPreviousSeason": -3.623000994867959e+21,
-      "name": "BlackFlamE",
+      "gainVsPreviousSeason": -2.4353754055127225e+21,
+      "name": "BobBobberson",
       "rank": 24,
-      "seasonTotal": 4.4096253292118e+20
+      "seasonTotal": 5.986717548642335e+20
     },
     {
       "gainVsPreviousSeason": -5.841566593650146e+21,
@@ -180,6 +180,12 @@
       "name": "Belthazar",
       "rank": 30,
       "seasonTotal": 1.64522651091182e+20
+    },
+    {
+      "gainVsPreviousSeason": -1.822666833140271e+20,
+      "name": "Cheeselife",
+      "rank": 31,
+      "seasonTotal": 6.388910628514195e+18
     }
   ],
   "miniSeasons": [
@@ -862,6 +868,29 @@
               ],
               "name": "HakiLuffy",
               "top2Sum": 2.908117829972508e+20
+            },
+            {
+              "attempts": [
+                6.388910628514195e+18
+              ],
+              "name": "Cheeselife",
+              "top2Sum": 6.388910628514195e+18
+            },
+            {
+              "attempts": [
+                8.190823104714105e+19,
+                8.518456426959418e+19
+              ],
+              "name": "BlackFlamE",
+              "top2Sum": 1.6709279531673525e+20
+            },
+            {
+              "attempts": [
+                1.7599078433775063e+21,
+                1.6564503153545757e+21
+              ],
+              "name": "NeonCBV",
+              "top2Sum": 3.416358158732082e+21
             }
           ]
         }
