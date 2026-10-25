@@ -20,10 +20,10 @@
       "seasonTotal": 7.358540823283592e+22
     },
     {
-      "gainVsPreviousSeason": -2.497370857531647e+23,
+      "gainVsPreviousSeason": -2.347065955563901e+23,
       "name": "Nubis",
       "rank": 4,
-      "seasonTotal": 5.136722491613065e+22
+      "seasonTotal": 6.639771511290524e+22
     },
     {
       "gainVsPreviousSeason": -1.7353585068157623e+23,
@@ -176,16 +176,16 @@
       "seasonTotal": 2.091143489300118e+20
     },
     {
-      "gainVsPreviousSeason": -3.161370149363645e+21,
-      "name": "silverxz",
+      "gainVsPreviousSeason": -8.347664794928278e+20,
+      "name": "Belthazar",
       "rank": 30,
-      "seasonTotal": 1.7666580587291083e+20
+      "seasonTotal": 2.0194122738596672e+20
     },
     {
-      "gainVsPreviousSeason": -8.721850557876125e+20,
-      "name": "Belthazar",
+      "gainVsPreviousSeason": -3.161370149363645e+21,
+      "name": "silverxz",
       "rank": 31,
-      "seasonTotal": 1.64522651091182e+20
+      "seasonTotal": 1.7666580587291083e+20
     },
     {
       "gainVsPreviousSeason": -1.822666833140271e+20,
@@ -927,6 +927,24 @@
               ],
               "name": "EMBALOCO",
               "top2Sum": 2.774598440645412e+20
+            },
+            {
+              "attempts": [
+                1.1490517677815052e+19,
+                2.592805861696968e+19
+              ],
+              "name": "Belthazar",
+              "top2Sum": 3.741857629478473e+19
+            },
+            {
+              "attempts": [
+                7.187404622321902e+21,
+                7.203898743843454e+21,
+                7.826591452931134e+21,
+                6.492809109939414e+21
+              ],
+              "name": "Nubis",
+              "top2Sum": 1.5030490196774589e+22
             }
           ]
         }
