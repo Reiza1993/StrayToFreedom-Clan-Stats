@@ -8,10 +8,10 @@
       "seasonTotal": 3.3394895804632976e+23
     },
     {
-      "gainVsPreviousSeason": -1.9676391362331596e+23,
+      "gainVsPreviousSeason": -1.773605067620359e+23,
       "name": "DAYO-P",
       "rank": 2,
-      "seasonTotal": 7.717115040027159e+22
+      "seasonTotal": 9.657455726155166e+22
     },
     {
       "gainVsPreviousSeason": -5.2059344507819524e+23,
@@ -152,40 +152,40 @@
       "seasonTotal": 4.594254265310263e+20
     },
     {
+      "gainVsPreviousSeason": -2.9489473746926363e+21,
+      "name": "silverxz",
+      "rank": 26,
+      "seasonTotal": 3.8908858054391955e+20
+    },
+    {
       "gainVsPreviousSeason": -5.841566593650146e+21,
       "name": "Bensayyten",
-      "rank": 26,
+      "rank": 27,
       "seasonTotal": 3.5429882953053766e+20
     },
     {
       "gainVsPreviousSeason": -1.9933579450689774e+21,
       "name": "samwise08",
-      "rank": 27,
+      "rank": 28,
       "seasonTotal": 3.461016991965818e+20
     },
     {
       "gainVsPreviousSeason": -4.8143466534230635e+20,
       "name": "Player 80018314",
-      "rank": 28,
+      "rank": 29,
       "seasonTotal": 2.9590032528718456e+20
     },
     {
       "gainVsPreviousSeason": -2.502229831209713e+21,
       "name": "faxnem",
-      "rank": 29,
+      "rank": 30,
       "seasonTotal": 2.091143489300118e+20
     },
     {
       "gainVsPreviousSeason": -8.347664794928278e+20,
       "name": "Belthazar",
-      "rank": 30,
-      "seasonTotal": 2.0194122738596672e+20
-    },
-    {
-      "gainVsPreviousSeason": -3.161370149363645e+21,
-      "name": "silverxz",
       "rank": 31,
-      "seasonTotal": 1.7666580587291083e+20
+      "seasonTotal": 2.0194122738596672e+20
     },
     {
       "gainVsPreviousSeason": -1.6606770927807837e+20,
@@ -1032,7 +1032,8 @@
             {
               "attempts": [
                 1.1946143212767366e+20,
-                9.730691665258327e+19
+                9.730691665258327e+19,
+                8.356329358017624e+19
               ],
               "name": "BlackFlamE",
               "top2Sum": 2.1676834878025695e+20
@@ -1044,6 +1045,23 @@
               ],
               "name": "Fl3xas",
               "top2Sum": 4.496849180440857e+22
+            },
+            {
+              "attempts": [
+                4.597366330105006e+21,
+                8.97303759578612e+21,
+                1.043036926549395e+22,
+                7.621696854624153e+21
+              ],
+              "name": "DAYO-P",
+              "top2Sum": 1.940340686128007e+22
+            },
+            {
+              "attempts": [
+                2.1242277467100876e+20
+              ],
+              "name": "silverxz",
+              "top2Sum": 2.1242277467100876e+20
             }
           ]
         }
