@@ -56,16 +56,16 @@
       "seasonTotal": 3.971888740385091e+21
     },
     {
-      "gainVsPreviousSeason": -1.8722484629254357e+22,
+      "gainVsPreviousSeason": -1.7876113487713905e+22,
       "name": "RetinaDNA",
       "rank": 10,
-      "seasonTotal": 2.037585912492762e+21
+      "seasonTotal": 2.8839570540332135e+21
     },
     {
-      "gainVsPreviousSeason": -6.215895304598213e+21,
+      "gainVsPreviousSeason": -5.907345678347702e+21,
       "name": "Player 66607264",
       "rank": 11,
-      "seasonTotal": 1.9661163773873708e+21
+      "seasonTotal": 2.274666003637881e+21
     },
     {
       "gainVsPreviousSeason": -7.771061543839575e+21,
@@ -128,22 +128,22 @@
       "seasonTotal": 8.968151118832549e+20
     },
     {
+      "gainVsPreviousSeason": -2.1627889010306927e+21,
+      "name": "BobBobberson",
+      "rank": 22,
+      "seasonTotal": 8.712582593462634e+20
+    },
+    {
       "gainVsPreviousSeason": -2.1501311032736e+21,
       "name": "gubrax",
-      "rank": 22,
+      "rank": 23,
       "seasonTotal": 6.413437370500282e+20
     },
     {
       "gainVsPreviousSeason": -3.455908199551224e+21,
       "name": "BlackFlamE",
-      "rank": 23,
-      "seasonTotal": 6.080553282379152e+20
-    },
-    {
-      "gainVsPreviousSeason": -2.4353754055127225e+21,
-      "name": "BobBobberson",
       "rank": 24,
-      "seasonTotal": 5.986717548642335e+20
+      "seasonTotal": 6.080553282379152e+20
     },
     {
       "gainVsPreviousSeason": -2.261578435210541e+22,
@@ -158,10 +158,10 @@
       "seasonTotal": 3.5429882953053766e+20
     },
     {
-      "gainVsPreviousSeason": -2.0516478119538836e+21,
+      "gainVsPreviousSeason": -1.9933579450689774e+21,
       "name": "samwise08",
       "rank": 27,
-      "seasonTotal": 2.8781183231167568e+20
+      "seasonTotal": 3.461016991965818e+20
     },
     {
       "gainVsPreviousSeason": -5.655961536658063e+20,
@@ -801,7 +801,8 @@
                 9.48644349557067e+21,
                 7.362632983135683e+21,
                 1.034217690411129e+22,
-                8.048776056325657e+21
+                8.048776056325657e+21,
+                6.903848083605032e+21
               ],
               "name": "DAYO-P",
               "top2Sum": 1.9828620399681963e+22
@@ -945,6 +946,36 @@
               ],
               "name": "Nubis",
               "top2Sum": 1.5030490196774589e+22
+            },
+            {
+              "attempts": [
+                8.463711415404516e+20
+              ],
+              "name": "RetinaDNA",
+              "top2Sum": 8.463711415404516e+20
+            },
+            {
+              "attempts": [
+                5.828986688490611e+19
+              ],
+              "name": "samwise08",
+              "top2Sum": 5.828986688490611e+19
+            },
+            {
+              "attempts": [
+                1.1461350284661001e+20,
+                1.9393612340390022e+20
+              ],
+              "name": "Player 66607264",
+              "top2Sum": 3.085496262505102e+20
+            },
+            {
+              "attempts": [
+                1.0601408388125771e+20,
+                1.6657242060077213e+20
+              ],
+              "name": "BobBobberson",
+              "top2Sum": 2.7258650448202983e+20
             }
           ]
         }
