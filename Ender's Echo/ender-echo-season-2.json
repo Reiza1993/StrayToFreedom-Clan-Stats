@@ -2,16 +2,16 @@
   "endDate": "2026-11-18",
   "leaderboard": [
     {
-      "gainVsPreviousSeason": -1.273372303552894e+24,
+      "gainVsPreviousSeason": -1.2045043498080009e+24,
       "name": "Fl3xas",
       "rank": 1,
-      "seasonTotal": 3.3394895804632976e+23
+      "seasonTotal": 4.0281691179122296e+23
     },
     {
-      "gainVsPreviousSeason": -1.773605067620359e+23,
+      "gainVsPreviousSeason": -1.5974415093341215e+23,
       "name": "DAYO-P",
       "rank": 2,
-      "seasonTotal": 9.657455726155166e+22
+      "seasonTotal": 1.1419091309017538e+23
     },
     {
       "gainVsPreviousSeason": -2.202850363361936e+23,
@@ -32,10 +32,10 @@
       "seasonTotal": 6.5536838514977504e+22
     },
     {
-      "gainVsPreviousSeason": -9.055883875033262e+22,
+      "gainVsPreviousSeason": -8.989650170103271e+22,
       "name": "SngphO",
       "rank": 6,
-      "seasonTotal": 2.2119543880868445e+22
+      "seasonTotal": 2.2781880930168354e+22
     },
     {
       "gainVsPreviousSeason": -1.258965146730114e+23,
@@ -74,10 +74,10 @@
       "seasonTotal": 2.3203603232216058e+21
     },
     {
-      "gainVsPreviousSeason": -7.465132199296239e+21,
+      "gainVsPreviousSeason": -7.148235479024955e+21,
       "name": "\u76feHeathcliff\u5263",
       "rank": 13,
-      "seasonTotal": 1.8903697001163388e+21
+      "seasonTotal": 2.2072664203876224e+21
     },
     {
       "gainVsPreviousSeason": -3.7336674983135507e+21,
@@ -86,16 +86,16 @@
       "seasonTotal": 1.8873432797193311e+21
     },
     {
-      "gainVsPreviousSeason": -5.82323134228109e+21,
-      "name": "VictorMolusco",
+      "gainVsPreviousSeason": -4.56210630580238e+21,
+      "name": "Gritchen",
       "rank": 15,
-      "seasonTotal": 1.730112260866029e+21
+      "seasonTotal": 1.8779829857044246e+21
     },
     {
-      "gainVsPreviousSeason": -4.753831111512503e+21,
-      "name": "Gritchen",
+      "gainVsPreviousSeason": -5.82323134228109e+21,
+      "name": "VictorMolusco",
       "rank": 16,
-      "seasonTotal": 1.6862581799943023e+21
+      "seasonTotal": 1.730112260866029e+21
     },
     {
       "gainVsPreviousSeason": -5.62698013865786e+21,
@@ -170,10 +170,10 @@
       "seasonTotal": 3.461016991965818e+20
     },
     {
-      "gainVsPreviousSeason": -4.8143466534230635e+20,
+      "gainVsPreviousSeason": -4.6247189480905146e+20,
       "name": "Player 80018314",
       "rank": 29,
-      "seasonTotal": 2.9590032528718456e+20
+      "seasonTotal": 3.1486309582043945e+20
     },
     {
       "gainVsPreviousSeason": -7.784245755053854e+20,
@@ -1103,10 +1103,11 @@
             },
             {
               "attempts": [
-                3.059293445433357e+20
+                3.059293445433357e+20,
+                3.1689672027128345e+20
               ],
               "name": "\u76feHeathcliff\u5263",
-              "top2Sum": 3.059293445433357e+20
+              "top2Sum": 6.228260648146192e+20
             },
             {
               "attempts": [
@@ -1195,6 +1196,50 @@
               ],
               "name": "EMBALOCO",
               "top2Sum": 3.0577646162445835e+20
+            },
+            {
+              "attempts": [
+                6.623370492999083e+20
+              ],
+              "name": "SngphO",
+              "top2Sum": 6.623370492999083e+20
+            },
+            {
+              "attempts": [
+                1.8962770533254877e+19
+              ],
+              "name": "Player 80018314",
+              "top2Sum": 1.8962770533254877e+19
+            }
+          ]
+        },
+        {
+          "date": "2026-10-27",
+          "day": 6,
+          "players": [
+            {
+              "attempts": [
+                1.917248057101222e+20
+              ],
+              "name": "Gritchen",
+              "top2Sum": 1.917248057101222e+20
+            },
+            {
+              "attempts": [
+                8.069015107347067e+21,
+                9.547340721276655e+21,
+                7.661865747331841e+21
+              ],
+              "name": "DAYO-P",
+              "top2Sum": 1.7616355828623722e+22
+            },
+            {
+              "attempts": [
+                3.0737382193185816e+22,
+                3.813057155170737e+22
+              ],
+              "name": "Fl3xas",
+              "top2Sum": 6.886795374489319e+22
             }
           ]
         }
