@@ -62,40 +62,40 @@
       "seasonTotal": 2.8839570540332135e+21
     },
     {
-      "gainVsPreviousSeason": -5.907345678347702e+21,
+      "gainVsPreviousSeason": -5.51425820204361e+21,
       "name": "Player 66607264",
       "rank": 11,
-      "seasonTotal": 2.274666003637881e+21
+      "seasonTotal": 2.6677534799419733e+21
+    },
+    {
+      "gainVsPreviousSeason": -4.710735021910465e+21,
+      "name": "p88203044",
+      "rank": 12,
+      "seasonTotal": 2.3203603232216058e+21
     },
     {
       "gainVsPreviousSeason": -7.465132199296239e+21,
       "name": "\u76feHeathcliff\u5263",
-      "rank": 12,
+      "rank": 13,
       "seasonTotal": 1.8903697001163388e+21
     },
     {
-      "gainVsPreviousSeason": -5.293754714396297e+21,
-      "name": "p88203044",
-      "rank": 13,
-      "seasonTotal": 1.7373406307357735e+21
+      "gainVsPreviousSeason": -3.7336674983135507e+21,
+      "name": "theLP",
+      "rank": 14,
+      "seasonTotal": 1.8873432797193311e+21
     },
     {
       "gainVsPreviousSeason": -5.82323134228109e+21,
       "name": "VictorMolusco",
-      "rank": 14,
+      "rank": 15,
       "seasonTotal": 1.730112260866029e+21
     },
     {
       "gainVsPreviousSeason": -4.753831111512503e+21,
       "name": "Gritchen",
-      "rank": 15,
-      "seasonTotal": 1.6862581799943023e+21
-    },
-    {
-      "gainVsPreviousSeason": -4.0193020229156083e+21,
-      "name": "theLP",
       "rank": 16,
-      "seasonTotal": 1.6017087551172735e+21
+      "seasonTotal": 1.6862581799943023e+21
     },
     {
       "gainVsPreviousSeason": -5.62698013865786e+21,
@@ -1057,7 +1057,8 @@
                 4.597366330105006e+21,
                 8.97303759578612e+21,
                 1.043036926549395e+22,
-                7.621696854624153e+21
+                7.621696854624153e+21,
+                7.835559163185054e+21
               ],
               "name": "DAYO-P",
               "top2Sum": 1.940340686128007e+22
@@ -1121,6 +1122,29 @@
               ],
               "name": "MadameMischief",
               "top2Sum": 8.660570459689986e+20
+            },
+            {
+              "attempts": [
+                1.532578177793163e+20,
+                1.3237670682274125e+20
+              ],
+              "name": "theLP",
+              "top2Sum": 2.8563452460205756e+20
+            },
+            {
+              "attempts": [
+                3.064812281757496e+20,
+                2.7653846431008267e+20
+              ],
+              "name": "p88203044",
+              "top2Sum": 5.830196924858323e+20
+            },
+            {
+              "attempts": [
+                3.930874763040921e+20
+              ],
+              "name": "Player 66607264",
+              "top2Sum": 3.930874763040921e+20
             }
           ]
         }
