@@ -14,16 +14,16 @@
       "seasonTotal": 9.657455726155166e+22
     },
     {
-      "gainVsPreviousSeason": -5.2059344507819524e+23,
-      "name": "\u04bban",
+      "gainVsPreviousSeason": -2.202850363361936e+23,
+      "name": "Nubis",
       "rank": 3,
-      "seasonTotal": 7.358540823283592e+22
+      "seasonTotal": 8.081927433310175e+22
     },
     {
-      "gainVsPreviousSeason": -2.347065955563901e+23,
-      "name": "Nubis",
+      "gainVsPreviousSeason": -5.2059344507819524e+23,
+      "name": "\u04bban",
       "rank": 4,
-      "seasonTotal": 6.639771511290524e+22
+      "seasonTotal": 7.358540823283592e+22
     },
     {
       "gainVsPreviousSeason": -1.5255808011847746e+23,
@@ -116,22 +116,22 @@
       "seasonTotal": 1.2878283657775153e+21
     },
     {
+      "gainVsPreviousSeason": -2.8765516958481535e+21,
+      "name": "EMBALOCO",
+      "rank": 20,
+      "seasonTotal": 1.2025915735077133e+21
+    },
+    {
+      "gainVsPreviousSeason": -1.8496740077847448e+21,
+      "name": "BobBobberson",
+      "rank": 21,
+      "seasonTotal": 1.1843731525922112e+21
+    },
+    {
       "gainVsPreviousSeason": -2.0511692418487608e+21,
       "name": "Rzzza",
-      "rank": 20,
-      "seasonTotal": 1.1035277372028183e+21
-    },
-    {
-      "gainVsPreviousSeason": -3.1823281574726116e+21,
-      "name": "EMBALOCO",
-      "rank": 21,
-      "seasonTotal": 8.968151118832549e+20
-    },
-    {
-      "gainVsPreviousSeason": -2.1627889010306927e+21,
-      "name": "BobBobberson",
       "rank": 22,
-      "seasonTotal": 8.712582593462634e+20
+      "seasonTotal": 1.1035277372028183e+21
     },
     {
       "gainVsPreviousSeason": -3.239139850770967e+21,
@@ -140,10 +140,10 @@
       "seasonTotal": 8.248236770181722e+20
     },
     {
-      "gainVsPreviousSeason": -2.1501311032736e+21,
+      "gainVsPreviousSeason": -1.9909302319931908e+21,
       "name": "gubrax",
       "rank": 24,
-      "seasonTotal": 6.413437370500282e+20
+      "seasonTotal": 8.005446083304375e+20
     },
     {
       "gainVsPreviousSeason": -2.261578435210541e+22,
@@ -176,22 +176,22 @@
       "seasonTotal": 2.9590032528718456e+20
     },
     {
+      "gainVsPreviousSeason": -7.784245755053854e+20,
+      "name": "Belthazar",
+      "rank": 30,
+      "seasonTotal": 2.5828313137340914e+20
+    },
+    {
       "gainVsPreviousSeason": -4.711619183849452e+21,
       "name": "groggen",
-      "rank": 30,
+      "rank": 31,
       "seasonTotal": 2.300293099935694e+20
     },
     {
       "gainVsPreviousSeason": -2.502229831209713e+21,
       "name": "faxnem",
-      "rank": 31,
-      "seasonTotal": 2.091143489300118e+20
-    },
-    {
-      "gainVsPreviousSeason": -8.347664794928278e+20,
-      "name": "Belthazar",
       "rank": 32,
-      "seasonTotal": 2.0194122738596672e+20
+      "seasonTotal": 2.091143489300118e+20
     },
     {
       "gainVsPreviousSeason": -1.6606770927807837e+20,
@@ -1153,6 +1153,48 @@
               ],
               "name": "RABBIT5",
               "top2Sum": 1.2971646367356854e+22
+            },
+            {
+              "attempts": [
+                2.819290759491681e+19,
+                2.81489963925256e+19
+              ],
+              "name": "Belthazar",
+              "top2Sum": 5.634190398744241e+19
+            },
+            {
+              "attempts": [
+                8.153965928222866e+19,
+                7.766121199818066e+19
+              ],
+              "name": "gubrax",
+              "top2Sum": 1.592008712804093e+20
+            },
+            {
+              "attempts": [
+                1.3228989071690413e+20,
+                1.8082500252904364e+20
+              ],
+              "name": "BobBobberson",
+              "top2Sum": 3.131148932459478e+20
+            },
+            {
+              "attempts": [
+                7.280077590142142e+21,
+                7.141481630054368e+21,
+                6.941556391283101e+21,
+                5.96215011447637e+21
+              ],
+              "name": "Nubis",
+              "top2Sum": 1.442155922019651e+22
+            },
+            {
+              "attempts": [
+                1.4637882021683177e+20,
+                1.593976414076266e+20
+              ],
+              "name": "EMBALOCO",
+              "top2Sum": 3.0577646162445835e+20
             }
           ]
         }
