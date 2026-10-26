@@ -26,10 +26,10 @@
       "seasonTotal": 6.639771511290524e+22
     },
     {
-      "gainVsPreviousSeason": -1.655297264858343e+23,
+      "gainVsPreviousSeason": -1.5255808011847746e+23,
       "name": "RABBIT5",
       "rank": 5,
-      "seasonTotal": 5.256519214762065e+22
+      "seasonTotal": 6.5536838514977504e+22
     },
     {
       "gainVsPreviousSeason": -9.055883875033262e+22,
@@ -1145,6 +1145,14 @@
               ],
               "name": "Player 66607264",
               "top2Sum": 3.930874763040921e+20
+            },
+            {
+              "attempts": [
+                6.451097057198294e+21,
+                6.52054931015856e+21
+              ],
+              "name": "RABBIT5",
+              "top2Sum": 1.2971646367356854e+22
             }
           ]
         }
