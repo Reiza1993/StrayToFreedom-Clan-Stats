@@ -32,10 +32,10 @@
       "seasonTotal": 6.5536838514977504e+22
     },
     {
-      "gainVsPreviousSeason": -8.989650170103271e+22,
+      "gainVsPreviousSeason": -8.609377101749275e+22,
       "name": "SngphO",
       "rank": 6,
-      "seasonTotal": 2.2781880930168354e+22
+      "seasonTotal": 2.6584611613708315e+22
     },
     {
       "gainVsPreviousSeason": -1.258965146730114e+23,
@@ -80,28 +80,28 @@
       "seasonTotal": 2.3203603232216058e+21
     },
     {
+      "gainVsPreviousSeason": -5.494635881456561e+21,
+      "name": "VictorMolusco",
+      "rank": 14,
+      "seasonTotal": 2.0587077216905574e+21
+    },
+    {
       "gainVsPreviousSeason": -4.463283846177702e+21,
       "name": "Gritchen",
-      "rank": 14,
+      "rank": 15,
       "seasonTotal": 1.9768054453291028e+21
     },
     {
       "gainVsPreviousSeason": -3.7336674983135507e+21,
       "name": "theLP",
-      "rank": 15,
+      "rank": 16,
       "seasonTotal": 1.8873432797193311e+21
     },
     {
       "gainVsPreviousSeason": -1.8067027412785511e+22,
       "name": "Scoundrel536",
-      "rank": 16,
-      "seasonTotal": 1.7346431349964045e+21
-    },
-    {
-      "gainVsPreviousSeason": -5.82323134228109e+21,
-      "name": "VictorMolusco",
       "rank": 17,
-      "seasonTotal": 1.730112260866029e+21
+      "seasonTotal": 1.7346431349964045e+21
     },
     {
       "gainVsPreviousSeason": -5.62698013865786e+21,
@@ -1271,6 +1271,23 @@
               ],
               "name": "MadameMischief",
               "top2Sum": 1.0829359735607246e+21
+            },
+            {
+              "attempts": [
+                1.3877467584364374e+20,
+                1.8982078498088462e+20
+              ],
+              "name": "VictorMolusco",
+              "top2Sum": 3.285954608245283e+20
+            },
+            {
+              "attempts": [
+                1.2435929305173273e+21,
+                1.8975264814441227e+21,
+                1.905204202095837e+21
+              ],
+              "name": "SngphO",
+              "top2Sum": 3.80273068353996e+21
             }
           ]
         }
