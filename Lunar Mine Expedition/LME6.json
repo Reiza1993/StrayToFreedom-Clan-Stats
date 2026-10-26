@@ -1,0 +1,397 @@
+{
+  "finalRanking": [
+    {
+      "clanId": 27335,
+      "clanName": "VuiL\u00e0Ch\u00ednh",
+      "medals": 93732,
+      "p1TotalScore": 102271,
+      "points": 4,
+      "rank": 1
+    },
+    {
+      "clanId": 45508,
+      "clanName": "\uc2a4\uc717",
+      "medals": 105301,
+      "p1TotalScore": 100195,
+      "points": 3,
+      "rank": 2
+    },
+    {
+      "clanId": 44262,
+      "clanName": "Freedom\u02e2\u1d57\u02b3\u1d43\u02b8",
+      "medals": 98551,
+      "p1TotalScore": 86508,
+      "points": 3,
+      "rank": 3
+    },
+    {
+      "clanId": 13246,
+      "clanName": "GG\ud0d5\ud0d5",
+      "medals": 108555,
+      "p1TotalScore": 91439,
+      "points": 2,
+      "rank": 4
+    }
+  ],
+  "freedomClanId": 44262,
+  "freedomClanName": "Freedom\u02e2\u1d57\u02b3\u1d43\u02b8",
+  "generatedAt": "2026-10-25T16:05:26.778060+00:00",
+  "lmeNumber": 6,
+  "lunarDetails": {
+    "13246": {
+      "clanId": 13246,
+      "lunarPoints": 1580,
+      "name": "GG\ud0d5\ud0d5",
+      "totalAtk": 86800050,
+      "totalChips": 2812,
+      "totalEe": null,
+      "totalRelicCores": 5868,
+      "totalTransmuteCores": 938
+    },
+    "27335": {
+      "clanId": 27335,
+      "lunarPoints": 1610,
+      "name": "VuiL\u00e0Ch\u00ednh",
+      "totalAtk": 96846104,
+      "totalChips": 3606,
+      "totalEe": null,
+      "totalRelicCores": 6521,
+      "totalTransmuteCores": 1643
+    },
+    "44262": {
+      "clanId": 44262,
+      "lunarPoints": 1545,
+      "name": "Freedom\u02e2\u1d57\u02b3\u1d43\u02b8",
+      "totalAtk": 78280094,
+      "totalChips": 2371,
+      "totalEe": null,
+      "totalRelicCores": 5735,
+      "totalTransmuteCores": 1094
+    },
+    "45508": {
+      "clanId": 45508,
+      "lunarPoints": 1575,
+      "name": "\uc2a4\uc717",
+      "totalAtk": 93171988,
+      "totalChips": 3300,
+      "totalEe": null,
+      "totalRelicCores": 6493,
+      "totalTransmuteCores": 1199
+    }
+  },
+  "members": [
+    {
+      "lmeScore": 3737,
+      "name": "\u04bban",
+      "round1": 4158,
+      "round2": 3174,
+      "round3": 2228,
+      "uid": 60687252
+    },
+    {
+      "lmeScore": 3649,
+      "name": "Fl3xas",
+      "round1": 2570,
+      "round2": 1412,
+      "round3": 1410,
+      "uid": 83339881
+    },
+    {
+      "lmeScore": 3344,
+      "name": "\u795eSterben\u6b7b",
+      "round1": 1600,
+      "round2": 1354,
+      "round3": 1174,
+      "uid": 87244358
+    },
+    {
+      "lmeScore": 3325,
+      "name": "DAYO-P",
+      "round1": 1726,
+      "round2": 1302,
+      "round3": 1318,
+      "uid": 103516442
+    },
+    {
+      "lmeScore": 3300,
+      "name": "RABBIT5",
+      "round1": 1622,
+      "round2": 1312,
+      "round3": 1290,
+      "uid": 29321884
+    },
+    {
+      "lmeScore": 3259,
+      "name": "Nubis",
+      "round1": 1654,
+      "round2": 1314,
+      "round3": 1224,
+      "uid": 18115624
+    },
+    {
+      "lmeScore": 3104,
+      "name": "Cunner88",
+      "round1": 1534,
+      "round2": 1184,
+      "round3": 1118,
+      "uid": 80972473
+    },
+    {
+      "lmeScore": 3078,
+      "name": "pumpenjoe",
+      "round1": 1552,
+      "round2": 1226,
+      "round3": 1312,
+      "uid": 108546985
+    },
+    {
+      "lmeScore": 3072,
+      "name": "SngphO",
+      "round1": 1276,
+      "round2": 525,
+      "round3": 510,
+      "uid": 87954282
+    },
+    {
+      "lmeScore": 3029,
+      "name": "Scoundrel536",
+      "round1": 1146,
+      "round2": 1084,
+      "round3": 1062,
+      "uid": 100876140
+    },
+    {
+      "lmeScore": 3019,
+      "name": "NeonCBV",
+      "round1": 612,
+      "round2": 0,
+      "round3": 1116,
+      "uid": 72894129
+    },
+    {
+      "lmeScore": 2904,
+      "name": "Toddlerr",
+      "round1": 584,
+      "round2": 565,
+      "round3": 550,
+      "uid": 35869301
+    },
+    {
+      "lmeScore": 2897,
+      "name": "RetinaDNA",
+      "round1": 531,
+      "round2": 1116,
+      "round3": 1096,
+      "uid": 108860725
+    },
+    {
+      "lmeScore": 2761,
+      "name": "\u76feHeathcliff\u5263",
+      "round1": 1002,
+      "round2": 1016,
+      "round3": 982,
+      "uid": 64676255
+    },
+    {
+      "lmeScore": 2752,
+      "name": "MadameMischief",
+      "round1": 1100,
+      "round2": 1020,
+      "round3": 972,
+      "uid": 41742773
+    },
+    {
+      "lmeScore": 2748,
+      "name": "PastalaVista",
+      "round1": 1062,
+      "round2": 1014,
+      "round3": 508,
+      "uid": 75174428
+    },
+    {
+      "lmeScore": 2703,
+      "name": "p88203044",
+      "round1": 456,
+      "round2": 884,
+      "round3": 870,
+      "uid": 88203044
+    },
+    {
+      "lmeScore": 2698,
+      "name": "Player 66607264",
+      "round1": 1044,
+      "round2": 1020,
+      "round3": 1006,
+      "uid": 66607264
+    },
+    {
+      "lmeScore": 2692,
+      "name": "Bensayyten",
+      "round1": 512,
+      "round2": 517,
+      "round3": 1014,
+      "uid": 32556489
+    },
+    {
+      "lmeScore": 2676,
+      "name": "Apathy_",
+      "round1": 946,
+      "round2": 1006,
+      "round3": 978,
+      "uid": 113690788
+    },
+    {
+      "lmeScore": 2652,
+      "name": "groggen",
+      "round1": 0,
+      "round2": 503,
+      "round3": 500,
+      "uid": 83861839
+    },
+    {
+      "lmeScore": 2647,
+      "name": "Gritchen",
+      "round1": 501,
+      "round2": 502,
+      "round3": 503,
+      "uid": 30658936
+    },
+    {
+      "lmeScore": 2601,
+      "name": "VictorMolusco",
+      "round1": 0,
+      "round2": 1008,
+      "round3": 946,
+      "uid": 112772047
+    },
+    {
+      "lmeScore": 2579,
+      "name": "samwise08",
+      "round1": 1082,
+      "round2": 1000,
+      "round3": 1008,
+      "uid": 51071110
+    },
+    {
+      "lmeScore": 2569,
+      "name": "theLP",
+      "round1": 1032,
+      "round2": 1018,
+      "round3": 1000,
+      "uid": 79510960
+    },
+    {
+      "lmeScore": 2568,
+      "name": "FlyingDutchy",
+      "round1": 1030,
+      "round2": 505,
+      "round3": 1010,
+      "uid": 59566866
+    },
+    {
+      "lmeScore": 2565,
+      "name": "faxnem",
+      "round1": 0,
+      "round2": 824,
+      "round3": 0,
+      "uid": 11463573
+    },
+    {
+      "lmeScore": 2554,
+      "name": "HakiLuffy",
+      "round1": 496,
+      "round2": 441,
+      "round3": 836,
+      "uid": 10754439
+    },
+    {
+      "lmeScore": 2538,
+      "name": "BobBobberson",
+      "round1": 880,
+      "round2": 884,
+      "round3": 868,
+      "uid": 26277677
+    },
+    {
+      "lmeScore": 2488,
+      "name": "ergiangi",
+      "round1": 0,
+      "round2": 464,
+      "round3": 840,
+      "uid": 18297536
+    },
+    {
+      "lmeScore": 2480,
+      "name": "silverxz",
+      "round1": 472,
+      "round2": 912,
+      "round3": 437,
+      "uid": 27113479
+    },
+    {
+      "lmeScore": 2480,
+      "name": "Cheeselife",
+      "round1": 946,
+      "round2": 0,
+      "round3": 866,
+      "uid": 29904762
+    },
+    {
+      "lmeScore": 2439,
+      "name": "EMBALOCO",
+      "round1": 870,
+      "round2": 0,
+      "round3": 874,
+      "uid": 89511116
+    },
+    {
+      "lmeScore": 2395,
+      "name": "BlackFlamE",
+      "round1": 471,
+      "round2": 1000,
+      "round3": 882,
+      "uid": 70603922
+    },
+    {
+      "lmeScore": 2390,
+      "name": "gubrax",
+      "round1": 862,
+      "round2": 928,
+      "round3": 834,
+      "uid": 106162623
+    },
+    {
+      "lmeScore": 2312,
+      "name": "Player 80018314",
+      "round1": 824,
+      "round2": 430,
+      "round3": 398,
+      "uid": 80018314
+    },
+    {
+      "lmeScore": 2197,
+      "name": "Belthazar",
+      "round1": 826,
+      "round2": 852,
+      "round3": 808,
+      "uid": 36484758
+    },
+    {
+      "lmeScore": 0,
+      "name": "Rzzza",
+      "round1": 477,
+      "round2": 486,
+      "round3": 0,
+      "uid": 71028860
+    },
+    {
+      "lmeScore": 0,
+      "name": "SterbyTools",
+      "round1": 0,
+      "round2": 0,
+      "round3": 0,
+      "uid": 115742768
+    }
+  ],
+  "warnings": []
+}
