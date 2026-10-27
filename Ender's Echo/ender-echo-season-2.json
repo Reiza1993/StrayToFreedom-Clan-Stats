@@ -8,28 +8,28 @@
       "seasonTotal": 4.0281691179122296e+23
     },
     {
+      "gainVsPreviousSeason": -4.4693040398479385e+23,
+      "name": "\u04bban",
+      "rank": 2,
+      "seasonTotal": 1.472484493262373e+23
+    },
+    {
       "gainVsPreviousSeason": -1.5974415093341215e+23,
       "name": "DAYO-P",
-      "rank": 2,
+      "rank": 3,
       "seasonTotal": 1.1419091309017538e+23
     },
     {
       "gainVsPreviousSeason": -2.0417190094439655e+23,
       "name": "Nubis",
-      "rank": 3,
+      "rank": 4,
       "seasonTotal": 9.693240972489879e+22
     },
     {
       "gainVsPreviousSeason": -1.3823886855117105e+23,
       "name": "RABBIT5",
-      "rank": 4,
-      "seasonTotal": 7.98560500822839e+22
-    },
-    {
-      "gainVsPreviousSeason": -5.2059344507819524e+23,
-      "name": "\u04bban",
       "rank": 5,
-      "seasonTotal": 7.358540823283592e+22
+      "seasonTotal": 7.98560500822839e+22
     },
     {
       "gainVsPreviousSeason": -8.609377101749275e+22,
@@ -1377,6 +1377,13 @@
               ],
               "name": "BobBobberson",
               "top2Sum": 1.592453353574586e+20
+            },
+            {
+              "attempts": [
+                7.366304109340137e+22
+              ],
+              "name": "\u04bban",
+              "top2Sum": 7.366304109340137e+22
             }
           ]
         }
