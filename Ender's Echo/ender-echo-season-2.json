@@ -20,16 +20,16 @@
       "seasonTotal": 9.693240972489879e+22
     },
     {
-      "gainVsPreviousSeason": -5.2059344507819524e+23,
-      "name": "\u04bban",
+      "gainVsPreviousSeason": -1.3823886855117105e+23,
+      "name": "RABBIT5",
       "rank": 4,
-      "seasonTotal": 7.358540823283592e+22
+      "seasonTotal": 7.98560500822839e+22
     },
     {
-      "gainVsPreviousSeason": -1.5255808011847746e+23,
-      "name": "RABBIT5",
+      "gainVsPreviousSeason": -5.2059344507819524e+23,
+      "name": "\u04bban",
       "rank": 5,
-      "seasonTotal": 6.5536838514977504e+22
+      "seasonTotal": 7.358540823283592e+22
     },
     {
       "gainVsPreviousSeason": -8.609377101749275e+22,
@@ -1314,6 +1314,14 @@
               ],
               "name": "Nubis",
               "top2Sum": 1.6113135391797028e+22
+            },
+            {
+              "attempts": [
+                6.487707801340986e+21,
+                7.831503765965413e+21
+              ],
+              "name": "RABBIT5",
+              "top2Sum": 1.43192115673064e+22
             }
           ]
         }
