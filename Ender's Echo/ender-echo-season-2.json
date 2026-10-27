@@ -20,10 +20,10 @@
       "seasonTotal": 1.389910717066226e+23
     },
     {
-      "gainVsPreviousSeason": -2.0417190094439655e+23,
+      "gainVsPreviousSeason": -1.8264000730431378e+23,
       "name": "Nubis",
       "rank": 4,
-      "seasonTotal": 9.693240972489879e+22
+      "seasonTotal": 1.1846430336498154e+23
     },
     {
       "gainVsPreviousSeason": -1.3823886855117105e+23,
@@ -32,10 +32,10 @@
       "seasonTotal": 7.98560500822839e+22
     },
     {
-      "gainVsPreviousSeason": -8.609377101749275e+22,
+      "gainVsPreviousSeason": -8.01316909622426e+22,
       "name": "SngphO",
       "rank": 6,
-      "seasonTotal": 2.6584611613708315e+22
+      "seasonTotal": 3.2546691668958444e+22
     },
     {
       "gainVsPreviousSeason": -1.258965146730114e+23,
@@ -56,159 +56,171 @@
       "seasonTotal": 5.920881759914814e+21
     },
     {
+      "gainVsPreviousSeason": -2.0367988936674336e+22,
+      "name": "Cunner88",
+      "rank": 10,
+      "seasonTotal": 5.508880077155941e+21
+    },
+    {
       "gainVsPreviousSeason": -4.824283099336682e+21,
       "name": "Player 66607264",
-      "rank": 10,
+      "rank": 11,
       "seasonTotal": 3.3577285826489017e+21
     },
     {
       "gainVsPreviousSeason": -4.050365368496769e+21,
       "name": "p88203044",
-      "rank": 11,
+      "rank": 12,
       "seasonTotal": 2.980729976635302e+21
     },
     {
       "gainVsPreviousSeason": -6.440011492081355e+21,
       "name": "\u76feHeathcliff\u5263",
-      "rank": 12,
+      "rank": 13,
       "seasonTotal": 2.915490407331222e+21
     },
     {
       "gainVsPreviousSeason": -1.7876113487713905e+22,
       "name": "RetinaDNA",
-      "rank": 13,
+      "rank": 14,
       "seasonTotal": 2.8839570540332135e+21
     },
     {
       "gainVsPreviousSeason": -4.0011946923652075e+21,
       "name": "Gritchen",
-      "rank": 14,
+      "rank": 15,
       "seasonTotal": 2.4388945991415974e+21
     },
     {
       "gainVsPreviousSeason": -5.494635881456561e+21,
       "name": "VictorMolusco",
-      "rank": 15,
+      "rank": 16,
       "seasonTotal": 2.0587077216905574e+21
     },
     {
       "gainVsPreviousSeason": -3.616508195406906e+21,
       "name": "theLP",
-      "rank": 16,
+      "rank": 17,
       "seasonTotal": 2.004502582625976e+21
+    },
+    {
+      "gainVsPreviousSeason": -5.671301650341741e+21,
+      "name": "Apathy_",
+      "rank": 18,
+      "seasonTotal": 1.9114493154859155e+21
+    },
+    {
+      "gainVsPreviousSeason": -5.159788995433441e+21,
+      "name": "HakiLuffy",
+      "rank": 19,
+      "seasonTotal": 1.8619228285193683e+21
     },
     {
       "gainVsPreviousSeason": -1.8067027412785511e+22,
       "name": "Scoundrel536",
-      "rank": 17,
+      "rank": 20,
       "seasonTotal": 1.7346431349964045e+21
-    },
-    {
-      "gainVsPreviousSeason": -6.042127049020603e+21,
-      "name": "Apathy_",
-      "rank": 18,
-      "seasonTotal": 1.540623916807054e+21
-    },
-    {
-      "gainVsPreviousSeason": -5.62698013865786e+21,
-      "name": "HakiLuffy",
-      "rank": 19,
-      "seasonTotal": 1.3947316852949495e+21
     },
     {
       "gainVsPreviousSeason": -1.6904286724272863e+21,
       "name": "BobBobberson",
-      "rank": 20,
+      "rank": 21,
       "seasonTotal": 1.3436184879496697e+21
     },
     {
       "gainVsPreviousSeason": -1.8255386820339313e+21,
       "name": "Rzzza",
-      "rank": 21,
+      "rank": 22,
       "seasonTotal": 1.3291582970176476e+21
     },
     {
       "gainVsPreviousSeason": -1.8407325501329498e+22,
       "name": "PastalaVista",
-      "rank": 22,
+      "rank": 23,
       "seasonTotal": 1.2878283657775153e+21
     },
     {
       "gainVsPreviousSeason": -2.8417823000927813e+21,
       "name": "BlackFlamE",
-      "rank": 23,
+      "rank": 24,
       "seasonTotal": 1.222181227696358e+21
     },
     {
       "gainVsPreviousSeason": -2.8765516958481535e+21,
       "name": "EMBALOCO",
-      "rank": 24,
+      "rank": 25,
       "seasonTotal": 1.2025915735077133e+21
     },
     {
       "gainVsPreviousSeason": -1.8013341449565713e+21,
       "name": "gubrax",
-      "rank": 25,
+      "rank": 26,
       "seasonTotal": 9.90140695367057e+20
     },
     {
       "gainVsPreviousSeason": -2.6412165838618414e+21,
       "name": "silverxz",
-      "rank": 26,
+      "rank": 27,
       "seasonTotal": 6.968193713747143e+20
+    },
+    {
+      "gainVsPreviousSeason": -5.645560523353355e+21,
+      "name": "Bensayyten",
+      "rank": 28,
+      "seasonTotal": 5.5030489982732757e+20
+    },
+    {
+      "gainVsPreviousSeason": -5.835861822525538e+19,
+      "name": "Toddlerr",
+      "rank": 29,
+      "seasonTotal": 5.1581147201200534e+20
     },
     {
       "gainVsPreviousSeason": -2.261578435210541e+22,
       "name": "pumpenjoe",
-      "rank": 27,
+      "rank": 30,
       "seasonTotal": 4.594254265310263e+20
     },
     {
       "gainVsPreviousSeason": -1.8847971623158334e+21,
       "name": "samwise08",
-      "rank": 28,
+      "rank": 31,
       "seasonTotal": 4.5466248194972575e+20
-    },
-    {
-      "gainVsPreviousSeason": -5.841566593650146e+21,
-      "name": "Bensayyten",
-      "rank": 29,
-      "seasonTotal": 3.5429882953053766e+20
     },
     {
       "gainVsPreviousSeason": -4.6247189480905146e+20,
       "name": "Player 80018314",
-      "rank": 30,
+      "rank": 32,
       "seasonTotal": 3.1486309582043945e+20
     },
     {
       "gainVsPreviousSeason": -7.314382640159819e+20,
       "name": "Belthazar",
-      "rank": 31,
+      "rank": 33,
       "seasonTotal": 3.052694428628126e+20
     },
     {
       "gainVsPreviousSeason": -4.711619183849452e+21,
       "name": "groggen",
-      "rank": 32,
+      "rank": 34,
       "seasonTotal": 2.300293099935694e+20
     },
     {
       "gainVsPreviousSeason": -2.502229831209713e+21,
       "name": "faxnem",
-      "rank": 33,
+      "rank": 35,
       "seasonTotal": 2.091143489300118e+20
     },
     {
       "gainVsPreviousSeason": -6.2663577807313306e+19,
       "name": "ergiangi",
-      "rank": 34,
+      "rank": 36,
       "seasonTotal": 1.5133441215003925e+20
     },
     {
       "gainVsPreviousSeason": -1.822666833140271e+20,
       "name": "Cheeselife",
-      "rank": 35,
+      "rank": 37,
       "seasonTotal": 6.388910628514195e+18
     }
   ],
@@ -1443,6 +1455,60 @@
               ],
               "name": "ergiangi",
               "top2Sum": 1.0340413147076503e+20
+            },
+            {
+              "attempts": [
+                2.077691975768578e+20,
+                1.630562011020038e+20
+              ],
+              "name": "Apathy_",
+              "top2Sum": 3.7082539867886164e+20
+            },
+            {
+              "attempts": [
+                1.960060702967899e+20
+              ],
+              "name": "Bensayyten",
+              "top2Sum": 1.960060702967899e+20
+            },
+            {
+              "attempts": [
+                5.1581147201200534e+20
+              ],
+              "name": "Toddlerr",
+              "top2Sum": 5.1581147201200534e+20
+            },
+            {
+              "attempts": [
+                2.652437479954954e+21,
+                3.3096425752951773e+21
+              ],
+              "name": "SngphO",
+              "top2Sum": 5.962080055250131e+21
+            },
+            {
+              "attempts": [
+                2.1507298073983992e+20,
+                2.5211816248457884e+20
+              ],
+              "name": "HakiLuffy",
+              "top2Sum": 4.6719114322441876e+20
+            },
+            {
+              "attempts": [
+                1.006381871458419e+22,
+                1.0581879477673986e+22,
+                1.0950014162408768e+22
+              ],
+              "name": "Nubis",
+              "top2Sum": 2.153189364008275e+22
+            },
+            {
+              "attempts": [
+                5.508880077155941e+21
+              ],
+              "name": "Cunner88",
+              "top2Sum": 5.508880077155941e+21
             }
           ]
         }
