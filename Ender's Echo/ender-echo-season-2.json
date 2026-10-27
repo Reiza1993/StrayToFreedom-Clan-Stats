@@ -68,16 +68,16 @@
       "seasonTotal": 2.980729976635302e+21
     },
     {
-      "gainVsPreviousSeason": -1.7876113487713905e+22,
-      "name": "RetinaDNA",
+      "gainVsPreviousSeason": -6.440011492081355e+21,
+      "name": "\u76feHeathcliff\u5263",
       "rank": 12,
-      "seasonTotal": 2.8839570540332135e+21
+      "seasonTotal": 2.915490407331222e+21
     },
     {
-      "gainVsPreviousSeason": -6.738329676986391e+21,
-      "name": "\u76feHeathcliff\u5263",
+      "gainVsPreviousSeason": -1.7876113487713905e+22,
+      "name": "RetinaDNA",
       "rank": 13,
-      "seasonTotal": 2.617172222426186e+21
+      "seasonTotal": 2.8839570540332135e+21
     },
     {
       "gainVsPreviousSeason": -5.494635881456561e+21,
@@ -1253,10 +1253,11 @@
             },
             {
               "attempts": [
-                4.099058020385633e+20
+                4.099058020385633e+20,
+                2.983181849050364e+20
               ],
               "name": "\u76feHeathcliff\u5263",
-              "top2Sum": 4.099058020385633e+20
+              "top2Sum": 7.082239869435997e+20
             },
             {
               "attempts": [
