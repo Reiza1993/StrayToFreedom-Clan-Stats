@@ -80,22 +80,22 @@
       "seasonTotal": 2.8839570540332135e+21
     },
     {
+      "gainVsPreviousSeason": -4.1508367694254745e+21,
+      "name": "Gritchen",
+      "rank": 14,
+      "seasonTotal": 2.2892525220813304e+21
+    },
+    {
       "gainVsPreviousSeason": -5.494635881456561e+21,
       "name": "VictorMolusco",
-      "rank": 14,
+      "rank": 15,
       "seasonTotal": 2.0587077216905574e+21
     },
     {
       "gainVsPreviousSeason": -3.616508195406906e+21,
       "name": "theLP",
-      "rank": 15,
-      "seasonTotal": 2.004502582625976e+21
-    },
-    {
-      "gainVsPreviousSeason": -4.463283846177702e+21,
-      "name": "Gritchen",
       "rank": 16,
-      "seasonTotal": 1.9768054453291028e+21
+      "seasonTotal": 2.004502582625976e+21
     },
     {
       "gainVsPreviousSeason": -1.8067027412785511e+22,
@@ -134,40 +134,40 @@
       "seasonTotal": 1.2878283657775153e+21
     },
     {
+      "gainVsPreviousSeason": -2.8417823000927813e+21,
+      "name": "BlackFlamE",
+      "rank": 23,
+      "seasonTotal": 1.222181227696358e+21
+    },
+    {
       "gainVsPreviousSeason": -2.8765516958481535e+21,
       "name": "EMBALOCO",
-      "rank": 23,
+      "rank": 24,
       "seasonTotal": 1.2025915735077133e+21
     },
     {
       "gainVsPreviousSeason": -1.8013341449565713e+21,
       "name": "gubrax",
-      "rank": 24,
+      "rank": 25,
       "seasonTotal": 9.90140695367057e+20
     },
     {
-      "gainVsPreviousSeason": -3.239139850770967e+21,
-      "name": "BlackFlamE",
-      "rank": 25,
-      "seasonTotal": 8.248236770181722e+20
+      "gainVsPreviousSeason": -2.6412165838618414e+21,
+      "name": "silverxz",
+      "rank": 26,
+      "seasonTotal": 6.968193713747143e+20
     },
     {
       "gainVsPreviousSeason": -2.261578435210541e+22,
       "name": "pumpenjoe",
-      "rank": 26,
+      "rank": 27,
       "seasonTotal": 4.594254265310263e+20
     },
     {
       "gainVsPreviousSeason": -1.8847971623158334e+21,
       "name": "samwise08",
-      "rank": 27,
-      "seasonTotal": 4.5466248194972575e+20
-    },
-    {
-      "gainVsPreviousSeason": -2.9489473746926363e+21,
-      "name": "silverxz",
       "rank": 28,
-      "seasonTotal": 3.8908858054391955e+20
+      "seasonTotal": 4.5466248194972575e+20
     },
     {
       "gainVsPreviousSeason": -5.841566593650146e+21,
@@ -1390,6 +1390,39 @@
         }
       ],
       "miniSeasonNumber": 2
+    },
+    {
+      "days": [
+        {
+          "date": "2026-10-28",
+          "day": 7,
+          "players": [
+            {
+              "attempts": [
+                3.1244707675222757e+20
+              ],
+              "name": "Gritchen",
+              "top2Sum": 3.1244707675222757e+20
+            },
+            {
+              "attempts": [
+                2.119802009076857e+20,
+                1.853773497705002e+20
+              ],
+              "name": "BlackFlamE",
+              "top2Sum": 3.973575506781859e+20
+            },
+            {
+              "attempts": [
+                3.0773079083079474e+20
+              ],
+              "name": "silverxz",
+              "top2Sum": 3.0773079083079474e+20
+            }
+          ]
+        }
+      ],
+      "miniSeasonNumber": 3
     }
   ],
   "seasonNumber": 2,
