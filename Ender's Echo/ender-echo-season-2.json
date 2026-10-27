@@ -56,22 +56,22 @@
       "seasonTotal": 5.920881759914814e+21
     },
     {
+      "gainVsPreviousSeason": -4.824283099336682e+21,
+      "name": "Player 66607264",
+      "rank": 10,
+      "seasonTotal": 3.3577285826489017e+21
+    },
+    {
       "gainVsPreviousSeason": -4.050365368496769e+21,
       "name": "p88203044",
-      "rank": 10,
+      "rank": 11,
       "seasonTotal": 2.980729976635302e+21
     },
     {
       "gainVsPreviousSeason": -1.7876113487713905e+22,
       "name": "RetinaDNA",
-      "rank": 11,
-      "seasonTotal": 2.8839570540332135e+21
-    },
-    {
-      "gainVsPreviousSeason": -5.51425820204361e+21,
-      "name": "Player 66607264",
       "rank": 12,
-      "seasonTotal": 2.6677534799419733e+21
+      "seasonTotal": 2.8839570540332135e+21
     },
     {
       "gainVsPreviousSeason": -6.738329676986391e+21,
@@ -116,28 +116,28 @@
       "seasonTotal": 1.3947316852949495e+21
     },
     {
+      "gainVsPreviousSeason": -1.6904286724272863e+21,
+      "name": "BobBobberson",
+      "rank": 20,
+      "seasonTotal": 1.3436184879496697e+21
+    },
+    {
       "gainVsPreviousSeason": -1.8255386820339313e+21,
       "name": "Rzzza",
-      "rank": 20,
+      "rank": 21,
       "seasonTotal": 1.3291582970176476e+21
     },
     {
       "gainVsPreviousSeason": -1.8407325501329498e+22,
       "name": "PastalaVista",
-      "rank": 21,
+      "rank": 22,
       "seasonTotal": 1.2878283657775153e+21
     },
     {
       "gainVsPreviousSeason": -2.8765516958481535e+21,
       "name": "EMBALOCO",
-      "rank": 22,
-      "seasonTotal": 1.2025915735077133e+21
-    },
-    {
-      "gainVsPreviousSeason": -1.8496740077847448e+21,
-      "name": "BobBobberson",
       "rank": 23,
-      "seasonTotal": 1.1843731525922112e+21
+      "seasonTotal": 1.2025915735077133e+21
     },
     {
       "gainVsPreviousSeason": -1.8013341449565713e+21,
@@ -182,10 +182,10 @@
       "seasonTotal": 3.1486309582043945e+20
     },
     {
-      "gainVsPreviousSeason": -7.784245755053854e+20,
+      "gainVsPreviousSeason": -7.314382640159819e+20,
       "name": "Belthazar",
       "rank": 31,
-      "seasonTotal": 2.5828313137340914e+20
+      "seasonTotal": 3.052694428628126e+20
     },
     {
       "gainVsPreviousSeason": -4.711619183849452e+21,
@@ -1354,6 +1354,29 @@
               ],
               "name": "Rzzza",
               "top2Sum": 2.256305598148292e+20
+            },
+            {
+              "attempts": [
+                2.328648080752092e+19,
+                2.3699830681882595e+19
+              ],
+              "name": "Belthazar",
+              "top2Sum": 4.698631148940352e+19
+            },
+            {
+              "attempts": [
+                3.5108639725372775e+20,
+                3.3888870545320064e+20
+              ],
+              "name": "Player 66607264",
+              "top2Sum": 6.899751027069283e+20
+            },
+            {
+              "attempts": [
+                1.592453353574586e+20
+              ],
+              "name": "BobBobberson",
+              "top2Sum": 1.592453353574586e+20
             }
           ]
         }
