@@ -2,10 +2,10 @@
   "endDate": "2026-11-18",
   "leaderboard": [
     {
-      "gainVsPreviousSeason": -1.2045043498080009e+24,
+      "gainVsPreviousSeason": -1.0951970473301198e+24,
       "name": "Fl3xas",
       "rank": 1,
-      "seasonTotal": 4.0281691179122296e+23
+      "seasonTotal": 5.1212421426910416e+23
     },
     {
       "gainVsPreviousSeason": -4.4693040398479385e+23,
@@ -14,10 +14,10 @@
       "seasonTotal": 1.472484493262373e+23
     },
     {
-      "gainVsPreviousSeason": -1.5974415093341215e+23,
+      "gainVsPreviousSeason": -1.3494399231696496e+23,
       "name": "DAYO-P",
       "rank": 3,
-      "seasonTotal": 1.1419091309017538e+23
+      "seasonTotal": 1.389910717066226e+23
     },
     {
       "gainVsPreviousSeason": -2.0417190094439655e+23,
@@ -80,10 +80,10 @@
       "seasonTotal": 2.8839570540332135e+21
     },
     {
-      "gainVsPreviousSeason": -4.1508367694254745e+21,
+      "gainVsPreviousSeason": -4.0011946923652075e+21,
       "name": "Gritchen",
       "rank": 14,
-      "seasonTotal": 2.2892525220813304e+21
+      "seasonTotal": 2.4388945991415974e+21
     },
     {
       "gainVsPreviousSeason": -5.494635881456561e+21,
@@ -200,10 +200,10 @@
       "seasonTotal": 2.091143489300118e+20
     },
     {
-      "gainVsPreviousSeason": -1.6606770927807837e+20,
+      "gainVsPreviousSeason": -6.2663577807313306e+19,
       "name": "ergiangi",
       "rank": 34,
-      "seasonTotal": 4.79302806792742e+19
+      "seasonTotal": 1.5133441215003925e+20
     },
     {
       "gainVsPreviousSeason": -1.822666833140271e+20,
@@ -1399,10 +1399,11 @@
           "players": [
             {
               "attempts": [
-                3.1244707675222757e+20
+                3.1244707675222757e+20,
+                1.4964207706026725e+20
               ],
               "name": "Gritchen",
-              "top2Sum": 3.1244707675222757e+20
+              "top2Sum": 4.620891538124948e+20
             },
             {
               "attempts": [
@@ -1418,6 +1419,30 @@
               ],
               "name": "silverxz",
               "top2Sum": 3.0773079083079474e+20
+            },
+            {
+              "attempts": [
+                8.649946572369631e+21,
+                1.1349594776970828e+22,
+                1.3450563839476374e+22
+              ],
+              "name": "DAYO-P",
+              "top2Sum": 2.48001586164472e+22
+            },
+            {
+              "attempts": [
+                5.63796914780451e+22,
+                5.2927610999836106e+22
+              ],
+              "name": "Fl3xas",
+              "top2Sum": 1.093073024778812e+23
+            },
+            {
+              "attempts": [
+                1.0340413147076503e+20
+              ],
+              "name": "ergiangi",
+              "top2Sum": 1.0340413147076503e+20
             }
           ]
         }
