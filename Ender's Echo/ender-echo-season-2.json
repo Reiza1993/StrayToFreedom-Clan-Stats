@@ -26,10 +26,10 @@
       "seasonTotal": 1.1846430336498154e+23
     },
     {
-      "gainVsPreviousSeason": -1.3823886855117105e+23,
+      "gainVsPreviousSeason": -1.1997518974951537e+23,
       "name": "RABBIT5",
       "rank": 5,
-      "seasonTotal": 7.98560500822839e+22
+      "seasonTotal": 9.811972888393958e+22
     },
     {
       "gainVsPreviousSeason": -8.01316909622426e+22,
@@ -50,10 +50,10 @@
       "seasonTotal": 1.324052559409565e+22
     },
     {
-      "gainVsPreviousSeason": -1.4030408995194542e+22,
+      "gainVsPreviousSeason": -1.1503732709052037e+22,
       "name": "MadameMischief",
       "rank": 9,
-      "seasonTotal": 5.920881759914814e+21
+      "seasonTotal": 8.44755804605732e+21
     },
     {
       "gainVsPreviousSeason": -2.0367988936674336e+22,
@@ -62,16 +62,16 @@
       "seasonTotal": 5.508880077155941e+21
     },
     {
-      "gainVsPreviousSeason": -3.3544010795724723e+21,
-      "name": "p88203044",
+      "gainVsPreviousSeason": -3.2845103225605645e+21,
+      "name": "Player 66607264",
       "rank": 11,
-      "seasonTotal": 3.6766942655595985e+21
+      "seasonTotal": 4.897501359425019e+21
     },
     {
-      "gainVsPreviousSeason": -4.824283099336682e+21,
-      "name": "Player 66607264",
+      "gainVsPreviousSeason": -3.3544010795724723e+21,
+      "name": "p88203044",
       "rank": 12,
-      "seasonTotal": 3.3577285826489017e+21
+      "seasonTotal": 3.6766942655595985e+21
     },
     {
       "gainVsPreviousSeason": -6.440011492081355e+21,
@@ -164,46 +164,46 @@
       "seasonTotal": 6.968193713747143e+20
     },
     {
+      "gainVsPreviousSeason": -4.2670149301444076e+21,
+      "name": "groggen",
+      "rank": 28,
+      "seasonTotal": 6.746335636986133e+20
+    },
+    {
       "gainVsPreviousSeason": -1.681992489373e+21,
       "name": "samwise08",
-      "rank": 28,
+      "rank": 29,
       "seasonTotal": 6.574671548925591e+20
     },
     {
       "gainVsPreviousSeason": -5.645560523353355e+21,
       "name": "Bensayyten",
-      "rank": 29,
+      "rank": 30,
       "seasonTotal": 5.5030489982732757e+20
     },
     {
       "gainVsPreviousSeason": -5.835861822525538e+19,
       "name": "Toddlerr",
-      "rank": 30,
+      "rank": 31,
       "seasonTotal": 5.1581147201200534e+20
     },
     {
       "gainVsPreviousSeason": -2.261578435210541e+22,
       "name": "pumpenjoe",
-      "rank": 31,
+      "rank": 32,
       "seasonTotal": 4.594254265310263e+20
+    },
+    {
+      "gainVsPreviousSeason": -6.524573575176819e+20,
+      "name": "Belthazar",
+      "rank": 33,
+      "seasonTotal": 3.842503493611127e+20
     },
     {
       "gainVsPreviousSeason": -4.6247189480905146e+20,
       "name": "Player 80018314",
-      "rank": 32,
-      "seasonTotal": 3.1486309582043945e+20
-    },
-    {
-      "gainVsPreviousSeason": -7.314382640159819e+20,
-      "name": "Belthazar",
-      "rank": 33,
-      "seasonTotal": 3.052694428628126e+20
-    },
-    {
-      "gainVsPreviousSeason": -4.711619183849452e+21,
-      "name": "groggen",
       "rank": 34,
-      "seasonTotal": 2.300293099935694e+20
+      "seasonTotal": 3.1486309582043945e+20
     },
     {
       "gainVsPreviousSeason": -2.502229831209713e+21,
@@ -1575,6 +1575,45 @@
               ],
               "name": "NeonCBV",
               "top2Sum": 5.897124413612484e+21
+            },
+            {
+              "attempts": [
+                3.121058909706278e+19,
+                4.777031740123731e+19
+              ],
+              "name": "Belthazar",
+              "top2Sum": 7.898090649830008e+19
+            },
+            {
+              "attempts": [
+                7.175261528002071e+20,
+                8.222466239759101e+20
+              ],
+              "name": "Player 66607264",
+              "top2Sum": 1.5397727767761173e+21
+            },
+            {
+              "attempts": [
+                4.446042537050439e+20
+              ],
+              "name": "groggen",
+              "top2Sum": 4.446042537050439e+20
+            },
+            {
+              "attempts": [
+                9.341028737553241e+21,
+                8.922650064102438e+21
+              ],
+              "name": "RABBIT5",
+              "top2Sum": 1.826367880165568e+22
+            },
+            {
+              "attempts": [
+                1.3127285336114153e+21,
+                1.2139477525310905e+21
+              ],
+              "name": "MadameMischief",
+              "top2Sum": 2.526676286142506e+21
             }
           ]
         }
