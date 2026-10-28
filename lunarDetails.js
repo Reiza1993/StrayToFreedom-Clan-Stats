@@ -1,7 +1,7 @@
 // lunarDetails.js
 // PRO Lunar Details — Prep Day clan scouting (own clan + up to 3 scouted opponents,
 // or manually entered clan ids)
-// Last Updated: 2026-10-22
+// Last Updated: 2026-10-29
 // Keyed by Clan ID (string); each clan's "members" is keyed by account ID (UID).
 // totalAtk/totalRelicCores/totalTransmuteCores/totalChips/totalEe each only
 // count that clan's own top 30 members BY THAT SAME STAT - e.g. totalRelicCores
@@ -10,652 +10,360 @@
 // totalEe/eeBestScore is each member's single highest individual Ender's Echo
 // attempt, not a per-day total (see LunarClanMember.ee_best_score).
 const lunarDetails = {
-        "13246": {
-            "clanId": 13246,
-            "lunarPoints": 1580,
+        "11358": {
+            "clanId": 11358,
+            "lunarPoints": 1600,
             "members": {
-                "122365922": {
-                    "atk": 4371,
-                    "chipsCount": 0,
+                "12223698": {
+                    "atk": 3627121,
+                    "chipsCount": 176,
                     "eeBestScore": null,
-                    "name": "이건부케",
-                    "relicCores": 0,
-                    "transmuteCores": 0
-                },
-                "123374871": {
-                    "atk": 1606,
-                    "chipsCount": 0,
-                    "eeBestScore": null,
-                    "name": "폴드지뢰제거",
-                    "relicCores": 0,
-                    "transmuteCores": 0
-                },
-                "123430951": {
-                    "atk": 3818,
-                    "chipsCount": 0,
-                    "eeBestScore": null,
-                    "name": "myjh_subID",
-                    "relicCores": 0,
-                    "transmuteCores": 0
-                },
-                "27140824": {
-                    "atk": 2740193,
-                    "chipsCount": 56,
-                    "eeBestScore": null,
-                    "name": "내가짱이닷",
-                    "relicCores": 221,
-                    "transmuteCores": 28
-                },
-                "27300120": {
-                    "atk": 2177770,
-                    "chipsCount": 21,
-                    "eeBestScore": null,
-                    "name": "No1세효밍",
-                    "relicCores": 104,
-                    "transmuteCores": 16
-                },
-                "28989701": {
-                    "atk": 3242180,
-                    "chipsCount": 99,
-                    "eeBestScore": null,
-                    "name": "쵸단ᴳᴳ",
-                    "relicCores": 225,
-                    "transmuteCores": 26
-                },
-                "31660047": {
-                    "atk": 3143621,
-                    "chipsCount": 82,
-                    "eeBestScore": null,
-                    "name": "똥똥ᴳᴳ",
-                    "relicCores": 189,
-                    "transmuteCores": 16
-                },
-                "31844973": {
-                    "atk": 1864876,
-                    "chipsCount": 38,
-                    "eeBestScore": null,
-                    "name": "돌멩2",
-                    "relicCores": 131,
-                    "transmuteCores": 26
-                },
-                "35353719": {
-                    "atk": 3491744,
-                    "chipsCount": 81,
-                    "eeBestScore": null,
-                    "name": "myjhᴳᴳ",
-                    "relicCores": 238,
-                    "transmuteCores": 64
-                },
-                "37804866": {
-                    "atk": 2549069,
-                    "chipsCount": 67,
-                    "eeBestScore": null,
-                    "name": "태극기집회",
-                    "relicCores": 135,
-                    "transmuteCores": 4
-                },
-                "42227115": {
-                    "atk": 3181411,
-                    "chipsCount": 145,
-                    "eeBestScore": null,
-                    "name": "드르르",
-                    "relicCores": 253,
-                    "transmuteCores": 38
-                },
-                "42727163": {
-                    "atk": 3460042,
-                    "chipsCount": 112,
-                    "eeBestScore": null,
-                    "name": "일등GG",
-                    "relicCores": 286,
-                    "transmuteCores": 48
-                },
-                "43614103": {
-                    "atk": 2675897,
-                    "chipsCount": 119,
-                    "eeBestScore": null,
-                    "name": "오공스ᴳᴳ",
-                    "relicCores": 184,
-                    "transmuteCores": 30
-                },
-                "46275645": {
-                    "atk": 2867794,
-                    "chipsCount": 104,
-                    "eeBestScore": null,
-                    "name": "루이스GG",
-                    "relicCores": 200,
-                    "transmuteCores": 42
-                },
-                "48792770": {
-                    "atk": 2489386,
-                    "chipsCount": 84,
-                    "eeBestScore": null,
-                    "name": "MKS나",
-                    "relicCores": 238,
-                    "transmuteCores": 18
-                },
-                "49591995": {
-                    "atk": 3418368,
-                    "chipsCount": 141,
-                    "eeBestScore": null,
-                    "name": "lockyyᴳᴳ",
-                    "relicCores": 261,
-                    "transmuteCores": 38
-                },
-                "52031430": {
-                    "atk": 3335783,
-                    "chipsCount": 95,
-                    "eeBestScore": null,
-                    "name": "우도환",
-                    "relicCores": 184,
-                    "transmuteCores": 28
-                },
-                "52799540": {
-                    "atk": 3183963,
-                    "chipsCount": 127,
-                    "eeBestScore": null,
-                    "name": "Schottkyᴳᴳ",
-                    "relicCores": 218,
-                    "transmuteCores": 38
-                },
-                "56047280": {
-                    "atk": 3252721,
-                    "chipsCount": 85,
-                    "eeBestScore": null,
-                    "name": "LaptopLakeᴳᴳ",
-                    "relicCores": 208,
-                    "transmuteCores": 24
-                },
-                "56820187": {
-                    "atk": 2439007,
-                    "chipsCount": 68,
-                    "eeBestScore": null,
-                    "name": "임샘신랑",
-                    "relicCores": 154,
-                    "transmuteCores": 16
-                },
-                "58429386": {
-                    "atk": 2329413,
-                    "chipsCount": 29,
-                    "eeBestScore": null,
-                    "name": "nodap",
-                    "relicCores": 119,
-                    "transmuteCores": 3
-                },
-                "58933212": {
-                    "atk": 2146812,
-                    "chipsCount": 25,
-                    "eeBestScore": null,
-                    "name": "킹종빈",
-                    "relicCores": 121,
-                    "transmuteCores": 25
-                },
-                "63052346": {
-                    "atk": 3279278,
-                    "chipsCount": 192,
-                    "eeBestScore": null,
-                    "name": "포커ᴳᴳ",
-                    "relicCores": 261,
-                    "transmuteCores": 50
-                },
-                "63105331": {
-                    "atk": 3262797,
-                    "chipsCount": 177,
-                    "eeBestScore": null,
-                    "name": "싯앤골드ᴳᴳ",
-                    "relicCores": 234,
-                    "transmuteCores": 26
-                },
-                "63105341": {
-                    "atk": 2726427,
-                    "chipsCount": 78,
-                    "eeBestScore": null,
-                    "name": "올인폴드ᴳᴳ",
-                    "relicCores": 145,
-                    "transmuteCores": 20
-                },
-                "63565214": {
-                    "atk": 3040674,
-                    "chipsCount": 63,
-                    "eeBestScore": null,
-                    "name": "choijkᴳᴳ",
-                    "relicCores": 188,
-                    "transmuteCores": 34
-                },
-                "64116353": {
-                    "atk": 3496219,
-                    "chipsCount": 200,
-                    "eeBestScore": null,
-                    "name": "아톰ᴳᴳ",
+                    "name": "★LOVEChianti",
                     "relicCores": 265,
-                    "transmuteCores": 50
+                    "transmuteCores": 72
                 },
-                "74033309": {
-                    "atk": 1994823,
-                    "chipsCount": 23,
+                "22505940": {
+                    "atk": 3678129,
+                    "chipsCount": 183,
                     "eeBestScore": null,
-                    "name": "플립앤꼬",
-                    "relicCores": 124,
-                    "transmuteCores": 0
+                    "name": "★Đậu",
+                    "relicCores": 248,
+                    "transmuteCores": 72
                 },
-                "76598505": {
-                    "atk": 2313578,
-                    "chipsCount": 48,
-                    "eeBestScore": null,
-                    "name": "Hideᴳᴳ",
-                    "relicCores": 208,
-                    "transmuteCores": 28
-                },
-                "78977252": {
-                    "atk": 2429175,
-                    "chipsCount": 87,
-                    "eeBestScore": null,
-                    "name": "LazyGom",
-                    "relicCores": 184,
-                    "transmuteCores": 22
-                },
-                "83779236": {
-                    "atk": 4405011,
-                    "chipsCount": 235,
-                    "eeBestScore": null,
-                    "name": "루시아ᴳᴳ",
-                    "relicCores": 284,
-                    "transmuteCores": 78
-                },
-                "84263509": {
-                    "atk": 3398878,
-                    "chipsCount": 91,
-                    "eeBestScore": null,
-                    "name": "강냉이컬렉터",
-                    "relicCores": 150,
-                    "transmuteCores": 38
-                },
-                "85786572": {
-                    "atk": 2463140,
-                    "chipsCount": 28,
-                    "eeBestScore": null,
-                    "name": "영천동할비",
-                    "relicCores": 96,
-                    "transmuteCores": 17
-                },
-                "86680114": {
-                    "atk": 1813058,
-                    "chipsCount": 33,
-                    "eeBestScore": null,
-                    "name": "보안검색",
-                    "relicCores": 156,
-                    "transmuteCores": 30
-                },
-                "88683502": {
-                    "atk": 1413913,
-                    "chipsCount": 8,
-                    "eeBestScore": null,
-                    "name": "크억",
-                    "relicCores": 76,
-                    "transmuteCores": 20
-                }
-            },
-            "name": "GG탕탕",
-            "totalAtk": 86800050,
-            "totalChips": 2812,
-            "totalEe": null,
-            "totalRelicCores": 5868,
-            "totalTransmuteCores": 938
-        },
-        "27335": {
-            "clanId": 27335,
-            "lunarPoints": 1610,
-            "members": {
-                "10732896": {
-                    "atk": 2881800,
-                    "chipsCount": 63,
-                    "eeBestScore": null,
-                    "name": "ShivaBiG",
-                    "relicCores": 142,
-                    "transmuteCores": 28
-                },
-                "108418842": {
-                    "atk": 2689312,
-                    "chipsCount": 102,
-                    "eeBestScore": null,
-                    "name": "Liαm",
-                    "relicCores": 284,
-                    "transmuteCores": 34
-                },
-                "108482446": {
-                    "atk": 3174746,
-                    "chipsCount": 106,
-                    "eeBestScore": null,
-                    "name": "Ky$",
-                    "relicCores": 212,
-                    "transmuteCores": 50
-                },
-                "11050092": {
-                    "atk": 3282725,
-                    "chipsCount": 131,
-                    "eeBestScore": null,
-                    "name": "Ⓣ-①⓪⓪⓪",
-                    "relicCores": 226,
-                    "transmuteCores": 34
-                },
-                "116594450": {
-                    "atk": 364095,
-                    "chipsCount": 7,
-                    "eeBestScore": null,
-                    "name": "KieranNV",
-                    "relicCores": 11,
-                    "transmuteCores": 0
-                },
-                "116636755": {
-                    "atk": 2666282,
-                    "chipsCount": 82,
-                    "eeBestScore": null,
-                    "name": "*HànLãoMa*",
-                    "relicCores": 142,
-                    "transmuteCores": 64
-                },
-                "11729949": {
-                    "atk": 2579883,
-                    "chipsCount": 51,
-                    "eeBestScore": null,
-                    "name": "NgưSinhLộc",
-                    "relicCores": 157,
-                    "transmuteCores": 44
-                },
-                "11827559": {
-                    "atk": 2382854,
-                    "chipsCount": 47,
-                    "eeBestScore": null,
-                    "name": "ӜϐཇѽӜᵛᴺ",
-                    "relicCores": 128,
-                    "transmuteCores": 40
-                },
-                "12400769": {
-                    "atk": 3001344,
-                    "chipsCount": 55,
-                    "eeBestScore": null,
-                    "name": "×͜×NᵀHᵈᶻ",
-                    "relicCores": 172,
-                    "transmuteCores": 44
-                },
-                "14267789": {
-                    "atk": 2885894,
-                    "chipsCount": 148,
-                    "eeBestScore": null,
-                    "name": "βéHεᴏ•♡",
-                    "relicCores": 224,
-                    "transmuteCores": 76
-                },
-                "15857782": {
-                    "atk": 2988072,
-                    "chipsCount": 52,
-                    "eeBestScore": null,
-                    "name": "ChơiGameKoNạp",
-                    "relicCores": 160,
-                    "transmuteCores": 34
-                },
-                "15948628": {
-                    "atk": 3193105,
+                "25700974": {
+                    "atk": 2917278,
                     "chipsCount": 107,
                     "eeBestScore": null,
-                    "name": "Ａｎđâｙ",
-                    "relicCores": 190,
-                    "transmuteCores": 50
-                },
-                "16496051": {
-                    "atk": 2964705,
-                    "chipsCount": 52,
-                    "eeBestScore": null,
-                    "name": "HNღHaT7",
-                    "relicCores": 174,
-                    "transmuteCores": 49
-                },
-                "17849080": {
-                    "atk": 3557645,
-                    "chipsCount": 155,
-                    "eeBestScore": null,
-                    "name": "KhôngChơiNữa",
-                    "relicCores": 254,
-                    "transmuteCores": 60
-                },
-                "20405968": {
-                    "atk": 3496001,
-                    "chipsCount": 153,
-                    "eeBestScore": null,
-                    "name": "Mr.QYᵛⁿ",
+                    "name": "★Gàkon",
                     "relicCores": 218,
-                    "transmuteCores": 54
-                },
-                "20781480": {
-                    "atk": 2785449,
-                    "chipsCount": 39,
-                    "eeBestScore": null,
-                    "name": "༄༂ßảoNgọc",
-                    "relicCores": 187,
                     "transmuteCores": 40
                 },
-                "21520774": {
-                    "atk": 3432115,
-                    "chipsCount": 165,
+                "26143411": {
+                    "atk": 2846423,
+                    "chipsCount": 69,
                     "eeBestScore": null,
-                    "name": "Cucuahby",
-                    "relicCores": 230,
-                    "transmuteCores": 64
-                },
-                "24153696": {
-                    "atk": 3132566,
-                    "chipsCount": 124,
-                    "eeBestScore": null,
-                    "name": "Funny9999",
-                    "relicCores": 165,
-                    "transmuteCores": 28
-                },
-                "33190505": {
-                    "atk": 3773681,
-                    "chipsCount": 172,
-                    "eeBestScore": null,
-                    "name": "☆ɐıɥɓu☆",
-                    "relicCores": 220,
-                    "transmuteCores": 64
-                },
-                "35470380": {
-                    "atk": 789827,
-                    "chipsCount": 10,
-                    "eeBestScore": null,
-                    "name": "Billyjewel",
-                    "relicCores": 71,
-                    "transmuteCores": 1
-                },
-                "36816367": {
-                    "atk": 2916874,
-                    "chipsCount": 64,
-                    "eeBestScore": null,
-                    "name": "duong453",
-                    "relicCores": 174,
-                    "transmuteCores": 44
-                },
-                "36848290": {
-                    "atk": 3105951,
-                    "chipsCount": 89,
-                    "eeBestScore": null,
-                    "name": "BlackㅣClover",
-                    "relicCores": 190,
+                    "name": "★ElverGonzalez",
+                    "relicCores": 152,
                     "transmuteCores": 38
                 },
-                "38407584": {
-                    "atk": 2202690,
-                    "chipsCount": 45,
+                "29371122": {
+                    "atk": 2669481,
+                    "chipsCount": 111,
                     "eeBestScore": null,
-                    "name": "Mambooooow",
-                    "relicCores": 169,
-                    "transmuteCores": 18
+                    "name": "★YLinhhᰔᩚ",
+                    "relicCores": 182,
+                    "transmuteCores": 10
                 },
-                "39812505": {
-                    "atk": 2480326,
-                    "chipsCount": 134,
+                "29578694": {
+                    "atk": 2290039,
+                    "chipsCount": 25,
                     "eeBestScore": null,
-                    "name": "BùLonTrảGóp",
-                    "relicCores": 230,
-                    "transmuteCores": 72
-                },
-                "39911706": {
-                    "atk": 3038721,
-                    "chipsCount": 58,
-                    "eeBestScore": null,
-                    "name": "maxime~~",
-                    "relicCores": 215,
+                    "name": "<Vega>",
+                    "relicCores": 172,
                     "transmuteCores": 30
                 },
-                "42198979": {
-                    "atk": 2892093,
-                    "chipsCount": 91,
+                "30401546": {
+                    "atk": 3563483,
+                    "chipsCount": 182,
                     "eeBestScore": null,
-                    "name": "ChickOne",
-                    "relicCores": 174,
-                    "transmuteCores": 54
+                    "name": "N3tn",
+                    "relicCores": 235,
+                    "transmuteCores": 80
                 },
-                "42718805": {
-                    "atk": 2732396,
-                    "chipsCount": 60,
+                "30876880": {
+                    "atk": 2616893,
+                    "chipsCount": 66,
                     "eeBestScore": null,
-                    "name": "Tướng_Công",
-                    "relicCores": 200,
-                    "transmuteCores": 38
+                    "name": "HugBi",
+                    "relicCores": 196,
+                    "transmuteCores": 44
                 },
-                "43641565": {
-                    "atk": 3712905,
-                    "chipsCount": 184,
+                "32945837": {
+                    "atk": 2271710,
+                    "chipsCount": 40,
                     "eeBestScore": null,
-                    "name": "Mr.At",
-                    "relicCores": 254,
-                    "transmuteCores": 76
+                    "name": "TỉnhSuy",
+                    "relicCores": 185,
+                    "transmuteCores": 16
                 },
-                "43939441": {
-                    "atk": 2971707,
-                    "chipsCount": 101,
+                "33079919": {
+                    "atk": 3552007,
+                    "chipsCount": 177,
                     "eeBestScore": null,
-                    "name": "No͜͡o",
-                    "relicCores": 155,
-                    "transmuteCores": 24
+                    "name": "★Chianti",
+                    "relicCores": 248,
+                    "transmuteCores": 80
                 },
-                "52182845": {
-                    "atk": 3368130,
-                    "chipsCount": 127,
+                "33802176": {
+                    "atk": 3447594,
+                    "chipsCount": 235,
                     "eeBestScore": null,
-                    "name": "bánhđậuxanh",
-                    "relicCores": 221,
+                    "name": "★HônLừng",
+                    "relicCores": 228,
+                    "transmuteCores": 66
+                },
+                "35064260": {
+                    "atk": 2914671,
+                    "chipsCount": 170,
+                    "eeBestScore": null,
+                    "name": "★KhuêDiệp",
+                    "relicCores": 283,
+                    "transmuteCores": 10
+                },
+                "36015995": {
+                    "atk": 2939265,
+                    "chipsCount": 157,
+                    "eeBestScore": null,
+                    "name": "★GodNTT",
+                    "relicCores": 222,
+                    "transmuteCores": 42
+                },
+                "36184043": {
+                    "atk": 2485897,
+                    "chipsCount": 117,
+                    "eeBestScore": null,
+                    "name": "★Vermouth",
+                    "relicCores": 223,
                     "transmuteCores": 72
                 },
-                "60007658": {
-                    "atk": 2301163,
-                    "chipsCount": 82,
+                "36815624": {
+                    "atk": 3507405,
+                    "chipsCount": 208,
                     "eeBestScore": null,
-                    "name": "N●1BánhMì",
-                    "relicCores": 156,
-                    "transmuteCores": 32
+                    "name": "★LibraKira",
+                    "relicCores": 240,
+                    "transmuteCores": 72
                 },
-                "67700866": {
-                    "atk": 3307384,
-                    "chipsCount": 158,
+                "38104941": {
+                    "atk": 3265632,
+                    "chipsCount": 84,
                     "eeBestScore": null,
-                    "name": "•༒Gạσ༒•",
-                    "relicCores": 228,
+                    "name": "★ßigÇityßøy",
+                    "relicCores": 239,
+                    "transmuteCores": 64
+                },
+                "38742056": {
+                    "atk": 2901546,
+                    "chipsCount": 55,
+                    "eeBestScore": null,
+                    "name": "LAETUS",
+                    "relicCores": 166,
+                    "transmuteCores": 44
+                },
+                "44075814": {
+                    "atk": 3896149,
+                    "chipsCount": 207,
+                    "eeBestScore": null,
+                    "name": "★BebeYeGe",
+                    "relicCores": 313,
+                    "transmuteCores": 64
+                },
+                "44779514": {
+                    "atk": 2970225,
+                    "chipsCount": 98,
+                    "eeBestScore": null,
+                    "name": "hhhhhhaaa",
+                    "relicCores": 277,
+                    "transmuteCores": 34
+                },
+                "48104282": {
+                    "atk": 3972682,
+                    "chipsCount": 238,
+                    "eeBestScore": null,
+                    "name": "★VNClub",
+                    "relicCores": 352,
                     "transmuteCores": 68
                 },
-                "68167777": {
-                    "atk": 4244282,
-                    "chipsCount": 185,
+                "49255029": {
+                    "atk": 2598652,
+                    "chipsCount": 67,
                     "eeBestScore": null,
-                    "name": "౨ৎ8134",
-                    "relicCores": 344,
-                    "transmuteCores": 126
+                    "name": "FrAnKjRv",
+                    "relicCores": 137,
+                    "transmuteCores": 38
                 },
-                "72796221": {
-                    "atk": 3023552,
-                    "chipsCount": 71,
+                "50196049": {
+                    "atk": 2154053,
+                    "chipsCount": 79,
                     "eeBestScore": null,
-                    "name": "ChơiGameÍtNạp",
+                    "name": "enternalplay",
+                    "relicCores": 156,
+                    "transmuteCores": 4
+                },
+                "52265259": {
+                    "atk": 2791930,
+                    "chipsCount": 92,
+                    "eeBestScore": null,
+                    "name": "★P4pHit4",
                     "relicCores": 164,
                     "transmuteCores": 30
                 },
-                "74286183": {
-                    "atk": 3149123,
-                    "chipsCount": 156,
+                "52389557": {
+                    "atk": 3245372,
+                    "chipsCount": 138,
                     "eeBestScore": null,
-                    "name": "★Coca",
-                    "relicCores": 240,
+                    "name": "ıʞıoʞkoikichi",
+                    "relicCores": 193,
+                    "transmuteCores": 32
+                },
+                "57966131": {
+                    "atk": 2943827,
+                    "chipsCount": 161,
+                    "eeBestScore": null,
+                    "name": "ChiếnEOH",
+                    "relicCores": 176,
+                    "transmuteCores": 24
+                },
+                "59380396": {
+                    "atk": 2878924,
+                    "chipsCount": 101,
+                    "eeBestScore": null,
+                    "name": "★StefanFelix",
+                    "relicCores": 208,
+                    "transmuteCores": 24
+                },
+                "59563299": {
+                    "atk": 3626987,
+                    "chipsCount": 186,
+                    "eeBestScore": null,
+                    "name": "★BabaYaGa",
+                    "relicCores": 226,
+                    "transmuteCores": 66
+                },
+                "65695639": {
+                    "atk": 2215399,
+                    "chipsCount": 64,
+                    "eeBestScore": null,
+                    "name": "★Nataro",
+                    "relicCores": 195,
+                    "transmuteCores": 2
+                },
+                "70639679": {
+                    "atk": 4479295,
+                    "chipsCount": 293,
+                    "eeBestScore": null,
+                    "name": "CapVN",
+                    "relicCores": 369,
+                    "transmuteCores": 80
+                },
+                "71809571": {
+                    "atk": 3728130,
+                    "chipsCount": 190,
+                    "eeBestScore": null,
+                    "name": "★Ryder°QH°",
+                    "relicCores": 303,
+                    "transmuteCores": 44
+                },
+                "72619594": {
+                    "atk": 2134074,
+                    "chipsCount": 88,
+                    "eeBestScore": null,
+                    "name": "乂ConMạyMè乂",
+                    "relicCores": 208,
+                    "transmuteCores": 4
+                },
+                "74770466": {
+                    "atk": 2516369,
+                    "chipsCount": 70,
+                    "eeBestScore": null,
+                    "name": "ĂζЄĴΘ",
+                    "relicCores": 184,
+                    "transmuteCores": 48
+                },
+                "77689242": {
+                    "atk": 3434364,
+                    "chipsCount": 191,
+                    "eeBestScore": null,
+                    "name": "★S2NMT",
+                    "relicCores": 282,
                     "transmuteCores": 50
                 },
-                "77084517": {
-                    "atk": 2804773,
-                    "chipsCount": 64,
+                "78185974": {
+                    "atk": 2754166,
+                    "chipsCount": 100,
                     "eeBestScore": null,
-                    "name": "JaseBourne",
-                    "relicCores": 142,
-                    "transmuteCores": 34
+                    "name": "★BᵒʸD",
+                    "relicCores": 226,
+                    "transmuteCores": 50
                 },
-                "77777411": {
-                    "atk": 4025038,
-                    "chipsCount": 176,
+                "79830509": {
+                    "atk": 3354178,
+                    "chipsCount": 90,
                     "eeBestScore": null,
-                    "name": "1gucciツ",
-                    "relicCores": 336,
-                    "transmuteCores": 72
+                    "name": "★Tattoo",
+                    "relicCores": 257,
+                    "transmuteCores": 42
                 },
-                "81389301": {
-                    "atk": 4114908,
-                    "chipsCount": 219,
+                "82656486": {
+                    "atk": 2614627,
+                    "chipsCount": 152,
                     "eeBestScore": null,
-                    "name": "MinhHíuu",
-                    "relicCores": 305,
-                    "transmuteCores": 64
+                    "name": "YatoroD0G",
+                    "relicCores": 240,
+                    "transmuteCores": 42
                 },
-                "82486252": {
-                    "atk": 2397092,
-                    "chipsCount": 73,
+                "83412300": {
+                    "atk": 3173541,
+                    "chipsCount": 127,
                     "eeBestScore": null,
-                    "name": "An20cm",
-                    "relicCores": 161,
-                    "transmuteCores": 34
+                    "name": "Hardes2",
+                    "relicCores": 282,
+                    "transmuteCores": 40
                 },
-                "84667250": {
-                    "atk": 2888419,
-                    "chipsCount": 64,
+                "87874085": {
+                    "atk": 4934006,
+                    "chipsCount": 365,
                     "eeBestScore": null,
-                    "name": "Pepsi20",
-                    "relicCores": 151,
-                    "transmuteCores": 30
+                    "name": "★PK",
+                    "relicCores": 412,
+                    "transmuteCores": 88
+                },
+                "88634372": {
+                    "atk": 2712264,
+                    "chipsCount": 173,
+                    "eeBestScore": null,
+                    "name": "hlren",
+                    "relicCores": 204,
+                    "transmuteCores": 28
+                },
+                "89039250": {
+                    "atk": 2742466,
+                    "chipsCount": 57,
+                    "eeBestScore": null,
+                    "name": "★kalimbastick",
+                    "relicCores": 140,
+                    "transmuteCores": 42
                 }
             },
-            "name": "VuiLàChính",
-            "totalAtk": 96846104,
-            "totalChips": 3606,
+            "name": "VNClubㅤ",
+            "totalAtk": 99468541,
+            "totalChips": 4897,
             "totalEe": null,
-            "totalRelicCores": 6521,
-            "totalTransmuteCores": 1643
+            "totalRelicCores": 7577,
+            "totalTransmuteCores": 1644
         },
         "44262": {
             "clanId": 44262,
-            "lunarPoints": 1545,
+            "lunarPoints": 1535,
             "members": {
                 "100876140": {
-                    "atk": 2540277,
-                    "chipsCount": 48,
+                    "atk": 2567683,
+                    "chipsCount": 53,
                     "eeBestScore": null,
                     "name": "Scoundrel536",
-                    "relicCores": 189,
-                    "transmuteCores": 30
+                    "relicCores": 173,
+                    "transmuteCores": 20
                 },
                 "103516442": {
-                    "atk": 3192004,
+                    "atk": 3194365,
                     "chipsCount": 88,
                     "eeBestScore": null,
                     "name": "DAYO-P",
-                    "relicCores": 268,
+                    "relicCores": 274,
                     "transmuteCores": 64
                 },
                 "106162623": {
-                    "atk": 1964324,
+                    "atk": 2011717,
                     "chipsCount": 23,
                     "eeBestScore": null,
                     "name": "gubrax",
@@ -663,7 +371,7 @@ const lunarDetails = {
                     "transmuteCores": 20
                 },
                 "10754439": {
-                    "atk": 2256706,
+                    "atk": 2265350,
                     "chipsCount": 50,
                     "eeBestScore": null,
                     "name": "HakiLuffy",
@@ -671,39 +379,39 @@ const lunarDetails = {
                     "transmuteCores": 16
                 },
                 "108546985": {
-                    "atk": 2415254,
-                    "chipsCount": 56,
+                    "atk": 2429056,
+                    "chipsCount": 59,
                     "eeBestScore": null,
                     "name": "pumpenjoe",
-                    "relicCores": 194,
-                    "transmuteCores": 38
+                    "relicCores": 199,
+                    "transmuteCores": 44
                 },
                 "108860725": {
-                    "atk": 2528494,
-                    "chipsCount": 58,
+                    "atk": 2658160,
+                    "chipsCount": 59,
                     "eeBestScore": null,
                     "name": "RetinaDNA",
                     "relicCores": 169,
                     "transmuteCores": 42
                 },
                 "112772047": {
-                    "atk": 1989059,
+                    "atk": 2004286,
                     "chipsCount": 39,
                     "eeBestScore": null,
                     "name": "VictorMolusco",
-                    "relicCores": 124,
+                    "relicCores": 126,
                     "transmuteCores": 34
                 },
                 "113690788": {
-                    "atk": 2170031,
-                    "chipsCount": 48,
+                    "atk": 2163910,
+                    "chipsCount": 24,
                     "eeBestScore": null,
                     "name": "Apathy_",
                     "relicCores": 110,
                     "transmuteCores": 28
                 },
                 "11463573": {
-                    "atk": 2009917,
+                    "atk": 2041465,
                     "chipsCount": 50,
                     "eeBestScore": null,
                     "name": "faxnem",
@@ -711,7 +419,7 @@ const lunarDetails = {
                     "transmuteCores": 50
                 },
                 "115742768": {
-                    "atk": 49348,
+                    "atk": 49403,
                     "chipsCount": 2,
                     "eeBestScore": null,
                     "name": "SterbyTools",
@@ -719,47 +427,47 @@ const lunarDetails = {
                     "transmuteCores": 0
                 },
                 "18115624": {
-                    "atk": 2667291,
-                    "chipsCount": 133,
+                    "atk": 2743784,
+                    "chipsCount": 138,
                     "eeBestScore": null,
                     "name": "Nubis",
-                    "relicCores": 242,
-                    "transmuteCores": 34
+                    "relicCores": 222,
+                    "transmuteCores": 28
                 },
                 "18297536": {
-                    "atk": 1830907,
-                    "chipsCount": 59,
+                    "atk": 1877118,
+                    "chipsCount": 66,
                     "eeBestScore": null,
                     "name": "ergiangi",
-                    "relicCores": 104,
-                    "transmuteCores": 30
+                    "relicCores": 103,
+                    "transmuteCores": 34
                 },
                 "26277677": {
-                    "atk": 2444987,
+                    "atk": 2577865,
                     "chipsCount": 30,
                     "eeBestScore": null,
                     "name": "BobBobberson",
-                    "relicCores": 136,
+                    "relicCores": 142,
                     "transmuteCores": 13
                 },
                 "27113479": {
-                    "atk": 2516736,
-                    "chipsCount": 130,
+                    "atk": 2809349,
+                    "chipsCount": 135,
                     "eeBestScore": null,
                     "name": "silverxz",
                     "relicCores": 168,
                     "transmuteCores": 10
                 },
                 "29321884": {
-                    "atk": 3232014,
+                    "atk": 3288798,
                     "chipsCount": 100,
                     "eeBestScore": null,
                     "name": "RABBIT5",
-                    "relicCores": 214,
+                    "relicCores": 220,
                     "transmuteCores": 34
                 },
                 "29904762": {
-                    "atk": 1836455,
+                    "atk": 1837885,
                     "chipsCount": 38,
                     "eeBestScore": null,
                     "name": "Cheeselife",
@@ -767,31 +475,31 @@ const lunarDetails = {
                     "transmuteCores": 45
                 },
                 "30658936": {
-                    "atk": 2453539,
+                    "atk": 2479047,
                     "chipsCount": 87,
                     "eeBestScore": null,
                     "name": "Gritchen",
                     "relicCores": 188,
-                    "transmuteCores": 26
+                    "transmuteCores": 30
                 },
                 "32556489": {
-                    "atk": 2103742,
+                    "atk": 1913578,
                     "chipsCount": 52,
                     "eeBestScore": null,
                     "name": "Bensayyten",
-                    "relicCores": 121,
-                    "transmuteCores": 38
+                    "relicCores": 83,
+                    "transmuteCores": 14
                 },
                 "35869301": {
-                    "atk": 2746396,
+                    "atk": 3121495,
                     "chipsCount": 133,
                     "eeBestScore": null,
                     "name": "Toddlerr",
-                    "relicCores": 266,
+                    "relicCores": 274,
                     "transmuteCores": 28
                 },
                 "36484758": {
-                    "atk": 2089819,
+                    "atk": 2222589,
                     "chipsCount": 12,
                     "eeBestScore": null,
                     "name": "Belthazar",
@@ -799,55 +507,55 @@ const lunarDetails = {
                     "transmuteCores": 6
                 },
                 "41742773": {
-                    "atk": 2368409,
+                    "atk": 1746663,
                     "chipsCount": 54,
                     "eeBestScore": null,
                     "name": "MadameMischief",
-                    "relicCores": 219,
-                    "transmuteCores": 34
+                    "relicCores": 174,
+                    "transmuteCores": 0
                 },
                 "51071110": {
-                    "atk": 2447403,
+                    "atk": 2446603,
                     "chipsCount": 42,
                     "eeBestScore": null,
                     "name": "samwise08",
-                    "relicCores": 134,
+                    "relicCores": 137,
                     "transmuteCores": 34
                 },
                 "59566866": {
-                    "atk": 2417125,
+                    "atk": 2448743,
                     "chipsCount": 59,
                     "eeBestScore": null,
                     "name": "FlyingDutchy",
-                    "relicCores": 152,
-                    "transmuteCores": 2
+                    "relicCores": 171,
+                    "transmuteCores": 7
                 },
                 "60687252": {
-                    "atk": 4089482,
-                    "chipsCount": 214,
+                    "atk": 4106124,
+                    "chipsCount": 218,
                     "eeBestScore": null,
                     "name": "һan",
                     "relicCores": 383,
                     "transmuteCores": 64
                 },
                 "64676255": {
-                    "atk": 2520533,
-                    "chipsCount": 37,
+                    "atk": 2530870,
+                    "chipsCount": 36,
                     "eeBestScore": null,
                     "name": "盾Heathcliff剣",
-                    "relicCores": 132,
-                    "transmuteCores": 14
+                    "relicCores": 159,
+                    "transmuteCores": 28
                 },
                 "66607264": {
-                    "atk": 2493009,
-                    "chipsCount": 38,
+                    "atk": 2609104,
+                    "chipsCount": 40,
                     "eeBestScore": null,
                     "name": "Player 66607264",
-                    "relicCores": 174,
-                    "transmuteCores": 25
+                    "relicCores": 169,
+                    "transmuteCores": 30
                 },
                 "70603922": {
-                    "atk": 1951039,
+                    "atk": 2019774,
                     "chipsCount": 47,
                     "eeBestScore": null,
                     "name": "BlackFlamE",
@@ -855,63 +563,63 @@ const lunarDetails = {
                     "transmuteCores": 2
                 },
                 "71028860": {
-                    "atk": 2152227,
+                    "atk": 2195453,
                     "chipsCount": 36,
                     "eeBestScore": null,
                     "name": "Rzzza",
-                    "relicCores": 138,
+                    "relicCores": 143,
                     "transmuteCores": 20
                 },
                 "72894129": {
-                    "atk": 2411239,
-                    "chipsCount": 99,
+                    "atk": 2446139,
+                    "chipsCount": 101,
                     "eeBestScore": null,
                     "name": "NeonCBV",
                     "relicCores": 172,
                     "transmuteCores": 52
                 },
                 "75174428": {
-                    "atk": 2401309,
-                    "chipsCount": 66,
+                    "atk": 2424812,
+                    "chipsCount": 71,
                     "eeBestScore": null,
                     "name": "PastalaVista",
-                    "relicCores": 187,
-                    "transmuteCores": 11
+                    "relicCores": 192,
+                    "transmuteCores": 12
                 },
                 "79510960": {
-                    "atk": 2134076,
-                    "chipsCount": 59,
+                    "atk": 2068703,
+                    "chipsCount": 60,
                     "eeBestScore": null,
                     "name": "theLP",
                     "relicCores": 190,
                     "transmuteCores": 3
                 },
                 "80018314": {
-                    "atk": 2059437,
+                    "atk": 2030030,
                     "chipsCount": 46,
                     "eeBestScore": null,
                     "name": "Player 80018314",
-                    "relicCores": 180,
-                    "transmuteCores": 6
+                    "relicCores": 185,
+                    "transmuteCores": 3
                 },
                 "80972473": {
-                    "atk": 3229974,
-                    "chipsCount": 82,
+                    "atk": 3254855,
+                    "chipsCount": 81,
                     "eeBestScore": null,
                     "name": "Cunner88",
                     "relicCores": 182,
                     "transmuteCores": 44
                 },
                 "83339881": {
-                    "atk": 3629890,
-                    "chipsCount": 150,
+                    "atk": 3646135,
+                    "chipsCount": 160,
                     "eeBestScore": null,
                     "name": "Fl3xas",
                     "relicCores": 305,
-                    "transmuteCores": 64
+                    "transmuteCores": 72
                 },
                 "83861839": {
-                    "atk": 2350462,
+                    "atk": 2371967,
                     "chipsCount": 54,
                     "eeBestScore": null,
                     "name": "groggen",
@@ -919,7 +627,7 @@ const lunarDetails = {
                     "transmuteCores": 34
                 },
                 "87244358": {
-                    "atk": 3129378,
+                    "atk": 3164814,
                     "chipsCount": 116,
                     "eeBestScore": null,
                     "name": "神Sterben死",
@@ -927,7 +635,7 @@ const lunarDetails = {
                     "transmuteCores": 42
                 },
                 "87954282": {
-                    "atk": 2657566,
+                    "atk": 2657971,
                     "chipsCount": 77,
                     "eeBestScore": null,
                     "name": "SngphO",
@@ -935,7 +643,7 @@ const lunarDetails = {
                     "transmuteCores": 72
                 },
                 "88203044": {
-                    "atk": 2374947,
+                    "atk": 2376385,
                     "chipsCount": 57,
                     "eeBestScore": null,
                     "name": "p88203044",
@@ -943,336 +651,660 @@ const lunarDetails = {
                     "transmuteCores": 25
                 },
                 "89511116": {
-                    "atk": 2205594,
+                    "atk": 2232557,
                     "chipsCount": 57,
                     "eeBestScore": null,
                     "name": "EMBALOCO",
-                    "relicCores": 171,
-                    "transmuteCores": 12
+                    "relicCores": 190,
+                    "transmuteCores": 18
                 }
             },
             "name": "Freedomˢᵗʳᵃʸ",
-            "totalAtk": 78280094,
-            "totalChips": 2371,
+            "totalAtk": 79544151,
+            "totalChips": 2410,
             "totalEe": null,
-            "totalRelicCores": 5735,
-            "totalTransmuteCores": 1094
+            "totalRelicCores": 5763,
+            "totalTransmuteCores": 1079
         },
-        "45508": {
-            "clanId": 45508,
-            "lunarPoints": 1575,
+        "75967": {
+            "clanId": 75967,
+            "lunarPoints": 1470,
             "members": {
-                "10510960": {
-                    "atk": 2914877,
-                    "chipsCount": 40,
+                "100136261": {
+                    "atk": 2594856,
+                    "chipsCount": 71,
                     "eeBestScore": null,
-                    "name": "방심금은물",
-                    "relicCores": 178,
-                    "transmuteCores": 38
-                },
-                "15635936": {
-                    "atk": 2062157,
-                    "chipsCount": 12,
-                    "eeBestScore": null,
-                    "name": "이구역에짱임",
-                    "relicCores": 108,
-                    "transmuteCores": 16
-                },
-                "17631993": {
-                    "atk": 2799374,
-                    "chipsCount": 53,
-                    "eeBestScore": null,
-                    "name": "철썩",
-                    "relicCores": 172,
-                    "transmuteCores": 32
-                },
-                "21077014": {
-                    "atk": 2908972,
-                    "chipsCount": 62,
-                    "eeBestScore": null,
-                    "name": "망사스타킹",
-                    "relicCores": 190,
-                    "transmuteCores": 41
-                },
-                "21223328": {
-                    "atk": 2912876,
-                    "chipsCount": 75,
-                    "eeBestScore": null,
-                    "name": "Yeol-i",
-                    "relicCores": 238,
-                    "transmuteCores": 54
-                },
-                "22581548": {
-                    "atk": 2387460,
-                    "chipsCount": 46,
-                    "eeBestScore": null,
-                    "name": "meraccoon",
-                    "relicCores": 139,
-                    "transmuteCores": 30
-                },
-                "23698245": {
-                    "atk": 2297773,
-                    "chipsCount": 53,
-                    "eeBestScore": null,
-                    "name": "단님님",
-                    "relicCores": 164,
-                    "transmuteCores": 30
-                },
-                "24267809": {
-                    "atk": 2923944,
-                    "chipsCount": 55,
-                    "eeBestScore": null,
-                    "name": "ˢʷBJKim",
-                    "relicCores": 230,
-                    "transmuteCores": 38
-                },
-                "28522785": {
-                    "atk": 2731517,
-                    "chipsCount": 59,
-                    "eeBestScore": null,
-                    "name": "ˢʷ하루사마",
-                    "relicCores": 174,
-                    "transmuteCores": 32
-                },
-                "36370217": {
-                    "atk": 2325572,
-                    "chipsCount": 50,
-                    "eeBestScore": null,
-                    "name": "ˢʷ기영웅",
-                    "relicCores": 130,
-                    "transmuteCores": 10
-                },
-                "36787146": {
-                    "atk": 2716541,
-                    "chipsCount": 117,
-                    "eeBestScore": null,
-                    "name": "안놔쑤이",
-                    "relicCores": 226,
+                    "name": "CGㅣ§∆NT¥",
+                    "relicCores": 161,
                     "transmuteCores": 34
                 },
-                "37247946": {
-                    "atk": 2819626,
-                    "chipsCount": 72,
-                    "eeBestScore": null,
-                    "name": "ˢʷ탕탕수육",
-                    "relicCores": 190,
-                    "transmuteCores": 48
-                },
-                "38653699": {
-                    "atk": 3179179,
-                    "chipsCount": 82,
-                    "eeBestScore": null,
-                    "name": "수리",
-                    "relicCores": 182,
-                    "transmuteCores": 42
-                },
-                "39892355": {
-                    "atk": 3423724,
-                    "chipsCount": 159,
-                    "eeBestScore": null,
-                    "name": "깔쌈°",
-                    "relicCores": 245,
-                    "transmuteCores": 45
-                },
-                "40575319": {
-                    "atk": 3105196,
-                    "chipsCount": 150,
-                    "eeBestScore": null,
-                    "name": "피타고라뚜",
-                    "relicCores": 169,
-                    "transmuteCores": 0
-                },
-                "41247384": {
-                    "atk": 2741117,
-                    "chipsCount": 101,
-                    "eeBestScore": null,
-                    "name": "ˢʷ상하이조",
-                    "relicCores": 200,
-                    "transmuteCores": 46
-                },
-                "42054072": {
-                    "atk": 4348594,
-                    "chipsCount": 295,
-                    "eeBestScore": null,
-                    "name": "곰크나이트",
-                    "relicCores": 383,
-                    "transmuteCores": 84
-                },
-                "43626536": {
-                    "atk": 3368261,
-                    "chipsCount": 160,
-                    "eeBestScore": null,
-                    "name": "풀랑",
-                    "relicCores": 228,
-                    "transmuteCores": 54
-                },
-                "43940306": {
-                    "atk": 3488269,
-                    "chipsCount": 214,
-                    "eeBestScore": null,
-                    "name": "다크나이트⠀",
-                    "relicCores": 261,
-                    "transmuteCores": 34
-                },
-                "44347404": {
-                    "atk": 2014728,
-                    "chipsCount": 34,
-                    "eeBestScore": null,
-                    "name": "메이플시럽",
-                    "relicCores": 164,
-                    "transmuteCores": 6
-                },
-                "46178498": {
-                    "atk": 3316457,
-                    "chipsCount": 197,
-                    "eeBestScore": null,
-                    "name": "공주ღ",
-                    "relicCores": 315,
-                    "transmuteCores": 1
-                },
-                "47819223": {
-                    "atk": 3523725,
-                    "chipsCount": 118,
-                    "eeBestScore": null,
-                    "name": "박수영님이다",
-                    "relicCores": 265,
-                    "transmuteCores": 58
-                },
-                "48987414": {
-                    "atk": 2508232,
+                "102135381": {
+                    "atk": 1921383,
                     "chipsCount": 57,
                     "eeBestScore": null,
-                    "name": "김게장",
-                    "relicCores": 159,
-                    "transmuteCores": 34
+                    "name": "CGㅣAldebaran",
+                    "relicCores": 116,
+                    "transmuteCores": 10
                 },
-                "49293866": {
-                    "atk": 2739348,
-                    "chipsCount": 52,
+                "106080946": {
+                    "atk": 2277553,
+                    "chipsCount": 34,
                     "eeBestScore": null,
-                    "name": "아이노비아",
-                    "relicCores": 174,
-                    "transmuteCores": 34
-                },
-                "49650349": {
-                    "atk": 3556917,
-                    "chipsCount": 141,
-                    "eeBestScore": null,
-                    "name": "꿀뚜지2",
-                    "relicCores": 269,
-                    "transmuteCores": 42
-                },
-                "49730874": {
-                    "atk": 2812667,
-                    "chipsCount": 121,
-                    "eeBestScore": null,
-                    "name": "ˢʷ먹순이",
-                    "relicCores": 200,
-                    "transmuteCores": 0
-                },
-                "51985502": {
-                    "atk": 1946778,
-                    "chipsCount": 79,
-                    "eeBestScore": null,
-                    "name": "ˢʷ돈영이",
-                    "relicCores": 180,
-                    "transmuteCores": 30
-                },
-                "58789194": {
-                    "atk": 2842391,
-                    "chipsCount": 51,
-                    "eeBestScore": null,
-                    "name": "굿차니",
-                    "relicCores": 136,
+                    "name": "CGㅣBerlin",
+                    "relicCores": 104,
                     "transmuteCores": 25
                 },
-                "63033985": {
-                    "atk": 2612841,
-                    "chipsCount": 74,
+                "110908912": {
+                    "atk": 2126386,
+                    "chipsCount": 77,
                     "eeBestScore": null,
-                    "name": "쓰레기수집가",
-                    "relicCores": 150,
-                    "transmuteCores": 39
+                    "name": "NanoBasurto",
+                    "relicCores": 137,
+                    "transmuteCores": 24
                 },
-                "66329662": {
-                    "atk": 2366307,
+                "112953209": {
+                    "atk": 1342366,
                     "chipsCount": 23,
                     "eeBestScore": null,
-                    "name": "kimji0523",
-                    "relicCores": 139,
-                    "transmuteCores": 30
+                    "name": "CG|valdez",
+                    "relicCores": 74,
+                    "transmuteCores": 8
                 },
-                "67141288": {
-                    "atk": 1547497,
-                    "chipsCount": 45,
+                "115363362": {
+                    "atk": 1943873,
+                    "chipsCount": 18,
                     "eeBestScore": null,
-                    "name": "swings",
-                    "relicCores": 158,
+                    "name": "101PN",
+                    "relicCores": 183,
+                    "transmuteCores": 8
+                },
+                "24399697": {
+                    "atk": 2002522,
+                    "chipsCount": 43,
+                    "eeBestScore": null,
+                    "name": "Trollinos",
+                    "relicCores": 155,
+                    "transmuteCores": 10
+                },
+                "27310844": {
+                    "atk": 1237984,
+                    "chipsCount": 21,
+                    "eeBestScore": null,
+                    "name": "Mynick",
+                    "relicCores": 108,
+                    "transmuteCores": 5
+                },
+                "28737379": {
+                    "atk": 2315908,
+                    "chipsCount": 39,
+                    "eeBestScore": null,
+                    "name": "ብIKජ",
+                    "relicCores": 175,
+                    "transmuteCores": 3
+                },
+                "31491745": {
+                    "atk": 1877560,
+                    "chipsCount": 11,
+                    "eeBestScore": null,
+                    "name": "Zneazel",
+                    "relicCores": 242,
+                    "transmuteCores": 3
+                },
+                "34886240": {
+                    "atk": 1695539,
+                    "chipsCount": 72,
+                    "eeBestScore": null,
+                    "name": "Warmazor",
+                    "relicCores": 156,
+                    "transmuteCores": 0
+                },
+                "37529085": {
+                    "atk": 2409773,
+                    "chipsCount": 44,
+                    "eeBestScore": null,
+                    "name": "Rhaegar.",
+                    "relicCores": 177,
+                    "transmuteCores": 20
+                },
+                "38751557": {
+                    "atk": 1994670,
+                    "chipsCount": 26,
+                    "eeBestScore": null,
+                    "name": "CGㅣleon500☠️",
+                    "relicCores": 120,
+                    "transmuteCores": 20
+                },
+                "44986987": {
+                    "atk": 3142374,
+                    "chipsCount": 81,
+                    "eeBestScore": null,
+                    "name": "CGㅣKingDaster",
+                    "relicCores": 219,
+                    "transmuteCores": 38
+                },
+                "45419272": {
+                    "atk": 2161477,
+                    "chipsCount": 63,
+                    "eeBestScore": null,
+                    "name": "Tpita19",
+                    "relicCores": 160,
                     "transmuteCores": 13
                 },
-                "68328504": {
-                    "atk": 3596496,
-                    "chipsCount": 110,
+                "48312527": {
+                    "atk": 1766176,
+                    "chipsCount": 25,
                     "eeBestScore": null,
-                    "name": "ˢʷ노을",
-                    "relicCores": 200,
-                    "transmuteCores": 50
+                    "name": "elejota",
+                    "relicCores": 97,
+                    "transmuteCores": 3
                 },
-                "71235440": {
-                    "atk": 3597333,
-                    "chipsCount": 135,
+                "50104880": {
+                    "atk": 2398725,
+                    "chipsCount": 24,
                     "eeBestScore": null,
-                    "name": "서태하",
-                    "relicCores": 257,
-                    "transmuteCores": 42
+                    "name": "ΔĐㅣJanoKlu",
+                    "relicCores": 215,
+                    "transmuteCores": 20
                 },
-                "74048271": {
-                    "atk": 3040366,
-                    "chipsCount": 104,
+                "50822503": {
+                    "atk": 1944241,
+                    "chipsCount": 19,
                     "eeBestScore": null,
-                    "name": "조까치",
-                    "relicCores": 165,
-                    "transmuteCores": 28
+                    "name": "SantiagoxD",
+                    "relicCores": 167,
+                    "transmuteCores": 5
                 },
-                "76129009": {
-                    "atk": 2336522,
-                    "chipsCount": 40,
+                "58300904": {
+                    "atk": 2503564,
+                    "chipsCount": 69,
                     "eeBestScore": null,
-                    "name": "ˢʷ아오빡쳐",
-                    "relicCores": 172,
-                    "transmuteCores": 25
+                    "name": "Zkyβluєㅣ",
+                    "relicCores": 160,
+                    "transmuteCores": 34
                 },
-                "76615030": {
-                    "atk": 3402292,
-                    "chipsCount": 88,
+                "61811129": {
+                    "atk": 2595430,
+                    "chipsCount": 90,
                     "eeBestScore": null,
-                    "name": "레프티",
-                    "relicCores": 220,
+                    "name": "CGㅣmaac180782☠",
+                    "relicCores": 187,
+                    "transmuteCores": 54
+                },
+                "63729732": {
+                    "atk": 2370759,
+                    "chipsCount": 75,
+                    "eeBestScore": null,
+                    "name": "CGㅣYunnan",
+                    "relicCores": 156,
+                    "transmuteCores": 20
+                },
+                "69169004": {
+                    "atk": 2727986,
+                    "chipsCount": 57,
+                    "eeBestScore": null,
+                    "name": "jabaly",
+                    "relicCores": 211,
+                    "transmuteCores": 10
+                },
+                "71776979": {
+                    "atk": 2345019,
+                    "chipsCount": 58,
+                    "eeBestScore": null,
+                    "name": "Sans_007",
+                    "relicCores": 213,
+                    "transmuteCores": 3
+                },
+                "77081513": {
+                    "atk": 3142610,
+                    "chipsCount": 91,
+                    "eeBestScore": null,
+                    "name": "CGㅣMaax17",
+                    "relicCores": 190,
+                    "transmuteCores": 34
+                },
+                "77631839": {
+                    "atk": 2149031,
+                    "chipsCount": 74,
+                    "eeBestScore": null,
+                    "name": "#InvalidName",
+                    "relicCores": 132,
+                    "transmuteCores": 20
+                },
+                "78159260": {
+                    "atk": 2516712,
+                    "chipsCount": 50,
+                    "eeBestScore": null,
+                    "name": "CGㅣGuille",
+                    "relicCores": 150,
                     "transmuteCores": 30
                 },
-                "83815353": {
-                    "atk": 3689598,
-                    "chipsCount": 172,
+                "78525520": {
+                    "atk": 2762765,
+                    "chipsCount": 61,
                     "eeBestScore": null,
-                    "name": "♡초초♡",
-                    "relicCores": 257,
-                    "transmuteCores": 50
+                    "name": "CGㅣVlcHudson☠",
+                    "relicCores": 151,
+                    "transmuteCores": 38
                 },
-                "88352695": {
-                    "atk": 3163798,
-                    "chipsCount": 94,
+                "79176355": {
+                    "atk": 2431351,
+                    "chipsCount": 50,
                     "eeBestScore": null,
-                    "name": "ˢʷEDH",
-                    "relicCores": 225,
-                    "transmuteCores": 0
+                    "name": "Laura801",
+                    "relicCores": 145,
+                    "transmuteCores": 40
+                },
+                "79563946": {
+                    "atk": 1936988,
+                    "chipsCount": 27,
+                    "eeBestScore": null,
+                    "name": "CGㅣTHE_CABE",
+                    "relicCores": 188,
+                    "transmuteCores": 9
+                },
+                "80435029": {
+                    "atk": 2536982,
+                    "chipsCount": 13,
+                    "eeBestScore": null,
+                    "name": "MariOKozZ",
+                    "relicCores": 168,
+                    "transmuteCores": 5
+                },
+                "80573089": {
+                    "atk": 1909304,
+                    "chipsCount": 34,
+                    "eeBestScore": null,
+                    "name": "ÐOЯ1TOS",
+                    "relicCores": 134,
+                    "transmuteCores": 6
+                },
+                "81657850": {
+                    "atk": 2302926,
+                    "chipsCount": 127,
+                    "eeBestScore": null,
+                    "name": "CGㅣMalberth",
+                    "relicCores": 144,
+                    "transmuteCores": 60
+                },
+                "82508187": {
+                    "atk": 1518700,
+                    "chipsCount": 63,
+                    "eeBestScore": null,
+                    "name": "kissing",
+                    "relicCores": 115,
+                    "transmuteCores": 24
+                },
+                "82542515": {
+                    "atk": 2021447,
+                    "chipsCount": 23,
+                    "eeBestScore": null,
+                    "name": "♡MorOnEs♡",
+                    "relicCores": 110,
+                    "transmuteCores": 11
+                },
+                "84552298": {
+                    "atk": 1879286,
+                    "chipsCount": 27,
+                    "eeBestScore": null,
+                    "name": "CGㅣꪜanHalen☠",
+                    "relicCores": 126,
+                    "transmuteCores": 15
+                },
+                "84882732": {
+                    "atk": 3402381,
+                    "chipsCount": 85,
+                    "eeBestScore": null,
+                    "name": "CGㅣSkrop☠︎",
+                    "relicCores": 202,
+                    "transmuteCores": 42
+                },
+                "87919606": {
+                    "atk": 2433385,
+                    "chipsCount": 26,
+                    "eeBestScore": null,
+                    "name": "CGㅣGodQuiroz",
+                    "relicCores": 138,
+                    "transmuteCores": 17
+                },
+                "88866561": {
+                    "atk": 1386851,
+                    "chipsCount": 5,
+                    "eeBestScore": null,
+                    "name": "GDante",
+                    "relicCores": 133,
+                    "transmuteCores": 12
+                },
+                "89038625": {
+                    "atk": 1725018,
+                    "chipsCount": 51,
+                    "eeBestScore": null,
+                    "name": "ØSRξVξЯ",
+                    "relicCores": 151,
+                    "transmuteCores": 6
                 }
             },
-            "name": "스윗",
-            "totalAtk": 93171988,
-            "totalChips": 3300,
+            "name": "CrossGuildㆍ☠︎︎",
+            "totalAtk": 71322381,
+            "totalChips": 1747,
             "totalEe": null,
-            "totalRelicCores": 6493,
-            "totalTransmuteCores": 1199
+            "totalRelicCores": 5100,
+            "totalTransmuteCores": 706
+        },
+        "77606": {
+            "clanId": 77606,
+            "lunarPoints": 1565,
+            "members": {
+                "115723090": {
+                    "atk": 2212,
+                    "chipsCount": 0,
+                    "eeBestScore": null,
+                    "name": "Kimberlyada jack",
+                    "relicCores": 0,
+                    "transmuteCores": 0
+                },
+                "12860092": {
+                    "atk": 2291475,
+                    "chipsCount": 10,
+                    "eeBestScore": null,
+                    "name": "또둑스",
+                    "relicCores": 129,
+                    "transmuteCores": 29
+                },
+                "15231129": {
+                    "atk": 2329202,
+                    "chipsCount": 52,
+                    "eeBestScore": null,
+                    "name": "ᵀᴷ냐야옹",
+                    "relicCores": 250,
+                    "transmuteCores": 54
+                },
+                "28179724": {
+                    "atk": 2589956,
+                    "chipsCount": 46,
+                    "eeBestScore": null,
+                    "name": "ᵀᴷ오페라",
+                    "relicCores": 86,
+                    "transmuteCores": 10
+                },
+                "31157068": {
+                    "atk": 3147348,
+                    "chipsCount": 121,
+                    "eeBestScore": null,
+                    "name": "ᵀᴷ헬리오",
+                    "relicCores": 383,
+                    "transmuteCores": 54
+                },
+                "32519602": {
+                    "atk": 2553367,
+                    "chipsCount": 52,
+                    "eeBestScore": null,
+                    "name": "ᵀᴷㅇPM",
+                    "relicCores": 198,
+                    "transmuteCores": 17
+                },
+                "35194116": {
+                    "atk": 2603227,
+                    "chipsCount": 47,
+                    "eeBestScore": null,
+                    "name": "ᵀᴷ머씬건",
+                    "relicCores": 184,
+                    "transmuteCores": 21
+                },
+                "39713673": {
+                    "atk": 2787918,
+                    "chipsCount": 90,
+                    "eeBestScore": null,
+                    "name": "ᵀᴷ흠배",
+                    "relicCores": 261,
+                    "transmuteCores": 12
+                },
+                "39864782": {
+                    "atk": 4121930,
+                    "chipsCount": 163,
+                    "eeBestScore": null,
+                    "name": "ᵀᴷ혼돈",
+                    "relicCores": 303,
+                    "transmuteCores": 72
+                },
+                "40100089": {
+                    "atk": 2660356,
+                    "chipsCount": 41,
+                    "eeBestScore": null,
+                    "name": "ᵀᴷ용용이",
+                    "relicCores": 163,
+                    "transmuteCores": 34
+                },
+                "41662587": {
+                    "atk": 2414163,
+                    "chipsCount": 23,
+                    "eeBestScore": null,
+                    "name": "ᵀᴷ킬러행님",
+                    "relicCores": 128,
+                    "transmuteCores": 42
+                },
+                "41731898": {
+                    "atk": 3057262,
+                    "chipsCount": 90,
+                    "eeBestScore": null,
+                    "name": "ᵀᴷ꾹밥",
+                    "relicCores": 197,
+                    "transmuteCores": 44
+                },
+                "42673679": {
+                    "atk": 2845383,
+                    "chipsCount": 80,
+                    "eeBestScore": null,
+                    "name": "ᵀᴷ동~라~",
+                    "relicCores": 190,
+                    "transmuteCores": 50
+                },
+                "42723973": {
+                    "atk": 4825974,
+                    "chipsCount": 307,
+                    "eeBestScore": null,
+                    "name": "ᵀᴷArt별땅",
+                    "relicCores": 374,
+                    "transmuteCores": 98
+                },
+                "43630589": {
+                    "atk": 3240155,
+                    "chipsCount": 99,
+                    "eeBestScore": null,
+                    "name": "ᵀᴷ준서사랑",
+                    "relicCores": 215,
+                    "transmuteCores": 58
+                },
+                "43749112": {
+                    "atk": 2879657,
+                    "chipsCount": 82,
+                    "eeBestScore": null,
+                    "name": "ᵀᴷ감자",
+                    "relicCores": 240,
+                    "transmuteCores": 24
+                },
+                "44367427": {
+                    "atk": 2369510,
+                    "chipsCount": 37,
+                    "eeBestScore": null,
+                    "name": "ᵀᴷㅇI한결",
+                    "relicCores": 144,
+                    "transmuteCores": 30
+                },
+                "45059766": {
+                    "atk": 2827928,
+                    "chipsCount": 51,
+                    "eeBestScore": null,
+                    "name": "ᵀᴷ낙지탕탕",
+                    "relicCores": 139,
+                    "transmuteCores": 26
+                },
+                "48749881": {
+                    "atk": 1725709,
+                    "chipsCount": 46,
+                    "eeBestScore": null,
+                    "name": "ᵀᴷ빠따",
+                    "relicCores": 151,
+                    "transmuteCores": 16
+                },
+                "50687731": {
+                    "atk": 2864835,
+                    "chipsCount": 69,
+                    "eeBestScore": null,
+                    "name": "ᵀᴷ열무",
+                    "relicCores": 168,
+                    "transmuteCores": 42
+                },
+                "55794527": {
+                    "atk": 2014077,
+                    "chipsCount": 31,
+                    "eeBestScore": null,
+                    "name": "ᵀᴷ몽뚜",
+                    "relicCores": 112,
+                    "transmuteCores": 0
+                },
+                "56003668": {
+                    "atk": 2227698,
+                    "chipsCount": 74,
+                    "eeBestScore": null,
+                    "name": "세월가면",
+                    "relicCores": 177,
+                    "transmuteCores": 44
+                },
+                "57454633": {
+                    "atk": 4171464,
+                    "chipsCount": 181,
+                    "eeBestScore": null,
+                    "name": "ᵀᴷ영원",
+                    "relicCores": 325,
+                    "transmuteCores": 76
+                },
+                "57905986": {
+                    "atk": 3583472,
+                    "chipsCount": 116,
+                    "eeBestScore": null,
+                    "name": "ᵀᴷ파괴",
+                    "relicCores": 234,
+                    "transmuteCores": 30
+                },
+                "58038821": {
+                    "atk": 2701909,
+                    "chipsCount": 70,
+                    "eeBestScore": null,
+                    "name": "ᵀᴷ구고",
+                    "relicCores": 147,
+                    "transmuteCores": 20
+                },
+                "59349861": {
+                    "atk": 2917811,
+                    "chipsCount": 103,
+                    "eeBestScore": null,
+                    "name": "별땅　",
+                    "relicCores": 99,
+                    "transmuteCores": 40
+                },
+                "59940694": {
+                    "atk": 2506048,
+                    "chipsCount": 45,
+                    "eeBestScore": null,
+                    "name": "ᵀᴷ홍춘이",
+                    "relicCores": 166,
+                    "transmuteCores": 7
+                },
+                "62398391": {
+                    "atk": 3794929,
+                    "chipsCount": 210,
+                    "eeBestScore": null,
+                    "name": "ᵀᴷ조은데이",
+                    "relicCores": 333,
+                    "transmuteCores": 68
+                },
+                "65760206": {
+                    "atk": 2554372,
+                    "chipsCount": 45,
+                    "eeBestScore": null,
+                    "name": "ᵀᴷ럭키",
+                    "relicCores": 142,
+                    "transmuteCores": 45
+                },
+                "66700131": {
+                    "atk": 3145687,
+                    "chipsCount": 117,
+                    "eeBestScore": null,
+                    "name": "ᵀᴷ앤더슨",
+                    "relicCores": 196,
+                    "transmuteCores": 44
+                },
+                "69713978": {
+                    "atk": 3096264,
+                    "chipsCount": 87,
+                    "eeBestScore": null,
+                    "name": "ᵀᴷ움티티티",
+                    "relicCores": 208,
+                    "transmuteCores": 63
+                },
+                "73254348": {
+                    "atk": 3866934,
+                    "chipsCount": 246,
+                    "eeBestScore": null,
+                    "name": "ᵀᴷ머피",
+                    "relicCores": 254,
+                    "transmuteCores": 92
+                },
+                "74522640": {
+                    "atk": 2067432,
+                    "chipsCount": 99,
+                    "eeBestScore": null,
+                    "name": "ᵀᴷ티모",
+                    "relicCores": 193,
+                    "transmuteCores": 29
+                },
+                "80648208": {
+                    "atk": 2648685,
+                    "chipsCount": 77,
+                    "eeBestScore": null,
+                    "name": "☆땅",
+                    "relicCores": 99,
+                    "transmuteCores": 50
+                },
+                "81822450": {
+                    "atk": 3541685,
+                    "chipsCount": 161,
+                    "eeBestScore": null,
+                    "name": "ᵀᴷ열정",
+                    "relicCores": 215,
+                    "transmuteCores": 76
+                },
+                "83124306": {
+                    "atk": 3389649,
+                    "chipsCount": 71,
+                    "eeBestScore": null,
+                    "name": "ᵀᴷ레이",
+                    "relicCores": 210,
+                    "transmuteCores": 76
+                },
+                "83448387": {
+                    "atk": 3499858,
+                    "chipsCount": 131,
+                    "eeBestScore": null,
+                    "name": "ᵀᴷArt지키",
+                    "relicCores": 240,
+                    "transmuteCores": 59
+                },
+                "84855686": {
+                    "atk": 3346017,
+                    "chipsCount": 79,
+                    "eeBestScore": null,
+                    "name": "ᵀᴷRedBlood",
+                    "relicCores": 232,
+                    "transmuteCores": 68
+                }
+            },
+            "name": "TANK",
+            "totalAtk": 94184243,
+            "totalChips": 3217,
+            "totalEe": null,
+            "totalRelicCores": 6693,
+            "totalTransmuteCores": 1538
         }
     };
 if (typeof module !== 'undefined' && module.exports) {
