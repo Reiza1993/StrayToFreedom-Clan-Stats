@@ -68,76 +68,76 @@
       "seasonTotal": 4.897501359425019e+21
     },
     {
-      "gainVsPreviousSeason": -3.3544010795724723e+21,
-      "name": "p88203044",
+      "gainVsPreviousSeason": -1.6054193760333868e+22,
+      "name": "RetinaDNA",
       "rank": 12,
-      "seasonTotal": 3.6766942655595985e+21
+      "seasonTotal": 4.7058767814132514e+21
     },
     {
-      "gainVsPreviousSeason": -6.440011492081355e+21,
+      "gainVsPreviousSeason": -5.299277430529536e+21,
       "name": "\u76feHeathcliff\u5263",
       "rank": 13,
-      "seasonTotal": 2.915490407331222e+21
+      "seasonTotal": 4.056224468883042e+21
     },
     {
-      "gainVsPreviousSeason": -1.7876113487713905e+22,
-      "name": "RetinaDNA",
+      "gainVsPreviousSeason": -1.5949334786773633e+22,
+      "name": "PastalaVista",
       "rank": 14,
-      "seasonTotal": 2.8839570540332135e+21
+      "seasonTotal": 3.7458190803333803e+21
+    },
+    {
+      "gainVsPreviousSeason": -3.3544010795724723e+21,
+      "name": "p88203044",
+      "rank": 15,
+      "seasonTotal": 3.6766942655595985e+21
     },
     {
       "gainVsPreviousSeason": -4.903497921537757e+21,
       "name": "VictorMolusco",
-      "rank": 15,
+      "rank": 16,
       "seasonTotal": 2.6498456816093626e+21
     },
     {
       "gainVsPreviousSeason": -3.108343897026313e+21,
       "name": "theLP",
-      "rank": 16,
+      "rank": 17,
       "seasonTotal": 2.512666881006569e+21
     },
     {
       "gainVsPreviousSeason": -4.0011946923652075e+21,
       "name": "Gritchen",
-      "rank": 17,
+      "rank": 18,
       "seasonTotal": 2.4388945991415974e+21
+    },
+    {
+      "gainVsPreviousSeason": -8.797671757417239e+20,
+      "name": "BobBobberson",
+      "rank": 19,
+      "seasonTotal": 2.154279984635232e+21
     },
     {
       "gainVsPreviousSeason": -5.671301650341741e+21,
       "name": "Apathy_",
-      "rank": 18,
+      "rank": 20,
       "seasonTotal": 1.9114493154859155e+21
     },
     {
       "gainVsPreviousSeason": -5.159788995433441e+21,
       "name": "HakiLuffy",
-      "rank": 19,
+      "rank": 21,
       "seasonTotal": 1.8619228285193683e+21
     },
     {
       "gainVsPreviousSeason": -1.8067027412785511e+22,
       "name": "Scoundrel536",
-      "rank": 20,
+      "rank": 22,
       "seasonTotal": 1.7346431349964045e+21
     },
     {
       "gainVsPreviousSeason": -1.4927829375060887e+21,
       "name": "Rzzza",
-      "rank": 21,
-      "seasonTotal": 1.6619140415454902e+21
-    },
-    {
-      "gainVsPreviousSeason": -1.4543976826627993e+21,
-      "name": "BobBobberson",
-      "rank": 22,
-      "seasonTotal": 1.5796494777141567e+21
-    },
-    {
-      "gainVsPreviousSeason": -1.8407325501329498e+22,
-      "name": "PastalaVista",
       "rank": 23,
-      "seasonTotal": 1.2878283657775153e+21
+      "seasonTotal": 1.6619140415454902e+21
     },
     {
       "gainVsPreviousSeason": -1.5480358852503038e+21,
@@ -1539,10 +1539,12 @@
             },
             {
               "attempts": [
-                2.3603098976448696e+20
+                2.3603098976448696e+20,
+                4.361647650935874e+20,
+                3.74496731591975e+20
               ],
               "name": "BobBobberson",
-              "top2Sum": 2.3603098976448696e+20
+              "top2Sum": 8.106614966855624e+20
             },
             {
               "attempts": [
@@ -1614,6 +1616,29 @@
               ],
               "name": "MadameMischief",
               "top2Sum": 2.526676286142506e+21
+            },
+            {
+              "attempts": [
+                1.821919727380038e+21
+              ],
+              "name": "RetinaDNA",
+              "top2Sum": 1.821919727380038e+21
+            },
+            {
+              "attempts": [
+                6.698139595629772e+20,
+                4.7092010198884273e+20
+              ],
+              "name": "\u76feHeathcliff\u5263",
+              "top2Sum": 1.14073406155182e+21
+            },
+            {
+              "attempts": [
+                1.1526444174538812e+21,
+                1.305346297101984e+21
+              ],
+              "name": "PastalaVista",
+              "top2Sum": 2.457990714555865e+21
             }
           ]
         }
