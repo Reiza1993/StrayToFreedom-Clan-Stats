@@ -2,16 +2,16 @@
   "endDate": "2026-11-18",
   "leaderboard": [
     {
-      "gainVsPreviousSeason": -1.0951970473301198e+24,
+      "gainVsPreviousSeason": -9.952698518299751e+23,
       "name": "Fl3xas",
       "rank": 1,
-      "seasonTotal": 5.1212421426910416e+23
+      "seasonTotal": 6.120514097692488e+23
     },
     {
-      "gainVsPreviousSeason": -1.25743976770861e+23,
+      "gainVsPreviousSeason": -1.1294048961113317e+23,
       "name": "DAYO-P",
       "rank": 2,
-      "seasonTotal": 1.4819108725272655e+23
+      "seasonTotal": 1.6099457441245438e+23
     },
     {
       "gainVsPreviousSeason": -4.4693040398479385e+23,
@@ -50,10 +50,10 @@
       "seasonTotal": 1.324052559409565e+22
     },
     {
-      "gainVsPreviousSeason": -1.1503732709052037e+22,
+      "gainVsPreviousSeason": -9.341841092850932e+21,
       "name": "MadameMischief",
       "rank": 9,
-      "seasonTotal": 8.44755804605732e+21
+      "seasonTotal": 1.0609449662258426e+22
     },
     {
       "gainVsPreviousSeason": -2.0367988936674336e+22,
@@ -92,22 +92,22 @@
       "seasonTotal": 3.6766942655595985e+21
     },
     {
+      "gainVsPreviousSeason": -3.6886076589576107e+21,
+      "name": "Gritchen",
+      "rank": 16,
+      "seasonTotal": 2.751481632549194e+21
+    },
+    {
       "gainVsPreviousSeason": -4.903497921537757e+21,
       "name": "VictorMolusco",
-      "rank": 16,
+      "rank": 17,
       "seasonTotal": 2.6498456816093626e+21
     },
     {
       "gainVsPreviousSeason": -3.108343897026313e+21,
       "name": "theLP",
-      "rank": 17,
-      "seasonTotal": 2.512666881006569e+21
-    },
-    {
-      "gainVsPreviousSeason": -4.0011946923652075e+21,
-      "name": "Gritchen",
       "rank": 18,
-      "seasonTotal": 2.4388945991415974e+21
+      "seasonTotal": 2.512666881006569e+21
     },
     {
       "gainVsPreviousSeason": -4.720538567706069e+21,
@@ -1664,10 +1664,13 @@
           "players": [
             {
               "attempts": [
-                8.512086285207292e+21
+                8.512086285207292e+21,
+                1.0010180810855445e+22,
+                9.918526322462106e+21,
+                1.1305392634079662e+22
               ],
               "name": "DAYO-P",
-              "top2Sum": 8.512086285207292e+21
+              "top2Sum": 2.1315573444935107e+22
             },
             {
               "attempts": [
@@ -1706,6 +1709,30 @@
               ],
               "name": "silverxz",
               "top2Sum": 2.0517403258580166e+20
+            },
+            {
+              "attempts": [
+                1.680304040795706e+20,
+                1.4455662932802603e+20
+              ],
+              "name": "Gritchen",
+              "top2Sum": 3.1258703340759666e+20
+            },
+            {
+              "attempts": [
+                6.334248924757617e+22,
+                3.6584706252568512e+22
+              ],
+              "name": "Fl3xas",
+              "top2Sum": 9.992719550014468e+22
+            },
+            {
+              "attempts": [
+                1.1750149430428725e+21,
+                9.868766731582333e+20
+              ],
+              "name": "MadameMischief",
+              "top2Sum": 2.1618916162011057e+21
             }
           ]
         }
