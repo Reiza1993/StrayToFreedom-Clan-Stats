@@ -86,16 +86,16 @@
       "seasonTotal": 2.8839570540332135e+21
     },
     {
-      "gainVsPreviousSeason": -4.0011946923652075e+21,
-      "name": "Gritchen",
+      "gainVsPreviousSeason": -4.903497921537757e+21,
+      "name": "VictorMolusco",
       "rank": 15,
-      "seasonTotal": 2.4388945991415974e+21
+      "seasonTotal": 2.6498456816093626e+21
     },
     {
-      "gainVsPreviousSeason": -5.494635881456561e+21,
-      "name": "VictorMolusco",
+      "gainVsPreviousSeason": -4.0011946923652075e+21,
+      "name": "Gritchen",
       "rank": 16,
-      "seasonTotal": 2.0587077216905574e+21
+      "seasonTotal": 2.4388945991415974e+21
     },
     {
       "gainVsPreviousSeason": -3.616508195406906e+21,
@@ -164,28 +164,28 @@
       "seasonTotal": 6.968193713747143e+20
     },
     {
+      "gainVsPreviousSeason": -1.681992489373e+21,
+      "name": "samwise08",
+      "rank": 28,
+      "seasonTotal": 6.574671548925591e+20
+    },
+    {
       "gainVsPreviousSeason": -5.645560523353355e+21,
       "name": "Bensayyten",
-      "rank": 28,
+      "rank": 29,
       "seasonTotal": 5.5030489982732757e+20
     },
     {
       "gainVsPreviousSeason": -5.835861822525538e+19,
       "name": "Toddlerr",
-      "rank": 29,
+      "rank": 30,
       "seasonTotal": 5.1581147201200534e+20
     },
     {
       "gainVsPreviousSeason": -2.261578435210541e+22,
       "name": "pumpenjoe",
-      "rank": 30,
-      "seasonTotal": 4.594254265310263e+20
-    },
-    {
-      "gainVsPreviousSeason": -1.8847971623158334e+21,
-      "name": "samwise08",
       "rank": 31,
-      "seasonTotal": 4.5466248194972575e+20
+      "seasonTotal": 4.594254265310263e+20
     },
     {
       "gainVsPreviousSeason": -4.6247189480905146e+20,
@@ -1509,6 +1509,22 @@
               ],
               "name": "Cunner88",
               "top2Sum": 5.508880077155941e+21
+            },
+            {
+              "attempts": [
+                3.4940983786995476e+20,
+                2.417281220488504e+20
+              ],
+              "name": "VictorMolusco",
+              "top2Sum": 5.911379599188052e+20
+            },
+            {
+              "attempts": [
+                1.0305276592698291e+20,
+                9.975190701585046e+19
+              ],
+              "name": "samwise08",
+              "top2Sum": 2.0280467294283337e+20
             }
           ]
         }
