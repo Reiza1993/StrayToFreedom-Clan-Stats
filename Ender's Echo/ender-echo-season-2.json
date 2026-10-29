@@ -2,28 +2,28 @@
   "endDate": "2026-11-18",
   "leaderboard": [
     {
-      "gainVsPreviousSeason": -9.952698518299751e+23,
+      "gainVsPreviousSeason": -8.727025480380152e+23,
       "name": "Fl3xas",
       "rank": 1,
-      "seasonTotal": 6.120514097692488e+23
+      "seasonTotal": 7.346187135612087e+23
     },
     {
-      "gainVsPreviousSeason": -1.1134640265599834e+23,
+      "gainVsPreviousSeason": -9.21411271228628e+22,
       "name": "DAYO-P",
       "rank": 2,
-      "seasonTotal": 1.625886613675892e+23
+      "seasonTotal": 1.8179393690072474e+23
+    },
+    {
+      "gainVsPreviousSeason": -1.306960783185421e+23,
+      "name": "Nubis",
+      "rank": 3,
+      "seasonTotal": 1.7040823235075324e+23
     },
     {
       "gainVsPreviousSeason": -4.4693040398479385e+23,
       "name": "\u04bban",
-      "rank": 3,
-      "seasonTotal": 1.472484493262373e+23
-    },
-    {
-      "gainVsPreviousSeason": -1.5926373199833925e+23,
-      "name": "Nubis",
       "rank": 4,
-      "seasonTotal": 1.4184057867095608e+23
+      "seasonTotal": 1.472484493262373e+23
     },
     {
       "gainVsPreviousSeason": -1.0387367896331239e+23,
@@ -98,16 +98,16 @@
       "seasonTotal": 3.7458190803333803e+21
     },
     {
-      "gainVsPreviousSeason": -2.6727908254234234e+21,
-      "name": "theLP",
+      "gainVsPreviousSeason": -3.323696873257427e+21,
+      "name": "Gritchen",
       "rank": 17,
-      "seasonTotal": 2.9482199526094584e+21
+      "seasonTotal": 3.116392418249378e+21
     },
     {
-      "gainVsPreviousSeason": -3.6886076589576107e+21,
-      "name": "Gritchen",
+      "gainVsPreviousSeason": -2.6727908254234234e+21,
+      "name": "theLP",
       "rank": 18,
-      "seasonTotal": 2.751481632549194e+21
+      "seasonTotal": 2.9482199526094584e+21
     },
     {
       "gainVsPreviousSeason": -4.903497921537757e+21,
@@ -182,40 +182,40 @@
       "seasonTotal": 6.746335636986133e+20
     },
     {
+      "gainVsPreviousSeason": -1.8346002199980566e+20,
+      "name": "Player 80018314",
+      "rank": 31,
+      "seasonTotal": 5.938749686296853e+20
+    },
+    {
       "gainVsPreviousSeason": -5.645560523353355e+21,
       "name": "Bensayyten",
-      "rank": 31,
+      "rank": 32,
       "seasonTotal": 5.5030489982732757e+20
     },
     {
       "gainVsPreviousSeason": -5.835861822525538e+19,
       "name": "Toddlerr",
-      "rank": 32,
+      "rank": 33,
       "seasonTotal": 5.1581147201200534e+20
+    },
+    {
+      "gainVsPreviousSeason": -2.2561537092382048e+21,
+      "name": "faxnem",
+      "rank": 34,
+      "seasonTotal": 4.5519047090152014e+20
     },
     {
       "gainVsPreviousSeason": -5.8343135600066154e+20,
       "name": "Belthazar",
-      "rank": 33,
+      "rank": 35,
       "seasonTotal": 4.53276350878133e+20
-    },
-    {
-      "gainVsPreviousSeason": -3.4105422163089254e+20,
-      "name": "Player 80018314",
-      "rank": 34,
-      "seasonTotal": 4.362807689985984e+20
     },
     {
       "gainVsPreviousSeason": -2.660416563863001e+20,
       "name": "FlyingDutchy",
-      "rank": 35,
-      "seasonTotal": 3.1921251964390624e+20
-    },
-    {
-      "gainVsPreviousSeason": -2.502229831209713e+21,
-      "name": "faxnem",
       "rank": 36,
-      "seasonTotal": 2.091143489300118e+20
+      "seasonTotal": 3.1921251964390624e+20
     },
     {
       "gainVsPreviousSeason": -6.2663577807313306e+19,
@@ -1856,6 +1856,59 @@
               ],
               "name": "FlyingDutchy",
               "top2Sum": 3.1921251964390624e+20
+            },
+            {
+              "attempts": [
+                7.83172646492873e+19,
+                7.927693498179951e+19
+              ],
+              "name": "Player 80018314",
+              "top2Sum": 1.575941996310868e+20
+            }
+          ]
+        },
+        {
+          "date": "2026-10-30",
+          "day": 9,
+          "players": [
+            {
+              "attempts": [
+                1.738072212927155e+20,
+                1.9110356440746872e+20
+              ],
+              "name": "Gritchen",
+              "top2Sum": 3.649107857001842e+20
+            },
+            {
+              "attempts": [
+                8.858803215562986e+21,
+                1.0346472317572526e+22
+              ],
+              "name": "DAYO-P",
+              "top2Sum": 1.920527553313551e+22
+            },
+            {
+              "attempts": [
+                2.460761219715083e+20
+              ],
+              "name": "faxnem",
+              "top2Sum": 2.460761219715083e+20
+            },
+            {
+              "attempts": [
+                1.3210959681216152e+22,
+                1.5356693998581005e+22
+              ],
+              "name": "Nubis",
+              "top2Sum": 2.856765367979716e+22
+            },
+            {
+              "attempts": [
+                6.706794046881941e+22,
+                5.549936332314048e+22
+              ],
+              "name": "Fl3xas",
+              "top2Sum": 1.225673037919599e+23
             }
           ]
         }
