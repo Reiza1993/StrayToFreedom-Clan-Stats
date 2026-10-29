@@ -38,10 +38,10 @@
       "seasonTotal": 3.2546691668958444e+22
     },
     {
-      "gainVsPreviousSeason": -1.258965146730114e+23,
+      "gainVsPreviousSeason": -1.2203225992568334e+23,
       "name": "\u795eSterben\u6b7b",
       "rank": 7,
-      "seasonTotal": 1.890724884778827e+22
+      "seasonTotal": 2.277150359511633e+22
     },
     {
       "gainVsPreviousSeason": -1.0996414464969241e+21,
@@ -1748,6 +1748,13 @@
               ],
               "name": "Cunner88",
               "top2Sum": 5.491157811593367e+21
+            },
+            {
+              "attempts": [
+                3.8642547473280637e+21
+              ],
+              "name": "\u795eSterben\u6b7b",
+              "top2Sum": 3.8642547473280637e+21
             }
           ]
         }
