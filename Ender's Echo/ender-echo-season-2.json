@@ -128,16 +128,16 @@
       "seasonTotal": 2.154279984635232e+21
     },
     {
-      "gainVsPreviousSeason": -5.671301650341741e+21,
-      "name": "Apathy_",
+      "gainVsPreviousSeason": -1.1032257290054942e+21,
+      "name": "Rzzza",
       "rank": 22,
-      "seasonTotal": 1.9114493154859155e+21
+      "seasonTotal": 2.0514712500460847e+21
     },
     {
-      "gainVsPreviousSeason": -1.3415738490120645e+21,
-      "name": "Rzzza",
+      "gainVsPreviousSeason": -5.671301650341741e+21,
+      "name": "Apathy_",
       "rank": 23,
-      "seasonTotal": 1.8131231300395144e+21
+      "seasonTotal": 1.9114493154859155e+21
     },
     {
       "gainVsPreviousSeason": -1.8067027412785511e+22,
@@ -1674,10 +1674,11 @@
             },
             {
               "attempts": [
-                1.5120908849402433e+20
+                1.5120908849402433e+20,
+                2.3834812000657015e+20
               ],
               "name": "Rzzza",
-              "top2Sum": 1.5120908849402433e+20
+              "top2Sum": 3.895572085005945e+20
             },
             {
               "attempts": [
