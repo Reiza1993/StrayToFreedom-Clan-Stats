@@ -50,16 +50,16 @@
       "seasonTotal": 1.324052559409565e+22
     },
     {
-      "gainVsPreviousSeason": -1.4876831125080967e+22,
-      "name": "Cunner88",
+      "gainVsPreviousSeason": -7.236555655752735e+21,
+      "name": "MadameMischief",
       "rank": 9,
-      "seasonTotal": 1.1000037888749308e+22
+      "seasonTotal": 1.2714735099356622e+22
     },
     {
-      "gainVsPreviousSeason": -9.341841092850932e+21,
-      "name": "MadameMischief",
+      "gainVsPreviousSeason": -1.4876831125080967e+22,
+      "name": "Cunner88",
       "rank": 10,
-      "seasonTotal": 1.0609449662258426e+22
+      "seasonTotal": 1.1000037888749308e+22
     },
     {
       "gainVsPreviousSeason": -1.6487465475023045e+21,
@@ -80,16 +80,16 @@
       "seasonTotal": 4.7058767814132514e+21
     },
     {
-      "gainVsPreviousSeason": -2.9357580569387215e+21,
-      "name": "p88203044",
+      "gainVsPreviousSeason": -4.798298549602452e+21,
+      "name": "\u76feHeathcliff\u5263",
       "rank": 14,
-      "seasonTotal": 4.095337288193349e+21
+      "seasonTotal": 4.5572033498101255e+21
     },
     {
-      "gainVsPreviousSeason": -5.299277430529536e+21,
-      "name": "\u76feHeathcliff\u5263",
+      "gainVsPreviousSeason": -2.9357580569387215e+21,
+      "name": "p88203044",
       "rank": 15,
-      "seasonTotal": 4.056224468883042e+21
+      "seasonTotal": 4.095337288193349e+21
     },
     {
       "gainVsPreviousSeason": -1.5949334786773633e+22,
@@ -158,16 +158,16 @@
       "seasonTotal": 1.5891970034251905e+21
     },
     {
-      "gainVsPreviousSeason": -1.3559575950758217e+21,
-      "name": "gubrax",
+      "gainVsPreviousSeason": -1.7537348037126725e+21,
+      "name": "silverxz",
       "rank": 27,
-      "seasonTotal": 1.4355172452478065e+21
+      "seasonTotal": 1.5843011515238832e+21
     },
     {
-      "gainVsPreviousSeason": -2.43604255127604e+21,
-      "name": "silverxz",
+      "gainVsPreviousSeason": -1.3559575950758217e+21,
+      "name": "gubrax",
       "rank": 28,
-      "seasonTotal": 9.019934039605159e+20
+      "seasonTotal": 1.4355172452478065e+21
     },
     {
       "gainVsPreviousSeason": -1.536653086090771e+21,
@@ -1909,6 +1909,29 @@
               ],
               "name": "Fl3xas",
               "top2Sum": 1.225673037919599e+23
+            },
+            {
+              "attempts": [
+                5.009788809270833e+20
+              ],
+              "name": "\u76feHeathcliff\u5263",
+              "top2Sum": 5.009788809270833e+20
+            },
+            {
+              "attempts": [
+                3.4282440100067783e+20,
+                3.394833465626895e+20
+              ],
+              "name": "silverxz",
+              "top2Sum": 6.823077475633673e+20
+            },
+            {
+              "attempts": [
+                1.0705297281750883e+21,
+                1.0347557089231092e+21
+              ],
+              "name": "MadameMischief",
+              "top2Sum": 2.1052854370981975e+21
             }
           ]
         }
