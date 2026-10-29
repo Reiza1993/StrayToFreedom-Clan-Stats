@@ -8,10 +8,10 @@
       "seasonTotal": 6.120514097692488e+23
     },
     {
-      "gainVsPreviousSeason": -1.1173710687419203e+23,
+      "gainVsPreviousSeason": -1.1134640265599834e+23,
       "name": "DAYO-P",
       "rank": 2,
-      "seasonTotal": 1.6219795714939552e+23
+      "seasonTotal": 1.625886613675892e+23
     },
     {
       "gainVsPreviousSeason": -4.4693040398479385e+23,
@@ -98,28 +98,28 @@
       "seasonTotal": 3.7458190803333803e+21
     },
     {
+      "gainVsPreviousSeason": -2.6727908254234234e+21,
+      "name": "theLP",
+      "rank": 17,
+      "seasonTotal": 2.9482199526094584e+21
+    },
+    {
       "gainVsPreviousSeason": -3.6886076589576107e+21,
       "name": "Gritchen",
-      "rank": 17,
+      "rank": 18,
       "seasonTotal": 2.751481632549194e+21
     },
     {
       "gainVsPreviousSeason": -4.903497921537757e+21,
       "name": "VictorMolusco",
-      "rank": 18,
+      "rank": 19,
       "seasonTotal": 2.6498456816093626e+21
     },
     {
       "gainVsPreviousSeason": -5.019925767983649e+21,
       "name": "Apathy_",
-      "rank": 19,
-      "seasonTotal": 2.5628251978440067e+21
-    },
-    {
-      "gainVsPreviousSeason": -3.108343897026313e+21,
-      "name": "theLP",
       "rank": 20,
-      "seasonTotal": 2.512666881006569e+21
+      "seasonTotal": 2.5628251978440067e+21
     },
     {
       "gainVsPreviousSeason": -6.218651960833931e+20,
@@ -158,10 +158,10 @@
       "seasonTotal": 1.5891970034251905e+21
     },
     {
-      "gainVsPreviousSeason": -1.5480358852503038e+21,
+      "gainVsPreviousSeason": -1.3559575950758217e+21,
       "name": "gubrax",
       "rank": 27,
-      "seasonTotal": 1.2434389550733244e+21
+      "seasonTotal": 1.4355172452478065e+21
     },
     {
       "gainVsPreviousSeason": -2.43604255127604e+21,
@@ -206,21 +206,27 @@
       "seasonTotal": 4.362807689985984e+20
     },
     {
+      "gainVsPreviousSeason": -2.660416563863001e+20,
+      "name": "FlyingDutchy",
+      "rank": 35,
+      "seasonTotal": 3.1921251964390624e+20
+    },
+    {
       "gainVsPreviousSeason": -2.502229831209713e+21,
       "name": "faxnem",
-      "rank": 35,
+      "rank": 36,
       "seasonTotal": 2.091143489300118e+20
     },
     {
       "gainVsPreviousSeason": -6.2663577807313306e+19,
       "name": "ergiangi",
-      "rank": 36,
+      "rank": 37,
       "seasonTotal": 1.5133441215003925e+20
     },
     {
       "gainVsPreviousSeason": -1.822666833140271e+20,
       "name": "Cheeselife",
-      "rank": 37,
+      "rank": 38,
       "seasonTotal": 6.388910628514195e+18
     }
   ],
@@ -1668,10 +1674,11 @@
                 1.0010180810855445e+22,
                 9.918526322462106e+21,
                 1.1305392634079662e+22,
-                1.1213563547796594e+22
+                1.1213563547796594e+22,
+                1.1604267765990295e+22
               ],
               "name": "DAYO-P",
-              "top2Sum": 2.2518956181876256e+22
+              "top2Sum": 2.2909660400069957e+22
             },
             {
               "attempts": [
@@ -1826,6 +1833,29 @@
               ],
               "name": "RABBIT5",
               "top2Sum": 1.610151078620298e+22
+            },
+            {
+              "attempts": [
+                1.1867531898641302e+20,
+                7.34029711880691e+19
+              ],
+              "name": "gubrax",
+              "top2Sum": 1.9207829017448212e+20
+            },
+            {
+              "attempts": [
+                2.2314458331853144e+20,
+                2.1240848828435766e+20
+              ],
+              "name": "theLP",
+              "top2Sum": 4.355530716028891e+20
+            },
+            {
+              "attempts": [
+                3.1921251964390624e+20
+              ],
+              "name": "FlyingDutchy",
+              "top2Sum": 3.1921251964390624e+20
             }
           ]
         }
