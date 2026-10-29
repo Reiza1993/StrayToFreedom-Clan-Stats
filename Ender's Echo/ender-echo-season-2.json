@@ -26,10 +26,10 @@
       "seasonTotal": 1.4184057867095608e+23
     },
     {
-      "gainVsPreviousSeason": -1.1997518974951537e+23,
+      "gainVsPreviousSeason": -1.0387367896331239e+23,
       "name": "RABBIT5",
       "rank": 5,
-      "seasonTotal": 9.811972888393958e+22
+      "seasonTotal": 1.1422123967014256e+23
     },
     {
       "gainVsPreviousSeason": -7.249039804799087e+22,
@@ -122,16 +122,16 @@
       "seasonTotal": 2.512666881006569e+21
     },
     {
-      "gainVsPreviousSeason": -4.720538567706069e+21,
-      "name": "HakiLuffy",
+      "gainVsPreviousSeason": -6.218651960833931e+20,
+      "name": "BobBobberson",
       "rank": 21,
-      "seasonTotal": 2.3011732562467396e+21
+      "seasonTotal": 2.412181964293563e+21
     },
     {
-      "gainVsPreviousSeason": -8.797671757417239e+20,
-      "name": "BobBobberson",
+      "gainVsPreviousSeason": -4.720538567706069e+21,
+      "name": "HakiLuffy",
       "rank": 22,
-      "seasonTotal": 2.154279984635232e+21
+      "seasonTotal": 2.3011732562467396e+21
     },
     {
       "gainVsPreviousSeason": -1.1032257290054942e+21,
@@ -140,16 +140,16 @@
       "seasonTotal": 2.0514712500460847e+21
     },
     {
-      "gainVsPreviousSeason": -1.8067027412785511e+22,
-      "name": "Scoundrel536",
+      "gainVsPreviousSeason": -2.0483338234702547e+21,
+      "name": "EMBALOCO",
       "rank": 24,
-      "seasonTotal": 1.7346431349964045e+21
+      "seasonTotal": 2.030809445885612e+21
     },
     {
-      "gainVsPreviousSeason": -2.4532144363630614e+21,
-      "name": "EMBALOCO",
+      "gainVsPreviousSeason": -1.8067027412785511e+22,
+      "name": "Scoundrel536",
       "rank": 25,
-      "seasonTotal": 1.6259288329928054e+21
+      "seasonTotal": 1.7346431349964045e+21
     },
     {
       "gainVsPreviousSeason": -2.4747665243639487e+21,
@@ -194,16 +194,16 @@
       "seasonTotal": 5.1581147201200534e+20
     },
     {
-      "gainVsPreviousSeason": -3.4105422163089254e+20,
-      "name": "Player 80018314",
+      "gainVsPreviousSeason": -5.8343135600066154e+20,
+      "name": "Belthazar",
       "rank": 33,
-      "seasonTotal": 4.362807689985984e+20
+      "seasonTotal": 4.53276350878133e+20
     },
     {
-      "gainVsPreviousSeason": -6.524573575176819e+20,
-      "name": "Belthazar",
+      "gainVsPreviousSeason": -3.4105422163089254e+20,
+      "name": "Player 80018314",
       "rank": 34,
-      "seasonTotal": 3.842503493611127e+20
+      "seasonTotal": 4.362807689985984e+20
     },
     {
       "gainVsPreviousSeason": -2.502229831209713e+21,
@@ -1795,6 +1795,37 @@
               ],
               "name": "SngphO",
               "top2Sum": 7.641292914251745e+21
+            },
+            {
+              "attempts": [
+                3.6002089160182854e+19,
+                3.3023912356837495e+19
+              ],
+              "name": "Belthazar",
+              "top2Sum": 6.902600151702035e+19
+            },
+            {
+              "attempts": [
+                2.5790197965833096e+20
+              ],
+              "name": "BobBobberson",
+              "top2Sum": 2.5790197965833096e+20
+            },
+            {
+              "attempts": [
+                1.8623205259290532e+20,
+                2.1864856029990152e+20
+              ],
+              "name": "EMBALOCO",
+              "top2Sum": 4.048806128928069e+20
+            },
+            {
+              "attempts": [
+                8.36685464295275e+21,
+                7.73465614325023e+21
+              ],
+              "name": "RABBIT5",
+              "top2Sum": 1.610151078620298e+22
             }
           ]
         }
