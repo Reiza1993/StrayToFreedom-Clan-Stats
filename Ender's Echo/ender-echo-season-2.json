@@ -2,16 +2,16 @@
   "endDate": "2026-11-18",
   "leaderboard": [
     {
-      "gainVsPreviousSeason": -8.727025480380152e+23,
+      "gainVsPreviousSeason": -8.70434894008954e+23,
       "name": "Fl3xas",
       "rank": 1,
-      "seasonTotal": 7.346187135612087e+23
+      "seasonTotal": 7.368863675902698e+23
     },
     {
-      "gainVsPreviousSeason": -9.21411271228628e+22,
+      "gainVsPreviousSeason": -8.666121397608856e+22,
       "name": "DAYO-P",
       "rank": 2,
-      "seasonTotal": 1.8179393690072474e+23
+      "seasonTotal": 1.87273850047499e+23
     },
     {
       "gainVsPreviousSeason": -1.306960783185421e+23,
@@ -32,10 +32,10 @@
       "seasonTotal": 1.27503884544352e+23
     },
     {
-      "gainVsPreviousSeason": -7.249039804799087e+22,
+      "gainVsPreviousSeason": -6.574947597345582e+22,
       "name": "SngphO",
       "rank": 6,
-      "seasonTotal": 4.018798458321019e+22
+      "seasonTotal": 4.692890665774524e+22
     },
     {
       "gainVsPreviousSeason": -1.2203225992568334e+23,
@@ -62,10 +62,10 @@
       "seasonTotal": 1.1000037888749308e+22
     },
     {
-      "gainVsPreviousSeason": -1.6487465475023045e+21,
+      "gainVsPreviousSeason": -6.744587357317633e+20,
       "name": "Player 66607264",
       "rank": 11,
-      "seasonTotal": 6.533265134483279e+21
+      "seasonTotal": 7.50755294625382e+21
     },
     {
       "gainVsPreviousSeason": -1.801116651557769e+22,
@@ -104,58 +104,58 @@
       "seasonTotal": 3.2806843285789354e+21
     },
     {
+      "gainVsPreviousSeason": -4.334905412375175e+21,
+      "name": "Apathy_",
+      "rank": 18,
+      "seasonTotal": 3.247845553452481e+21
+    },
+    {
       "gainVsPreviousSeason": -3.323696873257427e+21,
       "name": "Gritchen",
-      "rank": 18,
+      "rank": 19,
       "seasonTotal": 3.116392418249378e+21
     },
     {
       "gainVsPreviousSeason": -4.631022066666694e+21,
       "name": "VictorMolusco",
-      "rank": 19,
+      "rank": 20,
       "seasonTotal": 2.922321536480425e+21
     },
     {
-      "gainVsPreviousSeason": -5.019925767983649e+21,
-      "name": "Apathy_",
-      "rank": 20,
-      "seasonTotal": 2.5628251978440067e+21
+      "gainVsPreviousSeason": -1.7158047668445584e+22,
+      "name": "Scoundrel536",
+      "rank": 21,
+      "seasonTotal": 2.6436228793363307e+21
     },
     {
       "gainVsPreviousSeason": -4.4866459619147566e+21,
       "name": "HakiLuffy",
-      "rank": 21,
+      "rank": 22,
       "seasonTotal": 2.5350658620380524e+21
     },
     {
       "gainVsPreviousSeason": -7.163170294874783e+20,
       "name": "Rzzza",
-      "rank": 22,
+      "rank": 23,
       "seasonTotal": 2.4383799495641006e+21
     },
     {
       "gainVsPreviousSeason": -6.218651960833931e+20,
       "name": "BobBobberson",
-      "rank": 23,
+      "rank": 24,
       "seasonTotal": 2.412181964293563e+21
     },
     {
       "gainVsPreviousSeason": -2.0483338234702547e+21,
       "name": "EMBALOCO",
-      "rank": 24,
+      "rank": 25,
       "seasonTotal": 2.030809445885612e+21
     },
     {
-      "gainVsPreviousSeason": -2.243567665048661e+21,
+      "gainVsPreviousSeason": -2.0492732272244608e+21,
       "name": "BlackFlamE",
-      "rank": 25,
-      "seasonTotal": 1.8203958627404782e+21
-    },
-    {
-      "gainVsPreviousSeason": -1.8067027412785511e+22,
-      "name": "Scoundrel536",
       "rank": 26,
-      "seasonTotal": 1.7346431349964045e+21
+      "seasonTotal": 2.0146903005646784e+21
     },
     {
       "gainVsPreviousSeason": -1.7537348037126725e+21,
@@ -1882,10 +1882,13 @@
             {
               "attempts": [
                 8.858803215562986e+21,
-                1.0346472317572526e+22
+                1.0346472317572526e+22,
+                1.1878319344000327e+22,
+                1.153085434035097e+22,
+                1.280686933590943e+22
               ],
               "name": "DAYO-P",
-              "top2Sum": 1.920527553313551e+22
+              "top2Sum": 2.468518867990976e+22
             },
             {
               "attempts": [
@@ -1906,10 +1909,11 @@
             {
               "attempts": [
                 6.706794046881941e+22,
-                5.549936332314048e+22
+                5.549936332314048e+22,
+                5.776701735220165e+22
               ],
               "name": "Fl3xas",
-              "top2Sum": 1.225673037919599e+23
+              "top2Sum": 1.2483495782102106e+23
             },
             {
               "attempts": [
@@ -1975,10 +1979,42 @@
             },
             {
               "attempts": [
-                2.311988593152877e+20
+                2.311988593152877e+20,
+                1.9429443782420005e+20
               ],
               "name": "BlackFlamE",
-              "top2Sum": 2.311988593152877e+20
+              "top2Sum": 4.2549329713948774e+20
+            },
+            {
+              "attempts": [
+                3.5040471942975567e+20,
+                3.3461563617871875e+20
+              ],
+              "name": "Apathy_",
+              "top2Sum": 6.850203556084744e+20
+            },
+            {
+              "attempts": [
+                4.13387494413133e+20,
+                5.6090031735740826e+20
+              ],
+              "name": "Player 66607264",
+              "top2Sum": 9.742878117705413e+20
+            },
+            {
+              "attempts": [
+                9.089797443399262e+20
+              ],
+              "name": "Scoundrel536",
+              "top2Sum": 9.089797443399262e+20
+            },
+            {
+              "attempts": [
+                3.474161091273566e+21,
+                3.2667609832614836e+21
+              ],
+              "name": "SngphO",
+              "top2Sum": 6.74092207453505e+21
             }
           ]
         }
