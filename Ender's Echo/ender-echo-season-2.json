@@ -26,10 +26,10 @@
       "seasonTotal": 1.472484493262373e+23
     },
     {
-      "gainVsPreviousSeason": -1.0387367896331239e+23,
+      "gainVsPreviousSeason": -9.059103408910295e+22,
       "name": "RABBIT5",
       "rank": 5,
-      "seasonTotal": 1.1422123967014256e+23
+      "seasonTotal": 1.27503884544352e+23
     },
     {
       "gainVsPreviousSeason": -7.249039804799087e+22,
@@ -98,22 +98,22 @@
       "seasonTotal": 3.7458190803333803e+21
     },
     {
+      "gainVsPreviousSeason": -2.3403264494539464e+21,
+      "name": "theLP",
+      "rank": 17,
+      "seasonTotal": 3.2806843285789354e+21
+    },
+    {
       "gainVsPreviousSeason": -3.323696873257427e+21,
       "name": "Gritchen",
-      "rank": 17,
+      "rank": 18,
       "seasonTotal": 3.116392418249378e+21
     },
     {
-      "gainVsPreviousSeason": -2.6727908254234234e+21,
-      "name": "theLP",
-      "rank": 18,
-      "seasonTotal": 2.9482199526094584e+21
-    },
-    {
-      "gainVsPreviousSeason": -4.903497921537757e+21,
+      "gainVsPreviousSeason": -4.631022066666694e+21,
       "name": "VictorMolusco",
       "rank": 19,
-      "seasonTotal": 2.6498456816093626e+21
+      "seasonTotal": 2.922321536480425e+21
     },
     {
       "gainVsPreviousSeason": -5.019925767983649e+21,
@@ -122,16 +122,16 @@
       "seasonTotal": 2.5628251978440067e+21
     },
     {
-      "gainVsPreviousSeason": -6.218651960833931e+20,
-      "name": "BobBobberson",
+      "gainVsPreviousSeason": -4.4866459619147566e+21,
+      "name": "HakiLuffy",
       "rank": 21,
-      "seasonTotal": 2.412181964293563e+21
+      "seasonTotal": 2.5350658620380524e+21
     },
     {
-      "gainVsPreviousSeason": -4.720538567706069e+21,
-      "name": "HakiLuffy",
+      "gainVsPreviousSeason": -6.218651960833931e+20,
+      "name": "BobBobberson",
       "rank": 22,
-      "seasonTotal": 2.3011732562467396e+21
+      "seasonTotal": 2.412181964293563e+21
     },
     {
       "gainVsPreviousSeason": -1.1032257290054942e+21,
@@ -1933,6 +1933,36 @@
               ],
               "name": "MadameMischief",
               "top2Sum": 2.1052854370981975e+21
+            },
+            {
+              "attempts": [
+                1.1296207811884545e+20,
+                2.1950229785063178e+20
+              ],
+              "name": "theLP",
+              "top2Sum": 3.324643759694772e+20
+            },
+            {
+              "attempts": [
+                2.724758548710625e+20
+              ],
+              "name": "VictorMolusco",
+              "top2Sum": 2.724758548710625e+20
+            },
+            {
+              "attempts": [
+                2.3389260579131267e+20
+              ],
+              "name": "HakiLuffy",
+              "top2Sum": 2.3389260579131267e+20
+            },
+            {
+              "attempts": [
+                5.53395501673068e+21,
+                7.748689857478759e+21
+              ],
+              "name": "RABBIT5",
+              "top2Sum": 1.328264487420944e+22
             }
           ]
         }
