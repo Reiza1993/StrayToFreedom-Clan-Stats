@@ -176,34 +176,34 @@
       "seasonTotal": 8.02806558174788e+20
     },
     {
+      "gainVsPreviousSeason": -1.9671822473456386e+21,
+      "name": "faxnem",
+      "rank": 30,
+      "seasonTotal": 7.441619327940862e+20
+    },
+    {
       "gainVsPreviousSeason": -4.2670149301444076e+21,
       "name": "groggen",
-      "rank": 30,
+      "rank": 31,
       "seasonTotal": 6.746335636986133e+20
     },
     {
       "gainVsPreviousSeason": -1.8346002199980566e+20,
       "name": "Player 80018314",
-      "rank": 31,
+      "rank": 32,
       "seasonTotal": 5.938749686296853e+20
     },
     {
       "gainVsPreviousSeason": -5.645560523353355e+21,
       "name": "Bensayyten",
-      "rank": 32,
+      "rank": 33,
       "seasonTotal": 5.5030489982732757e+20
     },
     {
       "gainVsPreviousSeason": -5.835861822525538e+19,
       "name": "Toddlerr",
-      "rank": 33,
-      "seasonTotal": 5.1581147201200534e+20
-    },
-    {
-      "gainVsPreviousSeason": -2.2561537092382048e+21,
-      "name": "faxnem",
       "rank": 34,
-      "seasonTotal": 4.5519047090152014e+20
+      "seasonTotal": 5.1581147201200534e+20
     },
     {
       "gainVsPreviousSeason": -5.8343135600066154e+20,
@@ -1889,10 +1889,11 @@
             },
             {
               "attempts": [
-                2.460761219715083e+20
+                2.460761219715083e+20,
+                2.8897146189256606e+20
               ],
               "name": "faxnem",
-              "top2Sum": 2.460761219715083e+20
+              "top2Sum": 5.350475838640744e+20
             },
             {
               "attempts": [
