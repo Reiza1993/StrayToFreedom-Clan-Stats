@@ -128,16 +128,16 @@
       "seasonTotal": 2.5350658620380524e+21
     },
     {
-      "gainVsPreviousSeason": -6.218651960833931e+20,
-      "name": "BobBobberson",
+      "gainVsPreviousSeason": -7.163170294874783e+20,
+      "name": "Rzzza",
       "rank": 22,
-      "seasonTotal": 2.412181964293563e+21
+      "seasonTotal": 2.4383799495641006e+21
     },
     {
-      "gainVsPreviousSeason": -1.1032257290054942e+21,
-      "name": "Rzzza",
+      "gainVsPreviousSeason": -6.218651960833931e+20,
+      "name": "BobBobberson",
       "rank": 23,
-      "seasonTotal": 2.0514712500460847e+21
+      "seasonTotal": 2.412181964293563e+21
     },
     {
       "gainVsPreviousSeason": -2.0483338234702547e+21,
@@ -146,16 +146,16 @@
       "seasonTotal": 2.030809445885612e+21
     },
     {
-      "gainVsPreviousSeason": -1.8067027412785511e+22,
-      "name": "Scoundrel536",
+      "gainVsPreviousSeason": -2.243567665048661e+21,
+      "name": "BlackFlamE",
       "rank": 25,
-      "seasonTotal": 1.7346431349964045e+21
+      "seasonTotal": 1.8203958627404782e+21
     },
     {
-      "gainVsPreviousSeason": -2.4747665243639487e+21,
-      "name": "BlackFlamE",
+      "gainVsPreviousSeason": -1.8067027412785511e+22,
+      "name": "Scoundrel536",
       "rank": 26,
-      "seasonTotal": 1.5891970034251905e+21
+      "seasonTotal": 1.7346431349964045e+21
     },
     {
       "gainVsPreviousSeason": -1.7537348037126725e+21,
@@ -1963,6 +1963,22 @@
               ],
               "name": "RABBIT5",
               "top2Sum": 1.328264487420944e+22
+            },
+            {
+              "attempts": [
+                1.641762214822172e+20,
+                1.7133724225798167e+20,
+                2.1557145726003413e+20
+              ],
+              "name": "Rzzza",
+              "top2Sum": 3.8690869951801577e+20
+            },
+            {
+              "attempts": [
+                2.311988593152877e+20
+              ],
+              "name": "BlackFlamE",
+              "top2Sum": 2.311988593152877e+20
             }
           ]
         }
