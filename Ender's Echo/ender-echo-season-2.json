@@ -104,22 +104,22 @@
       "seasonTotal": 3.743891669313055e+21
     },
     {
+      "gainVsPreviousSeason": -2.8483207027405766e+21,
+      "name": "Gritchen",
+      "rank": 18,
+      "seasonTotal": 3.591768588766228e+21
+    },
+    {
       "gainVsPreviousSeason": -2.3403264494539464e+21,
       "name": "theLP",
-      "rank": 18,
+      "rank": 19,
       "seasonTotal": 3.2806843285789354e+21
     },
     {
       "gainVsPreviousSeason": -4.3159763701032687e+21,
       "name": "VictorMolusco",
-      "rank": 19,
-      "seasonTotal": 3.2373672330438503e+21
-    },
-    {
-      "gainVsPreviousSeason": -3.323696873257427e+21,
-      "name": "Gritchen",
       "rank": 20,
-      "seasonTotal": 3.116392418249378e+21
+      "seasonTotal": 3.2373672330438503e+21
     },
     {
       "gainVsPreviousSeason": -4.103435174016916e+21,
@@ -152,10 +152,10 @@
       "seasonTotal": 2.2727541835939856e+21
     },
     {
-      "gainVsPreviousSeason": -2.0492732272244608e+21,
+      "gainVsPreviousSeason": -1.8719144138749586e+21,
       "name": "BlackFlamE",
       "rank": 26,
-      "seasonTotal": 2.0146903005646784e+21
+      "seasonTotal": 2.1920491139141806e+21
     },
     {
       "gainVsPreviousSeason": -1.3800743645428748e+21,
@@ -188,34 +188,34 @@
       "seasonTotal": 7.441619327940862e+20
     },
     {
+      "gainVsPreviousSeason": 1.0391030444897639e+20,
+      "name": "FlyingDutchy",
+      "rank": 32,
+      "seasonTotal": 6.891644804791827e+20
+    },
+    {
       "gainVsPreviousSeason": -4.2670149301444076e+21,
       "name": "groggen",
-      "rank": 32,
+      "rank": 33,
       "seasonTotal": 6.746335636986133e+20
     },
     {
       "gainVsPreviousSeason": -5.645560523353355e+21,
       "name": "Bensayyten",
-      "rank": 33,
+      "rank": 34,
       "seasonTotal": 5.5030489982732757e+20
     },
     {
       "gainVsPreviousSeason": -5.021281847836447e+20,
       "name": "Belthazar",
-      "rank": 34,
+      "rank": 35,
       "seasonTotal": 5.345795220951498e+20
     },
     {
       "gainVsPreviousSeason": -5.835861822525538e+19,
       "name": "Toddlerr",
-      "rank": 35,
-      "seasonTotal": 5.1581147201200534e+20
-    },
-    {
-      "gainVsPreviousSeason": -2.660416563863001e+20,
-      "name": "FlyingDutchy",
       "rank": 36,
-      "seasonTotal": 3.1921251964390624e+20
+      "seasonTotal": 5.1581147201200534e+20
     },
     {
       "gainVsPreviousSeason": -6.2663577807313306e+19,
@@ -224,10 +224,10 @@
       "seasonTotal": 1.5133441215003925e+20
     },
     {
-      "gainVsPreviousSeason": -1.822666833140271e+20,
+      "gainVsPreviousSeason": -1.150090315168668e+20,
       "name": "Cheeselife",
       "rank": 38,
-      "seasonTotal": 6.388910628514195e+18
+      "seasonTotal": 7.364656242567449e+19
     }
   ],
   "miniSeasons": [
@@ -2109,6 +2109,36 @@
               ],
               "name": "MadameMischief",
               "top2Sum": 1.6980987674863327e+21
+            },
+            {
+              "attempts": [
+                1.796799238676891e+20,
+                1.3488108597333425e+20,
+                2.9569624664916106e+20
+              ],
+              "name": "Gritchen",
+              "top2Sum": 4.7537617051685015e+20
+            },
+            {
+              "attempts": [
+                6.72576517971603e+19
+              ],
+              "name": "Cheeselife",
+              "top2Sum": 6.72576517971603e+19
+            },
+            {
+              "attempts": [
+                1.773588133495022e+20
+              ],
+              "name": "BlackFlamE",
+              "top2Sum": 1.773588133495022e+20
+            },
+            {
+              "attempts": [
+                3.699519608352765e+20
+              ],
+              "name": "FlyingDutchy",
+              "top2Sum": 3.699519608352765e+20
             }
           ]
         }
