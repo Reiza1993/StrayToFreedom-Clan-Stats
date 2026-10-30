@@ -8,16 +8,16 @@
       "seasonTotal": 7.368863675902698e+23
     },
     {
-      "gainVsPreviousSeason": -8.666121397608856e+22,
+      "gainVsPreviousSeason": -6.327278689329446e+22,
       "name": "DAYO-P",
       "rank": 2,
-      "seasonTotal": 1.87273850047499e+23
+      "seasonTotal": 2.106622771302931e+23
     },
     {
-      "gainVsPreviousSeason": -1.306960783185421e+23,
+      "gainVsPreviousSeason": -1.0960822075061821e+23,
       "name": "Nubis",
       "rank": 3,
-      "seasonTotal": 1.7040823235075324e+23
+      "seasonTotal": 1.9149608991867713e+23
     },
     {
       "gainVsPreviousSeason": -4.4693040398479385e+23,
@@ -32,10 +32,10 @@
       "seasonTotal": 1.27503884544352e+23
     },
     {
-      "gainVsPreviousSeason": -6.574947597345582e+22,
+      "gainVsPreviousSeason": -5.930124692895934e+22,
       "name": "SngphO",
       "rank": 6,
-      "seasonTotal": 4.692890665774524e+22
+      "seasonTotal": 5.337713570224172e+22
     },
     {
       "gainVsPreviousSeason": -1.2203225992568334e+23,
@@ -44,16 +44,16 @@
       "seasonTotal": 2.277150359511633e+22
     },
     {
-      "gainVsPreviousSeason": -1.0996414464969241e+21,
-      "name": "NeonCBV",
+      "gainVsPreviousSeason": -5.538456888266403e+21,
+      "name": "MadameMischief",
       "rank": 8,
-      "seasonTotal": 1.324052559409565e+22
+      "seasonTotal": 1.4412833866842955e+22
     },
     {
-      "gainVsPreviousSeason": -7.236555655752735e+21,
-      "name": "MadameMischief",
+      "gainVsPreviousSeason": -1.0996414464969241e+21,
+      "name": "NeonCBV",
       "rank": 9,
-      "seasonTotal": 1.2714735099356622e+22
+      "seasonTotal": 1.324052559409565e+22
     },
     {
       "gainVsPreviousSeason": -1.4876831125080967e+22,
@@ -98,16 +98,16 @@
       "seasonTotal": 3.7458190803333803e+21
     },
     {
-      "gainVsPreviousSeason": -2.3403264494539464e+21,
-      "name": "theLP",
+      "gainVsPreviousSeason": -3.838859296514601e+21,
+      "name": "Apathy_",
       "rank": 17,
-      "seasonTotal": 3.2806843285789354e+21
+      "seasonTotal": 3.743891669313055e+21
     },
     {
-      "gainVsPreviousSeason": -4.334905412375175e+21,
-      "name": "Apathy_",
+      "gainVsPreviousSeason": -2.3403264494539464e+21,
+      "name": "theLP",
       "rank": 18,
-      "seasonTotal": 3.247845553452481e+21
+      "seasonTotal": 3.2806843285789354e+21
     },
     {
       "gainVsPreviousSeason": -4.3159763701032687e+21,
@@ -122,16 +122,16 @@
       "seasonTotal": 3.116392418249378e+21
     },
     {
-      "gainVsPreviousSeason": -1.7158047668445584e+22,
-      "name": "Scoundrel536",
+      "gainVsPreviousSeason": -4.103435174016916e+21,
+      "name": "HakiLuffy",
       "rank": 21,
-      "seasonTotal": 2.6436228793363307e+21
+      "seasonTotal": 2.918276649935893e+21
     },
     {
-      "gainVsPreviousSeason": -4.4866459619147566e+21,
-      "name": "HakiLuffy",
+      "gainVsPreviousSeason": -1.7158047668445584e+22,
+      "name": "Scoundrel536",
       "rank": 22,
-      "seasonTotal": 2.5350658620380524e+21
+      "seasonTotal": 2.6436228793363307e+21
     },
     {
       "gainVsPreviousSeason": -7.163170294874783e+20,
@@ -158,10 +158,10 @@
       "seasonTotal": 2.0146903005646784e+21
     },
     {
-      "gainVsPreviousSeason": -1.7537348037126725e+21,
+      "gainVsPreviousSeason": -1.3800743645428748e+21,
       "name": "silverxz",
       "rank": 27,
-      "seasonTotal": 1.5843011515238832e+21
+      "seasonTotal": 1.957961590693681e+21
     },
     {
       "gainVsPreviousSeason": -1.3559575950758217e+21,
@@ -2045,6 +2045,75 @@
         }
       ],
       "miniSeasonNumber": 3
+    },
+    {
+      "days": [
+        {
+          "date": "2026-10-31",
+          "day": 10,
+          "players": [
+            {
+              "attempts": [
+                2.364283948229872e+20,
+                2.5961772103758705e+20
+              ],
+              "name": "Apathy_",
+              "top2Sum": 4.9604611586057424e+20
+            },
+            {
+              "attempts": [
+                1.221762952887039e+22,
+                1.1170797553923698e+22,
+                7.033967917046001e+21,
+                9.698808389982484e+21,
+                6.877834262242442e+21
+              ],
+              "name": "DAYO-P",
+              "top2Sum": 2.338842708279409e+22
+            },
+            {
+              "attempts": [
+                2.919490093219278e+21,
+                3.528738951277209e+21
+              ],
+              "name": "SngphO",
+              "top2Sum": 6.448229044496487e+21
+            },
+            {
+              "attempts": [
+                1.9487451092255493e+20,
+                1.8833627697528586e+20
+              ],
+              "name": "HakiLuffy",
+              "top2Sum": 3.8321078789784076e+20
+            },
+            {
+              "attempts": [
+                9.953920812936526e+21,
+                1.1133936754987373e+22
+              ],
+              "name": "Nubis",
+              "top2Sum": 2.10878575679239e+22
+            },
+            {
+              "attempts": [
+                3.7366043916979765e+20
+              ],
+              "name": "silverxz",
+              "top2Sum": 3.7366043916979765e+20
+            },
+            {
+              "attempts": [
+                8.000117101825073e+20,
+                8.980870573038255e+20
+              ],
+              "name": "MadameMischief",
+              "top2Sum": 1.6980987674863327e+21
+            }
+          ]
+        }
+      ],
+      "miniSeasonNumber": 4
     }
   ],
   "seasonNumber": 2,
