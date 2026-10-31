@@ -2,10 +2,10 @@
   "endDate": "2026-11-18",
   "leaderboard": [
     {
-      "gainVsPreviousSeason": -7.194039664130589e+23,
+      "gainVsPreviousSeason": -6.856603781339112e+23,
       "name": "Fl3xas",
       "rank": 1,
-      "seasonTotal": 8.87917295186165e+23
+      "seasonTotal": 9.216608834653127e+23
     },
     {
       "gainVsPreviousSeason": -4.399796456209467e+22,
@@ -32,10 +32,10 @@
       "seasonTotal": 1.4394002979400731e+23
     },
     {
-      "gainVsPreviousSeason": -5.930124692895934e+22,
+      "gainVsPreviousSeason": -5.406525126296327e+22,
       "name": "SngphO",
       "rank": 6,
-      "seasonTotal": 5.337713570224172e+22
+      "seasonTotal": 5.861313136823779e+22
     },
     {
       "gainVsPreviousSeason": -1.2203225992568334e+23,
@@ -128,40 +128,40 @@
       "seasonTotal": 3.2806843285789354e+21
     },
     {
+      "gainVsPreviousSeason": -4.291576364941296e+20,
+      "name": "silverxz",
+      "rank": 22,
+      "seasonTotal": 2.908878318742426e+21
+    },
+    {
+      "gainVsPreviousSeason": -3.7042528768630247e+20,
+      "name": "Rzzza",
+      "rank": 23,
+      "seasonTotal": 2.7842716913652765e+21
+    },
+    {
       "gainVsPreviousSeason": -2.904238245302129e+20,
       "name": "BobBobberson",
-      "rank": 22,
+      "rank": 24,
       "seasonTotal": 2.743623335846743e+21
     },
     {
       "gainVsPreviousSeason": -1.7158047668445584e+22,
       "name": "Scoundrel536",
-      "rank": 23,
+      "rank": 25,
       "seasonTotal": 2.6436228793363307e+21
     },
     {
       "gainVsPreviousSeason": -1.4721437317046537e+21,
       "name": "EMBALOCO",
-      "rank": 24,
+      "rank": 26,
       "seasonTotal": 2.606999537651213e+21
-    },
-    {
-      "gainVsPreviousSeason": -7.163170294874783e+20,
-      "name": "Rzzza",
-      "rank": 25,
-      "seasonTotal": 2.4383799495641006e+21
     },
     {
       "gainVsPreviousSeason": -1.6617840447536491e+21,
       "name": "BlackFlamE",
-      "rank": 26,
-      "seasonTotal": 2.40217948303549e+21
-    },
-    {
-      "gainVsPreviousSeason": -1.0860293582933118e+21,
-      "name": "silverxz",
       "rank": 27,
-      "seasonTotal": 2.252006596943244e+21
+      "seasonTotal": 2.40217948303549e+21
     },
     {
       "gainVsPreviousSeason": -1.1099603179536027e+21,
@@ -2293,10 +2293,11 @@
             },
             {
               "attempts": [
-                4.9504677760334245e+22
+                4.9504677760334245e+22,
+                3.3743588279147733e+22
               ],
               "name": "Fl3xas",
-              "top2Sum": 4.9504677760334245e+22
+              "top2Sum": 8.324826603948197e+22
             },
             {
               "attempts": [
@@ -2305,6 +2306,31 @@
               ],
               "name": "MadameMischief",
               "top2Sum": 1.521710171211304e+21
+            },
+            {
+              "attempts": [
+                1.8449929496731694e+20,
+                1.5846086337801034e+20,
+                1.6139244683385877e+20
+              ],
+              "name": "Rzzza",
+              "top2Sum": 3.458917418011757e+20
+            },
+            {
+              "attempts": [
+                2.6059925255544536e+21,
+                2.6300031404416193e+21
+              ],
+              "name": "SngphO",
+              "top2Sum": 5.235995665996072e+21
+            },
+            {
+              "attempts": [
+                2.5547698582287873e+20,
+                4.0139473597630356e+20
+              ],
+              "name": "silverxz",
+              "top2Sum": 6.568717217991823e+20
             }
           ]
         }
