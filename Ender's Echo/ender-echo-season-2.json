@@ -92,34 +92,34 @@
       "seasonTotal": 4.095337288193349e+21
     },
     {
+      "gainVsPreviousSeason": -3.7272467856230827e+21,
+      "name": "VictorMolusco",
+      "rank": 16,
+      "seasonTotal": 3.8260968175240363e+21
+    },
+    {
       "gainVsPreviousSeason": -1.5949334786773633e+22,
       "name": "PastalaVista",
-      "rank": 16,
+      "rank": 17,
       "seasonTotal": 3.7458190803333803e+21
     },
     {
       "gainVsPreviousSeason": -3.838859296514601e+21,
       "name": "Apathy_",
-      "rank": 17,
+      "rank": 18,
       "seasonTotal": 3.743891669313055e+21
     },
     {
       "gainVsPreviousSeason": -2.8483207027405766e+21,
       "name": "Gritchen",
-      "rank": 18,
+      "rank": 19,
       "seasonTotal": 3.591768588766228e+21
     },
     {
       "gainVsPreviousSeason": -2.3403264494539464e+21,
       "name": "theLP",
-      "rank": 19,
-      "seasonTotal": 3.2806843285789354e+21
-    },
-    {
-      "gainVsPreviousSeason": -4.3159763701032687e+21,
-      "name": "VictorMolusco",
       "rank": 20,
-      "seasonTotal": 3.2373672330438503e+21
+      "seasonTotal": 3.2806843285789354e+21
     },
     {
       "gainVsPreviousSeason": -4.103435174016916e+21,
@@ -146,16 +146,16 @@
       "seasonTotal": 2.412181964293563e+21
     },
     {
-      "gainVsPreviousSeason": -1.8063890857618812e+21,
-      "name": "EMBALOCO",
+      "gainVsPreviousSeason": -1.6617840447536491e+21,
+      "name": "BlackFlamE",
       "rank": 25,
-      "seasonTotal": 2.2727541835939856e+21
+      "seasonTotal": 2.40217948303549e+21
     },
     {
-      "gainVsPreviousSeason": -1.8719144138749586e+21,
-      "name": "BlackFlamE",
+      "gainVsPreviousSeason": -1.8063890857618812e+21,
+      "name": "EMBALOCO",
       "rank": 26,
-      "seasonTotal": 2.1920491139141806e+21
+      "seasonTotal": 2.2727541835939856e+21
     },
     {
       "gainVsPreviousSeason": -1.3800743645428748e+21,
@@ -188,22 +188,22 @@
       "seasonTotal": 7.441619327940862e+20
     },
     {
+      "gainVsPreviousSeason": -5.463562215531691e+21,
+      "name": "Bensayyten",
+      "rank": 32,
+      "seasonTotal": 7.32303207648993e+20
+    },
+    {
       "gainVsPreviousSeason": 1.0391030444897639e+20,
       "name": "FlyingDutchy",
-      "rank": 32,
+      "rank": 33,
       "seasonTotal": 6.891644804791827e+20
     },
     {
       "gainVsPreviousSeason": -4.2670149301444076e+21,
       "name": "groggen",
-      "rank": 33,
-      "seasonTotal": 6.746335636986133e+20
-    },
-    {
-      "gainVsPreviousSeason": -5.645560523353355e+21,
-      "name": "Bensayyten",
       "rank": 34,
-      "seasonTotal": 5.5030489982732757e+20
+      "seasonTotal": 6.746335636986133e+20
     },
     {
       "gainVsPreviousSeason": -5.021281847836447e+20,
@@ -2128,10 +2128,11 @@
             },
             {
               "attempts": [
-                1.773588133495022e+20
+                1.773588133495022e+20,
+                2.1013036912130946e+20
               ],
               "name": "BlackFlamE",
-              "top2Sum": 1.773588133495022e+20
+              "top2Sum": 3.874891824708117e+20
             },
             {
               "attempts": [
@@ -2147,6 +2148,21 @@
               ],
               "name": "Fl3xas",
               "top2Sum": 1.0152624983556093e+23
+            },
+            {
+              "attempts": [
+                1.8199830782166545e+20
+              ],
+              "name": "Bensayyten",
+              "top2Sum": 1.8199830782166545e+20
+            },
+            {
+              "attempts": [
+                2.878905617084051e+20,
+                3.008390227717808e+20
+              ],
+              "name": "VictorMolusco",
+              "top2Sum": 5.887295844801859e+20
             }
           ]
         }
