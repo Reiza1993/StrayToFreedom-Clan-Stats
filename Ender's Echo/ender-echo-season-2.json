@@ -2,22 +2,22 @@
   "endDate": "2026-11-18",
   "leaderboard": [
     {
-      "gainVsPreviousSeason": -7.689086441733932e+23,
+      "gainVsPreviousSeason": -7.194039664130589e+23,
       "name": "Fl3xas",
       "rank": 1,
-      "seasonTotal": 8.384126174258307e+23
+      "seasonTotal": 8.87917295186165e+23
     },
     {
-      "gainVsPreviousSeason": -6.327278689329446e+22,
+      "gainVsPreviousSeason": -4.399796456209467e+22,
       "name": "DAYO-P",
       "rank": 2,
-      "seasonTotal": 2.106622771302931e+23
+      "seasonTotal": 2.2993709946149288e+23
     },
     {
-      "gainVsPreviousSeason": -1.0960822075061821e+23,
+      "gainVsPreviousSeason": -8.796773479327307e+22,
       "name": "Nubis",
       "rank": 3,
-      "seasonTotal": 1.9149608991867713e+23
+      "seasonTotal": 2.1313657587602226e+23
     },
     {
       "gainVsPreviousSeason": -4.4693040398479385e+23,
@@ -44,10 +44,10 @@
       "seasonTotal": 2.277150359511633e+22
     },
     {
-      "gainVsPreviousSeason": -5.538456888266403e+21,
+      "gainVsPreviousSeason": -4.0167467170550986e+21,
       "name": "MadameMischief",
       "rank": 8,
-      "seasonTotal": 1.4412833866842955e+22
+      "seasonTotal": 1.593454403805426e+22
     },
     {
       "gainVsPreviousSeason": -1.0996414464969241e+21,
@@ -98,34 +98,34 @@
       "seasonTotal": 4.7058767814132514e+21
     },
     {
+      "gainVsPreviousSeason": -2.331769150015242e+21,
+      "name": "Gritchen",
+      "rank": 17,
+      "seasonTotal": 4.108320141491563e+21
+    },
+    {
       "gainVsPreviousSeason": -3.7272467856230827e+21,
       "name": "VictorMolusco",
-      "rank": 17,
+      "rank": 18,
       "seasonTotal": 3.8260968175240363e+21
     },
     {
       "gainVsPreviousSeason": -3.838859296514601e+21,
       "name": "Apathy_",
-      "rank": 18,
+      "rank": 19,
       "seasonTotal": 3.743891669313055e+21
     },
     {
-      "gainVsPreviousSeason": -2.8483207027405766e+21,
-      "name": "Gritchen",
-      "rank": 19,
-      "seasonTotal": 3.591768588766228e+21
+      "gainVsPreviousSeason": -3.7093263871223786e+21,
+      "name": "HakiLuffy",
+      "rank": 20,
+      "seasonTotal": 3.3123854368304304e+21
     },
     {
       "gainVsPreviousSeason": -2.3403264494539464e+21,
       "name": "theLP",
-      "rank": 20,
-      "seasonTotal": 3.2806843285789354e+21
-    },
-    {
-      "gainVsPreviousSeason": -4.103435174016916e+21,
-      "name": "HakiLuffy",
       "rank": 21,
-      "seasonTotal": 2.918276649935893e+21
+      "seasonTotal": 3.2806843285789354e+21
     },
     {
       "gainVsPreviousSeason": -2.904238245302129e+20,
@@ -2251,6 +2251,60 @@
               ],
               "name": "Player 80018314",
               "top2Sum": 1.4319957500496465e+20
+            }
+          ]
+        },
+        {
+          "date": "2026-11-01",
+          "day": 11,
+          "players": [
+            {
+              "attempts": [
+                2.3878664879866646e+20,
+                2.7776490392666817e+20
+              ],
+              "name": "Gritchen",
+              "top2Sum": 5.165515527253346e+20
+            },
+            {
+              "attempts": [
+                1.0269757319952707e+22,
+                4.084931045226091e+21,
+                9.005065011247077e+21
+              ],
+              "name": "DAYO-P",
+              "top2Sum": 1.9274822331199784e+22
+            },
+            {
+              "attempts": [
+                1.956289397202413e+20,
+                1.9847984717429617e+20
+              ],
+              "name": "HakiLuffy",
+              "top2Sum": 3.941087868945375e+20
+            },
+            {
+              "attempts": [
+                1.0611468999293573e+22,
+                1.1029016958051551e+22
+              ],
+              "name": "Nubis",
+              "top2Sum": 2.1640485957345124e+22
+            },
+            {
+              "attempts": [
+                4.9504677760334245e+22
+              ],
+              "name": "Fl3xas",
+              "top2Sum": 4.9504677760334245e+22
+            },
+            {
+              "attempts": [
+                8.046151023806116e+20,
+                7.170950688306924e+20
+              ],
+              "name": "MadameMischief",
+              "top2Sum": 1.521710171211304e+21
             }
           ]
         }
