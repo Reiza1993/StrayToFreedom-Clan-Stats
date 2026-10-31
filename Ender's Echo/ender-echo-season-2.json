@@ -2,10 +2,10 @@
   "endDate": "2026-11-18",
   "leaderboard": [
     {
-      "gainVsPreviousSeason": -8.70434894008954e+23,
+      "gainVsPreviousSeason": -7.689086441733932e+23,
       "name": "Fl3xas",
       "rank": 1,
-      "seasonTotal": 7.368863675902698e+23
+      "seasonTotal": 8.384126174258307e+23
     },
     {
       "gainVsPreviousSeason": -6.327278689329446e+22,
@@ -2139,6 +2139,14 @@
               ],
               "name": "FlyingDutchy",
               "top2Sum": 3.699519608352765e+20
+            },
+            {
+              "attempts": [
+                4.450118941711763e+22,
+                5.702506041844329e+22
+              ],
+              "name": "Fl3xas",
+              "top2Sum": 1.0152624983556093e+23
             }
           ]
         }
