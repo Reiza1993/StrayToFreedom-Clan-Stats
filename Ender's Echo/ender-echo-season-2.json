@@ -2,16 +2,16 @@
   "endDate": "2026-11-18",
   "leaderboard": [
     {
-      "gainVsPreviousSeason": -6.718474088760566e+23,
+      "gainVsPreviousSeason": -5.574574265251582e+23,
       "name": "Fl3xas",
       "rank": 1,
-      "seasonTotal": 9.354738527231673e+23
+      "seasonTotal": 1.0498638350740657e+24
     },
     {
-      "gainVsPreviousSeason": -4.399796456209467e+22,
+      "gainVsPreviousSeason": -2.4229181319644052e+22,
       "name": "DAYO-P",
       "rank": 2,
-      "seasonTotal": 2.2993709946149288e+23
+      "seasonTotal": 2.497058827039435e+23
     },
     {
       "gainVsPreviousSeason": -8.796773479327307e+22,
@@ -44,10 +44,10 @@
       "seasonTotal": 2.277150359511633e+22
     },
     {
-      "gainVsPreviousSeason": -4.0167467170550986e+21,
+      "gainVsPreviousSeason": -2.2291334125561127e+21,
       "name": "MadameMischief",
       "rank": 8,
-      "seasonTotal": 1.593454403805426e+22
+      "seasonTotal": 1.7722157342553245e+22
     },
     {
       "gainVsPreviousSeason": -1.0996414464969241e+21,
@@ -128,16 +128,16 @@
       "seasonTotal": 3.3123854368304304e+21
     },
     {
-      "gainVsPreviousSeason": -4.291576364941296e+20,
-      "name": "silverxz",
+      "gainVsPreviousSeason": -1.0788497796225633e+21,
+      "name": "EMBALOCO",
       "rank": 22,
-      "seasonTotal": 2.908878318742426e+21
+      "seasonTotal": 3.0002934897333035e+21
     },
     {
-      "gainVsPreviousSeason": -1.1714088552857354e+21,
-      "name": "EMBALOCO",
+      "gainVsPreviousSeason": -4.291576364941296e+20,
+      "name": "silverxz",
       "rank": 23,
-      "seasonTotal": 2.9077344140701315e+21
+      "seasonTotal": 2.908878318742426e+21
     },
     {
       "gainVsPreviousSeason": -3.7042528768630247e+20,
@@ -2428,6 +2428,44 @@
               ],
               "name": "BlackFlamE",
               "top2Sum": 1.7281592728042465e+20
+            }
+          ]
+        },
+        {
+          "date": "2026-11-02",
+          "day": 12,
+          "players": [
+            {
+              "attempts": [
+                8.775700732055938e+21,
+                3.4428602083695494e+21,
+                1.0993082510394675e+22
+              ],
+              "name": "DAYO-P",
+              "top2Sum": 1.976878324245061e+22
+            },
+            {
+              "attempts": [
+                6.2588530736425656e+22,
+                5.180145161447278e+22
+              ],
+              "name": "Fl3xas",
+              "top2Sum": 1.1438998235089843e+23
+            },
+            {
+              "attempts": [
+                9.255907566317201e+19
+              ],
+              "name": "EMBALOCO",
+              "top2Sum": 9.255907566317201e+19
+            },
+            {
+              "attempts": [
+                7.993824061299048e+20,
+                9.882308983690805e+20
+              ],
+              "name": "MadameMischief",
+              "top2Sum": 1.7876133044989854e+21
             }
           ]
         }
