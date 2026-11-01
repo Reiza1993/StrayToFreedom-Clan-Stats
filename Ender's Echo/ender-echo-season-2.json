@@ -2,10 +2,10 @@
   "endDate": "2026-11-18",
   "leaderboard": [
     {
-      "gainVsPreviousSeason": -6.856603781339112e+23,
+      "gainVsPreviousSeason": -6.718474088760566e+23,
       "name": "Fl3xas",
       "rank": 1,
-      "seasonTotal": 9.216608834653127e+23
+      "seasonTotal": 9.354738527231673e+23
     },
     {
       "gainVsPreviousSeason": -4.399796456209467e+22,
@@ -98,16 +98,16 @@
       "seasonTotal": 4.7058767814132514e+21
     },
     {
-      "gainVsPreviousSeason": -2.331769150015242e+21,
-      "name": "Gritchen",
+      "gainVsPreviousSeason": -3.193467439092429e+21,
+      "name": "VictorMolusco",
       "rank": 17,
-      "seasonTotal": 4.108320141491563e+21
+      "seasonTotal": 4.35987616405469e+21
     },
     {
-      "gainVsPreviousSeason": -3.7272467856230827e+21,
-      "name": "VictorMolusco",
+      "gainVsPreviousSeason": -2.331769150015242e+21,
+      "name": "Gritchen",
       "rank": 18,
-      "seasonTotal": 3.8260968175240363e+21
+      "seasonTotal": 4.108320141491563e+21
     },
     {
       "gainVsPreviousSeason": -1.8719471326705243e+21,
@@ -2294,10 +2294,11 @@
             {
               "attempts": [
                 4.9504677760334245e+22,
-                3.3743588279147733e+22
+                3.3743588279147733e+22,
+                4.755655753700234e+22
               ],
               "name": "Fl3xas",
-              "top2Sum": 8.324826603948197e+22
+              "top2Sum": 9.706123529733658e+22
             },
             {
               "attempts": [
@@ -2354,6 +2355,14 @@
               ],
               "name": "RABBIT5",
               "top2Sum": 1.532315222455753e+22
+            },
+            {
+              "attempts": [
+                3.028598829496172e+20,
+                2.309194635810362e+20
+              ],
+              "name": "VictorMolusco",
+              "top2Sum": 5.3377934653065344e+20
             }
           ]
         }
