@@ -20,16 +20,16 @@
       "seasonTotal": 2.1313657587602226e+23
     },
     {
-      "gainVsPreviousSeason": -4.4693040398479385e+23,
-      "name": "\u04bban",
+      "gainVsPreviousSeason": -5.883173661489009e+22,
+      "name": "RABBIT5",
       "rank": 4,
-      "seasonTotal": 1.472484493262373e+23
+      "seasonTotal": 1.5926318201856486e+23
     },
     {
-      "gainVsPreviousSeason": -7.4154888839447634e+22,
-      "name": "RABBIT5",
+      "gainVsPreviousSeason": -4.4693040398479385e+23,
+      "name": "\u04bban",
       "rank": 5,
-      "seasonTotal": 1.4394002979400731e+23
+      "seasonTotal": 1.472484493262373e+23
     },
     {
       "gainVsPreviousSeason": -5.406525126296327e+22,
@@ -74,22 +74,22 @@
       "seasonTotal": 6.377995739514299e+21
     },
     {
+      "gainVsPreviousSeason": -1.8591380879949578e+21,
+      "name": "p88203044",
+      "rank": 13,
+      "seasonTotal": 5.171957257137113e+21
+    },
+    {
       "gainVsPreviousSeason": -1.801116651557769e+22,
       "name": "pumpenjoe",
-      "rank": 13,
+      "rank": 14,
       "seasonTotal": 5.064043263058747e+21
     },
     {
       "gainVsPreviousSeason": -4.499084988540768e+21,
       "name": "\u76feHeathcliff\u5263",
-      "rank": 14,
-      "seasonTotal": 4.856416910871809e+21
-    },
-    {
-      "gainVsPreviousSeason": -2.2994786744388058e+21,
-      "name": "p88203044",
       "rank": 15,
-      "seasonTotal": 4.731616670693265e+21
+      "seasonTotal": 4.856416910871809e+21
     },
     {
       "gainVsPreviousSeason": -1.6054193760333868e+22,
@@ -110,22 +110,22 @@
       "seasonTotal": 3.8260968175240363e+21
     },
     {
+      "gainVsPreviousSeason": -1.8719471326705243e+21,
+      "name": "theLP",
+      "rank": 19,
+      "seasonTotal": 3.7490636453623575e+21
+    },
+    {
       "gainVsPreviousSeason": -3.838859296514601e+21,
       "name": "Apathy_",
-      "rank": 19,
+      "rank": 20,
       "seasonTotal": 3.743891669313055e+21
     },
     {
       "gainVsPreviousSeason": -3.7093263871223786e+21,
       "name": "HakiLuffy",
-      "rank": 20,
-      "seasonTotal": 3.3123854368304304e+21
-    },
-    {
-      "gainVsPreviousSeason": -2.3403264494539464e+21,
-      "name": "theLP",
       "rank": 21,
-      "seasonTotal": 3.2806843285789354e+21
+      "seasonTotal": 3.3123854368304304e+21
     },
     {
       "gainVsPreviousSeason": -4.291576364941296e+20,
@@ -2331,6 +2331,29 @@
               ],
               "name": "silverxz",
               "top2Sum": 6.568717217991823e+20
+            },
+            {
+              "attempts": [
+                2.3526404798876834e+20,
+                2.3311526879465387e+20
+              ],
+              "name": "theLP",
+              "top2Sum": 4.6837931678342224e+20
+            },
+            {
+              "attempts": [
+                4.4034058644384776e+20
+              ],
+              "name": "p88203044",
+              "top2Sum": 4.4034058644384776e+20
+            },
+            {
+              "attempts": [
+                6.696044563122289e+21,
+                8.627107661435243e+21
+              ],
+              "name": "RABBIT5",
+              "top2Sum": 1.532315222455753e+22
             }
           ]
         }
