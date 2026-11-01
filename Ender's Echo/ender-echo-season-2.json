@@ -68,34 +68,34 @@
       "seasonTotal": 8.633792700973655e+21
     },
     {
+      "gainVsPreviousSeason": -1.426106593766918e+22,
+      "name": "RetinaDNA",
+      "rank": 12,
+      "seasonTotal": 6.499004604077939e+21
+    },
+    {
       "gainVsPreviousSeason": -1.3317158127592714e+22,
       "name": "PastalaVista",
-      "rank": 12,
+      "rank": 13,
       "seasonTotal": 6.377995739514299e+21
     },
     {
-      "gainVsPreviousSeason": -3.993269106647371e+21,
+      "gainVsPreviousSeason": -3.409715560617479e+21,
       "name": "\u76feHeathcliff\u5263",
-      "rank": 13,
-      "seasonTotal": 5.362232792765206e+21
+      "rank": 14,
+      "seasonTotal": 5.945786338795098e+21
     },
     {
-      "gainVsPreviousSeason": -1.8591380879949578e+21,
+      "gainVsPreviousSeason": -1.4706927484442446e+21,
       "name": "p88203044",
-      "rank": 14,
-      "seasonTotal": 5.171957257137113e+21
+      "rank": 15,
+      "seasonTotal": 5.560402596687826e+21
     },
     {
       "gainVsPreviousSeason": -1.801116651557769e+22,
       "name": "pumpenjoe",
-      "rank": 15,
-      "seasonTotal": 5.064043263058747e+21
-    },
-    {
-      "gainVsPreviousSeason": -1.6054193760333868e+22,
-      "name": "RetinaDNA",
       "rank": 16,
-      "seasonTotal": 4.7058767814132514e+21
+      "seasonTotal": 5.064043263058747e+21
     },
     {
       "gainVsPreviousSeason": -3.193467439092429e+21,
@@ -134,16 +134,16 @@
       "seasonTotal": 2.908878318742426e+21
     },
     {
-      "gainVsPreviousSeason": -3.7042528768630247e+20,
-      "name": "Rzzza",
+      "gainVsPreviousSeason": -1.1714088552857354e+21,
+      "name": "EMBALOCO",
       "rank": 23,
-      "seasonTotal": 2.7842716913652765e+21
+      "seasonTotal": 2.9077344140701315e+21
     },
     {
-      "gainVsPreviousSeason": -1.2993617320431221e+21,
-      "name": "EMBALOCO",
+      "gainVsPreviousSeason": -3.7042528768630247e+20,
+      "name": "Rzzza",
       "rank": 24,
-      "seasonTotal": 2.7797815373127447e+21
+      "seasonTotal": 2.7842716913652765e+21
     },
     {
       "gainVsPreviousSeason": -2.904238245302129e+20,
@@ -158,10 +158,10 @@
       "seasonTotal": 2.6436228793363307e+21
     },
     {
-      "gainVsPreviousSeason": -1.6617840447536491e+21,
+      "gainVsPreviousSeason": -1.4889681174732247e+21,
       "name": "BlackFlamE",
       "rank": 27,
-      "seasonTotal": 2.40217948303549e+21
+      "seasonTotal": 2.5749954103159145e+21
     },
     {
       "gainVsPreviousSeason": -9.194001454411271e+20,
@@ -2345,10 +2345,11 @@
             },
             {
               "attempts": [
-                4.4034058644384776e+20
+                4.4034058644384776e+20,
+                3.884453395507131e+20
               ],
               "name": "p88203044",
-              "top2Sum": 4.4034058644384776e+20
+              "top2Sum": 8.287859259945609e+20
             },
             {
               "attempts": [
@@ -2392,17 +2393,19 @@
             },
             {
               "attempts": [
-                5.0581588189339694e+20
+                5.0581588189339694e+20,
+                5.8355354602989165e+20
               ],
               "name": "\u76feHeathcliff\u5263",
-              "top2Sum": 5.0581588189339694e+20
+              "top2Sum": 1.0893694279232886e+21
             },
             {
               "attempts": [
-                1.7278199966153176e+20
+                1.7278199966153176e+20,
+                1.2795287675738651e+20
               ],
               "name": "EMBALOCO",
-              "top2Sum": 1.7278199966153176e+20
+              "top2Sum": 3.0073487641891825e+20
             },
             {
               "attempts": [
@@ -2411,6 +2414,20 @@
               ],
               "name": "Player 80018314",
               "top2Sum": 1.1644101255907061e+20
+            },
+            {
+              "attempts": [
+                1.793127822664688e+21
+              ],
+              "name": "RetinaDNA",
+              "top2Sum": 1.793127822664688e+21
+            },
+            {
+              "attempts": [
+                1.7281592728042465e+20
+              ],
+              "name": "BlackFlamE",
+              "top2Sum": 1.7281592728042465e+20
             }
           ]
         }
