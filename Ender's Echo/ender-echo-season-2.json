@@ -14,10 +14,10 @@
       "seasonTotal": 3.0488059799264297e+23
     },
     {
-      "gainVsPreviousSeason": -2.0778229853443624e+22,
+      "gainVsPreviousSeason": 6.167372351375462e+20,
       "name": "DAYO-P",
       "rank": 3,
-      "seasonTotal": 2.5315683417014393e+23
+      "seasonTotal": 2.745518012587251e+23
     },
     {
       "gainVsPreviousSeason": -6.402170360706423e+22,
@@ -32,10 +32,10 @@
       "seasonTotal": 1.7667639084830378e+23
     },
     {
-      "gainVsPreviousSeason": -4.954163550560525e+22,
+      "gainVsPreviousSeason": -4.2023785553941395e+22,
       "name": "SngphO",
       "rank": 6,
-      "seasonTotal": 6.313674712559581e+22
+      "seasonTotal": 7.0654597077259665e+22
     },
     {
       "gainVsPreviousSeason": -1.1017599034359209e+23,
@@ -44,16 +44,16 @@
       "seasonTotal": 3.46277731772076e+22
     },
     {
-      "gainVsPreviousSeason": -5.415298516795555e+21,
+      "gainVsPreviousSeason": 6.254443304425504e+20,
       "name": "Cunner88",
       "rank": 8,
-      "seasonTotal": 2.046157049703472e+22
+      "seasonTotal": 2.6502313344272825e+22
     },
     {
-      "gainVsPreviousSeason": -2.2291334125561127e+21,
+      "gainVsPreviousSeason": -2.3059879114548288e+20,
       "name": "MadameMischief",
       "rank": 9,
-      "seasonTotal": 1.7722157342553245e+22
+      "seasonTotal": 1.9720691963963875e+22
     },
     {
       "gainVsPreviousSeason": -1.0996414464969241e+21,
@@ -128,28 +128,28 @@
       "seasonTotal": 3.7490636453623575e+21
     },
     {
+      "gainVsPreviousSeason": 1.6317574380319775e+20,
+      "name": "silverxz",
+      "rank": 22,
+      "seasonTotal": 3.5012116990397535e+21
+    },
+    {
       "gainVsPreviousSeason": -9.016108028905186e+20,
       "name": "EMBALOCO",
-      "rank": 22,
+      "rank": 23,
       "seasonTotal": 3.177532466465348e+21
     },
     {
       "gainVsPreviousSeason": -2.837624638478431e+19,
       "name": "Rzzza",
-      "rank": 23,
+      "rank": 24,
       "seasonTotal": 3.1263207326667946e+21
     },
     {
       "gainVsPreviousSeason": -1.075794611095437e+21,
       "name": "BlackFlamE",
-      "rank": 24,
-      "seasonTotal": 2.988168916693702e+21
-    },
-    {
-      "gainVsPreviousSeason": -4.291576364941296e+20,
-      "name": "silverxz",
       "rank": 25,
-      "seasonTotal": 2.908878318742426e+21
+      "seasonTotal": 2.988168916693702e+21
     },
     {
       "gainVsPreviousSeason": -2.904238245302129e+20,
@@ -200,34 +200,34 @@
       "seasonTotal": 9.364372145197742e+20
     },
     {
+      "gainVsPreviousSeason": 6.626138671455669e+20,
+      "name": "ergiangi",
+      "rank": 34,
+      "seasonTotal": 8.766118571029194e+20
+    },
+    {
       "gainVsPreviousSeason": 1.9757383606777256e+20,
       "name": "Toddlerr",
-      "rank": 34,
+      "rank": 35,
       "seasonTotal": 7.717439263050333e+20
     },
     {
       "gainVsPreviousSeason": -5.463562215531691e+21,
       "name": "Bensayyten",
-      "rank": 35,
+      "rank": 36,
       "seasonTotal": 7.32303207648993e+20
     },
     {
       "gainVsPreviousSeason": -3.3253711201039666e+20,
       "name": "Belthazar",
-      "rank": 36,
+      "rank": 37,
       "seasonTotal": 7.041705948683979e+20
     },
     {
       "gainVsPreviousSeason": 1.0391030444897639e+20,
       "name": "FlyingDutchy",
-      "rank": 37,
-      "seasonTotal": 6.891644804791827e+20
-    },
-    {
-      "gainVsPreviousSeason": 2.442027561533046e+20,
-      "name": "ergiangi",
       "rank": 38,
-      "seasonTotal": 4.582007461106572e+20
+      "seasonTotal": 6.891644804791827e+20
     },
     {
       "gainVsPreviousSeason": -1.150090315168668e+20,
@@ -2680,6 +2680,54 @@
               ],
               "name": "Fl3xas",
               "top2Sum": 1.1506536931939497e+23
+            },
+            {
+              "attempts": [
+                5.53025307510962e+21,
+                1.140666667143121e+22,
+                9.988300417149952e+21
+              ],
+              "name": "DAYO-P",
+              "top2Sum": 2.139496708858116e+22
+            },
+            {
+              "attempts": [
+                3.9066273235920245e+21,
+                3.6112226280718326e+21
+              ],
+              "name": "SngphO",
+              "top2Sum": 7.517849951663857e+21
+            },
+            {
+              "attempts": [
+                2.2266862745723116e+20,
+                1.957424835350311e+20
+              ],
+              "name": "ergiangi",
+              "top2Sum": 4.1841111099226227e+20
+            },
+            {
+              "attempts": [
+                2.854269832915834e+20,
+                3.069063970057437e+20
+              ],
+              "name": "silverxz",
+              "top2Sum": 5.923333802973271e+20
+            },
+            {
+              "attempts": [
+                9.822018810222232e+20,
+                1.0163327403884084e+21
+              ],
+              "name": "MadameMischief",
+              "top2Sum": 1.9985346214106316e+21
+            },
+            {
+              "attempts": [
+                6.040742847238106e+21
+              ],
+              "name": "Cunner88",
+              "top2Sum": 6.040742847238106e+21
             }
           ]
         }
