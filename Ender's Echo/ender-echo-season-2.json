@@ -2,10 +2,10 @@
   "endDate": "2026-11-18",
   "leaderboard": [
     {
-      "gainVsPreviousSeason": -5.574574265251582e+23,
+      "gainVsPreviousSeason": -4.423920572057633e+23,
       "name": "Fl3xas",
       "rank": 1,
-      "seasonTotal": 1.0498638350740657e+24
+      "seasonTotal": 1.1649292043934606e+24
     },
     {
       "gainVsPreviousSeason": -2.8929825531838816e+23,
@@ -68,28 +68,28 @@
       "seasonTotal": 8.633792700973655e+21
     },
     {
+      "gainVsPreviousSeason": -4.517774803825223e+19,
+      "name": "p88203044",
+      "rank": 12,
+      "seasonTotal": 6.985917597093819e+21
+    },
+    {
       "gainVsPreviousSeason": -2.3750606295733675e+21,
       "name": "\u76feHeathcliff\u5263",
-      "rank": 12,
+      "rank": 13,
       "seasonTotal": 6.98044126983921e+21
     },
     {
       "gainVsPreviousSeason": -1.426106593766918e+22,
       "name": "RetinaDNA",
-      "rank": 13,
+      "rank": 14,
       "seasonTotal": 6.499004604077939e+21
     },
     {
       "gainVsPreviousSeason": -1.3317158127592714e+22,
       "name": "PastalaVista",
-      "rank": 14,
-      "seasonTotal": 6.377995739514299e+21
-    },
-    {
-      "gainVsPreviousSeason": -7.107636858982047e+20,
-      "name": "p88203044",
       "rank": 15,
-      "seasonTotal": 6.320331659233866e+21
+      "seasonTotal": 6.377995739514299e+21
     },
     {
       "gainVsPreviousSeason": -1.801116651557769e+22,
@@ -116,16 +116,16 @@
       "seasonTotal": 4.623938048784126e+21
     },
     {
-      "gainVsPreviousSeason": -1.8719471326705243e+21,
-      "name": "theLP",
+      "gainVsPreviousSeason": -2.808534051621299e+21,
+      "name": "HakiLuffy",
       "rank": 20,
-      "seasonTotal": 3.7490636453623575e+21
+      "seasonTotal": 4.21317777233151e+21
     },
     {
-      "gainVsPreviousSeason": -3.3426372025138555e+21,
-      "name": "HakiLuffy",
+      "gainVsPreviousSeason": -1.8719471326705243e+21,
+      "name": "theLP",
       "rank": 21,
-      "seasonTotal": 3.6790746214389535e+21
+      "seasonTotal": 3.7490636453623575e+21
     },
     {
       "gainVsPreviousSeason": -9.016108028905186e+20,
@@ -2651,6 +2651,40 @@
         }
       ],
       "miniSeasonNumber": 4
+    },
+    {
+      "days": [
+        {
+          "date": "2026-11-03",
+          "day": 13,
+          "players": [
+            {
+              "attempts": [
+                6.655859378599522e+20
+              ],
+              "name": "p88203044",
+              "top2Sum": 6.655859378599522e+20
+            },
+            {
+              "attempts": [
+                2.7561315252517608e+20,
+                2.5848999836738054e+20
+              ],
+              "name": "HakiLuffy",
+              "top2Sum": 5.341031508925566e+20
+            },
+            {
+              "attempts": [
+                5.332557798680426e+22,
+                6.17397913325907e+22
+              ],
+              "name": "Fl3xas",
+              "top2Sum": 1.1506536931939497e+23
+            }
+          ]
+        }
+      ],
+      "miniSeasonNumber": 5
     }
   ],
   "seasonNumber": 2,
