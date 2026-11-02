@@ -26,10 +26,10 @@
       "seasonTotal": 2.370826070622311e+23
     },
     {
-      "gainVsPreviousSeason": -5.883173661489009e+22,
+      "gainVsPreviousSeason": -4.141852778515117e+22,
       "name": "RABBIT5",
       "rank": 5,
-      "seasonTotal": 1.5926318201856486e+23
+      "seasonTotal": 1.7667639084830378e+23
     },
     {
       "gainVsPreviousSeason": -4.954163550560525e+22,
@@ -38,10 +38,10 @@
       "seasonTotal": 6.313674712559581e+22
     },
     {
-      "gainVsPreviousSeason": -1.2203225992568334e+23,
+      "gainVsPreviousSeason": -1.1017599034359209e+23,
       "name": "\u795eSterben\u6b7b",
       "rank": 7,
-      "seasonTotal": 2.277150359511633e+22
+      "seasonTotal": 3.46277731772076e+22
     },
     {
       "gainVsPreviousSeason": -5.415298516795555e+21,
@@ -104,16 +104,16 @@
       "seasonTotal": 4.739599603201701e+21
     },
     {
-      "gainVsPreviousSeason": -1.8161512427226787e+21,
-      "name": "Gritchen",
+      "gainVsPreviousSeason": -2.924683708178109e+21,
+      "name": "VictorMolusco",
       "rank": 18,
-      "seasonTotal": 4.623938048784126e+21
+      "seasonTotal": 4.62865989496901e+21
     },
     {
-      "gainVsPreviousSeason": -3.193467439092429e+21,
-      "name": "VictorMolusco",
+      "gainVsPreviousSeason": -1.8161512427226787e+21,
+      "name": "Gritchen",
       "rank": 19,
-      "seasonTotal": 4.35987616405469e+21
+      "seasonTotal": 4.623938048784126e+21
     },
     {
       "gainVsPreviousSeason": -1.8719471326705243e+21,
@@ -128,16 +128,16 @@
       "seasonTotal": 3.6790746214389535e+21
     },
     {
-      "gainVsPreviousSeason": -2.837624638478431e+19,
-      "name": "Rzzza",
+      "gainVsPreviousSeason": -9.016108028905186e+20,
+      "name": "EMBALOCO",
       "rank": 22,
-      "seasonTotal": 3.1263207326667946e+21
+      "seasonTotal": 3.177532466465348e+21
     },
     {
-      "gainVsPreviousSeason": -1.0788497796225633e+21,
-      "name": "EMBALOCO",
+      "gainVsPreviousSeason": -2.837624638478431e+19,
+      "name": "Rzzza",
       "rank": 23,
-      "seasonTotal": 3.0002934897333035e+21
+      "seasonTotal": 3.1263207326667946e+21
     },
     {
       "gainVsPreviousSeason": -1.075794611095437e+21,
@@ -164,10 +164,10 @@
       "seasonTotal": 2.6436228793363307e+21
     },
     {
-      "gainVsPreviousSeason": -9.194001454411271e+20,
+      "gainVsPreviousSeason": -7.16571156288766e+20,
       "name": "gubrax",
       "rank": 28,
-      "seasonTotal": 1.872074694882501e+21
+      "seasonTotal": 2.0749036840348623e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -200,28 +200,28 @@
       "seasonTotal": 9.364372145197742e+20
     },
     {
+      "gainVsPreviousSeason": 1.9757383606777256e+20,
+      "name": "Toddlerr",
+      "rank": 34,
+      "seasonTotal": 7.717439263050333e+20
+    },
+    {
       "gainVsPreviousSeason": -5.463562215531691e+21,
       "name": "Bensayyten",
-      "rank": 34,
+      "rank": 35,
       "seasonTotal": 7.32303207648993e+20
+    },
+    {
+      "gainVsPreviousSeason": -3.3253711201039666e+20,
+      "name": "Belthazar",
+      "rank": 36,
+      "seasonTotal": 7.041705948683979e+20
     },
     {
       "gainVsPreviousSeason": 1.0391030444897639e+20,
       "name": "FlyingDutchy",
-      "rank": 35,
-      "seasonTotal": 6.891644804791827e+20
-    },
-    {
-      "gainVsPreviousSeason": -3.822050286911618e+20,
-      "name": "Belthazar",
-      "rank": 36,
-      "seasonTotal": 6.545026781876328e+20
-    },
-    {
-      "gainVsPreviousSeason": -5.835861822525538e+19,
-      "name": "Toddlerr",
       "rank": 37,
-      "seasonTotal": 5.1581147201200534e+20
+      "seasonTotal": 6.891644804791827e+20
     },
     {
       "gainVsPreviousSeason": 2.442027561533046e+20,
@@ -2455,7 +2455,8 @@
                 3.4428602083695494e+21,
                 1.0993082510394675e+22,
                 1.2226652198256391e+22,
-                6.702191736320814e+21
+                6.702191736320814e+21,
+                9.846937294681726e+21
               ],
               "name": "DAYO-P",
               "top2Sum": 2.3219734708651064e+22
@@ -2470,10 +2471,11 @@
             },
             {
               "attempts": [
-                9.255907566317201e+19
+                9.255907566317201e+19,
+                1.7723897673204495e+20
               ],
               "name": "EMBALOCO",
-              "top2Sum": 9.255907566317201e+19
+              "top2Sum": 2.6979805239521696e+20
             },
             {
               "attempts": [
@@ -2599,6 +2601,51 @@
               ],
               "name": "\u76feHeathcliff\u5263",
               "top2Sum": 1.034654931044112e+21
+            },
+            {
+              "attempts": [
+                2.083832715484023e+19,
+                2.8829589525924876e+19
+              ],
+              "name": "Belthazar",
+              "top2Sum": 4.966791668076511e+19
+            },
+            {
+              "attempts": [
+                8.853004812289e+19,
+                1.1429894102947129e+20
+              ],
+              "name": "gubrax",
+              "top2Sum": 2.0282898915236128e+20
+            },
+            {
+              "attempts": [
+                2.687837309143198e+20
+              ],
+              "name": "VictorMolusco",
+              "top2Sum": 2.687837309143198e+20
+            },
+            {
+              "attempts": [
+                1.1856269582091264e+22
+              ],
+              "name": "\u795eSterben\u6b7b",
+              "top2Sum": 1.1856269582091264e+22
+            },
+            {
+              "attempts": [
+                2.55932454293028e+20
+              ],
+              "name": "Toddlerr",
+              "top2Sum": 2.55932454293028e+20
+            },
+            {
+              "attempts": [
+                7.945758621422895e+21,
+                9.46745020831603e+21
+              ],
+              "name": "RABBIT5",
+              "top2Sum": 1.7413208829738927e+22
             }
           ]
         }
