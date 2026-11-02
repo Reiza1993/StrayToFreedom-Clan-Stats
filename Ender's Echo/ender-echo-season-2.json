@@ -68,28 +68,28 @@
       "seasonTotal": 8.633792700973655e+21
     },
     {
+      "gainVsPreviousSeason": -2.3750606295733675e+21,
+      "name": "\u76feHeathcliff\u5263",
+      "rank": 12,
+      "seasonTotal": 6.98044126983921e+21
+    },
+    {
       "gainVsPreviousSeason": -1.426106593766918e+22,
       "name": "RetinaDNA",
-      "rank": 12,
+      "rank": 13,
       "seasonTotal": 6.499004604077939e+21
     },
     {
       "gainVsPreviousSeason": -1.3317158127592714e+22,
       "name": "PastalaVista",
-      "rank": 13,
+      "rank": 14,
       "seasonTotal": 6.377995739514299e+21
     },
     {
       "gainVsPreviousSeason": -7.107636858982047e+20,
       "name": "p88203044",
-      "rank": 14,
-      "seasonTotal": 6.320331659233866e+21
-    },
-    {
-      "gainVsPreviousSeason": -3.409715560617479e+21,
-      "name": "\u76feHeathcliff\u5263",
       "rank": 15,
-      "seasonTotal": 5.945786338795098e+21
+      "seasonTotal": 6.320331659233866e+21
     },
     {
       "gainVsPreviousSeason": -1.801116651557769e+22,
@@ -128,10 +128,10 @@
       "seasonTotal": 3.6790746214389535e+21
     },
     {
-      "gainVsPreviousSeason": -5.2790315527004226e+19,
+      "gainVsPreviousSeason": -2.837624638478431e+19,
       "name": "Rzzza",
       "rank": 22,
-      "seasonTotal": 3.1019066635245747e+21
+      "seasonTotal": 3.1263207326667946e+21
     },
     {
       "gainVsPreviousSeason": -1.0788497796225633e+21,
@@ -2454,7 +2454,8 @@
                 8.775700732055938e+21,
                 3.4428602083695494e+21,
                 1.0993082510394675e+22,
-                1.2226652198256391e+22
+                1.2226652198256391e+22,
+                6.702191736320814e+21
               ],
               "name": "DAYO-P",
               "top2Sum": 2.3219734708651064e+22
@@ -2493,10 +2494,11 @@
             {
               "attempts": [
                 1.6057697262703428e+20,
-                1.57057999532264e+20
+                1.57057999532264e+20,
+                1.8147206867448365e+20
               ],
               "name": "Rzzza",
-              "top2Sum": 3.1763497215929824e+20
+              "top2Sum": 3.420490413015179e+20
             },
             {
               "attempts": [
@@ -2589,6 +2591,14 @@
               ],
               "name": "ergiangi",
               "top2Sum": 1.3810570545635543e+20
+            },
+            {
+              "attempts": [
+                4.011600346571032e+20,
+                6.334948963870089e+20
+              ],
+              "name": "\u76feHeathcliff\u5263",
+              "top2Sum": 1.034654931044112e+21
             }
           ]
         }
