@@ -44,22 +44,22 @@
       "seasonTotal": 2.277150359511633e+22
     },
     {
+      "gainVsPreviousSeason": -5.415298516795555e+21,
+      "name": "Cunner88",
+      "rank": 8,
+      "seasonTotal": 2.046157049703472e+22
+    },
+    {
       "gainVsPreviousSeason": -2.2291334125561127e+21,
       "name": "MadameMischief",
-      "rank": 8,
+      "rank": 9,
       "seasonTotal": 1.7722157342553245e+22
     },
     {
       "gainVsPreviousSeason": -1.0996414464969241e+21,
       "name": "NeonCBV",
-      "rank": 9,
-      "seasonTotal": 1.324052559409565e+22
-    },
-    {
-      "gainVsPreviousSeason": -1.4876831125080967e+22,
-      "name": "Cunner88",
       "rank": 10,
-      "seasonTotal": 1.1000037888749308e+22
+      "seasonTotal": 1.324052559409565e+22
     },
     {
       "gainVsPreviousSeason": 4.5178101898807135e+20,
@@ -80,16 +80,16 @@
       "seasonTotal": 6.377995739514299e+21
     },
     {
-      "gainVsPreviousSeason": -3.409715560617479e+21,
-      "name": "\u76feHeathcliff\u5263",
+      "gainVsPreviousSeason": -7.107636858982047e+20,
+      "name": "p88203044",
       "rank": 14,
-      "seasonTotal": 5.945786338795098e+21
+      "seasonTotal": 6.320331659233866e+21
     },
     {
-      "gainVsPreviousSeason": -1.1555043325441716e+21,
-      "name": "p88203044",
+      "gainVsPreviousSeason": -3.409715560617479e+21,
+      "name": "\u76feHeathcliff\u5263",
       "rank": 15,
-      "seasonTotal": 5.875591012587899e+21
+      "seasonTotal": 5.945786338795098e+21
     },
     {
       "gainVsPreviousSeason": -1.801116651557769e+22,
@@ -194,10 +194,10 @@
       "seasonTotal": 1.0108857722556113e+21
     },
     {
-      "gainVsPreviousSeason": -1.536653086090771e+21,
+      "gainVsPreviousSeason": -1.403022429745785e+21,
       "name": "samwise08",
       "rank": 33,
-      "seasonTotal": 8.02806558174788e+20
+      "seasonTotal": 9.364372145197742e+20
     },
     {
       "gainVsPreviousSeason": -5.463562215531691e+21,
@@ -2515,10 +2515,11 @@
             },
             {
               "attempts": [
-                3.151884159000733e+20
+                3.151884159000733e+20,
+                4.447406466459669e+20
               ],
               "name": "p88203044",
-              "top2Sum": 3.151884159000733e+20
+              "top2Sum": 7.599290625460402e+20
             },
             {
               "attempts": [
@@ -2533,6 +2534,21 @@
               ],
               "name": "groggen",
               "top2Sum": 4.3991755153314126e+20
+            },
+            {
+              "attempts": [
+                1.336306563449861e+20
+              ],
+              "name": "samwise08",
+              "top2Sum": 1.336306563449861e+20
+            },
+            {
+              "attempts": [
+                4.761466913740276e+21,
+                4.7000656945451374e+21
+              ],
+              "name": "Cunner88",
+              "top2Sum": 9.461532608285414e+21
             }
           ]
         }
