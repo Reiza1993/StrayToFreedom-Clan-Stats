@@ -86,10 +86,10 @@
       "seasonTotal": 5.945786338795098e+21
     },
     {
-      "gainVsPreviousSeason": -1.4706927484442446e+21,
+      "gainVsPreviousSeason": -1.1555043325441716e+21,
       "name": "p88203044",
       "rank": 15,
-      "seasonTotal": 5.560402596687826e+21
+      "seasonTotal": 5.875591012587899e+21
     },
     {
       "gainVsPreviousSeason": -1.801116651557769e+22,
@@ -98,22 +98,22 @@
       "seasonTotal": 5.064043263058747e+21
     },
     {
+      "gainVsPreviousSeason": -2.843151362625955e+21,
+      "name": "Apathy_",
+      "rank": 17,
+      "seasonTotal": 4.739599603201701e+21
+    },
+    {
       "gainVsPreviousSeason": -1.8161512427226787e+21,
       "name": "Gritchen",
-      "rank": 17,
+      "rank": 18,
       "seasonTotal": 4.623938048784126e+21
     },
     {
       "gainVsPreviousSeason": -3.193467439092429e+21,
       "name": "VictorMolusco",
-      "rank": 18,
-      "seasonTotal": 4.35987616405469e+21
-    },
-    {
-      "gainVsPreviousSeason": -3.43530190627135e+21,
-      "name": "Apathy_",
       "rank": 19,
-      "seasonTotal": 4.1474490595563065e+21
+      "seasonTotal": 4.35987616405469e+21
     },
     {
       "gainVsPreviousSeason": -1.8719471326705243e+21,
@@ -122,10 +122,10 @@
       "seasonTotal": 3.7490636453623575e+21
     },
     {
-      "gainVsPreviousSeason": -3.528609723854865e+21,
+      "gainVsPreviousSeason": -3.3426372025138555e+21,
       "name": "HakiLuffy",
       "rank": 21,
-      "seasonTotal": 3.493102100097944e+21
+      "seasonTotal": 3.6790746214389535e+21
     },
     {
       "gainVsPreviousSeason": -5.2790315527004226e+19,
@@ -176,40 +176,40 @@
       "seasonTotal": 1.5426355574168984e+21
     },
     {
+      "gainVsPreviousSeason": -1.5711008933058393e+21,
+      "name": "faxnem",
+      "rank": 30,
+      "seasonTotal": 1.1402432868338856e+21
+    },
+    {
+      "gainVsPreviousSeason": -3.8270973786112666e+21,
+      "name": "groggen",
+      "rank": 31,
+      "seasonTotal": 1.1145511152317546e+21
+    },
+    {
       "gainVsPreviousSeason": 2.335507816261204e+20,
       "name": "Player 80018314",
-      "rank": 30,
+      "rank": 32,
       "seasonTotal": 1.0108857722556113e+21
     },
     {
       "gainVsPreviousSeason": -1.536653086090771e+21,
       "name": "samwise08",
-      "rank": 31,
+      "rank": 33,
       "seasonTotal": 8.02806558174788e+20
-    },
-    {
-      "gainVsPreviousSeason": -1.9671822473456386e+21,
-      "name": "faxnem",
-      "rank": 32,
-      "seasonTotal": 7.441619327940862e+20
     },
     {
       "gainVsPreviousSeason": -5.463562215531691e+21,
       "name": "Bensayyten",
-      "rank": 33,
+      "rank": 34,
       "seasonTotal": 7.32303207648993e+20
     },
     {
       "gainVsPreviousSeason": 1.0391030444897639e+20,
       "name": "FlyingDutchy",
-      "rank": 34,
-      "seasonTotal": 6.891644804791827e+20
-    },
-    {
-      "gainVsPreviousSeason": -4.2670149301444076e+21,
-      "name": "groggen",
       "rank": 35,
-      "seasonTotal": 6.746335636986133e+20
+      "seasonTotal": 6.891644804791827e+20
     },
     {
       "gainVsPreviousSeason": -3.822050286911618e+20,
@@ -2499,10 +2499,40 @@
             },
             {
               "attempts": [
-                1.807166632675138e+20
+                1.807166632675138e+20,
+                1.859725213410096e+20
               ],
               "name": "HakiLuffy",
-              "top2Sum": 1.807166632675138e+20
+              "top2Sum": 3.666891846085234e+20
+            },
+            {
+              "attempts": [
+                2.9700820856830466e+20,
+                2.951423350770894e+20
+              ],
+              "name": "Apathy_",
+              "top2Sum": 5.921505436453941e+20
+            },
+            {
+              "attempts": [
+                3.151884159000733e+20
+              ],
+              "name": "p88203044",
+              "top2Sum": 3.151884159000733e+20
+            },
+            {
+              "attempts": [
+                3.960813540397994e+20
+              ],
+              "name": "faxnem",
+              "top2Sum": 3.960813540397994e+20
+            },
+            {
+              "attempts": [
+                4.3991755153314126e+20
+              ],
+              "name": "groggen",
+              "top2Sum": 4.3991755153314126e+20
             }
           ]
         }
