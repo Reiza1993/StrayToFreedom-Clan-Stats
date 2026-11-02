@@ -8,34 +8,34 @@
       "seasonTotal": 1.0498638350740657e+24
     },
     {
-      "gainVsPreviousSeason": -2.4229181319644052e+22,
-      "name": "DAYO-P",
+      "gainVsPreviousSeason": -2.8929825531838816e+23,
+      "name": "\u04bban",
       "rank": 2,
-      "seasonTotal": 2.497058827039435e+23
+      "seasonTotal": 3.0488059799264297e+23
     },
     {
-      "gainVsPreviousSeason": -8.796773479327307e+22,
-      "name": "Nubis",
+      "gainVsPreviousSeason": -2.0778229853443624e+22,
+      "name": "DAYO-P",
       "rank": 3,
-      "seasonTotal": 2.1313657587602226e+23
+      "seasonTotal": 2.5315683417014393e+23
+    },
+    {
+      "gainVsPreviousSeason": -6.402170360706423e+22,
+      "name": "Nubis",
+      "rank": 4,
+      "seasonTotal": 2.370826070622311e+23
     },
     {
       "gainVsPreviousSeason": -5.883173661489009e+22,
       "name": "RABBIT5",
-      "rank": 4,
+      "rank": 5,
       "seasonTotal": 1.5926318201856486e+23
     },
     {
-      "gainVsPreviousSeason": -4.4693040398479385e+23,
-      "name": "\u04bban",
-      "rank": 5,
-      "seasonTotal": 1.472484493262373e+23
-    },
-    {
-      "gainVsPreviousSeason": -5.406525126296327e+22,
+      "gainVsPreviousSeason": -4.954163550560525e+22,
       "name": "SngphO",
       "rank": 6,
-      "seasonTotal": 5.861313136823779e+22
+      "seasonTotal": 6.313674712559581e+22
     },
     {
       "gainVsPreviousSeason": -1.2203225992568334e+23,
@@ -140,28 +140,28 @@
       "seasonTotal": 3.0002934897333035e+21
     },
     {
+      "gainVsPreviousSeason": -1.075794611095437e+21,
+      "name": "BlackFlamE",
+      "rank": 24,
+      "seasonTotal": 2.988168916693702e+21
+    },
+    {
       "gainVsPreviousSeason": -4.291576364941296e+20,
       "name": "silverxz",
-      "rank": 24,
+      "rank": 25,
       "seasonTotal": 2.908878318742426e+21
     },
     {
       "gainVsPreviousSeason": -2.904238245302129e+20,
       "name": "BobBobberson",
-      "rank": 25,
+      "rank": 26,
       "seasonTotal": 2.743623335846743e+21
     },
     {
       "gainVsPreviousSeason": -1.7158047668445584e+22,
       "name": "Scoundrel536",
-      "rank": 26,
-      "seasonTotal": 2.6436228793363307e+21
-    },
-    {
-      "gainVsPreviousSeason": -1.4889681174732247e+21,
-      "name": "BlackFlamE",
       "rank": 27,
-      "seasonTotal": 2.5749954103159145e+21
+      "seasonTotal": 2.6436228793363307e+21
     },
     {
       "gainVsPreviousSeason": -9.194001454411271e+20,
@@ -224,10 +224,10 @@
       "seasonTotal": 5.1581147201200534e+20
     },
     {
-      "gainVsPreviousSeason": 1.0609705069694917e+20,
+      "gainVsPreviousSeason": 2.442027561533046e+20,
       "name": "ergiangi",
       "rank": 38,
-      "seasonTotal": 3.200950406543017e+20
+      "seasonTotal": 4.582007461106572e+20
     },
     {
       "gainVsPreviousSeason": -1.150090315168668e+20,
@@ -2453,10 +2453,11 @@
               "attempts": [
                 8.775700732055938e+21,
                 3.4428602083695494e+21,
-                1.0993082510394675e+22
+                1.0993082510394675e+22,
+                1.2226652198256391e+22
               ],
               "name": "DAYO-P",
-              "top2Sum": 1.976878324245061e+22
+              "top2Sum": 2.3219734708651064e+22
             },
             {
               "attempts": [
@@ -2549,6 +2550,45 @@
               ],
               "name": "Cunner88",
               "top2Sum": 9.461532608285414e+21
+            },
+            {
+              "attempts": [
+                8.840074991424113e+22,
+                6.923139875216457e+22
+              ],
+              "name": "\u04bban",
+              "top2Sum": 1.576321486664057e+23
+            },
+            {
+              "attempts": [
+                1.9434719594842318e+21,
+                2.5801437978737875e+21
+              ],
+              "name": "SngphO",
+              "top2Sum": 4.5236157573580194e+21
+            },
+            {
+              "attempts": [
+                1.9786525488392693e+20,
+                2.1530825149386084e+20
+              ],
+              "name": "BlackFlamE",
+              "top2Sum": 4.131735063777878e+20
+            },
+            {
+              "attempts": [
+                1.150022549355813e+22,
+                1.244580569265071e+22
+              ],
+              "name": "Nubis",
+              "top2Sum": 2.3946031186208837e+22
+            },
+            {
+              "attempts": [
+                1.3810570545635543e+20
+              ],
+              "name": "ergiangi",
+              "top2Sum": 1.3810570545635543e+20
             }
           ]
         }
