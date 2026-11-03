@@ -56,10 +56,10 @@
       "seasonTotal": 1.9720691963963875e+22
     },
     {
-      "gainVsPreviousSeason": -1.0996414464969241e+21,
+      "gainVsPreviousSeason": 1.0438937413663892e+21,
       "name": "NeonCBV",
       "rank": 10,
-      "seasonTotal": 1.324052559409565e+22
+      "seasonTotal": 1.5384060781958963e+22
     },
     {
       "gainVsPreviousSeason": -1.057886010986226e+22,
@@ -74,10 +74,10 @@
       "seasonTotal": 8.633792700973655e+21
     },
     {
-      "gainVsPreviousSeason": -4.517774803825223e+19,
+      "gainVsPreviousSeason": 5.795252216805898e+20,
       "name": "p88203044",
       "rank": 13,
-      "seasonTotal": 6.985917597093819e+21
+      "seasonTotal": 7.610620566812661e+21
     },
     {
       "gainVsPreviousSeason": -2.3750606295733675e+21,
@@ -98,22 +98,22 @@
       "seasonTotal": 5.483720443263569e+21
     },
     {
+      "gainVsPreviousSeason": -2.204278475991681e+21,
+      "name": "Apathy_",
+      "rank": 17,
+      "seasonTotal": 5.378472489835975e+21
+    },
+    {
       "gainVsPreviousSeason": -1.4481304044067143e+22,
       "name": "Scoundrel536",
-      "rank": 17,
+      "rank": 18,
       "seasonTotal": 5.320366503714772e+21
     },
     {
       "gainVsPreviousSeason": -1.801116651557769e+22,
       "name": "pumpenjoe",
-      "rank": 18,
-      "seasonTotal": 5.064043263058747e+21
-    },
-    {
-      "gainVsPreviousSeason": -2.843151362625955e+21,
-      "name": "Apathy_",
       "rank": 19,
-      "seasonTotal": 4.739599603201701e+21
+      "seasonTotal": 5.064043263058747e+21
     },
     {
       "gainVsPreviousSeason": -2.924683708178109e+21,
@@ -146,22 +146,22 @@
       "seasonTotal": 3.3681064328951056e+21
     },
     {
+      "gainVsPreviousSeason": -8.826019045297084e+20,
+      "name": "BlackFlamE",
+      "rank": 25,
+      "seasonTotal": 3.181361623259431e+21
+    },
+    {
       "gainVsPreviousSeason": -9.016108028905186e+20,
       "name": "EMBALOCO",
-      "rank": 25,
+      "rank": 26,
       "seasonTotal": 3.177532466465348e+21
     },
     {
-      "gainVsPreviousSeason": -1.075794611095437e+21,
-      "name": "BlackFlamE",
-      "rank": 26,
-      "seasonTotal": 2.988168916693702e+21
-    },
-    {
-      "gainVsPreviousSeason": -2.904238245302129e+20,
+      "gainVsPreviousSeason": 4.687776645964051e+19,
       "name": "BobBobberson",
       "rank": 27,
-      "seasonTotal": 2.743623335846743e+21
+      "seasonTotal": 3.0809249268365965e+21
     },
     {
       "gainVsPreviousSeason": 1.762205608070227e+21,
@@ -170,10 +170,10 @@
       "seasonTotal": 2.3363756983074876e+21
     },
     {
-      "gainVsPreviousSeason": -7.16571156288766e+20,
+      "gainVsPreviousSeason": -5.103609463357815e+20,
       "name": "gubrax",
       "rank": 29,
-      "seasonTotal": 2.0749036840348623e+21
+      "seasonTotal": 2.2811138939878467e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -200,16 +200,16 @@
       "seasonTotal": 1.1145511152317546e+21
     },
     {
-      "gainVsPreviousSeason": 2.335507816261204e+20,
-      "name": "Player 80018314",
+      "gainVsPreviousSeason": -1.272560850388998e+21,
+      "name": "samwise08",
       "rank": 34,
-      "seasonTotal": 1.0108857722556113e+21
+      "seasonTotal": 1.0668987938765613e+21
     },
     {
-      "gainVsPreviousSeason": -1.403022429745785e+21,
-      "name": "samwise08",
+      "gainVsPreviousSeason": 2.335507816261204e+20,
+      "name": "Player 80018314",
       "rank": 35,
-      "seasonTotal": 9.364372145197742e+20
+      "seasonTotal": 1.0108857722556113e+21
     },
     {
       "gainVsPreviousSeason": 6.626138671455669e+20,
@@ -2666,10 +2666,11 @@
           "players": [
             {
               "attempts": [
-                6.655859378599522e+20
+                6.655859378599522e+20,
+                6.247029697188425e+20
               ],
               "name": "p88203044",
-              "top2Sum": 6.655859378599522e+20
+              "top2Sum": 1.2902889075787946e+21
             },
             {
               "attempts": [
@@ -2787,6 +2788,50 @@
               ],
               "name": "RexPanda",
               "top2Sum": 1.9040683571505332e+21
+            },
+            {
+              "attempts": [
+                3.370445349480496e+20,
+                3.018283516862247e+20
+              ],
+              "name": "Apathy_",
+              "top2Sum": 6.388728866342744e+20
+            },
+            {
+              "attempts": [
+                1.0403256736886299e+20,
+                1.0217764258412152e+20
+              ],
+              "name": "gubrax",
+              "top2Sum": 2.0621020995298453e+20
+            },
+            {
+              "attempts": [
+                1.3046157935678718e+20
+              ],
+              "name": "samwise08",
+              "top2Sum": 1.3046157935678718e+20
+            },
+            {
+              "attempts": [
+                3.3730159098985336e+20
+              ],
+              "name": "BobBobberson",
+              "top2Sum": 3.3730159098985336e+20
+            },
+            {
+              "attempts": [
+                1.9319270656572863e+20
+              ],
+              "name": "BlackFlamE",
+              "top2Sum": 1.9319270656572863e+20
+            },
+            {
+              "attempts": [
+                2.143535187863314e+21
+              ],
+              "name": "NeonCBV",
+              "top2Sum": 2.143535187863314e+21
             }
           ]
         }
