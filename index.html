@@ -814,10 +814,12 @@
 
             <!-- CX Tab -->
             <div id="cx-tab" class="subtab-content" style="display: none;">
+                <select id="cxSeasonSelect" style="width:100%; margin-bottom:8px; display:none;"></select>
                 <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px; margin-bottom: 12px;">
                     <div class="calc-stat-card" style="border-color: #276749;">
                         <div class="calc-stat-label" data-i18n="stat.total_cx_rank">Total CX Rank</div>
                         <div class="calc-stat-value" style="color: #68d391;" id="cx-total-rank">—</div>
+                        <div style="font-size:10px; color:#a0aec0; margin-top:2px;" id="cx-milestone-status"></div>
                     </div>
                     <div class="calc-stat-card" style="border-color: #276749;">
                         <div class="calc-stat-label" data-i18n="stat.total_cx_boss">Total CX Boss</div>
@@ -1119,7 +1121,7 @@
         // departed members, so CurrentTotal - PreviousTotal stays accurate
         // even when a top-30 contributor has since left the clan.
         const gainPool = [...allPlayers, ...departedPlayers];
-        const topCXRankScore = Math.max(0, ...allPlayers.map(p => p.cxRankScore || 0));
+        let topCXRankScore = Math.max(0, ...allPlayers.map(p => p.cxRankScore || 0));
         let filteredData = [...allPlayers];
         let currentSort  = 'attack';
         let currentSubTab = 'stats';
@@ -1143,6 +1145,7 @@
             ],
             cx: [
                 { value: 'cxRank', key: 'ctrl.sort_cx_rank' },
+                { value: 'cxMilestone', key: 'ctrl.sort_cx_milestone' },
                 { value: 'cxBoss', key: 'ctrl.sort_cx_boss' },
                 { value: 'name',   key: 'ctrl.sort_name' },
                 { value: 'role',   key: 'ctrl.sort_role' }
@@ -1224,10 +1227,114 @@
         }
 
         function calculateCXTabSummary() {
+            const totalRankEl = document.getElementById('cx-total-rank');
+            const statusEl = document.getElementById('cx-milestone-status');
+            if (currentCXSeason) {
+                // The season file's own totals (the whole leaderboard, incl.
+                // members who've since left) - not a roster re-sum.
+                const rank = currentCXSeason.cxRank || {};
+                const boss = currentCXSeason.cxBoss || {};
+                const snap = currentCXSeason.milestoneSnapshot;
+                const milestone = currentCXSeason.milestone || 0;
+                totalRankEl.innerHTML = `${(rank.total || 0).toLocaleString()}<span style="color:#718096;font-size:0.7em;"> / ${milestone.toLocaleString()}</span>`;
+                document.getElementById('cx-total-boss').textContent = boss.total != null ? boss.total.toLocaleString() : '—';
+                if (!currentCXSeason.resetSeen) {
+                    statusEl.textContent = t('cx.waiting_reset');
+                    statusEl.style.color = '#a0aec0';
+                } else if (snap) {
+                    statusEl.textContent = `${t('cx.boss_unlocked')} ${formatCycleDate(snap.reachedAt)}`;
+                    statusEl.style.color = '#68d391';
+                } else {
+                    statusEl.textContent = t('cx.boss_locked');
+                    statusEl.style.color = '#f6ad55';
+                }
+                return;
+            }
             const totalRank = allPlayers.reduce((s, p) => s + (p.cxRankScore || 0), 0);
             const totalBoss = allPlayers.reduce((s, p) => s + (p.cxBossScore || 0), 0);
-            document.getElementById('cx-total-rank').textContent = totalRank.toLocaleString();
+            totalRankEl.textContent = totalRank.toLocaleString();
             document.getElementById('cx-total-boss').textContent = totalBoss.toLocaleString();
+            statusEl.textContent = '';
+        }
+
+        // ══════════════════════════════════════════════
+        //  CLAN EXPLORATION — weekly seasons (Thursday 03:00 to Thursday
+        //  03:00), one JSON file per season, pushed by SterbyToolsGo's CX
+        //  Season Auto-Scan as "Clan Exploration/Season CX{n}.json" and
+        //  probed sequentially from 1 until a fetch fails — the same
+        //  pattern as LME History and Ender's Echo. Each file holds the
+        //  CX Rank snapshot from the moment the clan hit the milestone
+        //  (boss unlocked), the latest CX Rank, and the latest CX Boss.
+        //  The selected season's values replace the legacy
+        //  playerCXRank.js / playerCXBoss.js ones (still the fallback
+        //  when no season file exists yet).
+        // ══════════════════════════════════════════════
+        const CX_SEASONS_FOLDER = 'Clan Exploration';
+        let cxSeasonsCache = {};
+        let currentCXSeason = null;
+
+        async function fetchCXSeason(n) {
+            try {
+                const res = await fetch(encodeURI(`${CX_SEASONS_FOLDER}/Season CX${n}.json`), { cache: 'no-cache' });
+                if (!res.ok) return null;
+                return await res.json();
+            } catch (err) {
+                return null;
+            }
+        }
+
+        function scoresByUid(section) {
+            const map = new Map();
+            ((section && section.members) || []).forEach(m => map.set(String(m.uid), m.score || 0));
+            return map;
+        }
+
+        function applyCXSeason() {
+            if (currentCXSeason) {
+                const rank = scoresByUid(currentCXSeason.cxRank);
+                const boss = scoresByUid(currentCXSeason.cxBoss);
+                const snap = currentCXSeason.milestoneSnapshot ? scoresByUid(currentCXSeason.milestoneSnapshot) : null;
+                allPlayers.forEach(p => {
+                    p.cxRankScore = rank.get(String(p.id)) ?? 0;
+                    p.cxBossScore = boss.get(String(p.id)) ?? 0;
+                    p.cxMilestoneScore = snap ? (snap.get(String(p.id)) ?? 0) : null;
+                });
+            }
+            topCXRankScore = Math.max(0, ...allPlayers.map(p => p.cxRankScore || 0));
+            calculateCXTabSummary();
+            if (currentSubTab === 'cx') {
+                updateTableHeader();
+                filterData(document.getElementById('searchInput').value);
+            }
+        }
+
+        async function loadCXSeasons() {
+            const select = document.getElementById('cxSeasonSelect');
+            if (!select) return;
+            select.innerHTML = '';
+            cxSeasonsCache = {};
+            let n = 1;
+            let latest = null;
+            while (true) {
+                const season = await fetchCXSeason(n);
+                if (!season) break;
+                cxSeasonsCache[season.seasonNumber] = season;
+                const option = document.createElement('option');
+                option.value = season.seasonNumber;
+                option.textContent = `${t('cx.season')} ${season.seasonNumber} — ${formatCycleDate(season.startAt)}`;
+                select.insertBefore(option, select.firstChild);
+                latest = season;
+                n++;
+            }
+            select.style.display = latest ? '' : 'none';
+            if (!latest) return;
+            select.value = latest.seasonNumber;
+            currentCXSeason = latest;
+            select.onchange = () => {
+                currentCXSeason = cxSeasonsCache[select.value] || null;
+                applyCXSeason();
+            };
+            applyCXSeason();
         }
 
         function translateLeague(str) {
@@ -2491,6 +2598,7 @@
                     <th data-i18n="table.col.rank">#</th>
                     <th data-i18n="table.col.player_name">Player Name</th>
                     <th><img src="${ICON_BASE}CX.png" alt="CX Rank" style="width:20px;height:20px;vertical-align:middle;margin-right:4px;" onerror="this.style.display='none'"><span data-i18n="table.col.cx_rank_score">CX Rank Score</span></th>
+                    ${currentCXSeason ? `<th>${t('table.col.cx_at_milestone')}<span style="display:block;font-size:10px;color:#a0aec0;font-weight:400;">${(currentCXSeason.milestone || 0).toLocaleString()}</span></th>` : ''}
                     <th data-i18n="table.col.cx_boss_score">CX Boss Score</th>`;
             }
             applyTranslations();
@@ -2535,6 +2643,7 @@
                     </td>`;
                 } else if (currentSubTab === 'cx') {
                     cells += `<td style="text-align:center;font-weight:600;color:${getCXRankColor(player.cxRankScore)};">${player.cxRankScore.toLocaleString()}</td>
+                    ${currentCXSeason ? `<td style="text-align:center;color:#cbd5e0;">${player.cxMilestoneScore == null ? '—' : player.cxMilestoneScore.toLocaleString()}</td>` : ''}
                     <td style="text-align:center;font-weight:600;color:#a78bfa;">${player.cxBossScore.toLocaleString()}</td>`;
                 }
                 row.innerHTML = cells;
@@ -2569,6 +2678,9 @@
                     break;
                 case 'cxBoss':
                     filteredData.sort((a, b) => b.cxBossScore - a.cxBossScore);
+                    break;
+                case 'cxMilestone':
+                    filteredData.sort((a, b) => (b.cxMilestoneScore ?? -1) - (a.cxMilestoneScore ?? -1));
                     break;
                 case 'role':
                     filteredData.sort((a, b) => {
@@ -3062,6 +3174,7 @@
         loadLunarDetails();
         loadAlumni();
         loadEnderEchoSeasons();
+        loadCXSeasons();
         switchSubTab('stats');
 
         // Restore language preference
