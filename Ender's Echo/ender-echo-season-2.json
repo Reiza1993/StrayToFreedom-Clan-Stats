@@ -20,10 +20,10 @@
       "seasonTotal": 2.745518012587251e+23
     },
     {
-      "gainVsPreviousSeason": -6.402170360706423e+22,
+      "gainVsPreviousSeason": -4.944924768836255e+22,
       "name": "Nubis",
       "rank": 4,
-      "seasonTotal": 2.370826070622311e+23
+      "seasonTotal": 2.516550629809328e+23
     },
     {
       "gainVsPreviousSeason": -4.141852778515117e+22,
@@ -2832,6 +2832,13 @@
               ],
               "name": "NeonCBV",
               "top2Sum": 2.143535187863314e+21
+            },
+            {
+              "attempts": [
+                1.4572455918701686e+22
+              ],
+              "name": "Nubis",
+              "top2Sum": 1.4572455918701686e+22
             }
           ]
         }
