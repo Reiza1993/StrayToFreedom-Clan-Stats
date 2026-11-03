@@ -32,10 +32,10 @@
       "seasonTotal": 1.9966802993684622e+23
     },
     {
-      "gainVsPreviousSeason": -4.2023785553941395e+22,
+      "gainVsPreviousSeason": -3.4751632774937667e+22,
       "name": "SngphO",
       "rank": 6,
-      "seasonTotal": 7.0654597077259665e+22
+      "seasonTotal": 7.79267498562634e+22
     },
     {
       "gainVsPreviousSeason": -1.1017599034359209e+23,
@@ -50,10 +50,10 @@
       "seasonTotal": 2.6502313344272825e+22
     },
     {
-      "gainVsPreviousSeason": -2.3059879114548288e+20,
+      "gainVsPreviousSeason": 2.155983389647918e+21,
       "name": "MadameMischief",
       "rank": 9,
-      "seasonTotal": 1.9720691963963875e+22
+      "seasonTotal": 2.2107274144757276e+22
     },
     {
       "gainVsPreviousSeason": 1.0438937413663892e+21,
@@ -62,22 +62,22 @@
       "seasonTotal": 1.5384060781958963e+22
     },
     {
+      "gainVsPreviousSeason": 4.2429714998856096e+20,
+      "name": "\u76feHeathcliff\u5263",
+      "rank": 11,
+      "seasonTotal": 9.779799049401138e+21
+    },
+    {
       "gainVsPreviousSeason": 1.5484897122955286e+21,
       "name": "Player 66607264",
-      "rank": 11,
+      "rank": 12,
       "seasonTotal": 9.730501394281112e+21
     },
     {
       "gainVsPreviousSeason": -1.057886010986226e+22,
       "name": "PastalaVista",
-      "rank": 12,
-      "seasonTotal": 9.116293757244753e+21
-    },
-    {
-      "gainVsPreviousSeason": -4.151994063830311e+20,
-      "name": "\u76feHeathcliff\u5263",
       "rank": 13,
-      "seasonTotal": 8.940302493029546e+21
+      "seasonTotal": 9.116293757244753e+21
     },
     {
       "gainVsPreviousSeason": 5.795252216805898e+20,
@@ -98,22 +98,22 @@
       "seasonTotal": 6.302629015978649e+21
     },
     {
+      "gainVsPreviousSeason": -1.4416882050100636e+21,
+      "name": "VictorMolusco",
+      "rank": 17,
+      "seasonTotal": 6.111655398137055e+21
+    },
+    {
       "gainVsPreviousSeason": -2.204278475991681e+21,
       "name": "Apathy_",
-      "rank": 17,
+      "rank": 18,
       "seasonTotal": 5.378472489835975e+21
     },
     {
       "gainVsPreviousSeason": -1.4481304044067143e+22,
       "name": "Scoundrel536",
-      "rank": 18,
-      "seasonTotal": 5.320366503714772e+21
-    },
-    {
-      "gainVsPreviousSeason": -2.2711548431667602e+21,
-      "name": "VictorMolusco",
       "rank": 19,
-      "seasonTotal": 5.282188759980359e+21
+      "seasonTotal": 5.320366503714772e+21
     },
     {
       "gainVsPreviousSeason": -1.801116651557769e+22,
@@ -182,22 +182,22 @@
       "seasonTotal": 1.9040683571505332e+21
     },
     {
+      "gainVsPreviousSeason": -3.3756970631585134e+21,
+      "name": "groggen",
+      "rank": 31,
+      "seasonTotal": 1.5659514306845076e+21
+    },
+    {
       "gainVsPreviousSeason": null,
       "name": "RecPanda",
-      "rank": 31,
+      "rank": 32,
       "seasonTotal": 1.5426355574168984e+21
     },
     {
       "gainVsPreviousSeason": -1.5711008933058393e+21,
       "name": "faxnem",
-      "rank": 32,
-      "seasonTotal": 1.1402432868338856e+21
-    },
-    {
-      "gainVsPreviousSeason": -3.8270973786112666e+21,
-      "name": "groggen",
       "rank": 33,
-      "seasonTotal": 1.1145511152317546e+21
+      "seasonTotal": 1.1402432868338856e+21
     },
     {
       "gainVsPreviousSeason": 3.1641366618181114e+20,
@@ -2938,10 +2938,42 @@
             },
             {
               "attempts": [
-                9.337735520661938e+20
+                9.337735520661938e+20,
+                8.394965563715906e+20
               ],
               "name": "\u76feHeathcliff\u5263",
-              "top2Sum": 9.337735520661938e+20
+              "top2Sum": 1.7732701084377846e+21
+            },
+            {
+              "attempts": [
+                4.118834984619344e+20,
+                4.175831396947619e+20
+              ],
+              "name": "VictorMolusco",
+              "top2Sum": 8.294666381566963e+20
+            },
+            {
+              "attempts": [
+                4.514003154527532e+20
+              ],
+              "name": "groggen",
+              "top2Sum": 4.514003154527532e+20
+            },
+            {
+              "attempts": [
+                3.190217519727526e+21,
+                4.081935259276201e+21
+              ],
+              "name": "SngphO",
+              "top2Sum": 7.272152779003726e+21
+            },
+            {
+              "attempts": [
+                1.1211473106857675e+21,
+                1.2654348701076341e+21
+              ],
+              "name": "MadameMischief",
+              "top2Sum": 2.3865821807934015e+21
             }
           ]
         }
