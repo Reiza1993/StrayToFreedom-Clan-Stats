@@ -122,16 +122,16 @@
       "seasonTotal": 4.62865989496901e+21
     },
     {
-      "gainVsPreviousSeason": -2.808534051621299e+21,
-      "name": "HakiLuffy",
+      "gainVsPreviousSeason": -1.2907080319467394e+21,
+      "name": "theLP",
       "rank": 21,
-      "seasonTotal": 4.21317777233151e+21
+      "seasonTotal": 4.3303027460861424e+21
     },
     {
-      "gainVsPreviousSeason": -1.8719471326705243e+21,
-      "name": "theLP",
+      "gainVsPreviousSeason": -2.808534051621299e+21,
+      "name": "HakiLuffy",
       "rank": 22,
-      "seasonTotal": 3.7490636453623575e+21
+      "seasonTotal": 4.21317777233151e+21
     },
     {
       "gainVsPreviousSeason": 1.6317574380319775e+20,
@@ -140,16 +140,16 @@
       "seasonTotal": 3.5012116990397535e+21
     },
     {
-      "gainVsPreviousSeason": -9.016108028905186e+20,
-      "name": "EMBALOCO",
+      "gainVsPreviousSeason": 2.134094538435267e+20,
+      "name": "Rzzza",
       "rank": 24,
-      "seasonTotal": 3.177532466465348e+21
+      "seasonTotal": 3.3681064328951056e+21
     },
     {
-      "gainVsPreviousSeason": -2.837624638478431e+19,
-      "name": "Rzzza",
+      "gainVsPreviousSeason": -9.016108028905186e+20,
+      "name": "EMBALOCO",
       "rank": 25,
-      "seasonTotal": 3.1263207326667946e+21
+      "seasonTotal": 3.177532466465348e+21
     },
     {
       "gainVsPreviousSeason": -1.075794611095437e+21,
@@ -177,62 +177,68 @@
     },
     {
       "gainVsPreviousSeason": null,
-      "name": "RecPanda",
+      "name": "RexPanda",
       "rank": 30,
+      "seasonTotal": 1.9040683571505332e+21
+    },
+    {
+      "gainVsPreviousSeason": null,
+      "name": "RecPanda",
+      "rank": 31,
       "seasonTotal": 1.5426355574168984e+21
     },
     {
       "gainVsPreviousSeason": -1.5711008933058393e+21,
       "name": "faxnem",
-      "rank": 31,
+      "rank": 32,
       "seasonTotal": 1.1402432868338856e+21
     },
     {
       "gainVsPreviousSeason": -3.8270973786112666e+21,
       "name": "groggen",
-      "rank": 32,
+      "rank": 33,
       "seasonTotal": 1.1145511152317546e+21
     },
     {
       "gainVsPreviousSeason": 2.335507816261204e+20,
       "name": "Player 80018314",
-      "rank": 33,
+      "rank": 34,
       "seasonTotal": 1.0108857722556113e+21
     },
     {
       "gainVsPreviousSeason": -1.403022429745785e+21,
       "name": "samwise08",
-      "rank": 34,
+      "rank": 35,
       "seasonTotal": 9.364372145197742e+20
     },
     {
       "gainVsPreviousSeason": 6.626138671455669e+20,
       "name": "ergiangi",
-      "rank": 35,
+      "rank": 36,
       "seasonTotal": 8.766118571029194e+20
     },
     {
       "gainVsPreviousSeason": -5.463562215531691e+21,
       "name": "Bensayyten",
-      "rank": 36,
+      "rank": 37,
       "seasonTotal": 7.32303207648993e+20
     },
     {
       "gainVsPreviousSeason": -3.3253711201039666e+20,
       "name": "Belthazar",
-      "rank": 37,
+      "rank": 38,
       "seasonTotal": 7.041705948683979e+20
     },
     {
       "gainVsPreviousSeason": 1.0391030444897639e+20,
       "name": "FlyingDutchy",
-      "rank": 38,
+      "rank": 39,
       "seasonTotal": 6.891644804791827e+20
     },
     {
       "gainVsPreviousSeason": -1.150090315168668e+20,
       "name": "Cheeselife",
-      "rank": 39,
+      "rank": 40,
       "seasonTotal": 7.364656242567449e+19
     }
   ],
@@ -2758,6 +2764,29 @@
               ],
               "name": "Scoundrel536",
               "top2Sum": 2.6767436243784413e+21
+            },
+            {
+              "attempts": [
+                2.1692278056865464e+20,
+                3.643163201551301e+20
+              ],
+              "name": "theLP",
+              "top2Sum": 5.812391007237847e+20
+            },
+            {
+              "attempts": [
+                2.4178570022831125e+20
+              ],
+              "name": "Rzzza",
+              "top2Sum": 2.4178570022831125e+20
+            },
+            {
+              "attempts": [
+                1.0048796058523802e+21,
+                8.99188751298153e+20
+              ],
+              "name": "RexPanda",
+              "top2Sum": 1.9040683571505332e+21
             }
           ]
         }
