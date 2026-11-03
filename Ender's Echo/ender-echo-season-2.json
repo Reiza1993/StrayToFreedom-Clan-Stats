@@ -14,10 +14,10 @@
       "seasonTotal": 3.0488059799264297e+23
     },
     {
-      "gainVsPreviousSeason": 6.167372351375462e+20,
+      "gainVsPreviousSeason": 2.8746732778817384e+22,
       "name": "DAYO-P",
       "rank": 3,
-      "seasonTotal": 2.745518012587251e+23
+      "seasonTotal": 3.026817968024049e+23
     },
     {
       "gainVsPreviousSeason": -4.075231074456813e+22,
@@ -74,10 +74,10 @@
       "seasonTotal": 9.116293757244753e+21
     },
     {
-      "gainVsPreviousSeason": -1.3489729584492246e+21,
+      "gainVsPreviousSeason": -4.151994063830311e+20,
       "name": "\u76feHeathcliff\u5263",
       "rank": 13,
-      "seasonTotal": 8.006528940963353e+21
+      "seasonTotal": 8.940302493029546e+21
     },
     {
       "gainVsPreviousSeason": 5.795252216805898e+20,
@@ -92,10 +92,10 @@
       "seasonTotal": 6.499004604077939e+21
     },
     {
-      "gainVsPreviousSeason": -9.563688482432363e+20,
+      "gainVsPreviousSeason": -1.3746027552815605e+20,
       "name": "Gritchen",
       "rank": 16,
-      "seasonTotal": 5.483720443263569e+21
+      "seasonTotal": 6.302629015978649e+21
     },
     {
       "gainVsPreviousSeason": -2.204278475991681e+21,
@@ -2918,6 +2918,30 @@
               ],
               "name": "Fl3xas",
               "top2Sum": 1.1872526226815853e+23
+            },
+            {
+              "attempts": [
+                4.742461146050002e+20,
+                3.446624581100801e+20
+              ],
+              "name": "Gritchen",
+              "top2Sum": 8.189085727150804e+20
+            },
+            {
+              "attempts": [
+                1.207679938483671e+22,
+                1.5797721088733661e+22,
+                1.2332274454946187e+22
+              ],
+              "name": "DAYO-P",
+              "top2Sum": 2.8129995543679846e+22
+            },
+            {
+              "attempts": [
+                9.337735520661938e+20
+              ],
+              "name": "\u76feHeathcliff\u5263",
+              "top2Sum": 9.337735520661938e+20
             }
           ]
         }
