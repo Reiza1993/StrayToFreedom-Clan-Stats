@@ -14,10 +14,10 @@
       "seasonTotal": 3.0488059799264297e+23
     },
     {
-      "gainVsPreviousSeason": 2.8746732778817384e+22,
+      "gainVsPreviousSeason": 3.0288071982717872e+22,
       "name": "DAYO-P",
       "rank": 3,
-      "seasonTotal": 3.026817968024049e+23
+      "seasonTotal": 3.042231360063054e+23
     },
     {
       "gainVsPreviousSeason": -4.075231074456813e+22,
@@ -26,10 +26,10 @@
       "seasonTotal": 2.603519999247272e+23
     },
     {
-      "gainVsPreviousSeason": -1.8426888696608728e+22,
+      "gainVsPreviousSeason": 6.393063215559021e+21,
       "name": "RABBIT5",
       "rank": 5,
-      "seasonTotal": 1.9966802993684622e+23
+      "seasonTotal": 2.2448798184901397e+23
     },
     {
       "gainVsPreviousSeason": -3.4751632774937667e+22,
@@ -104,10 +104,10 @@
       "seasonTotal": 6.111655398137055e+21
     },
     {
-      "gainVsPreviousSeason": -2.204278475991681e+21,
+      "gainVsPreviousSeason": -1.518907313802406e+21,
       "name": "Apathy_",
       "rank": 18,
-      "seasonTotal": 5.378472489835975e+21
+      "seasonTotal": 6.06384365202525e+21
     },
     {
       "gainVsPreviousSeason": -1.4481304044067143e+22,
@@ -182,22 +182,22 @@
       "seasonTotal": 2.2811138939878467e+21
     },
     {
+      "gainVsPreviousSeason": -1.095813709490032e+21,
+      "name": "faxnem",
+      "rank": 31,
+      "seasonTotal": 1.615530470649693e+21
+    },
+    {
       "gainVsPreviousSeason": -3.3756970631585134e+21,
       "name": "groggen",
-      "rank": 31,
+      "rank": 32,
       "seasonTotal": 1.5659514306845076e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "RecPanda",
-      "rank": 32,
-      "seasonTotal": 1.5426355574168984e+21
-    },
-    {
-      "gainVsPreviousSeason": -1.5711008933058393e+21,
-      "name": "faxnem",
       "rank": 33,
-      "seasonTotal": 1.1402432868338856e+21
+      "seasonTotal": 1.5426355574168984e+21
     },
     {
       "gainVsPreviousSeason": 3.1641366618181114e+20,
@@ -2931,10 +2931,11 @@
               "attempts": [
                 1.207679938483671e+22,
                 1.5797721088733661e+22,
-                1.2332274454946187e+22
+                1.2332274454946187e+22,
+                1.3873613658846646e+22
               ],
               "name": "DAYO-P",
-              "top2Sum": 2.8129995543679846e+22
+              "top2Sum": 2.967133474758031e+22
             },
             {
               "attempts": [
@@ -3005,6 +3006,29 @@
               ],
               "name": "RexPanda",
               "top2Sum": 1.8172703515514466e+21
+            },
+            {
+              "attempts": [
+                2.9326111413827613e+20,
+                3.921100480509988e+20
+              ],
+              "name": "Apathy_",
+              "top2Sum": 6.85371162189275e+20
+            },
+            {
+              "attempts": [
+                4.7528718381580734e+20
+              ],
+              "name": "faxnem",
+              "top2Sum": 4.7528718381580734e+20
+            },
+            {
+              "attempts": [
+                1.3506191236745293e+22,
+                1.1313760675422446e+22
+              ],
+              "name": "RABBIT5",
+              "top2Sum": 2.481995191216774e+22
             }
           ]
         }
