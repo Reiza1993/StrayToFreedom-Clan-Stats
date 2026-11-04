@@ -140,22 +140,22 @@
       "seasonTotal": 3.72133870870198e+21
     },
     {
+      "gainVsPreviousSeason": 6.561896535291346e+20,
+      "name": "BobBobberson",
+      "rank": 24,
+      "seasonTotal": 3.6902368139060907e+21
+    },
+    {
       "gainVsPreviousSeason": -5.693415985428022e+20,
       "name": "EMBALOCO",
-      "rank": 24,
+      "rank": 25,
       "seasonTotal": 3.5098016708130646e+21
     },
     {
       "gainVsPreviousSeason": 1.6317574380319775e+20,
       "name": "silverxz",
-      "rank": 25,
-      "seasonTotal": 3.5012116990397535e+21
-    },
-    {
-      "gainVsPreviousSeason": 3.389807687677064e+20,
-      "name": "BobBobberson",
       "rank": 26,
-      "seasonTotal": 3.3730279291446624e+21
+      "seasonTotal": 3.5012116990397535e+21
     },
     {
       "gainVsPreviousSeason": 2.134094538435267e+20,
@@ -3029,6 +3029,13 @@
               ],
               "name": "RABBIT5",
               "top2Sum": 2.481995191216774e+22
+            },
+            {
+              "attempts": [
+                3.1720888476142803e+20
+              ],
+              "name": "BobBobberson",
+              "top2Sum": 3.1720888476142803e+20
             }
           ]
         }
