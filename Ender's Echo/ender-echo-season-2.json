@@ -2,22 +2,22 @@
   "endDate": "2026-11-18",
   "leaderboard": [
     {
-      "gainVsPreviousSeason": -3.236667949376048e+23,
+      "gainVsPreviousSeason": -2.2492948721338277e+23,
       "name": "Fl3xas",
       "rank": 1,
-      "seasonTotal": 1.283654466661619e+24
+      "seasonTotal": 1.382391774385841e+24
+    },
+    {
+      "gainVsPreviousSeason": 5.423075456992273e+22,
+      "name": "DAYO-P",
+      "rank": 2,
+      "seasonTotal": 3.281658185935103e+23
     },
     {
       "gainVsPreviousSeason": -2.8929825531838816e+23,
       "name": "\u04bban",
-      "rank": 2,
-      "seasonTotal": 3.0488059799264297e+23
-    },
-    {
-      "gainVsPreviousSeason": 3.0288071982717872e+22,
-      "name": "DAYO-P",
       "rank": 3,
-      "seasonTotal": 3.042231360063054e+23
+      "seasonTotal": 3.0488059799264297e+23
     },
     {
       "gainVsPreviousSeason": -4.075231074456813e+22,
@@ -86,16 +86,16 @@
       "seasonTotal": 8.958797616069986e+21
     },
     {
-      "gainVsPreviousSeason": -1.426106593766918e+22,
-      "name": "RetinaDNA",
+      "gainVsPreviousSeason": 5.159577432368496e+20,
+      "name": "Gritchen",
       "rank": 15,
-      "seasonTotal": 6.499004604077939e+21
+      "seasonTotal": 6.956047034743654e+21
     },
     {
-      "gainVsPreviousSeason": -1.3746027552815605e+20,
-      "name": "Gritchen",
+      "gainVsPreviousSeason": -1.426106593766918e+22,
+      "name": "RetinaDNA",
       "rank": 16,
-      "seasonTotal": 6.302629015978649e+21
+      "seasonTotal": 6.499004604077939e+21
     },
     {
       "gainVsPreviousSeason": -1.4416882050100636e+21,
@@ -110,22 +110,22 @@
       "seasonTotal": 6.06384365202525e+21
     },
     {
+      "gainVsPreviousSeason": -1.670484951533357e+21,
+      "name": "HakiLuffy",
+      "rank": 19,
+      "seasonTotal": 5.351226872419452e+21
+    },
+    {
       "gainVsPreviousSeason": -1.4481304044067143e+22,
       "name": "Scoundrel536",
-      "rank": 19,
+      "rank": 20,
       "seasonTotal": 5.320366503714772e+21
     },
     {
       "gainVsPreviousSeason": -1.801116651557769e+22,
       "name": "pumpenjoe",
-      "rank": 20,
-      "seasonTotal": 5.064043263058747e+21
-    },
-    {
-      "gainVsPreviousSeason": -2.2375935693901487e+21,
-      "name": "HakiLuffy",
       "rank": 21,
-      "seasonTotal": 4.78411825456266e+21
+      "seasonTotal": 5.064043263058747e+21
     },
     {
       "gainVsPreviousSeason": -1.2907080319467394e+21,
@@ -134,22 +134,22 @@
       "seasonTotal": 4.3303027460861424e+21
     },
     {
+      "gainVsPreviousSeason": -3.501096715593109e+20,
+      "name": "EMBALOCO",
+      "rank": 23,
+      "seasonTotal": 3.729033597796556e+21
+    },
+    {
       "gainVsPreviousSeason": null,
       "name": "RexPanda",
-      "rank": 23,
+      "rank": 24,
       "seasonTotal": 3.72133870870198e+21
     },
     {
       "gainVsPreviousSeason": 6.561896535291346e+20,
       "name": "BobBobberson",
-      "rank": 24,
-      "seasonTotal": 3.6902368139060907e+21
-    },
-    {
-      "gainVsPreviousSeason": -5.693415985428022e+20,
-      "name": "EMBALOCO",
       "rank": 25,
-      "seasonTotal": 3.5098016708130646e+21
+      "seasonTotal": 3.6902368139060907e+21
     },
     {
       "gainVsPreviousSeason": 1.6317574380319775e+20,
@@ -212,16 +212,16 @@
       "seasonTotal": 1.0668987938765613e+21
     },
     {
-      "gainVsPreviousSeason": 6.626138671455669e+20,
-      "name": "ergiangi",
+      "gainVsPreviousSeason": -1.496153921795318e+20,
+      "name": "Belthazar",
       "rank": 36,
-      "seasonTotal": 8.766118571029194e+20
+      "seasonTotal": 8.870923146992627e+20
     },
     {
-      "gainVsPreviousSeason": -2.52308527938777e+20,
-      "name": "Belthazar",
+      "gainVsPreviousSeason": 6.626138671455669e+20,
+      "name": "ergiangi",
       "rank": 37,
-      "seasonTotal": 7.843991789400175e+20
+      "seasonTotal": 8.766118571029194e+20
     },
     {
       "gainVsPreviousSeason": -5.463562215531691e+21,
@@ -2932,7 +2932,8 @@
                 1.207679938483671e+22,
                 1.5797721088733661e+22,
                 1.2332274454946187e+22,
-                1.3873613658846646e+22
+                1.3873613658846646e+22,
+                1.03366428870202e+22
               ],
               "name": "DAYO-P",
               "top2Sum": 2.967133474758031e+22
@@ -3036,6 +3037,59 @@
               ],
               "name": "BobBobberson",
               "top2Sum": 3.1720888476142803e+20
+            },
+            {
+              "attempts": [
+                4.779347297462526e+19,
+                5.489966278461993e+19
+              ],
+              "name": "Belthazar",
+              "top2Sum": 1.0269313575924518e+20
+            },
+            {
+              "attempts": [
+                2.1923192698349152e+20
+              ],
+              "name": "EMBALOCO",
+              "top2Sum": 2.1923192698349152e+20
+            }
+          ]
+        },
+        {
+          "date": "2026-11-05",
+          "day": 15,
+          "players": [
+            {
+              "attempts": [
+                3.979183439671033e+20,
+                2.554996747979027e+20
+              ],
+              "name": "Gritchen",
+              "top2Sum": 6.53418018765006e+20
+            },
+            {
+              "attempts": [
+                1.200451381084499e+22,
+                1.1938168776359837e+22
+              ],
+              "name": "DAYO-P",
+              "top2Sum": 2.3942682587204826e+22
+            },
+            {
+              "attempts": [
+                3.076207242897946e+20,
+                2.594878935669966e+20
+              ],
+              "name": "HakiLuffy",
+              "top2Sum": 5.671086178567912e+20
+            },
+            {
+              "attempts": [
+                5.1243582869952285e+22,
+                4.749372485426975e+22
+              ],
+              "name": "Fl3xas",
+              "top2Sum": 9.873730772422205e+22
             }
           ]
         }
