@@ -38,10 +38,10 @@
       "seasonTotal": 7.79267498562634e+22
     },
     {
-      "gainVsPreviousSeason": -1.1017599034359209e+23,
+      "gainVsPreviousSeason": -9.810534859435071e+22,
       "name": "\u795eSterben\u6b7b",
       "rank": 7,
-      "seasonTotal": 3.46277731772076e+22
+      "seasonTotal": 4.6698414926448975e+22
     },
     {
       "gainVsPreviousSeason": 6.254443304425504e+20,
@@ -62,28 +62,28 @@
       "seasonTotal": 1.5384060781958963e+22
     },
     {
+      "gainVsPreviousSeason": -9.117122915540826e+21,
+      "name": "PastalaVista",
+      "rank": 11,
+      "seasonTotal": 1.0578030951566187e+22
+    },
+    {
       "gainVsPreviousSeason": 4.2429714998856096e+20,
       "name": "\u76feHeathcliff\u5263",
-      "rank": 11,
+      "rank": 12,
       "seasonTotal": 9.779799049401138e+21
     },
     {
       "gainVsPreviousSeason": 1.5484897122955286e+21,
       "name": "Player 66607264",
-      "rank": 12,
+      "rank": 13,
       "seasonTotal": 9.730501394281112e+21
     },
     {
-      "gainVsPreviousSeason": -1.057886010986226e+22,
-      "name": "PastalaVista",
-      "rank": 13,
-      "seasonTotal": 9.116293757244753e+21
-    },
-    {
-      "gainVsPreviousSeason": 5.795252216805898e+20,
+      "gainVsPreviousSeason": 1.9277022709379152e+21,
       "name": "p88203044",
       "rank": 14,
-      "seasonTotal": 7.610620566812661e+21
+      "seasonTotal": 8.958797616069986e+21
     },
     {
       "gainVsPreviousSeason": -1.426106593766918e+22,
@@ -134,52 +134,52 @@
       "seasonTotal": 4.3303027460861424e+21
     },
     {
+      "gainVsPreviousSeason": null,
+      "name": "RexPanda",
+      "rank": 23,
+      "seasonTotal": 3.72133870870198e+21
+    },
+    {
       "gainVsPreviousSeason": -5.693415985428022e+20,
       "name": "EMBALOCO",
-      "rank": 23,
+      "rank": 24,
       "seasonTotal": 3.5098016708130646e+21
     },
     {
       "gainVsPreviousSeason": 1.6317574380319775e+20,
       "name": "silverxz",
-      "rank": 24,
+      "rank": 25,
       "seasonTotal": 3.5012116990397535e+21
     },
     {
       "gainVsPreviousSeason": 3.389807687677064e+20,
       "name": "BobBobberson",
-      "rank": 25,
+      "rank": 26,
       "seasonTotal": 3.3730279291446624e+21
     },
     {
       "gainVsPreviousSeason": 2.134094538435267e+20,
       "name": "Rzzza",
-      "rank": 26,
+      "rank": 27,
       "seasonTotal": 3.3681064328951056e+21
     },
     {
       "gainVsPreviousSeason": -8.826019045297084e+20,
       "name": "BlackFlamE",
-      "rank": 27,
+      "rank": 28,
       "seasonTotal": 3.181361623259431e+21
     },
     {
       "gainVsPreviousSeason": 1.762205608070227e+21,
       "name": "Toddlerr",
-      "rank": 28,
+      "rank": 29,
       "seasonTotal": 2.3363756983074876e+21
     },
     {
       "gainVsPreviousSeason": -5.103609463357815e+20,
       "name": "gubrax",
-      "rank": 29,
-      "seasonTotal": 2.2811138939878467e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "RexPanda",
       "rank": 30,
-      "seasonTotal": 1.9040683571505332e+21
+      "seasonTotal": 2.2811138939878467e+21
     },
     {
       "gainVsPreviousSeason": -3.3756970631585134e+21,
@@ -2974,6 +2974,37 @@
               ],
               "name": "MadameMischief",
               "top2Sum": 2.3865821807934015e+21
+            },
+            {
+              "attempts": [
+                1.2070641749241377e+22
+              ],
+              "name": "\u795eSterben\u6b7b",
+              "top2Sum": 1.2070641749241377e+22
+            },
+            {
+              "attempts": [
+                6.097642287953653e+20,
+                5.381772385592403e+20,
+                7.384128204619594e+20
+              ],
+              "name": "p88203044",
+              "top2Sum": 1.3481770492573248e+21
+            },
+            {
+              "attempts": [
+                1.4617371943214344e+21
+              ],
+              "name": "PastalaVista",
+              "top2Sum": 1.4617371943214344e+21
+            },
+            {
+              "attempts": [
+                8.442442383687208e+20,
+                9.730261131827258e+20
+              ],
+              "name": "RexPanda",
+              "top2Sum": 1.8172703515514466e+21
             }
           ]
         }
