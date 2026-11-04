@@ -32,10 +32,10 @@
       "seasonTotal": 2.2448798184901397e+23
     },
     {
-      "gainVsPreviousSeason": -3.4751632774937667e+22,
+      "gainVsPreviousSeason": -2.705831515913057e+22,
       "name": "SngphO",
       "rank": 6,
-      "seasonTotal": 7.79267498562634e+22
+      "seasonTotal": 8.562006747207049e+22
     },
     {
       "gainVsPreviousSeason": -9.810534859435071e+22,
@@ -50,10 +50,10 @@
       "seasonTotal": 2.6502313344272825e+22
     },
     {
-      "gainVsPreviousSeason": 2.155983389647918e+21,
+      "gainVsPreviousSeason": 4.58985844555327e+21,
       "name": "MadameMischief",
       "rank": 9,
-      "seasonTotal": 2.2107274144757276e+22
+      "seasonTotal": 2.4541149200662628e+22
     },
     {
       "gainVsPreviousSeason": 1.0438937413663892e+21,
@@ -68,22 +68,22 @@
       "seasonTotal": 1.0578030951566187e+22
     },
     {
+      "gainVsPreviousSeason": 3.4996031389685934e+21,
+      "name": "p88203044",
+      "rank": 12,
+      "seasonTotal": 1.0530698484100664e+22
+    },
+    {
       "gainVsPreviousSeason": 4.2429714998856096e+20,
       "name": "\u76feHeathcliff\u5263",
-      "rank": 12,
+      "rank": 13,
       "seasonTotal": 9.779799049401138e+21
     },
     {
       "gainVsPreviousSeason": 1.5484897122955286e+21,
       "name": "Player 66607264",
-      "rank": 13,
-      "seasonTotal": 9.730501394281112e+21
-    },
-    {
-      "gainVsPreviousSeason": 1.9277022709379152e+21,
-      "name": "p88203044",
       "rank": 14,
-      "seasonTotal": 8.958797616069986e+21
+      "seasonTotal": 9.730501394281112e+21
     },
     {
       "gainVsPreviousSeason": 5.159577432368496e+20,
@@ -92,16 +92,16 @@
       "seasonTotal": 6.956047034743654e+21
     },
     {
-      "gainVsPreviousSeason": -1.426106593766918e+22,
-      "name": "RetinaDNA",
+      "gainVsPreviousSeason": -6.261648123106857e+20,
+      "name": "VictorMolusco",
       "rank": 16,
-      "seasonTotal": 6.499004604077939e+21
+      "seasonTotal": 6.927178790836433e+21
     },
     {
-      "gainVsPreviousSeason": -1.4416882050100636e+21,
-      "name": "VictorMolusco",
+      "gainVsPreviousSeason": -1.426106593766918e+22,
+      "name": "RetinaDNA",
       "rank": 17,
-      "seasonTotal": 6.111655398137055e+21
+      "seasonTotal": 6.499004604077939e+21
     },
     {
       "gainVsPreviousSeason": -1.518907313802406e+21,
@@ -212,28 +212,28 @@
       "seasonTotal": 1.0668987938765613e+21
     },
     {
+      "gainVsPreviousSeason": 4.7764272258140484e+20,
+      "name": "FlyingDutchy",
+      "rank": 36,
+      "seasonTotal": 1.0628968986116112e+21
+    },
+    {
       "gainVsPreviousSeason": -1.496153921795318e+20,
       "name": "Belthazar",
-      "rank": 36,
+      "rank": 37,
       "seasonTotal": 8.870923146992627e+20
     },
     {
       "gainVsPreviousSeason": 6.626138671455669e+20,
       "name": "ergiangi",
-      "rank": 37,
+      "rank": 38,
       "seasonTotal": 8.766118571029194e+20
     },
     {
       "gainVsPreviousSeason": -5.463562215531691e+21,
       "name": "Bensayyten",
-      "rank": 38,
-      "seasonTotal": 7.32303207648993e+20
-    },
-    {
-      "gainVsPreviousSeason": 1.0391030444897639e+20,
-      "name": "FlyingDutchy",
       "rank": 39,
-      "seasonTotal": 6.891644804791827e+20
+      "seasonTotal": 7.32303207648993e+20
     },
     {
       "gainVsPreviousSeason": -1.150090315168668e+20,
@@ -3070,7 +3070,8 @@
             {
               "attempts": [
                 1.200451381084499e+22,
-                1.1938168776359837e+22
+                1.1938168776359837e+22,
+                1.045325972734928e+22
               ],
               "name": "DAYO-P",
               "top2Sum": 2.3942682587204826e+22
@@ -3090,6 +3091,46 @@
               ],
               "name": "Fl3xas",
               "top2Sum": 9.873730772422205e+22
+            },
+            {
+              "attempts": [
+                3.609490189673005e+20,
+                4.545743737320773e+20
+              ],
+              "name": "VictorMolusco",
+              "top2Sum": 8.155233926993778e+20
+            },
+            {
+              "attempts": [
+                6.688652711724595e+20,
+                9.030355968582179e+20
+              ],
+              "name": "p88203044",
+              "top2Sum": 1.5719008680306774e+21
+            },
+            {
+              "attempts": [
+                3.309781251055415e+21,
+                2.44060154560013e+21,
+                4.383536364751682e+21
+              ],
+              "name": "SngphO",
+              "top2Sum": 7.693317615807097e+21
+            },
+            {
+              "attempts": [
+                1.237847852923614e+21,
+                1.1960272029817404e+21
+              ],
+              "name": "MadameMischief",
+              "top2Sum": 2.433875055905354e+21
+            },
+            {
+              "attempts": [
+                3.737324181324285e+20
+              ],
+              "name": "FlyingDutchy",
+              "top2Sum": 3.737324181324285e+20
             }
           ]
         }
