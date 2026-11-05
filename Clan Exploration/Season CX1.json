@@ -7,20 +7,20 @@
   "previousSeasonFinalTotal": null,
   "milestoneSnapshot": null,
   "cxRank": {
-    "updatedAt": "2026-11-06T07:20:06.487662+11:00",
-    "total": 30700,
+    "updatedAt": "2026-11-06T08:20:10.783045+11:00",
+    "total": 32100,
     "members": [
-      {
-        "uid": 83339881,
-        "name": "Fl3xas",
-        "rank": 1,
-        "score": 2200
-      },
       {
         "uid": 29321884,
         "name": "RABBIT5",
+        "rank": 1,
+        "score": 2400
+      },
+      {
+        "uid": 83339881,
+        "name": "Fl3xas",
         "rank": 2,
-        "score": 2000
+        "score": 2300
       },
       {
         "uid": 88203044,
@@ -65,14 +65,14 @@
         "score": 1300
       },
       {
-        "uid": 108860725,
-        "name": "RetinaDNA",
-        "rank": 10,
-        "score": 1200
-      },
-      {
         "uid": 80018314,
         "name": null,
+        "rank": 10,
+        "score": 1300
+      },
+      {
+        "uid": 108860725,
+        "name": "RetinaDNA",
         "rank": 11,
         "score": 1200
       },
@@ -131,26 +131,26 @@
         "score": 800
       },
       {
+        "uid": 108546985,
+        "name": "pumpenjoe",
+        "rank": 21,
+        "score": 800
+      },
+      {
+        "uid": 87244358,
+        "name": "神Sterben死",
+        "rank": 22,
+        "score": 800
+      },
+      {
         "uid": 59566866,
         "name": "FlyingDutchy",
-        "rank": 21,
+        "rank": 23,
         "score": 700
       },
       {
         "uid": 51071110,
         "name": "samwise08",
-        "rank": 22,
-        "score": 400
-      },
-      {
-        "uid": 108546985,
-        "name": "pumpenjoe",
-        "rank": 23,
-        "score": 400
-      },
-      {
-        "uid": 87244358,
-        "name": "神Sterben死",
         "rank": 24,
         "score": 400
       },
