@@ -8,10 +8,10 @@
       "seasonTotal": 1.382391774385841e+24
     },
     {
-      "gainVsPreviousSeason": 5.482164020061487e+22,
+      "gainVsPreviousSeason": 7.161550360017763e+22,
       "name": "DAYO-P",
       "rank": 2,
-      "seasonTotal": 3.287567042242024e+23
+      "seasonTotal": 3.455505676237652e+23
     },
     {
       "gainVsPreviousSeason": -2.8929825531838816e+23,
@@ -26,10 +26,10 @@
       "seasonTotal": 2.8210995853888967e+23
     },
     {
-      "gainVsPreviousSeason": 2.83183247728464e+22,
+      "gainVsPreviousSeason": 4.219586623494198e+22,
       "name": "RABBIT5",
       "rank": 5,
-      "seasonTotal": 2.4641324340630135e+23
+      "seasonTotal": 2.6029078486839693e+23
     },
     {
       "gainVsPreviousSeason": -2.705831515913057e+22,
@@ -116,10 +116,10 @@
       "seasonTotal": 6.792884780013939e+21
     },
     {
-      "gainVsPreviousSeason": -1.670484951533357e+21,
+      "gainVsPreviousSeason": -1.3046269042873084e+21,
       "name": "HakiLuffy",
       "rank": 20,
-      "seasonTotal": 5.351226872419452e+21
+      "seasonTotal": 5.717084919665501e+21
     },
     {
       "gainVsPreviousSeason": -1.4481304044067143e+22,
@@ -3229,6 +3229,39 @@
         }
       ],
       "miniSeasonNumber": 5
+    },
+    {
+      "days": [
+        {
+          "date": "2026-11-06",
+          "day": 16,
+          "players": [
+            {
+              "attempts": [
+                1.6793863399562776e+22
+              ],
+              "name": "DAYO-P",
+              "top2Sum": 1.6793863399562776e+22
+            },
+            {
+              "attempts": [
+                1.718870525043274e+20,
+                1.9397099474172156e+20
+              ],
+              "name": "HakiLuffy",
+              "top2Sum": 3.6585804724604895e+20
+            },
+            {
+              "attempts": [
+                1.387754146209558e+22
+              ],
+              "name": "RABBIT5",
+              "top2Sum": 1.387754146209558e+22
+            }
+          ]
+        }
+      ],
+      "miniSeasonNumber": 6
     }
   ],
   "seasonNumber": 2,
