@@ -7,20 +7,20 @@
   "previousSeasonFinalTotal": null,
   "milestoneSnapshot": null,
   "cxRank": {
-    "updatedAt": "2026-11-06T08:34:04.447545+11:00",
-    "total": 32900,
+    "updatedAt": "2026-11-06T08:44:45.996090+11:00",
+    "total": 33200,
     "members": [
-      {
-        "uid": 29321884,
-        "name": "RABBIT5",
-        "rank": 1,
-        "score": 2400
-      },
       {
         "uid": 83339881,
         "name": "Fl3xas",
+        "rank": 1,
+        "score": 2600
+      },
+      {
+        "uid": 29321884,
+        "name": "RABBIT5",
         "rank": 2,
-        "score": 2300
+        "score": 2400
       },
       {
         "uid": 88203044,
