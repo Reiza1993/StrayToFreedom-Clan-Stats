@@ -7,8 +7,8 @@
   "previousSeasonFinalTotal": null,
   "milestoneSnapshot": null,
   "cxRank": {
-    "updatedAt": "2026-11-06T08:20:10.783045+11:00",
-    "total": 32100,
+    "updatedAt": "2026-11-06T08:34:04.447545+11:00",
+    "total": 32900,
     "members": [
       {
         "uid": 29321884,
@@ -203,44 +203,44 @@
         "score": 400
       },
       {
+        "uid": 70603922,
+        "name": "BlackFlamE",
+        "rank": 33,
+        "score": 400
+      },
+      {
+        "uid": 72894129,
+        "name": "NeonCBV",
+        "rank": 34,
+        "score": 400
+      },
+      {
         "uid": 71028860,
         "name": "Rzzza",
-        "rank": 33,
+        "rank": 35,
         "score": 0
       },
       {
         "uid": 60687252,
         "name": "һan",
-        "rank": 34,
+        "rank": 36,
         "score": 0
       },
       {
         "uid": 115742768,
         "name": "SterbyTools",
-        "rank": 35,
+        "rank": 37,
         "score": 0
       },
       {
         "uid": 35869301,
         "name": "Toddlerr",
-        "rank": 36,
-        "score": 0
-      },
-      {
-        "uid": 70603922,
-        "name": "BlackFlamE",
-        "rank": 37,
+        "rank": 38,
         "score": 0
       },
       {
         "uid": 75174428,
         "name": "PastalaVista",
-        "rank": 38,
-        "score": 0
-      },
-      {
-        "uid": 72894129,
-        "name": "NeonCBV",
         "rank": 39,
         "score": 0
       },
