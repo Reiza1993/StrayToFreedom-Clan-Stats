@@ -8,10 +8,10 @@
       "seasonTotal": 1.382391774385841e+24
     },
     {
-      "gainVsPreviousSeason": 5.423075456992273e+22,
+      "gainVsPreviousSeason": 5.482164020061487e+22,
       "name": "DAYO-P",
       "rank": 2,
-      "seasonTotal": 3.281658185935103e+23
+      "seasonTotal": 3.287567042242024e+23
     },
     {
       "gainVsPreviousSeason": -2.8929825531838816e+23,
@@ -62,28 +62,28 @@
       "seasonTotal": 1.5384060781958963e+22
     },
     {
+      "gainVsPreviousSeason": 2.6419729815480755e+21,
+      "name": "Player 66607264",
+      "rank": 11,
+      "seasonTotal": 1.0823984663533659e+22
+    },
+    {
       "gainVsPreviousSeason": -9.117122915540826e+21,
       "name": "PastalaVista",
-      "rank": 11,
+      "rank": 12,
       "seasonTotal": 1.0578030951566187e+22
     },
     {
       "gainVsPreviousSeason": 3.4996031389685934e+21,
       "name": "p88203044",
-      "rank": 12,
+      "rank": 13,
       "seasonTotal": 1.0530698484100664e+22
     },
     {
       "gainVsPreviousSeason": 4.2429714998856096e+20,
       "name": "\u76feHeathcliff\u5263",
-      "rank": 13,
-      "seasonTotal": 9.779799049401138e+21
-    },
-    {
-      "gainVsPreviousSeason": 1.5484897122955286e+21,
-      "name": "Player 66607264",
       "rank": 14,
-      "seasonTotal": 9.730501394281112e+21
+      "seasonTotal": 9.779799049401138e+21
     },
     {
       "gainVsPreviousSeason": -1.345115937209332e+22,
@@ -110,10 +110,10 @@
       "seasonTotal": 6.927178790836433e+21
     },
     {
-      "gainVsPreviousSeason": -1.518907313802406e+21,
+      "gainVsPreviousSeason": -1.14077942160482e+21,
       "name": "Apathy_",
       "rank": 19,
-      "seasonTotal": 6.06384365202525e+21
+      "seasonTotal": 6.441971544222836e+21
     },
     {
       "gainVsPreviousSeason": -1.670484951533357e+21,
@@ -170,16 +170,16 @@
       "seasonTotal": 3.181361623259431e+21
     },
     {
-      "gainVsPreviousSeason": 1.762205608070227e+21,
-      "name": "Toddlerr",
+      "gainVsPreviousSeason": -3.682678212438414e+20,
+      "name": "gubrax",
       "rank": 29,
-      "seasonTotal": 2.3363756983074876e+21
+      "seasonTotal": 2.423207019079787e+21
     },
     {
-      "gainVsPreviousSeason": -5.103609463357815e+20,
-      "name": "gubrax",
+      "gainVsPreviousSeason": 1.762205608070227e+21,
+      "name": "Toddlerr",
       "rank": 30,
-      "seasonTotal": 2.2811138939878467e+21
+      "seasonTotal": 2.3363756983074876e+21
     },
     {
       "gainVsPreviousSeason": -1.095813709490032e+21,
@@ -3071,10 +3071,11 @@
               "attempts": [
                 1.200451381084499e+22,
                 1.1938168776359837e+22,
-                1.045325972734928e+22
+                1.045325972734928e+22,
+                1.2529054407051996e+22
               ],
               "name": "DAYO-P",
-              "top2Sum": 2.3942682587204826e+22
+              "top2Sum": 2.4533568217896985e+22
             },
             {
               "attempts": [
@@ -3191,6 +3192,28 @@
               ],
               "name": "theLP",
               "top2Sum": 7.92770583711516e+20
+            },
+            {
+              "attempts": [
+                3.781278921975855e+20
+              ],
+              "name": "Apathy_",
+              "top2Sum": 3.781278921975855e+20
+            },
+            {
+              "attempts": [
+                1.4209312509194e+20
+              ],
+              "name": "gubrax",
+              "top2Sum": 1.4209312509194e+20
+            },
+            {
+              "attempts": [
+                6.214536891593186e+20,
+                4.720295800932285e+20
+              ],
+              "name": "Player 66607264",
+              "top2Sum": 1.0934832692525471e+21
             }
           ]
         }
