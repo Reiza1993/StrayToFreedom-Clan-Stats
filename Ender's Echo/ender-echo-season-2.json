@@ -26,10 +26,10 @@
       "seasonTotal": 2.8210995853888967e+23
     },
     {
-      "gainVsPreviousSeason": 6.393063215559021e+21,
+      "gainVsPreviousSeason": 2.83183247728464e+22,
       "name": "RABBIT5",
       "rank": 5,
-      "seasonTotal": 2.2448798184901397e+23
+      "seasonTotal": 2.4641324340630135e+23
     },
     {
       "gainVsPreviousSeason": -2.705831515913057e+22,
@@ -86,16 +86,16 @@
       "seasonTotal": 9.779799049401138e+21
     },
     {
-      "gainVsPreviousSeason": -1.345115937209332e+22,
-      "name": "pumpenjoe",
+      "gainVsPreviousSeason": -1.1133746192145506e+22,
+      "name": "RetinaDNA",
       "rank": 15,
-      "seasonTotal": 9.624050406543118e+21
+      "seasonTotal": 9.626324349601614e+21
     },
     {
-      "gainVsPreviousSeason": -1.2472339972485382e+22,
-      "name": "RetinaDNA",
+      "gainVsPreviousSeason": -1.345115937209332e+22,
+      "name": "pumpenjoe",
       "rank": 16,
-      "seasonTotal": 8.287730569261736e+21
+      "seasonTotal": 9.624050406543118e+21
     },
     {
       "gainVsPreviousSeason": 5.159577432368496e+20,
@@ -110,10 +110,10 @@
       "seasonTotal": 6.927178790836433e+21
     },
     {
-      "gainVsPreviousSeason": -1.14077942160482e+21,
+      "gainVsPreviousSeason": -7.898661858137174e+20,
       "name": "Apathy_",
       "rank": 19,
-      "seasonTotal": 6.441971544222836e+21
+      "seasonTotal": 6.792884780013939e+21
     },
     {
       "gainVsPreviousSeason": -1.670484951533357e+21,
@@ -3135,10 +3135,11 @@
             },
             {
               "attempts": [
-                1.788725965183797e+21
+                1.788725965183797e+21,
+                1.3385937803398776e+21
               ],
               "name": "RetinaDNA",
-              "top2Sum": 1.788725965183797e+21
+              "top2Sum": 3.1273197455236745e+21
             },
             {
               "attempts": [
@@ -3195,10 +3196,11 @@
             },
             {
               "attempts": [
-                3.781278921975855e+20
+                3.781278921975855e+20,
+                3.5091323579110294e+20
               ],
               "name": "Apathy_",
-              "top2Sum": 3.781278921975855e+20
+              "top2Sum": 7.290411279886885e+20
             },
             {
               "attempts": [
@@ -3214,6 +3216,14 @@
               ],
               "name": "Player 66607264",
               "top2Sum": 1.0934832692525471e+21
+            },
+            {
+              "attempts": [
+                1.0574540143552771e+22,
+                1.1350721413734617e+22
+              ],
+              "name": "RABBIT5",
+              "top2Sum": 2.1925261557287386e+22
             }
           ]
         }
