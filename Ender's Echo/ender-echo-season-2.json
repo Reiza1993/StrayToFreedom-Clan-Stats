@@ -134,10 +134,10 @@
       "seasonTotal": 5.206337144721376e+21
     },
     {
-      "gainVsPreviousSeason": -1.2907080319467394e+21,
+      "gainVsPreviousSeason": -4.979374482352232e+20,
       "name": "theLP",
       "rank": 23,
-      "seasonTotal": 4.3303027460861424e+21
+      "seasonTotal": 5.123073329797659e+21
     },
     {
       "gainVsPreviousSeason": -3.501096715593109e+20,
@@ -218,22 +218,22 @@
       "seasonTotal": 1.0628968986116112e+21
     },
     {
-      "gainVsPreviousSeason": -1.496153921795318e+20,
-      "name": "Belthazar",
+      "gainVsPreviousSeason": -5.217208327541757e+21,
+      "name": "Bensayyten",
       "rank": 37,
-      "seasonTotal": 8.870923146992627e+20
+      "seasonTotal": 9.786570956389257e+20
+    },
+    {
+      "gainVsPreviousSeason": -8.810639506789604e+19,
+      "name": "Belthazar",
+      "rank": 38,
+      "seasonTotal": 9.486013118108985e+20
     },
     {
       "gainVsPreviousSeason": 6.626138671455669e+20,
       "name": "ergiangi",
-      "rank": 38,
-      "seasonTotal": 8.766118571029194e+20
-    },
-    {
-      "gainVsPreviousSeason": -5.463562215531691e+21,
-      "name": "Bensayyten",
       "rank": 39,
-      "seasonTotal": 7.32303207648993e+20
+      "seasonTotal": 8.766118571029194e+20
     },
     {
       "gainVsPreviousSeason": -1.1390022193505434e+20,
@@ -3168,6 +3168,29 @@
               ],
               "name": "RexPanda",
               "top2Sum": 1.4849984360193961e+21
+            },
+            {
+              "attempts": [
+                3.4119280341219774e+19,
+                2.7389716770416005e+19
+              ],
+              "name": "Belthazar",
+              "top2Sum": 6.150899711163578e+19
+            },
+            {
+              "attempts": [
+                2.463538879899327e+20
+              ],
+              "name": "Bensayyten",
+              "top2Sum": 2.463538879899327e+20
+            },
+            {
+              "attempts": [
+                4.461931747295328e+20,
+                3.465774089819831e+20
+              ],
+              "name": "theLP",
+              "top2Sum": 7.92770583711516e+20
             }
           ]
         }
