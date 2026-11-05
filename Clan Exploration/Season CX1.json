@@ -7,8 +7,8 @@
   "previousSeasonFinalTotal": null,
   "milestoneSnapshot": null,
   "cxRank": {
-    "updatedAt": "2026-11-06T01:19:37.296865+11:00",
-    "total": 18300,
+    "updatedAt": "2026-11-06T02:19:41.225169+11:00",
+    "total": 19100,
     "members": [
       {
         "uid": 83339881,
@@ -29,20 +29,20 @@
         "score": 1600
       },
       {
+        "uid": 88203044,
+        "name": "p88203044",
+        "rank": 4,
+        "score": 1600
+      },
+      {
         "uid": 103516442,
         "name": "DAYO-P",
-        "rank": 4,
+        "rank": 5,
         "score": 1300
       },
       {
         "uid": 66607264,
         "name": null,
-        "rank": 5,
-        "score": 1200
-      },
-      {
-        "uid": 88203044,
-        "name": "p88203044",
         "rank": 6,
         "score": 1200
       },
@@ -83,32 +83,32 @@
         "score": 800
       },
       {
+        "uid": 41742773,
+        "name": "MadameMischief",
+        "rank": 13,
+        "score": 800
+      },
+      {
         "uid": 10754439,
         "name": "HakiLuffy",
-        "rank": 13,
+        "rank": 14,
         "score": 400
       },
       {
         "uid": 51071110,
         "name": "samwise08",
-        "rank": 14,
+        "rank": 15,
         "score": 400
       },
       {
         "uid": 89511116,
         "name": "EMBALOCO",
-        "rank": 15,
+        "rank": 16,
         "score": 400
       },
       {
         "uid": 79510960,
         "name": "theLP",
-        "rank": 16,
-        "score": 400
-      },
-      {
-        "uid": 41742773,
-        "name": "MadameMischief",
         "rank": 17,
         "score": 400
       },
