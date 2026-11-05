@@ -20,10 +20,10 @@
       "seasonTotal": 3.0488059799264297e+23
     },
     {
-      "gainVsPreviousSeason": -4.075231074456813e+22,
+      "gainVsPreviousSeason": -1.899435213040567e+22,
       "name": "Nubis",
       "rank": 4,
-      "seasonTotal": 2.603519999247272e+23
+      "seasonTotal": 2.8210995853888967e+23
     },
     {
       "gainVsPreviousSeason": 6.393063215559021e+21,
@@ -86,46 +86,46 @@
       "seasonTotal": 9.730501394281112e+21
     },
     {
+      "gainVsPreviousSeason": -1.345115937209332e+22,
+      "name": "pumpenjoe",
+      "rank": 15,
+      "seasonTotal": 9.624050406543118e+21
+    },
+    {
+      "gainVsPreviousSeason": -1.2472339972485382e+22,
+      "name": "RetinaDNA",
+      "rank": 16,
+      "seasonTotal": 8.287730569261736e+21
+    },
+    {
       "gainVsPreviousSeason": 5.159577432368496e+20,
       "name": "Gritchen",
-      "rank": 15,
+      "rank": 17,
       "seasonTotal": 6.956047034743654e+21
     },
     {
       "gainVsPreviousSeason": -6.261648123106857e+20,
       "name": "VictorMolusco",
-      "rank": 16,
+      "rank": 18,
       "seasonTotal": 6.927178790836433e+21
-    },
-    {
-      "gainVsPreviousSeason": -1.426106593766918e+22,
-      "name": "RetinaDNA",
-      "rank": 17,
-      "seasonTotal": 6.499004604077939e+21
     },
     {
       "gainVsPreviousSeason": -1.518907313802406e+21,
       "name": "Apathy_",
-      "rank": 18,
+      "rank": 19,
       "seasonTotal": 6.06384365202525e+21
     },
     {
       "gainVsPreviousSeason": -1.670484951533357e+21,
       "name": "HakiLuffy",
-      "rank": 19,
+      "rank": 20,
       "seasonTotal": 5.351226872419452e+21
     },
     {
       "gainVsPreviousSeason": -1.4481304044067143e+22,
       "name": "Scoundrel536",
-      "rank": 20,
-      "seasonTotal": 5.320366503714772e+21
-    },
-    {
-      "gainVsPreviousSeason": -1.801116651557769e+22,
-      "name": "pumpenjoe",
       "rank": 21,
-      "seasonTotal": 5.064043263058747e+21
+      "seasonTotal": 5.320366503714772e+21
     },
     {
       "gainVsPreviousSeason": -1.2907080319467394e+21,
@@ -3131,6 +3131,28 @@
               ],
               "name": "FlyingDutchy",
               "top2Sum": 3.737324181324285e+20
+            },
+            {
+              "attempts": [
+                1.788725965183797e+21
+              ],
+              "name": "RetinaDNA",
+              "top2Sum": 1.788725965183797e+21
+            },
+            {
+              "attempts": [
+                4.560007143484371e+21
+              ],
+              "name": "pumpenjoe",
+              "top2Sum": 4.560007143484371e+21
+            },
+            {
+              "attempts": [
+                9.84524116406148e+21,
+                1.1912717450100989e+22
+              ],
+              "name": "Nubis",
+              "top2Sum": 2.175795861416247e+22
             }
           ]
         }
