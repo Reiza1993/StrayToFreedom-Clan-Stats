@@ -128,22 +128,22 @@
       "seasonTotal": 5.320366503714772e+21
     },
     {
+      "gainVsPreviousSeason": null,
+      "name": "RexPanda",
+      "rank": 22,
+      "seasonTotal": 5.206337144721376e+21
+    },
+    {
       "gainVsPreviousSeason": -1.2907080319467394e+21,
       "name": "theLP",
-      "rank": 22,
+      "rank": 23,
       "seasonTotal": 4.3303027460861424e+21
     },
     {
       "gainVsPreviousSeason": -3.501096715593109e+20,
       "name": "EMBALOCO",
-      "rank": 23,
-      "seasonTotal": 3.729033597796556e+21
-    },
-    {
-      "gainVsPreviousSeason": null,
-      "name": "RexPanda",
       "rank": 24,
-      "seasonTotal": 3.72133870870198e+21
+      "seasonTotal": 3.729033597796556e+21
     },
     {
       "gainVsPreviousSeason": 6.561896535291346e+20,
@@ -236,10 +236,10 @@
       "seasonTotal": 7.32303207648993e+20
     },
     {
-      "gainVsPreviousSeason": -1.150090315168668e+20,
+      "gainVsPreviousSeason": -1.1390022193505434e+20,
       "name": "Cheeselife",
       "rank": 40,
-      "seasonTotal": 7.364656242567449e+19
+      "seasonTotal": 7.475537200748696e+19
     }
   ],
   "miniSeasons": [
@@ -3153,6 +3153,21 @@
               ],
               "name": "Nubis",
               "top2Sum": 2.175795861416247e+22
+            },
+            {
+              "attempts": [
+                1.1088095818124812e+18
+              ],
+              "name": "Cheeselife",
+              "top2Sum": 1.1088095818124812e+18
+            },
+            {
+              "attempts": [
+                8.234501295083525e+20,
+                6.615483065110435e+20
+              ],
+              "name": "RexPanda",
+              "top2Sum": 1.4849984360193961e+21
             }
           ]
         }
