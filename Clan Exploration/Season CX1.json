@@ -7,8 +7,8 @@
   "previousSeasonFinalTotal": null,
   "milestoneSnapshot": null,
   "cxRank": {
-    "updatedAt": "2026-11-06T04:19:51.803436+11:00",
-    "total": 24400,
+    "updatedAt": "2026-11-06T05:19:56.415047+11:00",
+    "total": 26400,
     "members": [
       {
         "uid": 29321884,
@@ -17,26 +17,26 @@
         "score": 2000
       },
       {
+        "uid": 66607264,
+        "name": null,
+        "rank": 2,
+        "score": 1900
+      },
+      {
         "uid": 83339881,
         "name": "Fl3xas",
-        "rank": 2,
+        "rank": 3,
         "score": 1800
       },
       {
         "uid": 36484758,
         "name": "Belthazar",
-        "rank": 3,
+        "rank": 4,
         "score": 1600
       },
       {
         "uid": 88203044,
         "name": "p88203044",
-        "rank": 4,
-        "score": 1600
-      },
-      {
-        "uid": 66607264,
-        "name": null,
         "rank": 5,
         "score": 1600
       },
@@ -65,22 +65,22 @@
         "score": 1200
       },
       {
-        "uid": 83861839,
-        "name": "groggen",
-        "rank": 10,
-        "score": 1000
-      },
-      {
         "uid": 80018314,
         "name": null,
+        "rank": 10,
+        "score": 1200
+      },
+      {
+        "uid": 83861839,
+        "name": "groggen",
         "rank": 11,
-        "score": 800
+        "score": 1000
       },
       {
         "uid": 113690788,
         "name": "Apathy_",
         "rank": 12,
-        "score": 800
+        "score": 900
       },
       {
         "uid": 41742773,
@@ -101,26 +101,26 @@
         "score": 800
       },
       {
+        "uid": 27113479,
+        "name": "silverxz",
+        "rank": 16,
+        "score": 800
+      },
+      {
+        "uid": 79510960,
+        "name": "theLP",
+        "rank": 17,
+        "score": 800
+      },
+      {
         "uid": 59566866,
         "name": "FlyingDutchy",
-        "rank": 16,
+        "rank": 18,
         "score": 700
       },
       {
         "uid": 51071110,
         "name": "samwise08",
-        "rank": 17,
-        "score": 400
-      },
-      {
-        "uid": 79510960,
-        "name": "theLP",
-        "rank": 18,
-        "score": 400
-      },
-      {
-        "uid": 27113479,
-        "name": "silverxz",
         "rank": 19,
         "score": 400
       },
@@ -179,26 +179,26 @@
         "score": 400
       },
       {
+        "uid": 87954282,
+        "name": "SngphO",
+        "rank": 29,
+        "score": 400
+      },
+      {
         "uid": 71028860,
         "name": "Rzzza",
-        "rank": 29,
+        "rank": 30,
         "score": 0
       },
       {
         "uid": 60687252,
         "name": "һan",
-        "rank": 30,
+        "rank": 31,
         "score": 0
       },
       {
         "uid": 61865023,
         "name": "RexPanda",
-        "rank": 31,
-        "score": 0
-      },
-      {
-        "uid": 87954282,
-        "name": "SngphO",
         "rank": 32,
         "score": 0
       },
