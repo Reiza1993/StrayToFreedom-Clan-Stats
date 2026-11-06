@@ -140,34 +140,34 @@
       "seasonTotal": 5.206337144721376e+21
     },
     {
+      "gainVsPreviousSeason": 8.952804136124002e+20,
+      "name": "BobBobberson",
+      "rank": 24,
+      "seasonTotal": 3.929327573989356e+21
+    },
+    {
       "gainVsPreviousSeason": -3.501096715593109e+20,
       "name": "EMBALOCO",
-      "rank": 24,
+      "rank": 25,
       "seasonTotal": 3.729033597796556e+21
     },
     {
-      "gainVsPreviousSeason": 6.561896535291346e+20,
-      "name": "BobBobberson",
-      "rank": 25,
-      "seasonTotal": 3.6902368139060907e+21
+      "gainVsPreviousSeason": 4.6086794193299466e+20,
+      "name": "Rzzza",
+      "rank": 26,
+      "seasonTotal": 3.6155649209845736e+21
     },
     {
       "gainVsPreviousSeason": -4.9287595376765777e+20,
       "name": "BlackFlamE",
-      "rank": 26,
+      "rank": 27,
       "seasonTotal": 3.5710875740214814e+21
     },
     {
       "gainVsPreviousSeason": 1.6317574380319775e+20,
       "name": "silverxz",
-      "rank": 27,
-      "seasonTotal": 3.5012116990397535e+21
-    },
-    {
-      "gainVsPreviousSeason": 2.134094538435267e+20,
-      "name": "Rzzza",
       "rank": 28,
-      "seasonTotal": 3.3681064328951056e+21
+      "seasonTotal": 3.5012116990397535e+21
     },
     {
       "gainVsPreviousSeason": -3.682678212438414e+20,
@@ -200,22 +200,22 @@
       "seasonTotal": 1.5426355574168984e+21
     },
     {
+      "gainVsPreviousSeason": -1.0055510499266276e+21,
+      "name": "samwise08",
+      "rank": 34,
+      "seasonTotal": 1.3339085943389317e+21
+    },
+    {
       "gainVsPreviousSeason": 9.67856148870172e+20,
       "name": "ergiangi",
-      "rank": 34,
+      "rank": 35,
       "seasonTotal": 1.1818541388275245e+21
     },
     {
       "gainVsPreviousSeason": 3.1641366618181114e+20,
       "name": "Player 80018314",
-      "rank": 35,
-      "seasonTotal": 1.093748656811302e+21
-    },
-    {
-      "gainVsPreviousSeason": -1.272560850388998e+21,
-      "name": "samwise08",
       "rank": 36,
-      "seasonTotal": 1.0668987938765613e+21
+      "seasonTotal": 1.093748656811302e+21
     },
     {
       "gainVsPreviousSeason": 4.7764272258140484e+20,
@@ -3333,6 +3333,28 @@
               ],
               "name": "theLP",
               "top2Sum": 3.603465351015847e+20
+            },
+            {
+              "attempts": [
+                2.4745848808946788e+20
+              ],
+              "name": "Rzzza",
+              "top2Sum": 2.4745848808946788e+20
+            },
+            {
+              "attempts": [
+                8.850167434863926e+19,
+                1.7850812611373115e+20
+              ],
+              "name": "samwise08",
+              "top2Sum": 2.670098004623704e+20
+            },
+            {
+              "attempts": [
+                2.390907600832653e+20
+              ],
+              "name": "BobBobberson",
+              "top2Sum": 2.390907600832653e+20
             }
           ]
         }
