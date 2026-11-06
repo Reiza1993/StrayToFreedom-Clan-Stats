@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-07T07:34:40.980650+11:00",
-    "total": 61700,
+    "updatedAt": "2026-11-07T08:34:50.602565+11:00",
+    "total": 62600,
     "members": [
       {
         "uid": 36484758,
@@ -414,26 +414,26 @@
         "score": 1200
       },
       {
+        "uid": 18297536,
+        "name": "ergiangi",
+        "rank": 27,
+        "score": 1200
+      },
+      {
         "uid": 59566866,
         "name": "FlyingDutchy",
-        "rank": 27,
-        "score": 1100
+        "rank": 28,
+        "score": 1200
       },
       {
         "uid": 87244358,
         "name": "神Sterben死",
-        "rank": 28,
+        "rank": 29,
         "score": 800
       },
       {
         "uid": 106162623,
         "name": "gubrax",
-        "rank": 29,
-        "score": 800
-      },
-      {
-        "uid": 18297536,
-        "name": "ergiangi",
         "rank": 30,
         "score": 800
       },
@@ -462,14 +462,14 @@
         "score": 800
       },
       {
-        "uid": 29904762,
-        "name": "Cheeselife",
-        "rank": 35,
-        "score": 400
-      },
-      {
         "uid": 35869301,
         "name": "Toddlerr",
+        "rank": 35,
+        "score": 800
+      },
+      {
+        "uid": 29904762,
+        "name": "Cheeselife",
         "rank": 36,
         "score": 400
       },
