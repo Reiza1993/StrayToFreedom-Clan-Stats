@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-07T01:22:36.530987+11:00",
-    "total": 52500,
+    "updatedAt": "2026-11-07T02:33:53.220543+11:00",
+    "total": 53500,
     "members": [
       {
         "uid": 29321884,
@@ -273,7 +273,7 @@
         "uid": 88203044,
         "name": "p88203044",
         "rank": 3,
-        "score": 3200
+        "score": 3400
       },
       {
         "uid": 83339881,
@@ -390,26 +390,26 @@
         "score": 1200
       },
       {
+        "uid": 70603922,
+        "name": "BlackFlamE",
+        "rank": 23,
+        "score": 1200
+      },
+      {
         "uid": 89511116,
         "name": "EMBALOCO",
-        "rank": 23,
+        "rank": 24,
         "score": 800
       },
       {
         "uid": 18115624,
         "name": "Nubis",
-        "rank": 24,
+        "rank": 25,
         "score": 800
       },
       {
         "uid": 87244358,
         "name": "神Sterben死",
-        "rank": 25,
-        "score": 800
-      },
-      {
-        "uid": 70603922,
-        "name": "BlackFlamE",
         "rank": 26,
         "score": 800
       },
@@ -438,32 +438,32 @@
         "score": 800
       },
       {
+        "uid": 61865023,
+        "name": "RexPanda",
+        "rank": 31,
+        "score": 800
+      },
+      {
         "uid": 59566866,
         "name": "FlyingDutchy",
-        "rank": 31,
+        "rank": 32,
         "score": 700
       },
       {
         "uid": 29904762,
         "name": "Cheeselife",
-        "rank": 32,
+        "rank": 33,
         "score": 400
       },
       {
         "uid": 64676255,
         "name": "盾Heathcliff剣",
-        "rank": 33,
+        "rank": 34,
         "score": 400
       },
       {
         "uid": 87954282,
         "name": "SngphO",
-        "rank": 34,
-        "score": 400
-      },
-      {
-        "uid": 61865023,
-        "name": "RexPanda",
         "rank": 35,
         "score": 400
       },
@@ -500,8 +500,8 @@
     ]
   },
   "cxBoss": {
-    "updatedAt": "2026-11-07T01:22:36.530987+11:00",
-    "total": 12421,
+    "updatedAt": "2026-11-07T02:33:53.220543+11:00",
+    "total": 13205,
     "members": [
       {
         "uid": 83339881,
@@ -546,98 +546,98 @@
         "score": 791
       },
       {
+        "uid": 61865023,
+        "name": "RexPanda",
+        "rank": 8,
+        "score": 784
+      },
+      {
         "uid": 30658936,
         "name": "Gritchen",
-        "rank": 8,
+        "rank": 9,
         "score": 775
       },
       {
         "uid": 112772047,
         "name": "VictorMolusco",
-        "rank": 9,
+        "rank": 10,
         "score": 773
       },
       {
         "uid": 10754439,
         "name": "HakiLuffy",
-        "rank": 10,
+        "rank": 11,
         "score": 770
       },
       {
         "uid": 51071110,
         "name": "samwise08",
-        "rank": 11,
+        "rank": 12,
         "score": 759
       },
       {
         "uid": 26277677,
         "name": "BobBobberson",
-        "rank": 12,
+        "rank": 13,
         "score": 753
       },
       {
         "uid": 106162623,
         "name": "gubrax",
-        "rank": 13,
+        "rank": 14,
         "score": 743
       },
       {
         "uid": 80018314,
         "name": null,
-        "rank": 14,
+        "rank": 15,
         "score": 742
       },
       {
         "uid": 36484758,
         "name": "Belthazar",
-        "rank": 15,
+        "rank": 16,
         "score": 705
       },
       {
         "uid": 32556489,
         "name": "Bensayyten",
-        "rank": 16,
+        "rank": 17,
         "score": 664
       },
       {
         "uid": 64676255,
         "name": "盾Heathcliff剣",
-        "rank": 17,
+        "rank": 18,
         "score": 0
       },
       {
         "uid": 71028860,
         "name": "Rzzza",
-        "rank": 18,
+        "rank": 19,
         "score": 0
       },
       {
         "uid": 108860725,
         "name": "RetinaDNA",
-        "rank": 19,
+        "rank": 20,
         "score": 0
       },
       {
         "uid": 41742773,
         "name": "MadameMischief",
-        "rank": 20,
+        "rank": 21,
         "score": 0
       },
       {
         "uid": 60687252,
         "name": "һan",
-        "rank": 21,
+        "rank": 22,
         "score": 0
       },
       {
         "uid": 79510960,
         "name": "theLP",
-        "rank": 22,
-        "score": 0
-      },
-      {
-        "uid": 61865023,
-        "name": "RexPanda",
         "rank": 23,
         "score": 0
       },
