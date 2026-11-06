@@ -7,8 +7,8 @@
   "previousSeasonFinalTotal": null,
   "milestoneSnapshot": null,
   "cxRank": {
-    "updatedAt": "2026-11-06T15:45:24.315381+11:00",
-    "total": 41500,
+    "updatedAt": "2026-11-06T16:45:28.656465+11:00",
+    "total": 41900,
     "members": [
       {
         "uid": 29321884,
@@ -35,16 +35,16 @@
         "score": 2600
       },
       {
-        "uid": 66607264,
-        "name": null,
-        "rank": 5,
-        "score": 2300
-      },
-      {
         "uid": 103516442,
         "name": "DAYO-P",
+        "rank": 5,
+        "score": 2400
+      },
+      {
+        "uid": 66607264,
+        "name": null,
         "rank": 6,
-        "score": 2000
+        "score": 2300
       },
       {
         "uid": 32556489,
