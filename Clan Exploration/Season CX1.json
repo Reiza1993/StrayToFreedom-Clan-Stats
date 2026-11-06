@@ -7,20 +7,20 @@
   "previousSeasonFinalTotal": null,
   "milestoneSnapshot": null,
   "cxRank": {
-    "updatedAt": "2026-11-06T11:45:02.280682+11:00",
-    "total": 37300,
+    "updatedAt": "2026-11-06T12:45:10.479246+11:00",
+    "total": 38400,
     "members": [
-      {
-        "uid": 83339881,
-        "name": "Fl3xas",
-        "rank": 1,
-        "score": 2600
-      },
       {
         "uid": 29321884,
         "name": "RABBIT5",
+        "rank": 1,
+        "score": 2800
+      },
+      {
+        "uid": 83339881,
+        "name": "Fl3xas",
         "rank": 2,
-        "score": 2400
+        "score": 2600
       },
       {
         "uid": 88203044,
@@ -95,26 +95,26 @@
         "score": 1200
       },
       {
+        "uid": 79510960,
+        "name": "theLP",
+        "rank": 15,
+        "score": 1200
+      },
+      {
         "uid": 100876140,
         "name": "Scoundrel536",
-        "rank": 15,
+        "rank": 16,
         "score": 900
       },
       {
         "uid": 89511116,
         "name": "EMBALOCO",
-        "rank": 16,
+        "rank": 17,
         "score": 800
       },
       {
         "uid": 27113479,
         "name": "silverxz",
-        "rank": 17,
-        "score": 800
-      },
-      {
-        "uid": 79510960,
-        "name": "theLP",
         "rank": 18,
         "score": 800
       },
@@ -221,32 +221,32 @@
         "score": 400
       },
       {
+        "uid": 75174428,
+        "name": "PastalaVista",
+        "rank": 36,
+        "score": 300
+      },
+      {
         "uid": 71028860,
         "name": "Rzzza",
-        "rank": 36,
+        "rank": 37,
         "score": 0
       },
       {
         "uid": 60687252,
         "name": "һan",
-        "rank": 37,
+        "rank": 38,
         "score": 0
       },
       {
         "uid": 115742768,
         "name": "SterbyTools",
-        "rank": 38,
+        "rank": 39,
         "score": 0
       },
       {
         "uid": 35869301,
         "name": "Toddlerr",
-        "rank": 39,
-        "score": 0
-      },
-      {
-        "uid": 75174428,
-        "name": "PastalaVista",
         "rank": 40,
         "score": 0
       }
