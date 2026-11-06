@@ -8,10 +8,10 @@
       "seasonTotal": 1.5225461339760756e+24
     },
     {
-      "gainVsPreviousSeason": 8.657596234003757e+22,
+      "gainVsPreviousSeason": 8.739598722292939e+22,
       "name": "DAYO-P",
       "rank": 2,
-      "seasonTotal": 3.605110263636251e+23
+      "seasonTotal": 3.6133105124651694e+23
     },
     {
       "gainVsPreviousSeason": 4.712902904972728e+21,
@@ -62,22 +62,22 @@
       "seasonTotal": 1.5384060781958963e+22
     },
     {
-      "gainVsPreviousSeason": 2.6419729815480755e+21,
+      "gainVsPreviousSeason": 4.14274062246208e+21,
       "name": "Player 66607264",
       "rank": 11,
-      "seasonTotal": 1.0823984663533659e+22
+      "seasonTotal": 1.2324752304447664e+22
+    },
+    {
+      "gainVsPreviousSeason": 4.1363807186823865e+21,
+      "name": "p88203044",
+      "rank": 12,
+      "seasonTotal": 1.1167476063814457e+22
     },
     {
       "gainVsPreviousSeason": -9.117122915540826e+21,
       "name": "PastalaVista",
-      "rank": 12,
-      "seasonTotal": 1.0578030951566187e+22
-    },
-    {
-      "gainVsPreviousSeason": 3.4996031389685934e+21,
-      "name": "p88203044",
       "rank": 13,
-      "seasonTotal": 1.0530698484100664e+22
+      "seasonTotal": 1.0578030951566187e+22
     },
     {
       "gainVsPreviousSeason": 4.2429714998856096e+20,
@@ -140,10 +140,10 @@
       "seasonTotal": 5.206337144721376e+21
     },
     {
-      "gainVsPreviousSeason": 8.952804136124002e+20,
+      "gainVsPreviousSeason": 1.1568339763546318e+21,
       "name": "BobBobberson",
       "rank": 24,
-      "seasonTotal": 3.929327573989356e+21
+      "seasonTotal": 4.190881136731588e+21
     },
     {
       "gainVsPreviousSeason": -3.501096715593109e+20,
@@ -170,10 +170,10 @@
       "seasonTotal": 3.5012116990397535e+21
     },
     {
-      "gainVsPreviousSeason": -3.682678212438414e+20,
+      "gainVsPreviousSeason": -2.823901132878056e+20,
       "name": "gubrax",
       "rank": 29,
-      "seasonTotal": 2.423207019079787e+21
+      "seasonTotal": 2.5090847270358226e+21
     },
     {
       "gainVsPreviousSeason": 1.762205608070227e+21,
@@ -3241,10 +3241,11 @@
                 1.6793863399562776e+22,
                 1.272757168588138e+22,
                 1.4960458739859952e+22,
-                1.1121649665508836e+22
+                1.1121649665508836e+22,
+                1.5780483622751751e+22
               ],
               "name": "DAYO-P",
-              "top2Sum": 3.1754322139422728e+22
+              "top2Sum": 3.2574347022314527e+22
             },
             {
               "attempts": [
@@ -3351,10 +3352,33 @@
             },
             {
               "attempts": [
-                2.390907600832653e+20
+                2.390907600832653e+20,
+                2.615535627422318e+20
               ],
               "name": "BobBobberson",
-              "top2Sum": 2.390907600832653e+20
+              "top2Sum": 5.006443228254971e+20
+            },
+            {
+              "attempts": [
+                8.587770795603591e+19
+              ],
+              "name": "gubrax",
+              "top2Sum": 8.587770795603591e+19
+            },
+            {
+              "attempts": [
+                6.367775797137939e+20
+              ],
+              "name": "p88203044",
+              "top2Sum": 6.367775797137939e+20
+            },
+            {
+              "attempts": [
+                7.50002566625759e+20,
+                7.507650742882468e+20
+              ],
+              "name": "Player 66607264",
+              "top2Sum": 1.5007676409140059e+21
             }
           ]
         }
