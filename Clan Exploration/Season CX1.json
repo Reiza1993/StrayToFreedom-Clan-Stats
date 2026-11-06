@@ -7,8 +7,8 @@
   "previousSeasonFinalTotal": null,
   "milestoneSnapshot": null,
   "cxRank": {
-    "updatedAt": "2026-11-06T12:45:10.479246+11:00",
-    "total": 38400,
+    "updatedAt": "2026-11-06T13:45:14.698780+11:00",
+    "total": 39500,
     "members": [
       {
         "uid": 29321884,
@@ -17,16 +17,16 @@
         "score": 2800
       },
       {
-        "uid": 83339881,
-        "name": "Fl3xas",
-        "rank": 2,
-        "score": 2600
-      },
-      {
         "uid": 88203044,
         "name": "p88203044",
+        "rank": 2,
+        "score": 2800
+      },
+      {
+        "uid": 83339881,
+        "name": "Fl3xas",
         "rank": 3,
-        "score": 2400
+        "score": 2600
       },
       {
         "uid": 36484758,
@@ -149,62 +149,62 @@
         "score": 800
       },
       {
+        "uid": 70603922,
+        "name": "BlackFlamE",
+        "rank": 24,
+        "score": 800
+      },
+      {
         "uid": 59566866,
         "name": "FlyingDutchy",
-        "rank": 24,
+        "rank": 25,
         "score": 700
       },
       {
         "uid": 51071110,
         "name": "samwise08",
-        "rank": 25,
+        "rank": 26,
         "score": 400
       },
       {
         "uid": 26277677,
         "name": "BobBobberson",
-        "rank": 26,
+        "rank": 27,
         "score": 400
       },
       {
         "uid": 29904762,
         "name": "Cheeselife",
-        "rank": 27,
+        "rank": 28,
         "score": 400
       },
       {
         "uid": 64676255,
         "name": "盾Heathcliff剣",
-        "rank": 28,
+        "rank": 29,
         "score": 400
       },
       {
         "uid": 106162623,
         "name": "gubrax",
-        "rank": 29,
+        "rank": 30,
         "score": 400
       },
       {
         "uid": 87954282,
         "name": "SngphO",
-        "rank": 30,
+        "rank": 31,
         "score": 400
       },
       {
         "uid": 61865023,
         "name": "RexPanda",
-        "rank": 31,
+        "rank": 32,
         "score": 400
       },
       {
         "uid": 18297536,
         "name": "ergiangi",
-        "rank": 32,
-        "score": 400
-      },
-      {
-        "uid": 70603922,
-        "name": "BlackFlamE",
         "rank": 33,
         "score": 400
       },
@@ -227,14 +227,14 @@
         "score": 300
       },
       {
-        "uid": 71028860,
-        "name": "Rzzza",
-        "rank": 37,
-        "score": 0
-      },
-      {
         "uid": 60687252,
         "name": "һan",
+        "rank": 37,
+        "score": 300
+      },
+      {
+        "uid": 71028860,
+        "name": "Rzzza",
         "rank": 38,
         "score": 0
       },
