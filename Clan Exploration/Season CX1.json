@@ -7,8 +7,8 @@
   "previousSeasonFinalTotal": null,
   "milestoneSnapshot": null,
   "cxRank": {
-    "updatedAt": "2026-11-06T13:45:14.698780+11:00",
-    "total": 39500,
+    "updatedAt": "2026-11-06T14:45:18.944858+11:00",
+    "total": 40300,
     "members": [
       {
         "uid": 29321884,
@@ -23,16 +23,16 @@
         "score": 2800
       },
       {
-        "uid": 83339881,
-        "name": "Fl3xas",
-        "rank": 3,
-        "score": 2600
-      },
-      {
         "uid": 36484758,
         "name": "Belthazar",
+        "rank": 3,
+        "score": 2800
+      },
+      {
+        "uid": 83339881,
+        "name": "Fl3xas",
         "rank": 4,
-        "score": 2400
+        "score": 2600
       },
       {
         "uid": 66607264,
@@ -53,22 +53,22 @@
         "score": 1700
       },
       {
+        "uid": 80018314,
+        "name": null,
+        "rank": 8,
+        "score": 1700
+      },
+      {
         "uid": 80972473,
         "name": "Cunner88",
-        "rank": 8,
+        "rank": 9,
         "score": 1500
       },
       {
         "uid": 83861839,
         "name": "groggen",
-        "rank": 9,
-        "score": 1400
-      },
-      {
-        "uid": 80018314,
-        "name": null,
         "rank": 10,
-        "score": 1300
+        "score": 1400
       },
       {
         "uid": 113690788,
