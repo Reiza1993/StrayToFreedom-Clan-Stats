@@ -2,10 +2,10 @@
   "endDate": "2026-11-18",
   "leaderboard": [
     {
-      "gainVsPreviousSeason": -8.47751276231483e+22,
+      "gainVsPreviousSeason": 4.908406467075452e+22,
       "name": "Fl3xas",
       "rank": 1,
-      "seasonTotal": 1.5225461339760756e+24
+      "seasonTotal": 1.6564053262699784e+24
     },
     {
       "gainVsPreviousSeason": 1.030117585730932e+23,
@@ -182,10 +182,10 @@
       "seasonTotal": 2.6320381537384934e+21
     },
     {
-      "gainVsPreviousSeason": -2.711493523017597e+21,
+      "gainVsPreviousSeason": -2.4894684931032036e+21,
       "name": "groggen",
       "rank": 31,
-      "seasonTotal": 2.2301549708254238e+21
+      "seasonTotal": 2.4521800007398174e+21
     },
     {
       "gainVsPreviousSeason": -1.095813709490032e+21,
@@ -3510,10 +3510,11 @@
             },
             {
               "attempts": [
-                6.642035401409161e+20
+                6.642035401409161e+20,
+                2.2202502991439387e+20
               ],
               "name": "groggen",
-              "top2Sum": 6.642035401409161e+20
+              "top2Sum": 8.862285700553099e+20
             },
             {
               "attempts": [
@@ -3537,6 +3538,14 @@
               ],
               "name": "FlyingDutchy",
               "top2Sum": 4.1394821534477196e+20
+            },
+            {
+              "attempts": [
+                6.521372574995053e+22,
+                6.864546654395239e+22
+              ],
+              "name": "Fl3xas",
+              "top2Sum": 1.3385919229390293e+23
             }
           ]
         }
