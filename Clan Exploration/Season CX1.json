@@ -7,14 +7,14 @@
   "previousSeasonFinalTotal": null,
   "milestoneSnapshot": null,
   "cxRank": {
-    "updatedAt": "2026-11-06T14:45:18.944858+11:00",
-    "total": 40300,
+    "updatedAt": "2026-11-06T15:45:24.315381+11:00",
+    "total": 41500,
     "members": [
       {
         "uid": 29321884,
         "name": "RABBIT5",
         "rank": 1,
-        "score": 2800
+        "score": 3200
       },
       {
         "uid": 88203044,
@@ -155,22 +155,22 @@
         "score": 800
       },
       {
-        "uid": 59566866,
-        "name": "FlyingDutchy",
-        "rank": 25,
-        "score": 700
-      },
-      {
         "uid": 51071110,
         "name": "samwise08",
-        "rank": 26,
-        "score": 400
+        "rank": 25,
+        "score": 800
       },
       {
         "uid": 26277677,
         "name": "BobBobberson",
+        "rank": 26,
+        "score": 800
+      },
+      {
+        "uid": 59566866,
+        "name": "FlyingDutchy",
         "rank": 27,
-        "score": 400
+        "score": 700
       },
       {
         "uid": 29904762,
