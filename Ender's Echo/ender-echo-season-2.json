@@ -122,22 +122,22 @@
       "seasonTotal": 5.717084919665501e+21
     },
     {
+      "gainVsPreviousSeason": -1.3759091313363806e+20,
+      "name": "theLP",
+      "rank": 21,
+      "seasonTotal": 5.483419864899244e+21
+    },
+    {
       "gainVsPreviousSeason": -1.4481304044067143e+22,
       "name": "Scoundrel536",
-      "rank": 21,
+      "rank": 22,
       "seasonTotal": 5.320366503714772e+21
     },
     {
       "gainVsPreviousSeason": null,
       "name": "RexPanda",
-      "rank": 22,
-      "seasonTotal": 5.206337144721376e+21
-    },
-    {
-      "gainVsPreviousSeason": -4.979374482352232e+20,
-      "name": "theLP",
       "rank": 23,
-      "seasonTotal": 5.123073329797659e+21
+      "seasonTotal": 5.206337144721376e+21
     },
     {
       "gainVsPreviousSeason": -3.501096715593109e+20,
@@ -3326,6 +3326,13 @@
               ],
               "name": "MadameMischief",
               "top2Sum": 2.3848262677834765e+21
+            },
+            {
+              "attempts": [
+                3.603465351015847e+20
+              ],
+              "name": "theLP",
+              "top2Sum": 3.603465351015847e+20
             }
           ]
         }
