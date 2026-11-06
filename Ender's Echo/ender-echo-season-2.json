@@ -32,10 +32,10 @@
       "seasonTotal": 2.7221800495429807e+23
     },
     {
-      "gainVsPreviousSeason": -2.705831515913057e+22,
+      "gainVsPreviousSeason": -1.9142713598211095e+22,
       "name": "SngphO",
       "rank": 6,
-      "seasonTotal": 8.562006747207049e+22
+      "seasonTotal": 9.353566903298997e+22
     },
     {
       "gainVsPreviousSeason": -9.810534859435071e+22,
@@ -50,10 +50,10 @@
       "seasonTotal": 3.283363964445583e+22
     },
     {
-      "gainVsPreviousSeason": 6.974684713336747e+21,
+      "gainVsPreviousSeason": 9.638915399867129e+21,
       "name": "MadameMischief",
       "rank": 9,
-      "seasonTotal": 2.6925975468446105e+22
+      "seasonTotal": 2.9590206154976486e+22
     },
     {
       "gainVsPreviousSeason": 1.0438937413663892e+21,
@@ -62,34 +62,34 @@
       "seasonTotal": 1.5384060781958963e+22
     },
     {
+      "gainVsPreviousSeason": -6.524704822564349e+21,
+      "name": "PastalaVista",
+      "rank": 11,
+      "seasonTotal": 1.3170449044542664e+22
+    },
+    {
       "gainVsPreviousSeason": 4.14274062246208e+21,
       "name": "Player 66607264",
-      "rank": 11,
+      "rank": 12,
       "seasonTotal": 1.2324752304447664e+22
     },
     {
-      "gainVsPreviousSeason": 4.1363807186823865e+21,
+      "gainVsPreviousSeason": 4.936656914239061e+21,
       "name": "p88203044",
-      "rank": 12,
-      "seasonTotal": 1.1167476063814457e+22
+      "rank": 13,
+      "seasonTotal": 1.1967752259371132e+22
+    },
+    {
+      "gainVsPreviousSeason": -8.84488239617037e+21,
+      "name": "RetinaDNA",
+      "rank": 14,
+      "seasonTotal": 1.191518814557675e+22
     },
     {
       "gainVsPreviousSeason": 1.6886936671696517e+21,
       "name": "\u76feHeathcliff\u5263",
-      "rank": 13,
-      "seasonTotal": 1.1044195566582229e+22
-    },
-    {
-      "gainVsPreviousSeason": -9.117122915540826e+21,
-      "name": "PastalaVista",
-      "rank": 14,
-      "seasonTotal": 1.0578030951566187e+22
-    },
-    {
-      "gainVsPreviousSeason": -1.1133746192145506e+22,
-      "name": "RetinaDNA",
       "rank": 15,
-      "seasonTotal": 9.626324349601614e+21
+      "seasonTotal": 1.1044195566582229e+22
     },
     {
       "gainVsPreviousSeason": -1.345115937209332e+22,
@@ -116,10 +116,10 @@
       "seasonTotal": 7.447081598708979e+21
     },
     {
-      "gainVsPreviousSeason": -1.3046269042873084e+21,
+      "gainVsPreviousSeason": -8.02153852065951e+20,
       "name": "HakiLuffy",
       "rank": 20,
-      "seasonTotal": 5.717084919665501e+21
+      "seasonTotal": 6.219557971886858e+21
     },
     {
       "gainVsPreviousSeason": -1.3759091313363806e+20,
@@ -146,40 +146,40 @@
       "seasonTotal": 4.190881136731588e+21
     },
     {
-      "gainVsPreviousSeason": -3.501096715593109e+20,
+      "gainVsPreviousSeason": 1.033067932507371e+20,
       "name": "EMBALOCO",
       "rank": 25,
-      "seasonTotal": 3.729033597796556e+21
+      "seasonTotal": 4.182450062606604e+21
+    },
+    {
+      "gainVsPreviousSeason": 6.603206901141209e+20,
+      "name": "silverxz",
+      "rank": 26,
+      "seasonTotal": 3.9983566453506766e+21
     },
     {
       "gainVsPreviousSeason": 4.6086794193299466e+20,
       "name": "Rzzza",
-      "rank": 26,
+      "rank": 27,
       "seasonTotal": 3.6155649209845736e+21
     },
     {
       "gainVsPreviousSeason": -4.9287595376765777e+20,
       "name": "BlackFlamE",
-      "rank": 27,
+      "rank": 28,
       "seasonTotal": 3.5710875740214814e+21
     },
     {
-      "gainVsPreviousSeason": 1.6317574380319775e+20,
-      "name": "silverxz",
-      "rank": 28,
-      "seasonTotal": 3.5012116990397535e+21
+      "gainVsPreviousSeason": 2.2882350879138896e+21,
+      "name": "Toddlerr",
+      "rank": 29,
+      "seasonTotal": 2.8624051781511503e+21
     },
     {
       "gainVsPreviousSeason": -1.5943668658513484e+20,
       "name": "gubrax",
-      "rank": 29,
-      "seasonTotal": 2.6320381537384934e+21
-    },
-    {
-      "gainVsPreviousSeason": 1.762205608070227e+21,
-      "name": "Toddlerr",
       "rank": 30,
-      "seasonTotal": 2.3363756983074876e+21
+      "seasonTotal": 2.6320381537384934e+21
     },
     {
       "gainVsPreviousSeason": -1.095813709490032e+21,
@@ -212,10 +212,10 @@
       "seasonTotal": 1.1818541388275245e+21
     },
     {
-      "gainVsPreviousSeason": 3.1641366618181114e+20,
+      "gainVsPreviousSeason": 3.974834419551716e+20,
       "name": "Player 80018314",
       "rank": 36,
-      "seasonTotal": 1.093748656811302e+21
+      "seasonTotal": 1.1748184325846625e+21
     },
     {
       "gainVsPreviousSeason": 4.7764272258140484e+20,
@@ -224,16 +224,16 @@
       "seasonTotal": 1.0628968986116112e+21
     },
     {
-      "gainVsPreviousSeason": -5.217208327541757e+21,
-      "name": "Bensayyten",
+      "gainVsPreviousSeason": -1.6442116030782767e+19,
+      "name": "Belthazar",
       "rank": 38,
-      "seasonTotal": 9.786570956389257e+20
+      "seasonTotal": 1.0202655908480118e+21
     },
     {
-      "gainVsPreviousSeason": -8.810639506789604e+19,
-      "name": "Belthazar",
+      "gainVsPreviousSeason": -5.217208327541757e+21,
+      "name": "Bensayyten",
       "rank": 39,
-      "seasonTotal": 9.486013118108985e+20
+      "seasonTotal": 9.786570956389257e+20
     },
     {
       "gainVsPreviousSeason": -1.1390022193505434e+20,
@@ -3368,10 +3368,11 @@
             },
             {
               "attempts": [
-                6.367775797137939e+20
+                6.367775797137939e+20,
+                8.002761955566744e+20
               ],
               "name": "p88203044",
-              "top2Sum": 6.367775797137939e+20
+              "top2Sum": 1.437053775270468e+21
             },
             {
               "attempts": [
@@ -3396,6 +3397,91 @@
               ],
               "name": "\u76feHeathcliff\u5263",
               "top2Sum": 1.2643965171810896e+21
+            },
+            {
+              "attempts": [
+                8.481839811624427e+20,
+                1.4406798148126937e+21
+              ],
+              "name": "RetinaDNA",
+              "top2Sum": 2.2888637959751362e+21
+            },
+            {
+              "attempts": [
+                3.2177510296615092e+19,
+                3.948676874049815e+19
+              ],
+              "name": "Belthazar",
+              "top2Sum": 7.1664279037113246e+19
+            },
+            {
+              "attempts": [
+                1.4481318092863295e+21,
+                1.1442862836901482e+21
+              ],
+              "name": "PastalaVista",
+              "top2Sum": 2.5924180929764776e+21
+            },
+            {
+              "attempts": [
+                2.9707265117388024e+21,
+                4.132591052638732e+21,
+                3.783010508280745e+21
+              ],
+              "name": "SngphO",
+              "top2Sum": 7.915601560919477e+21
+            },
+            {
+              "attempts": [
+                2.4286241714488538e+20,
+                2.105540476651624e+20
+              ],
+              "name": "EMBALOCO",
+              "top2Sum": 4.5341646481004777e+20
+            },
+            {
+              "attempts": [
+                2.5916900637821308e+20,
+                2.379759399327101e+20
+              ],
+              "name": "silverxz",
+              "top2Sum": 4.9714494631092316e+20
+            },
+            {
+              "attempts": [
+                8.10697757733604e+19
+              ],
+              "name": "Player 80018314",
+              "top2Sum": 8.10697757733604e+19
+            }
+          ]
+        },
+        {
+          "date": "2026-11-07",
+          "day": 17,
+          "players": [
+            {
+              "attempts": [
+                5.260294798436628e+20
+              ],
+              "name": "Toddlerr",
+              "top2Sum": 5.260294798436628e+20
+            },
+            {
+              "attempts": [
+                2.836828624442062e+20,
+                2.187901897771507e+20
+              ],
+              "name": "HakiLuffy",
+              "top2Sum": 5.024730522213569e+20
+            },
+            {
+              "attempts": [
+                1.0703987458729451e+21,
+                1.5938319406574356e+21
+              ],
+              "name": "MadameMischief",
+              "top2Sum": 2.664230686530381e+21
             }
           ]
         }
