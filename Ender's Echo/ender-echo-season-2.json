@@ -50,10 +50,10 @@
       "seasonTotal": 3.283363964445583e+22
     },
     {
-      "gainVsPreviousSeason": 4.58985844555327e+21,
+      "gainVsPreviousSeason": 6.974684713336747e+21,
       "name": "MadameMischief",
       "rank": 9,
-      "seasonTotal": 2.4541149200662628e+22
+      "seasonTotal": 2.6925975468446105e+22
     },
     {
       "gainVsPreviousSeason": 1.0438937413663892e+21,
@@ -3318,6 +3318,14 @@
               ],
               "name": "Cunner88",
               "top2Sum": 6.331326300183005e+21
+            },
+            {
+              "attempts": [
+                1.3443900329617764e+21,
+                1.0404362348217e+21
+              ],
+              "name": "MadameMischief",
+              "top2Sum": 2.3848262677834765e+21
             }
           ]
         }
