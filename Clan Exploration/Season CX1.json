@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-07T02:33:53.220543+11:00",
-    "total": 53500,
+    "updatedAt": "2026-11-07T03:34:01.731824+11:00",
+    "total": 56400,
     "members": [
       {
         "uid": 29321884,
@@ -285,49 +285,49 @@
         "uid": 103516442,
         "name": "DAYO-P",
         "rank": 5,
+        "score": 2900
+      },
+      {
+        "uid": 32556489,
+        "name": "Bensayyten",
+        "rank": 6,
         "score": 2800
       },
       {
         "uid": 66607264,
         "name": null,
-        "rank": 6,
-        "score": 2700
-      },
-      {
-        "uid": 32556489,
-        "name": "Bensayyten",
         "rank": 7,
-        "score": 2400
+        "score": 2700
       },
       {
         "uid": 80018314,
         "name": null,
         "rank": 8,
-        "score": 2100
-      },
-      {
-        "uid": 113690788,
-        "name": "Apathy_",
-        "rank": 9,
-        "score": 1700
+        "score": 2500
       },
       {
         "uid": 41742773,
         "name": "MadameMischief",
-        "rank": 10,
-        "score": 1600
+        "rank": 9,
+        "score": 2000
       },
       {
         "uid": 108860725,
         "name": "RetinaDNA",
-        "rank": 11,
-        "score": 1600
+        "rank": 10,
+        "score": 2000
       },
       {
         "uid": 10754439,
         "name": "HakiLuffy",
+        "rank": 11,
+        "score": 2000
+      },
+      {
+        "uid": 113690788,
+        "name": "Apathy_",
         "rank": 12,
-        "score": 1600
+        "score": 1700
       },
       {
         "uid": 80972473,
@@ -399,7 +399,7 @@
         "uid": 89511116,
         "name": "EMBALOCO",
         "rank": 24,
-        "score": 800
+        "score": 1200
       },
       {
         "uid": 18115624,
@@ -444,20 +444,20 @@
         "score": 800
       },
       {
+        "uid": 64676255,
+        "name": "盾Heathcliff剣",
+        "rank": 32,
+        "score": 800
+      },
+      {
         "uid": 59566866,
         "name": "FlyingDutchy",
-        "rank": 32,
+        "rank": 33,
         "score": 700
       },
       {
         "uid": 29904762,
         "name": "Cheeselife",
-        "rank": 33,
-        "score": 400
-      },
-      {
-        "uid": 64676255,
-        "name": "盾Heathcliff剣",
         "rank": 34,
         "score": 400
       },
@@ -500,8 +500,8 @@
     ]
   },
   "cxBoss": {
-    "updatedAt": "2026-11-07T02:33:53.220543+11:00",
-    "total": 13205,
+    "updatedAt": "2026-11-07T03:34:01.731824+11:00",
+    "total": 13589,
     "members": [
       {
         "uid": 83339881,
@@ -606,26 +606,26 @@
         "score": 664
       },
       {
+        "uid": 41742773,
+        "name": "MadameMischief",
+        "rank": 18,
+        "score": 384
+      },
+      {
         "uid": 64676255,
         "name": "盾Heathcliff剣",
-        "rank": 18,
+        "rank": 19,
         "score": 0
       },
       {
         "uid": 71028860,
         "name": "Rzzza",
-        "rank": 19,
+        "rank": 20,
         "score": 0
       },
       {
         "uid": 108860725,
         "name": "RetinaDNA",
-        "rank": 20,
-        "score": 0
-      },
-      {
-        "uid": 41742773,
-        "name": "MadameMischief",
         "rank": 21,
         "score": 0
       },
