@@ -20,10 +20,10 @@
       "seasonTotal": 3.916802788571994e+23
     },
     {
-      "gainVsPreviousSeason": 3.5181531379338435e+22,
+      "gainVsPreviousSeason": 6.5987649015961e+22,
       "name": "Nubis",
       "rank": 4,
-      "seasonTotal": 3.362858420486338e+23
+      "seasonTotal": 3.6709195968525634e+23
     },
     {
       "gainVsPreviousSeason": 7.824713739065032e+22,
@@ -32,10 +32,10 @@
       "seasonTotal": 2.9634205602410527e+23
     },
     {
-      "gainVsPreviousSeason": -1.2106004464729252e+22,
+      "gainVsPreviousSeason": -4.4889061083558235e+21,
       "name": "SngphO",
       "rank": 6,
-      "seasonTotal": 1.005723781664718e+23
+      "seasonTotal": 1.0818947652284524e+23
     },
     {
       "gainVsPreviousSeason": -8.995938410590339e+22,
@@ -98,22 +98,22 @@
       "seasonTotal": 9.624050406543118e+21
     },
     {
+      "gainVsPreviousSeason": 1.4644460760361284e+21,
+      "name": "Apathy_",
+      "rank": 17,
+      "seasonTotal": 9.047197041863785e+21
+    },
+    {
       "gainVsPreviousSeason": 9.321295665358522e+20,
       "name": "VictorMolusco",
-      "rank": 17,
+      "rank": 18,
       "seasonTotal": 8.485473169682971e+21
     },
     {
       "gainVsPreviousSeason": -1.1470777423062576e+22,
       "name": "Scoundrel536",
-      "rank": 18,
-      "seasonTotal": 8.330893124719339e+21
-    },
-    {
-      "gainVsPreviousSeason": 7.07152616189104e+20,
-      "name": "Apathy_",
       "rank": 19,
-      "seasonTotal": 8.28990358201676e+21
+      "seasonTotal": 8.330893124719339e+21
     },
     {
       "gainVsPreviousSeason": 1.7913780916890055e+21,
@@ -3696,7 +3696,8 @@
                 1.9005292703005268e+22,
                 9.47060104119265e+21,
                 1.8878635609357185e+22,
-                1.5014244864964166e+22
+                1.5014244864964166e+22,
+                1.0569584444900611e+22
               ],
               "name": "DAYO-P",
               "top2Sum": 3.788392831236245e+22
@@ -3738,6 +3739,31 @@
               ],
               "name": "MadameMischief",
               "top2Sum": 2.669867392596237e+21
+            },
+            {
+              "attempts": [
+                4.4123708943164565e+20,
+                3.160563704153791e+20
+              ],
+              "name": "Apathy_",
+              "top2Sum": 7.572934598470247e+20
+            },
+            {
+              "attempts": [
+                3.6538476197541933e+21,
+                2.679701734703011e+21,
+                3.9632507366192295e+21
+              ],
+              "name": "SngphO",
+              "top2Sum": 7.617098356373422e+21
+            },
+            {
+              "attempts": [
+                1.5374004088529316e+22,
+                1.543211354809321e+22
+              ],
+              "name": "Nubis",
+              "top2Sum": 3.080611763662253e+22
             }
           ]
         }
