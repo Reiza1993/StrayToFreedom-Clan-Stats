@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-07T20:22:30.442303+11:00",
-    "total": 72700,
+    "updatedAt": "2026-11-07T21:22:37.069808+11:00",
+    "total": 73100,
     "members": [
       {
         "uid": 36484758,
@@ -306,28 +306,28 @@
         "score": 2900
       },
       {
+        "uid": 26277677,
+        "name": "BobBobberson",
+        "rank": 9,
+        "score": 2600
+      },
+      {
         "uid": 113690788,
         "name": "Apathy_",
-        "rank": 9,
+        "rank": 10,
         "score": 2500
       },
       {
         "uid": 41742773,
         "name": "MadameMischief",
-        "rank": 10,
+        "rank": 11,
         "score": 2400
       },
       {
         "uid": 10754439,
         "name": "HakiLuffy",
-        "rank": 11,
-        "score": 2400
-      },
-      {
-        "uid": 26277677,
-        "name": "BobBobberson",
         "rank": 12,
-        "score": 2200
+        "score": 2400
       },
       {
         "uid": 108860725,
