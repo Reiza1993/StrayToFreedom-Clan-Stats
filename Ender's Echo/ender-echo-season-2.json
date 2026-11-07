@@ -2,28 +2,28 @@
   "endDate": "2026-11-18",
   "leaderboard": [
     {
-      "gainVsPreviousSeason": 4.908406467075452e+22,
+      "gainVsPreviousSeason": 5.0010741307894265e+22,
       "name": "Fl3xas",
       "rank": 1,
-      "seasonTotal": 1.6564053262699784e+24
+      "seasonTotal": 1.6573320029071182e+24
+    },
+    {
+      "gainVsPreviousSeason": -2.0249857445383175e+23,
+      "name": "\u04bban",
+      "rank": 2,
+      "seasonTotal": 3.916802788571994e+23
     },
     {
       "gainVsPreviousSeason": 1.030117585730932e+23,
       "name": "DAYO-P",
-      "rank": 2,
+      "rank": 3,
       "seasonTotal": 3.7694682259668075e+23
     },
     {
-      "gainVsPreviousSeason": 2.850931096806446e+22,
+      "gainVsPreviousSeason": 3.5181531379338435e+22,
       "name": "Nubis",
-      "rank": 3,
-      "seasonTotal": 3.296136216373598e+23
-    },
-    {
-      "gainVsPreviousSeason": -2.8929825531838816e+23,
-      "name": "\u04bban",
       "rank": 4,
-      "seasonTotal": 3.0488059799264297e+23
+      "seasonTotal": 3.362858420486338e+23
     },
     {
       "gainVsPreviousSeason": 5.4123086320843125e+22,
@@ -38,10 +38,10 @@
       "seasonTotal": 9.353566903298997e+22
     },
     {
-      "gainVsPreviousSeason": -9.810534859435071e+22,
+      "gainVsPreviousSeason": -8.995938410590339e+22,
       "name": "\u795eSterben\u6b7b",
       "rank": 7,
-      "seasonTotal": 4.6698414926448975e+22
+      "seasonTotal": 5.4844379414896285e+22
     },
     {
       "gainVsPreviousSeason": 6.956770630625556e+21,
@@ -104,34 +104,34 @@
       "seasonTotal": 8.485473169682971e+21
     },
     {
+      "gainVsPreviousSeason": -1.1470777423062576e+22,
+      "name": "Scoundrel536",
+      "rank": 18,
+      "seasonTotal": 8.330893124719339e+21
+    },
+    {
       "gainVsPreviousSeason": 1.7913780916890055e+21,
       "name": "Gritchen",
-      "rank": 18,
+      "rank": 19,
       "seasonTotal": 8.23146738319581e+21
     },
     {
       "gainVsPreviousSeason": -1.3566936711867715e+20,
       "name": "Apathy_",
-      "rank": 19,
+      "rank": 20,
       "seasonTotal": 7.447081598708979e+21
     },
     {
       "gainVsPreviousSeason": -8.02153852065951e+20,
       "name": "HakiLuffy",
-      "rank": 20,
+      "rank": 21,
       "seasonTotal": 6.219557971886858e+21
     },
     {
-      "gainVsPreviousSeason": -1.3759091313363806e+20,
+      "gainVsPreviousSeason": 3.380798791595684e+20,
       "name": "theLP",
-      "rank": 21,
-      "seasonTotal": 5.483419864899244e+21
-    },
-    {
-      "gainVsPreviousSeason": -1.4481304044067143e+22,
-      "name": "Scoundrel536",
       "rank": 22,
-      "seasonTotal": 5.320366503714772e+21
+      "seasonTotal": 5.95909065719245e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -3519,10 +3519,13 @@
             {
               "attempts": [
                 1.1499082017960523e+22,
-                1.2297326045131176e+22
+                1.2297326045131176e+22,
+                1.2876371704407195e+22,
+                1.57279391004685e+22,
+                1.4740689373897238e+22
               ],
               "name": "Nubis",
-              "top2Sum": 2.37964080630917e+22
+              "top2Sum": 3.046862847436574e+22
             },
             {
               "attempts": [
@@ -3542,10 +3545,41 @@
             {
               "attempts": [
                 6.521372574995053e+22,
-                6.864546654395239e+22
+                6.864546654395239e+22,
+                5.822627635264567e+22,
+                6.6140402387090124e+22
               ],
               "name": "Fl3xas",
-              "top2Sum": 1.3385919229390293e+23
+              "top2Sum": 1.3478586893104252e+23
+            },
+            {
+              "attempts": [
+                2.9013670380526925e+20,
+                1.855340884879372e+20
+              ],
+              "name": "theLP",
+              "top2Sum": 4.7567079229320646e+20
+            },
+            {
+              "attempts": [
+                8.14596448844731e+21
+              ],
+              "name": "\u795eSterben\u6b7b",
+              "top2Sum": 8.14596448844731e+21
+            },
+            {
+              "attempts": [
+                8.67996808645564e+22
+              ],
+              "name": "\u04bban",
+              "top2Sum": 8.67996808645564e+22
+            },
+            {
+              "attempts": [
+                3.010526621004567e+21
+              ],
+              "name": "Scoundrel536",
+              "top2Sum": 3.010526621004567e+21
             }
           ]
         }
