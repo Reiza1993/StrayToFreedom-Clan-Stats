@@ -254,14 +254,14 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-07T18:22:16.042935+11:00",
-    "total": 71000,
+    "updatedAt": "2026-11-07T19:22:23.242607+11:00",
+    "total": 71600,
     "members": [
       {
         "uid": 36484758,
         "name": "Belthazar",
         "rank": 1,
-        "score": 4800
+        "score": 5200
       },
       {
         "uid": 29321884,
@@ -291,7 +291,7 @@
         "uid": 32556489,
         "name": "Bensayyten",
         "rank": 6,
-        "score": 3300
+        "score": 3500
       },
       {
         "uid": 83339881,
