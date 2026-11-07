@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-08T02:52:46.953113+11:00",
-    "total": 77700,
+    "updatedAt": "2026-11-08T03:53:02.565335+11:00",
+    "total": 79800,
     "members": [
       {
         "uid": 36484758,
@@ -270,22 +270,22 @@
         "score": 5100
       },
       {
-        "uid": 103516442,
-        "name": "DAYO-P",
-        "rank": 3,
-        "score": 4400
-      },
-      {
         "uid": 66607264,
         "name": null,
+        "rank": 3,
+        "score": 4700
+      },
+      {
+        "uid": 103516442,
+        "name": "DAYO-P",
         "rank": 4,
-        "score": 4300
+        "score": 4500
       },
       {
         "uid": 32556489,
         "name": "Bensayyten",
         "rank": 5,
-        "score": 4000
+        "score": 4300
       },
       {
         "uid": 88203044,
@@ -300,28 +300,28 @@
         "score": 3300
       },
       {
+        "uid": 10754439,
+        "name": "HakiLuffy",
+        "rank": 8,
+        "score": 3200
+      },
+      {
+        "uid": 41742773,
+        "name": "MadameMischief",
+        "rank": 9,
+        "score": 3100
+      },
+      {
         "uid": 83339881,
         "name": "Fl3xas",
-        "rank": 8,
+        "rank": 10,
         "score": 3000
       },
       {
         "uid": 113690788,
         "name": "Apathy_",
-        "rank": 9,
-        "score": 2900
-      },
-      {
-        "uid": 41742773,
-        "name": "MadameMischief",
-        "rank": 10,
-        "score": 2900
-      },
-      {
-        "uid": 10754439,
-        "name": "HakiLuffy",
         "rank": 11,
-        "score": 2800
+        "score": 2900
       },
       {
         "uid": 26277677,
@@ -354,62 +354,62 @@
         "score": 2000
       },
       {
+        "uid": 64676255,
+        "name": "盾Heathcliff剣",
+        "rank": 17,
+        "score": 1900
+      },
+      {
         "uid": 83861839,
         "name": "groggen",
-        "rank": 17,
+        "rank": 18,
         "score": 1800
       },
       {
         "uid": 112772047,
         "name": "VictorMolusco",
-        "rank": 18,
+        "rank": 19,
         "score": 1600
       },
       {
         "uid": 70603922,
         "name": "BlackFlamE",
-        "rank": 19,
+        "rank": 20,
         "score": 1600
       },
       {
-        "uid": 64676255,
-        "name": "盾Heathcliff剣",
-        "rank": 20,
+        "uid": 89511116,
+        "name": "EMBALOCO",
+        "rank": 21,
         "score": 1600
       },
       {
         "uid": 59566866,
         "name": "FlyingDutchy",
-        "rank": 21,
+        "rank": 22,
         "score": 1500
       },
       {
         "uid": 100876140,
         "name": "Scoundrel536",
-        "rank": 22,
+        "rank": 23,
         "score": 1300
       },
       {
         "uid": 27113479,
         "name": "silverxz",
-        "rank": 23,
+        "rank": 24,
         "score": 1200
       },
       {
         "uid": 30658936,
         "name": "Gritchen",
-        "rank": 24,
+        "rank": 25,
         "score": 1200
       },
       {
         "uid": 108546985,
         "name": "pumpenjoe",
-        "rank": 25,
-        "score": 1200
-      },
-      {
-        "uid": 89511116,
-        "name": "EMBALOCO",
         "rank": 26,
         "score": 1200
       },
