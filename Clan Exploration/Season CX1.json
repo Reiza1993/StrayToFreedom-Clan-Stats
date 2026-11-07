@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-07T15:21:47.935438+11:00",
-    "total": 69700,
+    "updatedAt": "2026-11-07T16:21:55.558966+11:00",
+    "total": 70500,
     "members": [
       {
         "uid": 36484758,
@@ -267,7 +267,7 @@
         "uid": 29321884,
         "name": "RABBIT5",
         "rank": 2,
-        "score": 4000
+        "score": 4400
       },
       {
         "uid": 66607264,
@@ -348,20 +348,20 @@
         "score": 2000
       },
       {
+        "uid": 51071110,
+        "name": "samwise08",
+        "rank": 16,
+        "score": 2000
+      },
+      {
         "uid": 83861839,
         "name": "groggen",
-        "rank": 16,
+        "rank": 17,
         "score": 1800
       },
       {
         "uid": 112772047,
         "name": "VictorMolusco",
-        "rank": 17,
-        "score": 1600
-      },
-      {
-        "uid": 51071110,
-        "name": "samwise08",
         "rank": 18,
         "score": 1600
       },
