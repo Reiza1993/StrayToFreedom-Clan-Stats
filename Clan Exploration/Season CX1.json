@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-07T13:21:29.277586+11:00",
-    "total": 66900,
+    "updatedAt": "2026-11-07T14:21:40.605620+11:00",
+    "total": 67700,
     "members": [
       {
         "uid": 36484758,
@@ -270,22 +270,22 @@
         "score": 4000
       },
       {
+        "uid": 66607264,
+        "name": null,
+        "rank": 3,
+        "score": 3900
+      },
+      {
         "uid": 88203044,
         "name": "p88203044",
-        "rank": 3,
+        "rank": 4,
         "score": 3600
       },
       {
         "uid": 103516442,
         "name": "DAYO-P",
-        "rank": 4,
-        "score": 3600
-      },
-      {
-        "uid": 66607264,
-        "name": null,
         "rank": 5,
-        "score": 3500
+        "score": 3600
       },
       {
         "uid": 32556489,
@@ -366,38 +366,38 @@
         "score": 1600
       },
       {
+        "uid": 70603922,
+        "name": "BlackFlamE",
+        "rank": 19,
+        "score": 1600
+      },
+      {
         "uid": 59566866,
         "name": "FlyingDutchy",
-        "rank": 19,
+        "rank": 20,
         "score": 1500
       },
       {
         "uid": 100876140,
         "name": "Scoundrel536",
-        "rank": 20,
+        "rank": 21,
         "score": 1300
       },
       {
         "uid": 27113479,
         "name": "silverxz",
-        "rank": 21,
+        "rank": 22,
         "score": 1200
       },
       {
         "uid": 30658936,
         "name": "Gritchen",
-        "rank": 22,
+        "rank": 23,
         "score": 1200
       },
       {
         "uid": 108546985,
         "name": "pumpenjoe",
-        "rank": 23,
-        "score": 1200
-      },
-      {
-        "uid": 70603922,
-        "name": "BlackFlamE",
         "rank": 24,
         "score": 1200
       },
