@@ -26,10 +26,10 @@
       "seasonTotal": 3.362858420486338e+23
     },
     {
-      "gainVsPreviousSeason": 5.4123086320843125e+22,
+      "gainVsPreviousSeason": 7.824713739065032e+22,
       "name": "RABBIT5",
       "rank": 5,
-      "seasonTotal": 2.7221800495429807e+23
+      "seasonTotal": 2.9634205602410527e+23
     },
     {
       "gainVsPreviousSeason": -1.9142713598211095e+22,
@@ -140,16 +140,16 @@
       "seasonTotal": 5.206337144721376e+21
     },
     {
-      "gainVsPreviousSeason": 1.259527867419622e+21,
-      "name": "silverxz",
+      "gainVsPreviousSeason": 1.8195217258797025e+21,
+      "name": "BobBobberson",
       "rank": 24,
-      "seasonTotal": 4.597563822656178e+21
+      "seasonTotal": 4.853568886256659e+21
     },
     {
-      "gainVsPreviousSeason": 1.1568339763546318e+21,
-      "name": "BobBobberson",
+      "gainVsPreviousSeason": 1.259527867419622e+21,
+      "name": "silverxz",
       "rank": 25,
-      "seasonTotal": 4.190881136731588e+21
+      "seasonTotal": 4.597563822656178e+21
     },
     {
       "gainVsPreviousSeason": 1.033067932507371e+20,
@@ -158,16 +158,16 @@
       "seasonTotal": 4.182450062606604e+21
     },
     {
-      "gainVsPreviousSeason": -3.225123841119528e+20,
-      "name": "BlackFlamE",
+      "gainVsPreviousSeason": 6.522497106476574e+20,
+      "name": "Rzzza",
       "rank": 27,
-      "seasonTotal": 3.7414511436771864e+21
+      "seasonTotal": 3.8069466896992363e+21
     },
     {
-      "gainVsPreviousSeason": 4.6086794193299466e+20,
-      "name": "Rzzza",
+      "gainVsPreviousSeason": -3.225123841119528e+20,
+      "name": "BlackFlamE",
       "rank": 28,
-      "seasonTotal": 3.6155649209845736e+21
+      "seasonTotal": 3.7414511436771864e+21
     },
     {
       "gainVsPreviousSeason": 2.2882350879138896e+21,
@@ -3495,7 +3495,9 @@
               "attempts": [
                 3.4521597307485663e+21,
                 1.216361161941526e+22,
-                1.5724740614685777e+22
+                1.5724740614685777e+22,
+                1.9187893107370702e+21,
+                1.155633590184232e+22
               ],
               "name": "DAYO-P",
               "top2Sum": 2.788835223410104e+22
@@ -3595,6 +3597,29 @@
               ],
               "name": "BlackFlamE",
               "top2Sum": 1.7036356965570504e+20
+            },
+            {
+              "attempts": [
+                1.9138176871466264e+20
+              ],
+              "name": "Rzzza",
+              "top2Sum": 1.9138176871466264e+20
+            },
+            {
+              "attempts": [
+                3.216070739217596e+20,
+                3.410806756033112e+20
+              ],
+              "name": "BobBobberson",
+              "top2Sum": 6.626877495250708e+20
+            },
+            {
+              "attempts": [
+                1.0798825744087046e+22,
+                1.3325225325720135e+22
+              ],
+              "name": "RABBIT5",
+              "top2Sum": 2.412405106980718e+22
             }
           ]
         }
