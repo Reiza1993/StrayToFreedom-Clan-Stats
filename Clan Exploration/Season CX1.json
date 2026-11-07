@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-07T22:22:43.375337+11:00",
-    "total": 73500,
+    "updatedAt": "2026-11-07T23:22:50.817815+11:00",
+    "total": 74700,
     "members": [
       {
         "uid": 36484758,
@@ -270,16 +270,16 @@
         "score": 4700
       },
       {
-        "uid": 66607264,
-        "name": null,
-        "rank": 3,
-        "score": 4300
-      },
-      {
         "uid": 103516442,
         "name": "DAYO-P",
+        "rank": 3,
+        "score": 4400
+      },
+      {
+        "uid": 66607264,
+        "name": null,
         "rank": 4,
-        "score": 4000
+        "score": 4300
       },
       {
         "uid": 88203044,
@@ -312,22 +312,22 @@
         "score": 2800
       },
       {
+        "uid": 41742773,
+        "name": "MadameMischief",
+        "rank": 10,
+        "score": 2800
+      },
+      {
         "uid": 26277677,
         "name": "BobBobberson",
-        "rank": 10,
+        "rank": 11,
         "score": 2600
       },
       {
         "uid": 113690788,
         "name": "Apathy_",
-        "rank": 11,
-        "score": 2500
-      },
-      {
-        "uid": 41742773,
-        "name": "MadameMischief",
         "rank": 12,
-        "score": 2400
+        "score": 2500
       },
       {
         "uid": 108860725,
@@ -372,68 +372,68 @@
         "score": 1600
       },
       {
+        "uid": 64676255,
+        "name": "盾Heathcliff剣",
+        "rank": 20,
+        "score": 1600
+      },
+      {
         "uid": 59566866,
         "name": "FlyingDutchy",
-        "rank": 20,
+        "rank": 21,
         "score": 1500
       },
       {
         "uid": 100876140,
         "name": "Scoundrel536",
-        "rank": 21,
+        "rank": 22,
         "score": 1300
       },
       {
         "uid": 27113479,
         "name": "silverxz",
-        "rank": 22,
+        "rank": 23,
         "score": 1200
       },
       {
         "uid": 30658936,
         "name": "Gritchen",
-        "rank": 23,
+        "rank": 24,
         "score": 1200
       },
       {
         "uid": 108546985,
         "name": "pumpenjoe",
-        "rank": 24,
+        "rank": 25,
         "score": 1200
       },
       {
         "uid": 89511116,
         "name": "EMBALOCO",
-        "rank": 25,
+        "rank": 26,
         "score": 1200
       },
       {
         "uid": 18115624,
         "name": "Nubis",
-        "rank": 26,
+        "rank": 27,
         "score": 1200
       },
       {
         "uid": 11463573,
         "name": "faxnem",
-        "rank": 27,
+        "rank": 28,
         "score": 1200
       },
       {
         "uid": 18297536,
         "name": "ergiangi",
-        "rank": 28,
+        "rank": 29,
         "score": 1200
       },
       {
         "uid": 61865023,
         "name": "RexPanda",
-        "rank": 29,
-        "score": 1200
-      },
-      {
-        "uid": 64676255,
-        "name": "盾Heathcliff剣",
         "rank": 30,
         "score": 1200
       },
