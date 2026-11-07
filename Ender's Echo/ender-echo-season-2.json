@@ -14,10 +14,10 @@
       "seasonTotal": 3.916802788571994e+23
     },
     {
-      "gainVsPreviousSeason": 1.030117585730932e+23,
+      "gainVsPreviousSeason": 1.1528433945703043e+23,
       "name": "DAYO-P",
       "rank": 3,
-      "seasonTotal": 3.7694682259668075e+23
+      "seasonTotal": 3.89219403480618e+23
     },
     {
       "gainVsPreviousSeason": 3.5181531379338435e+22,
@@ -158,16 +158,16 @@
       "seasonTotal": 4.182450062606604e+21
     },
     {
-      "gainVsPreviousSeason": 4.6086794193299466e+20,
-      "name": "Rzzza",
+      "gainVsPreviousSeason": -3.225123841119528e+20,
+      "name": "BlackFlamE",
       "rank": 27,
-      "seasonTotal": 3.6155649209845736e+21
+      "seasonTotal": 3.7414511436771864e+21
     },
     {
-      "gainVsPreviousSeason": -4.9287595376765777e+20,
-      "name": "BlackFlamE",
+      "gainVsPreviousSeason": 4.6086794193299466e+20,
+      "name": "Rzzza",
       "rank": 28,
-      "seasonTotal": 3.5710875740214814e+21
+      "seasonTotal": 3.6155649209845736e+21
     },
     {
       "gainVsPreviousSeason": 2.2882350879138896e+21,
@@ -200,16 +200,16 @@
       "seasonTotal": 1.5426355574168984e+21
     },
     {
-      "gainVsPreviousSeason": 8.915909379261767e+20,
-      "name": "FlyingDutchy",
+      "gainVsPreviousSeason": -8.061219217646648e+20,
+      "name": "samwise08",
       "rank": 34,
-      "seasonTotal": 1.476845113956383e+21
+      "seasonTotal": 1.5333377225008944e+21
     },
     {
-      "gainVsPreviousSeason": -1.0055510499266276e+21,
-      "name": "samwise08",
+      "gainVsPreviousSeason": 8.915909379261767e+20,
+      "name": "FlyingDutchy",
       "rank": 35,
-      "seasonTotal": 1.3339085943389317e+21
+      "seasonTotal": 1.476845113956383e+21
     },
     {
       "gainVsPreviousSeason": 9.67856148870172e+20,
@@ -3494,10 +3494,11 @@
             {
               "attempts": [
                 3.4521597307485663e+21,
-                1.216361161941526e+22
+                1.216361161941526e+22,
+                1.5724740614685777e+22
               ],
               "name": "DAYO-P",
-              "top2Sum": 1.5615771350163828e+22
+              "top2Sum": 2.788835223410104e+22
             },
             {
               "attempts": [
@@ -3580,6 +3581,20 @@
               ],
               "name": "Scoundrel536",
               "top2Sum": 3.010526621004567e+21
+            },
+            {
+              "attempts": [
+                1.9942912816196282e+20
+              ],
+              "name": "samwise08",
+              "top2Sum": 1.9942912816196282e+20
+            },
+            {
+              "attempts": [
+                1.7036356965570504e+20
+              ],
+              "name": "BlackFlamE",
+              "top2Sum": 1.7036356965570504e+20
             }
           ]
         }
