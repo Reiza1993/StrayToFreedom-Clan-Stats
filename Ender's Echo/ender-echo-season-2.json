@@ -2,22 +2,22 @@
   "endDate": "2026-11-18",
   "leaderboard": [
     {
-      "gainVsPreviousSeason": 5.0010741307894265e+22,
+      "gainVsPreviousSeason": 1.7106855690445068e+23,
       "name": "Fl3xas",
       "rank": 1,
-      "seasonTotal": 1.6573320029071182e+24
+      "seasonTotal": 1.7783898185036746e+24
+    },
+    {
+      "gainVsPreviousSeason": 1.531682677693929e+23,
+      "name": "DAYO-P",
+      "rank": 2,
+      "seasonTotal": 4.2710333179298044e+23
     },
     {
       "gainVsPreviousSeason": -2.0249857445383175e+23,
       "name": "\u04bban",
-      "rank": 2,
-      "seasonTotal": 3.916802788571994e+23
-    },
-    {
-      "gainVsPreviousSeason": 1.1528433945703043e+23,
-      "name": "DAYO-P",
       "rank": 3,
-      "seasonTotal": 3.89219403480618e+23
+      "seasonTotal": 3.916802788571994e+23
     },
     {
       "gainVsPreviousSeason": 3.5181531379338435e+22,
@@ -50,10 +50,10 @@
       "seasonTotal": 3.283363964445583e+22
     },
     {
-      "gainVsPreviousSeason": 9.638915399867129e+21,
+      "gainVsPreviousSeason": 1.2308782792463364e+22,
       "name": "MadameMischief",
       "rank": 9,
-      "seasonTotal": 2.9590206154976486e+22
+      "seasonTotal": 3.226007354757272e+22
     },
     {
       "gainVsPreviousSeason": 1.0438937413663892e+21,
@@ -62,10 +62,10 @@
       "seasonTotal": 1.5384060781958963e+22
     },
     {
-      "gainVsPreviousSeason": -7.147625891276607e+21,
+      "gainVsPreviousSeason": -5.436503852475195e+21,
       "name": "RetinaDNA",
       "rank": 11,
-      "seasonTotal": 1.3612444650470512e+22
+      "seasonTotal": 1.5323566689271924e+22
     },
     {
       "gainVsPreviousSeason": -6.524704822564349e+21,
@@ -122,16 +122,16 @@
       "seasonTotal": 8.23146738319581e+21
     },
     {
-      "gainVsPreviousSeason": -8.02153852065951e+20,
+      "gainVsPreviousSeason": -5.509744494260739e+20,
       "name": "HakiLuffy",
       "rank": 21,
-      "seasonTotal": 6.219557971886858e+21
+      "seasonTotal": 6.470737374526735e+21
     },
     {
-      "gainVsPreviousSeason": 3.380798791595684e+20,
+      "gainVsPreviousSeason": 7.635647153997852e+20,
       "name": "theLP",
       "rank": 22,
-      "seasonTotal": 5.95909065719245e+21
+      "seasonTotal": 6.384575493432667e+21
     },
     {
       "gainVsPreviousSeason": null,
@@ -158,10 +158,10 @@
       "seasonTotal": 4.523790888927668e+21
     },
     {
-      "gainVsPreviousSeason": -1.2652492149177713e+20,
+      "gainVsPreviousSeason": 5.1472649337308185e+19,
       "name": "BlackFlamE",
       "rank": 27,
-      "seasonTotal": 3.937438606297362e+21
+      "seasonTotal": 4.1154361771264474e+21
     },
     {
       "gainVsPreviousSeason": 6.522497106476574e+20,
@@ -3624,10 +3624,11 @@
             },
             {
               "attempts": [
-                1.6972565048937624e+21
+                1.6972565048937624e+21,
+                1.711122038801413e+21
               ],
               "name": "RetinaDNA",
-              "top2Sum": 1.6972565048937624e+21
+              "top2Sum": 3.408378543695175e+21
             },
             {
               "attempts": [
@@ -3683,6 +3684,60 @@
               ],
               "name": "Player 80018314",
               "top2Sum": 1.5636822486805447e+19
+            }
+          ]
+        },
+        {
+          "date": "2026-11-08",
+          "day": 18,
+          "players": [
+            {
+              "attempts": [
+                1.9005292703005268e+22,
+                9.47060104119265e+21,
+                1.8878635609357185e+22,
+                1.5014244864964166e+22
+              ],
+              "name": "DAYO-P",
+              "top2Sum": 3.788392831236245e+22
+            },
+            {
+              "attempts": [
+                2.0095922140111756e+20,
+                2.24525614839099e+20
+              ],
+              "name": "theLP",
+              "top2Sum": 4.2548483624021656e+20
+            },
+            {
+              "attempts": [
+                2.511794026398772e+20
+              ],
+              "name": "HakiLuffy",
+              "top2Sum": 2.511794026398772e+20
+            },
+            {
+              "attempts": [
+                1.779975708290854e+20
+              ],
+              "name": "BlackFlamE",
+              "top2Sum": 1.779975708290854e+20
+            },
+            {
+              "attempts": [
+                5.169947157768554e+22,
+                6.935834401887077e+22
+              ],
+              "name": "Fl3xas",
+              "top2Sum": 1.2105781559655631e+23
+            },
+            {
+              "attempts": [
+                1.36596956743918e+21,
+                1.303897825157057e+21
+              ],
+              "name": "MadameMischief",
+              "top2Sum": 2.669867392596237e+21
             }
           ]
         }
