@@ -32,10 +32,10 @@
       "seasonTotal": 2.9634205602410527e+23
     },
     {
-      "gainVsPreviousSeason": -1.9142713598211095e+22,
+      "gainVsPreviousSeason": -1.2106004464729252e+22,
       "name": "SngphO",
       "rank": 6,
-      "seasonTotal": 9.353566903298997e+22
+      "seasonTotal": 1.005723781664718e+23
     },
     {
       "gainVsPreviousSeason": -8.995938410590339e+22,
@@ -62,34 +62,34 @@
       "seasonTotal": 1.5384060781958963e+22
     },
     {
+      "gainVsPreviousSeason": -7.147625891276607e+21,
+      "name": "RetinaDNA",
+      "rank": 11,
+      "seasonTotal": 1.3612444650470512e+22
+    },
+    {
       "gainVsPreviousSeason": -6.524704822564349e+21,
       "name": "PastalaVista",
-      "rank": 11,
+      "rank": 12,
       "seasonTotal": 1.3170449044542664e+22
+    },
+    {
+      "gainVsPreviousSeason": 3.1017235233317973e+21,
+      "name": "\u76feHeathcliff\u5263",
+      "rank": 13,
+      "seasonTotal": 1.2457225422744374e+22
     },
     {
       "gainVsPreviousSeason": 4.14274062246208e+21,
       "name": "Player 66607264",
-      "rank": 12,
+      "rank": 14,
       "seasonTotal": 1.2324752304447664e+22
     },
     {
       "gainVsPreviousSeason": 4.936656914239061e+21,
       "name": "p88203044",
-      "rank": 13,
-      "seasonTotal": 1.1967752259371132e+22
-    },
-    {
-      "gainVsPreviousSeason": -8.84488239617037e+21,
-      "name": "RetinaDNA",
-      "rank": 14,
-      "seasonTotal": 1.191518814557675e+22
-    },
-    {
-      "gainVsPreviousSeason": 1.6886936671696517e+21,
-      "name": "\u76feHeathcliff\u5263",
       "rank": 15,
-      "seasonTotal": 1.1044195566582229e+22
+      "seasonTotal": 1.1967752259371132e+22
     },
     {
       "gainVsPreviousSeason": -1.345115937209332e+22,
@@ -110,16 +110,16 @@
       "seasonTotal": 8.330893124719339e+21
     },
     {
-      "gainVsPreviousSeason": 1.7913780916890055e+21,
-      "name": "Gritchen",
+      "gainVsPreviousSeason": 7.07152616189104e+20,
+      "name": "Apathy_",
       "rank": 19,
-      "seasonTotal": 8.23146738319581e+21
+      "seasonTotal": 8.28990358201676e+21
     },
     {
-      "gainVsPreviousSeason": -1.3566936711867715e+20,
-      "name": "Apathy_",
+      "gainVsPreviousSeason": 1.7913780916890055e+21,
+      "name": "Gritchen",
       "rank": 20,
-      "seasonTotal": 7.447081598708979e+21
+      "seasonTotal": 8.23146738319581e+21
     },
     {
       "gainVsPreviousSeason": -8.02153852065951e+20,
@@ -152,22 +152,22 @@
       "seasonTotal": 4.597563822656178e+21
     },
     {
-      "gainVsPreviousSeason": 1.033067932507371e+20,
+      "gainVsPreviousSeason": 4.446476195718014e+20,
       "name": "EMBALOCO",
       "rank": 26,
-      "seasonTotal": 4.182450062606604e+21
+      "seasonTotal": 4.523790888927668e+21
+    },
+    {
+      "gainVsPreviousSeason": -1.2652492149177713e+20,
+      "name": "BlackFlamE",
+      "rank": 27,
+      "seasonTotal": 3.937438606297362e+21
     },
     {
       "gainVsPreviousSeason": 6.522497106476574e+20,
       "name": "Rzzza",
-      "rank": 27,
-      "seasonTotal": 3.8069466896992363e+21
-    },
-    {
-      "gainVsPreviousSeason": -3.225123841119528e+20,
-      "name": "BlackFlamE",
       "rank": 28,
-      "seasonTotal": 3.7414511436771864e+21
+      "seasonTotal": 3.8069466896992363e+21
     },
     {
       "gainVsPreviousSeason": 2.2882350879138896e+21,
@@ -176,10 +176,10 @@
       "seasonTotal": 2.8624051781511503e+21
     },
     {
-      "gainVsPreviousSeason": -1.5943668658513484e+20,
+      "gainVsPreviousSeason": 3.1974651713446478e+19,
       "name": "gubrax",
       "rank": 30,
-      "seasonTotal": 2.6320381537384934e+21
+      "seasonTotal": 2.8234494920370747e+21
     },
     {
       "gainVsPreviousSeason": -2.4894684931032036e+21,
@@ -212,22 +212,22 @@
       "seasonTotal": 1.476845113956383e+21
     },
     {
+      "gainVsPreviousSeason": 4.131202644419771e+20,
+      "name": "Player 80018314",
+      "rank": 36,
+      "seasonTotal": 1.190455255071468e+21
+    },
+    {
       "gainVsPreviousSeason": 9.67856148870172e+20,
       "name": "ergiangi",
-      "rank": 36,
+      "rank": 37,
       "seasonTotal": 1.1818541388275245e+21
     },
     {
-      "gainVsPreviousSeason": 3.974834419551716e+20,
-      "name": "Player 80018314",
-      "rank": 37,
-      "seasonTotal": 1.1748184325846625e+21
-    },
-    {
-      "gainVsPreviousSeason": -1.6442116030782767e+19,
+      "gainVsPreviousSeason": 3.227834691996143e+19,
       "name": "Belthazar",
       "rank": 38,
-      "seasonTotal": 1.0202655908480118e+21
+      "seasonTotal": 1.068986053798756e+21
     },
     {
       "gainVsPreviousSeason": -5.217208327541757e+21,
@@ -3593,10 +3593,11 @@
             },
             {
               "attempts": [
-                1.7036356965570504e+20
+                1.7036356965570504e+20,
+                1.9598746262017556e+20
               ],
               "name": "BlackFlamE",
-              "top2Sum": 1.7036356965570504e+20
+              "top2Sum": 3.6635103227588064e+20
             },
             {
               "attempts": [
@@ -3620,6 +3621,68 @@
               ],
               "name": "RABBIT5",
               "top2Sum": 2.412405106980718e+22
+            },
+            {
+              "attempts": [
+                1.6972565048937624e+21
+              ],
+              "name": "RetinaDNA",
+              "top2Sum": 1.6972565048937624e+21
+            },
+            {
+              "attempts": [
+                3.236764083205661e+19,
+                1.6352822118687554e+19
+              ],
+              "name": "Belthazar",
+              "top2Sum": 4.872046295074416e+19
+            },
+            {
+              "attempts": [
+                4.6140061801674434e+20,
+                3.8142136529103664e+20
+              ],
+              "name": "Apathy_",
+              "top2Sum": 8.42821983307781e+20
+            },
+            {
+              "attempts": [
+                1.7124578818978516e+20,
+                2.016555010879604e+19
+              ],
+              "name": "gubrax",
+              "top2Sum": 1.914113382985812e+20
+            },
+            {
+              "attempts": [
+                6.671627549939212e+20,
+                7.458671011682254e+20
+              ],
+              "name": "\u76feHeathcliff\u5263",
+              "top2Sum": 1.4130298561621467e+21
+            },
+            {
+              "attempts": [
+                3.1550281401764843e+21,
+                3.8816809933053656e+21
+              ],
+              "name": "SngphO",
+              "top2Sum": 7.03670913348185e+21
+            },
+            {
+              "attempts": [
+                1.559188814444261e+20,
+                1.8542194487663804e+20
+              ],
+              "name": "EMBALOCO",
+              "top2Sum": 3.4134082632106417e+20
+            },
+            {
+              "attempts": [
+                1.5636822486805447e+19
+              ],
+              "name": "Player 80018314",
+              "top2Sum": 1.5636822486805447e+19
             }
           ]
         }
