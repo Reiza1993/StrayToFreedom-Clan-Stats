@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-08T00:52:30.392191+11:00",
-    "total": 75500,
+    "updatedAt": "2026-11-08T01:52:38.093087+11:00",
+    "total": 76700,
     "members": [
       {
         "uid": 36484758,
@@ -306,50 +306,50 @@
         "score": 2900
       },
       {
+        "uid": 113690788,
+        "name": "Apathy_",
+        "rank": 9,
+        "score": 2900
+      },
+      {
         "uid": 10754439,
         "name": "HakiLuffy",
-        "rank": 9,
+        "rank": 10,
         "score": 2800
       },
       {
         "uid": 41742773,
         "name": "MadameMischief",
-        "rank": 10,
+        "rank": 11,
         "score": 2800
       },
       {
         "uid": 26277677,
         "name": "BobBobberson",
-        "rank": 11,
+        "rank": 12,
         "score": 2600
       },
       {
-        "uid": 113690788,
-        "name": "Apathy_",
-        "rank": 12,
-        "score": 2500
+        "uid": 79510960,
+        "name": "theLP",
+        "rank": 13,
+        "score": 2400
+      },
+      {
+        "uid": 51071110,
+        "name": "samwise08",
+        "rank": 14,
+        "score": 2400
       },
       {
         "uid": 108860725,
         "name": "RetinaDNA",
-        "rank": 13,
+        "rank": 15,
         "score": 2000
       },
       {
         "uid": 80972473,
         "name": "Cunner88",
-        "rank": 14,
-        "score": 2000
-      },
-      {
-        "uid": 79510960,
-        "name": "theLP",
-        "rank": 15,
-        "score": 2000
-      },
-      {
-        "uid": 51071110,
-        "name": "samwise08",
         "rank": 16,
         "score": 2000
       },
