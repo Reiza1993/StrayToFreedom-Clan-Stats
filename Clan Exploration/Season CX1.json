@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-08T13:54:16.460363+11:00",
-    "total": 87200,
+    "updatedAt": "2026-11-08T14:54:24.386346+11:00",
+    "total": 88300,
     "members": [
       {
         "uid": 36484758,
@@ -288,22 +288,22 @@
         "score": 4700
       },
       {
+        "uid": 10754439,
+        "name": "HakiLuffy",
+        "rank": 6,
+        "score": 3800
+      },
+      {
         "uid": 80018314,
         "name": null,
-        "rank": 6,
+        "rank": 7,
         "score": 3700
       },
       {
         "uid": 88203044,
         "name": "p88203044",
-        "rank": 7,
-        "score": 3600
-      },
-      {
-        "uid": 10754439,
-        "name": "HakiLuffy",
         "rank": 8,
-        "score": 3500
+        "score": 3600
       },
       {
         "uid": 41742773,
@@ -312,22 +312,22 @@
         "score": 3500
       },
       {
+        "uid": 79510960,
+        "name": "theLP",
+        "rank": 10,
+        "score": 3200
+      },
+      {
         "uid": 83339881,
         "name": "Fl3xas",
-        "rank": 10,
+        "rank": 11,
         "score": 3000
       },
       {
         "uid": 113690788,
         "name": "Apathy_",
-        "rank": 11,
-        "score": 2900
-      },
-      {
-        "uid": 79510960,
-        "name": "theLP",
         "rank": 12,
-        "score": 2800
+        "score": 2900
       },
       {
         "uid": 51071110,
@@ -438,38 +438,38 @@
         "score": 1200
       },
       {
+        "uid": 29904762,
+        "name": "Cheeselife",
+        "rank": 31,
+        "score": 1200
+      },
+      {
         "uid": 87244358,
         "name": "神Sterben死",
-        "rank": 31,
+        "rank": 32,
         "score": 800
       },
       {
         "uid": 106162623,
         "name": "gubrax",
-        "rank": 32,
+        "rank": 33,
         "score": 800
       },
       {
         "uid": 72894129,
         "name": "NeonCBV",
-        "rank": 33,
+        "rank": 34,
         "score": 800
       },
       {
         "uid": 87954282,
         "name": "SngphO",
-        "rank": 34,
+        "rank": 35,
         "score": 800
       },
       {
         "uid": 35869301,
         "name": "Toddlerr",
-        "rank": 35,
-        "score": 800
-      },
-      {
-        "uid": 29904762,
-        "name": "Cheeselife",
         "rank": 36,
         "score": 800
       },
