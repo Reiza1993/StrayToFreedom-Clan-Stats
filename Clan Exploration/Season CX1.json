@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-08T11:53:57.193731+11:00",
-    "total": 86400,
+    "updatedAt": "2026-11-08T13:54:16.460363+11:00",
+    "total": 87200,
     "members": [
       {
         "uid": 36484758,
@@ -273,7 +273,7 @@
         "uid": 66607264,
         "name": null,
         "rank": 3,
-        "score": 5100
+        "score": 5500
       },
       {
         "uid": 103516442,
@@ -330,16 +330,16 @@
         "score": 2800
       },
       {
-        "uid": 26277677,
-        "name": "BobBobberson",
-        "rank": 13,
-        "score": 2600
-      },
-      {
         "uid": 51071110,
         "name": "samwise08",
+        "rank": 13,
+        "score": 2800
+      },
+      {
+        "uid": 26277677,
+        "name": "BobBobberson",
         "rank": 14,
-        "score": 2400
+        "score": 2600
       },
       {
         "uid": 64676255,
