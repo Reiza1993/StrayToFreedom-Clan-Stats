@@ -254,20 +254,20 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-09T06:16:45.207771+11:00",
-    "total": 99400,
+    "updatedAt": "2026-11-09T07:16:53.285266+11:00",
+    "total": 100200,
     "members": [
       {
         "uid": 29321884,
         "name": "RABBIT5",
         "rank": 1,
-        "score": 7100
+        "score": 7500
       },
       {
         "uid": 36484758,
         "name": "Belthazar",
         "rank": 2,
-        "score": 6800
+        "score": 7200
       },
       {
         "uid": 103516442,
