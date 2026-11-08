@@ -98,16 +98,16 @@
       "seasonTotal": 9.624050406543118e+21
     },
     {
-      "gainVsPreviousSeason": 1.4644460760361284e+21,
-      "name": "Apathy_",
+      "gainVsPreviousSeason": 1.6443979498733615e+21,
+      "name": "VictorMolusco",
       "rank": 17,
-      "seasonTotal": 9.047197041863785e+21
+      "seasonTotal": 9.19774155302048e+21
     },
     {
-      "gainVsPreviousSeason": 9.321295665358522e+20,
-      "name": "VictorMolusco",
+      "gainVsPreviousSeason": 1.4644460760361284e+21,
+      "name": "Apathy_",
       "rank": 18,
-      "seasonTotal": 8.485473169682971e+21
+      "seasonTotal": 9.047197041863785e+21
     },
     {
       "gainVsPreviousSeason": -1.1470777423062576e+22,
@@ -236,10 +236,10 @@
       "seasonTotal": 9.786570956389257e+20
     },
     {
-      "gainVsPreviousSeason": -1.1390022193505434e+20,
+      "gainVsPreviousSeason": 3.632592760752305e+19,
       "name": "Cheeselife",
       "rank": 40,
-      "seasonTotal": 7.475537200748696e+19
+      "seasonTotal": 2.2498152155006435e+20
     }
   ],
   "miniSeasons": [
@@ -3771,6 +3771,21 @@
               ],
               "name": "\u76feHeathcliff\u5263",
               "top2Sum": 7.715355532597486e+20
+            },
+            {
+              "attempts": [
+                3.3203571460112646e+20,
+                3.80232668736383e+20
+              ],
+              "name": "VictorMolusco",
+              "top2Sum": 7.122683833375096e+20
+            },
+            {
+              "attempts": [
+                1.502261495425774e+20
+              ],
+              "name": "Cheeselife",
+              "top2Sum": 1.502261495425774e+20
             }
           ]
         }
