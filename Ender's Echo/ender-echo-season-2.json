@@ -72,31 +72,31 @@
       "uid": "72894129"
     },
     {
-      "gainVsPreviousSeason": -4.52188212759662e+21,
+      "gainVsPreviousSeason": -1.0131753798157268e+21,
       "name": "RetinaDNA",
       "rank": 11,
-      "seasonTotal": 1.5323566689271924e+22,
+      "seasonTotal": 1.8832273437052818e+22,
       "uid": "108860725"
     },
     {
-      "gainVsPreviousSeason": 4.579927717573333e+21,
-      "name": "\u76feHeathcliff\u5263",
-      "rank": 12,
-      "seasonTotal": 1.3228760976004122e+22,
-      "uid": "64676255"
-    },
-    {
-      "gainVsPreviousSeason": -5.087233508691877e+21,
+      "gainVsPreviousSeason": -3.105107753218318e+21,
       "name": "PastalaVista",
-      "rank": 13,
-      "seasonTotal": 1.3170449044542664e+22,
+      "rank": 12,
+      "seasonTotal": 1.5152574800016223e+22,
       "uid": "75174428"
     },
     {
-      "gainVsPreviousSeason": 4.90862533327964e+21,
+      "gainVsPreviousSeason": 5.320566220345381e+21,
+      "name": "\u76feHeathcliff\u5263",
+      "rank": 13,
+      "seasonTotal": 1.3969399478776171e+22,
+      "uid": "64676255"
+    },
+    {
+      "gainVsPreviousSeason": 6.354588315845948e+21,
       "name": "Player 66607264",
       "rank": 14,
-      "seasonTotal": 1.2324752304447664e+22,
+      "seasonTotal": 1.3770715287013971e+22,
       "uid": "66607264"
     },
     {
@@ -163,25 +163,25 @@
       "uid": "79510960"
     },
     {
-      "gainVsPreviousSeason": 2.0845942628223749e+21,
-      "name": "BobBobberson",
-      "rank": 24,
-      "seasonTotal": 4.853568886256659e+21,
-      "uid": "26277677"
-    },
-    {
-      "gainVsPreviousSeason": 1.7311993162130795e+21,
+      "gainVsPreviousSeason": 2.2703574073995375e+21,
       "name": "silverxz",
-      "rank": 25,
-      "seasonTotal": 4.597563822656178e+21,
+      "rank": 24,
+      "seasonTotal": 5.136721913842636e+21,
       "uid": "27113479"
     },
     {
-      "gainVsPreviousSeason": 5.722923953655267e+20,
+      "gainVsPreviousSeason": 1.0304717436070165e+21,
       "name": "EMBALOCO",
-      "rank": 26,
-      "seasonTotal": 4.523790888927668e+21,
+      "rank": 25,
+      "seasonTotal": 4.981970237169158e+21,
       "uid": "89511116"
+    },
+    {
+      "gainVsPreviousSeason": 2.0845942628223749e+21,
+      "name": "BobBobberson",
+      "rank": 26,
+      "seasonTotal": 4.853568886256659e+21,
+      "uid": "26277677"
     },
     {
       "gainVsPreviousSeason": 2.2193182288149322e+20,
@@ -219,53 +219,53 @@
       "uid": "83861839"
     },
     {
-      "gainVsPreviousSeason": -1.095813709490032e+21,
+      "gainVsPreviousSeason": -5.954004113347319e+20,
       "name": "faxnem",
       "rank": 32,
-      "seasonTotal": 1.615530470649693e+21,
+      "seasonTotal": 2.115943768804993e+21,
       "uid": "11463573"
+    },
+    {
+      "gainVsPreviousSeason": -4.0510969164192133e+21,
+      "name": "Bensayyten",
+      "rank": 33,
+      "seasonTotal": 1.6365615246734247e+21,
+      "uid": "32556489"
     },
     {
       "gainVsPreviousSeason": -6.002704077717381e+20,
       "name": "samwise08",
-      "rank": 33,
+      "rank": 34,
       "seasonTotal": 1.5333377225008944e+21,
       "uid": "51071110"
     },
     {
       "gainVsPreviousSeason": 1.0324051081723962e+21,
       "name": "FlyingDutchy",
-      "rank": 34,
+      "rank": 35,
       "seasonTotal": 1.476845113956383e+21,
       "uid": "59566866"
     },
     {
       "gainVsPreviousSeason": 4.131202644419771e+20,
       "name": "Player 80018314",
-      "rank": 35,
+      "rank": 36,
       "seasonTotal": 1.190455255071468e+21,
       "uid": "80018314"
     },
     {
       "gainVsPreviousSeason": 9.67856148870172e+20,
       "name": "ergiangi",
-      "rank": 36,
+      "rank": 37,
       "seasonTotal": 1.1818541388275245e+21,
       "uid": "18297536"
     },
     {
-      "gainVsPreviousSeason": 7.91496593683259e+19,
+      "gainVsPreviousSeason": 1.6107062289504495e+20,
       "name": "Belthazar",
-      "rank": 37,
-      "seasonTotal": 1.068986053798756e+21,
-      "uid": "36484758"
-    },
-    {
-      "gainVsPreviousSeason": -4.709001345453712e+21,
-      "name": "Bensayyten",
       "rank": 38,
-      "seasonTotal": 9.786570956389257e+20,
-      "uid": "32556489"
+      "seasonTotal": 1.150907017325475e+21,
+      "uid": "36484758"
     },
     {
       "gainVsPreviousSeason": 7.121778788938724e+19,
@@ -4224,10 +4224,11 @@
             },
             {
               "attempts": [
-                7.715355532597486e+20
+                7.715355532597486e+20,
+                7.406385027720488e+20
               ],
               "name": "\u76feHeathcliff\u5263",
-              "top2Sum": 7.715355532597486e+20,
+              "top2Sum": 1.5121740560317974e+21,
               "uid": "64676255"
             },
             {
@@ -4255,6 +4256,78 @@
               "name": "NeonCBV",
               "top2Sum": 5.068013486546665e+21,
               "uid": "72894129"
+            },
+            {
+              "attempts": [
+                1.5990734194172997e+21,
+                1.909633328363594e+21
+              ],
+              "name": "RetinaDNA",
+              "top2Sum": 3.508706747780894e+21,
+              "uid": "108860725"
+            },
+            {
+              "attempts": [
+                4.570291112491236e+19,
+                3.6218052401806725e+19
+              ],
+              "name": "Belthazar",
+              "top2Sum": 8.192096352671908e+19,
+              "uid": "36484758"
+            },
+            {
+              "attempts": [
+                3.13111531301243e+20,
+                3.447928977332559e+20
+              ],
+              "name": "Bensayyten",
+              "top2Sum": 6.57904429034499e+20,
+              "uid": "32556489"
+            },
+            {
+              "attempts": [
+                1.4153829437142076e+21,
+                5.667428117593517e+20
+              ],
+              "name": "PastalaVista",
+              "top2Sum": 1.9821257554735593e+21,
+              "uid": "75174428"
+            },
+            {
+              "attempts": [
+                7.64180792639225e+20,
+                6.817821899270829e+20
+              ],
+              "name": "Player 66607264",
+              "top2Sum": 1.4459629825663078e+21,
+              "uid": "66607264"
+            },
+            {
+              "attempts": [
+                5.004132981552999e+20
+              ],
+              "name": "faxnem",
+              "top2Sum": 5.004132981552999e+20,
+              "uid": "11463573"
+            },
+            {
+              "attempts": [
+                2.2548812983788303e+20,
+                2.326912184036073e+20,
+                9.704794533064291e+19
+              ],
+              "name": "EMBALOCO",
+              "top2Sum": 4.581793482414904e+20,
+              "uid": "89511116"
+            },
+            {
+              "attempts": [
+                2.1961369447356675e+20,
+                3.195443967128909e+20
+              ],
+              "name": "silverxz",
+              "top2Sum": 5.391580911864577e+20,
+              "uid": "27113479"
             }
           ]
         }
