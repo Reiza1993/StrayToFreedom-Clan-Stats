@@ -254,20 +254,20 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-08T14:54:24.386346+11:00",
-    "total": 88300,
+    "updatedAt": "2026-11-08T15:42:21.048083+11:00",
+    "total": 89200,
     "members": [
-      {
-        "uid": 36484758,
-        "name": "Belthazar",
-        "rank": 1,
-        "score": 6000
-      },
       {
         "uid": 29321884,
         "name": "RABBIT5",
+        "rank": 1,
+        "score": 6300
+      },
+      {
+        "uid": 36484758,
+        "name": "Belthazar",
         "rank": 2,
-        "score": 5900
+        "score": 6000
       },
       {
         "uid": 66607264,
@@ -279,13 +279,13 @@
         "uid": 103516442,
         "name": "DAYO-P",
         "rank": 4,
-        "score": 5100
+        "score": 5500
       },
       {
         "uid": 32556489,
         "name": "Bensayyten",
         "rank": 5,
-        "score": 4700
+        "score": 4800
       },
       {
         "uid": 10754439,
