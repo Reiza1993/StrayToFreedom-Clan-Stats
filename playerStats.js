@@ -28,7 +28,7 @@ const playerStats = {
         "10754439": {
             "atk": 2266700,
             "name": "HakiLuffy",
-            "role": "Glory Member",
+            "role": "Member",
             "roleTier": null
         },
         "108546985": {
@@ -52,13 +52,13 @@ const playerStats = {
         "113690788": {
             "atk": 2284776,
             "name": "Apathy_",
-            "role": "Glory Member",
+            "role": "Member",
             "roleTier": null
         },
         "11463573": {
             "atk": 2056267,
             "name": "faxnem",
-            "role": "Member",
+            "role": "Glory Member",
             "roleTier": null
         },
         "115742768": {
@@ -70,7 +70,7 @@ const playerStats = {
         "18115624": {
             "atk": 2752302,
             "name": "Nubis",
-            "role": "Member",
+            "role": "Glory Member",
             "roleTier": null
         },
         "18297536": {
@@ -94,13 +94,13 @@ const playerStats = {
         "29321884": {
             "atk": 3298936,
             "name": "RABBIT5",
-            "role": "Glory Member",
+            "role": "Member",
             "roleTier": null
         },
         "29904762": {
             "atk": 1765508,
             "name": "Cheeselife",
-            "role": "Member",
+            "role": "Glory Member",
             "roleTier": null
         },
         "30658936": {
@@ -124,7 +124,7 @@ const playerStats = {
         "36484758": {
             "atk": 2224909,
             "name": "Belthazar",
-            "role": "Member",
+            "role": "Glory Member",
             "roleTier": null
         },
         "41742773": {
@@ -160,13 +160,13 @@ const playerStats = {
         "64676255": {
             "atk": 2535391,
             "name": "盾Heathcliff剣",
-            "role": "Member",
+            "role": "Glory Member",
             "roleTier": null
         },
         "66607264": {
             "atk": 2606354,
             "name": "Player 66607264",
-            "role": "Glory Member",
+            "role": "Member",
             "roleTier": null
         },
         "70603922": {
@@ -202,7 +202,7 @@ const playerStats = {
         "80018314": {
             "atk": 2057563,
             "name": "Player 80018314",
-            "role": "Glory Member",
+            "role": "Member",
             "roleTier": null
         },
         "80972473": {
