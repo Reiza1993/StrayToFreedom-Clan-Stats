@@ -68,16 +68,16 @@
       "seasonTotal": 1.5323566689271924e+22
     },
     {
-      "gainVsPreviousSeason": -6.524704822564349e+21,
-      "name": "PastalaVista",
+      "gainVsPreviousSeason": 3.873259076591545e+21,
+      "name": "\u76feHeathcliff\u5263",
       "rank": 12,
-      "seasonTotal": 1.3170449044542664e+22
+      "seasonTotal": 1.3228760976004122e+22
     },
     {
-      "gainVsPreviousSeason": 3.1017235233317973e+21,
-      "name": "\u76feHeathcliff\u5263",
+      "gainVsPreviousSeason": -6.524704822564349e+21,
+      "name": "PastalaVista",
       "rank": 13,
-      "seasonTotal": 1.2457225422744374e+22
+      "seasonTotal": 1.3170449044542664e+22
     },
     {
       "gainVsPreviousSeason": 4.14274062246208e+21,
@@ -3764,6 +3764,13 @@
               ],
               "name": "Nubis",
               "top2Sum": 3.080611763662253e+22
+            },
+            {
+              "attempts": [
+                7.715355532597486e+20
+              ],
+              "name": "\u76feHeathcliff\u5263",
+              "top2Sum": 7.715355532597486e+20
             }
           ]
         }
