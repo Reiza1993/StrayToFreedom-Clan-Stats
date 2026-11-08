@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-08T19:15:25.002580+11:00",
-    "total": 91100,
+    "updatedAt": "2026-11-08T20:15:32.784282+11:00",
+    "total": 92300,
     "members": [
       {
         "uid": 29321884,
@@ -294,28 +294,28 @@
         "score": 4100
       },
       {
+        "uid": 41742773,
+        "name": "MadameMischief",
+        "rank": 7,
+        "score": 3900
+      },
+      {
         "uid": 10754439,
         "name": "HakiLuffy",
-        "rank": 7,
+        "rank": 8,
         "score": 3800
       },
       {
         "uid": 88203044,
         "name": "p88203044",
-        "rank": 8,
+        "rank": 9,
         "score": 3600
       },
       {
         "uid": 79510960,
         "name": "theLP",
-        "rank": 9,
-        "score": 3600
-      },
-      {
-        "uid": 41742773,
-        "name": "MadameMischief",
         "rank": 10,
-        "score": 3500
+        "score": 3600
       },
       {
         "uid": 83339881,
@@ -324,22 +324,22 @@
         "score": 3000
       },
       {
+        "uid": 26277677,
+        "name": "BobBobberson",
+        "rank": 12,
+        "score": 3000
+      },
+      {
         "uid": 113690788,
         "name": "Apathy_",
-        "rank": 12,
+        "rank": 13,
         "score": 2900
       },
       {
         "uid": 51071110,
         "name": "samwise08",
-        "rank": 13,
-        "score": 2800
-      },
-      {
-        "uid": 26277677,
-        "name": "BobBobberson",
         "rank": 14,
-        "score": 2600
+        "score": 2800
       },
       {
         "uid": 64676255,
@@ -348,34 +348,34 @@
         "score": 2400
       },
       {
+        "uid": 59566866,
+        "name": "FlyingDutchy",
+        "rank": 16,
+        "score": 2300
+      },
+      {
         "uid": 83861839,
         "name": "groggen",
-        "rank": 16,
+        "rank": 17,
         "score": 2200
       },
       {
         "uid": 108860725,
         "name": "RetinaDNA",
-        "rank": 17,
+        "rank": 18,
         "score": 2000
       },
       {
         "uid": 80972473,
         "name": "Cunner88",
-        "rank": 18,
+        "rank": 19,
         "score": 2000
       },
       {
         "uid": 112772047,
         "name": "VictorMolusco",
-        "rank": 19,
-        "score": 2000
-      },
-      {
-        "uid": 59566866,
-        "name": "FlyingDutchy",
         "rank": 20,
-        "score": 1900
+        "score": 2000
       },
       {
         "uid": 70603922,
