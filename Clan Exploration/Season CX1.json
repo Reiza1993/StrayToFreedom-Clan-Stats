@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-10T08:55:34.124723+11:00",
-    "total": 117600,
+    "updatedAt": "2026-11-10T09:55:41.341202+11:00",
+    "total": 118600,
     "members": [
       {
         "uid": 29321884,
@@ -291,7 +291,7 @@
         "uid": 10754439,
         "name": "HakiLuffy",
         "rank": 6,
-        "score": 5700
+        "score": 5900
       },
       {
         "uid": 80018314,
@@ -312,28 +312,28 @@
         "score": 4400
       },
       {
+        "uid": 59566866,
+        "name": "FlyingDutchy",
+        "rank": 10,
+        "score": 3900
+      },
+      {
+        "uid": 26277677,
+        "name": "BobBobberson",
+        "rank": 11,
+        "score": 3800
+      },
+      {
         "uid": 88203044,
         "name": "p88203044",
-        "rank": 10,
+        "rank": 12,
         "score": 3600
       },
       {
         "uid": 64676255,
         "name": "盾Heathcliff剣",
-        "rank": 11,
-        "score": 3600
-      },
-      {
-        "uid": 59566866,
-        "name": "FlyingDutchy",
-        "rank": 12,
-        "score": 3500
-      },
-      {
-        "uid": 26277677,
-        "name": "BobBobberson",
         "rank": 13,
-        "score": 3400
+        "score": 3600
       },
       {
         "uid": 113690788,
