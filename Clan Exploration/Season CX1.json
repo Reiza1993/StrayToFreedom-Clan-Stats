@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-10T05:55:10.001484+11:00",
-    "total": 115100,
+    "updatedAt": "2026-11-10T06:55:18.250664+11:00",
+    "total": 115500,
     "members": [
       {
         "uid": 29321884,
@@ -450,26 +450,26 @@
         "score": 1200
       },
       {
+        "uid": 35869301,
+        "name": "Toddlerr",
+        "rank": 33,
+        "score": 1200
+      },
+      {
         "uid": 106162623,
         "name": "gubrax",
-        "rank": 33,
+        "rank": 34,
         "score": 800
       },
       {
         "uid": 72894129,
         "name": "NeonCBV",
-        "rank": 34,
+        "rank": 35,
         "score": 800
       },
       {
         "uid": 87954282,
         "name": "SngphO",
-        "rank": 35,
-        "score": 800
-      },
-      {
-        "uid": 35869301,
-        "name": "Toddlerr",
         "rank": 36,
         "score": 800
       },
