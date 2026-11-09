@@ -254,14 +254,14 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-09T07:16:53.285266+11:00",
-    "total": 100200,
+    "updatedAt": "2026-11-09T12:17:17.573515+11:00",
+    "total": 103600,
     "members": [
       {
         "uid": 29321884,
         "name": "RABBIT5",
         "rank": 1,
-        "score": 7500
+        "score": 7900
       },
       {
         "uid": 36484758,
@@ -270,16 +270,16 @@
         "score": 7200
       },
       {
-        "uid": 103516442,
-        "name": "DAYO-P",
-        "rank": 3,
-        "score": 6300
-      },
-      {
         "uid": 66607264,
         "name": null,
+        "rank": 3,
+        "score": 6600
+      },
+      {
+        "uid": 103516442,
+        "name": "DAYO-P",
         "rank": 4,
-        "score": 6200
+        "score": 6500
       },
       {
         "uid": 32556489,
@@ -297,7 +297,7 @@
         "uid": 10754439,
         "name": "HakiLuffy",
         "rank": 7,
-        "score": 4500
+        "score": 4900
       },
       {
         "uid": 41742773,
@@ -318,20 +318,20 @@
         "score": 3600
       },
       {
+        "uid": 26277677,
+        "name": "BobBobberson",
+        "rank": 11,
+        "score": 3400
+      },
+      {
         "uid": 51071110,
         "name": "samwise08",
-        "rank": 11,
+        "rank": 12,
         "score": 3200
       },
       {
         "uid": 83339881,
         "name": "Fl3xas",
-        "rank": 12,
-        "score": 3000
-      },
-      {
-        "uid": 26277677,
-        "name": "BobBobberson",
         "rank": 13,
         "score": 3000
       },
@@ -351,7 +351,7 @@
         "uid": 59566866,
         "name": "FlyingDutchy",
         "rank": 16,
-        "score": 2300
+        "score": 2700
       },
       {
         "uid": 83861839,
@@ -387,59 +387,59 @@
         "uid": 89511116,
         "name": "EMBALOCO",
         "rank": 22,
-        "score": 1600
-      },
-      {
-        "uid": 30658936,
-        "name": "Gritchen",
-        "rank": 23,
-        "score": 1600
+        "score": 2000
       },
       {
         "uid": 11463573,
         "name": "faxnem",
+        "rank": 23,
+        "score": 2000
+      },
+      {
+        "uid": 30658936,
+        "name": "Gritchen",
         "rank": 24,
+        "score": 1600
+      },
+      {
+        "uid": 29904762,
+        "name": "Cheeselife",
+        "rank": 25,
         "score": 1600
       },
       {
         "uid": 100876140,
         "name": "Scoundrel536",
-        "rank": 25,
+        "rank": 26,
         "score": 1300
       },
       {
         "uid": 27113479,
         "name": "silverxz",
-        "rank": 26,
+        "rank": 27,
         "score": 1200
       },
       {
         "uid": 108546985,
         "name": "pumpenjoe",
-        "rank": 27,
+        "rank": 28,
         "score": 1200
       },
       {
         "uid": 18115624,
         "name": "Nubis",
-        "rank": 28,
+        "rank": 29,
         "score": 1200
       },
       {
         "uid": 18297536,
         "name": "ergiangi",
-        "rank": 29,
+        "rank": 30,
         "score": 1200
       },
       {
         "uid": 61865023,
         "name": "RexPanda",
-        "rank": 30,
-        "score": 1200
-      },
-      {
-        "uid": 29904762,
-        "name": "Cheeselife",
         "rank": 31,
         "score": 1200
       },
