@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-10T04:55:01.345363+11:00",
-    "total": 114700,
+    "updatedAt": "2026-11-10T05:55:10.001484+11:00",
+    "total": 115100,
     "members": [
       {
         "uid": 29321884,
@@ -300,16 +300,16 @@
         "score": 5300
       },
       {
-        "uid": 79510960,
-        "name": "theLP",
-        "rank": 8,
-        "score": 4400
-      },
-      {
         "uid": 41742773,
         "name": "MadameMischief",
+        "rank": 8,
+        "score": 4700
+      },
+      {
+        "uid": 79510960,
+        "name": "theLP",
         "rank": 9,
-        "score": 4300
+        "score": 4400
       },
       {
         "uid": 88203044,
@@ -500,8 +500,8 @@
     ]
   },
   "cxBoss": {
-    "updatedAt": "2026-11-10T03:54:51.867425+11:00",
-    "total": 25431,
+    "updatedAt": "2026-11-10T05:55:10.001484+11:00",
+    "total": 26206,
     "members": [
       {
         "uid": 18115624,
@@ -606,134 +606,134 @@
         "score": 775
       },
       {
+        "uid": 59566866,
+        "name": "FlyingDutchy",
+        "rank": 18,
+        "score": 775
+      },
+      {
         "uid": 112772047,
         "name": "VictorMolusco",
-        "rank": 18,
+        "rank": 19,
         "score": 773
       },
       {
         "uid": 83861839,
         "name": "groggen",
-        "rank": 19,
+        "rank": 20,
         "score": 772
       },
       {
         "uid": 11463573,
         "name": "faxnem",
-        "rank": 20,
+        "rank": 21,
         "score": 771
       },
       {
         "uid": 10754439,
         "name": "HakiLuffy",
-        "rank": 21,
+        "rank": 22,
         "score": 770
       },
       {
         "uid": 79510960,
         "name": "theLP",
-        "rank": 22,
+        "rank": 23,
         "score": 770
       },
       {
         "uid": 75174428,
         "name": "PastalaVista",
-        "rank": 23,
+        "rank": 24,
         "score": 766
       },
       {
         "uid": 66607264,
         "name": null,
-        "rank": 24,
+        "rank": 25,
         "score": 760
       },
       {
         "uid": 51071110,
         "name": "samwise08",
-        "rank": 25,
+        "rank": 26,
         "score": 759
       },
       {
         "uid": 26277677,
         "name": "BobBobberson",
-        "rank": 26,
+        "rank": 27,
         "score": 753
       },
       {
         "uid": 70603922,
         "name": "BlackFlamE",
-        "rank": 27,
+        "rank": 28,
         "score": 748
       },
       {
         "uid": 29904762,
         "name": "Cheeselife",
-        "rank": 28,
+        "rank": 29,
         "score": 744
       },
       {
         "uid": 106162623,
         "name": "gubrax",
-        "rank": 29,
+        "rank": 30,
         "score": 743
       },
       {
         "uid": 80018314,
         "name": null,
-        "rank": 30,
+        "rank": 31,
         "score": 742
       },
       {
         "uid": 36484758,
         "name": "Belthazar",
-        "rank": 31,
+        "rank": 32,
         "score": 705
       },
       {
         "uid": 32556489,
         "name": "Bensayyten",
-        "rank": 32,
+        "rank": 33,
         "score": 664
       },
       {
         "uid": 41742773,
         "name": "MadameMischief",
-        "rank": 33,
+        "rank": 34,
         "score": 384
       },
       {
         "uid": 71028860,
         "name": "Rzzza",
-        "rank": 34,
+        "rank": 35,
         "score": 0
       },
       {
         "uid": 115742768,
         "name": "SterbyTools",
-        "rank": 35,
+        "rank": 36,
         "score": 0
       },
       {
         "uid": 18297536,
         "name": "ergiangi",
-        "rank": 36,
+        "rank": 37,
         "score": 0
       },
       {
         "uid": 89511116,
         "name": "EMBALOCO",
-        "rank": 37,
+        "rank": 38,
         "score": 0
       },
       {
         "uid": 27113479,
         "name": "silverxz",
-        "rank": 38,
-        "score": 0
-      },
-      {
-        "uid": 59566866,
-        "name": "FlyingDutchy",
         "rank": 39,
         "score": 0
       },
