@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-09T18:17:56.821310+11:00",
-    "total": 106700,
+    "updatedAt": "2026-11-09T19:18:04.481137+11:00",
+    "total": 107100,
     "members": [
       {
         "uid": 29321884,
@@ -360,26 +360,26 @@
         "score": 2400
       },
       {
+        "uid": 112772047,
+        "name": "VictorMolusco",
+        "rank": 18,
+        "score": 2400
+      },
+      {
         "uid": 83861839,
         "name": "groggen",
-        "rank": 18,
+        "rank": 19,
         "score": 2200
       },
       {
         "uid": 108860725,
         "name": "RetinaDNA",
-        "rank": 19,
+        "rank": 20,
         "score": 2000
       },
       {
         "uid": 80972473,
         "name": "Cunner88",
-        "rank": 20,
-        "score": 2000
-      },
-      {
-        "uid": 112772047,
-        "name": "VictorMolusco",
         "rank": 21,
         "score": 2000
       },
