@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-10T11:55:54.074741+11:00",
-    "total": 120400,
+    "updatedAt": "2026-11-10T12:56:01.561869+11:00",
+    "total": 121200,
     "members": [
       {
         "uid": 29321884,
@@ -270,16 +270,16 @@
         "score": 8400
       },
       {
-        "uid": 36484758,
-        "name": "Belthazar",
-        "rank": 3,
-        "score": 8000
-      },
-      {
         "uid": 66607264,
         "name": null,
+        "rank": 3,
+        "score": 8200
+      },
+      {
+        "uid": 36484758,
+        "name": "Belthazar",
         "rank": 4,
-        "score": 7800
+        "score": 8000
       },
       {
         "uid": 32556489,
@@ -336,20 +336,20 @@
         "score": 3600
       },
       {
+        "uid": 112772047,
+        "name": "VictorMolusco",
+        "rank": 14,
+        "score": 3600
+      },
+      {
         "uid": 113690788,
         "name": "Apathy_",
-        "rank": 14,
+        "rank": 15,
         "score": 3300
       },
       {
         "uid": 51071110,
         "name": "samwise08",
-        "rank": 15,
-        "score": 3200
-      },
-      {
-        "uid": 112772047,
-        "name": "VictorMolusco",
         "rank": 16,
         "score": 3200
       },
