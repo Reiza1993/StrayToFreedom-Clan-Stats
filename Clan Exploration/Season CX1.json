@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-10T21:57:09.828059+11:00",
-    "total": 126000,
+    "updatedAt": "2026-11-10T22:57:17.252449+11:00",
+    "total": 127200,
     "members": [
       {
         "uid": 29321884,
@@ -270,22 +270,22 @@
         "score": 8900
       },
       {
-        "uid": 66607264,
-        "name": null,
-        "rank": 3,
-        "score": 8500
-      },
-      {
         "uid": 36484758,
         "name": "Belthazar",
+        "rank": 3,
+        "score": 8800
+      },
+      {
+        "uid": 66607264,
+        "name": null,
         "rank": 4,
-        "score": 8400
+        "score": 8500
       },
       {
         "uid": 32556489,
         "name": "Bensayyten",
         "rank": 5,
-        "score": 7000
+        "score": 7400
       },
       {
         "uid": 10754439,
@@ -312,22 +312,22 @@
         "score": 4700
       },
       {
+        "uid": 64676255,
+        "name": "盾Heathcliff剣",
+        "rank": 10,
+        "score": 4400
+      },
+      {
         "uid": 59566866,
         "name": "FlyingDutchy",
-        "rank": 10,
+        "rank": 11,
         "score": 4300
       },
       {
         "uid": 26277677,
         "name": "BobBobberson",
-        "rank": 11,
-        "score": 4200
-      },
-      {
-        "uid": 64676255,
-        "name": "盾Heathcliff剣",
         "rank": 12,
-        "score": 4000
+        "score": 4200
       },
       {
         "uid": 88203044,
