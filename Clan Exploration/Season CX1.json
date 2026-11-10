@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-10T17:56:39.917799+11:00",
-    "total": 123700,
+    "updatedAt": "2026-11-10T18:56:47.346303+11:00",
+    "total": 124500,
     "members": [
       {
         "uid": 29321884,
@@ -291,7 +291,7 @@
         "uid": 10754439,
         "name": "HakiLuffy",
         "rank": 6,
-        "score": 6100
+        "score": 6500
       },
       {
         "uid": 80018314,
@@ -312,16 +312,16 @@
         "score": 4700
       },
       {
-        "uid": 64676255,
-        "name": "盾Heathcliff剣",
-        "rank": 10,
-        "score": 4000
-      },
-      {
         "uid": 59566866,
         "name": "FlyingDutchy",
+        "rank": 10,
+        "score": 4300
+      },
+      {
+        "uid": 64676255,
+        "name": "盾Heathcliff剣",
         "rank": 11,
-        "score": 3900
+        "score": 4000
       },
       {
         "uid": 26277677,
