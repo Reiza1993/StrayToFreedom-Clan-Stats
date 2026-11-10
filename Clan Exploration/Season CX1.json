@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-11T02:57:49.151161+11:00",
-    "total": 129500,
+    "updatedAt": "2026-11-11T03:57:57.611418+11:00",
+    "total": 131900,
     "members": [
       {
         "uid": 29321884,
@@ -267,7 +267,7 @@
         "uid": 103516442,
         "name": "DAYO-P",
         "rank": 2,
-        "score": 9200
+        "score": 9300
       },
       {
         "uid": 66607264,
@@ -285,19 +285,19 @@
         "uid": 32556489,
         "name": "Bensayyten",
         "rank": 5,
-        "score": 7400
+        "score": 7800
       },
       {
         "uid": 10754439,
         "name": "HakiLuffy",
         "rank": 6,
-        "score": 6900
+        "score": 7200
       },
       {
         "uid": 80018314,
         "name": null,
         "rank": 7,
-        "score": 5700
+        "score": 6100
       },
       {
         "uid": 79510960,
@@ -315,7 +315,7 @@
         "uid": 64676255,
         "name": "盾Heathcliff剣",
         "rank": 10,
-        "score": 4400
+        "score": 4800
       },
       {
         "uid": 59566866,
@@ -330,22 +330,22 @@
         "score": 4200
       },
       {
-        "uid": 88203044,
-        "name": "p88203044",
-        "rank": 13,
-        "score": 3600
-      },
-      {
         "uid": 112772047,
         "name": "VictorMolusco",
-        "rank": 14,
-        "score": 3600
+        "rank": 13,
+        "score": 4000
       },
       {
         "uid": 113690788,
         "name": "Apathy_",
+        "rank": 14,
+        "score": 3700
+      },
+      {
+        "uid": 88203044,
+        "name": "p88203044",
         "rank": 15,
-        "score": 3300
+        "score": 3600
       },
       {
         "uid": 51071110,
