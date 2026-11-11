@@ -254,14 +254,14 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-11T17:59:38.304350+11:00",
-    "total": 141600,
+    "updatedAt": "2026-11-11T18:59:46.991241+11:00",
+    "total": 142400,
     "members": [
       {
         "uid": 29321884,
         "name": "RABBIT5",
         "rank": 1,
-        "score": 12200
+        "score": 12300
       },
       {
         "uid": 103516442,
@@ -279,7 +279,7 @@
         "uid": 66607264,
         "name": null,
         "rank": 4,
-        "score": 9700
+        "score": 10000
       },
       {
         "uid": 32556489,
@@ -300,22 +300,22 @@
         "score": 6100
       },
       {
+        "uid": 41742773,
+        "name": "MadameMischief",
+        "rank": 8,
+        "score": 5900
+      },
+      {
         "uid": 64676255,
         "name": "盾Heathcliff剣",
-        "rank": 8,
+        "rank": 9,
         "score": 5600
       },
       {
         "uid": 79510960,
         "name": "theLP",
-        "rank": 9,
-        "score": 5600
-      },
-      {
-        "uid": 41742773,
-        "name": "MadameMischief",
         "rank": 10,
-        "score": 5500
+        "score": 5600
       },
       {
         "uid": 59566866,
