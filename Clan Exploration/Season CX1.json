@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-11T21:00:01.390881+11:00",
-    "total": 143700,
+    "updatedAt": "2026-11-11T23:00:14.653302+11:00",
+    "total": 144300,
     "members": [
       {
         "uid": 29321884,
@@ -300,16 +300,16 @@
         "score": 6100
       },
       {
-        "uid": 41742773,
-        "name": "MadameMischief",
-        "rank": 8,
-        "score": 5900
-      },
-      {
         "uid": 64676255,
         "name": "盾Heathcliff剣",
+        "rank": 8,
+        "score": 6000
+      },
+      {
+        "uid": 41742773,
+        "name": "MadameMischief",
         "rank": 9,
-        "score": 5600
+        "score": 5900
       },
       {
         "uid": 79510960,
@@ -402,20 +402,20 @@
         "score": 2000
       },
       {
+        "uid": 35869301,
+        "name": "Toddlerr",
+        "rank": 25,
+        "score": 1800
+      },
+      {
         "uid": 30658936,
         "name": "Gritchen",
-        "rank": 25,
+        "rank": 26,
         "score": 1600
       },
       {
         "uid": 61865023,
         "name": "RexPanda",
-        "rank": 26,
-        "score": 1600
-      },
-      {
-        "uid": 35869301,
-        "name": "Toddlerr",
         "rank": 27,
         "score": 1600
       },
