@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-11T15:59:24.945904+11:00",
-    "total": 140300,
+    "updatedAt": "2026-11-11T17:59:38.304350+11:00",
+    "total": 141600,
     "members": [
       {
         "uid": 29321884,
@@ -270,16 +270,16 @@
         "score": 10400
       },
       {
-        "uid": 66607264,
-        "name": null,
-        "rank": 3,
-        "score": 9700
-      },
-      {
         "uid": 36484758,
         "name": "Belthazar",
+        "rank": 3,
+        "score": 10000
+      },
+      {
+        "uid": 66607264,
+        "name": null,
         "rank": 4,
-        "score": 9600
+        "score": 9700
       },
       {
         "uid": 32556489,
@@ -291,7 +291,7 @@
         "uid": 10754439,
         "name": "HakiLuffy",
         "rank": 6,
-        "score": 7600
+        "score": 7700
       },
       {
         "uid": 80018314,
@@ -321,7 +321,7 @@
         "uid": 59566866,
         "name": "FlyingDutchy",
         "rank": 11,
-        "score": 4700
+        "score": 5100
       },
       {
         "uid": 26277677,
@@ -414,44 +414,44 @@
         "score": 1600
       },
       {
+        "uid": 35869301,
+        "name": "Toddlerr",
+        "rank": 27,
+        "score": 1600
+      },
+      {
         "uid": 100876140,
         "name": "Scoundrel536",
-        "rank": 27,
+        "rank": 28,
         "score": 1300
       },
       {
         "uid": 27113479,
         "name": "silverxz",
-        "rank": 28,
+        "rank": 29,
         "score": 1200
       },
       {
         "uid": 108546985,
         "name": "pumpenjoe",
-        "rank": 29,
+        "rank": 30,
         "score": 1200
       },
       {
         "uid": 18115624,
         "name": "Nubis",
-        "rank": 30,
+        "rank": 31,
         "score": 1200
       },
       {
         "uid": 18297536,
         "name": "ergiangi",
-        "rank": 31,
+        "rank": 32,
         "score": 1200
       },
       {
         "uid": 87244358,
         "name": "神Sterben死",
-        "rank": 32,
-        "score": 1200
-      },
-      {
-        "uid": 35869301,
-        "name": "Toddlerr",
         "rank": 33,
         "score": 1200
       },
