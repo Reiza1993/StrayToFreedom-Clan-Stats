@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-11T12:59:02.743534+11:00",
-    "total": 137500,
+    "updatedAt": "2026-11-11T13:59:09.889798+11:00",
+    "total": 137900,
     "members": [
       {
         "uid": 29321884,
@@ -270,16 +270,16 @@
         "score": 10000
       },
       {
-        "uid": 36484758,
-        "name": "Belthazar",
-        "rank": 3,
-        "score": 9600
-      },
-      {
         "uid": 66607264,
         "name": null,
+        "rank": 3,
+        "score": 9700
+      },
+      {
+        "uid": 36484758,
+        "name": "Belthazar",
         "rank": 4,
-        "score": 9300
+        "score": 9600
       },
       {
         "uid": 32556489,
