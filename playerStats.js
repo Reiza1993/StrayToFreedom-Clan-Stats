@@ -1,6 +1,6 @@
 // playerStats.js
 // Freedomˢᵗʳᵃʸ — Roster / Identity (from clan roster fetch)
-// Last Updated: 2026-11-05
+// Last Updated: 2026-11-12
 // Keys are real account IDs from the clan roster fetch.
 // TODO: roleTier/role are not yet reverse-engineered from the clan API
 // response - both are written as null below. Fill them in manually (or
@@ -8,55 +8,55 @@
 const playerStats = {
     current: {
         "100876140": {
-            "atk": 2773045,
+            "atk": 2788937,
             "name": "Scoundrel536",
             "role": "Member",
             "roleTier": null
         },
         "103516442": {
-            "atk": 3215024,
+            "atk": 3268009,
             "name": "DAYO-P",
             "role": "Member",
             "roleTier": null
         },
         "106162623": {
-            "atk": 2013537,
+            "atk": 2014551,
             "name": "gubrax",
             "role": "Glory Member",
             "roleTier": null
         },
         "10754439": {
-            "atk": 2266700,
+            "atk": 2459819,
             "name": "HakiLuffy",
             "role": "Member",
             "roleTier": null
         },
         "108546985": {
-            "atk": 2441817,
+            "atk": 2442000,
             "name": "pumpenjoe",
             "role": "Member",
             "roleTier": null
         },
         "108860725": {
-            "atk": 2677888,
+            "atk": 2680038,
             "name": "RetinaDNA",
             "role": "Member",
             "roleTier": null
         },
         "112772047": {
-            "atk": 2019192,
+            "atk": 2022668,
             "name": "VictorMolusco",
             "role": "Member",
             "roleTier": null
         },
         "113690788": {
-            "atk": 2284776,
+            "atk": 2303990,
             "name": "Apathy_",
             "role": "Member",
             "roleTier": null
         },
         "11463573": {
-            "atk": 2056267,
+            "atk": 2096977,
             "name": "faxnem",
             "role": "Glory Member",
             "roleTier": null
@@ -68,103 +68,103 @@ const playerStats = {
             "roleTier": null
         },
         "18115624": {
-            "atk": 2752302,
+            "atk": 2855535,
             "name": "Nubis",
             "role": "Glory Member",
             "roleTier": null
         },
         "18297536": {
-            "atk": 1876582,
+            "atk": 1879632,
             "name": "ergiangi",
             "role": "Member",
             "roleTier": null
         },
         "26277677": {
-            "atk": 2582325,
+            "atk": 2619740,
             "name": "BobBobberson",
             "role": "Member",
             "roleTier": null
         },
         "27113479": {
-            "atk": 2840417,
+            "atk": 2817760,
             "name": "silverxz",
             "role": "Member",
             "roleTier": null
         },
         "29321884": {
-            "atk": 3298936,
+            "atk": 3313712,
             "name": "RABBIT5",
             "role": "Member",
             "roleTier": null
         },
         "29904762": {
-            "atk": 1765508,
+            "atk": 1768305,
             "name": "Cheeselife",
             "role": "Glory Member",
             "roleTier": null
         },
         "30658936": {
-            "atk": 2469639,
+            "atk": 2497788,
             "name": "Gritchen",
             "role": "Member",
             "roleTier": null
         },
         "32556489": {
-            "atk": 2110086,
+            "atk": 2096411,
             "name": "Bensayyten",
             "role": "Member",
             "roleTier": null
         },
         "35869301": {
-            "atk": 2917110,
+            "atk": 3188911,
             "name": "Toddlerr",
             "role": "Member",
             "roleTier": null
         },
         "36484758": {
-            "atk": 2224909,
+            "atk": 2227219,
             "name": "Belthazar",
             "role": "Glory Member",
             "roleTier": null
         },
         "41742773": {
-            "atk": 1761440,
+            "atk": 2430211,
             "name": "MadameMischief",
             "role": "Member",
             "roleTier": null
         },
         "51071110": {
-            "atk": 2513390,
+            "atk": 2470138,
             "name": "samwise08",
             "role": "Member",
             "roleTier": null
         },
         "59566866": {
-            "atk": 2496826,
+            "atk": 2517070,
             "name": "FlyingDutchy",
             "role": "Member",
             "roleTier": null
         },
         "60687252": {
-            "atk": 4157936,
+            "atk": 4159803,
             "name": "һan",
             "role": "Vice-Leader",
             "roleTier": null
         },
         "61865023": {
-            "atk": 2750318,
+            "atk": 2710731,
             "name": "RexPanda",
             "role": "Member",
             "roleTier": null
         },
         "64676255": {
-            "atk": 2535391,
+            "atk": 2545389,
             "name": "盾Heathcliff剣",
             "role": "Glory Member",
             "roleTier": null
         },
         "66607264": {
-            "atk": 2606354,
+            "atk": 2619148,
             "name": "Player 66607264",
             "role": "Member",
             "roleTier": null
@@ -176,73 +176,73 @@ const playerStats = {
             "roleTier": null
         },
         "71028860": {
-            "atk": 2200724,
+            "atk": 2359999,
             "name": "Rzzza",
             "role": "Member",
             "roleTier": null
         },
         "72894129": {
-            "atk": 2541112,
+            "atk": 2642157,
             "name": "NeonCBV",
             "role": "Member",
             "roleTier": null
         },
         "75174428": {
-            "atk": 2428512,
+            "atk": 2428612,
             "name": "PastalaVista",
             "role": "Member",
             "roleTier": null
         },
         "79510960": {
-            "atk": 2158438,
+            "atk": 2376434,
             "name": "theLP",
             "role": "Member",
             "roleTier": null
         },
         "80018314": {
-            "atk": 2057563,
+            "atk": 2014217,
             "name": "Player 80018314",
             "role": "Member",
             "roleTier": null
         },
         "80972473": {
-            "atk": 3258605,
+            "atk": 3250009,
             "name": "Cunner88",
             "role": "Vice-Leader",
             "roleTier": null
         },
         "83339881": {
-            "atk": 3650757,
+            "atk": 3678980,
             "name": "Fl3xas",
             "role": "Member",
             "roleTier": null
         },
         "83861839": {
-            "atk": 2319003,
+            "atk": 2323155,
             "name": "groggen",
             "role": "Member",
             "roleTier": null
         },
         "87244358": {
-            "atk": 3174976,
+            "atk": 3282206,
             "name": "神Sterben死",
             "role": "Leader",
             "roleTier": null
         },
         "87954282": {
-            "atk": 2659531,
+            "atk": 2676561,
             "name": "SngphO",
             "role": "Member",
             "roleTier": null
         },
         "88203044": {
-            "atk": 2492916,
+            "atk": 2494016,
             "name": "p88203044",
             "role": "Member",
             "roleTier": null
         },
         "89511116": {
-            "atk": 2245603,
+            "atk": 2274110,
             "name": "EMBALOCO",
             "role": "Member",
             "roleTier": null
@@ -250,121 +250,124 @@ const playerStats = {
     },
     previous: {
         "100876140": {
-            "atk": 2567683
+            "atk": 2773045
         },
         "103516442": {
-            "atk": 3194365
+            "atk": 3215024
         },
         "106162623": {
-            "atk": 2011717
+            "atk": 2013537
         },
         "10754439": {
-            "atk": 2265350
+            "atk": 2266700
         },
         "108546985": {
-            "atk": 2429056
+            "atk": 2441817
         },
         "108860725": {
-            "atk": 2658160
+            "atk": 2677888
         },
         "112772047": {
-            "atk": 2004286
+            "atk": 2019192
         },
         "113690788": {
-            "atk": 2163910
+            "atk": 2284776
         },
         "11463573": {
-            "atk": 2041465
+            "atk": 2056267
         },
         "115742768": {
             "atk": 49403
         },
         "18115624": {
-            "atk": 2743784
+            "atk": 2752302
         },
         "18297536": {
-            "atk": 1877118
+            "atk": 1876582
         },
         "26277677": {
-            "atk": 2577865
+            "atk": 2582325
         },
         "27113479": {
-            "atk": 2809349
+            "atk": 2840417
         },
         "29321884": {
-            "atk": 3288798
+            "atk": 3298936
         },
         "29904762": {
-            "atk": 1837885
+            "atk": 1765508
         },
         "30658936": {
-            "atk": 2479047
+            "atk": 2469639
         },
         "32556489": {
-            "atk": 1913578
+            "atk": 2110086
         },
         "35869301": {
-            "atk": 3121495
+            "atk": 2917110
         },
         "36484758": {
-            "atk": 2223069
+            "atk": 2224909
         },
         "41742773": {
-            "atk": 1746663
+            "atk": 1761440
         },
         "51071110": {
-            "atk": 2446603
+            "atk": 2513390
         },
         "59566866": {
-            "atk": 2448743
+            "atk": 2496826
         },
         "60687252": {
-            "atk": 4106124
+            "atk": 4157936
+        },
+        "61865023": {
+            "atk": 2750318
         },
         "64676255": {
-            "atk": 2530870
+            "atk": 2535391
         },
         "66607264": {
-            "atk": 2609104
+            "atk": 2606354
         },
         "70603922": {
-            "atk": 2019774
+            "atk": 2050281
         },
         "71028860": {
-            "atk": 2195453
+            "atk": 2200724
         },
         "72894129": {
-            "atk": 2446139
+            "atk": 2541112
         },
         "75174428": {
-            "atk": 2424812
+            "atk": 2428512
         },
         "79510960": {
-            "atk": 2068703
+            "atk": 2158438
         },
         "80018314": {
-            "atk": 2030030
+            "atk": 2057563
         },
         "80972473": {
-            "atk": 3254855
+            "atk": 3258605
         },
         "83339881": {
-            "atk": 3646135
+            "atk": 3650757
         },
         "83861839": {
-            "atk": 2371967
+            "atk": 2319003
         },
         "87244358": {
-            "atk": 3164814
+            "atk": 3174976
         },
         "87954282": {
-            "atk": 2657971
+            "atk": 2659531
         },
         "88203044": {
-            "atk": 2376385
+            "atk": 2492916
         },
         "89511116": {
-            "atk": 2232557
+            "atk": 2245603
         }
     }
 };
