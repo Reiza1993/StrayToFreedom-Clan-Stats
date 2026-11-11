@@ -7,8 +7,8 @@
   "previousSeasonFinalTotal": 147500,
   "milestoneSnapshot": null,
   "cxRank": {
-    "updatedAt": "2026-11-12T07:57:32.992621+11:00",
-    "total": 900,
+    "updatedAt": "2026-11-12T08:57:37.358688+11:00",
+    "total": 2100,
     "members": [
       {
         "uid": 66607264,
@@ -23,110 +23,110 @@
         "score": 400
       },
       {
+        "uid": 83339881,
+        "name": "Fl3xas",
+        "rank": 3,
+        "score": 400
+      },
+      {
+        "uid": 108860725,
+        "name": "RetinaDNA",
+        "rank": 4,
+        "score": 400
+      },
+      {
+        "uid": 41742773,
+        "name": "MadameMischief",
+        "rank": 5,
+        "score": 400
+      },
+      {
         "uid": 103516442,
         "name": "DAYO-P",
-        "rank": 3,
+        "rank": 6,
         "score": 100
       },
       {
         "uid": 64676255,
         "name": "盾Heathcliff剣",
-        "rank": 4,
+        "rank": 7,
         "score": 0
       },
       {
         "uid": 71028860,
         "name": "Rzzza",
-        "rank": 5,
-        "score": 0
-      },
-      {
-        "uid": 108860725,
-        "name": "RetinaDNA",
-        "rank": 6,
-        "score": 0
-      },
-      {
-        "uid": 41742773,
-        "name": "MadameMischief",
-        "rank": 7,
+        "rank": 8,
         "score": 0
       },
       {
         "uid": 60687252,
         "name": "һan",
-        "rank": 8,
+        "rank": 9,
         "score": 0
       },
       {
         "uid": 51071110,
         "name": "samwise08",
-        "rank": 9,
+        "rank": 10,
         "score": 0
       },
       {
         "uid": 79510960,
         "name": "theLP",
-        "rank": 10,
+        "rank": 11,
         "score": 0
       },
       {
         "uid": 80018314,
         "name": null,
-        "rank": 11,
+        "rank": 12,
         "score": 0
       },
       {
         "uid": 61865023,
         "name": "RexPanda",
-        "rank": 12,
+        "rank": 13,
         "score": 0
       },
       {
         "uid": 108546985,
         "name": "pumpenjoe",
-        "rank": 13,
+        "rank": 14,
         "score": 0
       },
       {
         "uid": 87954282,
         "name": "SngphO",
-        "rank": 14,
+        "rank": 15,
         "score": 0
       },
       {
         "uid": 115742768,
         "name": "SterbyTools",
-        "rank": 15,
+        "rank": 16,
         "score": 0
       },
       {
         "uid": 35869301,
         "name": "Toddlerr",
-        "rank": 16,
+        "rank": 17,
         "score": 0
       },
       {
         "uid": 18297536,
         "name": "ergiangi",
-        "rank": 17,
+        "rank": 18,
         "score": 0
       },
       {
         "uid": 89511116,
         "name": "EMBALOCO",
-        "rank": 18,
+        "rank": 19,
         "score": 0
       },
       {
         "uid": 59566866,
         "name": "FlyingDutchy",
-        "rank": 19,
-        "score": 0
-      },
-      {
-        "uid": 83339881,
-        "name": "Fl3xas",
         "rank": 20,
         "score": 0
       },
