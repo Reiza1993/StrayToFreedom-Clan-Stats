@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-11T13:59:09.889798+11:00",
-    "total": 137900,
+    "updatedAt": "2026-11-11T14:59:17.588426+11:00",
+    "total": 139100,
     "members": [
       {
         "uid": 29321884,
@@ -291,7 +291,7 @@
         "uid": 10754439,
         "name": "HakiLuffy",
         "rank": 6,
-        "score": 7200
+        "score": 7600
       },
       {
         "uid": 80018314,
@@ -306,16 +306,16 @@
         "score": 5600
       },
       {
-        "uid": 41742773,
-        "name": "MadameMischief",
-        "rank": 9,
-        "score": 5500
-      },
-      {
         "uid": 79510960,
         "name": "theLP",
+        "rank": 9,
+        "score": 5600
+      },
+      {
+        "uid": 41742773,
+        "name": "MadameMischief",
         "rank": 10,
-        "score": 5200
+        "score": 5500
       },
       {
         "uid": 59566866,
@@ -456,32 +456,32 @@
         "score": 1200
       },
       {
+        "uid": 75174428,
+        "name": "PastalaVista",
+        "rank": 34,
+        "score": 1100
+      },
+      {
         "uid": 106162623,
         "name": "gubrax",
-        "rank": 34,
+        "rank": 35,
         "score": 800
       },
       {
         "uid": 72894129,
         "name": "NeonCBV",
-        "rank": 35,
+        "rank": 36,
         "score": 800
       },
       {
         "uid": 87954282,
         "name": "SngphO",
-        "rank": 36,
+        "rank": 37,
         "score": 800
       },
       {
         "uid": 60687252,
         "name": "һan",
-        "rank": 37,
-        "score": 700
-      },
-      {
-        "uid": 75174428,
-        "name": "PastalaVista",
         "rank": 38,
         "score": 700
       },
