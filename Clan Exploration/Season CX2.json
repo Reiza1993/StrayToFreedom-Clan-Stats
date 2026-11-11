@@ -7,14 +7,14 @@
   "previousSeasonFinalTotal": 147500,
   "milestoneSnapshot": null,
   "cxRank": {
-    "updatedAt": "2026-11-12T08:57:37.358688+11:00",
-    "total": 2100,
+    "updatedAt": "2026-11-12T09:57:41.415296+11:00",
+    "total": 2900,
     "members": [
       {
         "uid": 66607264,
         "name": null,
         "rank": 1,
-        "score": 400
+        "score": 800
       },
       {
         "uid": 27113479,
@@ -41,98 +41,98 @@
         "score": 400
       },
       {
+        "uid": 113690788,
+        "name": "Apathy_",
+        "rank": 6,
+        "score": 400
+      },
+      {
         "uid": 103516442,
         "name": "DAYO-P",
-        "rank": 6,
+        "rank": 7,
         "score": 100
       },
       {
         "uid": 64676255,
         "name": "盾Heathcliff剣",
-        "rank": 7,
+        "rank": 8,
         "score": 0
       },
       {
         "uid": 71028860,
         "name": "Rzzza",
-        "rank": 8,
+        "rank": 9,
         "score": 0
       },
       {
         "uid": 60687252,
         "name": "һan",
-        "rank": 9,
+        "rank": 10,
         "score": 0
       },
       {
         "uid": 51071110,
         "name": "samwise08",
-        "rank": 10,
+        "rank": 11,
         "score": 0
       },
       {
         "uid": 79510960,
         "name": "theLP",
-        "rank": 11,
+        "rank": 12,
         "score": 0
       },
       {
         "uid": 80018314,
         "name": null,
-        "rank": 12,
+        "rank": 13,
         "score": 0
       },
       {
         "uid": 61865023,
         "name": "RexPanda",
-        "rank": 13,
+        "rank": 14,
         "score": 0
       },
       {
         "uid": 108546985,
         "name": "pumpenjoe",
-        "rank": 14,
+        "rank": 15,
         "score": 0
       },
       {
         "uid": 87954282,
         "name": "SngphO",
-        "rank": 15,
+        "rank": 16,
         "score": 0
       },
       {
         "uid": 115742768,
         "name": "SterbyTools",
-        "rank": 16,
+        "rank": 17,
         "score": 0
       },
       {
         "uid": 35869301,
         "name": "Toddlerr",
-        "rank": 17,
+        "rank": 18,
         "score": 0
       },
       {
         "uid": 18297536,
         "name": "ergiangi",
-        "rank": 18,
+        "rank": 19,
         "score": 0
       },
       {
         "uid": 89511116,
         "name": "EMBALOCO",
-        "rank": 19,
+        "rank": 20,
         "score": 0
       },
       {
         "uid": 59566866,
         "name": "FlyingDutchy",
-        "rank": 20,
-        "score": 0
-      },
-      {
-        "uid": 113690788,
-        "name": "Apathy_",
         "rank": 21,
         "score": 0
       },
