@@ -1,0 +1,407 @@
+{
+  "finalRanking": [
+    {
+      "clanId": 35211,
+      "clanName": "Le vaisseau",
+      "medals": 172142,
+      "p1TotalScore": 92694,
+      "points": 5,
+      "rank": 1
+    },
+    {
+      "clanId": 44262,
+      "clanName": "Freedom\u02e2\u1d57\u02b3\u1d43\u02b8",
+      "medals": 121929,
+      "p1TotalScore": 88844,
+      "points": 5,
+      "rank": 2
+    },
+    {
+      "clanId": 28692,
+      "clanName": "The Club",
+      "medals": 92544,
+      "p1TotalScore": 50272,
+      "points": 1,
+      "rank": 3
+    },
+    {
+      "clanId": 40832,
+      "clanName": "\u30ac\u30c1\u52e2\u30ab\u30e2\u30f3",
+      "medals": 37968,
+      "p1TotalScore": 45015,
+      "points": 1,
+      "rank": 4
+    }
+  ],
+  "freedomClanId": 44262,
+  "freedomClanName": "Freedom\u02e2\u1d57\u02b3\u1d43\u02b8",
+  "generatedAt": "2026-11-08T16:18:05.674860+00:00",
+  "lmeNumber": 8,
+  "lunarDetails": {
+    "28692": {
+      "clanId": 28692,
+      "lunarPoints": 1405,
+      "name": "The Club",
+      "totalAtk": 52198867,
+      "totalChips": 933,
+      "totalEe": null,
+      "totalRelicCores": 4285,
+      "totalTransmuteCores": 405
+    },
+    "35211": {
+      "clanId": 35211,
+      "lunarPoints": 1555,
+      "name": "Le vaisseau",
+      "totalAtk": 86550537,
+      "totalChips": 3348,
+      "totalEe": null,
+      "totalRelicCores": 5194,
+      "totalTransmuteCores": 1314
+    },
+    "40832": {
+      "clanId": 40832,
+      "lunarPoints": 1405,
+      "name": "\u30ac\u30c1\u52e2\u30ab\u30e2\u30f3",
+      "totalAtk": 49464424,
+      "totalChips": 896,
+      "totalEe": null,
+      "totalRelicCores": 3914,
+      "totalTransmuteCores": 368
+    },
+    "44262": {
+      "clanId": 44262,
+      "lunarPoints": 1525,
+      "name": "Freedom\u02e2\u1d57\u02b3\u1d43\u02b8",
+      "totalAtk": 80935280,
+      "totalChips": 2472,
+      "totalEe": null,
+      "totalRelicCores": 5816,
+      "totalTransmuteCores": 1165
+    }
+  },
+  "members": [
+    {
+      "lmeScore": 3766,
+      "name": "\u04bban",
+      "round1": 0,
+      "round2": 0,
+      "round3": 0,
+      "uid": 60687252
+    },
+    {
+      "lmeScore": 3734,
+      "name": "Fl3xas",
+      "round1": 0,
+      "round2": 0,
+      "round3": 0,
+      "uid": 83339881
+    },
+    {
+      "lmeScore": 3429,
+      "name": "DAYO-P",
+      "round1": 0,
+      "round2": 0,
+      "round3": 0,
+      "uid": 103516442
+    },
+    {
+      "lmeScore": 3400,
+      "name": "Nubis",
+      "round1": 0,
+      "round2": 0,
+      "round3": 0,
+      "uid": 18115624
+    },
+    {
+      "lmeScore": 3369,
+      "name": "RABBIT5",
+      "round1": 0,
+      "round2": 0,
+      "round3": 0,
+      "uid": 29321884
+    },
+    {
+      "lmeScore": 3350,
+      "name": "\u795eSterben\u6b7b",
+      "round1": 0,
+      "round2": 0,
+      "round3": 0,
+      "uid": 87244358
+    },
+    {
+      "lmeScore": 3236,
+      "name": "Cunner88",
+      "round1": 0,
+      "round2": 0,
+      "round3": 0,
+      "uid": 80972473
+    },
+    {
+      "lmeScore": 3146,
+      "name": "pumpenjoe",
+      "round1": 0,
+      "round2": 0,
+      "round3": 0,
+      "uid": 108546985
+    },
+    {
+      "lmeScore": 3136,
+      "name": "NeonCBV",
+      "round1": 0,
+      "round2": 0,
+      "round3": 0,
+      "uid": 72894129
+    },
+    {
+      "lmeScore": 3100,
+      "name": "Scoundrel536",
+      "round1": 0,
+      "round2": 0,
+      "round3": 0,
+      "uid": 100876140
+    },
+    {
+      "lmeScore": 3070,
+      "name": "SngphO",
+      "round1": 0,
+      "round2": 0,
+      "round3": 0,
+      "uid": 87954282
+    },
+    {
+      "lmeScore": 2997,
+      "name": "RetinaDNA",
+      "round1": 0,
+      "round2": 0,
+      "round3": 0,
+      "uid": 108860725
+    },
+    {
+      "lmeScore": 2948,
+      "name": "Toddlerr",
+      "round1": 0,
+      "round2": 0,
+      "round3": 0,
+      "uid": 35869301
+    },
+    {
+      "lmeScore": 2902,
+      "name": "\u76feHeathcliff\u5263",
+      "round1": 0,
+      "round2": 0,
+      "round3": 0,
+      "uid": 64676255
+    },
+    {
+      "lmeScore": 2887,
+      "name": "RexPanda",
+      "round1": 0,
+      "round2": 0,
+      "round3": 0,
+      "uid": 61865023
+    },
+    {
+      "lmeScore": 2870,
+      "name": "MadameMischief",
+      "round1": 0,
+      "round2": 0,
+      "round3": 0,
+      "uid": 41742773
+    },
+    {
+      "lmeScore": 2864,
+      "name": "PastalaVista",
+      "round1": 0,
+      "round2": 0,
+      "round3": 0,
+      "uid": 75174428
+    },
+    {
+      "lmeScore": 2834,
+      "name": "Gritchen",
+      "round1": 0,
+      "round2": 0,
+      "round3": 0,
+      "uid": 30658936
+    },
+    {
+      "lmeScore": 2801,
+      "name": "p88203044",
+      "round1": 0,
+      "round2": 0,
+      "round3": 0,
+      "uid": 88203044
+    },
+    {
+      "lmeScore": 2790,
+      "name": "FlyingDutchy",
+      "round1": 0,
+      "round2": 0,
+      "round3": 0,
+      "uid": 59566866
+    },
+    {
+      "lmeScore": 2759,
+      "name": "Apathy_",
+      "round1": 0,
+      "round2": 0,
+      "round3": 0,
+      "uid": 113690788
+    },
+    {
+      "lmeScore": 2757,
+      "name": "Player 66607264",
+      "round1": 0,
+      "round2": 0,
+      "round3": 0,
+      "uid": 66607264
+    },
+    {
+      "lmeScore": 2741,
+      "name": "theLP",
+      "round1": 0,
+      "round2": 0,
+      "round3": 0,
+      "uid": 79510960
+    },
+    {
+      "lmeScore": 2724,
+      "name": "groggen",
+      "round1": 0,
+      "round2": 0,
+      "round3": 0,
+      "uid": 83861839
+    },
+    {
+      "lmeScore": 2723,
+      "name": "Bensayyten",
+      "round1": 0,
+      "round2": 0,
+      "round3": 0,
+      "uid": 32556489
+    },
+    {
+      "lmeScore": 2697,
+      "name": "BobBobberson",
+      "round1": 0,
+      "round2": 0,
+      "round3": 0,
+      "uid": 26277677
+    },
+    {
+      "lmeScore": 2678,
+      "name": "samwise08",
+      "round1": 0,
+      "round2": 0,
+      "round3": 0,
+      "uid": 51071110
+    },
+    {
+      "lmeScore": 2658,
+      "name": "faxnem",
+      "round1": 0,
+      "round2": 0,
+      "round3": 0,
+      "uid": 11463573
+    },
+    {
+      "lmeScore": 2648,
+      "name": "VictorMolusco",
+      "round1": 0,
+      "round2": 0,
+      "round3": 0,
+      "uid": 112772047
+    },
+    {
+      "lmeScore": 2608,
+      "name": "HakiLuffy",
+      "round1": 0,
+      "round2": 0,
+      "round3": 0,
+      "uid": 10754439
+    },
+    {
+      "lmeScore": 2551,
+      "name": "Rzzza",
+      "round1": 0,
+      "round2": 0,
+      "round3": 0,
+      "uid": 71028860
+    },
+    {
+      "lmeScore": 2543,
+      "name": "silverxz",
+      "round1": 0,
+      "round2": 0,
+      "round3": 0,
+      "uid": 27113479
+    },
+    {
+      "lmeScore": 2539,
+      "name": "ergiangi",
+      "round1": 0,
+      "round2": 0,
+      "round3": 0,
+      "uid": 18297536
+    },
+    {
+      "lmeScore": 2514,
+      "name": "Cheeselife",
+      "round1": 0,
+      "round2": 0,
+      "round3": 0,
+      "uid": 29904762
+    },
+    {
+      "lmeScore": 2507,
+      "name": "EMBALOCO",
+      "round1": 0,
+      "round2": 0,
+      "round3": 0,
+      "uid": 89511116
+    },
+    {
+      "lmeScore": 2491,
+      "name": "gubrax",
+      "round1": 0,
+      "round2": 0,
+      "round3": 0,
+      "uid": 106162623
+    },
+    {
+      "lmeScore": 2484,
+      "name": "BlackFlamE",
+      "round1": 0,
+      "round2": 0,
+      "round3": 0,
+      "uid": 70603922
+    },
+    {
+      "lmeScore": 2342,
+      "name": "Player 80018314",
+      "round1": 0,
+      "round2": 0,
+      "round3": 0,
+      "uid": 80018314
+    },
+    {
+      "lmeScore": 2261,
+      "name": "Belthazar",
+      "round1": 0,
+      "round2": 0,
+      "round3": 0,
+      "uid": 36484758
+    },
+    {
+      "lmeScore": 0,
+      "name": "SterbyTools",
+      "round1": 0,
+      "round2": 0,
+      "round3": 0,
+      "uid": 115742768
+    }
+  ],
+  "warnings": [
+    "Could not find this event's raw Final Ranking data anymore (aged out of history retention) - finalRanking left unchanged."
+  ]
+}
