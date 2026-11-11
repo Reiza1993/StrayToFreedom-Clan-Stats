@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-11T10:58:48.799722+11:00",
-    "total": 135900,
+    "updatedAt": "2026-11-11T11:58:56.264604+11:00",
+    "total": 137000,
     "members": [
       {
         "uid": 29321884,
@@ -267,19 +267,19 @@
         "uid": 103516442,
         "name": "DAYO-P",
         "rank": 2,
-        "score": 9700
-      },
-      {
-        "uid": 66607264,
-        "name": null,
-        "rank": 3,
-        "score": 9300
+        "score": 10000
       },
       {
         "uid": 36484758,
         "name": "Belthazar",
+        "rank": 3,
+        "score": 9600
+      },
+      {
+        "uid": 66607264,
+        "name": null,
         "rank": 4,
-        "score": 9200
+        "score": 9300
       },
       {
         "uid": 32556489,
@@ -300,20 +300,20 @@
         "score": 6100
       },
       {
+        "uid": 64676255,
+        "name": "盾Heathcliff剣",
+        "rank": 8,
+        "score": 5600
+      },
+      {
         "uid": 41742773,
         "name": "MadameMischief",
-        "rank": 8,
+        "rank": 9,
         "score": 5500
       },
       {
         "uid": 79510960,
         "name": "theLP",
-        "rank": 9,
-        "score": 5200
-      },
-      {
-        "uid": 64676255,
-        "name": "盾Heathcliff剣",
         "rank": 10,
         "score": 5200
       },
