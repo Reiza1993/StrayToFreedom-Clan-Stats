@@ -1,0 +1,256 @@
+{
+  "seasonNumber": 2,
+  "startAt": "2026-11-12T03:00:00+11:00",
+  "endAt": "2026-11-19T03:00:00+11:00",
+  "milestone": 42000,
+  "resetSeen": true,
+  "previousSeasonFinalTotal": 147500,
+  "milestoneSnapshot": null,
+  "cxRank": {
+    "updatedAt": "2026-11-12T03:57:20.335948+11:00",
+    "total": 0,
+    "members": [
+      {
+        "uid": 64676255,
+        "name": "盾Heathcliff剣",
+        "rank": 1,
+        "score": 0
+      },
+      {
+        "uid": 71028860,
+        "name": "Rzzza",
+        "rank": 2,
+        "score": 0
+      },
+      {
+        "uid": 108860725,
+        "name": "RetinaDNA",
+        "rank": 3,
+        "score": 0
+      },
+      {
+        "uid": 41742773,
+        "name": "MadameMischief",
+        "rank": 4,
+        "score": 0
+      },
+      {
+        "uid": 60687252,
+        "name": "һan",
+        "rank": 5,
+        "score": 0
+      },
+      {
+        "uid": 51071110,
+        "name": "samwise08",
+        "rank": 6,
+        "score": 0
+      },
+      {
+        "uid": 79510960,
+        "name": "theLP",
+        "rank": 7,
+        "score": 0
+      },
+      {
+        "uid": 80018314,
+        "name": null,
+        "rank": 8,
+        "score": 0
+      },
+      {
+        "uid": 61865023,
+        "name": "RexPanda",
+        "rank": 9,
+        "score": 0
+      },
+      {
+        "uid": 108546985,
+        "name": "pumpenjoe",
+        "rank": 10,
+        "score": 0
+      },
+      {
+        "uid": 87954282,
+        "name": "SngphO",
+        "rank": 11,
+        "score": 0
+      },
+      {
+        "uid": 115742768,
+        "name": "SterbyTools",
+        "rank": 12,
+        "score": 0
+      },
+      {
+        "uid": 35869301,
+        "name": "Toddlerr",
+        "rank": 13,
+        "score": 0
+      },
+      {
+        "uid": 18297536,
+        "name": "ergiangi",
+        "rank": 14,
+        "score": 0
+      },
+      {
+        "uid": 66607264,
+        "name": null,
+        "rank": 15,
+        "score": 0
+      },
+      {
+        "uid": 89511116,
+        "name": "EMBALOCO",
+        "rank": 16,
+        "score": 0
+      },
+      {
+        "uid": 27113479,
+        "name": "silverxz",
+        "rank": 17,
+        "score": 0
+      },
+      {
+        "uid": 59566866,
+        "name": "FlyingDutchy",
+        "rank": 18,
+        "score": 0
+      },
+      {
+        "uid": 83339881,
+        "name": "Fl3xas",
+        "rank": 19,
+        "score": 0
+      },
+      {
+        "uid": 113690788,
+        "name": "Apathy_",
+        "rank": 20,
+        "score": 0
+      },
+      {
+        "uid": 29321884,
+        "name": "RABBIT5",
+        "rank": 21,
+        "score": 0
+      },
+      {
+        "uid": 10754439,
+        "name": "HakiLuffy",
+        "rank": 22,
+        "score": 0
+      },
+      {
+        "uid": 88203044,
+        "name": "p88203044",
+        "rank": 23,
+        "score": 0
+      },
+      {
+        "uid": 70603922,
+        "name": "BlackFlamE",
+        "rank": 24,
+        "score": 0
+      },
+      {
+        "uid": 75174428,
+        "name": "PastalaVista",
+        "rank": 25,
+        "score": 0
+      },
+      {
+        "uid": 72894129,
+        "name": "NeonCBV",
+        "rank": 26,
+        "score": 0
+      },
+      {
+        "uid": 80972473,
+        "name": "Cunner88",
+        "rank": 27,
+        "score": 0
+      },
+      {
+        "uid": 30658936,
+        "name": "Gritchen",
+        "rank": 28,
+        "score": 0
+      },
+      {
+        "uid": 106162623,
+        "name": "gubrax",
+        "rank": 29,
+        "score": 0
+      },
+      {
+        "uid": 100876140,
+        "name": "Scoundrel536",
+        "rank": 30,
+        "score": 0
+      },
+      {
+        "uid": 83861839,
+        "name": "groggen",
+        "rank": 31,
+        "score": 0
+      },
+      {
+        "uid": 103516442,
+        "name": "DAYO-P",
+        "rank": 32,
+        "score": 0
+      },
+      {
+        "uid": 29904762,
+        "name": "Cheeselife",
+        "rank": 33,
+        "score": 0
+      },
+      {
+        "uid": 87244358,
+        "name": "神Sterben死",
+        "rank": 34,
+        "score": 0
+      },
+      {
+        "uid": 112772047,
+        "name": "VictorMolusco",
+        "rank": 35,
+        "score": 0
+      },
+      {
+        "uid": 32556489,
+        "name": "Bensayyten",
+        "rank": 36,
+        "score": 0
+      },
+      {
+        "uid": 36484758,
+        "name": "Belthazar",
+        "rank": 37,
+        "score": 0
+      },
+      {
+        "uid": 11463573,
+        "name": "faxnem",
+        "rank": 38,
+        "score": 0
+      },
+      {
+        "uid": 18115624,
+        "name": "Nubis",
+        "rank": 39,
+        "score": 0
+      },
+      {
+        "uid": 26277677,
+        "name": "BobBobberson",
+        "rank": 40,
+        "score": 0
+      }
+    ]
+  },
+  "cxBoss": null
+}
