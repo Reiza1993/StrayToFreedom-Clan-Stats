@@ -7,8 +7,8 @@
   "previousSeasonFinalTotal": 147500,
   "milestoneSnapshot": null,
   "cxRank": {
-    "updatedAt": "2026-11-13T03:37:10.646730+11:00",
-    "total": 20400,
+    "updatedAt": "2026-11-13T04:37:24.826358+11:00",
+    "total": 22000,
     "members": [
       {
         "uid": 29321884,
@@ -23,28 +23,28 @@
         "score": 1600
       },
       {
+        "uid": 108860725,
+        "name": "RetinaDNA",
+        "rank": 3,
+        "score": 1600
+      },
+      {
         "uid": 83339881,
         "name": "Fl3xas",
-        "rank": 3,
+        "rank": 4,
         "score": 1500
       },
       {
         "uid": 10754439,
         "name": "HakiLuffy",
-        "rank": 4,
+        "rank": 5,
         "score": 1500
       },
       {
         "uid": 103516442,
         "name": "DAYO-P",
-        "rank": 5,
-        "score": 1300
-      },
-      {
-        "uid": 108860725,
-        "name": "RetinaDNA",
         "rank": 6,
-        "score": 1200
+        "score": 1400
       },
       {
         "uid": 36484758,
@@ -101,32 +101,32 @@
         "score": 800
       },
       {
+        "uid": 83861839,
+        "name": "groggen",
+        "rank": 16,
+        "score": 800
+      },
+      {
+        "uid": 89511116,
+        "name": "EMBALOCO",
+        "rank": 17,
+        "score": 700
+      },
+      {
         "uid": 30658936,
         "name": "Gritchen",
-        "rank": 16,
+        "rank": 18,
         "score": 400
       },
       {
         "uid": 18115624,
         "name": "Nubis",
-        "rank": 17,
+        "rank": 19,
         "score": 400
       },
       {
         "uid": 26277677,
         "name": "BobBobberson",
-        "rank": 18,
-        "score": 400
-      },
-      {
-        "uid": 89511116,
-        "name": "EMBALOCO",
-        "rank": 19,
-        "score": 400
-      },
-      {
-        "uid": 83861839,
-        "name": "groggen",
         "rank": 20,
         "score": 400
       },
@@ -149,38 +149,38 @@
         "score": 400
       },
       {
+        "uid": 87954282,
+        "name": "SngphO",
+        "rank": 24,
+        "score": 400
+      },
+      {
         "uid": 71028860,
         "name": "Rzzza",
-        "rank": 24,
+        "rank": 25,
         "score": 0
       },
       {
         "uid": 60687252,
         "name": "һan",
-        "rank": 25,
+        "rank": 26,
         "score": 0
       },
       {
         "uid": 51071110,
         "name": "samwise08",
-        "rank": 26,
+        "rank": 27,
         "score": 0
       },
       {
         "uid": 61865023,
         "name": "RexPanda",
-        "rank": 27,
+        "rank": 28,
         "score": 0
       },
       {
         "uid": 108546985,
         "name": "pumpenjoe",
-        "rank": 28,
-        "score": 0
-      },
-      {
-        "uid": 87954282,
-        "name": "SngphO",
         "rank": 29,
         "score": 0
       },
