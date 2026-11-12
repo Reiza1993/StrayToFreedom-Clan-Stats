@@ -7,8 +7,8 @@
   "previousSeasonFinalTotal": 147500,
   "milestoneSnapshot": null,
   "cxRank": {
-    "updatedAt": "2026-11-13T08:37:49.883937+11:00",
-    "total": 27200,
+    "updatedAt": "2026-11-13T09:37:56.336391+11:00",
+    "total": 29800,
     "members": [
       {
         "uid": 66607264,
@@ -23,46 +23,46 @@
         "score": 2000
       },
       {
+        "uid": 108860725,
+        "name": "RetinaDNA",
+        "rank": 3,
+        "score": 2000
+      },
+      {
         "uid": 83339881,
         "name": "Fl3xas",
-        "rank": 3,
+        "rank": 4,
         "score": 1900
       },
       {
-        "uid": 108860725,
-        "name": "RetinaDNA",
-        "rank": 4,
-        "score": 1600
+        "uid": 10754439,
+        "name": "HakiLuffy",
+        "rank": 5,
+        "score": 1700
       },
       {
         "uid": 113690788,
         "name": "Apathy_",
-        "rank": 5,
+        "rank": 6,
         "score": 1600
       },
       {
         "uid": 36484758,
         "name": "Belthazar",
-        "rank": 6,
-        "score": 1600
-      },
-      {
-        "uid": 10754439,
-        "name": "HakiLuffy",
         "rank": 7,
-        "score": 1500
-      },
-      {
-        "uid": 103516442,
-        "name": "DAYO-P",
-        "rank": 8,
-        "score": 1400
+        "score": 1600
       },
       {
         "uid": 41742773,
         "name": "MadameMischief",
+        "rank": 8,
+        "score": 1600
+      },
+      {
+        "uid": 103516442,
+        "name": "DAYO-P",
         "rank": 9,
-        "score": 1200
+        "score": 1400
       },
       {
         "uid": 79510960,
@@ -131,32 +131,32 @@
         "score": 800
       },
       {
-        "uid": 89511116,
-        "name": "EMBALOCO",
-        "rank": 21,
-        "score": 700
-      },
-      {
-        "uid": 100876140,
-        "name": "Scoundrel536",
-        "rank": 22,
-        "score": 400
-      },
-      {
         "uid": 112772047,
         "name": "VictorMolusco",
-        "rank": 23,
-        "score": 400
-      },
-      {
-        "uid": 87954282,
-        "name": "SngphO",
-        "rank": 24,
-        "score": 400
+        "rank": 21,
+        "score": 800
       },
       {
         "uid": 59566866,
         "name": "FlyingDutchy",
+        "rank": 22,
+        "score": 800
+      },
+      {
+        "uid": 100876140,
+        "name": "Scoundrel536",
+        "rank": 23,
+        "score": 800
+      },
+      {
+        "uid": 89511116,
+        "name": "EMBALOCO",
+        "rank": 24,
+        "score": 700
+      },
+      {
+        "uid": 87954282,
+        "name": "SngphO",
         "rank": 25,
         "score": 400
       },
@@ -167,32 +167,32 @@
         "score": 400
       },
       {
+        "uid": 108546985,
+        "name": "pumpenjoe",
+        "rank": 27,
+        "score": 400
+      },
+      {
         "uid": 71028860,
         "name": "Rzzza",
-        "rank": 27,
+        "rank": 28,
         "score": 0
       },
       {
         "uid": 60687252,
         "name": "һan",
-        "rank": 28,
+        "rank": 29,
         "score": 0
       },
       {
         "uid": 51071110,
         "name": "samwise08",
-        "rank": 29,
+        "rank": 30,
         "score": 0
       },
       {
         "uid": 61865023,
         "name": "RexPanda",
-        "rank": 30,
-        "score": 0
-      },
-      {
-        "uid": 108546985,
-        "name": "pumpenjoe",
         "rank": 31,
         "score": 0
       },
