@@ -7,14 +7,14 @@
   "previousSeasonFinalTotal": 147500,
   "milestoneSnapshot": null,
   "cxRank": {
-    "updatedAt": "2026-11-12T15:36:04.093192+11:00",
-    "total": 6400,
+    "updatedAt": "2026-11-12T16:36:12.712721+11:00",
+    "total": 7400,
     "members": [
       {
         "uid": 66607264,
         "name": null,
         "rank": 1,
-        "score": 800
+        "score": 1200
       },
       {
         "uid": 108860725,
@@ -29,38 +29,38 @@
         "score": 800
       },
       {
+        "uid": 29321884,
+        "name": "RABBIT5",
+        "rank": 4,
+        "score": 800
+      },
+      {
         "uid": 10754439,
         "name": "HakiLuffy",
-        "rank": 4,
-        "score": 700
+        "rank": 5,
+        "score": 800
       },
       {
         "uid": 103516442,
         "name": "DAYO-P",
-        "rank": 5,
-        "score": 500
+        "rank": 6,
+        "score": 600
       },
       {
         "uid": 27113479,
         "name": "silverxz",
-        "rank": 6,
+        "rank": 7,
         "score": 400
       },
       {
         "uid": 41742773,
         "name": "MadameMischief",
-        "rank": 7,
+        "rank": 8,
         "score": 400
       },
       {
         "uid": 113690788,
         "name": "Apathy_",
-        "rank": 8,
-        "score": 400
-      },
-      {
-        "uid": 29321884,
-        "name": "RABBIT5",
         "rank": 9,
         "score": 400
       },
