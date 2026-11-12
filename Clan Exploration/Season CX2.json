@@ -7,30 +7,30 @@
   "previousSeasonFinalTotal": 147500,
   "milestoneSnapshot": null,
   "cxRank": {
-    "updatedAt": "2026-11-13T01:37:01.383997+11:00",
-    "total": 16000,
+    "updatedAt": "2026-11-13T02:37:05.071431+11:00",
+    "total": 16800,
     "members": [
+      {
+        "uid": 29321884,
+        "name": "RABBIT5",
+        "rank": 1,
+        "score": 1600
+      },
       {
         "uid": 103516442,
         "name": "DAYO-P",
-        "rank": 1,
+        "rank": 2,
         "score": 1300
       },
       {
         "uid": 66607264,
         "name": null,
-        "rank": 2,
+        "rank": 3,
         "score": 1200
       },
       {
         "uid": 83339881,
         "name": "Fl3xas",
-        "rank": 3,
-        "score": 1200
-      },
-      {
-        "uid": 29321884,
-        "name": "RABBIT5",
         "rank": 4,
         "score": 1200
       },
@@ -71,16 +71,16 @@
         "score": 800
       },
       {
-        "uid": 32556489,
-        "name": "Bensayyten",
-        "rank": 11,
-        "score": 500
-      },
-      {
         "uid": 79510960,
         "name": "theLP",
+        "rank": 11,
+        "score": 800
+      },
+      {
+        "uid": 32556489,
+        "name": "Bensayyten",
         "rank": 12,
-        "score": 400
+        "score": 500
       },
       {
         "uid": 30658936,
