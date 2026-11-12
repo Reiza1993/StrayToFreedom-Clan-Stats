@@ -7,6 +7,7 @@ const playerCores = {
             "chaosFusionPower": 27,
             "chipsCount": 60,
             "relicCores": 189,
+            "techResonance": 0,
             "transmuteCores": 34
         },
         "103516442": {
@@ -20,6 +21,7 @@ const playerCores = {
             "chaosFusionPower": 18,
             "chipsCount": 23,
             "relicCores": 111,
+            "techResonance": 0,
             "transmuteCores": 20
         },
         "10754439": {
@@ -47,12 +49,14 @@ const playerCores = {
             "chaosFusionPower": 18,
             "chipsCount": 40,
             "relicCores": 127,
+            "techResonance": 0,
             "transmuteCores": 34
         },
         "113690788": {
             "chaosFusionPower": 18,
             "chipsCount": 49,
             "relicCores": 118,
+            "techResonance": 0,
             "transmuteCores": 34
         },
         "11463573": {
@@ -93,7 +97,8 @@ const playerCores = {
         "27113479": {
             "chaosFusionPower": 27,
             "chipsCount": 136,
-            "relicCores": 168,
+            "relicCores": 184,
+            "techResonance": 0,
             "transmuteCores": 10
         },
         "29321884": {
@@ -129,7 +134,7 @@ const playerCores = {
             "chipsCount": 135,
             "relicCores": 277,
             "techResonance": 28800,
-            "transmuteCores": 30
+            "transmuteCores": 34
         },
         "36484758": {
             "chaosFusionPower": 10,
