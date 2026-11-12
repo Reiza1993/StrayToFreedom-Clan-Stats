@@ -2656,7 +2656,7 @@
                         <span style="font-size:10px;display:block;">${formatGainHTML(resonanceGain)}</span>
                     </td>
                     <td class="cores-cell" style="color:#8bc34a;">${player.techResonance === null ? '—' : formatNumber(player.techResonance)}
-                        <span style="font-size:10px;display:block;">${player.techResonance === null ? '' : formatGainHTML(individualGain(player.techResonance, player.prevTechResonance), true)}</span>
+                        <span style="font-size:10px;display:block;">${player.techResonance === null || player.prevTechResonance === null ? '' : formatGainHTML(player.techResonance - player.prevTechResonance, true)}</span>
                     </td>
                     <td style="text-align:center;font-weight:600;color:#e2e8f0;">${formatNumber(player.atk)}
                         <span style="font-size:10px;display:block;">${formatGainHTML(atkGain, true)}</span>
