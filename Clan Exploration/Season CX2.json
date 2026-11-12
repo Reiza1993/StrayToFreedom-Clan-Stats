@@ -7,8 +7,8 @@
   "previousSeasonFinalTotal": 147500,
   "milestoneSnapshot": null,
   "cxRank": {
-    "updatedAt": "2026-11-13T00:36:56.971113+11:00",
-    "total": 14800,
+    "updatedAt": "2026-11-13T01:37:01.383997+11:00",
+    "total": 16000,
     "members": [
       {
         "uid": 103516442,
@@ -125,104 +125,104 @@
         "score": 400
       },
       {
+        "uid": 83861839,
+        "name": "groggen",
+        "rank": 20,
+        "score": 400
+      },
+      {
+        "uid": 80018314,
+        "name": null,
+        "rank": 21,
+        "score": 400
+      },
+      {
+        "uid": 100876140,
+        "name": "Scoundrel536",
+        "rank": 22,
+        "score": 400
+      },
+      {
         "uid": 71028860,
         "name": "Rzzza",
-        "rank": 20,
+        "rank": 23,
         "score": 0
       },
       {
         "uid": 60687252,
         "name": "һan",
-        "rank": 21,
+        "rank": 24,
         "score": 0
       },
       {
         "uid": 51071110,
         "name": "samwise08",
-        "rank": 22,
-        "score": 0
-      },
-      {
-        "uid": 80018314,
-        "name": null,
-        "rank": 23,
+        "rank": 25,
         "score": 0
       },
       {
         "uid": 61865023,
         "name": "RexPanda",
-        "rank": 24,
+        "rank": 26,
         "score": 0
       },
       {
         "uid": 108546985,
         "name": "pumpenjoe",
-        "rank": 25,
+        "rank": 27,
         "score": 0
       },
       {
         "uid": 87954282,
         "name": "SngphO",
-        "rank": 26,
+        "rank": 28,
         "score": 0
       },
       {
         "uid": 115742768,
         "name": "SterbyTools",
-        "rank": 27,
+        "rank": 29,
         "score": 0
       },
       {
         "uid": 35869301,
         "name": "Toddlerr",
-        "rank": 28,
+        "rank": 30,
         "score": 0
       },
       {
         "uid": 18297536,
         "name": "ergiangi",
-        "rank": 29,
+        "rank": 31,
         "score": 0
       },
       {
         "uid": 59566866,
         "name": "FlyingDutchy",
-        "rank": 30,
+        "rank": 32,
         "score": 0
       },
       {
         "uid": 75174428,
         "name": "PastalaVista",
-        "rank": 31,
+        "rank": 33,
         "score": 0
       },
       {
         "uid": 72894129,
         "name": "NeonCBV",
-        "rank": 32,
+        "rank": 34,
         "score": 0
       },
       {
         "uid": 80972473,
         "name": "Cunner88",
-        "rank": 33,
+        "rank": 35,
         "score": 0
       },
       {
         "uid": 106162623,
         "name": "gubrax",
-        "rank": 34,
-        "score": 0
-      },
-      {
-        "uid": 100876140,
-        "name": "Scoundrel536",
-        "rank": 35,
-        "score": 0
-      },
-      {
-        "uid": 83861839,
-        "name": "groggen",
         "rank": 36,
         "score": 0
       },
