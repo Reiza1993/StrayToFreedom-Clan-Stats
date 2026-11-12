@@ -7,8 +7,8 @@
   "previousSeasonFinalTotal": 147500,
   "milestoneSnapshot": null,
   "cxRank": {
-    "updatedAt": "2026-11-13T04:37:24.826358+11:00",
-    "total": 22000,
+    "updatedAt": "2026-11-13T05:37:31.347976+11:00",
+    "total": 22800,
     "members": [
       {
         "uid": 29321884,
@@ -65,20 +65,20 @@
         "score": 1200
       },
       {
+        "uid": 79510960,
+        "name": "theLP",
+        "rank": 10,
+        "score": 1200
+      },
+      {
         "uid": 32556489,
         "name": "Bensayyten",
-        "rank": 10,
+        "rank": 11,
         "score": 900
       },
       {
         "uid": 27113479,
         "name": "silverxz",
-        "rank": 11,
-        "score": 800
-      },
-      {
-        "uid": 79510960,
-        "name": "theLP",
         "rank": 12,
         "score": 800
       },
@@ -155,56 +155,56 @@
         "score": 400
       },
       {
+        "uid": 59566866,
+        "name": "FlyingDutchy",
+        "rank": 25,
+        "score": 400
+      },
+      {
         "uid": 71028860,
         "name": "Rzzza",
-        "rank": 25,
+        "rank": 26,
         "score": 0
       },
       {
         "uid": 60687252,
         "name": "һan",
-        "rank": 26,
+        "rank": 27,
         "score": 0
       },
       {
         "uid": 51071110,
         "name": "samwise08",
-        "rank": 27,
+        "rank": 28,
         "score": 0
       },
       {
         "uid": 61865023,
         "name": "RexPanda",
-        "rank": 28,
+        "rank": 29,
         "score": 0
       },
       {
         "uid": 108546985,
         "name": "pumpenjoe",
-        "rank": 29,
+        "rank": 30,
         "score": 0
       },
       {
         "uid": 115742768,
         "name": "SterbyTools",
-        "rank": 30,
+        "rank": 31,
         "score": 0
       },
       {
         "uid": 35869301,
         "name": "Toddlerr",
-        "rank": 31,
+        "rank": 32,
         "score": 0
       },
       {
         "uid": 18297536,
         "name": "ergiangi",
-        "rank": 32,
-        "score": 0
-      },
-      {
-        "uid": 59566866,
-        "name": "FlyingDutchy",
         "rank": 33,
         "score": 0
       },
