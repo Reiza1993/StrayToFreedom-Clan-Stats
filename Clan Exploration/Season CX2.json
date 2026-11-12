@@ -7,18 +7,18 @@
   "previousSeasonFinalTotal": 147500,
   "milestoneSnapshot": null,
   "cxRank": {
-    "updatedAt": "2026-11-13T05:37:31.347976+11:00",
-    "total": 22800,
+    "updatedAt": "2026-11-13T06:37:36.669559+11:00",
+    "total": 24400,
     "members": [
-      {
-        "uid": 29321884,
-        "name": "RABBIT5",
-        "rank": 1,
-        "score": 1600
-      },
       {
         "uid": 66607264,
         "name": null,
+        "rank": 1,
+        "score": 2000
+      },
+      {
+        "uid": 29321884,
+        "name": "RABBIT5",
         "rank": 2,
         "score": 1600
       },
@@ -71,20 +71,20 @@
         "score": 1200
       },
       {
+        "uid": 88203044,
+        "name": "p88203044",
+        "rank": 11,
+        "score": 1200
+      },
+      {
         "uid": 32556489,
         "name": "Bensayyten",
-        "rank": 11,
+        "rank": 12,
         "score": 900
       },
       {
         "uid": 27113479,
         "name": "silverxz",
-        "rank": 12,
-        "score": 800
-      },
-      {
-        "uid": 88203044,
-        "name": "p88203044",
         "rank": 13,
         "score": 800
       },
@@ -107,32 +107,32 @@
         "score": 800
       },
       {
-        "uid": 89511116,
-        "name": "EMBALOCO",
+        "uid": 80018314,
+        "name": null,
         "rank": 17,
-        "score": 700
+        "score": 800
       },
       {
         "uid": 30658936,
         "name": "Gritchen",
         "rank": 18,
-        "score": 400
+        "score": 800
+      },
+      {
+        "uid": 89511116,
+        "name": "EMBALOCO",
+        "rank": 19,
+        "score": 700
       },
       {
         "uid": 18115624,
         "name": "Nubis",
-        "rank": 19,
+        "rank": 20,
         "score": 400
       },
       {
         "uid": 26277677,
         "name": "BobBobberson",
-        "rank": 20,
-        "score": 400
-      },
-      {
-        "uid": 80018314,
-        "name": null,
         "rank": 21,
         "score": 400
       },
