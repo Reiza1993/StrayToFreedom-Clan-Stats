@@ -775,6 +775,11 @@
                         <div class="calc-stat-value" style="color: #b794f6;" id="stats-total-cores">—</div>
                         <div class="calc-stat-gain" id="stats-total-cores-gain">—</div>
                     </div>
+                    <div class="calc-stat-card" style="border-color: #2f5c2a;">
+                        <div class="calc-stat-label"><span data-i18n="stat.total_label">Total</span> <span style="color:#8bc34a;">⚡</span> <span data-i18n="stat.tech_resonance">Resonance</span> <span style="font-size:8px; opacity:0.6;">(Top 30)</span></div>
+                        <div class="calc-stat-value" style="color: #8bc34a;" id="stats-total-tech-resonance">—</div>
+                        <div class="calc-stat-gain" id="stats-total-tech-resonance-gain">—</div>
+                    </div>
                 </div>
             </div>
 
@@ -1062,6 +1067,10 @@
                     relicCores:     core.relicCores     ?? 0,
                     transmuteCores: core.transmuteCores ?? 0,
                     resonanceChips: core.chipsCount ?? 0,
+                    // Tech Resonance (equipped Tech Parts' Resonance Energy,
+                    // max 90,000) - written by SterbyToolsGo; null if absent.
+                    techResonance: core.techResonance ?? null,
+                    prevTechResonance: prevCore ? (prevCore.techResonance ?? null) : null,
                     prevRelicCores:     prevCore ? (prevCore.relicCores     ?? 0) : null,
                     prevTransmuteCores: prevCore ? (prevCore.transmuteCores ?? 0) : null,
                     prevResonanceChips: prevCore ? (prevCore.chipsCount ?? 0) : null,
@@ -1109,6 +1118,7 @@
                     prevRelicCores:     prevCore ? (prevCore.relicCores    ?? 0) : null,
                     prevTransmuteCores: prevCore ? (prevCore.transmuteCores ?? 0) : null,
                     prevResonanceChips: prevCore ? (prevCore.chipsCount ?? 0) : null,
+                    prevTechResonance:  prevCore ? (prevCore.techResonance ?? null) : null,
                     prevLmeScore:       prevLme  ? (prevLme.lmeScore       ?? 0) : null,
                     prevEeBestScore:    prevEe   ? (prevEe.eeBestScore     ?? null) : null,
                 };
@@ -1135,6 +1145,7 @@
                 { value: 'cores',     key: 'ctrl.sort_cores' },
                 { value: 'transmute', key: 'ctrl.sort_transmute' },
                 { value: 'resonance', key: 'ctrl.sort_resonance' },
+                { value: 'techResonance', key: 'ctrl.sort_tech_resonance' },
                 { value: 'name',      key: 'ctrl.sort_name' },
                 { value: 'role',      key: 'ctrl.sort_role' }
             ],
@@ -1210,6 +1221,16 @@
             const prevTotalCores = prevTotalRelicCores + prevTotalTransmuteCores + prevTotalResonanceChips;
             document.getElementById('stats-total-cores').textContent    = totalCores.toLocaleString();
             document.getElementById('stats-total-cores-gain').innerHTML = byCorP.length > 0 ? formatGainHTML(totalCores - prevTotalCores) : '';
+
+            // Top 30 by Tech Resonance (only members SterbyToolsGo has a value for).
+            const byRes  = allPlayers.filter(p => p.techResonance !== null)
+                .sort((a, b) => b.techResonance - a.techResonance).slice(0, TOP_N);
+            const byResP = gainPool.filter(p => p.prevTechResonance !== null && p.prevTechResonance !== undefined)
+                .sort((a, b) => b.prevTechResonance - a.prevTechResonance).slice(0, TOP_N);
+            const totalRes     = byRes.reduce((s, p) => s + p.techResonance, 0);
+            const prevTotalRes = byResP.reduce((s, p) => s + p.prevTechResonance, 0);
+            document.getElementById('stats-total-tech-resonance').textContent    = byRes.length ? formatNumber(totalRes) : '—';
+            document.getElementById('stats-total-tech-resonance-gain').innerHTML = byRes.length && byResP.length > 0 ? formatGainHTML(totalRes - prevTotalRes, true) : '';
         }
 
         function calculateLMETabSummary() {
@@ -2587,6 +2608,7 @@
                     <th><img src="${ICON_BASE}Relic%20Cores.png" alt="Relic Cores" style="width:20px;height:20px;vertical-align:middle;" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><span style="display:none;" data-i18n="table.col.relic_cores">Relic Cores</span></th>
                     <th><img src="${ICON_BASE}TransmutaCore.png" alt="Transmute Cores" style="width:20px;height:20px;vertical-align:middle;" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><span style="display:none;" data-i18n="table.col.transmute_cores">Transmute Cores</span></th>
                     <th><img src="${ICON_BASE}Resonance%20Chips.png" alt="Resonance Chips" style="width:20px;height:20px;vertical-align:middle;" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><span style="display:none;" data-i18n="table.col.resonance_chips">Resonance Chips</span></th>
+                    <th title="Tech Resonance"><span style="color:#8bc34a;font-size:16px;">⚡</span></th>
                     <th><img src="${ICON_BASE}ATK.png" alt="ATK" style="width:20px;height:20px;vertical-align:middle;" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><span style="display:none;" data-i18n="table.col.atk">ATK</span></th>`;
             } else if (currentSubTab === 'lme') {
                 tr.innerHTML = `
@@ -2633,6 +2655,9 @@
                     <td class="cores-cell">${player.resonanceChips}
                         <span style="font-size:10px;display:block;">${formatGainHTML(resonanceGain)}</span>
                     </td>
+                    <td class="cores-cell" style="color:#8bc34a;">${player.techResonance === null ? '—' : formatNumber(player.techResonance)}
+                        <span style="font-size:10px;display:block;">${player.techResonance === null ? '' : formatGainHTML(individualGain(player.techResonance, player.prevTechResonance), true)}</span>
+                    </td>
                     <td style="text-align:center;font-weight:600;color:#e2e8f0;">${formatNumber(player.atk)}
                         <span style="font-size:10px;display:block;">${formatGainHTML(atkGain, true)}</span>
                     </td>`;
@@ -2666,6 +2691,9 @@
                     break;
                 case 'resonance':
                     filteredData.sort((a, b) => b.resonanceChips - a.resonanceChips);
+                    break;
+                case 'techResonance':
+                    filteredData.sort((a, b) => (b.techResonance ?? -1) - (a.techResonance ?? -1));
                     break;
                 case 'attack':
                     filteredData.sort((a, b) => b.atk - a.atk);
@@ -3013,7 +3041,7 @@
         }
 
         function exportToCSV() {
-            const headers = ['Rank', 'Player Name', 'Role', 'ATK', 'ATK Gain', 'Relic Cores', 'Cores Gain', 'Transmute Cores', 'Transmute Gain', 'Resonance Chips', 'Resonance Chips Gain', 'LME Score', 'LME Gain', 'CX Rank', 'CX Boss', 'EE Best Score', 'EE Best Score Gain'];
+            const headers = ['Rank', 'Player Name', 'Role', 'ATK', 'ATK Gain', 'Relic Cores', 'Cores Gain', 'Transmute Cores', 'Transmute Gain', 'Resonance Chips', 'Resonance Chips Gain', 'Tech Resonance', 'Tech Resonance Gain', 'LME Score', 'LME Gain', 'CX Rank', 'CX Boss', 'EE Best Score', 'EE Best Score Gain'];
             const csvContent = [
                 headers.join(','),
                 ...allPlayers.map((p, index) => [
@@ -3028,6 +3056,8 @@
                     individualGain(p.transmuteCores, p.prevTransmuteCores),
                     p.resonanceChips,
                     individualGain(p.resonanceChips, p.prevResonanceChips),
+                    p.techResonance === null ? '' : p.techResonance,
+                    p.techResonance === null ? '' : individualGain(p.techResonance, p.prevTechResonance),
                     p.lmeScore,
                     individualGain(p.lmeScore, p.prevLmeScore),
                     p.cxRankScore,
