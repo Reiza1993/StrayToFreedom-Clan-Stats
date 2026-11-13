@@ -585,8 +585,6 @@
             border: 1px solid var(--line);
             border-radius: var(--radius);
         }
-        #gloryModalBody { display: flex; flex-direction: column; gap: 6px; }
-        .glory-foot { color: var(--dim); font-size: 10px; text-align: center; margin: 10px 0 0; }
 
         /* ── Settings ── */
         .settings-section {
@@ -663,7 +661,6 @@
         .nav-tab:hover { color: var(--muted); }
         .nav-tab.active { color: var(--accent); }
         .nav-tab.active::before { opacity: 1; transform: scaleX(1); box-shadow: 0 0 10px currentColor; }
-        .nav-tab.glory-tab:hover, .nav-tab.glory-tab.active { color: var(--gold); }
         .nav-tab-icon { width: 21px; height: 21px; display: block; }
         .nav-tab-icon svg { width: 100%; height: 100%; display: block; }
         .nav-tab-label {
@@ -707,14 +704,7 @@
 
     <div id="view-container">
 
-        <!-- ─── View 0: Next Glory Members ─── -->
-        <div id="view-glory" class="view">
-            <p class="view-note" data-i18n="modal.glory.subtitle">Ranked by CX Score → LME tiebreaker · Excludes Leader, Vice-Leader, Eternal Glory, Glory Members &amp; inactive (LME = 0)</p>
-            <div id="gloryModalBody"></div>
-            <p class="glory-foot" data-i18n="modal.glory.tiebreak">★ = tied at highest CX score — LME used as tiebreaker</p>
-        </div>
-
-        <!-- ─── View 1: PRO Lunar Details ─── -->
+        <!-- ─── View 0: PRO Lunar Details ─── -->
         <div id="view-lme" class="view">
 
             <!-- Sub-tab Navigation -->
@@ -770,7 +760,7 @@
             </div>
         </div>
 
-        <!-- ─── View 2: Home (default) ─── -->
+        <!-- ─── View 1: Home (default) ─── -->
         <div id="view-home" class="view" style="display: flex;">
 
             <!-- Sub-tab Navigation -->
@@ -912,7 +902,7 @@
 
         </div>
 
-        <!-- ─── View 3: Alumni ─── -->
+        <!-- ─── View 2: Alumni ─── -->
         <div id="view-alumni" class="view">
             <div class="alumni-banner">
                 <strong id="alumniCountDisplay">— Alumni Members</strong><br>
@@ -921,7 +911,7 @@
             <div id="alumniGrid"></div>
         </div>
 
-        <!-- ─── View 4: Settings ─── -->
+        <!-- ─── View 3: Settings ─── -->
         <div id="view-settings" class="view">
             <div class="settings-section">
                 <div class="settings-section-label" data-i18n="settings.language">Language</div>
@@ -954,25 +944,21 @@
 
     </div>
 
-    <!-- Bottom Navigation Bar — 5 tabs -->
+    <!-- Bottom Navigation Bar — 4 tabs -->
     <nav id="bottom-nav" aria-label="Navigation">
-        <button id="nav-glory" class="nav-tab glory-tab" onclick="goToView(0)" aria-label="Next Glory Members">
-            <span class="nav-tab-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.8 5.7 6.2.9-4.5 4.4 1.1 6.2L12 17.3l-5.6 2.9 1.1-6.2L3 9.6l6.2-.9z"/></svg></span>
-            <span class="nav-tab-label" data-nav-label data-i18n="ctrl.next_glory">Next Glory</span>
-        </button>
-        <button id="nav-lme" class="nav-tab" onclick="goToView(1)" aria-label="PRO Lunar Details">
+        <button id="nav-lme" class="nav-tab" onclick="goToView(0)" aria-label="PRO Lunar Details">
             <span class="nav-tab-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg></span>
             <span class="nav-tab-label" data-i18n="ctrl.lunar_details">PRO Lunar Details</span>
         </button>
-        <button id="nav-home" class="nav-tab active" onclick="goToView(2)" aria-label="Home">
+        <button id="nav-home" class="nav-tab active" onclick="goToView(1)" aria-label="Home">
             <span class="nav-tab-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg></span>
             <span class="nav-tab-label">Home</span>
         </button>
-        <button id="nav-alumni" class="nav-tab" onclick="goToView(3)" aria-label="Alumni">
+        <button id="nav-alumni" class="nav-tab" onclick="goToView(2)" aria-label="Alumni">
             <span class="nav-tab-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3 20v-1a5 5 0 0 1 5-5h2a5 5 0 0 1 5 5v1"/><path d="M16 5.2a3.2 3.2 0 0 1 0 5.6M18 14.3a5 5 0 0 1 3 4.7v1"/></svg></span>
             <span class="nav-tab-label" data-i18n="ctrl.alumni">Alumni</span>
         </button>
-        <button id="nav-settings" class="nav-tab" onclick="goToView(4)" aria-label="Settings">
+        <button id="nav-settings" class="nav-tab" onclick="goToView(3)" aria-label="Settings">
             <span class="nav-tab-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h2M10 17h10"/><circle cx="16" cy="7" r="2"/><circle cx="8" cy="17" r="2"/></svg></span>
             <span class="nav-tab-label" data-i18n="ctrl.settings">Settings</span>
         </button>
@@ -1006,7 +992,6 @@
         function applyTranslations() {
             document.querySelectorAll('[data-i18n]').forEach(el => {
                 el.textContent = t(el.dataset.i18n);
-                if (el.hasAttribute('data-nav-label')) el.textContent = el.textContent.replace(/^⭐\s*/, '');
             });
             document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
                 el.setAttribute('placeholder', t(el.dataset.i18nPlaceholder));
@@ -1030,9 +1015,9 @@
         }
 
         // ── SPA Navigation ──
-        const VIEW_IDS  = ['view-glory', 'view-lme', 'view-home', 'view-alumni', 'view-settings'];
-        const NAV_IDS   = ['nav-glory',  'nav-lme',  'nav-home',  'nav-alumni',  'nav-settings'];
-        const HOME_VIEW = 2;
+        const VIEW_IDS  = ['view-lme', 'view-home', 'view-alumni', 'view-settings'];
+        const NAV_IDS   = ['nav-lme',  'nav-home',  'nav-alumni',  'nav-settings'];
+        const HOME_VIEW = 1;
         let currentView = HOME_VIEW; // Home is the default
 
         // The "Freedom Protocol" banner is only relevant on the Home view.
@@ -1040,7 +1025,6 @@
 
         function goToView(idx) {
             if (idx === currentView) return;
-            if (idx === 0) populateGloryView();
 
             document.getElementById('main-header').style.display = idx === HOME_VIEW ? '' : 'none';
 
@@ -3107,86 +3091,6 @@
             a.click();
             document.body.removeChild(a);
             window.URL.revokeObjectURL(url);
-        }
-
-        // ══════════════════════════════════════════════
-        //  NEXT GLORY MEMBERS
-        //  Sort: CX desc → LME desc (tiebreaker)
-        // ══════════════════════════════════════════════
-        function populateGloryView() {
-            const EXCLUDED_ROLES = new Set(['Leader', 'Vice-Leader', 'Eternal Glory', 'Glory Member', 'Removed']);
-            const candidates = allPlayers.filter(p => !EXCLUDED_ROLES.has(p.role) && p.lmeScore > 0);
-
-            const body = document.getElementById('gloryModalBody');
-            body.innerHTML = '';
-
-            if (!candidates.length) {
-                body.innerHTML = `<p style="color:#7a85a8; text-align:center;">${t('modal.glory.empty')}</p>`;
-                return;
-            }
-
-            const sorted = [...candidates].sort((a, b) =>
-                b.cxRankScore !== a.cxRankScore ? b.cxRankScore - a.cxRankScore : b.lmeScore - a.lmeScore
-            );
-
-            const topCX = sorted[0].cxRankScore;
-
-            const topLabel = document.createElement('div');
-            topLabel.style = 'font-size:10px; text-transform:uppercase; letter-spacing:1.5px; color:#d69e2e; font-weight:700; margin-bottom:2px; padding: 0 4px;';
-            topLabel.textContent = t('modal.glory.top_tier').replace('{n}', topCX.toLocaleString());
-            body.appendChild(topLabel);
-
-            let inTopTier = true;
-
-            sorted.forEach((p, idx) => {
-                const isTop = p.cxRankScore === topCX;
-
-                if (!isTop && inTopTier) {
-                    inTopTier = false;
-                    const divider = document.createElement('div');
-                    divider.style = 'border-top: 1px solid #222c48; margin: 8px 0 4px 0;';
-                    body.appendChild(divider);
-                    const lowerLabel = document.createElement('div');
-                    lowerLabel.style = 'font-size:10px; text-transform:uppercase; letter-spacing:1.5px; color:#7a85a8; font-weight:700; margin-bottom:2px; padding: 0 4px;';
-                    lowerLabel.textContent = t('modal.glory.other');
-                    body.appendChild(lowerLabel);
-                }
-
-                const row = document.createElement('div');
-                row.style = `
-                    display: flex; align-items: center; gap: 10px;
-                    padding: 9px 12px; border-radius: 8px;
-                    background: ${isTop ? 'rgba(183,121,31,0.15)' : '#141b30'};
-                    border: 1px solid ${isTop ? '#b7791f' : '#222c48'};
-                `;
-
-                const rankEl = document.createElement('span');
-                rankEl.style = 'font-size:12px; font-weight:700; color:#9aa4c4; width:22px; text-align:center; flex-shrink:0;';
-                rankEl.textContent = idx + 1;
-
-                const badge = document.createElement('span');
-                badge.style = 'font-size:13px; flex-shrink:0; width:16px; text-align:center;';
-                badge.textContent = isTop ? '★' : '';
-
-                const nameEl = document.createElement('span');
-                nameEl.style = `font-size:13px; font-weight:600; flex:1; color:${isTop ? '#ffd24a' : '#e7ecfa'};`;
-                nameEl.textContent = p.name;
-
-                const cxEl = document.createElement('span');
-                cxEl.style = 'font-size:12px; font-weight:700; color:#34d399; white-space:nowrap;';
-                cxEl.innerHTML = `<span style="color:#7a85a8;font-size:10px;">CX</span> ${p.cxRankScore.toLocaleString()}`;
-
-                const lmeEl = document.createElement('span');
-                lmeEl.style = 'font-size:12px; font-weight:700; color:#f59e0b; white-space:nowrap;';
-                lmeEl.innerHTML = `<span style="color:#7a85a8;font-size:10px;">LME</span> ${p.lmeScore.toLocaleString()}`;
-
-                row.appendChild(rankEl);
-                row.appendChild(badge);
-                row.appendChild(nameEl);
-                row.appendChild(cxEl);
-                row.appendChild(lmeEl);
-                body.appendChild(row);
-            });
         }
 
         document.getElementById('sortSelect').addEventListener('change', e => sortData(e.target.value));
