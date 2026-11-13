@@ -254,20 +254,20 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-14T05:40:24.972567+11:00",
-    "total": 55400,
+    "updatedAt": "2026-11-14T06:40:33.323226+11:00",
+    "total": 57100,
     "members": [
       {
         "uid": 29321884,
         "name": "RABBIT5",
         "rank": 1,
-        "score": 3500
+        "score": 3900
       },
       {
         "uid": 66607264,
         "name": null,
         "rank": 2,
-        "score": 3200
+        "score": 3500
       },
       {
         "uid": 108860725,
@@ -360,16 +360,16 @@
         "score": 1600
       },
       {
-        "uid": 89511116,
-        "name": "EMBALOCO",
-        "rank": 18,
-        "score": 1500
-      },
-      {
         "uid": 59566866,
         "name": "FlyingDutchy",
+        "rank": 18,
+        "score": 1600
+      },
+      {
+        "uid": 89511116,
+        "name": "EMBALOCO",
         "rank": 19,
-        "score": 1200
+        "score": 1500
       },
       {
         "uid": 87244358,
@@ -402,26 +402,26 @@
         "score": 1200
       },
       {
+        "uid": 18297536,
+        "name": "ergiangi",
+        "rank": 25,
+        "score": 1000
+      },
+      {
         "uid": 18115624,
         "name": "Nubis",
-        "rank": 25,
+        "rank": 26,
         "score": 800
       },
       {
         "uid": 51071110,
         "name": "samwise08",
-        "rank": 26,
+        "rank": 27,
         "score": 800
       },
       {
         "uid": 108546985,
         "name": "pumpenjoe",
-        "rank": 27,
-        "score": 800
-      },
-      {
-        "uid": 18297536,
-        "name": "ergiangi",
         "rank": 28,
         "score": 800
       },
@@ -429,7 +429,7 @@
         "uid": 87954282,
         "name": "SngphO",
         "rank": 29,
-        "score": 400
+        "score": 800
       },
       {
         "uid": 61865023,
@@ -500,8 +500,8 @@
     ]
   },
   "cxBoss": {
-    "updatedAt": "2026-11-14T05:40:24.972567+11:00",
-    "total": 11896,
+    "updatedAt": "2026-11-14T06:40:33.323226+11:00",
+    "total": 12596,
     "members": [
       {
         "uid": 83339881,
@@ -594,74 +594,74 @@
         "score": 742
       },
       {
+        "uid": 66607264,
+        "name": null,
+        "rank": 16,
+        "score": 700
+      },
+      {
         "uid": 71028860,
         "name": "Rzzza",
-        "rank": 16,
+        "rank": 17,
         "score": 0
       },
       {
         "uid": 108860725,
         "name": "RetinaDNA",
-        "rank": 17,
+        "rank": 18,
         "score": 0
       },
       {
         "uid": 41742773,
         "name": "MadameMischief",
-        "rank": 18,
+        "rank": 19,
         "score": 0
       },
       {
         "uid": 60687252,
         "name": "һan",
-        "rank": 19,
+        "rank": 20,
         "score": 0
       },
       {
         "uid": 51071110,
         "name": "samwise08",
-        "rank": 20,
+        "rank": 21,
         "score": 0
       },
       {
         "uid": 79510960,
         "name": "theLP",
-        "rank": 21,
+        "rank": 22,
         "score": 0
       },
       {
         "uid": 61865023,
         "name": "RexPanda",
-        "rank": 22,
+        "rank": 23,
         "score": 0
       },
       {
         "uid": 87954282,
         "name": "SngphO",
-        "rank": 23,
+        "rank": 24,
         "score": 0
       },
       {
         "uid": 115742768,
         "name": "SterbyTools",
-        "rank": 24,
+        "rank": 25,
         "score": 0
       },
       {
         "uid": 35869301,
         "name": "Toddlerr",
-        "rank": 25,
+        "rank": 26,
         "score": 0
       },
       {
         "uid": 18297536,
         "name": "ergiangi",
-        "rank": 26,
-        "score": 0
-      },
-      {
-        "uid": 66607264,
-        "name": null,
         "rank": 27,
         "score": 0
       },
