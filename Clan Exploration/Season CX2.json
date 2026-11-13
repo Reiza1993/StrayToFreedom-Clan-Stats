@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-14T03:40:08.991300+11:00",
-    "total": 53200,
+    "updatedAt": "2026-11-14T04:40:17.584102+11:00",
+    "total": 55300,
     "members": [
       {
         "uid": 29321884,
@@ -270,32 +270,32 @@
         "score": 3200
       },
       {
+        "uid": 108860725,
+        "name": "RetinaDNA",
+        "rank": 3,
+        "score": 3200
+      },
+      {
         "uid": 10754439,
         "name": "HakiLuffy",
-        "rank": 3,
-        "score": 3000
+        "rank": 4,
+        "score": 3100
       },
       {
         "uid": 103516442,
         "name": "DAYO-P",
-        "rank": 4,
+        "rank": 5,
         "score": 3000
       },
       {
         "uid": 83339881,
         "name": "Fl3xas",
-        "rank": 5,
+        "rank": 6,
         "score": 2900
       },
       {
         "uid": 36484758,
         "name": "Belthazar",
-        "rank": 6,
-        "score": 2800
-      },
-      {
-        "uid": 108860725,
-        "name": "RetinaDNA",
         "rank": 7,
         "score": 2800
       },
@@ -315,7 +315,7 @@
         "uid": 88203044,
         "name": "p88203044",
         "rank": 10,
-        "score": 2000
+        "score": 2400
       },
       {
         "uid": 100876140,
@@ -387,23 +387,23 @@
         "uid": 83861839,
         "name": "groggen",
         "rank": 22,
-        "score": 800
+        "score": 1200
       },
       {
         "uid": 30658936,
         "name": "Gritchen",
         "rank": 23,
-        "score": 800
-      },
-      {
-        "uid": 18115624,
-        "name": "Nubis",
-        "rank": 24,
-        "score": 800
+        "score": 1200
       },
       {
         "uid": 112772047,
         "name": "VictorMolusco",
+        "rank": 24,
+        "score": 1200
+      },
+      {
+        "uid": 18115624,
+        "name": "Nubis",
         "rank": 25,
         "score": 800
       },
@@ -500,8 +500,8 @@
     ]
   },
   "cxBoss": {
-    "updatedAt": "2026-11-14T03:40:08.991300+11:00",
-    "total": 9563,
+    "updatedAt": "2026-11-14T04:40:17.584102+11:00",
+    "total": 11116,
     "members": [
       {
         "uid": 83339881,
@@ -528,176 +528,176 @@
         "score": 819
       },
       {
+        "uid": 30658936,
+        "name": "Gritchen",
+        "rank": 5,
+        "score": 802
+      },
+      {
         "uid": 75174428,
         "name": "PastalaVista",
-        "rank": 5,
+        "rank": 6,
         "score": 792
       },
       {
         "uid": 32556489,
         "name": "Bensayyten",
-        "rank": 6,
+        "rank": 7,
         "score": 789
       },
       {
         "uid": 113690788,
         "name": "Apathy_",
-        "rank": 7,
+        "rank": 8,
         "score": 787
       },
       {
         "uid": 64676255,
         "name": "盾Heathcliff剣",
-        "rank": 8,
+        "rank": 9,
         "score": 777
       },
       {
         "uid": 26277677,
         "name": "BobBobberson",
-        "rank": 9,
+        "rank": 10,
         "score": 771
       },
       {
         "uid": 10754439,
         "name": "HakiLuffy",
-        "rank": 10,
+        "rank": 11,
         "score": 766
       },
       {
         "uid": 106162623,
         "name": "gubrax",
-        "rank": 11,
+        "rank": 12,
         "score": 753
+      },
+      {
+        "uid": 27113479,
+        "name": "silverxz",
+        "rank": 13,
+        "score": 751
       },
       {
         "uid": 80018314,
         "name": null,
-        "rank": 12,
+        "rank": 14,
         "score": 742
       },
       {
         "uid": 71028860,
         "name": "Rzzza",
-        "rank": 13,
+        "rank": 15,
         "score": 0
       },
       {
         "uid": 108860725,
         "name": "RetinaDNA",
-        "rank": 14,
+        "rank": 16,
         "score": 0
       },
       {
         "uid": 41742773,
         "name": "MadameMischief",
-        "rank": 15,
+        "rank": 17,
         "score": 0
       },
       {
         "uid": 60687252,
         "name": "һan",
-        "rank": 16,
+        "rank": 18,
         "score": 0
       },
       {
         "uid": 51071110,
         "name": "samwise08",
-        "rank": 17,
+        "rank": 19,
         "score": 0
       },
       {
         "uid": 79510960,
         "name": "theLP",
-        "rank": 18,
+        "rank": 20,
         "score": 0
       },
       {
         "uid": 61865023,
         "name": "RexPanda",
-        "rank": 19,
+        "rank": 21,
         "score": 0
       },
       {
         "uid": 87954282,
         "name": "SngphO",
-        "rank": 20,
+        "rank": 22,
         "score": 0
       },
       {
         "uid": 115742768,
         "name": "SterbyTools",
-        "rank": 21,
+        "rank": 23,
         "score": 0
       },
       {
         "uid": 35869301,
         "name": "Toddlerr",
-        "rank": 22,
+        "rank": 24,
         "score": 0
       },
       {
         "uid": 18297536,
         "name": "ergiangi",
-        "rank": 23,
+        "rank": 25,
         "score": 0
       },
       {
         "uid": 66607264,
         "name": null,
-        "rank": 24,
+        "rank": 26,
         "score": 0
       },
       {
         "uid": 89511116,
         "name": "EMBALOCO",
-        "rank": 25,
-        "score": 0
-      },
-      {
-        "uid": 27113479,
-        "name": "silverxz",
-        "rank": 26,
+        "rank": 27,
         "score": 0
       },
       {
         "uid": 59566866,
         "name": "FlyingDutchy",
-        "rank": 27,
+        "rank": 28,
         "score": 0
       },
       {
         "uid": 29321884,
         "name": "RABBIT5",
-        "rank": 28,
+        "rank": 29,
         "score": 0
       },
       {
         "uid": 88203044,
         "name": "p88203044",
-        "rank": 29,
+        "rank": 30,
         "score": 0
       },
       {
         "uid": 70603922,
         "name": "BlackFlamE",
-        "rank": 30,
+        "rank": 31,
         "score": 0
       },
       {
         "uid": 72894129,
         "name": "NeonCBV",
-        "rank": 31,
+        "rank": 32,
         "score": 0
       },
       {
         "uid": 80972473,
         "name": "Cunner88",
-        "rank": 32,
-        "score": 0
-      },
-      {
-        "uid": 30658936,
-        "name": "Gritchen",
         "rank": 33,
         "score": 0
       },
