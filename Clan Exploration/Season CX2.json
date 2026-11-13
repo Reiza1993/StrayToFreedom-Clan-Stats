@@ -7,8 +7,8 @@
   "previousSeasonFinalTotal": 147500,
   "milestoneSnapshot": null,
   "cxRank": {
-    "updatedAt": "2026-11-13T17:38:41.151152+11:00",
-    "total": 39600,
+    "updatedAt": "2026-11-13T18:38:46.644206+11:00",
+    "total": 39800,
     "members": [
       {
         "uid": 29321884,
@@ -17,28 +17,28 @@
         "score": 2800
       },
       {
+        "uid": 83339881,
+        "name": "Fl3xas",
+        "rank": 2,
+        "score": 2500
+      },
+      {
         "uid": 66607264,
         "name": null,
-        "rank": 2,
+        "rank": 3,
         "score": 2400
       },
       {
         "uid": 108860725,
         "name": "RetinaDNA",
-        "rank": 3,
+        "rank": 4,
         "score": 2400
       },
       {
         "uid": 36484758,
         "name": "Belthazar",
-        "rank": 4,
-        "score": 2400
-      },
-      {
-        "uid": 83339881,
-        "name": "Fl3xas",
         "rank": 5,
-        "score": 2300
+        "score": 2400
       },
       {
         "uid": 103516442,
