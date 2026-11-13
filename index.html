@@ -7,7 +7,7 @@
 
     <!-- PWA -->
     <link rel="manifest" href="manifest.json">
-    <meta name="theme-color" content="#1a202c">
+    <meta name="theme-color" content="#070a12">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -15,6 +15,36 @@
     <link rel="apple-touch-icon" href="icon.png">
 
     <style>
+        /* ═══════════════════════════════════════════════════════════
+           FREEDOM PROTOCOL — HUD design system
+           Tokens first; every component below reads from them.
+           ═══════════════════════════════════════════════════════════ */
+        :root {
+            --bg:        #070a12;
+            --surface:   #0e1424;
+            --surface-2: #141b30;
+            --surface-3: #1b2440;
+            --line:      #222c48;
+            --line-2:    #2f3b5f;
+            --text:      #e7ecfa;
+            --text-hi:   #f4f6ff;
+            --muted:     #9aa4c4;
+            --dim:       #7a85a8;
+            --accent:    #8b7cff;
+            --accent-2:  #22d3ee;
+            --accent-glow: rgba(139, 124, 255, 0.35);
+            --gold:      #ffd24a;
+            --good:      #34d399;
+            --bad:       #fb7185;
+            --radius:    12px;
+            --radius-sm: 8px;
+            --font-ui:   'Segoe UI', system-ui, -apple-system, Tahoma, Geneva, Verdana, 'Noto Sans SC', 'Noto Sans JP', 'Noto Sans KR', sans-serif;
+            --font-hud:  'Orbitron', 'Segoe UI', system-ui, sans-serif;
+            --nav-h:     64px;
+        }
+
+        * { -webkit-tap-highlight-color: transparent; }
+
         html, body {
             height: 100%;
             margin: 0;
@@ -22,569 +52,102 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, 'Noto Sans SC', 'Noto Sans JP', 'Noto Sans KR', sans-serif;
-            background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+            font-family: var(--font-ui);
+            background:
+                radial-gradient(1200px 500px at 50% -10%, rgba(139,124,255,0.14), transparent 60%),
+                var(--bg);
             background-attachment: fixed;
-            color: #e2e8f0;
+            color: var(--text);
             display: flex;
             flex-direction: column;
             overflow: hidden;
         }
 
-        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&display=swap');
-
-        h1 {
-            text-align: center;
-            font-family: 'Orbitron', 'Segoe UI', sans-serif;
-            font-size: 2.2em;
-            font-weight: 900;
-            letter-spacing: 6px;
-            text-transform: uppercase;
-            margin-bottom: 4px;
-            background: linear-gradient(90deg, #a78bfa, #ffffff, #a78bfa);
-            background-size: 200% auto;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            animation: shine 4s linear infinite;
-            filter: drop-shadow(0 0 18px rgba(167, 139, 250, 0.5));
+        /* faint scan-line texture — pure decoration, no layout cost */
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: 0;
+            background: repeating-linear-gradient(0deg, rgba(255,255,255,0.018) 0, rgba(255,255,255,0.018) 1px, transparent 1px, transparent 3px);
         }
+        #main-header, #view-container, #bottom-nav { position: relative; z-index: 1; }
 
         @keyframes shine {
             0%   { background-position: 0% center; }
             100% { background-position: 200% center; }
         }
-
-        .title-tag {
-            text-align: center;
-            font-family: 'Orbitron', monospace;
-            font-size: 0.62em;
-            letter-spacing: 4px;
-            color: #553c9a;
-            text-transform: uppercase;
-            margin-bottom: 2px;
-            font-weight: 700;
+        @keyframes pulse-dot {
+            0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(52,211,153,0.55); }
+            50%      { opacity: .7; box-shadow: 0 0 0 5px rgba(52,211,153,0); }
         }
 
-        .controls {
-            margin-bottom: 12px;
-            display: flex;
-            gap: 15px;
-            flex-wrap: wrap;
-            align-items: center;
-        }
-
-        select, input {
-            padding: 10px 15px;
-            border: 2px solid #4a5568;
-            border-radius: 8px;
-            font-size: 14px;
-            transition: all 0.3s ease;
-            background: #2d3748;
-            color: #e2e8f0;
-        }
-
-        select:focus, input:focus {
-            outline: none;
-            border-color: #667eea;
-            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.3);
-        }
-
-        .search-box {
-            flex-grow: 1;
-            min-width: 200px;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 10px;
-            background: #2d3748;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
-            font-size: 14px;
-        }
-
-        th, td {
-            padding: 8px 4px;
-            word-break: break-word;
-        }
-
-        th {
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            color: white;
-            text-align: center;
-            font-weight: 600;
-            font-size: 12px;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        td {
-            border-bottom: 1px solid #4a5568;
-            transition: background-color 0.2s ease;
-            color: #e2e8f0;
-            text-align: center;
-            font-size: 13px;
-        }
-
-        tr:hover { background-color: #374151; }
-        tr:nth-child(even) { background-color: #374151; }
-
-        .rank-cell {
-            font-weight: 600;
-            color: #f7fafc;
-            background: linear-gradient(135deg, #4a5568, #2d3748);
-            border-radius: 6px;
-            text-align: center;
-            width: 60px;
-        }
-
-        .name-cell {
-            font-weight: 500;
-            max-width: 200px;
-            word-break: break-word;
-        }
-
-        .cores-cell {
-            font-weight: 600;
-            color: #b794f6;
-            text-align: center;
-        }
-
-        .role-glorymember {
-            animation: glow 2s ease-in-out infinite alternate;
-        }
-
-        @keyframes glow {
-            from { text-shadow: 0 0 5px #ffd700; }
-            to   { text-shadow: 0 0 15px #ffd700, 0 0 20px #ffd700; }
-        }
-
-        .role-eternalglorymember {
-            background: linear-gradient(90deg, #d3859b, #ffffff, #d3859b);
-            background-size: 200% auto;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            animation: shine 4s linear infinite;
-            filter: drop-shadow(0 0 8px rgba(211, 133, 155, 0.6));
-            font-weight: 700;
-        }
-
-        /* Calculated Stats Section */
-        .calc-stat-card {
-            background: #2d3748;
-            border: 1px solid #4a5568;
-            padding: 7px 8px;
-            border-radius: 8px;
-            text-align: center;
-            position: relative;
-        }
-
-        .calc-stat-label {
-            color: #718096;
-            font-size: 10px;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            margin-bottom: 2px;
-            font-weight: 600;
-        }
-
-        .calc-stat-value {
-            font-size: 1.05em;
-            font-weight: 700;
-        }
-
-        .calc-stat-gain {
-            font-size: 10px;
-            margin-top: 2px;
-            font-weight: 600;
-        }
-
-        /* ── LME History: single-cycle detail panel ── */
-        .lme-cycle-card {
-            background: #2d3748;
-            border: 1px solid #4a5568;
-            border-radius: 10px;
-            overflow: hidden;
-        }
-        .lme-cycle-header {
+        /* ── Header (compact HUD bar) ── */
+        #main-header {
+            flex-shrink: 0;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            gap: 8px;
-            padding: 10px 12px;
-        }
-        .lme-cycle-section-label {
-            color: #a0aec0;
-            font-size: 10px;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            font-weight: 600;
-            margin: 10px 0 4px 0;
-        }
-        .lme-cycle-table {
-            width: 100%;
-            border-collapse: collapse;
-            font-size: 11px;
-        }
-        .lme-cycle-table th {
-            background: transparent;
-            color: #a0aec0;
-            font-weight: 600;
-            font-size: 9px;
-            text-transform: uppercase;
-            letter-spacing: 0.3px;
-            padding: 4px 6px;
-            text-align: center;
-            white-space: nowrap;
-        }
-        .lme-cycle-table th:first-child, .lme-cycle-table td:first-child { text-align: left; }
-        /* Rank is the first column in the Final Ranking table, but unlike
-           the other tables' first column (a name) it holds a badge/number
-           and should stay centered, not inherit the name-column left-align. */
-        .lme-cycle-table th.lme-rank-col, .lme-cycle-table td.lme-rank-col { text-align: center; }
-        .lme-cycle-table td {
-            padding: 5px 6px;
-            text-align: center;
-            color: #e2e8f0;
-            /* Overrides the page-wide `td { word-break: break-word }` rule,
-               which — on a narrow phone screen with 5-6 columns squeezed
-               into it — was breaking names onto one character per line.
-               The wrapping div below scrolls horizontally instead. */
-            white-space: nowrap;
-        }
-        .lme-cycle-table tbody tr:nth-child(even) { background: #374151; }
-        .lme-cycle-table tbody tr.lme-cycle-own-row { background: rgba(104, 211, 145, 0.12); }
-        .lme-cycle-table th.lme-sortable-th { cursor: pointer; user-select: none; white-space: nowrap; }
-        .lme-cycle-table th.lme-sortable-th:hover { color: #e2e8f0; }
-        .lme-cycle-table th img { height: 16px; width: auto; }
-        .lme-th-icon-label {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 4px;
-        }
-
-        /* ── LME History: Lunar Points / Secret Score trend chart ── */
-        .lme-trend-chart {
-            background: #2d3748;
-            border: 1px solid #4a5568;
-            border-radius: 10px;
-            padding: 10px 12px 6px 12px;
-            margin-bottom: 12px;
-        }
-        .lme-trend-legend {
-            display: flex;
-            justify-content: center;
-            gap: 16px;
-            margin-bottom: 6px;
-        }
-        .lme-trend-legend-item {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            color: #a0aec0;
-            font-size: 10px;
-            font-weight: 600;
-        }
-        .lme-trend-tooltip {
-            position: absolute;
-            top: 2px;
-            background: #1a202c;
-            border: 1px solid #4a5568;
-            border-radius: 8px;
-            padding: 6px 10px;
-            min-width: 120px;
-            pointer-events: none;
-            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
-            z-index: 2;
-        }
-        .lme-trend-tooltip-row {
-            display: flex;
-            align-items: center;
-            gap: 5px;
-            font-size: 11px;
-            white-space: nowrap;
-        }
-        .lme-trend-tooltip-row + .lme-trend-tooltip-row { margin-top: 2px; }
-        .lme-trend-tooltip-key { display: inline-block; width: 10px; height: 2px; flex-shrink: 0; }
-        .lme-trend-tooltip-label { color: #718096; }
-        .lme-trend-tooltip-value { color: #e2e8f0; margin-left: auto; padding-left: 8px; }
-        .lme-trend-filter-row {
-            display: flex;
-            justify-content: center;
-            gap: 6px;
-            margin-bottom: 8px;
-        }
-        .lme-trend-filter-btn {
-            padding: 4px 10px;
-            background: #2d3748;
-            border: 1px solid #4a5568;
-            border-radius: 999px;
-            color: #a0aec0;
-            font-size: 10px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.15s ease;
-        }
-        .lme-trend-filter-btn:hover { background: #374151; color: #e2e8f0; }
-        .lme-trend-filter-btn.active {
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            border-color: #667eea;
-            color: #fff;
-        }
-        /* Without this, a touch-drag meant to scrub the chart gets claimed by
-           the browser as a scroll/zoom gesture instead — pointer events then
-           arrive late, get cancelled, or don't arrive at all. This hands the
-           whole gesture to our own pointer handlers. */
-        .lme-trend-hit { touch-action: none; }
-
-        .lme-trend-carousel { position: relative; overflow: hidden; }
-        .lme-trend-carousel-track { display: flex; transition: transform 0.25s ease; }
-        .lme-trend-carousel-slide { flex: 0 0 100%; min-width: 0; box-sizing: border-box; }
-        .lme-trend-carousel-dots { display: flex; justify-content: center; gap: 6px; margin-top: 8px; }
-        .lme-trend-dot {
-            width: 8px; height: 8px;
-            padding: 0; border: none; border-radius: 50%;
-            background: #4a5568;
-            cursor: pointer;
-            transition: all 0.2s ease;
-        }
-        .lme-trend-dot.active { background: #a78bfa; width: 20px; border-radius: 4px; }
-
-        /* The wrapper already scrolls horizontally (overflow-x:auto), and the
-           header cells were already nowrap, but the data cells weren't — on a
-           narrow phone the numbers (1,465 / 71.39M / …) were squeezed into
-           wrapping one or two digits per line instead of just letting the
-           table (safely, inside its own scrollable wrapper) run wider. */
-        #lunarClanTable td { white-space: nowrap; }
-
-        .gain-positive { color: #10b981; }
-        .gain-negative { color: #f56565; }
-        .gain-neutral  { color: #a0aec0; }
-
-        /* ── Ender's Echo: seasonal sheet + attempt tooltip ── */
-        .ee-sheet-wrap { overflow-x: auto; border-radius: 12px; }
-        .ee-sheet-table { min-width: 100%; }
-        .ee-sheet-table th, .ee-sheet-table td { white-space: nowrap; padding: 8px 6px; }
-        .ee-sheet-rank  { font-weight: 700; color: #a0aec0; }
-        .ee-sheet-name  { font-weight: 600; }
-        .ee-sheet-day   { cursor: pointer; font-weight: 600; color: #fb7185; border-bottom: 1px dashed rgba(251,113,133,0.45); }
-        .ee-sheet-day:hover { background-color: #374151; }
-        .ee-sheet-day-empty { color: #718096; font-weight: 400; cursor: default; border-bottom: none; }
-        .ee-sheet-day-empty:hover { background-color: transparent; }
-        .ee-sheet-day-count { font-size: 9px; color: #a0aec0; font-weight: 500; }
-        .ee-sheet-total { font-weight: 700; color: #fb7185; }
-
-        .ee-attempt-chip {
-            font-size: 10px; font-weight: 600; padding: 3px 7px;
-            border-radius: 999px; background: #374151; color: #a0aec0;
-        }
-        .ee-attempt-chip.counted {
-            background: rgba(255, 215, 0, 0.16);
-            color: #ffd700;
-            border: 1px solid rgba(255, 215, 0, 0.4);
-        }
-        .ee-sheet-tooltip {
-            position: fixed;
-            z-index: 200;
-            background: #1a202c;
-            border: 1px solid #4a5568;
-            border-radius: 8px;
-            padding: 7px 9px;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 5px;
-            max-width: 220px;
-            box-shadow: 0 6px 18px rgba(0,0,0,0.45);
-        }
-
-        /* ── Font Size Control ── */
-        .font-ctrl {
-            display: flex;
-            align-items: center;
-            gap: 4px;
-            background: #374151;
-            border: 1px solid #4a5568;
-            border-radius: 8px;
-            padding: 4px 8px;
-            flex-shrink: 0;
-        }
-        .font-ctrl button {
-            background: none;
-            border: none;
-            color: #e2e8f0;
-            cursor: pointer;
-            font-size: 14px;
-            font-weight: 700;
-            padding: 2px 6px;
-            border-radius: 4px;
-            transition: background 0.2s;
-            line-height: 1;
-        }
-        .font-ctrl button:hover { background: #4a5568; }
-        .font-ctrl span {
-            color: #a0aec0;
-            font-size: 11px;
-            min-width: 34px;
-            text-align: center;
-            user-select: none;
-        }
-
-        /* ── Sub-tab Bar ── */
-        .subtab-bar {
-            display: flex;
-            gap: 6px;
-            margin-bottom: 12px;
-        }
-        .subtab-btn {
-            flex: 1;
-            padding: 9px 12px;
-            background: #2d3748;
-            border: 1px solid #4a5568;
-            border-radius: 8px;
-            color: #a0aec0;
-            font-size: 13px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.2s ease;
-            text-align: center;
-        }
-        .subtab-btn:hover { background: #374151; color: #e2e8f0; }
-        .subtab-btn.active {
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            border-color: #667eea;
-            color: #fff;
-        }
-
-        /* ── Lunar Details: sub-tabs, mode toggle ── */
-        .lunar-tab-btn {
-            flex: 1;
-            padding: 9px 12px;
-            background: #2d3748;
-            border: 1px solid #4a5568;
-            border-radius: 8px;
-            color: #a0aec0;
-            font-size: 13px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.2s ease;
-            text-align: center;
-        }
-        .lunar-tab-btn:hover { background: #374151; color: #e2e8f0; }
-        .lunar-tab-btn.active {
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            border-color: #667eea;
-            color: #fff;
-        }
-        .lunar-mode-btn {
-            flex: 1;
-            padding: 8px 10px;
-            background: #2d3748;
-            border: 1px solid #4a5568;
-            border-radius: 8px;
-            color: #a0aec0;
-            font-size: 12px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.2s ease;
-            text-align: center;
-        }
-        .lunar-mode-btn:hover { background: #374151; color: #e2e8f0; }
-        .lunar-mode-btn.active {
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            border-color: #667eea;
-            color: #fff;
-        }
-        .lunar-clan-row {
-            cursor: pointer;
-            transition: background 0.15s ease;
-        }
-        .lunar-clan-row:hover { background: #4a5568 !important; }
-        .lunar-clan-row.active {
-            background: rgba(102, 126, 234, 0.25) !important;
-            box-shadow: inset 3px 0 0 #667eea;
-        }
-        .lunar-member-row {
-            display: flex;
-            align-items: center;
             gap: 10px;
-            padding: 8px 10px;
-            border-radius: 8px;
-            background: #2d3748;
-            border: 1px solid #4a5568;
-        }
-
-        /* ── Settings Section ── */
-        .settings-section { margin-bottom: 20px; }
-        .settings-section:last-child { margin-bottom: 0; }
-        .settings-section-label {
-            font-size: 11px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: #718096;
-            font-weight: 700;
-            margin-bottom: 8px;
-        }
-        #langSelector {
-            width: 100%;
-            padding: 10px;
-            background: #374151;
-            border: 1px solid #4a5568;
-            border-radius: 8px;
-            color: #e2e8f0;
-            font-size: 14px;
-            cursor: pointer;
-        }
-
-        /* ── Export CSV button (in Settings view) ── */
-        .export-btn {
-            width: 100%;
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            color: white;
-            border: none;
-            padding: 12px 20px;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            font-size: 14px;
-            transition: all 0.3s ease;
-        }
-        .export-btn:hover {
-            transform: translateY(-1px);
-            box-shadow: 0 6px 16px rgba(102, 126, 234, 0.35);
-        }
-
-        /* ── RTL layout for Farsi ── */
-        [dir=rtl] .controls     { flex-direction: row-reverse; }
-        [dir=rtl] th, [dir=rtl] td { text-align: right; }
-        [dir=rtl] .calc-stat-card   { text-align: right; }
-        @media (max-width: 768px) {
-            [dir=rtl] .controls { flex-direction: column; }
-        }
-
-        /* ── Main Header ── */
-        #main-header {
-            flex-shrink: 0;
-            background: #1a202c;
-            padding: 14px 20px 8px;
-            text-align: center;
             width: 100%;
             box-sizing: border-box;
+            padding: calc(10px + env(safe-area-inset-top)) 14px 10px;
+            background: linear-gradient(180deg, rgba(14,20,36,0.96), rgba(7,10,18,0.92));
+            border-bottom: 1px solid var(--line);
         }
-
-        /* ── View Container ── */
-        #view-container {
-            flex: 1;
-            position: relative;
+        .brand { display: flex; flex-direction: column; min-width: 0; flex: 1 1 auto; }
+        .title-tag {
+            font-family: var(--font-hud);
+            font-size: 9px;
+            letter-spacing: 2.5px;
+            color: var(--accent-2);
+            text-transform: uppercase;
+            font-weight: 700;
+            opacity: .85;
+            white-space: nowrap;
             overflow: hidden;
-            min-height: 0;
+            text-overflow: ellipsis;
+        }
+        h1 {
+            margin: 2px 0 0;
+            font-family: var(--font-hud);
+            font-size: clamp(0.82rem, 4.4vw, 1.15rem);
+            font-weight: 900;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            line-height: 1.1;
+            white-space: nowrap;
+            background: linear-gradient(90deg, #b4a7ff, #ffffff, #b4a7ff);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shine 6s linear infinite;
+        }
+        .clan-chip {
+            flex-shrink: 0;
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            padding: 5px 10px;
+            background: var(--surface-2);
+            border: 1px solid var(--line-2);
+            border-radius: 999px;
+            font-size: 11px;
+            color: var(--muted);
+            letter-spacing: .5px;
+        }
+        .clan-chip b { color: var(--text); font-weight: 700; font-variant-numeric: tabular-nums; }
+        @media (max-width: 400px) { .clan-chip .chip-label { display: none; } }
+        .live-dot {
+            width: 7px; height: 7px; border-radius: 50%;
+            background: var(--good);
+            animation: pulse-dot 2.4s ease-in-out infinite;
         }
 
-        /* ── Individual Views ── */
+        /* ── Layout shell ── */
+        #view-container { flex: 1; overflow: hidden; min-height: 0; }
         .view {
             position: absolute;
             top: 0; left: 0;
@@ -594,73 +157,561 @@
             display: none;
             flex-direction: column;
             box-sizing: border-box;
-            padding: 12px 10px;
+            padding: 12px 12px 18px;
+        }
+        .view-note {
+            color: var(--dim);
+            font-size: 11px;
+            text-align: center;
+            margin: 0 0 10px;
+            letter-spacing: .2px;
+            line-height: 1.4;
         }
 
-        /* ── Bottom Navigation Bar ── */
+        /* ── Form controls ── */
+        select, input {
+            padding: 10px 12px;
+            border: 1px solid var(--line-2);
+            border-radius: var(--radius-sm);
+            font-size: 14px;
+            font-family: inherit;
+            transition: border-color .2s ease, box-shadow .2s ease;
+            background: var(--surface);
+            color: var(--text);
+            min-height: 42px;
+            box-sizing: border-box;
+        }
+        select:focus, input:focus {
+            outline: none;
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px var(--accent-glow);
+        }
+        input::placeholder { color: var(--dim); }
+        .field-full { width: 100%; margin-bottom: 8px; }
+
+        .controls {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 10px;
+            align-items: center;
+        }
+        .search-box { flex: 1 1 auto; min-width: 0; }
+        .controls select { flex: 0 0 46%; min-width: 0; font-size: 13px; padding-left: 10px; padding-right: 6px; text-overflow: ellipsis; }
+
+        /* ── Role legend (single compact row) ── */
+        .role-legend {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 4px 12px;
+            margin: 0 0 8px;
+            font-size: 11px;
+            line-height: 1.2;
+        }
+        .role-legend span { white-space: nowrap; font-weight: 600; }
+        .role-leader { color: #fc8181; }
+        .role-vice   { color: #ed8936; }
+        .role-eternal-legend {
+            background: linear-gradient(90deg, #d3859b, #ffffff, #d3859b);
+            background-size: 200% auto;
+            -webkit-background-clip: text; background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shine 4s linear infinite;
+            font-weight: 700;
+        }
+        .role-glory-legend { color: var(--gold); text-shadow: 0 0 10px rgba(255,210,74,.7); }
+
+        /* ── Tables ── */
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            background: var(--surface);
+            border: 1px solid var(--line);
+            border-radius: var(--radius);
+            font-size: 13px;
+        }
+        th, td { padding: 9px 4px; }
+        th {
+            position: sticky;
+            top: 0;
+            z-index: 2;
+            background: var(--surface-3);
+            color: var(--muted);
+            text-align: center;
+            font-weight: 700;
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: .4px;
+            white-space: normal;
+            word-break: normal;
+            border-bottom: 1px solid var(--line-2);
+        }
+        thead tr:first-child th:first-child { border-top-left-radius: var(--radius); }
+        thead tr:first-child th:last-child  { border-top-right-radius: var(--radius); }
+        td {
+            border-bottom: 1px solid var(--line);
+            transition: background-color .15s ease;
+            color: var(--text);
+            text-align: center;
+            font-size: 13px;
+            font-variant-numeric: tabular-nums;
+        }
+        tbody tr:last-child td { border-bottom: none; }
+        tr:hover { background-color: var(--surface-2); }
+        tr:nth-child(even) { background-color: rgba(20, 27, 48, 0.55); }
+
+        .rank-cell {
+            font-weight: 700;
+            color: var(--muted);
+            background: transparent;
+            text-align: center;
+            width: 40px;
+        }
+        .name-cell { font-weight: 600; max-width: 140px; word-break: break-word; text-align: left; }
+        .cores-cell { font-weight: 600; color: #b4a7ff; text-align: center; }
+
+        .role-glorymember { animation: glow 2s ease-in-out infinite alternate; }
+        @keyframes glow {
+            from { text-shadow: 0 0 5px #ffd24a; }
+            to   { text-shadow: 0 0 14px #ffd24a, 0 0 20px #ffd24a; }
+        }
+        .role-eternalglorymember {
+            background: linear-gradient(90deg, #d3859b, #ffffff, #d3859b);
+            background-size: 200% auto;
+            -webkit-background-clip: text; background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shine 4s linear infinite;
+            filter: drop-shadow(0 0 8px rgba(211, 133, 155, 0.6));
+            font-weight: 700;
+        }
+
+        /* Rounded scroll wrapper for wide tables */
+        .table-wrap {
+            overflow-x: auto;
+            margin-bottom: 12px;
+            border-radius: var(--radius);
+            border: 1px solid var(--line);
+            background: var(--surface);
+        }
+        .table-wrap table { border: none; border-radius: 0; }
+
+        /* ── Stat cards ── */
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 8px;
+            margin-bottom: 12px;
+        }
+        .span-2 { grid-column: span 2; }
+        .span-3 { grid-column: span 3; }
+        .span-6 { grid-column: span 6; }
+
+        .calc-stat-card {
+            --tone: var(--accent);
+            background: linear-gradient(160deg, var(--surface-2), var(--surface));
+            border: 1px solid var(--line);
+            border-left: 3px solid var(--tone);
+            padding: 9px 10px;
+            border-radius: var(--radius-sm);
+            text-align: left;
+            position: relative;
+            min-width: 0;
+        }
+        .tone-teal   { --tone: #2dd4bf; }
+        .tone-violet { --tone: #8b7cff; }
+        .tone-amber  { --tone: #f59e0b; }
+        .tone-green  { --tone: #34d399; }
+        .tone-lime   { --tone: #8bc34a; }
+        .tone-gold   { --tone: #ffd24a; }
+
+        .calc-stat-label {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 4px;
+            color: var(--dim);
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: .6px;
+            margin-bottom: 3px;
+            font-weight: 700;
+        }
+        .calc-stat-label img { width: 15px; height: 15px; }
+        .top30 { font-size: 8px; opacity: .6; letter-spacing: .3px; }
+        .calc-stat-value {
+            font-size: 1.2em;
+            font-weight: 800;
+            font-variant-numeric: tabular-nums;
+            line-height: 1.15;
+            color: var(--text-hi);
+        }
+        .span-3 .calc-stat-value { font-size: 1.45em; }
+        .calc-stat-gain { font-size: 11px; margin-top: 2px; font-weight: 700; font-variant-numeric: tabular-nums; }
+        .stat-row {
+            display: flex; align-items: center; justify-content: space-between;
+            gap: 10px; flex-wrap: wrap;
+        }
+        .stat-row .calc-stat-label { margin-bottom: 0; }
+        .stat-divider { border-top: 1px solid var(--line); margin: 8px 0; }
+
+        .gain-positive { color: var(--good); }
+        .gain-negative { color: var(--bad); }
+        .gain-neutral  { color: var(--muted); }
+
+        /* ── Segmented tabs (shared by all sub-tab bars) ── */
+        .subtab-bar {
+            display: flex;
+            gap: 4px;
+            padding: 4px;
+            margin-bottom: 12px;
+            background: var(--surface);
+            border: 1px solid var(--line);
+            border-radius: 10px;
+        }
+        .subtab-btn, .lunar-tab-btn {
+            flex: 1 1 auto;
+            padding: 9px 8px;
+            background: transparent;
+            border: 1px solid transparent;
+            border-radius: 7px;
+            color: var(--muted);
+            font-family: inherit;
+            font-size: 13px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all .2s ease;
+            text-align: center;
+            min-height: 40px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .subtab-btn:hover, .lunar-tab-btn:hover { color: var(--text); background: var(--surface-2); }
+        .subtab-btn.active, .lunar-tab-btn.active {
+            background: linear-gradient(135deg, rgba(139,124,255,0.28), rgba(34,211,238,0.14));
+            border-color: rgba(139,124,255,0.6);
+            color: var(--text-hi);
+            box-shadow: 0 0 14px rgba(139,124,255,0.25);
+        }
+
+        .lunar-mode-btn {
+            flex: 1;
+            padding: 8px 10px;
+            background: var(--surface);
+            border: 1px solid var(--line-2);
+            border-radius: var(--radius-sm);
+            color: var(--muted);
+            font-family: inherit;
+            font-size: 12px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all .2s ease;
+            text-align: center;
+            min-height: 38px;
+        }
+        .lunar-mode-btn:hover { background: var(--surface-2); color: var(--text); }
+        .lunar-mode-btn.active {
+            background: rgba(139,124,255,0.2);
+            border-color: var(--accent);
+            color: var(--text-hi);
+        }
+        .lunar-mode-row { display: flex; gap: 6px; margin-bottom: 10px; }
+        .lunar-clan-row { cursor: pointer; transition: background .15s ease; }
+        .lunar-clan-row:hover { background: var(--surface-3) !important; }
+        .lunar-clan-row.active {
+            background: rgba(139, 124, 255, 0.18) !important;
+            box-shadow: inset 3px 0 0 var(--accent);
+        }
+        .lunar-member-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 10px;
+            border-radius: var(--radius-sm);
+            background: var(--surface);
+            border: 1px solid var(--line);
+        }
+        #lunarClanTable td { white-space: nowrap; }
+        #lunarClanTable td:first-child { text-align: left; padding-left: 10px; font-weight: 700; }
+        #lunarClanTable th { text-align: center; }
+        #lunarClanTable td, #lunarClanTable th { padding-left: 6px; padding-right: 6px; }
+        #lunarClanTable th:first-child { text-align: left; padding-left: 10px; }
+        #lunarClanTable th img { width: 18px; height: 18px; vertical-align: middle; }
+        .lunar-clan-head { text-align: center; margin-bottom: 8px; }
+        #lunarClanName { color: var(--text-hi); font-size: 15px; font-weight: 800; }
+        #lunarClanMembers { color: var(--dim); font-size: 11px; margin-left: 6px; }
+
+        /* ── LME History ── */
+        .lme-cycle-card {
+            background: var(--surface);
+            border: 1px solid var(--line);
+            border-radius: var(--radius);
+            overflow: hidden;
+        }
+        .lme-cycle-header {
+            display: flex; align-items: center; justify-content: space-between;
+            gap: 8px; padding: 10px 12px;
+        }
+        .lme-cycle-section-label {
+            color: var(--muted);
+            font-size: 10px; text-transform: uppercase; letter-spacing: .6px;
+            font-weight: 700; margin: 10px 0 4px 0;
+        }
+        .lme-cycle-table { width: 100%; border-collapse: collapse; font-size: 11px; border: none; border-radius: 0; background: transparent; }
+        .lme-cycle-table th {
+            position: static;
+            background: transparent;
+            color: var(--muted);
+            font-weight: 700; font-size: 9px;
+            text-transform: uppercase; letter-spacing: .4px;
+            padding: 4px 6px; text-align: center; white-space: nowrap;
+            border-bottom: 1px solid var(--line);
+        }
+        .lme-cycle-table th:first-child, .lme-cycle-table td:first-child { text-align: left; }
+        /* Rank column holds a badge/number — keep it centered. */
+        .lme-cycle-table th.lme-rank-col, .lme-cycle-table td.lme-rank-col { text-align: center; }
+        /* nowrap: stops names breaking one char per line on narrow phones;
+           the wrapping div scrolls horizontally instead. */
+        .lme-cycle-table td { padding: 5px 6px; text-align: center; color: var(--text); white-space: nowrap; border-bottom: 1px solid var(--line); }
+        .lme-cycle-table tbody tr:nth-child(even) { background: rgba(20,27,48,0.55); }
+        .lme-cycle-table tbody tr.lme-cycle-own-row { background: rgba(52, 211, 153, 0.12); }
+        .lme-cycle-table th.lme-sortable-th { cursor: pointer; user-select: none; white-space: nowrap; }
+        .lme-cycle-table th.lme-sortable-th:hover { color: var(--text); }
+        .lme-cycle-table th img { height: 16px; width: auto; }
+        .lme-th-icon-label { display: inline-flex; align-items: center; justify-content: center; gap: 4px; }
+
+        .lme-trend-chart {
+            background: var(--surface);
+            border: 1px solid var(--line);
+            border-radius: var(--radius);
+            padding: 10px 12px 6px;
+            margin-bottom: 12px;
+        }
+        .lme-trend-legend { display: flex; justify-content: center; gap: 16px; margin-bottom: 6px; }
+        .lme-trend-legend-item { display: inline-flex; align-items: center; gap: 6px; color: var(--muted); font-size: 10px; font-weight: 700; }
+        .lme-trend-tooltip {
+            position: absolute; top: 2px;
+            background: var(--bg);
+            border: 1px solid var(--line-2);
+            border-radius: var(--radius-sm);
+            padding: 6px 10px; min-width: 120px;
+            pointer-events: none;
+            box-shadow: 0 6px 16px rgba(0,0,0,.5);
+            z-index: 2;
+        }
+        .lme-trend-tooltip-row { display: flex; align-items: center; gap: 5px; font-size: 11px; white-space: nowrap; }
+        .lme-trend-tooltip-row + .lme-trend-tooltip-row { margin-top: 2px; }
+        .lme-trend-tooltip-key { display: inline-block; width: 10px; height: 2px; flex-shrink: 0; }
+        .lme-trend-tooltip-label { color: var(--dim); }
+        .lme-trend-tooltip-value { color: var(--text); margin-left: auto; padding-left: 8px; }
+        .lme-trend-filter-row { display: flex; justify-content: center; gap: 6px; margin-bottom: 8px; }
+        .lme-trend-filter-btn {
+            padding: 5px 12px;
+            background: var(--surface-2);
+            border: 1px solid var(--line-2);
+            border-radius: 999px;
+            color: var(--muted);
+            font-family: inherit; font-size: 10px; font-weight: 700;
+            cursor: pointer; transition: all .15s ease;
+        }
+        .lme-trend-filter-btn:hover { background: var(--surface-3); color: var(--text); }
+        .lme-trend-filter-btn.active {
+            background: rgba(139,124,255,0.25);
+            border-color: var(--accent);
+            color: #fff;
+        }
+        /* Hands touch-drag to our pointer handlers instead of the browser's scroll/zoom. */
+        .lme-trend-hit { touch-action: none; }
+        .lme-trend-carousel { position: relative; overflow: hidden; }
+        .lme-trend-carousel-track { display: flex; transition: transform .25s ease; }
+        .lme-trend-carousel-slide { flex: 0 0 100%; min-width: 0; box-sizing: border-box; }
+        .lme-trend-carousel-dots { display: flex; justify-content: center; gap: 6px; margin-top: 8px; }
+        .lme-trend-dot {
+            width: 8px; height: 8px; padding: 0; border: none; border-radius: 50%;
+            background: var(--line-2); cursor: pointer; transition: all .2s ease;
+        }
+        .lme-trend-dot.active { background: var(--accent); width: 20px; border-radius: 4px; }
+
+        /* ── Ender's Echo ── */
+        .ee-sheet-wrap { overflow-x: auto; border-radius: var(--radius); }
+        .ee-sheet-table { min-width: 100%; }
+        .ee-sheet-table th, .ee-sheet-table td { white-space: nowrap; padding: 8px 6px; }
+        .ee-sheet-rank  { font-weight: 700; color: var(--muted); }
+        .ee-sheet-name  { font-weight: 600; }
+        .ee-sheet-day   { cursor: pointer; font-weight: 700; color: var(--bad); border-bottom: 1px dashed rgba(251,113,133,0.45); }
+        .ee-sheet-day:hover { background-color: var(--surface-2); }
+        .ee-sheet-day-empty { color: var(--dim); font-weight: 400; cursor: default; border-bottom: none; }
+        .ee-sheet-day-empty:hover { background-color: transparent; }
+        .ee-sheet-day-count { font-size: 9px; color: var(--muted); font-weight: 500; }
+        .ee-sheet-total { font-weight: 800; color: var(--bad); }
+        .ee-attempt-chip {
+            font-size: 10px; font-weight: 700; padding: 3px 7px;
+            border-radius: 999px; background: var(--surface-3); color: var(--muted);
+        }
+        .ee-attempt-chip.counted {
+            background: rgba(255, 210, 74, 0.16);
+            color: var(--gold);
+            border: 1px solid rgba(255, 210, 74, 0.4);
+        }
+        .ee-sheet-tooltip {
+            position: fixed; z-index: 200;
+            background: var(--bg);
+            border: 1px solid var(--line-2);
+            border-radius: var(--radius-sm);
+            padding: 7px 9px;
+            display: flex; flex-wrap: wrap; gap: 5px;
+            max-width: 220px;
+            box-shadow: 0 6px 18px rgba(0,0,0,.55);
+        }
+
+        /* ── Alumni ── */
+        .alumni-banner {
+            background: var(--surface);
+            border: 1px solid var(--line);
+            border-radius: var(--radius);
+            padding: 12px;
+            margin-bottom: 10px;
+            text-align: center;
+            line-height: 1.4;
+        }
+        .alumni-banner strong { color: var(--gold); font-size: 15px; }
+        .alumni-banner span { color: var(--muted); font-size: 13px; }
+        #alumniGrid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 7px; padding: 8px;
+            background: var(--surface);
+            border: 1px solid var(--line);
+            border-radius: var(--radius);
+        }
+        #gloryModalBody { display: flex; flex-direction: column; gap: 6px; }
+        .glory-foot { color: var(--dim); font-size: 10px; text-align: center; margin: 10px 0 0; }
+
+        /* ── Settings ── */
+        .settings-section {
+            margin-bottom: 12px;
+            padding: 12px;
+            background: var(--surface);
+            border: 1px solid var(--line);
+            border-radius: var(--radius);
+        }
+        .settings-section-label {
+            font-size: 11px; text-transform: uppercase; letter-spacing: 1px;
+            color: var(--dim); font-weight: 700; margin-bottom: 8px;
+        }
+        #langSelector { width: 100%; background: var(--surface-2); cursor: pointer; }
+        .font-ctrl {
+            display: inline-flex; align-items: center; gap: 4px;
+            background: var(--surface-2);
+            border: 1px solid var(--line-2);
+            border-radius: var(--radius-sm);
+            padding: 4px 8px;
+        }
+        .font-ctrl button {
+            background: none; border: none; color: var(--text);
+            cursor: pointer; font-size: 15px; font-weight: 800;
+            padding: 6px 12px; border-radius: 6px; transition: background .2s; line-height: 1;
+        }
+        .font-ctrl button:hover { background: var(--surface-3); }
+        .font-ctrl span { color: var(--muted); font-size: 12px; min-width: 44px; text-align: center; user-select: none; }
+        .export-btn {
+            width: 100%;
+            background: linear-gradient(135deg, rgba(139,124,255,0.35), rgba(34,211,238,0.2));
+            color: var(--text-hi);
+            border: 1px solid var(--accent);
+            padding: 12px 20px;
+            border-radius: var(--radius-sm);
+            cursor: pointer; font-family: inherit; font-weight: 700; font-size: 14px;
+            transition: all .25s ease;
+        }
+        .export-btn:hover { transform: translateY(-1px); box-shadow: 0 6px 16px var(--accent-glow); }
+
+        /* ── Bottom navigation ── */
         #bottom-nav {
             flex-shrink: 0;
-            background: #2d3748;
-            border-top: 1px solid #4a5568;
+            background: rgba(10, 14, 26, 0.96);
+            border-top: 1px solid var(--line-2);
             display: flex;
             align-items: flex-start;
-            box-shadow: 0 -4px 12px rgba(0,0,0,0.3);
+            box-shadow: 0 -6px 18px rgba(0,0,0,.45);
             padding-bottom: env(safe-area-inset-bottom);
             box-sizing: content-box;
         }
         .nav-tab {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 3px;
-            border: none;
-            background: none;
-            color: #718096;
+            flex: 1; min-width: 0;
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+            gap: 4px;
+            border: none; background: none;
+            color: var(--dim);
             cursor: pointer;
-            padding: 8px 2px;
-            height: 56px;
+            padding: 6px 2px;
+            height: var(--nav-h);
             box-sizing: border-box;
-            transition: color 160ms ease, background 160ms ease;
-            -webkit-tap-highlight-color: transparent;
+            position: relative;
+            font-family: inherit;
+            transition: color .16s ease, background .16s ease;
         }
-        .nav-tab:hover { background: rgba(255,255,255,0.05); color: #a78bfa; }
-        .nav-tab.active { color: #a78bfa; }
-        .nav-tab.glory-tab:hover, .nav-tab.glory-tab.active { color: #ffd700; }
-        .nav-tab-icon  { font-size: 18px; line-height: 1; }
-        .nav-tab-label { font-size: 11px; font-weight: 600; letter-spacing: 0.3px; line-height: 1; }
+        .nav-tab::before {      /* active indicator bar */
+            content: '';
+            position: absolute; top: 0; left: 22%; right: 22%;
+            height: 2px; border-radius: 0 0 2px 2px;
+            background: currentColor;
+            opacity: 0; transform: scaleX(.4);
+            transition: opacity .2s ease, transform .2s ease;
+        }
+        .nav-tab:hover { color: var(--muted); }
+        .nav-tab.active { color: var(--accent); }
+        .nav-tab.active::before { opacity: 1; transform: scaleX(1); box-shadow: 0 0 10px currentColor; }
+        .nav-tab.glory-tab:hover, .nav-tab.glory-tab.active { color: var(--gold); }
+        .nav-tab-icon { width: 21px; height: 21px; display: block; }
+        .nav-tab-icon svg { width: 100%; height: 100%; display: block; }
+        .nav-tab-label {
+            font-size: 10px; font-weight: 700; letter-spacing: .2px; line-height: 1.1;
+            max-width: 100%; padding: 0 2px; box-sizing: border-box;
+            text-align: center;
+            display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
 
-        @media (max-width: 768px) {
-            h1 { font-size: 2em; }
-            .controls { flex-direction: column; align-items: stretch; }
-            [dir=rtl] .controls { flex-direction: column; }
-            table { font-size: 12px; border-radius: 8px; }
-            th, td { padding: 6px 2px; font-size: 11px; }
-            th { font-size: 10px; }
-            .name-cell { max-width: 80px; font-size: 11px; }
-            #main-header { padding-left: 10px; padding-right: 10px; }
+        /* ── RTL (Farsi) ── */
+        [dir=rtl] th, [dir=rtl] td { text-align: right; }
+        [dir=rtl] .calc-stat-card { text-align: right; border-left-width: 1px; border-right: 3px solid var(--tone); }
+        [dir=rtl] .name-cell { text-align: right; }
+
+        /* ── Larger screens: keep the app column readable ── */
+        @media (min-width: 720px) {
+            #main-header { padding-left: max(14px, calc((100vw - 720px) / 2 + 14px)); padding-right: max(14px, calc((100vw - 720px) / 2 + 14px)); }
+            .view { padding-left: max(12px, calc((100vw - 720px) / 2)); padding-right: max(12px, calc((100vw - 720px) / 2)); }
+        }
+        @media (max-width: 380px) {
+            h1 { font-size: 1rem; letter-spacing: 2px; }
+            th, td { padding: 8px 2px; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after { animation: none !important; transition: none !important; }
         }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&family=Noto+Sans+JP&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Noto+Sans+SC&family=Noto+Sans+JP&family=Noto+Sans+KR&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <div id="main-header">
-        <div class="title-tag">Freedomˢᵗʳᵃʸ // Intel Dashboard</div><h1>Freedom Protocol</h1>
-        <div style="background: #2d3748; border: 1px solid #4a5568; border-radius: 8px; text-align: center; padding: 5px 12px; margin: 0 auto; display: inline-block; width: 100%; box-sizing: border-box;">
-            <span style="color: #718096; font-size: 10px; text-transform: uppercase; letter-spacing: 1px; font-weight: 600;">ClanID: </span><span style="color: #a0aec0; font-size: 12px; font-weight: 600;">44262</span>
+        <div class="brand">
+            <div class="title-tag">Freedomˢᵗʳᵃʸ // Intel</div>
+            <h1>Freedom Protocol</h1>
         </div>
+        <div class="clan-chip"><span class="live-dot"></span><span class="chip-label">ClanID</span><b>44262</b></div>
     </div>
 
     <div id="view-container">
 
         <!-- ─── View 0: Next Glory Members ─── -->
         <div id="view-glory" class="view">
-            <p style="color: #718096; font-size: 11px; text-align: center; margin: 0 0 8px 0; letter-spacing: 0.3px;" data-i18n="modal.glory.subtitle">Ranked by CX Score → LME tiebreaker · Excludes Leader, Vice-Leader, Eternal Glory, Glory Members &amp; inactive (LME = 0)</p>
-            <div id="gloryModalBody" style="display: flex; flex-direction: column; gap: 4px;"></div>
-            <p style="color: #4a5568; font-size: 10px; text-align: center; margin: 8px 0 0 0;" data-i18n="modal.glory.tiebreak">★ = tied at highest CX score — LME used as tiebreaker</p>
+            <p class="view-note" data-i18n="modal.glory.subtitle">Ranked by CX Score → LME tiebreaker · Excludes Leader, Vice-Leader, Eternal Glory, Glory Members &amp; inactive (LME = 0)</p>
+            <div id="gloryModalBody"></div>
+            <p class="glory-foot" data-i18n="modal.glory.tiebreak">★ = tied at highest CX score — LME used as tiebreaker</p>
         </div>
 
         <!-- ─── View 1: PRO Lunar Details ─── -->
@@ -674,25 +725,17 @@
 
             <!-- Lunar Details Sub-tab -->
             <div id="lunar-details-subtab" class="lunar-subtab-content">
-                <div style="overflow-x:auto; margin-bottom: 12px; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.4);">
-                    <table id="lunarClanTable" style="width: 100%; border-collapse: collapse; background: #2d3748; font-size: 12px;">
+                <div class="table-wrap">
+                    <table id="lunarClanTable">
                         <thead>
                             <tr>
-                                <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 10px 8px; text-align: left; font-weight: 600; font-size: 10px; text-transform: uppercase; letter-spacing: 0.2px; white-space: nowrap;" data-i18n="lunar.col.clan">Clan</th>
-                                <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 10px 6px; text-align: center; font-weight: 600; font-size: 10px; text-transform: uppercase; letter-spacing: 0.2px; white-space: nowrap;">🌙</th>
-                                <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 10px 6px; text-align: center; font-weight: 600; font-size: 10px; text-transform: uppercase; letter-spacing: 0.2px; white-space: nowrap;">
-                                    <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/ATK.png" alt="ATK" style="width:18px;height:18px;vertical-align:middle;" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><span style="display:none;" data-i18n="table.col.atk">ATK</span>
-                                </th>
-                                <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 10px 6px; text-align: center; font-weight: 600; font-size: 10px; text-transform: uppercase; letter-spacing: 0.2px; white-space: nowrap;">
-                                    <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Relic%20Cores.png" alt="Relic Cores" style="width:18px;height:18px;vertical-align:middle;" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><span style="display:none;" data-i18n="table.col.relic_cores">Relic Cores</span>
-                                </th>
-                                <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 10px 6px; text-align: center; font-weight: 600; font-size: 10px; text-transform: uppercase; letter-spacing: 0.2px; white-space: nowrap;">
-                                    <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/TransmutaCore.png" alt="Transmute Cores" style="width:18px;height:18px;vertical-align:middle;" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><span style="display:none;" data-i18n="table.col.transmute_cores">Transmute Cores</span>
-                                </th>
-                                <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 10px 6px; text-align: center; font-weight: 600; font-size: 10px; text-transform: uppercase; letter-spacing: 0.2px; white-space: nowrap;">
-                                    <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Resonance%20Chips.png" alt="Resonance Chips" style="width:18px;height:18px;vertical-align:middle;" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><span style="display:none;" data-i18n="table.col.resonance_chips">Resonance Chips</span>
-                                </th>
-                                <th style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 10px 6px; text-align: center; font-weight: 600; font-size: 10px; text-transform: uppercase; letter-spacing: 0.2px; white-space: nowrap;" data-i18n="stat.total_cores">Total Cores</th>
+                                <th data-i18n="lunar.col.clan">Clan</th>
+                                <th>🌙</th>
+                                <th><img src="Game%20Icons/ATK.png" alt="ATK" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><span style="display:none;" data-i18n="table.col.atk">ATK</span></th>
+                                <th><img src="Game%20Icons/Relic%20Cores.png" alt="Relic Cores" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><span style="display:none;" data-i18n="table.col.relic_cores">Relic Cores</span></th>
+                                <th><img src="Game%20Icons/TransmutaCore.png" alt="Transmute Cores" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><span style="display:none;" data-i18n="table.col.transmute_cores">Transmute Cores</span></th>
+                                <th><img src="Game%20Icons/Resonance%20Chips.png" alt="Resonance Chips" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><span style="display:none;" data-i18n="table.col.resonance_chips">Resonance Chips</span></th>
+                                <th data-i18n="stat.total_cores">Total Cores</th>
                             </tr>
                         </thead>
                         <tbody id="lunarClanTableBody"></tbody>
@@ -700,17 +743,17 @@
                 </div>
 
                 <div id="lunarMemberSection" style="display:none;">
-                    <div style="text-align:center; margin-bottom:8px;">
-                        <span style="color:#e2e8f0; font-size:15px; font-weight:700;" id="lunarClanName">—</span>
-                        <span style="color:#718096; font-size:11px; margin-left:6px;" id="lunarClanMembers">—</span>
+                    <div class="lunar-clan-head">
+                        <span id="lunarClanName">—</span>
+                        <span id="lunarClanMembers">—</span>
                     </div>
 
-                    <div style="display:flex; gap:6px; margin-bottom:10px;">
+                    <div class="lunar-mode-row">
                         <button class="lunar-mode-btn active" data-mode="atk" onclick="setLunarMemberMode('atk')" data-i18n="lunar.mode_atk">Attack</button>
                         <button class="lunar-mode-btn" data-mode="cores" onclick="setLunarMemberMode('cores')">
-                            <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Relic%20Cores.png" alt="Relic Cores" style="width:14px;height:14px;vertical-align:middle;" onerror="this.style.display='none';"> -
-                            <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/TransmutaCore.png" alt="Transmute Cores" style="width:14px;height:14px;vertical-align:middle;" onerror="this.style.display='none';"> -
-                            <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Resonance%20Chips.png" alt="Resonance Chips" style="width:14px;height:14px;vertical-align:middle;" onerror="this.style.display='none';">
+                            <img src="Game%20Icons/Relic%20Cores.png" alt="Relic Cores" style="width:14px;height:14px;vertical-align:middle;" onerror="this.style.display='none';"> -
+                            <img src="Game%20Icons/TransmutaCore.png" alt="Transmute Cores" style="width:14px;height:14px;vertical-align:middle;" onerror="this.style.display='none';"> -
+                            <img src="Game%20Icons/Resonance%20Chips.png" alt="Resonance Chips" style="width:14px;height:14px;vertical-align:middle;" onerror="this.style.display='none';">
                         </button>
                     </div>
 
@@ -721,8 +764,8 @@
             <!-- LME History Sub-tab -->
             <div id="lme-history-subtab" class="lunar-subtab-content" style="display:none;">
                 <div id="lmeTrendChart"></div>
-                <p style="color: #718096; font-size: 11px; text-align: center; margin: 0 0 10px 0;" data-i18n="modal.lme_history.subtitle">Pick a cycle to see its full results</p>
-                <select id="lmeCycleSelect" style="width:100%; margin-bottom:10px;"></select>
+                <p class="view-note" data-i18n="modal.lme_history.subtitle">Pick a cycle to see its full results</p>
+                <select id="lmeCycleSelect" class="field-full"></select>
                 <div id="lmeCycleDetail"></div>
             </div>
         </div>
@@ -740,44 +783,44 @@
 
             <!-- Stats Tab -->
             <div id="stats-tab" class="subtab-content">
-                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px; margin-bottom: 12px;">
-                    <div class="calc-stat-card" style="border-color: #2c7a7b;">
+                <div class="stat-grid">
+                    <div class="calc-stat-card tone-teal span-3">
                         <div class="calc-stat-label" data-i18n="stat.members">Members</div>
-                        <div class="calc-stat-value" style="color: #81e6d9;" id="stats-members">—</div>
-                        <div class="calc-stat-gain" style="color: #718096; font-size:9px;" id="stats-members-cap">— / 40</div>
+                        <div class="calc-stat-value" style="color:#81e6d9;" id="stats-members">—</div>
+                        <div class="calc-stat-gain gain-neutral" id="stats-members-cap">— / 40</div>
                     </div>
-                    <div class="calc-stat-card" style="border-color: #553c9a;">
-                        <div class="calc-stat-label"><span data-i18n="stat.total_atk">Total ATK</span> <span style="font-size:8px; opacity:0.6;">(Top 30)</span></div>
-                        <div class="calc-stat-value" style="color: #e2e8f0;" id="stats-total-atk">—</div>
+                    <div class="calc-stat-card tone-violet span-3">
+                        <div class="calc-stat-label"><span data-i18n="stat.total_atk">Total ATK</span> <span class="top30">(Top 30)</span></div>
+                        <div class="calc-stat-value" id="stats-total-atk">—</div>
                         <div class="calc-stat-gain" id="stats-total-atk-gain">—</div>
                     </div>
-                    <div class="calc-stat-card" style="border-color: #44337a;">
-                        <div class="calc-stat-label"><span data-i18n="stat.total_label">Total</span> <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Relic%20Cores.png" alt="Relic Cores" style="width: 14px; height: 14px; vertical-align: middle;" onerror="this.style.display='none';"> <span style="font-size:8px; opacity:0.6;">(Top 30)</span></div>
-                        <div class="calc-stat-value" style="color: #b794f6;" id="stats-total-relic-cores">—</div>
-                        <div class="calc-stat-gain" id="stats-total-relic-cores-gain">—</div>
+                    <div class="calc-stat-card tone-violet span-3">
+                        <div class="calc-stat-label"><span data-i18n="stat.avg_atk">Avg ATK</span> <span class="top30">(Top 30)</span></div>
+                        <div class="calc-stat-value" id="stats-avg-atk">—</div>
                     </div>
-                    <div class="calc-stat-card" style="border-color: #44337a;">
-                        <div class="calc-stat-label"><span data-i18n="stat.total_label">Total</span> <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/TransmutaCore.png" alt="Transmute Cores" style="width: 14px; height: 14px; vertical-align: middle;" onerror="this.style.display='none';"> <span style="font-size:8px; opacity:0.6;">(Top 30)</span></div>
-                        <div class="calc-stat-value" style="color: #b794f6;" id="stats-total-transmute-cores">—</div>
-                        <div class="calc-stat-gain" id="stats-total-transmute-cores-gain">—</div>
-                    </div>
-                    <div class="calc-stat-card" style="border-color: #44337a;">
-                        <div class="calc-stat-label"><span data-i18n="stat.total_label">Total</span> <img src="https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/Resonance%20Chips.png" alt="Resonance Chips" style="width: 14px; height: 14px; vertical-align: middle;" onerror="this.style.display='none';"> <span style="font-size:8px; opacity:0.6;">(Top 30)</span></div>
-                        <div class="calc-stat-value" style="color: #b794f6;" id="stats-total-resonance-chips">—</div>
-                        <div class="calc-stat-gain" id="stats-total-resonance-chips-gain">—</div>
-                    </div>
-                    <div class="calc-stat-card" style="border-color: #553c9a;">
-                        <div class="calc-stat-label"><span data-i18n="stat.avg_atk">Avg ATK</span> <span style="font-size:8px; opacity:0.6;">(Top 30)</span></div>
-                        <div class="calc-stat-value" style="color: #e2e8f0;" id="stats-avg-atk">—</div>
-                    </div>
-                    <div class="calc-stat-card" style="border-color: #44337a;">
-                        <div class="calc-stat-label"><span data-i18n="stat.total_cores">Total Cores</span> <span style="font-size:8px; opacity:0.6;">(Top 30)</span></div>
-                        <div class="calc-stat-value" style="color: #b794f6;" id="stats-total-cores">—</div>
+                    <div class="calc-stat-card tone-violet span-3">
+                        <div class="calc-stat-label"><span data-i18n="stat.total_cores">Total Cores</span> <span class="top30">(Top 30)</span></div>
+                        <div class="calc-stat-value" id="stats-total-cores">—</div>
                         <div class="calc-stat-gain" id="stats-total-cores-gain">—</div>
                     </div>
-                    <div class="calc-stat-card" style="border-color: #2f5c2a;">
-                        <div class="calc-stat-label"><span data-i18n="stat.total_label">Total</span> <span style="color:#8bc34a;">⚡</span> <span data-i18n="stat.tech_resonance">Resonance</span> <span style="font-size:8px; opacity:0.6;">(Top 30)</span></div>
-                        <div class="calc-stat-value" style="color: #8bc34a;" id="stats-total-tech-resonance">—</div>
+                    <div class="calc-stat-card tone-violet span-2">
+                        <div class="calc-stat-label"><span data-i18n="stat.total_label">Total</span> <img src="Game%20Icons/Relic%20Cores.png" alt="Relic Cores" onerror="this.style.display='none';"> <span class="top30">(Top 30)</span></div>
+                        <div class="calc-stat-value" id="stats-total-relic-cores">—</div>
+                        <div class="calc-stat-gain" id="stats-total-relic-cores-gain">—</div>
+                    </div>
+                    <div class="calc-stat-card tone-violet span-2">
+                        <div class="calc-stat-label"><span data-i18n="stat.total_label">Total</span> <img src="Game%20Icons/TransmutaCore.png" alt="Transmute Cores" onerror="this.style.display='none';"> <span class="top30">(Top 30)</span></div>
+                        <div class="calc-stat-value" id="stats-total-transmute-cores">—</div>
+                        <div class="calc-stat-gain" id="stats-total-transmute-cores-gain">—</div>
+                    </div>
+                    <div class="calc-stat-card tone-violet span-2">
+                        <div class="calc-stat-label"><span data-i18n="stat.total_label">Total</span> <img src="Game%20Icons/Resonance%20Chips.png" alt="Resonance Chips" onerror="this.style.display='none';"> <span class="top30">(Top 30)</span></div>
+                        <div class="calc-stat-value" id="stats-total-resonance-chips">—</div>
+                        <div class="calc-stat-gain" id="stats-total-resonance-chips-gain">—</div>
+                    </div>
+                    <div class="calc-stat-card tone-lime span-6">
+                        <div class="calc-stat-label"><span data-i18n="stat.total_label">Total</span> <span style="color:#8bc34a;">⚡</span> <span data-i18n="stat.tech_resonance">Resonance</span> <span class="top30">(Top 30)</span></div>
+                        <div class="calc-stat-value" id="stats-total-tech-resonance">—</div>
                         <div class="calc-stat-gain" id="stats-total-tech-resonance-gain">—</div>
                     </div>
                 </div>
@@ -785,33 +828,32 @@
 
             <!-- LME Tab -->
             <div id="lme-tab" class="subtab-content" style="display: none;">
-                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px; margin-bottom: 6px;">
-                    <div class="calc-stat-card" style="border-color: #744210;">
-                        <div class="calc-stat-label"><span data-i18n="stat.total_lme">Total LME</span> <span style="font-size:8px; opacity:0.6;">(Top 30)</span></div>
-                        <div class="calc-stat-value" style="color: #f59e0b;" id="lme-total-score">—</div>
+                <div class="stat-grid">
+                    <div class="calc-stat-card tone-amber span-3">
+                        <div class="calc-stat-label"><span data-i18n="stat.total_lme">Total LME</span> <span class="top30">(Top 30)</span></div>
+                        <div class="calc-stat-value" id="lme-total-score">—</div>
                         <div class="calc-stat-gain" id="lme-total-score-gain">—</div>
                     </div>
-                    <div class="calc-stat-card" style="border-color: #744210;">
-                        <div class="calc-stat-label"><span data-i18n="stat.avg_lme">Avg LME</span> <span style="font-size:8px; opacity:0.6;">(Top 30)</span></div>
-                        <div class="calc-stat-value" style="color: #f59e0b;" id="lme-avg-score">—</div>
+                    <div class="calc-stat-card tone-amber span-3">
+                        <div class="calc-stat-label"><span data-i18n="stat.avg_lme">Avg LME</span> <span class="top30">(Top 30)</span></div>
+                        <div class="calc-stat-value" id="lme-avg-score">—</div>
                         <div class="calc-stat-gain" id="lme-avg-score-gain">—</div>
                     </div>
-                </div>
-                <div style="display: flex; flex-direction: column; gap: 6px; margin-bottom: 10px;">
-                    <div class="calc-stat-card" style="border-color: #553c9a; display: flex; align-items: center; justify-content: center; gap: 10px; padding: 10px 16px;">
-                        <span class="calc-stat-label" style="margin-bottom: 0;" data-i18n="stat.lme_difficulty">LME Difficulty</span>
-                        <span class="calc-stat-value" style="color: #b794f6;" id="lme-difficulty">—</span>
-                    </div>
-                    <div class="calc-stat-card" style="border-color: #b7791f; box-shadow: 0 0 8px rgba(255,215,0,0.12); padding: 10px 16px;">
-                        <div style="display: flex; align-items: center; justify-content: center; gap: 10px;">
-                            <span class="calc-stat-label" style="margin-bottom: 0;" data-i18n="stat.lme_league">LME League</span>
-                            <span class="calc-stat-value" style="color: #81e6d9;" id="lme-league">—</span>
+                    <div class="calc-stat-card tone-violet span-6">
+                        <div class="stat-row">
+                            <span class="calc-stat-label" data-i18n="stat.lme_difficulty">LME Difficulty</span>
+                            <span class="calc-stat-value" style="color:#b4a7ff;" id="lme-difficulty">—</span>
                         </div>
-                        <div style="border-top: 1px solid #4a5568; margin: 8px 0;"></div>
-                        <div style="display: flex; align-items: center; justify-content: center; gap: 10px; flex-wrap: wrap;">
-                            <span class="calc-stat-label" style="margin-bottom: 0;" data-i18n="stat.lunar_pts">Lunar Points</span>
-                            <span class="calc-stat-value" style="color: #ffd700;" id="lme-lunar-pts">—</span>
-                            <span class="calc-stat-gain" id="lme-lunar-pts-gain">—</span>
+                    </div>
+                    <div class="calc-stat-card tone-gold span-6">
+                        <div class="stat-row">
+                            <span class="calc-stat-label" data-i18n="stat.lme_league">LME League</span>
+                            <span class="calc-stat-value" style="color:#81e6d9;" id="lme-league">—</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-row">
+                            <span class="calc-stat-label" data-i18n="stat.lunar_pts">Lunar Points</span>
+                            <span><span class="calc-stat-value" style="color:#ffd24a;" id="lme-lunar-pts">—</span> <span class="calc-stat-gain" id="lme-lunar-pts-gain">—</span></span>
                         </div>
                     </div>
                 </div>
@@ -819,36 +861,31 @@
 
             <!-- CX Tab -->
             <div id="cx-tab" class="subtab-content" style="display: none;">
-                <select id="cxSeasonSelect" style="width:100%; margin-bottom:8px; display:none;"></select>
-                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px; margin-bottom: 12px;">
-                    <div class="calc-stat-card" style="border-color: #276749;">
+                <select id="cxSeasonSelect" class="field-full" style="display:none;"></select>
+                <div class="stat-grid">
+                    <div class="calc-stat-card tone-green span-3">
                         <div class="calc-stat-label" data-i18n="stat.total_cx_rank">Total CX Rank</div>
-                        <div class="calc-stat-value" style="color: #68d391;" id="cx-total-rank">—</div>
-                        <div style="font-size:10px; color:#a0aec0; margin-top:2px;" id="cx-milestone-status"></div>
+                        <div class="calc-stat-value" style="color:#34d399;" id="cx-total-rank">—</div>
+                        <div class="calc-stat-gain gain-neutral" id="cx-milestone-status"></div>
                     </div>
-                    <div class="calc-stat-card" style="border-color: #276749;">
+                    <div class="calc-stat-card tone-green span-3">
                         <div class="calc-stat-label" data-i18n="stat.total_cx_boss">Total CX Boss</div>
-                        <div class="calc-stat-value" style="color: #68d391;" id="cx-total-boss">—</div>
+                        <div class="calc-stat-value" style="color:#34d399;" id="cx-total-boss">—</div>
                     </div>
                 </div>
             </div>
 
             <!-- Ender's Echo Tab -->
             <div id="ee-tab" class="subtab-content" style="display: none;">
-                <p style="color: #718096; font-size: 11px; text-align: center; margin: 0 0 10px 0;" data-i18n="modal.ee_season.subtitle">Pick a season to see results</p>
-                <select id="eeSeasonSelect" style="width:100%; margin-bottom:8px;"></select>
-                <select id="eeMiniSeasonSelect" style="width:100%; margin-bottom:10px;"></select>
-                <input type="text" id="eeSearchInput" placeholder="Search player names..." class="search-box" data-i18n-placeholder="ctrl.search_placeholder" style="width:100%; box-sizing:border-box; margin-bottom:10px;">
+                <p class="view-note" data-i18n="modal.ee_season.subtitle">Pick a season to see results</p>
+                <select id="eeSeasonSelect" class="field-full"></select>
+                <select id="eeMiniSeasonSelect" class="field-full"></select>
+                <input type="text" id="eeSearchInput" placeholder="Search player names..." class="search-box field-full" data-i18n-placeholder="ctrl.search_placeholder">
 
-                <!-- Compact Role Legend -->
-                <div style="display: flex; justify-content: center; gap: 20px; margin-bottom: 10px; flex-wrap: wrap; font-size: 12px;">
-                    <span style="color: #fc8181; font-weight: 600;">● Leader</span>
-                    <span style="color: #ed8936; font-weight: 600;">● Vice-Leader</span>
-                    <span style="background: linear-gradient(90deg, #d3859b, #ffffff, #d3859b); background-size: 200% auto; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; animation: shine 4s linear infinite; font-weight: 700; filter: drop-shadow(0 0 5px rgba(211,133,155,0.5));">✦ Eternal Glory</span>
-                    <span style="color: #ffd700; font-weight: 600; text-shadow: 0 0 10px #ffd700;">★ Glory Member</span>
-                </div>
+                <!-- Role legend -->
+                <div class="role-legend"><span class="role-leader">● Leader</span><span class="role-vice">● Vice-Leader</span><span class="role-eternal-legend">✦ Eternal Glory</span><span class="role-glory-legend">★ Glory Member</span></div>
 
-                <p style="color:#718096; font-size:10px; text-align:center; margin:0 0 6px 0;" data-i18n="modal.ee_season.tap_hint">Tap a day's score to see every attempt</p>
+                <p class="view-note" data-i18n="modal.ee_season.tap_hint">Tap a day's score to see every attempt</p>
                 <div id="eeLeaderboard"></div>
             </div>
 
@@ -860,13 +897,8 @@
                     </select>
                 </div>
 
-                <!-- Compact Role Legend -->
-                <div style="display: flex; justify-content: center; gap: 20px; margin-bottom: 10px; flex-wrap: wrap; font-size: 12px;">
-                    <span style="color: #fc8181; font-weight: 600;">● Leader</span>
-                    <span style="color: #ed8936; font-weight: 600;">● Vice-Leader</span>
-                    <span style="background: linear-gradient(90deg, #d3859b, #ffffff, #d3859b); background-size: 200% auto; -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; animation: shine 4s linear infinite; font-weight: 700; filter: drop-shadow(0 0 5px rgba(211,133,155,0.5));">✦ Eternal Glory</span>
-                    <span style="color: #ffd700; font-weight: 600; text-shadow: 0 0 10px #ffd700;">★ Glory Member</span>
-                </div>
+                <!-- Role legend -->
+                <div class="role-legend"><span class="role-leader">● Leader</span><span class="role-vice">● Vice-Leader</span><span class="role-eternal-legend">✦ Eternal Glory</span><span class="role-glory-legend">★ Glory Member</span></div>
 
                 <table id="playerTable">
                     <thead>
@@ -882,13 +914,11 @@
 
         <!-- ─── View 3: Alumni ─── -->
         <div id="view-alumni" class="view">
-            <div style="background: #374151; border-radius: 8px; padding: 10px; margin-bottom: 10px; text-align: center;">
-                <p style="color: #e2e8f0; margin: 0; font-size: 14px; line-height: 1.4;">
-                    <strong style="color: #ffd700;" id="alumniCountDisplay">— Alumni Members</strong><br>
-                    <span style="color: #a0aec0;" data-i18n="modal.alumni.subtitle">Former clan members who contributed to our journey</span>
-                </p>
+            <div class="alumni-banner">
+                <strong id="alumniCountDisplay">— Alumni Members</strong><br>
+                <span data-i18n="modal.alumni.subtitle">Former clan members who contributed to our journey</span>
             </div>
-            <div id="alumniGrid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 7px; padding: 7px; background: #374151; border-radius: 8px;"></div>
+            <div id="alumniGrid"></div>
         </div>
 
         <!-- ─── View 4: Settings ─── -->
@@ -927,23 +957,23 @@
     <!-- Bottom Navigation Bar — 5 tabs -->
     <nav id="bottom-nav" aria-label="Navigation">
         <button id="nav-glory" class="nav-tab glory-tab" onclick="goToView(0)" aria-label="Next Glory Members">
-            <span class="nav-tab-icon">⭐</span>
-            <span class="nav-tab-label" data-i18n="ctrl.next_glory">Next Glory</span>
+            <span class="nav-tab-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.8 5.7 6.2.9-4.5 4.4 1.1 6.2L12 17.3l-5.6 2.9 1.1-6.2L3 9.6l6.2-.9z"/></svg></span>
+            <span class="nav-tab-label" data-nav-label data-i18n="ctrl.next_glory">Next Glory</span>
         </button>
         <button id="nav-lme" class="nav-tab" onclick="goToView(1)" aria-label="PRO Lunar Details">
-            <span class="nav-tab-icon">🌙</span>
+            <span class="nav-tab-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg></span>
             <span class="nav-tab-label" data-i18n="ctrl.lunar_details">PRO Lunar Details</span>
         </button>
         <button id="nav-home" class="nav-tab active" onclick="goToView(2)" aria-label="Home">
-            <span class="nav-tab-icon">🏠</span>
+            <span class="nav-tab-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg></span>
             <span class="nav-tab-label">Home</span>
         </button>
         <button id="nav-alumni" class="nav-tab" onclick="goToView(3)" aria-label="Alumni">
-            <span class="nav-tab-icon">🎓</span>
+            <span class="nav-tab-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3 20v-1a5 5 0 0 1 5-5h2a5 5 0 0 1 5 5v1"/><path d="M16 5.2a3.2 3.2 0 0 1 0 5.6M18 14.3a5 5 0 0 1 3 4.7v1"/></svg></span>
             <span class="nav-tab-label" data-i18n="ctrl.alumni">Alumni</span>
         </button>
         <button id="nav-settings" class="nav-tab" onclick="goToView(4)" aria-label="Settings">
-            <span class="nav-tab-icon">⚙️</span>
+            <span class="nav-tab-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h2M10 17h10"/><circle cx="16" cy="7" r="2"/><circle cx="8" cy="17" r="2"/></svg></span>
             <span class="nav-tab-label" data-i18n="ctrl.settings">Settings</span>
         </button>
     </nav>
@@ -976,6 +1006,7 @@
         function applyTranslations() {
             document.querySelectorAll('[data-i18n]').forEach(el => {
                 el.textContent = t(el.dataset.i18n);
+                if (el.hasAttribute('data-nav-label')) el.textContent = el.textContent.replace(/^⭐\s*/, '');
             });
             document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
                 el.setAttribute('placeholder', t(el.dataset.i18nPlaceholder));
@@ -1257,14 +1288,14 @@
                 const boss = currentCXSeason.cxBoss || {};
                 const snap = currentCXSeason.milestoneSnapshot;
                 const milestone = currentCXSeason.milestone || 0;
-                totalRankEl.innerHTML = `${(rank.total || 0).toLocaleString()}<span style="color:#718096;font-size:0.7em;"> / ${milestone.toLocaleString()}</span>`;
+                totalRankEl.innerHTML = `${(rank.total || 0).toLocaleString()}<span style="color:#7a85a8;font-size:0.7em;"> / ${milestone.toLocaleString()}</span>`;
                 document.getElementById('cx-total-boss').textContent = boss.total != null ? boss.total.toLocaleString() : '—';
                 if (!currentCXSeason.resetSeen) {
                     statusEl.textContent = t('cx.waiting_reset');
-                    statusEl.style.color = '#a0aec0';
+                    statusEl.style.color = '#9aa4c4';
                 } else if (snap) {
                     statusEl.textContent = `${t('cx.boss_unlocked')} ${formatCycleDate(snap.reachedAt)}`;
-                    statusEl.style.color = '#68d391';
+                    statusEl.style.color = '#34d399';
                 } else {
                     statusEl.textContent = t('cx.boss_locked');
                     statusEl.style.color = '#f6ad55';
@@ -1454,14 +1485,14 @@
         //  array is intentionally NOT used here for now.
         // ══════════════════════════════════════════════
         const LME_CYCLES_FOLDER = 'Lunar Mine Expedition';
-        const LME_RANK_COLORS = { 1: '#ffd700', 2: '#c0c0c0', 3: '#cd7930', 4: '#f56565' };
+        const LME_RANK_COLORS = { 1: '#ffd24a', 2: '#c0c0c0', 3: '#cd7930', 4: '#fb7185' };
 
         // Rank 1-3 render as the Game Icons rank badges (matching the rest
         // of the app); rank 4 (no icon file for it) and any missing rank
         // fall back to a colored "#N" label.
         function rankBadgeHTML(rank) {
-            if (!rank) return '<span style="color:#718096;">—</span>';
-            const color = LME_RANK_COLORS[rank] || '#f56565';
+            if (!rank) return '<span style="color:#7a85a8;">—</span>';
+            const color = LME_RANK_COLORS[rank] || '#fb7185';
             if (rank >= 1 && rank <= 3) {
                 return `<img src="${ICON_BASE}Rank${rank}.png" alt="#${rank}" style="height:20px; width:auto; vertical-align:middle;" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><span style="display:none; color:${color}; font-weight:700;">#${rank}</span>`;
             }
@@ -1538,7 +1569,7 @@
 
             select.style.display = found === 0 ? 'none' : '';
             if (found === 0) {
-                detail.innerHTML = `<p style="color:#718096; font-size:12px; text-align:center; padding: 12px 0;" data-i18n="modal.lme_history.empty">No LME cycle data available yet.</p>`;
+                detail.innerHTML = `<p style="color:#7a85a8; font-size:12px; text-align:center; padding: 12px 0;" data-i18n="modal.lme_history.empty">No LME cycle data available yet.</p>`;
                 applyTranslations();
             }
         }
@@ -1561,17 +1592,17 @@
             header.className = 'lme-cycle-header';
             header.innerHTML = `
                 <div style="display:flex; align-items:center; gap:8px; min-width:0;">
-                    <span style="font-weight:700; color:#e2e8f0; font-size:13px; white-space:nowrap;">LME #${cycle.lmeNumber}</span>
+                    <span style="font-weight:700; color:#e7ecfa; font-size:13px; white-space:nowrap;">LME #${cycle.lmeNumber}</span>
                 </div>
                 <div style="display:flex; align-items:center; gap:10px; flex-shrink:0;">
-                    <span style="color:#68d391; font-size:11px; font-weight:600; white-space:nowrap;">${(own.medals ?? 0).toLocaleString()}</span>
-                    <span style="color:#718096; font-size:10px; white-space:nowrap;">${formatCycleDate(cycle.generatedAt)}</span>
+                    <span style="color:#34d399; font-size:11px; font-weight:600; white-space:nowrap;">${(own.medals ?? 0).toLocaleString()}</span>
+                    <span style="color:#7a85a8; font-size:10px; white-space:nowrap;">${formatCycleDate(cycle.generatedAt)}</span>
                 </div>
             `;
 
             const body = document.createElement('div');
             body.style.padding = '0 12px 12px 12px';
-            body.style.borderTop = '1px solid #4a5568';
+            body.style.borderTop = '1px solid #222c48';
             body.appendChild(buildLMECycleBody(cycle, ranking, own));
 
             panel.appendChild(header);
@@ -1584,8 +1615,8 @@
                 <tr class="${c.clanId === cycle.freedomClanId ? 'lme-cycle-own-row' : ''}">
                     <td class="lme-rank-col">${rankBadgeHTML(c.rank)}</td>
                     <td style="font-weight:600;">${escapeHtml(c.clanName)}</td>
-                    <td style="color:#68d391;">${(c.medals ?? 0).toLocaleString()}</td>
-                    <td style="color:#ffd700; font-weight:700;">${c.points ?? 0}</td>
+                    <td style="color:#34d399;">${(c.medals ?? 0).toLocaleString()}</td>
+                    <td style="color:#ffd24a; font-weight:700;">${c.points ?? 0}</td>
                     <td>${(c.p1TotalScore ?? 0).toLocaleString()}</td>
                 </tr>
             `).join('');
@@ -1595,11 +1626,11 @@
             const lunarRows = lunarClans.map(clan => `
                 <tr class="${String(clan.clanId) === String(cycle.freedomClanId) ? 'lme-cycle-own-row' : ''}">
                     <td style="font-weight:600;">${escapeHtml(clan.name)}</td>
-                    <td style="color:#ffd700; font-weight:700;">${(clan.lunarPoints ?? 0).toLocaleString()}</td>
+                    <td style="color:#ffd24a; font-weight:700;">${(clan.lunarPoints ?? 0).toLocaleString()}</td>
                     <td>${formatNumber(clan.totalAtk || 0)}</td>
-                    <td style="color:#b794f6;">${clan.totalChips ?? '—'}</td>
-                    <td style="color:#b794f6;">${clan.totalRelicCores ?? '—'}</td>
-                    <td style="color:#b794f6;">${clan.totalTransmuteCores ?? '—'}</td>
+                    <td style="color:#b4a7ff;">${clan.totalChips ?? '—'}</td>
+                    <td style="color:#b4a7ff;">${clan.totalRelicCores ?? '—'}</td>
+                    <td style="color:#b4a7ff;">${clan.totalTransmuteCores ?? '—'}</td>
                 </tr>
             `).join('');
 
@@ -1694,12 +1725,12 @@
 
                 tbody.innerHTML = sorted.map((m, idx) => `
                     <tr>
-                        <td style="color:#a0aec0;">${idx + 1}</td>
+                        <td style="color:#9aa4c4;">${idx + 1}</td>
                         <td style="font-weight:600; text-align:left;">${escapeHtml(m.name)}</td>
-                        <td style="${state.key === 'lmeScore' ? 'color:#ffd700; font-weight:700;' : 'color:#e2e8f0;'}">${(m.lmeScore ?? 0).toLocaleString()}</td>
-                        <td style="${state.key === 'round1'   ? 'color:#ffd700; font-weight:700;' : 'color:#a0aec0;'}">${(m.round1 ?? 0).toLocaleString()}</td>
-                        <td style="${state.key === 'round2'   ? 'color:#ffd700; font-weight:700;' : 'color:#a0aec0;'}">${(m.round2 ?? 0).toLocaleString()}</td>
-                        <td style="${state.key === 'round3'   ? 'color:#ffd700; font-weight:700;' : 'color:#a0aec0;'}">${(m.round3 ?? 0).toLocaleString()}</td>
+                        <td style="${state.key === 'lmeScore' ? 'color:#ffd24a; font-weight:700;' : 'color:#e7ecfa;'}">${(m.lmeScore ?? 0).toLocaleString()}</td>
+                        <td style="${state.key === 'round1'   ? 'color:#ffd24a; font-weight:700;' : 'color:#9aa4c4;'}">${(m.round1 ?? 0).toLocaleString()}</td>
+                        <td style="${state.key === 'round2'   ? 'color:#ffd24a; font-weight:700;' : 'color:#9aa4c4;'}">${(m.round2 ?? 0).toLocaleString()}</td>
+                        <td style="${state.key === 'round3'   ? 'color:#ffd24a; font-weight:700;' : 'color:#9aa4c4;'}">${(m.round3 ?? 0).toLocaleString()}</td>
                     </tr>
                 `).join('');
             }
@@ -2033,7 +2064,7 @@
                 if (allP1Points.length >= 2) {
                     slideP1.appendChild(buildP1ScoreTrendChart(sliceByFilter(allP1Points, activeKey)));
                 } else {
-                    slideP1.innerHTML = `<p style="color:#718096; font-size:12px; text-align:center; padding: 40px 0;">No P1 score history available yet.</p>`;
+                    slideP1.innerHTML = `<p style="color:#7a85a8; font-size:12px; text-align:center; padding: 40px 0;">No P1 score history available yet.</p>`;
                 }
             }
 
@@ -2079,8 +2110,8 @@
             const tickCount = 4;
             const ticks = Array.from({ length: tickCount + 1 }, (_, i) => yMin + (i / tickCount) * yRange);
             const gridLines = ticks.map(t => `
-                <line x1="${padL}" y1="${yAt(t).toFixed(1)}" x2="${W - padR}" y2="${yAt(t).toFixed(1)}" stroke="#374151" stroke-width="1"/>
-                <text x="${padL - 8}" y="${(yAt(t) + 3).toFixed(1)}" text-anchor="end" font-size="9" fill="#718096">${Math.round(t).toLocaleString()}</text>
+                <line x1="${padL}" y1="${yAt(t).toFixed(1)}" x2="${W - padR}" y2="${yAt(t).toFixed(1)}" stroke="#141b30" stroke-width="1"/>
+                <text x="${padL - 8}" y="${(yAt(t) + 3).toFixed(1)}" text-anchor="end" font-size="9" fill="#7a85a8">${Math.round(t).toLocaleString()}</text>
             `).join('');
 
             const lunarPath  = points.map((p, i) => `${i === 0 ? 'M' : 'L'} ${xAt(i).toFixed(1)},${yAt(p.lunarPoints).toFixed(1)}`).join(' ');
@@ -2091,7 +2122,7 @@
             if (transitionIdx > 0) {
                 const tx = xAt(transitionIdx).toFixed(1);
                 transitionMarker = `
-                    <line x1="${tx}" y1="${padT}" x2="${tx}" y2="${H - padB}" stroke="#4a5568" stroke-width="1" stroke-dasharray="3,3"/>
+                    <line x1="${tx}" y1="${padT}" x2="${tx}" y2="${H - padB}" stroke="#222c48" stroke-width="1" stroke-dasharray="3,3"/>
                 `;
             }
 
@@ -2100,7 +2131,7 @@
                 { v: points[lastIdx].lunarPoints,  color: '#3987e5' },
                 { v: points[lastIdx].secretScore, color: '#d95926' },
             ].map(m => `
-                <circle cx="${xAt(lastIdx).toFixed(1)}" cy="${yAt(m.v).toFixed(1)}" r="6" fill="#2d3748"/>
+                <circle cx="${xAt(lastIdx).toFixed(1)}" cy="${yAt(m.v).toFixed(1)}" r="6" fill="#0e1424"/>
                 <circle cx="${xAt(lastIdx).toFixed(1)}" cy="${yAt(m.v).toFixed(1)}" r="4" fill="${m.color}"/>
             `).join('');
 
@@ -2118,14 +2149,14 @@
                         <path d="${secretPath}" fill="none" stroke="#d95926" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="${lunarPath}"  fill="none" stroke="#3987e5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         ${endMarkers}
-                        <line class="lme-trend-crosshair" x1="0" y1="${padT}" x2="0" y2="${H - padB}" stroke="#a0aec0" stroke-width="1" style="display:none;"/>
-                        <circle class="lme-trend-hover-dot lme-trend-hover-lunar"  r="4" fill="#3987e5" stroke="#2d3748" stroke-width="2" style="display:none;"/>
-                        <circle class="lme-trend-hover-dot lme-trend-hover-secret" r="4" fill="#d95926" stroke="#2d3748" stroke-width="2" style="display:none;"/>
+                        <line class="lme-trend-crosshair" x1="0" y1="${padT}" x2="0" y2="${H - padB}" stroke="#9aa4c4" stroke-width="1" style="display:none;"/>
+                        <circle class="lme-trend-hover-dot lme-trend-hover-lunar"  r="4" fill="#3987e5" stroke="#0e1424" stroke-width="2" style="display:none;"/>
+                        <circle class="lme-trend-hover-dot lme-trend-hover-secret" r="4" fill="#d95926" stroke="#0e1424" stroke-width="2" style="display:none;"/>
                         <rect class="lme-trend-hit" x="${padL}" y="0" width="${plotW}" height="${H}" fill="transparent" style="cursor:pointer;" tabindex="0"/>
                     </svg>
                     <div class="lme-trend-tooltip" style="display:none;"></div>
                 </div>
-                <div style="display:flex; justify-content:space-between; font-size:9px; color:#718096; margin: 2px ${padR}px 0 ${padL}px;">
+                <div style="display:flex; justify-content:space-between; font-size:9px; color:#7a85a8; margin: 2px ${padR}px 0 ${padL}px;">
                     <span>${points[0].label}</span>
                     <span>${points[lastIdx].label}</span>
                 </div>
@@ -2154,7 +2185,7 @@
                 dotSecret.style.display = '';
 
                 tooltip.innerHTML = `
-                    <div style="font-size:10px; color:#a0aec0; margin-bottom:3px;"></div>
+                    <div style="font-size:10px; color:#9aa4c4; margin-bottom:3px;"></div>
                     <div class="lme-trend-tooltip-row">
                         <span class="lme-trend-tooltip-key" style="background:#3987e5;"></span>
                         <span class="lme-trend-tooltip-label">Lunar Points</span>
@@ -2206,22 +2237,22 @@
             const yAt = (rank) => padT + ((rank - 1) / 3) * plotH;
 
             const gridLines = [1, 2, 3, 4].map(r => `
-                <line x1="${padL}" y1="${yAt(r).toFixed(1)}" x2="${W - padR}" y2="${yAt(r).toFixed(1)}" stroke="#374151" stroke-width="1"/>
+                <line x1="${padL}" y1="${yAt(r).toFixed(1)}" x2="${W - padR}" y2="${yAt(r).toFixed(1)}" stroke="#141b30" stroke-width="1"/>
                 <text x="${padL - 8}" y="${(yAt(r) + 3).toFixed(1)}" text-anchor="end" font-size="9" font-weight="700" fill="${LME_RANK_COLORS[r]}">#${r}</text>
             `).join('');
 
             const ranked = points.map((p, i) => ({ i, rank: p.rank })).filter(d => d.rank != null);
             const linePath = ranked.map((d, idx) => `${idx === 0 ? 'M' : 'L'} ${xAt(d.i).toFixed(1)},${yAt(d.rank).toFixed(1)}`).join(' ');
             const rankDots = ranked.map(d => `
-                <circle cx="${xAt(d.i).toFixed(1)}" cy="${yAt(d.rank).toFixed(1)}" r="5" fill="#2d3748"/>
-                <circle cx="${xAt(d.i).toFixed(1)}" cy="${yAt(d.rank).toFixed(1)}" r="3.5" fill="${LME_RANK_COLORS[d.rank] || '#f56565'}"/>
+                <circle cx="${xAt(d.i).toFixed(1)}" cy="${yAt(d.rank).toFixed(1)}" r="5" fill="#0e1424"/>
+                <circle cx="${xAt(d.i).toFixed(1)}" cy="${yAt(d.rank).toFixed(1)}" r="3.5" fill="${LME_RANK_COLORS[d.rank] || '#fb7185'}"/>
             `).join('');
 
             const transitionIdx = points.findIndex(p => p.phase === 'new');
             let transitionMarker = '';
             if (transitionIdx > 0) {
                 const tx = xAt(transitionIdx).toFixed(1);
-                transitionMarker = `<line x1="${tx}" y1="${padT}" x2="${tx}" y2="${H - padB}" stroke="#4a5568" stroke-width="1" stroke-dasharray="3,3"/>`;
+                transitionMarker = `<line x1="${tx}" y1="${padT}" x2="${tx}" y2="${H - padB}" stroke="#222c48" stroke-width="1" stroke-dasharray="3,3"/>`;
             }
 
             const lastIdx = points.length - 1;
@@ -2230,7 +2261,7 @@
             wrap.className = 'lme-trend-chart';
             wrap.innerHTML = `
                 <div class="lme-trend-legend">
-                    <span class="lme-trend-legend-item" style="color:#a0aec0;">Clan Rank</span>
+                    <span class="lme-trend-legend-item" style="color:#9aa4c4;">Clan Rank</span>
                 </div>
                 <div style="position:relative;">
                     <svg viewBox="0 0 ${W} ${H}" style="width:100%; height:auto; display:block; overflow:visible;">
@@ -2238,13 +2269,13 @@
                         ${transitionMarker}
                         <path d="${linePath}" fill="none" stroke="#9085e9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         ${rankDots}
-                        <line class="lme-trend-crosshair" x1="0" y1="${padT}" x2="0" y2="${H - padB}" stroke="#a0aec0" stroke-width="1" style="display:none;"/>
-                        <circle class="lme-trend-hover-dot" r="5" fill="#9085e9" stroke="#2d3748" stroke-width="2" style="display:none;"/>
+                        <line class="lme-trend-crosshair" x1="0" y1="${padT}" x2="0" y2="${H - padB}" stroke="#9aa4c4" stroke-width="1" style="display:none;"/>
+                        <circle class="lme-trend-hover-dot" r="5" fill="#9085e9" stroke="#0e1424" stroke-width="2" style="display:none;"/>
                         <rect class="lme-trend-hit" x="${padL}" y="0" width="${plotW}" height="${H}" fill="transparent" style="cursor:pointer;" tabindex="0"/>
                     </svg>
                     <div class="lme-trend-tooltip" style="display:none;"></div>
                 </div>
-                <div style="display:flex; justify-content:space-between; font-size:9px; color:#718096; margin: 2px ${padR}px 0 ${padL}px;">
+                <div style="display:flex; justify-content:space-between; font-size:9px; color:#7a85a8; margin: 2px ${padR}px 0 ${padL}px;">
                     <span>${points[0].label}</span>
                     <span>${points[lastIdx].label}</span>
                 </div>
@@ -2268,13 +2299,13 @@
                 } else {
                     dot.setAttribute('cx', x);
                     dot.setAttribute('cy', yAt(p.rank));
-                    dot.setAttribute('fill', LME_RANK_COLORS[p.rank] || '#f56565');
+                    dot.setAttribute('fill', LME_RANK_COLORS[p.rank] || '#fb7185');
                     dot.style.display = '';
                 }
 
-                const rankColor = p.rank ? (LME_RANK_COLORS[p.rank] || '#f56565') : '#718096';
+                const rankColor = p.rank ? (LME_RANK_COLORS[p.rank] || '#fb7185') : '#7a85a8';
                 tooltip.innerHTML = `
-                    <div style="font-size:10px; color:#a0aec0; margin-bottom:3px;"></div>
+                    <div style="font-size:10px; color:#9aa4c4; margin-bottom:3px;"></div>
                     <div class="lme-trend-tooltip-row">
                         <span class="lme-trend-tooltip-key" style="background:${rankColor};"></span>
                         <span class="lme-trend-tooltip-label">Rank</span>
@@ -2328,15 +2359,15 @@
             const tickCount = 4;
             const ticks = Array.from({ length: tickCount + 1 }, (_, i) => yMin + (i / tickCount) * yRange);
             const gridLines = ticks.map(t => `
-                <line x1="${padL}" y1="${yAt(t).toFixed(1)}" x2="${W - padR}" y2="${yAt(t).toFixed(1)}" stroke="#374151" stroke-width="1"/>
-                <text x="${padL - 8}" y="${(yAt(t) + 3).toFixed(1)}" text-anchor="end" font-size="9" fill="#718096">${Math.round(t).toLocaleString()}</text>
+                <line x1="${padL}" y1="${yAt(t).toFixed(1)}" x2="${W - padR}" y2="${yAt(t).toFixed(1)}" stroke="#141b30" stroke-width="1"/>
+                <text x="${padL - 8}" y="${(yAt(t) + 3).toFixed(1)}" text-anchor="end" font-size="9" fill="#7a85a8">${Math.round(t).toLocaleString()}</text>
             `).join('');
 
             const linePath = points.map((p, i) => `${i === 0 ? 'M' : 'L'} ${xAt(i).toFixed(1)},${yAt(p.totalP1Score).toFixed(1)}`).join(' ');
 
             const lastIdx = points.length - 1;
             const endMarker = `
-                <circle cx="${xAt(lastIdx).toFixed(1)}" cy="${yAt(points[lastIdx].totalP1Score).toFixed(1)}" r="6" fill="#2d3748"/>
+                <circle cx="${xAt(lastIdx).toFixed(1)}" cy="${yAt(points[lastIdx].totalP1Score).toFixed(1)}" r="6" fill="#0e1424"/>
                 <circle cx="${xAt(lastIdx).toFixed(1)}" cy="${yAt(points[lastIdx].totalP1Score).toFixed(1)}" r="4" fill="#199e70"/>
             `;
 
@@ -2351,13 +2382,13 @@
                         ${gridLines}
                         <path d="${linePath}" fill="none" stroke="#199e70" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         ${endMarker}
-                        <line class="lme-trend-crosshair" x1="0" y1="${padT}" x2="0" y2="${H - padB}" stroke="#a0aec0" stroke-width="1" style="display:none;"/>
-                        <circle class="lme-trend-hover-dot" r="4" fill="#199e70" stroke="#2d3748" stroke-width="2" style="display:none;"/>
+                        <line class="lme-trend-crosshair" x1="0" y1="${padT}" x2="0" y2="${H - padB}" stroke="#9aa4c4" stroke-width="1" style="display:none;"/>
+                        <circle class="lme-trend-hover-dot" r="4" fill="#199e70" stroke="#0e1424" stroke-width="2" style="display:none;"/>
                         <rect class="lme-trend-hit" x="${padL}" y="0" width="${plotW}" height="${H}" fill="transparent" style="cursor:pointer;" tabindex="0"/>
                     </svg>
                     <div class="lme-trend-tooltip" style="display:none;"></div>
                 </div>
-                <div style="display:flex; justify-content:space-between; font-size:9px; color:#718096; margin: 2px ${padR}px 0 ${padL}px;">
+                <div style="display:flex; justify-content:space-between; font-size:9px; color:#7a85a8; margin: 2px ${padR}px 0 ${padL}px;">
                     <span>#${points[0].lmeNumber}</span>
                     <span>#${points[lastIdx].lmeNumber}</span>
                 </div>
@@ -2381,7 +2412,7 @@
                 dot.style.display = '';
 
                 tooltip.innerHTML = `
-                    <div style="font-size:10px; color:#a0aec0; margin-bottom:3px;"></div>
+                    <div style="font-size:10px; color:#9aa4c4; margin-bottom:3px;"></div>
                     <div class="lme-trend-tooltip-row">
                         <span class="lme-trend-tooltip-key" style="background:#199e70;"></span>
                         <span class="lme-trend-tooltip-label">P1 Score</span>
@@ -2412,8 +2443,8 @@
             grid.innerHTML = '';
             alumniMembers.forEach(name => {
                 const div = document.createElement('div');
-                div.style = 'background: #2d3748; padding: 8px; border-radius: 6px; text-align: center; border: 1px solid #4a5568;';
-                div.innerHTML = `<span style="color: #e2e8f0; font-size: 13px;">${name}</span>`;
+                div.style = 'background: #0e1424; padding: 8px; border-radius: 6px; text-align: center; border: 1px solid #222c48;';
+                div.innerHTML = `<span style="color: #e7ecfa; font-size: 13px;">${name}</span>`;
                 grid.appendChild(div);
             });
         }
@@ -2469,18 +2500,18 @@
                 const row = document.createElement('tr');
                 row.className = 'lunar-clan-row';
                 row.dataset.clanId = clanId;
-                row.style.borderBottom = '1px solid #4a5568';
-                if (index % 2 === 1) row.style.background = '#374151';
+                row.style.borderBottom = '1px solid #222c48';
+                if (index % 2 === 1) row.style.background = '#141b30';
                 row.onclick = () => selectLunarClan(clanId);
 
                 row.innerHTML = `
-                    <td style="padding: 10px 8px; color: #e2e8f0; font-weight: 600; white-space: nowrap;">${clan.name}</td>
-                    <td style="padding: 10px 6px; text-align: center; color: #ffd700; font-weight: 700;">${(clan.lunarPoints ?? 0).toLocaleString()}</td>
-                    <td style="padding: 10px 6px; text-align: center; color: #e2e8f0; font-weight: 600;">${formatNumber(clan.totalAtk || 0)}</td>
-                    <td style="padding: 10px 6px; text-align: center; color: #b794f6; font-weight: 600;">${relic === null ? '—' : relic.toLocaleString()}</td>
-                    <td style="padding: 10px 6px; text-align: center; color: #b794f6; font-weight: 600;">${transmute === null ? '—' : transmute.toLocaleString()}</td>
-                    <td style="padding: 10px 6px; text-align: center; color: #b794f6; font-weight: 600;">${resonance === null ? '—' : resonance.toLocaleString()}</td>
-                    <td style="padding: 10px 6px; text-align: center; color: #b794f6; font-weight: 700;">${combined === null ? '—' : combined.toLocaleString()}</td>
+                    <td style="padding: 10px 8px; color: #e7ecfa; font-weight: 600; white-space: nowrap;">${clan.name}</td>
+                    <td style="padding: 10px 6px; text-align: center; color: #ffd24a; font-weight: 700;">${(clan.lunarPoints ?? 0).toLocaleString()}</td>
+                    <td style="padding: 10px 6px; text-align: center; color: #e7ecfa; font-weight: 600;">${formatNumber(clan.totalAtk || 0)}</td>
+                    <td style="padding: 10px 6px; text-align: center; color: #b4a7ff; font-weight: 600;">${relic === null ? '—' : relic.toLocaleString()}</td>
+                    <td style="padding: 10px 6px; text-align: center; color: #b4a7ff; font-weight: 600;">${transmute === null ? '—' : transmute.toLocaleString()}</td>
+                    <td style="padding: 10px 6px; text-align: center; color: #b4a7ff; font-weight: 600;">${resonance === null ? '—' : resonance.toLocaleString()}</td>
+                    <td style="padding: 10px 6px; text-align: center; color: #b4a7ff; font-weight: 700;">${combined === null ? '—' : combined.toLocaleString()}</td>
                 `;
                 tbody.appendChild(row);
             });
@@ -2523,24 +2554,24 @@
                 row.className = 'lunar-member-row';
 
                 const rankEl = document.createElement('span');
-                rankEl.style = 'font-size:12px; font-weight:700; color:#a0aec0; width:22px; text-align:center; flex-shrink:0;';
+                rankEl.style = 'font-size:12px; font-weight:700; color:#9aa4c4; width:22px; text-align:center; flex-shrink:0;';
                 rankEl.textContent = idx + 1;
 
                 const nameEl = document.createElement('span');
-                nameEl.style = 'font-size:13px; font-weight:600; flex:1; color:#e2e8f0;';
+                nameEl.style = 'font-size:13px; font-weight:600; flex:1; color:#e7ecfa;';
                 nameEl.textContent = member.name;
 
                 const statEl = document.createElement('span');
                 statEl.style = 'font-size:12px; font-weight:700; white-space:nowrap;';
                 if (currentLunarMode === 'atk') {
-                    statEl.style.color = '#e2e8f0';
+                    statEl.style.color = '#e7ecfa';
                     statEl.textContent = formatNumber(member.atk);
                 } else {
                     const relic     = member.relicCores      ?? null;
                     const transmute = member.transmuteCores  ?? null;
                     const resonance = member.chipsCount      ?? null;
-                    statEl.style.color = '#b794f6';
-                    statEl.innerHTML = `${relic === null ? '—' : relic.toLocaleString()} <span style="color:#4a5568;">-</span> ${transmute === null ? '—' : transmute.toLocaleString()} <span style="color:#4a5568;">-</span> ${resonance === null ? '—' : resonance.toLocaleString()}`;
+                    statEl.style.color = '#b4a7ff';
+                    statEl.innerHTML = `${relic === null ? '—' : relic.toLocaleString()} <span style="color:#7a85a8;">-</span> ${transmute === null ? '—' : transmute.toLocaleString()} <span style="color:#7a85a8;">-</span> ${resonance === null ? '—' : resonance.toLocaleString()}`;
                 }
 
                 row.appendChild(rankEl);
@@ -2551,11 +2582,11 @@
         }
 
         function getCXRankColor(score) {
-            if (topCXRankScore === 0) return '#68d391';
+            if (topCXRankScore === 0) return '#34d399';
             const ratio = score / topCXRankScore;
             if (ratio >= 0.7) return '#48bb78';
             if (ratio >= 0.4) return '#f59e0b';
-            return '#f56565';
+            return '#fb7185';
         }
 
         // ══════════════════════════════════════════════
@@ -2597,7 +2628,7 @@
             });
         }
 
-        const ICON_BASE = 'https://raw.githubusercontent.com/Reiza1993/StrayToFreedom-Clan-Stats/main/Game%20Icons/';
+        const ICON_BASE = 'Game%20Icons/';
 
         function updateTableHeader() {
             const tr = document.getElementById('tableHeader');
@@ -2620,7 +2651,7 @@
                     <th data-i18n="table.col.rank">#</th>
                     <th data-i18n="table.col.player_name">Player Name</th>
                     <th><img src="${ICON_BASE}CX.png" alt="CX Rank" style="width:20px;height:20px;vertical-align:middle;margin-right:4px;" onerror="this.style.display='none'"><span data-i18n="table.col.cx_rank_score">CX Rank Score</span></th>
-                    ${currentCXSeason ? `<th>${t('table.col.cx_at_milestone')}<span style="display:block;font-size:10px;color:#a0aec0;font-weight:400;">${(currentCXSeason.milestone || 0).toLocaleString()}</span></th>` : ''}
+                    ${currentCXSeason ? `<th>${t('table.col.cx_at_milestone')}<span style="display:block;font-size:10px;color:#9aa4c4;font-weight:400;">${(currentCXSeason.milestone || 0).toLocaleString()}</span></th>` : ''}
                     <th data-i18n="table.col.cx_boss_score">CX Boss Score</th>`;
             }
             applyTranslations();
@@ -2631,12 +2662,12 @@
             tbody.innerHTML = '';
             filteredData.forEach((player, index) => {
                 const row = document.createElement('tr');
-                let nameColor = '#f7fafc';
+                let nameColor = '#f4f6ff';
                 let nameClass = '';
                 if      (player.role === 'Leader')        { nameColor = '#fc8181'; }
                 else if (player.role === 'Vice-Leader')   { nameColor = '#ed8936'; }
                 else if (player.role === 'Eternal Glory') { nameColor = '#d3859b'; nameClass = 'role-eternalglorymember'; }
-                else if (player.role === 'Glory Member')  { nameColor = '#ffd700'; nameClass = 'role-glorymember'; }
+                else if (player.role === 'Glory Member')  { nameColor = '#ffd24a'; nameClass = 'role-glorymember'; }
 
                 let cells = `<td class="rank-cell">${index + 1}</td>
                              <td class="name-cell ${nameClass}" style="color:${nameColor};">${player.name}</td>`;
@@ -2658,7 +2689,7 @@
                     <td class="cores-cell" style="color:#8bc34a;">${player.techResonance === null ? '—' : formatNumber(player.techResonance)}
                         <span style="font-size:10px;display:block;">${player.techResonance === null || player.prevTechResonance === null ? '' : formatGainHTML(player.techResonance - player.prevTechResonance, true)}</span>
                     </td>
-                    <td style="text-align:center;font-weight:600;color:#e2e8f0;">${formatNumber(player.atk)}
+                    <td style="text-align:center;font-weight:600;color:#e7ecfa;">${formatNumber(player.atk)}
                         <span style="font-size:10px;display:block;">${formatGainHTML(atkGain, true)}</span>
                     </td>`;
                 } else if (currentSubTab === 'lme') {
@@ -2668,7 +2699,7 @@
                     </td>`;
                 } else if (currentSubTab === 'cx') {
                     cells += `<td style="text-align:center;font-weight:600;color:${getCXRankColor(player.cxRankScore)};">${player.cxRankScore.toLocaleString()}</td>
-                    ${currentCXSeason ? `<td style="text-align:center;color:#cbd5e0;">${player.cxMilestoneScore == null ? '—' : player.cxMilestoneScore.toLocaleString()}</td>` : ''}
+                    ${currentCXSeason ? `<td style="text-align:center;color:#c3cbe4;">${player.cxMilestoneScore == null ? '—' : player.cxMilestoneScore.toLocaleString()}</td>` : ''}
                     <td style="text-align:center;font-weight:600;color:#a78bfa;">${player.cxBossScore.toLocaleString()}</td>`;
                 }
                 row.innerHTML = cells;
@@ -2840,8 +2871,8 @@
             if (role === 'Leader')        return { color: '#fc8181', cls: '' };
             if (role === 'Vice-Leader')   return { color: '#ed8936', cls: '' };
             if (role === 'Eternal Glory') return { color: '#d3859b', cls: 'role-eternalglorymember' };
-            if (role === 'Glory Member')  return { color: '#ffd700', cls: 'role-glorymember' };
-            return { color: '#f7fafc', cls: '' };
+            if (role === 'Glory Member')  return { color: '#ffd24a', cls: 'role-glorymember' };
+            return { color: '#f4f6ff', cls: '' };
         }
 
         // This game's suffix tiers (used for Ender's Echo scores, which
@@ -2908,7 +2939,7 @@
             closeEETooltip();
 
             if (!currentEESeason) {
-                container.innerHTML = `<p style="color:#718096; font-size:12px; text-align:center; padding: 12px 0;" data-i18n="modal.ee_season.empty">No Ender's Echo season data available yet.</p>`;
+                container.innerHTML = `<p style="color:#7a85a8; font-size:12px; text-align:center; padding: 12px 0;" data-i18n="modal.ee_season.empty">No Ender's Echo season data available yet.</p>`;
                 applyTranslations();
                 return;
             }
@@ -2921,7 +2952,7 @@
 
             container.innerHTML = '';
             if (rows.length === 0) {
-                container.innerHTML = `<p style="color:#718096; font-size:12px; text-align:center; padding: 12px 0;">—</p>`;
+                container.innerHTML = `<p style="color:#7a85a8; font-size:12px; text-align:center; padding: 12px 0;">—</p>`;
                 return;
             }
 
@@ -3090,7 +3121,7 @@
             body.innerHTML = '';
 
             if (!candidates.length) {
-                body.innerHTML = `<p style="color:#718096; text-align:center;">${t('modal.glory.empty')}</p>`;
+                body.innerHTML = `<p style="color:#7a85a8; text-align:center;">${t('modal.glory.empty')}</p>`;
                 return;
             }
 
@@ -3113,10 +3144,10 @@
                 if (!isTop && inTopTier) {
                     inTopTier = false;
                     const divider = document.createElement('div');
-                    divider.style = 'border-top: 1px solid #4a5568; margin: 8px 0 4px 0;';
+                    divider.style = 'border-top: 1px solid #222c48; margin: 8px 0 4px 0;';
                     body.appendChild(divider);
                     const lowerLabel = document.createElement('div');
-                    lowerLabel.style = 'font-size:10px; text-transform:uppercase; letter-spacing:1.5px; color:#718096; font-weight:700; margin-bottom:2px; padding: 0 4px;';
+                    lowerLabel.style = 'font-size:10px; text-transform:uppercase; letter-spacing:1.5px; color:#7a85a8; font-weight:700; margin-bottom:2px; padding: 0 4px;';
                     lowerLabel.textContent = t('modal.glory.other');
                     body.appendChild(lowerLabel);
                 }
@@ -3125,12 +3156,12 @@
                 row.style = `
                     display: flex; align-items: center; gap: 10px;
                     padding: 9px 12px; border-radius: 8px;
-                    background: ${isTop ? 'rgba(183,121,31,0.15)' : '#374151'};
-                    border: 1px solid ${isTop ? '#b7791f' : '#4a5568'};
+                    background: ${isTop ? 'rgba(183,121,31,0.15)' : '#141b30'};
+                    border: 1px solid ${isTop ? '#b7791f' : '#222c48'};
                 `;
 
                 const rankEl = document.createElement('span');
-                rankEl.style = 'font-size:12px; font-weight:700; color:#a0aec0; width:22px; text-align:center; flex-shrink:0;';
+                rankEl.style = 'font-size:12px; font-weight:700; color:#9aa4c4; width:22px; text-align:center; flex-shrink:0;';
                 rankEl.textContent = idx + 1;
 
                 const badge = document.createElement('span');
@@ -3138,16 +3169,16 @@
                 badge.textContent = isTop ? '★' : '';
 
                 const nameEl = document.createElement('span');
-                nameEl.style = `font-size:13px; font-weight:600; flex:1; color:${isTop ? '#ffd700' : '#e2e8f0'};`;
+                nameEl.style = `font-size:13px; font-weight:600; flex:1; color:${isTop ? '#ffd24a' : '#e7ecfa'};`;
                 nameEl.textContent = p.name;
 
                 const cxEl = document.createElement('span');
-                cxEl.style = 'font-size:12px; font-weight:700; color:#68d391; white-space:nowrap;';
-                cxEl.innerHTML = `<span style="color:#4a5568;font-size:10px;">CX</span> ${p.cxRankScore.toLocaleString()}`;
+                cxEl.style = 'font-size:12px; font-weight:700; color:#34d399; white-space:nowrap;';
+                cxEl.innerHTML = `<span style="color:#7a85a8;font-size:10px;">CX</span> ${p.cxRankScore.toLocaleString()}`;
 
                 const lmeEl = document.createElement('span');
                 lmeEl.style = 'font-size:12px; font-weight:700; color:#f59e0b; white-space:nowrap;';
-                lmeEl.innerHTML = `<span style="color:#4a5568;font-size:10px;">LME</span> ${p.lmeScore.toLocaleString()}`;
+                lmeEl.innerHTML = `<span style="color:#7a85a8;font-size:10px;">LME</span> ${p.lmeScore.toLocaleString()}`;
 
                 row.appendChild(rankEl);
                 row.appendChild(badge);

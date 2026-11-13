@@ -1,4 +1,4 @@
-const CACHE_NAME = 'freedom-protocol-v22';
+const CACHE_NAME = 'freedom-protocol-v23';
 
 const STATIC_ASSETS = [
     './',
@@ -18,6 +18,8 @@ const STATIC_ASSETS = [
     './Game Icons/Ranking.png',
     './Game Icons/CX.png',
     './Game Icons/Relic Cores.png',
+    './Game Icons/TransmutaCore.png',
+    './Game Icons/Resonance Chips.png',
     './Game Icons/Medals.png',
     './Game Icons/Defense_Attack Points.png',
 ];
