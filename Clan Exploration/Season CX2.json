@@ -7,8 +7,8 @@
   "previousSeasonFinalTotal": 147500,
   "milestoneSnapshot": null,
   "cxRank": {
-    "updatedAt": "2026-11-13T13:38:18.143616+11:00",
-    "total": 33500,
+    "updatedAt": "2026-11-13T14:38:23.267182+11:00",
+    "total": 35100,
     "members": [
       {
         "uid": 66607264,
@@ -17,16 +17,16 @@
         "score": 2400
       },
       {
-        "uid": 103516442,
-        "name": "DAYO-P",
-        "rank": 2,
-        "score": 2100
-      },
-      {
         "uid": 29321884,
         "name": "RABBIT5",
+        "rank": 2,
+        "score": 2400
+      },
+      {
+        "uid": 103516442,
+        "name": "DAYO-P",
         "rank": 3,
-        "score": 2000
+        "score": 2100
       },
       {
         "uid": 108860725,
@@ -35,26 +35,26 @@
         "score": 2000
       },
       {
+        "uid": 36484758,
+        "name": "Belthazar",
+        "rank": 5,
+        "score": 2000
+      },
+      {
         "uid": 83339881,
         "name": "Fl3xas",
-        "rank": 5,
+        "rank": 6,
         "score": 1900
       },
       {
         "uid": 10754439,
         "name": "HakiLuffy",
-        "rank": 6,
+        "rank": 7,
         "score": 1900
       },
       {
         "uid": 113690788,
         "name": "Apathy_",
-        "rank": 7,
-        "score": 1600
-      },
-      {
-        "uid": 36484758,
-        "name": "Belthazar",
         "rank": 8,
         "score": 1600
       },
@@ -77,26 +77,26 @@
         "score": 1200
       },
       {
+        "uid": 64676255,
+        "name": "盾Heathcliff剣",
+        "rank": 12,
+        "score": 1200
+      },
+      {
         "uid": 89511116,
         "name": "EMBALOCO",
-        "rank": 12,
+        "rank": 13,
         "score": 1100
       },
       {
         "uid": 32556489,
         "name": "Bensayyten",
-        "rank": 13,
+        "rank": 14,
         "score": 900
       },
       {
         "uid": 27113479,
         "name": "silverxz",
-        "rank": 14,
-        "score": 800
-      },
-      {
-        "uid": 64676255,
-        "name": "盾Heathcliff剣",
         "rank": 15,
         "score": 800
       },
@@ -197,50 +197,50 @@
         "score": 400
       },
       {
+        "uid": 29904762,
+        "name": "Cheeselife",
+        "rank": 32,
+        "score": 400
+      },
+      {
         "uid": 71028860,
         "name": "Rzzza",
-        "rank": 32,
+        "rank": 33,
         "score": 0
       },
       {
         "uid": 115742768,
         "name": "SterbyTools",
-        "rank": 33,
+        "rank": 34,
         "score": 0
       },
       {
         "uid": 35869301,
         "name": "Toddlerr",
-        "rank": 34,
+        "rank": 35,
         "score": 0
       },
       {
         "uid": 75174428,
         "name": "PastalaVista",
-        "rank": 35,
+        "rank": 36,
         "score": 0
       },
       {
         "uid": 72894129,
         "name": "NeonCBV",
-        "rank": 36,
+        "rank": 37,
         "score": 0
       },
       {
         "uid": 80972473,
         "name": "Cunner88",
-        "rank": 37,
+        "rank": 38,
         "score": 0
       },
       {
         "uid": 106162623,
         "name": "gubrax",
-        "rank": 38,
-        "score": 0
-      },
-      {
-        "uid": 29904762,
-        "name": "Cheeselife",
         "rank": 39,
         "score": 0
       },
