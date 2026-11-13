@@ -7,8 +7,8 @@
   "previousSeasonFinalTotal": 147500,
   "milestoneSnapshot": null,
   "cxRank": {
-    "updatedAt": "2026-11-13T18:38:46.644206+11:00",
-    "total": 39800,
+    "updatedAt": "2026-11-13T19:38:51.702964+11:00",
+    "total": 41900,
     "members": [
       {
         "uid": 29321884,
@@ -17,16 +17,16 @@
         "score": 2800
       },
       {
-        "uid": 83339881,
-        "name": "Fl3xas",
-        "rank": 2,
-        "score": 2500
-      },
-      {
         "uid": 66607264,
         "name": null,
+        "rank": 2,
+        "score": 2800
+      },
+      {
+        "uid": 83339881,
+        "name": "Fl3xas",
         "rank": 3,
-        "score": 2400
+        "score": 2500
       },
       {
         "uid": 108860725,
@@ -50,7 +50,7 @@
         "uid": 10754439,
         "name": "HakiLuffy",
         "rank": 7,
-        "score": 2200
+        "score": 2300
       },
       {
         "uid": 113690788,
@@ -71,26 +71,26 @@
         "score": 1600
       },
       {
+        "uid": 100876140,
+        "name": "Scoundrel536",
+        "rank": 11,
+        "score": 1600
+      },
+      {
         "uid": 79510960,
         "name": "theLP",
-        "rank": 11,
+        "rank": 12,
         "score": 1200
       },
       {
         "uid": 64676255,
         "name": "盾Heathcliff剣",
-        "rank": 12,
+        "rank": 13,
         "score": 1200
       },
       {
         "uid": 26277677,
         "name": "BobBobberson",
-        "rank": 13,
-        "score": 1200
-      },
-      {
-        "uid": 100876140,
-        "name": "Scoundrel536",
         "rank": 14,
         "score": 1200
       },
@@ -101,92 +101,92 @@
         "score": 1200
       },
       {
+        "uid": 27113479,
+        "name": "silverxz",
+        "rank": 16,
+        "score": 1200
+      },
+      {
+        "uid": 59566866,
+        "name": "FlyingDutchy",
+        "rank": 17,
+        "score": 1200
+      },
+      {
         "uid": 89511116,
         "name": "EMBALOCO",
-        "rank": 16,
+        "rank": 18,
         "score": 1100
       },
       {
         "uid": 32556489,
         "name": "Bensayyten",
-        "rank": 17,
+        "rank": 19,
         "score": 900
-      },
-      {
-        "uid": 27113479,
-        "name": "silverxz",
-        "rank": 18,
-        "score": 800
       },
       {
         "uid": 70603922,
         "name": "BlackFlamE",
-        "rank": 19,
+        "rank": 20,
         "score": 800
       },
       {
         "uid": 83861839,
         "name": "groggen",
-        "rank": 20,
+        "rank": 21,
         "score": 800
       },
       {
         "uid": 30658936,
         "name": "Gritchen",
-        "rank": 21,
+        "rank": 22,
         "score": 800
       },
       {
         "uid": 18115624,
         "name": "Nubis",
-        "rank": 22,
+        "rank": 23,
         "score": 800
       },
       {
         "uid": 112772047,
         "name": "VictorMolusco",
-        "rank": 23,
+        "rank": 24,
         "score": 800
       },
       {
-        "uid": 59566866,
-        "name": "FlyingDutchy",
-        "rank": 24,
+        "uid": 51071110,
+        "name": "samwise08",
+        "rank": 25,
         "score": 800
       },
       {
         "uid": 87954282,
         "name": "SngphO",
-        "rank": 25,
+        "rank": 26,
         "score": 400
       },
       {
         "uid": 18297536,
         "name": "ergiangi",
-        "rank": 26,
+        "rank": 27,
         "score": 400
       },
       {
         "uid": 108546985,
         "name": "pumpenjoe",
-        "rank": 27,
+        "rank": 28,
         "score": 400
       },
       {
         "uid": 61865023,
         "name": "RexPanda",
-        "rank": 28,
+        "rank": 29,
         "score": 400
       },
       {
         "uid": 87244358,
         "name": "神Sterben死",
-        "rank": 29,
-        "score": 400
-      },
-      {
-        "uid": 51071110,
-        "name": "samwise08",
         "rank": 30,
         "score": 400
       },
