@@ -7,8 +7,8 @@
   "previousSeasonFinalTotal": 147500,
   "milestoneSnapshot": null,
   "cxRank": {
-    "updatedAt": "2026-11-13T10:38:00.564641+11:00",
-    "total": 31000,
+    "updatedAt": "2026-11-13T11:38:06.340324+11:00",
+    "total": 31200,
     "members": [
       {
         "uid": 66607264,
@@ -35,16 +35,16 @@
         "score": 1900
       },
       {
-        "uid": 103516442,
-        "name": "DAYO-P",
-        "rank": 5,
-        "score": 1800
-      },
-      {
         "uid": 10754439,
         "name": "HakiLuffy",
+        "rank": 5,
+        "score": 1900
+      },
+      {
+        "uid": 103516442,
+        "name": "DAYO-P",
         "rank": 6,
-        "score": 1700
+        "score": 1800
       },
       {
         "uid": 113690788,
