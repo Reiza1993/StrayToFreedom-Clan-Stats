@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-14T13:41:29.729417+11:00",
-    "total": 62300,
+    "updatedAt": "2026-11-14T14:15:22.916479+11:00",
+    "total": 62700,
     "members": [
       {
         "uid": 29321884,
@@ -378,26 +378,26 @@
         "score": 1600
       },
       {
+        "uid": 112772047,
+        "name": "VictorMolusco",
+        "rank": 21,
+        "score": 1600
+      },
+      {
         "uid": 89511116,
         "name": "EMBALOCO",
-        "rank": 21,
+        "rank": 22,
         "score": 1500
       },
       {
         "uid": 70603922,
         "name": "BlackFlamE",
-        "rank": 22,
+        "rank": 23,
         "score": 1200
       },
       {
         "uid": 30658936,
         "name": "Gritchen",
-        "rank": 23,
-        "score": 1200
-      },
-      {
-        "uid": 112772047,
-        "name": "VictorMolusco",
         "rank": 24,
         "score": 1200
       },
@@ -500,8 +500,8 @@
     ]
   },
   "cxBoss": {
-    "updatedAt": "2026-11-14T13:41:29.729417+11:00",
-    "total": 18117,
+    "updatedAt": "2026-11-14T14:15:22.916479+11:00",
+    "total": 18906,
     "members": [
       {
         "uid": 83339881,
@@ -558,98 +558,98 @@
         "score": 789
       },
       {
+        "uid": 108860725,
+        "name": "RetinaDNA",
+        "rank": 10,
+        "score": 789
+      },
+      {
         "uid": 113690788,
         "name": "Apathy_",
-        "rank": 10,
+        "rank": 11,
         "score": 787
       },
       {
         "uid": 60687252,
         "name": "һan",
-        "rank": 11,
+        "rank": 12,
         "score": 783
       },
       {
         "uid": 51071110,
         "name": "samwise08",
-        "rank": 12,
+        "rank": 13,
         "score": 781
       },
       {
         "uid": 88203044,
         "name": "p88203044",
-        "rank": 13,
+        "rank": 14,
         "score": 780
       },
       {
         "uid": 83861839,
         "name": "groggen",
-        "rank": 14,
+        "rank": 15,
         "score": 780
       },
       {
         "uid": 64676255,
         "name": "盾Heathcliff剣",
-        "rank": 15,
+        "rank": 16,
         "score": 777
       },
       {
         "uid": 87244358,
         "name": "神Sterben死",
-        "rank": 16,
+        "rank": 17,
         "score": 772
       },
       {
         "uid": 26277677,
         "name": "BobBobberson",
-        "rank": 17,
+        "rank": 18,
         "score": 771
       },
       {
         "uid": 10754439,
         "name": "HakiLuffy",
-        "rank": 18,
+        "rank": 19,
         "score": 766
       },
       {
         "uid": 106162623,
         "name": "gubrax",
-        "rank": 19,
+        "rank": 20,
         "score": 753
       },
       {
         "uid": 27113479,
         "name": "silverxz",
-        "rank": 20,
+        "rank": 21,
         "score": 751
       },
       {
         "uid": 80018314,
         "name": null,
-        "rank": 21,
+        "rank": 22,
         "score": 742
       },
       {
         "uid": 36484758,
         "name": "Belthazar",
-        "rank": 22,
+        "rank": 23,
         "score": 703
       },
       {
         "uid": 66607264,
         "name": null,
-        "rank": 23,
+        "rank": 24,
         "score": 700
       },
       {
         "uid": 71028860,
         "name": "Rzzza",
-        "rank": 24,
-        "score": 0
-      },
-      {
-        "uid": 108860725,
-        "name": "RetinaDNA",
         "rank": 25,
         "score": 0
       },
