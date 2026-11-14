@@ -254,24 +254,24 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-14T14:15:22.916479+11:00",
-    "total": 62700,
+    "updatedAt": "2026-11-14T15:15:35.930927+11:00",
+    "total": 63500,
     "members": [
       {
         "uid": 29321884,
         "name": "RABBIT5",
         "rank": 1,
-        "score": 4300
-      },
-      {
-        "uid": 66607264,
-        "name": null,
-        "rank": 2,
-        "score": 3600
+        "score": 4700
       },
       {
         "uid": 36484758,
         "name": "Belthazar",
+        "rank": 2,
+        "score": 4000
+      },
+      {
+        "uid": 66607264,
+        "name": null,
         "rank": 3,
         "score": 3600
       },
@@ -500,8 +500,8 @@
     ]
   },
   "cxBoss": {
-    "updatedAt": "2026-11-14T14:15:22.916479+11:00",
-    "total": 18906,
+    "updatedAt": "2026-11-14T15:15:35.930927+11:00",
+    "total": 19701,
     "members": [
       {
         "uid": 83339881,
@@ -546,134 +546,134 @@
         "score": 802
       },
       {
+        "uid": 87954282,
+        "name": "SngphO",
+        "rank": 8,
+        "score": 795
+      },
+      {
         "uid": 75174428,
         "name": "PastalaVista",
-        "rank": 8,
+        "rank": 9,
         "score": 792
       },
       {
         "uid": 32556489,
         "name": "Bensayyten",
-        "rank": 9,
+        "rank": 10,
         "score": 789
       },
       {
         "uid": 108860725,
         "name": "RetinaDNA",
-        "rank": 10,
+        "rank": 11,
         "score": 789
       },
       {
         "uid": 113690788,
         "name": "Apathy_",
-        "rank": 11,
+        "rank": 12,
         "score": 787
       },
       {
         "uid": 60687252,
         "name": "һan",
-        "rank": 12,
+        "rank": 13,
         "score": 783
       },
       {
         "uid": 51071110,
         "name": "samwise08",
-        "rank": 13,
+        "rank": 14,
         "score": 781
       },
       {
         "uid": 88203044,
         "name": "p88203044",
-        "rank": 14,
+        "rank": 15,
         "score": 780
       },
       {
         "uid": 83861839,
         "name": "groggen",
-        "rank": 15,
+        "rank": 16,
         "score": 780
       },
       {
         "uid": 64676255,
         "name": "盾Heathcliff剣",
-        "rank": 16,
+        "rank": 17,
         "score": 777
       },
       {
         "uid": 87244358,
         "name": "神Sterben死",
-        "rank": 17,
+        "rank": 18,
         "score": 772
       },
       {
         "uid": 26277677,
         "name": "BobBobberson",
-        "rank": 18,
+        "rank": 19,
         "score": 771
       },
       {
         "uid": 10754439,
         "name": "HakiLuffy",
-        "rank": 19,
+        "rank": 20,
         "score": 766
       },
       {
         "uid": 106162623,
         "name": "gubrax",
-        "rank": 20,
+        "rank": 21,
         "score": 753
       },
       {
         "uid": 27113479,
         "name": "silverxz",
-        "rank": 21,
+        "rank": 22,
         "score": 751
       },
       {
         "uid": 80018314,
         "name": null,
-        "rank": 22,
+        "rank": 23,
         "score": 742
       },
       {
         "uid": 36484758,
         "name": "Belthazar",
-        "rank": 23,
+        "rank": 24,
         "score": 703
       },
       {
         "uid": 66607264,
         "name": null,
-        "rank": 24,
+        "rank": 25,
         "score": 700
       },
       {
         "uid": 71028860,
         "name": "Rzzza",
-        "rank": 25,
+        "rank": 26,
         "score": 0
       },
       {
         "uid": 41742773,
         "name": "MadameMischief",
-        "rank": 26,
+        "rank": 27,
         "score": 0
       },
       {
         "uid": 79510960,
         "name": "theLP",
-        "rank": 27,
+        "rank": 28,
         "score": 0
       },
       {
         "uid": 61865023,
         "name": "RexPanda",
-        "rank": 28,
-        "score": 0
-      },
-      {
-        "uid": 87954282,
-        "name": "SngphO",
         "rank": 29,
         "score": 0
       },
