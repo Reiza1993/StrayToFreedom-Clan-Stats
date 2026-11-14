@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-14T19:16:03.781869+11:00",
-    "total": 65700,
+    "updatedAt": "2026-11-14T20:16:12.064439+11:00",
+    "total": 67100,
     "members": [
       {
         "uid": 29321884,
@@ -276,14 +276,14 @@
         "score": 4000
       },
       {
-        "uid": 10754439,
-        "name": "HakiLuffy",
-        "rank": 4,
-        "score": 3500
-      },
-      {
         "uid": 103516442,
         "name": "DAYO-P",
+        "rank": 4,
+        "score": 3700
+      },
+      {
+        "uid": 10754439,
+        "name": "HakiLuffy",
         "rank": 5,
         "score": 3500
       },
@@ -294,16 +294,16 @@
         "score": 3200
       },
       {
-        "uid": 83339881,
-        "name": "Fl3xas",
-        "rank": 7,
-        "score": 2900
-      },
-      {
         "uid": 41742773,
         "name": "MadameMischief",
+        "rank": 7,
+        "score": 3100
+      },
+      {
+        "uid": 83339881,
+        "name": "Fl3xas",
         "rank": 8,
-        "score": 2700
+        "score": 2900
       },
       {
         "uid": 113690788,
@@ -324,28 +324,28 @@
         "score": 2400
       },
       {
+        "uid": 59566866,
+        "name": "FlyingDutchy",
+        "rank": 12,
+        "score": 2400
+      },
+      {
+        "uid": 32556489,
+        "name": "Bensayyten",
+        "rank": 13,
+        "score": 2100
+      },
+      {
         "uid": 100876140,
         "name": "Scoundrel536",
-        "rank": 12,
+        "rank": 14,
         "score": 2000
       },
       {
         "uid": 26277677,
         "name": "BobBobberson",
-        "rank": 13,
-        "score": 2000
-      },
-      {
-        "uid": 59566866,
-        "name": "FlyingDutchy",
-        "rank": 14,
-        "score": 2000
-      },
-      {
-        "uid": 32556489,
-        "name": "Bensayyten",
         "rank": 15,
-        "score": 1700
+        "score": 2000
       },
       {
         "uid": 27113479,
