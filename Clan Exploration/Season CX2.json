@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-14T22:16:28.781463+11:00",
-    "total": 68100,
+    "updatedAt": "2026-11-14T23:16:35.745747+11:00",
+    "total": 69000,
     "members": [
       {
         "uid": 29321884,
@@ -279,13 +279,13 @@
         "uid": 103516442,
         "name": "DAYO-P",
         "rank": 4,
-        "score": 3900
+        "score": 4000
       },
       {
         "uid": 10754439,
         "name": "HakiLuffy",
         "rank": 5,
-        "score": 3500
+        "score": 3900
       },
       {
         "uid": 108860725,
@@ -384,38 +384,38 @@
         "score": 1600
       },
       {
+        "uid": 51071110,
+        "name": "samwise08",
+        "rank": 22,
+        "score": 1600
+      },
+      {
         "uid": 89511116,
         "name": "EMBALOCO",
-        "rank": 22,
+        "rank": 23,
         "score": 1500
       },
       {
         "uid": 18297536,
         "name": "ergiangi",
-        "rank": 23,
+        "rank": 24,
         "score": 1400
       },
       {
         "uid": 70603922,
         "name": "BlackFlamE",
-        "rank": 24,
+        "rank": 25,
         "score": 1200
       },
       {
         "uid": 30658936,
         "name": "Gritchen",
-        "rank": 25,
+        "rank": 26,
         "score": 1200
       },
       {
         "uid": 18115624,
         "name": "Nubis",
-        "rank": 26,
-        "score": 1200
-      },
-      {
-        "uid": 51071110,
-        "name": "samwise08",
         "rank": 27,
         "score": 1200
       },
