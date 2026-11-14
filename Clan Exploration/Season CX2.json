@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-14T10:41:08.349175+11:00",
-    "total": 60000,
+    "updatedAt": "2026-11-14T11:41:16.743147+11:00",
+    "total": 60700,
     "members": [
       {
         "uid": 29321884,
@@ -270,14 +270,14 @@
         "score": 3600
       },
       {
-        "uid": 108860725,
-        "name": "RetinaDNA",
-        "rank": 3,
-        "score": 3200
-      },
-      {
         "uid": 36484758,
         "name": "Belthazar",
+        "rank": 3,
+        "score": 3600
+      },
+      {
+        "uid": 108860725,
+        "name": "RetinaDNA",
         "rank": 4,
         "score": 3200
       },
@@ -300,14 +300,14 @@
         "score": 2900
       },
       {
-        "uid": 113690788,
-        "name": "Apathy_",
-        "rank": 8,
-        "score": 2400
-      },
-      {
         "uid": 41742773,
         "name": "MadameMischief",
+        "rank": 8,
+        "score": 2700
+      },
+      {
+        "uid": 113690788,
+        "name": "Apathy_",
         "rank": 9,
         "score": 2400
       },
