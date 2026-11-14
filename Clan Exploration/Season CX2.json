@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-15T00:16:44.454086+11:00",
-    "total": 70600,
+    "updatedAt": "2026-11-15T01:16:51.762795+11:00",
+    "total": 71700,
     "members": [
       {
         "uid": 29321884,
@@ -270,22 +270,22 @@
         "score": 4800
       },
       {
-        "uid": 66607264,
-        "name": null,
-        "rank": 3,
-        "score": 4000
-      },
-      {
         "uid": 103516442,
         "name": "DAYO-P",
-        "rank": 4,
-        "score": 4000
+        "rank": 3,
+        "score": 4100
       },
       {
         "uid": 10754439,
         "name": "HakiLuffy",
+        "rank": 4,
+        "score": 4100
+      },
+      {
+        "uid": 66607264,
+        "name": null,
         "rank": 5,
-        "score": 3900
+        "score": 4000
       },
       {
         "uid": 41742773,
@@ -348,64 +348,64 @@
         "score": 2000
       },
       {
+        "uid": 89511116,
+        "name": "EMBALOCO",
+        "rank": 16,
+        "score": 1900
+      },
+      {
         "uid": 27113479,
         "name": "silverxz",
-        "rank": 16,
+        "rank": 17,
         "score": 1600
       },
       {
         "uid": 80018314,
         "name": null,
-        "rank": 17,
+        "rank": 18,
         "score": 1600
       },
       {
         "uid": 79510960,
         "name": "theLP",
-        "rank": 18,
+        "rank": 19,
         "score": 1600
       },
       {
         "uid": 83861839,
         "name": "groggen",
-        "rank": 19,
+        "rank": 20,
         "score": 1600
       },
       {
         "uid": 87244358,
         "name": "神Sterben死",
-        "rank": 20,
+        "rank": 21,
         "score": 1600
       },
       {
         "uid": 112772047,
         "name": "VictorMolusco",
-        "rank": 21,
+        "rank": 22,
         "score": 1600
       },
       {
         "uid": 51071110,
         "name": "samwise08",
-        "rank": 22,
-        "score": 1600
-      },
-      {
-        "uid": 89511116,
-        "name": "EMBALOCO",
         "rank": 23,
-        "score": 1500
-      },
-      {
-        "uid": 18297536,
-        "name": "ergiangi",
-        "rank": 24,
-        "score": 1400
+        "score": 1600
       },
       {
         "uid": 70603922,
         "name": "BlackFlamE",
+        "rank": 24,
+        "score": 1600
+      },
+      {
+        "uid": 18297536,
+        "name": "ergiangi",
         "rank": 25,
-        "score": 1200
+        "score": 1400
       },
       {
         "uid": 30658936,
@@ -500,8 +500,8 @@
     ]
   },
   "cxBoss": {
-    "updatedAt": "2026-11-14T21:16:19.720084+11:00",
-    "total": 22166,
+    "updatedAt": "2026-11-15T01:16:51.762795+11:00",
+    "total": 22930,
     "members": [
       {
         "uid": 83339881,
@@ -642,74 +642,74 @@
         "score": 766
       },
       {
+        "uid": 70603922,
+        "name": "BlackFlamE",
+        "rank": 24,
+        "score": 764
+      },
+      {
         "uid": 106162623,
         "name": "gubrax",
-        "rank": 24,
+        "rank": 25,
         "score": 753
       },
       {
         "uid": 27113479,
         "name": "silverxz",
-        "rank": 25,
+        "rank": 26,
         "score": 751
       },
       {
         "uid": 80018314,
         "name": null,
-        "rank": 26,
+        "rank": 27,
         "score": 742
       },
       {
         "uid": 36484758,
         "name": "Belthazar",
-        "rank": 27,
+        "rank": 28,
         "score": 703
       },
       {
         "uid": 66607264,
         "name": null,
-        "rank": 28,
+        "rank": 29,
         "score": 700
       },
       {
         "uid": 71028860,
         "name": "Rzzza",
-        "rank": 29,
+        "rank": 30,
         "score": 0
       },
       {
         "uid": 41742773,
         "name": "MadameMischief",
-        "rank": 30,
+        "rank": 31,
         "score": 0
       },
       {
         "uid": 79510960,
         "name": "theLP",
-        "rank": 31,
+        "rank": 32,
         "score": 0
       },
       {
         "uid": 115742768,
         "name": "SterbyTools",
-        "rank": 32,
+        "rank": 33,
         "score": 0
       },
       {
         "uid": 18297536,
         "name": "ergiangi",
-        "rank": 33,
+        "rank": 34,
         "score": 0
       },
       {
         "uid": 89511116,
         "name": "EMBALOCO",
-        "rank": 34,
-        "score": 0
-      },
-      {
-        "uid": 70603922,
-        "name": "BlackFlamE",
         "rank": 35,
         "score": 0
       },
