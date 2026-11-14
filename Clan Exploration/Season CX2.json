@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-15T05:17:24.706393+11:00",
-    "total": 76100,
+    "updatedAt": "2026-11-15T06:17:33.461507+11:00",
+    "total": 76700,
     "members": [
       {
         "uid": 29321884,
@@ -270,16 +270,16 @@
         "score": 4800
       },
       {
-        "uid": 103516442,
-        "name": "DAYO-P",
-        "rank": 3,
-        "score": 4500
-      },
-      {
         "uid": 66607264,
         "name": null,
+        "rank": 3,
+        "score": 4600
+      },
+      {
+        "uid": 103516442,
+        "name": "DAYO-P",
         "rank": 4,
-        "score": 4400
+        "score": 4500
       },
       {
         "uid": 10754439,
@@ -366,20 +366,20 @@
         "score": 2000
       },
       {
+        "uid": 79510960,
+        "name": "theLP",
+        "rank": 19,
+        "score": 2000
+      },
+      {
         "uid": 70603922,
         "name": "BlackFlamE",
-        "rank": 19,
+        "rank": 20,
         "score": 1700
       },
       {
         "uid": 27113479,
         "name": "silverxz",
-        "rank": 20,
-        "score": 1600
-      },
-      {
-        "uid": 79510960,
-        "name": "theLP",
         "rank": 21,
         "score": 1600
       },
