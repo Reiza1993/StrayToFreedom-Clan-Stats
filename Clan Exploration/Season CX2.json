@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-16T00:18:58.587959+11:00",
-    "total": 89500,
+    "updatedAt": "2026-11-16T01:19:06.501679+11:00",
+    "total": 90400,
     "members": [
       {
         "uid": 29321884,
@@ -276,16 +276,16 @@
         "score": 5700
       },
       {
-        "uid": 66607264,
-        "name": null,
-        "rank": 4,
-        "score": 5200
-      },
-      {
         "uid": 10754439,
         "name": "HakiLuffy",
+        "rank": 4,
+        "score": 5500
+      },
+      {
+        "uid": 66607264,
+        "name": null,
         "rank": 5,
-        "score": 5100
+        "score": 5200
       },
       {
         "uid": 41742773,
@@ -300,20 +300,20 @@
         "score": 3600
       },
       {
+        "uid": 32556489,
+        "name": "Bensayyten",
+        "rank": 8,
+        "score": 3600
+      },
+      {
         "uid": 64676255,
         "name": "盾Heathcliff剣",
-        "rank": 8,
+        "rank": 9,
         "score": 3300
       },
       {
         "uid": 108860725,
         "name": "RetinaDNA",
-        "rank": 9,
-        "score": 3200
-      },
-      {
-        "uid": 32556489,
-        "name": "Bensayyten",
         "rank": 10,
         "score": 3200
       },
@@ -351,7 +351,7 @@
         "uid": 89511116,
         "name": "EMBALOCO",
         "rank": 16,
-        "score": 2200
+        "score": 2300
       },
       {
         "uid": 100876140,
