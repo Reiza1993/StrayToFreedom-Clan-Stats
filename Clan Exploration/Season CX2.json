@@ -254,20 +254,20 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-15T11:38:54.695576+11:00",
-    "total": 81300,
+    "updatedAt": "2026-11-15T12:39:06.620325+11:00",
+    "total": 82900,
     "members": [
       {
         "uid": 29321884,
         "name": "RABBIT5",
         "rank": 1,
-        "score": 5900
+        "score": 6300
       },
       {
         "uid": 36484758,
         "name": "Belthazar",
         "rank": 2,
-        "score": 5200
+        "score": 5600
       },
       {
         "uid": 103516442,
@@ -342,26 +342,26 @@
         "score": 2400
       },
       {
+        "uid": 51071110,
+        "name": "samwise08",
+        "rank": 15,
+        "score": 2400
+      },
+      {
         "uid": 89511116,
         "name": "EMBALOCO",
-        "rank": 15,
+        "rank": 16,
         "score": 2200
       },
       {
         "uid": 100876140,
         "name": "Scoundrel536",
-        "rank": 16,
+        "rank": 17,
         "score": 2000
       },
       {
         "uid": 80018314,
         "name": null,
-        "rank": 17,
-        "score": 2000
-      },
-      {
-        "uid": 51071110,
-        "name": "samwise08",
         "rank": 18,
         "score": 2000
       },
@@ -378,20 +378,20 @@
         "score": 2000
       },
       {
+        "uid": 83861839,
+        "name": "groggen",
+        "rank": 21,
+        "score": 2000
+      },
+      {
         "uid": 70603922,
         "name": "BlackFlamE",
-        "rank": 21,
+        "rank": 22,
         "score": 1700
       },
       {
         "uid": 27113479,
         "name": "silverxz",
-        "rank": 22,
-        "score": 1600
-      },
-      {
-        "uid": 83861839,
-        "name": "groggen",
         "rank": 23,
         "score": 1600
       },
