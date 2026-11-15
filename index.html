@@ -269,6 +269,27 @@
             width: 40px;
         }
         .name-cell { font-weight: 600; max-width: 140px; word-break: break-word; text-align: left; }
+
+        /* Player table: scrolls sideways with # and Player Name pinned. */
+        .player-wrap #playerTable { width: max-content; min-width: 100%; }
+        .player-wrap #playerTable th { position: static; white-space: nowrap; }
+        .player-wrap #playerTable td { white-space: nowrap; padding-left: 6px; padding-right: 6px; }
+        .player-wrap #playerTable th:nth-child(1), .player-wrap #playerTable td:nth-child(1) {
+            position: sticky; left: 0; z-index: 2;
+            width: 26px; min-width: 26px; max-width: 26px; padding-left: 2px; padding-right: 2px;
+            background: var(--surface);
+        }
+        .player-wrap #playerTable th:nth-child(2), .player-wrap #playerTable td:nth-child(2) {
+            position: sticky; left: 30px; z-index: 2;
+            width: 92px; min-width: 92px; max-width: 92px;
+            white-space: normal; word-break: break-word; overflow-wrap: anywhere;
+            font-size: 12px; line-height: 1.25; padding-left: 4px; padding-right: 6px;
+            background: var(--surface);
+            box-shadow: 6px 0 8px -6px rgba(0, 0, 0, .7);
+        }
+        .player-wrap #playerTable th:nth-child(1), .player-wrap #playerTable th:nth-child(2) { background: var(--surface-3); z-index: 3; }
+        .player-wrap #playerTable tr:nth-child(even) td:nth-child(1),
+        .player-wrap #playerTable tr:nth-child(even) td:nth-child(2) { background: #11182b; }
         .cores-cell { font-weight: 600; color: #b4a7ff; text-align: center; }
 
         .role-glorymember { animation: glow 2s ease-in-out infinite alternate; }
@@ -808,10 +829,15 @@
                         <div class="calc-stat-value" id="stats-total-resonance-chips">—</div>
                         <div class="calc-stat-gain" id="stats-total-resonance-chips-gain">—</div>
                     </div>
-                    <div class="calc-stat-card tone-lime span-6">
-                        <div class="calc-stat-label"><span data-i18n="stat.total_label">Total</span> <span style="color:#8bc34a;">⚡</span> <span data-i18n="stat.tech_resonance">Resonance</span> <span class="top30">(Top 30)</span></div>
+                    <div class="calc-stat-card tone-lime span-3">
+                        <div class="calc-stat-label"><span data-i18n="stat.total_label">Total</span> <span style="color:#8bc34a;">⚡</span> <span class="top30">(Top 30)</span></div>
                         <div class="calc-stat-value" id="stats-total-tech-resonance">—</div>
                         <div class="calc-stat-gain" id="stats-total-tech-resonance-gain">—</div>
+                    </div>
+                    <div class="calc-stat-card tone-teal span-3">
+                        <div class="calc-stat-label"><span data-i18n="stat.total_label">Total</span> <img src="Game%20Icons/Awakening%20Core.png" alt="Awakening Cores" onerror="this.style.display='none';"> <span class="top30">(Top 30)</span></div>
+                        <div class="calc-stat-value" style="color:#4fc3f7;" id="stats-total-awakening">—</div>
+                        <div class="calc-stat-gain" id="stats-total-awakening-gain">—</div>
                     </div>
                 </div>
             </div>
@@ -890,6 +916,8 @@
                 <!-- Role legend -->
                 <div class="role-legend"><span class="role-leader">● Leader</span><span class="role-vice">● Vice-Leader</span><span class="role-eternal-legend">✦ Eternal Glory</span><span class="role-glory-legend">★ Glory Member</span></div>
 
+                <!-- Scrolls sideways; # and Player Name stay pinned on the left. -->
+                <div class="table-wrap player-wrap">
                 <table id="playerTable">
                     <thead>
                         <tr id="tableHeader">
@@ -898,6 +926,7 @@
                     </thead>
                     <tbody id="tableBody"></tbody>
                 </table>
+                </div>
             </div>
 
         </div>
@@ -1086,6 +1115,10 @@
                     // max 90,000) - written by SterbyToolsGo; null if absent.
                     techResonance: core.techResonance ?? null,
                     prevTechResonance: prevCore ? (prevCore.techResonance ?? null) : null,
+                    // Awakening Cores - SterbyToolsGo's calculator minimum
+                    // (the true total can be a little higher): shown "169+".
+                    awakeningCores: core.awakeningCores ?? null,
+                    prevAwakeningCores: prevCore ? (prevCore.awakeningCores ?? null) : null,
                     prevRelicCores:     prevCore ? (prevCore.relicCores     ?? 0) : null,
                     prevTransmuteCores: prevCore ? (prevCore.transmuteCores ?? 0) : null,
                     prevResonanceChips: prevCore ? (prevCore.chipsCount ?? 0) : null,
@@ -1134,6 +1167,7 @@
                     prevTransmuteCores: prevCore ? (prevCore.transmuteCores ?? 0) : null,
                     prevResonanceChips: prevCore ? (prevCore.chipsCount ?? 0) : null,
                     prevTechResonance:  prevCore ? (prevCore.techResonance ?? null) : null,
+                    prevAwakeningCores: prevCore ? (prevCore.awakeningCores ?? null) : null,
                     prevLmeScore:       prevLme  ? (prevLme.lmeScore       ?? 0) : null,
                     prevEeBestScore:    prevEe   ? (prevEe.eeBestScore     ?? null) : null,
                 };
@@ -1161,6 +1195,7 @@
                 { value: 'transmute', key: 'ctrl.sort_transmute' },
                 { value: 'resonance', key: 'ctrl.sort_resonance' },
                 { value: 'techResonance', key: 'ctrl.sort_tech_resonance' },
+                { value: 'awakening', key: 'ctrl.sort_awakening' },
                 { value: 'name',      key: 'ctrl.sort_name' },
                 { value: 'role',      key: 'ctrl.sort_role' }
             ],
@@ -1246,6 +1281,16 @@
             const prevTotalRes = byResP.reduce((s, p) => s + p.prevTechResonance, 0);
             document.getElementById('stats-total-tech-resonance').textContent    = byRes.length ? formatNumber(totalRes) : '—';
             document.getElementById('stats-total-tech-resonance-gain').innerHTML = byRes.length && byResP.length > 0 ? formatGainHTML(totalRes - prevTotalRes, true) : '';
+
+            // Top 30 by Awakening Cores (minimums, so the total is "N+").
+            const byAwk  = allPlayers.filter(p => p.awakeningCores !== null)
+                .sort((a, b) => b.awakeningCores - a.awakeningCores).slice(0, TOP_N);
+            const byAwkP = gainPool.filter(p => p.prevAwakeningCores !== null && p.prevAwakeningCores !== undefined)
+                .sort((a, b) => b.prevAwakeningCores - a.prevAwakeningCores).slice(0, TOP_N);
+            const totalAwk     = byAwk.reduce((s, p) => s + p.awakeningCores, 0);
+            const prevTotalAwk = byAwkP.reduce((s, p) => s + p.prevAwakeningCores, 0);
+            document.getElementById('stats-total-awakening').textContent    = byAwk.length ? totalAwk.toLocaleString() + '+' : '—';
+            document.getElementById('stats-total-awakening-gain').innerHTML = byAwk.length && byAwkP.length > 0 ? formatGainHTML(totalAwk - prevTotalAwk) : '';
         }
 
         function calculateLMETabSummary() {
@@ -2624,6 +2669,7 @@
                     <th><img src="${ICON_BASE}TransmutaCore.png" alt="Transmute Cores" style="width:20px;height:20px;vertical-align:middle;" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><span style="display:none;" data-i18n="table.col.transmute_cores">Transmute Cores</span></th>
                     <th><img src="${ICON_BASE}Resonance%20Chips.png" alt="Resonance Chips" style="width:20px;height:20px;vertical-align:middle;" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><span style="display:none;" data-i18n="table.col.resonance_chips">Resonance Chips</span></th>
                     <th title="Tech Resonance"><span style="color:#8bc34a;font-size:16px;">⚡</span></th>
+                    <th title="Awakening Cores"><img src="${ICON_BASE}Awakening%20Core.png" alt="Awakening Cores" style="width:20px;height:20px;vertical-align:middle;" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><span style="display:none;">Awakening</span></th>
                     <th><img src="${ICON_BASE}ATK.png" alt="ATK" style="width:20px;height:20px;vertical-align:middle;" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><span style="display:none;" data-i18n="table.col.atk">ATK</span></th>`;
             } else if (currentSubTab === 'lme') {
                 tr.innerHTML = `
@@ -2673,6 +2719,9 @@
                     <td class="cores-cell" style="color:#8bc34a;">${player.techResonance === null ? '—' : formatNumber(player.techResonance)}
                         <span style="font-size:10px;display:block;">${player.techResonance === null || player.prevTechResonance === null ? '' : formatGainHTML(player.techResonance - player.prevTechResonance, true)}</span>
                     </td>
+                    <td class="cores-cell" style="color:#4fc3f7;">${player.awakeningCores === null ? '—' : player.awakeningCores.toLocaleString() + '+'}
+                        <span style="font-size:10px;display:block;">${player.awakeningCores === null || player.prevAwakeningCores === null ? '' : formatGainHTML(player.awakeningCores - player.prevAwakeningCores)}</span>
+                    </td>
                     <td style="text-align:center;font-weight:600;color:#e7ecfa;">${formatNumber(player.atk)}
                         <span style="font-size:10px;display:block;">${formatGainHTML(atkGain, true)}</span>
                     </td>`;
@@ -2709,6 +2758,9 @@
                     break;
                 case 'techResonance':
                     filteredData.sort((a, b) => (b.techResonance ?? -1) - (a.techResonance ?? -1));
+                    break;
+                case 'awakening':
+                    filteredData.sort((a, b) => (b.awakeningCores ?? -1) - (a.awakeningCores ?? -1));
                     break;
                 case 'attack':
                     filteredData.sort((a, b) => b.atk - a.atk);
@@ -3056,7 +3108,7 @@
         }
 
         function exportToCSV() {
-            const headers = ['Rank', 'Player Name', 'Role', 'ATK', 'ATK Gain', 'Relic Cores', 'Cores Gain', 'Transmute Cores', 'Transmute Gain', 'Resonance Chips', 'Resonance Chips Gain', 'Tech Resonance', 'Tech Resonance Gain', 'LME Score', 'LME Gain', 'CX Rank', 'CX Boss', 'EE Best Score', 'EE Best Score Gain'];
+            const headers = ['Rank', 'Player Name', 'Role', 'ATK', 'ATK Gain', 'Relic Cores', 'Cores Gain', 'Transmute Cores', 'Transmute Gain', 'Resonance Chips', 'Resonance Chips Gain', 'Tech Resonance', 'Tech Resonance Gain', 'Awakening Cores (min)', 'LME Score', 'LME Gain', 'CX Rank', 'CX Boss', 'EE Best Score', 'EE Best Score Gain'];
             const csvContent = [
                 headers.join(','),
                 ...allPlayers.map((p, index) => [
@@ -3073,6 +3125,7 @@
                     individualGain(p.resonanceChips, p.prevResonanceChips),
                     p.techResonance === null ? '' : p.techResonance,
                     p.techResonance === null ? '' : individualGain(p.techResonance, p.prevTechResonance),
+                    p.awakeningCores === null ? '' : p.awakeningCores,
                     p.lmeScore,
                     individualGain(p.lmeScore, p.prevLmeScore),
                     p.cxRankScore,
