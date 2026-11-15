@@ -254,14 +254,14 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-16T02:50:04.433113+11:00",
-    "total": 91600,
+    "updatedAt": "2026-11-16T03:50:12.436728+11:00",
+    "total": 92400,
     "members": [
       {
         "uid": 29321884,
         "name": "RABBIT5",
         "rank": 1,
-        "score": 7100
+        "score": 7500
       },
       {
         "uid": 36484758,
@@ -291,7 +291,7 @@
         "uid": 41742773,
         "name": "MadameMischief",
         "rank": 6,
-        "score": 4400
+        "score": 4800
       },
       {
         "uid": 59566866,
@@ -480,27 +480,33 @@
         "score": 0
       },
       {
+        "uid": 40001195,
+        "name": "Ӂ-ShhImB☆tm☆n",
+        "rank": 38,
+        "score": 0
+      },
+      {
         "uid": 115742768,
         "name": "SterbyTools",
-        "rank": 38,
+        "rank": 39,
         "score": 0
       },
       {
         "uid": 75174428,
         "name": "PastalaVista",
-        "rank": 39,
+        "rank": 40,
         "score": 0
       },
       {
         "uid": 72894129,
         "name": "NeonCBV",
-        "rank": 40,
+        "rank": 41,
         "score": 0
       }
     ]
   },
   "cxBoss": {
-    "updatedAt": "2026-11-15T14:39:22.766060+11:00",
+    "updatedAt": "2026-11-16T03:50:12.436728+11:00",
     "total": 24529,
     "members": [
       {
@@ -702,20 +708,20 @@
         "score": 0
       },
       {
+        "uid": 40001195,
+        "name": "Ӂ-ShhImB☆tm☆n",
+        "rank": 34,
+        "score": 0
+      },
+      {
         "uid": 79510960,
         "name": "theLP",
-        "rank": 34,
+        "rank": 35,
         "score": 0
       },
       {
         "uid": 115742768,
         "name": "SterbyTools",
-        "rank": 35,
-        "score": 0
-      },
-      {
-        "uid": 18297536,
-        "name": "ergiangi",
         "rank": 36,
         "score": 0
       },
