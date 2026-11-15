@@ -10,7 +10,7 @@ const playerStats = {
         "100876140": {
             "atk": 2788937,
             "name": "Scoundrel536",
-            "role": "Member",
+            "role": "Glory Member",
             "roleTier": null
         },
         "103516442": {
@@ -22,7 +22,7 @@ const playerStats = {
         "106162623": {
             "atk": 2014551,
             "name": "gubrax",
-            "role": "Glory Member",
+            "role": "Member",
             "roleTier": null
         },
         "10754439": {
@@ -58,7 +58,7 @@ const playerStats = {
         "11463573": {
             "atk": 2096977,
             "name": "faxnem",
-            "role": "Glory Member",
+            "role": "Member",
             "roleTier": null
         },
         "115742768": {
@@ -70,7 +70,7 @@ const playerStats = {
         "18115624": {
             "atk": 2855535,
             "name": "Nubis",
-            "role": "Glory Member",
+            "role": "Member",
             "roleTier": null
         },
         "18297536": {
@@ -100,7 +100,7 @@ const playerStats = {
         "29904762": {
             "atk": 1768305,
             "name": "Cheeselife",
-            "role": "Glory Member",
+            "role": "Member",
             "roleTier": null
         },
         "30658936": {
@@ -112,19 +112,19 @@ const playerStats = {
         "32556489": {
             "atk": 2096411,
             "name": "Bensayyten",
-            "role": "Member",
+            "role": "Glory Member",
             "roleTier": null
         },
         "35869301": {
             "atk": 3188911,
             "name": "Toddlerr",
-            "role": "Member",
+            "role": "Glory Member",
             "roleTier": null
         },
         "36484758": {
             "atk": 2227219,
             "name": "Belthazar",
-            "role": "Glory Member",
+            "role": "Member",
             "roleTier": null
         },
         "41742773": {
@@ -160,7 +160,7 @@ const playerStats = {
         "64676255": {
             "atk": 2545389,
             "name": "盾Heathcliff剣",
-            "role": "Glory Member",
+            "role": "Member",
             "roleTier": null
         },
         "66607264": {
@@ -220,7 +220,7 @@ const playerStats = {
         "83861839": {
             "atk": 2323155,
             "name": "groggen",
-            "role": "Member",
+            "role": "Glory Member",
             "roleTier": null
         },
         "87244358": {
@@ -232,13 +232,13 @@ const playerStats = {
         "87954282": {
             "atk": 2676561,
             "name": "SngphO",
-            "role": "Member",
+            "role": "Glory Member",
             "roleTier": null
         },
         "88203044": {
             "atk": 2494016,
             "name": "p88203044",
-            "role": "Member",
+            "role": "Glory Member",
             "roleTier": null
         },
         "89511116": {
