@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-16T04:50:19.851731+11:00",
-    "total": 92600,
+    "updatedAt": "2026-11-16T05:50:29.015023+11:00",
+    "total": 93400,
     "members": [
       {
         "uid": 29321884,
@@ -297,7 +297,7 @@
         "uid": 59566866,
         "name": "FlyingDutchy",
         "rank": 7,
-        "score": 3600
+        "score": 4000
       },
       {
         "uid": 32556489,
@@ -354,32 +354,32 @@
         "score": 2400
       },
       {
+        "uid": 112772047,
+        "name": "VictorMolusco",
+        "rank": 17,
+        "score": 2400
+      },
+      {
         "uid": 89511116,
         "name": "EMBALOCO",
-        "rank": 17,
+        "rank": 18,
         "score": 2300
       },
       {
         "uid": 100876140,
         "name": "Scoundrel536",
-        "rank": 18,
+        "rank": 19,
         "score": 2000
       },
       {
         "uid": 80018314,
         "name": null,
-        "rank": 19,
+        "rank": 20,
         "score": 2000
       },
       {
         "uid": 79510960,
         "name": "theLP",
-        "rank": 20,
-        "score": 2000
-      },
-      {
-        "uid": 112772047,
-        "name": "VictorMolusco",
         "rank": 21,
         "score": 2000
       },
