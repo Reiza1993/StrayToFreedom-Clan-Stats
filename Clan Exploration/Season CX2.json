@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-15T10:38:45.246534+11:00",
-    "total": 80500,
+    "updatedAt": "2026-11-15T11:38:54.695576+11:00",
+    "total": 81300,
     "members": [
       {
         "uid": 29321884,
@@ -285,7 +285,7 @@
         "uid": 10754439,
         "name": "HakiLuffy",
         "rank": 5,
-        "score": 4300
+        "score": 4700
       },
       {
         "uid": 41742773,
@@ -306,22 +306,22 @@
         "score": 3200
       },
       {
+        "uid": 59566866,
+        "name": "FlyingDutchy",
+        "rank": 9,
+        "score": 3200
+      },
+      {
         "uid": 113690788,
         "name": "Apathy_",
-        "rank": 9,
+        "rank": 10,
         "score": 3000
       },
       {
         "uid": 83339881,
         "name": "Fl3xas",
-        "rank": 10,
-        "score": 2900
-      },
-      {
-        "uid": 59566866,
-        "name": "FlyingDutchy",
         "rank": 11,
-        "score": 2800
+        "score": 2900
       },
       {
         "uid": 32556489,
