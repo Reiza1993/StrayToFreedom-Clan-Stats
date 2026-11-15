@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-16T01:19:06.501679+11:00",
-    "total": 90400,
+    "updatedAt": "2026-11-16T02:50:04.433113+11:00",
+    "total": 91600,
     "members": [
       {
         "uid": 29321884,
@@ -276,16 +276,16 @@
         "score": 5700
       },
       {
-        "uid": 10754439,
-        "name": "HakiLuffy",
-        "rank": 4,
-        "score": 5500
-      },
-      {
         "uid": 66607264,
         "name": null,
+        "rank": 4,
+        "score": 5600
+      },
+      {
+        "uid": 10754439,
+        "name": "HakiLuffy",
         "rank": 5,
-        "score": 5200
+        "score": 5500
       },
       {
         "uid": 41742773,
@@ -318,22 +318,22 @@
         "score": 3200
       },
       {
+        "uid": 51071110,
+        "name": "samwise08",
+        "rank": 11,
+        "score": 3200
+      },
+      {
         "uid": 113690788,
         "name": "Apathy_",
-        "rank": 11,
+        "rank": 12,
         "score": 3000
       },
       {
         "uid": 83339881,
         "name": "Fl3xas",
-        "rank": 12,
-        "score": 2900
-      },
-      {
-        "uid": 51071110,
-        "name": "samwise08",
         "rank": 13,
-        "score": 2800
+        "score": 2900
       },
       {
         "uid": 26277677,
@@ -348,44 +348,44 @@
         "score": 2400
       },
       {
+        "uid": 70603922,
+        "name": "BlackFlamE",
+        "rank": 16,
+        "score": 2400
+      },
+      {
         "uid": 89511116,
         "name": "EMBALOCO",
-        "rank": 16,
+        "rank": 17,
         "score": 2300
       },
       {
         "uid": 100876140,
         "name": "Scoundrel536",
-        "rank": 17,
+        "rank": 18,
         "score": 2000
       },
       {
         "uid": 80018314,
         "name": null,
-        "rank": 18,
+        "rank": 19,
         "score": 2000
       },
       {
         "uid": 79510960,
         "name": "theLP",
-        "rank": 19,
+        "rank": 20,
         "score": 2000
       },
       {
         "uid": 112772047,
         "name": "VictorMolusco",
-        "rank": 20,
+        "rank": 21,
         "score": 2000
       },
       {
         "uid": 83861839,
         "name": "groggen",
-        "rank": 21,
-        "score": 2000
-      },
-      {
-        "uid": 70603922,
-        "name": "BlackFlamE",
         "rank": 22,
         "score": 2000
       },
