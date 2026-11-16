@@ -520,7 +520,7 @@ const alumniMembers = [
     "b0ss",
     "Zveryok",
     "datamaster",
-    "Koncalaz",
+    "Koncalaz","ergiangi",
 ];
 
 // Export for use in main application
