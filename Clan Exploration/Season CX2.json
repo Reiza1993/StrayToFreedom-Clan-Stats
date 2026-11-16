@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-16T22:52:55.835871+11:00",
-    "total": 103300,
+    "updatedAt": "2026-11-16T23:53:05.388405+11:00",
+    "total": 104200,
     "members": [
       {
         "uid": 29321884,
@@ -279,7 +279,7 @@
         "uid": 10754439,
         "name": "HakiLuffy",
         "rank": 4,
-        "score": 6600
+        "score": 6700
       },
       {
         "uid": 66607264,
@@ -312,26 +312,26 @@
         "score": 3700
       },
       {
+        "uid": 26277677,
+        "name": "BobBobberson",
+        "rank": 10,
+        "score": 3600
+      },
+      {
         "uid": 113690788,
         "name": "Apathy_",
-        "rank": 10,
+        "rank": 11,
         "score": 3400
       },
       {
         "uid": 108860725,
         "name": "RetinaDNA",
-        "rank": 11,
+        "rank": 12,
         "score": 3200
       },
       {
         "uid": 51071110,
         "name": "samwise08",
-        "rank": 12,
-        "score": 3200
-      },
-      {
-        "uid": 26277677,
-        "name": "BobBobberson",
         "rank": 13,
         "score": 3200
       },
@@ -462,14 +462,14 @@
         "score": 800
       },
       {
-        "uid": 106162623,
-        "name": "gubrax",
-        "rank": 35,
-        "score": 400
-      },
-      {
         "uid": 35869301,
         "name": "Toddlerr",
+        "rank": 35,
+        "score": 800
+      },
+      {
+        "uid": 106162623,
+        "name": "gubrax",
         "rank": 36,
         "score": 400
       },
