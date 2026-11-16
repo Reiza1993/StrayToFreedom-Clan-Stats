@@ -290,6 +290,23 @@
         .player-wrap #playerTable th:nth-child(1), .player-wrap #playerTable th:nth-child(2) { background: var(--surface-3); z-index: 3; }
         .player-wrap #playerTable tr:nth-child(even) td:nth-child(1),
         .player-wrap #playerTable tr:nth-child(even) td:nth-child(2) { background: #11182b; }
+        /* Floating copy of the player table's header: stays at the top of the
+           view while scrolling down and slides sideways with the stats. */
+        .player-head {
+            position: sticky; top: -12px; z-index: 6; /* -12px = .view's top padding */
+            overflow: hidden;
+            background: var(--surface-3);
+            border: 1px solid var(--line); border-bottom: none;
+            border-radius: var(--radius) var(--radius) 0 0;
+            box-shadow: 0 6px 10px -6px rgba(0, 0, 0, .8);
+        }
+        .player-head table { border: none; border-radius: 0; width: max-content; }
+        .player-head th { position: static; white-space: nowrap; box-sizing: border-box; padding-left: 6px; padding-right: 6px; }
+        .player-head th:nth-child(1), .player-head th:nth-child(2) { position: sticky; z-index: 3; background: var(--surface-3); }
+        .player-head th:nth-child(1) { left: 0; padding-left: 2px; padding-right: 2px; }
+        .player-head th:nth-child(2) { white-space: normal; font-size: 12px; padding-left: 4px; box-shadow: 6px 0 8px -6px rgba(0, 0, 0, .7); }
+        .player-wrap.has-float { border-top: none; border-top-left-radius: 0; border-top-right-radius: 0; }
+        .player-wrap.has-float #playerTable thead { visibility: collapse; }
         .cores-cell { font-weight: 600; color: #b4a7ff; text-align: center; }
 
         .role-glorymember { animation: glow 2s ease-in-out infinite alternate; }
@@ -917,6 +934,7 @@
                 <div class="role-legend"><span class="role-leader">● Leader</span><span class="role-vice">● Vice-Leader</span><span class="role-eternal-legend">✦ Eternal Glory</span><span class="role-glory-legend">★ Glory Member</span></div>
 
                 <!-- Scrolls sideways; # and Player Name stay pinned on the left. -->
+                <div class="player-head" id="playerHead" aria-hidden="true"><table><thead><tr></tr></thead></table></div>
                 <div class="table-wrap player-wrap">
                 <table id="playerTable">
                     <thead>
@@ -2738,7 +2756,47 @@
                 row.innerHTML = cells;
                 tbody.appendChild(row);
             });
+            syncPlayerHead();
         }
+
+        // Copies the real header into #playerHead with each column's measured
+        // width, then hides the real one (visibility: collapse keeps widths).
+        function syncPlayerHead() {
+            const head = document.getElementById('playerHead');
+            const wrap = document.querySelector('.player-wrap');
+            const real = document.getElementById('tableHeader');
+            if (!head || !wrap || !real) return;
+            wrap.classList.remove('has-float');
+            const ths = Array.from(real.children);
+            if (!ths.length || !document.getElementById('tableBody').children.length) { head.style.display = 'none'; return; }
+            head.style.display = '';
+            const firstRow = document.getElementById('tableBody').children[0];
+            const widths = Array.from(firstRow.children).map(td => td.getBoundingClientRect().width);
+            if (!widths.some(w => w > 0)) { head.style.display = 'none'; return; } // hidden view: re-synced when shown
+            const tr = head.querySelector('tr');
+            tr.innerHTML = real.innerHTML;
+            let left = 0;
+            Array.from(tr.children).forEach((th, i) => {
+                const w = widths[i] || ths[i].getBoundingClientRect().width;
+                th.style.width = th.style.minWidth = th.style.maxWidth = w + 'px';
+                if (i === 1) th.style.left = left + 'px';
+                left += w;
+            });
+            wrap.classList.add('has-float');
+            head.scrollLeft = wrap.scrollLeft;
+        }
+
+        (function () {
+            const wrap = document.querySelector('.player-wrap');
+            const head = document.getElementById('playerHead');
+            if (wrap && head) wrap.addEventListener('scroll', () => { head.scrollLeft = wrap.scrollLeft; }, { passive: true });
+            // Re-measure when the table's width changes (rotation, view becoming visible).
+            let t, lastW = -1;
+            if (wrap && window.ResizeObserver) new ResizeObserver(() => {
+                if (wrap.clientWidth === lastW) return;
+                lastW = wrap.clientWidth; clearTimeout(t); t = setTimeout(syncPlayerHead, 100);
+            }).observe(wrap);
+        })();
 
         function sortData(criteria) {
             currentSort = criteria;
