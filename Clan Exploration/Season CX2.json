@@ -254,20 +254,20 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-16T13:51:36.582327+11:00",
-    "total": 98000,
+    "updatedAt": "2026-11-16T15:51:52.952816+11:00",
+    "total": 99800,
     "members": [
       {
         "uid": 29321884,
         "name": "RABBIT5",
         "rank": 1,
-        "score": 7900
+        "score": 8300
       },
       {
         "uid": 36484758,
         "name": "Belthazar",
         "rank": 2,
-        "score": 7200
+        "score": 7600
       },
       {
         "uid": 103516442,
@@ -276,16 +276,16 @@
         "score": 6500
       },
       {
-        "uid": 10754439,
-        "name": "HakiLuffy",
-        "rank": 4,
-        "score": 6000
-      },
-      {
         "uid": 66607264,
         "name": null,
+        "rank": 4,
+        "score": 6300
+      },
+      {
+        "uid": 10754439,
+        "name": "HakiLuffy",
         "rank": 5,
-        "score": 5900
+        "score": 6200
       },
       {
         "uid": 41742773,
@@ -459,7 +459,7 @@
         "uid": 11463573,
         "name": "faxnem",
         "rank": 34,
-        "score": 400
+        "score": 800
       },
       {
         "uid": 106162623,
