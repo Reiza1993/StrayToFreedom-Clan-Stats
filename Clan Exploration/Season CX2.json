@@ -254,14 +254,14 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-16T10:51:07.887773+11:00",
-    "total": 95900,
+    "updatedAt": "2026-11-16T11:51:15.888123+11:00",
+    "total": 97100,
     "members": [
       {
         "uid": 29321884,
         "name": "RABBIT5",
         "rank": 1,
-        "score": 7500
+        "score": 7900
       },
       {
         "uid": 36484758,
@@ -273,7 +273,7 @@
         "uid": 103516442,
         "name": "DAYO-P",
         "rank": 3,
-        "score": 6100
+        "score": 6500
       },
       {
         "uid": 66607264,
@@ -330,16 +330,16 @@
         "score": 3200
       },
       {
-        "uid": 83339881,
-        "name": "Fl3xas",
-        "rank": 13,
-        "score": 2900
-      },
-      {
         "uid": 26277677,
         "name": "BobBobberson",
+        "rank": 13,
+        "score": 3200
+      },
+      {
+        "uid": 83339881,
+        "name": "Fl3xas",
         "rank": 14,
-        "score": 2800
+        "score": 2900
       },
       {
         "uid": 70603922,
