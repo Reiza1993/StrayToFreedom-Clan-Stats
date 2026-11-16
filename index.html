@@ -306,7 +306,7 @@
         .player-head th:nth-child(1) { left: 0; padding-left: 2px; padding-right: 2px; }
         .player-head th:nth-child(2) { white-space: normal; font-size: 12px; padding-left: 4px; box-shadow: 6px 0 8px -6px rgba(0, 0, 0, .7); }
         .player-wrap.has-float { border-top: none; border-top-left-radius: 0; border-top-right-radius: 0; }
-        .player-wrap.has-float #playerTable thead { visibility: collapse; }
+        .player-wrap.has-float #playerTable thead { visibility: hidden; } /* slid up under #playerHead */
         .cores-cell { font-weight: 600; color: #b4a7ff; text-align: center; }
 
         .role-glorymember { animation: glow 2s ease-in-out infinite alternate; }
@@ -2765,24 +2765,31 @@
             const head = document.getElementById('playerHead');
             const wrap = document.querySelector('.player-wrap');
             const real = document.getElementById('tableHeader');
+            const body = document.getElementById('tableBody');
             if (!head || !wrap || !real) return;
-            wrap.classList.remove('has-float');
             const ths = Array.from(real.children);
-            if (!ths.length || !document.getElementById('tableBody').children.length) { head.style.display = 'none'; return; }
+            const widths = ths.map(th => th.getBoundingClientRect().width);
+            const realH = real.getBoundingClientRect().height;
+            if (!ths.length || !body.children.length || !widths.some(w => w > 0)) {
+                // nothing to show, or the view is hidden: re-synced when it's shown
+                head.style.display = 'none'; wrap.classList.remove('has-float'); wrap.style.marginTop = '';
+                return;
+            }
             head.style.display = '';
-            const firstRow = document.getElementById('tableBody').children[0];
-            const widths = Array.from(firstRow.children).map(td => td.getBoundingClientRect().width);
-            if (!widths.some(w => w > 0)) { head.style.display = 'none'; return; } // hidden view: re-synced when shown
             const tr = head.querySelector('tr');
             tr.innerHTML = real.innerHTML;
+            tr.style.height = realH + 'px';
             let left = 0;
             Array.from(tr.children).forEach((th, i) => {
-                const w = widths[i] || ths[i].getBoundingClientRect().width;
-                th.style.width = th.style.minWidth = th.style.maxWidth = w + 'px';
+                th.style.width = th.style.minWidth = th.style.maxWidth = widths[i] + 'px';
+                th.style.height = realH + 'px';
                 if (i === 1) th.style.left = left + 'px';
-                left += w;
+                left += widths[i];
             });
+            head.querySelector('table').style.width = real.closest('table').getBoundingClientRect().width + 'px';
+            // The real header keeps the column widths; slide the table up so the copy covers it.
             wrap.classList.add('has-float');
+            wrap.style.marginTop = (-realH) + 'px';
             head.scrollLeft = wrap.scrollLeft;
         }
 
@@ -2790,12 +2797,15 @@
             const wrap = document.querySelector('.player-wrap');
             const head = document.getElementById('playerHead');
             if (wrap && head) wrap.addEventListener('scroll', () => { head.scrollLeft = wrap.scrollLeft; }, { passive: true });
-            // Re-measure when the table's width changes (rotation, view becoming visible).
-            let t, lastW = -1;
-            if (wrap && window.ResizeObserver) new ResizeObserver(() => {
-                if (wrap.clientWidth === lastW) return;
-                lastW = wrap.clientWidth; clearTimeout(t); t = setTimeout(syncPlayerHead, 100);
-            }).observe(wrap);
+            // Re-measure whenever the table's size changes: fonts/icons finishing
+            // loading, rotation, the view becoming visible.
+            let t;
+            const later = () => { clearTimeout(t); t = setTimeout(syncPlayerHead, 60); };
+            const table = document.getElementById('playerTable');
+            if (table && window.ResizeObserver) new ResizeObserver(later).observe(table);
+            if (document.fonts && document.fonts.ready) document.fonts.ready.then(later);
+            window.addEventListener('load', later);
+            if (table) table.addEventListener('load', later, true); // header icons
         })();
 
         function sortData(criteria) {
