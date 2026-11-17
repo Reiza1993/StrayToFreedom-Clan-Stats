@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-18T02:56:36.154859+11:00",
-    "total": 119500,
+    "updatedAt": "2026-11-18T03:56:44.792568+11:00",
+    "total": 120800,
     "members": [
       {
         "uid": 29321884,
@@ -273,7 +273,7 @@
         "uid": 103516442,
         "name": "DAYO-P",
         "rank": 3,
-        "score": 8500
+        "score": 8600
       },
       {
         "uid": 10754439,
@@ -297,7 +297,7 @@
         "uid": 32556489,
         "name": "Bensayyten",
         "rank": 7,
-        "score": 4800
+        "score": 5200
       },
       {
         "uid": 26277677,
@@ -306,16 +306,16 @@
         "score": 4800
       },
       {
-        "uid": 59566866,
-        "name": "FlyingDutchy",
-        "rank": 9,
-        "score": 4400
-      },
-      {
         "uid": 64676255,
         "name": "盾Heathcliff剣",
+        "rank": 9,
+        "score": 4500
+      },
+      {
+        "uid": 59566866,
+        "name": "FlyingDutchy",
         "rank": 10,
-        "score": 4100
+        "score": 4400
       },
       {
         "uid": 70603922,
@@ -366,20 +366,20 @@
         "score": 2400
       },
       {
+        "uid": 80018314,
+        "name": null,
+        "rank": 19,
+        "score": 2400
+      },
+      {
         "uid": 89511116,
         "name": "EMBALOCO",
-        "rank": 19,
+        "rank": 20,
         "score": 2300
       },
       {
         "uid": 100876140,
         "name": "Scoundrel536",
-        "rank": 20,
-        "score": 2000
-      },
-      {
-        "uid": 80018314,
-        "name": null,
         "rank": 21,
         "score": 2000
       },
