@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-17T11:54:43.399497+11:00",
-    "total": 111700,
+    "updatedAt": "2026-11-17T12:54:51.062203+11:00",
+    "total": 112500,
     "members": [
       {
         "uid": 29321884,
@@ -270,22 +270,22 @@
         "score": 9200
       },
       {
+        "uid": 66607264,
+        "name": null,
+        "rank": 3,
+        "score": 7500
+      },
+      {
         "uid": 103516442,
         "name": "DAYO-P",
-        "rank": 3,
+        "rank": 4,
         "score": 7400
       },
       {
         "uid": 10754439,
         "name": "HakiLuffy",
-        "rank": 4,
-        "score": 7400
-      },
-      {
-        "uid": 66607264,
-        "name": null,
         "rank": 5,
-        "score": 7100
+        "score": 7400
       },
       {
         "uid": 41742773,
@@ -297,7 +297,7 @@
         "uid": 32556489,
         "name": "Bensayyten",
         "rank": 7,
-        "score": 4400
+        "score": 4800
       },
       {
         "uid": 59566866,
