@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-17T17:55:29.893319+11:00",
-    "total": 114700,
+    "updatedAt": "2026-11-17T18:55:37.723466+11:00",
+    "total": 115500,
     "members": [
       {
         "uid": 29321884,
@@ -276,22 +276,22 @@
         "score": 7800
       },
       {
-        "uid": 66607264,
-        "name": null,
-        "rank": 4,
-        "score": 7500
-      },
-      {
         "uid": 10754439,
         "name": "HakiLuffy",
+        "rank": 4,
+        "score": 7800
+      },
+      {
+        "uid": 66607264,
+        "name": null,
         "rank": 5,
-        "score": 7400
+        "score": 7500
       },
       {
         "uid": 41742773,
         "name": "MadameMischief",
         "rank": 6,
-        "score": 5600
+        "score": 6000
       },
       {
         "uid": 32556489,
