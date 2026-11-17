@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-18T04:56:51.796318+11:00",
-    "total": 121200,
+    "updatedAt": "2026-11-18T05:56:59.532890+11:00",
+    "total": 122300,
     "members": [
       {
         "uid": 29321884,
@@ -273,7 +273,7 @@
         "uid": 103516442,
         "name": "DAYO-P",
         "rank": 3,
-        "score": 8600
+        "score": 8900
       },
       {
         "uid": 10754439,
@@ -291,7 +291,7 @@
         "uid": 41742773,
         "name": "MadameMischief",
         "rank": 6,
-        "score": 6000
+        "score": 6400
       },
       {
         "uid": 32556489,
@@ -324,26 +324,26 @@
         "score": 4000
       },
       {
+        "uid": 112772047,
+        "name": "VictorMolusco",
+        "rank": 12,
+        "score": 3600
+      },
+      {
         "uid": 113690788,
         "name": "Apathy_",
-        "rank": 12,
+        "rank": 13,
         "score": 3400
       },
       {
         "uid": 108860725,
         "name": "RetinaDNA",
-        "rank": 13,
+        "rank": 14,
         "score": 3200
       },
       {
         "uid": 51071110,
         "name": "samwise08",
-        "rank": 14,
-        "score": 3200
-      },
-      {
-        "uid": 112772047,
-        "name": "VictorMolusco",
         "rank": 15,
         "score": 3200
       },
