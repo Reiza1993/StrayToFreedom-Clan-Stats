@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-17T12:54:51.062203+11:00",
-    "total": 112500,
+    "updatedAt": "2026-11-17T13:54:57.611820+11:00",
+    "total": 112900,
     "members": [
       {
         "uid": 29321884,
@@ -318,26 +318,26 @@
         "score": 4000
       },
       {
+        "uid": 70603922,
+        "name": "BlackFlamE",
+        "rank": 11,
+        "score": 3600
+      },
+      {
         "uid": 113690788,
         "name": "Apathy_",
-        "rank": 11,
+        "rank": 12,
         "score": 3400
       },
       {
         "uid": 108860725,
         "name": "RetinaDNA",
-        "rank": 12,
+        "rank": 13,
         "score": 3200
       },
       {
         "uid": 51071110,
         "name": "samwise08",
-        "rank": 13,
-        "score": 3200
-      },
-      {
-        "uid": 70603922,
-        "name": "BlackFlamE",
         "rank": 14,
         "score": 3200
       },
