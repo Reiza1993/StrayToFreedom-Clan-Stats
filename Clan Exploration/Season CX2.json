@@ -254,14 +254,14 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-17T18:55:37.723466+11:00",
-    "total": 115500,
+    "updatedAt": "2026-11-17T19:55:47.263288+11:00",
+    "total": 116300,
     "members": [
       {
         "uid": 29321884,
         "name": "RABBIT5",
         "rank": 1,
-        "score": 10300
+        "score": 10500
       },
       {
         "uid": 36484758,
@@ -273,7 +273,7 @@
         "uid": 103516442,
         "name": "DAYO-P",
         "rank": 3,
-        "score": 7800
+        "score": 8000
       },
       {
         "uid": 10754439,
@@ -306,16 +306,16 @@
         "score": 4400
       },
       {
-        "uid": 64676255,
-        "name": "盾Heathcliff剣",
-        "rank": 9,
-        "score": 4100
-      },
-      {
         "uid": 26277677,
         "name": "BobBobberson",
+        "rank": 9,
+        "score": 4400
+      },
+      {
+        "uid": 64676255,
+        "name": "盾Heathcliff剣",
         "rank": 10,
-        "score": 4000
+        "score": 4100
       },
       {
         "uid": 70603922,
