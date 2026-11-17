@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-18T05:56:59.532890+11:00",
-    "total": 122300,
+    "updatedAt": "2026-11-18T06:57:07.766577+11:00",
+    "total": 124200,
     "members": [
       {
         "uid": 29321884,
@@ -276,16 +276,16 @@
         "score": 8900
       },
       {
-        "uid": 10754439,
-        "name": "HakiLuffy",
-        "rank": 4,
-        "score": 8500
-      },
-      {
         "uid": 66607264,
         "name": null,
+        "rank": 4,
+        "score": 8600
+      },
+      {
+        "uid": 10754439,
+        "name": "HakiLuffy",
         "rank": 5,
-        "score": 8300
+        "score": 8500
       },
       {
         "uid": 41742773,
@@ -306,34 +306,34 @@
         "score": 4800
       },
       {
-        "uid": 64676255,
-        "name": "盾Heathcliff剣",
-        "rank": 9,
-        "score": 4500
-      },
-      {
         "uid": 59566866,
         "name": "FlyingDutchy",
+        "rank": 9,
+        "score": 4800
+      },
+      {
+        "uid": 64676255,
+        "name": "盾Heathcliff剣",
         "rank": 10,
-        "score": 4400
+        "score": 4500
       },
       {
         "uid": 70603922,
         "name": "BlackFlamE",
         "rank": 11,
-        "score": 4000
-      },
-      {
-        "uid": 112772047,
-        "name": "VictorMolusco",
-        "rank": 12,
-        "score": 3600
+        "score": 4400
       },
       {
         "uid": 113690788,
         "name": "Apathy_",
+        "rank": 12,
+        "score": 3800
+      },
+      {
+        "uid": 112772047,
+        "name": "VictorMolusco",
         "rank": 13,
-        "score": 3400
+        "score": 3600
       },
       {
         "uid": 108860725,
@@ -372,26 +372,26 @@
         "score": 2400
       },
       {
+        "uid": 29904762,
+        "name": "Cheeselife",
+        "rank": 20,
+        "score": 2400
+      },
+      {
         "uid": 89511116,
         "name": "EMBALOCO",
-        "rank": 20,
+        "rank": 21,
         "score": 2300
       },
       {
         "uid": 100876140,
         "name": "Scoundrel536",
-        "rank": 21,
+        "rank": 22,
         "score": 2000
       },
       {
         "uid": 79510960,
         "name": "theLP",
-        "rank": 22,
-        "score": 2000
-      },
-      {
-        "uid": 29904762,
-        "name": "Cheeselife",
         "rank": 23,
         "score": 2000
       },
