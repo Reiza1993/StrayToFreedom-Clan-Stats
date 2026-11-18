@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-18T11:57:42.802570+11:00",
-    "total": 126100,
+    "updatedAt": "2026-11-18T12:57:49.611080+11:00",
+    "total": 127300,
     "members": [
       {
         "uid": 29321884,
@@ -267,7 +267,7 @@
         "uid": 36484758,
         "name": "Belthazar",
         "rank": 2,
-        "score": 10400
+        "score": 10800
       },
       {
         "uid": 103516442,
@@ -297,13 +297,13 @@
         "uid": 32556489,
         "name": "Bensayyten",
         "rank": 7,
-        "score": 5200
+        "score": 5600
       },
       {
         "uid": 26277677,
         "name": "BobBobberson",
         "rank": 8,
-        "score": 4800
+        "score": 5200
       },
       {
         "uid": 59566866,
