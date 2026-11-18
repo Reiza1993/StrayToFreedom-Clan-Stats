@@ -271,15 +271,15 @@
         .name-cell { font-weight: 600; max-width: 140px; word-break: break-word; text-align: left; }
 
         /* Player table: scrolls sideways with # and Player Name pinned. */
-        .player-wrap #playerTable { width: max-content; min-width: 100%; }
-        .player-wrap #playerTable th { position: static; white-space: nowrap; }
-        .player-wrap #playerTable td { white-space: nowrap; padding-left: 6px; padding-right: 6px; }
-        .player-wrap #playerTable th:nth-child(1), .player-wrap #playerTable td:nth-child(1) {
+        .player-wrap > table { width: max-content; min-width: 100%; }
+        .player-wrap > table th { position: static; white-space: nowrap; }
+        .player-wrap > table td { white-space: nowrap; padding-left: 6px; padding-right: 6px; }
+        .player-wrap > table th:nth-child(1), .player-wrap > table td:nth-child(1) {
             position: sticky; left: 0; z-index: 2;
             width: 26px; min-width: 26px; max-width: 26px; padding-left: 2px; padding-right: 2px;
             background: var(--surface);
         }
-        .player-wrap #playerTable th:nth-child(2), .player-wrap #playerTable td:nth-child(2) {
+        .player-wrap > table th:nth-child(2), .player-wrap > table td:nth-child(2) {
             position: sticky; left: 30px; z-index: 2;
             width: 92px; min-width: 92px; max-width: 92px;
             white-space: normal; word-break: break-word; overflow-wrap: anywhere;
@@ -287,9 +287,9 @@
             background: var(--surface);
             box-shadow: 6px 0 8px -6px rgba(0, 0, 0, .7);
         }
-        .player-wrap #playerTable th:nth-child(1), .player-wrap #playerTable th:nth-child(2) { background: var(--surface-3); z-index: 3; }
-        .player-wrap #playerTable tr:nth-child(even) td:nth-child(1),
-        .player-wrap #playerTable tr:nth-child(even) td:nth-child(2) { background: #11182b; }
+        .player-wrap > table th:nth-child(1), .player-wrap > table th:nth-child(2) { background: var(--surface-3); z-index: 3; }
+        .player-wrap > table tr:nth-child(even) td:nth-child(1),
+        .player-wrap > table tr:nth-child(even) td:nth-child(2) { background: #11182b; }
         /* Floating copy of the player table's header: stays at the top of the
            view while scrolling down and slides sideways with the stats. */
         .player-head {
@@ -470,6 +470,34 @@
             background: var(--surface);
             border: 1px solid var(--line);
         }
+        .lunar-clan { margin-bottom: 10px; }
+        .lunar-clan-summary {
+            display: block; width: 100%; text-align: left; cursor: pointer; font: inherit; color: inherit;
+            background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+            padding: 10px 12px; transition: background .15s ease;
+        }
+        .lunar-clan-summary:hover { background: var(--surface-2); }
+        .lunar-clan.open .lunar-clan-summary {
+            border-color: rgba(139, 124, 255, .55); background: rgba(139, 124, 255, 0.12);
+            border-bottom-left-radius: 0; border-bottom-right-radius: 0;
+        }
+        .lunar-clan.own .lunar-clan-summary { box-shadow: inset 3px 0 0 var(--accent); }
+        .lunar-clan-top { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+        .lunar-clan-rank { color: var(--dim); font-weight: 800; font-size: 12px; width: 16px; }
+        .lunar-clan-name { color: var(--text-hi); font-weight: 800; font-size: 14px; flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+        .lunar-clan-pts { color: #ffd24a; font-weight: 800; font-size: 13px; white-space: nowrap; }
+        .lunar-clan-chev { color: var(--dim); font-size: 12px; transition: transform .2s ease; }
+        .lunar-clan.open .lunar-clan-chev { transform: rotate(180deg); }
+        .lunar-totals { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; }
+        .lunar-total { background: var(--surface-2); border: 1px solid var(--line); border-radius: var(--radius-sm); padding: 5px 4px; text-align: center; min-width: 0; }
+        .lunar-total-label { display: flex; align-items: center; justify-content: center; gap: 3px; height: 16px; font-size: 10px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: .3px; }
+        .lunar-total-label img { width: 15px; height: 15px; }
+        .lunar-total-value { font-size: 13px; font-weight: 800; color: #b4a7ff; font-variant-numeric: tabular-nums; white-space: nowrap; }
+        .lunar-totals-note { margin-top: 6px; font-size: 10px; color: var(--dim); text-align: right; }
+        .lunar-clan-players { display: none; }
+        .lunar-clan.open .lunar-clan-players { display: block; }
+        .lunar-clan-players .player-head { border-radius: 0; }
+        .lunar-clan-players .player-wrap { margin-bottom: 0; border-top-left-radius: 0; border-top-right-radius: 0; }
         #lunarClanTable td { white-space: nowrap; }
         #lunarClanTable td:first-child { text-align: left; padding-left: 10px; font-weight: 700; }
         #lunarClanTable th { text-align: center; }
@@ -753,40 +781,8 @@
 
             <!-- Lunar Details Sub-tab -->
             <div id="lunar-details-subtab" class="lunar-subtab-content">
-                <div class="table-wrap">
-                    <table id="lunarClanTable">
-                        <thead>
-                            <tr>
-                                <th data-i18n="lunar.col.clan">Clan</th>
-                                <th>🌙</th>
-                                <th><img src="Game%20Icons/ATK.png" alt="ATK" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><span style="display:none;" data-i18n="table.col.atk">ATK</span></th>
-                                <th><img src="Game%20Icons/Relic%20Cores.png" alt="Relic Cores" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><span style="display:none;" data-i18n="table.col.relic_cores">Relic Cores</span></th>
-                                <th><img src="Game%20Icons/TransmutaCore.png" alt="Transmute Cores" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><span style="display:none;" data-i18n="table.col.transmute_cores">Transmute Cores</span></th>
-                                <th><img src="Game%20Icons/Resonance%20Chips.png" alt="Resonance Chips" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><span style="display:none;" data-i18n="table.col.resonance_chips">Resonance Chips</span></th>
-                                <th data-i18n="stat.total_cores">Total Cores</th>
-                            </tr>
-                        </thead>
-                        <tbody id="lunarClanTableBody"></tbody>
-                    </table>
-                </div>
-
-                <div id="lunarMemberSection" style="display:none;">
-                    <div class="lunar-clan-head">
-                        <span id="lunarClanName">—</span>
-                        <span id="lunarClanMembers">—</span>
-                    </div>
-
-                    <div class="lunar-mode-row">
-                        <button class="lunar-mode-btn active" data-mode="atk" onclick="setLunarMemberMode('atk')" data-i18n="lunar.mode_atk">Attack</button>
-                        <button class="lunar-mode-btn" data-mode="cores" onclick="setLunarMemberMode('cores')">
-                            <img src="Game%20Icons/Relic%20Cores.png" alt="Relic Cores" style="width:14px;height:14px;vertical-align:middle;" onerror="this.style.display='none';"> -
-                            <img src="Game%20Icons/TransmutaCore.png" alt="Transmute Cores" style="width:14px;height:14px;vertical-align:middle;" onerror="this.style.display='none';"> -
-                            <img src="Game%20Icons/Resonance%20Chips.png" alt="Resonance Chips" style="width:14px;height:14px;vertical-align:middle;" onerror="this.style.display='none';">
-                        </button>
-                    </div>
-
-                    <div id="lunarMemberList" style="display:flex; flex-direction:column; gap:4px;"></div>
-                </div>
+                <!-- One card per clan (Top-30 totals); tap a clan to drop down its players. -->
+                <div id="lunarClanList"></div>
             </div>
 
             <!-- LME History Sub-tab -->
@@ -2505,9 +2501,7 @@
         // ══════════════════════════════════════════════
         //  PRO LUNAR DETAILS — 4-clan weekly match-up scouting
         // ══════════════════════════════════════════════
-        let lunarClanOrder    = [];
-        let currentLunarClan  = null;
-        let currentLunarMode  = 'atk'; // 'atk' | 'cores'
+        let lunarClanOrder = [];
 
         function switchLunarSubTab(tab) {
             document.querySelectorAll('.lunar-subtab-content').forEach(el => { el.style.display = 'none'; });
@@ -2527,6 +2521,24 @@
             return (relic || 0) + (transmute || 0) + (resonance || 0);
         }
 
+        // Older lunarDetails.js files have no clan totals for Tech Resonance /
+        // Awakening: sum the clan's own top 30 members by that stat instead.
+        function lunarTopTotal(clan, totalKey, memberKey) {
+            if (clan[totalKey] !== undefined && clan[totalKey] !== null) return clan[totalKey];
+            const values = Object.values(clan.members || {}).map(m => m[memberKey]).filter(v => v !== null && v !== undefined);
+            if (!values.length) return null;
+            return values.sort((a, b) => b - a).slice(0, TOP_N).reduce((a, b) => a + b, 0);
+        }
+
+        function lunarTile(label, value, color) {
+            return `<div class="lunar-total"><div class="lunar-total-label">${label}</div>
+                <div class="lunar-total-value"${color ? ` style="color:${color};"` : ''}>${value}</div></div>`;
+        }
+
+        function lunarIcon(file, alt) {
+            return `<img src="${ICON_BASE}${file}" alt="${alt}" title="${alt}" onerror="this.replaceWith(document.createTextNode('${alt}'))">`;
+        }
+
         function loadLunarDetails() {
             if (typeof lunarDetails === 'undefined') return;
             lunarClanOrder = Object.keys(lunarDetails).sort((a, b) => {
@@ -2534,98 +2546,82 @@
                 if (byPoints !== 0) return byPoints;
                 return (lunarDetails[b].totalAtk || 0) - (lunarDetails[a].totalAtk || 0);
             });
-
-            const tbody = document.getElementById('lunarClanTableBody');
-            tbody.innerHTML = '';
+            const own = '44262'; // Freedom (same id as the header chip)
+            const fmt = v => v === null || v === undefined ? '—' : v.toLocaleString();
+            const list = document.getElementById('lunarClanList');
+            list.innerHTML = '';
             lunarClanOrder.forEach((clanId, index) => {
                 const clan = lunarDetails[clanId];
-                const relic     = clan.totalRelicCores      ?? null;
-                const transmute = clan.totalTransmuteCores  ?? null;
-                const resonance = clan.totalChips  ?? null;
-                const combined  = lunarCombinedCores(clan);
-
-                const row = document.createElement('tr');
-                row.className = 'lunar-clan-row';
-                row.dataset.clanId = clanId;
-                row.style.borderBottom = '1px solid #222c48';
-                if (index % 2 === 1) row.style.background = '#141b30';
-                row.onclick = () => selectLunarClan(clanId);
-
-                row.innerHTML = `
-                    <td style="padding: 10px 8px; color: #e7ecfa; font-weight: 600; white-space: nowrap;">${clan.name}</td>
-                    <td style="padding: 10px 6px; text-align: center; color: #ffd24a; font-weight: 700;">${(clan.lunarPoints ?? 0).toLocaleString()}</td>
-                    <td style="padding: 10px 6px; text-align: center; color: #e7ecfa; font-weight: 600;">${formatNumber(clan.totalAtk || 0)}</td>
-                    <td style="padding: 10px 6px; text-align: center; color: #b4a7ff; font-weight: 600;">${relic === null ? '—' : relic.toLocaleString()}</td>
-                    <td style="padding: 10px 6px; text-align: center; color: #b4a7ff; font-weight: 600;">${transmute === null ? '—' : transmute.toLocaleString()}</td>
-                    <td style="padding: 10px 6px; text-align: center; color: #b4a7ff; font-weight: 600;">${resonance === null ? '—' : resonance.toLocaleString()}</td>
-                    <td style="padding: 10px 6px; text-align: center; color: #b4a7ff; font-weight: 700;">${combined === null ? '—' : combined.toLocaleString()}</td>
-                `;
-                tbody.appendChild(row);
+                const tech = lunarTopTotal(clan, 'totalTechResonance', 'techResonance');
+                const awake = lunarTopTotal(clan, 'totalAwakeningCores', 'awakeningCores');
+                const card = document.createElement('div');
+                card.className = 'lunar-clan' + (clanId === own ? ' own' : '');
+                card.dataset.clanId = clanId;
+                card.innerHTML = `
+                    <button class="lunar-clan-summary" type="button">
+                        <div class="lunar-clan-top">
+                            <span class="lunar-clan-rank">${index + 1}</span>
+                            <span class="lunar-clan-name">${escapeHtml(clan.name || ('Clan ' + clanId))}</span>
+                            <span class="lunar-clan-pts">🌙 ${(clan.lunarPoints ?? 0).toLocaleString()}</span>
+                            <span class="lunar-clan-chev">▼</span>
+                        </div>
+                        <div class="lunar-totals">
+                            ${lunarTile(lunarIcon('ATK.png', 'ATK'), formatNumber(clan.totalAtk || 0), '#e7ecfa')}
+                            ${lunarTile(lunarIcon('Relic%20Cores.png', 'Relic'), fmt(clan.totalRelicCores ?? null))}
+                            ${lunarTile(lunarIcon('TransmutaCore.png', 'Transmute'), fmt(clan.totalTransmuteCores ?? null))}
+                            ${lunarTile(lunarIcon('Resonance%20Chips.png', 'Chips'), fmt(clan.totalChips ?? null))}
+                            ${lunarTile('<span style="color:#8bc34a;font-size:13px;">⚡</span>', tech === null ? '—' : formatNumber(tech), '#8bc34a')}
+                            ${lunarTile(lunarIcon('Awakening%20Core.png', 'Awakening'), awake === null ? '—' : awake.toLocaleString() + '+', '#4fc3f7')}
+                            ${lunarTile(t('stat.total_cores'), fmt(lunarCombinedCores(clan)))}
+                            ${lunarTile('👥', Object.keys(clan.members || {}).length + '/40', '#c3cbe4')}
+                        </div>
+                        <div class="lunar-totals-note">Top 30 totals</div>
+                    </button>
+                    <div class="lunar-clan-players">
+                        <div class="player-head" aria-hidden="true"><table><thead><tr></tr></thead></table></div>
+                        <div class="table-wrap player-wrap">
+                            <table>
+                                <thead><tr>
+                                    <th data-i18n="table.col.rank">#</th>
+                                    <th data-i18n="table.col.player_name">Player Name</th>${statsHeaderCells()}
+                                </tr></thead>
+                                <tbody></tbody>
+                            </table>
+                        </div>
+                    </div>`;
+                card.querySelector('.lunar-clan-summary').onclick = () => toggleLunarClan(card);
+                list.appendChild(card);
             });
+            applyTranslations();
         }
 
-        function selectLunarClan(clanId) {
-            const clan = lunarDetails[clanId];
-            if (!clan) return;
-            currentLunarClan = clanId;
-
-            document.querySelectorAll('#lunarClanTableBody .lunar-clan-row').forEach(row => {
-                row.classList.toggle('active', row.dataset.clanId === clanId);
-            });
-
-            document.getElementById('lunarMemberSection').style.display = '';
-            document.getElementById('lunarClanName').textContent    = clan.name;
-            document.getElementById('lunarClanMembers').textContent = Object.keys(clan.members).length + ' / 40';
-
-            renderLunarMemberList();
-        }
-
-        function setLunarMemberMode(mode) {
-            currentLunarMode = mode;
-            document.querySelectorAll('.lunar-mode-btn').forEach(btn => {
-                btn.classList.toggle('active', btn.dataset.mode === mode);
-            });
-            renderLunarMemberList();
-        }
-
-        function renderLunarMemberList() {
-            const list = document.getElementById('lunarMemberList');
-            list.innerHTML = '';
-            const clan = lunarDetails[currentLunarClan];
-            if (!clan) return;
-
-            const members = Object.values(clan.members).sort((a, b) => b.atk - a.atk);
-
-            members.forEach((member, idx) => {
-                const row = document.createElement('div');
-                row.className = 'lunar-member-row';
-
-                const rankEl = document.createElement('span');
-                rankEl.style = 'font-size:12px; font-weight:700; color:#9aa4c4; width:22px; text-align:center; flex-shrink:0;';
-                rankEl.textContent = idx + 1;
-
-                const nameEl = document.createElement('span');
-                nameEl.style = 'font-size:13px; font-weight:600; flex:1; color:#e7ecfa;';
-                nameEl.textContent = member.name;
-
-                const statEl = document.createElement('span');
-                statEl.style = 'font-size:12px; font-weight:700; white-space:nowrap;';
-                if (currentLunarMode === 'atk') {
-                    statEl.style.color = '#e7ecfa';
-                    statEl.textContent = formatNumber(member.atk);
-                } else {
-                    const relic     = member.relicCores      ?? null;
-                    const transmute = member.transmuteCores  ?? null;
-                    const resonance = member.chipsCount      ?? null;
-                    statEl.style.color = '#b4a7ff';
-                    statEl.innerHTML = `${relic === null ? '—' : relic.toLocaleString()} <span style="color:#7a85a8;">-</span> ${transmute === null ? '—' : transmute.toLocaleString()} <span style="color:#7a85a8;">-</span> ${resonance === null ? '—' : resonance.toLocaleString()}`;
-                }
-
-                row.appendChild(rankEl);
-                row.appendChild(nameEl);
-                row.appendChild(statEl);
-                list.appendChild(row);
-            });
+        function toggleLunarClan(card) {
+            const opening = !card.classList.contains('open');
+            document.querySelectorAll('.lunar-clan.open').forEach(c => { if (c !== card) c.classList.remove('open'); });
+            card.classList.toggle('open', opening);
+            if (!opening) return;
+            const clan = lunarDetails[card.dataset.clanId];
+            const wrap = card.querySelector('.player-wrap');
+            const head = card.querySelector('.player-head');
+            const tbody = wrap.querySelector('tbody');
+            if (!tbody.children.length) {
+                const members = Object.entries(clan.members || {}).map(([uid, m]) => ({ ...m, name: m.name || ('Player ' + uid) }))
+                    .sort((a, b) => (b.atk || 0) - (a.atk || 0));
+                const num = v => v === null || v === undefined ? '—' : v.toLocaleString();
+                tbody.innerHTML = members.map((m, i) => `<tr>
+                    <td class="rank-cell">${i + 1}</td>
+                    <td class="name-cell">${escapeHtml(m.name || '—')}</td>
+                    <td class="cores-cell">${num(m.relicCores)}</td>
+                    <td class="cores-cell">${num(m.transmuteCores)}</td>
+                    <td class="cores-cell">${num(m.chipsCount)}</td>
+                    <td class="cores-cell" style="color:#8bc34a;">${m.techResonance === null || m.techResonance === undefined ? '—' : formatNumber(m.techResonance)}</td>
+                    <td class="cores-cell" style="color:#4fc3f7;">${m.awakeningCores === null || m.awakeningCores === undefined ? '—' : m.awakeningCores.toLocaleString() + '+'}</td>
+                    <td style="text-align:center;font-weight:600;color:#e7ecfa;">${formatNumber(m.atk || 0)}</td>
+                </tr>`).join('');
+                card._resync = attachStickyHead(head, wrap);
+            }
+            syncStickyHead(head, wrap);
+            card.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
 
         function getCXRankColor(score) {
@@ -2677,18 +2673,24 @@
 
         const ICON_BASE = 'Game%20Icons/';
 
-        function updateTableHeader() {
-            const tr = document.getElementById('tableHeader');
-            if (currentSubTab === 'stats') {
-                tr.innerHTML = `
-                    <th data-i18n="table.col.rank">#</th>
-                    <th data-i18n="table.col.player_name">Player Name</th>
+        // Stats columns (# and Player Name excluded) - shared by the main
+        // player table and the Lunar Details player tables.
+        function statsHeaderCells() {
+            return `
                     <th><img src="${ICON_BASE}Relic%20Cores.png" alt="Relic Cores" style="width:20px;height:20px;vertical-align:middle;" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><span style="display:none;" data-i18n="table.col.relic_cores">Relic Cores</span></th>
                     <th><img src="${ICON_BASE}TransmutaCore.png" alt="Transmute Cores" style="width:20px;height:20px;vertical-align:middle;" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><span style="display:none;" data-i18n="table.col.transmute_cores">Transmute Cores</span></th>
                     <th><img src="${ICON_BASE}Resonance%20Chips.png" alt="Resonance Chips" style="width:20px;height:20px;vertical-align:middle;" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><span style="display:none;" data-i18n="table.col.resonance_chips">Resonance Chips</span></th>
                     <th title="Tech Resonance"><span style="color:#8bc34a;font-size:16px;">⚡</span></th>
                     <th title="Awakening Cores"><img src="${ICON_BASE}Awakening%20Core.png" alt="Awakening Cores" style="width:20px;height:20px;vertical-align:middle;" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><span style="display:none;">Awakening</span></th>
                     <th><img src="${ICON_BASE}ATK.png" alt="ATK" style="width:20px;height:20px;vertical-align:middle;" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><span style="display:none;" data-i18n="table.col.atk">ATK</span></th>`;
+        }
+
+        function updateTableHeader() {
+            const tr = document.getElementById('tableHeader');
+            if (currentSubTab === 'stats') {
+                tr.innerHTML = `
+                    <th data-i18n="table.col.rank">#</th>
+                    <th data-i18n="table.col.player_name">Player Name</th>${statsHeaderCells()}`;
             } else if (currentSubTab === 'lme') {
                 tr.innerHTML = `
                     <th data-i18n="table.col.rank">#</th>
@@ -2759,19 +2761,20 @@
             syncPlayerHead();
         }
 
-        // Copies the real header into #playerHead with each column's measured
-        // width, then hides the real one (visibility: collapse keeps widths).
-        function syncPlayerHead() {
-            const head = document.getElementById('playerHead');
-            const wrap = document.querySelector('.player-wrap');
-            const real = document.getElementById('tableHeader');
-            const body = document.getElementById('tableBody');
-            if (!head || !wrap || !real) return;
+        // Pinned table header: `head` (.player-head) holds a copy of the real
+        // header of the table inside `wrap` (.player-wrap) with each column's
+        // measured width; the table slides up under it (the real header keeps
+        // the widths). Sticks to the top of the view and slides sideways
+        // with the stats. Used by the main table and the Lunar Details tables.
+        function syncStickyHead(head, wrap) {
+            const real = wrap && wrap.querySelector('thead tr');
+            const body = wrap && wrap.querySelector('tbody');
+            if (!head || !real || !body) return;
             const ths = Array.from(real.children);
             const widths = ths.map(th => th.getBoundingClientRect().width);
             const realH = real.getBoundingClientRect().height;
             if (!ths.length || !body.children.length || !widths.some(w => w > 0)) {
-                // nothing to show, or the view is hidden: re-synced when it's shown
+                // nothing to show, or hidden: re-synced when it's shown
                 head.style.display = 'none'; wrap.classList.remove('has-float'); wrap.style.marginTop = '';
                 return;
             }
@@ -2787,26 +2790,30 @@
                 left += widths[i];
             });
             head.querySelector('table').style.width = real.closest('table').getBoundingClientRect().width + 'px';
-            // The real header keeps the column widths; slide the table up so the copy covers it.
             wrap.classList.add('has-float');
             wrap.style.marginTop = (-realH) + 'px';
             head.scrollLeft = wrap.scrollLeft;
         }
 
-        (function () {
-            const wrap = document.querySelector('.player-wrap');
-            const head = document.getElementById('playerHead');
-            if (wrap && head) wrap.addEventListener('scroll', () => { head.scrollLeft = wrap.scrollLeft; }, { passive: true });
-            // Re-measure whenever the table's size changes: fonts/icons finishing
-            // loading, rotation, the view becoming visible.
+        // Re-measure whenever the table's size changes (fonts/icons finishing
+        // loading, rotation, becoming visible) and follow sideways scrolling.
+        function attachStickyHead(head, wrap) {
+            if (!head || !wrap) return;
+            wrap.addEventListener('scroll', () => { head.scrollLeft = wrap.scrollLeft; }, { passive: true });
             let t;
-            const later = () => { clearTimeout(t); t = setTimeout(syncPlayerHead, 60); };
-            const table = document.getElementById('playerTable');
+            const later = () => { clearTimeout(t); t = setTimeout(() => syncStickyHead(head, wrap), 60); };
+            const table = wrap.querySelector('table');
             if (table && window.ResizeObserver) new ResizeObserver(later).observe(table);
             if (document.fonts && document.fonts.ready) document.fonts.ready.then(later);
             window.addEventListener('load', later);
             if (table) table.addEventListener('load', later, true); // header icons
-        })();
+            return later;
+        }
+
+        function syncPlayerHead() {
+            syncStickyHead(document.getElementById('playerHead'), document.getElementById('playerTable').parentElement);
+        }
+        attachStickyHead(document.getElementById('playerHead'), document.getElementById('playerTable').parentElement);
 
         function sortData(criteria) {
             currentSort = criteria;
