@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-19T00:25:11.187973+11:00",
-    "total": 132700,
+    "updatedAt": "2026-11-19T01:25:19.317117+11:00",
+    "total": 133100,
     "members": [
       {
         "uid": 29321884,
@@ -276,16 +276,16 @@
         "score": 10000
       },
       {
-        "uid": 10754439,
-        "name": "HakiLuffy",
-        "rank": 4,
-        "score": 9700
-      },
-      {
         "uid": 66607264,
         "name": null,
+        "rank": 4,
+        "score": 9800
+      },
+      {
+        "uid": 10754439,
+        "name": "HakiLuffy",
         "rank": 5,
-        "score": 9400
+        "score": 9700
       },
       {
         "uid": 41742773,
