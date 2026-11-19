@@ -7,14 +7,14 @@
   "previousSeasonFinalTotal": 134900,
   "milestoneSnapshot": null,
   "cxRank": {
-    "updatedAt": "2026-11-20T01:50:54.743046+11:00",
-    "total": 17700,
+    "updatedAt": "2026-11-20T02:50:58.890131+11:00",
+    "total": 19000,
     "members": [
       {
         "uid": 29321884,
         "name": "RABBIT5",
         "rank": 1,
-        "score": 1800
+        "score": 1900
       },
       {
         "uid": 66607264,
@@ -89,38 +89,38 @@
         "score": 800
       },
       {
+        "uid": 80018314,
+        "name": null,
+        "rank": 14,
+        "score": 800
+      },
+      {
         "uid": 79510960,
         "name": "theLP",
-        "rank": 14,
+        "rank": 15,
         "score": 500
       },
       {
         "uid": 83861839,
         "name": "groggen",
-        "rank": 15,
+        "rank": 16,
         "score": 400
       },
       {
         "uid": 41742773,
         "name": "MadameMischief",
-        "rank": 16,
+        "rank": 17,
         "score": 400
       },
       {
         "uid": 87954282,
         "name": "SngphO",
-        "rank": 17,
+        "rank": 18,
         "score": 400
       },
       {
         "uid": 70603922,
         "name": "BlackFlamE",
-        "rank": 18,
-        "score": 400
-      },
-      {
-        "uid": 80018314,
-        "name": null,
         "rank": 19,
         "score": 400
       },
@@ -131,110 +131,110 @@
         "score": 400
       },
       {
+        "uid": 75174428,
+        "name": "PastalaVista",
+        "rank": 21,
+        "score": 400
+      },
+      {
+        "uid": 112772047,
+        "name": "VictorMolusco",
+        "rank": 22,
+        "score": 400
+      },
+      {
         "uid": 27113479,
         "name": "silverxz",
-        "rank": 21,
+        "rank": 23,
         "score": 300
       },
       {
         "uid": 71028860,
         "name": "Rzzza",
-        "rank": 22,
+        "rank": 24,
         "score": 0
       },
       {
         "uid": 40001195,
         "name": "Ӂ-ShhImB☆tm☆n",
-        "rank": 23,
+        "rank": 25,
         "score": 0
       },
       {
         "uid": 60687252,
         "name": "һan",
-        "rank": 24,
+        "rank": 26,
         "score": 0
       },
       {
         "uid": 61865023,
         "name": "RexPanda",
-        "rank": 25,
+        "rank": 27,
         "score": 0
       },
       {
         "uid": 108546985,
         "name": "pumpenjoe",
-        "rank": 26,
+        "rank": 28,
         "score": 0
       },
       {
         "uid": 115742768,
         "name": "SterbyTools",
-        "rank": 27,
+        "rank": 29,
         "score": 0
       },
       {
         "uid": 35869301,
         "name": "Toddlerr",
-        "rank": 28,
+        "rank": 30,
         "score": 0
       },
       {
         "uid": 89511116,
         "name": "EMBALOCO",
-        "rank": 29,
+        "rank": 31,
         "score": 0
       },
       {
         "uid": 83339881,
         "name": "Fl3xas",
-        "rank": 30,
-        "score": 0
-      },
-      {
-        "uid": 75174428,
-        "name": "PastalaVista",
-        "rank": 31,
+        "rank": 32,
         "score": 0
       },
       {
         "uid": 72894129,
         "name": "NeonCBV",
-        "rank": 32,
+        "rank": 33,
         "score": 0
       },
       {
         "uid": 80972473,
         "name": "Cunner88",
-        "rank": 33,
+        "rank": 34,
         "score": 0
       },
       {
         "uid": 30658936,
         "name": "Gritchen",
-        "rank": 34,
+        "rank": 35,
         "score": 0
       },
       {
         "uid": 106162623,
         "name": "gubrax",
-        "rank": 35,
+        "rank": 36,
         "score": 0
       },
       {
         "uid": 29904762,
         "name": "Cheeselife",
-        "rank": 36,
+        "rank": 37,
         "score": 0
       },
       {
         "uid": 87244358,
         "name": "神Sterben死",
-        "rank": 37,
-        "score": 0
-      },
-      {
-        "uid": 112772047,
-        "name": "VictorMolusco",
         "rank": 38,
         "score": 0
       },
