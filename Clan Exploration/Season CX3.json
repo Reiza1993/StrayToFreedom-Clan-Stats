@@ -7,8 +7,8 @@
   "previousSeasonFinalTotal": 134900,
   "milestoneSnapshot": null,
   "cxRank": {
-    "updatedAt": "2026-11-19T18:50:31.457057+11:00",
-    "total": 11900,
+    "updatedAt": "2026-11-19T19:50:35.439444+11:00",
+    "total": 12400,
     "members": [
       {
         "uid": 29321884,
@@ -29,14 +29,14 @@
         "score": 900
       },
       {
-        "uid": 36484758,
-        "name": "Belthazar",
-        "rank": 4,
-        "score": 800
-      },
-      {
         "uid": 103516442,
         "name": "DAYO-P",
+        "rank": 4,
+        "score": 900
+      },
+      {
+        "uid": 36484758,
+        "name": "Belthazar",
         "rank": 5,
         "score": 800
       },
@@ -65,16 +65,16 @@
         "score": 800
       },
       {
-        "uid": 79510960,
-        "name": "theLP",
-        "rank": 10,
-        "score": 500
-      },
-      {
         "uid": 100876140,
         "name": "Scoundrel536",
+        "rank": 10,
+        "score": 800
+      },
+      {
+        "uid": 79510960,
+        "name": "theLP",
         "rank": 11,
-        "score": 400
+        "score": 500
       },
       {
         "uid": 83861839,
