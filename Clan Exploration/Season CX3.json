@@ -7,8 +7,8 @@
   "previousSeasonFinalTotal": 134900,
   "milestoneSnapshot": null,
   "cxRank": {
-    "updatedAt": "2026-11-20T03:51:03.011549+11:00",
-    "total": 22500,
+    "updatedAt": "2026-11-20T04:51:07.429877+11:00",
+    "total": 23200,
     "members": [
       {
         "uid": 29321884,
@@ -68,7 +68,7 @@
         "uid": 113690788,
         "name": "Apathy_",
         "rank": 10,
-        "score": 800
+        "score": 1200
       },
       {
         "uid": 108860725,
@@ -107,32 +107,32 @@
         "score": 700
       },
       {
+        "uid": 18115624,
+        "name": "Nubis",
+        "rank": 17,
+        "score": 700
+      },
+      {
         "uid": 79510960,
         "name": "theLP",
-        "rank": 17,
+        "rank": 18,
         "score": 500
       },
       {
         "uid": 83861839,
         "name": "groggen",
-        "rank": 18,
+        "rank": 19,
         "score": 400
       },
       {
         "uid": 41742773,
         "name": "MadameMischief",
-        "rank": 19,
+        "rank": 20,
         "score": 400
       },
       {
         "uid": 87954282,
         "name": "SngphO",
-        "rank": 20,
-        "score": 400
-      },
-      {
-        "uid": 18115624,
-        "name": "Nubis",
         "rank": 21,
         "score": 400
       },
