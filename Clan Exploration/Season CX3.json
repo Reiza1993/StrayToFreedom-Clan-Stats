@@ -7,8 +7,8 @@
   "previousSeasonFinalTotal": 134900,
   "milestoneSnapshot": null,
   "cxRank": {
-    "updatedAt": "2026-11-20T07:51:20.834188+11:00",
-    "total": 28400,
+    "updatedAt": "2026-11-20T08:51:25.205616+11:00",
+    "total": 29200,
     "members": [
       {
         "uid": 29321884,
@@ -131,26 +131,26 @@
         "score": 800
       },
       {
+        "uid": 83339881,
+        "name": "Fl3xas",
+        "rank": 21,
+        "score": 800
+      },
+      {
         "uid": 27113479,
         "name": "silverxz",
-        "rank": 21,
+        "rank": 22,
         "score": 700
       },
       {
         "uid": 41742773,
         "name": "MadameMischief",
-        "rank": 22,
+        "rank": 23,
         "score": 400
       },
       {
         "uid": 75174428,
         "name": "PastalaVista",
-        "rank": 23,
-        "score": 400
-      },
-      {
-        "uid": 83339881,
-        "name": "Fl3xas",
         "rank": 24,
         "score": 400
       },
@@ -173,44 +173,44 @@
         "score": 400
       },
       {
+        "uid": 80972473,
+        "name": "Cunner88",
+        "rank": 28,
+        "score": 400
+      },
+      {
         "uid": 71028860,
         "name": "Rzzza",
-        "rank": 28,
+        "rank": 29,
         "score": 0
       },
       {
         "uid": 40001195,
         "name": "Ӂ-ShhImB☆tm☆n",
-        "rank": 29,
+        "rank": 30,
         "score": 0
       },
       {
         "uid": 60687252,
         "name": "һan",
-        "rank": 30,
+        "rank": 31,
         "score": 0
       },
       {
         "uid": 61865023,
         "name": "RexPanda",
-        "rank": 31,
+        "rank": 32,
         "score": 0
       },
       {
         "uid": 115742768,
         "name": "SterbyTools",
-        "rank": 32,
+        "rank": 33,
         "score": 0
       },
       {
         "uid": 89511116,
         "name": "EMBALOCO",
-        "rank": 33,
-        "score": 0
-      },
-      {
-        "uid": 80972473,
-        "name": "Cunner88",
         "rank": 34,
         "score": 0
       },
