@@ -7,8 +7,8 @@
   "previousSeasonFinalTotal": 134900,
   "milestoneSnapshot": null,
   "cxRank": {
-    "updatedAt": "2026-11-19T23:50:47.292074+11:00",
-    "total": 16200,
+    "updatedAt": "2026-11-20T00:50:50.969842+11:00",
+    "total": 17000,
     "members": [
       {
         "uid": 29321884,
@@ -17,40 +17,40 @@
         "score": 1800
       },
       {
+        "uid": 66607264,
+        "name": null,
+        "rank": 2,
+        "score": 1500
+      },
+      {
         "uid": 103516442,
         "name": "DAYO-P",
-        "rank": 2,
+        "rank": 3,
         "score": 1200
       },
       {
         "uid": 36484758,
         "name": "Belthazar",
-        "rank": 3,
+        "rank": 4,
         "score": 1200
       },
       {
         "uid": 100876140,
         "name": "Scoundrel536",
-        "rank": 4,
+        "rank": 5,
         "score": 1200
       },
       {
         "uid": 64676255,
         "name": "盾Heathcliff剣",
-        "rank": 5,
+        "rank": 6,
         "score": 1200
       },
       {
         "uid": 32556489,
         "name": "Bensayyten",
-        "rank": 6,
-        "score": 1200
-      },
-      {
-        "uid": 66607264,
-        "name": null,
         "rank": 7,
-        "score": 1100
+        "score": 1200
       },
       {
         "uid": 10754439,
@@ -83,26 +83,26 @@
         "score": 800
       },
       {
+        "uid": 59566866,
+        "name": "FlyingDutchy",
+        "rank": 13,
+        "score": 800
+      },
+      {
         "uid": 79510960,
         "name": "theLP",
-        "rank": 13,
+        "rank": 14,
         "score": 500
       },
       {
         "uid": 83861839,
         "name": "groggen",
-        "rank": 14,
+        "rank": 15,
         "score": 400
       },
       {
         "uid": 41742773,
         "name": "MadameMischief",
-        "rank": 15,
-        "score": 400
-      },
-      {
-        "uid": 59566866,
-        "name": "FlyingDutchy",
         "rank": 16,
         "score": 400
       },
