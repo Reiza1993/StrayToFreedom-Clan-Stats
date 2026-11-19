@@ -7,8 +7,8 @@
   "previousSeasonFinalTotal": 134900,
   "milestoneSnapshot": null,
   "cxRank": {
-    "updatedAt": "2026-11-19T21:50:39.160417+11:00",
-    "total": 13600,
+    "updatedAt": "2026-11-19T22:50:43.159400+11:00",
+    "total": 14400,
     "members": [
       {
         "uid": 29321884,
@@ -113,74 +113,74 @@
         "score": 400
       },
       {
+        "uid": 70603922,
+        "name": "BlackFlamE",
+        "rank": 18,
+        "score": 400
+      },
+      {
+        "uid": 80018314,
+        "name": null,
+        "rank": 19,
+        "score": 400
+      },
+      {
         "uid": 27113479,
         "name": "silverxz",
-        "rank": 18,
+        "rank": 20,
         "score": 300
       },
       {
         "uid": 71028860,
         "name": "Rzzza",
-        "rank": 19,
+        "rank": 21,
         "score": 0
       },
       {
         "uid": 40001195,
         "name": "Ӂ-ShhImB☆tm☆n",
-        "rank": 20,
+        "rank": 22,
         "score": 0
       },
       {
         "uid": 60687252,
         "name": "һan",
-        "rank": 21,
-        "score": 0
-      },
-      {
-        "uid": 80018314,
-        "name": null,
-        "rank": 22,
+        "rank": 23,
         "score": 0
       },
       {
         "uid": 61865023,
         "name": "RexPanda",
-        "rank": 23,
+        "rank": 24,
         "score": 0
       },
       {
         "uid": 108546985,
         "name": "pumpenjoe",
-        "rank": 24,
+        "rank": 25,
         "score": 0
       },
       {
         "uid": 115742768,
         "name": "SterbyTools",
-        "rank": 25,
+        "rank": 26,
         "score": 0
       },
       {
         "uid": 35869301,
         "name": "Toddlerr",
-        "rank": 26,
+        "rank": 27,
         "score": 0
       },
       {
         "uid": 89511116,
         "name": "EMBALOCO",
-        "rank": 27,
+        "rank": 28,
         "score": 0
       },
       {
         "uid": 83339881,
         "name": "Fl3xas",
-        "rank": 28,
-        "score": 0
-      },
-      {
-        "uid": 70603922,
-        "name": "BlackFlamE",
         "rank": 29,
         "score": 0
       },
