@@ -7,36 +7,36 @@
   "previousSeasonFinalTotal": 134900,
   "milestoneSnapshot": null,
   "cxRank": {
-    "updatedAt": "2026-11-19T14:50:14.969292+11:00",
-    "total": 8500,
+    "updatedAt": "2026-11-19T15:50:19.249179+11:00",
+    "total": 9100,
     "members": [
       {
         "uid": 29321884,
         "name": "RABBIT5",
         "rank": 1,
-        "score": 1200
+        "score": 1400
+      },
+      {
+        "uid": 10754439,
+        "name": "HakiLuffy",
+        "rank": 2,
+        "score": 900
       },
       {
         "uid": 66607264,
         "name": null,
-        "rank": 2,
+        "rank": 3,
         "score": 800
       },
       {
         "uid": 36484758,
         "name": "Belthazar",
-        "rank": 3,
+        "rank": 4,
         "score": 800
       },
       {
         "uid": 79510960,
         "name": "theLP",
-        "rank": 4,
-        "score": 500
-      },
-      {
-        "uid": 10754439,
-        "name": "HakiLuffy",
         "rank": 5,
         "score": 500
       },
