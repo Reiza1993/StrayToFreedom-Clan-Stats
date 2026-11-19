@@ -7,24 +7,24 @@
   "previousSeasonFinalTotal": 134900,
   "milestoneSnapshot": null,
   "cxRank": {
-    "updatedAt": "2026-11-20T08:51:25.205616+11:00",
-    "total": 29200,
+    "updatedAt": "2026-11-20T09:51:29.753200+11:00",
+    "total": 30100,
     "members": [
       {
         "uid": 29321884,
         "name": "RABBIT5",
         "rank": 1,
-        "score": 2800
-      },
-      {
-        "uid": 36484758,
-        "name": "Belthazar",
-        "rank": 2,
-        "score": 1900
+        "score": 3100
       },
       {
         "uid": 66607264,
         "name": null,
+        "rank": 2,
+        "score": 2100
+      },
+      {
+        "uid": 36484758,
+        "name": "Belthazar",
         "rank": 3,
         "score": 1900
       },
@@ -179,74 +179,74 @@
         "score": 400
       },
       {
+        "uid": 26277677,
+        "name": "BobBobberson",
+        "rank": 29,
+        "score": 400
+      },
+      {
         "uid": 71028860,
         "name": "Rzzza",
-        "rank": 29,
+        "rank": 30,
         "score": 0
       },
       {
         "uid": 40001195,
         "name": "Ӂ-ShhImB☆tm☆n",
-        "rank": 30,
+        "rank": 31,
         "score": 0
       },
       {
         "uid": 60687252,
         "name": "һan",
-        "rank": 31,
+        "rank": 32,
         "score": 0
       },
       {
         "uid": 61865023,
         "name": "RexPanda",
-        "rank": 32,
+        "rank": 33,
         "score": 0
       },
       {
         "uid": 115742768,
         "name": "SterbyTools",
-        "rank": 33,
+        "rank": 34,
         "score": 0
       },
       {
         "uid": 89511116,
         "name": "EMBALOCO",
-        "rank": 34,
+        "rank": 35,
         "score": 0
       },
       {
         "uid": 30658936,
         "name": "Gritchen",
-        "rank": 35,
+        "rank": 36,
         "score": 0
       },
       {
         "uid": 106162623,
         "name": "gubrax",
-        "rank": 36,
+        "rank": 37,
         "score": 0
       },
       {
         "uid": 29904762,
         "name": "Cheeselife",
-        "rank": 37,
+        "rank": 38,
         "score": 0
       },
       {
         "uid": 87244358,
         "name": "神Sterben死",
-        "rank": 38,
+        "rank": 39,
         "score": 0
       },
       {
         "uid": 11463573,
         "name": "faxnem",
-        "rank": 39,
-        "score": 0
-      },
-      {
-        "uid": 26277677,
-        "name": "BobBobberson",
         "rank": 40,
         "score": 0
       }
