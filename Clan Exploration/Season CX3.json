@@ -7,8 +7,8 @@
   "previousSeasonFinalTotal": 134900,
   "milestoneSnapshot": null,
   "cxRank": {
-    "updatedAt": "2026-11-20T09:51:29.753200+11:00",
-    "total": 30100,
+    "updatedAt": "2026-11-20T10:51:34.078465+11:00",
+    "total": 31300,
     "members": [
       {
         "uid": 29321884,
@@ -20,19 +20,19 @@
         "uid": 66607264,
         "name": null,
         "rank": 2,
-        "score": 2100
-      },
-      {
-        "uid": 36484758,
-        "name": "Belthazar",
-        "rank": 3,
-        "score": 1900
+        "score": 2200
       },
       {
         "uid": 103516442,
         "name": "DAYO-P",
+        "rank": 3,
+        "score": 2000
+      },
+      {
+        "uid": 36484758,
+        "name": "Belthazar",
         "rank": 4,
-        "score": 1700
+        "score": 1900
       },
       {
         "uid": 100876140,
@@ -59,38 +59,38 @@
         "score": 1300
       },
       {
+        "uid": 18115624,
+        "name": "Nubis",
+        "rank": 9,
+        "score": 1300
+      },
+      {
         "uid": 88203044,
         "name": "p88203044",
-        "rank": 9,
+        "rank": 10,
         "score": 1200
       },
       {
         "uid": 113690788,
         "name": "Apathy_",
-        "rank": 10,
+        "rank": 11,
         "score": 1200
       },
       {
         "uid": 59566866,
         "name": "FlyingDutchy",
-        "rank": 11,
+        "rank": 12,
         "score": 1200
       },
       {
         "uid": 79510960,
         "name": "theLP",
-        "rank": 12,
+        "rank": 13,
         "score": 900
       },
       {
         "uid": 70603922,
         "name": "BlackFlamE",
-        "rank": 13,
-        "score": 900
-      },
-      {
-        "uid": 18115624,
-        "name": "Nubis",
         "rank": 14,
         "score": 900
       },
@@ -185,62 +185,62 @@
         "score": 400
       },
       {
+        "uid": 87244358,
+        "name": "神Sterben死",
+        "rank": 30,
+        "score": 400
+      },
+      {
         "uid": 71028860,
         "name": "Rzzza",
-        "rank": 30,
+        "rank": 31,
         "score": 0
       },
       {
         "uid": 40001195,
         "name": "Ӂ-ShhImB☆tm☆n",
-        "rank": 31,
+        "rank": 32,
         "score": 0
       },
       {
         "uid": 60687252,
         "name": "һan",
-        "rank": 32,
+        "rank": 33,
         "score": 0
       },
       {
         "uid": 61865023,
         "name": "RexPanda",
-        "rank": 33,
+        "rank": 34,
         "score": 0
       },
       {
         "uid": 115742768,
         "name": "SterbyTools",
-        "rank": 34,
+        "rank": 35,
         "score": 0
       },
       {
         "uid": 89511116,
         "name": "EMBALOCO",
-        "rank": 35,
+        "rank": 36,
         "score": 0
       },
       {
         "uid": 30658936,
         "name": "Gritchen",
-        "rank": 36,
+        "rank": 37,
         "score": 0
       },
       {
         "uid": 106162623,
         "name": "gubrax",
-        "rank": 37,
+        "rank": 38,
         "score": 0
       },
       {
         "uid": 29904762,
         "name": "Cheeselife",
-        "rank": 38,
-        "score": 0
-      },
-      {
-        "uid": 87244358,
-        "name": "神Sterben死",
         "rank": 39,
         "score": 0
       },
