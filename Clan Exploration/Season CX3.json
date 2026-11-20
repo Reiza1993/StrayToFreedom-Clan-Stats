@@ -7,8 +7,8 @@
   "previousSeasonFinalTotal": 134900,
   "milestoneSnapshot": null,
   "cxRank": {
-    "updatedAt": "2026-11-20T12:06:09.683002+11:00",
-    "total": 33600,
+    "updatedAt": "2026-11-20T13:13:06.967684+11:00",
+    "total": 33900,
     "members": [
       {
         "uid": 29321884,
@@ -47,22 +47,22 @@
         "score": 1700
       },
       {
+        "uid": 32556489,
+        "name": "Bensayyten",
+        "rank": 7,
+        "score": 1700
+      },
+      {
         "uid": 100876140,
         "name": "Scoundrel536",
-        "rank": 7,
+        "rank": 8,
         "score": 1600
       },
       {
         "uid": 59566866,
         "name": "FlyingDutchy",
-        "rank": 8,
-        "score": 1600
-      },
-      {
-        "uid": 32556489,
-        "name": "Bensayyten",
         "rank": 9,
-        "score": 1400
+        "score": 1600
       },
       {
         "uid": 18115624,
