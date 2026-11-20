@@ -7,14 +7,14 @@
   "previousSeasonFinalTotal": 134900,
   "milestoneSnapshot": null,
   "cxRank": {
-    "updatedAt": "2026-11-20T11:51:38.841690+11:00",
-    "total": 32700,
+    "updatedAt": "2026-11-20T12:06:09.683002+11:00",
+    "total": 33600,
     "members": [
       {
         "uid": 29321884,
         "name": "RABBIT5",
         "rank": 1,
-        "score": 3200
+        "score": 3300
       },
       {
         "uid": 36484758,
@@ -41,28 +41,28 @@
         "score": 2000
       },
       {
+        "uid": 10754439,
+        "name": "HakiLuffy",
+        "rank": 6,
+        "score": 1700
+      },
+      {
         "uid": 100876140,
         "name": "Scoundrel536",
-        "rank": 6,
+        "rank": 7,
         "score": 1600
       },
       {
         "uid": 59566866,
         "name": "FlyingDutchy",
-        "rank": 7,
+        "rank": 8,
         "score": 1600
       },
       {
         "uid": 32556489,
         "name": "Bensayyten",
-        "rank": 8,
-        "score": 1400
-      },
-      {
-        "uid": 10754439,
-        "name": "HakiLuffy",
         "rank": 9,
-        "score": 1300
+        "score": 1400
       },
       {
         "uid": 18115624,
@@ -83,32 +83,32 @@
         "score": 1200
       },
       {
+        "uid": 80018314,
+        "name": null,
+        "rank": 13,
+        "score": 1200
+      },
+      {
         "uid": 79510960,
         "name": "theLP",
-        "rank": 13,
+        "rank": 14,
         "score": 900
       },
       {
         "uid": 70603922,
         "name": "BlackFlamE",
-        "rank": 14,
+        "rank": 15,
         "score": 900
       },
       {
         "uid": 108860725,
         "name": "RetinaDNA",
-        "rank": 15,
+        "rank": 16,
         "score": 800
       },
       {
         "uid": 51071110,
         "name": "samwise08",
-        "rank": 16,
-        "score": 800
-      },
-      {
-        "uid": 80018314,
-        "name": null,
         "rank": 17,
         "score": 800
       },
