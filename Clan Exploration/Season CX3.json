@@ -7,14 +7,14 @@
   "previousSeasonFinalTotal": 134900,
   "milestoneSnapshot": null,
   "cxRank": {
-    "updatedAt": "2026-11-20T14:37:47.598169+11:00",
-    "total": 36500,
+    "updatedAt": "2026-11-20T15:37:51.907558+11:00",
+    "total": 38700,
     "members": [
       {
         "uid": 29321884,
         "name": "RABBIT5",
         "rank": 1,
-        "score": 3500
+        "score": 3700
       },
       {
         "uid": 36484758,
@@ -26,7 +26,7 @@
         "uid": 66607264,
         "name": null,
         "rank": 3,
-        "score": 2300
+        "score": 2700
       },
       {
         "uid": 103516442,
@@ -101,16 +101,16 @@
         "score": 1200
       },
       {
-        "uid": 79510960,
-        "name": "theLP",
-        "rank": 16,
-        "score": 900
-      },
-      {
         "uid": 108860725,
         "name": "RetinaDNA",
+        "rank": 16,
+        "score": 1200
+      },
+      {
+        "uid": 79510960,
+        "name": "theLP",
         "rank": 17,
-        "score": 800
+        "score": 900
       },
       {
         "uid": 87954282,
@@ -149,38 +149,38 @@
         "score": 800
       },
       {
+        "uid": 80972473,
+        "name": "Cunner88",
+        "rank": 24,
+        "score": 800
+      },
+      {
         "uid": 27113479,
         "name": "silverxz",
-        "rank": 24,
+        "rank": 25,
         "score": 700
       },
       {
         "uid": 41742773,
         "name": "MadameMischief",
-        "rank": 25,
+        "rank": 26,
         "score": 400
       },
       {
         "uid": 72894129,
         "name": "NeonCBV",
-        "rank": 26,
+        "rank": 27,
         "score": 400
       },
       {
         "uid": 108546985,
         "name": "pumpenjoe",
-        "rank": 27,
+        "rank": 28,
         "score": 400
       },
       {
         "uid": 35869301,
         "name": "Toddlerr",
-        "rank": 28,
-        "score": 400
-      },
-      {
-        "uid": 80972473,
-        "name": "Cunner88",
         "rank": 29,
         "score": 400
       },
@@ -197,50 +197,50 @@
         "score": 400
       },
       {
+        "uid": 29904762,
+        "name": "Cheeselife",
+        "rank": 32,
+        "score": 400
+      },
+      {
+        "uid": 61865023,
+        "name": "RexPanda",
+        "rank": 33,
+        "score": 400
+      },
+      {
         "uid": 71028860,
         "name": "Rzzza",
-        "rank": 32,
+        "rank": 34,
         "score": 0
       },
       {
         "uid": 40001195,
         "name": "Ӂ-ShhImB☆tm☆n",
-        "rank": 33,
-        "score": 0
-      },
-      {
-        "uid": 61865023,
-        "name": "RexPanda",
-        "rank": 34,
+        "rank": 35,
         "score": 0
       },
       {
         "uid": 115742768,
         "name": "SterbyTools",
-        "rank": 35,
+        "rank": 36,
         "score": 0
       },
       {
         "uid": 89511116,
         "name": "EMBALOCO",
-        "rank": 36,
+        "rank": 37,
         "score": 0
       },
       {
         "uid": 30658936,
         "name": "Gritchen",
-        "rank": 37,
+        "rank": 38,
         "score": 0
       },
       {
         "uid": 106162623,
         "name": "gubrax",
-        "rank": 38,
-        "score": 0
-      },
-      {
-        "uid": 29904762,
-        "name": "Cheeselife",
         "rank": 39,
         "score": 0
       },
