@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-21T07:39:47.649541+11:00",
-    "total": 55800,
+    "updatedAt": "2026-11-21T08:39:55.943477+11:00",
+    "total": 56200,
     "members": [
       {
         "uid": 29321884,
@@ -426,44 +426,44 @@
         "score": 800
       },
       {
+        "uid": 30658936,
+        "name": "Gritchen",
+        "rank": 29,
+        "score": 800
+      },
+      {
         "uid": 41742773,
         "name": "MadameMischief",
-        "rank": 29,
+        "rank": 30,
         "score": 400
       },
       {
         "uid": 108546985,
         "name": "pumpenjoe",
-        "rank": 30,
+        "rank": 31,
         "score": 400
       },
       {
         "uid": 35869301,
         "name": "Toddlerr",
-        "rank": 31,
+        "rank": 32,
         "score": 400
       },
       {
         "uid": 29904762,
         "name": "Cheeselife",
-        "rank": 32,
+        "rank": 33,
         "score": 400
       },
       {
         "uid": 61865023,
         "name": "RexPanda",
-        "rank": 33,
+        "rank": 34,
         "score": 400
       },
       {
         "uid": 106162623,
         "name": "gubrax",
-        "rank": 34,
-        "score": 400
-      },
-      {
-        "uid": 30658936,
-        "name": "Gritchen",
         "rank": 35,
         "score": 400
       },
