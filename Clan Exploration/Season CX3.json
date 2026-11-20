@@ -7,8 +7,8 @@
   "previousSeasonFinalTotal": 134900,
   "milestoneSnapshot": null,
   "cxRank": {
-    "updatedAt": "2026-11-20T16:37:56.290571+11:00",
-    "total": 39700,
+    "updatedAt": "2026-11-20T17:38:00.589584+11:00",
+    "total": 41300,
     "members": [
       {
         "uid": 29321884,
@@ -20,7 +20,7 @@
         "uid": 36484758,
         "name": "Belthazar",
         "rank": 2,
-        "score": 2700
+        "score": 3100
       },
       {
         "uid": 66607264,
@@ -65,38 +65,38 @@
         "score": 1600
       },
       {
+        "uid": 51071110,
+        "name": "samwise08",
+        "rank": 10,
+        "score": 1600
+      },
+      {
         "uid": 18115624,
         "name": "Nubis",
-        "rank": 10,
+        "rank": 11,
         "score": 1300
       },
       {
         "uid": 70603922,
         "name": "BlackFlamE",
-        "rank": 11,
+        "rank": 12,
         "score": 1300
       },
       {
         "uid": 88203044,
         "name": "p88203044",
-        "rank": 12,
+        "rank": 13,
         "score": 1200
       },
       {
         "uid": 113690788,
         "name": "Apathy_",
-        "rank": 13,
+        "rank": 14,
         "score": 1200
       },
       {
         "uid": 80018314,
         "name": null,
-        "rank": 14,
-        "score": 1200
-      },
-      {
-        "uid": 51071110,
-        "name": "samwise08",
         "rank": 15,
         "score": 1200
       },
@@ -113,52 +113,52 @@
         "score": 1200
       },
       {
+        "uid": 83339881,
+        "name": "Fl3xas",
+        "rank": 18,
+        "score": 1200
+      },
+      {
+        "uid": 27113479,
+        "name": "silverxz",
+        "rank": 19,
+        "score": 1100
+      },
+      {
         "uid": 79510960,
         "name": "theLP",
-        "rank": 18,
+        "rank": 20,
         "score": 900
       },
       {
         "uid": 87954282,
         "name": "SngphO",
-        "rank": 19,
+        "rank": 21,
         "score": 800
       },
       {
         "uid": 112772047,
         "name": "VictorMolusco",
-        "rank": 20,
-        "score": 800
-      },
-      {
-        "uid": 83339881,
-        "name": "Fl3xas",
-        "rank": 21,
+        "rank": 22,
         "score": 800
       },
       {
         "uid": 87244358,
         "name": "神Sterben死",
-        "rank": 22,
+        "rank": 23,
         "score": 800
       },
       {
         "uid": 75174428,
         "name": "PastalaVista",
-        "rank": 23,
+        "rank": 24,
         "score": 800
       },
       {
         "uid": 80972473,
         "name": "Cunner88",
-        "rank": 24,
-        "score": 800
-      },
-      {
-        "uid": 27113479,
-        "name": "silverxz",
         "rank": 25,
-        "score": 700
+        "score": 800
       },
       {
         "uid": 41742773,
