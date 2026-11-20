@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-21T00:38:53.558795+11:00",
-    "total": 48300,
+    "updatedAt": "2026-11-21T01:39:00.970439+11:00",
+    "total": 49100,
     "members": [
       {
         "uid": 29321884,
@@ -300,32 +300,32 @@
         "score": 2000
       },
       {
+        "uid": 51071110,
+        "name": "samwise08",
+        "rank": 8,
+        "score": 2000
+      },
+      {
         "uid": 32556489,
         "name": "Bensayyten",
-        "rank": 8,
+        "rank": 9,
         "score": 1700
       },
       {
         "uid": 18115624,
         "name": "Nubis",
-        "rank": 9,
+        "rank": 10,
         "score": 1700
       },
       {
         "uid": 70603922,
         "name": "BlackFlamE",
-        "rank": 10,
+        "rank": 11,
         "score": 1700
       },
       {
         "uid": 59566866,
         "name": "FlyingDutchy",
-        "rank": 11,
-        "score": 1600
-      },
-      {
-        "uid": 51071110,
-        "name": "samwise08",
         "rank": 12,
         "score": 1600
       },
@@ -420,14 +420,14 @@
         "score": 800
       },
       {
-        "uid": 41742773,
-        "name": "MadameMischief",
-        "rank": 28,
-        "score": 400
-      },
-      {
         "uid": 72894129,
         "name": "NeonCBV",
+        "rank": 28,
+        "score": 800
+      },
+      {
+        "uid": 41742773,
+        "name": "MadameMischief",
         "rank": 29,
         "score": 400
       },
@@ -500,8 +500,8 @@
     ]
   },
   "cxBoss": {
-    "updatedAt": "2026-11-21T00:38:53.558795+11:00",
-    "total": 8731,
+    "updatedAt": "2026-11-21T01:39:00.970439+11:00",
+    "total": 9518,
     "members": [
       {
         "uid": 83339881,
@@ -534,80 +534,80 @@
         "score": 793
       },
       {
+        "uid": 51071110,
+        "name": "samwise08",
+        "rank": 6,
+        "score": 787
+      },
+      {
         "uid": 112772047,
         "name": "VictorMolusco",
-        "rank": 6,
+        "rank": 7,
         "score": 786
       },
       {
         "uid": 113690788,
         "name": "Apathy_",
-        "rank": 7,
+        "rank": 8,
         "score": 779
       },
       {
         "uid": 26277677,
         "name": "BobBobberson",
-        "rank": 8,
+        "rank": 9,
         "score": 778
       },
       {
         "uid": 83861839,
         "name": "groggen",
-        "rank": 9,
+        "rank": 10,
         "score": 777
       },
       {
         "uid": 106162623,
         "name": "gubrax",
-        "rank": 10,
+        "rank": 11,
         "score": 747
       },
       {
         "uid": 80018314,
         "name": null,
-        "rank": 11,
+        "rank": 12,
         "score": 742
       },
       {
         "uid": 115742768,
         "name": "SterbyTools",
-        "rank": 12,
+        "rank": 13,
         "score": 12
       },
       {
         "uid": 64676255,
         "name": "盾Heathcliff剣",
-        "rank": 13,
+        "rank": 14,
         "score": 0
       },
       {
         "uid": 71028860,
         "name": "Rzzza",
-        "rank": 14,
+        "rank": 15,
         "score": 0
       },
       {
         "uid": 108860725,
         "name": "RetinaDNA",
-        "rank": 15,
+        "rank": 16,
         "score": 0
       },
       {
         "uid": 41742773,
         "name": "MadameMischief",
-        "rank": 16,
+        "rank": 17,
         "score": 0
       },
       {
         "uid": 40001195,
         "name": "Ӂ-ShhImB☆tm☆n",
-        "rank": 17,
-        "score": 0
-      },
-      {
-        "uid": 51071110,
-        "name": "samwise08",
         "rank": 18,
         "score": 0
       },
