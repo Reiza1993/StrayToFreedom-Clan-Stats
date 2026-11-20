@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-21T02:39:08.601939+11:00",
-    "total": 50400,
+    "updatedAt": "2026-11-21T03:39:16.207846+11:00",
+    "total": 52300,
     "members": [
       {
         "uid": 29321884,
@@ -273,13 +273,13 @@
         "uid": 66607264,
         "name": null,
         "rank": 3,
-        "score": 2900
+        "score": 3300
       },
       {
         "uid": 103516442,
         "name": "DAYO-P",
         "rank": 4,
-        "score": 2600
+        "score": 2900
       },
       {
         "uid": 10754439,
@@ -312,38 +312,38 @@
         "score": 2000
       },
       {
+        "uid": 113690788,
+        "name": "Apathy_",
+        "rank": 10,
+        "score": 2000
+      },
+      {
+        "uid": 108860725,
+        "name": "RetinaDNA",
+        "rank": 11,
+        "score": 2000
+      },
+      {
         "uid": 70603922,
         "name": "BlackFlamE",
-        "rank": 10,
+        "rank": 12,
         "score": 1800
       },
       {
         "uid": 32556489,
         "name": "Bensayyten",
-        "rank": 11,
+        "rank": 13,
         "score": 1700
       },
       {
         "uid": 59566866,
         "name": "FlyingDutchy",
-        "rank": 12,
+        "rank": 14,
         "score": 1600
       },
       {
         "uid": 83339881,
         "name": "Fl3xas",
-        "rank": 13,
-        "score": 1600
-      },
-      {
-        "uid": 113690788,
-        "name": "Apathy_",
-        "rank": 14,
-        "score": 1600
-      },
-      {
-        "uid": 108860725,
-        "name": "RetinaDNA",
         "rank": 15,
         "score": 1600
       },
@@ -360,20 +360,20 @@
         "score": 1600
       },
       {
+        "uid": 112772047,
+        "name": "VictorMolusco",
+        "rank": 18,
+        "score": 1600
+      },
+      {
         "uid": 83861839,
         "name": "groggen",
-        "rank": 18,
+        "rank": 19,
         "score": 1400
       },
       {
         "uid": 80972473,
         "name": "Cunner88",
-        "rank": 19,
-        "score": 1200
-      },
-      {
-        "uid": 112772047,
-        "name": "VictorMolusco",
         "rank": 20,
         "score": 1200
       },
