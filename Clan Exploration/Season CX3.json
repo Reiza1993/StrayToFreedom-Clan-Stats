@@ -7,8 +7,8 @@
   "previousSeasonFinalTotal": 134900,
   "milestoneSnapshot": null,
   "cxRank": {
-    "updatedAt": "2026-11-20T13:37:41.608992+11:00",
-    "total": 34100,
+    "updatedAt": "2026-11-20T14:37:47.598169+11:00",
+    "total": 36500,
     "members": [
       {
         "uid": 29321884,
@@ -20,7 +20,7 @@
         "uid": 36484758,
         "name": "Belthazar",
         "rank": 2,
-        "score": 2300
+        "score": 2700
       },
       {
         "uid": 66607264,
@@ -71,44 +71,44 @@
         "score": 1300
       },
       {
+        "uid": 70603922,
+        "name": "BlackFlamE",
+        "rank": 11,
+        "score": 1300
+      },
+      {
         "uid": 88203044,
         "name": "p88203044",
-        "rank": 11,
+        "rank": 12,
         "score": 1200
       },
       {
         "uid": 113690788,
         "name": "Apathy_",
-        "rank": 12,
+        "rank": 13,
         "score": 1200
       },
       {
         "uid": 80018314,
         "name": null,
-        "rank": 13,
+        "rank": 14,
+        "score": 1200
+      },
+      {
+        "uid": 51071110,
+        "name": "samwise08",
+        "rank": 15,
         "score": 1200
       },
       {
         "uid": 79510960,
         "name": "theLP",
-        "rank": 14,
-        "score": 900
-      },
-      {
-        "uid": 70603922,
-        "name": "BlackFlamE",
-        "rank": 15,
+        "rank": 16,
         "score": 900
       },
       {
         "uid": 108860725,
         "name": "RetinaDNA",
-        "rank": 16,
-        "score": 800
-      },
-      {
-        "uid": 51071110,
-        "name": "samwise08",
         "rank": 17,
         "score": 800
       },
@@ -137,74 +137,74 @@
         "score": 800
       },
       {
+        "uid": 87244358,
+        "name": "神Sterben死",
+        "rank": 22,
+        "score": 800
+      },
+      {
+        "uid": 75174428,
+        "name": "PastalaVista",
+        "rank": 23,
+        "score": 800
+      },
+      {
         "uid": 27113479,
         "name": "silverxz",
-        "rank": 22,
+        "rank": 24,
         "score": 700
       },
       {
         "uid": 41742773,
         "name": "MadameMischief",
-        "rank": 23,
-        "score": 400
-      },
-      {
-        "uid": 75174428,
-        "name": "PastalaVista",
-        "rank": 24,
+        "rank": 25,
         "score": 400
       },
       {
         "uid": 72894129,
         "name": "NeonCBV",
-        "rank": 25,
+        "rank": 26,
         "score": 400
       },
       {
         "uid": 108546985,
         "name": "pumpenjoe",
-        "rank": 26,
+        "rank": 27,
         "score": 400
       },
       {
         "uid": 35869301,
         "name": "Toddlerr",
-        "rank": 27,
+        "rank": 28,
         "score": 400
       },
       {
         "uid": 80972473,
         "name": "Cunner88",
-        "rank": 28,
+        "rank": 29,
         "score": 400
       },
       {
         "uid": 26277677,
         "name": "BobBobberson",
-        "rank": 29,
+        "rank": 30,
         "score": 400
       },
       {
-        "uid": 87244358,
-        "name": "神Sterben死",
-        "rank": 30,
+        "uid": 60687252,
+        "name": "һan",
+        "rank": 31,
         "score": 400
       },
       {
         "uid": 71028860,
         "name": "Rzzza",
-        "rank": 31,
+        "rank": 32,
         "score": 0
       },
       {
         "uid": 40001195,
         "name": "Ӂ-ShhImB☆tm☆n",
-        "rank": 32,
-        "score": 0
-      },
-      {
-        "uid": 60687252,
-        "name": "һan",
         "rank": 33,
         "score": 0
       },
