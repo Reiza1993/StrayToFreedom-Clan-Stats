@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-20T22:38:37.969958+11:00",
-    "total": 46700,
+    "updatedAt": "2026-11-20T23:38:45.528265+11:00",
+    "total": 47100,
     "members": [
       {
         "uid": 29321884,
@@ -312,46 +312,46 @@
         "score": 1700
       },
       {
+        "uid": 70603922,
+        "name": "BlackFlamE",
+        "rank": 10,
+        "score": 1700
+      },
+      {
         "uid": 59566866,
         "name": "FlyingDutchy",
-        "rank": 10,
+        "rank": 11,
         "score": 1600
       },
       {
         "uid": 51071110,
         "name": "samwise08",
-        "rank": 11,
+        "rank": 12,
         "score": 1600
       },
       {
         "uid": 83339881,
         "name": "Fl3xas",
-        "rank": 12,
+        "rank": 13,
         "score": 1600
       },
       {
         "uid": 113690788,
         "name": "Apathy_",
-        "rank": 13,
+        "rank": 14,
         "score": 1600
       },
       {
         "uid": 108860725,
         "name": "RetinaDNA",
-        "rank": 14,
+        "rank": 15,
         "score": 1600
       },
       {
         "uid": 83861839,
         "name": "groggen",
-        "rank": 15,
-        "score": 1400
-      },
-      {
-        "uid": 70603922,
-        "name": "BlackFlamE",
         "rank": 16,
-        "score": 1300
+        "score": 1400
       },
       {
         "uid": 88203044,
