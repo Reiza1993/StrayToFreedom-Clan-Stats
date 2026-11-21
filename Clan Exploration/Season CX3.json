@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-22T03:06:54.888140+11:00",
-    "total": 73800,
+    "updatedAt": "2026-11-22T04:07:02.757566+11:00",
+    "total": 74800,
     "members": [
       {
         "uid": 29321884,
@@ -285,13 +285,13 @@
         "uid": 64676255,
         "name": "盾Heathcliff剣",
         "rank": 5,
-        "score": 3600
+        "score": 3800
       },
       {
         "uid": 10754439,
         "name": "HakiLuffy",
         "rank": 6,
-        "score": 3300
+        "score": 3700
       },
       {
         "uid": 18115624,
@@ -312,20 +312,20 @@
         "score": 3200
       },
       {
+        "uid": 113690788,
+        "name": "Apathy_",
+        "rank": 10,
+        "score": 2800
+      },
+      {
         "uid": 100876140,
         "name": "Scoundrel536",
-        "rank": 10,
+        "rank": 11,
         "score": 2400
       },
       {
         "uid": 108860725,
         "name": "RetinaDNA",
-        "rank": 11,
-        "score": 2400
-      },
-      {
-        "uid": 113690788,
-        "name": "Apathy_",
         "rank": 12,
         "score": 2400
       },
