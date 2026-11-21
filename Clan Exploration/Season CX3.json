@@ -254,26 +254,26 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-21T17:05:43.249594+11:00",
-    "total": 65100,
+    "updatedAt": "2026-11-21T18:05:50.512406+11:00",
+    "total": 66600,
     "members": [
       {
         "uid": 29321884,
         "name": "RABBIT5",
         "rank": 1,
-        "score": 5500
-      },
-      {
-        "uid": 36484758,
-        "name": "Belthazar",
-        "rank": 2,
-        "score": 4300
+        "score": 5900
       },
       {
         "uid": 66607264,
         "name": null,
+        "rank": 2,
+        "score": 4400
+      },
+      {
+        "uid": 36484758,
+        "name": "Belthazar",
         "rank": 3,
-        "score": 4100
+        "score": 4300
       },
       {
         "uid": 103516442,
@@ -300,20 +300,20 @@
         "score": 2800
       },
       {
+        "uid": 59566866,
+        "name": "FlyingDutchy",
+        "rank": 8,
+        "score": 2800
+      },
+      {
         "uid": 18115624,
         "name": "Oopsie-Daisy",
-        "rank": 8,
+        "rank": 9,
         "score": 2500
       },
       {
         "uid": 100876140,
         "name": "Scoundrel536",
-        "rank": 9,
-        "score": 2400
-      },
-      {
-        "uid": 59566866,
-        "name": "FlyingDutchy",
         "rank": 10,
         "score": 2400
       },
@@ -330,44 +330,44 @@
         "score": 2000
       },
       {
+        "uid": 87244358,
+        "name": "神Sterben死",
+        "rank": 13,
+        "score": 2000
+      },
+      {
         "uid": 70603922,
         "name": "BlackFlamE",
-        "rank": 13,
+        "rank": 14,
         "score": 1800
       },
       {
         "uid": 112772047,
         "name": "VictorMolusco",
-        "rank": 14,
+        "rank": 15,
         "score": 1800
       },
       {
         "uid": 32556489,
         "name": "Bensayyten",
-        "rank": 15,
+        "rank": 16,
         "score": 1700
       },
       {
         "uid": 83339881,
         "name": "Fl3xas",
-        "rank": 16,
+        "rank": 17,
         "score": 1600
       },
       {
         "uid": 80018314,
         "name": null,
-        "rank": 17,
+        "rank": 18,
         "score": 1600
       },
       {
         "uid": 88203044,
         "name": "p88203044",
-        "rank": 18,
-        "score": 1600
-      },
-      {
-        "uid": 87244358,
-        "name": "神Sterben死",
         "rank": 19,
         "score": 1600
       },
