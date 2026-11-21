@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-21T10:32:01.217325+11:00",
-    "total": 58600,
+    "updatedAt": "2026-11-21T12:05:05.292307+11:00",
+    "total": 60600,
     "members": [
       {
         "uid": 29321884,
@@ -267,7 +267,7 @@
         "uid": 36484758,
         "name": "Belthazar",
         "rank": 2,
-        "score": 3900
+        "score": 4300
       },
       {
         "uid": 66607264,
@@ -279,53 +279,53 @@
         "uid": 103516442,
         "name": "DAYO-P",
         "rank": 4,
-        "score": 3000
+        "score": 3400
+      },
+      {
+        "uid": 64676255,
+        "name": "盾Heathcliff剣",
+        "rank": 5,
+        "score": 2800
       },
       {
         "uid": 10754439,
         "name": "HakiLuffy",
-        "rank": 5,
+        "rank": 6,
         "score": 2500
       },
       {
         "uid": 18115624,
         "name": "Oopsie-Daisy",
-        "rank": 6,
+        "rank": 7,
         "score": 2500
       },
       {
         "uid": 100876140,
         "name": "Scoundrel536",
-        "rank": 7,
+        "rank": 8,
         "score": 2400
       },
       {
-        "uid": 64676255,
-        "name": "盾Heathcliff剣",
-        "rank": 8,
+        "uid": 59566866,
+        "name": "FlyingDutchy",
+        "rank": 9,
         "score": 2400
       },
       {
         "uid": 51071110,
         "name": "samwise08",
-        "rank": 9,
-        "score": 2000
+        "rank": 10,
+        "score": 2400
       },
       {
         "uid": 113690788,
         "name": "Apathy_",
-        "rank": 10,
+        "rank": 11,
         "score": 2000
       },
       {
         "uid": 108860725,
         "name": "RetinaDNA",
-        "rank": 11,
-        "score": 2000
-      },
-      {
-        "uid": 59566866,
-        "name": "FlyingDutchy",
         "rank": 12,
         "score": 2000
       },
