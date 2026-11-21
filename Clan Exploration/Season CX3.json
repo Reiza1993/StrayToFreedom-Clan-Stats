@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-21T23:06:25.689685+11:00",
-    "total": 71000,
+    "updatedAt": "2026-11-22T00:06:33.571842+11:00",
+    "total": 71700,
     "members": [
       {
         "uid": 29321884,
@@ -279,7 +279,7 @@
         "uid": 103516442,
         "name": "DAYO-P",
         "rank": 4,
-        "score": 3900
+        "score": 4100
       },
       {
         "uid": 64676255,
@@ -309,7 +309,7 @@
         "uid": 18115624,
         "name": "Oopsie-Daisy",
         "rank": 9,
-        "score": 2900
+        "score": 3000
       },
       {
         "uid": 100876140,
@@ -336,44 +336,44 @@
         "score": 2200
       },
       {
+        "uid": 60687252,
+        "name": "һan",
+        "rank": 14,
+        "score": 2000
+      },
+      {
         "uid": 70603922,
         "name": "BlackFlamE",
-        "rank": 14,
+        "rank": 15,
         "score": 1800
       },
       {
         "uid": 112772047,
         "name": "VictorMolusco",
-        "rank": 15,
+        "rank": 16,
         "score": 1800
       },
       {
         "uid": 32556489,
         "name": "Bensayyten",
-        "rank": 16,
+        "rank": 17,
         "score": 1700
       },
       {
         "uid": 83339881,
         "name": "Fl3xas",
-        "rank": 17,
+        "rank": 18,
         "score": 1600
       },
       {
         "uid": 80018314,
         "name": null,
-        "rank": 18,
+        "rank": 19,
         "score": 1600
       },
       {
         "uid": 88203044,
         "name": "p88203044",
-        "rank": 19,
-        "score": 1600
-      },
-      {
-        "uid": 60687252,
-        "name": "һan",
         "rank": 20,
         "score": 1600
       },
