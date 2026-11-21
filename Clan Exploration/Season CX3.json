@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-21T22:06:18.739744+11:00",
-    "total": 69400,
+    "updatedAt": "2026-11-21T23:06:25.689685+11:00",
+    "total": 71000,
     "members": [
       {
         "uid": 29321884,
@@ -264,16 +264,16 @@
         "score": 6000
       },
       {
-        "uid": 66607264,
-        "name": null,
-        "rank": 2,
-        "score": 4500
-      },
-      {
         "uid": 36484758,
         "name": "Belthazar",
+        "rank": 2,
+        "score": 4700
+      },
+      {
+        "uid": 66607264,
+        "name": null,
         "rank": 3,
-        "score": 4300
+        "score": 4500
       },
       {
         "uid": 103516442,
@@ -285,31 +285,31 @@
         "uid": 64676255,
         "name": "盾Heathcliff剣",
         "rank": 5,
-        "score": 3200
-      },
-      {
-        "uid": 51071110,
-        "name": "samwise08",
-        "rank": 6,
-        "score": 3200
+        "score": 3600
       },
       {
         "uid": 10754439,
         "name": "HakiLuffy",
-        "rank": 7,
-        "score": 2900
+        "rank": 6,
+        "score": 3300
       },
       {
-        "uid": 18115624,
-        "name": "Oopsie-Daisy",
-        "rank": 8,
-        "score": 2900
+        "uid": 51071110,
+        "name": "samwise08",
+        "rank": 7,
+        "score": 3200
       },
       {
         "uid": 59566866,
         "name": "FlyingDutchy",
+        "rank": 8,
+        "score": 3200
+      },
+      {
+        "uid": 18115624,
+        "name": "Oopsie-Daisy",
         "rank": 9,
-        "score": 2800
+        "score": 2900
       },
       {
         "uid": 100876140,
