@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-22T09:07:41.156752+11:00",
-    "total": 80400,
+    "updatedAt": "2026-11-22T09:39:46.214858+11:00",
+    "total": 81200,
     "members": [
       {
         "uid": 29321884,
@@ -324,22 +324,22 @@
         "score": 2800
       },
       {
+        "uid": 87244358,
+        "name": "神Sterben死",
+        "rank": 12,
+        "score": 2600
+      },
+      {
         "uid": 100876140,
         "name": "Scoundrel536",
-        "rank": 12,
+        "rank": 13,
         "score": 2400
       },
       {
         "uid": 60687252,
         "name": "һan",
-        "rank": 13,
-        "score": 2400
-      },
-      {
-        "uid": 87244358,
-        "name": "神Sterben死",
         "rank": 14,
-        "score": 2200
+        "score": 2400
       },
       {
         "uid": 70603922,
@@ -396,26 +396,26 @@
         "score": 1600
       },
       {
+        "uid": 26277677,
+        "name": "BobBobberson",
+        "rank": 24,
+        "score": 1600
+      },
+      {
         "uid": 27113479,
         "name": "silverxz",
-        "rank": 24,
+        "rank": 25,
         "score": 1500
       },
       {
         "uid": 80972473,
         "name": "Cunner88",
-        "rank": 25,
+        "rank": 26,
         "score": 1200
       },
       {
         "uid": 87954282,
         "name": "SngphO",
-        "rank": 26,
-        "score": 1200
-      },
-      {
-        "uid": 26277677,
-        "name": "BobBobberson",
         "rank": 27,
         "score": 1200
       },
