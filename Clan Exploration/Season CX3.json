@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-22T01:06:41.775339+11:00",
-    "total": 72000,
+    "updatedAt": "2026-11-22T02:06:48.954664+11:00",
+    "total": 73500,
     "members": [
       {
         "uid": 29321884,
@@ -267,7 +267,7 @@
         "uid": 36484758,
         "name": "Belthazar",
         "rank": 2,
-        "score": 4700
+        "score": 5100
       },
       {
         "uid": 66607264,
@@ -294,22 +294,22 @@
         "score": 3300
       },
       {
+        "uid": 18115624,
+        "name": "Oopsie-Daisy",
+        "rank": 7,
+        "score": 3300
+      },
+      {
         "uid": 51071110,
         "name": "samwise08",
-        "rank": 7,
+        "rank": 8,
         "score": 3200
       },
       {
         "uid": 59566866,
         "name": "FlyingDutchy",
-        "rank": 8,
-        "score": 3200
-      },
-      {
-        "uid": 18115624,
-        "name": "Oopsie-Daisy",
         "rank": 9,
-        "score": 3000
+        "score": 3200
       },
       {
         "uid": 100876140,
@@ -336,16 +336,16 @@
         "score": 2200
       },
       {
-        "uid": 60687252,
-        "name": "һan",
-        "rank": 14,
-        "score": 2000
-      },
-      {
         "uid": 70603922,
         "name": "BlackFlamE",
+        "rank": 14,
+        "score": 2200
+      },
+      {
+        "uid": 60687252,
+        "name": "һan",
         "rank": 15,
-        "score": 1800
+        "score": 2000
       },
       {
         "uid": 112772047,
@@ -360,40 +360,40 @@
         "score": 1700
       },
       {
+        "uid": 79510960,
+        "name": "theLP",
+        "rank": 18,
+        "score": 1700
+      },
+      {
         "uid": 83339881,
         "name": "Fl3xas",
-        "rank": 18,
+        "rank": 19,
         "score": 1600
       },
       {
         "uid": 80018314,
         "name": null,
-        "rank": 19,
+        "rank": 20,
         "score": 1600
       },
       {
         "uid": 88203044,
         "name": "p88203044",
-        "rank": 20,
+        "rank": 21,
         "score": 1600
       },
       {
         "uid": 27113479,
         "name": "silverxz",
-        "rank": 21,
+        "rank": 22,
         "score": 1500
       },
       {
         "uid": 83861839,
         "name": "groggen",
-        "rank": 22,
-        "score": 1400
-      },
-      {
-        "uid": 79510960,
-        "name": "theLP",
         "rank": 23,
-        "score": 1300
+        "score": 1400
       },
       {
         "uid": 80972473,
