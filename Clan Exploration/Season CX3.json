@@ -254,14 +254,14 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-22T04:07:02.757566+11:00",
-    "total": 74800,
+    "updatedAt": "2026-11-22T05:07:10.319622+11:00",
+    "total": 77300,
     "members": [
       {
         "uid": 29321884,
         "name": "RABBIT5",
         "rank": 1,
-        "score": 6400
+        "score": 6600
       },
       {
         "uid": 36484758,
@@ -273,19 +273,19 @@
         "uid": 66607264,
         "name": null,
         "rank": 3,
-        "score": 4500
+        "score": 4900
       },
       {
         "uid": 103516442,
         "name": "DAYO-P",
         "rank": 4,
-        "score": 4300
+        "score": 4500
       },
       {
         "uid": 64676255,
         "name": "盾Heathcliff剣",
         "rank": 5,
-        "score": 3800
+        "score": 3900
       },
       {
         "uid": 10754439,
@@ -294,20 +294,20 @@
         "score": 3700
       },
       {
+        "uid": 59566866,
+        "name": "FlyingDutchy",
+        "rank": 7,
+        "score": 3600
+      },
+      {
         "uid": 18115624,
         "name": "Oopsie-Daisy",
-        "rank": 7,
+        "rank": 8,
         "score": 3300
       },
       {
         "uid": 51071110,
         "name": "samwise08",
-        "rank": 8,
-        "score": 3200
-      },
-      {
-        "uid": 59566866,
-        "name": "FlyingDutchy",
         "rank": 9,
         "score": 3200
       },
@@ -318,14 +318,14 @@
         "score": 2800
       },
       {
-        "uid": 100876140,
-        "name": "Scoundrel536",
-        "rank": 11,
-        "score": 2400
-      },
-      {
         "uid": 108860725,
         "name": "RetinaDNA",
+        "rank": 11,
+        "score": 2800
+      },
+      {
+        "uid": 100876140,
+        "name": "Scoundrel536",
         "rank": 12,
         "score": 2400
       },
@@ -354,46 +354,46 @@
         "score": 1800
       },
       {
+        "uid": 83861839,
+        "name": "groggen",
+        "rank": 17,
+        "score": 1800
+      },
+      {
         "uid": 32556489,
         "name": "Bensayyten",
-        "rank": 17,
+        "rank": 18,
         "score": 1700
       },
       {
         "uid": 79510960,
         "name": "theLP",
-        "rank": 18,
+        "rank": 19,
         "score": 1700
       },
       {
         "uid": 83339881,
         "name": "Fl3xas",
-        "rank": 19,
+        "rank": 20,
         "score": 1600
       },
       {
         "uid": 80018314,
         "name": null,
-        "rank": 20,
+        "rank": 21,
         "score": 1600
       },
       {
         "uid": 88203044,
         "name": "p88203044",
-        "rank": 21,
+        "rank": 22,
         "score": 1600
       },
       {
         "uid": 27113479,
         "name": "silverxz",
-        "rank": 22,
-        "score": 1500
-      },
-      {
-        "uid": 83861839,
-        "name": "groggen",
         "rank": 23,
-        "score": 1400
+        "score": 1500
       },
       {
         "uid": 80972473,
@@ -423,7 +423,7 @@
         "uid": 75174428,
         "name": "PastalaVista",
         "rank": 28,
-        "score": 800
+        "score": 1200
       },
       {
         "uid": 72894129,
