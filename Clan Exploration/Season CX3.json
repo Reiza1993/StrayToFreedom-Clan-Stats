@@ -254,26 +254,26 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-22T08:07:34.107507+11:00",
-    "total": 79000,
+    "updatedAt": "2026-11-22T09:07:41.156752+11:00",
+    "total": 80400,
     "members": [
       {
         "uid": 29321884,
         "name": "RABBIT5",
         "rank": 1,
-        "score": 7000
-      },
-      {
-        "uid": 66607264,
-        "name": null,
-        "rank": 2,
-        "score": 5200
+        "score": 7200
       },
       {
         "uid": 36484758,
         "name": "Belthazar",
+        "rank": 2,
+        "score": 5500
+      },
+      {
+        "uid": 66607264,
+        "name": null,
         "rank": 3,
-        "score": 5100
+        "score": 5200
       },
       {
         "uid": 103516442,
@@ -330,22 +330,22 @@
         "score": 2400
       },
       {
+        "uid": 60687252,
+        "name": "һan",
+        "rank": 13,
+        "score": 2400
+      },
+      {
         "uid": 87244358,
         "name": "神Sterben死",
-        "rank": 13,
+        "rank": 14,
         "score": 2200
       },
       {
         "uid": 70603922,
         "name": "BlackFlamE",
-        "rank": 14,
-        "score": 2200
-      },
-      {
-        "uid": 60687252,
-        "name": "һan",
         "rank": 15,
-        "score": 2000
+        "score": 2200
       },
       {
         "uid": 112772047,
@@ -390,26 +390,26 @@
         "score": 1600
       },
       {
+        "uid": 30658936,
+        "name": "Gritchen",
+        "rank": 23,
+        "score": 1600
+      },
+      {
         "uid": 27113479,
         "name": "silverxz",
-        "rank": 23,
+        "rank": 24,
         "score": 1500
       },
       {
         "uid": 80972473,
         "name": "Cunner88",
-        "rank": 24,
+        "rank": 25,
         "score": 1200
       },
       {
         "uid": 87954282,
         "name": "SngphO",
-        "rank": 25,
-        "score": 1200
-      },
-      {
-        "uid": 30658936,
-        "name": "Gritchen",
         "rank": 26,
         "score": 1200
       },
