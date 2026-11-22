@@ -10,13 +10,13 @@ const playerStats = {
         "100876140": {
             "atk": 2952985,
             "name": "Scoundrel536",
-            "role": "Glory Member",
+            "role": "Member",
             "roleTier": null
         },
         "103516442": {
             "atk": 3286337,
             "name": "DAYO-P",
-            "role": "Member",
+            "role": "Glory Member",
             "roleTier": null
         },
         "106162623": {
@@ -40,13 +40,13 @@ const playerStats = {
         "108860725": {
             "atk": 2693946,
             "name": "RetinaDNA",
-            "role": "Member",
+            "role": "Glory Member",
             "roleTier": null
         },
         "112772047": {
             "atk": 2048895,
             "name": "VictorMolusco",
-            "role": "Member",
+            "role": "Glory Member",
             "roleTier": null
         },
         "113690788": {
@@ -76,7 +76,7 @@ const playerStats = {
         "26277677": {
             "atk": 2600569,
             "name": "BobBobberson",
-            "role": "Member",
+            "role": "Glory Member",
             "roleTier": null
         },
         "27113479": {
@@ -106,13 +106,13 @@ const playerStats = {
         "32556489": {
             "atk": 2102995,
             "name": "Bensayyten",
-            "role": "Glory Member",
+            "role": "Member",
             "roleTier": null
         },
         "35869301": {
             "atk": 3120827,
             "name": "Toddlerr",
-            "role": "Glory Member",
+            "role": "Member",
             "roleTier": null
         },
         "36484758": {
@@ -136,7 +136,7 @@ const playerStats = {
         "51071110": {
             "atk": 2599649,
             "name": "samwise08",
-            "role": "Member",
+            "role": "Glory Member",
             "roleTier": null
         },
         "59566866": {
@@ -154,7 +154,7 @@ const playerStats = {
         "61865023": {
             "atk": 2723608,
             "name": "RexPanda",
-            "role": "Member",
+            "role": "Glory Member",
             "roleTier": null
         },
         "64676255": {
@@ -220,7 +220,7 @@ const playerStats = {
         "83861839": {
             "atk": 2464181,
             "name": "groggen",
-            "role": "Glory Member",
+            "role": "Member",
             "roleTier": null
         },
         "87244358": {
@@ -232,13 +232,13 @@ const playerStats = {
         "87954282": {
             "atk": 2684426,
             "name": "SngphO",
-            "role": "Glory Member",
+            "role": "Member",
             "roleTier": null
         },
         "88203044": {
             "atk": 2552592,
             "name": "p88203044",
-            "role": "Glory Member",
+            "role": "Member",
             "roleTier": null
         },
         "89511116": {
