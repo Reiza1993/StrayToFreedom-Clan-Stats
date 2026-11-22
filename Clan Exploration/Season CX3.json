@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-22T18:03:56.185369+11:00",
-    "total": 89800,
+    "updatedAt": "2026-11-22T19:04:04.240339+11:00",
+    "total": 90200,
     "members": [
       {
         "uid": 29321884,
@@ -282,16 +282,16 @@
         "score": 5500
       },
       {
-        "uid": 64676255,
-        "name": "盾Heathcliff剣",
-        "rank": 5,
-        "score": 4200
-      },
-      {
         "uid": 10754439,
         "name": "HakiLuffy",
+        "rank": 5,
+        "score": 4500
+      },
+      {
+        "uid": 64676255,
+        "name": "盾Heathcliff剣",
         "rank": 6,
-        "score": 4100
+        "score": 4200
       },
       {
         "uid": 18115624,
