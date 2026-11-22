@@ -254,14 +254,14 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-23T04:33:29.323693+11:00",
-    "total": 97200,
+    "updatedAt": "2026-11-23T05:33:38.195620+11:00",
+    "total": 97900,
     "members": [
       {
         "uid": 29321884,
         "name": "RABBIT5",
         "rank": 1,
-        "score": 8700
+        "score": 8900
       },
       {
         "uid": 36484758,
@@ -279,7 +279,7 @@
         "uid": 103516442,
         "name": "DAYO-P",
         "rank": 4,
-        "score": 6000
+        "score": 6100
       },
       {
         "uid": 10754439,
@@ -366,38 +366,38 @@
         "score": 2200
       },
       {
+        "uid": 30658936,
+        "name": "Gritchen",
+        "rank": 19,
+        "score": 2000
+      },
+      {
         "uid": 32556489,
         "name": "Bensayyten",
-        "rank": 19,
+        "rank": 20,
         "score": 1700
       },
       {
         "uid": 79510960,
         "name": "theLP",
-        "rank": 20,
+        "rank": 21,
         "score": 1700
       },
       {
         "uid": 83339881,
         "name": "Fl3xas",
-        "rank": 21,
+        "rank": 22,
         "score": 1600
       },
       {
         "uid": 80018314,
         "name": null,
-        "rank": 22,
+        "rank": 23,
         "score": 1600
       },
       {
         "uid": 88203044,
         "name": "p88203044",
-        "rank": 23,
-        "score": 1600
-      },
-      {
-        "uid": 30658936,
-        "name": "Gritchen",
         "rank": 24,
         "score": 1600
       },
