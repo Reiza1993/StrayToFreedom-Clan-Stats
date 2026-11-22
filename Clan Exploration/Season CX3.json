@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-22T13:02:37.977164+11:00",
-    "total": 85800,
+    "updatedAt": "2026-11-22T13:16:45.411339+11:00",
+    "total": 86200,
     "members": [
       {
         "uid": 29321884,
@@ -294,28 +294,28 @@
         "score": 4100
       },
       {
+        "uid": 18115624,
+        "name": "Oopsie-Daisy",
+        "rank": 7,
+        "score": 3700
+      },
+      {
         "uid": 59566866,
         "name": "FlyingDutchy",
-        "rank": 7,
+        "rank": 8,
         "score": 3600
       },
       {
         "uid": 51071110,
         "name": "samwise08",
-        "rank": 8,
+        "rank": 9,
         "score": 3600
       },
       {
         "uid": 113690788,
         "name": "Apathy_",
-        "rank": 9,
-        "score": 3500
-      },
-      {
-        "uid": 18115624,
-        "name": "Oopsie-Daisy",
         "rank": 10,
-        "score": 3300
+        "score": 3500
       },
       {
         "uid": 87244358,
