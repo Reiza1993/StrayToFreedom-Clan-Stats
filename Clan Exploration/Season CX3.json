@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-23T09:51:29.397521+11:00",
-    "total": 102500,
+    "updatedAt": "2026-11-23T10:51:39.348462+11:00",
+    "total": 103700,
     "members": [
       {
         "uid": 29321884,
@@ -273,7 +273,7 @@
         "uid": 66607264,
         "name": null,
         "rank": 3,
-        "score": 7000
+        "score": 7400
       },
       {
         "uid": 103516442,
@@ -288,28 +288,28 @@
         "score": 5500
       },
       {
-        "uid": 64676255,
-        "name": "盾Heathcliff剣",
-        "rank": 6,
-        "score": 4600
-      },
-      {
         "uid": 59566866,
         "name": "FlyingDutchy",
-        "rank": 7,
-        "score": 4400
+        "rank": 6,
+        "score": 4800
       },
       {
-        "uid": 51071110,
-        "name": "samwise08",
-        "rank": 8,
-        "score": 4400
+        "uid": 64676255,
+        "name": "盾Heathcliff剣",
+        "rank": 7,
+        "score": 4600
       },
       {
         "uid": 87244358,
         "name": "神Sterben死",
+        "rank": 8,
+        "score": 4600
+      },
+      {
+        "uid": 51071110,
+        "name": "samwise08",
         "rank": 9,
-        "score": 4200
+        "score": 4400
       },
       {
         "uid": 18115624,
