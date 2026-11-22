@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-23T05:33:38.195620+11:00",
-    "total": 97900,
+    "updatedAt": "2026-11-23T06:33:46.024718+11:00",
+    "total": 98700,
     "members": [
       {
         "uid": 29321884,
@@ -306,16 +306,16 @@
         "score": 4400
       },
       {
-        "uid": 18115624,
-        "name": "Oopsie-Daisy",
-        "rank": 9,
-        "score": 4100
-      },
-      {
         "uid": 87244358,
         "name": "神Sterben死",
+        "rank": 9,
+        "score": 4200
+      },
+      {
+        "uid": 18115624,
+        "name": "Oopsie-Daisy",
         "rank": 10,
-        "score": 3800
+        "score": 4100
       },
       {
         "uid": 113690788,
@@ -324,16 +324,16 @@
         "score": 3500
       },
       {
-        "uid": 108860725,
-        "name": "RetinaDNA",
-        "rank": 12,
-        "score": 2800
-      },
-      {
         "uid": 70603922,
         "name": "BlackFlamE",
+        "rank": 12,
+        "score": 3000
+      },
+      {
+        "uid": 108860725,
+        "name": "RetinaDNA",
         "rank": 13,
-        "score": 2600
+        "score": 2800
       },
       {
         "uid": 100876140,
@@ -500,7 +500,7 @@
     ]
   },
   "cxBoss": {
-    "updatedAt": "2026-11-22T20:04:11.657528+11:00",
+    "updatedAt": "2026-11-23T06:33:46.024718+11:00",
     "total": 23845,
     "members": [
       {
@@ -735,12 +735,6 @@
         "uid": 75174428,
         "name": "PastalaVista",
         "rank": 39,
-        "score": 0
-      },
-      {
-        "uid": 32556489,
-        "name": "Bensayyten",
-        "rank": 40,
         "score": 0
       }
     ]
