@@ -254,26 +254,26 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-22T14:59:07.178894+11:00",
-    "total": 87700,
+    "updatedAt": "2026-11-22T15:59:14.466405+11:00",
+    "total": 88600,
     "members": [
       {
         "uid": 29321884,
         "name": "RABBIT5",
         "rank": 1,
-        "score": 7900
-      },
-      {
-        "uid": 66607264,
-        "name": null,
-        "rank": 2,
-        "score": 6000
+        "score": 8000
       },
       {
         "uid": 36484758,
         "name": "Belthazar",
+        "rank": 2,
+        "score": 6300
+      },
+      {
+        "uid": 66607264,
+        "name": null,
         "rank": 3,
-        "score": 5900
+        "score": 6000
       },
       {
         "uid": 103516442,
@@ -321,7 +321,7 @@
         "uid": 87244358,
         "name": "神Sterben死",
         "rank": 11,
-        "score": 3000
+        "score": 3400
       },
       {
         "uid": 108860725,
