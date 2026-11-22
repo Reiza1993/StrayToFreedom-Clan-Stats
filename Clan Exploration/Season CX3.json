@@ -254,26 +254,26 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-22T11:40:05.277926+11:00",
-    "total": 83500,
+    "updatedAt": "2026-11-22T12:40:12.139376+11:00",
+    "total": 85000,
     "members": [
       {
         "uid": 29321884,
         "name": "RABBIT5",
         "rank": 1,
-        "score": 7300
-      },
-      {
-        "uid": 66607264,
-        "name": null,
-        "rank": 2,
-        "score": 5600
+        "score": 7600
       },
       {
         "uid": 36484758,
         "name": "Belthazar",
+        "rank": 2,
+        "score": 5900
+      },
+      {
+        "uid": 66607264,
+        "name": null,
         "rank": 3,
-        "score": 5500
+        "score": 5600
       },
       {
         "uid": 103516442,
@@ -318,16 +318,16 @@
         "score": 3200
       },
       {
-        "uid": 108860725,
-        "name": "RetinaDNA",
-        "rank": 11,
-        "score": 2800
-      },
-      {
         "uid": 87244358,
         "name": "神Sterben死",
+        "rank": 11,
+        "score": 3000
+      },
+      {
+        "uid": 108860725,
+        "name": "RetinaDNA",
         "rank": 12,
-        "score": 2600
+        "score": 2800
       },
       {
         "uid": 100876140,
@@ -357,7 +357,7 @@
         "uid": 83861839,
         "name": "groggen",
         "rank": 17,
-        "score": 1800
+        "score": 2200
       },
       {
         "uid": 32556489,
