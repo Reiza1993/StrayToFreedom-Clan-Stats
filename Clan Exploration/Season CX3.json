@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-22T20:04:11.657528+11:00",
-    "total": 91600,
+    "updatedAt": "2026-11-22T21:04:19.620480+11:00",
+    "total": 92600,
     "members": [
       {
         "uid": 29321884,
@@ -264,22 +264,22 @@
         "score": 8300
       },
       {
-        "uid": 66607264,
-        "name": null,
-        "rank": 2,
-        "score": 6400
-      },
-      {
         "uid": 36484758,
         "name": "Belthazar",
+        "rank": 2,
+        "score": 6700
+      },
+      {
+        "uid": 66607264,
+        "name": null,
         "rank": 3,
-        "score": 6300
+        "score": 6400
       },
       {
         "uid": 103516442,
         "name": "DAYO-P",
         "rank": 4,
-        "score": 5500
+        "score": 5700
       },
       {
         "uid": 10754439,
@@ -294,16 +294,16 @@
         "score": 4200
       },
       {
-        "uid": 59566866,
-        "name": "FlyingDutchy",
-        "rank": 7,
-        "score": 4000
-      },
-      {
         "uid": 18115624,
         "name": "Oopsie-Daisy",
+        "rank": 7,
+        "score": 4100
+      },
+      {
+        "uid": 59566866,
+        "name": "FlyingDutchy",
         "rank": 8,
-        "score": 3700
+        "score": 4000
       },
       {
         "uid": 51071110,
