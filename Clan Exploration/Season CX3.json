@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-24T00:04:13.977665+11:00",
-    "total": 113500,
+    "updatedAt": "2026-11-24T01:04:21.532422+11:00",
+    "total": 114400,
     "members": [
       {
         "uid": 29321884,
@@ -285,13 +285,13 @@
         "uid": 10754439,
         "name": "HakiLuffy",
         "rank": 5,
-        "score": 6500
+        "score": 6800
       },
       {
         "uid": 87244358,
         "name": "神Sterben死",
         "rank": 6,
-        "score": 5400
+        "score": 5600
       },
       {
         "uid": 64676255,
@@ -330,26 +330,26 @@
         "score": 3200
       },
       {
+        "uid": 60687252,
+        "name": "һan",
+        "rank": 13,
+        "score": 3200
+      },
+      {
         "uid": 70603922,
         "name": "BlackFlamE",
-        "rank": 13,
+        "rank": 14,
         "score": 3000
       },
       {
         "uid": 112772047,
         "name": "VictorMolusco",
-        "rank": 14,
+        "rank": 15,
         "score": 3000
       },
       {
         "uid": 108860725,
         "name": "RetinaDNA",
-        "rank": 15,
-        "score": 2800
-      },
-      {
-        "uid": 60687252,
-        "name": "һan",
         "rank": 16,
         "score": 2800
       },
