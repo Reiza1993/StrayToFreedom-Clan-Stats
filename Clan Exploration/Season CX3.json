@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-23T13:10:25.120114+11:00",
-    "total": 105300,
+    "updatedAt": "2026-11-23T14:02:57.978319+11:00",
+    "total": 105700,
     "members": [
       {
         "uid": 29321884,
@@ -294,16 +294,16 @@
         "score": 5000
       },
       {
-        "uid": 59566866,
-        "name": "FlyingDutchy",
-        "rank": 7,
-        "score": 4800
-      },
-      {
         "uid": 87244358,
         "name": "神Sterben死",
+        "rank": 7,
+        "score": 5000
+      },
+      {
+        "uid": 59566866,
+        "name": "FlyingDutchy",
         "rank": 8,
-        "score": 4600
+        "score": 4800
       },
       {
         "uid": 51071110,
