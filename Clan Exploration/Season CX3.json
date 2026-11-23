@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-24T02:04:28.589938+11:00",
-    "total": 114800,
+    "updatedAt": "2026-11-24T03:04:36.958566+11:00",
+    "total": 115300,
     "members": [
       {
         "uid": 29321884,
@@ -285,7 +285,7 @@
         "uid": 10754439,
         "name": "HakiLuffy",
         "rank": 5,
-        "score": 6800
+        "score": 6900
       },
       {
         "uid": 87244358,
@@ -324,26 +324,26 @@
         "score": 3900
       },
       {
+        "uid": 112772047,
+        "name": "VictorMolusco",
+        "rank": 12,
+        "score": 3400
+      },
+      {
         "uid": 26277677,
         "name": "BobBobberson",
-        "rank": 12,
+        "rank": 13,
         "score": 3200
       },
       {
         "uid": 60687252,
         "name": "һan",
-        "rank": 13,
+        "rank": 14,
         "score": 3200
       },
       {
         "uid": 70603922,
         "name": "BlackFlamE",
-        "rank": 14,
-        "score": 3000
-      },
-      {
-        "uid": 112772047,
-        "name": "VictorMolusco",
         "rank": 15,
         "score": 3000
       },
