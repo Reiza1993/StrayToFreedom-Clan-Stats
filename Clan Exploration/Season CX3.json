@@ -254,14 +254,14 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-24T09:05:22.937776+11:00",
-    "total": 119600,
+    "updatedAt": "2026-11-24T10:05:30.288518+11:00",
+    "total": 121500,
     "members": [
       {
         "uid": 29321884,
         "name": "RABBIT5",
         "rank": 1,
-        "score": 11100
+        "score": 11400
       },
       {
         "uid": 36484758,
@@ -285,7 +285,7 @@
         "uid": 10754439,
         "name": "HakiLuffy",
         "rank": 5,
-        "score": 6900
+        "score": 7300
       },
       {
         "uid": 64676255,
@@ -309,7 +309,7 @@
         "uid": 18115624,
         "name": "Oopsie-Daisy",
         "rank": 9,
-        "score": 4900
+        "score": 5300
       },
       {
         "uid": 51071110,
@@ -318,16 +318,16 @@
         "score": 4400
       },
       {
-        "uid": 113690788,
-        "name": "Apathy_",
-        "rank": 11,
-        "score": 3900
-      },
-      {
         "uid": 112772047,
         "name": "VictorMolusco",
+        "rank": 11,
+        "score": 4200
+      },
+      {
+        "uid": 113690788,
+        "name": "Apathy_",
         "rank": 12,
-        "score": 3800
+        "score": 3900
       },
       {
         "uid": 26277677,
@@ -414,16 +414,16 @@
         "score": 1600
       },
       {
-        "uid": 27113479,
-        "name": "silverxz",
-        "rank": 27,
-        "score": 1500
-      },
-      {
         "uid": 80972473,
         "name": "Cunner88",
+        "rank": 27,
+        "score": 1600
+      },
+      {
+        "uid": 27113479,
+        "name": "silverxz",
         "rank": 28,
-        "score": 1200
+        "score": 1500
       },
       {
         "uid": 87954282,
