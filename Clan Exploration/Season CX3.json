@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-23T18:03:28.515009+11:00",
-    "total": 109800,
+    "updatedAt": "2026-11-23T19:03:36.284335+11:00",
+    "total": 110200,
     "members": [
       {
         "uid": 29321884,
@@ -288,14 +288,14 @@
         "score": 6400
       },
       {
-        "uid": 64676255,
-        "name": "盾Heathcliff剣",
-        "rank": 6,
-        "score": 5000
-      },
-      {
         "uid": 87244358,
         "name": "神Sterben死",
+        "rank": 6,
+        "score": 5400
+      },
+      {
+        "uid": 64676255,
+        "name": "盾Heathcliff剣",
         "rank": 7,
         "score": 5000
       },
