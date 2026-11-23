@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-24T03:04:36.958566+11:00",
-    "total": 115300,
+    "updatedAt": "2026-11-24T04:04:44.637108+11:00",
+    "total": 116400,
     "members": [
       {
         "uid": 29321884,
@@ -279,7 +279,7 @@
         "uid": 103516442,
         "name": "DAYO-P",
         "rank": 4,
-        "score": 7500
+        "score": 7800
       },
       {
         "uid": 10754439,
@@ -309,7 +309,7 @@
         "uid": 18115624,
         "name": "Oopsie-Daisy",
         "rank": 9,
-        "score": 4500
+        "score": 4900
       },
       {
         "uid": 51071110,
@@ -354,14 +354,14 @@
         "score": 2800
       },
       {
-        "uid": 100876140,
-        "name": "Scoundrel536",
-        "rank": 17,
-        "score": 2400
-      },
-      {
         "uid": 30658936,
         "name": "Gritchen",
+        "rank": 17,
+        "score": 2800
+      },
+      {
+        "uid": 100876140,
+        "name": "Scoundrel536",
         "rank": 18,
         "score": 2400
       },
