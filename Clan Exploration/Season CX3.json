@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-23T20:03:43.697818+11:00",
-    "total": 111100,
+    "updatedAt": "2026-11-23T21:03:50.706568+11:00",
+    "total": 111900,
     "members": [
       {
         "uid": 29321884,
@@ -324,34 +324,34 @@
         "score": 3900
       },
       {
+        "uid": 26277677,
+        "name": "BobBobberson",
+        "rank": 12,
+        "score": 3200
+      },
+      {
         "uid": 70603922,
         "name": "BlackFlamE",
-        "rank": 12,
+        "rank": 13,
+        "score": 3000
+      },
+      {
+        "uid": 112772047,
+        "name": "VictorMolusco",
+        "rank": 14,
         "score": 3000
       },
       {
         "uid": 108860725,
         "name": "RetinaDNA",
-        "rank": 13,
+        "rank": 15,
         "score": 2800
       },
       {
         "uid": 60687252,
         "name": "һan",
-        "rank": 14,
-        "score": 2800
-      },
-      {
-        "uid": 26277677,
-        "name": "BobBobberson",
-        "rank": 15,
-        "score": 2800
-      },
-      {
-        "uid": 112772047,
-        "name": "VictorMolusco",
         "rank": 16,
-        "score": 2600
+        "score": 2800
       },
       {
         "uid": 100876140,
