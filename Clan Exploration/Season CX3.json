@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-23T16:03:13.780297+11:00",
-    "total": 108100,
+    "updatedAt": "2026-11-23T17:03:21.661793+11:00",
+    "total": 108500,
     "members": [
       {
         "uid": 29321884,
@@ -408,32 +408,32 @@
         "score": 1600
       },
       {
+        "uid": 29904762,
+        "name": "Cheeselife",
+        "rank": 26,
+        "score": 1600
+      },
+      {
         "uid": 27113479,
         "name": "silverxz",
-        "rank": 26,
+        "rank": 27,
         "score": 1500
       },
       {
         "uid": 80972473,
         "name": "Cunner88",
-        "rank": 27,
+        "rank": 28,
         "score": 1200
       },
       {
         "uid": 87954282,
         "name": "SngphO",
-        "rank": 28,
+        "rank": 29,
         "score": 1200
       },
       {
         "uid": 61865023,
         "name": "RexPanda",
-        "rank": 29,
-        "score": 1200
-      },
-      {
-        "uid": 29904762,
-        "name": "Cheeselife",
         "rank": 30,
         "score": 1200
       },
