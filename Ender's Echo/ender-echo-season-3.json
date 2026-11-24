@@ -2,185 +2,234 @@
   "endDate": "2026-12-16",
   "leaderboard": [
     {
-      "gainVsPreviousSeason": -2.699584144418984e+24,
+      "gainVsPreviousSeason": -2.161154961690273e+24,
       "name": "Fl3xas",
       "rank": 1,
-      "seasonTotal": 4.090875514050071e+23,
+      "seasonTotal": 9.47516734133718e+23,
       "uid": "83339881"
     },
     {
-      "gainVsPreviousSeason": -5.4194766927477104e+23,
-      "name": "\u04bban",
-      "rank": 2,
-      "seasonTotal": 1.1795341234302787e+23,
-      "uid": "60687252"
-    },
-    {
-      "gainVsPreviousSeason": -6.089382033598268e+23,
+      "gainVsPreviousSeason": -4.713751622236984e+23,
       "name": "DAYO-P",
-      "rank": 3,
-      "seasonTotal": 1.1532444437615973e+23,
+      "rank": 2,
+      "seasonTotal": 2.528874855122882e+23,
       "uid": "103516442"
     },
     {
-      "gainVsPreviousSeason": -4.620697779581567e+23,
+      "gainVsPreviousSeason": -3.176950665477914e+23,
       "name": "Oopsie-Daisy",
-      "rank": 4,
-      "seasonTotal": 9.620394158014524e+22,
+      "rank": 3,
+      "seasonTotal": 2.4057865299051054e+23,
       "uid": "18115624"
     },
     {
-      "gainVsPreviousSeason": -4.0428159501599254e+23,
+      "gainVsPreviousSeason": -4.347688253934811e+23,
+      "name": "\u04bban",
+      "rank": 4,
+      "seasonTotal": 2.2513225622431778e+23,
+      "uid": "60687252"
+    },
+    {
+      "gainVsPreviousSeason": -3.550648470179031e+23,
       "name": "RABBIT5",
       "rank": 5,
-      "seasonTotal": 4.392002040167795e+22,
+      "seasonTotal": 9.313676839976739e+22,
       "uid": "29321884"
     },
     {
-      "gainVsPreviousSeason": -7.075243928491257e+22,
+      "gainVsPreviousSeason": -5.007466470792241e+22,
       "name": "\u795eSterben\u6b7b",
       "rank": 6,
-      "seasonTotal": 2.0259579868032417e+22,
+      "seasonTotal": 4.0937354445022575e+22,
       "uid": "87244358"
     },
     {
-      "gainVsPreviousSeason": -1.4052958781926939e+23,
+      "gainVsPreviousSeason": -1.1764836845854925e+23,
       "name": "SngphO",
       "rank": 7,
-      "seasonTotal": 1.7250581671316346e+22,
+      "seasonTotal": 4.0131801032036475e+22,
       "uid": "87954282"
     },
     {
-      "gainVsPreviousSeason": -1.9858785356986072e+22,
-      "name": "p88203044",
+      "gainVsPreviousSeason": -4.4056448879603954e+23,
+      "name": "\u04c1-ShhImB\u2606tm\u2606n",
       "rank": 8,
-      "seasonTotal": 4.6946873398699874e+21,
+      "seasonTotal": 2.246473963786189e+22,
+      "uid": "40001195"
+    },
+    {
+      "gainVsPreviousSeason": -1.4301851216721708e+22,
+      "name": "p88203044",
+      "rank": 9,
+      "seasonTotal": 1.0251621480134353e+22,
       "uid": "88203044"
     },
     {
-      "gainVsPreviousSeason": -1.7738023540797297e+22,
+      "gainVsPreviousSeason": -1.1205877399150425e+22,
       "name": "Player 66607264",
-      "rank": 9,
-      "seasonTotal": 3.6484540479763477e+21,
+      "rank": 10,
+      "seasonTotal": 1.018060018962322e+22,
       "uid": "66607264"
     },
     {
-      "gainVsPreviousSeason": -2.164902083794531e+22,
+      "gainVsPreviousSeason": -1.6034389716262824e+22,
       "name": "\u76feHeathcliff\u5263",
-      "rank": 10,
-      "seasonTotal": 3.1311802839292576e+21,
+      "rank": 11,
+      "seasonTotal": 8.745811405611746e+21,
       "uid": "64676255"
+    },
+    {
+      "gainVsPreviousSeason": -3.1367886092753565e+22,
+      "name": "RetinaDNA",
+      "rank": 12,
+      "seasonTotal": 4.787738695601719e+21,
+      "uid": "108860725"
+    },
+    {
+      "gainVsPreviousSeason": -3.6013140647249086e+22,
+      "name": "Scoundrel536",
+      "rank": 13,
+      "seasonTotal": 4.61523631791677e+21,
+      "uid": "100876140"
+    },
+    {
+      "gainVsPreviousSeason": -2.4627681943151113e+22,
+      "name": "PastalaVista",
+      "rank": 14,
+      "seasonTotal": 3.9308186702397204e+21,
+      "uid": "75174428"
+    },
+    {
+      "gainVsPreviousSeason": -1.2067403772296878e+22,
+      "name": "pumpenjoe",
+      "rank": 15,
+      "seasonTotal": 3.8440228331686954e+21,
+      "uid": "108546985"
+    },
+    {
+      "gainVsPreviousSeason": -8.028677842868537e+21,
+      "name": "HakiLuffy",
+      "rank": 16,
+      "seasonTotal": 3.5716911761963425e+21,
+      "uid": "10754439"
+    },
+    {
+      "gainVsPreviousSeason": -1.1220672131355797e+22,
+      "name": "VictorMolusco",
+      "rank": 17,
+      "seasonTotal": 3.363228173865825e+21,
+      "uid": "112772047"
+    },
+    {
+      "gainVsPreviousSeason": -8.196132209319283e+21,
+      "name": "BobBobberson",
+      "rank": 18,
+      "seasonTotal": 2.9376835989141885e+21,
+      "uid": "26277677"
     },
     {
       "gainVsPreviousSeason": -5.292088043555495e+22,
       "name": "MadameMischief",
-      "rank": 11,
+      "rank": 19,
       "seasonTotal": 2.8962799199512827e+21,
       "uid": "41742773"
     },
     {
-      "gainVsPreviousSeason": -3.418560202300149e+22,
-      "name": "RetinaDNA",
-      "rank": 12,
-      "seasonTotal": 1.9700227653537903e+21,
-      "uid": "108860725"
-    },
-    {
-      "gainVsPreviousSeason": -1.2908921322233718e+22,
-      "name": "VictorMolusco",
-      "rank": 13,
-      "seasonTotal": 1.6749789829879035e+21,
-      "uid": "112772047"
-    },
-    {
-      "gainVsPreviousSeason": -9.244142370725044e+21,
-      "name": "theLP",
-      "rank": 14,
-      "seasonTotal": 1.4337261805729835e+21,
-      "uid": "79510960"
-    },
-    {
-      "gainVsPreviousSeason": -2.7217654656017663e+22,
-      "name": "PastalaVista",
-      "rank": 15,
-      "seasonTotal": 1.3408459573731742e+21,
-      "uid": "75174428"
-    },
-    {
-      "gainVsPreviousSeason": -1.0435780364722973e+22,
-      "name": "HakiLuffy",
-      "rank": 16,
-      "seasonTotal": 1.1645886543419054e+21,
-      "uid": "10754439"
-    },
-    {
-      "gainVsPreviousSeason": -1.3939495473676726e+22,
-      "name": "Gritchen",
-      "rank": 17,
-      "seasonTotal": 1.0735753059000291e+21,
-      "uid": "30658936"
-    },
-    {
-      "gainVsPreviousSeason": -1.0337470179729736e+22,
-      "name": "BobBobberson",
-      "rank": 18,
-      "seasonTotal": 7.963456285037354e+20,
-      "uid": "26277677"
-    },
-    {
-      "gainVsPreviousSeason": -1.1422753137202915e+22,
+      "gainVsPreviousSeason": -9.376112947130517e+21,
       "name": "Apathy_",
-      "rank": 19,
-      "seasonTotal": 7.960093842709063e+20,
+      "rank": 20,
+      "seasonTotal": 2.842649574343304e+21,
       "uid": "113690788"
     },
     {
-      "gainVsPreviousSeason": -5.629351385140798e+21,
+      "gainVsPreviousSeason": -1.2878260093407264e+22,
+      "name": "Gritchen",
+      "rank": 21,
+      "seasonTotal": 2.1348106861694899e+21,
+      "uid": "30658936"
+    },
+    {
+      "gainVsPreviousSeason": -8.749355723043637e+21,
+      "name": "theLP",
+      "rank": 22,
+      "seasonTotal": 1.9285128282543914e+21,
+      "uid": "79510960"
+    },
+    {
+      "gainVsPreviousSeason": -9.216095888403226e+20,
+      "name": "samwise08",
+      "rank": 23,
+      "seasonTotal": 1.4684991867223626e+21,
+      "uid": "51071110"
+    },
+    {
+      "gainVsPreviousSeason": -5.296859577250999e+21,
       "name": "silverxz",
-      "rank": 20,
-      "seasonTotal": 6.837177176700567e+20,
+      "rank": 24,
+      "seasonTotal": 1.016209525559856e+21,
       "uid": "27113479"
+    },
+    {
+      "gainVsPreviousSeason": -3.432105284120707e+21,
+      "name": "gubrax",
+      "rank": 25,
+      "seasonTotal": 9.504703484842303e+20,
+      "uid": "106162623"
+    },
+    {
+      "gainVsPreviousSeason": -4.41989044229876e+21,
+      "name": "BlackFlamE",
+      "rank": 26,
+      "seasonTotal": 8.744662368677761e+20,
+      "uid": "70603922"
+    },
+    {
+      "gainVsPreviousSeason": -1.8437940848990894e+22,
+      "name": "RexPanda",
+      "rank": 27,
+      "seasonTotal": 8.353688497605636e+20,
+      "uid": "61865023"
+    },
+    {
+      "gainVsPreviousSeason": -5.672592065189069e+21,
+      "name": "FlyingDutchy",
+      "rank": 28,
+      "seasonTotal": 6.339311918792455e+20,
+      "uid": "59566866"
     },
     {
       "gainVsPreviousSeason": -5.728599557235466e+21,
       "name": "groggen",
-      "rank": 21,
+      "rank": 29,
       "seasonTotal": 5.920834537747505e+20,
       "uid": "83861839"
     },
     {
-      "gainVsPreviousSeason": -4.734112482095127e+21,
-      "name": "BlackFlamE",
-      "rank": 22,
-      "seasonTotal": 5.6024419707140905e+20,
-      "uid": "70603922"
-    },
-    {
-      "gainVsPreviousSeason": -3.956723380384494e+21,
-      "name": "gubrax",
-      "rank": 23,
-      "seasonTotal": 4.2585225222044307e+20,
-      "uid": "106162623"
-    },
-    {
-      "gainVsPreviousSeason": -1.2674824088405863e+21,
+      "gainVsPreviousSeason": -1.022500682469688e+21,
       "name": "Player 80018314",
-      "rank": 24,
-      "seasonTotal": 2.979312214735132e+20,
+      "rank": 30,
+      "seasonTotal": 5.4291294784441156e+20,
       "uid": "80018314"
     },
     {
-      "gainVsPreviousSeason": -2.1452319278366277e+21,
-      "name": "samwise08",
-      "rank": 25,
-      "seasonTotal": 2.4487684772605742e+20,
-      "uid": "51071110"
+      "gainVsPreviousSeason": -4.5653894754743883e+21,
+      "name": "faxnem",
+      "rank": 31,
+      "seasonTotal": 4.75924254377346e+20,
+      "uid": "11463573"
     },
     {
-      "gainVsPreviousSeason": -1.5188163417558008e+21,
+      "gainVsPreviousSeason": -7.015283979129583e+21,
+      "name": "EMBALOCO",
+      "rank": 32,
+      "seasonTotal": 4.292916398776867e+20,
+      "uid": "89511116"
+    },
+    {
+      "gainVsPreviousSeason": -1.2955512130643836e+21,
       "name": "Belthazar",
-      "rank": 26,
-      "seasonTotal": 1.5067049394630374e+20,
+      "rank": 33,
+      "seasonTotal": 3.739356226377211e+20,
       "uid": "36484758"
     }
   ],
@@ -396,6 +445,15 @@
               "name": "Player 80018314",
               "top2Sum": 1.39700344132263e+20,
               "uid": "80018314"
+            },
+            {
+              "attempts": [
+                1.9093424116114352e+20,
+                2.383573987165432e+20
+              ],
+              "name": "EMBALOCO",
+              "top2Sum": 4.292916398776867e+20,
+              "uid": "89511116"
             }
           ]
         },
@@ -726,6 +784,545 @@
         }
       ],
       "miniSeasonNumber": 1
+    },
+    {
+      "days": [
+        {
+          "date": "2026-11-22",
+          "day": 4,
+          "players": [
+            {
+              "attempts": [
+                5.41371525001154e+20
+              ],
+              "name": "Gritchen",
+              "top2Sum": 5.41371525001154e+20,
+              "uid": "30658936"
+            },
+            {
+              "attempts": [
+                2.817715930247928e+21
+              ],
+              "name": "RetinaDNA",
+              "top2Sum": 2.817715930247928e+21,
+              "uid": "108860725"
+            },
+            {
+              "attempts": [
+                1.959378305731561e+19,
+                4.2860643407800476e+19
+              ],
+              "name": "Belthazar",
+              "top2Sum": 6.245442646511609e+19,
+              "uid": "36484758"
+            },
+            {
+              "attempts": [
+                2.739902164591948e+20,
+                4.414411648764671e+20
+              ],
+              "name": "Apathy_",
+              "top2Sum": 7.154313813356619e+20,
+              "uid": "113690788"
+            },
+            {
+              "attempts": [
+                1.2852871233605229e+20,
+                1.4186993252909366e+20
+              ],
+              "name": "gubrax",
+              "top2Sum": 2.7039864486514596e+20,
+              "uid": "106162623"
+            },
+            {
+              "attempts": [
+                1.941509295711771e+22,
+                1.9530411351539855e+22,
+                2.1766948094544626e+22,
+                1.1829449611089736e+22,
+                2.2724739631279816e+22,
+                1.653784401942612e+22
+              ],
+              "name": "DAYO-P",
+              "top2Sum": 4.449168772582444e+22,
+              "uid": "103516442"
+            },
+            {
+              "attempts": [
+                7.391693150579691e+20,
+                1.0937115768576386e+21
+              ],
+              "name": "p88203044",
+              "top2Sum": 1.8328808919156077e+21,
+              "uid": "88203044"
+            },
+            {
+              "attempts": [
+                6.94057198630221e+20,
+                7.44030567237617e+20
+              ],
+              "name": "\u76feHeathcliff\u5263",
+              "top2Sum": 1.438087765867838e+21,
+              "uid": "64676255"
+            },
+            {
+              "attempts": [
+                9.943187675091775e+20
+              ],
+              "name": "PastalaVista",
+              "top2Sum": 9.943187675091775e+20,
+              "uid": "75174428"
+            },
+            {
+              "attempts": [
+                7.560704894685209e+20,
+                9.101149926177301e+20
+              ],
+              "name": "Player 66607264",
+              "top2Sum": 1.666185482086251e+21,
+              "uid": "66607264"
+            },
+            {
+              "attempts": [
+                4.61523631791677e+21
+              ],
+              "name": "Scoundrel536",
+              "top2Sum": 4.61523631791677e+21,
+              "uid": "100876140"
+            },
+            {
+              "attempts": [
+                2.246473963786189e+22
+              ],
+              "name": "\u04c1-ShhImB\u2606tm\u2606n",
+              "top2Sum": 2.246473963786189e+22,
+              "uid": "40001195"
+            },
+            {
+              "attempts": [
+                3.83343113393519e+21,
+                3.7928583307430645e+21
+              ],
+              "name": "SngphO",
+              "top2Sum": 7.626289464678254e+21,
+              "uid": "87954282"
+            },
+            {
+              "attempts": [
+                4.307057285194224e+20,
+                5.2232972688638457e+20,
+                5.2481612408848364e+20
+              ],
+              "name": "BobBobberson",
+              "top2Sum": 1.0471458509748682e+21,
+              "uid": "26277677"
+            },
+            {
+              "attempts": [
+                3.8440228331686954e+21
+              ],
+              "name": "pumpenjoe",
+              "top2Sum": 3.8440228331686954e+21,
+              "uid": "108546985"
+            },
+            {
+              "attempts": [
+                3.996458821192467e+20,
+                3.333761171468402e+20,
+                4.053267191557351e+20
+              ],
+              "name": "HakiLuffy",
+              "top2Sum": 8.049726012749818e+20,
+              "uid": "10754439"
+            },
+            {
+              "attempts": [
+                1.618807464628175e+20,
+                1.5234129333354958e+20
+              ],
+              "name": "BlackFlamE",
+              "top2Sum": 3.142220397963671e+20,
+              "uid": "70603922"
+            },
+            {
+              "attempts": [
+                2.2475439261698255e+22,
+                2.708138621014074e+22
+              ],
+              "name": "Oopsie-Daisy",
+              "top2Sum": 4.955682547183899e+22,
+              "uid": "18115624"
+            },
+            {
+              "attempts": [
+                1.1196612288772071e+23,
+                1.0210201126356478e+23
+              ],
+              "name": "Fl3xas",
+              "top2Sum": 2.140681341512855e+23,
+              "uid": "83339881"
+            },
+            {
+              "attempts": [
+                8.353688497605636e+20
+              ],
+              "name": "RexPanda",
+              "top2Sum": 8.353688497605636e+20,
+              "uid": "61865023"
+            }
+          ]
+        },
+        {
+          "date": "2026-11-23",
+          "day": 5,
+          "players": [
+            {
+              "attempts": [
+                5.198638552683068e+20
+              ],
+              "name": "Gritchen",
+              "top2Sum": 5.198638552683068e+20,
+              "uid": "30658936"
+            },
+            {
+              "attempts": [
+                3.2151005867607765e+19,
+                5.312873983952645e+19
+              ],
+              "name": "Belthazar",
+              "top2Sum": 8.527974570713422e+19,
+              "uid": "36484758"
+            },
+            {
+              "attempts": [
+                2.888542801335698e+20,
+                3.224928858851177e+20
+              ],
+              "name": "Apathy_",
+              "top2Sum": 6.113471660186875e+20,
+              "uid": "113690788"
+            },
+            {
+              "attempts": [
+                1.30090049234663e+20,
+                1.241294021639782e+20
+              ],
+              "name": "gubrax",
+              "top2Sum": 2.5421945139864122e+20,
+              "uid": "106162623"
+            },
+            {
+              "attempts": [
+                1.8522679333642228e+22,
+                1.5678327162590122e+22,
+                2.5788674817472843e+22,
+                2.1914278011584932e+22,
+                1.6107077738243364e+22,
+                2.1575736062478756e+22
+              ],
+              "name": "DAYO-P",
+              "top2Sum": 4.770295282905778e+22,
+              "uid": "103516442"
+            },
+            {
+              "attempts": [
+                2.724263646596869e+20,
+                2.223602830217209e+20
+              ],
+              "name": "theLP",
+              "top2Sum": 4.947866476814078e+20,
+              "uid": "79510960"
+            },
+            {
+              "attempts": [
+                4.827145824930033e+20,
+                3.239006829650232e+20
+              ],
+              "name": "VictorMolusco",
+              "top2Sum": 8.066152654580264e+20,
+              "uid": "112772047"
+            },
+            {
+              "attempts": [
+                1.0717884388128991e+23
+              ],
+              "name": "\u04bban",
+              "top2Sum": 1.0717884388128991e+23,
+              "uid": "60687252"
+            },
+            {
+              "attempts": [
+                7.30904710695073e+20,
+                8.587277922458814e+20
+              ],
+              "name": "p88203044",
+              "top2Sum": 1.5896325029409545e+21,
+              "uid": "88203044"
+            },
+            {
+              "attempts": [
+                1.0628289917959909e+21,
+                1.1215313552761987e+21
+              ],
+              "name": "\u76feHeathcliff\u5263",
+              "top2Sum": 2.1843603470721897e+21,
+              "uid": "64676255"
+            },
+            {
+              "attempts": [
+                5.4714365900496287e+20,
+                6.764786799913423e+20
+              ],
+              "name": "samwise08",
+              "top2Sum": 1.2236223389963051e+21,
+              "uid": "51071110"
+            },
+            {
+              "attempts": [
+                9.687971349189206e+20,
+                9.786382977834315e+20
+              ],
+              "name": "Player 66607264",
+              "top2Sum": 1.947435432702352e+21,
+              "uid": "66607264"
+            },
+            {
+              "attempts": [
+                4.06171727722674e+21,
+                2.7591749147492205e+21
+              ],
+              "name": "SngphO",
+              "top2Sum": 6.82089219197596e+21,
+              "uid": "87954282"
+            },
+            {
+              "attempts": [
+                4.653713735877154e+20,
+                6.288207458478693e+20
+              ],
+              "name": "BobBobberson",
+              "top2Sum": 1.0941921194355846e+21,
+              "uid": "26277677"
+            },
+            {
+              "attempts": [
+                4.9539820908592176e+20,
+                3.654214753145334e+20
+              ],
+              "name": "HakiLuffy",
+              "top2Sum": 8.608196844004552e+20,
+              "uid": "10754439"
+            },
+            {
+              "attempts": [
+                2.2052832593220188e+22,
+                2.8262839057118717e+22
+              ],
+              "name": "Oopsie-Daisy",
+              "top2Sum": 5.0315671650338905e+22,
+              "uid": "18115624"
+            },
+            {
+              "attempts": [
+                1.0167591371085377e+23,
+                6.175510934630086e+22
+              ],
+              "name": "Fl3xas",
+              "top2Sum": 1.6343102305715462e+23,
+              "uid": "83339881"
+            },
+            {
+              "attempts": [
+                3.324918078897992e+20
+              ],
+              "name": "silverxz",
+              "top2Sum": 3.324918078897992e+20,
+              "uid": "27113479"
+            },
+            {
+              "attempts": [
+                6.562236241979885e+21,
+                1.10317788557166e+22,
+                1.104701321031654e+22
+              ],
+              "name": "RABBIT5",
+              "top2Sum": 2.207879206603314e+22,
+              "uid": "29321884"
+            },
+            {
+              "attempts": [
+                7.491881616387688e+19
+              ],
+              "name": "Player 80018314",
+              "top2Sum": 7.491881616387688e+19,
+              "uid": "80018314"
+            }
+          ]
+        },
+        {
+          "date": "2026-11-24",
+          "day": 6,
+          "players": [
+            {
+              "attempts": [
+                3.5431676526317974e+19,
+                4.009927999284908e+19
+              ],
+              "name": "Belthazar",
+              "top2Sum": 7.553095651916705e+19,
+              "uid": "36484758"
+            },
+            {
+              "attempts": [
+                4.3723556260495524e+20,
+                2.826260801130932e+20
+              ],
+              "name": "Apathy_",
+              "top2Sum": 7.198616427180484e+20,
+              "uid": "113690788"
+            },
+            {
+              "attempts": [
+                2.0733604174662266e+22,
+                1.3036113627324581e+22,
+                2.385636971787642e+22,
+                2.1512030863369857e+22,
+                1.9598956872489908e+22,
+                1.2816034791512745e+22
+              ],
+              "name": "DAYO-P",
+              "top2Sum": 4.536840058124628e+22,
+              "uid": "103516442"
+            },
+            {
+              "attempts": [
+                5.0244623888304774e+20,
+                3.7918768653684716e+20
+              ],
+              "name": "VictorMolusco",
+              "top2Sum": 8.816339254198948e+20,
+              "uid": "112772047"
+            },
+            {
+              "attempts": [
+                9.455466986871196e+21,
+                1.1222307590118964e+22
+              ],
+              "name": "\u795eSterben\u6b7b",
+              "top2Sum": 2.0677774576990158e+22,
+              "uid": "87244358"
+            },
+            {
+              "attempts": [
+                1.1097185863689065e+21,
+                1.024702159038896e+21
+              ],
+              "name": "p88203044",
+              "top2Sum": 2.1344207454078024e+21,
+              "uid": "88203044"
+            },
+            {
+              "attempts": [
+                1.0819311436721207e+21,
+                9.102518650703391e+20
+              ],
+              "name": "\u76feHeathcliff\u5263",
+              "top2Sum": 1.9921830087424598e+21,
+              "uid": "64676255"
+            },
+            {
+              "attempts": [
+                1.595653945357369e+21
+              ],
+              "name": "PastalaVista",
+              "top2Sum": 1.595653945357369e+21,
+              "uid": "75174428"
+            },
+            {
+              "attempts": [
+                1.644765852154384e+21,
+                1.262536738722882e+21,
+                1.2737593747038876e+21
+              ],
+              "name": "Player 66607264",
+              "top2Sum": 2.9185252268582717e+21,
+              "uid": "66607264"
+            },
+            {
+              "attempts": [
+                4.75924254377346e+20
+              ],
+              "name": "faxnem",
+              "top2Sum": 4.75924254377346e+20,
+              "uid": "11463573"
+            },
+            {
+              "attempts": [
+                4.1958985388265277e+21,
+                4.2381391652393855e+21
+              ],
+              "name": "SngphO",
+              "top2Sum": 8.434037704065913e+21,
+              "uid": "87954282"
+            },
+            {
+              "attempts": [
+                3.769380900614802e+20,
+                3.643721461175196e+20
+              ],
+              "name": "HakiLuffy",
+              "top2Sum": 7.413102361789998e+20,
+              "uid": "10754439"
+            },
+            {
+              "attempts": [
+                1.631004205345068e+22,
+                2.819217223473672e+22
+              ],
+              "name": "Oopsie-Daisy",
+              "top2Sum": 4.45022142881874e+22,
+              "uid": "18115624"
+            },
+            {
+              "attempts": [
+                7.2433607257755025e+22,
+                6.752801625578856e+22,
+                8.849641826251572e+22
+              ],
+              "name": "Fl3xas",
+              "top2Sum": 1.6093002552027075e+23,
+              "uid": "83339881"
+            },
+            {
+              "attempts": [
+                1.4772523290041778e+22,
+                1.236543264201451e+22
+              ],
+              "name": "RABBIT5",
+              "top2Sum": 2.713795593205629e+22,
+              "uid": "29321884"
+            },
+            {
+              "attempts": [
+                6.339311918792455e+20
+              ],
+              "name": "FlyingDutchy",
+              "top2Sum": 6.339311918792455e+20,
+              "uid": "59566866"
+            },
+            {
+              "attempts": [
+                8.345163500430498e+19,
+                8.661127520271652e+19
+              ],
+              "name": "Player 80018314",
+              "top2Sum": 1.7006291020702148e+20,
+              "uid": "80018314"
+            }
+          ]
+        }
+      ],
+      "miniSeasonNumber": 2
     }
   ],
   "seasonNumber": 3,
