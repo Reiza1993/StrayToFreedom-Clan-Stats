@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-25T08:08:02.805306+11:00",
-    "total": 137500,
+    "updatedAt": "2026-11-25T09:08:11.758023+11:00",
+    "total": 137900,
     "members": [
       {
         "uid": 29321884,
@@ -306,16 +306,16 @@
         "score": 6000
       },
       {
-        "uid": 18115624,
-        "name": "Oopsie-Daisy",
-        "rank": 9,
-        "score": 5300
-      },
-      {
         "uid": 112772047,
         "name": "VictorMolusco",
+        "rank": 9,
+        "score": 5500
+      },
+      {
+        "uid": 18115624,
+        "name": "Oopsie-Daisy",
         "rank": 10,
-        "score": 5100
+        "score": 5300
       },
       {
         "uid": 51071110,
