@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-25T09:08:11.758023+11:00",
-    "total": 137900,
+    "updatedAt": "2026-11-25T10:28:20.427670+11:00",
+    "total": 139500,
     "members": [
       {
         "uid": 29321884,
@@ -267,13 +267,13 @@
         "uid": 36484758,
         "name": "Belthazar",
         "rank": 2,
-        "score": 11500
+        "score": 11900
       },
       {
         "uid": 66607264,
         "name": null,
         "rank": 3,
-        "score": 10500
+        "score": 10900
       },
       {
         "uid": 103516442,
@@ -285,7 +285,7 @@
         "uid": 10754439,
         "name": "HakiLuffy",
         "rank": 5,
-        "score": 8600
+        "score": 9000
       },
       {
         "uid": 87244358,
@@ -306,16 +306,16 @@
         "score": 6000
       },
       {
-        "uid": 112772047,
-        "name": "VictorMolusco",
-        "rank": 9,
-        "score": 5500
-      },
-      {
         "uid": 18115624,
         "name": "Oopsie-Daisy",
+        "rank": 9,
+        "score": 5700
+      },
+      {
+        "uid": 112772047,
+        "name": "VictorMolusco",
         "rank": 10,
-        "score": 5300
+        "score": 5500
       },
       {
         "uid": 51071110,
