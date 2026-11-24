@@ -362,6 +362,8 @@
         .tone-green  { --tone: #34d399; }
         .tone-lime   { --tone: #8bc34a; }
         .tone-gold   { --tone: #ffd24a; }
+        .tm-bar { height: 8px; border-radius: 4px; background: rgba(255,255,255,0.08); margin: 8px 0 6px; overflow: hidden; }
+        .tm-bar > div { height: 100%; width: 0; background: #40c4d6; border-radius: 4px; transition: width .4s ease; }
 
         .calc-stat-label {
             display: flex;
@@ -802,6 +804,7 @@
                 <button class="subtab-btn active" data-tab="stats" onclick="switchSubTab('stats')" data-i18n="tab.stats">Stats</button>
                 <button class="subtab-btn" data-tab="lme" onclick="switchSubTab('lme')" data-i18n="tab.lme">LME</button>
                 <button class="subtab-btn" data-tab="cx" onclick="switchSubTab('cx')" data-i18n="tab.cx">CX</button>
+                <button class="subtab-btn" data-tab="tm" onclick="switchSubTab('tm')" data-i18n="tab.tm">Tidemyst</button>
                 <button class="subtab-btn" data-tab="ee" onclick="switchSubTab('ee')" data-i18n="tab.ee">Ender's Echo</button>
             </div>
 
@@ -902,6 +905,32 @@
                         <div class="calc-stat-value" style="color:#34d399;" id="cx-total-boss">—</div>
                     </div>
                 </div>
+            </div>
+
+            <!-- Tidemyst Haven Tab -->
+            <div id="tm-tab" class="subtab-content" style="display: none;">
+                <select id="tmSeasonSelect" class="field-full" style="display:none;"></select>
+                <div class="stat-grid">
+                    <div class="calc-stat-card tone-teal span-6">
+                        <div class="calc-stat-label" data-i18n="stat.tm_total">Clan Total</div>
+                        <div class="calc-stat-value" style="color:#40c4d6;" id="tm-total">—</div>
+                        <div class="tm-bar"><div id="tm-bar-fill"></div></div>
+                        <div class="calc-stat-gain gain-neutral" id="tm-season-status"></div>
+                    </div>
+                    <div class="calc-stat-card tone-teal span-2">
+                        <div class="calc-stat-label"><span data-i18n="stat.tm_goal">Members</span> <span id="tm-goal-label">30+</span></div>
+                        <div class="calc-stat-value" id="tm-at-goal">—</div>
+                    </div>
+                    <div class="calc-stat-card tone-teal span-2">
+                        <div class="calc-stat-label" data-i18n="stat.tm_nodes">Nodes Done</div>
+                        <div class="calc-stat-value" id="tm-nodes">—</div>
+                    </div>
+                    <div class="calc-stat-card tone-teal span-2">
+                        <div class="calc-stat-label" data-i18n="stat.tm_not_played">Not Played</div>
+                        <div class="calc-stat-value" id="tm-not-played">—</div>
+                    </div>
+                </div>
+                <p class="view-note" id="tm-empty" style="display:none;" data-i18n="tm.no_data">No Tidemyst Haven season recorded yet.</p>
             </div>
 
             <!-- Ender's Echo Tab -->
@@ -1218,6 +1247,11 @@
                 { value: 'name', key: 'ctrl.sort_name' },
                 { value: 'role', key: 'ctrl.sort_role' }
             ],
+            tm: [
+                { value: 'tmPoints', key: 'ctrl.sort_tm' },
+                { value: 'name',     key: 'ctrl.sort_name' },
+                { value: 'role',     key: 'ctrl.sort_role' }
+            ],
             cx: [
                 { value: 'cxRank', key: 'ctrl.sort_cx_rank' },
                 { value: 'cxMilestone', key: 'ctrl.sort_cx_milestone' },
@@ -1226,7 +1260,7 @@
                 { value: 'role',   key: 'ctrl.sort_role' }
             ]
         };
-        const DEFAULT_SORT = { stats: 'attack', lme: 'lme', cx: 'cxRank' };
+        const DEFAULT_SORT = { stats: 'attack', lme: 'lme', cx: 'cxRank', tm: 'tmPoints' };
         const LUNAR_POINTS_TABLE = {
             champion: { 1: 20, 2: 10, 3: -10, 4: -20 },
             legend:   { 1: 30, 2: 15, 3:   5, 4:  -5 }
@@ -1430,6 +1464,98 @@
                 applyCXSeason();
             };
             applyCXSeason();
+        }
+
+        // ══════════════════════════════════════════════
+        //  TIDEMYST HAVEN — 2-week seasons, one JSON file per season,
+        //  pushed by SterbyToolsGo as "Tidemyst Haven/Season TH{n}.json"
+        //  (probed from 1 like the CX seasons). Each file holds the clan
+        //  total (vs the 1,200 cap), nodes done, every member's points
+        //  and who hasn't played yet.
+        // ══════════════════════════════════════════════
+        const TM_FOLDER = 'Tidemyst Haven';
+        const TM_GOAL = 30;
+        let tmSeasonsCache = {};
+        let currentTMSeason = null;
+
+        async function fetchTMSeason(n) {
+            try {
+                const res = await fetch(encodeURI(`${TM_FOLDER}/Season TH${n}.json`), { cache: 'no-cache' });
+                if (!res.ok) return null;
+                return await res.json();
+            } catch (err) {
+                return null;
+            }
+        }
+
+        function tmPointsColor(points) {
+            if (points == null) return '#7a85a8';
+            return points >= TM_GOAL ? '#68d391' : '#f56565';
+        }
+
+        function applyTMSeason() {
+            const s = currentTMSeason;
+            const points = new Map(((s && s.members) || []).map(m => [String(m.uid), m.points || 0]));
+            allPlayers.forEach(p => { p.tmPoints = points.has(String(p.id)) ? points.get(String(p.id)) : null; });
+            const empty = document.getElementById('tm-empty');
+            empty.style.display = s ? 'none' : '';
+            if (s) {
+                const total = s.total || 0, cap = s.max || 1200;
+                document.getElementById('tm-total').innerHTML = `${total.toLocaleString()}<span style="color:#7a85a8;font-size:0.7em;"> / ${cap.toLocaleString()}</span>`;
+                document.getElementById('tm-bar-fill').style.width = `${Math.min(100, total / cap * 100)}%`;
+                const members = (s.members || []).length + (s.notPlayed || []).length;
+                document.getElementById('tm-goal-label').textContent = `${TM_GOAL}+`;
+                document.getElementById('tm-at-goal').textContent = `${(s.members || []).filter(m => m.points >= TM_GOAL).length}/${members}`;
+                document.getElementById('tm-nodes').textContent = s.nodes ? `${s.nodesDone || 0}/${s.nodes}` : '—';
+                const np = (s.notPlayed || []).length;
+                const npEl = document.getElementById('tm-not-played');
+                npEl.textContent = np;
+                npEl.style.color = np ? '#f56565' : '';
+                const status = document.getElementById('tm-season-status');
+                const end = s.endAt ? new Date(s.endAt) : null;
+                if (end && end > new Date()) {
+                    const h = Math.floor((end - new Date()) / 3600000);
+                    status.textContent = `${t('tm.ends_in')} ${Math.floor(h / 24)}d ${h % 24}h`;
+                    status.style.color = '#9aa4c4';
+                } else {
+                    status.textContent = t('tm.ended');
+                    status.style.color = '#68d391';
+                }
+            }
+            if (currentSubTab === 'tm') {
+                updateTableHeader();
+                filterData(document.getElementById('searchInput').value);
+            }
+        }
+
+        async function loadTMSeasons() {
+            const select = document.getElementById('tmSeasonSelect');
+            if (!select) return;
+            select.innerHTML = '';
+            tmSeasonsCache = {};
+            let n = 1;
+            let latest = null;
+            while (true) {
+                const season = await fetchTMSeason(n);
+                if (!season) break;
+                tmSeasonsCache[season.seasonNumber] = season;
+                const option = document.createElement('option');
+                option.value = season.seasonNumber;
+                option.textContent = `${t('cx.season')} ${season.seasonNumber} — ${formatCycleDate(season.startAt)}`;
+                select.insertBefore(option, select.firstChild);
+                latest = season;
+                n++;
+            }
+            select.style.display = latest ? '' : 'none';
+            currentTMSeason = latest;
+            if (latest) {
+                select.value = latest.seasonNumber;
+                select.onchange = () => {
+                    currentTMSeason = tmSeasonsCache[select.value] || null;
+                    applyTMSeason();
+                };
+            }
+            applyTMSeason();
         }
 
         function translateLeague(str) {
@@ -2703,6 +2829,11 @@
                     <th><img src="${ICON_BASE}CX.png" alt="CX Rank" style="width:20px;height:20px;vertical-align:middle;margin-right:4px;" onerror="this.style.display='none'"><span data-i18n="table.col.cx_rank_score">CX Rank Score</span></th>
                     ${currentCXSeason ? `<th>${t('table.col.cx_at_milestone')}<span style="display:block;font-size:10px;color:#9aa4c4;font-weight:400;">${(currentCXSeason.milestone || 0).toLocaleString()}</span></th>` : ''}
                     <th data-i18n="table.col.cx_boss_score">CX Boss Score</th>`;
+            } else if (currentSubTab === 'tm') {
+                tr.innerHTML = `
+                    <th data-i18n="table.col.rank">#</th>
+                    <th data-i18n="table.col.player_name">Player Name</th>
+                    <th><span data-i18n="table.col.tm_points">Tidemyst Points</span><span style="display:block;font-size:10px;color:#9aa4c4;font-weight:400;">${t('tm.goal')} ${TM_GOAL}</span></th>`;
             }
             applyTranslations();
         }
@@ -2754,6 +2885,8 @@
                     cells += `<td style="text-align:center;font-weight:600;color:${getCXRankColor(player.cxRankScore)};">${player.cxRankScore.toLocaleString()}</td>
                     ${currentCXSeason ? `<td style="text-align:center;color:#c3cbe4;">${player.cxMilestoneScore == null ? '—' : player.cxMilestoneScore.toLocaleString()}</td>` : ''}
                     <td style="text-align:center;font-weight:600;color:#a78bfa;">${player.cxBossScore.toLocaleString()}</td>`;
+                } else if (currentSubTab === 'tm') {
+                    cells += `<td style="text-align:center;font-weight:600;color:${tmPointsColor(player.tmPoints)};">${player.tmPoints == null ? (currentTMSeason ? t('tm.not_played') : '—') : player.tmPoints.toLocaleString()}</td>`;
                 }
                 row.innerHTML = cells;
                 tbody.appendChild(row);
@@ -2848,6 +2981,9 @@
                     break;
                 case 'cxBoss':
                     filteredData.sort((a, b) => b.cxBossScore - a.cxBossScore);
+                    break;
+                case 'tmPoints':
+                    filteredData.sort((a, b) => (b.tmPoints ?? -1) - (a.tmPoints ?? -1));
                     break;
                 case 'cxMilestone':
                     filteredData.sort((a, b) => (b.cxMilestoneScore ?? -1) - (a.cxMilestoneScore ?? -1));
@@ -3268,6 +3404,7 @@
         loadAlumni();
         loadEnderEchoSeasons();
         loadCXSeasons();
+        loadTMSeasons();
         switchSubTab('stats');
 
         // Restore language preference
