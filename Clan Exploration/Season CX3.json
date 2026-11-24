@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-25T07:07:55.777805+11:00",
-    "total": 137100,
+    "updatedAt": "2026-11-25T08:08:02.805306+11:00",
+    "total": 137500,
     "members": [
       {
         "uid": 29321884,
@@ -360,20 +360,20 @@
         "score": 2800
       },
       {
+        "uid": 80972473,
+        "name": "Cunner88",
+        "rank": 18,
+        "score": 2800
+      },
+      {
         "uid": 79510960,
         "name": "theLP",
-        "rank": 18,
+        "rank": 19,
         "score": 2500
       },
       {
         "uid": 100876140,
         "name": "Scoundrel536",
-        "rank": 19,
-        "score": 2400
-      },
-      {
-        "uid": 80972473,
-        "name": "Cunner88",
         "rank": 20,
         "score": 2400
       },
