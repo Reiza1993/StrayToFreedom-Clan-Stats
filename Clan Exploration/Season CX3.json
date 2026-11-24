@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-25T04:07:32.518820+11:00",
-    "total": 134600,
+    "updatedAt": "2026-11-25T05:07:39.729923+11:00",
+    "total": 135400,
     "members": [
       {
         "uid": 29321884,
@@ -360,28 +360,28 @@
         "score": 2800
       },
       {
+        "uid": 79510960,
+        "name": "theLP",
+        "rank": 18,
+        "score": 2500
+      },
+      {
         "uid": 100876140,
         "name": "Scoundrel536",
-        "rank": 18,
+        "rank": 19,
         "score": 2400
       },
       {
         "uid": 80972473,
         "name": "Cunner88",
-        "rank": 19,
+        "rank": 20,
         "score": 2400
       },
       {
         "uid": 83861839,
         "name": "groggen",
-        "rank": 20,
-        "score": 2300
-      },
-      {
-        "uid": 79510960,
-        "name": "theLP",
         "rank": 21,
-        "score": 2100
+        "score": 2300
       },
       {
         "uid": 75174428,
@@ -390,32 +390,32 @@
         "score": 2000
       },
       {
+        "uid": 29904762,
+        "name": "Cheeselife",
+        "rank": 23,
+        "score": 2000
+      },
+      {
         "uid": 32556489,
         "name": "Bensayyten",
-        "rank": 23,
+        "rank": 24,
         "score": 1700
       },
       {
         "uid": 83339881,
         "name": "Fl3xas",
-        "rank": 24,
+        "rank": 25,
         "score": 1600
       },
       {
         "uid": 80018314,
         "name": null,
-        "rank": 25,
+        "rank": 26,
         "score": 1600
       },
       {
         "uid": 88203044,
         "name": "p88203044",
-        "rank": 26,
-        "score": 1600
-      },
-      {
-        "uid": 29904762,
-        "name": "Cheeselife",
         "rank": 27,
         "score": 1600
       },
