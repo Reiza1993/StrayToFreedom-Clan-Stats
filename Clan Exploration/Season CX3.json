@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-25T03:07:26.125377+11:00",
-    "total": 133300,
+    "updatedAt": "2026-11-25T04:07:32.518820+11:00",
+    "total": 134600,
     "members": [
       {
         "uid": 29321884,
@@ -279,13 +279,13 @@
         "uid": 103516442,
         "name": "DAYO-P",
         "rank": 4,
-        "score": 9100
+        "score": 9400
       },
       {
         "uid": 10754439,
         "name": "HakiLuffy",
         "rank": 5,
-        "score": 8500
+        "score": 8600
       },
       {
         "uid": 87244358,
@@ -297,7 +297,7 @@
         "uid": 64676255,
         "name": "盾Heathcliff剣",
         "rank": 7,
-        "score": 5800
+        "score": 6200
       },
       {
         "uid": 59566866,
@@ -315,7 +315,7 @@
         "uid": 112772047,
         "name": "VictorMolusco",
         "rank": 10,
-        "score": 5000
+        "score": 5100
       },
       {
         "uid": 51071110,
@@ -366,26 +366,26 @@
         "score": 2400
       },
       {
+        "uid": 80972473,
+        "name": "Cunner88",
+        "rank": 19,
+        "score": 2400
+      },
+      {
         "uid": 83861839,
         "name": "groggen",
-        "rank": 19,
+        "rank": 20,
         "score": 2300
       },
       {
         "uid": 79510960,
         "name": "theLP",
-        "rank": 20,
+        "rank": 21,
         "score": 2100
       },
       {
         "uid": 75174428,
         "name": "PastalaVista",
-        "rank": 21,
-        "score": 2000
-      },
-      {
-        "uid": 80972473,
-        "name": "Cunner88",
         "rank": 22,
         "score": 2000
       },
