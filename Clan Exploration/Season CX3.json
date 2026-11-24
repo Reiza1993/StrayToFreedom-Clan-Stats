@@ -254,32 +254,32 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-25T06:07:47.899549+11:00",
-    "total": 135800,
+    "updatedAt": "2026-11-25T07:07:55.777805+11:00",
+    "total": 137100,
     "members": [
       {
         "uid": 29321884,
         "name": "RABBIT5",
         "rank": 1,
-        "score": 13000
+        "score": 13100
       },
       {
         "uid": 36484758,
         "name": "Belthazar",
         "rank": 2,
-        "score": 11100
+        "score": 11500
       },
       {
         "uid": 66607264,
         "name": null,
         "rank": 3,
-        "score": 10100
+        "score": 10500
       },
       {
         "uid": 103516442,
         "name": "DAYO-P",
         "rank": 4,
-        "score": 9400
+        "score": 9800
       },
       {
         "uid": 10754439,
