@@ -254,14 +254,14 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-24T10:05:30.288518+11:00",
-    "total": 121500,
+    "updatedAt": "2026-11-24T11:05:37.556830+11:00",
+    "total": 124100,
     "members": [
       {
         "uid": 29321884,
         "name": "RABBIT5",
         "rank": 1,
-        "score": 11400
+        "score": 11500
       },
       {
         "uid": 36484758,
@@ -273,13 +273,13 @@
         "uid": 66607264,
         "name": null,
         "rank": 3,
-        "score": 8900
+        "score": 9300
       },
       {
         "uid": 103516442,
         "name": "DAYO-P",
         "rank": 4,
-        "score": 8200
+        "score": 8300
       },
       {
         "uid": 10754439,
@@ -288,16 +288,16 @@
         "score": 7300
       },
       {
-        "uid": 64676255,
-        "name": "盾Heathcliff剣",
-        "rank": 6,
-        "score": 5800
-      },
-      {
         "uid": 87244358,
         "name": "神Sterben死",
+        "rank": 6,
+        "score": 6000
+      },
+      {
+        "uid": 64676255,
+        "name": "盾Heathcliff剣",
         "rank": 7,
-        "score": 5600
+        "score": 5800
       },
       {
         "uid": 59566866,
@@ -330,16 +330,16 @@
         "score": 3900
       },
       {
-        "uid": 26277677,
-        "name": "BobBobberson",
-        "rank": 13,
-        "score": 3200
-      },
-      {
         "uid": 60687252,
         "name": "һan",
+        "rank": 13,
+        "score": 3600
+      },
+      {
+        "uid": 26277677,
+        "name": "BobBobberson",
         "rank": 14,
-        "score": 3200
+        "score": 3600
       },
       {
         "uid": 70603922,
@@ -372,20 +372,20 @@
         "score": 2200
       },
       {
+        "uid": 79510960,
+        "name": "theLP",
+        "rank": 20,
+        "score": 2100
+      },
+      {
         "uid": 75174428,
         "name": "PastalaVista",
-        "rank": 20,
+        "rank": 21,
         "score": 2000
       },
       {
         "uid": 32556489,
         "name": "Bensayyten",
-        "rank": 21,
-        "score": 1700
-      },
-      {
-        "uid": 79510960,
-        "name": "theLP",
         "rank": 22,
         "score": 1700
       },
@@ -420,20 +420,20 @@
         "score": 1600
       },
       {
+        "uid": 61865023,
+        "name": "RexPanda",
+        "rank": 28,
+        "score": 1600
+      },
+      {
         "uid": 27113479,
         "name": "silverxz",
-        "rank": 28,
+        "rank": 29,
         "score": 1500
       },
       {
         "uid": 87954282,
         "name": "SngphO",
-        "rank": 29,
-        "score": 1200
-      },
-      {
-        "uid": 61865023,
-        "name": "RexPanda",
         "rank": 30,
         "score": 1200
       },
