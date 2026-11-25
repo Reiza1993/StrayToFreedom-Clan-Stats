@@ -7,8 +7,8 @@
   "previousSeasonFinalTotal": 151200,
   "milestoneSnapshot": null,
   "cxRank": {
-    "updatedAt": "2026-11-26T09:57:45.133010+11:00",
-    "total": 4400,
+    "updatedAt": "2026-11-26T10:57:49.677765+11:00",
+    "total": 5200,
     "members": [
       {
         "uid": 66607264,
@@ -26,7 +26,7 @@
         "uid": 88203044,
         "name": "p88203044",
         "rank": 3,
-        "score": 400
+        "score": 800
       },
       {
         "uid": 112772047,
@@ -65,38 +65,38 @@
         "score": 400
       },
       {
+        "uid": 60687252,
+        "name": "һan",
+        "rank": 10,
+        "score": 400
+      },
+      {
         "uid": 64676255,
         "name": "盾Heathcliff剣",
-        "rank": 10,
+        "rank": 11,
         "score": 0
       },
       {
         "uid": 71028860,
         "name": "Rzzza",
-        "rank": 11,
+        "rank": 12,
         "score": 0
       },
       {
         "uid": 108860725,
         "name": "RetinaDNA",
-        "rank": 12,
+        "rank": 13,
         "score": 0
       },
       {
         "uid": 41742773,
         "name": "MadameMischief",
-        "rank": 13,
+        "rank": 14,
         "score": 0
       },
       {
         "uid": 40001195,
         "name": "Ӂ-ShhImB☆tm☆n",
-        "rank": 14,
-        "score": 0
-      },
-      {
-        "uid": 60687252,
-        "name": "һan",
         "rank": 15,
         "score": 0
       },
