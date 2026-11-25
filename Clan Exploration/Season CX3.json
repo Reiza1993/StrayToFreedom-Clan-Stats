@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-25T12:28:36.888407+11:00",
-    "total": 140700,
+    "updatedAt": "2026-11-25T14:28:50.037587+11:00",
+    "total": 142600,
     "members": [
       {
         "uid": 29321884,
@@ -267,7 +267,7 @@
         "uid": 36484758,
         "name": "Belthazar",
         "rank": 2,
-        "score": 11900
+        "score": 12300
       },
       {
         "uid": 66607264,
@@ -285,7 +285,7 @@
         "uid": 10754439,
         "name": "HakiLuffy",
         "rank": 5,
-        "score": 9000
+        "score": 9300
       },
       {
         "uid": 87244358,
@@ -318,14 +318,14 @@
         "score": 5500
       },
       {
-        "uid": 51071110,
-        "name": "samwise08",
-        "rank": 11,
-        "score": 4400
-      },
-      {
         "uid": 26277677,
         "name": "BobBobberson",
+        "rank": 11,
+        "score": 4800
+      },
+      {
+        "uid": 51071110,
+        "name": "samwise08",
         "rank": 12,
         "score": 4400
       },
@@ -348,28 +348,28 @@
         "score": 3200
       },
       {
-        "uid": 70603922,
-        "name": "BlackFlamE",
-        "rank": 16,
-        "score": 3000
-      },
-      {
-        "uid": 108860725,
-        "name": "RetinaDNA",
-        "rank": 17,
-        "score": 2800
-      },
-      {
         "uid": 80972473,
         "name": "Cunner88",
-        "rank": 18,
-        "score": 2800
+        "rank": 16,
+        "score": 3200
+      },
+      {
+        "uid": 70603922,
+        "name": "BlackFlamE",
+        "rank": 17,
+        "score": 3000
       },
       {
         "uid": 79510960,
         "name": "theLP",
+        "rank": 18,
+        "score": 2900
+      },
+      {
+        "uid": 108860725,
+        "name": "RetinaDNA",
         "rank": 19,
-        "score": 2500
+        "score": 2800
       },
       {
         "uid": 100876140,
