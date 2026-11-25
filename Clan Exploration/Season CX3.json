@@ -254,14 +254,14 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-25T23:30:01.516546+11:00",
-    "total": 148900,
+    "updatedAt": "2026-11-26T01:53:17.021539+11:00",
+    "total": 150400,
     "members": [
       {
         "uid": 29321884,
         "name": "RABBIT5",
         "rank": 1,
-        "score": 14500
+        "score": 14900
       },
       {
         "uid": 36484758,
@@ -279,7 +279,7 @@
         "uid": 103516442,
         "name": "DAYO-P",
         "rank": 4,
-        "score": 10700
+        "score": 11000
       },
       {
         "uid": 10754439,
@@ -288,16 +288,16 @@
         "score": 10100
       },
       {
-        "uid": 87244358,
-        "name": "神Sterben死",
-        "rank": 6,
-        "score": 6800
-      },
-      {
         "uid": 64676255,
         "name": "盾Heathcliff剣",
+        "rank": 6,
+        "score": 7000
+      },
+      {
+        "uid": 87244358,
+        "name": "神Sterben死",
         "rank": 7,
-        "score": 6600
+        "score": 6800
       },
       {
         "uid": 59566866,
@@ -378,16 +378,16 @@
         "score": 2400
       },
       {
-        "uid": 83861839,
-        "name": "groggen",
-        "rank": 21,
-        "score": 2300
-      },
-      {
         "uid": 75174428,
         "name": "PastalaVista",
+        "rank": 21,
+        "score": 2400
+      },
+      {
+        "uid": 83861839,
+        "name": "groggen",
         "rank": 22,
-        "score": 2000
+        "score": 2300
       },
       {
         "uid": 29904762,
