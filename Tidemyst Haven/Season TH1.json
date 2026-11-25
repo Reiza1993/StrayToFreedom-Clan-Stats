@@ -3,10 +3,10 @@
   "startAt": "2026-11-24T03:00:00+11:00",
   "endAt": "2026-12-08T02:59:59+11:00",
   "max": 1200,
-  "total": 744,
-  "nodesDone": 22,
+  "total": 784,
+  "nodesDone": 24,
   "nodes": 40,
-  "updatedAt": "2026-11-25T09:28:56.691297+11:00",
+  "updatedAt": "2026-11-25T15:21:54.505951+11:00",
   "members": [
     {
       "uid": 29904762,
@@ -15,172 +15,166 @@
       "rank": 1
     },
     {
-      "uid": 60687252,
-      "name": "һan",
-      "points": 45,
-      "rank": 2
-    },
-    {
-      "uid": 87244358,
-      "name": "神Sterben死",
-      "points": 45,
-      "rank": 3
+      "uid": 115742768,
+      "name": "SterbyTools",
+      "points": 40,
+      "rank": 4
     },
     {
       "uid": 80972473,
       "name": "Cunner88",
       "points": 38,
-      "rank": 4
+      "rank": 5
     },
     {
       "uid": 64676255,
       "name": "盾Heathcliff剣",
       "points": 33,
-      "rank": 5
+      "rank": 6
     },
     {
       "uid": 83339881,
       "name": "Fl3xas",
       "points": 31,
-      "rank": 6
+      "rank": 7
     },
     {
       "uid": 108860725,
       "name": "RetinaDNA",
       "points": 31,
-      "rank": 7
+      "rank": 8
     },
     {
       "uid": 113690788,
       "name": "Apathy_",
       "points": 30,
-      "rank": 9
+      "rank": 10
     },
     {
       "uid": 36484758,
       "name": "Belthazar",
       "points": 30,
-      "rank": 11
+      "rank": 12
     },
     {
       "uid": 26277677,
       "name": "BobBobberson",
       "points": 30,
-      "rank": 15
+      "rank": 16
     },
     {
       "uid": 83861839,
       "name": "groggen",
       "points": 30,
-      "rank": 13
+      "rank": 14
     },
     {
       "uid": 18115624,
       "name": "Oopsie-Daisy",
       "points": 30,
-      "rank": 14
+      "rank": 15
     },
     {
       "uid": 66607264,
       "name": "Player 66607264",
       "points": 30,
-      "rank": 10
+      "rank": 11
     },
     {
       "uid": 51071110,
       "name": "samwise08",
       "points": 30,
-      "rank": 16
+      "rank": 17
     },
     {
       "uid": 100876140,
       "name": "Scoundrel536",
       "points": 30,
-      "rank": 8
+      "rank": 9
     },
     {
       "uid": 112772047,
       "name": "VictorMolusco",
       "points": 30,
-      "rank": 12
+      "rank": 13
     },
     {
       "uid": 103516442,
       "name": "DAYO-P",
       "points": 28,
-      "rank": 17
+      "rank": 18
     },
     {
       "uid": 29321884,
       "name": "RABBIT5",
       "points": 27,
-      "rank": 18
+      "rank": 19
     },
     {
       "uid": 88203044,
       "name": "p88203044",
       "points": 25,
-      "rank": 19
+      "rank": 20
     },
     {
       "uid": 40001195,
       "name": "Ӂ-ShhImB☆tm☆n",
       "points": 24,
-      "rank": 20
+      "rank": 21
     },
     {
       "uid": 61865023,
       "name": "RexPanda",
       "points": 20,
-      "rank": 21
+      "rank": 22
     },
     {
       "uid": 10754439,
       "name": "HakiLuffy",
       "points": 17,
-      "rank": 22
+      "rank": 23
     },
     {
       "uid": 30658936,
       "name": "Gritchen",
       "points": 11,
-      "rank": 23
+      "rank": 24
     },
     {
       "uid": 106162623,
       "name": "gubrax",
       "points": 7,
-      "rank": 25
+      "rank": 26
     },
     {
       "uid": 80018314,
       "name": "Player 80018314",
       "points": 7,
-      "rank": 24
+      "rank": 25
     },
     {
       "uid": 27113479,
       "name": "silverxz",
       "points": 6,
-      "rank": 26
+      "rank": 27
     },
     {
       "uid": 108546985,
       "name": "pumpenjoe",
       "points": 5,
-      "rank": 27
+      "rank": 28
     },
     {
       "uid": 87954282,
       "name": "SngphO",
       "points": 5,
-      "rank": 28
+      "rank": 29
     },
     {
       "uid": 72894129,
       "name": "NeonCBV",
       "points": 4,
-      "rank": 29
+      "rank": 30
     }
   ],
   "notPlayed": [
@@ -213,22 +207,30 @@
       "name": "Rzzza"
     },
     {
-      "uid": "115742768",
-      "name": "SterbyTools"
-    },
-    {
       "uid": "79510960",
       "name": "theLP"
     },
     {
       "uid": "35869301",
       "name": "Toddlerr"
+    },
+    {
+      "uid": "60687252",
+      "name": "һan"
+    },
+    {
+      "uid": "87244358",
+      "name": "神Sterben死"
     }
   ],
   "history": [
     {
       "at": "2026-11-25T09:21:52.483214+11:00",
       "total": 744
+    },
+    {
+      "at": "2026-11-25T15:21:54.505951+11:00",
+      "total": 784
     }
   ]
 }
