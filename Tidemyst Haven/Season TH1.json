@@ -3,10 +3,10 @@
   "startAt": "2026-11-24T03:00:00+11:00",
   "endAt": "2026-12-08T02:59:59+11:00",
   "max": 1200,
-  "total": 828,
-  "nodesDone": 26,
+  "total": 894,
+  "nodesDone": 29,
   "nodes": 40,
-  "updatedAt": "2026-11-26T03:21:58.580083+11:00",
+  "updatedAt": "2026-11-26T09:22:00.593829+11:00",
   "members": [
     {
       "uid": 29904762,
@@ -135,82 +135,82 @@
       "rank": 21
     },
     {
+      "uid": 87954282,
+      "name": "SngphO",
+      "points": 26,
+      "rank": 22
+    },
+    {
+      "uid": 59566866,
+      "name": "FlyingDutchy",
+      "points": 24,
+      "rank": 24
+    },
+    {
       "uid": 40001195,
       "name": "Ӂ-ShhImB☆tm☆n",
       "points": 24,
-      "rank": 22
+      "rank": 23
+    },
+    {
+      "uid": 70603922,
+      "name": "BlackFlamE",
+      "points": 21,
+      "rank": 25
     },
     {
       "uid": 61865023,
       "name": "RexPanda",
       "points": 20,
-      "rank": 23
+      "rank": 26
     },
     {
       "uid": 10754439,
       "name": "HakiLuffy",
       "points": 17,
-      "rank": 24
+      "rank": 27
     },
     {
       "uid": 30658936,
       "name": "Gritchen",
       "points": 11,
-      "rank": 25
+      "rank": 28
     },
     {
       "uid": 106162623,
       "name": "gubrax",
       "points": 7,
-      "rank": 27
+      "rank": 30
     },
     {
       "uid": 80018314,
       "name": "Player 80018314",
       "points": 7,
-      "rank": 26
+      "rank": 29
     },
     {
       "uid": 27113479,
       "name": "silverxz",
       "points": 6,
-      "rank": 28
+      "rank": 31
     },
     {
       "uid": 108546985,
       "name": "pumpenjoe",
       "points": 5,
-      "rank": 29
-    },
-    {
-      "uid": 87954282,
-      "name": "SngphO",
-      "points": 5,
-      "rank": 30
+      "rank": 32
     },
     {
       "uid": 72894129,
       "name": "NeonCBV",
       "points": 4,
-      "rank": 31
+      "rank": 33
     }
   ],
   "notPlayed": [
     {
-      "uid": "70603922",
-      "name": "BlackFlamE"
-    },
-    {
-      "uid": "89511116",
-      "name": "EMBALOCO"
-    },
-    {
       "uid": "11463573",
       "name": "faxnem"
-    },
-    {
-      "uid": "59566866",
-      "name": "FlyingDutchy"
     },
     {
       "uid": "41742773",
@@ -245,6 +245,14 @@
     {
       "at": "2026-11-26T03:21:58.580083+11:00",
       "total": 828
+    },
+    {
+      "at": "2026-11-26T06:28:51.594857+11:00",
+      "total": 870
+    },
+    {
+      "at": "2026-11-26T09:22:00.593829+11:00",
+      "total": 894
     }
   ]
 }
