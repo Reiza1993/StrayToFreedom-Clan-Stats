@@ -3,16 +3,28 @@
   "startAt": "2026-11-24T03:00:00+11:00",
   "endAt": "2026-12-08T02:59:59+11:00",
   "max": 1200,
-  "total": 784,
-  "nodesDone": 24,
+  "total": 793,
+  "nodesDone": 25,
   "nodes": 40,
-  "updatedAt": "2026-11-25T15:21:54.505951+11:00",
+  "updatedAt": "2026-11-25T21:21:56.525475+11:00",
   "members": [
     {
       "uid": 29904762,
       "name": "Cheeselife",
       "points": 65,
       "rank": 1
+    },
+    {
+      "uid": 60687252,
+      "name": "һan",
+      "points": 45,
+      "rank": 2
+    },
+    {
+      "uid": 87244358,
+      "name": "神Sterben死",
+      "points": 45,
+      "rank": 3
     },
     {
       "uid": 115742768,
@@ -27,6 +39,12 @@
       "rank": 5
     },
     {
+      "uid": 88203044,
+      "name": "p88203044",
+      "points": 33,
+      "rank": 7
+    },
+    {
       "uid": 64676255,
       "name": "盾Heathcliff剣",
       "points": 33,
@@ -36,84 +54,78 @@
       "uid": 83339881,
       "name": "Fl3xas",
       "points": 31,
-      "rank": 7
+      "rank": 8
     },
     {
       "uid": 108860725,
       "name": "RetinaDNA",
       "points": 31,
-      "rank": 8
+      "rank": 9
     },
     {
       "uid": 113690788,
       "name": "Apathy_",
       "points": 30,
-      "rank": 10
+      "rank": 11
     },
     {
       "uid": 36484758,
       "name": "Belthazar",
       "points": 30,
-      "rank": 12
+      "rank": 13
     },
     {
       "uid": 26277677,
       "name": "BobBobberson",
       "points": 30,
-      "rank": 16
+      "rank": 17
     },
     {
       "uid": 83861839,
       "name": "groggen",
       "points": 30,
-      "rank": 14
+      "rank": 15
     },
     {
       "uid": 18115624,
       "name": "Oopsie-Daisy",
       "points": 30,
-      "rank": 15
+      "rank": 16
     },
     {
       "uid": 66607264,
       "name": "Player 66607264",
       "points": 30,
-      "rank": 11
+      "rank": 12
     },
     {
       "uid": 51071110,
       "name": "samwise08",
       "points": 30,
-      "rank": 17
+      "rank": 18
     },
     {
       "uid": 100876140,
       "name": "Scoundrel536",
       "points": 30,
-      "rank": 9
+      "rank": 10
     },
     {
       "uid": 112772047,
       "name": "VictorMolusco",
       "points": 30,
-      "rank": 13
+      "rank": 14
     },
     {
       "uid": 103516442,
       "name": "DAYO-P",
       "points": 28,
-      "rank": 18
+      "rank": 19
     },
     {
       "uid": 29321884,
       "name": "RABBIT5",
-      "points": 27,
-      "rank": 19
-    },
-    {
-      "uid": 88203044,
-      "name": "p88203044",
-      "points": 25,
+      "points": 28,
       "rank": 20
     },
     {
@@ -213,14 +225,6 @@
     {
       "uid": "35869301",
       "name": "Toddlerr"
-    },
-    {
-      "uid": "60687252",
-      "name": "һan"
-    },
-    {
-      "uid": "87244358",
-      "name": "神Sterben死"
     }
   ],
   "history": [
@@ -231,6 +235,10 @@
     {
       "at": "2026-11-25T15:21:54.505951+11:00",
       "total": 784
+    },
+    {
+      "at": "2026-11-25T21:21:56.525475+11:00",
+      "total": 793
     }
   ]
 }
