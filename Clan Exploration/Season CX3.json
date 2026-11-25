@@ -254,8 +254,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-25T18:29:26.017535+11:00",
-    "total": 145600,
+    "updatedAt": "2026-11-25T20:29:38.411516+11:00",
+    "total": 146400,
     "members": [
       {
         "uid": 29321884,
@@ -309,7 +309,7 @@
         "uid": 18115624,
         "name": "Oopsie-Daisy",
         "rank": 9,
-        "score": 5700
+        "score": 6100
       },
       {
         "uid": 112772047,
@@ -342,14 +342,14 @@
         "score": 3900
       },
       {
-        "uid": 30658936,
-        "name": "Gritchen",
-        "rank": 15,
-        "score": 3200
-      },
-      {
         "uid": 80972473,
         "name": "Cunner88",
+        "rank": 15,
+        "score": 3600
+      },
+      {
+        "uid": 30658936,
+        "name": "Gritchen",
         "rank": 16,
         "score": 3200
       },
