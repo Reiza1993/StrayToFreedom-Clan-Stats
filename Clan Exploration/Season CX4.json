@@ -7,32 +7,32 @@
   "previousSeasonFinalTotal": 151200,
   "milestoneSnapshot": null,
   "cxRank": {
-    "updatedAt": "2026-11-27T06:42:19.701833+11:00",
-    "total": 34800,
+    "updatedAt": "2026-11-27T07:42:24.230807+11:00",
+    "total": 36500,
     "members": [
       {
-        "uid": 29321884,
-        "name": "RABBIT5",
+        "uid": 66607264,
+        "name": null,
         "rank": 1,
-        "score": 2200
-      },
-      {
-        "uid": 83339881,
-        "name": "Fl3xas",
-        "rank": 2,
-        "score": 2100
+        "score": 2400
       },
       {
         "uid": 88203044,
         "name": "p88203044",
-        "rank": 3,
-        "score": 2000
+        "rank": 2,
+        "score": 2400
       },
       {
-        "uid": 66607264,
-        "name": null,
+        "uid": 29321884,
+        "name": "RABBIT5",
+        "rank": 3,
+        "score": 2300
+      },
+      {
+        "uid": 83339881,
+        "name": "Fl3xas",
         "rank": 4,
-        "score": 2000
+        "score": 2100
       },
       {
         "uid": 36484758,
@@ -65,26 +65,26 @@
         "score": 1600
       },
       {
+        "uid": 80972473,
+        "name": "Cunner88",
+        "rank": 10,
+        "score": 1600
+      },
+      {
         "uid": 60687252,
         "name": "һan",
-        "rank": 10,
+        "rank": 11,
         "score": 1400
       },
       {
         "uid": 18115624,
         "name": "Oopsie-Daisy",
-        "rank": 11,
+        "rank": 12,
         "score": 1300
       },
       {
         "uid": 108860725,
         "name": "RetinaDNA",
-        "rank": 12,
-        "score": 1200
-      },
-      {
-        "uid": 80972473,
-        "name": "Cunner88",
         "rank": 13,
         "score": 1200
       },
@@ -119,16 +119,16 @@
         "score": 1200
       },
       {
-        "uid": 80018314,
-        "name": null,
-        "rank": 19,
-        "score": 1000
-      },
-      {
         "uid": 26277677,
         "name": "BobBobberson",
+        "rank": 19,
+        "score": 1200
+      },
+      {
+        "uid": 80018314,
+        "name": null,
         "rank": 20,
-        "score": 800
+        "score": 1000
       },
       {
         "uid": 59566866,
