@@ -488,6 +488,8 @@
         .lunar-clan-rank { color: var(--dim); font-weight: 800; font-size: 12px; width: 16px; }
         .lunar-clan-name { color: var(--text-hi); font-weight: 800; font-size: 14px; flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
         .lunar-clan-pts { color: #ffd24a; font-weight: 800; font-size: 13px; white-space: nowrap; }
+        .lunar-clan-ladder { display: flex; flex-wrap: wrap; gap: 4px 12px; margin: 4px 0 0 30px; font-size: 12px; color: #9aa4c4; text-align: left; }
+        .lunar-clan-ladder b { font-weight: 700; }
         .lunar-clan-chev { color: var(--dim); font-size: 12px; transition: transform .2s ease; }
         .lunar-clan.open .lunar-clan-chev { transform: rotate(180deg); }
         .lunar-totals { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; }
@@ -2665,6 +2667,24 @@
             return `<img src="${ICON_BASE}${file}" alt="${alt}" title="${alt}" onerror="this.replaceWith(document.createTextNode('${alt}'))">`;
         }
 
+        // Last week's placement + Secret Score from the public LME ladder
+        // (sio-tools.exp0.dev/lme), added by SterbyToolsGo as `ladder`.
+        function lunarLadderLine(clan) {
+            if (!('ladder' in clan)) return '';
+            const l = clan.ladder;
+            if (!l) return `<div class="lunar-clan-ladder"><span>${t('lunar.not_top500')}</span></div>`;
+            const places = { 1: '1st', 2: '2nd', 3: '3rd', 4: '4th' };
+            const color = l.lastPlace === 1 ? '#68d391' : (l.lastPlace >= 3 ? '#f56565' : '#c3cbe4');
+            const last = l.lastPlace
+                ? `<b style="color:${color};">${places[l.lastPlace]}</b> (${l.change > 0 ? '+' : ''}${l.change})`
+                : '—';
+            return `<div class="lunar-clan-ladder">
+                <span>${t('lunar.ladder_rank')} <b style="color:#e7ecfa;">#${l.rank}</b></span>
+                <span>${t('lunar.last_week')} ${last}</span>
+                <span>${t('lunar.secret')} <b style="color:#d95926;">${l.secretScore == null ? '—' : Math.round(l.secretScore).toLocaleString()}</b></span>
+            </div>`;
+        }
+
         function loadLunarDetails() {
             if (typeof lunarDetails === 'undefined') return;
             lunarClanOrder = Object.keys(lunarDetails).sort((a, b) => {
@@ -2691,6 +2711,7 @@
                             <span class="lunar-clan-pts">🌙 ${(clan.lunarPoints ?? 0).toLocaleString()}</span>
                             <span class="lunar-clan-chev">▼</span>
                         </div>
+                        ${lunarLadderLine(clan)}
                         <div class="lunar-totals">
                             ${lunarTile(lunarIcon('ATK.png', 'ATK'), formatNumber(clan.totalAtk || 0), '#e7ecfa')}
                             ${lunarTile(lunarIcon('Relic%20Cores.png', 'Relic'), fmt(clan.totalRelicCores ?? null))}
