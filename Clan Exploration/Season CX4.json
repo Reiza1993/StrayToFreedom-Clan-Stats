@@ -7,8 +7,8 @@
   "previousSeasonFinalTotal": 151200,
   "milestoneSnapshot": null,
   "cxRank": {
-    "updatedAt": "2026-11-27T00:41:48.913161+11:00",
-    "total": 25500,
+    "updatedAt": "2026-11-27T01:41:53.250962+11:00",
+    "total": 25900,
     "members": [
       {
         "uid": 88203044,
@@ -161,26 +161,26 @@
         "score": 400
       },
       {
+        "uid": 79510960,
+        "name": "theLP",
+        "rank": 26,
+        "score": 400
+      },
+      {
         "uid": 71028860,
         "name": "Rzzza",
-        "rank": 26,
+        "rank": 27,
         "score": 0
       },
       {
         "uid": 41742773,
         "name": "MadameMischief",
-        "rank": 27,
+        "rank": 28,
         "score": 0
       },
       {
         "uid": 40001195,
         "name": "Ӂ-ShhImB☆tm☆n",
-        "rank": 28,
-        "score": 0
-      },
-      {
-        "uid": 79510960,
-        "name": "theLP",
         "rank": 29,
         "score": 0
       },
