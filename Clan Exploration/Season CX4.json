@@ -7,8 +7,8 @@
   "previousSeasonFinalTotal": 151200,
   "milestoneSnapshot": null,
   "cxRank": {
-    "updatedAt": "2026-11-27T07:42:24.230807+11:00",
-    "total": 36500,
+    "updatedAt": "2026-11-27T08:42:28.787477+11:00",
+    "total": 37600,
     "members": [
       {
         "uid": 66607264,
@@ -71,44 +71,44 @@
         "score": 1600
       },
       {
-        "uid": 60687252,
-        "name": "һan",
+        "uid": 100876140,
+        "name": "Scoundrel536",
         "rank": 11,
-        "score": 1400
+        "score": 1600
       },
       {
         "uid": 18115624,
         "name": "Oopsie-Daisy",
         "rank": 12,
-        "score": 1300
+        "score": 1600
+      },
+      {
+        "uid": 113690788,
+        "name": "Apathy_",
+        "rank": 13,
+        "score": 1600
+      },
+      {
+        "uid": 60687252,
+        "name": "һan",
+        "rank": 14,
+        "score": 1400
       },
       {
         "uid": 108860725,
         "name": "RetinaDNA",
-        "rank": 13,
+        "rank": 15,
         "score": 1200
       },
       {
         "uid": 64676255,
         "name": "盾Heathcliff剣",
-        "rank": 14,
+        "rank": 16,
         "score": 1200
       },
       {
         "uid": 30658936,
         "name": "Gritchen",
-        "rank": 15,
-        "score": 1200
-      },
-      {
-        "uid": 113690788,
-        "name": "Apathy_",
-        "rank": 16,
-        "score": 1200
-      },
-      {
-        "uid": 100876140,
-        "name": "Scoundrel536",
         "rank": 17,
         "score": 1200
       },
