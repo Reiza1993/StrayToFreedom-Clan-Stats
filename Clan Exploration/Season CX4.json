@@ -7,8 +7,8 @@
   "previousSeasonFinalTotal": 151200,
   "milestoneSnapshot": null,
   "cxRank": {
-    "updatedAt": "2026-11-26T20:47:25.169846+11:00",
-    "total": 19300,
+    "updatedAt": "2026-11-26T21:24:28.843004+11:00",
+    "total": 20300,
     "members": [
       {
         "uid": 88203044,
@@ -26,13 +26,13 @@
         "uid": 36484758,
         "name": "Belthazar",
         "rank": 3,
-        "score": 1500
+        "score": 1600
       },
       {
         "uid": 29321884,
         "name": "RABBIT5",
         "rank": 4,
-        "score": 1400
+        "score": 1500
       },
       {
         "uid": 83339881,
@@ -59,20 +59,20 @@
         "score": 1200
       },
       {
+        "uid": 60687252,
+        "name": "һan",
+        "rank": 9,
+        "score": 1200
+      },
+      {
         "uid": 18115624,
         "name": "Oopsie-Daisy",
-        "rank": 9,
+        "rank": 10,
         "score": 900
       },
       {
         "uid": 80972473,
         "name": "Cunner88",
-        "rank": 10,
-        "score": 800
-      },
-      {
-        "uid": 60687252,
-        "name": "һan",
         "rank": 11,
         "score": 800
       },
@@ -95,26 +95,26 @@
         "score": 800
       },
       {
+        "uid": 83861839,
+        "name": "groggen",
+        "rank": 15,
+        "score": 800
+      },
+      {
         "uid": 64676255,
         "name": "盾Heathcliff剣",
-        "rank": 15,
+        "rank": 16,
         "score": 400
       },
       {
         "uid": 61865023,
         "name": "RexPanda",
-        "rank": 16,
+        "rank": 17,
         "score": 400
       },
       {
         "uid": 113690788,
         "name": "Apathy_",
-        "rank": 17,
-        "score": 400
-      },
-      {
-        "uid": 83861839,
-        "name": "groggen",
         "rank": 18,
         "score": 400
       },
