@@ -7,8 +7,8 @@
   "previousSeasonFinalTotal": 151200,
   "milestoneSnapshot": null,
   "cxRank": {
-    "updatedAt": "2026-11-26T14:58:06.024541+11:00",
-    "total": 11100,
+    "updatedAt": "2026-11-26T15:58:10.570072+11:00",
+    "total": 12700,
     "members": [
       {
         "uid": 88203044,
@@ -17,26 +17,26 @@
         "score": 1200
       },
       {
-        "uid": 29321884,
-        "name": "RABBIT5",
+        "uid": 36484758,
+        "name": "Belthazar",
         "rank": 2,
-        "score": 900
+        "score": 1200
       },
       {
         "uid": 66607264,
         "name": null,
         "rank": 3,
-        "score": 800
+        "score": 1200
+      },
+      {
+        "uid": 29321884,
+        "name": "RABBIT5",
+        "rank": 4,
+        "score": 900
       },
       {
         "uid": 83339881,
         "name": "Fl3xas",
-        "rank": 4,
-        "score": 800
-      },
-      {
-        "uid": 36484758,
-        "name": "Belthazar",
         "rank": 5,
         "score": 800
       },
@@ -71,28 +71,28 @@
         "score": 800
       },
       {
+        "uid": 108860725,
+        "name": "RetinaDNA",
+        "rank": 11,
+        "score": 800
+      },
+      {
         "uid": 103516442,
         "name": "DAYO-P",
-        "rank": 11,
+        "rank": 12,
         "score": 700
       },
       {
         "uid": 30658936,
         "name": "Gritchen",
-        "rank": 12,
+        "rank": 13,
         "score": 600
       },
       {
         "uid": 18115624,
         "name": "Oopsie-Daisy",
-        "rank": 13,
-        "score": 500
-      },
-      {
-        "uid": 108860725,
-        "name": "RetinaDNA",
         "rank": 14,
-        "score": 400
+        "score": 500
       },
       {
         "uid": 64676255,
@@ -101,44 +101,44 @@
         "score": 400
       },
       {
+        "uid": 61865023,
+        "name": "RexPanda",
+        "rank": 16,
+        "score": 400
+      },
+      {
         "uid": 71028860,
         "name": "Rzzza",
-        "rank": 16,
+        "rank": 17,
         "score": 0
       },
       {
         "uid": 41742773,
         "name": "MadameMischief",
-        "rank": 17,
+        "rank": 18,
         "score": 0
       },
       {
         "uid": 40001195,
         "name": "Ӂ-ShhImB☆tm☆n",
-        "rank": 18,
+        "rank": 19,
         "score": 0
       },
       {
         "uid": 51071110,
         "name": "samwise08",
-        "rank": 19,
+        "rank": 20,
         "score": 0
       },
       {
         "uid": 79510960,
         "name": "theLP",
-        "rank": 20,
+        "rank": 21,
         "score": 0
       },
       {
         "uid": 80018314,
         "name": null,
-        "rank": 21,
-        "score": 0
-      },
-      {
-        "uid": 61865023,
-        "name": "RexPanda",
         "rank": 22,
         "score": 0
       },
