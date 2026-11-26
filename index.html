@@ -889,6 +889,11 @@
                             <span class="calc-stat-label" data-i18n="stat.lunar_pts">Lunar Points</span>
                             <span><span class="calc-stat-value" style="color:#ffd24a;" id="lme-lunar-pts">—</span> <span class="calc-stat-gain" id="lme-lunar-pts-gain">—</span></span>
                         </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-row">
+                            <span class="calc-stat-label" data-i18n="stat.ladder_rank">Ladder Rank</span>
+                            <span><span class="calc-stat-value" style="color:#e7ecfa;" id="lme-ladder-rank">—</span> <span class="calc-stat-gain" id="lme-ladder-rank-gain"></span></span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1571,6 +1576,39 @@
                         : null;
             if (!key) return str;
             return num ? `${t(key)} ${num}` : t(key);
+        }
+
+        // ══════════════════════════════════════════════
+        //  LADDER RANK — our clan's place in the public top-500 LME ladder
+        //  (sio-tools.exp0.dev/lme), pushed weekly by SterbyToolsGo as
+        //  "Lunar Mine Expedition/Ladder.json" ({rank, outOf, history}).
+        //  The change is vs the previous weekly update (a lower number is
+        //  better, so moving up shows green).
+        // ══════════════════════════════════════════════
+        async function loadLadderRank() {
+            const el = document.getElementById('lme-ladder-rank');
+            const gainEl = document.getElementById('lme-ladder-rank-gain');
+            if (!el) return;
+            let data = null;
+            try {
+                const res = await fetch(encodeURI(`${LME_CYCLES_FOLDER}/Ladder.json`), { cache: 'no-cache' });
+                if (res.ok) data = await res.json();
+            } catch (err) { data = null; }
+            if (!data) return;
+            if (data.rank == null) {
+                el.textContent = `${(data.outOf || 500)}+`;
+                el.title = t('stat.ladder_outside');
+                return;
+            }
+            el.innerHTML = `#${data.rank}<span style="color:#7a85a8;font-size:0.7em;"> / ${data.outOf || 500}</span>`;
+            const hist = (data.history || []).filter(h => h.rank != null);
+            if (hist.length >= 2) {
+                const moved = hist[hist.length - 2].rank - hist[hist.length - 1].rank;   // + = moved up
+                gainEl.textContent = moved > 0 ? `▲${moved}` : moved < 0 ? `▼${-moved}` : '=';
+                gainEl.className = 'calc-stat-gain ' + (moved > 0 ? 'gain-positive' : moved < 0 ? 'gain-negative' : 'gain-neutral');
+            } else {
+                gainEl.textContent = '';
+            }
         }
 
         function loadClanStats() {
@@ -3426,6 +3464,7 @@
         loadEnderEchoSeasons();
         loadCXSeasons();
         loadTMSeasons();
+        loadLadderRank();
         switchSubTab('stats');
 
         // Restore language preference
