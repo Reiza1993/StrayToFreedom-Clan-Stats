@@ -7,8 +7,8 @@
   "previousSeasonFinalTotal": 151200,
   "milestoneSnapshot": null,
   "cxRank": {
-    "updatedAt": "2026-11-27T03:42:01.613521+11:00",
-    "total": 29300,
+    "updatedAt": "2026-11-27T04:42:05.125397+11:00",
+    "total": 32100,
     "members": [
       {
         "uid": 88203044,
@@ -17,22 +17,22 @@
         "score": 2000
       },
       {
+        "uid": 66607264,
+        "name": null,
+        "rank": 2,
+        "score": 2000
+      },
+      {
         "uid": 29321884,
         "name": "RABBIT5",
-        "rank": 2,
+        "rank": 3,
         "score": 1900
       },
       {
         "uid": 83339881,
         "name": "Fl3xas",
-        "rank": 3,
-        "score": 1700
-      },
-      {
-        "uid": 66607264,
-        "name": null,
         "rank": 4,
-        "score": 1600
+        "score": 1700
       },
       {
         "uid": 36484758,
@@ -83,44 +83,44 @@
         "score": 1200
       },
       {
-        "uid": 80018314,
-        "name": null,
-        "rank": 13,
-        "score": 1000
-      },
-      {
         "uid": 80972473,
         "name": "Cunner88",
+        "rank": 13,
+        "score": 1200
+      },
+      {
+        "uid": 64676255,
+        "name": "盾Heathcliff剣",
         "rank": 14,
-        "score": 800
+        "score": 1200
       },
       {
         "uid": 30658936,
         "name": "Gritchen",
         "rank": 15,
-        "score": 800
+        "score": 1200
+      },
+      {
+        "uid": 113690788,
+        "name": "Apathy_",
+        "rank": 16,
+        "score": 1200
+      },
+      {
+        "uid": 80018314,
+        "name": null,
+        "rank": 17,
+        "score": 1000
       },
       {
         "uid": 83861839,
         "name": "groggen",
-        "rank": 16,
+        "rank": 18,
         "score": 800
       },
       {
         "uid": 26277677,
         "name": "BobBobberson",
-        "rank": 17,
-        "score": 800
-      },
-      {
-        "uid": 64676255,
-        "name": "盾Heathcliff剣",
-        "rank": 18,
-        "score": 800
-      },
-      {
-        "uid": 113690788,
-        "name": "Apathy_",
         "rank": 19,
         "score": 800
       },
@@ -143,26 +143,26 @@
         "score": 800
       },
       {
+        "uid": 79510960,
+        "name": "theLP",
+        "rank": 23,
+        "score": 800
+      },
+      {
         "uid": 61865023,
         "name": "RexPanda",
-        "rank": 23,
-        "score": 400
+        "rank": 24,
+        "score": 800
       },
       {
         "uid": 70603922,
         "name": "BlackFlamE",
-        "rank": 24,
+        "rank": 25,
         "score": 400
       },
       {
         "uid": 51071110,
         "name": "samwise08",
-        "rank": 25,
-        "score": 400
-      },
-      {
-        "uid": 79510960,
-        "name": "theLP",
         "rank": 26,
         "score": 400
       },
