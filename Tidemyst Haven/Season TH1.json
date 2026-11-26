@@ -3,10 +3,10 @@
   "startAt": "2026-11-24T03:00:00+11:00",
   "endAt": "2026-12-08T02:59:59+11:00",
   "max": 1200,
-  "total": 968,
+  "total": 978,
   "nodesDone": 29,
   "nodes": 40,
-  "updatedAt": "2026-11-26T21:22:04.623947+11:00",
+  "updatedAt": "2026-11-27T03:22:06.649023+11:00",
   "members": [
     {
       "uid": 29904762,
@@ -33,34 +33,34 @@
       "rank": 4
     },
     {
+      "uid": 64676255,
+      "name": "盾Heathcliff剣",
+      "points": 39,
+      "rank": 5
+    },
+    {
       "uid": 80972473,
       "name": "Cunner88",
       "points": 38,
-      "rank": 5
+      "rank": 6
     },
     {
       "uid": 70603922,
       "name": "BlackFlamE",
       "points": 37,
-      "rank": 6
+      "rank": 7
     },
     {
       "uid": 75174428,
       "name": "PastalaVista",
       "points": 35,
-      "rank": 7
+      "rank": 8
     },
     {
       "uid": 88203044,
       "name": "p88203044",
       "points": 33,
       "rank": 9
-    },
-    {
-      "uid": 64676255,
-      "name": "盾Heathcliff剣",
-      "points": 33,
-      "rank": 8
     },
     {
       "uid": 83339881,
@@ -165,21 +165,21 @@
       "rank": 26
     },
     {
+      "uid": 10754439,
+      "name": "HakiLuffy",
+      "points": 25,
+      "rank": 27
+    },
+    {
       "uid": 40001195,
       "name": "Ӂ-ShhImB☆tm☆n",
       "points": 24,
-      "rank": 27
+      "rank": 28
     },
     {
       "uid": 80018314,
       "name": "Player 80018314",
       "points": 23,
-      "rank": 28
-    },
-    {
-      "uid": 10754439,
-      "name": "HakiLuffy",
-      "points": 21,
       "rank": 29
     },
     {
@@ -261,6 +261,10 @@
     {
       "at": "2026-11-26T21:22:04.623947+11:00",
       "total": 968
+    },
+    {
+      "at": "2026-11-27T03:22:06.649023+11:00",
+      "total": 978
     }
   ]
 }
