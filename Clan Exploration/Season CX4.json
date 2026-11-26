@@ -7,8 +7,8 @@
   "previousSeasonFinalTotal": 151200,
   "milestoneSnapshot": null,
   "cxRank": {
-    "updatedAt": "2026-11-26T13:58:01.477457+11:00",
-    "total": 8600,
+    "updatedAt": "2026-11-26T14:58:06.024541+11:00",
+    "total": 11100,
     "members": [
       {
         "uid": 88203044,
@@ -17,76 +17,76 @@
         "score": 1200
       },
       {
+        "uid": 29321884,
+        "name": "RABBIT5",
+        "rank": 2,
+        "score": 900
+      },
+      {
         "uid": 66607264,
         "name": null,
-        "rank": 2,
+        "rank": 3,
         "score": 800
       },
       {
         "uid": 83339881,
         "name": "Fl3xas",
-        "rank": 3,
+        "rank": 4,
         "score": 800
       },
       {
         "uid": 36484758,
         "name": "Belthazar",
-        "rank": 4,
+        "rank": 5,
+        "score": 800
+      },
+      {
+        "uid": 80972473,
+        "name": "Cunner88",
+        "rank": 6,
+        "score": 800
+      },
+      {
+        "uid": 60687252,
+        "name": "һan",
+        "rank": 7,
+        "score": 800
+      },
+      {
+        "uid": 87244358,
+        "name": "神Sterben死",
+        "rank": 8,
+        "score": 800
+      },
+      {
+        "uid": 10754439,
+        "name": "HakiLuffy",
+        "rank": 9,
+        "score": 800
+      },
+      {
+        "uid": 112772047,
+        "name": "VictorMolusco",
+        "rank": 10,
         "score": 800
       },
       {
         "uid": 103516442,
         "name": "DAYO-P",
-        "rank": 5,
+        "rank": 11,
         "score": 700
       },
       {
-        "uid": 29321884,
-        "name": "RABBIT5",
-        "rank": 6,
+        "uid": 30658936,
+        "name": "Gritchen",
+        "rank": 12,
         "score": 600
       },
       {
         "uid": 18115624,
         "name": "Oopsie-Daisy",
-        "rank": 7,
-        "score": 500
-      },
-      {
-        "uid": 112772047,
-        "name": "VictorMolusco",
-        "rank": 8,
-        "score": 400
-      },
-      {
-        "uid": 80972473,
-        "name": "Cunner88",
-        "rank": 9,
-        "score": 400
-      },
-      {
-        "uid": 60687252,
-        "name": "һan",
-        "rank": 10,
-        "score": 400
-      },
-      {
-        "uid": 87244358,
-        "name": "神Sterben死",
-        "rank": 11,
-        "score": 400
-      },
-      {
-        "uid": 10754439,
-        "name": "HakiLuffy",
-        "rank": 12,
-        "score": 400
-      },
-      {
-        "uid": 30658936,
-        "name": "Gritchen",
         "rank": 13,
-        "score": 400
+        "score": 500
       },
       {
         "uid": 108860725,
