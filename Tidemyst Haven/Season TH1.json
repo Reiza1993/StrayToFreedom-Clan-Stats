@@ -3,10 +3,10 @@
   "startAt": "2026-11-24T03:00:00+11:00",
   "endAt": "2026-12-08T02:59:59+11:00",
   "max": 1200,
-  "total": 894,
+  "total": 930,
   "nodesDone": 29,
   "nodes": 40,
-  "updatedAt": "2026-11-26T09:22:00.593829+11:00",
+  "updatedAt": "2026-11-26T15:22:02.608416+11:00",
   "members": [
     {
       "uid": 29904762,
@@ -69,111 +69,111 @@
       "rank": 10
     },
     {
+      "uid": 87954282,
+      "name": "SngphO",
+      "points": 31,
+      "rank": 11
+    },
+    {
       "uid": 113690788,
       "name": "Apathy_",
       "points": 30,
-      "rank": 12
+      "rank": 13
     },
     {
       "uid": 36484758,
       "name": "Belthazar",
       "points": 30,
-      "rank": 14
+      "rank": 15
     },
     {
       "uid": 26277677,
       "name": "BobBobberson",
       "points": 30,
-      "rank": 18
+      "rank": 19
     },
     {
       "uid": 83861839,
       "name": "groggen",
       "points": 30,
-      "rank": 16
+      "rank": 17
     },
     {
       "uid": 18115624,
       "name": "Oopsie-Daisy",
       "points": 30,
-      "rank": 17
+      "rank": 18
     },
     {
       "uid": 66607264,
       "name": "Player 66607264",
       "points": 30,
-      "rank": 13
+      "rank": 14
+    },
+    {
+      "uid": 29321884,
+      "name": "RABBIT5",
+      "points": 30,
+      "rank": 21
     },
     {
       "uid": 51071110,
       "name": "samwise08",
       "points": 30,
-      "rank": 19
+      "rank": 20
     },
     {
       "uid": 100876140,
       "name": "Scoundrel536",
       "points": 30,
-      "rank": 11
+      "rank": 12
     },
     {
       "uid": 112772047,
       "name": "VictorMolusco",
       "points": 30,
-      "rank": 15
+      "rank": 16
+    },
+    {
+      "uid": 61865023,
+      "name": "RexPanda",
+      "points": 29,
+      "rank": 22
     },
     {
       "uid": 103516442,
       "name": "DAYO-P",
       "points": 28,
-      "rank": 20
+      "rank": 23
     },
     {
-      "uid": 29321884,
-      "name": "RABBIT5",
-      "points": 28,
-      "rank": 21
-    },
-    {
-      "uid": 87954282,
-      "name": "SngphO",
-      "points": 26,
-      "rank": 22
+      "uid": 30658936,
+      "name": "Gritchen",
+      "points": 27,
+      "rank": 24
     },
     {
       "uid": 59566866,
       "name": "FlyingDutchy",
       "points": 24,
-      "rank": 24
+      "rank": 26
     },
     {
       "uid": 40001195,
       "name": "Ӂ-ShhImB☆tm☆n",
       "points": 24,
-      "rank": 23
+      "rank": 25
     },
     {
       "uid": 70603922,
       "name": "BlackFlamE",
       "points": 21,
-      "rank": 25
-    },
-    {
-      "uid": 61865023,
-      "name": "RexPanda",
-      "points": 20,
-      "rank": 26
+      "rank": 27
     },
     {
       "uid": 10754439,
       "name": "HakiLuffy",
-      "points": 17,
-      "rank": 27
-    },
-    {
-      "uid": 30658936,
-      "name": "Gritchen",
-      "points": 11,
+      "points": 21,
       "rank": 28
     },
     {
@@ -253,6 +253,10 @@
     {
       "at": "2026-11-26T09:22:00.593829+11:00",
       "total": 894
+    },
+    {
+      "at": "2026-11-26T15:22:02.608416+11:00",
+      "total": 930
     }
   ]
 }
