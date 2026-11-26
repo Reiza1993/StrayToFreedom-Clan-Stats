@@ -7,24 +7,24 @@
   "previousSeasonFinalTotal": 151200,
   "milestoneSnapshot": null,
   "cxRank": {
-    "updatedAt": "2026-11-26T12:57:57.134013+11:00",
-    "total": 8200,
+    "updatedAt": "2026-11-26T13:58:01.477457+11:00",
+    "total": 8600,
     "members": [
+      {
+        "uid": 88203044,
+        "name": "p88203044",
+        "rank": 1,
+        "score": 1200
+      },
       {
         "uid": 66607264,
         "name": null,
-        "rank": 1,
+        "rank": 2,
         "score": 800
       },
       {
         "uid": 83339881,
         "name": "Fl3xas",
-        "rank": 2,
-        "score": 800
-      },
-      {
-        "uid": 88203044,
-        "name": "p88203044",
         "rank": 3,
         "score": 800
       },
