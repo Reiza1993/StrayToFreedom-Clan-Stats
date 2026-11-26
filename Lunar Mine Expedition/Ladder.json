@@ -1,0 +1,19 @@
+{
+ "source": "https://sio-tools.exp0.dev/lme",
+ "ladderAt": "\\\",\\\"pages.lme:table.rank\\\":\\\"Rank\\\",\\\"pages.lme:table.day\\\":\\\"Day {[day]}\\\",\\\"pages.lme:table.id\\\":\\\"Clan ID\\\",\\\"pages.lme:table.name\\\":\\\"Name\\\",\\\"pages.lme:table.members\\\":\\\"Members\\\",\\\"pages.lme:table.leader\\\":\\\"Leader\\\",\\\"pages.lme:table.score\\\":\\\"Score\\\",\\\"pages.lme:table.league\\\":\\\"League\\\",\\\"pages.lme:table.heroAwakeningCoresMin\\\":\\\"Survivor awakening cores (minimum)\\\",\\\"pages.lme:table.petAwakeningCoresMin\\\":\\\"Pet awakening cores (minimum)\\\",\\\"pages.lme:table.rc\\\":\\\"Cores\\\",\\\"pages.lme:table.atk\\\":\\\"Attack\\\",\\\"pages.lme:table.xt\\\":\\\"Transmute\\\",\\\"pages.lme:table.chips\\\":\\\"Chips\\\",\\\"pages.lme:table.secretScore\\\":\\\"Secret\\\",\\\"pages.lme:table.bestOpponents\\\":\\\"Clans you are most likely to match with this week.\\\",\\\"pages.lme:table.restOpponents\\\":\\\"Clans that you are unlikely to match with in descending order of probability.\\\",\\\"pages.lme:table.matched\\\":\\\"Drawn against you this week\\\",\\\"pages.lme:table.debuff\\\":\\\"Debuff\\\",\\\"pages.lme:table.debuffHint\\\":\\\"The debuff this clan would put on you, estimated from its attack. Within ±5% for {[share]}% of past clans.\\\",\\\"pages.lme:nextUpdate\\\":\\\"Next update:\\\",\\\"pages.lme:share.download\\\":\\\"Download\\\",\\\"pages.lme:share.copyImage\\\":\\\"Copy image\\\",\\\"pages.lme:share.native\\\":\\\"Share…\\\",\\\"pages.lme:title\\\":\\\"Survivor.io LME Clan Rankings\\\",\\\"pages.lme:help\\\":\\\"The top 500 clans of the League Match Event (Lunar Mine Expedition), updated every week. Enter a clan ID or click a row to see the clans it is likely to be matched against.\\\"},\\\"namespaces\\\":[\\\"pages.clan\\\",\\\"pages.lme\\\"],\\\"children\\\":\\\"$L1a\\\"}]\\n\"])",
+ "updatedAt": "2026-11-26T08:43:42.557745+00:00",
+ "clanId": 44262,
+ "rank": 140,
+ "outOf": 500,
+ "lunarPoints": 1565,
+ "change": 20,
+ "lastPlace": 1,
+ "history": [
+  {
+   "ladderAt": "\\\",\\\"pages.lme:table.rank\\\":\\\"Rank\\\",\\\"pages.lme:table.day\\\":\\\"Day {[day]}\\\",\\\"pages.lme:table.id\\\":\\\"Clan ID\\\",\\\"pages.lme:table.name\\\":\\\"Name\\\",\\\"pages.lme:table.members\\\":\\\"Members\\\",\\\"pages.lme:table.leader\\\":\\\"Leader\\\",\\\"pages.lme:table.score\\\":\\\"Score\\\",\\\"pages.lme:table.league\\\":\\\"League\\\",\\\"pages.lme:table.heroAwakeningCoresMin\\\":\\\"Survivor awakening cores (minimum)\\\",\\\"pages.lme:table.petAwakeningCoresMin\\\":\\\"Pet awakening cores (minimum)\\\",\\\"pages.lme:table.rc\\\":\\\"Cores\\\",\\\"pages.lme:table.atk\\\":\\\"Attack\\\",\\\"pages.lme:table.xt\\\":\\\"Transmute\\\",\\\"pages.lme:table.chips\\\":\\\"Chips\\\",\\\"pages.lme:table.secretScore\\\":\\\"Secret\\\",\\\"pages.lme:table.bestOpponents\\\":\\\"Clans you are most likely to match with this week.\\\",\\\"pages.lme:table.restOpponents\\\":\\\"Clans that you are unlikely to match with in descending order of probability.\\\",\\\"pages.lme:table.matched\\\":\\\"Drawn against you this week\\\",\\\"pages.lme:table.debuff\\\":\\\"Debuff\\\",\\\"pages.lme:table.debuffHint\\\":\\\"The debuff this clan would put on you, estimated from its attack. Within ±5% for {[share]}% of past clans.\\\",\\\"pages.lme:nextUpdate\\\":\\\"Next update:\\\",\\\"pages.lme:share.download\\\":\\\"Download\\\",\\\"pages.lme:share.copyImage\\\":\\\"Copy image\\\",\\\"pages.lme:share.native\\\":\\\"Share…\\\",\\\"pages.lme:title\\\":\\\"Survivor.io LME Clan Rankings\\\",\\\"pages.lme:help\\\":\\\"The top 500 clans of the League Match Event (Lunar Mine Expedition), updated every week. Enter a clan ID or click a row to see the clans it is likely to be matched against.\\\"},\\\"namespaces\\\":[\\\"pages.clan\\\",\\\"pages.lme\\\"],\\\"children\\\":\\\"$L1a\\\"}]\\n\"])",
+   "rank": 140,
+   "lunarPoints": 1565,
+   "change": 20
+  }
+ ]
+}
