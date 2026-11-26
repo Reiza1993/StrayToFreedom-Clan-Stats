@@ -7,8 +7,8 @@
   "previousSeasonFinalTotal": 151200,
   "milestoneSnapshot": null,
   "cxRank": {
-    "updatedAt": "2026-11-26T22:24:35.306163+11:00",
-    "total": 21300,
+    "updatedAt": "2026-11-26T22:41:37.137405+11:00",
+    "total": 22300,
     "members": [
       {
         "uid": 88203044,
@@ -44,7 +44,7 @@
         "uid": 103516442,
         "name": "DAYO-P",
         "rank": 6,
-        "score": 1300
+        "score": 1500
       },
       {
         "uid": 10754439,
@@ -110,7 +110,7 @@
         "uid": 64676255,
         "name": "盾Heathcliff剣",
         "rank": 17,
-        "score": 400
+        "score": 800
       },
       {
         "uid": 61865023,
@@ -143,62 +143,62 @@
         "score": 400
       },
       {
+        "uid": 27113479,
+        "name": "silverxz",
+        "rank": 23,
+        "score": 400
+      },
+      {
         "uid": 71028860,
         "name": "Rzzza",
-        "rank": 23,
+        "rank": 24,
         "score": 0
       },
       {
         "uid": 41742773,
         "name": "MadameMischief",
-        "rank": 24,
+        "rank": 25,
         "score": 0
       },
       {
         "uid": 40001195,
         "name": "Ӂ-ShhImB☆tm☆n",
-        "rank": 25,
+        "rank": 26,
         "score": 0
       },
       {
         "uid": 51071110,
         "name": "samwise08",
-        "rank": 26,
+        "rank": 27,
         "score": 0
       },
       {
         "uid": 79510960,
         "name": "theLP",
-        "rank": 27,
+        "rank": 28,
         "score": 0
       },
       {
         "uid": 108546985,
         "name": "pumpenjoe",
-        "rank": 28,
+        "rank": 29,
         "score": 0
       },
       {
         "uid": 87954282,
         "name": "SngphO",
-        "rank": 29,
+        "rank": 30,
         "score": 0
       },
       {
         "uid": 115742768,
         "name": "SterbyTools",
-        "rank": 30,
+        "rank": 31,
         "score": 0
       },
       {
         "uid": 35869301,
         "name": "Toddlerr",
-        "rank": 31,
-        "score": 0
-      },
-      {
-        "uid": 27113479,
-        "name": "silverxz",
         "rank": 32,
         "score": 0
       },
