@@ -7,8 +7,8 @@
   "previousSeasonFinalTotal": 151200,
   "milestoneSnapshot": null,
   "cxRank": {
-    "updatedAt": "2026-11-26T18:12:40.629354+11:00",
-    "total": 16200,
+    "updatedAt": "2026-11-26T19:12:48.023853+11:00",
+    "total": 17400,
     "members": [
       {
         "uid": 88203044,
@@ -20,37 +20,37 @@
         "uid": 36484758,
         "name": "Belthazar",
         "rank": 2,
-        "score": 1200
+        "score": 1500
+      },
+      {
+        "uid": 29321884,
+        "name": "RABBIT5",
+        "rank": 3,
+        "score": 1400
+      },
+      {
+        "uid": 103516442,
+        "name": "DAYO-P",
+        "rank": 4,
+        "score": 1300
       },
       {
         "uid": 66607264,
         "name": null,
-        "rank": 3,
+        "rank": 5,
         "score": 1200
       },
       {
         "uid": 83339881,
         "name": "Fl3xas",
-        "rank": 4,
+        "rank": 6,
         "score": 1200
       },
       {
         "uid": 10754439,
         "name": "HakiLuffy",
-        "rank": 5,
-        "score": 1200
-      },
-      {
-        "uid": 103516442,
-        "name": "DAYO-P",
-        "rank": 6,
-        "score": 1100
-      },
-      {
-        "uid": 29321884,
-        "name": "RABBIT5",
         "rank": 7,
-        "score": 1100
+        "score": 1200
       },
       {
         "uid": 80972473,
@@ -131,74 +131,74 @@
         "score": 400
       },
       {
+        "uid": 59566866,
+        "name": "FlyingDutchy",
+        "rank": 21,
+        "score": 400
+      },
+      {
         "uid": 71028860,
         "name": "Rzzza",
-        "rank": 21,
+        "rank": 22,
         "score": 0
       },
       {
         "uid": 41742773,
         "name": "MadameMischief",
-        "rank": 22,
+        "rank": 23,
         "score": 0
       },
       {
         "uid": 40001195,
         "name": "Ӂ-ShhImB☆tm☆n",
-        "rank": 23,
+        "rank": 24,
         "score": 0
       },
       {
         "uid": 51071110,
         "name": "samwise08",
-        "rank": 24,
+        "rank": 25,
         "score": 0
       },
       {
         "uid": 79510960,
         "name": "theLP",
-        "rank": 25,
+        "rank": 26,
         "score": 0
       },
       {
         "uid": 80018314,
         "name": null,
-        "rank": 26,
+        "rank": 27,
         "score": 0
       },
       {
         "uid": 108546985,
         "name": "pumpenjoe",
-        "rank": 27,
+        "rank": 28,
         "score": 0
       },
       {
         "uid": 87954282,
         "name": "SngphO",
-        "rank": 28,
+        "rank": 29,
         "score": 0
       },
       {
         "uid": 115742768,
         "name": "SterbyTools",
-        "rank": 29,
+        "rank": 30,
         "score": 0
       },
       {
         "uid": 35869301,
         "name": "Toddlerr",
-        "rank": 30,
+        "rank": 31,
         "score": 0
       },
       {
         "uid": 27113479,
         "name": "silverxz",
-        "rank": 31,
-        "score": 0
-      },
-      {
-        "uid": 59566866,
-        "name": "FlyingDutchy",
         "rank": 32,
         "score": 0
       },
