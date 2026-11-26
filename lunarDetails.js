@@ -12,6 +12,16 @@
 const lunarDetails = {
         "10229": {
             "clanId": 10229,
+            "ladder": {
+                "change": -20,
+                "ladderAt": "2026-W48",
+                "lastPlace": 4,
+                "lunarPoints": 1665,
+                "rank": 42,
+                "rankFactor": 0.94,
+                "secretScore": 1565.1,
+                "weeks": 1
+            },
             "lunarPoints": 1665,
             "members": {
                 "11726766": {
@@ -426,6 +436,16 @@ const lunarDetails = {
         },
         "15565": {
             "clanId": 15565,
+            "ladder": {
+                "change": -10,
+                "ladderAt": "2026-W48",
+                "lastPlace": 3,
+                "lunarPoints": 1635,
+                "rank": 63,
+                "rankFactor": 0.96,
+                "secretScore": 1569.6,
+                "weeks": 1
+            },
             "lunarPoints": 1635,
             "members": {
                 "101903512": {
@@ -840,6 +860,16 @@ const lunarDetails = {
         },
         "34857": {
             "clanId": 34857,
+            "ladder": {
+                "change": -20,
+                "ladderAt": "2026-W48",
+                "lastPlace": 4,
+                "lunarPoints": 1670,
+                "rank": 40,
+                "rankFactor": 0.94,
+                "secretScore": 1569.8,
+                "weeks": 1
+            },
             "lunarPoints": 1670,
             "members": {
                 "108232570": {
@@ -1254,6 +1284,16 @@ const lunarDetails = {
         },
         "44262": {
             "clanId": 44262,
+            "ladder": {
+                "change": 20,
+                "ladderAt": "2026-W48",
+                "lastPlace": 1,
+                "lunarPoints": 1565,
+                "rank": 140,
+                "rankFactor": 1.0,
+                "secretScore": 1565.0,
+                "weeks": 1
+            },
             "lunarPoints": 1565,
             "members": {
                 "100876140": {
