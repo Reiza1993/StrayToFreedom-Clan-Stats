@@ -891,7 +891,7 @@
                         </div>
                         <div class="stat-divider"></div>
                         <div class="stat-row">
-                            <span class="calc-stat-label" data-i18n="stat.ladder_rank">Ladder Rank</span>
+                            <span class="calc-stat-label" data-i18n="stat.ladder_rank">Global Rank</span>
                             <span><span class="calc-stat-value" style="color:#e7ecfa;" id="lme-ladder-rank">—</span> <span class="calc-stat-gain" id="lme-ladder-rank-gain"></span></span>
                         </div>
                     </div>
@@ -1600,7 +1600,7 @@
                 el.title = t('stat.ladder_outside');
                 return;
             }
-            el.innerHTML = `#${data.rank}<span style="color:#7a85a8;font-size:0.7em;"> / ${data.outOf || 500}</span>`;
+            el.textContent = `#${data.rank}`;
             const hist = (data.history || []).filter(h => h.rank != null);
             if (hist.length >= 2) {
                 const moved = hist[hist.length - 2].rank - hist[hist.length - 1].rank;   // + = moved up
