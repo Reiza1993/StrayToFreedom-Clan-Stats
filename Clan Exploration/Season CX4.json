@@ -242,8 +242,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-28T08:48:21.677431+11:00",
-    "total": 65800,
+    "updatedAt": "2026-11-28T09:48:29.517404+11:00",
+    "total": 66400,
     "members": [
       {
         "uid": 66607264,
@@ -255,7 +255,7 @@
         "uid": 29321884,
         "name": "RABBIT5",
         "rank": 2,
-        "score": 4200
+        "score": 4400
       },
       {
         "uid": 36484758,
@@ -348,14 +348,14 @@
         "score": 2000
       },
       {
-        "uid": 108860725,
-        "name": "RetinaDNA",
-        "rank": 18,
-        "score": 1600
-      },
-      {
         "uid": 26277677,
         "name": "BobBobberson",
+        "rank": 18,
+        "score": 2000
+      },
+      {
+        "uid": 108860725,
+        "name": "RetinaDNA",
         "rank": 19,
         "score": 1600
       },
