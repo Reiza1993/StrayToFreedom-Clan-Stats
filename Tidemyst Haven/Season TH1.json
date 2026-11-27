@@ -3,10 +3,10 @@
   "startAt": "2026-11-24T03:00:00+11:00",
   "endAt": "2026-12-08T02:59:59+11:00",
   "max": 1200,
-  "total": 1094,
-  "nodesDone": 31,
+  "total": 1100,
+  "nodesDone": 32,
   "nodes": 40,
-  "updatedAt": "2026-11-28T03:22:14.840098+11:00",
+  "updatedAt": "2026-11-28T09:22:16.862547+11:00",
   "members": [
     {
       "uid": 29904762,
@@ -75,117 +75,117 @@
       "rank": 11
     },
     {
+      "uid": 61865023,
+      "name": "RexPanda",
+      "points": 35,
+      "rank": 12
+    },
+    {
       "uid": 88203044,
       "name": "p88203044",
       "points": 33,
-      "rank": 12
+      "rank": 13
     },
     {
       "uid": 83339881,
       "name": "Fl3xas",
       "points": 31,
-      "rank": 13
+      "rank": 14
     },
     {
       "uid": 30658936,
       "name": "Gritchen",
       "points": 31,
-      "rank": 16
+      "rank": 17
     },
     {
       "uid": 108860725,
       "name": "RetinaDNA",
       "points": 31,
-      "rank": 14
+      "rank": 15
     },
     {
       "uid": 87954282,
       "name": "SngphO",
       "points": 31,
-      "rank": 15
+      "rank": 16
     },
     {
       "uid": 113690788,
       "name": "Apathy_",
       "points": 30,
-      "rank": 18
+      "rank": 19
     },
     {
       "uid": 36484758,
       "name": "Belthazar",
       "points": 30,
-      "rank": 20
+      "rank": 21
     },
     {
       "uid": 26277677,
       "name": "BobBobberson",
       "points": 30,
-      "rank": 23
+      "rank": 24
     },
     {
       "uid": 59566866,
       "name": "FlyingDutchy",
       "points": 30,
-      "rank": 26
+      "rank": 27
     },
     {
       "uid": 83861839,
       "name": "groggen",
       "points": 30,
-      "rank": 21
+      "rank": 22
     },
     {
       "uid": 10754439,
       "name": "HakiLuffy",
       "points": 30,
-      "rank": 28
+      "rank": 29
     },
     {
       "uid": 18115624,
       "name": "Oopsie-Daisy",
       "points": 30,
-      "rank": 22
+      "rank": 23
     },
     {
       "uid": 66607264,
       "name": "Player 66607264",
       "points": 30,
-      "rank": 19
+      "rank": 20
     },
     {
       "uid": 29321884,
       "name": "RABBIT5",
       "points": 30,
-      "rank": 25
+      "rank": 26
     },
     {
       "uid": 51071110,
       "name": "samwise08",
       "points": 30,
-      "rank": 24
+      "rank": 25
     },
     {
       "uid": 100876140,
       "name": "Scoundrel536",
       "points": 30,
-      "rank": 17
+      "rank": 18
     },
     {
       "uid": 35869301,
       "name": "Toddlerr",
       "points": 30,
-      "rank": 27
+      "rank": 28
     },
     {
       "uid": 40001195,
       "name": "Ӂ-ShhImB☆tm☆n",
       "points": 30,
-      "rank": 29
-    },
-    {
-      "uid": 61865023,
-      "name": "RexPanda",
-      "points": 29,
       "rank": 30
     },
     {
@@ -283,6 +283,10 @@
     {
       "at": "2026-11-28T03:22:14.840098+11:00",
       "total": 1094
+    },
+    {
+      "at": "2026-11-28T09:22:16.862547+11:00",
+      "total": 1100
     }
   ]
 }
