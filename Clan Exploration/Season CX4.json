@@ -242,8 +242,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-27T20:46:53.851046+11:00",
-    "total": 54500,
+    "updatedAt": "2026-11-27T21:47:00.648674+11:00",
+    "total": 55900,
     "members": [
       {
         "uid": 36484758,
@@ -252,20 +252,20 @@
         "score": 3600
       },
       {
+        "uid": 66607264,
+        "name": null,
+        "rank": 2,
+        "score": 3600
+      },
+      {
         "uid": 29321884,
         "name": "RABBIT5",
-        "rank": 2,
+        "rank": 3,
         "score": 3500
       },
       {
         "uid": 88203044,
         "name": "p88203044",
-        "rank": 3,
-        "score": 3200
-      },
-      {
-        "uid": 66607264,
-        "name": null,
         "rank": 4,
         "score": 3200
       },
@@ -273,7 +273,7 @@
         "uid": 103516442,
         "name": "DAYO-P",
         "rank": 5,
-        "score": 2900
+        "score": 3100
       },
       {
         "uid": 83339881,
@@ -309,7 +309,7 @@
         "uid": 112772047,
         "name": "VictorMolusco",
         "rank": 11,
-        "score": 2000
+        "score": 2400
       },
       {
         "uid": 113690788,
@@ -330,40 +330,40 @@
         "score": 1800
       },
       {
+        "uid": 80018314,
+        "name": null,
+        "rank": 15,
+        "score": 1800
+      },
+      {
         "uid": 108860725,
         "name": "RetinaDNA",
-        "rank": 15,
+        "rank": 16,
         "score": 1600
       },
       {
         "uid": 30658936,
         "name": "Gritchen",
-        "rank": 16,
+        "rank": 17,
         "score": 1600
       },
       {
         "uid": 26277677,
         "name": "BobBobberson",
-        "rank": 17,
+        "rank": 18,
         "score": 1600
       },
       {
         "uid": 64676255,
         "name": "盾Heathcliff剣",
-        "rank": 18,
+        "rank": 19,
         "score": 1600
       },
       {
         "uid": 83861839,
         "name": "groggen",
-        "rank": 19,
-        "score": 1600
-      },
-      {
-        "uid": 80018314,
-        "name": null,
         "rank": 20,
-        "score": 1400
+        "score": 1600
       },
       {
         "uid": 59566866,
@@ -476,8 +476,8 @@
     ]
   },
   "cxBoss": {
-    "updatedAt": "2026-11-27T20:46:53.851046+11:00",
-    "total": 12684,
+    "updatedAt": "2026-11-27T21:47:00.648674+11:00",
+    "total": 12706,
     "members": [
       {
         "uid": 83339881,
@@ -486,16 +486,16 @@
         "score": 871
       },
       {
-        "uid": 100876140,
-        "name": "Scoundrel536",
-        "rank": 2,
-        "score": 845
-      },
-      {
         "uid": 103516442,
         "name": "DAYO-P",
+        "rank": 2,
+        "score": 850
+      },
+      {
+        "uid": 100876140,
+        "name": "Scoundrel536",
         "rank": 3,
-        "score": 828
+        "score": 845
       },
       {
         "uid": 80972473,
