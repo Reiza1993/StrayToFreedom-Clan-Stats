@@ -242,8 +242,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-27T13:45:54.782786+11:00",
-    "total": 45500,
+    "updatedAt": "2026-11-27T14:46:02.800533+11:00",
+    "total": 47100,
     "members": [
       {
         "uid": 88203044,
@@ -276,26 +276,26 @@
         "score": 2500
       },
       {
-        "uid": 103516442,
-        "name": "DAYO-P",
-        "rank": 6,
-        "score": 2300
-      },
-      {
         "uid": 87244358,
         "name": "神Sterben死",
-        "rank": 7,
-        "score": 2000
-      },
-      {
-        "uid": 100876140,
-        "name": "Scoundrel536",
-        "rank": 8,
-        "score": 2000
+        "rank": 6,
+        "score": 2400
       },
       {
         "uid": 10754439,
         "name": "HakiLuffy",
+        "rank": 7,
+        "score": 2400
+      },
+      {
+        "uid": 103516442,
+        "name": "DAYO-P",
+        "rank": 8,
+        "score": 2300
+      },
+      {
+        "uid": 100876140,
+        "name": "Scoundrel536",
         "rank": 9,
         "score": 2000
       },
@@ -342,40 +342,40 @@
         "score": 1600
       },
       {
+        "uid": 80018314,
+        "name": null,
+        "rank": 17,
+        "score": 1400
+      },
+      {
         "uid": 64676255,
         "name": "盾Heathcliff剣",
-        "rank": 17,
+        "rank": 18,
         "score": 1200
       },
       {
         "uid": 83861839,
         "name": "groggen",
-        "rank": 18,
+        "rank": 19,
         "score": 1200
       },
       {
         "uid": 26277677,
         "name": "BobBobberson",
-        "rank": 19,
+        "rank": 20,
         "score": 1200
       },
       {
         "uid": 59566866,
         "name": "FlyingDutchy",
-        "rank": 20,
-        "score": 1200
-      },
-      {
-        "uid": 80018314,
-        "name": null,
         "rank": 21,
-        "score": 1000
+        "score": 1200
       },
       {
         "uid": 27113479,
         "name": "silverxz",
         "rank": 22,
-        "score": 800
+        "score": 1200
       },
       {
         "uid": 79510960,
@@ -476,8 +476,8 @@
     ]
   },
   "cxBoss": {
-    "updatedAt": "2026-11-27T13:45:54.782786+11:00",
-    "total": 4710,
+    "updatedAt": "2026-11-27T14:46:02.800533+11:00",
+    "total": 5454,
     "members": [
       {
         "uid": 100876140,
@@ -504,62 +504,62 @@
         "score": 787
       },
       {
+        "uid": 80018314,
+        "name": null,
+        "rank": 5,
+        "score": 744
+      },
+      {
         "uid": 87244358,
         "name": "神Sterben死",
-        "rank": 5,
+        "rank": 6,
         "score": 743
       },
       {
         "uid": 36484758,
         "name": "Belthazar",
-        "rank": 6,
+        "rank": 7,
         "score": 711
       },
       {
         "uid": 64676255,
         "name": "盾Heathcliff剣",
-        "rank": 7,
+        "rank": 8,
         "score": 0
       },
       {
         "uid": 71028860,
         "name": "Rzzza",
-        "rank": 8,
+        "rank": 9,
         "score": 0
       },
       {
         "uid": 108860725,
         "name": "RetinaDNA",
-        "rank": 9,
+        "rank": 10,
         "score": 0
       },
       {
         "uid": 41742773,
         "name": "MadameMischief",
-        "rank": 10,
+        "rank": 11,
         "score": 0
       },
       {
         "uid": 40001195,
         "name": "Ӂ-ShhImB☆tm☆n",
-        "rank": 11,
+        "rank": 12,
         "score": 0
       },
       {
         "uid": 60687252,
         "name": "һan",
-        "rank": 12,
+        "rank": 13,
         "score": 0
       },
       {
         "uid": 79510960,
         "name": "theLP",
-        "rank": 13,
-        "score": 0
-      },
-      {
-        "uid": 80018314,
-        "name": null,
         "rank": 14,
         "score": 0
       },
