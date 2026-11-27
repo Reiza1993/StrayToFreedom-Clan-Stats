@@ -242,26 +242,26 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-28T01:47:29.215404+11:00",
-    "total": 57900,
+    "updatedAt": "2026-11-28T02:47:36.627268+11:00",
+    "total": 58400,
     "members": [
+      {
+        "uid": 29321884,
+        "name": "RABBIT5",
+        "rank": 1,
+        "score": 3900
+      },
       {
         "uid": 36484758,
         "name": "Belthazar",
-        "rank": 1,
+        "rank": 2,
         "score": 3600
       },
       {
         "uid": 66607264,
         "name": null,
-        "rank": 2,
-        "score": 3600
-      },
-      {
-        "uid": 29321884,
-        "name": "RABBIT5",
         "rank": 3,
-        "score": 3500
+        "score": 3600
       },
       {
         "uid": 88203044,
@@ -279,7 +279,7 @@
         "uid": 10754439,
         "name": "HakiLuffy",
         "rank": 6,
-        "score": 3100
+        "score": 3200
       },
       {
         "uid": 83339881,
@@ -476,8 +476,8 @@
     ]
   },
   "cxBoss": {
-    "updatedAt": "2026-11-28T00:47:20.739694+11:00",
-    "total": 15157,
+    "updatedAt": "2026-11-28T02:47:36.627268+11:00",
+    "total": 16802,
     "members": [
       {
         "uid": 83339881,
@@ -504,158 +504,158 @@
         "score": 845
       },
       {
+        "uid": 29321884,
+        "name": "RABBIT5",
+        "rank": 5,
+        "score": 837
+      },
+      {
         "uid": 80972473,
         "name": "Cunner88",
-        "rank": 5,
+        "rank": 6,
         "score": 825
       },
       {
         "uid": 87954282,
         "name": "SngphO",
-        "rank": 6,
+        "rank": 7,
         "score": 810
       },
       {
         "uid": 113690788,
         "name": "Apathy_",
-        "rank": 7,
+        "rank": 8,
         "score": 809
       },
       {
         "uid": 60687252,
         "name": "һan",
-        "rank": 8,
+        "rank": 9,
+        "score": 808
+      },
+      {
+        "uid": 35869301,
+        "name": "Toddlerr",
+        "rank": 10,
         "score": 808
       },
       {
         "uid": 108546985,
         "name": "pumpenjoe",
-        "rank": 9,
+        "rank": 11,
         "score": 801
       },
       {
         "uid": 51071110,
         "name": "samwise08",
-        "rank": 10,
+        "rank": 12,
         "score": 799
       },
       {
         "uid": 88203044,
         "name": "p88203044",
-        "rank": 11,
+        "rank": 13,
         "score": 787
       },
       {
         "uid": 27113479,
         "name": "silverxz",
-        "rank": 12,
+        "rank": 14,
         "score": 787
       },
       {
         "uid": 10754439,
         "name": "HakiLuffy",
-        "rank": 13,
+        "rank": 15,
         "score": 787
       },
       {
         "uid": 83861839,
         "name": "groggen",
-        "rank": 14,
+        "rank": 16,
         "score": 784
       },
       {
         "uid": 106162623,
         "name": "gubrax",
-        "rank": 15,
+        "rank": 17,
         "score": 767
       },
       {
         "uid": 26277677,
         "name": "BobBobberson",
-        "rank": 16,
+        "rank": 18,
         "score": 753
       },
       {
         "uid": 80018314,
         "name": null,
-        "rank": 17,
+        "rank": 19,
         "score": 744
       },
       {
         "uid": 87244358,
         "name": "神Sterben死",
-        "rank": 18,
+        "rank": 20,
         "score": 743
       },
       {
         "uid": 36484758,
         "name": "Belthazar",
-        "rank": 19,
+        "rank": 21,
         "score": 711
       },
       {
         "uid": 115742768,
         "name": "SterbyTools",
-        "rank": 20,
+        "rank": 22,
         "score": 14
       },
       {
         "uid": 64676255,
         "name": "盾Heathcliff剣",
-        "rank": 21,
+        "rank": 23,
         "score": 0
       },
       {
         "uid": 71028860,
         "name": "Rzzza",
-        "rank": 22,
+        "rank": 24,
         "score": 0
       },
       {
         "uid": 108860725,
         "name": "RetinaDNA",
-        "rank": 23,
+        "rank": 25,
         "score": 0
       },
       {
         "uid": 41742773,
         "name": "MadameMischief",
-        "rank": 24,
+        "rank": 26,
         "score": 0
       },
       {
         "uid": 79510960,
         "name": "theLP",
-        "rank": 25,
+        "rank": 27,
         "score": 0
       },
       {
         "uid": 61865023,
         "name": "RexPanda",
-        "rank": 26,
-        "score": 0
-      },
-      {
-        "uid": 35869301,
-        "name": "Toddlerr",
-        "rank": 27,
+        "rank": 28,
         "score": 0
       },
       {
         "uid": 66607264,
         "name": null,
-        "rank": 28,
+        "rank": 29,
         "score": 0
       },
       {
         "uid": 59566866,
         "name": "FlyingDutchy",
-        "rank": 29,
-        "score": 0
-      },
-      {
-        "uid": 29321884,
-        "name": "RABBIT5",
         "rank": 30,
         "score": 0
       },
