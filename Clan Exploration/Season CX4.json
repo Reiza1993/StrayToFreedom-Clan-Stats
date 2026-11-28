@@ -242,8 +242,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-28T21:50:02.022970+11:00",
-    "total": 76700,
+    "updatedAt": "2026-11-28T22:50:09.845837+11:00",
+    "total": 78300,
     "members": [
       {
         "uid": 36484758,
@@ -267,7 +267,7 @@
         "uid": 103516442,
         "name": "DAYO-P",
         "rank": 4,
-        "score": 4300
+        "score": 4500
       },
       {
         "uid": 10754439,
@@ -282,26 +282,26 @@
         "score": 4000
       },
       {
+        "uid": 80018314,
+        "name": null,
+        "rank": 7,
+        "score": 3600
+      },
+      {
         "uid": 88203044,
         "name": "p88203044",
-        "rank": 7,
+        "rank": 8,
         "score": 3200
       },
       {
         "uid": 112772047,
         "name": "VictorMolusco",
-        "rank": 8,
+        "rank": 9,
         "score": 3200
       },
       {
         "uid": 113690788,
         "name": "Apathy_",
-        "rank": 9,
-        "score": 3200
-      },
-      {
-        "uid": 80018314,
-        "name": null,
         "rank": 10,
         "score": 3200
       },
@@ -318,20 +318,20 @@
         "score": 2800
       },
       {
+        "uid": 18115624,
+        "name": "Oopsie-Daisy",
+        "rank": 13,
+        "score": 2800
+      },
+      {
         "uid": 26277677,
         "name": "BobBobberson",
-        "rank": 13,
-        "score": 2600
+        "rank": 14,
+        "score": 2800
       },
       {
         "uid": 87244358,
         "name": "神Sterben死",
-        "rank": 14,
-        "score": 2400
-      },
-      {
-        "uid": 18115624,
-        "name": "Oopsie-Daisy",
         "rank": 15,
         "score": 2400
       },
@@ -366,14 +366,14 @@
         "score": 2000
       },
       {
-        "uid": 70603922,
-        "name": "BlackFlamE",
-        "rank": 21,
-        "score": 1600
-      },
-      {
         "uid": 59566866,
         "name": "FlyingDutchy",
+        "rank": 21,
+        "score": 2000
+      },
+      {
+        "uid": 70603922,
+        "name": "BlackFlamE",
         "rank": 22,
         "score": 1600
       },
