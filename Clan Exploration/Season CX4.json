@@ -242,8 +242,8 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-28T17:49:29.236640+11:00",
-    "total": 73700,
+    "updatedAt": "2026-11-28T18:49:37.525846+11:00",
+    "total": 74300,
     "members": [
       {
         "uid": 36484758,
@@ -294,16 +294,16 @@
         "score": 3200
       },
       {
-        "uid": 83339881,
-        "name": "Fl3xas",
-        "rank": 9,
-        "score": 2900
-      },
-      {
         "uid": 113690788,
         "name": "Apathy_",
+        "rank": 9,
+        "score": 3200
+      },
+      {
+        "uid": 83339881,
+        "name": "Fl3xas",
         "rank": 10,
-        "score": 2800
+        "score": 2900
       },
       {
         "uid": 80018314,
@@ -318,20 +318,20 @@
         "score": 2800
       },
       {
+        "uid": 26277677,
+        "name": "BobBobberson",
+        "rank": 13,
+        "score": 2600
+      },
+      {
         "uid": 87244358,
         "name": "神Sterben死",
-        "rank": 13,
+        "rank": 14,
         "score": 2400
       },
       {
         "uid": 18115624,
         "name": "Oopsie-Daisy",
-        "rank": 14,
-        "score": 2400
-      },
-      {
-        "uid": 26277677,
-        "name": "BobBobberson",
         "rank": 15,
         "score": 2400
       },
