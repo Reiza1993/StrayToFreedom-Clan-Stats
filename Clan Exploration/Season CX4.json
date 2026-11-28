@@ -242,18 +242,18 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-28T18:49:37.525846+11:00",
-    "total": 74300,
+    "updatedAt": "2026-11-28T19:49:45.144121+11:00",
+    "total": 76100,
     "members": [
-      {
-        "uid": 36484758,
-        "name": "Belthazar",
-        "rank": 1,
-        "score": 5200
-      },
       {
         "uid": 29321884,
         "name": "RABBIT5",
+        "rank": 1,
+        "score": 5400
+      },
+      {
+        "uid": 36484758,
+        "name": "Belthazar",
         "rank": 2,
         "score": 5200
       },
@@ -261,7 +261,7 @@
         "uid": 66607264,
         "name": null,
         "rank": 3,
-        "score": 4800
+        "score": 5200
       },
       {
         "uid": 103516442,
@@ -270,16 +270,16 @@
         "score": 4100
       },
       {
-        "uid": 80972473,
-        "name": "Cunner88",
-        "rank": 5,
-        "score": 4000
-      },
-      {
         "uid": 10754439,
         "name": "HakiLuffy",
+        "rank": 5,
+        "score": 4100
+      },
+      {
+        "uid": 80972473,
+        "name": "Cunner88",
         "rank": 6,
-        "score": 3700
+        "score": 4000
       },
       {
         "uid": 88203044,
@@ -300,16 +300,16 @@
         "score": 3200
       },
       {
-        "uid": 83339881,
-        "name": "Fl3xas",
-        "rank": 10,
-        "score": 2900
-      },
-      {
         "uid": 80018314,
         "name": null,
+        "rank": 10,
+        "score": 3200
+      },
+      {
+        "uid": 83339881,
+        "name": "Fl3xas",
         "rank": 11,
-        "score": 2800
+        "score": 2900
       },
       {
         "uid": 100876140,
@@ -342,20 +342,20 @@
         "score": 2400
       },
       {
+        "uid": 83861839,
+        "name": "groggen",
+        "rank": 17,
+        "score": 2400
+      },
+      {
         "uid": 60687252,
         "name": "һan",
-        "rank": 17,
+        "rank": 18,
         "score": 2200
       },
       {
         "uid": 64676255,
         "name": "盾Heathcliff剣",
-        "rank": 18,
-        "score": 2000
-      },
-      {
-        "uid": 83861839,
-        "name": "groggen",
         "rank": 19,
         "score": 2000
       },
