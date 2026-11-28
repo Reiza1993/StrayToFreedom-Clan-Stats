@@ -242,18 +242,18 @@
     ]
   },
   "cxRank": {
-    "updatedAt": "2026-11-28T14:49:06.841122+11:00",
-    "total": 70500,
+    "updatedAt": "2026-11-28T15:49:14.247444+11:00",
+    "total": 71500,
     "members": [
-      {
-        "uid": 36484758,
-        "name": "Belthazar",
-        "rank": 1,
-        "score": 4800
-      },
       {
         "uid": 29321884,
         "name": "RABBIT5",
+        "rank": 1,
+        "score": 5000
+      },
+      {
+        "uid": 36484758,
+        "name": "Belthazar",
         "rank": 2,
         "score": 4800
       },
@@ -306,50 +306,50 @@
         "score": 2800
       },
       {
+        "uid": 80018314,
+        "name": null,
+        "rank": 11,
+        "score": 2800
+      },
+      {
         "uid": 87244358,
         "name": "神Sterben死",
-        "rank": 11,
+        "rank": 12,
         "score": 2400
       },
       {
         "uid": 100876140,
         "name": "Scoundrel536",
-        "rank": 12,
+        "rank": 13,
         "score": 2400
       },
       {
         "uid": 18115624,
         "name": "Oopsie-Daisy",
-        "rank": 13,
+        "rank": 14,
         "score": 2400
       },
       {
-        "uid": 80018314,
-        "name": null,
-        "rank": 14,
+        "uid": 26277677,
+        "name": "BobBobberson",
+        "rank": 15,
         "score": 2400
       },
       {
         "uid": 60687252,
         "name": "һan",
-        "rank": 15,
+        "rank": 16,
         "score": 2200
       },
       {
         "uid": 64676255,
         "name": "盾Heathcliff剣",
-        "rank": 16,
+        "rank": 17,
         "score": 2000
       },
       {
         "uid": 30658936,
         "name": "Gritchen",
-        "rank": 17,
-        "score": 2000
-      },
-      {
-        "uid": 26277677,
-        "name": "BobBobberson",
         "rank": 18,
         "score": 2000
       },
